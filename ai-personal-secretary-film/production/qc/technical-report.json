@@ -1,0 +1,24 @@
+{
+  "file": "production/exports/animatic_1080p_24fps.mp4",
+  "checks": {
+    "1080p": true,
+    "24fps": true,
+    "H264": true,
+    "AAC": true,
+    "duration_matches": true,
+    "within_120_150": true,
+    "no_sample_clipping": true,
+    "black_only_intentional_end": true,
+    "captions_match_canonical": true
+  },
+  "sample_peak_dbfs": -3.9,
+  "black_intervals": [
+    {
+      "start": 139.0,
+      "end": 142.958333,
+      "duration": 3.958333
+    }
+  ],
+  "human_visual_audio_review": "NOT PERFORMED; owner review required",
+  "note": "Sample peak only, not intersample true peak. No claim of final loudness compliance or semantic video QC."
+}

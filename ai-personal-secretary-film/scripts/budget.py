@@ -1,0 +1,6 @@
+import json
+from pathlib import Path
+P=Path(__file__).resolve().parents[1]/'production';m=json.loads((P/'manifest.json').read_text());seconds=sum(s['duration'] for s in m['shots'] if s['id']!='19');pilot=sum(s['duration'] for s in m['shots'] if s['pilot']);rate=1.165
+x={'currency':'USD','price_checked':'2026-10-18','resolution':'1080p','rate_reserved_per_second':rate,'video_seconds_per_pass':seconds,'pilot_seconds_per_pass':pilot,'one_video_pass':round(seconds*rate,2),'two_video_passes':round(seconds*rate*2,2),'three_video_passes':round(seconds*rate*3,2),'two_pilot_passes':round(pilot*rate*2,2),'reference_images_60_at_004':2.4,'voice_allowance':1,'pickup_seconds':30,'pickup_allowance':round(30*rate,2),'tax_price_egress_contingency':75,'expected_range_usd':[330,400],'proposed_total_cap_usd':600,'proposed_pilot_cap_usd':110,'actual_spend_usd':0}
+x['conservative_total']=round(x['three_video_passes']+2.4+1+x['pickup_allowance']+75,2);(P/'budget.json').write_text(json.dumps(x,indent=2)+'\n');print(json.dumps(x,indent=2))
+a=json.loads((P/'approvals.example.json').read_text());a['G0']['max_total_usd']=600;a['G0']['approved_auxiliary_models']=['fal-ai/bytedance/seedream/v4.5/text-to-image','fal-ai/bytedance/seedream/v4.5/edit','fal-ai/elevenlabs/tts/multilingual-v2'];(P/'approvals.example.json').write_text(json.dumps(a,indent=2)+'\n')

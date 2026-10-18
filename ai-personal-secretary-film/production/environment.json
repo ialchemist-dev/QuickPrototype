@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-18",
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "machine": "arm64",
+  "memory_gib": 16,
+  "tools": {
+    "ffmpeg": "8.0.1",
+    "ffprobe": "8.0.1",
+    "python": "3.9.6",
+    "say": "macOS built-in"
+  },
+  "python_packages": {
+    "Pillow": "11.3.0",
+    "numpy": "2.0.2",
+    "requests": "2.32.5",
+    "pytest": "8.4.2"
+  },
+  "installed_editors": [
+    "iMovie",
+    "GarageBand"
+  ],
+  "credential_environment_present": {
+    "FAL_KEY": false,
+    "ARK_API_KEY": false,
+    "ELEVENLABS_API_KEY": false,
+    "REPLICATE_API_TOKEN": false
+  },
+  "keychain_service_metadata_found": {
+    "fal": false,
+    "fal.ai": false,
+    "FAL_KEY": false,
+    "BytePlus": false,
+    "ElevenLabs": false
+  },
+  "credential_scope_note": "Presence-only check of named environment variables and exact Keychain service names; no values retrieved. Does not prove no credentials exist elsewhere. No provider account verified.",
+  "local_generation": "No dedicated video generation runtime observed in Applications. No model weights downloaded.",
+  "automation": "Python subprocess, FFmpeg, macOS say, Git/GitHub CLI available; paid API adapter uses stdlib HTTPS."
+}
