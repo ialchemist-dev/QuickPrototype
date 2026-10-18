@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Loopback-only review server; never serves credentials or approval files."""
+"""Private review server; defaults to loopback. Never serves credentials or approval files."""
 from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import unquote,urlsplit
-import os,re
+import os,re,argparse
 ROOT=Path(__file__).resolve().parents[1]/'production'
 class Handler(SimpleHTTPRequestHandler):
  def do_GET(self):
@@ -33,5 +33,6 @@ class Handler(SimpleHTTPRequestHandler):
  def list_directory(self,path):self.send_error(403);return None
  def log_message(self,*args):pass
 os.chdir(ROOT)
-print('Local review: http://127.0.0.1:8766/review.html',flush=True)
-ThreadingHTTPServer(('127.0.0.1',8766),Handler).serve_forever()
+parser=argparse.ArgumentParser();parser.add_argument('--bind',default='127.0.0.1');parser.add_argument('--port',type=int,default=8766);args=parser.parse_args()
+print(f'Review: http://{args.bind}:{args.port}/review.html',flush=True)
+ThreadingHTTPServer((args.bind,args.port),Handler).serve_forever()
