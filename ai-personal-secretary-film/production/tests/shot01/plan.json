@@ -8,13 +8,13 @@
   },
   "pricing_source": "https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video",
   "estimated_first_pass_usd": 0.49,
-  "paid_calls_made": 0,
+  "paid_calls_made": 2,
   "shots": [
     {
       "id": "S1-01A",
       "request_file": "A.request.json",
       "request_sha256": "aa4214eb7d19cd123c3cb432d820789c2a39c39ac54ee9083827e455048f53dd",
-      "status": "blocked_missing_credentials",
+      "status": "rendered",
       "attempts": [],
       "estimated_cost_usd": 0.245,
       "actual_cost_usd": null
@@ -23,10 +23,12 @@
       "id": "S1-01B",
       "request_file": "B.request.json",
       "request_sha256": "a304d1a92b63d75ecfb37c511f1ba6e3c892cdadfb38040e5ace3aa018c278ec",
-      "status": "blocked_missing_credentials",
+      "status": "rendered",
       "attempts": [],
       "estimated_cost_usd": 0.245,
       "actual_cost_usd": null
     }
-  ]
+  ],
+  "actual_cost_usd": null,
+  "billing_note": "Two accepted and completed requests; approximately USD 0.49 estimated; invoice not reconciled. Private runtime ledger is authoritative for job IDs and reservations."
 }
