@@ -1,7 +1,9 @@
 # ATTENTION RETURNED — AI Personal Secretary
 ## Production handoff for the Mac mini agent
 
-**Status:** production-ready creative specification; no video has been generated.
+**Status:** creative revision in progress; no AI-generated motion footage has been produced.
+
+> **Creative revision — 2026-10-18:** The owner has replaced the original breakfast concept with a finger-snap-activated, visible virtual secretary holding an appointment book. The current Scene 01 draft is [The Morning Briefing — v2](production/scripts/scene-01-breakfast-v2.md): license-renewal paperwork printed by a connected printer, a weekend hotel booking, and an aunt's birthday card. This direction supersedes the voice-only/no-avatar restriction and the original breakfast dialogue below. The remainder of this document, existing generation prompts/manifests and the 143-second schematic animatic are retained as the **legacy production draft**, not a current render-ready specification. Reconcile the full-film script, references, timing, budget and approvals before any generation.
 **Project:** `ai-personal-secretary-film`
 **Owner approval required:** API spending, account registration, publishing, and any external order.
 **Target:** 120–150 seconds, 16:9, 1920×1080 final master, 24 fps, English dialogue, cinematic live-action realism.
