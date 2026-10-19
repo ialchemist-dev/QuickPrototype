@@ -29,3 +29,7 @@ Initial submit uses `submit --shot A` or `submit --shot B`. The adapter refuses 
 Both clips downloaded successfully. Source videos are 1920x1088, 24 fps, 5.041667 seconds each; the review edit center-crops eight pixels vertically to deliver 1920x1080, 24 fps, five seconds. Rebuild with `python3 scripts/edit_shot01.py`.
 
 Six sampled frames were visually inspected, not full playback. Warm natural light and the intended actions are visible. Continuity defects: the breakfast clip introduces patterned sleeves instead of the requested plain cream wardrobe, uses two utensils, and places the egg on toast instead of beside it. These are first-pass test assets, not approved final shots. No paid retries performed. No audio is included. Billing remains estimated, not invoice-confirmed.
+
+## Initial results
+
+Both clips downloaded successfully: H.264, 1920x1088, 24 fps, 5.041667 seconds each. The provider returned an eight-pixel taller frame despite the 1080p request; the five-second test edit is cropped centrally to 1920x1080. Export: production/exports/shot01-first-test-1080p.mp4 (ignored by Git). No audio, no retries. Public-price estimate: approximately $0.49 total; actual invoice unverified. Six extracted frames were inspected; this is not a full playback review or human approval.
