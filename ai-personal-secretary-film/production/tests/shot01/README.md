@@ -33,3 +33,9 @@ Six sampled frames were visually inspected, not full playback. Warm natural ligh
 ## Initial results
 
 Both clips downloaded successfully: H.264, 1920x1088, 24 fps, 5.041667 seconds each. The provider returned an eight-pixel taller frame despite the 1080p request; the five-second test edit is cropped centrally to 1920x1080. Export: production/exports/shot01-first-test-1080p.mp4 (ignored by Git). No audio, no retries. Public-price estimate: approximately $0.49 total; actual invoice unverified. Six extracted frames were inspected; this is not a full playback review or human approval.
+
+## Read-only provider usage
+
+Run `python3 scripts/fal_usage.py --start 2026-10-18` from the project directory. The command loads the local key without printing it, queries the official usage API for this Seedance endpoint and follows pagination. The API reports estimated usage, not a finalized invoice. Documentation: https://fal.ai/docs/platform-apis/v1/models/usage
+
+Live test on 2026-10-19 returned HTTP 403: the configured generation key does not have the billing permissions required by this endpoint. A BILLING preset key is sufficient; FULL access is unnecessary. No generation requests are made by this command.
