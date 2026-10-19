@@ -1,0 +1,32 @@
+{
+  "model": "fal-ai/bytedance/seedance/v1/pro/fast/text-to-video",
+  "approval": {
+    "date": "2026-10-18",
+    "evidence": "Owner replied 同意 to the explicit fal Seedance 1.0 Pro Fast, warm naturalistic Shot 01 test proposal with a USD 2 generation cap.",
+    "max_generation_usd": 2,
+    "scope": "Only Scene 01 Shot 01 inserts A and B; no full film or publication approval."
+  },
+  "pricing_source": "https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video",
+  "estimated_first_pass_usd": 0.49,
+  "paid_calls_made": 0,
+  "shots": [
+    {
+      "id": "S1-01A",
+      "request_file": "A.request.json",
+      "request_sha256": "aa4214eb7d19cd123c3cb432d820789c2a39c39ac54ee9083827e455048f53dd",
+      "status": "blocked_missing_credentials",
+      "attempts": [],
+      "estimated_cost_usd": 0.245,
+      "actual_cost_usd": null
+    },
+    {
+      "id": "S1-01B",
+      "request_file": "B.request.json",
+      "request_sha256": "a304d1a92b63d75ecfb37c511f1ba6e3c892cdadfb38040e5ace3aa018c278ec",
+      "status": "blocked_missing_credentials",
+      "attempts": [],
+      "estimated_cost_usd": 0.245,
+      "actual_cost_usd": null
+    }
+  ]
+}
