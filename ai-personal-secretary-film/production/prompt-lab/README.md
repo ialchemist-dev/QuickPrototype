@@ -15,3 +15,7 @@ Compared with the rejected video prompt:
 Next gate: owner selects/adjusts a casting direction. Still generation requires a concrete provider and price within an explicitly approved scope. No image-generation provider is currently authorized by this trial. After a portrait is approved, verify a suitable I2V endpoint and its pricing before motion generation. The existing text-to-video endpoint cannot bind this proposed reference.
 
 Quality evaluation remains pending. Text-only compilation cannot validate face consistency, anatomy, beauty, or video quality. No paid calls were made.
+
+## Selected direction
+
+On 2026-10-20 the owner selected A — Warm romantic lead. Use the adult 28-year-old character, long dark loose waves, soft oval features, peach-toned makeup and relaxed smile. The face reference remains unselected. No new generation or spending occurred when recording this choice.
