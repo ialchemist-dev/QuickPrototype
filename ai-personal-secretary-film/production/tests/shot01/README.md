@@ -39,3 +39,7 @@ Both clips downloaded successfully: H.264, 1920x1088, 24 fps, 5.041667 seconds e
 Run `python3 scripts/fal_usage.py --start 2026-10-18` from the project directory. The command loads the local key without printing it, queries the official usage API for this Seedance endpoint and follows pagination. The API reports estimated usage, not a finalized invoice. Documentation: https://fal.ai/docs/platform-apis/v1/models/usage
 
 Live test on 2026-10-19 returned HTTP 403: the configured generation key does not have the billing permissions required by this endpoint. A BILLING preset key is sufficient; FULL access is unnecessary. No generation requests are made by this command.
+
+## Sound version
+
+Run `python3 scripts/score_shot01.py` to recreate the deterministic original procedural room tone, cloth, foot contact and utensil/ceramic Foley. Output: production/exports/shot01-with-sound-1080p.mp4. No paid audio generation, external recordings, voice or music. Technical checks passed; full listening review remains pending. Owner reported total generation spend of $0.45 on 2026-10-19; no per-clip billing allocation inferred.
