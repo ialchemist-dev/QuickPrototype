@@ -1,6 +1,6 @@
 # Character and voice test — preparation
 
-Status: proposed; no new image, video or TTS call submitted.
+Status: owner approved revised test within USD 2 total including USD 0.45 prior spend, with USD 0.05 TTS cap on 2026-10-19. One Seedance video generated; no TTS call submitted because OPENAI_API_KEY remains missing.
 
 Character: fictional adult East Asian woman, 28, attractive and approachable; shoulder-length dark hair, brown eyes, natural skin texture, understated makeup, cream cotton pajama set. The film remains AI-generated; this is a photorealistic character, not footage of a hired human actor. Lock an approved reference before producing the full scene.
 
@@ -13,3 +13,9 @@ The current local synthesized Foley remains provisional. TTS creates speech; it 
 Credential check: OPENAI_API_KEY was absent from the process environment and project .env.local on 2026-10-19. Existing fal key must be preserved when adding it. Proposed TTS provider/model requires a scoped budget approval under the owner's standing spending rule. Existing $2 approval was for the original Seedance opening test only; do not silently expand to other models or services.
 
 Sources checked: https://developers.openai.com/api/docs/guides/text-to-speech and https://developers.openai.com/api/docs/models/gpt-4o-mini-tts . The guide supports the speech model and tone instructions; the model catalog also displays deprecation labeling, so recheck endpoint availability before any paid request and never silently substitute another model.
+
+## Execution
+
+`python3 scripts/character_test.py resume` resumes the existing video job without regenerating. The silent five-second preview is production/exports/character-v1-preview-1080p.mp4. Partial extra person at the left edge removed via local crop, scaled back to 1080p. Three sampled frames reviewed; not a full playback review. No reference image has been generated; character remains a candidate for approval.
+
+`python3 scripts/set_openai_key.py` securely configures the missing key. `python3 scripts/character_voice.py dry-run` validates the speech request without payment. Once configured, `generate` performs one approved request with durable intent; it refuses duplicate attempts. Default proposed line: Morning. What's on my list today? No automatic retries. Mix and lip-sync have not been performed.

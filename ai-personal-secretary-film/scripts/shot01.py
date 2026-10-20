@@ -7,10 +7,10 @@ PLAN = PROD/'tests/shot01/plan.json'
 STATE = PROD/'private/shot01-state.json'
 MODEL = 'fal-ai/bytedance/seedance/v1/pro/fast/text-to-video'
 
-def payload_for(plan, shot):
+def payload_for(plan, shot, directory=None):
     if plan['model'] != MODEL or plan['approval']['max_generation_usd'] != 2:
         raise Blocked('Approval mismatch')
-    path = PLAN.parent/shot['request_file']
+    path = (directory or PLAN.parent)/shot['request_file']
     if sha(path.read_bytes()) != shot['request_sha256']:
         raise Blocked('Request changed')
     payload = read(path)
@@ -18,11 +18,11 @@ def payload_for(plan, shot):
         raise Blocked('Unapproved settings')
     return payload
 
-def submit(plan, state, shot, key, transport=http, save=None):
-    payload = payload_for(plan, shot)
+def submit(plan, state, shot, key, transport=http, save=None, request_directory=None):
+    payload = payload_for(plan, shot, request_directory)
     if shot.get('attempts'):
         raise Blocked('Existing attempt; resume or reconcile, never blindly retry')
-    reserved = sum(a['reserved_usd'] for s in state['shots'] for a in s['attempts'])
+    reserved = state.get('prior_spend_usd', 0) + state.get('other_reserved_usd', 0) + sum(a['reserved_usd'] for s in state['shots'] for a in s['attempts'])
     if reserved + 0.30 > 2:
         raise Blocked('Budget exceeded')
     if not key:
