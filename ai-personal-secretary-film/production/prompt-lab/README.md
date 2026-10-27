@@ -19,3 +19,7 @@ Quality evaluation remains pending. Text-only compilation cannot validate face c
 ## Selected direction
 
 On 2026-10-20 the owner selected A — Warm romantic lead. Use the adult 28-year-old character, long dark loose waves, soft oval features, peach-toned makeup and relaxed smile. The face reference remains unselected. No new generation or spending occurred when recording this choice.
+
+## Approved portrait — 2026-10-26
+
+Owner selected A1, the left portrait in production/references/casting/warm-romantic-a1-a3-v1.png. Treat only that panel as the identity reference. The casting board supersedes the earlier no-image/no-selection status. Do not feed the full three-person board to a motion model as if all three were cast. Preserve the selected face, dark wavy hair and warm natural styling. No additional generation was performed when recording this selection.
