@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-24T22:31:14+00:00",
-  "expansions_done": 2,
-  "raw_candidates_seen": 185,
+  "updated_at": "2026-11-24T22:41:13+00:00",
+  "expansions_done": 3,
+  "raw_candidates_seen": 278,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -1056,6 +1056,444 @@
     "name": "Meta-SGD",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-24T22:30:57+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Scratchpads",
+    "reason": "mediated_via: Chain-of-thought prompting",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Chain-of-thought prompting"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Large-scale pretraining (GPT-3)",
+    "reason": "mediated_via: In-context learning",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "In-context learning"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Codex code generation model",
+    "reason": "mediated_via: Large-scale pretraining (GPT-3)",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Large-scale pretraining (GPT-3)"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Instruction tuning (FLAN)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Hosted LLM APIs (OpenAI API)",
+    "reason": "mediated_via: In-context learning",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "In-context learning"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "WebGPT",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "GPT-2",
+    "reason": "mediated_via: Large-scale pretraining (GPT-3)",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Large-scale pretraining (GPT-3)"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Transformer architecture",
+    "reason": "mediated_via: Large-scale pretraining (GPT-3)",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Large-scale pretraining (GPT-3)"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Backpropagation",
+    "reason": "mediated_via: Large-scale pretraining (GPT-3)",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Large-scale pretraining (GPT-3)"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "BERT",
+    "reason": "mediated_via: Transformer architecture",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Transformer architecture"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Sequence-to-sequence learning",
+    "reason": "mediated_via: Transformer architecture",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Transformer architecture"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Bahdanau attention",
+    "reason": "mediated_via: Transformer architecture",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Transformer architecture"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "LSTM",
+    "reason": "mediated_via: Transformer architecture",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Transformer architecture"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Word2vec",
+    "reason": "mediated_via: Large-scale pretraining (GPT-3)",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Large-scale pretraining (GPT-3)"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "T5 text-to-text framework",
+    "reason": "mediated_via: Large-scale pretraining (GPT-3)",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Large-scale pretraining (GPT-3)"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "MetaICL",
+    "reason": "mediated_via: In-context learning",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "In-context learning"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Natural Instructions",
+    "reason": "mediated_via: Instruction tuning (FLAN)",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Instruction tuning (FLAN)"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Self-talk",
+    "reason": "mediated_via: Chain-of-thought prompting",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "Chain-of-thought prompting"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "TextWorld",
+    "reason": "mediated_via: ALFWorld",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "ALFWorld"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "AI2-THOR",
+    "reason": "mediated_via: ALFWorld",
+    "at": "2026-11-24T22:40:48+00:00",
+    "mediated_via": "ALFWorld"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Gopher",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Retrieval-augmented generation",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Dense passage retrieval",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "REALM",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "ColBERT",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Sentence-BERT",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Decision Transformer",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Trajectory Transformer",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Prompt tuning",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Prefix-tuning",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "PromptSource",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "UnifiedQA",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "LoRA",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "ALFWorld",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "HotpotQA",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "FEVER",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "SQuAD",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Natural Questions",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "TriviaQA",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "BabyAI",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "VirtualHome",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "STRIPS planning",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Shakey the Robot",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "A* search",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "General Problem Solver",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "SOAR cognitive architecture",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "BDI architecture",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Subsumption architecture",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "ACT-R",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "SHRDLU",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "PDDL",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Graphplan",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Blackboard architecture",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "ELIZA",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Behavior trees",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Procedural Reasoning System",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Deep Q-Network (DQN)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "AlphaGo",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Monte Carlo tree search",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Q-learning",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "DAgger imitation learning",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Behavior cloning",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Options framework (hierarchical RL)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Dyna architecture",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Wolfram Alpha",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Siri",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "MediaWiki API",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "SPARQL and the Semantic Web",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "OpenIE",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
+   },
+   {
+    "parent_id": "react-2022",
+    "name": "Rasa open-source dialogue framework",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-24T22:40:48+00:00"
    }
   ]
  },
@@ -1099,12 +1537,16 @@
     {
      "title": "AI Paper Review: Training Language Models to Follow Instructions with Human Feedback",
      "url": "https://www.freecodecamp.org/news/ai-paper-review-training-language-models-to-follow-instructions-with-human-feedback-instructgpt/"
+    },
+    {
+     "title": "Language Models are Few-Shot Learners",
+     "url": "https://arxiv.org/abs/2005.14165"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Q1 attack partially lands: few-shot conditioning existed weakly in GPT-2; the flip is one of degree at scale. Mediation attack considered 'Large-scale pretraining (GPT-3)' as mediator - rejected: the capability is exercised directly by every agent mechanism (prompts, exemplars, tool specs) and is conceptually distinct from the training run that produced it. Multiples: no independent simultaneous demonstration at useful strength. Stays provisional on the Q1 degree-not-kind challenge.",
-    "at": "2026-11-24T22:21:43+00:00"
+    "notes": "ReAct-edge verification (this node was created and verified at the root expansion; this pass attacks the new ICL->ReAct edge and leaves the node provisional). Multiples test on Q3: MetaICL (2021) meta-trained models for in-context learning, but it enhances the same single discovery rather than independently duplicating it - GPT-3's 2020 demonstration remains singular, so necessity survives as 'partial/ripe'. Q1 attack partially lands: fine-tuned systems (WebGPT) could already act before ICL was applied to acting; the flip recorded here is narrower - behavior elicited with zero training, which is exactly ReAct's premise - so the edge stands. Date/direction verified (ICL demonstrated May 2020; ReAct Oct 2022; ReAct's method section is exemplar-only). Mediation attack via chain-of-thought prompting FAILS: CoT supplies trace content, but ReAct's action exemplars are ICL in its original form and the thought exemplars ride on the same exemplar mechanism - CoT is a component layered on ICL, not a channel replacing it. Mediation attack via the GPT-3 artifact partially lands conceptually (ICL is GPT-3's demonstrated capability, same paper), but the graph deliberately separates the capability node (ICL) from the artifact node (large-scale pretraining); ReAct consumes the capability, so the edge is correctly aimed and stays. Convergence recorded: ICL now has in-degree 2 (the modern AI agent, ReAct).",
+    "at": "2026-11-24T22:41:13+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-24T22:21:05+00:00"
@@ -1122,7 +1564,7 @@
    "prior_state": "CoT reasoned blind (hallucination, error propagation); act-only policies could not plan or recover.",
    "status": "provisional",
    "depth": 1,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.0,
    "sources": [
     {
@@ -2727,6 +3169,103 @@
     "counterfactual": "Remove GPT-2's zero-shot demonstration and GPT-3's few-shot result loses its direct empirical precedent: the 2019 paper showed conditioning elicits tasks and that the effect grows log-linearly with size - exactly the bet GPT-3 scaled. No milestone sits between GPT-2 and the GPT-3 demonstration except GPT-3 itself.",
     "mediator": null,
     "evidence": "Radford et al. 2019: zero-shot SOTA on 7 of 8 LM benchmarks; CoQA 55 F1 with no task training; 'capacity is essential... improves in a log-linear fashion'."
+   }
+  },
+  {
+   "predecessor_id": "in-context-learning-2020",
+   "successor_id": "react-2022",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Tasks and behaviors previously requiring task-specific training (including acting in text environments) were elicited by conditioning alone.",
+     "source": "Brown et al. 2020; Yao et al. 2022",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Founded the prompting paradigm: an open space of prompt-specified behaviors, of which ReAct's loop is one instance.",
+     "source": "Brown et al. 2020",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The exemplar mechanism was demonstrated singularly by GPT-3 in 2020; no second group had shown it at that scale, though it later became universal.",
+     "source": "Brown et al. 2020",
+     "falsification": "This partial dies if the claimed contribution proves thinner than stated."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "New behavior at zero training cost: a text edit replaces a training run, orders of magnitude cheaper per new task.",
+     "source": "Yao et al. 2022 (1-2 exemplars)",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Prompt behavior is inspectable as text, but what the model 'understood' from exemplars stayed unobservable in 2020.",
+     "source": "",
+     "falsification": "This partial dies if the claimed contribution proves thinner than stated."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Conditioning-as-specification was demonstrated empirically; a mechanistic account of why it works came later and remains incomplete.",
+     "source": "",
+     "falsification": "This partial dies if the claimed contribution proves thinner than stated."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The prompt became a standard interface: behaviors compose as text, reusable across models exposing the same completion API.",
+     "source": "OpenAI API 2020",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The same mechanism serves QA, translation, code, games, and acting - cross-domain by construction.",
+     "source": "Brown et al. 2020",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Iteration collapsed to editing exemplars and re-running: seconds per experiment instead of a training cycle.",
+     "source": "Yao et al. 2022",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Prompting displaced fine-tuning as the default first move for new LLM behaviors in 2020-22 research practice.",
+     "source": "Brown et al. 2020",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk node: every prompting method of 2021-23, ReAct included, descends from this demonstration.",
+     "source": "Brown et al. 2020",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once behavior-by-conditioning existed, model development permanently reorganized around it; no path back to train-per-task as the default.",
+     "source": "Brown et al. 2020",
+     "falsification": ""
+    }
+   },
+   "score": 8.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-24T22:40:48+00:00",
+   "leap": {
+    "prior_state": "CoT reasoned blind (hallucination, error propagation); act-only policies could not plan or recover.",
+    "jump": "ReAct (Oct 2022) interleaved thought, action, and observation in a single prompted loop; with 1-2 exemplars it beat imitation/RL baselines by 34 points on ALFWorld and 10 on WebShop.",
+    "date": 2022
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove in-context learning and ReAct has no delivery mechanism at all: the method consists of 1-2 hand-written exemplars in a prompt, with no fine-tuned variant. CoT supplies the trace content, but ReAct's action exemplars are ICL in its original 2020 form - the capability is consumed directly in every prompt ReAct runs, not only through CoT.",
+    "mediator": null,
+    "evidence": "ReAct paper (Yao et al. 2022), method section: the agent is specified entirely by few-shot exemplars interleaving thought, action, and observation; no parameters are trained."
    }
   }
  ],
@@ -10633,6 +11172,2915 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "react-2022": {
+   "raw_candidates": [
+    {
+     "name": "Chain-of-thought prompting",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "differentiating move",
+     "causal_claim": "CoT showed elicited reasoning traces dramatically raise LLM task accuracy; ReAct's thought actions are CoT traces interleaved with environment actions.",
+     "definition": "Prompting technique (Wei et al., 2022) in which few-shot exemplars contain step-by-step reasoning, eliciting intermediate reasoning from an LLM before its answer.",
+     "source_title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+     "source_url": "https://arxiv.org/abs/2201.11903"
+    },
+    {
+     "name": "In-context learning",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "differentiating move",
+     "causal_claim": "ReAct is delivered entirely as few-shot in-context exemplars: the thought-action-observation format exists only as prompt conditioning, the capability ICL established.",
+     "definition": "The ability of a pretrained LM (demonstrated at scale by GPT-3, 2020) to perform a new task from examples and instructions in its prompt, with no parameter updates.",
+     "source_title": "Language Models are Few-Shot Learners",
+     "source_url": "https://arxiv.org/abs/2005.14165"
+    },
+    {
+     "name": "Scratchpads",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "Scratchpads showed models compute better when allowed to emit intermediate steps into a buffer; ReAct's thought stream is a scratchpad interleaved with actions.",
+     "definition": "Technique (Nye et al., 2021) training/prompting models to write intermediate computation into a 'scratchpad' before answering, improving multi-step arithmetic and code execution prediction.",
+     "source_title": "Show Your Work: Scratchpads for Intermediate Computation with Language Models",
+     "source_url": "https://arxiv.org/abs/2111.03047"
+    },
+    {
+     "name": "Least-to-most prompting",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "differentiating move",
+     "causal_claim": "Least-to-most decomposed hard problems into sequenced subproblems shortly before ReAct; a sibling prompting strategy for multi-step reasoning.",
+     "definition": "Prompting strategy (Zhou et al., 2022) that decomposes a problem into subproblems solved in sequence, each answer feeding the next prompt.",
+     "source_title": "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models",
+     "source_url": "https://arxiv.org/abs/2205.10625"
+    },
+    {
+     "name": "Self-consistency",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "Self-consistency improved CoT by sampling and marginalizing over reasoning paths; a decoding-side sibling of ReAct's single-trajectory loop.",
+     "definition": "Decoding strategy (Wang et al., 2022) sampling multiple CoT reasoning paths and taking the majority answer, substantially raising reasoning benchmark scores.",
+     "source_title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+     "source_url": "https://arxiv.org/abs/2203.11171"
+    },
+    {
+     "name": "STaR: Self-Taught Reasoner",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "STaR bootstrapped rationale generation from few exemplars, showing reasoning traces could be elicited and improved without large rationale datasets.",
+     "definition": "Bootstrapping method (Zelikman et al., 2022) in which a model generates rationales for problems, keeps those reaching correct answers, and fine-tunes on them.",
+     "source_title": "STaR: Bootstrapping Reasoning With Reasoning",
+     "source_url": "https://arxiv.org/abs/2203.14465"
+    },
+    {
+     "name": "Zero-shot chain-of-thought",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "differentiating move",
+     "causal_claim": "'Let's think step by step' showed reasoning traces could be elicited with no exemplars at all, sharpening the reasoning/acting contrast ReAct built on.",
+     "definition": "Finding (Kojima et al., 2022) that appending 'Let's think step by step' elicits reasoning traces from LLMs zero-shot, large gains on reasoning tasks.",
+     "source_title": "Large Language Models are Zero-Shot Reasoners",
+     "source_url": "https://arxiv.org/abs/2205.11916"
+    },
+    {
+     "name": "Selection-inference",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "Selection-inference decomposed reasoning into LLM selection and inference steps over facts, a modular sibling of ReAct's interleaving.",
+     "definition": "Framework (Creswell et al., 2022) alternating an LLM selection module (pick relevant facts) and inference module (derive one step), for faithful multi-step reasoning.",
+     "source_title": "Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning",
+     "source_url": "https://arxiv.org/abs/2205.09712"
+    },
+    {
+     "name": "Decomposed prompting",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "Decomposed prompting split complex tasks into sub-tasks routed to specialized LLM calls, a modular sibling architecture to ReAct's loop.",
+     "definition": "Approach (Khot et al., 2022) decomposing a complex task into sub-tasks, each handled by an LLM prompt or handler, composed by a controller.",
+     "source_title": "Decomposed Prompting: A Modular Approach for Solving Complex Tasks",
+     "source_url": "https://arxiv.org/abs/2210.02406"
+    },
+    {
+     "name": "Automatic prompt engineering",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "APE automated the search for effective instructions, part of the 2022 prompting-methods wave surrounding ReAct.",
+     "definition": "Method (Zhou et al., 2022) using an LLM to propose and select natural-language instructions automatically, matching human prompt engineering.",
+     "source_title": "Large Language Models Are Human-Level Prompt Engineers",
+     "source_url": "https://arxiv.org/abs/2211.01910"
+    },
+    {
+     "name": "Large-scale pretraining (GPT-3)",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "ReAct's experiments prompt GPT-3 and PaLM; the pretrained model is the substrate whose in-context behavior the ReAct format steers.",
+     "definition": "175B-parameter autoregressive LM (Brown et al., 2020) whose few-shot in-context performance made prompt-based task specification practical at scale.",
+     "source_title": "Language Models are Few-Shot Learners",
+     "source_url": "https://arxiv.org/abs/2005.14165"
+    },
+    {
+     "name": "PaLM",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "PaLM-540B was ReAct's strongest base model; its scale supplied the emergent reasoning ReAct's exemplars elicited.",
+     "definition": "540B dense decoder LM (Chowdhery et al., 2022) trained with Pathways, showing strong emergent reasoning and few-shot performance.",
+     "source_title": "PaLM: Scaling Language Modeling with Pathways",
+     "source_url": "https://arxiv.org/abs/2204.02311"
+    },
+    {
+     "name": "Codex code generation model",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "ReAct's GPT-3 experiments used the davinci-series API models descended from the GPT-3/Codex line; Codex showed prompted models executing structured action-like outputs.",
+     "definition": "GPT-3 fine-tuned on public code (Chen et al., 2021); powered GitHub Copilot and scored 28.8% on HumanEval, showing prompted models producing executable structured output.",
+     "source_title": "Evaluating Large Language Models Trained on Code",
+     "source_url": "https://arxiv.org/abs/2107.03374"
+    },
+    {
+     "name": "Instruction tuning (FLAN)",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "first-order components",
+     "causal_claim": "FLAN showed instruction-formatted multitask tuning unlocks zero-shot task following; ReAct instead used base models, but FLAN defined the instruction-following contrast class.",
+     "definition": "Fine-tuning a 137B LM on 60+ datasets phrased as instructions (Wei et al., 2021), yielding large zero-shot gains on unseen task types.",
+     "source_title": "Finetuned Language Models Are Zero-Shot Learners",
+     "source_url": "https://arxiv.org/abs/2109.01652"
+    },
+    {
+     "name": "Hosted LLM APIs (OpenAI API)",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "ReAct was run through hosted API access to GPT-3-class models; API serving made prompt-loop experiments a commodity.",
+     "definition": "Commercial API access to GPT-3 (June 2020), which turned large-model prompting into an on-demand service any researcher could loop over.",
+     "source_title": "OpenAI API announcement",
+     "source_url": "https://openai.com/blog/openai-api"
+    },
+    {
+     "name": "LaMDA",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "LaMDA demonstrated dialog-tuned LLMs at scale in early 2022, part of the model wave ReAct drew on; not used in ReAct's experiments.",
+     "definition": "Dialog-specialized LLM family (Thoppilan et al., 2022) fine-tuned for grounded, sensible conversation.",
+     "source_title": "LaMDA: Language Models for Dialog Applications",
+     "source_url": "https://arxiv.org/abs/2201.08239"
+    },
+    {
+     "name": "Chinchilla",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "Chinchilla reset the compute-optimal scaling recipe in 2022; a scaling-law sibling result, not an input to ReAct's method.",
+     "definition": "70B LM (Hoffmann et al., 2022) establishing compute-optimal parameter/token balance, outperforming much larger models.",
+     "source_title": "Training Compute-Optimal Large Language Models",
+     "source_url": "https://arxiv.org/abs/2203.15556"
+    },
+    {
+     "name": "Gopher",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "Gopher was a 280B contemporary of the models ReAct used, documenting emergent few-shot abilities at scale.",
+     "definition": "280B LM (Rae et al., 2021) from DeepMind with extensive analysis of scale-driven capability gains and risks.",
+     "source_title": "Scaling Language Models: Methods, Analysis & Insights from Training Gopher",
+     "source_url": "https://arxiv.org/abs/2112.11446"
+    },
+    {
+     "name": "T5 text-to-text framework",
+     "year": 2019,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "T5 unified tasks as text-to-text, an ancestor of the prompt-as-interface idea ReAct exploits; ReAct used decoder LMs, not T5.",
+     "definition": "Transfer-learning framework (Raffel et al., 2019) casting every NLP task as text-in/text-out, with an 11B encoder-decoder model.",
+     "source_title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+     "source_url": "https://arxiv.org/abs/1910.10683"
+    },
+    {
+     "name": "BERT",
+     "year": 2018,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "BERT established the pretrain-then-adapt paradigm ReAct inherited, but ReAct's generative prompting bypassed encoder fine-tuning entirely.",
+     "definition": "Bidirectionally pretrained encoder (Devlin et al., 2018) whose fine-tuned representations reset NLP benchmarks.",
+     "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+     "source_url": "https://arxiv.org/abs/1810.04805"
+    },
+    {
+     "name": "GPT-2",
+     "year": 2019,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "GPT-2 first showed conditioning alone elicits tasks zero-shot, the direct empirical precedent for the prompting substrate ReAct builds on.",
+     "definition": "1.5B LM (Radford et al., 2019) demonstrating zero-shot task transfer by text conditioning, improving log-linearly with scale.",
+     "source_title": "Language Models are Unsupervised Multitask Learners",
+     "source_url": "https://openai.com/blog/better-language-models/"
+    },
+    {
+     "name": "SayCan",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "immediate prior state of the art",
+     "causal_claim": "SayCan grounded LLM plans in robot affordances months before ReAct; the leading sibling approach to LLM acting, compared against ReAct's setting.",
+     "definition": "System (Ahn et al., 2022) pairing an LLM's task knowledge ('Say') with learned affordance values ('Can') to ground plans for a mobile manipulator.",
+     "source_title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+     "source_url": "https://arxiv.org/abs/2204.01691"
+    },
+    {
+     "name": "Inner Monologue",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "immediate prior state of the art",
+     "causal_claim": "Inner Monologue fed environment feedback back into an LLM planner in text form, the closest contemporaneous sibling to ReAct's observation loop.",
+     "definition": "Framework (Huang et al., 2022) giving an LLM planner textual environment feedback (success detection, scene description) for closed-loop robotic planning.",
+     "source_title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+     "source_url": "https://arxiv.org/abs/2207.05608"
+    },
+    {
+     "name": "MRKL systems",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "immediate prior state of the art",
+     "causal_claim": "MRKL routed LLM calls to external tools and knowledge sources months before ReAct; the verifier already flagged it as ReAct's near-simultaneous multiple.",
+     "definition": "Neuro-symbolic architecture (Karpas et al., 2022) in which an LLM router dispatches to expert modules: calculators, APIs, knowledge bases.",
+     "source_title": "MRKL Systems: A modular, neuro-symbolic architecture that combines large language models, external knowledge sources and discrete reasoning",
+     "source_url": "https://arxiv.org/abs/2205.00445"
+    },
+    {
+     "name": "Language models as zero-shot planners",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "immediate prior state of the art",
+     "causal_claim": "Huang et al. showed LLMs could decompose embodied tasks into executable steps zero-shot, defining the act-only baseline ReAct's reasoning was measured against.",
+     "definition": "Method (Huang et al., 2022) translating LLM-generated high-level plans into admissible embodied actions via sentence-embedding matching.",
+     "source_title": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
+     "source_url": "https://arxiv.org/abs/2201.07207"
+    },
+    {
+     "name": "WebGPT",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "direct transfers",
+     "causal_claim": "WebGPT fine-tuned GPT-3 to browse the web with search and citation actions, an early demonstration of an LLM operating a tool interface in a loop.",
+     "definition": "System (Nakano et al., 2021) fine-tuning GPT-3 to use a text-based browser (search, click, scroll) and answer questions with citations, preferred over humans on ELI5.",
+     "source_title": "WebGPT: Browser-assisted question-answering with human feedback",
+     "source_url": "https://arxiv.org/abs/2112.09332"
+    },
+    {
+     "name": "ProgPrompt",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "immediate prior state of the art",
+     "causal_claim": "ProgPrompt generated program-like robot plans with assertion-based recovery, a code-as-policy sibling of ReAct's loop.",
+     "definition": "Method (Singh et al., 2022) prompting LLMs to emit Pythonic robot action programs with assertions enabling environment feedback and recovery.",
+     "source_title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+     "source_url": "https://arxiv.org/abs/2209.11302"
+    },
+    {
+     "name": "Gato",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "immediate prior state of the art",
+     "causal_claim": "Gato showed a single transformer acting across embodiments and modalities in 2022; a generalist-agent sibling, not an input to ReAct.",
+     "definition": "Multi-modal, multi-task agent (Reed et al., 2022): one 1.2B transformer playing Atari, captioning images, and controlling a robot arm.",
+     "source_title": "A Generalist Agent",
+     "source_url": "https://arxiv.org/abs/2205.06175"
+    },
+    {
+     "name": "Decision Transformer",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "direct transfers",
+     "causal_claim": "Decision Transformer reframed RL as sequence modeling over trajectories, part of the transformer-meets-acting wave; ReAct's acting is prompt-based, not return-conditioned.",
+     "definition": "Method (Chen et al., 2021) casting offline RL as conditional sequence modeling, generating actions from desired returns and past trajectories.",
+     "source_title": "Decision Transformer: Reinforcement Learning via Sequence Modeling",
+     "source_url": "https://arxiv.org/abs/2106.01345"
+    },
+    {
+     "name": "Trajectory Transformer",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "direct transfers",
+     "causal_claim": "Trajectory Transformer modeled offline RL trajectories for planning by beam search; a sequence-modeling sibling with no channel into ReAct.",
+     "definition": "Method (Janner et al., 2021) modeling distributions over trajectories with a transformer and planning via beam search.",
+     "source_title": "Offline Reinforcement Learning as One Big Sequence Modeling Problem",
+     "source_url": "https://arxiv.org/abs/2106.02039"
+    },
+    {
+     "name": "Retrieval-augmented generation",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "first-order components",
+     "causal_claim": "RAG coupled an LM to a retriever for knowledge tasks; ReAct's Wikipedia actions generalize that retrieve-then-reason pattern into an interactive loop.",
+     "definition": "Architecture (Lewis et al., 2020) combining a pretrained retriever with a generator, state of the art on open-domain QA at introduction.",
+     "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+     "source_url": "https://arxiv.org/abs/2005.11401"
+    },
+    {
+     "name": "Dense passage retrieval",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "infrastructure at hand",
+     "causal_claim": "DPR made neural retrieval the default knowledge-access layer for QA systems of ReAct's era; ReAct used the Wikipedia API's own search instead.",
+     "definition": "Dual-encoder retriever (Karpukhin et al., 2020) outperforming BM25 by wide margins on open-domain QA retrieval.",
+     "source_title": "Dense Passage Retrieval for Open-Domain Question Answering",
+     "source_url": "https://arxiv.org/abs/2004.04906"
+    },
+    {
+     "name": "REALM",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "REALM pretrained with retrieval in the loop, an ancestor of retrieve-while-reasoning; ReAct's retrieval happens at inference via actions, not in pretraining.",
+     "definition": "Pretraining framework (Guu et al., 2020) augmenting an LM with a neural retriever trained end-to-end on a Wikipedia corpus.",
+     "source_title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+     "source_url": "https://arxiv.org/abs/2002.08909"
+    },
+    {
+     "name": "ALFWorld",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "benchmarks and measurement",
+     "causal_claim": "ALFWorld was one of ReAct's two headline testbeds (+34 over baselines); its text-game alignment of embodied tasks made the acting loop measurable.",
+     "definition": "Benchmark (Shridhar et al., 2020) aligning the ALFRED embodied instruction dataset with interactive text games, enabling text-agent evaluation of embodied tasks.",
+     "source_title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+     "source_url": "https://arxiv.org/abs/2010.03768"
+    },
+    {
+     "name": "WebShop",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "benchmarks and measurement",
+     "causal_claim": "WebShop was ReAct's second headline testbed (+10); a coeval benchmark, built independently of the method.",
+     "definition": "Simulated e-commerce environment (Yao et al., 2022) with 1.18M products and 12k instructions for evaluating web-shopping agents.",
+     "source_title": "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents",
+     "source_url": "https://arxiv.org/abs/2207.01206"
+    },
+    {
+     "name": "HotpotQA",
+     "year": 2018,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "benchmarks and measurement",
+     "causal_claim": "HotpotQA was ReAct's multi-hop QA testbed, where its Wikipedia search actions were exercised; the benchmark predates and did not shape the method.",
+     "definition": "Dataset (Yang et al., 2018) of 113k multi-hop questions requiring reasoning over multiple Wikipedia paragraphs, with supporting-fact annotations.",
+     "source_title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+     "source_url": "https://arxiv.org/abs/1809.09600"
+    },
+    {
+     "name": "FEVER",
+     "year": 2018,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "benchmarks and measurement",
+     "causal_claim": "FEVER was ReAct's fact-verification testbed; its retrieve-and-verify task shape matches ReAct's action set but predates the method by four years.",
+     "definition": "Dataset (Thorne et al., 2018) of 185k claims labeled Supported/Refuted/NotEnoughInfo against Wikipedia evidence.",
+     "source_title": "FEVER: a large-scale dataset for Fact Extraction and VERification",
+     "source_url": "https://arxiv.org/abs/1803.05355"
+    },
+    {
+     "name": "TextWorld",
+     "year": 2018,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "TextWorld made text-game agent research a commodity platform; ALFWorld's design descends from it, so its channel to ReAct runs through ALFWorld.",
+     "definition": "Microsoft learning environment (Cote et al., 2018) for generating and solving text-based games, used to train and evaluate RL language agents.",
+     "source_title": "TextWorld: A Learning Environment for Training Reinforcement Learning Agents, Inspired by Text-based Games",
+     "source_url": "https://arxiv.org/abs/1806.11532"
+    },
+    {
+     "name": "BabyAI",
+     "year": 2018,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "BabyAI studied grounded instruction following in grid worlds; part of the embodied-instruction lineage, with no channel into ReAct's prompting method.",
+     "definition": "Platform (Chevalier-Boisvert et al., 2018) for sample-efficient grounded language learning in a procedurally generated grid world.",
+     "source_title": "BabyAI: A Platform to Study the Sample Efficiency of Grounded Language Learning",
+     "source_url": "https://arxiv.org/abs/1810.08272"
+    },
+    {
+     "name": "AI2-THOR",
+     "year": 2017,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "AI2-THOR supplied the simulated rooms ALFRED/ALFWorld were built in; two steps removed from ReAct's text interface.",
+     "definition": "Interactive 3D environment framework (Kolve et al., 2017) of simulated indoor scenes for embodied AI research.",
+     "source_title": "AI2-THOR: An Interactive 3D Environment for Visual AI",
+     "source_url": "https://arxiv.org/abs/1712.05474"
+    },
+    {
+     "name": "VirtualHome",
+     "year": 2018,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "VirtualHome represented household activities as programs, an ancestor of program-style action plans; no channel into ReAct.",
+     "definition": "Simulator (Puig et al., 2018) representing household activities as executable program graphs for activity understanding and planning.",
+     "source_title": "VirtualHome: Simulating Household Activities via Programs",
+     "source_url": "https://arxiv.org/abs/1806.07011"
+    },
+    {
+     "name": "ScienceWorld",
+     "year": 2022,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "benchmarks and measurement",
+     "causal_claim": "ScienceWorld evaluated text agents on science experiments in 2022; a coeval sibling benchmark to ReAct's testbeds.",
+     "definition": "Benchmark (Wang et al., 2022) of 30 science-experiment tasks in a text-simulated environment for interactive agents.",
+     "source_title": "ScienceWorld: Is your Agent Smarter than a 5th Grader?",
+     "source_url": "https://arxiv.org/abs/2203.07540"
+    },
+    {
+     "name": "SQuAD",
+     "year": 2016,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "benchmarks and measurement",
+     "causal_claim": "SQuAD defined extractive reading comprehension as the canonical QA task; ReAct's open-domain QA setting descends from this task lineage at several removes.",
+     "definition": "Reading-comprehension dataset (Rajpurkar et al., 2016) of 100k questions over Wikipedia paragraphs, which industrialized extractive QA evaluation.",
+     "source_title": "SQuAD: 100,000+ Questions for Machine Comprehension of Text",
+     "source_url": "https://arxiv.org/abs/1606.05250"
+    },
+    {
+     "name": "Natural Questions",
+     "year": 2019,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "benchmarks and measurement",
+     "causal_claim": "Natural Questions anchored open-domain QA evaluation on real search queries; part of the QA task lineage, not an input to ReAct's method.",
+     "definition": "Dataset (Kwiatkowski et al., 2019) of real anonymized Google queries with Wikipedia answers, standardizing open-domain QA.",
+     "source_title": "Natural Questions: A Benchmark for Question Answering Research",
+     "source_url": "https://research.google/pubs/pub47761/"
+    },
+    {
+     "name": "TriviaQA",
+     "year": 2017,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "benchmarks and measurement",
+     "causal_claim": "TriviaQA scaled evidence-based QA with distant supervision; an evaluation-lineage ancestor with no method channel into ReAct.",
+     "definition": "Dataset (Joshi et al., 2017) of 650k question-answer-evidence triples for reading comprehension over web and Wikipedia evidence.",
+     "source_title": "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+     "source_url": "https://arxiv.org/abs/1705.03551"
+    },
+    {
+     "name": "STRIPS planning",
+     "year": 1971,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "STRIPS formalized action preconditions/effects that 'action' still echoes in agent loops; ReAct consumed no planner formalism - the lineage is conceptual only.",
+     "definition": "Automated planner (Fikes & Nilsson, 1971) representing actions by preconditions and add/delete lists, the template for classical planning.",
+     "source_title": "STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving",
+     "source_url": "https://en.wikipedia.org/wiki/STRIPS"
+    },
+    {
+     "name": "Shakey the Robot",
+     "year": 1969,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "Shakey was the first integrated sense-plan-act robot, the archetype ReAct's loop unknowingly recapitulates; no technical channel connects them.",
+     "definition": "SRI robot (1966-72) integrating perception, STRIPS planning, and action execution - the first general-purpose mobile robot agent.",
+     "source_title": "Shakey the Robot",
+     "source_url": "https://en.wikipedia.org/wiki/Shakey_the_Robot"
+    },
+    {
+     "name": "A* search",
+     "year": 1968,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "A* made heuristic search the default planning subroutine of classical agents; ReAct performs no graph search.",
+     "definition": "Graph search algorithm (Hart, Nilsson & Raphael, 1968) guaranteeing optimal paths with an admissible heuristic.",
+     "source_title": "A* search algorithm",
+     "source_url": "https://en.wikipedia.org/wiki/A*_search_algorithm"
+    },
+    {
+     "name": "General Problem Solver",
+     "year": 1957,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "GPS introduced means-ends analysis, the ur-form of reason-then-act; a 65-year conceptual ancestor with no consumed channel into ReAct.",
+     "definition": "Program (Newell & Simon, 1957) solving problems by means-ends analysis over difference tables - an early model of human problem solving.",
+     "source_title": "General Problem Solver",
+     "source_url": "https://en.wikipedia.org/wiki/General_Problem_Solver"
+    },
+    {
+     "name": "SOAR cognitive architecture",
+     "year": 1987,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "SOAR unified reasoning and acting in a production-rule agent for decades of agent research; ReAct's authors did not build on it.",
+     "definition": "Cognitive architecture (Laird, Newell & Rosenbloom, 1987) implementing agents as production rules over problem spaces, with chunking as learning.",
+     "source_title": "Soar (cognitive architecture)",
+     "source_url": "https://en.wikipedia.org/wiki/Soar_(cognitive_architecture)"
+    },
+    {
+     "name": "BDI architecture",
+     "year": 1988,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "BDI gave agent systems their belief-desire-intention vocabulary; an influential parallel tradition with no channel into LLM prompting.",
+     "definition": "Agent architecture (Bratman 1987; Rao & Georgeff 1991) structuring agents by beliefs, desires, and committed intentions (plans).",
+     "source_title": "Belief-desire-intention model",
+     "source_url": "https://en.wikipedia.org/wiki/Belief-desire-intention_model"
+    },
+    {
+     "name": "Subsumption architecture",
+     "year": 1986,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "Brooks' subsumption argued for reactive layered control over deliberative planning - the act-side pole of the tension ReAct synthesizes, at 36 years' remove.",
+     "definition": "Robot control architecture (Brooks, 1986) of layered reactive behaviors without central world models ('intelligence without representation').",
+     "source_title": "Subsumption architecture",
+     "source_url": "https://en.wikipedia.org/wiki/Subsumption_architecture"
+    },
+    {
+     "name": "ACT-R",
+     "year": 1990,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "ACT-R modeled human cognition as productions over declarative memory; a cognitive-science parallel with no channel into ReAct.",
+     "definition": "Cognitive architecture (Anderson, 1990s) unifying procedural productions and declarative chunks, widely used to model human task performance.",
+     "source_title": "ACT-R",
+     "source_url": "https://en.wikipedia.org/wiki/ACT-R"
+    },
+    {
+     "name": "SHRDLU",
+     "year": 1970,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "SHRDLU coupled language understanding to action in a blocks world, an early language-and-action system; conceptual ancestry only.",
+     "definition": "Program (Winograd, 1970) understanding and executing natural-language commands about a simulated blocks world.",
+     "source_title": "SHRDLU",
+     "source_url": "https://en.wikipedia.org/wiki/SHRDLU"
+    },
+    {
+     "name": "PDDL",
+     "year": 1998,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "PDDL standardized planning-domain description for the classical planning community; ReAct uses free-text actions, not PDDL.",
+     "definition": "Planning Domain Definition Language (McDermott et al., 1998), the standard input format for automated planning competitions.",
+     "source_title": "PDDL",
+     "source_url": "https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language"
+    },
+    {
+     "name": "Graphplan",
+     "year": 1995,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "Graphplan made classical planning dramatically faster via planning graphs; part of the planning canon ReAct bypasses.",
+     "definition": "Planner (Blum & Furst, 1995) building a compact planning graph to extract plans far faster than prior search-based planners.",
+     "source_title": "Graphplan",
+     "source_url": "https://en.wikipedia.org/wiki/Graphplan"
+    },
+    {
+     "name": "Blackboard architecture",
+     "year": 1975,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "HEARSAY-II's blackboard coordinated opportunistic knowledge sources - an early multi-component reasoning system; no channel into ReAct.",
+     "definition": "Architecture (Erman et al., 1975-80) in which independent knowledge sources cooperate through a shared blackboard workspace.",
+     "source_title": "Blackboard system",
+     "source_url": "https://en.wikipedia.org/wiki/Blackboard_system"
+    },
+    {
+     "name": "ELIZA",
+     "year": 1966,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "ELIZA showed pattern-matched text could sustain an illusion of understanding; the remotest conversational ancestor, with no technical channel to ReAct.",
+     "definition": "Program (Weizenbaum, 1966) simulating a Rogerian therapist by pattern matching and reassembly rules.",
+     "source_title": "ELIZA",
+     "source_url": "https://en.wikipedia.org/wiki/ELIZA"
+    },
+    {
+     "name": "Behavior trees",
+     "year": 2004,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "Behavior trees became the standard control structure for game NPCs and robotics tasks; ReAct's loop is prompt-driven, not tree-driven.",
+     "definition": "Control architecture (popularized in game AI, 2000s) organizing agent behavior as a ticked tree of condition and action nodes.",
+     "source_title": "Behavior tree (artificial intelligence, robotics and control)",
+     "source_url": "https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence,_robotics_and_control)"
+    },
+    {
+     "name": "Procedural Reasoning System",
+     "year": 1987,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "timelines of the immediate lineage",
+     "causal_claim": "PRS implemented BDI-style reactive planning in deployed systems; part of the agent-architecture canon with no channel into ReAct.",
+     "definition": "Agent system (Georgeff & Lansky, 1987) executing hierarchical plans reactively in dynamic environments, a BDI implementation ancestor.",
+     "source_title": "Procedural reasoning system",
+     "source_url": "https://en.wikipedia.org/wiki/Procedural_reasoning_system"
+    },
+    {
+     "name": "Deep Q-Network (DQN)",
+     "year": 2013,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "direct transfers",
+     "causal_claim": "DQN's agents were the act-only baselines tradition ReAct's ALFWorld comparisons (imitation/RL) descend from; ReAct replaced policy learning with prompting.",
+     "definition": "Agent (Mnih et al., 2013/2015) learning Atari control from pixels by deep Q-learning, founding deep reinforcement learning.",
+     "source_title": "Playing Atari with Deep Reinforcement Learning",
+     "source_url": "https://arxiv.org/abs/1312.5602"
+    },
+    {
+     "name": "AlphaGo",
+     "year": 2016,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "direct transfers",
+     "causal_claim": "AlphaGo fused search with learned policies - the era's emblem of machine acting; ReAct's loop uses neither search nor learned value functions.",
+     "definition": "System (Silver et al., 2016) combining deep policy/value networks with Monte Carlo tree search to defeat the world Go champion.",
+     "source_title": "Mastering the game of Go with deep neural networks and tree search",
+     "source_url": "https://www.nature.com/articles/nature16961"
+    },
+    {
+     "name": "Monte Carlo tree search",
+     "year": 2006,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "direct transfers",
+     "causal_claim": "MCTS is the search half of AlphaGo-style acting; ReAct performs a single greedy trajectory with no tree search.",
+     "definition": "Search algorithm (Kocsis & Szepesvari, 2006; Coulom, 2006) balancing exploration/exploitation via UCB over simulated rollouts.",
+     "source_title": "Monte Carlo tree search",
+     "source_url": "https://en.wikipedia.org/wiki/Monte_Carlo_tree_search"
+    },
+    {
+     "name": "Q-learning",
+     "year": 1989,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "direct transfers",
+     "causal_claim": "Q-learning founded model-free value learning, the RL substrate of the act-only baselines; ReAct learns no values.",
+     "definition": "Off-policy temporal-difference algorithm (Watkins, 1989) learning action values from experience without a model of the environment.",
+     "source_title": "Q-learning",
+     "source_url": "https://en.wikipedia.org/wiki/Q-learning"
+    },
+    {
+     "name": "DAgger imitation learning",
+     "year": 2011,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "negative space",
+     "causal_claim": "DAgger-style imitation was among the ALFWorld baselines ReAct beat by 34 points; the beaten incumbent, not an enabler.",
+     "definition": "Imitation-learning algorithm (Ross, Gordon & Bagnell, 2011) reducing covariate shift by aggregating expert corrections on the learner's own trajectories.",
+     "source_title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+     "source_url": "https://arxiv.org/abs/1011.0686"
+    },
+    {
+     "name": "Behavior cloning",
+     "year": 1989,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "negative space",
+     "causal_claim": "Behavior cloning is the simplest imitation baseline tradition in ReAct's comparison set; an incumbent approach, not an input.",
+     "definition": "Method (Pomerleau, 1989, ALVINN) training a network to copy expert actions from demonstrations, the template for imitation learning.",
+     "source_title": "ALVINN: An Autonomous Land Vehicle in a Neural Network",
+     "source_url": "https://en.wikipedia.org/wiki/ALVINN"
+    },
+    {
+     "name": "Options framework (hierarchical RL)",
+     "year": 1999,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "direct transfers",
+     "causal_claim": "The options framework formalized temporally extended actions, the RL analog of plan steps; no channel into ReAct's prompting.",
+     "definition": "Framework (Sutton, Precup & Singh, 1999) for hierarchical RL via temporally extended actions (options) with initiation sets and termination conditions.",
+     "source_title": "Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning",
+     "source_url": "https://www.sciencedirect.com/science/article/pii/S0004370299000521"
+    },
+    {
+     "name": "Dyna architecture",
+     "year": 1990,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "direct transfers",
+     "causal_claim": "Dyna integrated learning, planning, and acting in one loop - a conceptual RL ancestor of interleaved reason-act cycles; no consumed channel.",
+     "definition": "Architecture (Sutton, 1990) interleaving real experience, model learning, and simulated planning updates in a single agent loop.",
+     "source_title": "Dyna (reinforcement learning)",
+     "source_url": "https://en.wikipedia.org/wiki/Dyna_(reinforcement_learning)"
+    },
+    {
+     "name": "Prompt tuning",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "Prompt tuning showed soft prompts could steer frozen models, part of the prompt-as-program evidence base; ReAct uses discrete few-shot exemplars, not learned vectors.",
+     "definition": "Method (Lester et al., 2021) learning continuous prompt embeddings for a frozen LM, matching fine-tuning at scale.",
+     "source_title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+     "source_url": "https://arxiv.org/abs/2104.08691"
+    },
+    {
+     "name": "Prefix-tuning",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "Prefix-tuning steered generation via learned prefixes; a parameter-efficient sibling of prompt conditioning with no channel into ReAct.",
+     "definition": "Method (Li & Liang, 2021) optimizing continuous prefix activations for generation tasks, keeping LM parameters frozen.",
+     "source_title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+     "source_url": "https://arxiv.org/abs/2101.00190"
+    },
+    {
+     "name": "MetaICL",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "method introduced shortly before",
+     "causal_claim": "MetaICL trained models explicitly to learn in context from exemplars, sharpening the ICL capability ReAct's format depends on - at one remove, through ICL itself.",
+     "definition": "Meta-training approach (Min et al., 2021) teaching LMs to use in-context examples, improving few-shot generalization to unseen tasks.",
+     "source_title": "MetaICL: Learning to Learn In Context",
+     "source_url": "https://arxiv.org/abs/2110.15943"
+    },
+    {
+     "name": "Natural Instructions",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "method introduced shortly before",
+     "causal_claim": "Natural Instructions catalogued tasks in instruction form, feeding the FLAN-style tuning wave; ReAct's exemplars were hand-written, not drawn from it.",
+     "definition": "Benchmark (Mishra et al., 2021) of 61 tasks with expert-written definitions and examples, for cross-task instruction generalization.",
+     "source_title": "Cross-Task Generalization via Natural Language Instructions",
+     "source_url": "https://arxiv.org/abs/2104.08773"
+    },
+    {
+     "name": "PromptSource",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "PromptSource systematized prompt authoring for hundreds of datasets; infrastructure of the prompting era, not an input to ReAct.",
+     "definition": "Toolkit and corpus (Bach et al., 2021) of ~2,000 prompts for 170+ datasets, with an API and prompt-authoring interface.",
+     "source_title": "PromptSource: An Integrated System for Prompt Engineering",
+     "source_url": "https://arxiv.org/abs/2110.10762"
+    },
+    {
+     "name": "Self-talk",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "differentiating move",
+     "causal_claim": "Self-talk showed an LM clarifying itself via generated question-answer subdialogues, an early elicited-reasoning precursor at one remove from ReAct's thoughts.",
+     "definition": "Method (Shwartz et al., 2020) in which an LM asks itself clarifying questions and uses the answers for commonsense QA, prefiguring elicited reasoning traces.",
+     "source_title": "Unsupervised Commonsense Question Answering with Self-Talk",
+     "source_url": "https://arxiv.org/abs/2004.05483"
+    },
+    {
+     "name": "UnifiedQA",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "first-order components",
+     "causal_claim": "UnifiedQA showed one model could span QA formats via text unification; part of the text-interface consolidation ReAct inherited, with no direct channel.",
+     "definition": "System (Khashabi et al., 2020) training a single T5-based model across extractive, abstractive, multiple-choice and yes/no QA formats.",
+     "source_title": "UnifiedQA: Crossing Format Boundaries With a Single QA System",
+     "source_url": "https://arxiv.org/abs/2005.00700"
+    },
+    {
+     "name": "LoRA",
+     "year": 2021,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "infrastructure at hand",
+     "causal_claim": "LoRA made adaptation cheap via low-rank updates; ReAct adapts by prompting alone, so LoRA is an unused sibling technique.",
+     "definition": "Parameter-efficient fine-tuning method (Hu et al., 2021) injecting trainable low-rank matrices into frozen weights.",
+     "source_title": "LoRA: Low-Rank Adaptation of Large Language Models",
+     "source_url": "https://arxiv.org/abs/2106.09685"
+    },
+    {
+     "name": "Transformer architecture",
+     "year": 2017,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "first-order components",
+     "causal_claim": "Every model ReAct prompted is a Transformer; the architecture reaches ReAct through the pretrained models built on it, not directly.",
+     "definition": "Architecture (Vaswani et al., 2017) replacing recurrence with self-attention; the substrate of all modern LLMs.",
+     "source_title": "Attention Is All You Need",
+     "source_url": "https://arxiv.org/abs/1706.03762"
+    },
+    {
+     "name": "Sequence-to-sequence learning",
+     "year": 2014,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "first-order components",
+     "causal_claim": "Seq2seq established encoder-decoder sequence transduction, the paradigm the Transformer displaced; it reaches ReAct only through that lineage.",
+     "definition": "Framework (Sutskever et al., 2014) mapping input sequences to output sequences with LSTM encoder-decoders, founding neural sequence transduction.",
+     "source_title": "Sequence to Sequence Learning with Neural Networks",
+     "source_url": "https://arxiv.org/abs/1409.3215"
+    },
+    {
+     "name": "Bahdanau attention",
+     "year": 2014,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "first-order components",
+     "causal_claim": "Bahdanau attention introduced the alignment mechanism that became self-attention; it reaches ReAct through the Transformer, two steps removed.",
+     "definition": "Mechanism (Bahdanau et al., 2014) letting a decoder attend over encoder states, fixing the fixed-length bottleneck in neural machine translation.",
+     "source_title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+     "source_url": "https://arxiv.org/abs/1409.0473"
+    },
+    {
+     "name": "LSTM",
+     "year": 1997,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "first-order components",
+     "causal_claim": "LSTMs were the pre-Transformer sequence substrate; ReAct's models contain none - the lineage runs entirely through the Transformer succession.",
+     "definition": "Recurrent architecture (Hochreiter & Schmidhuber, 1997) with gated memory cells enabling long-range sequence learning.",
+     "source_title": "Long short-term memory",
+     "source_url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+    },
+    {
+     "name": "Backpropagation",
+     "year": 1986,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "first-order components",
+     "causal_claim": "Backpropagation trained every network in ReAct's lineage; it reaches ReAct through the pretrained models, never as a consumed component of the method.",
+     "definition": "Algorithm (Rumelhart, Hinton & Williams, 1986) computing gradients through layered networks by the chain rule, making deep training practical.",
+     "source_title": "Backpropagation",
+     "source_url": "https://en.wikipedia.org/wiki/Backpropagation"
+    },
+    {
+     "name": "Word2vec",
+     "year": 2013,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "first-order components",
+     "causal_claim": "Word2vec began the learned-embedding era that pretraining scaled; its channel to ReAct runs through the whole pretraining lineage.",
+     "definition": "Method (Mikolov et al., 2013) learning word embeddings from co-occurrence prediction, founding distributional representation learning at scale.",
+     "source_title": "Efficient Estimation of Word Representations in Vector Space",
+     "source_url": "https://arxiv.org/abs/1301.3781"
+    },
+    {
+     "name": "Sentence-BERT",
+     "year": 2019,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "infrastructure at hand",
+     "causal_claim": "Sentence-BERT supplied the embedding matching used by sibling planners (zero-shot planners) to ground actions; ReAct itself does no embedding matching.",
+     "definition": "Modification of BERT (Reimers & Gurevych, 2019) producing sentence embeddings for fast similarity search and clustering.",
+     "source_title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+     "source_url": "https://arxiv.org/abs/1908.10084"
+    },
+    {
+     "name": "ColBERT",
+     "year": 2020,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "infrastructure at hand",
+     "causal_claim": "ColBERT made late-interaction retrieval efficient for QA pipelines of the era; ReAct's search actions call the Wikipedia API, not ColBERT.",
+     "definition": "Retrieval model (Khattab & Zaharia, 2020) using token-level late interaction over BERT embeddings for fast, accurate passage search.",
+     "source_title": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT",
+     "source_url": "https://arxiv.org/abs/2004.12832"
+    },
+    {
+     "name": "Wolfram Alpha",
+     "year": 2009,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "Wolfram Alpha pioneered computational answers as a callable knowledge service, the product ancestor of tool-augmented answering; no channel into ReAct's research prototype.",
+     "definition": "Computational knowledge engine (Wolfram, 2009) answering factual queries by computing over curated structured data.",
+     "source_title": "WolframAlpha",
+     "source_url": "https://en.wikipedia.org/wiki/WolframAlpha"
+    },
+    {
+     "name": "Siri",
+     "year": 2011,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "Siri productized the voice assistant loop (interpret, act, respond) a decade before ReAct; a product-lineage ancestor with no technical channel.",
+     "definition": "Voice assistant (Apple, 2011) interpreting natural-language requests and executing actions across phone services.",
+     "source_title": "Siri",
+     "source_url": "https://en.wikipedia.org/wiki/Siri"
+    },
+    {
+     "name": "MediaWiki API",
+     "year": 2002,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "The MediaWiki API is literally the action interface ReAct's Wikipedia environment wraps (search/lookup actions); commodity infrastructure, not a leap.",
+     "definition": "Web API for Wikipedia (2000s) exposing search and page retrieval programmatically - the substrate of ReAct's Wikipedia action space.",
+     "source_title": "MediaWiki API",
+     "source_url": "https://www.mediawiki.org/wiki/API:Main_page"
+    },
+    {
+     "name": "SPARQL and the Semantic Web",
+     "year": 2008,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "infrastructure at hand",
+     "causal_claim": "SPARQL standardized querying structured knowledge on the web; ReAct queries unstructured text via search actions instead.",
+     "definition": "Query language (W3C, 2008) for RDF data, the Semantic Web's standard interface to structured knowledge.",
+     "source_title": "SPARQL",
+     "source_url": "https://en.wikipedia.org/wiki/SPARQL"
+    },
+    {
+     "name": "OpenIE",
+     "year": 2007,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "infrastructure at hand",
+     "causal_claim": "OpenIE extracted relational tuples from text at web scale, an ancestor of machine-readable web knowledge; no channel into ReAct.",
+     "definition": "Paradigm (Banko et al., 2007, TextRunner) extracting (arg1, relation, arg2) tuples from web text without hand-built extractors.",
+     "source_title": "Open information extraction",
+     "source_url": "https://en.wikipedia.org/wiki/Open_information_extraction"
+    },
+    {
+     "name": "Rasa open-source dialogue framework",
+     "year": 2016,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "infrastructure at hand",
+     "causal_claim": "Rasa industrialized intent-and-action dialogue agents for developers; the commercial dialogue-agent tradition ReAct's research bypassed.",
+     "definition": "Open-source framework (2016) for building text/voice assistants with NLU and dialogue policies executing actions.",
+     "source_title": "Rasa (software)",
+     "source_url": "https://en.wikipedia.org/wiki/Rasa_(software)"
+    },
+    {
+     "name": "Reflexion",
+     "year": 2023,
+     "domain": "artificial intelligence",
+     "type": "method",
+     "lens": "contemporaneous accounts",
+     "causal_claim": "Reflexion extended ReAct with verbal self-reflection memory - a successor, dated after the parent, listed to be dropped by the year bound.",
+     "definition": "Framework (Shinn et al., 2023) in which agents verbally reflect on failures and store the reflections as episodic memory for later trials.",
+     "source_title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+     "source_url": "https://arxiv.org/abs/2303.11366"
+    },
+    {
+     "name": "Toolformer",
+     "year": 2023,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "contemporaneous accounts",
+     "causal_claim": "Toolformer taught models to call APIs by self-supervision - a 2023 successor direction, after the parent.",
+     "definition": "Model (Schick et al., 2023) trained to decide which APIs to call and how, from self-supervised annotations.",
+     "source_title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+     "source_url": "https://arxiv.org/abs/2302.04761"
+    },
+    {
+     "name": "Generative Agents",
+     "year": 2023,
+     "domain": "artificial intelligence",
+     "type": "system",
+     "lens": "contemporaneous accounts",
+     "causal_claim": "Generative Agents built believable agent societies on an LLM loop in 2023 - after the parent; part of the lineage ReAct opened, not its ancestry.",
+     "definition": "Architecture (Park et al., 2023) of LLM agents with memory stream, reflection, and planning, simulating a small town's social behavior.",
+     "source_title": "Generative Agents: Interactive Simulacra of Human Behavior",
+     "source_url": "https://arxiv.org/abs/2304.03442"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "in-context-learning-2020",
+      "candidate": {
+       "name": "In-context learning",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "differentiating move",
+       "causal_claim": "ReAct is delivered entirely as few-shot in-context exemplars: the thought-action-observation format exists only as prompt conditioning, the capability ICL established.",
+       "definition": "The ability of a pretrained LM (demonstrated at scale by GPT-3, 2020) to perform a new task from examples and instructions in its prompt, with no parameter updates.",
+       "source_title": "Language Models are Few-Shot Learners",
+       "source_url": "https://arxiv.org/abs/2005.14165"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "In-context learning"
+      ],
+      "matched_node_id": "in-context-learning-2020",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "scratchpads-2021",
+      "candidate": {
+       "name": "Scratchpads",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "Scratchpads showed models compute better when allowed to emit intermediate steps into a buffer; ReAct's thought stream is a scratchpad interleaved with actions.",
+       "definition": "Technique (Nye et al., 2021) training/prompting models to write intermediate computation into a 'scratchpad' before answering, improving multi-step arithmetic and code execution prediction.",
+       "source_title": "Show Your Work: Scratchpads for Intermediate Computation with Language Models",
+       "source_url": "https://arxiv.org/abs/2111.03047"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Scratchpads"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "large-scale-pretraining-gpt-3-2020",
+      "candidate": {
+       "name": "Large-scale pretraining (GPT-3)",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "ReAct's experiments prompt GPT-3 and PaLM; the pretrained model is the substrate whose in-context behavior the ReAct format steers.",
+       "definition": "175B-parameter autoregressive LM (Brown et al., 2020) whose few-shot in-context performance made prompt-based task specification practical at scale.",
+       "source_title": "Language Models are Few-Shot Learners",
+       "source_url": "https://arxiv.org/abs/2005.14165"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Large-scale pretraining (GPT-3)"
+      ],
+      "matched_node_id": "large-scale-pretraining-gpt-3-2020",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "codex-code-generation-model-2021",
+      "candidate": {
+       "name": "Codex code generation model",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "ReAct's GPT-3 experiments used the davinci-series API models descended from the GPT-3/Codex line; Codex showed prompted models executing structured action-like outputs.",
+       "definition": "GPT-3 fine-tuned on public code (Chen et al., 2021); powered GitHub Copilot and scored 28.8% on HumanEval, showing prompted models producing executable structured output.",
+       "source_title": "Evaluating Large Language Models Trained on Code",
+       "source_url": "https://arxiv.org/abs/2107.03374"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Codex code generation model"
+      ],
+      "matched_node_id": "codex-code-generation-model-2021",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "instruction-tuning-flan-2021",
+      "candidate": {
+       "name": "Instruction tuning (FLAN)",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "first-order components",
+       "causal_claim": "FLAN showed instruction-formatted multitask tuning unlocks zero-shot task following; ReAct instead used base models, but FLAN defined the instruction-following contrast class.",
+       "definition": "Fine-tuning a 137B LM on 60+ datasets phrased as instructions (Wei et al., 2021), yielding large zero-shot gains on unseen task types.",
+       "source_title": "Finetuned Language Models Are Zero-Shot Learners",
+       "source_url": "https://arxiv.org/abs/2109.01652"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Instruction tuning (FLAN)"
+      ],
+      "matched_node_id": "instruction-tuning-flan-2021",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hosted-llm-apis-openai-api-2020",
+      "candidate": {
+       "name": "Hosted LLM APIs (OpenAI API)",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "ReAct was run through hosted API access to GPT-3-class models; API serving made prompt-loop experiments a commodity.",
+       "definition": "Commercial API access to GPT-3 (June 2020), which turned large-model prompting into an on-demand service any researcher could loop over.",
+       "source_title": "OpenAI API announcement",
+       "source_url": "https://openai.com/blog/openai-api"
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Hosted LLM APIs (OpenAI API)"
+      ],
+      "matched_node_id": "hosted-llm-apis-openai-api-2020",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "gopher-2021",
+      "candidate": {
+       "name": "Gopher",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "Gopher was a 280B contemporary of the models ReAct used, documenting emergent few-shot abilities at scale.",
+       "definition": "280B LM (Rae et al., 2021) from DeepMind with extensive analysis of scale-driven capability gains and risks.",
+       "source_title": "Scaling Language Models: Methods, Analysis & Insights from Training Gopher",
+       "source_url": "https://arxiv.org/abs/2112.11446"
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "Gopher"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "t5-text-to-text-framework-2019",
+      "candidate": {
+       "name": "T5 text-to-text framework",
+       "year": 2019,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "T5 unified tasks as text-to-text, an ancestor of the prompt-as-interface idea ReAct exploits; ReAct used decoder LMs, not T5.",
+       "definition": "Transfer-learning framework (Raffel et al., 2019) casting every NLP task as text-in/text-out, with an 11B encoder-decoder model.",
+       "source_title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+       "source_url": "https://arxiv.org/abs/1910.10683"
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "T5 text-to-text framework"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bert-2018",
+      "candidate": {
+       "name": "BERT",
+       "year": 2018,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "BERT established the pretrain-then-adapt paradigm ReAct inherited, but ReAct's generative prompting bypassed encoder fine-tuning entirely.",
+       "definition": "Bidirectionally pretrained encoder (Devlin et al., 2018) whose fine-tuned representations reset NLP benchmarks.",
+       "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+       "source_url": "https://arxiv.org/abs/1810.04805"
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "BERT"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "gpt-2-2019",
+      "candidate": {
+       "name": "GPT-2",
+       "year": 2019,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "GPT-2 first showed conditioning alone elicits tasks zero-shot, the direct empirical precedent for the prompting substrate ReAct builds on.",
+       "definition": "1.5B LM (Radford et al., 2019) demonstrating zero-shot task transfer by text conditioning, improving log-linearly with scale.",
+       "source_title": "Language Models are Unsupervised Multitask Learners",
+       "source_url": "https://openai.com/blog/better-language-models/"
+      },
+      "members": [
+       20
+      ],
+      "member_names": [
+       "GPT-2"
+      ],
+      "matched_node_id": "gpt-2-2019",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "webgpt-2021",
+      "candidate": {
+       "name": "WebGPT",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "direct transfers",
+       "causal_claim": "WebGPT fine-tuned GPT-3 to browse the web with search and citation actions, an early demonstration of an LLM operating a tool interface in a loop.",
+       "definition": "System (Nakano et al., 2021) fine-tuning GPT-3 to use a text-based browser (search, click, scroll) and answer questions with citations, preferred over humans on ELI5.",
+       "source_title": "WebGPT: Browser-assisted question-answering with human feedback",
+       "source_url": "https://arxiv.org/abs/2112.09332"
+      },
+      "members": [
+       25
+      ],
+      "member_names": [
+       "WebGPT"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "decision-transformer-2021",
+      "candidate": {
+       "name": "Decision Transformer",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "direct transfers",
+       "causal_claim": "Decision Transformer reframed RL as sequence modeling over trajectories, part of the transformer-meets-acting wave; ReAct's acting is prompt-based, not return-conditioned.",
+       "definition": "Method (Chen et al., 2021) casting offline RL as conditional sequence modeling, generating actions from desired returns and past trajectories.",
+       "source_title": "Decision Transformer: Reinforcement Learning via Sequence Modeling",
+       "source_url": "https://arxiv.org/abs/2106.01345"
+      },
+      "members": [
+       28
+      ],
+      "member_names": [
+       "Decision Transformer"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "trajectory-transformer-2021",
+      "candidate": {
+       "name": "Trajectory Transformer",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "direct transfers",
+       "causal_claim": "Trajectory Transformer modeled offline RL trajectories for planning by beam search; a sequence-modeling sibling with no channel into ReAct.",
+       "definition": "Method (Janner et al., 2021) modeling distributions over trajectories with a transformer and planning via beam search.",
+       "source_title": "Offline Reinforcement Learning as One Big Sequence Modeling Problem",
+       "source_url": "https://arxiv.org/abs/2106.02039"
+      },
+      "members": [
+       29
+      ],
+      "member_names": [
+       "Trajectory Transformer"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "retrieval-augmented-generation-2020",
+      "candidate": {
+       "name": "Retrieval-augmented generation",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "first-order components",
+       "causal_claim": "RAG coupled an LM to a retriever for knowledge tasks; ReAct's Wikipedia actions generalize that retrieve-then-reason pattern into an interactive loop.",
+       "definition": "Architecture (Lewis et al., 2020) combining a pretrained retriever with a generator, state of the art on open-domain QA at introduction.",
+       "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+       "source_url": "https://arxiv.org/abs/2005.11401"
+      },
+      "members": [
+       30
+      ],
+      "member_names": [
+       "Retrieval-augmented generation"
+      ],
+      "matched_node_id": "retrieval-augmented-generation-2020",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dense-passage-retrieval-2020",
+      "candidate": {
+       "name": "Dense passage retrieval",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "infrastructure at hand",
+       "causal_claim": "DPR made neural retrieval the default knowledge-access layer for QA systems of ReAct's era; ReAct used the Wikipedia API's own search instead.",
+       "definition": "Dual-encoder retriever (Karpukhin et al., 2020) outperforming BM25 by wide margins on open-domain QA retrieval.",
+       "source_title": "Dense Passage Retrieval for Open-Domain Question Answering",
+       "source_url": "https://arxiv.org/abs/2004.04906"
+      },
+      "members": [
+       31
+      ],
+      "member_names": [
+       "Dense passage retrieval"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "realm-2020",
+      "candidate": {
+       "name": "REALM",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "REALM pretrained with retrieval in the loop, an ancestor of retrieve-while-reasoning; ReAct's retrieval happens at inference via actions, not in pretraining.",
+       "definition": "Pretraining framework (Guu et al., 2020) augmenting an LM with a neural retriever trained end-to-end on a Wikipedia corpus.",
+       "source_title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+       "source_url": "https://arxiv.org/abs/2002.08909"
+      },
+      "members": [
+       32
+      ],
+      "member_names": [
+       "REALM"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "alfworld-2020",
+      "candidate": {
+       "name": "ALFWorld",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "benchmarks and measurement",
+       "causal_claim": "ALFWorld was one of ReAct's two headline testbeds (+34 over baselines); its text-game alignment of embodied tasks made the acting loop measurable.",
+       "definition": "Benchmark (Shridhar et al., 2020) aligning the ALFRED embodied instruction dataset with interactive text games, enabling text-agent evaluation of embodied tasks.",
+       "source_title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+       "source_url": "https://arxiv.org/abs/2010.03768"
+      },
+      "members": [
+       33
+      ],
+      "member_names": [
+       "ALFWorld"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hotpotqa-2018",
+      "candidate": {
+       "name": "HotpotQA",
+       "year": 2018,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "benchmarks and measurement",
+       "causal_claim": "HotpotQA was ReAct's multi-hop QA testbed, where its Wikipedia search actions were exercised; the benchmark predates and did not shape the method.",
+       "definition": "Dataset (Yang et al., 2018) of 113k multi-hop questions requiring reasoning over multiple Wikipedia paragraphs, with supporting-fact annotations.",
+       "source_title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+       "source_url": "https://arxiv.org/abs/1809.09600"
+      },
+      "members": [
+       35
+      ],
+      "member_names": [
+       "HotpotQA"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fever-2018",
+      "candidate": {
+       "name": "FEVER",
+       "year": 2018,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "benchmarks and measurement",
+       "causal_claim": "FEVER was ReAct's fact-verification testbed; its retrieve-and-verify task shape matches ReAct's action set but predates the method by four years.",
+       "definition": "Dataset (Thorne et al., 2018) of 185k claims labeled Supported/Refuted/NotEnoughInfo against Wikipedia evidence.",
+       "source_title": "FEVER: a large-scale dataset for Fact Extraction and VERification",
+       "source_url": "https://arxiv.org/abs/1803.05355"
+      },
+      "members": [
+       36
+      ],
+      "member_names": [
+       "FEVER"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "textworld-2018",
+      "candidate": {
+       "name": "TextWorld",
+       "year": 2018,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "TextWorld made text-game agent research a commodity platform; ALFWorld's design descends from it, so its channel to ReAct runs through ALFWorld.",
+       "definition": "Microsoft learning environment (Cote et al., 2018) for generating and solving text-based games, used to train and evaluate RL language agents.",
+       "source_title": "TextWorld: A Learning Environment for Training Reinforcement Learning Agents, Inspired by Text-based Games",
+       "source_url": "https://arxiv.org/abs/1806.11532"
+      },
+      "members": [
+       37
+      ],
+      "member_names": [
+       "TextWorld"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "babyai-2018",
+      "candidate": {
+       "name": "BabyAI",
+       "year": 2018,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "BabyAI studied grounded instruction following in grid worlds; part of the embodied-instruction lineage, with no channel into ReAct's prompting method.",
+       "definition": "Platform (Chevalier-Boisvert et al., 2018) for sample-efficient grounded language learning in a procedurally generated grid world.",
+       "source_title": "BabyAI: A Platform to Study the Sample Efficiency of Grounded Language Learning",
+       "source_url": "https://arxiv.org/abs/1810.08272"
+      },
+      "members": [
+       38
+      ],
+      "member_names": [
+       "BabyAI"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ai2-thor-2017",
+      "candidate": {
+       "name": "AI2-THOR",
+       "year": 2017,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "AI2-THOR supplied the simulated rooms ALFRED/ALFWorld were built in; two steps removed from ReAct's text interface.",
+       "definition": "Interactive 3D environment framework (Kolve et al., 2017) of simulated indoor scenes for embodied AI research.",
+       "source_title": "AI2-THOR: An Interactive 3D Environment for Visual AI",
+       "source_url": "https://arxiv.org/abs/1712.05474"
+      },
+      "members": [
+       39
+      ],
+      "member_names": [
+       "AI2-THOR"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "virtualhome-2018",
+      "candidate": {
+       "name": "VirtualHome",
+       "year": 2018,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "VirtualHome represented household activities as programs, an ancestor of program-style action plans; no channel into ReAct.",
+       "definition": "Simulator (Puig et al., 2018) representing household activities as executable program graphs for activity understanding and planning.",
+       "source_title": "VirtualHome: Simulating Household Activities via Programs",
+       "source_url": "https://arxiv.org/abs/1806.07011"
+      },
+      "members": [
+       40
+      ],
+      "member_names": [
+       "VirtualHome"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "squad-2016",
+      "candidate": {
+       "name": "SQuAD",
+       "year": 2016,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "benchmarks and measurement",
+       "causal_claim": "SQuAD defined extractive reading comprehension as the canonical QA task; ReAct's open-domain QA setting descends from this task lineage at several removes.",
+       "definition": "Reading-comprehension dataset (Rajpurkar et al., 2016) of 100k questions over Wikipedia paragraphs, which industrialized extractive QA evaluation.",
+       "source_title": "SQuAD: 100,000+ Questions for Machine Comprehension of Text",
+       "source_url": "https://arxiv.org/abs/1606.05250"
+      },
+      "members": [
+       42
+      ],
+      "member_names": [
+       "SQuAD"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "natural-questions-2019",
+      "candidate": {
+       "name": "Natural Questions",
+       "year": 2019,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "benchmarks and measurement",
+       "causal_claim": "Natural Questions anchored open-domain QA evaluation on real search queries; part of the QA task lineage, not an input to ReAct's method.",
+       "definition": "Dataset (Kwiatkowski et al., 2019) of real anonymized Google queries with Wikipedia answers, standardizing open-domain QA.",
+       "source_title": "Natural Questions: A Benchmark for Question Answering Research",
+       "source_url": "https://research.google/pubs/pub47761/"
+      },
+      "members": [
+       43
+      ],
+      "member_names": [
+       "Natural Questions"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "triviaqa-2017",
+      "candidate": {
+       "name": "TriviaQA",
+       "year": 2017,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "benchmarks and measurement",
+       "causal_claim": "TriviaQA scaled evidence-based QA with distant supervision; an evaluation-lineage ancestor with no method channel into ReAct.",
+       "definition": "Dataset (Joshi et al., 2017) of 650k question-answer-evidence triples for reading comprehension over web and Wikipedia evidence.",
+       "source_title": "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+       "source_url": "https://arxiv.org/abs/1705.03551"
+      },
+      "members": [
+       44
+      ],
+      "member_names": [
+       "TriviaQA"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "strips-planning-1971",
+      "candidate": {
+       "name": "STRIPS planning",
+       "year": 1971,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "STRIPS formalized action preconditions/effects that 'action' still echoes in agent loops; ReAct consumed no planner formalism - the lineage is conceptual only.",
+       "definition": "Automated planner (Fikes & Nilsson, 1971) representing actions by preconditions and add/delete lists, the template for classical planning.",
+       "source_title": "STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving",
+       "source_url": "https://en.wikipedia.org/wiki/STRIPS"
+      },
+      "members": [
+       45
+      ],
+      "member_names": [
+       "STRIPS planning"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "shakey-the-robot-1969",
+      "candidate": {
+       "name": "Shakey the Robot",
+       "year": 1969,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "Shakey was the first integrated sense-plan-act robot, the archetype ReAct's loop unknowingly recapitulates; no technical channel connects them.",
+       "definition": "SRI robot (1966-72) integrating perception, STRIPS planning, and action execution - the first general-purpose mobile robot agent.",
+       "source_title": "Shakey the Robot",
+       "source_url": "https://en.wikipedia.org/wiki/Shakey_the_Robot"
+      },
+      "members": [
+       46
+      ],
+      "member_names": [
+       "Shakey the Robot"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-search-1968",
+      "candidate": {
+       "name": "A* search",
+       "year": 1968,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "A* made heuristic search the default planning subroutine of classical agents; ReAct performs no graph search.",
+       "definition": "Graph search algorithm (Hart, Nilsson & Raphael, 1968) guaranteeing optimal paths with an admissible heuristic.",
+       "source_title": "A* search algorithm",
+       "source_url": "https://en.wikipedia.org/wiki/A*_search_algorithm"
+      },
+      "members": [
+       47
+      ],
+      "member_names": [
+       "A* search"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "general-problem-solver-1957",
+      "candidate": {
+       "name": "General Problem Solver",
+       "year": 1957,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "GPS introduced means-ends analysis, the ur-form of reason-then-act; a 65-year conceptual ancestor with no consumed channel into ReAct.",
+       "definition": "Program (Newell & Simon, 1957) solving problems by means-ends analysis over difference tables - an early model of human problem solving.",
+       "source_title": "General Problem Solver",
+       "source_url": "https://en.wikipedia.org/wiki/General_Problem_Solver"
+      },
+      "members": [
+       48
+      ],
+      "member_names": [
+       "General Problem Solver"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "soar-cognitive-architecture-1987",
+      "candidate": {
+       "name": "SOAR cognitive architecture",
+       "year": 1987,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "SOAR unified reasoning and acting in a production-rule agent for decades of agent research; ReAct's authors did not build on it.",
+       "definition": "Cognitive architecture (Laird, Newell & Rosenbloom, 1987) implementing agents as production rules over problem spaces, with chunking as learning.",
+       "source_title": "Soar (cognitive architecture)",
+       "source_url": "https://en.wikipedia.org/wiki/Soar_(cognitive_architecture)"
+      },
+      "members": [
+       49
+      ],
+      "member_names": [
+       "SOAR cognitive architecture"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bdi-architecture-1988",
+      "candidate": {
+       "name": "BDI architecture",
+       "year": 1988,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "BDI gave agent systems their belief-desire-intention vocabulary; an influential parallel tradition with no channel into LLM prompting.",
+       "definition": "Agent architecture (Bratman 1987; Rao & Georgeff 1991) structuring agents by beliefs, desires, and committed intentions (plans).",
+       "source_title": "Belief-desire-intention model",
+       "source_url": "https://en.wikipedia.org/wiki/Belief-desire-intention_model"
+      },
+      "members": [
+       50
+      ],
+      "member_names": [
+       "BDI architecture"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "subsumption-architecture-1986",
+      "candidate": {
+       "name": "Subsumption architecture",
+       "year": 1986,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "Brooks' subsumption argued for reactive layered control over deliberative planning - the act-side pole of the tension ReAct synthesizes, at 36 years' remove.",
+       "definition": "Robot control architecture (Brooks, 1986) of layered reactive behaviors without central world models ('intelligence without representation').",
+       "source_title": "Subsumption architecture",
+       "source_url": "https://en.wikipedia.org/wiki/Subsumption_architecture"
+      },
+      "members": [
+       51
+      ],
+      "member_names": [
+       "Subsumption architecture"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "act-r-1990",
+      "candidate": {
+       "name": "ACT-R",
+       "year": 1990,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "ACT-R modeled human cognition as productions over declarative memory; a cognitive-science parallel with no channel into ReAct.",
+       "definition": "Cognitive architecture (Anderson, 1990s) unifying procedural productions and declarative chunks, widely used to model human task performance.",
+       "source_title": "ACT-R",
+       "source_url": "https://en.wikipedia.org/wiki/ACT-R"
+      },
+      "members": [
+       52
+      ],
+      "member_names": [
+       "ACT-R"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "shrdlu-1970",
+      "candidate": {
+       "name": "SHRDLU",
+       "year": 1970,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "SHRDLU coupled language understanding to action in a blocks world, an early language-and-action system; conceptual ancestry only.",
+       "definition": "Program (Winograd, 1970) understanding and executing natural-language commands about a simulated blocks world.",
+       "source_title": "SHRDLU",
+       "source_url": "https://en.wikipedia.org/wiki/SHRDLU"
+      },
+      "members": [
+       53
+      ],
+      "member_names": [
+       "SHRDLU"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pddl-1998",
+      "candidate": {
+       "name": "PDDL",
+       "year": 1998,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "PDDL standardized planning-domain description for the classical planning community; ReAct uses free-text actions, not PDDL.",
+       "definition": "Planning Domain Definition Language (McDermott et al., 1998), the standard input format for automated planning competitions.",
+       "source_title": "PDDL",
+       "source_url": "https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language"
+      },
+      "members": [
+       54
+      ],
+      "member_names": [
+       "PDDL"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "graphplan-1995",
+      "candidate": {
+       "name": "Graphplan",
+       "year": 1995,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "Graphplan made classical planning dramatically faster via planning graphs; part of the planning canon ReAct bypasses.",
+       "definition": "Planner (Blum & Furst, 1995) building a compact planning graph to extract plans far faster than prior search-based planners.",
+       "source_title": "Graphplan",
+       "source_url": "https://en.wikipedia.org/wiki/Graphplan"
+      },
+      "members": [
+       55
+      ],
+      "member_names": [
+       "Graphplan"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "blackboard-architecture-1975",
+      "candidate": {
+       "name": "Blackboard architecture",
+       "year": 1975,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "HEARSAY-II's blackboard coordinated opportunistic knowledge sources - an early multi-component reasoning system; no channel into ReAct.",
+       "definition": "Architecture (Erman et al., 1975-80) in which independent knowledge sources cooperate through a shared blackboard workspace.",
+       "source_title": "Blackboard system",
+       "source_url": "https://en.wikipedia.org/wiki/Blackboard_system"
+      },
+      "members": [
+       56
+      ],
+      "member_names": [
+       "Blackboard architecture"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "eliza-1966",
+      "candidate": {
+       "name": "ELIZA",
+       "year": 1966,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "ELIZA showed pattern-matched text could sustain an illusion of understanding; the remotest conversational ancestor, with no technical channel to ReAct.",
+       "definition": "Program (Weizenbaum, 1966) simulating a Rogerian therapist by pattern matching and reassembly rules.",
+       "source_title": "ELIZA",
+       "source_url": "https://en.wikipedia.org/wiki/ELIZA"
+      },
+      "members": [
+       57
+      ],
+      "member_names": [
+       "ELIZA"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "behavior-trees-2004",
+      "candidate": {
+       "name": "Behavior trees",
+       "year": 2004,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "Behavior trees became the standard control structure for game NPCs and robotics tasks; ReAct's loop is prompt-driven, not tree-driven.",
+       "definition": "Control architecture (popularized in game AI, 2000s) organizing agent behavior as a ticked tree of condition and action nodes.",
+       "source_title": "Behavior tree (artificial intelligence, robotics and control)",
+       "source_url": "https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence,_robotics_and_control)"
+      },
+      "members": [
+       58
+      ],
+      "member_names": [
+       "Behavior trees"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "procedural-reasoning-system-1987",
+      "candidate": {
+       "name": "Procedural Reasoning System",
+       "year": 1987,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "timelines of the immediate lineage",
+       "causal_claim": "PRS implemented BDI-style reactive planning in deployed systems; part of the agent-architecture canon with no channel into ReAct.",
+       "definition": "Agent system (Georgeff & Lansky, 1987) executing hierarchical plans reactively in dynamic environments, a BDI implementation ancestor.",
+       "source_title": "Procedural reasoning system",
+       "source_url": "https://en.wikipedia.org/wiki/Procedural_reasoning_system"
+      },
+      "members": [
+       59
+      ],
+      "member_names": [
+       "Procedural Reasoning System"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "deep-q-network-dqn-2013",
+      "candidate": {
+       "name": "Deep Q-Network (DQN)",
+       "year": 2013,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "direct transfers",
+       "causal_claim": "DQN's agents were the act-only baselines tradition ReAct's ALFWorld comparisons (imitation/RL) descend from; ReAct replaced policy learning with prompting.",
+       "definition": "Agent (Mnih et al., 2013/2015) learning Atari control from pixels by deep Q-learning, founding deep reinforcement learning.",
+       "source_title": "Playing Atari with Deep Reinforcement Learning",
+       "source_url": "https://arxiv.org/abs/1312.5602"
+      },
+      "members": [
+       60
+      ],
+      "member_names": [
+       "Deep Q-Network (DQN)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "alphago-2016",
+      "candidate": {
+       "name": "AlphaGo",
+       "year": 2016,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "direct transfers",
+       "causal_claim": "AlphaGo fused search with learned policies - the era's emblem of machine acting; ReAct's loop uses neither search nor learned value functions.",
+       "definition": "System (Silver et al., 2016) combining deep policy/value networks with Monte Carlo tree search to defeat the world Go champion.",
+       "source_title": "Mastering the game of Go with deep neural networks and tree search",
+       "source_url": "https://www.nature.com/articles/nature16961"
+      },
+      "members": [
+       61
+      ],
+      "member_names": [
+       "AlphaGo"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "monte-carlo-tree-search-2006",
+      "candidate": {
+       "name": "Monte Carlo tree search",
+       "year": 2006,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "direct transfers",
+       "causal_claim": "MCTS is the search half of AlphaGo-style acting; ReAct performs a single greedy trajectory with no tree search.",
+       "definition": "Search algorithm (Kocsis & Szepesvari, 2006; Coulom, 2006) balancing exploration/exploitation via UCB over simulated rollouts.",
+       "source_title": "Monte Carlo tree search",
+       "source_url": "https://en.wikipedia.org/wiki/Monte_Carlo_tree_search"
+      },
+      "members": [
+       62
+      ],
+      "member_names": [
+       "Monte Carlo tree search"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "q-learning-1989",
+      "candidate": {
+       "name": "Q-learning",
+       "year": 1989,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "direct transfers",
+       "causal_claim": "Q-learning founded model-free value learning, the RL substrate of the act-only baselines; ReAct learns no values.",
+       "definition": "Off-policy temporal-difference algorithm (Watkins, 1989) learning action values from experience without a model of the environment.",
+       "source_title": "Q-learning",
+       "source_url": "https://en.wikipedia.org/wiki/Q-learning"
+      },
+      "members": [
+       63
+      ],
+      "member_names": [
+       "Q-learning"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dagger-imitation-learning-2011",
+      "candidate": {
+       "name": "DAgger imitation learning",
+       "year": 2011,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "negative space",
+       "causal_claim": "DAgger-style imitation was among the ALFWorld baselines ReAct beat by 34 points; the beaten incumbent, not an enabler.",
+       "definition": "Imitation-learning algorithm (Ross, Gordon & Bagnell, 2011) reducing covariate shift by aggregating expert corrections on the learner's own trajectories.",
+       "source_title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+       "source_url": "https://arxiv.org/abs/1011.0686"
+      },
+      "members": [
+       64
+      ],
+      "member_names": [
+       "DAgger imitation learning"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "behavior-cloning-1989",
+      "candidate": {
+       "name": "Behavior cloning",
+       "year": 1989,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "negative space",
+       "causal_claim": "Behavior cloning is the simplest imitation baseline tradition in ReAct's comparison set; an incumbent approach, not an input.",
+       "definition": "Method (Pomerleau, 1989, ALVINN) training a network to copy expert actions from demonstrations, the template for imitation learning.",
+       "source_title": "ALVINN: An Autonomous Land Vehicle in a Neural Network",
+       "source_url": "https://en.wikipedia.org/wiki/ALVINN"
+      },
+      "members": [
+       65
+      ],
+      "member_names": [
+       "Behavior cloning"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "options-framework-hierarchical-rl-1999",
+      "candidate": {
+       "name": "Options framework (hierarchical RL)",
+       "year": 1999,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "direct transfers",
+       "causal_claim": "The options framework formalized temporally extended actions, the RL analog of plan steps; no channel into ReAct's prompting.",
+       "definition": "Framework (Sutton, Precup & Singh, 1999) for hierarchical RL via temporally extended actions (options) with initiation sets and termination conditions.",
+       "source_title": "Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning",
+       "source_url": "https://www.sciencedirect.com/science/article/pii/S0004370299000521"
+      },
+      "members": [
+       66
+      ],
+      "member_names": [
+       "Options framework (hierarchical RL)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dyna-architecture-1990",
+      "candidate": {
+       "name": "Dyna architecture",
+       "year": 1990,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "direct transfers",
+       "causal_claim": "Dyna integrated learning, planning, and acting in one loop - a conceptual RL ancestor of interleaved reason-act cycles; no consumed channel.",
+       "definition": "Architecture (Sutton, 1990) interleaving real experience, model learning, and simulated planning updates in a single agent loop.",
+       "source_title": "Dyna (reinforcement learning)",
+       "source_url": "https://en.wikipedia.org/wiki/Dyna_(reinforcement_learning)"
+      },
+      "members": [
+       67
+      ],
+      "member_names": [
+       "Dyna architecture"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "prompt-tuning-2021",
+      "candidate": {
+       "name": "Prompt tuning",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "Prompt tuning showed soft prompts could steer frozen models, part of the prompt-as-program evidence base; ReAct uses discrete few-shot exemplars, not learned vectors.",
+       "definition": "Method (Lester et al., 2021) learning continuous prompt embeddings for a frozen LM, matching fine-tuning at scale.",
+       "source_title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+       "source_url": "https://arxiv.org/abs/2104.08691"
+      },
+      "members": [
+       68
+      ],
+      "member_names": [
+       "Prompt tuning"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "prefix-tuning-2021",
+      "candidate": {
+       "name": "Prefix-tuning",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "Prefix-tuning steered generation via learned prefixes; a parameter-efficient sibling of prompt conditioning with no channel into ReAct.",
+       "definition": "Method (Li & Liang, 2021) optimizing continuous prefix activations for generation tasks, keeping LM parameters frozen.",
+       "source_title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+       "source_url": "https://arxiv.org/abs/2101.00190"
+      },
+      "members": [
+       69
+      ],
+      "member_names": [
+       "Prefix-tuning"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "metaicl-2021",
+      "candidate": {
+       "name": "MetaICL",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "MetaICL trained models explicitly to learn in context from exemplars, sharpening the ICL capability ReAct's format depends on - at one remove, through ICL itself.",
+       "definition": "Meta-training approach (Min et al., 2021) teaching LMs to use in-context examples, improving few-shot generalization to unseen tasks.",
+       "source_title": "MetaICL: Learning to Learn In Context",
+       "source_url": "https://arxiv.org/abs/2110.15943"
+      },
+      "members": [
+       70
+      ],
+      "member_names": [
+       "MetaICL"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "natural-instructions-2021",
+      "candidate": {
+       "name": "Natural Instructions",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "method introduced shortly before",
+       "causal_claim": "Natural Instructions catalogued tasks in instruction form, feeding the FLAN-style tuning wave; ReAct's exemplars were hand-written, not drawn from it.",
+       "definition": "Benchmark (Mishra et al., 2021) of 61 tasks with expert-written definitions and examples, for cross-task instruction generalization.",
+       "source_title": "Cross-Task Generalization via Natural Language Instructions",
+       "source_url": "https://arxiv.org/abs/2104.08773"
+      },
+      "members": [
+       71
+      ],
+      "member_names": [
+       "Natural Instructions"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "promptsource-2021",
+      "candidate": {
+       "name": "PromptSource",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "PromptSource systematized prompt authoring for hundreds of datasets; infrastructure of the prompting era, not an input to ReAct.",
+       "definition": "Toolkit and corpus (Bach et al., 2021) of ~2,000 prompts for 170+ datasets, with an API and prompt-authoring interface.",
+       "source_title": "PromptSource: An Integrated System for Prompt Engineering",
+       "source_url": "https://arxiv.org/abs/2110.10762"
+      },
+      "members": [
+       72
+      ],
+      "member_names": [
+       "PromptSource"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "self-talk-2020",
+      "candidate": {
+       "name": "Self-talk",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "differentiating move",
+       "causal_claim": "Self-talk showed an LM clarifying itself via generated question-answer subdialogues, an early elicited-reasoning precursor at one remove from ReAct's thoughts.",
+       "definition": "Method (Shwartz et al., 2020) in which an LM asks itself clarifying questions and uses the answers for commonsense QA, prefiguring elicited reasoning traces.",
+       "source_title": "Unsupervised Commonsense Question Answering with Self-Talk",
+       "source_url": "https://arxiv.org/abs/2004.05483"
+      },
+      "members": [
+       73
+      ],
+      "member_names": [
+       "Self-talk"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "unifiedqa-2020",
+      "candidate": {
+       "name": "UnifiedQA",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "UnifiedQA showed one model could span QA formats via text unification; part of the text-interface consolidation ReAct inherited, with no direct channel.",
+       "definition": "System (Khashabi et al., 2020) training a single T5-based model across extractive, abstractive, multiple-choice and yes/no QA formats.",
+       "source_title": "UnifiedQA: Crossing Format Boundaries With a Single QA System",
+       "source_url": "https://arxiv.org/abs/2005.00700"
+      },
+      "members": [
+       74
+      ],
+      "member_names": [
+       "UnifiedQA"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lora-2021",
+      "candidate": {
+       "name": "LoRA",
+       "year": 2021,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "infrastructure at hand",
+       "causal_claim": "LoRA made adaptation cheap via low-rank updates; ReAct adapts by prompting alone, so LoRA is an unused sibling technique.",
+       "definition": "Parameter-efficient fine-tuning method (Hu et al., 2021) injecting trainable low-rank matrices into frozen weights.",
+       "source_title": "LoRA: Low-Rank Adaptation of Large Language Models",
+       "source_url": "https://arxiv.org/abs/2106.09685"
+      },
+      "members": [
+       75
+      ],
+      "member_names": [
+       "LoRA"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "transformer-architecture-2017",
+      "candidate": {
+       "name": "Transformer architecture",
+       "year": 2017,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "first-order components",
+       "causal_claim": "Every model ReAct prompted is a Transformer; the architecture reaches ReAct through the pretrained models built on it, not directly.",
+       "definition": "Architecture (Vaswani et al., 2017) replacing recurrence with self-attention; the substrate of all modern LLMs.",
+       "source_title": "Attention Is All You Need",
+       "source_url": "https://arxiv.org/abs/1706.03762"
+      },
+      "members": [
+       76
+      ],
+      "member_names": [
+       "Transformer architecture"
+      ],
+      "matched_node_id": "transformer-architecture-2017",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sequence-to-sequence-learning-2014",
+      "candidate": {
+       "name": "Sequence-to-sequence learning",
+       "year": 2014,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "first-order components",
+       "causal_claim": "Seq2seq established encoder-decoder sequence transduction, the paradigm the Transformer displaced; it reaches ReAct only through that lineage.",
+       "definition": "Framework (Sutskever et al., 2014) mapping input sequences to output sequences with LSTM encoder-decoders, founding neural sequence transduction.",
+       "source_title": "Sequence to Sequence Learning with Neural Networks",
+       "source_url": "https://arxiv.org/abs/1409.3215"
+      },
+      "members": [
+       77
+      ],
+      "member_names": [
+       "Sequence-to-sequence learning"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bahdanau-attention-2014",
+      "candidate": {
+       "name": "Bahdanau attention",
+       "year": 2014,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "first-order components",
+       "causal_claim": "Bahdanau attention introduced the alignment mechanism that became self-attention; it reaches ReAct through the Transformer, two steps removed.",
+       "definition": "Mechanism (Bahdanau et al., 2014) letting a decoder attend over encoder states, fixing the fixed-length bottleneck in neural machine translation.",
+       "source_title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+       "source_url": "https://arxiv.org/abs/1409.0473"
+      },
+      "members": [
+       78
+      ],
+      "member_names": [
+       "Bahdanau attention"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lstm-1997",
+      "candidate": {
+       "name": "LSTM",
+       "year": 1997,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "first-order components",
+       "causal_claim": "LSTMs were the pre-Transformer sequence substrate; ReAct's models contain none - the lineage runs entirely through the Transformer succession.",
+       "definition": "Recurrent architecture (Hochreiter & Schmidhuber, 1997) with gated memory cells enabling long-range sequence learning.",
+       "source_title": "Long short-term memory",
+       "source_url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+      },
+      "members": [
+       79
+      ],
+      "member_names": [
+       "LSTM"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "backpropagation-1986",
+      "candidate": {
+       "name": "Backpropagation",
+       "year": 1986,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "first-order components",
+       "causal_claim": "Backpropagation trained every network in ReAct's lineage; it reaches ReAct through the pretrained models, never as a consumed component of the method.",
+       "definition": "Algorithm (Rumelhart, Hinton & Williams, 1986) computing gradients through layered networks by the chain rule, making deep training practical.",
+       "source_title": "Backpropagation",
+       "source_url": "https://en.wikipedia.org/wiki/Backpropagation"
+      },
+      "members": [
+       80
+      ],
+      "member_names": [
+       "Backpropagation"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "word2vec-2013",
+      "candidate": {
+       "name": "Word2vec",
+       "year": 2013,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "first-order components",
+       "causal_claim": "Word2vec began the learned-embedding era that pretraining scaled; its channel to ReAct runs through the whole pretraining lineage.",
+       "definition": "Method (Mikolov et al., 2013) learning word embeddings from co-occurrence prediction, founding distributional representation learning at scale.",
+       "source_title": "Efficient Estimation of Word Representations in Vector Space",
+       "source_url": "https://arxiv.org/abs/1301.3781"
+      },
+      "members": [
+       81
+      ],
+      "member_names": [
+       "Word2vec"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sentence-bert-2019",
+      "candidate": {
+       "name": "Sentence-BERT",
+       "year": 2019,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "infrastructure at hand",
+       "causal_claim": "Sentence-BERT supplied the embedding matching used by sibling planners (zero-shot planners) to ground actions; ReAct itself does no embedding matching.",
+       "definition": "Modification of BERT (Reimers & Gurevych, 2019) producing sentence embeddings for fast similarity search and clustering.",
+       "source_title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+       "source_url": "https://arxiv.org/abs/1908.10084"
+      },
+      "members": [
+       82
+      ],
+      "member_names": [
+       "Sentence-BERT"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "colbert-2020",
+      "candidate": {
+       "name": "ColBERT",
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "infrastructure at hand",
+       "causal_claim": "ColBERT made late-interaction retrieval efficient for QA pipelines of the era; ReAct's search actions call the Wikipedia API, not ColBERT.",
+       "definition": "Retrieval model (Khattab & Zaharia, 2020) using token-level late interaction over BERT embeddings for fast, accurate passage search.",
+       "source_title": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT",
+       "source_url": "https://arxiv.org/abs/2004.12832"
+      },
+      "members": [
+       83
+      ],
+      "member_names": [
+       "ColBERT"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "wolfram-alpha-2009",
+      "candidate": {
+       "name": "Wolfram Alpha",
+       "year": 2009,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "Wolfram Alpha pioneered computational answers as a callable knowledge service, the product ancestor of tool-augmented answering; no channel into ReAct's research prototype.",
+       "definition": "Computational knowledge engine (Wolfram, 2009) answering factual queries by computing over curated structured data.",
+       "source_title": "WolframAlpha",
+       "source_url": "https://en.wikipedia.org/wiki/WolframAlpha"
+      },
+      "members": [
+       84
+      ],
+      "member_names": [
+       "Wolfram Alpha"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "siri-2011",
+      "candidate": {
+       "name": "Siri",
+       "year": 2011,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "Siri productized the voice assistant loop (interpret, act, respond) a decade before ReAct; a product-lineage ancestor with no technical channel.",
+       "definition": "Voice assistant (Apple, 2011) interpreting natural-language requests and executing actions across phone services.",
+       "source_title": "Siri",
+       "source_url": "https://en.wikipedia.org/wiki/Siri"
+      },
+      "members": [
+       85
+      ],
+      "member_names": [
+       "Siri"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mediawiki-api-2002",
+      "candidate": {
+       "name": "MediaWiki API",
+       "year": 2002,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "The MediaWiki API is literally the action interface ReAct's Wikipedia environment wraps (search/lookup actions); commodity infrastructure, not a leap.",
+       "definition": "Web API for Wikipedia (2000s) exposing search and page retrieval programmatically - the substrate of ReAct's Wikipedia action space.",
+       "source_title": "MediaWiki API",
+       "source_url": "https://www.mediawiki.org/wiki/API:Main_page"
+      },
+      "members": [
+       86
+      ],
+      "member_names": [
+       "MediaWiki API"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sparql-and-the-semantic-web-2008",
+      "candidate": {
+       "name": "SPARQL and the Semantic Web",
+       "year": 2008,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "infrastructure at hand",
+       "causal_claim": "SPARQL standardized querying structured knowledge on the web; ReAct queries unstructured text via search actions instead.",
+       "definition": "Query language (W3C, 2008) for RDF data, the Semantic Web's standard interface to structured knowledge.",
+       "source_title": "SPARQL",
+       "source_url": "https://en.wikipedia.org/wiki/SPARQL"
+      },
+      "members": [
+       87
+      ],
+      "member_names": [
+       "SPARQL and the Semantic Web"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "openie-2007",
+      "candidate": {
+       "name": "OpenIE",
+       "year": 2007,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "infrastructure at hand",
+       "causal_claim": "OpenIE extracted relational tuples from text at web scale, an ancestor of machine-readable web knowledge; no channel into ReAct.",
+       "definition": "Paradigm (Banko et al., 2007, TextRunner) extracting (arg1, relation, arg2) tuples from web text without hand-built extractors.",
+       "source_title": "Open information extraction",
+       "source_url": "https://en.wikipedia.org/wiki/Open_information_extraction"
+      },
+      "members": [
+       88
+      ],
+      "member_names": [
+       "OpenIE"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rasa-open-source-dialogue-framework-2016",
+      "candidate": {
+       "name": "Rasa open-source dialogue framework",
+       "year": 2016,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "infrastructure at hand",
+       "causal_claim": "Rasa industrialized intent-and-action dialogue agents for developers; the commercial dialogue-agent tradition ReAct's research bypassed.",
+       "definition": "Open-source framework (2016) for building text/voice assistants with NLU and dialogue policies executing actions.",
+       "source_title": "Rasa (software)",
+       "source_url": "https://en.wikipedia.org/wiki/Rasa_(software)"
+      },
+      "members": [
+       89
+      ],
+      "member_names": [
+       "Rasa open-source dialogue framework"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Chain-of-thought prompting",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "differentiating move",
+       "causal_claim": "CoT showed elicited reasoning traces dramatically raise LLM task accuracy; ReAct's thought actions are CoT traces interleaved with environment actions.",
+       "definition": "Prompting technique (Wei et al., 2022) in which few-shot exemplars contain step-by-step reasoning, eliciting intermediate reasoning from an LLM before its answer.",
+       "source_title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+       "source_url": "https://arxiv.org/abs/2201.11903"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Least-to-most prompting",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "differentiating move",
+       "causal_claim": "Least-to-most decomposed hard problems into sequenced subproblems shortly before ReAct; a sibling prompting strategy for multi-step reasoning.",
+       "definition": "Prompting strategy (Zhou et al., 2022) that decomposes a problem into subproblems solved in sequence, each answer feeding the next prompt.",
+       "source_title": "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models",
+       "source_url": "https://arxiv.org/abs/2205.10625"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Self-consistency",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "Self-consistency improved CoT by sampling and marginalizing over reasoning paths; a decoding-side sibling of ReAct's single-trajectory loop.",
+       "definition": "Decoding strategy (Wang et al., 2022) sampling multiple CoT reasoning paths and taking the majority answer, substantially raising reasoning benchmark scores.",
+       "source_title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+       "source_url": "https://arxiv.org/abs/2203.11171"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "STaR: Self-Taught Reasoner",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "STaR bootstrapped rationale generation from few exemplars, showing reasoning traces could be elicited and improved without large rationale datasets.",
+       "definition": "Bootstrapping method (Zelikman et al., 2022) in which a model generates rationales for problems, keeps those reaching correct answers, and fine-tunes on them.",
+       "source_title": "STaR: Bootstrapping Reasoning With Reasoning",
+       "source_url": "https://arxiv.org/abs/2203.14465"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Zero-shot chain-of-thought",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "differentiating move",
+       "causal_claim": "'Let's think step by step' showed reasoning traces could be elicited with no exemplars at all, sharpening the reasoning/acting contrast ReAct built on.",
+       "definition": "Finding (Kojima et al., 2022) that appending 'Let's think step by step' elicits reasoning traces from LLMs zero-shot, large gains on reasoning tasks.",
+       "source_title": "Large Language Models are Zero-Shot Reasoners",
+       "source_url": "https://arxiv.org/abs/2205.11916"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Selection-inference",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "Selection-inference decomposed reasoning into LLM selection and inference steps over facts, a modular sibling of ReAct's interleaving.",
+       "definition": "Framework (Creswell et al., 2022) alternating an LLM selection module (pick relevant facts) and inference module (derive one step), for faithful multi-step reasoning.",
+       "source_title": "Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning",
+       "source_url": "https://arxiv.org/abs/2205.09712"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Decomposed prompting",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "Decomposed prompting split complex tasks into sub-tasks routed to specialized LLM calls, a modular sibling architecture to ReAct's loop.",
+       "definition": "Approach (Khot et al., 2022) decomposing a complex task into sub-tasks, each handled by an LLM prompt or handler, composed by a controller.",
+       "source_title": "Decomposed Prompting: A Modular Approach for Solving Complex Tasks",
+       "source_url": "https://arxiv.org/abs/2210.02406"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Automatic prompt engineering",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "method introduced shortly before",
+       "causal_claim": "APE automated the search for effective instructions, part of the 2022 prompting-methods wave surrounding ReAct.",
+       "definition": "Method (Zhou et al., 2022) using an LLM to propose and select natural-language instructions automatically, matching human prompt engineering.",
+       "source_title": "Large Language Models Are Human-Level Prompt Engineers",
+       "source_url": "https://arxiv.org/abs/2211.01910"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "PaLM",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "PaLM-540B was ReAct's strongest base model; its scale supplied the emergent reasoning ReAct's exemplars elicited.",
+       "definition": "540B dense decoder LM (Chowdhery et al., 2022) trained with Pathways, showing strong emergent reasoning and few-shot performance.",
+       "source_title": "PaLM: Scaling Language Modeling with Pathways",
+       "source_url": "https://arxiv.org/abs/2204.02311"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "LaMDA",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "LaMDA demonstrated dialog-tuned LLMs at scale in early 2022, part of the model wave ReAct drew on; not used in ReAct's experiments.",
+       "definition": "Dialog-specialized LLM family (Thoppilan et al., 2022) fine-tuned for grounded, sensible conversation.",
+       "source_title": "LaMDA: Language Models for Dialog Applications",
+       "source_url": "https://arxiv.org/abs/2201.08239"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Chinchilla",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "first-order components",
+       "causal_claim": "Chinchilla reset the compute-optimal scaling recipe in 2022; a scaling-law sibling result, not an input to ReAct's method.",
+       "definition": "70B LM (Hoffmann et al., 2022) establishing compute-optimal parameter/token balance, outperforming much larger models.",
+       "source_title": "Training Compute-Optimal Large Language Models",
+       "source_url": "https://arxiv.org/abs/2203.15556"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "SayCan",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "immediate prior state of the art",
+       "causal_claim": "SayCan grounded LLM plans in robot affordances months before ReAct; the leading sibling approach to LLM acting, compared against ReAct's setting.",
+       "definition": "System (Ahn et al., 2022) pairing an LLM's task knowledge ('Say') with learned affordance values ('Can') to ground plans for a mobile manipulator.",
+       "source_title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+       "source_url": "https://arxiv.org/abs/2204.01691"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Inner Monologue",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "immediate prior state of the art",
+       "causal_claim": "Inner Monologue fed environment feedback back into an LLM planner in text form, the closest contemporaneous sibling to ReAct's observation loop.",
+       "definition": "Framework (Huang et al., 2022) giving an LLM planner textual environment feedback (success detection, scene description) for closed-loop robotic planning.",
+       "source_title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+       "source_url": "https://arxiv.org/abs/2207.05608"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "MRKL systems",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "immediate prior state of the art",
+       "causal_claim": "MRKL routed LLM calls to external tools and knowledge sources months before ReAct; the verifier already flagged it as ReAct's near-simultaneous multiple.",
+       "definition": "Neuro-symbolic architecture (Karpas et al., 2022) in which an LLM router dispatches to expert modules: calculators, APIs, knowledge bases.",
+       "source_title": "MRKL Systems: A modular, neuro-symbolic architecture that combines large language models, external knowledge sources and discrete reasoning",
+       "source_url": "https://arxiv.org/abs/2205.00445"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Language models as zero-shot planners",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "immediate prior state of the art",
+       "causal_claim": "Huang et al. showed LLMs could decompose embodied tasks into executable steps zero-shot, defining the act-only baseline ReAct's reasoning was measured against.",
+       "definition": "Method (Huang et al., 2022) translating LLM-generated high-level plans into admissible embodied actions via sentence-embedding matching.",
+       "source_title": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
+       "source_url": "https://arxiv.org/abs/2201.07207"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "ProgPrompt",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "immediate prior state of the art",
+       "causal_claim": "ProgPrompt generated program-like robot plans with assertion-based recovery, a code-as-policy sibling of ReAct's loop.",
+       "definition": "Method (Singh et al., 2022) prompting LLMs to emit Pythonic robot action programs with assertions enabling environment feedback and recovery.",
+       "source_title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+       "source_url": "https://arxiv.org/abs/2209.11302"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Gato",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "immediate prior state of the art",
+       "causal_claim": "Gato showed a single transformer acting across embodiments and modalities in 2022; a generalist-agent sibling, not an input to ReAct.",
+       "definition": "Multi-modal, multi-task agent (Reed et al., 2022): one 1.2B transformer playing Atari, captioning images, and controlling a robot arm.",
+       "source_title": "A Generalist Agent",
+       "source_url": "https://arxiv.org/abs/2205.06175"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "WebShop",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "benchmarks and measurement",
+       "causal_claim": "WebShop was ReAct's second headline testbed (+10); a coeval benchmark, built independently of the method.",
+       "definition": "Simulated e-commerce environment (Yao et al., 2022) with 1.18M products and 12k instructions for evaluating web-shopping agents.",
+       "source_title": "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents",
+       "source_url": "https://arxiv.org/abs/2207.01206"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "ScienceWorld",
+       "year": 2022,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "benchmarks and measurement",
+       "causal_claim": "ScienceWorld evaluated text agents on science experiments in 2022; a coeval sibling benchmark to ReAct's testbeds.",
+       "definition": "Benchmark (Wang et al., 2022) of 30 science-experiment tasks in a text-simulated environment for interactive agents.",
+       "source_title": "ScienceWorld: Is your Agent Smarter than a 5th Grader?",
+       "source_url": "https://arxiv.org/abs/2203.07540"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Reflexion",
+       "year": 2023,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "lens": "contemporaneous accounts",
+       "causal_claim": "Reflexion extended ReAct with verbal self-reflection memory - a successor, dated after the parent, listed to be dropped by the year bound.",
+       "definition": "Framework (Shinn et al., 2023) in which agents verbally reflect on failures and store the reflections as episodic memory for later trials.",
+       "source_title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+       "source_url": "https://arxiv.org/abs/2303.11366"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Toolformer",
+       "year": 2023,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "contemporaneous accounts",
+       "causal_claim": "Toolformer taught models to call APIs by self-supervision - a 2023 successor direction, after the parent.",
+       "definition": "Model (Schick et al., 2023) trained to decide which APIs to call and how, from self-supervised annotations.",
+       "source_title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+       "source_url": "https://arxiv.org/abs/2302.04761"
+      },
+      "reason": "dated on/after parent year 2022"
+     },
+     {
+      "candidate": {
+       "name": "Generative Agents",
+       "year": 2023,
+       "domain": "artificial intelligence",
+       "type": "system",
+       "lens": "contemporaneous accounts",
+       "causal_claim": "Generative Agents built believable agent societies on an LLM loop in 2023 - after the parent; part of the lineage ReAct opened, not its ancestry.",
+       "definition": "Architecture (Park et al., 2023) of LLM agents with memory stream, reflection, and planning, simulating a small town's social behavior.",
+       "source_title": "Generative Agents: Interactive Simulacra of Human Behavior",
+       "source_url": "https://arxiv.org/abs/2304.03442"
+      },
+      "reason": "dated on/after parent year 2022"
+     }
+    ]
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
