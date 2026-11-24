@@ -1,0 +1,1666 @@
+{
+  "evaluations": [
+    {
+      "bottleneck": "Before Transformer architecture, training sequence models on long contexts was impossible or impractical because recurrent networks processed tokens sequentially and could not be parallelized.",
+      "cand_id": "transformer-architecture-2017",
+      "verdicts": {
+        "Q1": {
+          "evidence": "The Transformer reached state-of-the-art translation quality while training for only 3.5 days on eight GPUs, a regime recurrent models could not match at that quality.",
+          "falsification": "this pass dies if recurrent models of 2017 are shown to have matched Transformer quality and training cost at scale",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "By 2020 Transformers had displaced LSTMs as the default architecture for state-of-the-art NLP.",
+          "falsification": "this pass dies if LSTMs remained the default for leading NLP systems after 2020",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "The GPT lineage that powers modern agents descends directly from the 2017 Transformer paper.",
+          "falsification": "this pass dies if the GPT lineage is shown to derive from a different architecture",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "No major lab has returned to recurrent architectures as the default for frontier language models since Transformers scaled.",
+          "falsification": "this pass dies if frontier language modeling reverts to RNN defaults",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Transformers became the substrate for BERT, GPT, ViT and multimodal models, unblocking a whole family of previously impractical systems.",
+          "falsification": "this pass dies if post-2017 large models are shown to rest mainly on non-Transformer architectures",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Every major LLM core behind 2023 agents, including GPT-4 class systems, is a Transformer variant.",
+          "falsification": "this pass dies if a 2023-class agent is shown to have emerged on a non-Transformer core at comparable capability",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "Removing recurrence allowed full parallelization across sequence positions, sharply cutting training time per experiment compared with sequential RNN training.",
+          "falsification": "this pass dies if Transformer training is shown to have been no faster than comparable RNN training",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Self-attention gave designers an explicit model of sequence processing as learned pairwise token interaction, enabling deliberate variants such as encoder-only and decoder-only models.",
+          "falsification": "this pass dies if Transformer variants are shown to have been designed without using the attention interaction model",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "The Transformer block became a reusable standard component implemented identically across frameworks and model families.",
+          "falsification": "this pass dies if later models are shown not to reuse a common Transformer block abstraction",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "The same architecture produced leading results in language, vision, speech and protein structure prediction.",
+          "falsification": "this pass dies if Transformers are shown to have remained confined to machine translation",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "evidence": "Parallel training shortened the train-evaluate cycle from sequential RNN runs to highly parallel GPU and TPU runs, enabling rapid scaling experiments.",
+          "falsification": "this pass dies if Transformer iteration cycles are shown to have been as slow as RNN cycles at equal scale",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before self-attention mechanism, relating distant tokens in a sequence was impossible or impractical because recurrence passed information step by step through a sequential bottleneck.",
+      "cand_id": "self-attention-mechanism-2017",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Self-attention connects all positions with a constant number of sequential operations, making direct long-range dependency modeling practical.",
+          "falsification": "this pass dies if recurrent paths are shown to have offered equally direct long-range access at scale",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Attention-based mixing replaced recurrence as the default sequence mixing operation in NLP after 2017.",
+          "falsification": "this pass dies if recurrence remained the default sequence mixer in leading NLP after 2019",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Self-attention is the defining operation in the direct ancestry of every GPT model.",
+          "falsification": "this pass dies if GPT models are shown not to use self-attention",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Successor architectures still retain attention or explicitly position themselves against it, showing the field reorganized permanently around it.",
+          "falsification": "this pass dies if attention disappears from both practice and successor design debates",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Self-attention underlies language models, vision transformers and multimodal encoders, opening many model classes beyond translation.",
+          "falsification": "this pass dies if self-attention is shown to have been used only inside the original translation model",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "All Transformer LLM cores used by modern agents implement self-attention as their core mixing operation.",
+          "falsification": "this pass dies if agent LLM cores are shown to work at scale without any attention-like token mixing",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Attention weights provide an explicit pairwise relevance model that researchers used to design heads, masking and sparse variants.",
+          "falsification": "this pass dies if head and masking design are shown to owe nothing to the pairwise relevance model",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Multi-head attention became a standard module exported by every major deep learning framework.",
+          "falsification": "this pass dies if multi-head attention is shown not to be a reusable framework module",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Self-attention was transferred from text to images in ViT and to proteins in AlphaFold-style architectures.",
+          "falsification": "this pass dies if self-attention is shown to have no successful use outside text",
+          "source": "Attention Is All You Need",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before attention mechanism (neural machine translation), neural translation was impossible or impractical for long sentences because the source had to be compressed into one fixed-length vector.",
+      "cand_id": "attention-mechanism-neural-machine-translation-2014",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "Transformer self-attention directly generalizes the 2014 alignment mechanism by removing the recurrent decoder it was attached to.",
+          "falsification": "this pass dies if Transformer attention is shown to have an independent origin unrelated to NMT attention",
+          "source": "Neural Machine Translation by Jointly Learning to Align and Translate",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Bahdanau attention introduced learned soft alignment as an explicit model of which source words a decoder step should use.",
+          "falsification": "this pass dies if the 2014 model is shown not to learn source-target alignments",
+          "source": "Neural Machine Translation by Jointly Learning to Align and Translate",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before sequence-to-sequence learning, mapping inputs to outputs of different lengths was impossible or impractical in one trainable model because tasks needed bespoke architectures per input-output shape.",
+      "cand_id": "sequence-to-sequence-learning-2014",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "Prompt-to-response language modeling is a direct descendant of the seq2seq framing of conditional sequence generation.",
+          "falsification": "this pass dies if conditional generation in LLMs is shown to have a separate, unrelated origin",
+          "source": "Sequence to Sequence Learning with Neural Networks",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "Seq2seq was applied to translation, summarization, parsing and speech, showing one framework covered many transduction tasks.",
+          "falsification": "this pass dies if seq2seq is shown to have worked only for machine translation",
+          "source": "Sequence to Sequence Learning with Neural Networks",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "evidence": "The encoder-decoder framework gave a general explanatory template of compressing an input sequence then generating an output sequence.",
+          "falsification": "this pass dies if later sequence models are shown not to use or react against the encoder-decoder template",
+          "source": "Sequence to Sequence Learning with Neural Networks",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Encoder-decoder became a standard interface reused in translation, summarization and later Transformer models such as T5.",
+          "falsification": "this pass dies if encoder-decoder structure is shown not to recur across later systems",
+          "source": "Sequence to Sequence Learning with Neural Networks",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Seq2seq methods spread from translation into speech recognition, dialogue and code generation.",
+          "falsification": "this pass dies if seq2seq is shown to have stayed inside translation research",
+          "source": "Sequence to Sequence Learning with Neural Networks",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before long short-term memory (LSTM), learning long-range dependencies was impossible or impractical because vanilla recurrent gradients vanished or exploded over long time lags.",
+      "cand_id": "long-short-term-memory-lstm-1997",
+      "verdicts": {
+        "Q1": {
+          "evidence": "LSTM constant-error carousels learned tasks with lags of over 1000 steps that vanilla RNNs could not learn.",
+          "falsification": "this pass dies if vanilla RNNs of 1997 are shown to learn 1000-step lag tasks equally well",
+          "source": "Long Short-Term Memory (Neural Computation)",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "fail"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before backpropagation popularized, training multi-layer networks was impossible or impractical because there was no demonstrated general method for assigning credit to hidden units.",
+      "cand_id": "backpropagation-popularized-1986",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Rumelhart, Hinton and Williams showed backpropagation trained multi-layer networks to learn useful internal representations on tasks earlier perceptrons could not solve.",
+          "falsification": "this pass dies if multi-layer networks are shown to have been routinely trained effectively before 1986 by another general method",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Gradient-trained neural networks displaced hand-engineered feature pipelines as the default in perception and language by the 2010s.",
+          "falsification": "this pass dies if hand-engineered pipelines remained the default in perception and language after 2015",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Backpropagation is in the direct training lineage of AlexNet, Transformers and GPT models.",
+          "falsification": "this pass dies if those systems are shown to use a different training principle",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "No subsequent paradigm has replaced gradient backpropagation as the training method for frontier neural networks.",
+          "falsification": "this pass dies if frontier networks abandon backpropagation as their training method",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Backpropagation underlies training of convolutional, recurrent and Transformer networks across virtually all of deep learning.",
+          "falsification": "this pass dies if major deep learning systems are shown to train without gradient backpropagation",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Every LLM core behind modern agents is trained by backpropagating loss gradients through the network.",
+          "falsification": "this pass dies if an LLM-class model is shown trained to comparable capability without backpropagation",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "evidence": "Backpropagation supplied the credit-assignment model that let researchers deliberately design and debug layered architectures.",
+          "falsification": "this pass dies if architecture design after 1986 is shown to owe nothing to gradient credit assignment",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Automatic differentiation of a scalar loss, built on backpropagation, is the standard training interface in PyTorch and TensorFlow.",
+          "falsification": "this pass dies if modern frameworks are shown not to expose backpropagation-based training as their core interface",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Backpropagation-trained networks produced breakthroughs in vision, speech, language, games and protein folding.",
+          "falsification": "this pass dies if backpropagation successes are shown to be confined to one field",
+          "source": "Learning representations by back-propagating errors (Nature)",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before stochastic gradient descent, optimizing models on large datasets was impossible or impractical because exact batch gradients required processing all data for every parameter update.",
+      "cand_id": "stochastic-gradient-descent-1951",
+      "verdicts": {
+        "Q1": {
+          "evidence": "The Robbins-Monro procedure converges using noisy single-sample estimates, making iterative optimization feasible where exact gradients are unavailable or too costly.",
+          "falsification": "this pass dies if exact batch optimization is shown to have been equally feasible for streaming large-scale problems in 1951",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "SGD displaced exact batch optimization as the default for training large models.",
+          "falsification": "this pass dies if exact batch methods remained the default for large-model training",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Adam, AdamW and other LLM optimizers are direct descendants that modify the SGD update rule.",
+          "falsification": "this pass dies if LLM optimizers are shown to be unrelated to stochastic gradient updates",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Large-scale model training has never returned to exact full-batch optimization since data scales grew.",
+          "falsification": "this pass dies if frontier training reverts to full-batch exact gradients",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "SGD and its variants train models across vision, language, recommendation and reinforcement learning.",
+          "falsification": "this pass dies if SGD use is shown to be confined to a single application area",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "LLM training still proceeds by minibatch stochastic gradient updates; full-batch gradient descent is computationally infeasible at trillion-token scale.",
+          "falsification": "this pass dies if an LLM is shown trained by full-batch exact gradients at comparable cost",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "Replacing a full dataset pass per update with a small minibatch reduces the cost of each optimization step by orders of magnitude.",
+          "falsification": "this pass dies if minibatch updates are shown to cost about the same per step as full-batch updates",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "The minibatch gradient step is the standard optimizer interface implemented by every deep learning framework.",
+          "falsification": "this pass dies if frameworks are shown not to be organized around minibatch gradient steps",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Stochastic approximation is used in statistics, control, finance and machine learning, far beyond its original setting.",
+          "falsification": "this pass dies if stochastic approximation is shown to have remained a statistics curiosity",
+          "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Adam optimizer, training deep networks was impractical at scale because SGD required extensive per-problem learning-rate tuning and handled sparse gradients poorly.",
+      "cand_id": "adam-optimizer-2014",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "Adam became the default optimizer exposed and preset in major frameworks for training Transformers.",
+          "falsification": "this pass dies if frameworks are shown not to have adopted Adam as a standard default",
+          "source": "Adam: A Method for Stochastic Optimization",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before generative pre-training (GPT-1), building one general language model was impossible or impractical because each task needed its own labeled data and bespoke architecture.",
+      "cand_id": "generative-pre-training-gpt-1-2018",
+      "verdicts": {
+        "Q1": {
+          "evidence": "GPT-1 pre-training on unlabeled text then fine-tuning improved 9 of 12 language understanding tasks over task-specific state of the art.",
+          "falsification": "this pass dies if GPT-1 is shown not to have beaten task-specific models via pre-training transfer",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Pre-trained foundation models displaced task-specific NLP architectures as the default starting point by the early 2020s.",
+          "falsification": "this pass dies if task-specific architectures remained the NLP default after 2022",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "GPT-1 is the named first step in the direct lineage to ChatGPT and 2023 agent cores.",
+          "falsification": "this pass dies if ChatGPT's lineage is shown to start elsewhere",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "No frontier lab has returned to training task-specific language models from scratch as its main strategy.",
+          "falsification": "this pass dies if the field reverts to per-task from-scratch training as the norm",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "The pretrain-then-adapt recipe generalized from GPT-1 to the entire GPT series and to instruction-tuned assistants.",
+          "falsification": "this pass dies if the GPT series is shown to abandon generative pre-training",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "The modern agent's core descends directly through GPT-2, GPT-3 and GPT-4 from the GPT-1 pre-training recipe.",
+          "falsification": "this pass dies if the GPT lineage to modern agents is shown to bypass the GPT-1 recipe",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "One pre-trained model amortized across many downstream tasks replaced training separate models from scratch per task.",
+          "falsification": "this pass dies if pre-training is shown to have saved no training effort across downstream tasks",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "GPT-1 established the explanatory model that unsupervised next-token learning builds transferable linguistic competence.",
+          "falsification": "this pass dies if transfer in GPT-1 is shown to come from supervised task data rather than unsupervised pre-training",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Pre-train then fine-tune or prompt became the standard usage interface for foundation models.",
+          "falsification": "this pass dies if foundation models are shown not to be used via a pre-train and adapt interface",
+          "source": "Improving Language Understanding by Generative Pre-Training",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before BERT masked language modeling, obtaining transferable bidirectional text representations was impossible or impractical because left-to-right and shallowly bidirectional models could not condition on both contexts.",
+      "cand_id": "bert-masked-language-modeling-2018",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "BERT set new state of the art on eleven NLP tasks at release, showing one pre-trained encoder transferred broadly.",
+          "falsification": "this pass dies if BERT is shown not to have transferred across those eleven tasks",
+          "source": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "BERT-style encoders became a standard reusable component for classification, retrieval and embedding pipelines.",
+          "falsification": "this pass dies if BERT-style encoders are shown not to be reused as standard components",
+          "source": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before scaling laws for neural language models, planning large training runs was impossible or impractical because no one knew how loss would respond to more model, data and compute.",
+      "cand_id": "scaling-laws-for-neural-language-models-2020",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "evidence": "Scaling-law reasoning directly justified the compute budgets behind GPT-3 scale and later frontier training runs.",
+          "falsification": "this pass dies if frontier run budgets are shown to have been set independently of scaling evidence",
+          "source": "Scaling Laws for Neural Language Models",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "evidence": "Kaplan et al. showed test loss follows predictable power laws in parameters, data and compute over many orders of magnitude.",
+          "falsification": "this pass dies if loss is shown not to follow the reported power-law relationships",
+          "source": "Scaling Laws for Neural Language Models",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "evidence": "Scaling laws let builders deliberately allocate compute between model size and training tokens before committing to a run.",
+          "falsification": "this pass dies if large runs after 2020 are shown to be sized without reference to scaling relationships",
+          "source": "Scaling Laws for Neural Language Models",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before reinforcement learning from human feedback (RLHF), steering a language model to follow instructions helpfully was impossible or impractical because likelihood training on text does not encode human preferences.",
+      "cand_id": "reinforcement-learning-from-human-feedback-rlhf-2022",
+      "verdicts": {
+        "Q1": {
+          "evidence": "InstructGPT models with 1.3B parameters were preferred by human raters over the 175B GPT-3 despite being far smaller.",
+          "falsification": "this pass dies if raters are shown to have preferred raw GPT-3 outputs over InstructGPT outputs",
+          "source": "Training language models to follow instructions with human feedback",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Preference-based post-training became the default final stage for ChatGPT and competing assistants after 2022.",
+          "falsification": "this pass dies if leading assistants after 2022 are shown to ship without any preference post-training",
+          "source": "Training language models to follow instructions with human feedback",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "ChatGPT, the immediate precursor of 2023 agents, was produced by applying RLHF to GPT-3.5.",
+          "falsification": "this pass dies if ChatGPT is shown not to have used RLHF",
+          "source": "Training language models to follow instructions with human feedback",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Successor methods such as DPO still optimize learned human preference signals, preserving the RLHF paradigm rather than reverting to raw likelihood models for assistants.",
+          "falsification": "this pass dies if assistants revert to shipping raw base models without preference training",
+          "source": "Training language models to follow instructions with human feedback",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "RLHF turned base models into usable assistants, unlocking chatbots, coding assistants and agent systems directed by users.",
+          "falsification": "this pass dies if assistant-style systems are shown to have emerged equally from base models without preference training",
+          "source": "Training language models to follow instructions with human feedback",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "evidence": "A reward model trained on human comparison rankings made subjective preference a quantifiable, optimizable signal.",
+          "falsification": "this pass dies if the reward model is shown not to predict human preferences better than chance",
+          "source": "Training language models to follow instructions with human feedback",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before instruction tuning, directing a language model with plain-language commands was impossible or impractical because models were trained to continue text, not to obey instructions.",
+      "cand_id": "instruction-tuning-2022",
+      "verdicts": {
+        "Q1": {
+          "evidence": "FLAN fine-tuning improved zero-shot performance on unseen task types, showing models could follow instructions for tasks never trained on directly.",
+          "falsification": "this pass dies if FLAN is shown not to improve zero-shot performance on held-out task types",
+          "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Instruction-tuned chat models displaced raw completion models as the default way users interact with LLMs.",
+          "falsification": "this pass dies if raw completion models remained the default user-facing LLM form",
+          "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "InstructGPT and ChatGPT, the direct precursors of modern agents, are instruction-tuned systems.",
+          "falsification": "this pass dies if ChatGPT is shown not to be instruction tuned",
+          "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Every subsequent frontier model release has retained instruction following as a core trained capability.",
+          "falsification": "this pass dies if frontier models drop instruction following in later releases",
+          "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Instruction tuning made one model usable for translation, QA, classification, writing and tool direction through language alone.",
+          "falsification": "this pass dies if instruction-tuned models are shown to handle only their trained task formats",
+          "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Agent loops direct their LLM core entirely through natural-language instructions, the interface instruction tuning created.",
+          "falsification": "this pass dies if agent loops are shown to direct cores mainly through non-linguistic control signals",
+          "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "Natural language instructions became the standard control interface through which users and agent scaffolds invoke model capabilities.",
+          "falsification": "this pass dies if prompting with instructions is shown not to be the standard control interface",
+          "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Instruction following transferred to education, coding, customer support and scientific assistance without domain-specific interfaces.",
+          "falsification": "this pass dies if instruction tuning benefits are shown to be confined to benchmark NLP tasks",
+          "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before chain-of-thought prompting, multi-step reasoning by language models was impossible or impractical because models had to produce answers directly with no intermediate computation in language.",
+      "cand_id": "chain-of-thought-prompting-2022",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Chain-of-thought prompting raised PaLM 540B accuracy on GSM8K math word problems from about 18 percent to about 57 percent.",
+          "falsification": "this pass dies if the reported GSM8K gains from chain-of-thought are shown not to exist",
+          "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "Agent planning loops in 2023 systems explicitly generate intermediate reasoning steps derived from the chain-of-thought finding.",
+          "falsification": "this pass dies if agent planning is shown to make no use of intermediate reasoning steps",
+          "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "The same prompting technique improved arithmetic, commonsense and symbolic reasoning benchmarks without any retraining.",
+          "falsification": "this pass dies if chain-of-thought is shown to help only one benchmark family",
+          "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "Chain-of-thought became a standard prompting pattern built into agent frameworks and reasoning model training.",
+          "falsification": "this pass dies if agent frameworks are shown not to incorporate stepwise reasoning traces",
+          "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Chain-of-thought was adopted in math education, coding assistants, medical QA and scientific problem solving.",
+          "falsification": "this pass dies if chain-of-thought use is shown to be confined to NLP benchmarks",
+          "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before ReAct (reasoning and acting), grounding language model reasoning in a changing environment was impossible or impractical because reasoning and action were run as separate, non-interleaved processes.",
+      "cand_id": "react-reasoning-and-acting-2022",
+      "verdicts": {
+        "Q1": {
+          "evidence": "ReAct reduced hallucination and error propagation on HotpotQA and FEVER by interleaving reasoning with Wikipedia API actions that grounded each step.",
+          "falsification": "this pass dies if ReAct is shown not to outperform chain-of-thought and act-only baselines on those interactive tasks",
+          "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "ReAct is the canonical cited template for the 2023 generation of LLM agents including AutoGPT-style systems.",
+          "falsification": "this pass dies if 2023 agent systems are shown to derive their loop from an unrelated template",
+          "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "The ReAct loop was applied to question answering, fact verification, web navigation and interactive decision-making environments such as ALFWorld and WebShop.",
+          "falsification": "this pass dies if ReAct is shown to work in only one task environment",
+          "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "ReAct supplied the explicit reason-act-observe explanatory model that agent designers use to structure loops.",
+          "falsification": "this pass dies if agent loop designs are shown to owe nothing to the reason-act-observe structure",
+          "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "The thought-action-observation trace format became a standard scaffold pattern in frameworks such as LangChain agents.",
+          "falsification": "this pass dies if major agent frameworks are shown not to implement a ReAct-style trace format",
+          "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before byte-pair encoding tokenization, handling open vocabularies was impossible or impractical because word-level models failed on rare and unseen words and character models were inefficient.",
+      "cand_id": "byte-pair-encoding-tokenization-2016",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "GPT-2 and GPT-3 tokenizers are byte-level BPE, placing this method in the direct input pipeline of agent cores.",
+          "falsification": "this pass dies if GPT tokenizers are shown to use a non-BPE scheme",
+          "source": "Neural Machine Translation of Rare Words with Subword Units",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "BPE tokenizers are the standard text-to-token interface shipped with the GPT model family.",
+          "falsification": "this pass dies if GPT models are shown not to use BPE tokenization",
+          "source": "Neural Machine Translation of Rare Words with Subword Units",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before word2vec embeddings, representing word meaning for computation was impossible or impractical at scale because sparse count-based vectors were high-dimensional and training neural word vectors was slow.",
+      "cand_id": "word2vec-embeddings-2013",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "evidence": "Dense learned embeddings displaced one-hot and sparse count features as the default word representation in NLP.",
+          "falsification": "this pass dies if sparse features remained the default word representation after 2015",
+          "source": "Efficient Estimation of Word Representations in Vector Space",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "evidence": "Transformer models still begin with learned dense token embedding layers, preserving the vector-representation paradigm permanently.",
+          "falsification": "this pass dies if modern models abandon dense token embeddings",
+          "source": "Efficient Estimation of Word Representations in Vector Space",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Word2vec vectors improved performance across analogy, similarity and downstream NLP tasks and were adopted throughout industry within a few years.",
+          "falsification": "this pass dies if word2vec vectors are shown not to have transferred beyond the analogy task",
+          "source": "Efficient Estimation of Word Representations in Vector Space",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "evidence": "Word2vec trained on 1.6 billion words in under a day, versus weeks estimated for prior neural language model embeddings.",
+          "falsification": "this pass dies if word2vec training is shown to have taken comparable time to prior neural embedding methods",
+          "source": "Efficient Estimation of Word Representations in Vector Space",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "evidence": "Word2vec made semantic similarity a measurable cosine distance, with analogy accuracy scored quantitatively on a standard test set.",
+          "falsification": "this pass dies if vector distances in word2vec are shown not to correlate with semantic similarity",
+          "source": "Efficient Estimation of Word Representations in Vector Space",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "evidence": "Linear vector arithmetic such as king minus man plus woman approximating queen gave a concrete geometric model of semantic relations.",
+          "falsification": "this pass dies if the reported analogy arithmetic results are shown not to hold",
+          "source": "Efficient Estimation of Word Representations in Vector Space",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Pre-trained embedding files became a standard drop-in component loaded by unrelated NLP systems.",
+          "falsification": "this pass dies if pre-trained embeddings are shown not to have been reused as components",
+          "source": "Efficient Estimation of Word Representations in Vector Space",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Embedding methods spread to recommendation, genomics sequences and graph nodes through direct word2vec descendants such as node2vec.",
+          "falsification": "this pass dies if embedding techniques are shown to have stayed within word semantics",
+          "source": "Efficient Estimation of Word Representations in Vector Space",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before distributional semantics (Firth's hypothesis), learning word meaning from text alone was impossible or impractical because meaning was treated as requiring reference or introspection rather than context statistics.",
+      "cand_id": "distributional-semantics-firth-s-hypothesis-1957",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Firth's principle that a word is known by the company it keeps is the stated theoretical basis for distributional models from word2vec to LLM pre-training.",
+          "falsification": "this pass dies if distributional models are shown to derive from a principle unrelated to context distribution",
+          "source": "Distributional semantics (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "verdict": "fail"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before CLIP vision-language model, using images in a language model's terms was impossible or impractical because vision models needed task-specific labeled datasets for every new category.",
+      "cand_id": "clip-vision-language-model-2021",
+      "verdicts": {
+        "Q1": {
+          "evidence": "CLIP achieved zero-shot ImageNet accuracy comparable to a fully supervised ResNet-50 without seeing any ImageNet training labels.",
+          "falsification": "this pass dies if CLIP is shown to have required ImageNet labels for its zero-shot result",
+          "source": "Learning Transferable Visual Models From Natural Language Supervision",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "One CLIP model transferred zero-shot to over 30 datasets including OCR, action recognition and object classification.",
+          "falsification": "this pass dies if CLIP transfer is shown to be limited to a handful of datasets",
+          "source": "Learning Transferable Visual Models From Natural Language Supervision",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "evidence": "Zero-shot classification by text prompt eliminated per-category labeled data collection and classifier training for new categories.",
+          "falsification": "this pass dies if CLIP still required per-category labeled training for new tasks",
+          "source": "Learning Transferable Visual Models From Natural Language Supervision",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "CLIP's joint image-text embedding space became a standard interface reused by image generation, retrieval and multimodal agent systems.",
+          "falsification": "this pass dies if CLIP embeddings are shown not to be reused outside the original paper",
+          "source": "Learning Transferable Visual Models From Natural Language Supervision",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "CLIP embeddings underpin text-to-image generation, robotics perception and medical image retrieval, well beyond classification.",
+          "falsification": "this pass dies if CLIP is shown to be used only for image classification",
+          "source": "Learning Transferable Visual Models From Natural Language Supervision",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Vision Transformer (ViT), unifying vision and language in one architecture was impossible or impractical because image models relied on convolutional inductive biases unlike sequence models.",
+      "cand_id": "vision-transformer-vit-2020",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "ViT established the image-patch-token interface now reused by multimodal models that feed vision into LLM cores.",
+          "falsification": "this pass dies if multimodal models are shown not to use patch-token vision encoders",
+          "source": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before AlexNet, convincing the field that learned deep features beat engineered perception was impossible or impractical because no deep network had won a major vision benchmark by a large margin.",
+      "cand_id": "alexnet-2012",
+      "verdicts": {
+        "Q1": {
+          "evidence": "AlexNet cut ImageNet top-5 error to 15.3 percent versus 26.2 percent for the runner-up, a gap hand-engineered methods had not approached.",
+          "falsification": "this pass dies if the 2012 ImageNet margin is shown to be small or achieved by a non-neural method",
+          "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "After 2012, learned convolutional features displaced hand-engineered SIFT-style features as the computer vision default.",
+          "falsification": "this pass dies if hand-engineered features remained the vision default after 2014",
+          "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "AlexNet is the recognized ignition point of the deep learning era from which Transformer and LLM work followed.",
+          "falsification": "this pass dies if the deep learning era is shown to have begun independently of the 2012 result",
+          "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Computer vision never returned to hand-engineered features as its leading approach after AlexNet.",
+          "falsification": "this pass dies if hand-engineered features regain the lead in vision benchmarks",
+          "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "AlexNet's win triggered deep learning adoption across speech, translation, drug discovery and game playing within five years.",
+          "falsification": "this pass dies if deep learning adoption after 2012 is shown to be unrelated to the ImageNet result",
+          "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "evidence": "GPU-trained deep networks modeled on AlexNet produced breakthroughs in speech recognition and machine translation by 2016.",
+          "falsification": "this pass dies if post-AlexNet deep learning is shown to have stayed within image classification",
+          "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before ImageNet dataset, training and comparing data-hungry perception models was impossible or impractical because available labeled image sets were too small and had no common benchmark.",
+      "cand_id": "imagenet-dataset-2009",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "ImageNet's 14 million labeled images enabled training data-hungry models and spawned benchmarks and challenges across vision subfields.",
+          "falsification": "this pass dies if large-scale vision progress is shown to have proceeded equally on pre-2009 small datasets",
+          "source": "ImageNet: A Large-Scale Hierarchical Image Database",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "evidence": "The ImageNet challenge gave perception a single public error-rate metric on which competing methods could be ranked annually.",
+          "falsification": "this pass dies if ImageNet is shown not to have provided a common comparative metric",
+          "source": "ImageNet: A Large-Scale Hierarchical Image Database",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "verdict": "fail"
+        },
+        "Q7": {
+          "evidence": "ImageNet's category structure and train-test protocol became the standard benchmark interface for vision research.",
+          "falsification": "this pass dies if vision research is shown not to have standardized on ImageNet protocols",
+          "source": "ImageNet: A Large-Scale Hierarchical Image Database",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "ImageNet pre-training transferred to medical imaging, robotics and remote sensing far outside its original object categories.",
+          "falsification": "this pass dies if ImageNet pre-training is shown not to transfer outside object recognition",
+          "source": "ImageNet: A Large-Scale Hierarchical Image Database",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before CUDA, using GPU parallelism for general computation was impossible or impractical because graphics hardware could only be programmed through graphics APIs not designed for it.",
+      "cand_id": "cuda-2007",
+      "verdicts": {
+        "Q1": {
+          "evidence": "CUDA gave general-purpose code direct access to GPU parallel cores, making GPU matrix computation practical for non-graphics programmers.",
+          "falsification": "this pass dies if general-purpose GPU computing is shown to have been equally accessible through graphics APIs before 2007",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "GPUs displaced CPUs as the default compute for training neural networks after CUDA matured.",
+          "falsification": "this pass dies if CPUs remained the default training hardware after 2012",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Every stage of the agent lineage from AlexNet to GPT training ran on CUDA-programmed NVIDIA hardware.",
+          "falsification": "this pass dies if the main lineage systems are shown to have trained primarily on other platforms",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "The AI field's software and hardware investment is now locked into the CUDA ecosystem, with alternatives still chasing compatibility.",
+          "falsification": "this pass dies if the field migrates wholesale off the CUDA ecosystem",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "CUDA enabled GPU acceleration across deep learning, molecular dynamics, finance and scientific simulation.",
+          "falsification": "this pass dies if CUDA use is shown to be confined to deep learning",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Frontier LLM training runs execute overwhelmingly on NVIDIA GPUs programmed through the CUDA ecosystem.",
+          "falsification": "this pass dies if frontier LLM training is shown to run mainly on non-CUDA hardware at comparable scale",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "GPU training reduced deep network training times from weeks on CPUs to days, as first demonstrated at scale by AlexNet's two-GPU training.",
+          "falsification": "this pass dies if GPU training is shown to offer no large speedup over CPU training for deep networks",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "CUDA became the standard programming interface that frameworks such as PyTorch target so users need not write GPU kernels themselves.",
+          "falsification": "this pass dies if deep learning frameworks are shown not to build on CUDA",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "CUDA-based computing is standard in physics simulation, genomics and quantitative finance as well as AI.",
+          "falsification": "this pass dies if CUDA is shown to have no significant use outside AI",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "evidence": "Orders-of-magnitude faster training let researchers run many more architecture and hyperparameter experiments per month.",
+          "falsification": "this pass dies if experiment throughput in deep learning is shown not to have risen with GPU adoption",
+          "source": "CUDA (Wikipedia)",
+          "verdict": "pass"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Perceptron, a machine learning a classifier from examples was impossible or impractical because computing machines were programmed with fixed rules rather than adjusted weights.",
+      "cand_id": "perceptron-1958",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Turing's learning machine proposal, conceiving intelligence as trained rather than programmed was impossible or impractical because machines were understood only as executing hand-written rules.",
+      "cand_id": "turing-s-learning-machine-proposal-1950",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "fail"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before information theory (Shannon), quantifying information and communication limits was impossible or impractical because there was no mathematical measure of information content.",
+      "cand_id": "information-theory-shannon-1948",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "Perplexity and cross-entropy, the central metrics of the LLM lineage, are direct Shannon quantities.",
+          "falsification": "this pass dies if LLM evaluation is shown not to use entropy-derived metrics",
+          "source": "A Mathematical Theory of Communication",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "No alternative framework has displaced entropy as the measure of information in any technical field since 1948.",
+          "falsification": "this pass dies if a non-Shannon measure becomes the standard for information content",
+          "source": "A Mathematical Theory of Communication",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Information theory founded digital communication, data compression, error-correcting codes and statistical language modeling.",
+          "falsification": "this pass dies if those fields are shown to rest on foundations independent of Shannon's theory",
+          "source": "A Mathematical Theory of Communication",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Language model training loss is cross-entropy, a quantity defined directly in Shannon's entropy framework.",
+          "falsification": "this pass dies if language modeling loss is shown to be definable without entropy concepts",
+          "source": "A Mathematical Theory of Communication",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "evidence": "Shannon entropy gave the first rigorous numerical measure of the information content of a source.",
+          "falsification": "this pass dies if an earlier rigorous measure of information content is shown to predate 1948",
+          "source": "A Mathematical Theory of Communication",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "evidence": "Entropy and channel capacity provided the explanatory model used to design codes and, later, to interpret perplexity in language models.",
+          "falsification": "this pass dies if code and language model design are shown to make no use of entropy or capacity concepts",
+          "source": "A Mathematical Theory of Communication",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Bits, entropy and channel capacity became the shared standard vocabulary across communications, computing and machine learning.",
+          "falsification": "this pass dies if those fields are shown not to share Shannon's quantities as standard terms",
+          "source": "A Mathematical Theory of Communication",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Information theory is applied in physics, biology, economics and neuroscience as well as communications.",
+          "falsification": "this pass dies if information theory is shown to be used only in communications engineering",
+          "source": "A Mathematical Theory of Communication",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before cross-entropy loss, scoring a predicted distribution against reality was impossible or impractical because there was no principled loss measuring distributional mismatch for training classifiers.",
+      "cand_id": "cross-entropy-loss-1948",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "evidence": "Cross-entropy displaced error-rate and squared-error objectives as the default for probabilistic classification.",
+          "falsification": "this pass dies if squared error remained the default classification loss in neural networks",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "The scaling laws and training curves of the LLM lineage are plotted in cross-entropy loss.",
+          "falsification": "this pass dies if LLM training progress is shown to be tracked in a different primary quantity",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Frontier language models are still trained by minimizing cross-entropy more than seventy years after its derivation.",
+          "falsification": "this pass dies if frontier language model training abandons cross-entropy",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Cross-entropy is the training objective for classifiers, language models and many structured prediction systems across machine learning.",
+          "falsification": "this pass dies if major classifier and language model families are shown to train on unrelated objectives",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Next-token pre-training of every GPT-class model is defined as minimizing cross-entropy loss.",
+          "falsification": "this pass dies if GPT-class pre-training is shown to use a different primary objective",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "evidence": "Cross-entropy turns model quality into a single measurable number, reported as perplexity for language models.",
+          "falsification": "this pass dies if cross-entropy values are shown not to track language model quality",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "evidence": "Cross-entropy interprets training as reducing the model's surprise, giving designers a principled account of what optimization improves.",
+          "falsification": "this pass dies if the surprise interpretation is shown to be mathematically incorrect",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Cross-entropy is the standard loss function exposed by every machine learning framework for classification and language modeling.",
+          "falsification": "this pass dies if frameworks are shown not to provide cross-entropy as a standard loss",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Cross-entropy loss is used in speech recognition, machine translation, recommendation and medical diagnosis models.",
+          "falsification": "this pass dies if cross-entropy use is shown to be confined to language modeling",
+          "source": "Entropy (information theory) (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before maximum likelihood estimation, fitting statistical models to data was impossible or impractical as a general method because estimation relied on ad hoc moment matching per problem.",
+      "cand_id": "maximum-likelihood-estimation-1922",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "Next-token training is maximum likelihood estimation applied to text sequences, placing MLE in the direct lineage of LLM cores.",
+          "falsification": "this pass dies if next-token training is shown not to maximize the likelihood of training text",
+          "source": "Maximum likelihood estimation (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Likelihood-based fitting remains a default estimation principle a century after Fisher's formulation.",
+          "falsification": "this pass dies if likelihood fitting is abandoned as a default across statistics and machine learning",
+          "source": "Maximum likelihood estimation (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Maximum likelihood provides one estimation principle used for regression, mixture models, hidden Markov models and language models.",
+          "falsification": "this pass dies if those model families are shown not to be fitted by likelihood maximization",
+          "source": "Maximum likelihood estimation (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Fisher's likelihood framework supplied the explanatory model of estimation as choosing parameters that make observed data most probable, with known asymptotic properties.",
+          "falsification": "this pass dies if likelihood theory is shown not to yield the claimed estimation properties",
+          "source": "Maximum likelihood estimation (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Log-likelihood is the standard objective interface implemented across statistical software and machine learning frameworks.",
+          "falsification": "this pass dies if statistical software is shown not to standardize on likelihood objectives",
+          "source": "Maximum likelihood estimation (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Maximum likelihood is routine in genetics, econometrics, epidemiology and physics as well as machine learning.",
+          "falsification": "this pass dies if maximum likelihood is shown to be used only within statistics",
+          "source": "Maximum likelihood estimation (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Bayesian probability (Bayes' theorem), updating beliefs from evidence was impossible or impractical as a formal procedure because probability was not defined for hypotheses themselves.",
+      "cand_id": "bayesian-probability-bayes-theorem-1763",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "Bayes' theorem underpins methods used in medicine, spam filtering, robotics state estimation and scientific inference.",
+          "falsification": "this pass dies if those fields are shown not to use Bayesian updating",
+          "source": "An Essay towards solving a Problem in the Doctrine of Chances",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Bayes' theorem gives the canonical explanatory model of learning as prior belief revised by likelihood of evidence.",
+          "falsification": "this pass dies if the prior-times-likelihood formulation is shown not to describe Bayesian inference",
+          "source": "An Essay towards solving a Problem in the Doctrine of Chances",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "evidence": "Bayesian methods are standard in clinical trials, astrophysics, ecology and law as well as machine learning.",
+          "falsification": "this pass dies if Bayesian methods are shown to be confined to machine learning",
+          "source": "An Essay towards solving a Problem in the Doctrine of Chances",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    }
+  ]
+}

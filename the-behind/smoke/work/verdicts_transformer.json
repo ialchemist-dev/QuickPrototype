@@ -1,0 +1,1765 @@
+{
+ "evaluations": [
+  {
+   "cand_id": "long-short-term-memory-1997-1997",
+   "bottleneck": "Before Long Short-Term Memory, learning long-range dependencies in recurrent networks was impractical because vanilla RNN gradients vanished or exploded over long sequences.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "cand_id": "sequence-to-sequence-learning-2014-2014",
+   "bottleneck": "Before sequence-to-sequence learning, mapping an input sequence to an output sequence of different length with one end-to-end neural model was impractical because models required fixed-size inputs and task-specific alignment structure.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Sutskever et al. showed a single end-to-end LSTM encoder-decoder could translate whole sentences, framing translation and later tasks as generic sequence transduction that the Transformer directly inherited.",
+     "source": "Sequence to Sequence Learning with Neural Networks",
+     "falsification": "if the Transformer's encoder-decoder design were shown to derive independently of the seq2seq framing"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Seq2seq supplied the deliberate design model of encoding a source sequence into a representation and decoding a target sequence from it, which is the macro-architecture of the original Transformer.",
+     "source": "Sequence to Sequence Learning with Neural Networks",
+     "falsification": "if the original Transformer had used a single-stack or non-encoder-decoder architecture"
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The encoder-decoder became the standard reusable interface for transduction tasks, implemented as a black-box pattern in frameworks and reused by the Transformer without change at that level.",
+     "source": "Sequence to Sequence Learning with Neural Networks",
+     "falsification": "if pre-Transformer systems had not standardized on encoder-decoder interfaces"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The Transformer paper presents its model as a sequence transduction model following the encoder-decoder structure established by seq2seq work.",
+     "source": "Attention Is All You Need",
+     "falsification": "if the Transformer's lineage ran through a non-seq2seq task formulation instead"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "attention-mechanism-bahdanau-2014-2014",
+   "bottleneck": "Before Bahdanau attention, neural translation of long sentences was impractical because the decoder had to compress the entire source into one fixed-length vector.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Bahdanau et al. showed jointly learning to align and translate let the decoder use all source positions, sharply improving translation of long sentences that fixed-vector models degraded on.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate",
+     "falsification": "if fixed-vector encoder-decoders had matched attention on long sentences"
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Attention generalized from an alignment add-on into self-attention, the sole sequence-mixing operation of the Transformer, unlocking the entire architecture family built on it.",
+     "source": "Attention Is All You Need",
+     "falsification": "if the Transformer had retained recurrence or convolution as its primary sequence mixer"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Bahdanau attention supplied the explanatory model of content-based soft alignment over source states that the Transformer authors generalized into query-key-value self-attention.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate",
+     "falsification": "if self-attention were shown to derive from an unrelated mechanism with no alignment lineage"
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Attention became a standard composable module inserted into encoder-decoder models throughout 2015-2017 and then reused as the Transformer's core building block.",
+     "source": "Effective Approaches to Attention-based Neural Machine Translation",
+     "falsification": "if attention had remained a one-off component of a single translation system"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The Transformer paper explicitly builds on attention mechanisms from Bahdanau-style neural machine translation and extends them to self-attention.",
+     "source": "Attention Is All You Need",
+     "falsification": "if removing the attention lineage left the Transformer's stated design history intact"
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "After attention, sequence modeling did not return to fixed-vector bottlenecks, and attention remained the default mixing operation through the Transformer era.",
+     "source": "Attention Is All You Need",
+     "falsification": "if post-2017 mainstream sequence models had abandoned attention for fixed-vector encoding"
+    }
+   }
+  },
+  {
+   "cand_id": "gated-recurrent-unit-2014-2014",
+   "bottleneck": "Before the Gated Recurrent Unit, gated recurrent sequence modeling required the heavier LSTM cell because simpler RNNs could not retain information over long spans.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "cand_id": "bytenet-2016-2016",
+   "bottleneck": "Before ByteNet, non-recurrent sequence transduction at character level was impractical because available convolutional and recurrent designs could not preserve linear time and resolution over long byte sequences.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "cand_id": "word2vec-embeddings-2013-2013",
+   "bottleneck": "Before Word2vec embeddings, obtaining useful dense word representations cheaply was impractical because prior neural language-model embeddings were slow to train at vocabulary scale.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "deep-residual-learning-resnet-2015-2015",
+   "bottleneck": "Before deep residual learning, training very deep networks was impractical because added layers degraded accuracy through optimization difficulty rather than overfitting.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Residual learning made networks of over 100 layers trainable, and the identity-shortcut pattern it unlocked is reused in every Transformer block to stack many layers.",
+     "source": "Deep Residual Learning for Image Recognition",
+     "falsification": "if deep Transformer stacks had trained equally well with plain non-residual layers"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "ResNet supplied the deliberate design model of learning residual functions with identity shortcuts, which the Transformer adopted verbatim as residual connections around each sub-layer.",
+     "source": "Attention Is All You Need",
+     "falsification": "if the Transformer's residual connections were shown to come from a different, independent design source"
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The residual block became a standard module used without regard to its internal optimization rationale, including in each Transformer encoder and decoder layer.",
+     "source": "Attention Is All You Need",
+     "falsification": "if residual connections had remained specific to ResNet-style vision networks"
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Residual connections spread from image recognition into sequence modeling and became a default element of deep architectures across vision and language.",
+     "source": "Attention Is All You Need",
+     "falsification": "if residual connections had stayed confined to image classification"
+    },
+    "Q9": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Residual networks displaced plain deep networks as the default way to build very deep models after winning ILSVRC 2015 with a 152-layer network.",
+     "source": "Deep Residual Learning for Image Recognition",
+     "falsification": "if plain deep networks had remained the default after 2015"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The Transformer paper specifies a residual connection around each of its sub-layers, placing ResNet's mechanism directly on the architecture's trunk line.",
+     "source": "Attention Is All You Need",
+     "falsification": "if the original Transformer had contained no residual connections"
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Deep architectures after ResNet, including all mainstream Transformers, retained identity shortcuts rather than returning to plain stacked layers.",
+     "source": "Deep Residual Learning for Image Recognition",
+     "falsification": "if later deep models had abandoned residual connections as a default"
+    }
+   }
+  },
+  {
+   "cand_id": "layer-normalization-2016-2016",
+   "bottleneck": "Before Layer Normalization, normalizing recurrent and sequence networks was impractical because batch statistics depended on sequence length and batch composition.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Layer normalization made per-example normalization work for sequence models, and the Transformer embeds it in every sub-layer, enabling its deep stacks to train stably.",
+     "source": "Layer Normalization",
+     "falsification": "if the original Transformer had trained to its reported results using batch normalization or no normalization"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "LayerNorm became a standard off-the-shelf module in sequence architectures, applied in the Transformer as 'Add & Norm' after every sub-layer without users reasoning about its statistics.",
+     "source": "Attention Is All You Need",
+     "falsification": "if LayerNorm had not been adopted as a reusable component beyond its original paper"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The Transformer architecture diagram and text specify layer normalization following each residual sub-layer connection, making it part of the original design.",
+     "source": "Attention Is All You Need",
+     "falsification": "if layer normalization were absent from the original Transformer specification"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "dropout-2014-2014",
+   "bottleneck": "Before Dropout, regularizing large neural networks against co-adaptation was impractical because ensemble averaging over subnetworks was too expensive to perform directly.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "glove-2014-2014",
+   "bottleneck": "Before GloVe, deriving word vectors that combined global corpus statistics with local context was impractical because count-based and predictive methods each captured only part of that structure.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "cand_id": "cross-entropy-loss-1948-1948",
+   "bottleneck": "Before cross-entropy loss, scoring a predicted distribution against observed outcomes lacked a principled differentiable objective because there was no standard measure of mismatch between probability distributions.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "gradient-descent-1847-1847",
+   "bottleneck": "Before gradient descent, systematically minimizing a differentiable function was impractical because there was no general iterative rule that followed the direction of steepest decrease.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "linnainmaa-s-automatic-differentiation-1970-1970",
+   "bottleneck": "Before Linnainmaa's automatic differentiation, computing exact derivatives of composite numerical programs efficiently was impractical because symbolic differentiation blew up and finite differences were inaccurate and costly.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "backpropagation-1986-1986",
+   "bottleneck": "Before backpropagation, training multilayer neural networks was impractical because there was no efficient general method for assigning credit to hidden units.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Backpropagation made training arbitrary multilayer networks feasible, unlocking the entire deep-learning program of which the Transformer is one architecture.",
+     "source": "Learning Representations by Back-Propagating Errors",
+     "falsification": "if multilayer networks including Transformers had been trainable at scale by a comparably general non-gradient method"
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "No ready substitute in 1986 or in 2017 could train deep networks with millions of parameters as generally as backpropagation, and the Transformer was trained with it via Adam.",
+     "source": "Attention Is All You Need",
+     "falsification": "if the original Transformer had been trained by a method not based on backpropagated gradients"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Rumelhart, Hinton and Williams supplied the chain-rule credit-assignment model that made deliberate design and training of deep architectures, including the Transformer, possible.",
+     "source": "Learning Representations by Back-Propagating Errors",
+     "falsification": "if deep network training had proceeded without a gradient-based credit-assignment model"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Backpropagation underlies trained models across vision, speech, language and control, far beyond the perceptron settings in which it was popularized.",
+     "source": "Learning Representations by Back-Propagating Errors",
+     "falsification": "if backpropagation had remained confined to small demonstration networks"
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Reverse-mode gradient computation costs a small constant multiple of a forward pass regardless of parameter count, collapsing gradient estimation versus per-parameter numerical differentiation by orders of magnitude.",
+     "source": "Learning Representations by Back-Propagating Errors",
+     "falsification": "if numerical differentiation had been comparably cheap for million-parameter networks"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Every parameter of the original Transformer was learned by backpropagation-based optimization, so removing it breaks the model's actual training history.",
+     "source": "Attention Is All You Need",
+     "falsification": "if the Transformer had been constructed or fitted without gradient training"
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Gradient-based training via backpropagation remained the universal default for neural networks through and beyond the Transformer era.",
+     "source": "Deep Learning",
+     "falsification": "if the field had reverted to hand-designed or non-gradient-trained networks"
+    }
+   }
+  },
+  {
+   "cand_id": "a-mathematical-theory-of-communication-1948-1948",
+   "bottleneck": "Before A Mathematical Theory of Communication, information had no quantitative definition because communication was described qualitatively without a unit or measure of uncertainty.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "Shannon defined entropy in bits, making the information content of a source a measurable quantity that later underlies cross-entropy training objectives.",
+     "source": "A Mathematical Theory of Communication",
+     "falsification": "if entropy had not provided a usable quantitative measure adopted by later work"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "cuda-2007-2007",
+   "bottleneck": "Before CUDA, programming GPUs for general computation was impractical because developers had to disguise computation as graphics operations through graphics APIs.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "CUDA exposed GPU throughput to general code, and GPU training of neural networks delivered order-of-magnitude speedups over CPUs in the deep-learning era preceding the Transformer.",
+     "source": "CUDA by Example",
+     "falsification": "if GPU training under CUDA had offered only marginal speedups over contemporary CPUs"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "GPU acceleration cut neural network training runs from weeks to days in the pre-Transformer deep-learning literature, directly shortening experiment cycles.",
+     "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+     "falsification": "if CUDA-based training had not materially shortened training times"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "tensorflow-2015-2015",
+   "bottleneck": "Before TensorFlow, deploying and scaling dataflow-based machine learning across machines was impractical for most teams because prior systems were research-bound or hard to productionize.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "cand_id": "imagenet-2009-2009",
+   "bottleneck": "Before ImageNet, training and benchmarking visual recognition at scale was impractical because existing labeled image datasets were orders of magnitude too small.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "cand_id": "wmt-workshop-on-statistical-machine-translation-2006-2006",
+   "bottleneck": "Before the WMT workshop, comparing machine translation systems systematically was impractical because there was no recurring shared task with common data and evaluation.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "cand_id": "bleu-score-2002-2002",
+   "bottleneck": "Before the BLEU score, evaluating machine translation output was slow and expensive because quality assessment depended on repeated human judgment for every system change.",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "BLEU made translation quality automatically measurable via n-gram precision against references, and the Transformer paper reported its headline results as BLEU scores on WMT tasks.",
+     "source": "BLEU: a Method for Automatic Evaluation of Machine Translation",
+     "falsification": "if the Transformer's results had not been stated or compared in BLEU"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "BLEU became the standard reporting interface for machine translation systems, used by the Transformer paper to claim state-of-the-art results comparable across prior work.",
+     "source": "Attention Is All You Need",
+     "falsification": "if BLEU had not been the common metric in the results tables the Transformer compared against"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Penn Treebank, large-scale statistical parsing and POS tagging were impractical because there was no large, consistently hand-annotated English corpus to train and evaluate on.",
+   "cand_id": "penn-treebank-1993-1993",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Europarl corpus, training statistical machine translation systems was impractical because large sentence-aligned parallel corpora for European language pairs were scarce.",
+   "cand_id": "europarl-corpus-2005-2005",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Common Crawl, obtaining web-scale text for language modeling was impractical because crawling and hosting billions of web pages was beyond most research groups.",
+   "cand_id": "common-crawl-2007-2007",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the One Billion Word Benchmark, comparing large-scale language models was impractical because there was no single large, standardized held-out benchmark corpus.",
+   "cand_id": "one-billion-word-benchmark-2013-2013",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before BookCorpus, pretraining on long coherent narrative text was impractical because freely available book-length corpora of thousands of unpublished novels did not exist in one dataset.",
+   "cand_id": "bookcorpus-2015-2015",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Bayes' theorem, updating beliefs from evidence was impractical in a principled way because there was no formal rule for inverting conditional probabilities.",
+   "cand_id": "bayes-theorem-1763-1763",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "Bayes' theorem became foundational far beyond its original setting, underpinning statistics, machine learning, medical testing, and signal processing, though the Transformer itself is trained by gradient optimization rather than Bayesian inference.",
+     "falsification": "This pass dies if the theorem's use remained confined to its original doctrine-of-chances context with no cross-field adoption.",
+     "source": "An Essay towards solving a Problem in the Doctrine of Chances",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Cayley's matrix algebra, composing and manipulating systems of linear transformations was impractical because there was no compact notation or calculus for arrays of coefficients as single objects.",
+   "cand_id": "matrix-algebra-cayley-1858-1858",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "The Transformer's core computation is expressed entirely as standard matrix operations, notably Attention(Q,K,V) = softmax(QK^T/sqrt(d_k))V, which any practitioner can invoke as a module without re-deriving linear algebra.",
+     "falsification": "This pass dies if the Transformer's operations could not be expressed or implemented as standard matrix multiplications.",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Matrix algebra spread from pure mathematics into physics, engineering, economics, computer graphics, and statistics long before it became the working language of neural network computation.",
+     "falsification": "This pass dies if matrix methods had remained a niche notation inside pure mathematics with no uptake in other fields.",
+     "source": "A Memoir on the Theory of Matrices",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Boltzmann distribution, assigning probabilities to states by their energy was impossible in a principled form because statistical mechanics had no exponential law relating state probability to energy and temperature.",
+   "cand_id": "boltzmann-distribution-1868-1868",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "The Boltzmann form migrated from gas physics into machine learning as the softmax function and into statistical models such as Boltzmann machines, far outside its home field of thermodynamics.",
+     "falsification": "This pass dies if the exponential energy-probability form had never been adopted outside physics, in particular not as softmax in neural networks.",
+     "source": "Studien \u00fcber das Gleichgewicht der lebendigen Kraft zwischen bewegten materiellen Punkten",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the GeForce 256, consumer graphics acceleration was impractical as a general compute substrate because GPUs lacked integrated transform-and-lighting hardware and a path toward programmable parallel processors.",
+   "cand_id": "geforce-256-1999-1999",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before arXiv, rapid dissemination of preprints was impractical for most researchers because circulation depended on postal mail and institutional preprint lists with weeks of delay.",
+   "cand_id": "arxiv-1991-1991",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Amazon EC2, elastic compute on demand was impractical for most teams because obtaining servers required capital purchase and provisioning lead times of weeks.",
+   "cand_id": "amazon-ec2-2006-2006",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Broadbent's filter model, selective attention had no testable mechanistic account because psychology lacked a model of how one input channel is selected and others are blocked.",
+   "cand_id": "broadbent-s-filter-model-of-attention-1958-1958",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Hubel and Wiesel's receptive-field work, how visual cortex extracts features was unknown because no one had mapped single neurons' responses to oriented edges and hierarchical feature structure.",
+   "cand_id": "hubel-and-wiesel-receptive-fields-1962-1962",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the IBM Models, machine translation by learned word alignment was impractical because there was no probabilistic framework for estimating translation and alignment probabilities from parallel text.",
+   "cand_id": "ibm-models-of-statistical-machine-translation-1993-1993",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Posner's cueing paradigm, covert shifts of visual attention could not be measured because there was no experimental design separating attentional orienting from eye movements.",
+   "cand_id": "posner-cueing-paradigm-1980-1980",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Glorot initialization, training deep networks with saturating activations was impractical because randomly scaled initial weights caused activations and gradients to vanish or explode across layers.",
+   "cand_id": "glorot-initialization-2010-2010",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Adam optimizer, training large neural networks robustly was impractical for many practitioners because stochastic gradient descent required extensive per-problem learning-rate tuning.",
+   "cand_id": "adam-optimizer-2014-2014",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "Adam became the default off-the-shelf optimizer invoked as a standard module, and the original Transformer was itself trained with Adam (beta1=0.9, beta2=0.98) under a warmup learning-rate schedule.",
+     "falsification": "This pass dies if the Transformer had not in fact been trained with Adam or if Adam had not become a standard reusable optimizer in mainstream frameworks.",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the perceptron, machines that learn a classifier from examples were impractical because there was no implemented learning rule that adjusted weights automatically from labeled data.",
+   "cand_id": "perceptron-1958-1958",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "The perceptron demonstrated a working learn-from-examples machine and launched the neural-network research program whose descendants include the multilayer networks from which the Transformer was built.",
+     "falsification": "This pass dies if the perceptron had remained an isolated curiosity that seeded no continuing neural-network research line.",
+     "source": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the neural probabilistic language model, statistical language modeling was crippled by the curse of dimensionality because n-gram models treated words as discrete symbols with no notion of similarity between them.",
+   "cand_id": "neural-probabilistic-language-model-2003-2003",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "The line from this paper runs directly through distributed-representation research and embedding methods into the Transformer's architecture, whose first operation is a learned embedding lookup for every token.",
+     "falsification": "This pass dies if a documented alternative lineage shows Transformer embeddings derived independently with no connection to the distributed-representation tradition this paper started.",
+     "source": "A Neural Probabilistic Language Model",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "Bengio et al.'s model learned continuous distributed word representations jointly with the language model, opening the entire embedding-based research space that word2vec, and later the Transformer's learned token embeddings, grew from.",
+     "falsification": "This pass dies if learned continuous word representations had not propagated beyond this paper into mainstream NLP practice.",
+     "source": "A Neural Probabilistic Language Model",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "The paper supplied the deliberate design model the field adopted: represent each word as a learned real-valued feature vector and compute sequence probability with a neural network over those vectors, the same embedding-first design the Transformer uses for its inputs.",
+     "falsification": "This pass dies if the Transformer's input representations owed nothing to the learned distributed-representation model this paper introduced.",
+     "source": "A Neural Probabilistic Language Model",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  }
+ ]
+}

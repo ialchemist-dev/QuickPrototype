@@ -1,0 +1,562 @@
+[
+ {
+  "node_id": "transformer-architecture-2017",
+  "name": "Transformer architecture",
+  "year": 2017,
+  "type": "method",
+  "parent_name": "The modern AI agent",
+  "parent_year": 2023,
+  "bottleneck": "Before Transformer architecture, training sequence models on long contexts was impossible or impractical because recurrent networks processed tokens sequentially and could not be parallelized.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "The Transformer reached state-of-the-art translation quality while training for only 3.5 days on eight GPUs, a regime recurrent models could not match at that quality.",
+   "source": "Attention Is All You Need",
+   "falsification": "this pass dies if recurrent models of 2017 are shown to have matched Transformer quality and training cost at scale"
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Transformers became the substrate for BERT, GPT, ViT and multimodal models, unblocking a whole family of previously impractical systems.",
+   "source": "Attention Is All You Need",
+   "falsification": "this pass dies if post-2017 large models are shown to rest mainly on non-Transformer architectures"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "Every major LLM core behind 2023 agents, including GPT-4 class systems, is a Transformer variant.",
+   "source": "Attention Is All You Need",
+   "falsification": "this pass dies if a 2023-class agent is shown to have emerged on a non-Transformer core at comparable capability"
+  },
+  "score": 8.5
+ },
+ {
+  "node_id": "stored-program-architecture-1945",
+  "name": "Stored-program architecture",
+  "year": 1945,
+  "type": "method",
+  "parent_name": "The modern AI agent",
+  "parent_year": 2023,
+  "bottleneck": "Before the stored-program architecture, general-purpose computation was impractical because machines had to be physically rewired or reconfigured for each new task.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "The von Neumann design made a single machine able to run any program held in memory, making universal reprogrammable computation possible at all.",
+   "source": "First Draft of a Report on the EDVAC",
+   "falsification": "This pass dies if general-purpose computing was already practical on fixed-function or plugboard machines."
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Stored-program computers unblocked every subsequent form of software, from operating systems to neural network training to agent loops.",
+   "source": "First Draft of a Report on the EDVAC",
+   "falsification": "This pass dies if later computing paradigms did not run as stored programs."
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "Every model, tool and agent loop in the actual history runs on stored-program machines; no alternative substrate produced general computing.",
+   "source": "First Draft of a Report on the EDVAC",
+   "falsification": "This pass dies if a non-stored-program architecture carried mainstream computing instead."
+  },
+  "score": 8.0
+ },
+ {
+  "node_id": "cross-entropy-loss-1948",
+  "name": "Cross-entropy loss",
+  "year": 1948,
+  "type": "theory",
+  "parent_name": "The modern AI agent",
+  "parent_year": 2023,
+  "bottleneck": "Before cross-entropy loss, scoring a predicted distribution against reality was impossible or impractical because there was no principled loss measuring distributional mismatch for training classifiers.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Cross-entropy is the training objective for classifiers, language models and many structured prediction systems across machine learning.",
+   "source": "Entropy (information theory) (Wikipedia)",
+   "falsification": "this pass dies if major classifier and language model families are shown to train on unrelated objectives"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "Next-token pre-training of every GPT-class model is defined as minimizing cross-entropy loss.",
+   "source": "Entropy (information theory) (Wikipedia)",
+   "falsification": "this pass dies if GPT-class pre-training is shown to use a different primary objective"
+  },
+  "score": 8.0
+ },
+ {
+  "node_id": "word2vec-embeddings-2013",
+  "name": "Word2vec embeddings",
+  "year": 2013,
+  "type": "method",
+  "parent_name": "The modern AI agent",
+  "parent_year": 2023,
+  "bottleneck": "Before word2vec embeddings, representing word meaning for computation was impossible or impractical at scale because sparse count-based vectors were high-dimensional and training neural word vectors was slow.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Word2vec vectors improved performance across analogy, similarity and downstream NLP tasks and were adopted throughout industry within a few years.",
+   "source": "Efficient Estimation of Word Representations in Vector Space",
+   "falsification": "this pass dies if word2vec vectors are shown not to have transferred beyond the analogy task"
+  },
+  "Q3": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "score": 8.0
+ },
+ {
+  "node_id": "cuda-2007",
+  "name": "CUDA",
+  "year": 2007,
+  "type": "method",
+  "parent_name": "The modern AI agent",
+  "parent_year": 2023,
+  "bottleneck": "Before CUDA, using GPU parallelism for general computation was impossible or impractical because graphics hardware could only be programmed through graphics APIs not designed for it.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "CUDA gave general-purpose code direct access to GPU parallel cores, making GPU matrix computation practical for non-graphics programmers.",
+   "source": "CUDA (Wikipedia)",
+   "falsification": "this pass dies if general-purpose GPU computing is shown to have been equally accessible through graphics APIs before 2007"
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "CUDA enabled GPU acceleration across deep learning, molecular dynamics, finance and scientific simulation.",
+   "source": "CUDA (Wikipedia)",
+   "falsification": "this pass dies if CUDA use is shown to be confined to deep learning"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "Frontier LLM training runs execute overwhelmingly on NVIDIA GPUs programmed through the CUDA ecosystem.",
+   "source": "CUDA (Wikipedia)",
+   "falsification": "this pass dies if frontier LLM training is shown to run mainly on non-CUDA hardware at comparable scale"
+  },
+  "score": 7.5
+ },
+ {
+  "node_id": "gradient-descent-1847",
+  "name": "Gradient descent",
+  "year": 1847,
+  "type": "method",
+  "parent_name": "The modern AI agent",
+  "parent_year": 2023,
+  "bottleneck": "Before gradient descent, minimizing a complex function was impractical because there was no general iterative rule that used local slope information to improve a solution step by step.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "Gradient descent made training parameterized models possible at all by giving a general procedure for minimizing a differentiable loss, the procedure every neural network is trained with.",
+   "source": "Gradient descent - Wikipedia",
+   "falsification": "This pass dies if neural networks were historically trained by a non-iterative closed-form method."
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Gradient-based optimization unblocked all of deep learning, training models from perceptrons to large language models.",
+   "source": "Gradient descent - Wikipedia",
+   "falsification": "This pass dies if deep learning's models are not trained by gradient methods."
+  },
+  "Q3": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "score": 7.5
+ },
+ {
+  "node_id": "linnainmaa-s-automatic-differentiation-1970",
+  "name": "Linnainmaa's automatic differentiation",
+  "year": 1970,
+  "type": "method",
+  "parent_name": "The modern AI agent",
+  "parent_year": 2023,
+  "bottleneck": "Before Linnainmaa's automatic differentiation, exact gradients of nested functions were impractical because numerical differentiation was inaccurate and symbolic differentiation blew up in expression size.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "Linnainmaa's 1970 thesis gave reverse-mode differentiation, computing exact derivatives of a nested function in a single backward pass proportional to function evaluation cost.",
+   "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+   "falsification": "This pass dies if an equally efficient exact gradient method for nested functions predates 1970."
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Reverse-mode autodiff underlies training of every modern neural network, from MLPs to billion-parameter transformers.",
+   "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+   "falsification": "This pass dies if large networks were in practice trained by a method independent of reverse-mode gradients."
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "For models with millions of parameters and one scalar loss, reverse mode is asymptotically the only tractable exact gradient method; finite differences would need one evaluation per parameter.",
+   "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+   "falsification": "This pass dies if a comparably cheap alternative gradient method exists for scalar-loss, many-parameter models."
+  },
+  "score": 7.5
+ },
+ {
+  "node_id": "attention-mechanism-bahdanau-2014",
+  "name": "Attention mechanism (Bahdanau)",
+  "year": 2014,
+  "type": "method",
+  "parent_name": "The modern AI agent",
+  "parent_year": 2023,
+  "bottleneck": "Before the attention mechanism, neural sequence models were impractical on long inputs because a single fixed-length vector had to carry the entire source sequence.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "Bahdanau attention let the decoder align to relevant source words at each step, restoring translation quality on long sentences that fixed-vector seq2seq models lost.",
+   "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+   "falsification": "This pass dies if fixed-vector models matched attention models on long sentences in the original comparisons."
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Generalizing attention to self-attention produced the Transformer, which unblocked modern LLMs and hence LLM agents.",
+   "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+   "falsification": "This pass dies if the Transformer's self-attention is shown to derive independently of Bahdanau-style alignment."
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "Every production LLM agent runs on a Transformer whose core operation descends directly from learned soft alignment introduced here.",
+   "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+   "falsification": "This pass dies if a non-attention architecture, not the Transformer, powered the 2023 agent wave."
+  },
+  "score": 7.5
+ },
+ {
+  "node_id": "deep-residual-learning-resnet-2015-2015",
+  "name": "Deep Residual Learning (ResNet) (2015)",
+  "year": 2015,
+  "type": "method",
+  "parent_name": "Transformer architecture",
+  "parent_year": 2017,
+  "bottleneck": "Before deep residual learning, training very deep networks was impractical because added layers degraded accuracy through optimization difficulty rather than overfitting.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Residual learning made networks of over 100 layers trainable, and the identity-shortcut pattern it unlocked is reused in every Transformer block to stack many layers.",
+   "source": "Deep Residual Learning for Image Recognition",
+   "falsification": "if deep Transformer stacks had trained equally well with plain non-residual layers"
+  },
+  "Q3": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "score": 6.5
+ },
+ {
+  "node_id": "backpropagation-1986-1986",
+  "name": "Backpropagation (1986)",
+  "year": 1986,
+  "type": "method",
+  "parent_name": "Transformer architecture",
+  "parent_year": 2017,
+  "bottleneck": "Before backpropagation, training multilayer neural networks was impractical because there was no efficient general method for assigning credit to hidden units.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Backpropagation made training arbitrary multilayer networks feasible, unlocking the entire deep-learning program of which the Transformer is one architecture.",
+   "source": "Learning Representations by Back-Propagating Errors",
+   "falsification": "if multilayer networks including Transformers had been trainable at scale by a comparably general non-gradient method"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "No ready substitute in 1986 or in 2017 could train deep networks with millions of parameters as generally as backpropagation, and the Transformer was trained with it via Adam.",
+   "source": "Attention Is All You Need",
+   "falsification": "if the original Transformer had been trained by a method not based on backpropagated gradients"
+  },
+  "score": 6.5
+ },
+ {
+  "node_id": "attention-mechanism-bahdanau-2014",
+  "name": "Attention mechanism (Bahdanau)",
+  "year": 2014,
+  "type": "method",
+  "parent_name": "Transformer architecture",
+  "parent_year": 2017,
+  "bottleneck": "Before the attention mechanism, neural sequence models were impractical on long inputs because a single fixed-length vector had to carry the entire source sequence.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "Bahdanau et al. showed jointly learning to align and translate let the decoder use all source positions, sharply improving translation of long sentences that fixed-vector models degraded on.",
+   "source": "Neural Machine Translation by Jointly Learning to Align and Translate",
+   "falsification": "if fixed-vector encoder-decoders had matched attention on long sentences"
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Attention generalized from an alignment add-on into self-attention, the sole sequence-mixing operation of the Transformer, unlocking the entire architecture family built on it.",
+   "source": "Attention Is All You Need",
+   "falsification": "if the Transformer had retained recurrence or convolution as its primary sequence mixer"
+  },
+  "Q3": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "score": 5.0
+ },
+ {
+  "node_id": "sequence-to-sequence-learning-2014-2014",
+  "name": "Sequence-to-sequence learning (2014)",
+  "year": 2014,
+  "type": "method",
+  "parent_name": "Transformer architecture",
+  "parent_year": 2017,
+  "bottleneck": "Before sequence-to-sequence learning, mapping an input sequence to an output sequence of different length with one end-to-end neural model was impractical because models required fixed-size inputs and task-specific alignment structure.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Sutskever et al. showed a single end-to-end LSTM encoder-decoder could translate whole sentences, framing translation and later tasks as generic sequence transduction that the Transformer directly inherited.",
+   "source": "Sequence to Sequence Learning with Neural Networks",
+   "falsification": "if the Transformer's encoder-decoder design were shown to derive independently of the seq2seq framing"
+  },
+  "Q3": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "score": 4.5
+ },
+ {
+  "node_id": "layer-normalization-2016-2016",
+  "name": "Layer Normalization (2016)",
+  "year": 2016,
+  "type": "method",
+  "parent_name": "Transformer architecture",
+  "parent_year": 2017,
+  "bottleneck": "Before Layer Normalization, normalizing recurrent and sequence networks was impractical because batch statistics depended on sequence length and batch composition.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Layer normalization made per-example normalization work for sequence models, and the Transformer embeds it in every sub-layer, enabling its deep stacks to train stably.",
+   "source": "Layer Normalization",
+   "falsification": "if the original Transformer had trained to its reported results using batch normalization or no normalization"
+  },
+  "Q3": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "score": 4.5
+ },
+ {
+  "node_id": "neural-probabilistic-language-model-2003-2003",
+  "name": "Neural probabilistic language model (2003)",
+  "year": 2003,
+  "type": "method",
+  "parent_name": "Transformer architecture",
+  "parent_year": 2017,
+  "bottleneck": "Before the neural probabilistic language model, statistical language modeling was crippled by the curse of dimensionality because n-gram models treated words as discrete symbols with no notion of similarity between them.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Bengio et al.'s model learned continuous distributed word representations jointly with the language model, opening the entire embedding-based research space that word2vec, and later the Transformer's learned token embeddings, grew from.",
+   "source": "A Neural Probabilistic Language Model",
+   "falsification": "This pass dies if learned continuous word representations had not propagated beyond this paper into mainstream NLP practice."
+  },
+  "Q3": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "score": 4.0
+ },
+ {
+  "node_id": "napier-s-logarithms-1614-1614",
+  "name": "Napier's logarithms (1614)",
+  "year": 1614,
+  "type": "theory",
+  "parent_name": "Cross-entropy loss",
+  "parent_year": 1948,
+  "bottleneck": "Before Napier's logarithms, computing with products and powers of probabilities was impractical because multiplication of many small numbers had no additive representation.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "Logarithms converted multiplication into addition, making quantities like the log-probability of a sequence \u2014 the core of cross-entropy \u2014 computable and even conceivable as a sum at all.",
+   "source": "Napier, Mirifici Logarithmorum Canonis Descriptio (1614)",
+   "falsification": "if an additive representation of products in routine pre-1614 use is shown to have served the same role"
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Once log-probability exists as an additive quantity, entropy, cross-entropy, likelihood, and information measures all become definable from it.",
+   "source": "Shannon, A Mathematical Theory of Communication (1948)",
+   "falsification": "if Shannon's entropy is shown to be definable and used without logarithms"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "No pre-1614 substitute gave an additive measure of multiplicative quantities; prosthaphaeresis was a narrow trigonometric trick, not a general log function.",
+   "source": "Napier, Mirifici Logarithmorum Canonis Descriptio (1614)",
+   "falsification": "if a general pre-Napier log-equivalent is documented in practical use"
+  },
+  "score": 8.0
+ },
+ {
+  "node_id": "boltzmann-s-entropy-formula-1877-1877",
+  "name": "Boltzmann's entropy formula (1877)",
+  "year": 1877,
+  "type": "theory",
+  "parent_name": "Cross-entropy loss",
+  "parent_year": 1948,
+  "bottleneck": "Before Boltzmann's entropy formula, entropy had no probabilistic definition because macroscopic entropy was not connected to the logarithm of the number of microstates.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Boltzmann's S = k log W made entropy a logarithm of a count/probability, the exact conceptual move Shannon generalized to -sum p log p and hence to cross-entropy.",
+   "source": "Boltzmann, \u00dcber die Beziehung zwischen dem zweiten Hauptsatze der mechanischen W\u00e4rmetheorie und der Wahrscheinlichkeitsrechnung (1877)",
+   "falsification": "if Shannon's entropy is shown to owe nothing to the probabilistic entropy tradition Boltzmann founded"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "No substitute in 1877 expressed entropy probabilistically; Clausius's definition was macroscopic and gave no log-of-probability form for Shannon to generalize.",
+   "source": "Boltzmann, \u00dcber die Beziehung zwischen dem zweiten Hauptsatze der mechanischen W\u00e4rmetheorie und der Wahrscheinlichkeitsrechnung (1877)",
+   "falsification": "if another pre-1877 source already defined entropy as a logarithm of probability"
+  },
+  "score": 6.5
+ },
+ {
+  "node_id": "fisher-s-maximum-likelihood-estimation-1922-1922",
+  "name": "Fisher's maximum likelihood estimation (1922)",
+  "year": 1922,
+  "type": "method",
+  "parent_name": "Cross-entropy loss",
+  "parent_year": 1948,
+  "bottleneck": "Before Fisher's maximum likelihood estimation, fitting a model distribution to data lacked a principled objective because there was no general criterion identifying the parameters that make the observed data most probable.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "Maximizing log-likelihood is mathematically identical to minimizing cross-entropy between the empirical distribution and the model, so Fisher's 1922 framework supplied the exact optimization form cross-entropy loss later used.",
+   "source": "Fisher, On the Mathematical Foundations of Theoretical Statistics (1922)",
+   "falsification": "if maximizing log-likelihood were shown not to equal minimizing expected negative log-probability under the empirical distribution"
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Maximum likelihood gave a single general recipe for fitting any parametric distribution, unblocking estimation across statistics and later machine-learning classifiers.",
+   "source": "Fisher, On the Mathematical Foundations of Theoretical Statistics (1922)",
+   "falsification": "if pre-1922 practice already had an equally general parametric fitting recipe in routine use"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "No ready substitute in 1922 provided likelihood's generality, efficiency theory, and log-additive form; least squares covered only the Gaussian special case.",
+   "source": "Fisher, On the Mathematical Foundations of Theoretical Statistics (1922)",
+   "falsification": "if a contemporaneous general substitute with the same log form is shown to have been standard"
+  },
+  "score": 6.5
+ },
+ {
+  "node_id": "gibbs-s-statistical-mechanics-and-gibbs-entropy-1902-1902",
+  "name": "Gibbs's statistical mechanics and Gibbs entropy (1902)",
+  "year": 1902,
+  "type": "theory",
+  "parent_name": "Cross-entropy loss",
+  "parent_year": 1948,
+  "bottleneck": "Before Gibbs's statistical mechanics, entropy for an arbitrary probability distribution over states was undefined because entropy existed only for specific physical systems, not as -sum p log p over any distribution.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "Gibbs entropy, -k sum p_i log p_i, is formally identical to Shannon entropy and, with two distributions, to cross-entropy; it made a distributional log-loss quantity exist for the first time.",
+   "source": "Gibbs, Elementary Principles in Statistical Mechanics (1902)",
+   "falsification": "if Gibbs's 1902 text contains no entropy expressed as a sum of p log p over states"
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "By defining entropy for any ensemble distribution, Gibbs unblocked the transfer of entropy from physics to any probabilistic system, including Shannon's message sources.",
+   "source": "Gibbs, Elementary Principles in Statistical Mechanics (1902)",
+   "falsification": "if Gibbs entropy is shown to apply only to one specific physical system"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "No pre-1902 substitute stated entropy as a functional of an arbitrary probability distribution; Boltzmann's form covered equiprobable microstates of a macrostate.",
+   "source": "Gibbs, Elementary Principles in Statistical Mechanics (1902)",
+   "falsification": "if an earlier author is shown to have published the general -sum p log p entropy"
+  },
+  "score": 6.5
+ },
+ {
+  "node_id": "hartley-s-logarithmic-measure-of-information-1928-1928",
+  "name": "Hartley's logarithmic measure of information (1928)",
+  "year": 1928,
+  "type": "theory",
+  "parent_name": "Cross-entropy loss",
+  "parent_year": 1948,
+  "bottleneck": "Before Hartley's logarithmic measure of information, the amount of information in a message had no quantitative measure because no one had defined information as proportional to the logarithm of the number of possible sequences.",
+  "Q1": {
+   "verdict": "pass",
+   "evidence": "Hartley's 1928 H = n log s made information a measurable quantity for the first time, the direct problem Shannon generalized into entropy and cross-entropy.",
+   "source": "Hartley, Transmission of Information (1928)",
+   "falsification": "if a quantitative logarithmic information measure is documented before 1928"
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Hartley's measure unblocked quantitative communication theory \u2014 channel capacity and coding \u2014 within which Shannon defined entropy and relative entropy/cross-entropy.",
+   "source": "Shannon, A Mathematical Theory of Communication (1948)",
+   "falsification": "if Shannon's 1948 theory is shown to make no use of Hartley's framework"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "Shannon explicitly built on Hartley as the predecessor measure; no rival 1928 information measure offered a substitute path.",
+   "source": "Shannon, A Mathematical Theory of Communication (1948)",
+   "falsification": "if Shannon is shown to have relied on a different predecessor measure instead of Hartley's"
+  },
+  "score": 6.5
+ },
+ {
+  "node_id": "huygens-s-expectation-1657-1657",
+  "name": "Huygens's expectation (1657)",
+  "year": 1657,
+  "type": "theory",
+  "parent_name": "Cross-entropy loss",
+  "parent_year": 1948,
+  "bottleneck": "Before Huygens's mathematical expectation, averaging a quantity over uncertain outcomes was impossible in principled form because probability had no expectation operator.",
+  "Q1": {
+   "verdict": "partial",
+   "evidence": "",
+   "source": "",
+   "falsification": ""
+  },
+  "Q2": {
+   "verdict": "pass",
+   "evidence": "Expectation over a distribution is the outer operation of cross-entropy, H(p,q) = E_p[-log q]; Huygens's 1657 expected value made every later expected-loss quantity definable.",
+   "source": "Huygens, De Ratiociniis in Ludo Aleae (1657)",
+   "falsification": "if cross-entropy is shown to be definable without averaging -log q over the true distribution"
+  },
+  "Q3": {
+   "verdict": "pass",
+   "evidence": "No substitute for mathematical expectation existed in 1657; fair-price reasoning in games of chance was the only route to a probability-weighted average.",
+   "source": "Huygens, De Ratiociniis in Ludo Aleae (1657)",
+   "falsification": "if an equivalent expectation concept is documented in routine use before 1657"
+  },
+  "score": 6.5
+ }
+]

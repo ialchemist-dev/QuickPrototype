@@ -1,0 +1,4852 @@
+{
+ "evaluations": [
+  {
+   "bottleneck": "Before Transformer architecture, training sequence models on long contexts was impossible or impractical because recurrent networks processed tokens sequentially and could not be parallelized.",
+   "cand_id": "transformer-architecture-2017",
+   "verdicts": {
+    "Q1": {
+     "evidence": "The Transformer reached state-of-the-art translation quality while training for only 3.5 days on eight GPUs, a regime recurrent models could not match at that quality.",
+     "falsification": "this pass dies if recurrent models of 2017 are shown to have matched Transformer quality and training cost at scale",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "By 2020 Transformers had displaced LSTMs as the default architecture for state-of-the-art NLP.",
+     "falsification": "this pass dies if LSTMs remained the default for leading NLP systems after 2020",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The GPT lineage that powers modern agents descends directly from the 2017 Transformer paper.",
+     "falsification": "this pass dies if the GPT lineage is shown to derive from a different architecture",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "No major lab has returned to recurrent architectures as the default for frontier language models since Transformers scaled.",
+     "falsification": "this pass dies if frontier language modeling reverts to RNN defaults",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Transformers became the substrate for BERT, GPT, ViT and multimodal models, unblocking a whole family of previously impractical systems.",
+     "falsification": "this pass dies if post-2017 large models are shown to rest mainly on non-Transformer architectures",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Every major LLM core behind 2023 agents, including GPT-4 class systems, is a Transformer variant.",
+     "falsification": "this pass dies if a 2023-class agent is shown to have emerged on a non-Transformer core at comparable capability",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Removing recurrence allowed full parallelization across sequence positions, sharply cutting training time per experiment compared with sequential RNN training.",
+     "falsification": "this pass dies if Transformer training is shown to have been no faster than comparable RNN training",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Self-attention gave designers an explicit model of sequence processing as learned pairwise token interaction, enabling deliberate variants such as encoder-only and decoder-only models.",
+     "falsification": "this pass dies if Transformer variants are shown to have been designed without using the attention interaction model",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "The Transformer block became a reusable standard component implemented identically across frameworks and model families.",
+     "falsification": "this pass dies if later models are shown not to reuse a common Transformer block abstraction",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "The same architecture produced leading results in language, vision, speech and protein structure prediction.",
+     "falsification": "this pass dies if Transformers are shown to have remained confined to machine translation",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "evidence": "Parallel training shortened the train-evaluate cycle from sequential RNN runs to highly parallel GPU and TPU runs, enabling rapid scaling experiments.",
+     "falsification": "this pass dies if Transformer iteration cycles are shown to have been as slow as RNN cycles at equal scale",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before self-attention mechanism, relating distant tokens in a sequence was impossible or impractical because recurrence passed information step by step through a sequential bottleneck.",
+   "cand_id": "self-attention-mechanism-2017",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Self-attention connects all positions with a constant number of sequential operations, making direct long-range dependency modeling practical.",
+     "falsification": "this pass dies if recurrent paths are shown to have offered equally direct long-range access at scale",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Attention-based mixing replaced recurrence as the default sequence mixing operation in NLP after 2017.",
+     "falsification": "this pass dies if recurrence remained the default sequence mixer in leading NLP after 2019",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Self-attention is the defining operation in the direct ancestry of every GPT model.",
+     "falsification": "this pass dies if GPT models are shown not to use self-attention",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Successor architectures still retain attention or explicitly position themselves against it, showing the field reorganized permanently around it.",
+     "falsification": "this pass dies if attention disappears from both practice and successor design debates",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Self-attention underlies language models, vision transformers and multimodal encoders, opening many model classes beyond translation.",
+     "falsification": "this pass dies if self-attention is shown to have been used only inside the original translation model",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "All Transformer LLM cores used by modern agents implement self-attention as their core mixing operation.",
+     "falsification": "this pass dies if agent LLM cores are shown to work at scale without any attention-like token mixing",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Attention weights provide an explicit pairwise relevance model that researchers used to design heads, masking and sparse variants.",
+     "falsification": "this pass dies if head and masking design are shown to owe nothing to the pairwise relevance model",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Multi-head attention became a standard module exported by every major deep learning framework.",
+     "falsification": "this pass dies if multi-head attention is shown not to be a reusable framework module",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Self-attention was transferred from text to images in ViT and to proteins in AlphaFold-style architectures.",
+     "falsification": "this pass dies if self-attention is shown to have no successful use outside text",
+     "source": "Attention Is All You Need",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before attention mechanism (neural machine translation), neural translation was impossible or impractical for long sentences because the source had to be compressed into one fixed-length vector.",
+   "cand_id": "attention-mechanism-neural-machine-translation-2014",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Transformer self-attention directly generalizes the 2014 alignment mechanism by removing the recurrent decoder it was attached to.",
+     "falsification": "this pass dies if Transformer attention is shown to have an independent origin unrelated to NMT attention",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Bahdanau attention introduced learned soft alignment as an explicit model of which source words a decoder step should use.",
+     "falsification": "this pass dies if the 2014 model is shown not to learn source-target alignments",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before sequence-to-sequence learning, mapping inputs to outputs of different lengths was impossible or impractical in one trainable model because tasks needed bespoke architectures per input-output shape.",
+   "cand_id": "sequence-to-sequence-learning-2014",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Prompt-to-response language modeling is a direct descendant of the seq2seq framing of conditional sequence generation.",
+     "falsification": "this pass dies if conditional generation in LLMs is shown to have a separate, unrelated origin",
+     "source": "Sequence to Sequence Learning with Neural Networks",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "Seq2seq was applied to translation, summarization, parsing and speech, showing one framework covered many transduction tasks.",
+     "falsification": "this pass dies if seq2seq is shown to have worked only for machine translation",
+     "source": "Sequence to Sequence Learning with Neural Networks",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "The encoder-decoder framework gave a general explanatory template of compressing an input sequence then generating an output sequence.",
+     "falsification": "this pass dies if later sequence models are shown not to use or react against the encoder-decoder template",
+     "source": "Sequence to Sequence Learning with Neural Networks",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Encoder-decoder became a standard interface reused in translation, summarization and later Transformer models such as T5.",
+     "falsification": "this pass dies if encoder-decoder structure is shown not to recur across later systems",
+     "source": "Sequence to Sequence Learning with Neural Networks",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Seq2seq methods spread from translation into speech recognition, dialogue and code generation.",
+     "falsification": "this pass dies if seq2seq is shown to have stayed inside translation research",
+     "source": "Sequence to Sequence Learning with Neural Networks",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before long short-term memory (LSTM), learning long-range dependencies was impossible or impractical because vanilla recurrent gradients vanished or exploded over long time lags.",
+   "cand_id": "long-short-term-memory-lstm-1997",
+   "verdicts": {
+    "Q1": {
+     "evidence": "LSTM constant-error carousels learned tasks with lags of over 1000 steps that vanilla RNNs could not learn.",
+     "falsification": "this pass dies if vanilla RNNs of 1997 are shown to learn 1000-step lag tasks equally well",
+     "source": "Long Short-Term Memory (Neural Computation)",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before backpropagation popularized, training multi-layer networks was impossible or impractical because there was no demonstrated general method for assigning credit to hidden units.",
+   "cand_id": "backpropagation-popularized-1986",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Rumelhart, Hinton and Williams showed backpropagation trained multi-layer networks to learn useful internal representations on tasks earlier perceptrons could not solve.",
+     "falsification": "this pass dies if multi-layer networks are shown to have been routinely trained effectively before 1986 by another general method",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Gradient-trained neural networks displaced hand-engineered feature pipelines as the default in perception and language by the 2010s.",
+     "falsification": "this pass dies if hand-engineered pipelines remained the default in perception and language after 2015",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Backpropagation is in the direct training lineage of AlexNet, Transformers and GPT models.",
+     "falsification": "this pass dies if those systems are shown to use a different training principle",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "No subsequent paradigm has replaced gradient backpropagation as the training method for frontier neural networks.",
+     "falsification": "this pass dies if frontier networks abandon backpropagation as their training method",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Backpropagation underlies training of convolutional, recurrent and Transformer networks across virtually all of deep learning.",
+     "falsification": "this pass dies if major deep learning systems are shown to train without gradient backpropagation",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Every LLM core behind modern agents is trained by backpropagating loss gradients through the network.",
+     "falsification": "this pass dies if an LLM-class model is shown trained to comparable capability without backpropagation",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "Backpropagation supplied the credit-assignment model that let researchers deliberately design and debug layered architectures.",
+     "falsification": "this pass dies if architecture design after 1986 is shown to owe nothing to gradient credit assignment",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Automatic differentiation of a scalar loss, built on backpropagation, is the standard training interface in PyTorch and TensorFlow.",
+     "falsification": "this pass dies if modern frameworks are shown not to expose backpropagation-based training as their core interface",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Backpropagation-trained networks produced breakthroughs in vision, speech, language, games and protein folding.",
+     "falsification": "this pass dies if backpropagation successes are shown to be confined to one field",
+     "source": "Learning representations by back-propagating errors (Nature)",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before stochastic gradient descent, optimizing models on large datasets was impossible or impractical because exact batch gradients required processing all data for every parameter update.",
+   "cand_id": "stochastic-gradient-descent-1951",
+   "verdicts": {
+    "Q1": {
+     "evidence": "The Robbins-Monro procedure converges using noisy single-sample estimates, making iterative optimization feasible where exact gradients are unavailable or too costly.",
+     "falsification": "this pass dies if exact batch optimization is shown to have been equally feasible for streaming large-scale problems in 1951",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "SGD displaced exact batch optimization as the default for training large models.",
+     "falsification": "this pass dies if exact batch methods remained the default for large-model training",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Adam, AdamW and other LLM optimizers are direct descendants that modify the SGD update rule.",
+     "falsification": "this pass dies if LLM optimizers are shown to be unrelated to stochastic gradient updates",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Large-scale model training has never returned to exact full-batch optimization since data scales grew.",
+     "falsification": "this pass dies if frontier training reverts to full-batch exact gradients",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "SGD and its variants train models across vision, language, recommendation and reinforcement learning.",
+     "falsification": "this pass dies if SGD use is shown to be confined to a single application area",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "LLM training still proceeds by minibatch stochastic gradient updates; full-batch gradient descent is computationally infeasible at trillion-token scale.",
+     "falsification": "this pass dies if an LLM is shown trained by full-batch exact gradients at comparable cost",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Replacing a full dataset pass per update with a small minibatch reduces the cost of each optimization step by orders of magnitude.",
+     "falsification": "this pass dies if minibatch updates are shown to cost about the same per step as full-batch updates",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "The minibatch gradient step is the standard optimizer interface implemented by every deep learning framework.",
+     "falsification": "this pass dies if frameworks are shown not to be organized around minibatch gradient steps",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Stochastic approximation is used in statistics, control, finance and machine learning, far beyond its original setting.",
+     "falsification": "this pass dies if stochastic approximation is shown to have remained a statistics curiosity",
+     "source": "A Stochastic Approximation Method (Annals of Mathematical Statistics)",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Adam optimizer, training deep networks was impractical at scale because SGD required extensive per-problem learning-rate tuning and handled sparse gradients poorly.",
+   "cand_id": "adam-optimizer-2014",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "Adam became the default optimizer exposed and preset in major frameworks for training Transformers.",
+     "falsification": "this pass dies if frameworks are shown not to have adopted Adam as a standard default",
+     "source": "Adam: A Method for Stochastic Optimization",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before generative pre-training (GPT-1), building one general language model was impossible or impractical because each task needed its own labeled data and bespoke architecture.",
+   "cand_id": "generative-pre-training-gpt-1-2018",
+   "verdicts": {
+    "Q1": {
+     "evidence": "GPT-1 pre-training on unlabeled text then fine-tuning improved 9 of 12 language understanding tasks over task-specific state of the art.",
+     "falsification": "this pass dies if GPT-1 is shown not to have beaten task-specific models via pre-training transfer",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Pre-trained foundation models displaced task-specific NLP architectures as the default starting point by the early 2020s.",
+     "falsification": "this pass dies if task-specific architectures remained the NLP default after 2022",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "GPT-1 is the named first step in the direct lineage to ChatGPT and 2023 agent cores.",
+     "falsification": "this pass dies if ChatGPT's lineage is shown to start elsewhere",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "No frontier lab has returned to training task-specific language models from scratch as its main strategy.",
+     "falsification": "this pass dies if the field reverts to per-task from-scratch training as the norm",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "The pretrain-then-adapt recipe generalized from GPT-1 to the entire GPT series and to instruction-tuned assistants.",
+     "falsification": "this pass dies if the GPT series is shown to abandon generative pre-training",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "The modern agent's core descends directly through GPT-2, GPT-3 and GPT-4 from the GPT-1 pre-training recipe.",
+     "falsification": "this pass dies if the GPT lineage to modern agents is shown to bypass the GPT-1 recipe",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "One pre-trained model amortized across many downstream tasks replaced training separate models from scratch per task.",
+     "falsification": "this pass dies if pre-training is shown to have saved no training effort across downstream tasks",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "GPT-1 established the explanatory model that unsupervised next-token learning builds transferable linguistic competence.",
+     "falsification": "this pass dies if transfer in GPT-1 is shown to come from supervised task data rather than unsupervised pre-training",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Pre-train then fine-tune or prompt became the standard usage interface for foundation models.",
+     "falsification": "this pass dies if foundation models are shown not to be used via a pre-train and adapt interface",
+     "source": "Improving Language Understanding by Generative Pre-Training",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before BERT masked language modeling, obtaining transferable bidirectional text representations was impossible or impractical because left-to-right and shallowly bidirectional models could not condition on both contexts.",
+   "cand_id": "bert-masked-language-modeling-2018",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "BERT set new state of the art on eleven NLP tasks at release, showing one pre-trained encoder transferred broadly.",
+     "falsification": "this pass dies if BERT is shown not to have transferred across those eleven tasks",
+     "source": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "BERT-style encoders became a standard reusable component for classification, retrieval and embedding pipelines.",
+     "falsification": "this pass dies if BERT-style encoders are shown not to be reused as standard components",
+     "source": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before scaling laws for neural language models, planning large training runs was impossible or impractical because no one knew how loss would respond to more model, data and compute.",
+   "cand_id": "scaling-laws-for-neural-language-models-2020",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "evidence": "Scaling-law reasoning directly justified the compute budgets behind GPT-3 scale and later frontier training runs.",
+     "falsification": "this pass dies if frontier run budgets are shown to have been set independently of scaling evidence",
+     "source": "Scaling Laws for Neural Language Models",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "evidence": "Kaplan et al. showed test loss follows predictable power laws in parameters, data and compute over many orders of magnitude.",
+     "falsification": "this pass dies if loss is shown not to follow the reported power-law relationships",
+     "source": "Scaling Laws for Neural Language Models",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "evidence": "Scaling laws let builders deliberately allocate compute between model size and training tokens before committing to a run.",
+     "falsification": "this pass dies if large runs after 2020 are shown to be sized without reference to scaling relationships",
+     "source": "Scaling Laws for Neural Language Models",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before reinforcement learning from human feedback (RLHF), steering a language model to follow instructions helpfully was impossible or impractical because likelihood training on text does not encode human preferences.",
+   "cand_id": "reinforcement-learning-from-human-feedback-rlhf-2022",
+   "verdicts": {
+    "Q1": {
+     "evidence": "InstructGPT models with 1.3B parameters were preferred by human raters over the 175B GPT-3 despite being far smaller.",
+     "falsification": "this pass dies if raters are shown to have preferred raw GPT-3 outputs over InstructGPT outputs",
+     "source": "Training language models to follow instructions with human feedback",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Preference-based post-training became the default final stage for ChatGPT and competing assistants after 2022.",
+     "falsification": "this pass dies if leading assistants after 2022 are shown to ship without any preference post-training",
+     "source": "Training language models to follow instructions with human feedback",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "ChatGPT, the immediate precursor of 2023 agents, was produced by applying RLHF to GPT-3.5.",
+     "falsification": "this pass dies if ChatGPT is shown not to have used RLHF",
+     "source": "Training language models to follow instructions with human feedback",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Successor methods such as DPO still optimize learned human preference signals, preserving the RLHF paradigm rather than reverting to raw likelihood models for assistants.",
+     "falsification": "this pass dies if assistants revert to shipping raw base models without preference training",
+     "source": "Training language models to follow instructions with human feedback",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "RLHF turned base models into usable assistants, unlocking chatbots, coding assistants and agent systems directed by users.",
+     "falsification": "this pass dies if assistant-style systems are shown to have emerged equally from base models without preference training",
+     "source": "Training language models to follow instructions with human feedback",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "evidence": "A reward model trained on human comparison rankings made subjective preference a quantifiable, optimizable signal.",
+     "falsification": "this pass dies if the reward model is shown not to predict human preferences better than chance",
+     "source": "Training language models to follow instructions with human feedback",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before instruction tuning, directing a language model with plain-language commands was impossible or impractical because models were trained to continue text, not to obey instructions.",
+   "cand_id": "instruction-tuning-2022",
+   "verdicts": {
+    "Q1": {
+     "evidence": "FLAN fine-tuning improved zero-shot performance on unseen task types, showing models could follow instructions for tasks never trained on directly.",
+     "falsification": "this pass dies if FLAN is shown not to improve zero-shot performance on held-out task types",
+     "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Instruction-tuned chat models displaced raw completion models as the default way users interact with LLMs.",
+     "falsification": "this pass dies if raw completion models remained the default user-facing LLM form",
+     "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "InstructGPT and ChatGPT, the direct precursors of modern agents, are instruction-tuned systems.",
+     "falsification": "this pass dies if ChatGPT is shown not to be instruction tuned",
+     "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Every subsequent frontier model release has retained instruction following as a core trained capability.",
+     "falsification": "this pass dies if frontier models drop instruction following in later releases",
+     "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Instruction tuning made one model usable for translation, QA, classification, writing and tool direction through language alone.",
+     "falsification": "this pass dies if instruction-tuned models are shown to handle only their trained task formats",
+     "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Agent loops direct their LLM core entirely through natural-language instructions, the interface instruction tuning created.",
+     "falsification": "this pass dies if agent loops are shown to direct cores mainly through non-linguistic control signals",
+     "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "Natural language instructions became the standard control interface through which users and agent scaffolds invoke model capabilities.",
+     "falsification": "this pass dies if prompting with instructions is shown not to be the standard control interface",
+     "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Instruction following transferred to education, coding, customer support and scientific assistance without domain-specific interfaces.",
+     "falsification": "this pass dies if instruction tuning benefits are shown to be confined to benchmark NLP tasks",
+     "source": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before chain-of-thought prompting, multi-step reasoning by language models was impossible or impractical because models had to produce answers directly with no intermediate computation in language.",
+   "cand_id": "chain-of-thought-prompting-2022",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Chain-of-thought prompting raised PaLM 540B accuracy on GSM8K math word problems from about 18 percent to about 57 percent.",
+     "falsification": "this pass dies if the reported GSM8K gains from chain-of-thought are shown not to exist",
+     "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Agent planning loops in 2023 systems explicitly generate intermediate reasoning steps derived from the chain-of-thought finding.",
+     "falsification": "this pass dies if agent planning is shown to make no use of intermediate reasoning steps",
+     "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "The same prompting technique improved arithmetic, commonsense and symbolic reasoning benchmarks without any retraining.",
+     "falsification": "this pass dies if chain-of-thought is shown to help only one benchmark family",
+     "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "Chain-of-thought became a standard prompting pattern built into agent frameworks and reasoning model training.",
+     "falsification": "this pass dies if agent frameworks are shown not to incorporate stepwise reasoning traces",
+     "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Chain-of-thought was adopted in math education, coding assistants, medical QA and scientific problem solving.",
+     "falsification": "this pass dies if chain-of-thought use is shown to be confined to NLP benchmarks",
+     "source": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before ReAct (reasoning and acting), grounding language model reasoning in a changing environment was impossible or impractical because reasoning and action were run as separate, non-interleaved processes.",
+   "cand_id": "react-reasoning-and-acting-2022",
+   "verdicts": {
+    "Q1": {
+     "evidence": "ReAct reduced hallucination and error propagation on HotpotQA and FEVER by interleaving reasoning with Wikipedia API actions that grounded each step.",
+     "falsification": "this pass dies if ReAct is shown not to outperform chain-of-thought and act-only baselines on those interactive tasks",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "ReAct is the canonical cited template for the 2023 generation of LLM agents including AutoGPT-style systems.",
+     "falsification": "this pass dies if 2023 agent systems are shown to derive their loop from an unrelated template",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "The ReAct loop was applied to question answering, fact verification, web navigation and interactive decision-making environments such as ALFWorld and WebShop.",
+     "falsification": "this pass dies if ReAct is shown to work in only one task environment",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "ReAct supplied the explicit reason-act-observe explanatory model that agent designers use to structure loops.",
+     "falsification": "this pass dies if agent loop designs are shown to owe nothing to the reason-act-observe structure",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "The thought-action-observation trace format became a standard scaffold pattern in frameworks such as LangChain agents.",
+     "falsification": "this pass dies if major agent frameworks are shown not to implement a ReAct-style trace format",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before byte-pair encoding tokenization, handling open vocabularies was impossible or impractical because word-level models failed on rare and unseen words and character models were inefficient.",
+   "cand_id": "byte-pair-encoding-tokenization-2016",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "GPT-2 and GPT-3 tokenizers are byte-level BPE, placing this method in the direct input pipeline of agent cores.",
+     "falsification": "this pass dies if GPT tokenizers are shown to use a non-BPE scheme",
+     "source": "Neural Machine Translation of Rare Words with Subword Units",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "BPE tokenizers are the standard text-to-token interface shipped with the GPT model family.",
+     "falsification": "this pass dies if GPT models are shown not to use BPE tokenization",
+     "source": "Neural Machine Translation of Rare Words with Subword Units",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before word2vec embeddings, representing word meaning for computation was impossible or impractical at scale because sparse count-based vectors were high-dimensional and training neural word vectors was slow.",
+   "cand_id": "word2vec-embeddings-2013",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "evidence": "Dense learned embeddings displaced one-hot and sparse count features as the default word representation in NLP.",
+     "falsification": "this pass dies if sparse features remained the default word representation after 2015",
+     "source": "Efficient Estimation of Word Representations in Vector Space",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "evidence": "Transformer models still begin with learned dense token embedding layers, preserving the vector-representation paradigm permanently.",
+     "falsification": "this pass dies if modern models abandon dense token embeddings",
+     "source": "Efficient Estimation of Word Representations in Vector Space",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Word2vec vectors improved performance across analogy, similarity and downstream NLP tasks and were adopted throughout industry within a few years.",
+     "falsification": "this pass dies if word2vec vectors are shown not to have transferred beyond the analogy task",
+     "source": "Efficient Estimation of Word Representations in Vector Space",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "evidence": "Word2vec trained on 1.6 billion words in under a day, versus weeks estimated for prior neural language model embeddings.",
+     "falsification": "this pass dies if word2vec training is shown to have taken comparable time to prior neural embedding methods",
+     "source": "Efficient Estimation of Word Representations in Vector Space",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "evidence": "Word2vec made semantic similarity a measurable cosine distance, with analogy accuracy scored quantitatively on a standard test set.",
+     "falsification": "this pass dies if vector distances in word2vec are shown not to correlate with semantic similarity",
+     "source": "Efficient Estimation of Word Representations in Vector Space",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "evidence": "Linear vector arithmetic such as king minus man plus woman approximating queen gave a concrete geometric model of semantic relations.",
+     "falsification": "this pass dies if the reported analogy arithmetic results are shown not to hold",
+     "source": "Efficient Estimation of Word Representations in Vector Space",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Pre-trained embedding files became a standard drop-in component loaded by unrelated NLP systems.",
+     "falsification": "this pass dies if pre-trained embeddings are shown not to have been reused as components",
+     "source": "Efficient Estimation of Word Representations in Vector Space",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Embedding methods spread to recommendation, genomics sequences and graph nodes through direct word2vec descendants such as node2vec.",
+     "falsification": "this pass dies if embedding techniques are shown to have stayed within word semantics",
+     "source": "Efficient Estimation of Word Representations in Vector Space",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before distributional semantics (Firth's hypothesis), learning word meaning from text alone was impossible or impractical because meaning was treated as requiring reference or introspection rather than context statistics.",
+   "cand_id": "distributional-semantics-firth-s-hypothesis-1957",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Firth's principle that a word is known by the company it keeps is the stated theoretical basis for distributional models from word2vec to LLM pre-training.",
+     "falsification": "this pass dies if distributional models are shown to derive from a principle unrelated to context distribution",
+     "source": "Distributional semantics (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before CLIP vision-language model, using images in a language model's terms was impossible or impractical because vision models needed task-specific labeled datasets for every new category.",
+   "cand_id": "clip-vision-language-model-2021",
+   "verdicts": {
+    "Q1": {
+     "evidence": "CLIP achieved zero-shot ImageNet accuracy comparable to a fully supervised ResNet-50 without seeing any ImageNet training labels.",
+     "falsification": "this pass dies if CLIP is shown to have required ImageNet labels for its zero-shot result",
+     "source": "Learning Transferable Visual Models From Natural Language Supervision",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "One CLIP model transferred zero-shot to over 30 datasets including OCR, action recognition and object classification.",
+     "falsification": "this pass dies if CLIP transfer is shown to be limited to a handful of datasets",
+     "source": "Learning Transferable Visual Models From Natural Language Supervision",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "evidence": "Zero-shot classification by text prompt eliminated per-category labeled data collection and classifier training for new categories.",
+     "falsification": "this pass dies if CLIP still required per-category labeled training for new tasks",
+     "source": "Learning Transferable Visual Models From Natural Language Supervision",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "CLIP's joint image-text embedding space became a standard interface reused by image generation, retrieval and multimodal agent systems.",
+     "falsification": "this pass dies if CLIP embeddings are shown not to be reused outside the original paper",
+     "source": "Learning Transferable Visual Models From Natural Language Supervision",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "CLIP embeddings underpin text-to-image generation, robotics perception and medical image retrieval, well beyond classification.",
+     "falsification": "this pass dies if CLIP is shown to be used only for image classification",
+     "source": "Learning Transferable Visual Models From Natural Language Supervision",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Vision Transformer (ViT), unifying vision and language in one architecture was impossible or impractical because image models relied on convolutional inductive biases unlike sequence models.",
+   "cand_id": "vision-transformer-vit-2020",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "ViT established the image-patch-token interface now reused by multimodal models that feed vision into LLM cores.",
+     "falsification": "this pass dies if multimodal models are shown not to use patch-token vision encoders",
+     "source": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before AlexNet, convincing the field that learned deep features beat engineered perception was impossible or impractical because no deep network had won a major vision benchmark by a large margin.",
+   "cand_id": "alexnet-2012",
+   "verdicts": {
+    "Q1": {
+     "evidence": "AlexNet cut ImageNet top-5 error to 15.3 percent versus 26.2 percent for the runner-up, a gap hand-engineered methods had not approached.",
+     "falsification": "this pass dies if the 2012 ImageNet margin is shown to be small or achieved by a non-neural method",
+     "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "After 2012, learned convolutional features displaced hand-engineered SIFT-style features as the computer vision default.",
+     "falsification": "this pass dies if hand-engineered features remained the vision default after 2014",
+     "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "AlexNet is the recognized ignition point of the deep learning era from which Transformer and LLM work followed.",
+     "falsification": "this pass dies if the deep learning era is shown to have begun independently of the 2012 result",
+     "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Computer vision never returned to hand-engineered features as its leading approach after AlexNet.",
+     "falsification": "this pass dies if hand-engineered features regain the lead in vision benchmarks",
+     "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "AlexNet's win triggered deep learning adoption across speech, translation, drug discovery and game playing within five years.",
+     "falsification": "this pass dies if deep learning adoption after 2012 is shown to be unrelated to the ImageNet result",
+     "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "GPU-trained deep networks modeled on AlexNet produced breakthroughs in speech recognition and machine translation by 2016.",
+     "falsification": "this pass dies if post-AlexNet deep learning is shown to have stayed within image classification",
+     "source": "ImageNet Classification with Deep Convolutional Neural Networks",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before ImageNet dataset, training and comparing data-hungry perception models was impossible or impractical because available labeled image sets were too small and had no common benchmark.",
+   "cand_id": "imagenet-dataset-2009",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "ImageNet's 14 million labeled images enabled training data-hungry models and spawned benchmarks and challenges across vision subfields.",
+     "falsification": "this pass dies if large-scale vision progress is shown to have proceeded equally on pre-2009 small datasets",
+     "source": "ImageNet: A Large-Scale Hierarchical Image Database",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "evidence": "The ImageNet challenge gave perception a single public error-rate metric on which competing methods could be ranked annually.",
+     "falsification": "this pass dies if ImageNet is shown not to have provided a common comparative metric",
+     "source": "ImageNet: A Large-Scale Hierarchical Image Database",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "evidence": "ImageNet's category structure and train-test protocol became the standard benchmark interface for vision research.",
+     "falsification": "this pass dies if vision research is shown not to have standardized on ImageNet protocols",
+     "source": "ImageNet: A Large-Scale Hierarchical Image Database",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "ImageNet pre-training transferred to medical imaging, robotics and remote sensing far outside its original object categories.",
+     "falsification": "this pass dies if ImageNet pre-training is shown not to transfer outside object recognition",
+     "source": "ImageNet: A Large-Scale Hierarchical Image Database",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before CUDA, using GPU parallelism for general computation was impossible or impractical because graphics hardware could only be programmed through graphics APIs not designed for it.",
+   "cand_id": "cuda-2007",
+   "verdicts": {
+    "Q1": {
+     "evidence": "CUDA gave general-purpose code direct access to GPU parallel cores, making GPU matrix computation practical for non-graphics programmers.",
+     "falsification": "this pass dies if general-purpose GPU computing is shown to have been equally accessible through graphics APIs before 2007",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "GPUs displaced CPUs as the default compute for training neural networks after CUDA matured.",
+     "falsification": "this pass dies if CPUs remained the default training hardware after 2012",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Every stage of the agent lineage from AlexNet to GPT training ran on CUDA-programmed NVIDIA hardware.",
+     "falsification": "this pass dies if the main lineage systems are shown to have trained primarily on other platforms",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "The AI field's software and hardware investment is now locked into the CUDA ecosystem, with alternatives still chasing compatibility.",
+     "falsification": "this pass dies if the field migrates wholesale off the CUDA ecosystem",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "CUDA enabled GPU acceleration across deep learning, molecular dynamics, finance and scientific simulation.",
+     "falsification": "this pass dies if CUDA use is shown to be confined to deep learning",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Frontier LLM training runs execute overwhelmingly on NVIDIA GPUs programmed through the CUDA ecosystem.",
+     "falsification": "this pass dies if frontier LLM training is shown to run mainly on non-CUDA hardware at comparable scale",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "GPU training reduced deep network training times from weeks on CPUs to days, as first demonstrated at scale by AlexNet's two-GPU training.",
+     "falsification": "this pass dies if GPU training is shown to offer no large speedup over CPU training for deep networks",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "CUDA became the standard programming interface that frameworks such as PyTorch target so users need not write GPU kernels themselves.",
+     "falsification": "this pass dies if deep learning frameworks are shown not to build on CUDA",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "CUDA-based computing is standard in physics simulation, genomics and quantitative finance as well as AI.",
+     "falsification": "this pass dies if CUDA is shown to have no significant use outside AI",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "evidence": "Orders-of-magnitude faster training let researchers run many more architecture and hyperparameter experiments per month.",
+     "falsification": "this pass dies if experiment throughput in deep learning is shown not to have risen with GPU adoption",
+     "source": "CUDA (Wikipedia)",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Perceptron, a machine learning a classifier from examples was impossible or impractical because computing machines were programmed with fixed rules rather than adjusted weights.",
+   "cand_id": "perceptron-1958",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Turing's learning machine proposal, conceiving intelligence as trained rather than programmed was impossible or impractical because machines were understood only as executing hand-written rules.",
+   "cand_id": "turing-s-learning-machine-proposal-1950",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before information theory (Shannon), quantifying information and communication limits was impossible or impractical because there was no mathematical measure of information content.",
+   "cand_id": "information-theory-shannon-1948",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Perplexity and cross-entropy, the central metrics of the LLM lineage, are direct Shannon quantities.",
+     "falsification": "this pass dies if LLM evaluation is shown not to use entropy-derived metrics",
+     "source": "A Mathematical Theory of Communication",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "No alternative framework has displaced entropy as the measure of information in any technical field since 1948.",
+     "falsification": "this pass dies if a non-Shannon measure becomes the standard for information content",
+     "source": "A Mathematical Theory of Communication",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Information theory founded digital communication, data compression, error-correcting codes and statistical language modeling.",
+     "falsification": "this pass dies if those fields are shown to rest on foundations independent of Shannon's theory",
+     "source": "A Mathematical Theory of Communication",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Language model training loss is cross-entropy, a quantity defined directly in Shannon's entropy framework.",
+     "falsification": "this pass dies if language modeling loss is shown to be definable without entropy concepts",
+     "source": "A Mathematical Theory of Communication",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "evidence": "Shannon entropy gave the first rigorous numerical measure of the information content of a source.",
+     "falsification": "this pass dies if an earlier rigorous measure of information content is shown to predate 1948",
+     "source": "A Mathematical Theory of Communication",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "evidence": "Entropy and channel capacity provided the explanatory model used to design codes and, later, to interpret perplexity in language models.",
+     "falsification": "this pass dies if code and language model design are shown to make no use of entropy or capacity concepts",
+     "source": "A Mathematical Theory of Communication",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Bits, entropy and channel capacity became the shared standard vocabulary across communications, computing and machine learning.",
+     "falsification": "this pass dies if those fields are shown not to share Shannon's quantities as standard terms",
+     "source": "A Mathematical Theory of Communication",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Information theory is applied in physics, biology, economics and neuroscience as well as communications.",
+     "falsification": "this pass dies if information theory is shown to be used only in communications engineering",
+     "source": "A Mathematical Theory of Communication",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before cross-entropy loss, scoring a predicted distribution against reality was impossible or impractical because there was no principled loss measuring distributional mismatch for training classifiers.",
+   "cand_id": "cross-entropy-loss-1948",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "evidence": "Cross-entropy displaced error-rate and squared-error objectives as the default for probabilistic classification.",
+     "falsification": "this pass dies if squared error remained the default classification loss in neural networks",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The scaling laws and training curves of the LLM lineage are plotted in cross-entropy loss.",
+     "falsification": "this pass dies if LLM training progress is shown to be tracked in a different primary quantity",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Frontier language models are still trained by minimizing cross-entropy more than seventy years after its derivation.",
+     "falsification": "this pass dies if frontier language model training abandons cross-entropy",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Cross-entropy is the training objective for classifiers, language models and many structured prediction systems across machine learning.",
+     "falsification": "this pass dies if major classifier and language model families are shown to train on unrelated objectives",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Next-token pre-training of every GPT-class model is defined as minimizing cross-entropy loss.",
+     "falsification": "this pass dies if GPT-class pre-training is shown to use a different primary objective",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "evidence": "Cross-entropy turns model quality into a single measurable number, reported as perplexity for language models.",
+     "falsification": "this pass dies if cross-entropy values are shown not to track language model quality",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "evidence": "Cross-entropy interprets training as reducing the model's surprise, giving designers a principled account of what optimization improves.",
+     "falsification": "this pass dies if the surprise interpretation is shown to be mathematically incorrect",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Cross-entropy is the standard loss function exposed by every machine learning framework for classification and language modeling.",
+     "falsification": "this pass dies if frameworks are shown not to provide cross-entropy as a standard loss",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Cross-entropy loss is used in speech recognition, machine translation, recommendation and medical diagnosis models.",
+     "falsification": "this pass dies if cross-entropy use is shown to be confined to language modeling",
+     "source": "Entropy (information theory) (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before maximum likelihood estimation, fitting statistical models to data was impossible or impractical as a general method because estimation relied on ad hoc moment matching per problem.",
+   "cand_id": "maximum-likelihood-estimation-1922",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Next-token training is maximum likelihood estimation applied to text sequences, placing MLE in the direct lineage of LLM cores.",
+     "falsification": "this pass dies if next-token training is shown not to maximize the likelihood of training text",
+     "source": "Maximum likelihood estimation (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Likelihood-based fitting remains a default estimation principle a century after Fisher's formulation.",
+     "falsification": "this pass dies if likelihood fitting is abandoned as a default across statistics and machine learning",
+     "source": "Maximum likelihood estimation (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Maximum likelihood provides one estimation principle used for regression, mixture models, hidden Markov models and language models.",
+     "falsification": "this pass dies if those model families are shown not to be fitted by likelihood maximization",
+     "source": "Maximum likelihood estimation (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Fisher's likelihood framework supplied the explanatory model of estimation as choosing parameters that make observed data most probable, with known asymptotic properties.",
+     "falsification": "this pass dies if likelihood theory is shown not to yield the claimed estimation properties",
+     "source": "Maximum likelihood estimation (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Log-likelihood is the standard objective interface implemented across statistical software and machine learning frameworks.",
+     "falsification": "this pass dies if statistical software is shown not to standardize on likelihood objectives",
+     "source": "Maximum likelihood estimation (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Maximum likelihood is routine in genetics, econometrics, epidemiology and physics as well as machine learning.",
+     "falsification": "this pass dies if maximum likelihood is shown to be used only within statistics",
+     "source": "Maximum likelihood estimation (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Bayesian probability (Bayes' theorem), updating beliefs from evidence was impossible or impractical as a formal procedure because probability was not defined for hypotheses themselves.",
+   "cand_id": "bayesian-probability-bayes-theorem-1763",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "Bayes' theorem underpins methods used in medicine, spam filtering, robotics state estimation and scientific inference.",
+     "falsification": "this pass dies if those fields are shown not to use Bayesian updating",
+     "source": "An Essay towards solving a Problem in the Doctrine of Chances",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Bayes' theorem gives the canonical explanatory model of learning as prior belief revised by likelihood of evidence.",
+     "falsification": "this pass dies if the prior-times-likelihood formulation is shown not to describe Bayesian inference",
+     "source": "An Essay towards solving a Problem in the Doctrine of Chances",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "Bayesian methods are standard in clinical trials, astrophysics, ecology and law as well as machine learning.",
+     "falsification": "this pass dies if Bayesian methods are shown to be confined to machine learning",
+     "source": "An Essay towards solving a Problem in the Doctrine of Chances",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Markov decision process formalism, sequential decision-making under uncertainty was impossible to optimize rigorously because there was no mathematical object defining states, actions, transitions and cumulative reward.",
+   "cand_id": "markov-decision-process-formalism-1957",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "RLHF and modern RL methods sit directly in the MDP lineage descending from Bellman's formulation.",
+     "falsification": "This pass dies if the RL methods used to steer language models trace to a different, unrelated formalism.",
+     "source": "Dynamic Programming (Bellman)",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Sequential decision problems are still universally framed as MDPs or their extensions such as POMDPs, with no return to pre-formalism practice.",
+     "falsification": "This pass dies if the field abandoned the MDP framing for a successor formalism.",
+     "source": "Dynamic Programming (Bellman)",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "The MDP formalism unblocked the entire field of reinforcement learning and optimal control, not just one decision problem.",
+     "falsification": "This pass dies if reinforcement learning and planning are shown to have developed independently of the MDP framework.",
+     "source": "Dynamic Programming (Bellman)",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Bellman's framework supplied the policy and value-function model that lets designers deliberately formulate an agent's objective as expected cumulative reward.",
+     "falsification": "This pass dies if agent objectives were routinely designed without any state, action or reward formulation derived from it.",
+     "source": "Dynamic Programming (Bellman)",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "The state-action-reward-transition tuple became the standard interface used by virtually every reinforcement learning library and benchmark environment.",
+     "falsification": "This pass dies if RL environments do not in fact expose a shared state, action and reward interface.",
+     "source": "Dynamic Programming (Bellman)",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "MDPs are used well beyond AI, in operations research, economics, robotics and control engineering.",
+     "falsification": "This pass dies if MDPs remained confined to a single subfield of AI.",
+     "source": "Dynamic Programming (Bellman)",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Q-learning, learning an optimal action policy from reward alone was impractical because there was no proven model-free method for estimating state-action values from experience.",
+   "cand_id": "q-learning-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Q-learning is a trunk ancestor of deep RL, with DQN's 2015 Atari results directly extending Watkins' algorithm.",
+     "falsification": "This pass dies if deep RL is shown to descend from an unrelated value-learning method.",
+     "source": "Learning from Delayed Rewards (thesis, University of Cambridge)",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "Q-learning opened model-free reinforcement learning as a general approach, later extended by Deep Q-Networks to high-dimensional control from raw pixels.",
+     "falsification": "This pass dies if model-free value learning produced no methods beyond Watkins' original tabular setting.",
+     "source": "Learning from Delayed Rewards (thesis, University of Cambridge)",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Q-learning supplied the explanatory model that an agent can learn what to do purely from delayed reward signals without a model of its environment.",
+     "falsification": "This pass dies if Q-learning required an environment model to converge.",
+     "source": "Learning from Delayed Rewards (thesis, University of Cambridge)",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before temporal difference learning, learning predictions from experience was impractical because updates had to wait for final outcomes rather than bootstrapping from later predictions.",
+   "cand_id": "temporal-difference-learning-1988",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "TD learning is on the direct trunk to modern RL, including the critic methods used in policy-gradient and RLHF-style training.",
+     "falsification": "This pass dies if the RL lineage behind language-model steering bypassed TD methods entirely.",
+     "source": "Learning to Predict by the Methods of Temporal Differences",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Bootstrapped value updates remain the default in reinforcement learning decades later, with no return to outcome-only learning.",
+     "falsification": "This pass dies if mainstream RL abandoned bootstrapping.",
+     "source": "Learning to Predict by the Methods of Temporal Differences",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "TD learning's bootstrapping update underlies Q-learning, actor-critic methods and the value estimation used across modern reinforcement learning.",
+     "falsification": "This pass dies if modern RL value methods do not use bootstrapped TD updates.",
+     "source": "Learning to Predict by the Methods of Temporal Differences",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Sutton's TD framework gave a new explanatory model of prediction learning as bootstrapping, enabling deliberate design of RL update rules.",
+     "falsification": "This pass dies if TD contributed no design principle beyond Monte Carlo returns.",
+     "source": "Learning to Predict by the Methods of Temporal Differences",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Monte Carlo tree search, planning in huge decision spaces was impractical because exhaustive search was infeasible and no method balanced exploration with simulation-guided lookahead.",
+   "cand_id": "monte-carlo-tree-search-2006",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before statistical learning theory, learning from finite data was impractical to reason about rigorously because there was no bound linking a hypothesis class's capacity to its generalization error.",
+   "cand_id": "statistical-learning-theory-vc-dimension-1971",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "evidence": "VC dimension made generalization error boundable and measurable as a function of hypothesis-class capacity and sample size.",
+     "falsification": "This pass dies if VC theory provided no quantitative bound on generalization.",
+     "source": "Statistical learning theory (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "evidence": "Vapnik and Chervonenkis supplied the explanatory framework of empirical risk minimization in which learning from data is deliberately designed and analyzed.",
+     "falsification": "This pass dies if modern learning theory does not rest on the generalization framework they founded.",
+     "source": "Statistical learning theory (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "evidence": "Statistical learning theory is foundational across machine learning, statistics and pattern recognition, well beyond any single application.",
+     "falsification": "This pass dies if the theory influenced only one narrow technique.",
+     "source": "Statistical learning theory (Wikipedia)",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the universal approximation theorem, betting on neural networks was unjustified in principle because it was unproven that a simple feedforward network could represent arbitrary continuous mappings.",
+   "cand_id": "universal-approximation-theorem-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the stored-program architecture, general-purpose computation was impractical because machines had to be physically rewired or reconfigured for each new task.",
+   "cand_id": "stored-program-architecture-1945",
+   "verdicts": {
+    "Q1": {
+     "evidence": "The von Neumann design made a single machine able to run any program held in memory, making universal reprogrammable computation possible at all.",
+     "falsification": "This pass dies if general-purpose computing was already practical on fixed-function or plugboard machines.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Stored-program machines completely displaced fixed-function and plugboard computers as the default by the 1950s.",
+     "falsification": "This pass dies if fixed-function machines remained the computing default.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The modern AI agent physically runs on von Neumann-architecture machines, placing this at the root of its lineage.",
+     "falsification": "This pass dies if AI systems run on a fundamentally different, non-stored-program substrate.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "No computing paradigm has reverted to task-specific hardware as the general default since 1945.",
+     "falsification": "This pass dies if stored-program computing was later abandoned as the baseline.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Stored-program computers unblocked every subsequent form of software, from operating systems to neural network training to agent loops.",
+     "falsification": "This pass dies if later computing paradigms did not run as stored programs.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Every model, tool and agent loop in the actual history runs on stored-program machines; no alternative substrate produced general computing.",
+     "falsification": "This pass dies if a non-stored-program architecture carried mainstream computing instead.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Changing a machine's task dropped from days of physical rewiring, as with ENIAC, to loading a new program in seconds.",
+     "falsification": "This pass dies if reprogramming stored-program machines was not orders of magnitude faster than rewiring.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "The EDVAC report supplied the design model of memory, control and arithmetic units that still structures how computers are built and programmed.",
+     "falsification": "This pass dies if modern computer architecture does not follow the stored-program model.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "The stored program is the ultimate abstraction: software builders write code without redesigning hardware for each application.",
+     "falsification": "This pass dies if applications still required custom hardware per task.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Stored-program computing transformed essentially every field, from science and finance to communications and entertainment.",
+     "falsification": "This pass dies if its impact stayed inside computing itself.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "evidence": "Editing and rerunning a program in memory collapsed the experiment loop from hardware rebuilds to minutes of recompilation.",
+     "falsification": "This pass dies if program iteration remained as slow as hardware reconfiguration.",
+     "source": "First Draft of a Report on the EDVAC",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before ILSVRC, progress in large-scale visual recognition was impractical to compare because there was no shared large benchmark and annual competition to rank methods.",
+   "cand_id": "imagenet-large-scale-visual-recognition-challenge-ilsvrc-2010",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "The deep learning resurgence that produced the models behind modern agents passed directly through ILSVRC's 2012 result.",
+     "falsification": "This pass dies if the deep learning revival originated independently of the ImageNet competition.",
+     "source": "ILSVRC - ImageNet",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "AlexNet's 2012 ILSVRC win redirected the whole field to deep learning, unblocking a decade of progress across vision, speech and language.",
+     "falsification": "This pass dies if the 2012 result did not trigger the field-wide shift to deep learning.",
+     "source": "ILSVRC - ImageNet",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "evidence": "ILSVRC made recognition accuracy on a fixed large-scale test set a shared measurable quantity competing teams could be ranked by.",
+     "falsification": "This pass dies if ILSVRC provided no common quantitative comparison of methods.",
+     "source": "ILSVRC - ImageNet",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "ILSVRC established the shared benchmark format that later evaluations, including language benchmarks, imitated as a standard interface for progress.",
+     "falsification": "This pass dies if later benchmarks did not adopt the shared-leaderboard model ILSVRC popularized.",
+     "source": "ILSVRC - ImageNet",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "evidence": "The annual competition cycle gave researchers a fixed yearly deadline and public ranking, sharply accelerating method iteration in vision.",
+     "falsification": "This pass dies if vision progress proceeded at the same pace without the competition cycle.",
+     "source": "ILSVRC - ImageNet",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the GLUE benchmark, general language understanding was impractical to compare across models because each system was evaluated on different, incompatible tasks.",
+   "cand_id": "glue-benchmark-2018",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "evidence": "GLUE aggregated nine understanding tasks into one score, making general language understanding a shared measurable target for the first time.",
+     "falsification": "This pass dies if GLUE did not provide a common quantitative measure across models.",
+     "source": "GLUE Benchmark",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "GLUE's task suite and leaderboard became the standard evaluation interface for encoder-era language models such as BERT.",
+     "falsification": "This pass dies if encoder models were not routinely reported and compared on GLUE.",
+     "source": "GLUE Benchmark",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the tensor processing unit, large-scale neural network computation was impractical to cheapen further because general-purpose processors were not built for dense tensor algebra.",
+   "cand_id": "tensor-processing-unit-tpu-2016",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "evidence": "Google reported the TPU delivered roughly an order of magnitude better performance per watt than contemporary CPUs and GPUs on inference workloads.",
+     "falsification": "This pass dies if TPU performance-per-watt gains over incumbent hardware were only marginal.",
+     "source": "Tensor processing unit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Amazon Web Services, elastic compute was impractical for most teams because running large workloads required owning and operating a data center.",
+   "cand_id": "amazon-web-services-2006",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "evidence": "Cloud hosting displaced self-owned servers as the default for new software companies within a decade of AWS's launch.",
+     "falsification": "This pass dies if self-hosting remained the default for new services.",
+     "source": "Amazon Web Services - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "evidence": "Computing has not returned to owning hardware as the default baseline since cloud rental became available.",
+     "falsification": "This pass dies if the industry reverted to owned data centers as the standard model.",
+     "source": "Amazon Web Services - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "evidence": "AWS let users rent compute by the hour from 2006, collapsing the capital cost and setup time of large-scale computing from data-center construction to an API call.",
+     "falsification": "This pass dies if on-demand cloud rental did not substantially cut the cost and time of obtaining compute.",
+     "source": "Amazon Web Services - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "evidence": "S3 and EC2's APIs became a de facto standard interface for storage and compute that a generation of software was built on.",
+     "falsification": "This pass dies if AWS APIs were not widely built upon as a platform standard.",
+     "source": "Amazon Web Services - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Cloud computing reshaped startups, science, media and enterprise IT far beyond AI.",
+     "falsification": "This pass dies if AWS's impact remained confined to AI research.",
+     "source": "Amazon Web Services - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "evidence": "Provisioning servers dropped from weeks of procurement to minutes, collapsing infrastructure setup in the experiment loop.",
+     "falsification": "This pass dies if cloud provisioning was not dramatically faster than buying hardware.",
+     "source": "Amazon Web Services - Wikipedia",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Git, distributed collaboration on large codebases was impractical because centralized version control made offline work and branching slow and fragile.",
+   "cand_id": "git-2005",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "evidence": "Git displaced Subversion and other centralized systems as the default version control for new projects.",
+     "falsification": "This pass dies if centralized version control remained the default after Git.",
+     "source": "Git - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "evidence": "Distributed version control is now the permanent baseline; no mainstream return to centralized systems has occurred.",
+     "falsification": "This pass dies if the field reverted to centralized version control.",
+     "source": "Git - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "evidence": "Git made branching, merging and full-history cloning near-instant local operations, collapsing version-control overhead for large projects like the Linux kernel.",
+     "falsification": "This pass dies if Git's operations were not dramatically cheaper and faster than centralized predecessors.",
+     "source": "Git - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "evidence": "Git's commit, branch and remote model became the universal interface for source control that all major platforms and tools implement.",
+     "falsification": "This pass dies if Git's model did not become the standard other tools build on.",
+     "source": "Git - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Git underpins collaboration across all of software, science and documentation, far beyond AI.",
+     "falsification": "This pass dies if Git's use stayed confined to one software community.",
+     "source": "Git - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "evidence": "Cheap local branching let developers run parallel experiments and merge in minutes, sharply shortening the code iteration loop.",
+     "falsification": "This pass dies if Git did not speed up code experimentation cycles.",
+     "source": "Git - Wikipedia",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before GitHub, open-source collaboration was impractical to coordinate at scale because code hosting, review and issue tracking were fragmented across separate tools.",
+   "cand_id": "github-2008",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "evidence": "GitHub became the default home for open-source projects, displacing SourceForge and self-hosted forges.",
+     "falsification": "This pass dies if earlier code hosts retained their default status.",
+     "source": "GitHub - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "evidence": "GitHub's pull request became the standard collaboration interface through which most open-source contributions, including ML frameworks, are proposed and reviewed.",
+     "falsification": "This pass dies if pull-request-based review did not become the dominant open-source workflow.",
+     "source": "GitHub - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "evidence": "Fork-and-pull-request workflows cut the time to propose, review and merge a change from mailing-list days to hours.",
+     "falsification": "This pass dies if GitHub workflows were no faster than prior patch-by-email practice.",
+     "source": "GitHub - Wikipedia",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the point-contact transistor, electronic amplification and switching were impractical to miniaturize because vacuum tubes were bulky, fragile and power-hungry.",
+   "cand_id": "point-contact-transistor-1947",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Bardeen and Brattain's December 1947 demonstration was the first working transistor, proving solid-state amplification was possible at all.",
+     "falsification": "This pass dies if a working solid-state amplifier predated the 1947 Bell Labs demonstration.",
+     "source": "Point-contact transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "The point-contact device is the first node in the transistor lineage that leads directly to the chips AI agents run on.",
+     "falsification": "This pass dies if modern chips descend from a separate switching technology unrelated to the 1947 device.",
+     "source": "Point-contact transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Electronics never returned to vacuum tubes as the general switching baseline after the transistor appeared.",
+     "falsification": "This pass dies if tube technology regained its default status.",
+     "source": "Point-contact transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "The transistor unblocked all of solid-state electronics, the space from which integrated circuits, computers and AI accelerators descend.",
+     "falsification": "This pass dies if solid-state electronics did not develop from the transistor breakthrough.",
+     "source": "Point-contact transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "evidence": "Transistors eventually cut the size, power and cost of a switching element by orders of magnitude relative to vacuum tubes.",
+     "falsification": "This pass dies if transistor devices offered no large cost or power advantage over tubes.",
+     "source": "Point-contact transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "evidence": "Transistor-based electronics transformed communications, medicine, transport and every other technical field, not just computing.",
+     "falsification": "This pass dies if transistor electronics remained a computing-only technology.",
+     "source": "Point-contact transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the silicon transistor, transistors were impractical as a mass commodity because germanium devices were fragile, temperature-sensitive and hard to manufacture.",
+   "cand_id": "silicon-transistor-1954",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "evidence": "Silicon displaced germanium as the default transistor material across the industry by the early 1960s.",
+     "falsification": "This pass dies if germanium remained the standard transistor material.",
+     "source": "Transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "AI accelerators are silicon chips, placing the silicon transistor directly on the trunk of the agent's hardware lineage.",
+     "falsification": "This pass dies if modern AI hardware is not silicon-based.",
+     "source": "Transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Silicon remains the baseline semiconductor material more than seventy years later.",
+     "falsification": "This pass dies if the industry moved its baseline to another material.",
+     "source": "Transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Silicon transistors unblocked the entire silicon semiconductor industry, the substrate of all modern processors and accelerators.",
+     "falsification": "This pass dies if the semiconductor industry was built primarily on germanium or another material instead.",
+     "source": "Transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Silicon became the only material path that scaled to modern chips; germanium was abandoned for mainstream logic within a decade.",
+     "falsification": "This pass dies if a non-silicon transistor technology carried mainstream computing instead.",
+     "source": "Transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Silicon devices were cheaper, more rugged and more manufacturable than germanium, enabling the mass production that drove transistor prices down by orders of magnitude.",
+     "falsification": "This pass dies if silicon transistors were not substantially cheaper to manufacture at scale.",
+     "source": "Transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "Silicon electronics underpin progress in every technical field, from medicine to spaceflight.",
+     "falsification": "This pass dies if silicon devices stayed confined to computing.",
+     "source": "Transistor - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the planar process, transistor fabrication was impractical to scale because devices were built individually on irregular surfaces and failed at high rates.",
+   "cand_id": "planar-process-1959",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Hoerni's planar process made it possible to fabricate many reliable transistors at once on a flat oxidized wafer, which mesa construction could not do.",
+     "falsification": "This pass dies if batch fabrication of reliable transistors was already practical before the planar process.",
+     "source": "Planar process - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Planar fabrication displaced mesa transistor construction as the industry standard within a few years.",
+     "falsification": "This pass dies if mesa construction remained the manufacturing default.",
+     "source": "Planar process - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Modern AI chips are made by processes directly descended from Hoerni's planar method.",
+     "falsification": "This pass dies if modern chip fabrication does not descend from the planar process.",
+     "source": "Planar process - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Wafer-based planar fabrication remains the permanent baseline of semiconductor manufacturing.",
+     "falsification": "This pass dies if the industry abandoned wafer batch fabrication.",
+     "source": "Planar process - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Planar fabrication unblocked integrated circuits and every subsequent generation of chip scaling.",
+     "falsification": "This pass dies if integrated circuits developed without planar fabrication.",
+     "source": "Planar process - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "All mainstream chip manufacturing still descends from the planar process; no alternative fabrication route displaced it.",
+     "falsification": "This pass dies if chips were mass-produced by a fundamentally different process.",
+     "source": "Planar process - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Batch-printing transistors on a wafer collapsed per-device cost compared with individually assembled mesa transistors.",
+     "falsification": "This pass dies if planar batch fabrication did not sharply reduce per-transistor cost.",
+     "source": "Planar process - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "Planar-fabricated chips spread into every industry, from automobiles to medical devices.",
+     "falsification": "This pass dies if planar chips remained confined to computing.",
+     "source": "Planar process - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the integrated circuit, complex electronic systems were impractical to scale because every component had to be manufactured and wired separately, causing cost and failure rates to explode with circuit size.",
+   "cand_id": "integrated-circuit-1958",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Kilby's and Noyce's 1958-59 demonstrations proved whole circuits could be built on one piece of semiconductor, making complex miniaturized systems possible.",
+     "falsification": "This pass dies if monolithic circuits had already been demonstrated before 1958.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Integrated circuits displaced discrete-component construction as the default for electronic systems during the 1960s and 1970s.",
+     "falsification": "This pass dies if discrete construction remained the system default.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Every AI accelerator is an integrated circuit, placing the IC on the direct trunk of the agent's lineage.",
+     "falsification": "This pass dies if AI hardware is not built as integrated circuits.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Electronics has never reverted to discrete wiring as its baseline after integration.",
+     "falsification": "This pass dies if monolithic integration was later abandoned.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "The integrated circuit unblocked microprocessors, memory chips and ultimately the GPUs and accelerators that train and run AI agents.",
+     "falsification": "This pass dies if modern processors do not descend from the integrated circuit.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "No alternative to monolithic integration carried computing to billions of components; discrete wiring could not scale.",
+     "falsification": "This pass dies if a non-integrated technology achieved comparable component density.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Integration collapsed the cost per component by orders of magnitude over the following decades as transistor counts per chip grew exponentially.",
+     "falsification": "This pass dies if per-component costs stayed near discrete-circuit levels after integration.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "The chip became the standard composable unit of electronics, letting system designers build on packaged ICs without designing transistors.",
+     "falsification": "This pass dies if system builders still had to design at the individual transistor level.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Integrated circuits transformed every field from telecommunications to medicine to transportation.",
+     "falsification": "This pass dies if ICs affected only the computer industry.",
+     "source": "Integrated circuit - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Czochralski process, large semiconductor single crystals were impossible to obtain because no method could pull a large, near-perfect crystal from a melt.",
+   "cand_id": "czochralski-process-1916",
+   "verdicts": {
+    "Q1": {
+     "evidence": "The Czochralski method, adapted to silicon in the 1950s, made large single-crystal silicon ingots obtainable for the first time.",
+     "falsification": "This pass dies if large silicon single crystals were available by another method beforehand.",
+     "source": "Czochralski method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Czochralski growth displaced other crystal-pulling approaches as the standard for silicon ingots.",
+     "falsification": "This pass dies if another method remained the ingot standard.",
+     "source": "Czochralski method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The silicon in every AI accelerator begins as a Czochralski-grown crystal, placing it on the trunk hardware lineage.",
+     "falsification": "This pass dies if AI chip wafers are not Czochralski-grown.",
+     "source": "Czochralski method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "The process remains the industry baseline more than a century after its invention.",
+     "falsification": "This pass dies if the industry replaced it as the standard growth method.",
+     "source": "Czochralski method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Czochralski crystals supply the wafers from which virtually all semiconductor devices, including AI chips, are cut.",
+     "falsification": "This pass dies if most wafers come from a different crystal-growth method.",
+     "source": "Czochralski method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Virtually all semiconductor silicon wafers worldwide are still grown by the Czochralski process, with no substitute at scale.",
+     "falsification": "This pass dies if another growth method supplies the majority of wafers.",
+     "source": "Czochralski method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Pulling large ingots made wafer production an industrial batch process, collapsing the cost of crystalline silicon per device.",
+     "falsification": "This pass dies if Czochralski growth did not reduce crystal silicon costs at scale.",
+     "source": "Czochralski method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "Czochralski-grown crystals also serve optics, solar cells and other fields beyond computing chips.",
+     "falsification": "This pass dies if the method is used only for logic chips.",
+     "source": "Czochralski method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before zone refining, reliable transistors were impractical because semiconductor material could not be purified enough to control its electrical properties.",
+   "cand_id": "zone-refining-1951",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Pfann's zone refining achieved impurity levels orders of magnitude lower than prior purification, making reproducible transistor material possible.",
+     "falsification": "This pass dies if transistor-grade purity was already attainable by earlier methods.",
+     "source": "Zone melting - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Zone refining sits in the direct materials lineage of early silicon production behind modern chips.",
+     "falsification": "This pass dies if semiconductor purification history bypassed zone refining.",
+     "source": "Zone melting - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Ultra-high purity established by zone refining permanently reset the baseline for semiconductor material quality.",
+     "falsification": "This pass dies if the industry returned to low-purity material standards.",
+     "source": "Zone melting - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Ultra-pure semiconductor material unblocked the reliable transistor production on which the whole electronics industry was built.",
+     "falsification": "This pass dies if early transistor production did not depend on zone-refined material.",
+     "source": "Zone melting - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "evidence": "Zone refining is also used to purify metals and compounds for research and other industries beyond semiconductors.",
+     "falsification": "This pass dies if zone refining found no use outside transistor material.",
+     "source": "Zone melting - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the MOSFET, scalable low-power switching was impractical because bipolar transistors consumed too much power and were too hard to integrate at high density.",
+   "cand_id": "mosfet-1959",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Kahng and Atalla's 1959 MOSFET demonstrated a voltage-controlled switch that could be miniaturized and integrated at densities bipolar devices could not reach.",
+     "falsification": "This pass dies if high-density low-power integration was already practical with bipolar transistors.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "MOSFET-based CMOS displaced bipolar logic as the industry default during the 1980s and 1990s.",
+     "falsification": "This pass dies if bipolar logic remained the mainstream default.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "AI accelerators consist of billions of MOSFETs, making it the central device of the agent's hardware trunk.",
+     "falsification": "This pass dies if AI chips are not MOSFET-based.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "No successor switch has displaced the MOSFET as the baseline of digital electronics after more than sixty years.",
+     "falsification": "This pass dies if the field moved its baseline to a different device.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "The MOSFET unblocked CMOS logic, DRAM, image sensors and the processors and accelerators that run AI agents.",
+     "falsification": "This pass dies if modern digital technology does not rest on MOSFET devices.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "The MOSFET became the most manufactured device in history and the only switch present in tens of billions per modern AI chip.",
+     "falsification": "This pass dies if another switch type populates modern processors instead.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "MOSFET scaling drove the cost per transistor down by many orders of magnitude across five decades of Moore's law.",
+     "falsification": "This pass dies if transistor costs did not collapse under MOSFET scaling.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "The MOSFET and CMOS cell became the standard building block abstracted by every level of chip design above it.",
+     "falsification": "This pass dies if chip designers do not build on standardized MOSFET-based cells.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "MOSFETs appear in power electronics, vehicles, medical devices and consumer goods far beyond computing.",
+     "falsification": "This pass dies if MOSFETs are found only in computers.",
+     "source": "MOSFET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before photolithography, shrinking and mass-producing transistor patterns was impractical because circuit features had to be formed by slow, coarse mechanical methods.",
+   "cand_id": "photolithography-1959",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Photolithography made it possible to print fine circuit patterns onto wafers, the capability on which all chip scaling depends.",
+     "falsification": "This pass dies if fine chip patterns were printable at scale by an earlier method.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Lithographic patterning displaced mechanical and hand-assembled circuit formation as the manufacturing default.",
+     "falsification": "This pass dies if non-lithographic fabrication remained standard.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Every chip an AI agent runs on was lithographically printed, placing the process on the hardware trunk.",
+     "falsification": "This pass dies if AI chips are made by a non-lithographic process.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Successive lithography generations, now EUV, have only deepened the baseline rather than replacing the approach.",
+     "falsification": "This pass dies if chipmaking abandoned optical pattern transfer.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Lithographic printing unblocked every generation of integrated circuits, from the first planar chips to EUV-fabricated AI accelerators.",
+     "falsification": "This pass dies if chip generations advanced without lithographic patterning.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "All advanced chips, including every AI accelerator, are still patterned lithographically; no alternative printing route exists at scale.",
+     "falsification": "This pass dies if leading chips are manufactured without lithography.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Printing whole wafers of circuits at once collapsed the cost per feature compared with any serial fabrication method.",
+     "falsification": "This pass dies if lithography offered no large per-feature cost advantage.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "evidence": "The photomask-and-exposure process became the standard interface between chip designs and fabrication plants worldwide.",
+     "falsification": "This pass dies if fabs do not accept designs through a mask-based lithographic flow.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Photolithography also underpins displays, MEMS and other microfabricated technologies beyond logic chips.",
+     "falsification": "This pass dies if lithography is used only for processors.",
+     "source": "Photolithography - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Kolmogorov's probability axioms, reasoning about uncertainty was impractical to make rigorous because probability lacked a consistent mathematical foundation.",
+   "cand_id": "probability-axioms-kolmogorov-1933",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "evidence": "Kolmogorov's formulation displaced competing foundations and became the universal textbook standard.",
+     "falsification": "This pass dies if a rival axiomatization remained equally standard.",
+     "source": "Foundations of the Theory of Probability - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Language models output probability distributions defined in Kolmogorov's framework, placing it in the agent's theoretical trunk.",
+     "falsification": "This pass dies if model outputs are not probabilities in his sense.",
+     "source": "Foundations of the Theory of Probability - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "The 1933 axioms remain the unrevised foundation of probability theory ninety years later.",
+     "falsification": "This pass dies if the axioms were superseded by a new foundation.",
+     "source": "Foundations of the Theory of Probability - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Kolmogorov's axiomatization unblocked modern statistics, stochastic processes, information theory and probabilistic machine learning.",
+     "falsification": "This pass dies if those fields developed on a different foundation than measure-theoretic probability.",
+     "source": "Foundations of the Theory of Probability - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "evidence": "The axioms made probability a measure, giving uncertainty a rigorous quantitative calculus that statistical learning relies on.",
+     "falsification": "This pass dies if the axioms added no rigorous way to quantify uncertainty.",
+     "source": "Foundations of the Theory of Probability - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "evidence": "Kolmogorov supplied the explanatory model of probability as measure that still structures how probabilistic models, including language model outputs, are defined.",
+     "falsification": "This pass dies if modern probabilistic modeling does not use his framework.",
+     "source": "Foundations of the Theory of Probability - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Probability distributions became a standard abstraction that statisticians and ML practitioners compose without re-deriving foundations.",
+     "falsification": "This pass dies if probability is not used as a shared formal interface across fields.",
+     "source": "Foundations of the Theory of Probability - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Axiomatic probability underpins physics, finance, biology and engineering, far beyond AI.",
+     "falsification": "This pass dies if its influence stayed inside mathematics.",
+     "source": "Foundations of the Theory of Probability - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before linear algebra and matrix calculus, expressing large systems of transformations was impractical because there was no compact mathematical language for arrays of numbers and their operations.",
+   "cand_id": "linear-algebra-matrix-calculus-1844",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "evidence": "Matrix methods displaced coordinate-by-coordinate computation as the default way to handle multivariate problems.",
+     "falsification": "This pass dies if scalar coordinate methods remained the default.",
+     "source": "Linear algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Every forward and backward pass of the models behind AI agents is linear algebra, placing it at the center of the lineage.",
+     "falsification": "This pass dies if neural network computation does not consist of matrix operations.",
+     "source": "Linear algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Linear algebra has remained the permanent mathematical baseline for computation for over a century.",
+     "falsification": "This pass dies if it was displaced as the language of multivariate computation.",
+     "source": "Linear algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Linear algebra unblocked computer graphics, optimization, quantum mechanics, statistics and neural network computation expressed as tensor operations.",
+     "falsification": "This pass dies if those fields express their core computations without matrices and vectors.",
+     "source": "Linear algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Neural networks are literally compositions of matrix multiplications and nonlinearities; no alternative mathematical language carries modern AI computation.",
+     "falsification": "This pass dies if mainstream neural network computation is formulated without linear algebra.",
+     "source": "Linear algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Linear algebra supplies the explanatory model of transformations, subspaces and spectra used to design and analyze learning systems deliberately.",
+     "falsification": "This pass dies if learning systems are designed without linear-algebraic concepts.",
+     "source": "Linear algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Matrices and tensors are the standard interface implemented by BLAS, NumPy and every deep learning framework.",
+     "falsification": "This pass dies if ML frameworks do not expose tensor operations as their core abstraction.",
+     "source": "Linear algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Linear algebra is foundational in physics, engineering, economics and computer science, well beyond AI.",
+     "falsification": "This pass dies if its reach is limited to machine learning.",
+     "source": "Linear algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before gradient descent, minimizing a complex function was impractical because there was no general iterative rule that used local slope information to improve a solution step by step.",
+   "cand_id": "gradient-descent-1847",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Gradient descent made training parameterized models possible at all by giving a general procedure for minimizing a differentiable loss, the procedure every neural network is trained with.",
+     "falsification": "This pass dies if neural networks were historically trained by a non-iterative closed-form method.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Gradient-based training displaced hand-crafted rules and analytic fitting as the default way to build predictive models.",
+     "falsification": "This pass dies if hand-designed systems remained the modeling default.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The language models behind modern agents are trained by stochastic gradient descent variants such as Adam, a direct descendant of Cauchy's method.",
+     "falsification": "This pass dies if LLM training uses an optimizer unrelated to gradient descent.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Gradient-based optimization remains the irreversible baseline of model training after more than a century of use.",
+     "falsification": "This pass dies if the field abandoned gradient methods for a successor.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Gradient-based optimization unblocked all of deep learning, training models from perceptrons to large language models.",
+     "falsification": "This pass dies if deep learning's models are not trained by gradient methods.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "Gradient descent supplied the loss-minimization model that lets designers deliberately shape model behavior by choosing an objective function.",
+     "falsification": "This pass dies if training is not understood and designed as loss minimization.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "The gradient step is the standard abstraction exposed by every optimizer in every deep learning framework.",
+     "falsification": "This pass dies if frameworks do not build optimizers around gradient updates.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Gradient methods are used across engineering, physics, economics and operations research, far beyond AI.",
+     "falsification": "This pass dies if gradient optimization is confined to machine learning.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "evidence": "Cheap iterative updates let practitioners run train-evaluate cycles in hours instead of deriving analytic solutions, collapsing the modeling feedback loop.",
+     "falsification": "This pass dies if iterative gradient training did not speed up model development.",
+     "source": "Gradient descent - Wikipedia",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Monte Carlo method, estimating intractable integrals and expectations was impossible in practice because no analytic or deterministic numerical method could handle their dimensionality.",
+   "cand_id": "monte-carlo-method-1946",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Ulam, von Neumann and Metropolis showed intractable problems such as neutron diffusion could be estimated by random sampling when no analytic solution existed.",
+     "falsification": "This pass dies if the target problems were already solvable deterministically in the 1940s.",
+     "source": "Monte Carlo method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Sampling runs through the agent's lineage, from Monte Carlo tree search to stochastic training and generation in language models.",
+     "falsification": "This pass dies if modern AI methods do not rely on random sampling.",
+     "source": "Monte Carlo method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Sampling-based estimation permanently reset the baseline for intractable computation and has never been displaced.",
+     "falsification": "This pass dies if deterministic methods reclaimed those problem classes.",
+     "source": "Monte Carlo method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Monte Carlo sampling unblocked Bayesian inference, statistical physics, finance and the sampling procedures used throughout ML training and evaluation.",
+     "falsification": "This pass dies if sampling methods remained confined to wartime physics.",
+     "source": "Monte Carlo method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "evidence": "Sampling replaced exponentially expensive exact computation with estimates whose cost grows only with the number of samples, an orders-of-magnitude saving in high dimensions.",
+     "falsification": "This pass dies if Monte Carlo estimates cost as much as exact computation in high dimensions.",
+     "source": "Monte Carlo method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "evidence": "Monte Carlo made previously uncomputable expectations and integrals measurable to arbitrary precision through sampling error estimates.",
+     "falsification": "This pass dies if sampling provided no quantifiable estimate of intractable quantities.",
+     "source": "Monte Carlo method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "evidence": "The method supplied the model of computation-by-sampling that underlies MCMC and modern probabilistic inference design.",
+     "falsification": "This pass dies if probabilistic inference is not designed around sampling.",
+     "source": "Monte Carlo method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "Monte Carlo methods are standard in physics, finance, biology and engineering, far beyond AI.",
+     "falsification": "This pass dies if the method is used only in machine learning.",
+     "source": "Monte Carlo method - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Boolean algebra, logic was impossible to mechanize because reasoning existed only in verbal form with no algebraic system machines could implement.",
+   "cand_id": "boolean-algebra-1854",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Boole's 1854 system reduced logical reasoning to algebra over true and false values, the formal step that later let Shannon map logic directly onto switching circuits.",
+     "falsification": "This pass dies if digital circuits were designed without Boolean logic.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Boolean digital logic displaced analog and mechanical computation as the default for general-purpose machines.",
+     "falsification": "This pass dies if analog computation remained the general default.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The processors running AI agents are Boolean circuits, placing Boole's algebra at the root of the lineage.",
+     "falsification": "This pass dies if AI hardware does not implement Boolean logic.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Digital computation has never reverted from the Boolean baseline in 170 years.",
+     "falsification": "This pass dies if a post-Boolean logic became the computing standard.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Boolean algebra unblocked digital circuit design and therefore all of computing, including the hardware AI agents run on.",
+     "falsification": "This pass dies if computing developed on a non-Boolean logical basis.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "All mainstream digital hardware implements Boolean logic; no alternative two-valued algebra carried general computing.",
+     "falsification": "This pass dies if mainstream computers are built on a different logic.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "Boolean algebra gave designers a calculus for deliberately composing and simplifying logic circuits from truth-functional operations.",
+     "falsification": "This pass dies if circuit design does not use Boolean simplification.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "AND, OR and NOT gates form the standard abstraction on which every higher level of digital design is built.",
+     "falsification": "This pass dies if digital design does not compose from Boolean gates.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Boolean logic underlies databases, search, programming languages and formal verification beyond circuit hardware.",
+     "falsification": "This pass dies if Boolean methods stayed inside electronics.",
+     "source": "Boolean algebra - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before ARPANET, wide-area computer networking was impractical because circuit-switched connections could not share links efficiently or survive node failures.",
+   "cand_id": "arpanet-1969",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "evidence": "Packet switching displaced circuit switching as the default architecture for data networks.",
+     "falsification": "This pass dies if circuit switching remained the data-network default.",
+     "source": "ARPANET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The internet through which agents perceive and act descends directly from ARPANET, making it a trunk ancestor.",
+     "falsification": "This pass dies if the internet developed independently of ARPANET.",
+     "source": "ARPANET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Networking never returned to pre-packet-switching practice after ARPANET's proof.",
+     "falsification": "This pass dies if packet switching was later abandoned.",
+     "source": "ARPANET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "ARPANET proved packet switching at scale and unblocked the internet, email and the networked services agents now act through.",
+     "falsification": "This pass dies if packet-switched networking did not develop from ARPANET's demonstration.",
+     "source": "ARPANET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "ARPANET established packet switching and host protocols as the composable pattern later standardized by the internet protocol suite.",
+     "falsification": "This pass dies if internet architecture does not descend from ARPANET's packet-switched design.",
+     "source": "ARPANET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "The networking lineage ARPANET started transformed communications, commerce and science worldwide.",
+     "falsification": "This pass dies if its descendants affected only AI research.",
+     "source": "ARPANET - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before TCP/IP, a single global network was impossible because incompatible networks had no common protocol for interoperating end to end.",
+   "cand_id": "tcp-ip-1974",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Cerf and Kahn's protocol suite made internetworking possible, allowing heterogeneous networks to function as one global network, adopted as the ARPANET standard on January 1, 1983.",
+     "falsification": "This pass dies if a global interoperable network existed before TCP/IP.",
+     "source": "Internet protocol suite - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "TCP/IP displaced proprietary networking stacks such as DECnet and SNA as the default by the 1990s.",
+     "falsification": "This pass dies if proprietary stacks remained the networking default.",
+     "source": "Internet protocol suite - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Agents perceive and act through APIs and web traffic carried by TCP/IP, placing it on the direct trunk.",
+     "falsification": "This pass dies if agent traffic does not run over TCP/IP.",
+     "source": "Internet protocol suite - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "TCP/IP remains the irreversible baseline of global networking fifty years after its design.",
+     "falsification": "This pass dies if the internet migrated to a replacement protocol suite.",
+     "source": "Internet protocol suite - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "TCP/IP unblocked the entire internet ecosystem, including the web, cloud APIs and the tool interfaces agents call.",
+     "falsification": "This pass dies if internet services do not run over TCP/IP.",
+     "source": "Internet protocol suite - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "TCP/IP defeated rival protocol suites such as OSI and became the only protocol family carrying the global internet agents operate over.",
+     "falsification": "This pass dies if a rival suite carries a comparable share of global traffic.",
+     "source": "Internet protocol suite - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "TCP/IP's layered protocol stack is the standard interface every networked application, including agent tooling, is built on without understanding lower layers.",
+     "falsification": "This pass dies if applications must implement their own internetworking protocols.",
+     "source": "Internet protocol suite - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "TCP/IP underpins global commerce, communication and science, far beyond AI.",
+     "falsification": "This pass dies if its reach is limited to computing research.",
+     "source": "Internet protocol suite - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the World Wide Web, a global hyperlinked information space was impossible because documents on different machines had no common addressing, linking and transfer system.",
+   "cand_id": "world-wide-web-1989",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Berners-Lee's system of URLs, HTTP and HTML made a single browsable global document space possible for the first time.",
+     "falsification": "This pass dies if a comparable global hypertext system predated the Web.",
+     "source": "World Wide Web - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "The Web displaced Gopher, FTP archives and proprietary online services as the default way to publish and retrieve information.",
+     "falsification": "This pass dies if those systems retained their default status.",
+     "source": "World Wide Web - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The Web is both the main training corpus source and the primary environment modern agents browse and act in, making it trunk lineage.",
+     "falsification": "This pass dies if LLM training data and agent environments do not come substantially from the Web.",
+     "source": "World Wide Web - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "The Web's addressing and linking model permanently reset how information is published, with no return to isolated document systems.",
+     "falsification": "This pass dies if the Web was superseded by an incompatible information system.",
+     "source": "World Wide Web - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "The Web unblocked e-commerce, search, social media and the vast text corpus on which language models are trained.",
+     "falsification": "This pass dies if those developments did not depend on the Web.",
+     "source": "World Wide Web - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "evidence": "Publishing a document dropped from printing and distribution costs to posting a file on a server, a collapse of many orders of magnitude.",
+     "falsification": "This pass dies if web publishing was not dramatically cheaper than prior distribution.",
+     "source": "World Wide Web - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "evidence": "URLs, HTTP and HTML form the standard interface that browsers, crawlers and web-browsing agents all build on.",
+     "falsification": "This pass dies if web agents do not interact through those standards.",
+     "source": "World Wide Web - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "The Web transformed publishing, commerce, education and government far beyond computing.",
+     "falsification": "This pass dies if the Web's impact stayed inside computer science.",
+     "source": "World Wide Web - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Common Crawl, web-scale training text was impossible or impractical for most labs because assembling and licensing a petabyte-scale web corpus required proprietary crawling infrastructure.",
+   "cand_id": "common-crawl-2007",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Filtered Common Crawl was the largest single component of GPT-3's training mix by token count.",
+     "falsification": "This pass dies if the actual GPT-3 training mix was dominated by other corpora.",
+     "source": "Common Crawl - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Open web-scale corpora derived from Common Crawl, such as C4 and RefinedWeb, became the default starting point for LLM pretraining.",
+     "falsification": "This pass dies if the field reverted to purely proprietary, closed corpora as the norm.",
+     "source": "Common Crawl - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "GPT-3 was trained largely on a filtered Common Crawl corpus, and the same free corpus seeded many later open language models.",
+     "falsification": "This pass dies if GPT-class models are shown to have relied negligibly on Common Crawl data.",
+     "source": "Common Crawl - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "evidence": "Common Crawl distributes petabytes of crawled web data free of charge, removing the crawl cost entirely for downstream labs.",
+     "falsification": "This pass dies if comparable web-scale corpora were already freely available at similar scale before 2007.",
+     "source": "Common Crawl - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "evidence": "Common Crawl publishes data in standard WARC/WAT formats that any lab can consume without building its own crawler.",
+     "falsification": "This pass dies if consumers in practice had to build bespoke ingestion for each release.",
+     "source": "Common Crawl - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Linux, running large server and cluster fleets was impractical at low cost because Unix systems were proprietary and per-machine licensed.",
+   "cand_id": "linux-operating-system-1991",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "evidence": "Linux displaced proprietary Unix as the default server and supercomputer operating system, reaching 100% of the TOP500 by 2017.",
+     "falsification": "This pass dies if proprietary Unix retained the majority of supercomputing installations.",
+     "source": "Linux - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Major ML frameworks and GPU training stacks are developed and deployed Linux-first.",
+     "falsification": "This pass dies if the main LLM training stacks were developed primarily for another OS.",
+     "source": "Linux - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Cloud and HPC infrastructure standardized on Linux and container images built on it, with no movement back to proprietary Unix.",
+     "falsification": "This pass dies if a proprietary OS reclaimed the server and HPC default.",
+     "source": "Linux - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Linux came to run essentially all TOP500 supercomputers and the large majority of cloud servers on which model training clusters are built.",
+     "falsification": "This pass dies if AI training infrastructure in fact ran mainly on non-Linux systems.",
+     "source": "Linux - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "evidence": "Linux is free and open source, eliminating per-server operating-system licensing costs across entire data centers.",
+     "falsification": "This pass dies if total OS cost was never a material constraint on cluster scale.",
+     "source": "Linux - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "evidence": "Linux exposes the POSIX interface, so training frameworks, containers and schedulers build on it without regard to hardware internals.",
+     "falsification": "This pass dies if ML tooling in practice targeted hardware directly rather than the OS abstraction.",
+     "source": "Linux - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Linux dominates servers, supercomputing, embedded systems and Android devices simultaneously.",
+     "falsification": "This pass dies if Linux remained confined to a single niche.",
+     "source": "Linux - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Python, ML experimentation was impractical at speed because research code had to be written in low-level or statistically niche languages with slow edit-test cycles.",
+   "cand_id": "python-programming-language-1991",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "evidence": "Python displaced R, MATLAB and Lua/Torch as the default language of ML research during the deep learning era.",
+     "falsification": "This pass dies if another language held the majority of new ML framework adoption.",
+     "source": "Python (programming language) - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The canonical agent frameworks and LLM APIs of 2023 onward shipped Python SDKs first.",
+     "falsification": "This pass dies if agent tooling of that period was primarily non-Python.",
+     "source": "Python (programming language) - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "PyTorch, TensorFlow, Hugging Face and LangChain-style agent scaffolding are all Python-first, making one language serve the whole agent stack.",
+     "falsification": "This pass dies if the main agent frameworks were in fact built primarily in other languages.",
+     "source": "Python (programming language) - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "evidence": "Python's interpreted, high-level syntax plus NumPy vectorization cut the code and time needed for numerical experiments by large factors versus C implementations.",
+     "falsification": "This pass dies if measured researcher productivity in Python matched that in lower-level languages.",
+     "source": "Python (programming language) - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "evidence": "Python became the standard interface layer: frameworks expose Python APIs over C++/CUDA internals that users never inspect.",
+     "falsification": "This pass dies if practitioners routinely had to work below the Python API to use these frameworks.",
+     "source": "Python (programming language) - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Python is a top language across data science, web backends, automation and scientific computing, not only ML.",
+     "falsification": "This pass dies if Python use remained confined to machine learning.",
+     "source": "Python (programming language) - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "evidence": "Interactive notebooks and interpreted execution let researchers test a model change in seconds rather than a compile-run cycle.",
+     "falsification": "This pass dies if ML iteration in practice remained dominated by compiled-language workflows.",
+     "source": "Python (programming language) - Wikipedia",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before arXiv, ML results were impractical to obtain quickly because dissemination waited on journal and conference publication cycles of months to years.",
+   "cand_id": "arxiv-1991",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "evidence": "Preprint-first dissemination became the entrenched norm in ML, with major results expected on arXiv at announcement.",
+     "falsification": "This pass dies if ML venues returned to journal-first release as the norm.",
+     "source": "arXiv - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "evidence": "arXiv posting is free and makes a paper globally available within days, versus months of review and paywalled distribution.",
+     "falsification": "This pass dies if preprint posting carried comparable cost and delay to journal publication.",
+     "source": "arXiv - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "arXiv serves physics, mathematics, computer science, biology, finance and statistics from one preprint infrastructure.",
+     "falsification": "This pass dies if arXiv remained a single-field archive.",
+     "source": "arXiv - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "evidence": "Agent techniques such as the ReAct paper circulated and were reimplemented within weeks of arXiv posting, before any formal publication.",
+     "falsification": "This pass dies if uptake of such papers in practice waited for peer-reviewed publication.",
+     "source": "arXiv - Wikipedia",
+     "verdict": "pass"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Wikipedia, a large clean encyclopedic text corpus was impractical to assemble because reference content was proprietary, paywalled or too small.",
+   "cand_id": "wikipedia-2001",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "evidence": "Wikipedia provides millions of articles under a free license at zero acquisition cost, replacing licensed encyclopedia corpora.",
+     "falsification": "This pass dies if an equally large free encyclopedic corpus already existed before 2001.",
+     "source": "Wikipedia - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Linnainmaa's automatic differentiation, exact gradients of nested functions were impractical because numerical differentiation was inaccurate and symbolic differentiation blew up in expression size.",
+   "cand_id": "linnainmaa-s-automatic-differentiation-1970",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Linnainmaa's 1970 thesis gave reverse-mode differentiation, computing exact derivatives of a nested function in a single backward pass proportional to function evaluation cost.",
+     "falsification": "This pass dies if an equally efficient exact gradient method for nested functions predates 1970.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Autodiff displaced hand-coded gradient derivations as the default in every major deep learning framework.",
+     "falsification": "This pass dies if hand-derived gradients remained the framework default.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "Backpropagation as implemented in all LLM training is reverse-mode autodiff applied to a neural network graph.",
+     "falsification": "This pass dies if LLM training gradients are computed by a lineage independent of reverse-mode autodiff.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "No subsequent training paradigm has displaced reverse-mode autodiff; even alternative methods are benchmarked against it.",
+     "falsification": "This pass dies if a non-autodiff method becomes the default for training large models.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Reverse-mode autodiff underlies training of every modern neural network, from MLPs to billion-parameter transformers.",
+     "falsification": "This pass dies if large networks were in practice trained by a method independent of reverse-mode gradients.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "For models with millions of parameters and one scalar loss, reverse mode is asymptotically the only tractable exact gradient method; finite differences would need one evaluation per parameter.",
+     "falsification": "This pass dies if a comparably cheap alternative gradient method exists for scalar-loss, many-parameter models.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "evidence": "Reverse mode computes all parameter gradients at a cost within a small constant factor of one forward evaluation, versus one evaluation per parameter for finite differences.",
+     "falsification": "This pass dies if its gradient cost in fact scaled linearly with parameter count.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "The thesis modeled a computation as a composition of elementary operations whose derivatives chain, the computational-graph model every autodiff framework implements.",
+     "falsification": "This pass dies if modern frameworks do not in fact represent programs as differentiable operation graphs.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "PyTorch and TensorFlow expose autodiff as an abstraction: users write forward code and call backward without deriving gradients by hand.",
+     "falsification": "This pass dies if framework users still had to hand-derive gradients for new operations as the norm.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Automatic differentiation is used across physics simulation, optimization, robotics and computational science, well beyond neural networks.",
+     "falsification": "This pass dies if autodiff use remained confined to neural network training.",
+     "source": "The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before energy-based models, associative memory and probabilistic neural computation were impractical because there was no principled framework for network states to settle into stored patterns.",
+   "cand_id": "energy-based-model-hopfield-network-boltzmann-machine-1982",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "Hopfield's 1982 energy function showed a network's dynamics minimize a Lyapunov energy, giving a designable model of content-addressable memory.",
+     "falsification": "This pass dies if the energy formulation did not in fact predict or guide network behavior.",
+     "source": "Boltzmann machine - Wikipedia",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before simulated annealing, escaping local optima in combinatorial problems was impractical because greedy methods had no principled mechanism for accepting worsening moves.",
+   "cand_id": "simulated-annealing-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "evidence": "Simulated annealing was applied to VLSI placement, scheduling and many other combinatorial problems far outside its metallurgical origin.",
+     "falsification": "This pass dies if its documented applications stayed within one field.",
+     "source": "Optimization by simulated annealing - Science",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Bayesian networks, reasoning under uncertainty over many variables was impractical because full joint probability tables grow exponentially in the number of variables.",
+   "cand_id": "bayesian-network-1985",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "Factoring a joint distribution into a directed graph of conditional dependencies made probabilistic models tractable across diagnosis, genetics and decision analysis.",
+     "falsification": "This pass dies if graphical factorization did not in fact enable models that were previously intractable.",
+     "source": "Fusion, propagation, and structuring in belief networks - ACM Digital Library",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Pearl's framework explained inference as message passing over a dependency graph, enabling deliberate design of probabilistic reasoning systems.",
+     "falsification": "This pass dies if practitioners did not use the graph semantics to design inference systems.",
+     "source": "Fusion, propagation, and structuring in belief networks - ACM Digital Library",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Probabilistic graphical models became a standard abstraction implemented in reusable inference libraries and textbooks.",
+     "falsification": "This pass dies if the formalism was never packaged as a reusable modeling standard.",
+     "source": "Fusion, propagation, and structuring in belief networks - ACM Digital Library",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Bayesian networks were adopted in medicine, genetics, fault diagnosis and risk analysis beyond their AI origin.",
+     "falsification": "This pass dies if adoption stayed inside AI research.",
+     "source": "Fusion, propagation, and structuring in belief networks - ACM Digital Library",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before dynamic programming, optimal sequential decision-making was impossible to compute systematically because the space of action sequences grows exponentially with horizon length.",
+   "cand_id": "optimal-control-theory-dynamic-programming-1957",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Bellman's principle of optimality reduced sequential decision problems to recursive value equations solvable stage by stage instead of by enumerating all action sequences.",
+     "falsification": "This pass dies if an equally general tractable method for sequential decisions predates Bellman.",
+     "source": "Dynamic Programming - Princeton University Press",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "Temporal-difference learning, Q-learning and policy-gradient methods in the direct ancestry of RLHF are all Bellman-equation methods.",
+     "falsification": "This pass dies if those methods' derivations do not use Bellman recursions.",
+     "source": "Dynamic Programming - Princeton University Press",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "The MDP/Bellman framework remains the unchallenged baseline formalism for sequential decision-making after nearly seventy years.",
+     "falsification": "This pass dies if a successor formalism displaces Bellman recursion as the RL default.",
+     "source": "Dynamic Programming - Princeton University Press",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "The Bellman equation underlies reinforcement learning, operations research, economics and control, a whole space of sequential-decision methods.",
+     "falsification": "This pass dies if value-function recursion remained confined to one problem type.",
+     "source": "Dynamic Programming - Princeton University Press",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "RLHF and RL-trained agents optimize value and policy functions defined by Bellman recursions; no alternative formalism supplies that machinery in the actual lineage.",
+     "falsification": "This pass dies if the RL used for modern agents is shown to rest on a non-Bellman foundation.",
+     "source": "Dynamic Programming - Princeton University Press",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "The value function gave a deliberate design model: specify rewards, compute or approximate values, and derive optimal actions.",
+     "falsification": "This pass dies if RL system design did not in fact proceed via value and reward specification.",
+     "source": "Dynamic Programming - Princeton University Press",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "States, actions, rewards and value functions became the standard MDP interface on which RL algorithms and agent environments are built.",
+     "falsification": "This pass dies if RL environments do not in practice expose this interface.",
+     "source": "Dynamic Programming - Princeton University Press",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Dynamic programming reshaped economics, operations research, bioinformatics sequence alignment and control engineering.",
+     "falsification": "This pass dies if its influence stayed within control theory.",
+     "source": "Dynamic Programming - Princeton University Press",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before AlphaGo, superhuman play in Go was impractical because the game's branching factor defeated hand-crafted evaluation and pure search.",
+   "cand_id": "alphago-2016",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before dropout, training very large networks was impractical because co-adapted units overfit training data and destroyed generalization.",
+   "cand_id": "dropout-2014",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the attention mechanism, neural sequence models were impractical on long inputs because a single fixed-length vector had to carry the entire source sequence.",
+   "cand_id": "attention-mechanism-bahdanau-2014",
+   "verdicts": {
+    "Q1": {
+     "evidence": "Bahdanau attention let the decoder align to relevant source words at each step, restoring translation quality on long sentences that fixed-vector seq2seq models lost.",
+     "falsification": "This pass dies if fixed-vector models matched attention models on long sentences in the original comparisons.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "evidence": "Attention-based Transformers displaced recurrent seq2seq models as the default sequence architecture within a few years.",
+     "falsification": "This pass dies if recurrent architectures retained the majority of sequence-model deployments.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q11": {
+     "evidence": "The historical line Bahdanau attention to Transformer to GPT-class models to LLM agents is direct and documented.",
+     "falsification": "This pass dies if GPT-class models are shown to descend from a separate, attention-free lineage.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "Attention remains the core operation of frontier models a decade later, with alternatives still measured against it.",
+     "falsification": "This pass dies if attention-free architectures become the frontier default.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Generalizing attention to self-attention produced the Transformer, which unblocked modern LLMs and hence LLM agents.",
+     "falsification": "This pass dies if the Transformer's self-attention is shown to derive independently of Bahdanau-style alignment.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "evidence": "Every production LLM agent runs on a Transformer whose core operation descends directly from learned soft alignment introduced here.",
+     "falsification": "This pass dies if a non-attention architecture, not the Transformer, powered the 2023 agent wave.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "Attention supplied an explicit model of relevance weighting over context, letting designers reason about and engineer context use deliberately.",
+     "falsification": "This pass dies if attention weights played no role in subsequent architecture design decisions.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "Attention became a standard composable layer (multi-head, cross-attention) reused across translation, vision and multimodal models.",
+     "falsification": "This pass dies if attention remained a one-off trick inside a single translation system.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "Attention-based architectures spread to vision (ViT), speech, protein modeling and multimodal systems far beyond translation.",
+     "falsification": "This pass dies if attention stayed confined to machine translation.",
+     "source": "Neural Machine Translation by Jointly Learning to Align and Translate - arXiv",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the ReAct agent pattern, LLM tool use was impractical because reasoning and acting were separate: models either answered in one shot or acted without revisable, feedback-driven plans.",
+   "cand_id": "react-agent-pattern-2022",
+   "verdicts": {
+    "Q1": {
+     "evidence": "ReAct showed an LLM interleaving reasoning traces with actions and observations could solve multi-step tasks like HotpotQA and ALFWorld that chain-of-thought or action-only baselines handled worse.",
+     "falsification": "This pass dies if the paper's own baselines matched ReAct on those interactive benchmarks.",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models - arXiv",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "ReAct is the named architectural ancestor cited by the 2023 wave of LLM agent frameworks.",
+     "falsification": "This pass dies if 2023 agent frameworks are shown to derive from an unrelated loop design without citing ReAct.",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models - arXiv",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "The reason-act-observe loop generalized across question answering, web shopping, household simulation and later tool-using and coding agents.",
+     "falsification": "This pass dies if the pattern proved usable for only one benchmark task.",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models - arXiv",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "evidence": "ReAct gave a deliberate design model for agents: emit a thought, take an action, read the observation, and revise, which framework builders adopted as a template.",
+     "falsification": "This pass dies if agent frameworks did not adopt the thought-action-observation template.",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models - arXiv",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "LangChain and similar frameworks implemented ReAct as a named, reusable agent type that developers invoke without designing the loop themselves.",
+     "falsification": "This pass dies if no major framework shipped ReAct as a standard agent abstraction.",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models - arXiv",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "The pattern was applied in research agents, customer-support automation, software engineering agents and robotics task planning.",
+     "falsification": "This pass dies if ReAct use stayed within academic QA benchmarks.",
+     "source": "ReAct: Synergizing Reasoning and Acting in Language Models - arXiv",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before ELIZA, conversational interaction with a computer was impractical for non-specialists because interfaces required formal command languages.",
+   "cand_id": "eliza-1966",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Shakey the Robot, integrated perception, planning and action in one machine was impossible because sensing, world modeling and planning existed only as separate programs.",
+   "cand_id": "shakey-the-robot-1969",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Lisp, symbolic computation was impractical because existing languages were built for numeric processing and lacked recursion, dynamic lists and garbage collection.",
+   "cand_id": "lisp-programming-language-1958",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Logic Theorist, automated reasoning was impossible to demonstrate because no program had performed heuristic search to prove a formal theorem.",
+   "cand_id": "logic-theorist-1956",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Dartmouth Workshop, machine intelligence research was impractical to organize because it had no name, shared agenda or convened research community.",
+   "cand_id": "dartmouth-workshop-1956",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before expert systems, deploying specialist knowledge in software was impractical because expertise lived only in human experts and could not be encoded for machine inference.",
+   "cand_id": "expert-systems-dendral-mycin-1965",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Prolog, mechanized logical inference was impractical because programmers had to specify search procedures explicitly instead of stating facts and rules declaratively.",
+   "cand_id": "prolog-1972",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the Turing Test proposal, evaluating machine intelligence was impractical because there was no operational criterion, only philosophical argument about thinking.",
+   "cand_id": "turing-test-proposal-1950",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "evidence": "The imitation game turned intelligence into an observable behavioral measurement: a judge's ability to distinguish machine from human in conversation.",
+     "falsification": "This pass dies if the paper proposed no judge-based behavioral measurement.",
+     "source": "Computing Machinery and Intelligence - Mind",
+     "verdict": "pass"
+    },
+    "Q6": {
+     "evidence": "Turing's operational reframing, plus his anticipation of learning machines, gave researchers a design target of indistinguishability rather than a definition of thought.",
+     "falsification": "This pass dies if the paper offered only a philosophical definition with no operational target.",
+     "source": "Computing Machinery and Intelligence - Mind",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the McCulloch-Pitts neuron, neural computation was impossible to formalize because there was no mathematical model of a neuron as a computing unit.",
+   "cand_id": "mcculloch-pitts-neuron-1943",
+   "verdicts": {
+    "Q1": {
+     "evidence": "The 1943 paper showed threshold-logic neurons could compute logical functions, making neural networks a formal object of computation for the first time.",
+     "falsification": "This pass dies if an earlier formal neuron model with equivalent computational results exists.",
+     "source": "A logical calculus of the ideas immanent in nervous activity - Bulletin of Mathematical Biophysics",
+     "verdict": "pass"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "evidence": "The perceptron and every subsequent neural architecture explicitly build on the McCulloch-Pitts unit, placing it at the root of the lineage to LLMs.",
+     "falsification": "This pass dies if the perceptron lineage is shown to originate elsewhere.",
+     "source": "A logical calculus of the ideas immanent in nervous activity - Bulletin of Mathematical Biophysics",
+     "verdict": "pass"
+    },
+    "Q12": {
+     "evidence": "The neuron-as-unit abstraction has never been abandoned; even Transformers are stacks of neuron layers.",
+     "falsification": "This pass dies if frontier models cease to be built from neuron units.",
+     "source": "A logical calculus of the ideas immanent in nervous activity - Bulletin of Mathematical Biophysics",
+     "verdict": "pass"
+    },
+    "Q2": {
+     "evidence": "Networks of these units founded the entire neural network research program from perceptrons to deep learning.",
+     "falsification": "This pass dies if later neural network research is shown to descend from an independent formalism.",
+     "source": "A logical calculus of the ideas immanent in nervous activity - Bulletin of Mathematical Biophysics",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "Modeling neurons as threshold logic units explained nervous activity in logical terms and let researchers design networks by composition of units.",
+     "falsification": "This pass dies if the model had no influence on how later networks were designed.",
+     "source": "A logical calculus of the ideas immanent in nervous activity - Bulletin of Mathematical Biophysics",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "evidence": "The artificial neuron became the standard composable unit from which perceptrons, MLPs and deep networks are all assembled.",
+     "falsification": "This pass dies if modern networks are not in fact assembled from neuron-like units.",
+     "source": "A logical calculus of the ideas immanent in nervous activity - Bulletin of Mathematical Biophysics",
+     "verdict": "pass"
+    },
+    "Q8": {
+     "evidence": "The model influenced neuroscience theory, logic and automata theory as well as computer science.",
+     "falsification": "This pass dies if its documented influence stayed inside one discipline.",
+     "source": "A logical calculus of the ideas immanent in nervous activity - Bulletin of Mathematical Biophysics",
+     "verdict": "pass"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before the General Problem Solver, general-purpose machine problem solving was impractical because each program solved one fixed task with no reusable goal-directed method.",
+   "cand_id": "general-problem-solver-1957",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "Means-ends analysis modeled problem solving as repeatedly reducing the difference between current and goal states, a schema later planners deliberately implemented.",
+     "falsification": "This pass dies if later planning systems did not adopt difference-reduction as a design schema.",
+     "source": "Report on a general problem-solving program - ACM Digital Library",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Deep Blue, defeating a world chess champion by computer was impractical because search speed and position evaluation were insufficient at tournament scale.",
+   "cand_id": "deep-blue-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "fail"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before TD-Gammon, learning expert game play from self-play alone was impractical because supervised training required large corpora of expert-labeled positions.",
+   "cand_id": "td-gammon-1992",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "partial"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "evidence": "TD-Gammon's self-play temporal-difference learning demonstrated a general route later scaled by AlphaGo-style systems and RL training pipelines.",
+     "falsification": "This pass dies if later self-play RL systems are shown to owe nothing to the TD self-play demonstration.",
+     "source": "Practical Issues in Temporal Difference Learning - Springer",
+     "verdict": "pass"
+    },
+    "Q3": {
+     "verdict": "partial"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "evidence": "TD-Gammon validated the model that value estimates can be bootstrapped from successive self-generated predictions, guiding deliberate RL system design.",
+     "falsification": "This pass dies if bootstrapped value learning was not taken up as a design principle after TD-Gammon.",
+     "source": "Practical Issues in Temporal Difference Learning - Springer",
+     "verdict": "pass"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "partial"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Dragon NaturallySpeaking, continuous speech dictation on a personal computer was impractical because recognizers required pausing between words and extensive per-speaker training.",
+   "cand_id": "speech-recognition-dragon-naturallyspeaking-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "partial"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "partial"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Siri, a voice assistant on a mass consumer device was impractical because natural-language request handling and service delegation had not been packaged into a phone.",
+   "cand_id": "siri-2011",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "partial"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "partial"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "fail"
+    },
+    "Q6": {
+     "verdict": "fail"
+    },
+    "Q7": {
+     "verdict": "partial"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  },
+  {
+   "bottleneck": "Before Watson (Jeopardy!), open-domain question answering over unstructured text was impractical at champion level because retrieval and answer confidence scoring could not be combined at the required speed and accuracy.",
+   "cand_id": "watson-jeopardy-2011",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail"
+    },
+    "Q10": {
+     "verdict": "fail"
+    },
+    "Q11": {
+     "verdict": "fail"
+    },
+    "Q12": {
+     "verdict": "fail"
+    },
+    "Q2": {
+     "verdict": "fail"
+    },
+    "Q3": {
+     "verdict": "fail"
+    },
+    "Q4": {
+     "verdict": "fail"
+    },
+    "Q5": {
+     "verdict": "partial"
+    },
+    "Q6": {
+     "verdict": "partial"
+    },
+    "Q7": {
+     "verdict": "fail"
+    },
+    "Q8": {
+     "verdict": "partial"
+    },
+    "Q9": {
+     "verdict": "fail"
+    }
+   }
+  }
+ ]
+}

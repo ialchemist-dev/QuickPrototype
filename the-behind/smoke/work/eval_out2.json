@@ -1,0 +1,1747 @@
+{
+  "evaluations": [
+    {
+      "bottleneck": "Before the Markov decision process formalism, sequential decision-making under uncertainty was impossible to optimize rigorously because there was no mathematical object defining states, actions, transitions and cumulative reward.",
+      "cand_id": "markov-decision-process-formalism-1957",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "RLHF and modern RL methods sit directly in the MDP lineage descending from Bellman's formulation.",
+          "falsification": "This pass dies if the RL methods used to steer language models trace to a different, unrelated formalism.",
+          "source": "Dynamic Programming (Bellman)",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Sequential decision problems are still universally framed as MDPs or their extensions such as POMDPs, with no return to pre-formalism practice.",
+          "falsification": "This pass dies if the field abandoned the MDP framing for a successor formalism.",
+          "source": "Dynamic Programming (Bellman)",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "The MDP formalism unblocked the entire field of reinforcement learning and optimal control, not just one decision problem.",
+          "falsification": "This pass dies if reinforcement learning and planning are shown to have developed independently of the MDP framework.",
+          "source": "Dynamic Programming (Bellman)",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Bellman's framework supplied the policy and value-function model that lets designers deliberately formulate an agent's objective as expected cumulative reward.",
+          "falsification": "This pass dies if agent objectives were routinely designed without any state, action or reward formulation derived from it.",
+          "source": "Dynamic Programming (Bellman)",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "The state-action-reward-transition tuple became the standard interface used by virtually every reinforcement learning library and benchmark environment.",
+          "falsification": "This pass dies if RL environments do not in fact expose a shared state, action and reward interface.",
+          "source": "Dynamic Programming (Bellman)",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "MDPs are used well beyond AI, in operations research, economics, robotics and control engineering.",
+          "falsification": "This pass dies if MDPs remained confined to a single subfield of AI.",
+          "source": "Dynamic Programming (Bellman)",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Q-learning, learning an optimal action policy from reward alone was impractical because there was no proven model-free method for estimating state-action values from experience.",
+      "cand_id": "q-learning-1989",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "Q-learning is a trunk ancestor of deep RL, with DQN's 2015 Atari results directly extending Watkins' algorithm.",
+          "falsification": "This pass dies if deep RL is shown to descend from an unrelated value-learning method.",
+          "source": "Learning from Delayed Rewards (thesis, University of Cambridge)",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "Q-learning opened model-free reinforcement learning as a general approach, later extended by Deep Q-Networks to high-dimensional control from raw pixels.",
+          "falsification": "This pass dies if model-free value learning produced no methods beyond Watkins' original tabular setting.",
+          "source": "Learning from Delayed Rewards (thesis, University of Cambridge)",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Q-learning supplied the explanatory model that an agent can learn what to do purely from delayed reward signals without a model of its environment.",
+          "falsification": "This pass dies if Q-learning required an environment model to converge.",
+          "source": "Learning from Delayed Rewards (thesis, University of Cambridge)",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before temporal difference learning, learning predictions from experience was impractical because updates had to wait for final outcomes rather than bootstrapping from later predictions.",
+      "cand_id": "temporal-difference-learning-1988",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "TD learning is on the direct trunk to modern RL, including the critic methods used in policy-gradient and RLHF-style training.",
+          "falsification": "This pass dies if the RL lineage behind language-model steering bypassed TD methods entirely.",
+          "source": "Learning to Predict by the Methods of Temporal Differences",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Bootstrapped value updates remain the default in reinforcement learning decades later, with no return to outcome-only learning.",
+          "falsification": "This pass dies if mainstream RL abandoned bootstrapping.",
+          "source": "Learning to Predict by the Methods of Temporal Differences",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "TD learning's bootstrapping update underlies Q-learning, actor-critic methods and the value estimation used across modern reinforcement learning.",
+          "falsification": "This pass dies if modern RL value methods do not use bootstrapped TD updates.",
+          "source": "Learning to Predict by the Methods of Temporal Differences",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Sutton's TD framework gave a new explanatory model of prediction learning as bootstrapping, enabling deliberate design of RL update rules.",
+          "falsification": "This pass dies if TD contributed no design principle beyond Monte Carlo returns.",
+          "source": "Learning to Predict by the Methods of Temporal Differences",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Monte Carlo tree search, planning in huge decision spaces was impractical because exhaustive search was infeasible and no method balanced exploration with simulation-guided lookahead.",
+      "cand_id": "monte-carlo-tree-search-2006",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before statistical learning theory, learning from finite data was impractical to reason about rigorously because there was no bound linking a hypothesis class's capacity to its generalization error.",
+      "cand_id": "statistical-learning-theory-vc-dimension-1971",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "evidence": "VC dimension made generalization error boundable and measurable as a function of hypothesis-class capacity and sample size.",
+          "falsification": "This pass dies if VC theory provided no quantitative bound on generalization.",
+          "source": "Statistical learning theory (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "evidence": "Vapnik and Chervonenkis supplied the explanatory framework of empirical risk minimization in which learning from data is deliberately designed and analyzed.",
+          "falsification": "This pass dies if modern learning theory does not rest on the generalization framework they founded.",
+          "source": "Statistical learning theory (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "verdict": "fail"
+        },
+        "Q8": {
+          "evidence": "Statistical learning theory is foundational across machine learning, statistics and pattern recognition, well beyond any single application.",
+          "falsification": "This pass dies if the theory influenced only one narrow technique.",
+          "source": "Statistical learning theory (Wikipedia)",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the universal approximation theorem, betting on neural networks was unjustified in principle because it was unproven that a simple feedforward network could represent arbitrary continuous mappings.",
+      "cand_id": "universal-approximation-theorem-1989",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "fail"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the stored-program architecture, general-purpose computation was impractical because machines had to be physically rewired or reconfigured for each new task.",
+      "cand_id": "stored-program-architecture-1945",
+      "verdicts": {
+        "Q1": {
+          "evidence": "The von Neumann design made a single machine able to run any program held in memory, making universal reprogrammable computation possible at all.",
+          "falsification": "This pass dies if general-purpose computing was already practical on fixed-function or plugboard machines.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Stored-program machines completely displaced fixed-function and plugboard computers as the default by the 1950s.",
+          "falsification": "This pass dies if fixed-function machines remained the computing default.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "The modern AI agent physically runs on von Neumann-architecture machines, placing this at the root of its lineage.",
+          "falsification": "This pass dies if AI systems run on a fundamentally different, non-stored-program substrate.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "No computing paradigm has reverted to task-specific hardware as the general default since 1945.",
+          "falsification": "This pass dies if stored-program computing was later abandoned as the baseline.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Stored-program computers unblocked every subsequent form of software, from operating systems to neural network training to agent loops.",
+          "falsification": "This pass dies if later computing paradigms did not run as stored programs.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Every model, tool and agent loop in the actual history runs on stored-program machines; no alternative substrate produced general computing.",
+          "falsification": "This pass dies if a non-stored-program architecture carried mainstream computing instead.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "Changing a machine's task dropped from days of physical rewiring, as with ENIAC, to loading a new program in seconds.",
+          "falsification": "This pass dies if reprogramming stored-program machines was not orders of magnitude faster than rewiring.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "evidence": "The EDVAC report supplied the design model of memory, control and arithmetic units that still structures how computers are built and programmed.",
+          "falsification": "This pass dies if modern computer architecture does not follow the stored-program model.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "The stored program is the ultimate abstraction: software builders write code without redesigning hardware for each application.",
+          "falsification": "This pass dies if applications still required custom hardware per task.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Stored-program computing transformed essentially every field, from science and finance to communications and entertainment.",
+          "falsification": "This pass dies if its impact stayed inside computing itself.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "evidence": "Editing and rerunning a program in memory collapsed the experiment loop from hardware rebuilds to minutes of recompilation.",
+          "falsification": "This pass dies if program iteration remained as slow as hardware reconfiguration.",
+          "source": "First Draft of a Report on the EDVAC",
+          "verdict": "pass"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before ILSVRC, progress in large-scale visual recognition was impractical to compare because there was no shared large benchmark and annual competition to rank methods.",
+      "cand_id": "imagenet-large-scale-visual-recognition-challenge-ilsvrc-2010",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "The deep learning resurgence that produced the models behind modern agents passed directly through ILSVRC's 2012 result.",
+          "falsification": "This pass dies if the deep learning revival originated independently of the ImageNet competition.",
+          "source": "ILSVRC - ImageNet",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "evidence": "AlexNet's 2012 ILSVRC win redirected the whole field to deep learning, unblocking a decade of progress across vision, speech and language.",
+          "falsification": "This pass dies if the 2012 result did not trigger the field-wide shift to deep learning.",
+          "source": "ILSVRC - ImageNet",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "evidence": "ILSVRC made recognition accuracy on a fixed large-scale test set a shared measurable quantity competing teams could be ranked by.",
+          "falsification": "This pass dies if ILSVRC provided no common quantitative comparison of methods.",
+          "source": "ILSVRC - ImageNet",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "ILSVRC established the shared benchmark format that later evaluations, including language benchmarks, imitated as a standard interface for progress.",
+          "falsification": "This pass dies if later benchmarks did not adopt the shared-leaderboard model ILSVRC popularized.",
+          "source": "ILSVRC - ImageNet",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "evidence": "The annual competition cycle gave researchers a fixed yearly deadline and public ranking, sharply accelerating method iteration in vision.",
+          "falsification": "This pass dies if vision progress proceeded at the same pace without the competition cycle.",
+          "source": "ILSVRC - ImageNet",
+          "verdict": "pass"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the GLUE benchmark, general language understanding was impractical to compare across models because each system was evaluated on different, incompatible tasks.",
+      "cand_id": "glue-benchmark-2018",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "fail"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "evidence": "GLUE aggregated nine understanding tasks into one score, making general language understanding a shared measurable target for the first time.",
+          "falsification": "This pass dies if GLUE did not provide a common quantitative measure across models.",
+          "source": "GLUE Benchmark",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "GLUE's task suite and leaderboard became the standard evaluation interface for encoder-era language models such as BERT.",
+          "falsification": "This pass dies if encoder models were not routinely reported and compared on GLUE.",
+          "source": "GLUE Benchmark",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "fail"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the tensor processing unit, large-scale neural network computation was impractical to cheapen further because general-purpose processors were not built for dense tensor algebra.",
+      "cand_id": "tensor-processing-unit-tpu-2016",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "verdict": "fail"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "evidence": "Google reported the TPU delivered roughly an order of magnitude better performance per watt than contemporary CPUs and GPUs on inference workloads.",
+          "falsification": "This pass dies if TPU performance-per-watt gains over incumbent hardware were only marginal.",
+          "source": "Tensor processing unit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "fail"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Amazon Web Services, elastic compute was impractical for most teams because running large workloads required owning and operating a data center.",
+      "cand_id": "amazon-web-services-2006",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "evidence": "Cloud hosting displaced self-owned servers as the default for new software companies within a decade of AWS's launch.",
+          "falsification": "This pass dies if self-hosting remained the default for new services.",
+          "source": "Amazon Web Services - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "evidence": "Computing has not returned to owning hardware as the default baseline since cloud rental became available.",
+          "falsification": "This pass dies if the industry reverted to owned data centers as the standard model.",
+          "source": "Amazon Web Services - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "evidence": "AWS let users rent compute by the hour from 2006, collapsing the capital cost and setup time of large-scale computing from data-center construction to an API call.",
+          "falsification": "This pass dies if on-demand cloud rental did not substantially cut the cost and time of obtaining compute.",
+          "source": "Amazon Web Services - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "fail"
+        },
+        "Q7": {
+          "evidence": "S3 and EC2's APIs became a de facto standard interface for storage and compute that a generation of software was built on.",
+          "falsification": "This pass dies if AWS APIs were not widely built upon as a platform standard.",
+          "source": "Amazon Web Services - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Cloud computing reshaped startups, science, media and enterprise IT far beyond AI.",
+          "falsification": "This pass dies if AWS's impact remained confined to AI research.",
+          "source": "Amazon Web Services - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "evidence": "Provisioning servers dropped from weeks of procurement to minutes, collapsing infrastructure setup in the experiment loop.",
+          "falsification": "This pass dies if cloud provisioning was not dramatically faster than buying hardware.",
+          "source": "Amazon Web Services - Wikipedia",
+          "verdict": "pass"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Git, distributed collaboration on large codebases was impractical because centralized version control made offline work and branching slow and fragile.",
+      "cand_id": "git-2005",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "evidence": "Git displaced Subversion and other centralized systems as the default version control for new projects.",
+          "falsification": "This pass dies if centralized version control remained the default after Git.",
+          "source": "Git - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "evidence": "Distributed version control is now the permanent baseline; no mainstream return to centralized systems has occurred.",
+          "falsification": "This pass dies if the field reverted to centralized version control.",
+          "source": "Git - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "evidence": "Git made branching, merging and full-history cloning near-instant local operations, collapsing version-control overhead for large projects like the Linux kernel.",
+          "falsification": "This pass dies if Git's operations were not dramatically cheaper and faster than centralized predecessors.",
+          "source": "Git - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "fail"
+        },
+        "Q7": {
+          "evidence": "Git's commit, branch and remote model became the universal interface for source control that all major platforms and tools implement.",
+          "falsification": "This pass dies if Git's model did not become the standard other tools build on.",
+          "source": "Git - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Git underpins collaboration across all of software, science and documentation, far beyond AI.",
+          "falsification": "This pass dies if Git's use stayed confined to one software community.",
+          "source": "Git - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "evidence": "Cheap local branching let developers run parallel experiments and merge in minutes, sharply shortening the code iteration loop.",
+          "falsification": "This pass dies if Git did not speed up code experimentation cycles.",
+          "source": "Git - Wikipedia",
+          "verdict": "pass"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before GitHub, open-source collaboration was impractical to coordinate at scale because code hosting, review and issue tracking were fragmented across separate tools.",
+      "cand_id": "github-2008",
+      "verdicts": {
+        "Q1": {
+          "verdict": "fail"
+        },
+        "Q10": {
+          "evidence": "GitHub became the default home for open-source projects, displacing SourceForge and self-hosted forges.",
+          "falsification": "This pass dies if earlier code hosts retained their default status.",
+          "source": "GitHub - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "verdict": "partial"
+        },
+        "Q12": {
+          "verdict": "partial"
+        },
+        "Q2": {
+          "verdict": "partial"
+        },
+        "Q3": {
+          "verdict": "fail"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "fail"
+        },
+        "Q7": {
+          "evidence": "GitHub's pull request became the standard collaboration interface through which most open-source contributions, including ML frameworks, are proposed and reviewed.",
+          "falsification": "This pass dies if pull-request-based review did not become the dominant open-source workflow.",
+          "source": "GitHub - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "verdict": "partial"
+        },
+        "Q9": {
+          "evidence": "Fork-and-pull-request workflows cut the time to propose, review and merge a change from mailing-list days to hours.",
+          "falsification": "This pass dies if GitHub workflows were no faster than prior patch-by-email practice.",
+          "source": "GitHub - Wikipedia",
+          "verdict": "pass"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the point-contact transistor, electronic amplification and switching were impractical to miniaturize because vacuum tubes were bulky, fragile and power-hungry.",
+      "cand_id": "point-contact-transistor-1947",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Bardeen and Brattain's December 1947 demonstration was the first working transistor, proving solid-state amplification was possible at all.",
+          "falsification": "This pass dies if a working solid-state amplifier predated the 1947 Bell Labs demonstration.",
+          "source": "Point-contact transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "The point-contact device is the first node in the transistor lineage that leads directly to the chips AI agents run on.",
+          "falsification": "This pass dies if modern chips descend from a separate switching technology unrelated to the 1947 device.",
+          "source": "Point-contact transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Electronics never returned to vacuum tubes as the general switching baseline after the transistor appeared.",
+          "falsification": "This pass dies if tube technology regained its default status.",
+          "source": "Point-contact transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "The transistor unblocked all of solid-state electronics, the space from which integrated circuits, computers and AI accelerators descend.",
+          "falsification": "This pass dies if solid-state electronics did not develop from the transistor breakthrough.",
+          "source": "Point-contact transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "evidence": "Transistors eventually cut the size, power and cost of a switching element by orders of magnitude relative to vacuum tubes.",
+          "falsification": "This pass dies if transistor devices offered no large cost or power advantage over tubes.",
+          "source": "Point-contact transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "fail"
+        },
+        "Q8": {
+          "evidence": "Transistor-based electronics transformed communications, medicine, transport and every other technical field, not just computing.",
+          "falsification": "This pass dies if transistor electronics remained a computing-only technology.",
+          "source": "Point-contact transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the silicon transistor, transistors were impractical as a mass commodity because germanium devices were fragile, temperature-sensitive and hard to manufacture.",
+      "cand_id": "silicon-transistor-1954",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "evidence": "Silicon displaced germanium as the default transistor material across the industry by the early 1960s.",
+          "falsification": "This pass dies if germanium remained the standard transistor material.",
+          "source": "Transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "AI accelerators are silicon chips, placing the silicon transistor directly on the trunk of the agent's hardware lineage.",
+          "falsification": "This pass dies if modern AI hardware is not silicon-based.",
+          "source": "Transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Silicon remains the baseline semiconductor material more than seventy years later.",
+          "falsification": "This pass dies if the industry moved its baseline to another material.",
+          "source": "Transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Silicon transistors unblocked the entire silicon semiconductor industry, the substrate of all modern processors and accelerators.",
+          "falsification": "This pass dies if the semiconductor industry was built primarily on germanium or another material instead.",
+          "source": "Transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Silicon became the only material path that scaled to modern chips; germanium was abandoned for mainstream logic within a decade.",
+          "falsification": "This pass dies if a non-silicon transistor technology carried mainstream computing instead.",
+          "source": "Transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "Silicon devices were cheaper, more rugged and more manufacturable than germanium, enabling the mass production that drove transistor prices down by orders of magnitude.",
+          "falsification": "This pass dies if silicon transistors were not substantially cheaper to manufacture at scale.",
+          "source": "Transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "evidence": "Silicon electronics underpin progress in every technical field, from medicine to spaceflight.",
+          "falsification": "This pass dies if silicon devices stayed confined to computing.",
+          "source": "Transistor - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the planar process, transistor fabrication was impractical to scale because devices were built individually on irregular surfaces and failed at high rates.",
+      "cand_id": "planar-process-1959",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Hoerni's planar process made it possible to fabricate many reliable transistors at once on a flat oxidized wafer, which mesa construction could not do.",
+          "falsification": "This pass dies if batch fabrication of reliable transistors was already practical before the planar process.",
+          "source": "Planar process - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Planar fabrication displaced mesa transistor construction as the industry standard within a few years.",
+          "falsification": "This pass dies if mesa construction remained the manufacturing default.",
+          "source": "Planar process - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Modern AI chips are made by processes directly descended from Hoerni's planar method.",
+          "falsification": "This pass dies if modern chip fabrication does not descend from the planar process.",
+          "source": "Planar process - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Wafer-based planar fabrication remains the permanent baseline of semiconductor manufacturing.",
+          "falsification": "This pass dies if the industry abandoned wafer batch fabrication.",
+          "source": "Planar process - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Planar fabrication unblocked integrated circuits and every subsequent generation of chip scaling.",
+          "falsification": "This pass dies if integrated circuits developed without planar fabrication.",
+          "source": "Planar process - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "All mainstream chip manufacturing still descends from the planar process; no alternative fabrication route displaced it.",
+          "falsification": "This pass dies if chips were mass-produced by a fundamentally different process.",
+          "source": "Planar process - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "Batch-printing transistors on a wafer collapsed per-device cost compared with individually assembled mesa transistors.",
+          "falsification": "This pass dies if planar batch fabrication did not sharply reduce per-transistor cost.",
+          "source": "Planar process - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "evidence": "Planar-fabricated chips spread into every industry, from automobiles to medical devices.",
+          "falsification": "This pass dies if planar chips remained confined to computing.",
+          "source": "Planar process - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the integrated circuit, complex electronic systems were impractical to scale because every component had to be manufactured and wired separately, causing cost and failure rates to explode with circuit size.",
+      "cand_id": "integrated-circuit-1958",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Kilby's and Noyce's 1958-59 demonstrations proved whole circuits could be built on one piece of semiconductor, making complex miniaturized systems possible.",
+          "falsification": "This pass dies if monolithic circuits had already been demonstrated before 1958.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Integrated circuits displaced discrete-component construction as the default for electronic systems during the 1960s and 1970s.",
+          "falsification": "This pass dies if discrete construction remained the system default.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Every AI accelerator is an integrated circuit, placing the IC on the direct trunk of the agent's lineage.",
+          "falsification": "This pass dies if AI hardware is not built as integrated circuits.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Electronics has never reverted to discrete wiring as its baseline after integration.",
+          "falsification": "This pass dies if monolithic integration was later abandoned.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "The integrated circuit unblocked microprocessors, memory chips and ultimately the GPUs and accelerators that train and run AI agents.",
+          "falsification": "This pass dies if modern processors do not descend from the integrated circuit.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "No alternative to monolithic integration carried computing to billions of components; discrete wiring could not scale.",
+          "falsification": "This pass dies if a non-integrated technology achieved comparable component density.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "Integration collapsed the cost per component by orders of magnitude over the following decades as transistor counts per chip grew exponentially.",
+          "falsification": "This pass dies if per-component costs stayed near discrete-circuit levels after integration.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "The chip became the standard composable unit of electronics, letting system designers build on packaged ICs without designing transistors.",
+          "falsification": "This pass dies if system builders still had to design at the individual transistor level.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Integrated circuits transformed every field from telecommunications to medicine to transportation.",
+          "falsification": "This pass dies if ICs affected only the computer industry.",
+          "source": "Integrated circuit - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the Czochralski process, large semiconductor single crystals were impossible to obtain because no method could pull a large, near-perfect crystal from a melt.",
+      "cand_id": "czochralski-process-1916",
+      "verdicts": {
+        "Q1": {
+          "evidence": "The Czochralski method, adapted to silicon in the 1950s, made large single-crystal silicon ingots obtainable for the first time.",
+          "falsification": "This pass dies if large silicon single crystals were available by another method beforehand.",
+          "source": "Czochralski method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Czochralski growth displaced other crystal-pulling approaches as the standard for silicon ingots.",
+          "falsification": "This pass dies if another method remained the ingot standard.",
+          "source": "Czochralski method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "The silicon in every AI accelerator begins as a Czochralski-grown crystal, placing it on the trunk hardware lineage.",
+          "falsification": "This pass dies if AI chip wafers are not Czochralski-grown.",
+          "source": "Czochralski method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "The process remains the industry baseline more than a century after its invention.",
+          "falsification": "This pass dies if the industry replaced it as the standard growth method.",
+          "source": "Czochralski method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Czochralski crystals supply the wafers from which virtually all semiconductor devices, including AI chips, are cut.",
+          "falsification": "This pass dies if most wafers come from a different crystal-growth method.",
+          "source": "Czochralski method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Virtually all semiconductor silicon wafers worldwide are still grown by the Czochralski process, with no substitute at scale.",
+          "falsification": "This pass dies if another growth method supplies the majority of wafers.",
+          "source": "Czochralski method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "Pulling large ingots made wafer production an industrial batch process, collapsing the cost of crystalline silicon per device.",
+          "falsification": "This pass dies if Czochralski growth did not reduce crystal silicon costs at scale.",
+          "source": "Czochralski method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "fail"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "evidence": "Czochralski-grown crystals also serve optics, solar cells and other fields beyond computing chips.",
+          "falsification": "This pass dies if the method is used only for logic chips.",
+          "source": "Czochralski method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before zone refining, reliable transistors were impractical because semiconductor material could not be purified enough to control its electrical properties.",
+      "cand_id": "zone-refining-1951",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Pfann's zone refining achieved impurity levels orders of magnitude lower than prior purification, making reproducible transistor material possible.",
+          "falsification": "This pass dies if transistor-grade purity was already attainable by earlier methods.",
+          "source": "Zone melting - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "Zone refining sits in the direct materials lineage of early silicon production behind modern chips.",
+          "falsification": "This pass dies if semiconductor purification history bypassed zone refining.",
+          "source": "Zone melting - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Ultra-high purity established by zone refining permanently reset the baseline for semiconductor material quality.",
+          "falsification": "This pass dies if the industry returned to low-purity material standards.",
+          "source": "Zone melting - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Ultra-pure semiconductor material unblocked the reliable transistor production on which the whole electronics industry was built.",
+          "falsification": "This pass dies if early transistor production did not depend on zone-refined material.",
+          "source": "Zone melting - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "verdict": "fail"
+        },
+        "Q8": {
+          "evidence": "Zone refining is also used to purify metals and compounds for research and other industries beyond semiconductors.",
+          "falsification": "This pass dies if zone refining found no use outside transistor material.",
+          "source": "Zone melting - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the MOSFET, scalable low-power switching was impractical because bipolar transistors consumed too much power and were too hard to integrate at high density.",
+      "cand_id": "mosfet-1959",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Kahng and Atalla's 1959 MOSFET demonstrated a voltage-controlled switch that could be miniaturized and integrated at densities bipolar devices could not reach.",
+          "falsification": "This pass dies if high-density low-power integration was already practical with bipolar transistors.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "MOSFET-based CMOS displaced bipolar logic as the industry default during the 1980s and 1990s.",
+          "falsification": "This pass dies if bipolar logic remained the mainstream default.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "AI accelerators consist of billions of MOSFETs, making it the central device of the agent's hardware trunk.",
+          "falsification": "This pass dies if AI chips are not MOSFET-based.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "No successor switch has displaced the MOSFET as the baseline of digital electronics after more than sixty years.",
+          "falsification": "This pass dies if the field moved its baseline to a different device.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "The MOSFET unblocked CMOS logic, DRAM, image sensors and the processors and accelerators that run AI agents.",
+          "falsification": "This pass dies if modern digital technology does not rest on MOSFET devices.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "The MOSFET became the most manufactured device in history and the only switch present in tens of billions per modern AI chip.",
+          "falsification": "This pass dies if another switch type populates modern processors instead.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "MOSFET scaling drove the cost per transistor down by many orders of magnitude across five decades of Moore's law.",
+          "falsification": "This pass dies if transistor costs did not collapse under MOSFET scaling.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "The MOSFET and CMOS cell became the standard building block abstracted by every level of chip design above it.",
+          "falsification": "This pass dies if chip designers do not build on standardized MOSFET-based cells.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "MOSFETs appear in power electronics, vehicles, medical devices and consumer goods far beyond computing.",
+          "falsification": "This pass dies if MOSFETs are found only in computers.",
+          "source": "MOSFET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before photolithography, shrinking and mass-producing transistor patterns was impractical because circuit features had to be formed by slow, coarse mechanical methods.",
+      "cand_id": "photolithography-1959",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Photolithography made it possible to print fine circuit patterns onto wafers, the capability on which all chip scaling depends.",
+          "falsification": "This pass dies if fine chip patterns were printable at scale by an earlier method.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Lithographic patterning displaced mechanical and hand-assembled circuit formation as the manufacturing default.",
+          "falsification": "This pass dies if non-lithographic fabrication remained standard.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Every chip an AI agent runs on was lithographically printed, placing the process on the hardware trunk.",
+          "falsification": "This pass dies if AI chips are made by a non-lithographic process.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Successive lithography generations, now EUV, have only deepened the baseline rather than replacing the approach.",
+          "falsification": "This pass dies if chipmaking abandoned optical pattern transfer.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Lithographic printing unblocked every generation of integrated circuits, from the first planar chips to EUV-fabricated AI accelerators.",
+          "falsification": "This pass dies if chip generations advanced without lithographic patterning.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "All advanced chips, including every AI accelerator, are still patterned lithographically; no alternative printing route exists at scale.",
+          "falsification": "This pass dies if leading chips are manufactured without lithography.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "evidence": "Printing whole wafers of circuits at once collapsed the cost per feature compared with any serial fabrication method.",
+          "falsification": "This pass dies if lithography offered no large per-feature cost advantage.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "verdict": "fail"
+        },
+        "Q7": {
+          "evidence": "The photomask-and-exposure process became the standard interface between chip designs and fabrication plants worldwide.",
+          "falsification": "This pass dies if fabs do not accept designs through a mask-based lithographic flow.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Photolithography also underpins displays, MEMS and other microfabricated technologies beyond logic chips.",
+          "falsification": "This pass dies if lithography is used only for processors.",
+          "source": "Photolithography - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Kolmogorov's probability axioms, reasoning about uncertainty was impractical to make rigorous because probability lacked a consistent mathematical foundation.",
+      "cand_id": "probability-axioms-kolmogorov-1933",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "evidence": "Kolmogorov's formulation displaced competing foundations and became the universal textbook standard.",
+          "falsification": "This pass dies if a rival axiomatization remained equally standard.",
+          "source": "Foundations of the Theory of Probability - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Language models output probability distributions defined in Kolmogorov's framework, placing it in the agent's theoretical trunk.",
+          "falsification": "This pass dies if model outputs are not probabilities in his sense.",
+          "source": "Foundations of the Theory of Probability - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "The 1933 axioms remain the unrevised foundation of probability theory ninety years later.",
+          "falsification": "This pass dies if the axioms were superseded by a new foundation.",
+          "source": "Foundations of the Theory of Probability - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Kolmogorov's axiomatization unblocked modern statistics, stochastic processes, information theory and probabilistic machine learning.",
+          "falsification": "This pass dies if those fields developed on a different foundation than measure-theoretic probability.",
+          "source": "Foundations of the Theory of Probability - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "evidence": "The axioms made probability a measure, giving uncertainty a rigorous quantitative calculus that statistical learning relies on.",
+          "falsification": "This pass dies if the axioms added no rigorous way to quantify uncertainty.",
+          "source": "Foundations of the Theory of Probability - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "evidence": "Kolmogorov supplied the explanatory model of probability as measure that still structures how probabilistic models, including language model outputs, are defined.",
+          "falsification": "This pass dies if modern probabilistic modeling does not use his framework.",
+          "source": "Foundations of the Theory of Probability - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Probability distributions became a standard abstraction that statisticians and ML practitioners compose without re-deriving foundations.",
+          "falsification": "This pass dies if probability is not used as a shared formal interface across fields.",
+          "source": "Foundations of the Theory of Probability - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Axiomatic probability underpins physics, finance, biology and engineering, far beyond AI.",
+          "falsification": "This pass dies if its influence stayed inside mathematics.",
+          "source": "Foundations of the Theory of Probability - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before linear algebra and matrix calculus, expressing large systems of transformations was impractical because there was no compact mathematical language for arrays of numbers and their operations.",
+      "cand_id": "linear-algebra-matrix-calculus-1844",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "evidence": "Matrix methods displaced coordinate-by-coordinate computation as the default way to handle multivariate problems.",
+          "falsification": "This pass dies if scalar coordinate methods remained the default.",
+          "source": "Linear algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Every forward and backward pass of the models behind AI agents is linear algebra, placing it at the center of the lineage.",
+          "falsification": "This pass dies if neural network computation does not consist of matrix operations.",
+          "source": "Linear algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Linear algebra has remained the permanent mathematical baseline for computation for over a century.",
+          "falsification": "This pass dies if it was displaced as the language of multivariate computation.",
+          "source": "Linear algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Linear algebra unblocked computer graphics, optimization, quantum mechanics, statistics and neural network computation expressed as tensor operations.",
+          "falsification": "This pass dies if those fields express their core computations without matrices and vectors.",
+          "source": "Linear algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "Neural networks are literally compositions of matrix multiplications and nonlinearities; no alternative mathematical language carries modern AI computation.",
+          "falsification": "This pass dies if mainstream neural network computation is formulated without linear algebra.",
+          "source": "Linear algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "partial"
+        },
+        "Q6": {
+          "evidence": "Linear algebra supplies the explanatory model of transformations, subspaces and spectra used to design and analyze learning systems deliberately.",
+          "falsification": "This pass dies if learning systems are designed without linear-algebraic concepts.",
+          "source": "Linear algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "Matrices and tensors are the standard interface implemented by BLAS, NumPy and every deep learning framework.",
+          "falsification": "This pass dies if ML frameworks do not expose tensor operations as their core abstraction.",
+          "source": "Linear algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Linear algebra is foundational in physics, engineering, economics and computer science, well beyond AI.",
+          "falsification": "This pass dies if its reach is limited to machine learning.",
+          "source": "Linear algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before gradient descent, minimizing a complex function was impractical because there was no general iterative rule that used local slope information to improve a solution step by step.",
+      "cand_id": "gradient-descent-1847",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Gradient descent made training parameterized models possible at all by giving a general procedure for minimizing a differentiable loss, the procedure every neural network is trained with.",
+          "falsification": "This pass dies if neural networks were historically trained by a non-iterative closed-form method.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Gradient-based training displaced hand-crafted rules and analytic fitting as the default way to build predictive models.",
+          "falsification": "This pass dies if hand-designed systems remained the modeling default.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "The language models behind modern agents are trained by stochastic gradient descent variants such as Adam, a direct descendant of Cauchy's method.",
+          "falsification": "This pass dies if LLM training uses an optimizer unrelated to gradient descent.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Gradient-based optimization remains the irreversible baseline of model training after more than a century of use.",
+          "falsification": "This pass dies if the field abandoned gradient methods for a successor.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Gradient-based optimization unblocked all of deep learning, training models from perceptrons to large language models.",
+          "falsification": "This pass dies if deep learning's models are not trained by gradient methods.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "evidence": "Gradient descent supplied the loss-minimization model that lets designers deliberately shape model behavior by choosing an objective function.",
+          "falsification": "This pass dies if training is not understood and designed as loss minimization.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "The gradient step is the standard abstraction exposed by every optimizer in every deep learning framework.",
+          "falsification": "This pass dies if frameworks do not build optimizers around gradient updates.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Gradient methods are used across engineering, physics, economics and operations research, far beyond AI.",
+          "falsification": "This pass dies if gradient optimization is confined to machine learning.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "evidence": "Cheap iterative updates let practitioners run train-evaluate cycles in hours instead of deriving analytic solutions, collapsing the modeling feedback loop.",
+          "falsification": "This pass dies if iterative gradient training did not speed up model development.",
+          "source": "Gradient descent - Wikipedia",
+          "verdict": "pass"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the Monte Carlo method, estimating intractable integrals and expectations was impossible in practice because no analytic or deterministic numerical method could handle their dimensionality.",
+      "cand_id": "monte-carlo-method-1946",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Ulam, von Neumann and Metropolis showed intractable problems such as neutron diffusion could be estimated by random sampling when no analytic solution existed.",
+          "falsification": "This pass dies if the target problems were already solvable deterministically in the 1940s.",
+          "source": "Monte Carlo method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "verdict": "partial"
+        },
+        "Q11": {
+          "evidence": "Sampling runs through the agent's lineage, from Monte Carlo tree search to stochastic training and generation in language models.",
+          "falsification": "This pass dies if modern AI methods do not rely on random sampling.",
+          "source": "Monte Carlo method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Sampling-based estimation permanently reset the baseline for intractable computation and has never been displaced.",
+          "falsification": "This pass dies if deterministic methods reclaimed those problem classes.",
+          "source": "Monte Carlo method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Monte Carlo sampling unblocked Bayesian inference, statistical physics, finance and the sampling procedures used throughout ML training and evaluation.",
+          "falsification": "This pass dies if sampling methods remained confined to wartime physics.",
+          "source": "Monte Carlo method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "evidence": "Sampling replaced exponentially expensive exact computation with estimates whose cost grows only with the number of samples, an orders-of-magnitude saving in high dimensions.",
+          "falsification": "This pass dies if Monte Carlo estimates cost as much as exact computation in high dimensions.",
+          "source": "Monte Carlo method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "evidence": "Monte Carlo made previously uncomputable expectations and integrals measurable to arbitrary precision through sampling error estimates.",
+          "falsification": "This pass dies if sampling provided no quantifiable estimate of intractable quantities.",
+          "source": "Monte Carlo method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q6": {
+          "evidence": "The method supplied the model of computation-by-sampling that underlies MCMC and modern probabilistic inference design.",
+          "falsification": "This pass dies if probabilistic inference is not designed around sampling.",
+          "source": "Monte Carlo method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "verdict": "partial"
+        },
+        "Q8": {
+          "evidence": "Monte Carlo methods are standard in physics, finance, biology and engineering, far beyond AI.",
+          "falsification": "This pass dies if the method is used only in machine learning.",
+          "source": "Monte Carlo method - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before Boolean algebra, logic was impossible to mechanize because reasoning existed only in verbal form with no algebraic system machines could implement.",
+      "cand_id": "boolean-algebra-1854",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Boole's 1854 system reduced logical reasoning to algebra over true and false values, the formal step that later let Shannon map logic directly onto switching circuits.",
+          "falsification": "This pass dies if digital circuits were designed without Boolean logic.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "Boolean digital logic displaced analog and mechanical computation as the default for general-purpose machines.",
+          "falsification": "This pass dies if analog computation remained the general default.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "The processors running AI agents are Boolean circuits, placing Boole's algebra at the root of the lineage.",
+          "falsification": "This pass dies if AI hardware does not implement Boolean logic.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Digital computation has never reverted from the Boolean baseline in 170 years.",
+          "falsification": "This pass dies if a post-Boolean logic became the computing standard.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "Boolean algebra unblocked digital circuit design and therefore all of computing, including the hardware AI agents run on.",
+          "falsification": "This pass dies if computing developed on a non-Boolean logical basis.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "All mainstream digital hardware implements Boolean logic; no alternative two-valued algebra carried general computing.",
+          "falsification": "This pass dies if mainstream computers are built on a different logic.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "verdict": "fail"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "evidence": "Boolean algebra gave designers a calculus for deliberately composing and simplifying logic circuits from truth-functional operations.",
+          "falsification": "This pass dies if circuit design does not use Boolean simplification.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q7": {
+          "evidence": "AND, OR and NOT gates form the standard abstraction on which every higher level of digital design is built.",
+          "falsification": "This pass dies if digital design does not compose from Boolean gates.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "Boolean logic underlies databases, search, programming languages and formal verification beyond circuit hardware.",
+          "falsification": "This pass dies if Boolean methods stayed inside electronics.",
+          "source": "Boolean algebra - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "fail"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before ARPANET, wide-area computer networking was impractical because circuit-switched connections could not share links efficiently or survive node failures.",
+      "cand_id": "arpanet-1969",
+      "verdicts": {
+        "Q1": {
+          "verdict": "partial"
+        },
+        "Q10": {
+          "evidence": "Packet switching displaced circuit switching as the default architecture for data networks.",
+          "falsification": "This pass dies if circuit switching remained the data-network default.",
+          "source": "ARPANET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "The internet through which agents perceive and act descends directly from ARPANET, making it a trunk ancestor.",
+          "falsification": "This pass dies if the internet developed independently of ARPANET.",
+          "source": "ARPANET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "Networking never returned to pre-packet-switching practice after ARPANET's proof.",
+          "falsification": "This pass dies if packet switching was later abandoned.",
+          "source": "ARPANET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "ARPANET proved packet switching at scale and unblocked the internet, email and the networked services agents now act through.",
+          "falsification": "This pass dies if packet-switched networking did not develop from ARPANET's demonstration.",
+          "source": "ARPANET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "ARPANET established packet switching and host protocols as the composable pattern later standardized by the internet protocol suite.",
+          "falsification": "This pass dies if internet architecture does not descend from ARPANET's packet-switched design.",
+          "source": "ARPANET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "The networking lineage ARPANET started transformed communications, commerce and science worldwide.",
+          "falsification": "This pass dies if its descendants affected only AI research.",
+          "source": "ARPANET - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before TCP/IP, a single global network was impossible because incompatible networks had no common protocol for interoperating end to end.",
+      "cand_id": "tcp-ip-1974",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Cerf and Kahn's protocol suite made internetworking possible, allowing heterogeneous networks to function as one global network, adopted as the ARPANET standard on January 1, 1983.",
+          "falsification": "This pass dies if a global interoperable network existed before TCP/IP.",
+          "source": "Internet protocol suite - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "TCP/IP displaced proprietary networking stacks such as DECnet and SNA as the default by the 1990s.",
+          "falsification": "This pass dies if proprietary stacks remained the networking default.",
+          "source": "Internet protocol suite - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "Agents perceive and act through APIs and web traffic carried by TCP/IP, placing it on the direct trunk.",
+          "falsification": "This pass dies if agent traffic does not run over TCP/IP.",
+          "source": "Internet protocol suite - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "TCP/IP remains the irreversible baseline of global networking fifty years after its design.",
+          "falsification": "This pass dies if the internet migrated to a replacement protocol suite.",
+          "source": "Internet protocol suite - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "TCP/IP unblocked the entire internet ecosystem, including the web, cloud APIs and the tool interfaces agents call.",
+          "falsification": "This pass dies if internet services do not run over TCP/IP.",
+          "source": "Internet protocol suite - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "evidence": "TCP/IP defeated rival protocol suites such as OSI and became the only protocol family carrying the global internet agents operate over.",
+          "falsification": "This pass dies if a rival suite carries a comparable share of global traffic.",
+          "source": "Internet protocol suite - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q4": {
+          "verdict": "partial"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "TCP/IP's layered protocol stack is the standard interface every networked application, including agent tooling, is built on without understanding lower layers.",
+          "falsification": "This pass dies if applications must implement their own internetworking protocols.",
+          "source": "Internet protocol suite - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "TCP/IP underpins global commerce, communication and science, far beyond AI.",
+          "falsification": "This pass dies if its reach is limited to computing research.",
+          "source": "Internet protocol suite - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    },
+    {
+      "bottleneck": "Before the World Wide Web, a global hyperlinked information space was impossible because documents on different machines had no common addressing, linking and transfer system.",
+      "cand_id": "world-wide-web-1989",
+      "verdicts": {
+        "Q1": {
+          "evidence": "Berners-Lee's system of URLs, HTTP and HTML made a single browsable global document space possible for the first time.",
+          "falsification": "This pass dies if a comparable global hypertext system predated the Web.",
+          "source": "World Wide Web - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q10": {
+          "evidence": "The Web displaced Gopher, FTP archives and proprietary online services as the default way to publish and retrieve information.",
+          "falsification": "This pass dies if those systems retained their default status.",
+          "source": "World Wide Web - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q11": {
+          "evidence": "The Web is both the main training corpus source and the primary environment modern agents browse and act in, making it trunk lineage.",
+          "falsification": "This pass dies if LLM training data and agent environments do not come substantially from the Web.",
+          "source": "World Wide Web - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q12": {
+          "evidence": "The Web's addressing and linking model permanently reset how information is published, with no return to isolated document systems.",
+          "falsification": "This pass dies if the Web was superseded by an incompatible information system.",
+          "source": "World Wide Web - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q2": {
+          "evidence": "The Web unblocked e-commerce, search, social media and the vast text corpus on which language models are trained.",
+          "falsification": "This pass dies if those developments did not depend on the Web.",
+          "source": "World Wide Web - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q3": {
+          "verdict": "partial"
+        },
+        "Q4": {
+          "evidence": "Publishing a document dropped from printing and distribution costs to posting a file on a server, a collapse of many orders of magnitude.",
+          "falsification": "This pass dies if web publishing was not dramatically cheaper than prior distribution.",
+          "source": "World Wide Web - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q5": {
+          "verdict": "fail"
+        },
+        "Q6": {
+          "verdict": "partial"
+        },
+        "Q7": {
+          "evidence": "URLs, HTTP and HTML form the standard interface that browsers, crawlers and web-browsing agents all build on.",
+          "falsification": "This pass dies if web agents do not interact through those standards.",
+          "source": "World Wide Web - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q8": {
+          "evidence": "The Web transformed publishing, commerce, education and government far beyond computing.",
+          "falsification": "This pass dies if the Web's impact stayed inside computer science.",
+          "source": "World Wide Web - Wikipedia",
+          "verdict": "pass"
+        },
+        "Q9": {
+          "verdict": "partial"
+        }
+      }
+    }
+  ]
+}
