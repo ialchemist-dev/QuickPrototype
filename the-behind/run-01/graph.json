@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T17:35:44+00:00",
-  "expansions_done": 129,
-  "raw_candidates_seen": 5094,
+  "updated_at": "2026-11-25T17:40:49+00:00",
+  "expansions_done": 130,
+  "raw_candidates_seen": 5120,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -22920,6 +22920,60 @@
     "name": "NCSA Mosaic and the 1993-94 Web growth wave (1993)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T17:35:44+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Cardano, Practica Arithmetice - critique of Pacioli's rule (1539)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Tartaglia, General Trattato - the problem of points (1556)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Peverone, Due brevi e facili trattati (1558)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Forestani, Pratica d'Arithmetica e Geometria (1603)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Galileo, Sopra le scoperte dei dadi (c. 1620)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Stifel, Arithmetica Integra (1544)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Mersenne correspondence network (1648)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
+   },
+   {
+    "parent_id": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+    "name": "Parisian high-stakes gaming practice (c. 1650)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T17:40:49+00:00"
    }
   ]
  },
@@ -29860,7 +29914,7 @@
    "prior_state": "Pacioli's proportional division rule (1494); Tartaglia's lead-based rule and his verdict that the question was judicial, not mathematical (1556); Cardano's case-counting unpublished.",
    "status": "provisional",
    "depth": 13,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -237593,6 +237647,746 @@
        "definition": "The April 1994 Seattle session record: Sollins and Masinter presenting the URN functional-requirements draft with its requirement list - the closest contemporaneous account of the parent's content before publication."
       },
       "reason": "dated on/after parent year 1994"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654": {
+   "raw_candidates": [
+    {
+     "name": "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+     "year": 1494,
+     "domain": "mathematics / probability",
+     "lens": "L1",
+     "causal_claim": "Pacioli's proportional rule is the component answer inside the problem tradition the correspondence inherits: the division rule every later writer, and implicitly the letters' fairness reasoning, starts from.",
+     "source_title": "The Problem of Points (Utah State University StatsHistory)",
+     "source_url": "https://www.usu.edu/math/schneit/StatsHistory/ProbabilityPrompts/Points",
+     "type": "theory",
+     "definition": "Luca Pacioli's Summa (Venice, 1494): the problem of points in print for the first time - a ball game to 60, interrupted at 50-30, stakes to be divided - with the proportional rule (divide in the ratio of games won), the incumbent answer the next 160 years argued with. The problem itself is older in manuscripts (c. 1380)."
+    },
+    {
+     "name": "Peverone, Due brevi e facili trattati (1558)",
+     "year": 1558,
+     "domain": "mathematics / probability",
+     "lens": "L1",
+     "causal_claim": "Peverone's printed attempt is a component of the same abbaco stratum: the problem kept in print between Tartaglia and Forestani.",
+     "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+     "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+     "type": "theory",
+     "definition": "Giovanni Francesco Peverone's two short treatises on arithmetic and geometry (1558): another printed attempt at the division problem in the Italian abbaco line between Tartaglia and Forestani."
+    },
+    {
+     "name": "Stifel, Arithmetica Integra (1544)",
+     "year": 1544,
+     "domain": "mathematics / probability",
+     "lens": "L1",
+     "causal_claim": "Stifel's printed binomial table is the arithmetic component Pascal's recursion tabulates: the combination numbers the letters' counting runs on.",
+     "source_title": "A short history of probability and statistics: 17th century",
+     "source_url": "https://web.universiteitleiden.nl/fsw/verduin/stathist/sh_17.htm",
+     "type": "theory",
+     "definition": "Michael Stifel's Arithmetica Integra (1544): prints the binomial-coefficient table (the arithmetic triangle) - the combinatorial table Pascal's recursive method uses, in the form the German algebra tradition carried."
+    },
+    {
+     "name": "Cardano, Liber de Ludo Aleae (1663)",
+     "year": 1663,
+     "domain": "mathematics / probability",
+     "lens": "L1",
+     "causal_claim": "The Liber's case-counting is the component treatment of dice closest to the letters' method - filed at its graph-conventional 1663, which postdates the parent; the calendar is expected to foreclose it, and the composition date (c. 1564) is never used to re-date.",
+     "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+     "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+     "type": "theory",
+     "definition": "Cardano's book on games of chance, composed c. 1564 and first printed in the Opera Omnia (1663): the case-counting treatment of dice and of the points problem - dated 1663 by the graph's convention, so it postdates this parent and the calendar forecloses the filing, as at Huygens."
+    },
+    {
+     "name": "Chevalier de Méré's gaming problems (1654)",
+     "year": 1654,
+     "domain": "mathematics / probability",
+     "lens": "L2",
+     "causal_claim": "De Mere's problems are the ancestor the correspondence modifies into solutions: the letters take his two live difficulties and return methods. Same year as the parent - the year bound is expected to drop the filing; the substantive hearing is recorded in the run log.",
+     "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+     "type": "other",
+     "definition": "The two problems Antoine Gombaud, Chevalier de Mere, posed to Pascal in 1654: the dice discrepancy (a six in four throws of one die is a winning bet, a double-six in twenty-four throws of two dice is not, though the ratios 4:6 and 24:36 agree) and the problem of points - the correspondence's occasion and founding content, relayed in its first letters as received from him."
+    },
+    {
+     "name": "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+     "year": 1494,
+     "domain": "mathematics / probability",
+     "lens": "L2",
+     "causal_claim": "The correspondence is the Summa's problem restated and solved: the ancestor text whose question the letters finally answer correctly.",
+     "source_title": "The Problem of Points (Utah State University StatsHistory)",
+     "source_url": "https://www.usu.edu/math/schneit/StatsHistory/ProbabilityPrompts/Points",
+     "type": "theory",
+     "definition": "Luca Pacioli's Summa (Venice, 1494): the problem of points in print for the first time - a ball game to 60, interrupted at 50-30, stakes to be divided - with the proportional rule (divide in the ratio of games won), the incumbent answer the next 160 years argued with. The problem itself is older in manuscripts (c. 1380)."
+    },
+    {
+     "name": "Tartaglia, General Trattato - the problem of points (1556)",
+     "year": 1556,
+     "domain": "mathematics / probability",
+     "lens": "L2",
+     "causal_claim": "The letters modify Tartaglia's treatment by refusing his demurrer: where he declared the question judicial, they make it mathematical.",
+     "source_title": "Tartaglia, General Trattato Book 16 S206, trans. Pulskamp",
+     "source_url": "https://www.gtfp.net/pulskamp/Tartaglia/tartaglia_trattato_2col.pdf",
+     "type": "theory",
+     "definition": "Tartaglia's General Trattato (1556, Book 16 S206): a paraphrase of Pacioli's problem, a difference-based division rule, and the famous demurrer that the question's resolution is 'judicial rather than mathematical' - the incumbent verdict the correspondence refutes by solving it."
+    },
+    {
+     "name": "Pascal, Traité du triangle arithmétique (1654)",
+     "year": 1654,
+     "domain": "mathematics / probability",
+     "lens": "L2",
+     "causal_claim": "The Traite is the correspondence's own twin: the recursion of the letters generalised into the triangle's theory. Same year - expected date-dropped; the author's own simultaneous work (self-carriage shape).",
+     "source_title": "A short history of probability and statistics: 17th century",
+     "source_url": "https://web.universiteitleiden.nl/fsw/verduin/stathist/sh_17.htm",
+     "type": "theory",
+     "definition": "Pascal's treatise on the arithmetic triangle, composed in the same 1654 campaign (published 1665): the twin artifact in which the correspondence's recursive method receives its general form - the author's own simultaneous toolkit."
+    },
+    {
+     "name": "Chevalier de Méré's gaming problems (1654)",
+     "year": 1654,
+     "domain": "mathematics / probability",
+     "lens": "L4",
+     "causal_claim": "De Mere posed both founding problems to Pascal in 1654 - the problem-poser filing (the Lashley/LAMA shape). Same year - expected date-dropped, hearing recorded in the run log.",
+     "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+     "type": "other",
+     "definition": "The two problems Antoine Gombaud, Chevalier de Mere, posed to Pascal in 1654: the dice discrepancy (a six in four throws of one die is a winning bet, a double-six in twenty-four throws of two dice is not, though the ratios 4:6 and 24:36 agree) and the problem of points - the correspondence's occasion and founding content, relayed in its first letters as received from him."
+    },
+    {
+     "name": "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+     "year": 1494,
+     "domain": "mathematics / probability",
+     "lens": "L4",
+     "causal_claim": "Pacioli posed the problem of points in print in 1494 - the print poser, 160 years before the solution.",
+     "source_title": "The Problem of Points (Utah State University StatsHistory)",
+     "source_url": "https://www.usu.edu/math/schneit/StatsHistory/ProbabilityPrompts/Points",
+     "type": "theory",
+     "definition": "Luca Pacioli's Summa (Venice, 1494): the problem of points in print for the first time - a ball game to 60, interrupted at 50-30, stakes to be divided - with the proportional rule (divide in the ratio of games won), the incumbent answer the next 160 years argued with. The problem itself is older in manuscripts (c. 1380)."
+    },
+    {
+     "name": "Chevalier de Méré's gaming problems (1654)",
+     "year": 1654,
+     "domain": "mathematics / probability",
+     "lens": "L5",
+     "causal_claim": "De Mere diagnosed the obstruction empirically: his betting record showed the proportionality 4:6 :: 24:36 failing in practice - the anomaly that forced enumeration. Same year - expected date-dropped.",
+     "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+     "type": "other",
+     "definition": "The two problems Antoine Gombaud, Chevalier de Mere, posed to Pascal in 1654: the dice discrepancy (a six in four throws of one die is a winning bet, a double-six in twenty-four throws of two dice is not, though the ratios 4:6 and 24:36 agree) and the problem of points - the correspondence's occasion and founding content, relayed in its first letters as received from him."
+    },
+    {
+     "name": "Cardano, Practica Arithmetice - critique of Pacioli's rule (1539)",
+     "year": 1539,
+     "domain": "mathematics / probability",
+     "lens": "L5",
+     "causal_claim": "Cardano diagnosed Pacioli's rule as evidently erroneous in print in 1539 - the diagnosis that kept the problem open.",
+     "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+     "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+     "type": "theory",
+     "definition": "Cardano's Practica arithmetice (1539): the first printed critique of Pacioli's division ('an error even a child should recognize') and Cardano's own arithmetic-progression rule - also wrong, but the critique that kept the problem standing as an open scandal."
+    },
+    {
+     "name": "Tartaglia, General Trattato - the problem of points (1556)",
+     "year": 1556,
+     "domain": "mathematics / probability",
+     "lens": "L5",
+     "causal_claim": "Tartaglia diagnosed the problem as wrongly posed for mathematics at all ('judicial rather than mathematical') - the negative diagnosis the letters overturn.",
+     "source_title": "Tartaglia, General Trattato Book 16 S206, trans. Pulskamp",
+     "source_url": "https://www.gtfp.net/pulskamp/Tartaglia/tartaglia_trattato_2col.pdf",
+     "type": "theory",
+     "definition": "Tartaglia's General Trattato (1556, Book 16 S206): a paraphrase of Pacioli's problem, a difference-based division rule, and the famous demurrer that the question's resolution is 'judicial rather than mathematical' - the incumbent verdict the correspondence refutes by solving it."
+    },
+    {
+     "name": "Forestani, Pratica d'Arithmetica e Geometria (1603)",
+     "year": 1603,
+     "domain": "mathematics / probability",
+     "lens": "L6",
+     "causal_claim": "Forestani's 1603 rule is the incumbent recipe in its latest print form: division by rule-of-thumb proportion, the practice the enumeration defines itself against.",
+     "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+     "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+     "type": "theory",
+     "definition": "Lorenzo Forestani's Pratica (1603): the last pre-1654 printed division rule for interrupted games in the abbaco tradition - the incumbent recipe's latest carrier before the correspondence."
+    },
+    {
+     "name": "Cardano, Practica Arithmetice - critique of Pacioli's rule (1539)",
+     "year": 1539,
+     "domain": "mathematics / probability",
+     "lens": "L7",
+     "causal_claim": "Cardano's own progression rule is a road taken and wrong: part of the negative space of plausible rules the letters' method excludes.",
+     "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+     "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+     "type": "theory",
+     "definition": "Cardano's Practica arithmetice (1539): the first printed critique of Pacioli's division ('an error even a child should recognize') and Cardano's own arithmetic-progression rule - also wrong, but the critique that kept the problem standing as an open scandal."
+    },
+    {
+     "name": "Tartaglia, General Trattato - the problem of points (1556)",
+     "year": 1556,
+     "domain": "mathematics / probability",
+     "lens": "L7",
+     "causal_claim": "Tartaglia's difference rule plus demurrer marks the negative space: proportional-to-the-lead answers and the refusal to mathematise, both excluded by the letters.",
+     "source_title": "Tartaglia, General Trattato Book 16 S206, trans. Pulskamp",
+     "source_url": "https://www.gtfp.net/pulskamp/Tartaglia/tartaglia_trattato_2col.pdf",
+     "type": "theory",
+     "definition": "Tartaglia's General Trattato (1556, Book 16 S206): a paraphrase of Pacioli's problem, a difference-based division rule, and the famous demurrer that the question's resolution is 'judicial rather than mathematical' - the incumbent verdict the correspondence refutes by solving it."
+    },
+    {
+     "name": "Chevalier de Méré's gaming problems (1654)",
+     "year": 1654,
+     "domain": "mathematics / probability",
+     "lens": "L8",
+     "causal_claim": "De Mere's recorded gambling outcomes - the profitable six-in-four bet and the losing double-six-in-twenty-four bet - are the empirical dataset the dice problem consists of. Same year - expected date-dropped.",
+     "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+     "type": "other",
+     "definition": "The two problems Antoine Gombaud, Chevalier de Mere, posed to Pascal in 1654: the dice discrepancy (a six in four throws of one die is a winning bet, a double-six in twenty-four throws of two dice is not, though the ratios 4:6 and 24:36 agree) and the problem of points - the correspondence's occasion and founding content, relayed in its first letters as received from him."
+    },
+    {
+     "name": "Forestani, Pratica d'Arithmetica e Geometria (1603)",
+     "year": 1603,
+     "domain": "mathematics / probability",
+     "lens": "L11",
+     "causal_claim": "The abbaco division recipe as a teachable process reaches its last pre-1654 print form in Forestani's Pratica - the process stratum the letters replace with enumeration.",
+     "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+     "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+     "type": "theory",
+     "definition": "Lorenzo Forestani's Pratica (1603): the last pre-1654 printed division rule for interrupted games in the abbaco tradition - the incumbent recipe's latest carrier before the correspondence."
+    },
+    {
+     "name": "Galileo, Sopra le scoperte dei dadi (c. 1620)",
+     "year": 1620,
+     "domain": "mathematics / probability",
+     "lens": "L11",
+     "causal_claim": "Galileo's fragment works the enumeration recipe completely on three dice - the process the letters apply to game continuations, demonstrated a generation earlier on the adjacent problem.",
+     "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+     "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+     "type": "theory",
+     "definition": "Galileo's dice fragment (composed c. 1613-23; unpublished until 1718): a complete enumeration of the outcomes of three dice explaining why 10 and 11 beat 9 and 12 - the enumeration recipe worked out on dice sums, on the adjacent problem."
+    },
+    {
+     "name": "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+     "year": 1494,
+     "domain": "mathematics / probability",
+     "lens": "L19",
+     "causal_claim": "The Summa is the accountancy/abbaco field's import into the problem's history: a partnership-division exercise in a bookkeeping encyclopedia becomes the founding problem of probability.",
+     "source_title": "The Problem of Points (Utah State University StatsHistory)",
+     "source_url": "https://www.usu.edu/math/schneit/StatsHistory/ProbabilityPrompts/Points",
+     "type": "theory",
+     "definition": "Luca Pacioli's Summa (Venice, 1494): the problem of points in print for the first time - a ball game to 60, interrupted at 50-30, stakes to be divided - with the proportional rule (divide in the ratio of games won), the incumbent answer the next 160 years argued with. The problem itself is older in manuscripts (c. 1380)."
+    },
+    {
+     "name": "Galileo, Sopra le scoperte dei dadi (c. 1620)",
+     "year": 1620,
+     "domain": "mathematics / probability",
+     "lens": "L19",
+     "causal_claim": "Galileo's fragment is the natural-philosophy field's import: a court philosopher's answer to a duke's dice question, carrying enumeration into the gaming literature.",
+     "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+     "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+     "type": "theory",
+     "definition": "Galileo's dice fragment (composed c. 1613-23; unpublished until 1718): a complete enumeration of the outcomes of three dice explaining why 10 and 11 beat 9 and 12 - the enumeration recipe worked out on dice sums, on the adjacent problem."
+    },
+    {
+     "name": "Stifel, Arithmetica Integra (1544)",
+     "year": 1544,
+     "domain": "mathematics / probability",
+     "lens": "L19",
+     "causal_claim": "Stifel's table is the German algebra tradition's import into the combinatorial stratum.",
+     "source_title": "A short history of probability and statistics: 17th century",
+     "source_url": "https://web.universiteitleiden.nl/fsw/verduin/stathist/sh_17.htm",
+     "type": "theory",
+     "definition": "Michael Stifel's Arithmetica Integra (1544): prints the binomial-coefficient table (the arithmetic triangle) - the combinatorial table Pascal's recursive method uses, in the form the German algebra tradition carried."
+    },
+    {
+     "name": "Mersenne correspondence network (1648)",
+     "year": 1648,
+     "domain": "mathematics / probability",
+     "lens": "L20",
+     "causal_claim": "The Mersenne network is the channel-stratum that had connected Pascal's and Fermat's worlds (both were Mersenne correspondents) - the creator-lineage filing.",
+     "source_title": "A short history of probability and statistics: 17th century",
+     "source_url": "https://web.universiteitleiden.nl/fsw/verduin/stathist/sh_17.htm",
+     "type": "institution",
+     "definition": "Marin Mersenne's correspondence network and Paris academy (to his death in 1648): the republic-of-letters medium that had made a Pascal-Fermat exchange conceivable - the era's connective institution, six years dead when the letters were written."
+    },
+    {
+     "name": "Roberval, informed intermediary and objector (1654)",
+     "year": 1654,
+     "domain": "mathematics / probability",
+     "lens": "L20",
+     "causal_claim": "Roberval is the person-channel filing: he carried letters, could solve the dice problem, and objected to the completion device. Same year - expected date-dropped; his Huygens hearing (fail-closed partial) stands.",
+     "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+     "type": "other",
+     "definition": "Gilles de Roberval in 1654: conduit for letters between Pascal and Fermat, himself able to solve the dice problem (on Pascal's own statement), and the named objector to the fictitious-completion device - a participant in the correspondence's formation, filed for the record."
+    },
+    {
+     "name": "Mersenne correspondence network (1648)",
+     "year": 1648,
+     "domain": "mathematics / probability",
+     "lens": "L21",
+     "causal_claim": "Mersenne's academy is the institution filing: the Paris circle whose habits of circulated problems formed both authors.",
+     "source_title": "A short history of probability and statistics: 17th century",
+     "source_url": "https://web.universiteitleiden.nl/fsw/verduin/stathist/sh_17.htm",
+     "type": "institution",
+     "definition": "Marin Mersenne's correspondence network and Paris academy (to his death in 1648): the republic-of-letters medium that had made a Pascal-Fermat exchange conceivable - the era's connective institution, six years dead when the letters were written."
+    },
+    {
+     "name": "Parisian high-stakes gaming practice (c. 1650)",
+     "year": 1650,
+     "domain": "mathematics / probability",
+     "lens": "L22",
+     "causal_claim": "Parisian high-stakes gaming c. 1650 is the era condition: only a gambling culture rich enough to sustain de Mere's long betting record produces an empirical anomaly sharp enough to found a theory on.",
+     "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+     "type": "other",
+     "definition": "The high-stakes dice and card culture of the Parisian court and salons in which de Mere played: the empirical practice that generated both founding problems - his winning and losing bets are its data."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "pacioli-summa-de-arithmetica-the-problem-of-points-in-print-1494",
+      "candidate": {
+       "name": "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+       "year": 1494,
+       "domain": "mathematics / probability",
+       "lens": "L1",
+       "causal_claim": "Pacioli's proportional rule is the component answer inside the problem tradition the correspondence inherits: the division rule every later writer, and implicitly the letters' fairness reasoning, starts from.",
+       "source_title": "The Problem of Points (Utah State University StatsHistory)",
+       "source_url": "https://www.usu.edu/math/schneit/StatsHistory/ProbabilityPrompts/Points",
+       "type": "theory",
+       "definition": "Luca Pacioli's Summa (Venice, 1494): the problem of points in print for the first time - a ball game to 60, interrupted at 50-30, stakes to be divided - with the proportional rule (divide in the ratio of games won), the incumbent answer the next 160 years argued with. The problem itself is older in manuscripts (c. 1380)."
+      },
+      "members": [
+       0,
+       5,
+       9,
+       19
+      ],
+      "member_names": [
+       "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+       "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+       "Pacioli, Summa de Arithmetica - the problem of points in print (1494)",
+       "Pacioli, Summa de Arithmetica - the problem of points in print (1494)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "peverone-due-brevi-e-facili-trattati-1558-1558",
+      "candidate": {
+       "name": "Peverone, Due brevi e facili trattati (1558)",
+       "year": 1558,
+       "domain": "mathematics / probability",
+       "lens": "L1",
+       "causal_claim": "Peverone's printed attempt is a component of the same abbaco stratum: the problem kept in print between Tartaglia and Forestani.",
+       "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+       "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+       "type": "theory",
+       "definition": "Giovanni Francesco Peverone's two short treatises on arithmetic and geometry (1558): another printed attempt at the division problem in the Italian abbaco line between Tartaglia and Forestani."
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Peverone, Due brevi e facili trattati (1558)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "stifel-arithmetica-integra-1544-1544",
+      "candidate": {
+       "name": "Stifel, Arithmetica Integra (1544)",
+       "year": 1544,
+       "domain": "mathematics / probability",
+       "lens": "L1",
+       "causal_claim": "Stifel's printed binomial table is the arithmetic component Pascal's recursion tabulates: the combination numbers the letters' counting runs on.",
+       "source_title": "A short history of probability and statistics: 17th century",
+       "source_url": "https://web.universiteitleiden.nl/fsw/verduin/stathist/sh_17.htm",
+       "type": "theory",
+       "definition": "Michael Stifel's Arithmetica Integra (1544): prints the binomial-coefficient table (the arithmetic triangle) - the combinatorial table Pascal's recursive method uses, in the form the German algebra tradition carried."
+      },
+      "members": [
+       2,
+       21
+      ],
+      "member_names": [
+       "Stifel, Arithmetica Integra (1544)",
+       "Stifel, Arithmetica Integra (1544)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "tartaglia-general-trattato-the-problem-of-points-1556-1556",
+      "candidate": {
+       "name": "Tartaglia, General Trattato - the problem of points (1556)",
+       "year": 1556,
+       "domain": "mathematics / probability",
+       "lens": "L2",
+       "causal_claim": "The letters modify Tartaglia's treatment by refusing his demurrer: where he declared the question judicial, they make it mathematical.",
+       "source_title": "Tartaglia, General Trattato Book 16 S206, trans. Pulskamp",
+       "source_url": "https://www.gtfp.net/pulskamp/Tartaglia/tartaglia_trattato_2col.pdf",
+       "type": "theory",
+       "definition": "Tartaglia's General Trattato (1556, Book 16 S206): a paraphrase of Pacioli's problem, a difference-based division rule, and the famous demurrer that the question's resolution is 'judicial rather than mathematical' - the incumbent verdict the correspondence refutes by solving it."
+      },
+      "members": [
+       6,
+       12,
+       15
+      ],
+      "member_names": [
+       "Tartaglia, General Trattato - the problem of points (1556)",
+       "Tartaglia, General Trattato - the problem of points (1556)",
+       "Tartaglia, General Trattato - the problem of points (1556)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cardano-practica-arithmetice-critique-of-pacioli-s-rule-1539-1539",
+      "candidate": {
+       "name": "Cardano, Practica Arithmetice - critique of Pacioli's rule (1539)",
+       "year": 1539,
+       "domain": "mathematics / probability",
+       "lens": "L5",
+       "causal_claim": "Cardano diagnosed Pacioli's rule as evidently erroneous in print in 1539 - the diagnosis that kept the problem open.",
+       "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+       "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+       "type": "theory",
+       "definition": "Cardano's Practica arithmetice (1539): the first printed critique of Pacioli's division ('an error even a child should recognize') and Cardano's own arithmetic-progression rule - also wrong, but the critique that kept the problem standing as an open scandal."
+      },
+      "members": [
+       11,
+       14
+      ],
+      "member_names": [
+       "Cardano, Practica Arithmetice - critique of Pacioli's rule (1539)",
+       "Cardano, Practica Arithmetice - critique of Pacioli's rule (1539)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "forestani-pratica-d-arithmetica-e-geometria-1603-1603",
+      "candidate": {
+       "name": "Forestani, Pratica d'Arithmetica e Geometria (1603)",
+       "year": 1603,
+       "domain": "mathematics / probability",
+       "lens": "L6",
+       "causal_claim": "Forestani's 1603 rule is the incumbent recipe in its latest print form: division by rule-of-thumb proportion, the practice the enumeration defines itself against.",
+       "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+       "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+       "type": "theory",
+       "definition": "Lorenzo Forestani's Pratica (1603): the last pre-1654 printed division rule for interrupted games in the abbaco tradition - the incumbent recipe's latest carrier before the correspondence."
+      },
+      "members": [
+       13,
+       17
+      ],
+      "member_names": [
+       "Forestani, Pratica d'Arithmetica e Geometria (1603)",
+       "Forestani, Pratica d'Arithmetica e Geometria (1603)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "galileo-sopra-le-scoperte-dei-dadi-c-1620-1620",
+      "candidate": {
+       "name": "Galileo, Sopra le scoperte dei dadi (c. 1620)",
+       "year": 1620,
+       "domain": "mathematics / probability",
+       "lens": "L11",
+       "causal_claim": "Galileo's fragment works the enumeration recipe completely on three dice - the process the letters apply to game continuations, demonstrated a generation earlier on the adjacent problem.",
+       "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+       "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+       "type": "theory",
+       "definition": "Galileo's dice fragment (composed c. 1613-23; unpublished until 1718): a complete enumeration of the outcomes of three dice explaining why 10 and 11 beat 9 and 12 - the enumeration recipe worked out on dice sums, on the adjacent problem."
+      },
+      "members": [
+       18,
+       20
+      ],
+      "member_names": [
+       "Galileo, Sopra le scoperte dei dadi (c. 1620)",
+       "Galileo, Sopra le scoperte dei dadi (c. 1620)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mersenne-correspondence-network-1648-1648",
+      "candidate": {
+       "name": "Mersenne correspondence network (1648)",
+       "year": 1648,
+       "domain": "mathematics / probability",
+       "lens": "L20",
+       "causal_claim": "The Mersenne network is the channel-stratum that had connected Pascal's and Fermat's worlds (both were Mersenne correspondents) - the creator-lineage filing.",
+       "source_title": "A short history of probability and statistics: 17th century",
+       "source_url": "https://web.universiteitleiden.nl/fsw/verduin/stathist/sh_17.htm",
+       "type": "institution",
+       "definition": "Marin Mersenne's correspondence network and Paris academy (to his death in 1648): the republic-of-letters medium that had made a Pascal-Fermat exchange conceivable - the era's connective institution, six years dead when the letters were written."
+      },
+      "members": [
+       22,
+       24
+      ],
+      "member_names": [
+       "Mersenne correspondence network (1648)",
+       "Mersenne correspondence network (1648)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "parisian-high-stakes-gaming-practice-c-1650-1650",
+      "candidate": {
+       "name": "Parisian high-stakes gaming practice (c. 1650)",
+       "year": 1650,
+       "domain": "mathematics / probability",
+       "lens": "L22",
+       "causal_claim": "Parisian high-stakes gaming c. 1650 is the era condition: only a gambling culture rich enough to sustain de Mere's long betting record produces an empirical anomaly sharp enough to found a theory on.",
+       "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+       "type": "other",
+       "definition": "The high-stakes dice and card culture of the Parisian court and salons in which de Mere played: the empirical practice that generated both founding problems - his winning and losing bets are its data."
+      },
+      "members": [
+       25
+      ],
+      "member_names": [
+       "Parisian high-stakes gaming practice (c. 1650)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       5
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       0,
+       9
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       0,
+       19
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       21
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       6,
+       12
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       6,
+       15
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       11,
+       14
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       13,
+       17
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       18,
+       20
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       22,
+       24
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Cardano, Liber de Ludo Aleae (1663)",
+       "year": 1663,
+       "domain": "mathematics / probability",
+       "lens": "L1",
+       "causal_claim": "The Liber's case-counting is the component treatment of dice closest to the letters' method - filed at its graph-conventional 1663, which postdates the parent; the calendar is expected to foreclose it, and the composition date (c. 1564) is never used to re-date.",
+       "source_title": "Probability Prior to Pascal (Chance News, Dartmouth)",
+       "source_url": "https://chance.dartmouth.edu/chance_news/for_chance_news/ChanceNews13.04/stats.pdf",
+       "type": "theory",
+       "definition": "Cardano's book on games of chance, composed c. 1564 and first printed in the Opera Omnia (1663): the case-counting treatment of dice and of the points problem - dated 1663 by the graph's convention, so it postdates this parent and the calendar forecloses the filing, as at Huygens."
+      },
+      "reason": "dated on/after parent year 1654"
+     },
+     {
+      "candidate": {
+       "name": "Chevalier de Méré's gaming problems (1654)",
+       "year": 1654,
+       "domain": "mathematics / probability",
+       "lens": "L2",
+       "causal_claim": "De Mere's problems are the ancestor the correspondence modifies into solutions: the letters take his two live difficulties and return methods. Same year as the parent - the year bound is expected to drop the filing; the substantive hearing is recorded in the run log.",
+       "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+       "type": "other",
+       "definition": "The two problems Antoine Gombaud, Chevalier de Mere, posed to Pascal in 1654: the dice discrepancy (a six in four throws of one die is a winning bet, a double-six in twenty-four throws of two dice is not, though the ratios 4:6 and 24:36 agree) and the problem of points - the correspondence's occasion and founding content, relayed in its first letters as received from him."
+      },
+      "reason": "dated on/after parent year 1654"
+     },
+     {
+      "candidate": {
+       "name": "Pascal, Traité du triangle arithmétique (1654)",
+       "year": 1654,
+       "domain": "mathematics / probability",
+       "lens": "L2",
+       "causal_claim": "The Traite is the correspondence's own twin: the recursion of the letters generalised into the triangle's theory. Same year - expected date-dropped; the author's own simultaneous work (self-carriage shape).",
+       "source_title": "A short history of probability and statistics: 17th century",
+       "source_url": "https://web.universiteitleiden.nl/fsw/verduin/stathist/sh_17.htm",
+       "type": "theory",
+       "definition": "Pascal's treatise on the arithmetic triangle, composed in the same 1654 campaign (published 1665): the twin artifact in which the correspondence's recursive method receives its general form - the author's own simultaneous toolkit."
+      },
+      "reason": "dated on/after parent year 1654"
+     },
+     {
+      "candidate": {
+       "name": "Chevalier de Méré's gaming problems (1654)",
+       "year": 1654,
+       "domain": "mathematics / probability",
+       "lens": "L4",
+       "causal_claim": "De Mere posed both founding problems to Pascal in 1654 - the problem-poser filing (the Lashley/LAMA shape). Same year - expected date-dropped, hearing recorded in the run log.",
+       "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+       "type": "other",
+       "definition": "The two problems Antoine Gombaud, Chevalier de Mere, posed to Pascal in 1654: the dice discrepancy (a six in four throws of one die is a winning bet, a double-six in twenty-four throws of two dice is not, though the ratios 4:6 and 24:36 agree) and the problem of points - the correspondence's occasion and founding content, relayed in its first letters as received from him."
+      },
+      "reason": "dated on/after parent year 1654"
+     },
+     {
+      "candidate": {
+       "name": "Chevalier de Méré's gaming problems (1654)",
+       "year": 1654,
+       "domain": "mathematics / probability",
+       "lens": "L5",
+       "causal_claim": "De Mere diagnosed the obstruction empirically: his betting record showed the proportionality 4:6 :: 24:36 failing in practice - the anomaly that forced enumeration. Same year - expected date-dropped.",
+       "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+       "type": "other",
+       "definition": "The two problems Antoine Gombaud, Chevalier de Mere, posed to Pascal in 1654: the dice discrepancy (a six in four throws of one die is a winning bet, a double-six in twenty-four throws of two dice is not, though the ratios 4:6 and 24:36 agree) and the problem of points - the correspondence's occasion and founding content, relayed in its first letters as received from him."
+      },
+      "reason": "dated on/after parent year 1654"
+     },
+     {
+      "candidate": {
+       "name": "Chevalier de Méré's gaming problems (1654)",
+       "year": 1654,
+       "domain": "mathematics / probability",
+       "lens": "L8",
+       "causal_claim": "De Mere's recorded gambling outcomes - the profitable six-in-four bet and the losing double-six-in-twenty-four bet - are the empirical dataset the dice problem consists of. Same year - expected date-dropped.",
+       "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+       "type": "other",
+       "definition": "The two problems Antoine Gombaud, Chevalier de Mere, posed to Pascal in 1654: the dice discrepancy (a six in four throws of one die is a winning bet, a double-six in twenty-four throws of two dice is not, though the ratios 4:6 and 24:36 agree) and the problem of points - the correspondence's occasion and founding content, relayed in its first letters as received from him."
+      },
+      "reason": "dated on/after parent year 1654"
+     },
+     {
+      "candidate": {
+       "name": "Roberval, informed intermediary and objector (1654)",
+       "year": 1654,
+       "domain": "mathematics / probability",
+       "lens": "L20",
+       "causal_claim": "Roberval is the person-channel filing: he carried letters, could solve the dice problem, and objected to the completion device. Same year - expected date-dropped; his Huygens hearing (fail-closed partial) stands.",
+       "source_title": "Fermat and Pascal on Probability (York histstat notes, after Todhunter)",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/pascal.pdf?ref=scopeofwork.net",
+       "type": "other",
+       "definition": "Gilles de Roberval in 1654: conduit for letters between Pascal and Fermat, himself able to solve the dice problem (on Pascal's own statement), and the named objector to the fictitious-completion device - a participant in the correspondence's formation, filed for the record."
+      },
+      "reason": "dated on/after parent year 1654"
      }
     ],
     "prefiltered": []

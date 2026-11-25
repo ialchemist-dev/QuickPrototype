@@ -3961,3 +3961,34 @@
   "expansions_done": 129
  }
 }
+{
+ "ts": "2026-11-25T17:41:04Z",
+ "session": 60,
+ "kind": "expansion",
+ "parent": "pascal-fermat-correspondence-on-the-problem-of-points-1654-1654",
+ "parent_name": "Pascal-Fermat correspondence on the problem of points (1654)",
+ "provenance": "Regular session-60 expansion 2 of 2 (the frontier's second node; the run's own best-first ordering governs). Parent stored record verified complete before evaluating (no session-31 defect): definition/bottleneck/leap/prior_state all present, and its stored prior_state itself names the assigned hearings (Pacioli 1494; Tartaglia 1556; Cardano unpublished). Research this session: de Mere posed both problems to Pascal in 1654 (Pascal's introductory letter is lost); Pascal states de Mere and Roberval could also solve the dice problem; Roberval carried letters and objected to the fictitious-completion device; the problem of points stands in Italian manuscripts from c. 1380 (Ore 1960), in print first in Pacioli's Summa (1494, proportional rule), critiqued in Cardano's Practica (1539), restated with the 'judicial rather than mathematical' demurrer in Tartaglia's General Trattato (1556, Book 16 S206), and continued by Peverone (1558) and Forestani (1603); Galileo's dice fragment (c. 1613-23) enumerates three dice and was unpublished until 1718. Verdicts structure copied literally from run-01/work/build_verdicts_rfc2141.py; dry-run through score.rank_candidates before applying (zero survivors, no correction needed); every cand_id taken from the show-distinct output.",
+ "raw": 26,
+ "dry_notes": 18,
+ "date_dropped": 7,
+ "distinct": 9,
+ "evaluated": 9,
+ "survivors": 0,
+ "rejected": 9,
+ "mediated": 0,
+ "survivors_detail": [],
+ "rejections_of_note": [
+  "Chevalier de Mere's gaming problems (1654) - THE ASSIGNED DIRECT HEARING, FORECLOSED BY THE CALENDAR: all four filings (L2/L4/L5/L8) were date-dropped at resolve because the posing is dated 1654, the parent's own year - the RFC 1630-at-RFC 1738 shape exactly (month order is unknowable and irrelevant; never re-dated). The substantive record, for any future re-hearing: the problems are stated in the correspondence's first letters as received from de Mere, so the Ferraro/Lashley channel question was genuinely open - Pascal's lost introductory letter presented them as de Mere's, and de Mere's dice discrepancy is a diagnosis drawn from his own betting record (data, L8). Had the filing been expressible it would have been this expansion's most contestable candidate, judged between problem-poser admission (the Lashley/LAMA shape) and the person-channel discipline; the calendar decides instead, and the decision is logged, not relitigated.",
+  "Pacioli, Summa de Arithmetica (1494) - FAIL-CLOSED PARTIAL (the assigned hearing): the problem reached Pascal through de Mere's gaming practice, not through Pacioli's text; no document places the Summa in Pascal's, Fermat's or de Mere's hands in 160 years, and the one channel hypothesis on record (de Mere 'may have seen' the problem in French texts) is a modern conjecture naming no text, date or reader. Print origin is not a channel - the same finding as at Huygens, with Q11's pass standing in the evaluation. A mediation via de Mere was considered and NOT recorded: it would falsely assert a Pacioli-to-de Mere transmission that no document supports. YEAR-FLOOR INTERACTION: 1494 precedes the profile's year_floor (1500); verified in pipeline/pipeline.py this session that year_floor appears only as profile defaults (lines 39/44) and resolve does not enforce it - the filing was resolved and judged on the established rules, neither silently dropped nor silently admitted.",
+  "Cardano, Practica Arithmetice (1539) and Tartaglia, General Trattato (1556) - fail-closed partials: the critique and the demurrer are diagnoses the letters answer without deriving from (the Hochreiter condition; engagement with a rival is not consumption). Cardano's Liber de Ludo Aleae was filed at its graph-conventional 1663 and postdates the parent outright - the calendar's third foreclosure of that artifact (dropped at Huygens; discharged as a fail-closed partial at Bernoulli, where print 1663 postdated Huygens 1657).",
+  "Galileo, Sopra le scoperte dei dadi (c. 1620) - fail-closed partial: complete enumeration on the adjacent problem (dice sums), unpublished until 1718 - anticipation without a junction, the fragment's second such record (after Huygens).",
+  "Stifel, Arithmetica Integra (1544) - fail-closed partial: the binomial table in print, but the letters' recursion is the author's own construction, proved in the letters and the simultaneous Traite; components supplied by the author's own twin artifact are not a channel. The Traite itself (1654) was filed and date-dropped - the author's own simultaneous work, self-carriage shape.",
+  "Mersenne correspondence network (1648) - refused (arena/medium; died six years before the exchange; the same refusal as at Huygens). Roberval (1654) was filed and date-dropped; his documented roles (letter conduit, dice-problem solver, objector to fictitious completion) belong to the correspondence's FORMATION, and his Huygens hearing (fail-closed partial - informed intermediary transmitting nothing) stands. Parisian high-stakes gaming practice (c. 1650) - fail-closed partial: the era condition whose carrying artifact (de Mere's posing) is itself foreclosed at this parent; the Gauss S177 shape."
+ ],
+ "notes": "ZERO survivors - the run's TWELFTH zero (after Gage, Weber, Family likeness, MDP, Gauss, ChatGPT, REINFORCE, Walsh & Herzog, RFC 1738, RFC 1630, RFC 1737). Depth 14 does NOT open: the correspondence is a taproot of the same kind as Bernoulli (whose only survivor was its own commentator) - its documented ancestry is its coeval occasion (de Mere, calendar-foreclosed), its author's own twin artifact (the Traite, calendar-foreclosed), and a 160-year print tradition (Pacioli to Forestani) that it nowhere cites and no document carries into the authors' hands. Seven date-dropped filings in total: de Mere x4, the Traite x1, Roberval x1, the Liber de Ludo Aleae x1 (the last postdating outright, the rest same-year). The Italian manuscript stratum (c. 1380, Ore 1960) was noted but not filed: no named poser and no separable citable artifact beyond the tradition Pacioli prints. No verification file (no survivors to verify). Neither pending design decision surfaced at this parent. The InstructGPT/RLHF carried flag did not surface. Frontier head after this expansion: Stirling, Methodus Differentialis (1730) - where Wallis and Taylor, mediated via Stirling at De Moivre, become direct hearings - then TSMC 90nm (carrying its session-54 mediation context and the damascene LINK question), Tcl, adaptive mixtures.",
+ "totals_after": {
+  "nodes": 236,
+  "edges": 302,
+  "expansions_done": 130
+ }
+}
