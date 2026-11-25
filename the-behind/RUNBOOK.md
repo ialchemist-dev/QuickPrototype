@@ -1,13 +1,19 @@
 # RUNBOOK — The Behind 01: Recursive Milestone Pipeline
 
-**Design v3.1 · 2026-11-24.** (v3 added the directness gate, the leap
+**Design v4 · 2026-11-24.** (v3 added the directness gate, the leap
 record, the re-aimed scout, and the verifier's mediation attack, after
 the owner found gradient descent sitting at depth 1 in the v2 smoke
 graph. v3.1 added the Hardware & devices and Data scout lenses, the
 "substrate is not a rejection class" gate guidance, and the one-time
 retro-sweep protocol (§9), after the owner found run-01's graph
-contained no hardware or data milestones at all. See the changelog in
-`DESIGN.md`.)
+contained no hardware or data milestones at all. v4 replaced the
+accreted lens list with a derived framework — 11 enabler kinds × 10
+enabling relations → 23 lenses in 6 families + 2 meta passes (§6.1) —
+after the owner rejected patching lenses one gap at a time and
+required the scout's questions to be exhaustive by construction; it
+also raised the FULL `raw_target` to 140, added the per-lens floor
+with dry notes, admitted institutional enablers as nodes, and
+extended the retro-sweep (§9). See the changelog in `DESIGN.md`.)
 
 **Read only this file and you can execute the entire pipeline.** It is
 self-contained: purpose, setup, configuration, the graph format, the
@@ -21,7 +27,7 @@ not need it to run.
 ## 0. Purpose (6 lines)
 
 1. Trace the breakthroughs that made the modern AI agent possible, backwards through history, as a merged graph (DAG), not a tree.
-2. Start from one root node; repeatedly expand the best unexpanded node: scout ≈100 earlier **proximate** candidate advances, resolve their identities, interrogate each with 12 fixed questions plus the directness test, prune by fixed gates to a capped set of survivors.
+2. Start from one root node; repeatedly expand the best unexpanded node: scout ≈140 earlier **proximate** candidate advances (23 lenses + 2 meta passes; per-lens floor ≥3 or a dry note), resolve their identities, interrogate each with 12 fixed questions plus the directness test, prune by fixed gates to a capped set of survivors.
 3. Each survivor becomes a node with a "bottleneck sentence"; edges read "enabled by" and mean **direct enabler of the child's leap** — never a mediated ancestor. The same advance reached from many children is one node — convergence is the point.
 4. Every node is a leap: a discontinuous jump over the state of the art immediately before it. Time is a first-class dimension; each step back moves one leap, not one era.
 5. Survivors face an adversarial verifier (multiples test, date check, mediation attack) and are marked `verified` or stay `provisional`.
@@ -69,7 +75,7 @@ into the graph file; the snapshot governs the whole run.
 
 | Key | Value | Meaning |
 |---|---|---|
-| `raw_target` | 100 | raw candidates to scout per expansion |
+| `raw_target` | 140 | raw candidates to scout per expansion (content lenses L1, L2, L4–L22; per-lens floor ≥3 or a dry note; the 2 meta passes are capped at ~10 combined and excluded from this count) |
 | `survivor_cap` | 20 | max survivors admitted per expansion |
 | `depth_cap` | 10 | maximum depth (root = 0) |
 | `node_budget` | 2000 | global live-node budget for the run |
@@ -176,11 +182,19 @@ Fill the SCOUT PROMPT (§6.1) slots for PARENT:
   `parent_id == PARENT.id` (empty on a first expansion). Mediated
   rejections are included — never re-propose them for this parent.
 
-Run the 12 lenses, ≥2 query variants each, and write the resulting
-JSON array to `work/candidates_<PARENT_ID>.json`. Lenses 11 (Hardware
-& devices) and 12 (Data) are mandatory for every parent (v3.1), even
-when the parent looks purely algorithmic — and doubly so for
-compute-hungry or data-hungry leaps. Candidate objects
+Run all 23 lenses (§6.1), ≥2 query variants each, and write the
+resulting JSON array to `work/candidates_<PARENT_ID>.json`. Every
+content lens (L1, L2, L4–L22) is mandatory for every parent (v4),
+even when a lens looks irrelevant to it. **Per-lens floor:** each
+content lens must contribute ≥3 candidates; if a lens genuinely
+finds nothing, record a **dry note** for it (lens id, queries run,
+sources checked, why nothing qualified) in
+`work/dry_notes_<PARENT_ID>.json` and note it in the run log — a lens
+with neither candidates nor a dry note means the scout is incomplete;
+do not proceed to Step 2. The 2 meta passes (L3 lineage surveys, L23
+contemporaneous accounts) are capped at ~10 candidates combined and
+do NOT count toward `raw_target`. There is no per-lens cap:
+cross-lens duplicates are signal. Candidate objects
 must carry the §4.3 fields **plus** the two identity-card fields §4.5
 requires: `"type"` and `"definition"` (one sentence: what it is and
 what it enabled). Then:
@@ -190,7 +204,9 @@ python3 pipeline/pipeline.py add-candidates --graph $G --parent <PARENT_ID> --fi
 ```
 
 You may scout in several batches and call `add-candidates` repeatedly;
-batches accumulate. Stop when you reach the profile's `raw_target`.
+batches accumulate. Stop when you reach the profile's `raw_target` in
+content-lens candidates; meta-pass candidates (≤ ~10 combined) are
+added on top and excluded from the count.
 
 ### Step 2 — Resolve identities (CLI)
 
@@ -338,7 +354,7 @@ interruption (crash, restart, new agent):
 
 ## 6. Prompts (verbatim)
 
-### 6.1 Scout prompt (DESIGN.md §4.3, v3.1)
+### 6.1 Scout prompt (DESIGN.md §4.3, v4)
 
 ```
 ROLE
@@ -367,20 +383,24 @@ State of the art immediately before {parent_name}: {immediate_prior_state}
 The parent's leap: {parent_leap}
 
 TASK
-Find approximately 100 advances that appeared shortly before
+Find approximately 140 advances that appeared shortly before
 {parent_name} and directly enabled its leap: the techniques,
 components, results, or resources whose arrival closed the gap between
 the immediate prior state of the art and {parent_name}. Work through
-all 12 search lenses (attached). Run real web searches for each lens,
-at least 2 query variants per lens, and read the strongest sources,
+all 23 search lenses in the attached LENS SET, in family order, plus
+the two meta passes (L3 lineage surveys, L23 contemporaneous
+accounts), which are capped at about 10 candidates combined and do
+not count toward the 140. Run real web searches for each lens, at
+least 2 query variants per lens, and read the strongest sources,
 preferring reference works, textbooks, and scholarly histories over
 popular listicles. Anchor every search in the parent's immediate
 pre-history: the years just before {parent_year}, the systems it was
 directly compared against, and the accounts written at the time of why
-it outperformed them. The Hardware & devices and Data lenses are
-mandatory for every parent, even when the parent looks purely
-algorithmic: a leap that reads as pure method often directly consumed
-a specific machine, platform, or dataset.
+it outperformed them. EVERY content lens is mandatory for every
+parent, even when a lens looks irrelevant to it: each content lens
+(L1, L2, L4–L22) must return at least 3 candidates, and a lens that
+genuinely finds nothing must be reported as a DRY NOTE (see OUTPUT) —
+a lens with neither candidates nor a dry note is an incomplete scout.
 
 RULES
 - Proximate, dated, named. Every candidate is a specific advance with
@@ -405,41 +425,196 @@ RULES
   later. Importance filtering is NOT your job — but neither is
   deep-history trawling: distant fundamentals are explicitly out of
   scope at this level.
+- Coverage is auditable. For every content lens, either propose at
+  least 3 candidates from it or record a dry note naming what you
+  searched and why nothing qualified. Do NOT pad a dry lens with
+  mediated or distant candidates to hit the floor — the dry note is
+  the honest output, and it is data.
 
 OUTPUT
 A JSON array only, one object per candidate:
-{"name": "...", "year": 1871, "domain": "...", "lens": "instruments",
+{"name": "...", "year": 1871, "domain": "...", "lens": "L9",
  "causal_claim": "...", "source_title": "...", "source_url": "..."}
+Accompany the array with a dry-notes list, one entry per content lens
+that returned fewer than 3 candidates:
+{"lens": "L10", "searched": "...", "note": "..."}
 ```
 
 Pipeline addendum to the OUTPUT schema (required by §4.5's identity
 card; add these two fields to every object):
 `"type": "device|theory|method|material|institution|other"` and
 `"definition": "one sentence: what it is and what it enabled"`.
-For a smoke run, "approximately 100" reads as the smoke `raw_target`.
+The `"lens"` field carries the lens id (`"L1"`…`"L23"`). Write the
+dry-notes list to `work/dry_notes_<PARENT_ID>.json` (same object
+shape as above, as a JSON array) and summarize it in the run log.
+For a smoke run, "approximately 140" reads as the smoke `raw_target`.
 
-The 12 lenses, v3.1 (attach to the prompt): 1 Immediate prior state of
-the art ("{parent} vs {predecessor} comparison", "limitations of
-{prior approach}", "state of the art before {parent}") · 2 The
-differentiating move ("what was new in {parent}", "{parent} key
-innovation", "why did {parent} outperform {predecessor}") · 3
-First-order components ("{parent} architecture components", "what is
-{parent} built on") · 4 Contemporaneous accounts ("{parent} review
-{parent_year}", "why {parent} is a breakthrough") · 5 Benchmarks &
-measurement ("{parent} benchmark results", "evaluation of {parent} vs
-prior") · 6 Method / recipe introduced shortly before ("{parent}
-training method", "how was {parent} made", "{technique} first used for
-{parent}") · 7 Infrastructure at hand ("{parent} hardware used",
-"{parent} built with what tools") · 8 Direct transfers ("{creator}
-previous work before {parent}", "{technique} applied in {parent}") ·
-9 Negative space ("failed attempts at {capability} before {parent}",
-"{prior approach} problems solved by {parent}") · 10 Timelines of the
-immediate lineage ("timeline of {domain} {parent_year}", "history of
-{parent} development") · 11 Hardware & devices ("{parent} ran on what
-hardware", "{accelerator} first used to train {parent}", "{platform}
-programmability layer") · 12 Data ("{parent} training data", "{dataset}
-collected how", "data curation pipeline behind {parent}"). Lenses 11
-and 12 are mandatory for every parent (v3.1).
+**THE LENS SET, v4 (attach to the prompt).** The lenses are derived
+from an 11-kind enabler ontology (K1 theory · K2 methods · K3
+architectures · K4 data · K5 machines · K6 software · K7
+instruments/metrics · K8 standards · K9 problems/demand · K10
+people/institutions · K11 materials/phenomena) crossed with 10
+enabling relations (R1 incorporated · R2 ancestor-modified · R3
+consumed · R4 wielded · R5 revealed · R6 posed · R7 defined-against ·
+R8 imported · R9 ripened · R10 carried). Each lens below states the
+matrix cells it covers, including its ≡ obligations — a lens that
+claims a ≡ cell must run queries in that cell's vocabulary, or the
+claim lapses. The full matrix, the classification rules, and the
+dismissal list are in DESIGN.md §4.2. Classification rules that
+matter while scouting: a benchmark is K4 as training data, K7 as the
+test that registered the leap, K9 as a posed challenge; a device is
+K5 if its change is "could compute/actuate", K7 if "could observe";
+a layer that made hardware usable (CUDA-class) is K6, the hardware
+K5; knowledge that lives only inside a person is K10.
+
+*Family I — Constitution (what the parent is made of, what it
+descends from):*
+**L1 Components incorporated** (K1×R1, K2×R1, K3×R1; ≡ duty K1×R4) —
+*What parts — mechanisms, procedures, theorems — are inside the
+parent, one step in and no deeper?* ("{parent} architecture
+components", "{parent} built on what {mechanism/theorem/model}",
+"{component} in {parent} design") ·
+**L2 Ancestor modified** (K2×R2, K3×R2, K1×R2) — *Which single direct
+precursor did the parent alter, extend, or recombine?* ("{parent}
+extended {precursor}", "{parent} based on {prior_system} difference",
+"from {prior_system} to {parent} what changed").
+
+*Family II — The problem side (what the parent answers):*
+**L4 Problem posed** (K9×R6, K9×R2, K1×R6 formulation side, K7×R6;
+≡ K2×R6, K4×R6, K6×R6, K8×R6, K9×R4) — *Who first formulated the task,
+objective, or challenge the parent answers — and when was it re-posed
+in the form the parent actually answered?* ("{task} first
+formulated", "{challenge} proposed {domain}", "{parent} task
+definition origin", "{benchmark_task} introduced as a problem") ·
+**L5 Obstruction diagnosed** (K1×R6 diagnosis side, K1×R2) — *Who
+first analyzed and named the bottleneck the parent removed — the
+diagnosis the parent's design answers, whether or not the
+diagnostician proposed the cure?* ("analysis of why {prior_approach}
+fails", "{bottleneck} first shown / proved", "limitations of
+{prior_approach} theoretical analysis") ·
+**L6 Incumbent defined-against** (R7 for all kinds; ≡ K1,K2,K3,K4,K5,
+K6,K7,K8,K9,K11 × R7) — *What was the parent compared against — the
+incumbent systems, methods, metrics, and materials whose documented
+limits define the leap?* ("{parent} vs {predecessor_system}
+comparison", "limitations of {prior_approach}", "state of the art
+before {parent}") ·
+**L7 Negative space** (the failure record adjacent to R6/R7) — *What
+did the immediate predecessors try that failed, and what specific fix
+replaced each failure?* ("failed attempts at {capability} before
+{parent}", "{prior_approach} problems solved by {parent}").
+
+*Family III — Consumed (what the parent used up):*
+**L8 Data consumed** (K4×R3, K4×R1, K4×R2; ≡ K4×R4) — *What records
+did the parent actually eat — training corpora, datasets, built-in
+indexes — and what collection/curation work produced them?*
+("{parent} training data", "{dataset} collected how", "data curation
+pipeline behind {parent}", "{parent} trained on what corpus") ·
+**L9 Compute & machines consumed** (K5×R3, K5×R1; ≡ K5×R2) — *What
+physical plant did the leap actually run on or ship in — which
+machines, how many, at what scale — and, when the parent is itself a
+machine, what machine generation did it modify?* ("{parent} trained
+on how many {accelerator}", "{parent} compute used hardware",
+"{parent} ran on what machine", "{parent} cluster / supercomputer
+built for") ·
+**L10 Materials & phenomena harnessed** (K11×R1, K11×R3; ≡ K11×R2,
+K11×R4) — *What substance, reagent, or newly harnessed
+physical/biological effect does the parent physically depend on —
+built in, used up, or wielded?* ("{parent} depends on what material /
+effect", "{reagent} first used in {parent}", "{effect} harnessed for
+{capability}"). Usually dry for software parents — record the dry
+note; do not skip the lens.
+
+*Family IV — Wielded (what the parent was built and run with):*
+**L11 Recipe & process** (K2×R4) — *What procedure — training recipe,
+manufacturing process, run-time protocol — was wielded to produce or
+operate the parent?* ("{parent} training method", "how was {parent}
+made", "{technique} first used for {parent}") ·
+**L12 Programmability layer** (K6×R4 over K5) — *What software layer
+made the consumed hardware usable — the programming model, compiler,
+or abstraction without which the machines in L9 could not have been
+applied to this problem?* ("{accelerator} programming model
+introduced", "{platform} first used to {verb} {domain} problems",
+"{parent} code written in {layer}") ·
+**L13 Frameworks & software tooling** (K6×R4 build side; ≡ K6×R1,
+K6×R2, K3×R4) — *What libraries, frameworks, and off-the-shelf
+components was the parent built with or out of?* ("{parent} built
+with what framework / library", "{parent} implementation based on",
+"{parent} used {framework} for") ·
+**L14 Equipment wielded** (K5×R4) — *What physical equipment — lab
+machines, fabrication tools, capture rigs — was used to produce or
+test the parent, without being part of it or consumed by it?*
+("{parent} produced using what equipment", "{machine} automated
+{process} {parent_year}", "apparatus used to build {parent}") ·
+**L15 Services & APIs** (K6×R4 run side) — *What hosted services,
+APIs, or platforms does the parent run on or call at run time?*
+("{parent} built on {platform} API", "{service} launched
+{parent_year} enabled", "{parent} runs on what service") ·
+**L16 Standards & interfaces** (K8×R1, K8×R4; ≡ K8×R2) — *What agreed
+spec — format, protocol, interface, standard dimension — does the
+parent implement, or interoperate through?* ("{parent} implements
+what standard / specification", "{interface} standard adopted
+{parent_year}", "{protocol} specification enabled {parent}").
+
+*Family V — Observation (how the leap was seen):*
+**L17 Benchmarks & metrics** (K7×R5 scheme side, K1×R5; ≡ K7×R1,
+K7×R2) — *What metric, benchmark-as-test, or measurement model
+registered the leap — made the improvement visible, comparable, or
+optimizable — including metrics built into the parent's own
+objective?* ("{parent} benchmark results", "{metric} introduced",
+"evaluation of {parent} vs prior", "{parent} optimized what metric") ·
+**L18 Instruments of observation** (K7×R5 apparatus side, K7×R4;
+≡ K3×R5) — *What instrument, sensor, or diagnostic apparatus made the
+phenomenon — or the parent's behaviour — observable in the first
+place, including instruments wielded during development?*
+("{phenomenon} first measured / observed with", "{instrument} made
+{measurement} possible", "diagnostic for {parent} behaviour").
+
+*Family VI — Origin & timing (where it came from, and why then):*
+**L19 Cross-field import** (R8 for all kinds: K1–K9, K11 × R8) —
+*Which enablers originated in a different field and were transferred
+in — and what is the other field's name for them? Run the queries
+from the DONOR field's vocabulary, not the parent's.* ("{technique}
+originally from {other_field} applied to {domain}", "{parent}
+borrowed from {other_field}", "{method} first used in {other_field}
+then {domain}") ·
+**L20 Creator lineage** (K10×R10 person side; ≡ K1,K2,K3 × R10) —
+*What did the parent's makers themselves do immediately before — and
+who physically carried the key knowledge into the room?* ("{creator}
+previous work before {parent}", "{creator} moved from {lab} to
+{lab}", "{parent} team background") ·
+**L21 Institutions, funding & incentives** (K10×R4, K10×R6, K10×R9;
+≡ K4,K5,K6,K7,K8,K9 × R10) — *What organization, program, prize, or
+funding structure organized, posed, or paid for the work — the
+institutional vehicle without which the leap does not happen in that
+place and year?* ("{parent} funded by what program", "{lab} launched
+{project} {parent_year}", "{prize / program} led to {parent}").
+Survivors of this lens ARE admissible as nodes (owner decision,
+2026-11-24) when they pass the same gates as any candidate — node
+type `institution` already exists. ·
+**L22 Timeliness & cost conditions** (R9 for all kinds; ≡ K1–K9,
+K11 × R9; K9×R9) — *What changed in the surroundings — a cost curve,
+an availability event, a release, a demand shift — that made the leap
+happen in the parent's year rather than five years earlier?*
+("{capability} became feasible when", "cost of {resource}
+{parent_year}", "{resource} became available / open-sourced /
+released {parent_year}"). Candidates from this lens will often fail
+the directness gate as background — expected; the lens exists so the
+GATE, not the scout's silence, makes that judgment.
+
+*Meta passes (source-genre passes — they search genres of documents,
+not kinds of enablers; together capped at ~10 candidates per
+expansion, NOT counted toward raw_target; no per-lens floor and no
+dry notes for these two):*
+**L3 Lineage surveys** (all cells, via reference works) — *What do
+surveys, textbooks, and histories of the immediate lineage list as
+the parent's ancestry?* ("timeline of {domain} {parent_year}",
+"history of {parent} development", "survey of {lineage} before
+{parent_year}") ·
+**L23 Contemporaneous accounts** (all cells, via reportage) — *What
+did papers, reviews, and reports from the parent's own moment say
+made it jump?* ("{parent} review {parent_year}", "why {parent} is a
+breakthrough", contemporary analysis of {parent}).
+
 
 ### 6.2 Evaluator contract (DESIGN.md §5, v3.1)
 
@@ -639,20 +814,35 @@ exhausted: scouts return only already-rejected or post-dated items.
 
 ---
 
-## 9. Retro-sweep protocol (v3.1 — one-time supplementary pass)
+## 9. Retro-sweep protocol (v4 — one-time supplementary pass; scope extended from v3.1)
 
-**Why.** The early run-01 expansions were scouted before lenses 11
-(Hardware & devices) and 12 (Data) existed, and a hardened "substrate
-rejected as such" judgment rejected hardware/data candidates as a
-class. The graph therefore contains no hardware or data nodes. This
-protocol repairs *discovery* for the already-expanded part of the
-graph. It does NOT re-open or alter any existing verdict: everything
-the sweep finds enters through the normal gates, and everything it
-rejects is recorded like any other rejection.
+**Why.** The already-expanded part of run-01 was scouted under the
+accreted lens lists: the early expansions under the original 10
+lenses, the later ones under 12. Those lists had no closure property,
+and their blind spots are baked into the shallow graph — the part
+readers see first. The v3.1 sweep repaired *discovery* for the
+hardware and data lenses only. V4 extends it: the genuinely-new
+questions (problem posed, obstruction diagnosed, materials,
+programmability, standards, institutions, timeliness) have never been
+asked of the already-expanded nodes at all. This protocol repairs
+*discovery* only. It does NOT re-open or alter any existing verdict:
+everything the sweep finds enters through the normal gates, and
+everything it rejects is recorded like any other rejection.
 
-**When.** As its own dedicated run session, after the v3.1 doc
-revision lands, before (or interleaved with) further frontier
-expansion. Run it once.
+**When.** As its own dedicated run session, after the v4 doc revision
+lands, before (or interleaved with) further frontier expansion. Run
+it once.
+
+**Lens set.** The union of the genuinely-new v4 lenses and the v3.1
+hardware/data lenses in v4 numbering — 10 lenses:
+
+- Genuinely new: **L4** Problem posed · **L5** Obstruction diagnosed ·
+  **L10** Materials & phenomena · **L12** Programmability layer ·
+  **L16** Standards & interfaces · **L21** Institutions, funding &
+  incentives · **L22** Timeliness & cost conditions
+- V3.1 hardware/data, in v4 numbering: **L8** Data consumed ·
+  **L9** Compute & machines consumed · **L12** Programmability layer
+  (already listed above) · **L14** Equipment wielded
 
 **Scope and priority.** Already-expanded nodes, in this order:
 
@@ -661,22 +851,27 @@ expansion. Run it once.
 3. Transformer architecture
 4. RLHF
 5. In-context learning
+6. Learning to summarize from human feedback (Stiennon et al. 2020)
 
 Then any other already-expanded node, in frontier order, as budget
 allows.
 
 **Procedure, per node P:**
 
-1. Scout ONLY lenses 11 and 12 for P, using the §6.1 prompt with the
-   lens list restricted to those two and the raw target scaled to
-   ~20–30 candidates. Fill every other slot exactly as in §4 Step 1
-   (`{immediate_prior_state}`, `{parent_leap}`, `{existing_nodes}`,
-   `{already_rejected}`).
+1. Scout ONLY the 10 sweep lenses for P, using the §6.1 prompt with
+   the lens set restricted to those lenses. Fill every other slot
+   exactly as in §4 Step 1 (`{immediate_prior_state}`, `{parent_leap}`,
+   `{existing_nodes}`, `{already_rejected}`). The per-lens floor
+   applies within the sweep set: each of the 10 lenses returns ≥3
+   candidates or a dry note in `work/dry_notes_<P_ID>.json` (expect
+   ~40–60 raw candidates per node). Meta passes are not part of the
+   sweep.
 2. Run §4 Steps 2–6 unchanged: resolve identities, judge the gray
    zone, evaluate every distinct candidate (12 questions + leap record
-   + directness test, under the v3.1 gate guidance — substrate is not
-   a rejection class), apply verdicts, verify survivors (multiples /
-   Q1 / mediation attacks).
+   + directness test, under the gate guidance — substrate is not a
+   rejection class, §6.2), apply verdicts, verify survivors (multiples
+   / Q1 / mediation attacks). L21 survivors are admissible as nodes
+   (type `institution`) on the same terms as any candidate.
 3. Survivors are inserted or linked, and edges recorded, exactly as in
    a normal expansion. Mark every run-log line for the sweep with
    `retro-sweep` so the additions stay distinguishable from frontier
@@ -685,12 +880,13 @@ allows.
 **Two cautions.**
 
 - *Previously rejected candidates.* A candidate rejected for P under
-  the superseded substrate-class judgment may be re-proposed in the
-  sweep when its claim is direct consumption the original evaluation
-  never considered. `resolve` drops exact repeats of P's rejection
-  list automatically; if it drops a re-proposal, do NOT rename the
-  candidate to evade the filter — record the candidate and the block
-  in the run log and escalate the tooling gap.
+  the superseded substrate-class judgment (or never scouted because
+  its lens did not exist) may be proposed in the sweep when its claim
+  is one the original evaluation never considered. `resolve` drops
+  exact repeats of P's rejection list automatically; if it drops a
+  re-proposal, do NOT rename the candidate to evade the filter —
+  record the candidate and the block in the run log and escalate the
+  tooling gap.
 - *CLI limits.* If the CLI refuses a supplementary expansion on an
   already-expanded node, stop and escalate. Never edit `graph.json` by
   hand to force it (§0).
@@ -701,6 +897,7 @@ same global budget). Render (§7), sync, and then resume the normal
 loop (§4, §5).
 
 ---
+
 
 ## 10. Troubleshooting
 
@@ -728,7 +925,7 @@ loop (§4, §5).
   the mediation question must actually be resolved; (3) the scout
   trawled deep history instead of the parent's immediate pre-history,
   so most candidates genuinely are mediated for this parent — re-scout
-  with the v3 lenses rather than weakening verdicts.
+  with the v4 lenses rather than weakening verdicts.
 - **A famous fundamental was rejected as `mediated_via: M`** — that is
   v3 working as designed, not a bug. Importance is transitive;
   directness is not. The candidate is expected to resurface when M is
@@ -741,6 +938,11 @@ loop (§4, §5).
   mediation check — no more, no less (§6.2). If the candidate is
   generic infrastructure (electricity, "computers"), it fails on those
   tests, not on its category.
+- **A lens returned nothing and there is no dry note (v4)** — the
+  scout is incomplete: every content lens owes ≥3 candidates or a
+  recorded dry note in `work/dry_notes_<PARENT_ID>.json` (§4 Step 1).
+  Go back and finish that lens before applying verdicts; a silent
+  lens is exactly the failure the v4 framework exists to prevent.
 - **Embedder shows `tfidf-fallback`** — expected without
   `sentence-transformers`. Consequences: fewer auto-merges, more pairs
   decided "different" by default, name-containment pairs still routed
@@ -759,6 +961,7 @@ loop (§4, §5).
 the-behind/
   README.md          what this is (humans)
   DESIGN.md          the approved design (humans)
+  LENS-FRAMEWORK-DESIGN.md  the v4 lens framework's source design (approved 2026-11-24)
   RUNBOOK.md         this file (executing agents)
   SMOKE_TEST.md      smoke-run log and results
   pipeline/
