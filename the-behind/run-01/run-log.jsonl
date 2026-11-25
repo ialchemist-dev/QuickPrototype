@@ -4166,5 +4166,73 @@
   }
  },
  "frontier_head_after": "sparse-sampling-kearns-mansour-ng-1999, then Dynabook (1972), Fisher-Rao metric (1945), IBM solder-bump flip-chip joining (1962)",
+ "sync_commit": "eb8c9d0c"
+}
+{
+ "session": "72R",
+ "expansion": 153,
+ "parent": "sparse-sampling-kearns-mansour-ng-1999",
+ "parent_name": "Sparse sampling (Kearns, Mansour & Ng, 1999)",
+ "depth": 5,
+ "raw": 46,
+ "distinct": 36,
+ "dropped_same_year": 8,
+ "prefiltered": 0,
+ "matched_existing": 3,
+ "judge_queue": 1,
+ "judge_decisions": "One pair (cand-cand:12:13): Littman, Dean & Kaelbling (1995) vs Papadimitriou & Tsitsiklis (1987) - DIFFERENT (distinct MDP-complexity papers: UAI 1995 classification vs Math. of OR 1987 P-completeness; different authors, venues, years, results). Applied once; distinct count unchanged at 36; no SAME pairs, so no matched_node_id verification arose.",
+ "dry_notes": "8 lenses dry/thin-with-finding (session 72's scout, verified complete this session): L8 dry-with-finding (no dataset consumed - the parent's 'data' is sampled on demand from its own Definition 2 generative model); L9 dry (no machine named; complexity counted in model calls under the uniform-cost model); L10 dry (theory paper, no material); L12 dry (no software artifact; pseudocode over an abstract oracle); L13 thin-with-finding (the only framework is the MDP/Bellman formalism, filed at L19); L14 dry; L15 dry; L16 dry-with-finding (standards-lens inversion: the parent's Definition 2 itself becomes the field's standard access model). 13 content lenses filed >=3 each; meta passes L3 (3) + L23 (1) within cap.",
+ "survivors": [
+  {
+   "name": "Singh & Yee, An upper bound on the loss from approximate optimal-value functions (1994)",
+   "score": 4.0,
+   "status": "verified",
+   "argument": "Citation [17] + ancestor-modified instantiation: the parent's Appendix A, Lemma 5 - 'A similar result appears in Singh & Yee, 1994... It is easy to extend their proof to handle the case here' - is Singh & Yee's policy-loss result generalized from deterministic to stochastic policies, and Theorem 1's headline claim (a near-optimal POLICY, not merely accurate values) routes through that conversion. Verification: Q1 attack (greedy practice predated the bound) answered by scoping - without the conversion the parent's sampled-value bounds yield no policy claim at all; multiples test found no near-simultaneous twin (Q3 already partial); mediation attacks via Sutton & Barto (the appendix names Singh & Yee's proof, not the textbook) and via Kearns & Singh 1999 (a Q-learning sample-complexity paper, coeval) both fail; grading voice independent (KMN grade S&Y's proof in their own appendix - the Hinton-1981 cap does not apply). VERIFIED."
+  }
+ ],
+ "created": [
+  "singh-yee-an-upper-bound-on-the-loss-from-approximate-optima-1994"
+ ],
+ "linked": [],
+ "created_node_text_check": "The created node (Singh & Yee 1994, depth 6) was read back after apply-verdicts: stored leap, prior_state AND bottleneck all non-empty (full session-66 field set in the builder: cand_id / node_leap / node_prior_state / bottleneck / leap / directness / verdicts Q1-Q12 / rationale). No defect. Its status was read back as 'verified' after apply-verification (the session-71 vocabulary discipline held: outcome 'verified').",
+ "count_check": "36 evaluations == 36 distinct candidates from show-distinct (session-62 check); unique cand_ids 36; per-lens floor check on session 72's builder output passed (13 content lenses >=3, 8 dry notes, meta 4 <= cap); dry-run via score.rank_candidates reproduced the intended shape (1 survivor / 35 rejected) before the single apply; no dry-run correction needed. apply-verdicts NOT re-applied.",
+ "most_contestable": "NEGATIVE: The Chernoff bound (Chernoff, 1952) - FAIL-CLOSED PARTIAL, directness partial. Invoked BY NAME in the operative proof (Appendix A, Lemma 3: 'The proof is immediate from the Chernoff bound'), yet refused: it is absent from the 17-item reference list and FUNGIBLE (Hoeffding 1963 closes the same step) - presupposed repertoire, not a consumed artifact. The expansion's central discrimination is Singh & Yee vs Chernoff: both are proof components named in the paper; Singh & Yee is reference-listed and its proof is EXTENDED (ancestor-modified), Chernoff is unlisted and interchangeable. Re-hearing condition: a document showing the parent's analysis depends on the Chernoff form specifically (e.g. its rate function) rather than a generic exponential tail bound. RUNNER-UP: Dyna (Sutton, 1990) - refused as anticipation: uncited in a complete reference list by authors who cite Sutton & Barto (not-cited is a finding), and the parent's generative model is a GIVEN oracle where Dyna's is LEARNED - the load-bearing difference. Re-hearing condition: a junction document connecting Dyna to the parent's drafting.",
+ "parent_field_reconstruction": "None needed: the parent's stored definition, bottleneck, leap and prior_state were read and verified non-empty and correct (session 72's builder had verified them; re-verified this session).",
+ "notes": [
+  "PROVENANCE: recovery session 72R completing session 72's scope; session 72 ended without a report after scouting sparse sampling. State found this session: graph at 263/331, expansions_done 152, provisional 250 / verified 13 (exactly the post-session-71 state); the sparse-sampling expansion record stood at stage RESOLVED (46 raw candidates in graph, resolution: 36 distinct / 8 dropped / 2 auto-merges / 1 judge-queue pair / 0 prefiltered). The scout output (build_scout_sparse.py, candidates file, dry notes) was verified intact and floor-complete; NOTHING was re-scouted or re-resolved. This session re-ran only: apply-judgments (the one pair), the verdicts build + dry-run + single apply, verification, render. Both this record and the Dynabook record carry this provenance.",
+  "DOCUMENTS: grounded on the 2002 JOURNAL version (Machine Learning 49:193-208), read in full by session 72 incl. the complete 17-item reference list and Appendix A; the parent node covers both the IJCAI-99 and journal forms and the judgments are on the journal text (the fuller record of the same artifact).",
+  "FRAMEWORK LINKs REFUSED (3): MDP (Bellman 1957), Dynamic Programming (Bellman 1957), Policy iteration (Howard 1960) - constitutive but presupposed. Bellman is absent from the reference list; Definition 1 restates the MDP without attribution or engagement; the intro grades both combined techniques as 'standard' in their fields (the parent authors' own grading is calibration evidence). MDP and DP recorded as MEDIATED via Sutton & Barto (1998), the cited carrier, itself refused as carrier (fail-closed partial; the Weider & Deutsch / McLachlan & Basford shape). The problem-side discrimination (Lashley at Jordan; RFC 1630 at RFC 2396) requires textual ENGAGEMENT with the formulation document - a derivation statement or posed-problem junction; KMN performs none. DP is the stronger LINK (the Bellman backup is instantiated at every tree node, expectations replaced by samples) and fails on the same ground: instantiation of an ambient formalism without a document channel (the Gauss Sec. 177 / WWW shape in framework form). Whitehead (1991) LINK also refused: uncited, zero engagement.",
+  "FAIL-CLOSED PARTIALS: Davies, Ng & Moore (1998) - cited + instantiated leaf-estimate device (Sec. 3.2), refused on the counterfactual: Theorem 1 is proved with V_0(s) = 0 leaves, so the device is an optional refinement, consumed-as-component (the inverse of the UBM shape - there directness passed and the gate failed; here the counterfactual itself fails). RTDP (1995) and Korf (1990) - the cited real-time framing line: framing consumed, mechanism not, and Sec. 3.1's discrimination paragraph defines the parent against the line's lack of guarantee (the Minsky & Papert-at-backprop shape). Vapnik & Chervonenkis (1971) - uniform convergence named as a combined technique, but the proofs run on a union bound over the tree + Chernoff: tradition invoked, VC mechanism absent. Littman-Dean-Kaelbling (1995) and Papadimitriou & Tsitsiklis (1987) - the |S|-cost diagnosis the parent escapes, never cited or derived from (Hochreiter condition). Valiant PAC (1984) - the guarantee FORM is the parent's Theorem-1 shape, but it arrives through the first author's own coeval application: MEDIATED via Kearns & Singh (1999), a mediation naming a date-dropped mediator.",
+  "COMPARED-NOT-CONSUMED: Boutilier, Dearden & Goldszmidt (1995) and Meuleau et al. (1998) - the intro's factored-structure alternatives; Koenig & Simmons (1998) and Bonet, Loerincs & Geffner (1997) - framing/inspiration-list citations. CARRIER: Russell & Norvig (1995) - the citation's vehicle for classical look-ahead, defined against in the same paragraph. REPERTOIRE/ANTICIPATION: Hoeffding (1963) (the fungibility witness); Monte Carlo (1949); Markov chains (1906); Banach (1922); the law of large numbers filing (1713, judged as a standalone candidate, not a LINK to the graph's Bernoulli node; rejected on the merits, no node created); Shannon (1950); Moore & Atkeson (1993, parallel and uncited - a documented absence); TD-Gammon (1992, era demonstration). OWN-PROGRAMME/SIBLING: Kearns (1990) book; Kearns & Singh E3 (1998). PERSON-CHANNEL: Satinder Singh's acknowledged discussions refused - no founding concept is stated to have arrived through them (the Ferraro discrimination), and his separable artifacts are judged directly. FORMATION: AT&T Labs / Tel Aviv / Stanford. DIRECTION: Boyen & Koller (1998) - an ingredient of McAllester & Singh's CONSUMER of the parent.",
+  "CALENDAR FORECLOSURES at resolve (8 dropped, all logged, none re-dated): UCT (2006 - the descendant; usable only as retrospective grading evidence that the sampled-tree instrument propagated); KMN's POMDP follow-up (2000); McAllester & Singh (1999 - the consumer); the parent's own diffuse-branching self-filing (1999); Koller & Parr (1999 - the compared stratum's third member); Kearns & Singh finite-sample convergence (1999, two filings - the technique combination's first application, coeval with the parent); the parent's own journal form (2002).",
+  "SCOUT OMISSION (recorded, not repaired): Dearden & Boutilier (1994) appears in the journal version's reference list but was not among session 72's filed candidates; the evaluation proceeded on the 36 resolved distinct candidates. The omission is logged here for the article's completeness audit.",
+  "Pipeline-step verification (session-66 discipline): every step's landing verified - status before (263/331, stage resolved), apply-judgments (applied 1, distinct 36), verdicts count check + dry-run, apply-verdicts (1 created / 35 rejected / 3 mediated rejections as designed), created-node read-back, apply-verification (status read back 'verified'), render (264 nodes / 332 edges; 'Singh & Yee' present in index.html)."
+ ],
+ "totals_after": {
+  "nodes": 264,
+  "edges": 332,
+  "budget": "264/2000",
+  "provisional": 250,
+  "verified": 14,
+  "expansions_done": 153,
+  "by_depth": {
+   "0": 1,
+   "1": 14,
+   "2": 28,
+   "3": 32,
+   "4": 37,
+   "5": 57,
+   "6": 45,
+   "7": 21,
+   "8": 11,
+   "9": 6,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  }
+ },
+ "frontier_head_after": "dynabook-kay-1972, then Fisher-Rao metric (1945), IBM solder-bump flip-chip joining (1962)",
  "sync_commit": null
 }
