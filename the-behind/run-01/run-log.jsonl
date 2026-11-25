@@ -3560,3 +3560,53 @@
   "expansions_done": 120
  }
 }
+{
+ "ts": "2026-11-25T16:17:39.790078+00:00",
+ "session": "run session 56 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "de-moivre-the-doctrine-of-chances-1738-1738",
+ "parent_name": "De Moivre, The Doctrine of Chances (1738)",
+ "provenance": "Session 56 first implemented the owner's design decision (below) before scouting. Parent stored fields verified COMPLETE before evaluation (no session-31 defect). DESIGN DECISION BY THE OWNER (Jerry Yu, 2026-11-25, verbatim): '\u7ee7\u7eed\u8dd1, \u554a \u6211\u4e0d\u9700\u8981\u8bbe\u6df1\u5ea6\u7684\u4e0a\u9650\u3002' - the depth cap is REMOVED. Implementation: the pipeline (pipeline/graph.py, frontier()) reads config.depth_cap as an integer bound (frontier = depth < depth_cap); a null value would crash the comparison and a missing key would default to 10, so the run profile snapshot in graph.json config was set from depth_cap 10 to depth_cap 1000 (non-binding = unbounded in practice) via the pipeline's own Graph class (load/save, no hand edit of node/edge state), with a depth_cap_note recording the decision in the config. Verified after the change: De Moivre (depth 10, unexpanded) appears in the frontier - at index 0, since its admission priority 6.0 exceeds RFC 2396's 5.5. The run's best-first ordering therefore made De Moivre this session's first expansion (NOT forced: the ordering put it first once eligible). Its expansion carries the long-deferred hearings assigned in session 39: Bernoulli (1713) and Stirling (1730), both recorded at Laplace as mediated via De Moivre.",
+ "raw": 50,
+ "dry_notes": "L9 dry (hand computation; no machine consumed); L10 dry by kind (pure mathematics); L12 dry by kind (no programmability layer in 1738); L14 dry WITH finding (dice/cards are the objects of study, not equipment); L15 dry by kind; L16 dry WITH the standards-lens inversion finding (the parent implements no external standard; the inversion recorded at CoWoS/TSV/damascene/DELTA recurs); L18 dry WITH finding (the phenomenon was made observable by enumeration and the Bills of Mortality record tradition, filed at L8); shortfalls: L6 (2 filings - the defined-against stratum is the rival treatise + the incumbent textbook), L7 (2 filings - the failure record is Bernoulli's impractical limits + Nicolaus's open problems), L13 (1 filing - logarithm tables are the sole wielded tooling with a documented role), L21 (2 filings - the two academies; the Huguenot diaspora is the author's formation condition, recorded here, not filed). L3/L23 meta filings: Cardano (L3), Montmort survey aspect (L3), Daniel Bernoulli (L23, date-dropped as coeval).",
+ "date_dropped": 1,
+ "distinct": 24,
+ "evaluated": 24,
+ "survivors": 2,
+ "rejected": 22,
+ "mediated": 7,
+ "survivors_detail": [
+  {
+   "name": "Bernoulli, Ars Conjectandi (1713)",
+   "score": 6.5,
+   "depth": 11,
+   "argument": "THE ASSIGNED BERNOULLI HEARING, discharged as an admission. The parent's problem and object are Bernoulli's: the deviation of frequency in binomial trials, posed in Part IV as a theorem with bounds so wide as to be unusable (25,550 trials for moral certainty in his own example). De Moivre's approximation memoir names James and Nicolas Bernoulli as the only prior attempters at the sum of binomial terms and defines itself against their 'very wide limits'; Nicolaus's preface to the Ars expressly asked De Moivre (and Montmort) to continue his uncle's work - a documented summons. Directness pass, no mediator nameable in the problem line (Montmort's work is games combinatorics and never touches the deviation problem). Q3 pass (descent-necessity on documents); Q9 fail honestly (Bernoulli's method made evaluation slower, not faster). The hearings recorded at Laplace (Bernoulli mediated via De Moivre) resolve here one level down, exactly as the mediation discipline predicts."
+  },
+  {
+   "name": "Stirling, Methodus Differentialis (1730)",
+   "score": 6.0,
+   "depth": 11,
+   "argument": "THE ASSIGNED STIRLING HEARING, discharged as an admission. The consumed artifact is the determination of the factorial constant: De Moivre's own series (Miscellanea, 1730) left log(n!) with the constant undetermined (c ~ 2.5); Stirling's Methodus fixed it as sqrt(2 pi) (via Wallis's product), De Moivre acknowledged the determination (and recorded his annoyance at being anticipated), and the 1733 approximation's scale is that constant. Citation + instantiation at the derivation's load-bearing point. Q3 partial honestly (the author's own undetermined series is the near-multiple; the admission rests on documented consumption of Stirling's determination, the Ney-1994 shape). Verification carries the strongest attack (the constant was bracketed numerically, so Q1's flip is scoped to exact evaluation) as the edge's residual caveat."
+  }
+ ],
+ "rejections_of_note": [
+  "Huygens, De Ratiociniis (1657) - MEDIATED via Bernoulli, Ars Conjectandi (1713): everything Huygens supplies (expectation, problem of points) reaches De Moivre inside the Ars, whose Part I is a commentary on Huygens. De Moivre's Saumur reading of Huygens is formation, recorded.",
+  "Pascal-Fermat correspondence (1654) - MEDIATED via Bernoulli: the enumeration method reaches 1738 through the Huygens/Bernoulli textbook line; the record indicates De Moivre seems to have been unfamiliar with the correspondence itself - not-cited recorded as a finding.",
+  "Newton, generalized binomial theorem (1665) and Pascal, Traite du triangle arithmetique (1665) - both MEDIATED via Bernoulli: the parent's object is the finite integer binomial, consumed as Bernoulli's binomial distribution; Newton's fractional extension is never used in the derivation.",
+  "Wallis, Arithmetica Infinitorum (1656) and Taylor, Methodus Incrementorum (1715) - both MEDIATED via Stirling: Wallis's product is the instrument of Stirling's constant determination (one level behind him); Taylor's difference calculus reaches the asymptotic through Stirling's systematisation.",
+  "Cardano, Liber de Ludo Aleae (1663) - MEDIATED via Bernoulli (the textbook line carries equal-case counting to this parent; Cardano's own hearing belongs to the Ars's expansion).",
+  "De Moivre, Miscellanea Analytica (1730) - fail-closed partial under the own-version discipline, argued in full: the author's undetermined factorial series is the prior state Stirling's determination completes, not a mechanism the child reworks; the separable-artifact exception (D3D9; Ney-Essen-Kneser 1994) requires consumption AND reworking, and the child supersedes the one quantity the Miscellanea left open using another man's determination.",
+  "Montmort, Essay d'analyse (1708/1713) - fail-closed partial: the agenda-setter and rival for the Doctrine's FIRST edition (Robartes's suggestion; the treatise line 'in part the result of a competition' with Montmort and Nicolaus Bernoulli), but no mechanism, problem, or result of the Essay enters the 1733 derivation, whose stated antecedents are the Bernoullis. Engagement with a rival is not consumption (the Gauss-at-Laplace discipline); relations are judged against the parent's LEAP.",
+  "Arbuthnot, An Argument for Divine Providence (1710) - fail-closed partial: the first significance test, but its question (a sign test on christenings) is not the parent's question, and the parent does not adopt its formulation (the Lashley/LAMA adoption test fails; the Hochreiter condition). The parent's memoir names the Bernoullis, not Arbuthnot.",
+  "Nicolaus Bernoulli, correspondence problems incl. the Petersburg problem (1713) - fail-closed partial: his documented channel into this parent (the Ars preface summons) is a component of the admitted Bernoulli artifact; the Petersburg problem's resolution is Daniel Bernoulli's (1738, coeval); the duration-of-play strand is the Montmort agenda.",
+  "Halley (1693) - fail-closed partial: his life table is consumed by the sibling Annuities upon Lives, not by the approximation (edge-scoped; the WSJ-at-Kneser-Ney discrimination). Graunt (1662) - rejected as the era's data tradition without a junction into the derivation.",
+  "De Moivre, Doctrine of Chances 1st ed. (1718) - refused on IDENTITY (the parent's own first form, folded into its identity exactly as the admission record states; the Laplace-1810 discipline). De Mensura Sortis (1711) - refused as the treatise line's own first form. Annuities upon Lives (1725) - refused as own sibling application (shared practice is not consumption).",
+  "Royal Society (1660) - fail-closed partial as arena/venue (it published the line's papers and credentialed the author; no Society artifact enters the derivation - contrast OpenPOWER at NVLink). Paris Academie (1666) - refused under decomposition (it carried no artifact not already judged under its authors' names). Cotes (1722) - fail-closed partial (the twin of De Moivre's formula, a different strand of the oeuvre; circle membership is formation). Briggs logarithms (1624) - refused as generic interchangeable tooling (the Sheppard-tables discipline). Million Adventure annuity market (1694) - refused as era condition/demand (the L22 discipline). Newton, Principia/fluxions (1687) - refused as school formation + patronage (the von Neumann discipline); his one specific artifact in this field was judged separately and mediated."
+ ],
+ "notes": "Coeval artifact logged: Daniel Bernoulli, Expositio novae theoriae de mensura sortis (1738) - the Petersburg problem answered in the parent's OWN year - was date-dropped at resolve by the year bound (1 drop), applied as designed and recorded here. The 1733 Approximavit memoir itself was NOT filed as a candidate: it is the parent's own first form, folded into the parent's identity by the dating-by-carrying-publication rule stated in the node's admission verification. Judge queue 0 (MiniLM resolve: 25 auto-merges across lens filings, 0 matched existing). InstructGPT/RLHF flag did not surface. One dry-run through score.rank_candidates before applying (survivors Bernoulli 6.5, Stirling 6.0, as designed); no correction needed; apply-verdicts run exactly once. DEPTH RECORD: the two survivors are the run's first depth-11 nodes - the depth dimension is open again after the owner's cap removal; De Moivre's stored verification note (written at its admission) records the old terminal status and is now superseded by this expansion, on the record here.",
+ "totals_after": {
+  "nodes": 229,
+  "edges": 293,
+  "expansions_done": 121
+ }
+}
