@@ -1897,3 +1897,79 @@
   "expansions_done": 88
  }
 }
+{
+ "ts": "2026-11-25T10:58:13.811127+00:00",
+ "session": "run session 40 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "serial-order-recurrent-network-jordan-1986-1986",
+ "parent_name": "Jordan, Serial Order: A Parallel Distributed Processing Approach (ICS Report 8604, 1986)",
+ "raw": 31,
+ "dry_notes": "18 dry/shortfall notes recorded in work/dry_notes_serial-order-recurrent-network-jordan-1986-1986.json: dry L9 (no machine crosses the 1985-86 boundary — the simulations run on the institute's general-purpose computing, no separable artifact), L10 (no software artifact exists to file), L12 (no standard is consumed), L13 (no metric exists in 1986), L14 (no instrument's output is a parent input), L15 (no price list is a channel), L16 (no contract is a parent document), L18 (no dataset is packaged as a reusable artifact; the speech data are filed at L8 as the papers that carry them); shortfalls L4 (2 filed: Lashley 1951; Miller, Galanter & Pribram 1960 — the only documents that pose or re-pose the problem the parent answers), L5 (2 filed: Lashley cross-filed; Minsky & Papert 1969 — the diagnoses are these two plus the parent's own), L6 (2 filed: Rumelhart & Norman 1982; Sternberg et al. 1978 — Shaffer 1976 is cited by the parent for the buffer theory but could not be grounded to a separable artifact title; the buffer-theory filing is the 1978 paper), L7 (2 filed: Ackley, Hinton & Sejnowski 1985; Barto & Anandan 1985 — the era's hidden-unit algorithms are exactly these two plus the adopted one, date-dropped), L17 (1 filed: Fromkin 1971), L19 (2 filed: Booth 1967; Cohen & Grossberg 1983), L20 (1 filed: McClelland & Rumelhart 1981 — the advisor relation is a person, not an artifact; Jordan's 1985 UCSD dissertation under Rumelhart is formation), L22 (1 filed: Feldman & Ballard 1982); meta L3 (1 filed: the PDP volumes 1986 — date-dropped at resolve); meta L23 (none filed: the field's own retrospection — Houghton & Hartley, 'Lashley Revisited' (1995) — routes this parent's ancestry through exactly the documents filed at L2/L4/L5/L20). Raw 31 against raw_target 140 — the bounded-world pattern for a single 1986 technical report (cf. sessions 33-39). Resolve (MiniLM): raw 31, dropped 6 (all dated to the parent's own year 1986 — see date_dropped), prefiltered 0, distinct 23, matched_existing 1 (Werbos 1974), auto_merges 2 (the Lashley L4/L5 and Rumelhart & Norman L2/L6 cross-filings), judge queue 0. Parent stored fields verified COMPLETE before evaluation (definition, bottleneck, leap, prior_state all populated).",
+ "date_dropped": [
+  "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986) — LINK candidate, dated on/after parent year 1986",
+  "Distributed representations (Hinton, McClelland & Rumelhart, 1986) — LINK candidate, dated on/after parent year 1986",
+  "Rumelhart & McClelland (eds.), Parallel Distributed Processing: Explorations in the Microstructure of Cognition (1986) — meta L3 filing, dated on/after parent year 1986",
+  "Institute for Cognitive Science, University of California, San Diego (1986) — L21 institution filing, dated to the parent's year as filed",
+  "Office of Naval Research, Personnel and Training Research Programs (1986) — L21 institution filing, dated to the parent's year as filed",
+  "The PDP Research Group, UCSD (1986) — L21 institution filing, dated to the parent's year as filed"
+ ],
+ "distinct": 23,
+ "evaluated": 23,
+ "survivors": [
+  {
+   "name": "Lashley, The problem of serial order in behavior (1951)",
+   "id": "lashley-the-problem-of-serial-order-in-behavior-1951-1951",
+   "score": 4.0,
+   "kind": "new node, depth 6"
+  },
+  {
+   "name": "Rumelhart & Norman, Simulating a skilled typist (1982)",
+   "id": "rumelhart-norman-simulating-a-skilled-typist-a-study-of-skil-1982",
+   "score": 3.0,
+   "kind": "new node, depth 6"
+  }
+ ],
+ "rejected": 21,
+ "mediated": 4,
+ "rejections_of_note": [
+  {
+   "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986) — LINK candidate, DATE-DROPPED at resolve",
+   "reason": "STRUCTURAL (the session's headline finding): the parent's most documented direct enabler is inexpressible at year granularity. The channel is verbatim in the parent's own Learning section — 'The algorithm developed by Rumelhart, Hinton, and Williams (1986) is used in the networks discussed in this paper' — and the parent's architecture is the algorithm's restriction (unrestricted recurrence would require activation histories; the state/output split exists so error propagation can train the network). The candidate was filed under its canonical node name and year (1986) and dropped by the resolve date bound, as designed; no re-dating attempted. The algorithm's tech-report form, ICS Report 8506 (Learning Internal Representations by Error Propagation, September 1985, same ONR programme), exists in the documentary record and is noted here for the article; the run dates the node by its 1986 carrying publications. The admitted edge for this machinery lives at Elman (1990); the Elman admission and the MDN refusal are both edge-scoped and neither was imported — at this parent the question never reaches the gate. The same bound dropped the distributed-representations node (1986), the PDP volumes (1986), and the three L21 institution filings dated to the parent's year (ICS; ONR Personnel & Training Research Programs; the PDP Research Group) — the parent's entire institutional and algorithmic stratum sits in its own year."
+  },
+  {
+   "name": "Werbos, Beyond Regression (1974) — LINK candidate; Widrow & Hoff (1960); Rosenblatt, Principles of Neurodynamics (1962) — all mediated via backpropagation (1986)",
+   "reason": "The learning-rule lineage reaches the parent exclusively inside the generalized delta rule the parent names as its source: Werbos's ordered derivatives, the LMS rule, and the perceptron's error correction are the adopted algorithm's ancestors, and the parent's citations place the first two as boundary markers of the no-hidden-unit regime. Mediation recorded against a mediator that is itself date-dropped at this parent — the junction exists in the documents and is inexpressible in the graph (the Family-likeness shape, session 39). Kohonen (1977) discriminated from the pair: a parallel single-layer line, not an ancestor of the adopted rule — fail-closed partial."
+  },
+  {
+   "name": "Hinton & Anderson (eds.), Parallel Models of Associative Memory (1981) — mediated via the PDP volumes (1986)",
+   "reason": "The distributed representational scheme's print origin, but the parent's channel to the scheme is the group itself and its 1986 codification (the parent's framing cites Rumelhart & McClelland, 1986); the scheme is in any case a component of the parent's leap, not its enabler. Mediation recorded against the same-year mediator."
+  },
+  {
+   "name": "Booth, Sequential Machines and Automata Theory (1967) — directness PASS, leap-gate fail",
+   "reason": "The imported formalism: the parent cites Booth by name (footnote 3) for the output function f / next-state function g in which its theory is stated, and the architecture instantiates the split. The edge fails Q1/Q2: automata do not learn, and the formalism unblocks descriptions, not capabilities. Discriminated from Church at Lisp (session 36): there the ancestor's form IS the child's central mechanism (evaluation over lambda expressions); here f/g is the statement form, and the parent's novelty — learned state dynamics — is not in Booth. A component of the leap's statement, recorded with directness passing so the discrimination is on the record."
+  },
+  {
+   "name": "Minsky & Papert, Perceptrons (1969) — fail-closed partial",
+   "reason": "The parent re-derives the XOR argument in its Nonlinearities section (citing Minsky & Papert) to motivate hidden units — but the hidden units and their training arrive from Rumelhart, Hinton & Williams. A diagnosis answered is not consumed; consistent with the standing Perceptrons record at Werbos (session 24). Q6 and Q11 pass honestly; directness cannot be resolved above partial."
+  },
+  {
+   "name": "Rumelhart & Norman (1982) admitted vs Grossberg (1978) and Wickelgren (1969) refused — the mechanism-retention discrimination",
+   "reason": "All three are argued with at length in the parent's Serial Order section. The typing model's mechanism (parallel activation with generalization across overlapping representations) is RETAINED in the parent — only its ordering device is replaced — so it is the ancestor modified. Grossberg's graded-activation principle and Wickelgren's context-coded elements are themselves superseded by the state/output split (and Grossberg's scheme is grouped by the parent with the theories its repeated-element objection covers): argued past, not built on. One admission, two refusals, one rule."
+  },
+  {
+   "name": "Hopfield (1982) — fail-closed partial; Miller, Galanter & Pribram, Plans (1960) — fail-closed partial",
+   "reason": "Hopfield: importance without a channel — the parent builds its recurrent dynamics from its own elementary examples, cites Grossberg (1978) for ordering dynamics, and nowhere routes a mechanism through Hopfield's symmetric-weight construction (the Yule-at-Fisher-1918 shape); Q8 and Q11 pass on the artifact's own record and the edge still fails. Plans: terminology inherited, mechanism refused — the parent's plan is expressly 'not a script for the system to follow', and its framing runs through Booth's automata, not the TOTE hierarchy."
+  },
+  {
+   "name": "Benguerel & Cowan (1974) — fail-closed partial; Ackley, Hinton & Sejnowski (1985) and Barto & Anandan (1985) — compared alternatives",
+   "reason": "Benguerel & Cowan's four-to-five-phoneme span is the datum that breaks chaining theories in the parent's argument and the phenomenon its simulations reproduce — but the simulations model the phenomenon, they do not re-analyse the 1974 records (the Mercer & Hall discrimination: admitted at SMRW where the data is reworked inside the parent's demonstrations; partial at Fisher & Mackenzie, and here, where the consumption sits outside the derivations). The two 1985 algorithms are named in the parent's list sentence and not adopted; their joint presence with the adopted algorithm is multiples evidence that hidden-unit learning was ripe in 1985, recorded as such."
+  }
+ ],
+ "notes": "Grounding: the parent report's full text (ICS Report 8604, May 1986 — read in full: documentation page, Serial Order, Theory, Learning, Recurrent/Nonrecurrent and Attractor Dynamics sections); Houghton & Hartley (1995) for the Lashley lineage's own survey; CITRIS/UC Berkeley biography (Jordan: PhD Cognitive Science, UCSD 1985, under Rumelhart, in the PDP group). NOT PROPOSED: Jordan's own CogSci-1986 conference paper ('Attractor dynamics and parallelism in a connectionist sequential machine') — the parent's own popular form (the Aberdeen-address shape), noted in the L20 dry note. Verification: both survivors provisional — Lashley's verification record carries the mediation attack (via Wickelgren / via Rumelhart & Norman — refused on the parent's text, which engages the refutations and the attempted solutions as distinct channels) and flags the admission as this expansion's most contestable call (it rests on Q2 generativity of a problem formulation plus documentary derivation of constraints, the Bateson-at-Fisher-1918 shape); Rumelhart & Norman's record carries the PDP-volumes mediation attack (refused on chronology: the 1982 article precedes the codification) and the Grossberg multiples cap on Q3. Dry-run through score.rank_candidates reproduced the designed dispositions exactly before the single apply (2 survivors at 4.0 and 3.0; 4 mediated; Booth on the leap gate; 16 directness-gate refusals); verdicts never re-applied; new nodes' stored text spot-checked populated (no session-31 defect). Totals after this expansion: 192 nodes / 244 edges, budget 192/2000, expansions_done 89, all provisional; the two new nodes open depth 6 (d6 23 -> 25). Frontier head is now the MDP node (Bellman, 1957). InstructGPT/RLHF flag not surfaced.",
+ "totals_after": {
+  "nodes": 192,
+  "edges": 244,
+  "budget": "192/2000",
+  "expansions_done": 89
+ }
+}
