@@ -2567,3 +2567,54 @@
   "expansions_done": 98
  }
 }
+{
+ "ts": "2026-11-25T06:00:00-07:00",
+ "session": "run session 45 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "instruction-tuning-flan-2021",
+ "parent_name": "Instruction tuning (FLAN)",
+ "provenance": "Parent stored record verified complete this session (no session-31 defect). BRIEF CORRECTION RECORDED: the session brief framed GPT-3 as 'the base model FLAN fine-tunes' (the Codex pattern). That is factually wrong: the parent paper (Wei et al., arXiv:2109.01652, Sep 2021) fine-tunes LaMDA-PT, a 137B decoder-only transformer pretrained on web documents, dialog data and Wikipedia - not GPT-3. GPT-3 is the parent's comparison anchor (zero-shot 175B GPT-3 surpassed on 20 of 25 datasets), not its base. Evaluations ran against the corrected record. LaMDA-PT's standalone describing publication is the LaMDA paper (arXiv:2201.08239, Jan 2022) - after the parent; dating the base by the parent paper's own description (2021) also fails the bound: the base model is INEXPRESSIBLE under both datings (the Codex-corpus discipline: unpublished artifacts are dated by the paper that describes them; never re-date). Nine mediation records therefore point at it in drop form (the Jordan precedent).",
+ "raw": 72,
+ "dry_notes": "L10, L14, L15, L18 dry; L21 (2 filings) and L9 (3 filings) shortfall notes; L23 meta note - meta passes held within the ~10 cap because the dated literature is dense; the dated-invisible items named for the article: the LaMDA-PT base itself (see provenance), Natural Instructions, T0, Calibrate Before Use, True Few-Shot Learning, the FLAN instruction mixture itself, Google TPU v4, LM-adapted T5, Prompt tuning - all date-dropped at resolve.",
+ "date_dropped": 13,
+ "distinct": 36,
+ "evaluated": 36,
+ "survivors": 1,
+ "rejected": 35,
+ "mediated": 9,
+ "survivors_detail": [
+  {
+   "name": "T5 (text-to-text transfer transformer)",
+   "id": "t5-text-to-text-transfer-transformer-2019",
+   "is_new": true,
+   "score": 5.0,
+   "decisive": "The sole survivor. Citation + instantiation of the recipe: the parent's mixture construction (examples-proportional mixing with a per-dataset cap) is adopted from Raffel et al., and its task format (natural-language task specification + text output) is T5's unified text-to-text frame modified (task prefixes become full instructions; the evaluation object becomes held-out task CLUSTERS - the parent's own central design choice). Mediation answered: LaMDA-PT carries the weights and architecture, not the recipe; T0 postdates the parent and cannot mediate; decaNLP is upstream of T5, so T5 is the cited final link. Q1 partial / Q2 pass / Q3 partial (T0 is a same-season multiple on T5 itself, capping necessity at ripe). Cook-at-REYES presupposition shape: the format+recipe defines what the parent's training object IS, not a component inside it. Verification: provisional, components attack recorded and answered in the verification file."
+  }
+ ],
+ "rejections_of_note": [
+  "GPT-3 (matched existing node): the brief's expected LINK refused - directness FAIL, mediated via LaMDA-PT. GPT-3 is the parent's foil and era yardstick, not its base; the counterfactual is decisive (the parent with a different base at similar scale still demonstrates the leap; the paper's own ablations treat scale and dataset count, not base identity, as the operative variables). The GPT-3 <-> FLAN channel does not exist in the direction the brief assumed.",
+  "Transformer architecture (matched): mediated via LaMDA-PT - the architecture reaches the parent only as a property of its base.",
+  "decaNLP (2018): the task-as-specification ancestor, mediated via T5 - its unification IS T5's frame (Raffel et al. cite it), so the chain is carried by its cited final link.",
+  "MT-DNN (2019): mediated via T5 - the multi-task learning the parent transforms is instantiated through the T5 line.",
+  "Natural Instructions (Apr 2021), T0 (Oct 2021), Calibrate Before Use (2021), True Few-Shot Learning (2021), LM-adapted T5 (2021), Prompt tuning (2021): the parent's ENTIRE proximate formulation stratum is intra-2021 and date-dropped wholesale (13 filings) - a structural maximum of the modern stratum comparable to session 44's ChatGPT finding. 'Academic formulation never consumed' at ChatGPT was edge-scoped and did not decide this hearing; here Natural Instructions is date-dropped before evaluation, which is a different record.",
+  "The 62-dataset mixture's constituents (SQuAD, MultiNLI, TriviaQA, PIQA, HellaSwag, WMT 2014, ARC) and evaluation flagships (Natural Questions - dual role argued in full; ANLI): refused under the components discipline, with the GSM8K-at-CoT discrimination recorded as ownership-and-form (GSM8K's annotation form is inside its parents' mechanism; no constituent dataset's form is inside the parent's, and the headline is a 25-dataset aggregate).",
+  "SuperGLUE: the suite as such not consumed (members heard individually); arena/registration refusal.",
+  "TensorFlow Datasets: documented consumption, counterfactual fails (the twin line assembled a comparable mixture from Hugging Face Datasets the same season) - the pantry, not the ingredient.",
+  "UnifiedQA (2020): the closest near-miss - directness partial, fail-closed; the parent's documents do not engage it and its generalization claim (unified format) differs from the parent's (instruction specification).",
+  "BERT: defined-against incumbent (the fine-tuning paradigm the parent's framing departs from); directness fail, no mediator.",
+  "The Turking Test (2020): fail-closed partial (Hochreiter condition) - a diagnosis the era shared, not a derivation.",
+  "Prompt engineering practice (2020): directness fail - an era condition/displaced incumbent, not a document channel; the parent's channels for specification form are T5 and the GPT-line framing.",
+  "PET (2020): parallel recipe, multiples evidence (specification+finetuning was ripe in 2020), not consumed.",
+  "REALM (2020): creator-lineage channel (Guu) refused on the Ferraro discrimination - personally carried programme knowledge that does not land in any of the parent's mechanisms is biography, not ancestry; REALM's mechanism (retrieval) is nowhere in the parent.",
+  "TPU v3: mediated via LaMDA-PT (substrate admission belongs to the base's training; Codex/Azure discipline). TPU v2: prior generation, refused.",
+  "Hosted LLM APIs (matched): background condition - the API registers the demand the parent answers but supplies no part of its method; argued fresh, symmetric with its ChatGPT refusal on different grounds.",
+  "Google / Google Brain (matched): decomposition and self-carriage refusals; their artifacts heard individually.",
+  "JAX / Mesh TensorFlow / TensorFlow / Adafactor / SentencePiece: generic-or-base-carried tooling; SentencePiece mediated via the base."
+ ],
+ "notes": "One-survivor expansion (precedented: Codex). The session's structural finding: at the modern stratum the year bound removes the parent's own base model AND its whole formulation cohort, so the graph's FLAN ancestry attaches one level deeper than the paper's proximate story - to the recipe artifact (T5) that the paper's method section actually instantiates. The 137B LaMDA-PT base, the instruction templates as data, and the twin T0 line are the article's structural notes for this node.",
+ "totals_after": {
+  "nodes": 200,
+  "edges": 257,
+  "expansions_done": 99
+ }
+}
