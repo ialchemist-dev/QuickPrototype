@@ -4873,5 +4873,120 @@
   "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
   "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911"
  ],
+ "sync_commit": "0163b8b9"
+}
+{
+ "session": 76,
+ "expansion": 162,
+ "parent": "applied-optimal-control-bryson-ho-1969-1969",
+ "parent_name": "Applied Optimal Control (Bryson & Ho, 1969)",
+ "parent_year": 1969,
+ "parent_depth": 7,
+ "date": "2026-11-25",
+ "provenance": "Session 76, expansion 2 of 2 (the second frontier head after the PWB shell). Scouted, resolved, judged and verified from scratch by session 76. THIS EXPANSION CARRIED THE ASSIGNED DEFERRED HEARINGS Kelley (1960) / Bryson & Denham (1962) / Pontryagin (1956), assigned by the node's own stored verification record ('Kelley's direct hearing belongs to the book's own future expansion, where this attack should be re-run') and confirmed by session 71 NOT to have been held at backprop, with no mediation recorded there. All three hearings were held here, directly, on this book's record.",
+ "grounding": "Grounded this session on: (1) the book's table of contents (GBV record): Ch. 1 parameter optimization (Lagrange multipliers, penalty functions, gradient methods); Ch. 2 dynamic systems (sec. 2.2 multistage systems; transversality); Ch. 3 path constraints; Ch. 4 optimal feedback control (sec. 4.1 extremal field approach; sec. 4.2 dynamic programming - the PDE for the optimal return function); Ch. 5 linear-quadratic; Ch. 6 neighbouring extremals and the second variation (sec. 6.2 the backward sweep method); Ch. 7 numerical solution (sec. 7.2 extremal field/DP; sec. 7.4 first-order gradient algorithms; sec. 7.5 second-order; sec. 7.6 quasilinearization). (2) Bryson & Denham (1962), primary text (J. Appl. Mech.): 'Recently Kelley [5, 6] and the authors with several coworkers [7, 8] have revived a little-known procedure... essentially a steepest-ascent method... requires the use of a high-speed digital computer'; adjoint differential equations integrated about a nominal path; unmodified shooting 'sometimes does not seem to work at all... remarkably sensitive'; examples: minimum time-to-climb / maximum altitude for a supersonic interceptor, maximum-range paths for an orbital glider. (3) Dreyfus (1990) as harvested via Recht's argmin account: the method of adjoints 'first proposed by Bryson' in the 1961 Harvard Symposium paper; 'the Lagrangian derivation plays a prominent role in Bryson and Ho's book'; 'Bryson and Ho explicitly gave in their 1969 book gradient formulas for exactly the multistage, free-terminal-state problem'; the procedure's received name is Dreyfus's: the Kelley-Bryson gradient procedure. (4) Bryson's retrospective: the book compiled from six years of courses (1963 Harvard summer course, 100 engineers; Harvard graduate course from 1963, also MIT 1966; 1967 AIAA course). (5) The era's field bibliography (NASA CR-1003): Bliss 1946; Bliss 1930; Hestenes RM-102 (1949); Breakwell 1959 and Breakwell et al. 1963; Bryson et al. AIAA 1963; Denham & Bryson AIAA 1964. (6) Berkovitz (1961): 'Pontryagin's Maximum Principle is a translation of the usual Weierstrass condition'. AUDIT SCOPE, stated honestly (the session-73 standard): the book's own bibliography and preface were NOT read in full; judgments ground on the grounded contents, the primary B&D text, Dreyfus's lineage account, the node's stored records and the era's bibliographies. Absence claims (no games chapter; Wiener's thin presence) are scoped to the grounded table of contents.",
+ "parent_record_note": "Parent stored fields verified intact before evaluating (definition, bottleneck, leap, prior_state all non-empty, read verbatim; no reconstruction). Stored definition: the 1969 textbook 'codifying the Kelley-Bryson multistage gradient procedure - adjoint equations and Lagrange-multiplier recursions for gradients through dynamical systems'. One dating note, preserved not corrected: the secondary literature is split on the book's year (Recht's account says 1968; the standard record, Dreyfus and the graph say 1969) - the graph's 1969 stands. The node's stored verification record (Werbos expansion) was read in full before evaluating: it assigns this expansion its three hearings and records that at Werbos, Kelley and Bryson & Denham were 'rejected as mediated via this book' and Dreyfus (1962) as no documented channel - edge-scoped dispositions that this expansion's direct hearings now supersede for THIS parent only; the Werbos-edge records themselves are untouched.",
+ "scout": {
+  "builder": "run-01/work/build_scout_brysonho.py",
+  "raw_candidates": 75,
+  "per_lens_floors": "complete - every content lens with filings at >=3 on the builder's output, checked before resolve (L1x20, L2x5, L4x4, L5x3, L6x7, L7x3, L11x3, L13x3, L19x6, L20x6, L21x3, L22x3; meta L3x5, L23x3); L9 thin-with-finding (the IBM 7090-class filing plus dry note); EIGHT further dry notes with findings: L8 (no corpus - worked problems are analytic), L10 (no material dependency), L12 (no programmability layer - per-problem FORTRAN judged at L13), L14 (no laboratory equipment - a course-compiled text), L15 (no hosted service), L16 (maker form, as at Fisher 1922 and Kleene 1952: the book BECOMES the standard), L17 (no benchmark artifact - adoption registered it), L18 (no observation instrument in this stratum)."
+ },
+ "resolution": {
+  "distinct": 36,
+  "dropped": 1,
+  "matched_existing": 3,
+  "auto_merges": 38,
+  "judge_queue": 8,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 8 pairs, ALL judged DIFFERENT with reasons logged (judgments file run-01/work/judgments_applied-optimal-control-bryson-ho-1969-1969.json): the Pontryagin monograph (1962) vs Lee & Markus (1967) and vs Athans & Falb via Lee & Markus (a textbook about a theory is not the theory's document); Bryson et al. Part I (1963) vs Denham & Bryson Part II (1964), reached from four filings - two distinct papers of one series (necessary conditions vs solution by steepest-ascent; the Henkin-1949 vs Godel-1930 shape); Athans & Falb (1966) vs Lee & Markus (1967) - two distinct textbooks from different schools. No SAME pairs, so no matched_node_id verification arose; the 3 LINK matches (Dynamic Programming, MDP, RAND Corporation) came from resolve itself under exact canonical names/types and were verified in show-distinct.",
+ "calendar_dropped_at_resolve": [
+  "1 direction filing: Dreyfus, 'Artificial neural networks, back propagation, and the Kelley-Bryson gradient procedure' (1990) - the retrospective that names the procedure and documents the book's role; filed at L23 so its direction (a document ABOUT the lineage, and this expansion's own historiographic source) is on the scout record."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_applied-optimal-control-bryson-ho-1969-1969.json",
+  "builder": "run-01/work/build_verdicts_brysonho.py",
+  "evaluations": 36,
+  "count_check": "evaluations == distinct candidates from show-distinct (36 == 36, verified programmatically - exact cand_id set match; field discipline asserted on every evaluation by the builder); scout reconciliation: 75 raw - 1 resolve drop - 38 auto-merges = 36 distinct; per-lens floor verified on the builder's output before resolve; dry run through score.rank_candidates run TWICE: the first dry run exposed a builder error - Kelley's directness had been scored 'partial' to carry the verification downgrade, which fails the gate mechanically (q1_or_q2 true, q3 true, directness false, zero survivors); THE ONE ALLOWED CORRECTION was used: directness corrected to 'pass' (citation + received name - the channel is direct), with the non-exclusivity moved to the verification record as a partially-landing mediation attack and downgrade challenge, per the Godel-at-Kleene-1952 / Bayes-at-Fisher-1922 / Sigmund precedents, where exactly this shape is handled. The second dry run reproduced exactly the intended outcome (1 survivor, Kelley at 5.0; 35 rejected; 11 mediated) BEFORE applying; apply-verdicts run exactly once",
+  "survivors": [
+   "Kelley, Gradient Theory of Optimal Flight Paths (1960) - NEW, 5.0, PROVISIONAL (depth 8): THE ASSIGNED HEARING DISCHARGED AS AN ADMISSION. The book's gradient procedure is the 'Kelley-Bryson gradient procedure' on the field's received name (Dreyfus 1990), and the book's author's own 1962 paper cites Kelley [5, 6] as the revival's co-source - citation plus instantiation, the strong channel. The discrimination against Dreyfus (1962): a different derivation route (from DP), recorded as a multiple. The discrimination against Bryson & Denham (1962): the stratum's INTERNAL working form, failed closed on own-version discipline, while Kelley is the stratum's EXTERNAL named origin. Capped provisional: the verification mediation attack via B&D partially lands (downgrade challenge on the edge)."
+  ],
+  "mediated": [
+   "Bliss, Lectures on the Calculus of Variations (1946) via Kelley (1960) - the classical frame's American codification, carried into the parent by the gradient line that consumed it as working machinery",
+   "Bliss, The Problem of Lagrange (1930) via Bliss (1946) - the problem statement inside its own codification",
+   "Bolza (1904) via Bliss (1946) - the general problem form inside the codification line",
+   "Euler (1744) via Bliss (1946) - the founding document at its documented remove",
+   "Weierstrass field theory (1879) via Bliss (1946) - the sufficiency stratum inside the codification",
+   "Hamilton-Jacobi theory (1834) via Bliss (1946) - the value-function frame at its documented remove (mediations through a mediated link recorded per the IRIS-GL-via-OpenGL precedent)",
+   "Hestenes, RAND RM-102 (1949) via Kelley (1960) - B&D's own text names the channel: Kelley and the authors 'revived a little-known procedure', this stratum's; the revival's published form is the admitted document. The mediation also answers the verification Q1 attack on Kelley: absolute priority is Hestenes', the channel is Kelley's - both records stand",
+   "Cauchy, steepest descent (1847) via Kelley (1960) - the root recipe inside its trajectory form (B&D's title is 'steepest-ascent')",
+   "Kelley, Kopp & Moyer, Methods of Gradients (1967) via Kelley (1960) - the admitted line's survey form, judged with the channel",
+   "Bellman & Dreyfus, Applied Dynamic Programming (1962) via Dynamic Programming - the complement framework's own textbook",
+   "A Markovian Decision Process (Bellman, 1957) LINK via Dynamic Programming - the staged-decision frame presupposed by the contained complement"
+  ],
+  "fail_closed_partials": [
+   "Bryson & Denham (1962) - MOST CONTESTABLE NEGATIVE, the assigned hearing argued both ways in full in the evaluation: FOR admission - a separable published artifact consumed and reworked (the D3D8-at-D3D9 shape), and Denham, not a book author, is a partially independent voice in the candidate; AGAINST, and governing - the own-version exception's admissions each carry an INDEPENDENT grading voice in the child (Church grading Kleene 1935; the vendor release statement at D3D9), and a self-authored textbook's presentation of the author's own paper is not independent grading; the Kleene (1936) at Kleene (1952) precedent governs a self-authored codification exactly. Re-hearing condition: a document in the book's own apparatus, or a contemporary independent text, grading the 1962 paper as the book's gradient source in terms independent of Bryson's own presentation",
+   "Pontryagin's maximum principle (1956) - the assigned hearing, with the brief's hypothesis CORRECTED on the record: the principle is not this book's central framework at the strength proposed ('the operative carrier of the adjoint method the book teaches'). The book's centre, on its stored record, its contents and Dreyfus's account, is the Kelley-Bryson gradient procedure; its necessary conditions are derived on its own Lagrange route (a self-contained derivation, the Gauss-sec.177 shape), and Berkovitz (1961) records the receiving community's own view that the principle 'is a translation of the usual Weierstrass condition' - the variational line possessed the content in its own form. The correction relation was considered and refused (unlike Bayes at Fisher 1922, the book does not extract the principle's worked object as its foundation). The control case is in the same expansion: Lee & Markus (1967) IS a maximum-principle textbook - the era knew the shape, and this book is not it. Re-hearing condition: the 1969 text showing the maximum principle invoked as the operative condition inside the gradient chapters' derivations",
+   "Dynamic Programming (Bellman, 1957) LINK - genuinely present as a contained complement (sec. 4.2 inside the feedback chapter; sec. 7.2 among the numerical methods; the extremal-field chapter bridges the two routes to the feedback object) but the parent AS STORED is the gradient codification, whose engine derives without DP (Q3 fails); framing-dependence stated explicitly (the Gentzen-at-Kleene discipline). The node's RL-line admissions are edge-scoped and untouched",
+   "Bryson (1961) - the multistage strand's origin (per Dreyfus, the adjoint method's first proposal), refused on the same own-version ground as the 1962 paper; Dreyfus's grading is independent but retrospective (1990) - it grades for the historian's record, not inside the child",
+   "Bryson et al. (1963) and Denham & Bryson (1964) - the authors' AIAA constraint series (Parts I and II), judged with the stratum under own-version discipline; Part II judged a partial rather than mediated because the book is the series' own codification, not a downstream reader of it",
+   "Breakwell, The Optimization of Trajectories (1959) - the neighbouring-extremal kin line whose stratum Ch. 6 codifies (Breakwell et al. 1963 on the second variation in the same bibliography); kinship documented, channel not. Re-hearing condition: the book's Ch. 6 apparatus crediting Breakwell's papers for the backward sweep",
+   "Caratheodory (1935) - the PDE-first donor form of the book's field treatment, the classical stratum's strongest affinity, refused on channel depth (the frame arrives through the codification line and the authors' practice)",
+   "Kalman (1960) - the parallel summit: same year as Kelley, shared Riccati root, different line (filtering vs the variational regulator tradition); the era's twin-1960 shape recorded as context",
+   "RAND Corporation (1948) LINK - formation at one remove: the neighbouring programmes' institution (DP, games, Hestenes), while the book's own programme was Harvard-based and course-carried; decomposition applied (RAND's artifacts judged individually). Its admission at Bellman is edge-scoped and stands",
+   "USAF and NASA trajectory-optimization programmes (1957) - formation with a documented demand channel: B&D's worked problems ARE Air Force problems (interceptor climb, orbital glider range); funding/demand is not inside the artifact (the PWB-facility shape, one scale up)"
+  ],
+  "rejected": [
+   "Pontryagin et al., The Mathematical Theory of Optimal Processes (1962) - the import's vehicle, refused as carrier of an engaged-but-not-consumed item (the SMRW discipline); judged distinctly from the principle per the scout's design",
+   "Lagrange multipliers (1788) and the Riccati equation (1724) - presupposed repertoire/apparatus: both are INSIDE the parent (the stored record names the multiplier recursions) and refused anyway - the specific applied forms belong to the 1960/1961 documents; being the theorem's device is not being its channel (the Principia-at-Kleene shape)",
+   "Dreyfus, The numerical solution of variational problems (1962) - documented parallel multiple with an affirmatively different derivation (from DP); the Werbos record's no-channel disposition is edge-scoped, and the same absence holds here; his documented role in this lineage is its 1990 historian (the dropped direction filing)",
+   "Leitmann (ed.), Optimization Techniques (1962) - consensus carrier/survey volume",
+   "Athans & Falb (1966) and Lee & Markus (1967) - parallel codifications: documented independent multiples OF THE PARENT, recorded as Q3 evidence about the parent's codification moment (the Peter-1951-at-Kleene shape); Lee & Markus doubles as the Pontryagin hearing's control case",
+   "Isaacs, Differential Games (1951) - no games chapter in the grounded contents; an available import with no uptake (absence finding scoped to the contents)",
+   "Wiener (1949) - the defined-against estimation incumbent of the neighbouring line; the 1969 contents' estimation stratum is thin",
+   "The shooting method (1950s practice) - the displaced prior practice, named as such by the parent's own stratum ('sometimes does not seem to work at all'); the operative-carrier test (the SMS shape)",
+   "High-speed digital computation, IBM 7090 class (1960) - generic substrate: B&D's sentence makes the machine class a condition of the procedure; no specific machine is a text's plant",
+   "FORTRAN (1957) - generic tooling",
+   "AIAA (1963) - arena/venue: its journal carried the papers (judged individually) and its courses distributed the book's content; a venue registers, it does not enable"
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s76_kelley1960.json",
+  "outcomes": {
+   "kelley-gradient-theory-of-optimal-flight-paths-1960-1960": "PROVISIONAL - four attacks run: multiples (Dreyfus 1962's different derivation fails to displace; Bryson 1961 is the same line's co-origin, capping exclusivity) - fails to kill; date/direction (ARS J. Oct 1960, cited by the 1962 paper itself) - fails; Q1 priority via Hestenes 1949 - lands against absolute priority, answered by the mediation record (the edge claims the channel, not the priority) - fails against the edge as stated; MEDIATION via Bryson & Denham (1962) PARTIALLY LANDS - the book's continuous-system presentation plausibly routes in part through the authors' own 1962 working form alongside Kelley's text, inseparable on the grounded record - downgrade challenge recorded on the edge via apply-verification's mediation mechanism (mediation_actions confirmed in the apply output), node capped provisional. Re-hearing condition on file. NOTE: the pre-existing verification file for this parent (verification_applied-optimal-control-bryson-ho-1969-1969.json, the Werbos-era record for the Bryson & Ho node itself) was NOT overwritten; this session's file is separately named."
+  }
+ },
+ "totals_after": {
+  "nodes": 275,
+  "edges": 346,
+  "budget": "275/2000",
+  "expansions_done": 162,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 28,
+   "3": 32,
+   "4": 37,
+   "5": 57,
+   "6": 45,
+   "7": 30,
+   "8": 13,
+   "9": 6,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 258,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+  "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911",
+  "statistical-curvature-efron-1975-1975"
+ ],
  "sync_commit": null
 }
