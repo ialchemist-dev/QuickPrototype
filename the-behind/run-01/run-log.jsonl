@@ -4646,5 +4646,145 @@
   "budget": "273/2000",
   "expansions_done": 159
  },
+ "sync_commit": "925ce0f5"
+}
+{
+ "session": 75,
+ "expansion": 160,
+ "parent": "kleene-introduction-to-metamathematics-the-theory-of-partial-1952",
+ "parent_name": "Kleene, Introduction to Metamathematics (1952)",
+ "parent_year": 1952,
+ "parent_depth": 6,
+ "date": "2026-11-25",
+ "provenance": "Session 75, expansion 2 of 2 (the frontier's second node per status after session 74; expansion 159 of this session took the head, Coburn & Winters). Scouted, resolved, judged and verified from scratch by session 75.",
+ "grounding": "The book's own apparatus as far as accessible (audit scope stated honestly below): North-Holland, 1952, Bibliotheca Mathematica vol. 1, 550 pp.; bibliography pp. 517-537 (UW-Madison catalog record). Structure grounded via the detailed Ishi Press reprint review and a second account: Chs. 1-3 introductory (enumerability/Cantor; induction and the axiomatic method; the paradoxes); Chs. 4-7 the propositional and predicate calculus (Hilbert-style system for first-order Peano arithmetic, formal system at p. 82, natural-deduction rules as derived); Ch. 8 formal number theory - 'numeralwise represent' defined, G\u00f6del's incompleteness theorem stated and proved pp. 204-213 modulo a Lemma on the capturability of the proof relation deferred to Ch. 10; Ch. 9 primitive recursive functions; Ch. 10 arithmetization of syntax (the Lemma); Chs. 11-13 general recursive functions, partial recursive functions and Turing computability (with the G\u00f6del numbering, Post's theorem, Church's theorem in the contents); Ch. 14 the completeness theorem; Ch. XV (pp. 440-516) Gentzen's system 'in much the same form as Gentzen's original 1934 paper' with the consistency proof for arithmetic. Kleene (1936), Math. Ann. 112:727-742, grounded via Davis's FOM note (2016): introduces the name 'primitive recursive functions', defines the general recursive class FOLLOWING HERBRAND AND G\u00d6DEL, proves the normal form theorem, refers to Ackermann, P\u00e9ter, G\u00f6del and Skolem - NOT Turing. Kleene (1943), Trans. AMS 53:41-73: the T predicate proper (the 1936 paper's T is today's S) and the arithmetical hierarchy; Uspensky (arXiv:2008.02773): 'the same framework and terminology is used in his classical book of 1952'. G\u00f6del's 1934 lectures grounded via the Nanzan survey: the general recursive definition 'obtained by modifying Herbrand's suggestion'; Kleene and Rosser took the notes, which circulated widely. AUDIT SCOPE: the book's PREFACE was not read this session; absence and positioning claims are scoped to the grounded structure/bibliography/chapter-source record, and the Hilbert & Bernays judgment states the gap explicitly.",
+ "parent_record_note": "Parent stored fields verified intact before evaluating (definition, bottleneck, leap, prior_state all non-empty, read verbatim; no reconstruction). Stored sources carry one secondary source (Turner's functional-programming history slides) - not empty, no defect recorded; the expansion grounded on the book's documented apparatus instead. The stored verification record (from the Lisp admission) stands: the mediation attack via Church on the LISP edge was answered there (Church cited in the Lisp paper's sec. 2e for notation; the recursive scheme is the framing basis) - a different edge, untouched here. 0 already-rejected candidates: first expansion of this node. Graph searched by concept/synonym before scouting: the four graph-existing candidates (Lambda calculus; G\u00f6del 1931; Kleene 1935; G\u00f6del's 1934 Princeton lectures) were filed as LINKs under their EXACT canonical names and stored type strings (verified programmatically against the graph before applying: name/year/type all equal); no Turing, Post, Hilbert, Gentzen, Herbrand, Tarski, Principia or P\u00e9ter node exists. One stored-text wart noted, not edited: the parent's stored leap ends with a clause written from its child's perspective ('the scheme the parent re-targets from numbers to symbolic expressions' - the Lisp edge's phrasing carried into the node record at admission); the verdicts' leap record uses the stored texts verbatim, per protocol.",
+ "scout": {
+  "builder": "run-01/work/build_scout_kleene1952.py",
+  "raw_candidates": 55,
+  "per_lens_floors": "complete - every content lens with filings (L1, L2, L4-L7, L11, L17, L19-L22) filed >=3 on the builder's output, checked before resolve; NINE dry notes with findings (a pure formalism parent; Fisher-Rao's eight is the comparable record): L8 (no data corpus), L9 (the only 'machine' is a paper formalism, filed at L1/L19), L10 (no material dependency), L12 (no programmability layer), L13 (tooling is the axiomatic method, filed at L6/L11), L14 (no equipment), L15 (no services; the North-Holland imprint recorded in the note as a venue), L16 (dry in the MAKER form, as at Fisher 1922: the parent consumes no standard, it becomes one - its terminology set the field's vocabulary), L18 (no observation instruments; proof techniques at L11, the encoding scheme at L17); meta L3=3 + L23=3 = 6 within the ~10 cap",
+  "dry_notes_file": "run-01/work/dry_notes_kleene-introduction-to-metamathematics-the-theory-of-partial-1952.json",
+  "identity_discipline": "exact-name LINK filings for the four graph nodes (verified programmatically); the author's own papers filed under descriptive canonical names as new candidates (they are not graph nodes); P\u00e9ter's 1934 papers and her 1951 monograph filed as separate candidates (different artifacts, different relations)"
+ },
+ "resolution": {
+  "distinct": 41,
+  "dropped": 4,
+  "matched_existing": 4,
+  "auto_merges": 10,
+  "judge_queue": 2,
+  "prefiltered": 0
+ },
+ "judgments": "2 pairs, both DIFFERENT: Henkin (1949) vs G\u00f6del (1930) - same theorem, different proofs (witness-constant model construction vs the dissertation's reduction route), different authors, nineteen years apart; the Entscheidungsproblem (1928) vs the Grundz\u00fcge (1928) - a posed PROBLEM vs its posing DOCUMENT, filed and judged separately because their relations to a parent differ. No merges resulted.",
+ "calendar_dropped_at_resolve": [
+  "Postdating accounts filed as direction records: Rogers, Theory of Recursive Functions and Effective Computability (1967) x2 filings - the successor textbook that displaced the parent; Davis (ed.), The Undecidable (1965) - the canonization sourcebook; Davis, Computability and Unsolvability (1958) - the first American successor text. All logged here so their direction is on the record. NO same-year drops at this parent (nothing in the parent's own 1952 stratum was filed - the Bibliotheca Mathematica imprint is recorded in the L15 dry note as a venue, not filed)"
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_kleene-introduction-to-metamathematics-the-theory-of-partial-1952.json",
+  "builder": "run-01/work/build_verdicts_kleene1952.py (+ build_verdicts_kleene1952_p2.py)",
+  "evaluations": 41,
+  "count_check": "evaluations == distinct candidates from show-distinct (41 == 41, verified programmatically - exact cand_id set match; field discipline checked on every evaluation; the four LINK evaluations additionally verified to carry the graph's exact stored name/year/type); scout reconciliation: 55 raw - 10 auto-merges - 4 resolve drops = 41 distinct; per-lens floor verified on the builder's output before resolve",
+  "dry_run": "score.rank_candidates reproduced exactly the intended outcome (2 survivors - G\u00f6del 1931 LINK at 5.0 and Turing 1936 at 3.5; 39 rejected with the intended shapes, 5 of them mediated_via); NO correction used; applied ONCE (apply-verdicts is not idempotent)",
+  "survivors": [
+   {
+    "name": "G\u00f6del, On formally undecidable propositions of Principia Mathematica and related systems I (1931)",
+    "score": 5.0,
+    "status": "provisional",
+    "kind": "LINK to the existing node (session-71 admission at lambda calculus)",
+    "argument": "The codification question argued both ways on the documents and resolved for admission: the book does not survey the theorem, it REBUILDS its proof inside a new formal system - Ch. 8 states and proves it (pp. 204-213) with the arithmetization deferred to Ch. 10 as the load-bearing Lemma, and numeralwise representability is Kleene's own machinery constructed for this proof. Ancestor-modified instantiation of the candidate's worked object as the child's central object - the Bayes-at-Fisher-1922 shape. Verification: the multiples attack (Rosser as the proof's finish) does not substitute a carrier; the MEDIATION ATTACK via the author's own arithmetization stratum PARTIALLY LANDS (recorded as a downgrade challenge on the edge - the channel is the theorem re-founded by the author's hands, narrowing its purity without substituting a document); the codification attack is recorded as the standing reason the ceiling is provisional."
+   },
+   {
+    "name": "Turing, On computable numbers (1936)",
+    "score": 3.5,
+    "status": "provisional",
+    "argument": "Citation + full-chapter instantiation: Ch. 13 defines and operates the machine formalism and proves Turing-computable = partial recursive in the book's own development. The channel is the paper itself - uniquely among the computability legs it has no own-work intermediary (Kleene's 1936 paper never mentions Turing, per Davis's record), the asymmetry that separates this admission from the lambda leg's refusal. Verification: the multiples attack (Post 1936, the independent same-year formulation) is pressed and answered on the documents (the book develops Turing's formalism, not Post's two-page variant); the mediation attack via the author's equivalence machinery assessed and NOT landed (it targets the book's proof of equivalence, not the formalism's channel); the codification attack recorded as the cap. Judged fresh at this parent: the 1936 papers' calendar foreclosure at lambda calculus does not govern a 1952 parent."
+   }
+  ],
+  "created_nodes_field_check": "the one created node (Turing 1936, depth 7) read back with non-empty stored definition / bottleneck / leap / prior_state; both admission edges verified present (G\u00f6del LINK at 5.0, Turing at 3.5) - NO builder defect (the sessions 66-74 clean streak holds through session 75)",
+  "rejections_of_note": {
+   "most_contestable_negative": {
+    "name": "Kleene, General recursive functions of natural numbers (1936)",
+    "shape": "fail-closed partial",
+    "argument": "The book's definitional scheme IS the 1936 normal form theorem recast as a definition - the mechanism genuinely consumed and reworked, the channel documented (Davis's record; Uspensky: same framework and terminology in the 1952 book). Refused on own-version discipline alone: the run's exception cases (Kleene 1935 at lambda calculus, admitted VERIFIED; Widrow & Hoff at backprop) all have an INDEPENDENT grading voice in the consuming child; a textbook codifying its author's own papers is the publication/codification shape (Hinton's CMU TR; Fisher 1912/1920; FLEX at Dynabook). The discrimination is stated in the record so the refusal cannot be mistaken for a channel judgment.",
+    "rehearing_condition": "none recorded - the own-version discipline is the run's settled shape for author-internal channels (the Fisher 1920 precedent at Fisher 1922)"
+   },
+   "own_version_stratum": {
+    "names": [
+     "Kleene, Recursive predicates and quantifiers (1943) - fail-closed partial",
+     "Kleene, A theory of positive integers in formal logic (1935) - LINK refused, fail-closed partial"
+    ],
+    "argument": "The 1943 hierarchy machinery and the 1935 lambda framework reach the book through the author's own hand and his own intervening papers. The 1935 node's admission at lambda calculus (VERIFIED) stands edge-scoped and untouched - there the consuming child was Church's paper, an independent author."
+   },
+   "lambda_leg": {
+    "name": "Lambda calculus (1936) - LINK refused, fail-closed partial",
+    "argument": "The mixed channel: the book restates lambda-definability from Church directly (a real junction), but the load-bearing use - the equivalence with the recursive scheme - is the author's own 1936 result taken from his own papers. Where the equivalence is concerned the book consumes Kleene-on-Church, not Church. Partial directness fails closed. The asymmetry against the Turing admission is the expansion's central discrimination and is recorded on both edges."
+   },
+   "gentzen_quarter": {
+    "names": [
+     "Gentzen, Die Widerspruchsfreiheit der reinen Zahlentheorie (1936) - fail-closed partial",
+     "Gentzen, Untersuchungen \u00fcber das logische Schlie\u00dfen (1934) - fail-closed partial"
+    ],
+    "argument": "Wholesale instantiation (Ch. XV, pp. 440-516, presents the system and the consistency proof in near-original form) refused RELATIVE TO THE PARENT AS STORED: the graph's Kleene-1952 node is the recursion-scheme codification (name, bottleneck, leap), and the Gentzen quarter is the book's second subject bound in the same volume. The framing-dependence is stated explicitly in both records - a differently-framed parent could judge otherwise."
+   },
+   "mediated": [
+    {
+     "name": "G\u00f6del's Princeton lectures (1934) - LINK refused",
+     "via": "Kleene, General recursive functions of natural numbers (1936)"
+    },
+    {
+     "name": "Herbrand, Sur la non-contradiction de l'arithm\u00e9tique (1931)",
+     "via": "G\u00f6del's Princeton lectures (1934) - the chain Herbrand -> lectures -> Kleene 1936 -> book is recorded complete across evaluations 17, 16 and 3"
+    },
+    {
+     "name": "Skolem, The foundations of elementary arithmetic (1923)",
+     "via": "Kleene (1936) - its apparatus cites Skolem (Davis's record)"
+    },
+    {
+     "name": "P\u00e9ter, \u00dcber rekursive Funktionen (1934)",
+     "via": "Kleene (1936) - its apparatus cites P\u00e9ter by name"
+    },
+    {
+     "name": "Church & Rosser, Some properties of conversion (1936)",
+     "via": "Kleene, lambda-definability and recursiveness (1936) - a mediation recorded INTO a refused link, on the IPL precedent's terms (the transmission into the link is itself documented)"
+    }
+   ],
+   "components": [
+    {
+     "name": "Ackermann (1928)",
+     "shape": "directness PASS, rejected at the gate (the Koopman shape): the canonical boundary witness, consumed as an example inside the author's own stratum"
+    },
+    {
+     "name": "Rosser (1936)",
+     "shape": "directness PASS, rejected at the gate: the sharpening device inside the admitted G\u00f6del proof - discriminated from Singh & Yee (1994) at sparse sampling, where the candidate's PROOF is the parent's own engine; here the headline result is G\u00f6del's and Rosser's form is its finish"
+    }
+   ],
+   "other_shapes": "Hilbert & Bernays (1934) fail-closed partial (the frame text: worked within, extended past - its finitary limits - not derived from; the unread preface gap stated in its record); Post (1944), Tarski (1933), G\u00f6del (1930), Henkin (1949), Herbrand (1930) fail-closed partials (instantiated or bounding strata of the book's chapters, peripheral to the stored leap; Henkin's record states the documentary uncertainty about the book's Ch. 14 route honestly); the Entscheidungsproblem fail-closed partial (the posed problem the computability part answers - no clauses to implement); Post (1936) rejected as the recorded multiple of the admitted Turing edge; the Grundz\u00fcge rejected as predecessor textbook / tradition carrier (the Laplace-1812 shape; judged fresh here, its lambda-calculus refusal not imported); Principia rejected (the central theorem's SUBJECT plus the notation stratum - the Principia-at-IPL shape); Hilbert's programme rejected (the field's frame - the book's title is Hilbert's word, and a name is not a mechanism); the effective-calculability problem rejected (the parent's own prior state restated); Russell's paradox, Skolem's paradox, Brouwer rejected (diagnosis/rival stratum of the surveys); the failed decision attempts, von Neumann (1927), Ackermann (1925) rejected (the programme's attempt stratum - Ackermann 1925 kept strictly separate from Ackermann 1928, the consumed function); Dedekind (1888) and Cantor (1891) rejected (presupposed repertoire - Dedekind at two removes, mediations through already-mediated links not recorded, the IPL precedent); Princeton, Wisconsin, the ASL/JSL rejected as formation; the 1936 equivalence event rejected (an event, not an artifact - its documents judged individually); P\u00e9ter, Rekursive Funktionen (1951) rejected as the parallel codification - a documented independent multiple OF THE PARENT, recorded as Q3 evidence about the parent's own codification moment; the postwar textbook consolidation rejected as an era condition"
+  }
+ },
+ "verification": {
+  "file": "run-01/work/verification_kleene-introduction-to-metamathematics-the-theory-of-partial-1952.json",
+  "outcomes": {
+   "godel-on-formally-undecidable-propositions-of-principia-math-1931": "provisional (LINK edge; mediation attack via the author's own arithmetization stratum partially lands - downgrade challenge recorded on the edge; codification attack recorded as the ceiling; the node's session-71 status unchanged)",
+   "turing-on-computable-numbers-1936-1936": "provisional (multiples attack via Post 1936 pressed and answered on the documents; mediation attack via the author's equivalence machinery assessed and not landed - it targets the equivalence proof, not the formalism channel; codification attack recorded as the cap)"
+  }
+ },
+ "totals_after": {
+  "nodes": 274,
+  "edges": 344,
+  "budget": "274/2000",
+  "expansions_done": 160,
+  "depth_distribution": {
+   "7": 30,
+   "note": "d7 28 -> 30 (Sigmund at expansion 159, Turing here); all other depths unchanged from the session-74 distribution"
+  },
+  "status_split": {
+   "provisional": 257,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "pwb-shell-mashey-shell-1975-1975",
+  "applied-optimal-control-bryson-ho-1969-1969",
+  "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961"
+ ],
  "sync_commit": null
 }
