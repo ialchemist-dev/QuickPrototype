@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T10:41:14+00:00",
-  "expansions_done": 87,
-  "raw_candidates_seen": 3567,
+  "updated_at": "2026-11-25T10:47:15+00:00",
+  "expansions_done": 88,
+  "raw_candidates_seen": 3578,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -17119,6 +17119,69 @@
     "name": "Edgeworth, Methods of Statistics (1885)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T10:41:14+00:00"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Laplace, Mémoire sur les approximations des formules qui sont fonctions de très grands nombres (1810)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:47:02+00:00"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Laplace, Mémoire sur la probabilité des causes par les événements (1774)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:47:02+00:00"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Bernoulli, Ars Conjectandi (1713)",
+    "reason": "mediated_via: De Moivre, The Doctrine of Chances (1738)",
+    "at": "2026-11-25T10:47:02+00:00",
+    "mediated_via": "De Moivre, The Doctrine of Chances (1738)"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Bayes, An Essay towards solving a Problem in the Doctrine of Chances (1763)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:47:02+00:00"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Normal law of error (Gauss, 1809)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:47:02+00:00"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Legendre, Nouvelles méthodes pour la détermination des orbites des comètes — the method of least squares (1805)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:47:02+00:00"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Laplace, Traité de mécanique céleste (1799)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:47:02+00:00"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Simpson, On the advantage of taking the mean of a number of observations (1755)",
+    "reason": "mediated_via: Lagrange, Mémoire sur l'utilité de la méthode de prendre le milieu entre les résultats de plusieurs observations (1776)",
+    "at": "2026-11-25T10:47:02+00:00",
+    "mediated_via": "Lagrange, Mémoire sur l'utilité de la méthode de prendre le milieu entre les résultats de plusieurs observations (1776)"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Condorcet, Essai sur l'application de l'analyse à la probabilité des décisions (1785)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:47:02+00:00"
+   },
+   {
+    "parent_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+    "name": "Stirling, Methodus Differentialis (1730)",
+    "reason": "mediated_via: De Moivre, The Doctrine of Chances (1738)",
+    "at": "2026-11-25T10:47:02+00:00",
+    "mediated_via": "De Moivre, The Doctrine of Chances (1738)"
    }
   ]
  },
@@ -22701,7 +22764,7 @@
    "prior_state": "The error curve used empirically by astronomers; De Moivre's approximation confined to games of chance.",
    "status": "provisional",
    "depth": 9,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -22716,6 +22779,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T10:33:43+00:00"
+  },
+  "de-moivre-the-doctrine-of-chances-1738-1738": {
+   "id": "de-moivre-the-doctrine-of-chances-1738-1738",
+   "name": "De Moivre, The Doctrine of Chances (1738)",
+   "aliases": [],
+   "year": 1738,
+   "domain": "mathematics / probability",
+   "type": "theory",
+   "definition": "De Moivre's Doctrine of Chances, 2nd edition (1738), carrying his approximation of the binomial by the normal curve (first printed in the 1733 Latin paper 'Approximavit ad summam terminorum binomii'): for a fair coin, the terms of the binomial cluster about the middle by the error curve.",
+   "bottleneck": "Before De Moivre's approximation (1733/1738), the probability that many trials deviate from their expected frequency by a given amount could not be computed, because the binomial sum for large numbers of trials has no tractable exact evaluation.",
+   "leap": "De Moivre (1733; Doctrine of Chances, 2nd ed. 1738) showed the terms of the binomial cluster about the middle by the error curve — the first limit distribution: sums of chance events have a law of their own, not merely a limit.",
+   "prior_state": "Exact chances computable only for small numbers of trials; Bernoulli's theorem (1713) guaranteed the convergence of frequency without rate and without distribution.",
+   "status": "provisional",
+   "depth": 10,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+     "url": "https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run. (1) Q1 attack: Bernoulli's 1713 theorem proved convergence of frequency but gave no distribution and bounds too weak to compute with; the problem De Moivre flipped — the probability of a deviation of given size over many trials — stood genuinely unsolved before 1733. Attack fails. (2) Multiples test on Q3: no independent near-simultaneous discoverer of the normal approximation of the binomial exists in the record; the one priority nuance (the constant in Stirling's formula was De Moivre's own determination, published in Stirling's circle) concerns a tool inside the derivation, not the approximation itself. Necessity stands as scored — descent-necessity, honestly recorded in the evaluation (the treatise generalises this result specifically), not logical necessity. (3) Date and direction: 1738 is the carrying publication (Doctrine of Chances, 2nd ed.) of the approximation first printed in the 1733 Latin paper 'Approximavit ad summam terminorum binomii' — dating by the carrying artifact, consistent with the run's practice (cf. Fisher 1918); direction De Moivre -> Laplace is the descent the joint theorem name (de Moivre-Laplace) itself records. Attack fails. (4) Mediation attack on the edge De Moivre -> Théorie analytique: four candidate mediators tried and each refused on the documents — Stirling 1730 sits INSIDE De Moivre's own derivation (upstream of the candidate, and itself recorded at this parent as mediated via the candidate); Bernoulli 1713 stands BEHIND the candidate (mediated via it at this same parent); Laplace's 1810 memoir is the parent's own first form, downstream of the candidate and folded into the parent's identity at its admission; no document routes the approximation to the treatise through Lagrange. No intermediate M stands. Outcome PROVISIONAL per the run's standing practice (no node in run-01 is verified; the strongest residual caveat is that Q3's pass is a descent claim resting on the historiography of the theorem's joint name — Tijms; Encyclopaedia of Mathematics — rather than on a citation apparatus inside the treatise itself). Structural note: the node enters at depth 10, the profile's depth cap — it is terminal in the frontier, so the mediated hearings assigned to its expansion (Bernoulli 1713; Stirling 1730) cannot be run under the current profile; those junctions live in this session's mediation records.",
+    "at": "2026-11-25T10:47:15+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T10:47:02+00:00"
   }
  },
  "edges": [
@@ -46511,6 +46603,103 @@
     "counterfactual": "Remove the Théorie analytique and the transfer loses its warrant: Quetelet would hold the astronomers' empirical curve — a rule of the observatory, fitted to errors of observation about true values — but no theorem licensing its export to a domain where there is no true value and no observation error. The book's argumentative form is the theorem's form: human measures scatter because many small accidental causes accumulate, and accumulated causes follow the curve. That is the law of accidental causes, and it is Laplace's.",
     "mediator": null,
     "evidence": "The channel is documentary and biographical together. Formation: Quetelet's 1823 Paris sojourn placed him in the circle of Laplace and Fourier (the SpringerPlus biography: he travelled to Paris in 1823 and met the Paris mathematicians, Laplace among them; MacTutor: 'Influenced by Laplace and Fourier', the theory of probability studied in that circle). Hankins's contents name Laplace's influence on the population line directly. Consumption: the book's probability is the treatise's doctrine — the curve as the limit of the binomial under many small causes — and NOT the error tradition's other machinery: 'Quetelet did not use the method of least squares itself; he took the error distribution from the same tradition' (Stemma) — the distribution in Laplace's form. Mediation attacks answered in the sibling evaluations: Gauss (the rival founder — components discrimination: the book consumes the limit theorem, not the least-squares derivation); Fourier (the other Paris influence — his Recherches carry no curve; the formation he supplied is judged at his own candidate)."
+   }
+  },
+  {
+   "predecessor_id": "de-moivre-the-doctrine-of-chances-1738-1738",
+   "successor_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before 1733, the probability that a frequency deviates from its expectation by more than a given amount, over many trials, could not be computed at all — the binomial sum is intractable term by term. De Moivre's approximation made exactly that problem solvable.",
+     "source": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+     "falsification": "This pass dies if a pre-1733 method for binomial tail probabilities at large n is produced."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The approximation opened the space of limit distributions — but for one family (binomial sums at p=1/2, in games); the general space of accumulated causes is the parent's construction, not the candidate's.",
+     "source": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+     "falsification": "This partial rises if De Moivre is shown treating sums beyond the binomial case."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "For the treatise, this was the path: its derivation generalises De Moivre's result specifically, and no independent near-simultaneous discoverer of the normal approximation exists in the record (Stirling supplied a tool inside the derivation, not the approximation). Necessity as descent, not as logic.",
+     "source": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+     "falsification": "This pass dies if a second pre-1812 normal approximation of the binomial is produced."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Computing a binomial probability for large n collapsed from an infeasible summation to reading a curve — orders of magnitude, and the difference between impossible and routine.",
+     "source": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics (1998)",
+     "falsification": "This pass dies if practitioners are shown still summing binomial terms exactly after 1738."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "Deviation of frequency acquired a measurable law: how far from the middle, with what probability — a quantity where before there was only convergence in the long run.",
+     "source": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+     "falsification": "This pass dies if the approximation is shown not to quantify deviation."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The result is computational, not explanatory: it says the terms cluster by the curve, not why accumulated causes must do so. The explanatory model is the parent's.",
+     "source": "Encyclopaedia of Mathematics, 'Laplace theorem'",
+     "falsification": "This partial rises if De Moivre is shown giving a causal account of the curve."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "A formula others could apply — and did, within the Doctrine's successive editions and the practice of chances — but no standard or interface in the strong sense.",
+     "source": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics (1998)",
+     "falsification": "This partial rises if the approximation is shown adopted as a shared standard form."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Born in games of chance; its reach into astronomy and statistics was realised by the parent, not by De Moivre, whose applications stay at the table.",
+     "source": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+     "falsification": "This partial rises if De Moivre is shown applying the curve beyond games before 1812."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment feedback loop is shortened by the approximation.",
+     "source": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics (1998)",
+     "falsification": "This fail dies if a practice is shown iterating faster on the approximation."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Among those who computed chances, the approximation became the default route to large-n probabilities; the field it displaced was small and exact computation remained for small n.",
+     "source": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics (1998)",
+     "falsification": "This partial rises if the approximation is shown to have reset general practice."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "A trunk node of the lineage that actually happened: the theorem's joint name (de Moivre-Laplace) is the surveys' own routing of the central limit theorem's ancestry.",
+     "source": "Encyclopaedia of Mathematics, 'Laplace theorem'",
+     "falsification": "This pass dies if the histories are shown routing the limit theorem around De Moivre."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once sums of chance events had a limit law, probability's baseline reset permanently: frequencies have distributions, not only limits.",
+     "source": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+     "falsification": "This pass dies if the approximation is shown abandoned without successor."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T10:47:02+00:00",
+   "leap": {
+    "prior_state": "The error curve used empirically by astronomers; De Moivre's approximation confined to games of chance — a special case for a fair coin, with no general theorem about accumulated causes.",
+    "jump": "Laplace (1810-12) proved that the aggregate of many small independent causes follows the error curve: the curve became a theorem about causes, and the treatise built the doctrine of probability — the general limit theorem, the probability of causes, the justification of least squares — on that warrant.",
+    "date": 1812
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove De Moivre's approximation and the treatise's central derivation loses its founding special case and its historical point of departure: Laplace's theorem is the generalisation of this result — from the fair coin to any probability, and from games to sums of many small causes — and the theorem carries both names (the de Moivre-Laplace theorem) because the descent is the treatise's own. The inverted hearing of the session-38 record (mediated via Laplace at Quetelet) is discharged as an admission here.",
+    "mediator": null,
+    "evidence": "Directness PASS. Mediation check run both ways: Stirling's formula sits INSIDE De Moivre's own derivation (a component of the candidate, not an intermediary between candidate and parent), and Bernoulli stands BEHIND the candidate (the approximation refines his theorem — he is mediated via this candidate at this parent, not the reverse). Nothing named stands between De Moivre's result and the treatise's generalisation of it."
    }
   }
  ],
@@ -171667,6 +171856,385 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "laplace-theorie-analytique-des-probabilites-1812-1812": {
+   "raw_candidates": [
+    {
+     "name": "De Moivre, The Doctrine of Chances (1738)",
+     "year": 1738,
+     "domain": "mathematics / probability",
+     "lens": "L2",
+     "type": "theory",
+     "definition": "De Moivre's Doctrine of Chances, 2nd edition (1738), carrying his approximation of the binomial by the normal curve (first printed in the 1733 Latin paper 'Approximavit ad summam terminorum binomii'): for a fair coin, the terms of the binomial cluster about the middle by the error curve.",
+     "causal_claim": "De Moivre's approximation directly enabled the Théorie analytique's leap by supplying the limit theorem's founding special case: Laplace's treatise generalises the binomial approximation — from the fair coin to any probability, and from games to sums of many small causes — and the theorem carries both names (the de Moivre-Laplace theorem) because the descent is the treatise's own. (Proposed for the inverted hearing of the session-38 record: mediated via Laplace at Quetelet.)",
+     "source_title": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+     "source_url": "https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem"
+    },
+    {
+     "name": "Laplace, Mémoire sur les approximations des formules qui sont fonctions de très grands nombres (1810)",
+     "year": 1810,
+     "domain": "mathematics / probability",
+     "lens": "L2",
+     "type": "theory",
+     "definition": "Laplace's 1810 memoir to the Institut: the first statement and proof of the general limit theorem — sums and means of many independent quantities distribute by the error curve — with its application to the justification of least squares.",
+     "causal_claim": "The 1810 memoir directly enabled the treatise by performing its leap two years early: the limit theorem proved there is re-presented in the Théorie analytique as the warrant of the error law. (Proposed for the own-version test, against the decisive internal evidence: the parent node's own leap record, written at its admission in session 38, dates the leap '1810-12' — the run has already folded the memoir into the parent's identity.)",
+     "source_title": "Encyclopaedia of Mathematics, 'Laplace theorem'",
+     "source_url": "https://encyclopediaofmath.org/index.php?title=Laplace_theorem&"
+    },
+    {
+     "name": "Laplace, Mémoire sur la probabilité des causes par les événements (1774)",
+     "year": 1774,
+     "domain": "mathematics / probability",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "Laplace's 1774 memoir: the principle of inverse probability — from observed events to the probabilities of their causes — derived by Laplace independently, with the rule for the probability of a cause given the event.",
+     "causal_claim": "The 1774 memoir directly enabled the treatise as its inverse-probability stratum: the Théorie analytique's doctrine of the probability of causes is this memoir's principle, reworked and generalised across the treatise's second book.",
+     "source_title": "Stigler, The History of Statistics (1986)",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Bernoulli, Ars Conjectandi (1713)",
+     "year": 1713,
+     "domain": "mathematics / probability",
+     "lens": "L2",
+     "type": "theory",
+     "definition": "Jakob Bernoulli's posthumous Ars Conjectandi (1713): the first limit theorem — the frequency of an event in many trials converges to its probability (the law of large numbers), proved for the binomial case.",
+     "causal_claim": "Bernoulli's theorem directly enabled the treatise as the limit tradition's founding statement: the Théorie analytique's limit theorems are its generalisations, from convergence of frequencies to the distribution of the sum itself.",
+     "source_title": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics",
+     "source_url": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+    },
+    {
+     "name": "Bayes, An Essay towards solving a Problem in the Doctrine of Chances (1763)",
+     "year": 1763,
+     "domain": "mathematics / probability",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "Thomas Bayes's posthumous essay (communicated by Richard Price, 1763): the first statement of inverse probability — from an observed number of successes and failures to the probability that the chance lies between two bounds.",
+     "causal_claim": "Bayes's essay directly enabled the treatise as the inverse-probability tradition's founding document: the Théorie analytique's probability of causes is the doctrine Bayes first stated. (Proposed for the channel test: Laplace's 1774 derivation was independent, and his acknowledgment of Bayes belongs to the later Essai philosophique (1814), not to the treatise's own machinery.)",
+     "source_title": "Stigler, The History of Statistics (1986)",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Normal law of error (Gauss, 1809)",
+     "year": 1809,
+     "domain": "mathematics / statistics",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "The Gaussian error law from Gauss's Theoria Motus (1809): observational errors follow the normal distribution, derived from the postulate that the arithmetic mean is the most probable value. (The matched node's stored bottleneck/leap/prior_state are empty — the session-31 field-name defect; the corrected record is the Theoria Motus derivation.)",
+     "causal_claim": "Gauss's derivation directly enabled the treatise as the error law's other foundation, published three years before it: the Théorie analytique's treatment of observations and least squares stands in the same years and the same problem as the Theoria Motus. (Proposed for the parallel-founder test, symmetric with the session-38 components discrimination at Quetelet: Gauss channels the least-squares derivation, Laplace the limit theorem — and a treatise consumes its own form.)",
+     "source_title": "Stigler, The History of Statistics (1986)",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Legendre, Nouvelles méthodes pour la détermination des orbites des comètes — the method of least squares (1805)",
+     "year": 1805,
+     "domain": "mathematics / astronomy",
+     "lens": "L6",
+     "type": "method",
+     "definition": "Legendre's 1805 appendix on comet orbits: the first publication of the method of least squares — choose the values that minimise the sum of squared errors — stated as a practical rule with no probabilistic justification.",
+     "causal_claim": "Legendre's publication directly enabled the treatise's least-squares chapters by posing the rule that demanded a warrant: Laplace's justification of least squares from the limit theorem (1810, carried into the treatise) takes up the published method of 1805 and gives it its foundation. (Proposed for its direct hearing at the one parent that did not bypass it: at Galton and at Quetelet the record is bypass/no-consumption, with the lineage hearing standing at Pearson 1896.)",
+     "source_title": "Stigler, The History of Statistics (1986)",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Laplace, Traité de mécanique céleste (1799)",
+     "year": 1799,
+     "domain": "astronomy / mathematics",
+     "lens": "L2",
+     "type": "theory",
+     "definition": "Laplace's Traité de mécanique céleste (from 1799): the mathematical system of celestial mechanics — the observatory practice, with its masses of observations and their combination, for which the Théorie analytique supplies the probability.",
+     "causal_claim": "The Mécanique céleste directly enabled the treatise as its home problem: the combination of observations, the errors of instruments and the probability of means are the astronomical questions the treatise's second book exists to answer.",
+     "source_title": "Stigler, The History of Statistics (1986)",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Simpson, On the advantage of taking the mean of a number of observations (1755)",
+     "year": 1755,
+     "domain": "mathematics / astronomy",
+     "lens": "L5",
+     "type": "theory",
+     "definition": "Thomas Simpson's 1755 Philosophical Transactions memoir: the first treatment of the distribution of observational errors — discrete error distributions, and the mean of several observations shown better than a single one.",
+     "causal_claim": "Simpson's memoir directly enabled the treatise by first making the error of an observation a distributed quantity with a law of its own — the object the limit theorem later explains.",
+     "source_title": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics",
+     "source_url": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+    },
+    {
+     "name": "Condorcet, Essai sur l'application de l'analyse à la probabilité des décisions (1785)",
+     "year": 1785,
+     "domain": "mathematics / probability",
+     "lens": "L6",
+     "type": "theory",
+     "definition": "Condorcet's 1785 Essai: the French probability tradition's incumbent treatise before Laplace — probability applied to decisions, juries and elections, by Laplace's predecessor at the Académie.",
+     "causal_claim": "Condorcet's Essai directly enabled the treatise as the incumbent it supersedes and the programme it continues: the application of analysis to probability as a French national project, whose summation is Laplace's book.",
+     "source_title": "Stigler, The History of Statistics (1986)",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Stirling, Methodus Differentialis (1730)",
+     "year": 1730,
+     "domain": "mathematics",
+     "lens": "L1",
+     "type": "method",
+     "definition": "James Stirling's Methodus Differentialis (1730): the asymptotic approximation of the factorial (Stirling's formula) — the analytic tool by which large binomial terms are estimated, De Moivre's approximation included.",
+     "causal_claim": "Stirling's approximation directly enabled the treatise's limit analysis as its working tool: the estimation of factorials of large numbers is the computational step on which every binomial limit in the book depends.",
+     "source_title": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics",
+     "source_url": "https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "de-moivre-the-doctrine-of-chances-1738-1738",
+      "candidate": {
+       "name": "De Moivre, The Doctrine of Chances (1738)",
+       "year": 1738,
+       "domain": "mathematics / probability",
+       "lens": "L2",
+       "type": "theory",
+       "definition": "De Moivre's Doctrine of Chances, 2nd edition (1738), carrying his approximation of the binomial by the normal curve (first printed in the 1733 Latin paper 'Approximavit ad summam terminorum binomii'): for a fair coin, the terms of the binomial cluster about the middle by the error curve.",
+       "causal_claim": "De Moivre's approximation directly enabled the Théorie analytique's leap by supplying the limit theorem's founding special case: Laplace's treatise generalises the binomial approximation — from the fair coin to any probability, and from games to sums of many small causes — and the theorem carries both names (the de Moivre-Laplace theorem) because the descent is the treatise's own. (Proposed for the inverted hearing of the session-38 record: mediated via Laplace at Quetelet.)",
+       "source_title": "Tijms, Understanding Probability — history of the de Moivre-Laplace theorem",
+       "source_url": "https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "De Moivre, The Doctrine of Chances (1738)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "laplace-memoire-sur-les-approximations-des-formules-qui-sont-1810",
+      "candidate": {
+       "name": "Laplace, Mémoire sur les approximations des formules qui sont fonctions de très grands nombres (1810)",
+       "year": 1810,
+       "domain": "mathematics / probability",
+       "lens": "L2",
+       "type": "theory",
+       "definition": "Laplace's 1810 memoir to the Institut: the first statement and proof of the general limit theorem — sums and means of many independent quantities distribute by the error curve — with its application to the justification of least squares.",
+       "causal_claim": "The 1810 memoir directly enabled the treatise by performing its leap two years early: the limit theorem proved there is re-presented in the Théorie analytique as the warrant of the error law. (Proposed for the own-version test, against the decisive internal evidence: the parent node's own leap record, written at its admission in session 38, dates the leap '1810-12' — the run has already folded the memoir into the parent's identity.)",
+       "source_title": "Encyclopaedia of Mathematics, 'Laplace theorem'",
+       "source_url": "https://encyclopediaofmath.org/index.php?title=Laplace_theorem&"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Laplace, Mémoire sur les approximations des formules qui sont fonctions de très grands nombres (1810)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "laplace-memoire-sur-la-probabilite-des-causes-par-les-evenem-1774",
+      "candidate": {
+       "name": "Laplace, Mémoire sur la probabilité des causes par les événements (1774)",
+       "year": 1774,
+       "domain": "mathematics / probability",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "Laplace's 1774 memoir: the principle of inverse probability — from observed events to the probabilities of their causes — derived by Laplace independently, with the rule for the probability of a cause given the event.",
+       "causal_claim": "The 1774 memoir directly enabled the treatise as its inverse-probability stratum: the Théorie analytique's doctrine of the probability of causes is this memoir's principle, reworked and generalised across the treatise's second book.",
+       "source_title": "Stigler, The History of Statistics (1986)",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Laplace, Mémoire sur la probabilité des causes par les événements (1774)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bernoulli-ars-conjectandi-1713-1713",
+      "candidate": {
+       "name": "Bernoulli, Ars Conjectandi (1713)",
+       "year": 1713,
+       "domain": "mathematics / probability",
+       "lens": "L2",
+       "type": "theory",
+       "definition": "Jakob Bernoulli's posthumous Ars Conjectandi (1713): the first limit theorem — the frequency of an event in many trials converges to its probability (the law of large numbers), proved for the binomial case.",
+       "causal_claim": "Bernoulli's theorem directly enabled the treatise as the limit tradition's founding statement: the Théorie analytique's limit theorems are its generalisations, from convergence of frequencies to the distribution of the sum itself.",
+       "source_title": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics",
+       "source_url": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Bernoulli, Ars Conjectandi (1713)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bayes-an-essay-towards-solving-a-problem-in-the-doctrine-of-1763",
+      "candidate": {
+       "name": "Bayes, An Essay towards solving a Problem in the Doctrine of Chances (1763)",
+       "year": 1763,
+       "domain": "mathematics / probability",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "Thomas Bayes's posthumous essay (communicated by Richard Price, 1763): the first statement of inverse probability — from an observed number of successes and failures to the probability that the chance lies between two bounds.",
+       "causal_claim": "Bayes's essay directly enabled the treatise as the inverse-probability tradition's founding document: the Théorie analytique's probability of causes is the doctrine Bayes first stated. (Proposed for the channel test: Laplace's 1774 derivation was independent, and his acknowledgment of Bayes belongs to the later Essai philosophique (1814), not to the treatise's own machinery.)",
+       "source_title": "Stigler, The History of Statistics (1986)",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Bayes, An Essay towards solving a Problem in the Doctrine of Chances (1763)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "normal-law-of-error-gauss-1809-1809",
+      "candidate": {
+       "name": "Normal law of error (Gauss, 1809)",
+       "year": 1809,
+       "domain": "mathematics / statistics",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "The Gaussian error law from Gauss's Theoria Motus (1809): observational errors follow the normal distribution, derived from the postulate that the arithmetic mean is the most probable value. (The matched node's stored bottleneck/leap/prior_state are empty — the session-31 field-name defect; the corrected record is the Theoria Motus derivation.)",
+       "causal_claim": "Gauss's derivation directly enabled the treatise as the error law's other foundation, published three years before it: the Théorie analytique's treatment of observations and least squares stands in the same years and the same problem as the Theoria Motus. (Proposed for the parallel-founder test, symmetric with the session-38 components discrimination at Quetelet: Gauss channels the least-squares derivation, Laplace the limit theorem — and a treatise consumes its own form.)",
+       "source_title": "Stigler, The History of Statistics (1986)",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Normal law of error (Gauss, 1809)"
+      ],
+      "matched_node_id": "normal-law-of-error-gauss-1809-1809",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "legendre-nouvelles-methodes-pour-la-determination-des-orbite-1805",
+      "candidate": {
+       "name": "Legendre, Nouvelles méthodes pour la détermination des orbites des comètes — the method of least squares (1805)",
+       "year": 1805,
+       "domain": "mathematics / astronomy",
+       "lens": "L6",
+       "type": "method",
+       "definition": "Legendre's 1805 appendix on comet orbits: the first publication of the method of least squares — choose the values that minimise the sum of squared errors — stated as a practical rule with no probabilistic justification.",
+       "causal_claim": "Legendre's publication directly enabled the treatise's least-squares chapters by posing the rule that demanded a warrant: Laplace's justification of least squares from the limit theorem (1810, carried into the treatise) takes up the published method of 1805 and gives it its foundation. (Proposed for its direct hearing at the one parent that did not bypass it: at Galton and at Quetelet the record is bypass/no-consumption, with the lineage hearing standing at Pearson 1896.)",
+       "source_title": "Stigler, The History of Statistics (1986)",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Legendre, Nouvelles méthodes pour la détermination des orbites des comètes — the method of least squares (1805)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "laplace-traite-de-mecanique-celeste-1799-1799",
+      "candidate": {
+       "name": "Laplace, Traité de mécanique céleste (1799)",
+       "year": 1799,
+       "domain": "astronomy / mathematics",
+       "lens": "L2",
+       "type": "theory",
+       "definition": "Laplace's Traité de mécanique céleste (from 1799): the mathematical system of celestial mechanics — the observatory practice, with its masses of observations and their combination, for which the Théorie analytique supplies the probability.",
+       "causal_claim": "The Mécanique céleste directly enabled the treatise as its home problem: the combination of observations, the errors of instruments and the probability of means are the astronomical questions the treatise's second book exists to answer.",
+       "source_title": "Stigler, The History of Statistics (1986)",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Laplace, Traité de mécanique céleste (1799)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "simpson-on-the-advantage-of-taking-the-mean-of-a-number-of-o-1755",
+      "candidate": {
+       "name": "Simpson, On the advantage of taking the mean of a number of observations (1755)",
+       "year": 1755,
+       "domain": "mathematics / astronomy",
+       "lens": "L5",
+       "type": "theory",
+       "definition": "Thomas Simpson's 1755 Philosophical Transactions memoir: the first treatment of the distribution of observational errors — discrete error distributions, and the mean of several observations shown better than a single one.",
+       "causal_claim": "Simpson's memoir directly enabled the treatise by first making the error of an observation a distributed quantity with a law of its own — the object the limit theorem later explains.",
+       "source_title": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics",
+       "source_url": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Simpson, On the advantage of taking the mean of a number of observations (1755)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "condorcet-essai-sur-l-application-de-l-analyse-a-la-probabil-1785",
+      "candidate": {
+       "name": "Condorcet, Essai sur l'application de l'analyse à la probabilité des décisions (1785)",
+       "year": 1785,
+       "domain": "mathematics / probability",
+       "lens": "L6",
+       "type": "theory",
+       "definition": "Condorcet's 1785 Essai: the French probability tradition's incumbent treatise before Laplace — probability applied to decisions, juries and elections, by Laplace's predecessor at the Académie.",
+       "causal_claim": "Condorcet's Essai directly enabled the treatise as the incumbent it supersedes and the programme it continues: the application of analysis to probability as a French national project, whose summation is Laplace's book.",
+       "source_title": "Stigler, The History of Statistics (1986)",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Condorcet, Essai sur l'application de l'analyse à la probabilité des décisions (1785)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "stirling-methodus-differentialis-1730-1730",
+      "candidate": {
+       "name": "Stirling, Methodus Differentialis (1730)",
+       "year": 1730,
+       "domain": "mathematics",
+       "lens": "L1",
+       "type": "method",
+       "definition": "James Stirling's Methodus Differentialis (1730): the asymptotic approximation of the factorial (Stirling's formula) — the analytic tool by which large binomial terms are estimated, De Moivre's approximation included.",
+       "causal_claim": "Stirling's approximation directly enabled the treatise's limit analysis as its working tool: the estimation of factorials of large numbers is the computational step on which every binomial limit in the book depends.",
+       "source_title": "Hald, A History of Probability and Statistics and Their Applications before 1750 / A History of Mathematical Statistics",
+       "source_url": "https://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Stirling, Methodus Differentialis (1730)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }

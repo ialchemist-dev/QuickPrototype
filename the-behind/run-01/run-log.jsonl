@@ -1834,3 +1834,66 @@
   "expansions_done": 87
  }
 }
+{
+ "ts": "2026-11-25T10:47:32.092272+00:00",
+ "session": "run session 39 (v4), expansion 2 of 2 (recovery completion)",
+ "kind": "expansion",
+ "parent": "laplace-theorie-analytique-des-probabilites-1812-1812",
+ "parent_name": "Laplace, Théorie analytique des probabilités (1812)",
+ "raw": 11,
+ "dry_notes": "22 dry/shortfall notes recorded in work/dry_notes_laplace-theorie-analytique-des-probabilites-1812-1812.json: dry L3 (meta: the surveys route the ancestry through De Moivre, Bernoulli, Bayes and the author's own memoirs — all filed), L4 (the problem is posed by the observatory practice itself; no external posing document apart from the least-squares publications at L6), L7 (the failures are the author's own superseded criteria, recorded in the Mécanique céleste evaluation), L8, L9, L10, L11 (the generating-function recipe is the author's own development, recorded in the 1774 evaluation and the L20 note), L12, L13, L14 (the instruments belong to the astronomical practice filed at the Mécanique céleste candidate), L15, L16, L17 (probable error and the weight of an observation are the treatise's own constructions), L18, L20 (Lagrange is formation — the treatise's generating functions are the author's own development from his 1770s-80s memoirs, no specific Lagrange artifact consumed; d'Alembert likewise formation/defined-against context), L21 (the Institut is the venue, the Bureau des longitudes the author's office — the carried artifact would be the author's own memoirs, filed at L1/L2; self-carriage shape, recorded rather than proposed), L22 (no external cost/availability document; the ripeness is internal to the memoir sequence), L23 (meta: contemporary reception names the same ancestry — all filed); shortfalls L1 (2 filed: the 1774 memoir; Stirling 1730 — the remaining machinery is the author's own analytic development), L5 (1 filed: Simpson 1755 — the diagnosis that the curve lacked a foundation is the author's own), L6 (2 filed: Legendre 1805; Condorcet 1785 — Gauss 1809 filed at L19 as the parallel founder rather than as an incumbent), L19 (2 filed: Bayes 1763; Gauss 1809 — the import channels into an 1812 French treatise are exactly these two). Raw 11 against raw_target 140 — the bounded-world pattern for an 1812 treatise (cf. sessions 33-39: raw 10-27). Resolve (MiniLM): 11 distinct, 1 matched existing (Gauss), 0 dropped, 0 prefiltered, judge queue 0. Parent stored fields verified COMPLETE before evaluation.",
+ "date_dropped": [],
+ "distinct": 11,
+ "evaluated": 11,
+ "survivors": [
+  {
+   "name": "De Moivre, The Doctrine of Chances (1738)",
+   "id": "de-moivre-the-doctrine-of-chances-1738-1738",
+   "score": 6.0,
+   "kind": "new node, depth 10"
+  }
+ ],
+ "rejected": 10,
+ "mediated": 3,
+ "rejections_of_note": [
+  {
+   "name": "Laplace, Mémoire sur les approximations des formules (1810) — own first form",
+   "reason": "Fail-closed partial (directness partial; Q3 fail). The counterfactual cannot be run: the parent node's own leap record, written at its admission in session 38, dates the leap '1810-12' — the run has already folded the memoir into the parent's identity, and a node cannot be its own predecessor. Discriminated from the admitted own-version exceptions (Simula I; Fechner 1858; the Fisher trio): there the candidate is a distinct artifact whose mechanisms the parent reworks; here the admission record itself spans both dates, so the identity question was settled before this scout ran. The Aberdeen-address shape (session 37)."
+  },
+  {
+   "name": "Normal law of error (Gauss, 1809) — LINK candidate",
+   "reason": "Fail-closed partial — the parallel-founder record, symmetric with session 38 at Quetelet and completing the components discrimination at its source: Gauss channels the least-squares derivation (from the arithmetic-mean postulate), Laplace channels the limit theorem; at Quetelet the consumer took Laplace's form and Gauss was mediated via Laplace; at Laplace himself there is nothing to mediate — two foundations, near-simultaneous (1809/1810), and the treatise's least-squares justification is Laplace's own rival derivation, mounted against the 1805/1809 situation. Engagement with a rival foundation is not consumption of it; Q3 fails on the multiples fact itself. The matched node's stored text remains EMPTY (session-31 defect); the corrected record (the Theoria Motus derivation) was supplied in the evaluation only, graph not hand-edited."
+  },
+  {
+   "name": "Bernoulli, Ars Conjectandi (1713); Stirling, Methodus Differentialis (1730) — both mediated via De Moivre",
+   "reason": "The limit tradition's own structure (Hald): Bernoulli proved convergence, De Moivre gave the deviation's distribution, Laplace generalised the distribution — each step consumes its immediate predecessor, and the chain's cited final link at this parent is De Moivre. Bernoulli's scores are honest and high (Q1/Q2/Q11/Q12 pass; dry-run 4.0) — mediation, not weakness, refuses the edge. Stirling's formula is the working tool INSIDE De Moivre's derivation (De Moivre determined its constant himself): a component of the admitted candidate, the intercomparison/RFF shape, with mediation and the components rule coinciding. Both hearings belong to De Moivre's expansion — see the structural note below on the depth cap."
+  },
+  {
+   "name": "Simpson, On the advantage of taking the mean of a number of observations (1755) — mediated via Lagrange (1776)",
+   "reason": "Simpson first gave an observation's error a distribution (Q5 scored a pass on the artifact), but the treatise does not receive the problem from his hands: the line runs through Lagrange's 1776 memoir on taking the mean among several observations, which takes up Simpson's error distributions explicitly, and through the author's own early memoirs reworking that stratum (Hald). The diagnosis reaches this parent through its reworkings — the Hochreiter pattern in mediated form."
+  },
+  {
+   "name": "Bayes, An Essay towards solving a Problem in the Doctrine of Chances (1763) — no channel",
+   "reason": "The assigned channel test, discharged on the documents: Laplace derived inverse probability independently in his 1774 memoir, without knowledge of Bayes; his acknowledgment of Bayes belongs to the Essai philosophique (1814) and later writings, not to the treatise of 1812 (Stigler). The treatise's probability of causes descends from the author's own 1774 stratum. Bayes is the parallel founder — multiples evidence for the 1774 stratum, anticipation without a junction at this parent; his ancestry belongs to the tradition that later read him."
+  },
+  {
+   "name": "Legendre, the method of least squares (1805) — fail-closed partial, its direct hearing",
+   "reason": "The strongest form of the claim recorded in full: Laplace's 1810 memoir justifies the very method Legendre published, amid the priority affair, and the justification is carried into the treatise — the posed rule is a specific document and the least-squares chapters derive their warrant in its presence. But the channel reaches the corollary, not the leap: the limit theorem descends from De Moivre and answers the error curve's standing; and the same demand was posed independently by Gauss in 1809 (multiples on the demand side). Consistent with, and closer than, the two standing records (bypassed at Galton; no least squares consumed at Quetelet, directness fail). Legendre's lineage hearing stands at Pearson 1896, per the standing assignment."
+  },
+  {
+   "name": "Laplace, Mémoire sur la probabilité des causes par les événements (1774); Laplace, Traité de mécanique céleste (1799) — the author's two strata",
+   "reason": "Both fail-closed partials, on opposite sides of the book. The 1774 memoir IS the treatise's inverse-probability source, but the parent's recorded leap is the limit theorem, and components discrimination runs both ways: an ancestor of a sibling component is not an enabler of this leap (cf. Fisher 1922 at SMRW). The Mécanique céleste is the leap's home problem — the demand side in the author's own prior system — but the theorem is not in it, discriminated from SMRW at Fisher 1926 (admitted there because the essay's ideas were IN the book; here the mechanism is absent from the candidate)."
+  },
+  {
+   "name": "Condorcet, Essai sur l'application de l'analyse à la probabilité des décisions (1785)",
+   "reason": "Directness FAIL as a defined-against incumbent (the SGI-at-NVIDIA shape): the French tradition's incumbent treatise, whose supersession measures the leap; no Condorcet mechanism is consumed by the limit theorem, and the programme continuity (probability as a national project of analysis applied to judgement) is an era condition, recorded as context."
+  }
+ ],
+ "notes": "Grounding: the parent node's own stored leap record (session 38); Tijms on the de Moivre-Laplace theorem; Encyclopaedia of Mathematics, 'Laplace theorem'; Stigler (1986) — the 1774 independence, the 1814 acknowledgment of Bayes, the least-squares priority record; Hald's histories — the Bernoulli -> De Moivre descent, the Simpson -> Lagrange 1776 line. RECOVERY RECORD: the original session-39 agent built this expansion's scout (work/build_scout_laplace1812.py, candidates + dry notes as designed) and checkpointed expansion 1 (commit c98b3d99, blob SHAs verified against local by the recovery session before acting) but ended before add-candidates; the recovery session ran the builder, completed three shortfall notes the builder lacked (L1, L6, L19 — lenses with 2 filed candidates each), and executed Steps 2-6 unchanged. No step of expansion 1 was re-run; its verdicts were not re-applied. Verification: De Moivre provisional — four attacks documented in work/verification_laplace-theorie-analytique-des-probabilites-1812-1812.json (Q1 stands against Bernoulli's distribution-less convergence; no multiples for the approximation; date 1738 = the carrying publication of the 1733 result; mediation attack refused four candidate mediators — Stirling inside the candidate, Bernoulli behind it, the 1810 memoir the parent's own first form, no Lagrange channel). SESSION STRUCTURAL FINDING: the error-law spine is now closed to a named origin with a distribution — De Moivre 1738, at depth 10, the profile's depth cap. The cap has a cost the run should record: two mediated hearings assigned to De Moivre's expansion (Bernoulli 1713, dry-run 4.0 with Q1/Q2/Q11/Q12 passing; Stirling 1730) cannot be run without raising depth_cap, because a depth-10 node's children would sit at depth 11. The junctions exist in this session's mediation records and nowhere else in the graph. The Galton-Quetelet-Laplace line's ancestry now terminates at both ends of the error law's founding generation: the limit theorem's special case (De Moivre, admitted) and its rival foundation (Gauss, refused at its own source as a parallel). Dry-run through score.rank_candidates reproduced the designed dispositions exactly before the single apply (1 survivor at 6.0; Bernoulli, Simpson, Stirling mediated; seven directness-gate refusals); verdicts never re-applied. Totals after this expansion: 190 nodes / 242 edges, budget 190/2000, expansions_done 88, all provisional; depth d9x3 -> De Moivre opens d10x1. InstructGPT/RLHF flag not surfaced.",
+ "totals_after": {
+  "nodes": 190,
+  "edges": 242,
+  "budget": "190/2000",
+  "expansions_done": 88
+ }
+}
