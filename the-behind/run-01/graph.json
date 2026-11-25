@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T09:05:35+00:00",
-  "expansions_done": 74,
-  "raw_candidates_seen": 3332,
+  "updated_at": "2026-11-25T09:13:00+00:00",
+  "expansions_done": 75,
+  "raw_candidates_seen": 3348,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -16008,6 +16008,85 @@
     "reason": "mediated_via: Fisher's The Design of Experiments (1935)",
     "at": "2026-11-25T09:05:22+00:00",
     "mediated_via": "Fisher's The Design of Experiments (1935)"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Fisher and Mackenzie, Studies in crop variation II (1923)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Student's t-distribution (Gosset, 1908)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Mercer and Hall, The experimental error of field trials (1911)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "The half-drill strip and balanced systematic arrangements (Gosset, 1923)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Pearson's chi-square test (1900)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Peirce and Jastrow, On small differences of sensation (1885)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Neyman, On the application of probability theory to agricultural experiments (1923)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "The Rothamsted long-term experiments (Broadbalk, Lawes and Gilbert, 1843)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Rothamsted Experimental Station (1843)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Fisher, Studies in crop variation I (1921)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Galton's regression and the biometric tradition (1889)",
+    "reason": "mediated_via: Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+    "at": "2026-11-25T09:12:41+00:00",
+    "mediated_via": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)"
+   },
+   {
+    "parent_id": "fisher-s-the-design-of-experiments-1935-1935",
+    "name": "Euler's Latin squares and the problem of the 36 officers (1782)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:12:41+00:00"
    }
   ]
  },
@@ -21111,7 +21190,7 @@
    "prior_state": "Systematic arrangements and ad hoc comparisons; Fisher's own design papers of the 1920s uncodified.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.0,
    "sources": [],
    "verification": {
@@ -21121,6 +21200,93 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T09:05:22+00:00"
+  },
+  "fisher-the-arrangement-of-field-experiments-1926-1926": {
+   "id": "fisher-the-arrangement-of-field-experiments-1926-1926",
+   "name": "Fisher, The arrangement of field experiments (1926)",
+   "aliases": [],
+   "year": 1926,
+   "domain": "experimental design / agricultural statistics",
+   "type": "method",
+   "definition": "Fisher's 1926 Journal of the Ministry of Agriculture essay: the first published statement of the design principles as principles - replication, randomization, and local control (blocking) - arguing randomization against systematic arrangements and giving the randomized block with its analysis of variance.",
+   "bottleneck": "Before the 1926 arrangement essay, field experiments had no stated principles of valid arrangement, because replication, randomization, and local control existed only as scattered practice inside particular trials.",
+   "leap": "Fisher (1926) stated the principles of experimental arrangement as principles: replicate, randomize the errors that cannot be eliminated, and control the rest locally - the doctrine the 1935 treatise codifies into a system.",
+   "prior_state": "Systematic arrangements (half-drill strips, chessboard layouts) defended by balancing doctrine; error estimated, if at all, from uniformity assumptions.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 7.5,
+   "sources": [
+    {
+     "title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Q1 attack: was the impossibility flipped by this ten-page essay, or only by the 1935 system that cites it? Partially lands and is recorded: the essay states principles without worked square/factorial systems. The edge survives because the parent presupposes the principles in exactly the essay's form (replication, randomization, local control as named doctrines argued against systematic arrangement); the treatise extends them rather than re-founding them. Multiples test on Q3: no independent multiple for the doctrine exists - Gosset's systematic line is the rival doctrine, not a multiple, and Neyman's 1923 formalization is a parallel treatment of estimation, rejected at this parent as a non-channel. Mediation attack: station practice is the proposed mediator, but practice is not a separable artifact, and the essay is the practice's first published form - the attack fails on the separable-artifact test. Date/direction check: J. Min. Agric. 33:503-513 (1926), nine years before the parent; direction is the author's own programme forward. Outcome provisional, as everywhere in this run.",
+    "at": "2026-11-25T09:13:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T09:12:41+00:00"
+  },
+  "fisher-statistical-methods-for-research-workers-1925-1925": {
+   "id": "fisher-statistical-methods-for-research-workers-1925-1925",
+   "name": "Fisher, Statistical Methods for Research Workers (1925)",
+   "aliases": [],
+   "year": 1925,
+   "domain": "statistical inference",
+   "type": "method",
+   "definition": "Fisher's 1925 manual codifying the inferential machinery for working scientists: significance tests, chi-square, t and z distributions, correlation, regression, and the analysis of variance - the test machinery the treatise's designed experiments feed and presuppose.",
+   "bottleneck": "Before SMRW, a research worker could not test an experimental difference for significance, because the exact distributions and their tables existed only scattered in journal papers.",
+   "leap": "Fisher (1925) put the whole inferential machinery of the experimental sciences into one manual for working scientists: exact tests, distributions, and the analysis of variance as routine procedures.",
+   "prior_state": "Probable-error folklore and biometric journal literature, inaccessible to the working experimenter.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 7.0,
+   "sources": [
+    {
+     "title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Mediation attack (the strongest against this edge): does the treatise consume SMRW itself, or Fisher's papers, with the book a carrier of convenience? Partially lands and is recorded: several techniques exist in papers before the book. The edge survives on the two-book-system record - the treatise presupposes codified, table-equipped machinery in a form a working scientist could use, and that form is SMRW; the parent's own era treated the two books as one system. Q1 attack: SMRW's generativity is field-wide; the parent-specific claim is machinery supply, which the evaluation states as such (Q1 partial). Multiples test: no rival codification existed - the biometric journal literature is the prior state, not a multiple. Date/direction check: 1925 first edition, ten years before the parent. Outcome provisional.",
+    "at": "2026-11-25T09:13:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T09:12:41+00:00"
+  },
+  "fisher-the-correlation-between-relatives-on-the-supposition-1918": {
+   "id": "fisher-the-correlation-between-relatives-on-the-supposition-1918",
+   "name": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+   "aliases": [],
+   "year": 1918,
+   "domain": "statistical genetics",
+   "type": "theory",
+   "definition": "Fisher's 1918 paper that coined 'variance' and first partitioned observed variation into additive components attributable to distinct causes - the variance-decomposition principle of which the analysis of variance is the designed-experiment form.",
+   "bottleneck": "Before 1918, variation could not be attributed to its causes, because no decomposition of observed variability into additive components existed.",
+   "leap": "Fisher (1918) decomposed variation: observed variability became a sum of components attributable to distinct causes, with 'variance' as the measure - the partition principle behind the analysis of variance.",
+   "prior_state": "Correlation coefficients summarizing association without decomposition; the biometric-Mendelian dispute unresolved.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Mediation attack (this expansion's most contestable call, flagged with its revisit condition): the partition reaches the treatise as presented in SMRW, so is 1918 mediated via SMRW? Answered by components discrimination, recorded in the evaluation: SMRW carries the test machinery built on the partition; the partition principle itself - and the treatise's design-specific reworkings of it (blocks, rows, columns, treatments as partitioned causes) - is the 1918 artifact's content. A future document showing the treatise's design partitions sourced from SMRW's ANOVA chapters rather than reworked from the principle would invert this disposition toward mediation. Multiples test: the variance decomposition has no independent multiple. Q1 attack: lands as scored - the paper's own flip was in genetics (Mendelian reconciliation), and its experimental flip is one step removed; Q1 was scored partial accordingly. Date check: the paper is dated by its conventional citation year 1918 (communicated 1918; journal publication slipped to 1919) - logged as a bibliographic note, immaterial to the edge (both years precede 1935). Outcome provisional.",
+    "at": "2026-11-25T09:13:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T09:12:41+00:00"
   }
  },
  "edges": [
@@ -42685,6 +42851,297 @@
     "counterfactual": "Remove the codified design system - the randomized block arrangement with its analysis of variance in the standard form the parent's reference list cites (ch. V) - and the parent has no defined object to modify: its opening sentence presupposes 'the randomized block type of arrangement' as the discipline's standard form, its problem is that form's restriction (units per block equal to treatments), and its analysis extends that form's ANOVA 'very little more complicated than in the case of ordinary randomized block arrangements'.",
     "mediator": null,
     "evidence": "Citation plus instantiation, the strong channel: the parent's complete five-item reference list cites the book by chapter - '(2) FISHER, R. A. (1936). The Design of Experiments. 2nd Edn., Chap. v' - and the introduction credits the modified methods to Fisher's development of them. The candidate is dated by the work's first edition (1935); the cited copy is the 1936 second edition, a bibliographic fact logged in the run log, not a re-dating. The mediation attack - that Yates knew the arrangements from Rothamsted practice rather than from a book - is answered in the verification: the edge claims the codified arrangement as consumed, and the codification is the form in which the arrangement exists as a public, citable object; the 1926 paper and the machinery papers are mediated through it below, on the same reference-list evidence."
+   }
+  },
+  {
+   "predecessor_id": "fisher-the-arrangement-of-field-experiments-1926-1926",
+   "successor_id": "fisher-s-the-design-of-experiments-1935-1935",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The essay states the flip itself: errors are to be 'carefully randomized in order to provide a valid estimate of the errors which cannot be eliminated' - under the systematic doctrine no valid error estimate existed at all.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Its three principles (replication, randomization, local control) generate the whole repertoire the treatise codifies; Speed's chronology has the randomized block, Latin square and split plot in place by 1925 and factorial experimentation promoted in the essay itself.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the same doctrine also lived in SMRW's chapters and in station practice; the essay is the principles' first published form, not their only vessel.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost is partial: the essay made valid comparison a matter of layout rather than of vastly larger trials, but the order-of-magnitude claim belongs to the codified system argued over a decade.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "The essay made experimental error itself estimable from the experiment: 'a valid estimate of error' is its stated object.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It replaced arrangement folklore with three named principles and their rationale - design became deliberate rather than traditional.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The randomized block as a named, reusable arrangement form is a composable standard others could adopt without re-deriving it.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: written for agriculture; its reach into medicine and industry ran through the treatise and SMRW.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: local control shrank the trials needed per answer, but the full feedback-loop collapse belongs to the codified system.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It opened the displacement of systematic arrangements that the treatise completed; Berry (2015) documents the half-drill strip persisting a decade against it.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The Oxford English Dictionary's first citation for 'randomization' is this essay; lineage surveys start the design story here or in SMRW.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once valid error estimation was tied to randomization, systematic arrangement could not return as doctrine.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 7.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T09:12:41+00:00",
+   "leap": {
+    "prior_state": "Systematic arrangements and ad hoc comparisons; Fisher's own design papers of the 1920s uncodified.",
+    "jump": "Fisher (1935) codified experimental design as one system: randomization grounding valid error estimates, with blocks, squares, and factorials as composable arrangements - the discipline's founding treatise.",
+    "date": 1935
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 1926 essay and the treatise's doctrinal core exists only as scattered book chapters and station practice: the principles as principles - replication, randomization, local control, argued against systematic arrangements - are this artifact's content, and the treatise presupposes and extends exactly them, adding the full square/factorial system. The own-version exception is argued explicitly: a separable published artifact (Journal of the Ministry of Agriculture 33:503-513) whose mechanisms are consumed and reworked into the system - the Simula I / D3D9 shape, not the Bellman-trio shape.",
+    "mediator": null,
+    "evidence": "Speed (1990): the essay's main topics are 'significance testing, replication, randomization, local control (the elimination of heterogeneity) and factorial experimentation', linked in 'the dual tasks of reducing the error in comparisons of interest, and in obtaining a valid estimate of that error'; of the book treatment he writes the material was 'somewhat scattered' by contrast with the essay's clarity and comprehensiveness."
+   }
+  },
+  {
+   "predecessor_id": "fisher-statistical-methods-for-research-workers-1925-1925",
+   "successor_id": "fisher-s-the-design-of-experiments-1935-1935",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "SMRW alone flipped no design impossibility - it codified tests; scored partial because exact small-sample tests did make small experiments newly decidable, a precondition of the parent's practice.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It unblocked quantitative experimental inference as a general practice: the space of analysable experiments that the treatise's designs feed is SMRW's creation.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the treatise re-presents much technique itself; SMRW is the presupposed companion volume, not the only conceivable vessel.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost is partial: it collapsed significance testing into table lookups for working scientists, but an order-of-magnitude cost claim for a manual is weaker than for the doctrine.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "It made the significance of an experimental difference a computable quantity for any research worker with tables.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory models - distributions, degrees of freedom, variance partitions - with which a scientist could design deliberately instead of by rule of thumb.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: its tests are composable procedures, but it standardizes analysis rather than the arrangements themselves.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Written for research workers generally, it carried the machinery into biology, agriculture, medicine, and psychology alike.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: routine analysis shortened the experiment cycle, though computation remained manual.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It displaced probable-error folklore and became the default manual of the experimental sciences.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The most influential statistics book of its era; every lineage survey of the parent runs through it.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: the framework is irreversible, but the book's specific test repertoire was repeatedly revised across its own fourteen editions.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 7.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T09:12:41+00:00",
+   "leap": {
+    "prior_state": "Systematic arrangements and ad hoc comparisons; Fisher's own design papers of the 1920s uncodified.",
+    "jump": "Fisher (1935) codified experimental design as one system: randomization grounding valid error estimates, with blocks, squares, and factorials as composable arrangements - the discipline's founding treatise.",
+    "date": 1935
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove SMRW and the treatise's tests of significance have no codified machinery to presuppose: the parent is the design half of a two-book system whose analysis half is SMRW. Components discrimination (the Amari pattern): SMRW carries the inferential machinery; the 1926 essay carries the arrangement doctrine; the 1918 paper carries the partition principle - three distinct channels from the author's stratum, not one chain.",
+    "mediator": null,
+    "evidence": "Speed (1990), contrasting the 1926 essay with the book: 'the material in the book was somewhat scattered' - SMRW (1925) already contained the design-and-analysis material in book form a decade before the treatise completed the codification."
+   }
+  },
+  {
+   "predecessor_id": "fisher-the-correlation-between-relatives-on-the-supposition-1918",
+   "successor_id": "fisher-s-the-design-of-experiments-1935-1935",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The 1918 paper flipped nothing about experiments directly - it reconciled Mendelian inheritance with biometric correlation; its flip reaches the parent one step removed, through the partition it invented. Scored partial.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The decomposition of variation into attributable components unblocked the analysis of every structured dataset; the treatise's design analyses are one branch of that space.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: Fisher re-derived partitions in later work; the historical line to the treatise's ANOVA runs from this artifact, but the author could in principle have re-founded it.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost is partial: partitioning replaced bespoke comparisons with one arithmetic scheme, but the collapse is the system's, not the 1918 paper's alone.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "Variation itself became measurable in parts: a whole partitioned into named, estimable components - the parent's error term is one such component.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model - observed variation as a sum of independent causes - on which deliberate design analysis rests.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: the partition is a reusable schema, but it became an interface for others only via SMRW and the treatise.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "From genetics the decomposition reached agriculture, psychology, and every field that partitions variance.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: one analysis scheme for many layouts shortened analysis, within manual computation.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Displacement fails: the 1918 paper displaced no experimental practice - it was little read for years; the displacement belongs to its descendants.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Every history of the analysis of variance roots it in this paper and its coined term 'variance'.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once variation was decomposable, no later statistics could return to treating it as an unstructured whole.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T09:12:41+00:00",
+   "leap": {
+    "prior_state": "Systematic arrangements and ad hoc comparisons; Fisher's own design papers of the 1920s uncodified.",
+    "jump": "Fisher (1935) codified experimental design as one system: randomization grounding valid error estimates, with blocks, squares, and factorials as composable arrangements - the discipline's founding treatise.",
+    "date": 1935
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 1918 decomposition and the treatise's every analysis loses its form: the ANOVA of a designed layout is the 1918 partition reworked so that layout factors are the causes partitioned. The mediation attack - that the channel runs through SMRW - is answered by components discrimination: SMRW carries the test machinery built on the partition, but the partition principle itself is this artifact's, and the treatise's design-specific partitions (blocks, rows, columns, treatments) are reworkings of it, not quotations of SMRW.",
+    "mediator": null,
+    "evidence": "The word 'variance' is coined in the 1918 paper; Speed's (1990) chronology derives the analysis-of-variance table (1923) and the design analyses from this decomposition line."
    }
   }
  ],
@@ -159826,6 +160283,550 @@
       "reason": "dated on/after parent year 1936"
      }
     ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "fisher-s-the-design-of-experiments-1935-1935": {
+   "raw_candidates": [
+    {
+     "causal_claim": "The 1926 arrangement essay directly enabled the treatise's leap by stating the doctrine the treatise codifies: errors 'carefully randomized in order to provide a valid estimate' is the parent's validity argument in first published form.",
+     "definition": "Fisher's 1926 Journal of the Ministry of Agriculture essay: the first published statement of the design principles as principles - replication, randomization, and local control (blocking) - arguing randomization against systematic arrangements and giving the randomized block with its analysis of variance.",
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L2",
+     "name": "Fisher, The arrangement of field experiments (1926)",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "type": "method",
+     "year": 1926
+    },
+    {
+     "causal_claim": "SMRW directly enabled the treatise's leap by supplying, in codified book form, the significance-test and ANOVA machinery every arrangement in the treatise is analysed with; the treatise presupposes it and refers its readers to it for technique.",
+     "definition": "Fisher's 1925 manual codifying the inferential machinery for working scientists: significance tests, chi-square, t and z distributions, correlation, regression, and the analysis of variance - the test machinery the treatise's designed experiments feed and presuppose.",
+     "domain": "statistical inference",
+     "lens": "L2",
+     "name": "Fisher, Statistical Methods for Research Workers (1925)",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "type": "method",
+     "year": 1925
+    },
+    {
+     "causal_claim": "The 1918 variance decomposition directly enabled the treatise's leap by supplying the partition principle every design analysis in the parent performs: total variation split into blocks, treatments, and error.",
+     "definition": "Fisher's 1918 paper that coined 'variance' and first partitioned observed variation into additive components attributable to distinct causes - the variance-decomposition principle of which the analysis of variance is the designed-experiment form.",
+     "domain": "statistical genetics",
+     "lens": "L1",
+     "name": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "type": "theory",
+     "year": 1918
+    },
+    {
+     "causal_claim": "Fisher and Mackenzie 1923 directly enabled the treatise's leap by demonstrating, on real field trials, the ANOVA machinery and the randomization-for-valid-error argument the treatise generalizes into doctrine.",
+     "definition": "Fisher and Mackenzie's 1923 analysis of Rothamsted potato variety and manure trials: the first full analysis-of-variance table applied to real field data, partitioning variation among varieties, manures, their interaction, and error - and containing the first published statement that plots should be arranged 'deliberately at random' for a valid error estimate.",
+     "domain": "agricultural statistics",
+     "lens": "L1",
+     "name": "Fisher and Mackenzie, Studies in crop variation II (1923)",
+     "source_title": "Zhao, Fisher, Statistics, and Randomization (Cambridge Statslab talk slides)",
+     "source_url": "https://www.statslab.cam.ac.uk/~qz280/talk/fisher-2022/slides.pdf",
+     "type": "method",
+     "year": 1923
+    },
+    {
+     "causal_claim": "Student's t directly enabled the treatise's leap by supplying the exact small-sample test machinery its tests of significance run on: designed field experiments have few replicates, and without exact small-sample distributions their error estimates could not be tested.",
+     "definition": "Gosset's ('Student', 1908) distribution of the ratio of a mean to its sample standard deviation: the first exact small-sample inference, derived for Guinness brewery samples of four or five observations.",
+     "domain": "statistical inference",
+     "lens": "L1",
+     "name": "Student's t-distribution (Gosset, 1908)",
+     "source_title": "Biometrika annotated list: Design of experiments papers (R. A. Bailey)",
+     "source_url": "https://webspace.maths.qmul.ac.uk/r.a.bailey/biometrika.html",
+     "type": "theory",
+     "year": 1908
+    },
+    {
+     "causal_claim": "Mercer and Hall directly enabled the treatise's leap by measuring the obstruction - plot-to-plot heterogeneity as the dominant error of field trials - that the treatise's local control (blocking) is designed to eliminate.",
+     "definition": "Mercer and Hall's 1911 uniformity-trial study (Woburn and Rothamsted data): the experimental error of field trials measured as a function of plot size and shape - the first quantitative statement of the soil-heterogeneity obstruction that blocking answers.",
+     "domain": "agricultural experimentation",
+     "lens": "L5",
+     "name": "Mercer and Hall, The experimental error of field trials (1911)",
+     "source_title": "Yates-expansion grounding (session 32): Mercer & Hall 1911, J. Agric. Sci. 4",
+     "source_url": "https://www.cambridge.org/core/journals/journal-of-agricultural-science",
+     "type": "method",
+     "year": 1911
+    },
+    {
+     "causal_claim": "The half-drill strip tradition directly enabled the treatise's leap by being the incumbent arrangement its randomization doctrine defines itself against and displaces.",
+     "definition": "The systematic-arrangement doctrine for variety trials, stated by 'Student' (Gosset) in 'On testing varieties of cereals' (Biometrika, 1923): regular balanced layouts such as Beaven's half-drill strip (ABBA ABBA...) claimed to neutralize soil trend without randomization - the standing incumbent Fisher's randomization doctrine was argued against.",
+     "domain": "agricultural experimentation",
+     "lens": "L6",
+     "name": "The half-drill strip and balanced systematic arrangements (Gosset, 1923)",
+     "source_title": "Berry, The resisted rise of randomisation in experimental design (Hist. Phil. Life Sci. 37, 2015)",
+     "source_url": "https://eprints.whiterose.ac.uk/id/eprint/87554/3/Berry_Resisted_rise_of_randmisation[1].pdf",
+     "type": "method",
+     "year": 1923
+    },
+    {
+     "causal_claim": "Pearson's chi-square directly enabled the treatise's leap by supplying the goodness-of-fit test tradition its tests of significance inherit and correct.",
+     "definition": "Karl Pearson's 1900 chi-square criterion for goodness of fit: the founding test of the biometric school, whose degrees of freedom Fisher corrected in 1922-24 - inherited test machinery the treatise both uses and argues with.",
+     "domain": "statistical inference",
+     "lens": "L6",
+     "name": "Pearson's chi-square test (1900)",
+     "source_title": "Biometrika annotated list: Design of experiments papers (R. A. Bailey)",
+     "source_url": "https://webspace.maths.qmul.ac.uk/r.a.bailey/biometrika.html",
+     "type": "theory",
+     "year": 1900
+    },
+    {
+     "causal_claim": "Peirce and Jastrow directly enabled the treatise's leap by first practising randomized assignment in an experiment, fifty years before Fisher made it doctrine.",
+     "definition": "Peirce and Jastrow's 1885 psychophysics experiment: the order of heavier/lighter pressure stimuli determined by shuffled cards, with blinded subjects - the first documented randomized, blinded experiment, run against Fechner's threshold doctrine.",
+     "domain": "psychophysics",
+     "lens": "L19",
+     "name": "Peirce and Jastrow, On small differences of sensation (1885)",
+     "source_title": "Zhao, The origin of randomization (Cambridge Statslab)",
+     "source_url": "https://www.statslab.cam.ac.uk//~qz280/post/randomization-origin/",
+     "type": "method",
+     "year": 1885
+    },
+    {
+     "causal_claim": "Neyman 1923 directly enabled the treatise's leap by first formalizing what a randomized agricultural experiment estimates, in the same decade and problem domain as Fisher's programme.",
+     "definition": "Neyman's 1923 Polish-language thesis on agricultural experiments: the potential-outcomes model of a randomized experiment - each plot has fixed yields under each treatment, and randomization justifies estimating average effects - untranslated until 1990.",
+     "domain": "statistical theory",
+     "lens": "L3",
+     "name": "Neyman, On the application of probability theory to agricultural experiments (1923)",
+     "source_title": "Splawa-Neyman, Dabrowska and Speed, translation and discussion (Statistical Science 5, 1990)",
+     "source_url": "https://www.gsb.stanford.edu/faculty-research/publications/neymanian-inference-randomized-experiments",
+     "type": "theory",
+     "year": 1923
+    },
+    {
+     "causal_claim": "The Rothamsted long-term experiments directly enabled the treatise's leap by supplying the accumulated field data - and the visible problem of soil heterogeneity over decades - that the design programme was built to analyse and answer.",
+     "definition": "Lawes and Gilbert's long-term field experiments at Rothamsted, begun 1843 (Broadbalk wheat): continuous treatment plots maintained for decades, producing the yield records on which Fisher's crop-variation analyses and the whole design programme's problem consciousness were formed.",
+     "domain": "agricultural science",
+     "lens": "L8",
+     "name": "The Rothamsted long-term experiments (Broadbalk, Lawes and Gilbert, 1843)",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "type": "other",
+     "year": 1843
+    },
+    {
+     "causal_claim": "Rothamsted directly enabled the treatise's leap by employing Fisher, holding the long-term data, and posing the station's field-trial problems the treatise answers.",
+     "definition": "The agricultural research station founded by Lawes in 1843 where Fisher worked 1919-1933 and Yates succeeded him: the institutional home of the experimental-design programme.",
+     "domain": "agricultural research institution",
+     "lens": "L21",
+     "name": "Rothamsted Experimental Station (1843)",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "type": "institution",
+     "year": 1843
+    },
+    {
+     "causal_claim": "Fisher 1922 directly enabled the treatise's leap by supplying the estimation-theoretic foundations (likelihood, sufficiency, efficiency) on which its author built all his statistical work, designs included.",
+     "definition": "Fisher's 1922 foundations paper: consistency, efficiency, sufficiency, and maximum likelihood as the criteria of estimation - the author's own theoretical-statistics stratum, adjacent to the design work.",
+     "domain": "statistical theory",
+     "lens": "L20",
+     "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+     "source_title": "Ronald Fisher bibliography (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Ronald_Fisher_bibliography",
+     "type": "theory",
+     "year": 1922
+    },
+    {
+     "causal_claim": "Studies in crop variation I directly enabled the treatise's leap by forming the programme: it showed the station's data yielded to variance analysis and set the questions the design work then took up.",
+     "definition": "Fisher's 1921 first crop-variation study: the analysis of 67 years of Broadbalk wheat yields against rainfall records - the author's own demonstration that Rothamsted's accumulated data could be made to answer quantitative questions, opening his Rothamsted programme.",
+     "domain": "agricultural statistics",
+     "lens": "L20",
+     "name": "Fisher, Studies in crop variation I (1921)",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "type": "method",
+     "year": 1921
+    },
+    {
+     "causal_claim": "Galton's biometric tradition directly enabled the treatise's leap by supplying the variation-and-correlation worldview, and its Rothamsted descendant problems, that Fisher's design programme inherited.",
+     "definition": "Galton's Natural Inheritance (1889) and the biometric programme it founded: regression, correlation, and the statistical study of variation in populations - the tradition Fisher was trained in, inherited, and partly defined his programme against.",
+     "domain": "biometrics",
+     "lens": "L3",
+     "name": "Galton's regression and the biometric tradition (1889)",
+     "source_title": "Rosenbaum, Randomized Experiments and Observational Studies (survey)",
+     "source_url": "https://docslib.org/download/10974423/randomized-experiments-and-observational-studies-causal-inference-in-statistics",
+     "type": "theory",
+     "year": 1889
+    },
+    {
+     "causal_claim": "Euler's Latin squares directly enabled the treatise's leap by supplying the combinatorial arrangement its Latin square design instantiates as an experimental layout.",
+     "definition": "Euler's 1782 investigation of Latin and Graeco-Latin squares, posed as the problem of the 36 officers: the combinatorial objects that Fisher's Latin square design re-purposes as experimental arrangements two centuries later.",
+     "domain": "combinatorics",
+     "lens": "L19",
+     "name": "Euler's Latin squares and the problem of the 36 officers (1782)",
+     "source_title": "Session-32 Yates record: Euler/Tarry as the combinatorial substrate of the square side",
+     "source_url": "https://www.cambridge.org/core/journals/journal-of-agricultural-science",
+     "type": "theory",
+     "year": 1782
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "fisher-the-arrangement-of-field-experiments-1926-1926",
+      "candidate": {
+       "causal_claim": "The 1926 arrangement essay directly enabled the treatise's leap by stating the doctrine the treatise codifies: errors 'carefully randomized in order to provide a valid estimate' is the parent's validity argument in first published form.",
+       "definition": "Fisher's 1926 Journal of the Ministry of Agriculture essay: the first published statement of the design principles as principles - replication, randomization, and local control (blocking) - arguing randomization against systematic arrangements and giving the randomized block with its analysis of variance.",
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L2",
+       "name": "Fisher, The arrangement of field experiments (1926)",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "type": "method",
+       "year": 1926
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Fisher, The arrangement of field experiments (1926)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-statistical-methods-for-research-workers-1925-1925",
+      "candidate": {
+       "causal_claim": "SMRW directly enabled the treatise's leap by supplying, in codified book form, the significance-test and ANOVA machinery every arrangement in the treatise is analysed with; the treatise presupposes it and refers its readers to it for technique.",
+       "definition": "Fisher's 1925 manual codifying the inferential machinery for working scientists: significance tests, chi-square, t and z distributions, correlation, regression, and the analysis of variance - the test machinery the treatise's designed experiments feed and presuppose.",
+       "domain": "statistical inference",
+       "lens": "L2",
+       "name": "Fisher, Statistical Methods for Research Workers (1925)",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "type": "method",
+       "year": 1925
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Fisher, Statistical Methods for Research Workers (1925)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-the-correlation-between-relatives-on-the-supposition-1918",
+      "candidate": {
+       "causal_claim": "The 1918 variance decomposition directly enabled the treatise's leap by supplying the partition principle every design analysis in the parent performs: total variation split into blocks, treatments, and error.",
+       "definition": "Fisher's 1918 paper that coined 'variance' and first partitioned observed variation into additive components attributable to distinct causes - the variance-decomposition principle of which the analysis of variance is the designed-experiment form.",
+       "domain": "statistical genetics",
+       "lens": "L1",
+       "name": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "type": "theory",
+       "year": 1918
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+      "candidate": {
+       "causal_claim": "Fisher and Mackenzie 1923 directly enabled the treatise's leap by demonstrating, on real field trials, the ANOVA machinery and the randomization-for-valid-error argument the treatise generalizes into doctrine.",
+       "definition": "Fisher and Mackenzie's 1923 analysis of Rothamsted potato variety and manure trials: the first full analysis-of-variance table applied to real field data, partitioning variation among varieties, manures, their interaction, and error - and containing the first published statement that plots should be arranged 'deliberately at random' for a valid error estimate.",
+       "domain": "agricultural statistics",
+       "lens": "L1",
+       "name": "Fisher and Mackenzie, Studies in crop variation II (1923)",
+       "source_title": "Zhao, Fisher, Statistics, and Randomization (Cambridge Statslab talk slides)",
+       "source_url": "https://www.statslab.cam.ac.uk/~qz280/talk/fisher-2022/slides.pdf",
+       "type": "method",
+       "year": 1923
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Fisher and Mackenzie, Studies in crop variation II (1923)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "student-s-t-distribution-gosset-1908-1908",
+      "candidate": {
+       "causal_claim": "Student's t directly enabled the treatise's leap by supplying the exact small-sample test machinery its tests of significance run on: designed field experiments have few replicates, and without exact small-sample distributions their error estimates could not be tested.",
+       "definition": "Gosset's ('Student', 1908) distribution of the ratio of a mean to its sample standard deviation: the first exact small-sample inference, derived for Guinness brewery samples of four or five observations.",
+       "domain": "statistical inference",
+       "lens": "L1",
+       "name": "Student's t-distribution (Gosset, 1908)",
+       "source_title": "Biometrika annotated list: Design of experiments papers (R. A. Bailey)",
+       "source_url": "https://webspace.maths.qmul.ac.uk/r.a.bailey/biometrika.html",
+       "type": "theory",
+       "year": 1908
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Student's t-distribution (Gosset, 1908)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911",
+      "candidate": {
+       "causal_claim": "Mercer and Hall directly enabled the treatise's leap by measuring the obstruction - plot-to-plot heterogeneity as the dominant error of field trials - that the treatise's local control (blocking) is designed to eliminate.",
+       "definition": "Mercer and Hall's 1911 uniformity-trial study (Woburn and Rothamsted data): the experimental error of field trials measured as a function of plot size and shape - the first quantitative statement of the soil-heterogeneity obstruction that blocking answers.",
+       "domain": "agricultural experimentation",
+       "lens": "L5",
+       "name": "Mercer and Hall, The experimental error of field trials (1911)",
+       "source_title": "Yates-expansion grounding (session 32): Mercer & Hall 1911, J. Agric. Sci. 4",
+       "source_url": "https://www.cambridge.org/core/journals/journal-of-agricultural-science",
+       "type": "method",
+       "year": 1911
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Mercer and Hall, The experimental error of field trials (1911)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-half-drill-strip-and-balanced-systematic-arrangements-go-1923",
+      "candidate": {
+       "causal_claim": "The half-drill strip tradition directly enabled the treatise's leap by being the incumbent arrangement its randomization doctrine defines itself against and displaces.",
+       "definition": "The systematic-arrangement doctrine for variety trials, stated by 'Student' (Gosset) in 'On testing varieties of cereals' (Biometrika, 1923): regular balanced layouts such as Beaven's half-drill strip (ABBA ABBA...) claimed to neutralize soil trend without randomization - the standing incumbent Fisher's randomization doctrine was argued against.",
+       "domain": "agricultural experimentation",
+       "lens": "L6",
+       "name": "The half-drill strip and balanced systematic arrangements (Gosset, 1923)",
+       "source_title": "Berry, The resisted rise of randomisation in experimental design (Hist. Phil. Life Sci. 37, 2015)",
+       "source_url": "https://eprints.whiterose.ac.uk/id/eprint/87554/3/Berry_Resisted_rise_of_randmisation[1].pdf",
+       "type": "method",
+       "year": 1923
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "The half-drill strip and balanced systematic arrangements (Gosset, 1923)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pearson-s-chi-square-test-1900-1900",
+      "candidate": {
+       "causal_claim": "Pearson's chi-square directly enabled the treatise's leap by supplying the goodness-of-fit test tradition its tests of significance inherit and correct.",
+       "definition": "Karl Pearson's 1900 chi-square criterion for goodness of fit: the founding test of the biometric school, whose degrees of freedom Fisher corrected in 1922-24 - inherited test machinery the treatise both uses and argues with.",
+       "domain": "statistical inference",
+       "lens": "L6",
+       "name": "Pearson's chi-square test (1900)",
+       "source_title": "Biometrika annotated list: Design of experiments papers (R. A. Bailey)",
+       "source_url": "https://webspace.maths.qmul.ac.uk/r.a.bailey/biometrika.html",
+       "type": "theory",
+       "year": 1900
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Pearson's chi-square test (1900)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "peirce-and-jastrow-on-small-differences-of-sensation-1885-1885",
+      "candidate": {
+       "causal_claim": "Peirce and Jastrow directly enabled the treatise's leap by first practising randomized assignment in an experiment, fifty years before Fisher made it doctrine.",
+       "definition": "Peirce and Jastrow's 1885 psychophysics experiment: the order of heavier/lighter pressure stimuli determined by shuffled cards, with blinded subjects - the first documented randomized, blinded experiment, run against Fechner's threshold doctrine.",
+       "domain": "psychophysics",
+       "lens": "L19",
+       "name": "Peirce and Jastrow, On small differences of sensation (1885)",
+       "source_title": "Zhao, The origin of randomization (Cambridge Statslab)",
+       "source_url": "https://www.statslab.cam.ac.uk//~qz280/post/randomization-origin/",
+       "type": "method",
+       "year": 1885
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Peirce and Jastrow, On small differences of sensation (1885)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "neyman-on-the-application-of-probability-theory-to-agricultu-1923",
+      "candidate": {
+       "causal_claim": "Neyman 1923 directly enabled the treatise's leap by first formalizing what a randomized agricultural experiment estimates, in the same decade and problem domain as Fisher's programme.",
+       "definition": "Neyman's 1923 Polish-language thesis on agricultural experiments: the potential-outcomes model of a randomized experiment - each plot has fixed yields under each treatment, and randomization justifies estimating average effects - untranslated until 1990.",
+       "domain": "statistical theory",
+       "lens": "L3",
+       "name": "Neyman, On the application of probability theory to agricultural experiments (1923)",
+       "source_title": "Splawa-Neyman, Dabrowska and Speed, translation and discussion (Statistical Science 5, 1990)",
+       "source_url": "https://www.gsb.stanford.edu/faculty-research/publications/neymanian-inference-randomized-experiments",
+       "type": "theory",
+       "year": 1923
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Neyman, On the application of probability theory to agricultural experiments (1923)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-rothamsted-long-term-experiments-broadbalk-lawes-and-gil-1843",
+      "candidate": {
+       "causal_claim": "The Rothamsted long-term experiments directly enabled the treatise's leap by supplying the accumulated field data - and the visible problem of soil heterogeneity over decades - that the design programme was built to analyse and answer.",
+       "definition": "Lawes and Gilbert's long-term field experiments at Rothamsted, begun 1843 (Broadbalk wheat): continuous treatment plots maintained for decades, producing the yield records on which Fisher's crop-variation analyses and the whole design programme's problem consciousness were formed.",
+       "domain": "agricultural science",
+       "lens": "L8",
+       "name": "The Rothamsted long-term experiments (Broadbalk, Lawes and Gilbert, 1843)",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "type": "other",
+       "year": 1843
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "The Rothamsted long-term experiments (Broadbalk, Lawes and Gilbert, 1843)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rothamsted-experimental-station-1843-1843",
+      "candidate": {
+       "causal_claim": "Rothamsted directly enabled the treatise's leap by employing Fisher, holding the long-term data, and posing the station's field-trial problems the treatise answers.",
+       "definition": "The agricultural research station founded by Lawes in 1843 where Fisher worked 1919-1933 and Yates succeeded him: the institutional home of the experimental-design programme.",
+       "domain": "agricultural research institution",
+       "lens": "L21",
+       "name": "Rothamsted Experimental Station (1843)",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "type": "institution",
+       "year": 1843
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Rothamsted Experimental Station (1843)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-on-the-mathematical-foundations-of-theoretical-statis-1922",
+      "candidate": {
+       "causal_claim": "Fisher 1922 directly enabled the treatise's leap by supplying the estimation-theoretic foundations (likelihood, sufficiency, efficiency) on which its author built all his statistical work, designs included.",
+       "definition": "Fisher's 1922 foundations paper: consistency, efficiency, sufficiency, and maximum likelihood as the criteria of estimation - the author's own theoretical-statistics stratum, adjacent to the design work.",
+       "domain": "statistical theory",
+       "lens": "L20",
+       "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+       "source_title": "Ronald Fisher bibliography (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Ronald_Fisher_bibliography",
+       "type": "theory",
+       "year": 1922
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Fisher, On the mathematical foundations of theoretical statistics (1922)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-studies-in-crop-variation-i-1921-1921",
+      "candidate": {
+       "causal_claim": "Studies in crop variation I directly enabled the treatise's leap by forming the programme: it showed the station's data yielded to variance analysis and set the questions the design work then took up.",
+       "definition": "Fisher's 1921 first crop-variation study: the analysis of 67 years of Broadbalk wheat yields against rainfall records - the author's own demonstration that Rothamsted's accumulated data could be made to answer quantitative questions, opening his Rothamsted programme.",
+       "domain": "agricultural statistics",
+       "lens": "L20",
+       "name": "Fisher, Studies in crop variation I (1921)",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "type": "method",
+       "year": 1921
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Fisher, Studies in crop variation I (1921)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "galton-s-regression-and-the-biometric-tradition-1889-1889",
+      "candidate": {
+       "causal_claim": "Galton's biometric tradition directly enabled the treatise's leap by supplying the variation-and-correlation worldview, and its Rothamsted descendant problems, that Fisher's design programme inherited.",
+       "definition": "Galton's Natural Inheritance (1889) and the biometric programme it founded: regression, correlation, and the statistical study of variation in populations - the tradition Fisher was trained in, inherited, and partly defined his programme against.",
+       "domain": "biometrics",
+       "lens": "L3",
+       "name": "Galton's regression and the biometric tradition (1889)",
+       "source_title": "Rosenbaum, Randomized Experiments and Observational Studies (survey)",
+       "source_url": "https://docslib.org/download/10974423/randomized-experiments-and-observational-studies-causal-inference-in-statistics",
+       "type": "theory",
+       "year": 1889
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Galton's regression and the biometric tradition (1889)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "euler-s-latin-squares-and-the-problem-of-the-36-officers-178-1782",
+      "candidate": {
+       "causal_claim": "Euler's Latin squares directly enabled the treatise's leap by supplying the combinatorial arrangement its Latin square design instantiates as an experimental layout.",
+       "definition": "Euler's 1782 investigation of Latin and Graeco-Latin squares, posed as the problem of the 36 officers: the combinatorial objects that Fisher's Latin square design re-purposes as experimental arrangements two centuries later.",
+       "domain": "combinatorics",
+       "lens": "L19",
+       "name": "Euler's Latin squares and the problem of the 36 officers (1782)",
+       "source_title": "Session-32 Yates record: Euler/Tarry as the combinatorial substrate of the square side",
+       "source_url": "https://www.cambridge.org/core/journals/journal-of-agricultural-science",
+       "type": "theory",
+       "year": 1782
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Euler's Latin squares and the problem of the 36 officers (1782)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [],
     "prefiltered": []
    },
    "judge_queue": [],
