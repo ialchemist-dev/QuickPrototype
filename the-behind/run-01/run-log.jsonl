@@ -4096,5 +4096,75 @@
   }
  },
  "frontier_head_after": "learning-representations-by-back-propagating-errors-rumelhar-1986, then sparse sampling (1999), Dynabook (1972)",
+ "sync_commit": "04f094e5"
+}
+
+{
+ "session": 71,
+ "expansion": 152,
+ "parent": "learning-representations-by-back-propagating-errors-rumelhar-1986",
+ "parent_name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+ "depth": 5,
+ "raw": 47,
+ "distinct": 32,
+ "dropped_same_year": 7,
+ "prefiltered": 0,
+ "matched_existing": 3,
+ "judge_queue": 0,
+ "judge_decisions": "Judge queue empty (0 pairs): the two exact-name LINK filings (Werbos 1974; Bryson & Ho 1969) matched their existing nodes at resolve, and a third match was caught by resolve itself - the Amari (1967) filing matched the graph's existing node 'theory-of-adaptive-pattern-classifiers-amari-1967-1967' (admitted in the information-geometry line). The scout's pre-resolve concept grep had missed the Amari 1967 node (the grep terms covered the 1998 natural-gradient node, not the 1967 classifier paper); the identity net worked as designed and the match is recorded here.",
+ "dry_notes": "10 lenses: L8 dry (the pattern sets - XOR, parity, encoder, symmetry, negation, T-C - are the chapter's own test constructions, not consumed data; the Katz office-corpus shape); L9 dry-with-finding (neither document names a machine; the simulations' hardware is unspecified); L10 dry; L12 dry (no software layer named or consumed); L13 THIN (2 filings - the PDP framework, calendar-foreclosed as the parent's own apparatus, and the Kienker et al. sibling manuscript); L14 dry; L15 dry; L16 dry-with-finding (the parent conforms to no standard - its procedure becomes one; the inversion); L17 dry-with-finding (no external benchmark; the registering instruments are the chapter's own simulation problems; sum-squared error is the parent's own derived objective); L18 dry-with-finding (the observation instrument is the simulation itself - hidden-unit analyses in the parent's own runs). L20 closed with its 3 filings noted. L3/L23 are the meta passes (2 and 1 filings, no floor by design).",
+ "survivors": [
+  {
+   "name": "Widrow & Hoff, Adaptive switching circuits (1960) - the delta rule",
+   "score": 4.5,
+   "status": "verified",
+   "argument": "Citation + instantiation in the strongest form available at this parent: Ch. 8 lists the paper in its references, attributes the parent's base rule to it by name and year in the problem statement ('the variation due originally to Widrow and Hoff, 1960, which we call the delta rule'), presents its procedure as 'a clear generalization of the delta rule', derives the standard delta rule first (Eq. 1; 'The delta rule and gradient descent'), and states the generalized rule 'has exactly the same form as the standard delta rule of Equation 1'. Operative-carrier test passes: the child CONTINUES the candidate's headline mechanism (error-driven weight change proportional to error signal x input) and extends it to hidden units - the RFC 1738-at-1808 shape. Multiples (the perceptron convergence procedure) cap Q3 at partial. VERIFIED: the grading voice (RHW) is independent of the candidate's authors."
+  }
+ ],
+ "created": [
+  "widrow-hoff-adaptive-switching-circuits-1960-the-delta-rule-1960"
+ ],
+ "linked": [],
+ "created_node_text_check": "The created node was read back after apply-verdicts: stored leap, prior_state AND bottleneck all non-empty (full session-66 field set in the builder). No defect.",
+ "count_check": "Verdicts builder asserted evaluations == distinct == 32 before writing; dry-run through score.rank_candidates reproduced the intended shape (1 survivor / 31 rejected) before the single apply. No dry-run correction was needed.",
+ "most_contestable": "NEGATIVE: Minsky & Papert, Perceptrons (1969) - FAIL-CLOSED PARTIAL. Ch. 8's problem is framed through the book ('The problem, as noted by Minsky and Papert...'), its XOR discussion builds on their analysis, and their recoding observation ('there is always a recoding... [that] can support any required mapping') is used as the existence lemma the enterprise presupposes; the book is cited in both RHW documents. Against admission: the parent's RULE is derived from Widrow-Hoff, not from the book - a diagnosis answered is not consumed (the Hochreiter condition), and the Lashley-at-Jordan parallel was stated and discriminated (there the child adopts the candidate's posed problem as its programme; here the engagement is a problem framing plus one existence remark inside a limits analysis of a rival programme). Re-hearing condition: a document showing the parent's derivation or problem formulation taken from Perceptrons beyond the framing and the recoding remark. Runner-up: the Werbos LINK refusal (below) - the run's most famous anticipation, refused on a complete absence record.",
+ "parent_field_reconstruction": "None needed: the parent's stored definition, bottleneck, leap and prior_state were all read and verified non-empty and correct before scouting. Note (not a defect): the parent node's stored sources cite Elman (1990) and Werbos (1990) - citing sources for the node's admission in the BPTT/Elman line, not RHW's documents; the distinction is recorded in the Werbos evaluation.",
+ "notes": [
+  "DOCUMENTS: BOTH RHW documents read in full this session with complete reference-list audits. Nature (323:533-536): exactly 4 references - Rosenblatt (1962; cited as 1961), Minsky & Papert (1969), Le Cun (1985), RHW Ch. 8 (self). PDP Ch. 8 (read as ICS Report 8506, Sept 1985, the chapter's own TR form): exactly 11 references - Ackley-Hinton-Sejnowski 1985; Barto TR 85-11; Barto & Anandan 1985; Fukushima 1980; Kienker et al. 1985; Le Cun 1985; McClelland & Rumelhart 1981; Minsky & Papert 1969; Parker 1985; Rumelhart & McClelland 1982; Widrow & Hoff 1960. 'Werbos': ZERO occurrences in Ch. 8. Absence from these two complete lists is the audit trail for every uncited verdict in this expansion.",
+  "WERBOS (1974) LINK REFUSED - the carried hearing discharged: anticipation without a junction. Zero occurrences in Ch. 8, absent from the Nature list, and the documented historical record is unawareness (RH papers 'do not cite earlier publications of backpropagation, such as the 1974 dissertation of Paul Werbos, as they did not know the earlier publications'); Rumelhart's independent derivation is dated spring 1982. The thesis node's BPTT-line admission stands on its own documents (edge-scoped) and does not transfer. No mediation recorded - nothing in RHW's text carries Werbos in.",
+  "PARKER (1985) and LE CUN (1985) REJECTED as the documented independent multiples, in the child's own grading: 'Parker (1985) has independently derived a similar generalization, which he calls learning-logic'; 'Le Cun (1985) has also studied a roughly similar learning scheme'. Le Cun is cited in BOTH documents (Nature ref [3]) - as a parallel in both. Parker's second mention ('Parker (1985) has emphasized this point') is an idea-level agreement citation, not mechanism consumption. Multiples are verification evidence: they cap the parent's novelty, they are not its ancestry.",
+  "THE CONTROL-THEORY STRATUM judged ONLY on consumption, per the carried assignment: Kelley (1960), Bryson & Denham (1962) and Dreyfus (1962) all rejected as uncited parallels, and the Bryson & Ho (1969) LINK rejected (absent from both reference lists). NO mediation recorded for any of them. The Kelley / Bryson & Denham / Pontryagin hearings remain assigned to Bryson & Ho (1969)'s own expansion, which sits on the frontier.",
+  "FAIL-CLOSED PARTIALS (3): Minsky & Papert (1969) - most contestable, above; the PDP research programme - formation (home programme; decomposition to its artifacts); ONR contract + System Development Foundation grants - funding, documented on the parent TR's own cover (Contract N00014-85-K-0450) and still not inside the artifact (the SDF-at-distributed-representations pattern).",
+  "REJECTIONS OF NOTE: the Boltzmann machine - the defined-against sibling (Ch. 8 specifies its deterministic, local alternative against the Boltzmann procedure's stochastic units, two equilibrium phases and symmetric networks; Hinton co-authors both). EDGE-SCOPING NOTE: at distributed representations the Boltzmann candidate was a fail-closed partial in a different role (simulation vehicle); both records stand, scoped. Rosenblatt - compared-not-consumed (the Nature abstract's contrast class; the parent generalizes the DELTA rule, and the perceptron rule for threshold units has no derivative to propagate). Fukushima - cited in the apparatus, never instantiated (a designed-representation net: the parent's negative exemplar in artifact form). The interactive activation model - the 'second response' (hand-assumed representations), the parent's own prior_state embodied in a sibling model. Competitive learning - the 'first response'. Barto - the parallel stochastic approach. ICS Report 8506 - the parent's own TR form (publication shape). Rumelhart's 1982 derivation - the parent's own prehistory, no separable artifact. Williams ICS 8501 (1985) - the co-author's precursor, present only in the ICS report list bound into the TR, uncited in the chapter (formation). Linnainmaa (1970), Werbos (1982), Amari (1967) LINK, Grossberg (1976), Minsky (1961), Hebb (1949) - the uncited anticipation stratum. Cauchy (1847) and the chain rule (1684) - presupposed repertoire/device (the capillarity shape). Sejnowski (1983) - direction (an in-programme recipient). CMU - arena. The post-Perceptrons winter - era condition.",
+  "CALENDAR FORECLOSURES (7 dropped at resolve, all 'dated on/after parent year 1986' or postdating): the delta rule as described in PDP Chapters 2 and 11 (1986 - the intra-volume apparatus; the chapter's own origin attribution names Widrow & Hoff 1960, which carries the channel); the semilinear activation requirement (1986 - the parent's own design component, filed for the record); the local-minima objection as framed in the parent (1986 - the parent's own framing of the obstruction its simulations answer); the PDP framework (1986 - self-carriage); Schmidhuber (2015) and LeCun-Bengio-Hinton (2015) (meta-pass lineage surveys - the 2015 review's multiples sentence is quoted in the scout record); Hinton, 'Connectionist learning procedures' (1989) (contemporaneous account, postdating).",
+  "SESSION-17 FLAG REVISITED (recorded, not disturbed): the backprop node's admission at Elman was flagged most consequential in session 17 and the LINK was refused at adaptive mixtures (session 66, the Elman discrimination). This expansion judged only the node's OWN ancestry; neither edge record was extended or altered. Jerry's verdict on the Elman flag remains unrecorded (carried).",
+  "Pipeline-step verification (session-66 discipline): every step's landing verified - add-candidates (47 added, stage scouted), resolve (stage resolved; 7 dropped / 32 distinct / 3 matched / judge queue 0 - the Amari match inspected), apply-verdicts (1 created, counts match, created node read back), apply-verification (Widrow node status read back as 'verified'; totals 250 provisional / 13 verified)."
+ ],
+ "totals_after": {
+  "nodes": 263,
+  "edges": 331,
+  "budget": "263/2000",
+  "provisional": 250,
+  "verified": 13,
+  "expansions_done": 152,
+  "by_depth": {
+   "0": 1,
+   "1": 14,
+   "2": 28,
+   "3": 32,
+   "4": 37,
+   "5": 57,
+   "6": 44,
+   "7": 21,
+   "8": 11,
+   "9": 6,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  }
+ },
+ "frontier_head_after": "sparse-sampling-kearns-mansour-ng-1999, then Dynabook (1972), Fisher-Rao metric (1945), IBM solder-bump flip-chip joining (1962)",
  "sync_commit": null
 }
