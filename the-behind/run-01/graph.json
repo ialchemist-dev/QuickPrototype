@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T04:43:09+00:00",
-  "expansions_done": 39,
-  "raw_candidates_seen": 2501,
+  "updated_at": "2026-11-25T04:50:21+00:00",
+  "expansions_done": 40,
+  "raw_candidates_seen": 2528,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -12343,6 +12343,76 @@
     "name": "Efficient Exploration in Reinforcement Learning (Thrun)",
     "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
     "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "Model-View-Controller (Reenskaug)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:50:06+00:00"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "Smalltalk-72",
+    "reason": "mediated_via: Smalltalk-76",
+    "at": "2026-11-25T04:50:06+00:00",
+    "mediated_via": "Smalltalk-76"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "Actor model",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:50:06+00:00"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "Logo",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:50:06+00:00"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "ALGOL 60",
+    "reason": "mediated_via: Simula 67",
+    "at": "2026-11-25T04:50:06+00:00",
+    "mediated_via": "Simula 67"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "oN-Line System (Engelbart)",
+    "reason": "mediated_via: Dynabook (Kay)",
+    "at": "2026-11-25T04:50:06+00:00",
+    "mediated_via": "Dynabook (Kay)"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "JOSS",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:50:06+00:00"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "GRAIL",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:50:06+00:00"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "FLEX machine (Kay)",
+    "reason": "mediated_via: Smalltalk-76",
+    "at": "2026-11-25T04:50:06+00:00",
+    "mediated_via": "Smalltalk-76"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "Design Principles Behind Smalltalk (Ingalls)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:50:06+00:00"
+   },
+   {
+    "parent_id": "smalltalk-80-goldberg-robson-1983",
+    "name": "BYTE magazine Smalltalk issue (August 1981)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:50:06+00:00"
    }
   ]
  },
@@ -14613,12 +14683,16 @@
     {
      "title": "Lisp - Clojure Applied (O'Reilly)",
      "url": "https://www.oreilly.com/library/view/clojure-applied/9781680501476/f_0085.html"
+    },
+    {
+     "title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "url": "https://www.cs.tufts.edu/~nr/cs257/archive/alan-kay/smalltalk-hopl-ii.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Multiples test on Q3: IPL and FLPL carried list processing without lambda semantics; no rival carried this design, but the parent's content might in principle have landed in another host, so Q3 stays partial. Weakest-evidence attack on Q1: the design-descent claim risks the transitive-importance trap this design warns against; it survives because the parent is definitionally a dialect of this candidate, and the two nearer artifacts are disposed on their own records - Lisp 1.5 mediated via MacLisp, MacLisp admitted for the distinct host channel - so this edge carries only the design descent (the two-channel pattern of JSON's JavaScript/ECMA-262 edges, session 10). Mediation attack: via MacLisp - fails on the channel distinction just stated. Anachronism check: CACM, April 1960, precedes 1975. Edge stands, provisional.",
-    "at": "2026-11-25T03:59:18+00:00"
+    "notes": "Adversarial pass for the Smalltalk-80 edge specifically (session 15): attack - the channel is the creator's formation (Kay's HOPL dedication), not the parent book's text, which foregrounds Simula; Q11 was accordingly scored partial, not pass. The consumed content is specific (resident inspectable image, automatic storage management, interactive redefinition - the Blue Book's virtual image is that world rebuilt from objects), which distinguishes it from a bare dedication mention (contrast JOSS, rejected at this parent). Edge stands, provisional.",
+    "at": "2026-11-25T04:50:21+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T03:58:48+00:00"
@@ -14984,7 +15058,7 @@
    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.0,
    "sources": [
     {
@@ -15106,12 +15180,16 @@
     {
      "title": "SELF: The Power of Simplicity (Ungar & Smith, OOPSLA '87; journal revision 1991)",
      "url": "https://www.rose-hulman.edu/class/cs/csse403/201110/Papers/UngarSmith87.pdf"
+    },
+    {
+     "title": "What Is Smalltalk? Smalltalk-80 from PARC, 1980 - the Blue Book preface on Simula; the 1980 specification review; BYTE 1981; the 1983 release",
+     "url": "https://history.itlibra.com/en/events/smalltalk-80-1980"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Multiples test on Q3: MIT's AI Lab and Stanford are the era's rival institutions; neither carried this conjunction (Smalltalk's creation, the parent's co-designer in residence, ARK's construction, the 1986 design start) - Stanford was heard at this parent and rejected on timing (its contribution is the implementation phase, downstream of the 1987 statement), which is the discrimination that keeps this admission specific rather than fame-based; necessity stays partial. Weakest-evidence attack: institution edges risk the 'famous lab' fallacy; it survives on the strict form of the institution precedents (Google Brain, OpenAI, MIT AI Lab) - the institution is admitted only for the specific conjunction it carried, each element of which is documentary (affiliation, support footnote, HOPL design-start statement, the acknowledgment thanking PARC's people for Smalltalk). Mediation attack: via Smalltalk-80 (PARC's role exhausted by creating Smalltalk) - fails; Smith's residency and ARK's construction are PARC facts not contained in the Smalltalk artifact. Anachronism check: founded 1970, the conjunction in place by 1986. Edge stands, provisional.",
-    "at": "2026-11-25T04:22:23+00:00"
+    "notes": "Adversarial pass for the Smalltalk-80 edge specifically (session 15): institution attack (author-group-only, NPLM L21 precedent): distinguished on a stronger record than at Self - beyond housing the author group, PARC performed the release acts that make this artifact canonical (the 1980 four-company specification review, the licensing program, the book), which are institutional acts with named external parties. Edge stands at the same 4.5 as at Self, provisional.",
+    "at": "2026-11-25T04:50:21+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T04:22:03+00:00"
@@ -15376,6 +15454,180 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T04:42:54+00:00"
+  },
+  "smalltalk-76-1976": {
+   "id": "smalltalk-76-1976",
+   "name": "Smalltalk-76",
+   "aliases": [],
+   "year": 1976,
+   "domain": "programming languages",
+   "type": "system",
+   "definition": "Smalltalk-76 (Xerox PARC Learning Research Group, designed by Dan Ingalls, 1976; published as 'The Smalltalk-76 Programming System: Design and Implementation', POPL 1978): the first Smalltalk in modern form - classes holding representation and methods, subclassing/inheritance, message sending, compiled bytecodes, automatic storage management - running interactively on the Alto.",
+   "bottleneck": "Before Smalltalk-76 (1976), Smalltalk existed as Smalltalk-72/-74 - laboratory interpreters with classes in embryo - and the object idea elsewhere lived in a simulation language (Simula) and a graphics system (Sketchpad); there was no complete, modern object programming system running interactively on a personal machine.",
+   "leap": "Ingalls's Smalltalk-76 (1976; POPL 1978): the first modern Smalltalk - every object an instance of a class, classes holding representation and methods, subclassing with inheritance, message sending as the only computation, a compiled bytecode representation and a virtual memory - a complete interactive object system on the Alto, and the architecture that endures in Smalltalk-80.",
+   "prior_state": "Smalltalk-72/-74 laboratory interpreters; Simula's class idea confined to simulation.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 7.0,
+   "sources": [
+    {
+     "title": "The Smalltalk-76 Programming System: Design and Implementation (Ingalls, POPL 1978)",
+     "url": "https://docs.huihoo.com/smalltalk/esug/HistoricalDocuments/Smalltalk76/The-Smalltalk-76-Programming-System/Smalltalk-76.html"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (system 1976; Ingalls, 'The Smalltalk-76 Programming System', POPL January 1978). Channel is the parent's own record (its prior_state names Smalltalk-76 verbatim) plus the -76 system paper. Mediation attack (via the Alto as the true carrier): the Alto is admitted separately as substrate; the design content (classes, subclassing, compiled representation) is the paper's, not the machine's. Edge stands, provisional.",
+    "at": "2026-11-25T04:50:21+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:50:06+00:00"
+  },
+  "simula-67-1967": {
+   "id": "simula-67-1967",
+   "name": "Simula 67",
+   "aliases": [],
+   "year": 1967,
+   "domain": "programming languages",
+   "type": "other",
+   "definition": "Simula 67 (Ole-Johan Dahl, Bjorn Myhrhaug and Kristen Nygaard, Norwegian Computing Center; presented 1967, 'SIMULA 67 Common Base Language' 1968): the first class concept - a class as a template bundling data with procedures, objects as its instances, subclassing by class prefixing (inheritance), virtual procedures, and garbage collection - built as a generalization of ALGOL 60 for simulation.",
+   "bottleneck": "Before Simula 67 (1967), a program's data and the procedures on it lived apart: ALGOL offered blocks and records, but no construct bundled a kind of thing's state with its behavior, made instances of it, and let kinds specialize one another.",
+   "leap": "Dahl, Myhrhaug & Nygaard's Simula 67 (presented 1967; Common Base Language 1968): the class - a template bundling data with procedures, objects as its dynamically created instances, subclassing by class prefixing (inheritance), virtual procedures, and garbage collection - invented as a generalization of the ALGOL block for simulation, and the origin of every class-based object system after it, this parent included.",
+   "prior_state": "ALGOL 60 blocks and record handling; hand-built simulation code.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "Ole-Johan Dahl and Kristen Nygaard: The Inventors of Object-Oriented Programming (CompHist)",
+     "url": "https://www.geschichte-der-informatik.de/articles/ole-johan_dahl_and_kristen_nygaard/"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (presented 1967; Common Base Language 1968). This is the hearing the Self expansion's verification record deferred to this expansion. Mediation attack - the strongest against this edge: the class mechanism reaches the parent through Smalltalk-72/-76, so is Simula mediated via Smalltalk-76? Recorded and not killed: the Blue Book's own preface names the Simula language as a basis of Smalltalk-80 itself, and Kay's history documents his sixties reading of Simula as a formative conception - the graph therefore carries both edges (Simula direct, and Simula's content restated through -76), exactly the dual-channel treatment given to Baird/Sutton at this session's CPI expansion. Edge stands, provisional.",
+    "at": "2026-11-25T04:50:21+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:50:06+00:00"
+  },
+  "dynabook-kay-1972": {
+   "id": "dynabook-kay-1972",
+   "name": "Dynabook (Kay)",
+   "aliases": [],
+   "year": 1972,
+   "domain": "personal computing",
+   "type": "paper",
+   "definition": "Alan Kay, 'A Personal Computer for Children of All Ages' (Proceedings of the ACM National Conference, August 1972): the Dynabook - a notebook-sized, under-$500 personal computer as a learning medium for children and adults, specifying dynamic graphics, removable storage of a million characters, and programming by its owner as a normal use.",
+   "bottleneck": "Before Kay's 1972 paper, 'a computer of one's own' was not a coherent specification: computing meant institutional machines and time-shared terminals, and no document specified a personal machine - owned, portable, cheap, graphical - together with the software medium it would need.",
+   "leap": "Kay's 'A Personal Computer for Children of All Ages' (ACM, August 1972): the Dynabook specification - a notebook-sized machine under $500 and 4 lbs, with a book-quality display, dynamic graphics, a million characters of removable storage, and programming by its owner (children included) as a normal use. The document founded the Learning Research Group's program; Smalltalk is its software half, and this parent is that half made public.",
+   "prior_state": "Time-sharing terminals and institutional computing; Engelbart's augmentation framed for professional staff, not owners of all ages.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Paul Danish: iPads in 1968? (Coloradan) - on Kay's 1972 paper 'A Personal Computer for Children of All Ages'",
+     "url": "https://www.colorado.edu/coloradan/2014/03/01/paul-danish-ipads-1968"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (Kay, ACM National Conference, August 1972). Transitive-importance attack (a vision paper as 'enabler'): rebutted on documents - the Learning Research Group's program, the Alto's 'interim Dynabook' charter, and Ingalls's 1981 restatement of the paper's requirements as the language's design principles make the specification the parent's posed problem, not a retrospective mascot. Edge stands, provisional.",
+    "at": "2026-11-25T04:50:21+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:50:06+00:00"
+  },
+  "sketchpad-1963": {
+   "id": "sketchpad-1963",
+   "name": "Sketchpad",
+   "aliases": [],
+   "year": 1963,
+   "domain": "computer graphics",
+   "type": "system",
+   "definition": "Ivan Sutherland's Sketchpad (MIT PhD thesis, 1963): interactive drawing on a display with a light pen, organized around master drawings and their occurrences (instances), with geometric constraints maintained by the system - the first working form of the master/instance relation and of direct manipulation.",
+   "bottleneck": "Before Sketchpad (1963), a computer drawing was output - marks produced by a batch program; the description of a picture and the picture were the same thing, and no system let a person manipulate structured objects directly on a screen.",
+   "leap": "Sutherland's Sketchpad (1963): interactive drawing in which a master drawing is defined once and instantiated many times - change the master and every instance changes - with geometric constraints maintained by the system and direct manipulation by light pen: the first working form of the master/instance (class/object) relation and of direct manipulation.",
+   "prior_state": "Batch plotting; drawings as undifferentiated output.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Sketchpad (Sutherland, 1963) - masters and instances, constraints, direct manipulation",
+     "url": "https://vectree.io/pdf/c/sketchpad"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (Sutherland, MIT thesis, January 1963; masters/occurrences and constraint maintenance). Channel attack (formation-only, like JOSS): distinguished on the record - Kay names Sketchpad a direct inspiration for object-oriented programming, and the consumed content is identifiable in the parent (master/instance as class/object; direct manipulation as the environment's premise), where JOSS contributes no identifiable mechanism. Edge stands, provisional.",
+    "at": "2026-11-25T04:50:21+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:50:06+00:00"
+  },
+  "alto-1973": {
+   "id": "alto-1973",
+   "name": "Alto",
+   "aliases": [],
+   "year": 1973,
+   "domain": "computing hardware",
+   "type": "device",
+   "definition": "The Xerox Alto (Xerox PARC, 1973; designed principally by Chuck Thacker with Butler Lampson): a personal workstation with a 606x808 portrait bitmapped display, a three-button mouse, Ethernet and a microprogrammable processor - about 2,000 built, never sold; the development machine of Smalltalk and the 'interim Dynabook'.",
+   "bottleneck": "Before the Alto (1973), interactive graphical computing existed only on unique laboratory machines (TX-2, NLS's CDC) or not at all: there was no personal machine with a bitmapped display on which an interactive object environment could be built, seen and iterated.",
+   "leap": "The Xerox Alto (1973, Thacker/Lampson et al.): a personal workstation built as the interim Dynabook - one person, one machine, a 606x808 portrait bitmap, a three-button mouse, Ethernet, and a microprogrammable processor that ran Smalltalk's bytecodes in custom microcode. The substrate on which Smalltalk-72/-76/-80 were developed, and whose bitmap the environment's window and graphics classes presuppose.",
+   "prior_state": "Time-shared mainframes and character terminals; unique graphics laboratory machines.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "Y Combinator's Xerox Alto: restoring the legendary 1970s GUI computer (Shirriff)",
+     "url": "https://www.righto.com/2016/06/y-combinators-xerox-alto-restoring.html?showComment=1466285821283"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (PARC, 1973; Thacker/Lampson; 606x808 portrait bitmap; ~2,000 built). Substrate attack (generic compute is not a channel): rebutted by specificity under the run's substrate guidance - the machine was built as the interim form of the parent's own specification, carried custom microcode for the parent's bytecodes, and its bitmap/BitBlt shaped the published system's window and graphics classes; the counterfactual at the parent's time and scale is that no other personal bitmapped machine existed to develop on. Recorded honestly: Q3 and Q11 were scored partial because the book's VM specification exists to leave this machine behind. Edge stands, provisional.",
+    "at": "2026-11-25T04:50:21+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:50:06+00:00"
+  },
+  "bitblt-1975": {
+   "id": "bitblt-1975",
+   "name": "BitBlt",
+   "aliases": [],
+   "year": 1975,
+   "domain": "computer graphics",
+   "type": "method",
+   "definition": "BitBlt (Dan Ingalls, Xerox PARC, c. 1975): the bit-block-transfer primitive - copy a rectangular array of bits between forms with a combination rule - as the single graphics operation underlying Smalltalk's display system (forms, fonts, windows, menus).",
+   "bottleneck": "Before BitBlt (c. 1975), drawing on a bitmap meant per-pixel computation in program code: fonts, windows and images on a 128KB personal machine were each bespoke loops, and a windowed graphical environment was priced out of the hardware.",
+   "leap": "Ingalls's BitBlt: one primitive - copy a rectangular array of bits between forms under a combination rule - from which the whole display repertoire (text glyphs, windows, menus, images) is composed. The graphics kernel of Smalltalk-80, documented in Ingalls's BYTE article of that name in the parent's own unveiling issue, and the operation the Blue Book's Form machinery presupposes.",
+   "prior_state": "Per-pixel display code; character-cell and vector displays without a raster transfer primitive.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 4.0,
+   "sources": [
+    {
+     "title": "2002 Dr. Dobb's Excellence in Programming Awards - Ingalls profile (BitBlt invention; the Smalltalk-76 record)",
+     "url": "https://jacobfilipp.com/DrDobbs/articles/DDJ/2002/0205/0205a/0205a.htm"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (Ingalls, c. 1975, for Smalltalk on the Alto; the graphics kernel documented in BYTE, August 1981). Component attack - the strongest against this edge (cf. Hoeffding's inequality rejected at this session's CPI expansion as a wielded recipe): distinguished - BitBlt is a separable system artifact with a named inventor and its own afterlife, consumed as the published system's graphics kernel (a named part of the parent's own unveiling set), on the MuJoCo/ALE standard for consumed parts of a working system, rather than a step inside an argument. The distinction is recorded so a future session can reverse it consistently if the standard tightens. Edge stands, provisional.",
+    "at": "2026-11-25T04:50:21+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:50:06+00:00"
   }
  },
  "edges": [
@@ -27445,6 +27697,782 @@
     "counterfactual": "Remove the Gatsby Unit and the parent loses its documented production environment: the author did the doctorate this paper comes from there, under the unit's co-founder, and the paper's acknowledgments record the director's critical engagement with this work by name. The institution acts through the specific carried channel - the Dayan group's RL-theory program - not as a postal address (contrast the dry CMU record in this expansion's scout notes).",
     "mediator": null,
     "evidence": "The parent's acknowledgments ('warm thanks to Peter Dayan for numerous critical comments'); the Gatsby Unit's own record (founded July 1998; Dayan co-founder, director 2002-2017)."
+   }
+  },
+  {
+   "predecessor_id": "smalltalk-76-1976",
+   "successor_id": "smalltalk-80-goldberg-robson-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the completeness question: before -76, no complete object system - classes, inheritance, compiled execution, interactive environment - ran on a personal machine; after it, one did, and the object idea was a programming system rather than a simulation construct or a graphics demo.",
+     "source": "",
+     "falsification": "Dies if an earlier complete interactive class-based system on a personal machine is documented."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative in the documentary sense: -76 generated the release line directly - Smalltalk-80 is its consolidation - and through -80 the design template of the object-oriented generation.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Simula 67 is a genuine second root of the class idea, so -76 was not the only path to a class-based system; the parent's direct line, however, is -76's, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "A compiled representation and virtual memory made a full object environment fit a 128KB personal machine - a cost collapse along the machine axis, though the machines remained laboratory-built; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "The class browser and the inspectable image made a running system's structure examinable in the system itself; the measurability is real but secondary to the design leap, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model the parent publishes: computation as communicating objects, behavior factored into classes - the model Ingalls's paper states as principles of modularity and reactivity.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composition is its mechanism: new behavior is made by subclassing and composing objects that communicate by messages - the composition the parent's library is built from.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach ran through -80 to the whole field; directly, -76 itself stayed inside PARC and its licensees, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Compiled bytecodes in place of -72's token-stream interpretation is an iteration-speed leap for the system itself - the difference between a laboratory interpreter and a usable environment.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced the -72/-74 line completely inside the project; the world's displacement waited for -80, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary trunk: the parent's own prior state, named in its record.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once a complete class-based system existed in modern form, the design never reverted - -80 is its publication, not its replacement.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 7.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:50:06+00:00",
+   "leap": {
+    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition; the object-oriented idea existed as laboratory systems and conference papers, with no complete, portable, citable specification of a class-based object system.",
+    "jump": "Goldberg and Robson (1983) published the complete Smalltalk-80 system - language, class hierarchy (the virtual image), and a virtual-machine specification - as a book: the canonical statement of the class-based object model, in which behavior lives in classes, objects are instances, and any machine implementing the VM runs the same image.",
+    "date": 1983
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Smalltalk-76 and the parent has no prior state to consolidate: the parent node's own record names Smalltalk-76 as its prior state, Ingalls's POPL paper is the published definition of the system the book completes, and the -80 changes (metaclasses regularized, hierarchy rebuilt as a publishable library, implementation respecified as a VM) are modifications of -76's design, not replacements of it.",
+    "mediator": null,
+    "evidence": "The parent node's prior_state; Ingalls (POPL 1978) - the -76 system paper, whose architecture the historical record states 'endures in Smalltalk-80'."
+   }
+  },
+  {
+   "predecessor_id": "simula-67-1967",
+   "successor_id": "smalltalk-80-goldberg-robson-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the structuring question: before Simula, bundling state with behavior under a named kind, with instances and specialization, was not an available construct in any language; after it, the class existed.",
+     "source": "",
+     "falsification": "Dies if an earlier class/instance/inheritance construct in a programming language is documented."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative in the documentary sense: the class generated the entire object-oriented lineage - Smalltalk's line directly, and through it the mainstream of the following decades.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Kay's synthesis had other roots (Sketchpad's instances, Lisp's environment), and a class idea might in principle have emerged from them; the documented line runs through Simula, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "It collapsed the cost of writing discrete-event simulations - its design purpose - from hand-built ALGOL machinery to a language feature; the collapse is domain-scoped, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "It made a program's structure mirror the simulated system's structure - a checkable correspondence between model and world; partial, as the measurability is structural rather than quantitative.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory frame the parent publishes in generalized form: describe a system as kinds of objects with behavior - the frame of the Blue Book's class hierarchy.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Prefixing/subclassing is composition machinery: kinds compose by extension and override - the composition the parent's hierarchy uses throughout.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Its reach is the whole of object-oriented programming, across every domain that adopted it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed content attaches to the construct.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced hand-structured simulation practice in its niche; the general displacement of procedural structuring came through its descendants, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary trunk: the parent's own preface names Simula as its basis.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The class construct never reversed; every later object system presupposes the settlement.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:50:06+00:00",
+   "leap": {
+    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition; the object-oriented idea existed as laboratory systems and conference papers, with no complete, portable, citable specification of a class-based object system.",
+    "jump": "Goldberg and Robson (1983) published the complete Smalltalk-80 system - language, class hierarchy (the virtual image), and a virtual-machine specification - as a book: the canonical statement of the class-based object model, in which behavior lives in classes, objects are instances, and any machine implementing the VM runs the same image.",
+    "date": 1983
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Simula and the parent's own book loses its stated basis: the Blue Book's preface says Smalltalk-80 is based on ideas from the Simula language, and Kay's history recounts reading Simula in the sixties as a formative conception - the class/instance/subclass vocabulary of the parent is Simula's, restated at each stratum (-72, -76, -80), not re-invented at the last one. The mediation attack (via Smalltalk-76) is recorded in verification; the preface's naming of Simula for -80 itself is the documentary answer.",
+    "mediator": null,
+    "evidence": "The Blue Book preface (per the 1983 book's history record): Smalltalk-80 'is based on ideas from the Simula language and on the visions of Kay'; Kay, HOPL 1993, section I."
+   }
+  },
+  {
+   "predecessor_id": "dynabook-kay-1972",
+   "successor_id": "smalltalk-80-goldberg-robson-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the ownership question: a personal computer for children of all ages - owned, carried, programmed by its user - went from incoherent to a specification with numbers attached, in 1972, before any personal computer existed.",
+     "source": "",
+     "falsification": "Dies if an earlier comparably complete personal-computer specification (form, price, software medium) is documented."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative in the documentary sense: the document generated a research group, a machine (the Alto as its interim form), and a language - this parent is its software deliverable.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Engelbart's augmentation is a genuine parallel vision of interactive computing; the LRG's specific program - personal, owned, for children - is this document's, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "It specified a price target but collapsed no actual cost.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "It made the vision checkable: weight, price, display quality and storage are stated as numbers a future machine could be measured against; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory frame - the computer as a medium for learning and expression, not a tool for tasks - in which the parent's design principles argue.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The specification composes hardware, software and education into one artifact; the composition is of intent rather than mechanism, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Its reach is the personal-computing era itself: the founding specification of the category the parent entered in 1983.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced the time-sharing frame inside PARC's program; the industry's displacement took the following decade, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary trunk: the parent is this specification's software half, produced by the group the specification founded.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The personal-computing settlement - owned machines, graphical media, user programming as an ideal - never reversed.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:50:06+00:00",
+   "leap": {
+    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition; the object-oriented idea existed as laboratory systems and conference papers, with no complete, portable, citable specification of a class-based object system.",
+    "jump": "Goldberg and Robson (1983) published the complete Smalltalk-80 system - language, class hierarchy (the virtual image), and a virtual-machine specification - as a book: the canonical statement of the class-based object model, in which behavior lives in classes, objects are instances, and any machine implementing the VM runs the same image.",
+    "date": 1983
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Dynabook paper and the parent loses the specification it implements: the Learning Research Group existed to build toward this document, the Alto was built as its interim form, and the language's design principles (Ingalls 1981: a language of description and a language of interaction for a creative individual) are this paper's requirements restated. No intermediate poses the parent's problem; this paper poses it.",
+    "mediator": null,
+    "evidence": "Kay 1972 (ACM National Conference proceedings); Kay, HOPL 1993, sections II-III (the Dynabook and the two bets: Smalltalk and the interim Dynabook)."
+   }
+  },
+  {
+   "predecessor_id": "lisp-1960",
+   "successor_id": "smalltalk-80-goldberg-robson-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the interactivity question: a running symbolic system became something a person could converse with and reshape from inside - the precondition of the environment this parent publishes.",
+     "source": "",
+     "falsification": "Dies if an earlier interactive symbolic language with a resident image is documented."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative in the documentary sense: Lisp generated the interactive-language line (and, through Kay's formation, this parent's environment model).",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Smalltalk's other roots (Simula's classes, Sketchpad's instances) are genuine; Lisp is necessary for the environment half specifically, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to Lisp at this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "A resident image makes a system's state inspectable from within - a measurability of structure the parent inherits; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory frame of uniform self-describing structure: in Lisp, lists; generalized by the parent to objects - Ingalls's own principles paper pairs them as uniform metaphors.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composition by functions over uniform data is Lisp's machinery; the parent's composition is by objects and messages - the frame is inherited, the mechanism replaced, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Its reach across AI and programming languages is total for its era.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Interactive iteration replaced the batch cycle for its users - an iteration-speed change of practice; partial at this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced batch symbolic processing in its world; the broader displacement belongs to its descendants, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Documentary but second-hand at this parent: the Blue Book foregrounds Simula, and the Lisp channel is carried by the creator's own history rather than the parent's text, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The resident interactive image never reversed; the parent's virtual image presupposes the settlement.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:50:06+00:00",
+   "leap": {
+    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition; the object-oriented idea existed as laboratory systems and conference papers, with no complete, portable, citable specification of a class-based object system.",
+    "jump": "Goldberg and Robson (1983) published the complete Smalltalk-80 system - language, class hierarchy (the virtual image), and a virtual-machine specification - as a book: the canonical statement of the class-based object model, in which behavior lives in classes, objects are instances, and any machine implementing the VM runs the same image.",
+    "date": 1983
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Lisp and the parent's environment half loses its ancestor: Kay's dedication names LISP among the four conceptions parented into Smalltalk, and what descends from it is specific - the resident inspectable image, automatic storage management, interactive redefinition - the properties that make the Blue Book's virtual image a Lisp-like world rebuilt from objects. The channel is the creator's documented formation plus the system's own properties, not a resemblance.",
+    "mediator": null,
+    "evidence": "Kay, HOPL 1993, dedication and sections III-IV: LISP named among 'the four great programming conceptions of the sixties'; Smalltalk's image and storage management in that line."
+   }
+  },
+  {
+   "predecessor_id": "sketchpad-1963",
+   "successor_id": "smalltalk-80-goldberg-robson-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the manipulation question: before Sketchpad, no one had directly manipulated structured computational objects on a screen; after it, a description could be grabbed, copied as instances, and constrained - the interaction the parent's environment presupposes.",
+     "source": "",
+     "falsification": "Dies if an earlier direct-manipulation system with master/instance structure is documented."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative in the documentary sense: it generated interactive graphics as a field and, through Kay's documented reading of it, the instance half of the object idea this parent publishes.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The object idea had a second root in Simula's classes; Sketchpad is necessary for the instance/manipulation half specifically, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse: Sketchpad ran on a unique laboratory machine.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "It made a drawing a structured, queryable description - geometry as data with relationships; partial at this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory distinction the parent's environment inherits: the description of a thing is itself a manipulable object in the system.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Instances compose hierarchically (instances containing instances); the composition machinery is real but graphical in scope, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach runs through CAD and the GUI era, and into this parent through one reader; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed content at this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced the drafting-table/batch-plot practice inside its niche; the general displacement came through descendants, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary: the creator's own dedication names it first among the parent's conceptions.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Direct manipulation and instancing never reversed; every later environment, this parent included, presupposes them.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:50:06+00:00",
+   "leap": {
+    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition; the object-oriented idea existed as laboratory systems and conference papers, with no complete, portable, citable specification of a class-based object system.",
+    "jump": "Goldberg and Robson (1983) published the complete Smalltalk-80 system - language, class hierarchy (the virtual image), and a virtual-machine specification - as a book: the canonical statement of the class-based object model, in which behavior lives in classes, objects are instances, and any machine implementing the VM runs the same image.",
+    "date": 1983
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Sketchpad and the parent's interaction premise loses its documented origin: Kay names Sketchpad first in his dedication of the four conceptions and recounts it as a direct inspiration for object-oriented programming - the master/instance relation is the class/object relation in graphics form, and direct manipulation of visible objects is the premise of the environment the Blue Book publishes.",
+    "mediator": null,
+    "evidence": "Kay, HOPL 1993, dedication ('To SKETCHPAD, JOSS, LISP and SIMULA') and section I; the historical record that 'Alan Kay often names Sketchpad as a direct inspiration for object-oriented programming and Smalltalk'."
+   }
+  },
+  {
+   "predecessor_id": "xerox-parc-1970",
+   "successor_id": "smalltalk-80-goldberg-robson-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail",
+     "evidence": "An institution flips no impossibility.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity in the institutional sense used for Google Brain and the MIT AI Lab in this run: PARC's charter created the program whose decade of work generated this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The work could in principle have been housed elsewhere; no other institution of the moment combined the charter, the machine shop and the group, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "PARC's research frame - personal computing as an integrated system of machine, language and user - is the frame the parent's principles argue in; the frame was the institution's, held jointly by the Alto and Smalltalk programs.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The institution's method was composition in one place - hardware, language, applications and users under one roof; partial, as the composition is organizational.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "PARC's reach across the computing the parent entered - workstations, GUIs, networking - is documented; for this parent its release machinery carried the system to its first four implementers.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced the institutional-mainframe research model inside its own walls; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary lineage: the parent is PARC's system, published by its group through PARC's release process.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The institution's program endured as the template of the corporate research lab; partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:50:06+00:00",
+   "leap": {
+    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition; the object-oriented idea existed as laboratory systems and conference papers, with no complete, portable, citable specification of a class-based object system.",
+    "jump": "Goldberg and Robson (1983) published the complete Smalltalk-80 system - language, class hierarchy (the virtual image), and a virtual-machine specification - as a book: the canonical statement of the class-based object model, in which behavior lives in classes, objects are instances, and any machine implementing the VM runs the same image.",
+    "date": 1983
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove PARC and the parent loses its producer and its release channel: the system was built by PARC's Learning Research Group over a decade, and the acts that make this artifact the canonical publication - the 1980 four-company specification review, the licensing program, the book - are institutional acts of PARC's group, not of isolated authors. The institution acts through the specific group it carried, as at Self's expansion, on a stronger record here.",
+    "mediator": null,
+    "evidence": "The release record (1980 specification review by Apple, DEC, HP, Tektronix; 1983 general licence and book); the parent book's authorship by the LRG's head and a group member."
+   }
+  },
+  {
+   "predecessor_id": "alto-1973",
+   "successor_id": "smalltalk-80-goldberg-robson-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "A personal bitmapped machine was conceivable before 1973 (the Dynabook specified one); the Alto made it actual, which is an existence proof rather than a conceptual flip, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative in the documentary sense: the Alto generated the personal-workstation line and hosted the software generation (Smalltalk, Bravo, Ethernet services) from which the GUI era descends.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "No other personal bitmapped machine existed to develop on, which argues necessity; but the parent's language design is in principle machine-independent - its book is a VM specification - so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "A whole computer per researcher at laboratory cost against mainframe economics - a collapse relative to the institutional baseline, though never a product price; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The bitmap frame - the screen as an array in memory that software owns - is explanatory for the environment's design; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Microprogrammability composed the machine with its languages (Smalltalk had its own microcode); partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach runs through the workstation and GUI era; the direct descendants are mediated by the systems it hosted, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "A personal machine removed the time-sharing queue from the design loop - the two-to-four-year cycles Ingalls describes presuppose immediate access; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced time-sharing inside PARC completely; outside, over the following decade, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Documentary ('interim Dynabook', the development machine of every Smalltalk stratum) but the parent's book aims to leave it behind, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The personal bitmapped workstation never reversed; it is the form of computing the parent entered the world on.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:50:06+00:00",
+   "leap": {
+    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition; the object-oriented idea existed as laboratory systems and conference papers, with no complete, portable, citable specification of a class-based object system.",
+    "jump": "Goldberg and Robson (1983) published the complete Smalltalk-80 system - language, class hierarchy (the virtual image), and a virtual-machine specification - as a book: the canonical statement of the class-based object model, in which behavior lives in classes, objects are instances, and any machine implementing the VM runs the same image.",
+    "date": 1983
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Alto and there is no Smalltalk-80 to publish: the build/redesign cycles Ingalls describes ran on it, the system's graphics and window classes are shaped by its bitmap and BitBlt, and it carried custom microcode for Smalltalk's bytecodes. The enabling step is specific - a personal bitmapped machine under the same roof, built as the interim form of the parent's own specification - not generic compute substrate; that the book's VM specification then frees the system from the Alto is the parent's achievement, not evidence the machine was incidental.",
+    "mediator": null,
+    "evidence": "The historical record: the Alto as 'interim Dynabook'; Smalltalk developed on it from 1972; Ingalls's design cycles (BYTE 1981) run on the Alto generation of machines."
+   }
+  },
+  {
+   "predecessor_id": "bitblt-1975",
+   "successor_id": "smalltalk-80-goldberg-robson-1983",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Within bitmap display it flipped feasibility: a full windowing environment on a small personal machine was not buildable from per-pixel loops at interactive rates; as a single primitive it was - the graphics half of the parent presupposes the flip.",
+     "source": "",
+     "falsification": "Dies if an earlier general raster-transfer primitive in a personal-machine system is documented."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It generated the graphics-kernel architecture of this parent and a lineage of raster operations after it; the generativity inside this parent is the kernel, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Per-pixel code was a workable, costlier alternative; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "A cost collapse in display computation within the Alto's constraints - one microcoded operation instead of interpreted loops; scoped to its machine era, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The Form model - everything displayed is a form, moved by one operation - is the explanatory frame of the graphics half; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "All display behavior composes from the one operation; the composition is real but single-purpose, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Raster transfer reached every later window system; at this parent the reach is the environment's own graphics, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Display update speed is what made the environment's iteration (redraw on every change) practical; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced character-cell display practice inside the bitmap world the parent entered; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Documentary within the parent's own publication set (the unveiling issue's graphics-kernel article; the book's Form classes), though the book treats it as machinery rather than headline, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The raster-transfer primitive persists in every window system, usually under other names and authorship, so partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:50:06+00:00",
+   "leap": {
+    "prior_state": "Smalltalk-76 and laboratory Smalltalk systems, unpublished as a complete definition; the object-oriented idea existed as laboratory systems and conference papers, with no complete, portable, citable specification of a class-based object system.",
+    "jump": "Goldberg and Robson (1983) published the complete Smalltalk-80 system - language, class hierarchy (the virtual image), and a virtual-machine specification - as a book: the canonical statement of the class-based object model, in which behavior lives in classes, objects are instances, and any machine implementing the VM runs the same image.",
+    "date": 1983
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove BitBlt and the parent's published environment loses its display machinery: the graphics kernel article in the parent's own unveiling issue presents the kernel as the interface through which all text and graphics are displayed, and the Blue Book's Form/display classes are that kernel in the image. It is a separable artifact - named inventor, date, one operation - consumed by the system the parent publishes, on the MuJoCo/ALE standard of consumed parts, not a step inside an argument like a cited inequality.",
+    "mediator": null,
+    "evidence": "BYTE, August 1981: 'The Smalltalk Graphics Kernel' (Ingalls) in the parent's unveiling issue; the Dr. Dobb's record of Ingalls as BitBlt's inventor."
    }
   }
  ],
@@ -114987,6 +116015,973 @@
       }
      },
      "similarity": 0.8444,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "smalltalk-80-goldberg-robson-1983": {
+   "raw_candidates": [
+    {
+     "name": "Smalltalk-76",
+     "year": 1976,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "system",
+     "causal_claim": "The parent's own prior state and direct ancestor: Ingalls's POPL 1978 paper presents the first modern Smalltalk - objects communicating by messages, descriptions organized into classes, subclassing with inheritance, a compiled representation and a virtual memory - and its architecture is the one that 'endures in Smalltalk-80'. The parent is this system consolidated into the release version and published as a complete definition.",
+     "source_title": "The Smalltalk-76 Programming System: Design and Implementation (Ingalls, POPL 1978)",
+     "source_url": "https://docs.huihoo.com/smalltalk/esug/HistoricalDocuments/Smalltalk76/The-Smalltalk-76-Programming-System/Smalltalk-76.html",
+     "definition": "Smalltalk-76 (Xerox PARC Learning Research Group, designed by Dan Ingalls, 1976; published as 'The Smalltalk-76 Programming System: Design and Implementation', POPL 1978): the first Smalltalk in modern form - classes holding representation and methods, subclassing/inheritance, message sending, compiled bytecodes, automatic storage management - running interactively on the Alto."
+    },
+    {
+     "name": "Simula 67",
+     "year": 1967,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "other",
+     "causal_claim": "The class concept itself, named by the parent's own book: the preface to Goldberg & Robson (1983) states that Smalltalk-80 is based on ideas from the Simula language (and on the visions of Kay). Kay's history treats Simula as one of the formative conceptions of the sixties. (Heard at Self's expansion and rejected there as mediated via this node; its own hearing is here, as that record directs.)",
+     "source_title": "Ole-Johan Dahl and Kristen Nygaard: The Inventors of Object-Oriented Programming (CompHist)",
+     "source_url": "https://www.geschichte-der-informatik.de/articles/ole-johan_dahl_and_kristen_nygaard/",
+     "definition": "Simula 67 (Ole-Johan Dahl, Bjorn Myhrhaug and Kristen Nygaard, Norwegian Computing Center; presented 1967, 'SIMULA 67 Common Base Language' 1968): the first class concept - a class as a template bundling data with procedures, objects as its instances, subclassing by class prefixing (inheritance), virtual procedures, and garbage collection - built as a generalization of ALGOL 60 for simulation."
+    },
+    {
+     "name": "Lisp",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "other",
+     "causal_claim": "Kay's dedication in 'The Early History of Smalltalk' names LISP among 'the four great programming conceptions of the sixties' parented into Smalltalk: the interactive, image-based, garbage-collected symbolic computing that Smalltalk's environment embodies descends from it. (Already a node in this graph, admitted at Scheme's expansion; proposed here so the link is judged on this parent's documents.)",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://www.cs.tufts.edu/~nr/cs257/archive/alan-kay/smalltalk-hopl-ii.pdf",
+     "definition": "John McCarthy's Lisp (1960): symbolic computation as interactive evaluation over a uniform data structure, with garbage collection and a resident image of definitions - the environment model Smalltalk inherits."
+    },
+    {
+     "name": "Sketchpad",
+     "year": 1963,
+     "domain": "computer graphics",
+     "lens": "L1",
+     "type": "system",
+     "causal_claim": "Named first in Kay's dedication of the four great conceptions: Sketchpad's master drawings and their instances are the object idea in working form - a master changed once changes every instance - and its direct manipulation of visible objects is the interaction premise of the Smalltalk environment. Kay names Sketchpad as a direct inspiration for object-oriented programming and Smalltalk.",
+     "source_title": "Sketchpad (Sutherland, 1963) - masters and instances, constraints, direct manipulation",
+     "source_url": "https://vectree.io/pdf/c/sketchpad",
+     "definition": "Ivan Sutherland's Sketchpad (MIT PhD thesis, 1963): interactive drawing on a display with a light pen, organized around master drawings and their occurrences (instances), with geometric constraints maintained by the system - the first working form of the master/instance relation and of direct manipulation."
+    },
+    {
+     "name": "Model-View-Controller (Reenskaug)",
+     "year": 1979,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "method",
+     "causal_claim": "A constituent architecture of the system the parent publishes: Reenskaug's 1979 PARC notes, addressed to the Learning Research Group, define Thing-Model-View-Editor and then Models-Views-Controllers; the Smalltalk-80 class library implements the settled form (Althoff et al.) for its standard views - the architecture of the environment half of the Blue Book's virtual image.",
+     "source_title": "THING-MODEL-VIEW-EDITOR (Reenskaug, Xerox PARC note to LRG, 12 May 1979)",
+     "source_url": "http://jpaulgibson.synology.me/~jpaulgibson/TSP/Teaching/Teaching-ReadingMaterial/Reenskaug79a.pdf",
+     "definition": "Trygve Reenskaug's Model-View-Controller notes (Xerox PARC, May and December 1979): a Model as the active representation of a domain abstraction, Views as its visual representations, and Controllers/Editors coordinating user input - the architectural pattern first implemented in the Smalltalk-80 class library."
+    },
+    {
+     "name": "Smalltalk-76",
+     "year": 1976,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "system",
+     "causal_claim": "The ancestor the parent modifies, cross-listed from L1: Smalltalk-80 keeps -76's class mechanism and compiled architecture and modifies the rest for release - metaclasses regularized, the class hierarchy rebuilt as a publishable library, the implementation respecified as a virtual machine any licensee could implement.",
+     "source_title": "The Smalltalk-76 Programming System: Design and Implementation (Ingalls, POPL 1978)",
+     "source_url": "https://docs.huihoo.com/smalltalk/esug/HistoricalDocuments/Smalltalk76/The-Smalltalk-76-Programming-System/Smalltalk-76.html",
+     "definition": "Smalltalk-76 (Ingalls, 1976): the modern Smalltalk the parent consolidates into the 1980 release version."
+    },
+    {
+     "name": "Simula 67",
+     "year": 1967,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "causal_claim": "The mechanism the parent modifies, cross-listed from L1: Smalltalk takes Simula's class and subclassing and rebuilds them on different ground - classes are themselves objects, binding is by dynamic message lookup rather than Simula's static qualification, and Simula's coroutine/process frame is dropped.",
+     "source_title": "Ole-Johan Dahl and Kristen Nygaard: The Inventors of Object-Oriented Programming (CompHist)",
+     "source_url": "https://www.geschichte-der-informatik.de/articles/ole-johan_dahl_and_kristen_nygaard/",
+     "definition": "Simula 67 (Dahl, Myhrhaug & Nygaard, 1967/68): classes, instances, prefixing inheritance and virtual procedures inside an ALGOL frame."
+    },
+    {
+     "name": "Smalltalk-72",
+     "year": 1972,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "system",
+     "causal_claim": "The first Smalltalk: Kay's one-page design, implemented by Ingalls in 1972 - everything an object, messages as the only communication, classes present in embryo. The stratum Smalltalk-76 redesigned wholesale; proposed so its direction relative to this parent (through -76) is judged on the record. Documented in Kay's history, including its appendix on the -72 interpreter design.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+     "definition": "Smalltalk-72 (Alan Kay's design, implemented by Dan Ingalls, Xerox PARC, 1972): the first working Smalltalk - a small language of communicating objects with a token-stream interpreter, from which Smalltalk-74 and then Smalltalk-76 evolved."
+    },
+    {
+     "name": "The Early History of Smalltalk (Kay)",
+     "year": 1993,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "paper",
+     "causal_claim": "Meta pass: the creator's own retrospective lineage map of this parent - the document that names its predecessors (Sketchpad, Simula, FLEX, NLS, Logo, Dynabook, the -72/-76 strata) and is the scout's chief source for the channels judged here. Proposed with its true year (1993, post-parent); the resolver's date drop is the record.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://www.cs.tufts.edu/~nr/cs257/archive/alan-kay/smalltalk-hopl-ii.pdf",
+     "definition": "Alan Kay, 'The Early History of Smalltalk' (HOPL-II, ACM, 1993): Kay's account of Smalltalk's parentage and evolution from the sixties conceptions through the 1980-83 release of Smalltalk-80."
+    },
+    {
+     "name": "Dynabook (Kay)",
+     "year": 1972,
+     "domain": "personal computing",
+     "lens": "L4",
+     "type": "paper",
+     "causal_claim": "The problem statement the parent answers: Kay's 1972 paper specifies a personal computer for children of all ages - a medium, owned by one person, holding their library, music, drawings and programs - which requires a language of description and a language of interaction a single individual can master. Smalltalk is that software specification; the Learning Research Group existed to build toward this document, and the parent book is its software half made public.",
+     "source_title": "Paul Danish: iPads in 1968? (Coloradan) - on Kay's 1972 paper 'A Personal Computer for Children of All Ages'",
+     "source_url": "https://www.colorado.edu/coloradan/2014/03/01/paul-danish-ipads-1968",
+     "definition": "Alan Kay, 'A Personal Computer for Children of All Ages' (Proceedings of the ACM National Conference, August 1972): the Dynabook - a notebook-sized, under-$500 personal computer as a learning medium for children and adults, specifying dynamic graphics, removable storage of a million characters, and programming by its owner as a normal use."
+    },
+    {
+     "name": "Actor model",
+     "year": 1973,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "theory",
+     "causal_claim": "The parallel message-passing formalism of the same decade: Kay's history discusses the Actors work in the Smalltalk milieu, and the kinship (computation as message exchange among autonomous entities) is real. Proposed so the channel into the published class model - or its absence - is judged on the documents rather than assumed from the resemblance. (Already a node in this graph, admitted at Scheme's expansion.)",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+     "definition": "Carl Hewitt's Actor model (1973): computation as autonomous actors communicating only by asynchronous messages - the formalism developed in parallel with Smalltalk's message passing at MIT."
+    },
+    {
+     "name": "Logo",
+     "year": 1967,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "other",
+     "causal_claim": "The incumbent child-facing language of the education program Smalltalk grew inside: Kay's history lists LOGO among the formative artifacts of 1967-69, Kay visited Papert's group, and the Dynabook paper draws on Papert's and Bruner's learning theory. The aims channel is documented; whether any mechanism channel runs into the published class model is the question for judgment.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+     "definition": "Logo (Wally Feurzeig, Seymour Papert, Cynthia Solomon et al., BBN/MIT, 1967): a Lisp-derived language designed for children, built around the turtle and Papert's constructionist learning theory - the educational incumbent of the world Smalltalk was designed for."
+    },
+    {
+     "name": "ALGOL 60",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L7",
+     "type": "other",
+     "causal_claim": "The tradition the parent departs from - block structure and static binding - and Simula's raw material: Dahl's own account says the Simula class generalized the ALGOL 60 block by freeing it from stack discipline. Whether ALGOL reaches this parent directly or only through Simula is the judgment. (Already a node in this graph, admitted at Scheme's expansion.)",
+     "source_title": "Ole-Johan Dahl - A.M. Turing Award additional materials (ACM): the class as the ALGOL block freed from stack discipline",
+     "source_url": "https://amturing.acm.org/info/dahl_6917600.cfm",
+     "definition": "ALGOL 60 (1960): the block-structured language whose block - data and procedures with a stack-bounded lifetime - Dahl generalized into the Simula class."
+    },
+    {
+     "name": "Alto",
+     "year": 1973,
+     "domain": "computing hardware",
+     "lens": "L9",
+     "type": "device",
+     "causal_claim": "The machine the system was built on and shaped by: PARC's personal bitmapped workstation, built as the 'interim Dynabook' - one person, one machine, a portrait bitmap display and a mouse. Smalltalk's window and graphics classes presuppose the bitmap; Smalltalk ran in Alto microcode; without a personal machine under the same roof there is no interactive object environment to publish. The parent book's VM specification is the move that frees the system from this machine.",
+     "source_title": "Y Combinator's Xerox Alto: restoring the legendary 1970s GUI computer (Shirriff)",
+     "source_url": "https://www.righto.com/2016/06/y-combinators-xerox-alto-restoring.html?showComment=1466285821283",
+     "definition": "The Xerox Alto (Xerox PARC, 1973; designed principally by Chuck Thacker with Butler Lampson): a personal workstation with a 606x808 portrait bitmapped display, a three-button mouse, Ethernet and a microprogrammable processor - about 2,000 built, never sold; the development machine of Smalltalk and the 'interim Dynabook'."
+    },
+    {
+     "name": "BitBlt",
+     "year": 1975,
+     "domain": "computer graphics",
+     "lens": "L11",
+     "type": "method",
+     "causal_claim": "The raster primitive the published system's graphics run on: Ingalls invented BitBlt for Smalltalk on the Alto, and the Smalltalk-80 graphics kernel (his BYTE, August 1981 article of that name) and the Blue Book's Form/display machinery are built on it - every window, font glyph and image in the environment moves through this one operation.",
+     "source_title": "2002 Dr. Dobb's Excellence in Programming Awards - Ingalls profile (BitBlt invention; the Smalltalk-76 record)",
+     "source_url": "https://jacobfilipp.com/DrDobbs/articles/DDJ/2002/0205/0205a/0205a.htm",
+     "definition": "BitBlt (Dan Ingalls, Xerox PARC, c. 1975): the bit-block-transfer primitive - copy a rectangular array of bits between forms with a combination rule - as the single graphics operation underlying Smalltalk's display system (forms, fonts, windows, menus)."
+    },
+    {
+     "name": "Alto",
+     "year": 1973,
+     "domain": "computing hardware",
+     "lens": "L17",
+     "type": "device",
+     "causal_claim": "The development instrument, cross-listed from L9: the Alto is where the environment was observed and iterated - the two-to-four-year build/redesign cycles Ingalls describes ran on it, and its bitmap is what made the object environment visible at all.",
+     "source_title": "Y Combinator's Xerox Alto: restoring the legendary 1970s GUI computer (Shirriff)",
+     "source_url": "https://www.righto.com/2016/06/y-combinators-xerox-alto-restoring.html?showComment=1466285821283",
+     "definition": "The Alto (1973) as the instrument on which Smalltalk-72/-76/-80 were developed and demonstrated."
+    },
+    {
+     "name": "Sketchpad",
+     "year": 1963,
+     "domain": "computer graphics",
+     "lens": "L19",
+     "type": "system",
+     "causal_claim": "The imported interaction frame, cross-listed from L1: masters/instances and direct manipulation - the frame in which 'a description is itself a manipulable object' entered Kay's thinking.",
+     "source_title": "Sketchpad (Sutherland, 1963) - masters and instances, constraints, direct manipulation",
+     "source_url": "https://vectree.io/pdf/c/sketchpad",
+     "definition": "Sketchpad (Sutherland, 1963): the master/instance and direct-manipulation frame."
+    },
+    {
+     "name": "Lisp",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "causal_claim": "The imported computing frame, cross-listed from L1: interactive symbolic computation in a resident, self-describing image - the frame Smalltalk's environment generalizes from functions to objects.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://www.cs.tufts.edu/~nr/cs257/archive/alan-kay/smalltalk-hopl-ii.pdf",
+     "definition": "Lisp (1960): the interactive symbolic-computing frame."
+    },
+    {
+     "name": "oN-Line System (Engelbart)",
+     "year": 1968,
+     "domain": "personal computing",
+     "lens": "L19",
+     "type": "system",
+     "causal_claim": "Kay's history gives Engelbart and NLS their own section in the formative 1967-69 period: augmentation, the mouse, windows and hypertext as the frame of interactive personal computing that the Dynabook paper filters into the Learning Research Group's program. Whether NLS reaches the parent directly or through the Dynabook/Alto is the judgment.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+     "definition": "Douglas Engelbart's oN-Line System (NLS, SRI Augmentation Research Center, demonstrated December 1968): interactive augmentation of intellect - mouse, windows, hypertext, collaborative editing - the formative frame of personal interactive computing."
+    },
+    {
+     "name": "JOSS",
+     "year": 1963,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "causal_claim": "The fourth name in Kay's dedication of 'the four great programming conceptions of the sixties': the conversational, time-shared language Kay used in the sixties and admired for its accessibility to non-specialists. Proposed so the dedication's full set is heard; the channel into the published class model specifically is the question.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://www.cs.tufts.edu/~nr/cs257/archive/alan-kay/smalltalk-hopl-ii.pdf",
+     "definition": "JOSS (JOHNNIAC Open Shop System, Clifford Shaw, RAND, 1963): an interactive time-sharing language designed for non-programmers, with conversational immediacy that Kay counted among the sixties' great conceptions."
+    },
+    {
+     "name": "GRAIL",
+     "year": 1968,
+     "domain": "personal computing",
+     "lens": "L19",
+     "type": "system",
+     "causal_claim": "Listed in Kay's history among the formative 1967-69 artifacts: the graphical flowchart system whose iconic, direct-manipulation programming fed Kay's thinking about iconic programming in the Smalltalk-71 period. Proposed for completeness of the history's own list; the channel into the class model is the question.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+     "definition": "GRAIL (T. O. Ellis et al., RAND, 1968): a graphical input/output system in which users drew flowcharts directly on a tablet display and the system recognized and executed them - an early iconic-programming system in Kay's formative set."
+    },
+    {
+     "name": "FLEX machine (Kay)",
+     "year": 1968,
+     "domain": "personal computing",
+     "lens": "L20",
+     "type": "system",
+     "causal_claim": "The creator's own prior system: Kay's history's section II is 'The FLEX Machine, an OOP-based personal computer' - Kay and Ed Cheadle's pre-PARC machine, the first embodiment of Kay's object ideas and personal-computing aim, built before he reached PARC. Whether it reaches this parent directly or through the -72/-76 strata is the judgment.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+     "definition": "The FLEX machine (Alan Kay with Ed Cheadle, University of Utah, 1967-69): a small personal computer with an object-oriented operating system and language (FLEX), Kay's first attempt at the personal dynamic medium, predating PARC."
+    },
+    {
+     "name": "Logo",
+     "year": 1967,
+     "domain": "programming languages",
+     "lens": "L20",
+     "type": "other",
+     "causal_claim": "Creator-lineage cross-list from L6: Papert is the mentor-figure of the program's education half - Kay's formative visit to the Logo group and the Dynabook paper's reliance on Papert/Bruner are the documented lineage.",
+     "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+     "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+     "definition": "Logo (1967) as the education-lineage artifact of Kay's program."
+    },
+    {
+     "name": "Dynabook (Kay)",
+     "year": 1972,
+     "domain": "personal computing",
+     "lens": "L20",
+     "type": "paper",
+     "causal_claim": "Creator-lineage cross-list from L4: the vision document is the author's own - the parent book is its software specification, written by the group the vision founded.",
+     "source_title": "Paul Danish: iPads in 1968? (Coloradan) - on Kay's 1972 paper 'A Personal Computer for Children of All Ages'",
+     "source_url": "https://www.colorado.edu/coloradan/2014/03/01/paul-danish-ipads-1968",
+     "definition": "The Dynabook paper (Kay, 1972) as the creator's own specification the parent implements in software."
+    },
+    {
+     "name": "Xerox PARC",
+     "year": 1970,
+     "domain": "institutions",
+     "lens": "L21",
+     "type": "institution",
+     "causal_claim": "The institution, acting through the specific artifact it carried: the Learning Research Group at PARC created the system across a decade, and the release the parent records - the 1980 specification review by Apple, DEC, HP and Tektronix, the licensing, the book - was PARC's group, led by Goldberg, carrying its system out of the laboratory. (Already a node in this graph, admitted at Self's expansion; proposed here so the link is judged on this parent's stronger record.)",
+     "source_title": "What Is Smalltalk? Smalltalk-80 from PARC, 1980 - the Blue Book preface on Simula; the 1980 specification review; BYTE 1981; the 1983 release",
+     "source_url": "https://history.itlibra.com/en/events/smalltalk-80-1980",
+     "definition": "Xerox PARC (founded 1970): the research center whose Learning Research Group (Kay, Goldberg, Ingalls, Robson and colleagues) built Smalltalk and conducted its release outside Xerox."
+    },
+    {
+     "name": "Design Principles Behind Smalltalk (Ingalls)",
+     "year": 1981,
+     "domain": "programming languages",
+     "lens": "L22",
+     "type": "paper",
+     "causal_claim": "The parent system's own design principles, published by its implementer in BYTE two years before the book: 'The Smalltalk-80 system marks our fifth time through this cycle.' Proposed so its direction is judged on the record - it states the finished system's principles, so it is the parent's own stratum in earlier dress rather than a predecessor - and so the BYTE unveiling is documented in the expansion.",
+     "source_title": "Design Principles Behind Smalltalk (Ingalls, BYTE, August 1981)",
+     "source_url": "http://l3dswiki.cs.colorado.edu/dlc-2006/uploads/116/Design Principles Behind Smalltalk.pdf",
+     "definition": "Dan Ingalls, 'Design Principles Behind Smalltalk' (BYTE 6(8), August 1981): the principles of the Smalltalk-80 system - personal mastery, uniform metaphor of communicating objects, classification, automatic storage management - stated by the system's principal implementer."
+    },
+    {
+     "name": "BYTE magazine Smalltalk issue (August 1981)",
+     "year": 1981,
+     "domain": "programming languages",
+     "lens": "L23",
+     "type": "other",
+     "causal_claim": "The contemporaneous public account of the parent system: BYTE's August 1981 issue devoted to Smalltalk-80 - Goldberg's readers' guide and system overview, the Learning Research Group's system article, Tesler on the environment, Krasner on the virtual machine, Ingalls on design principles and the graphics kernel. Proposed for judgment as the unveiling that created the parent's public - dissemination versus enabler is the question.",
+     "source_title": "BYTE Magazine V06 N08, Smalltalk (August 1981) - the Smalltalk-80 issue",
+     "source_url": "https://www.scribd.com/document/988502729/BYTE-Magazine-V06-N08-Smalltalk-Various-1981-08-001-642-24",
+     "definition": "BYTE Magazine, Volume 6 Number 8 (August 1981): the special Smalltalk issue - the first full public presentation of the Smalltalk-80 system, two years before the Blue Book."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "smalltalk-76-1976",
+      "candidate": {
+       "name": "Smalltalk-76",
+       "year": 1976,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "system",
+       "causal_claim": "The parent's own prior state and direct ancestor: Ingalls's POPL 1978 paper presents the first modern Smalltalk - objects communicating by messages, descriptions organized into classes, subclassing with inheritance, a compiled representation and a virtual memory - and its architecture is the one that 'endures in Smalltalk-80'. The parent is this system consolidated into the release version and published as a complete definition.",
+       "source_title": "The Smalltalk-76 Programming System: Design and Implementation (Ingalls, POPL 1978)",
+       "source_url": "https://docs.huihoo.com/smalltalk/esug/HistoricalDocuments/Smalltalk76/The-Smalltalk-76-Programming-System/Smalltalk-76.html",
+       "definition": "Smalltalk-76 (Xerox PARC Learning Research Group, designed by Dan Ingalls, 1976; published as 'The Smalltalk-76 Programming System: Design and Implementation', POPL 1978): the first Smalltalk in modern form - classes holding representation and methods, subclassing/inheritance, message sending, compiled bytecodes, automatic storage management - running interactively on the Alto."
+      },
+      "members": [
+       0,
+       5
+      ],
+      "member_names": [
+       "Smalltalk-76",
+       "Smalltalk-76"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "simula-67-1967",
+      "candidate": {
+       "name": "Simula 67",
+       "year": 1967,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "other",
+       "causal_claim": "The class concept itself, named by the parent's own book: the preface to Goldberg & Robson (1983) states that Smalltalk-80 is based on ideas from the Simula language (and on the visions of Kay). Kay's history treats Simula as one of the formative conceptions of the sixties. (Heard at Self's expansion and rejected there as mediated via this node; its own hearing is here, as that record directs.)",
+       "source_title": "Ole-Johan Dahl and Kristen Nygaard: The Inventors of Object-Oriented Programming (CompHist)",
+       "source_url": "https://www.geschichte-der-informatik.de/articles/ole-johan_dahl_and_kristen_nygaard/",
+       "definition": "Simula 67 (Ole-Johan Dahl, Bjorn Myhrhaug and Kristen Nygaard, Norwegian Computing Center; presented 1967, 'SIMULA 67 Common Base Language' 1968): the first class concept - a class as a template bundling data with procedures, objects as its instances, subclassing by class prefixing (inheritance), virtual procedures, and garbage collection - built as a generalization of ALGOL 60 for simulation."
+      },
+      "members": [
+       1,
+       6
+      ],
+      "member_names": [
+       "Simula 67",
+       "Simula 67"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lisp-1960",
+      "candidate": {
+       "name": "Lisp",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "other",
+       "causal_claim": "Kay's dedication in 'The Early History of Smalltalk' names LISP among 'the four great programming conceptions of the sixties' parented into Smalltalk: the interactive, image-based, garbage-collected symbolic computing that Smalltalk's environment embodies descends from it. (Already a node in this graph, admitted at Scheme's expansion; proposed here so the link is judged on this parent's documents.)",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://www.cs.tufts.edu/~nr/cs257/archive/alan-kay/smalltalk-hopl-ii.pdf",
+       "definition": "John McCarthy's Lisp (1960): symbolic computation as interactive evaluation over a uniform data structure, with garbage collection and a resident image of definitions - the environment model Smalltalk inherits."
+      },
+      "members": [
+       2,
+       17
+      ],
+      "member_names": [
+       "Lisp",
+       "Lisp"
+      ],
+      "matched_node_id": "lisp-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sketchpad-1963",
+      "candidate": {
+       "name": "Sketchpad",
+       "year": 1963,
+       "domain": "computer graphics",
+       "lens": "L1",
+       "type": "system",
+       "causal_claim": "Named first in Kay's dedication of the four great conceptions: Sketchpad's master drawings and their instances are the object idea in working form - a master changed once changes every instance - and its direct manipulation of visible objects is the interaction premise of the Smalltalk environment. Kay names Sketchpad as a direct inspiration for object-oriented programming and Smalltalk.",
+       "source_title": "Sketchpad (Sutherland, 1963) - masters and instances, constraints, direct manipulation",
+       "source_url": "https://vectree.io/pdf/c/sketchpad",
+       "definition": "Ivan Sutherland's Sketchpad (MIT PhD thesis, 1963): interactive drawing on a display with a light pen, organized around master drawings and their occurrences (instances), with geometric constraints maintained by the system - the first working form of the master/instance relation and of direct manipulation."
+      },
+      "members": [
+       3,
+       16
+      ],
+      "member_names": [
+       "Sketchpad",
+       "Sketchpad"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "model-view-controller-reenskaug-1979",
+      "candidate": {
+       "name": "Model-View-Controller (Reenskaug)",
+       "year": 1979,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "method",
+       "causal_claim": "A constituent architecture of the system the parent publishes: Reenskaug's 1979 PARC notes, addressed to the Learning Research Group, define Thing-Model-View-Editor and then Models-Views-Controllers; the Smalltalk-80 class library implements the settled form (Althoff et al.) for its standard views - the architecture of the environment half of the Blue Book's virtual image.",
+       "source_title": "THING-MODEL-VIEW-EDITOR (Reenskaug, Xerox PARC note to LRG, 12 May 1979)",
+       "source_url": "http://jpaulgibson.synology.me/~jpaulgibson/TSP/Teaching/Teaching-ReadingMaterial/Reenskaug79a.pdf",
+       "definition": "Trygve Reenskaug's Model-View-Controller notes (Xerox PARC, May and December 1979): a Model as the active representation of a domain abstraction, Views as its visual representations, and Controllers/Editors coordinating user input - the architectural pattern first implemented in the Smalltalk-80 class library."
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Model-View-Controller (Reenskaug)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "smalltalk-72-1972",
+      "candidate": {
+       "name": "Smalltalk-72",
+       "year": 1972,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "system",
+       "causal_claim": "The first Smalltalk: Kay's one-page design, implemented by Ingalls in 1972 - everything an object, messages as the only communication, classes present in embryo. The stratum Smalltalk-76 redesigned wholesale; proposed so its direction relative to this parent (through -76) is judged on the record. Documented in Kay's history, including its appendix on the -72 interpreter design.",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+       "definition": "Smalltalk-72 (Alan Kay's design, implemented by Dan Ingalls, Xerox PARC, 1972): the first working Smalltalk - a small language of communicating objects with a token-stream interpreter, from which Smalltalk-74 and then Smalltalk-76 evolved."
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Smalltalk-72"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dynabook-kay-1972",
+      "candidate": {
+       "name": "Dynabook (Kay)",
+       "year": 1972,
+       "domain": "personal computing",
+       "lens": "L4",
+       "type": "paper",
+       "causal_claim": "The problem statement the parent answers: Kay's 1972 paper specifies a personal computer for children of all ages - a medium, owned by one person, holding their library, music, drawings and programs - which requires a language of description and a language of interaction a single individual can master. Smalltalk is that software specification; the Learning Research Group existed to build toward this document, and the parent book is its software half made public.",
+       "source_title": "Paul Danish: iPads in 1968? (Coloradan) - on Kay's 1972 paper 'A Personal Computer for Children of All Ages'",
+       "source_url": "https://www.colorado.edu/coloradan/2014/03/01/paul-danish-ipads-1968",
+       "definition": "Alan Kay, 'A Personal Computer for Children of All Ages' (Proceedings of the ACM National Conference, August 1972): the Dynabook - a notebook-sized, under-$500 personal computer as a learning medium for children and adults, specifying dynamic graphics, removable storage of a million characters, and programming by its owner as a normal use."
+      },
+      "members": [
+       9,
+       23
+      ],
+      "member_names": [
+       "Dynabook (Kay)",
+       "Dynabook (Kay)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "actor-model-1973",
+      "candidate": {
+       "name": "Actor model",
+       "year": 1973,
+       "domain": "programming languages",
+       "lens": "L6",
+       "type": "theory",
+       "causal_claim": "The parallel message-passing formalism of the same decade: Kay's history discusses the Actors work in the Smalltalk milieu, and the kinship (computation as message exchange among autonomous entities) is real. Proposed so the channel into the published class model - or its absence - is judged on the documents rather than assumed from the resemblance. (Already a node in this graph, admitted at Scheme's expansion.)",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+       "definition": "Carl Hewitt's Actor model (1973): computation as autonomous actors communicating only by asynchronous messages - the formalism developed in parallel with Smalltalk's message passing at MIT."
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Actor model"
+      ],
+      "matched_node_id": "actor-model-1973",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "logo-1967",
+      "candidate": {
+       "name": "Logo",
+       "year": 1967,
+       "domain": "programming languages",
+       "lens": "L6",
+       "type": "other",
+       "causal_claim": "The incumbent child-facing language of the education program Smalltalk grew inside: Kay's history lists LOGO among the formative artifacts of 1967-69, Kay visited Papert's group, and the Dynabook paper draws on Papert's and Bruner's learning theory. The aims channel is documented; whether any mechanism channel runs into the published class model is the question for judgment.",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+       "definition": "Logo (Wally Feurzeig, Seymour Papert, Cynthia Solomon et al., BBN/MIT, 1967): a Lisp-derived language designed for children, built around the turtle and Papert's constructionist learning theory - the educational incumbent of the world Smalltalk was designed for."
+      },
+      "members": [
+       11,
+       22
+      ],
+      "member_names": [
+       "Logo",
+       "Logo"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "algol-60-1960",
+      "candidate": {
+       "name": "ALGOL 60",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L7",
+       "type": "other",
+       "causal_claim": "The tradition the parent departs from - block structure and static binding - and Simula's raw material: Dahl's own account says the Simula class generalized the ALGOL 60 block by freeing it from stack discipline. Whether ALGOL reaches this parent directly or only through Simula is the judgment. (Already a node in this graph, admitted at Scheme's expansion.)",
+       "source_title": "Ole-Johan Dahl - A.M. Turing Award additional materials (ACM): the class as the ALGOL block freed from stack discipline",
+       "source_url": "https://amturing.acm.org/info/dahl_6917600.cfm",
+       "definition": "ALGOL 60 (1960): the block-structured language whose block - data and procedures with a stack-bounded lifetime - Dahl generalized into the Simula class."
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "ALGOL 60"
+      ],
+      "matched_node_id": "algol-60-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "alto-1973",
+      "candidate": {
+       "name": "Alto",
+       "year": 1973,
+       "domain": "computing hardware",
+       "lens": "L9",
+       "type": "device",
+       "causal_claim": "The machine the system was built on and shaped by: PARC's personal bitmapped workstation, built as the 'interim Dynabook' - one person, one machine, a portrait bitmap display and a mouse. Smalltalk's window and graphics classes presuppose the bitmap; Smalltalk ran in Alto microcode; without a personal machine under the same roof there is no interactive object environment to publish. The parent book's VM specification is the move that frees the system from this machine.",
+       "source_title": "Y Combinator's Xerox Alto: restoring the legendary 1970s GUI computer (Shirriff)",
+       "source_url": "https://www.righto.com/2016/06/y-combinators-xerox-alto-restoring.html?showComment=1466285821283",
+       "definition": "The Xerox Alto (Xerox PARC, 1973; designed principally by Chuck Thacker with Butler Lampson): a personal workstation with a 606x808 portrait bitmapped display, a three-button mouse, Ethernet and a microprogrammable processor - about 2,000 built, never sold; the development machine of Smalltalk and the 'interim Dynabook'."
+      },
+      "members": [
+       13,
+       15
+      ],
+      "member_names": [
+       "Alto",
+       "Alto"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bitblt-1975",
+      "candidate": {
+       "name": "BitBlt",
+       "year": 1975,
+       "domain": "computer graphics",
+       "lens": "L11",
+       "type": "method",
+       "causal_claim": "The raster primitive the published system's graphics run on: Ingalls invented BitBlt for Smalltalk on the Alto, and the Smalltalk-80 graphics kernel (his BYTE, August 1981 article of that name) and the Blue Book's Form/display machinery are built on it - every window, font glyph and image in the environment moves through this one operation.",
+       "source_title": "2002 Dr. Dobb's Excellence in Programming Awards - Ingalls profile (BitBlt invention; the Smalltalk-76 record)",
+       "source_url": "https://jacobfilipp.com/DrDobbs/articles/DDJ/2002/0205/0205a/0205a.htm",
+       "definition": "BitBlt (Dan Ingalls, Xerox PARC, c. 1975): the bit-block-transfer primitive - copy a rectangular array of bits between forms with a combination rule - as the single graphics operation underlying Smalltalk's display system (forms, fonts, windows, menus)."
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "BitBlt"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "on-line-system-engelbart-1968",
+      "candidate": {
+       "name": "oN-Line System (Engelbart)",
+       "year": 1968,
+       "domain": "personal computing",
+       "lens": "L19",
+       "type": "system",
+       "causal_claim": "Kay's history gives Engelbart and NLS their own section in the formative 1967-69 period: augmentation, the mouse, windows and hypertext as the frame of interactive personal computing that the Dynabook paper filters into the Learning Research Group's program. Whether NLS reaches the parent directly or through the Dynabook/Alto is the judgment.",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+       "definition": "Douglas Engelbart's oN-Line System (NLS, SRI Augmentation Research Center, demonstrated December 1968): interactive augmentation of intellect - mouse, windows, hypertext, collaborative editing - the formative frame of personal interactive computing."
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "oN-Line System (Engelbart)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "joss-1963",
+      "candidate": {
+       "name": "JOSS",
+       "year": 1963,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "causal_claim": "The fourth name in Kay's dedication of 'the four great programming conceptions of the sixties': the conversational, time-shared language Kay used in the sixties and admired for its accessibility to non-specialists. Proposed so the dedication's full set is heard; the channel into the published class model specifically is the question.",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://www.cs.tufts.edu/~nr/cs257/archive/alan-kay/smalltalk-hopl-ii.pdf",
+       "definition": "JOSS (JOHNNIAC Open Shop System, Clifford Shaw, RAND, 1963): an interactive time-sharing language designed for non-programmers, with conversational immediacy that Kay counted among the sixties' great conceptions."
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "JOSS"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "grail-1968",
+      "candidate": {
+       "name": "GRAIL",
+       "year": 1968,
+       "domain": "personal computing",
+       "lens": "L19",
+       "type": "system",
+       "causal_claim": "Listed in Kay's history among the formative 1967-69 artifacts: the graphical flowchart system whose iconic, direct-manipulation programming fed Kay's thinking about iconic programming in the Smalltalk-71 period. Proposed for completeness of the history's own list; the channel into the class model is the question.",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+       "definition": "GRAIL (T. O. Ellis et al., RAND, 1968): a graphical input/output system in which users drew flowcharts directly on a tablet display and the system recognized and executed them - an early iconic-programming system in Kay's formative set."
+      },
+      "members": [
+       20
+      ],
+      "member_names": [
+       "GRAIL"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "flex-machine-kay-1968",
+      "candidate": {
+       "name": "FLEX machine (Kay)",
+       "year": 1968,
+       "domain": "personal computing",
+       "lens": "L20",
+       "type": "system",
+       "causal_claim": "The creator's own prior system: Kay's history's section II is 'The FLEX Machine, an OOP-based personal computer' - Kay and Ed Cheadle's pre-PARC machine, the first embodiment of Kay's object ideas and personal-computing aim, built before he reached PARC. Whether it reaches this parent directly or through the -72/-76 strata is the judgment.",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://lsi2.ugr.es/~pdo/MaterialTeoriaAlumnos/Tema%202.%20Objetos%20y%20mensajes/The%20Early%20History%20of%20Smalltalk.htm",
+       "definition": "The FLEX machine (Alan Kay with Ed Cheadle, University of Utah, 1967-69): a small personal computer with an object-oriented operating system and language (FLEX), Kay's first attempt at the personal dynamic medium, predating PARC."
+      },
+      "members": [
+       21
+      ],
+      "member_names": [
+       "FLEX machine (Kay)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xerox-parc-1970",
+      "candidate": {
+       "name": "Xerox PARC",
+       "year": 1970,
+       "domain": "institutions",
+       "lens": "L21",
+       "type": "institution",
+       "causal_claim": "The institution, acting through the specific artifact it carried: the Learning Research Group at PARC created the system across a decade, and the release the parent records - the 1980 specification review by Apple, DEC, HP and Tektronix, the licensing, the book - was PARC's group, led by Goldberg, carrying its system out of the laboratory. (Already a node in this graph, admitted at Self's expansion; proposed here so the link is judged on this parent's stronger record.)",
+       "source_title": "What Is Smalltalk? Smalltalk-80 from PARC, 1980 - the Blue Book preface on Simula; the 1980 specification review; BYTE 1981; the 1983 release",
+       "source_url": "https://history.itlibra.com/en/events/smalltalk-80-1980",
+       "definition": "Xerox PARC (founded 1970): the research center whose Learning Research Group (Kay, Goldberg, Ingalls, Robson and colleagues) built Smalltalk and conducted its release outside Xerox."
+      },
+      "members": [
+       24
+      ],
+      "member_names": [
+       "Xerox PARC"
+      ],
+      "matched_node_id": "xerox-parc-1970",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "design-principles-behind-smalltalk-ingalls-1981",
+      "candidate": {
+       "name": "Design Principles Behind Smalltalk (Ingalls)",
+       "year": 1981,
+       "domain": "programming languages",
+       "lens": "L22",
+       "type": "paper",
+       "causal_claim": "The parent system's own design principles, published by its implementer in BYTE two years before the book: 'The Smalltalk-80 system marks our fifth time through this cycle.' Proposed so its direction is judged on the record - it states the finished system's principles, so it is the parent's own stratum in earlier dress rather than a predecessor - and so the BYTE unveiling is documented in the expansion.",
+       "source_title": "Design Principles Behind Smalltalk (Ingalls, BYTE, August 1981)",
+       "source_url": "http://l3dswiki.cs.colorado.edu/dlc-2006/uploads/116/Design Principles Behind Smalltalk.pdf",
+       "definition": "Dan Ingalls, 'Design Principles Behind Smalltalk' (BYTE 6(8), August 1981): the principles of the Smalltalk-80 system - personal mastery, uniform metaphor of communicating objects, classification, automatic storage management - stated by the system's principal implementer."
+      },
+      "members": [
+       25
+      ],
+      "member_names": [
+       "Design Principles Behind Smalltalk (Ingalls)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "byte-magazine-smalltalk-issue-august-1981-1981",
+      "candidate": {
+       "name": "BYTE magazine Smalltalk issue (August 1981)",
+       "year": 1981,
+       "domain": "programming languages",
+       "lens": "L23",
+       "type": "other",
+       "causal_claim": "The contemporaneous public account of the parent system: BYTE's August 1981 issue devoted to Smalltalk-80 - Goldberg's readers' guide and system overview, the Learning Research Group's system article, Tesler on the environment, Krasner on the virtual machine, Ingalls on design principles and the graphics kernel. Proposed for judgment as the unveiling that created the parent's public - dissemination versus enabler is the question.",
+       "source_title": "BYTE Magazine V06 N08, Smalltalk (August 1981) - the Smalltalk-80 issue",
+       "source_url": "https://www.scribd.com/document/988502729/BYTE-Magazine-V06-N08-Smalltalk-Various-1981-08-001-642-24",
+       "definition": "BYTE Magazine, Volume 6 Number 8 (August 1981): the special Smalltalk issue - the first full public presentation of the Smalltalk-80 system, two years before the Blue Book."
+      },
+      "members": [
+       26
+      ],
+      "member_names": [
+       "BYTE magazine Smalltalk issue (August 1981)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:0:7",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "Smalltalk-76",
+        "aliases": [],
+        "year": 1976,
+        "domain": "programming languages",
+        "type": "system",
+        "definition": "Smalltalk-76 (Xerox PARC Learning Research Group, designed by Dan Ingalls, 1976; published as 'The Smalltalk-76 Programming System: Design and Implementation', POPL 1978): the first Smalltalk in modern form - classes holding representation and methods, subclassing/inheritance, message sending, compiled bytecodes, automatic storage management - running interactively on the Alto.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 7,
+       "card": {
+        "name": "Smalltalk-72",
+        "aliases": [],
+        "year": 1972,
+        "domain": "programming languages",
+        "type": "system",
+        "definition": "Smalltalk-72 (Alan Kay's design, implemented by Dan Ingalls, Xerox PARC, 1972): the first working Smalltalk - a small language of communicating objects with a token-stream interpreter, from which Smalltalk-74 and then Smalltalk-76 evolved.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8667,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:5:7",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 5,
+       "card": {
+        "name": "Smalltalk-76",
+        "aliases": [],
+        "year": 1976,
+        "domain": "programming languages",
+        "type": "system",
+        "definition": "Smalltalk-76 (Ingalls, 1976): the modern Smalltalk the parent consolidates into the 1980 release version.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 7,
+       "card": {
+        "name": "Smalltalk-72",
+        "aliases": [],
+        "year": 1972,
+        "domain": "programming languages",
+        "type": "system",
+        "definition": "Smalltalk-72 (Alan Kay's design, implemented by Dan Ingalls, Xerox PARC, 1972): the first working Smalltalk - a small language of communicating objects with a token-stream interpreter, from which Smalltalk-74 and then Smalltalk-76 evolved.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8478,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       5
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       6
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       17
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       16
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       23
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       11,
+       22
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       13,
+       15
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "The Early History of Smalltalk (Kay)",
+       "year": 1993,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "paper",
+       "causal_claim": "Meta pass: the creator's own retrospective lineage map of this parent - the document that names its predecessors (Sketchpad, Simula, FLEX, NLS, Logo, Dynabook, the -72/-76 strata) and is the scout's chief source for the channels judged here. Proposed with its true year (1993, post-parent); the resolver's date drop is the record.",
+       "source_title": "The Early History of Smalltalk (Kay, HOPL-II, 1993)",
+       "source_url": "https://www.cs.tufts.edu/~nr/cs257/archive/alan-kay/smalltalk-hopl-ii.pdf",
+       "definition": "Alan Kay, 'The Early History of Smalltalk' (HOPL-II, ACM, 1993): Kay's account of Smalltalk's parentage and evolution from the sixties conceptions through the 1980-83 release of Smalltalk-80."
+      },
+      "reason": "dated on/after parent year 1983"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:0:7",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "Smalltalk-76",
+       "aliases": [],
+       "year": 1976,
+       "domain": "programming languages",
+       "type": "system",
+       "definition": "Smalltalk-76 (Xerox PARC Learning Research Group, designed by Dan Ingalls, 1976; published as 'The Smalltalk-76 Programming System: Design and Implementation', POPL 1978): the first Smalltalk in modern form - classes holding representation and methods, subclassing/inheritance, message sending, compiled bytecodes, automatic storage management - running interactively on the Alto.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 7,
+      "card": {
+       "name": "Smalltalk-72",
+       "aliases": [],
+       "year": 1972,
+       "domain": "programming languages",
+       "type": "system",
+       "definition": "Smalltalk-72 (Alan Kay's design, implemented by Dan Ingalls, Xerox PARC, 1972): the first working Smalltalk - a small language of communicating objects with a token-stream interpreter, from which Smalltalk-74 and then Smalltalk-76 evolved.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8667,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:5:7",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 5,
+      "card": {
+       "name": "Smalltalk-76",
+       "aliases": [],
+       "year": 1976,
+       "domain": "programming languages",
+       "type": "system",
+       "definition": "Smalltalk-76 (Ingalls, 1976): the modern Smalltalk the parent consolidates into the 1980 release version.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 7,
+      "card": {
+       "name": "Smalltalk-72",
+       "aliases": [],
+       "year": 1972,
+       "domain": "programming languages",
+       "type": "system",
+       "definition": "Smalltalk-72 (Alan Kay's design, implemented by Dan Ingalls, Xerox PARC, 1972): the first working Smalltalk - a small language of communicating objects with a token-stream interpreter, from which Smalltalk-74 and then Smalltalk-76 evolved.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8478,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
