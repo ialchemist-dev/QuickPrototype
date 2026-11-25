@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T11:13:20+00:00",
-  "expansions_done": 91,
-  "raw_candidates_seen": 3640,
+  "updated_at": "2026-11-25T11:17:43+00:00",
+  "expansions_done": 92,
+  "raw_candidates_seen": 3655,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -17490,6 +17490,76 @@
     "name": "Gottingen Observatory under Gauss's directorship (1807)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T11:13:20+00:00"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "Cook, Shade Trees (1984)",
+    "reason": "mediated_via: RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+    "at": "2026-11-25T11:17:18+00:00",
+    "mediated_via": "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "PixelFlow and pfman, a RenderMan-like language on custom hardware (Olano & Lastra, 1998)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:17:18+00:00"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "Interactive Shading / ISL (Peercy, Olano, Airey & Ungar, SGI, 2000)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:17:18+00:00"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:17:18+00:00"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "Perlin, An Image Synthesizer (1985)",
+    "reason": "mediated_via: RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+    "at": "2026-11-25T11:17:18+00:00",
+    "mediated_via": "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "RenderMan Interface Specification (Pixar, 1988)",
+    "reason": "mediated_via: RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+    "at": "2026-11-25T11:17:18+00:00",
+    "mediated_via": "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "DirectX 8 shader models and shader assembly (Microsoft, 2000)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:17:18+00:00"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "NV_register_combiners OpenGL extension (NVIDIA, 2000)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:17:18+00:00"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "OpenGL and the fixed-function graphics pipeline (1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:17:18+00:00"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "Apodaca & Gritz, Advanced RenderMan (1999)",
+    "reason": "mediated_via: RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+    "at": "2026-11-25T11:17:18+00:00",
+    "mediated_via": "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+   },
+   {
+    "parent_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+    "name": "Pixar Animation Studios (1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:17:18+00:00"
    }
   ]
  },
@@ -21257,7 +21327,7 @@
    "prior_state": "Programmable hardware programmed in assembly (DirectX 8 shader models, OpenGL extensions); RenderMan's shading language confined to offline rendering; hardware shading research (PixelFlow) tied to one-off research machines.",
    "status": "provisional",
    "depth": 6,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -23174,6 +23244,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T10:57:06+00:00"
+  },
+  "renderman-shading-language-hanrahan-lawson-1990-1990": {
+   "id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+   "name": "RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+   "aliases": [],
+   "year": 1990,
+   "domain": "computer graphics / languages",
+   "type": "software",
+   "definition": "The shading language of Pixar's RenderMan, published as Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations' (SIGGRAPH 1990): a C-like procedural language in which surface, light, displacement and volume shaders are written once and executed by the renderer, with a standard library of graphics primitives.",
+   "bottleneck": "Before RenderMan SL, a renderer's shading was fixed by its implementers, because no user-writable language existed in which appearance could be programmed per production.",
+   "leap": "Hanrahan & Lawson (1990) made shading a language: appearance became portable, user-authored procedural code - surface and light shaders - instead of renderer internals.",
+   "prior_state": "Hard-coded shading models inside renderers; Cook's shade trees as a research formulation without a production language.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 7.5,
+   "sources": [
+    {
+     "title": "Hanrahan & Lawson, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001 (introduction and related work); Mark, Stanford RTSL SIGGRAPH 2001 course notes (April 18, 2001), graphics.stanford.edu/courses and the RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "url": "https://graphics.stanford.edu/papers/rtsl/"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run on the RenderMan SL -> RTSL edge (7.5), the deferred hearing discharged this session. (1) Q1 attack partially lands on the node's broad form: Cook's shade trees (1984) had already formulated shading as composable procedure, so 'shading becomes programmable' is not SL's flip alone. It fails on the edge-scoped form: what the parent presupposes and consumes is not the formulation but the reigning LANGUAGE - shader kinds as a textual language with a standard library, in production use for a decade ('the most common shading language in use today', in the parent's own words). The edge stands on that form. (2) Multiples test on Q3: PixelFlow/pfman (1998) and ISL (2000) independently carried shading languages toward hardware in the parent's era, so the necessity of the parent's TRANSFER is ripe - already scored Q3 partial, and the cap stands. But as an attack on THIS edge it misfires: both multiples themselves take SL as their language model (pfman is 'a RenderMan-like language'; ISL compiles the RenderMan language), so the parallels reinforce the SL channel rather than rival it. (3) Date and direction check out: Hanrahan & Lawson, SIGGRAPH 1990, a decade before the parent; direction documented by the parent's text and by Hanrahan's authorship on both papers. (4) Mediation attack, three mediators tried. Via the RenderMan Interface Specification: refused - the parent implements no RenderMan interface and compiles to GPU back ends, not RIB; the specification contains a language definition, and containment is not a channel (the RISpec rejection records this). Via Cook's shade trees: refused as complete mediation - SL is not a transparent conduit for the 1984 formulation; what the parent consumes (shader kinds as a textual language, the library design, the production practice) is SL's own contribution, and the senior author's personal channel bypasses 1984 entirely; Cook is recorded as mediated via SL, the chain carried by its cited final link. Via Advanced RenderMan (1999): refused - documentation of the mediator, and the channel here is the designer himself. Strongest standing caveat: the Q3 partial (the transfer was ripe; the edge rests on the specificity of the design consumed and the documented channel, not on necessity). Outcome provisional, per the run's standing (no node is verified); no mediation object - no attack killed or downgraded the edge.",
+    "at": "2026-11-25T11:17:43+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T11:17:18+00:00"
   }
  },
  "edges": [
@@ -47260,6 +47359,103 @@
     "counterfactual": "Remove the typing model and the parent loses the direct precursor it modifies: the report takes over its parallel-activation solution to coarticulation wholesale, then replaces its ordering device — lateral inhibition, shown to be 'susceptible to Lashley's critique' and unable to repeat elements — with the state/output distinction. The ancestor-modified relation is documented in the parent's own argument, section by section; no mediator stands (the PDP volumes that later codified the model are dated to the parent's own year and are not the channel — the 1982 journal article is).",
     "mediator": null,
     "evidence": "The parent report's Serial Order section: the extended engagement with Rumelhart & Norman (1982) — adoption of parallel activation, then the three documented failures (repeated elements, doubling operators, parser breaks in ABCA) that the state vector repairs."
+   }
+  },
+  {
+   "predecessor_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+   "successor_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The candidate flipped shading from renderer internals into a user-authored language; the parent's problem exists only inside that flip - RTSL is the project of taking the candidate's language to hardware, and its paper says so ('The most common shading language in use today is the RenderMan Shading Language... for software batch-rendering systems' - the parent's move is to un-confine it).",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The candidate generated the entire procedural-shading field: every later shading language - the parent, then Cg/HLSL/GLSL - is designed in its terms (shader kinds, procedural surface/light decomposition, a graphics standard library).",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial, honestly: the real-time transfer was multiply attempted (PixelFlow, ISL - the multiples recorded in the parent's own verification), so the era did not need this exact artifact for SOME hardware shading language to appear. But the parent's specific design - its shader kinds, its procedural model, its library vocabulary - is this language's design, and the channel is documented in the text and in Hanrahan's authorship of both papers.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost collapse is partial: the candidate collapsed the cost of new appearance in production rendering (write a shader, not a renderer), which is the value the parent carries into real time; the collapse inside the parent's own domain (hardware) is the parent's work.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Measurability is partial: the candidate made shading an inspectable, portable artifact - a shader text that can be judged, shared and compiled by different renderers - the precondition for the parent's compiler to exist as a research object.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The parent's understanding of what shading computation IS - a procedure over surface and light, organized by what varies - is the candidate's understanding, re-founded on computation frequencies; the parent's paper treats the candidate as the reference model throughout.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability passes: the candidate's decomposition (surface, light, displacement, volume shaders as separable units with a standard library) is the structure the parent's single procedure inherits and splits by frequency.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach passes on the candidate's record: from film rendering its model spread to all of procedural graphics, and its vocabulary (noise, illuminance, shader kinds) became the field's.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: the candidate sped look development in offline production; the parent's speed claim (interactive rates) is its own.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Displacement passes: the candidate displaced hard-coded shading in production rendering completely - the parent inherits a world in which shading is already understood to be a program.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: the candidate is the trunk of the shading-language line - the parent names it as such, and the descendant languages (Cg/HLSL) trace through the parent to it.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility passes: since the candidate, appearance in production graphics is authored code; no path back to fixed shading models exists in the lineage the parent extends.",
+     "source": "Hanrahan & Lawson, A Language for Shading and Lighting Calculations, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Mark, RTSL SIGGRAPH 2001 course notes; Stanford RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 7.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T11:17:18+00:00",
+   "leap": {
+    "prior_state": "Programmable hardware programmed in assembly (DirectX 8 shader models, OpenGL extensions); RenderMan's shading language confined to offline rendering; hardware shading research (PixelFlow) tied to one-off research machines.",
+    "jump": "The Stanford Real-Time Shading Language system (Proudfoot, Mark, Tzvetkov & Hanrahan, SIGGRAPH 2001): a procedural shading language whose programs mix vertex and fragment computations in one procedure, compiled by frequency-specific back ends to programmable hardware, the host CPU, or multipass OpenGL - the design the commercial Cg/HLSL language directly inherited.",
+    "date": 2001
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove RenderMan SL: the parent loses its language model - the shader kinds its procedures are written in, the procedural form, the library vocabulary - and would have to invent a shading language and its hardware compiler simultaneously. The documented design (the reigning shading language, co-authored by the parent's own senior author, re-founded on computation frequencies) does not exist without it.",
+    "mediator": null,
+    "evidence": "Citation plus instantiation plus a personal channel: the parent's paper frames its language against the candidate's ('the most common shading language in use today'), its surface and light shaders ARE the candidate's shader kinds compiled by frequency, and Pat Hanrahan co-authored both the 1990 language paper and the parent. Mediation checked: the channel does not run through the RISpec (the parent implements no RenderMan interface - it consumes the language, judged separately below) nor through Cook's shade trees (which reach the parent embodied in this language - Cook's candidacy is mediated via this node). The deferred hearing carried since the early sessions is discharged as an admission."
    }
   }
  ],
@@ -174930,6 +175126,494 @@
        "source_url": ""
       },
       "reason": "dated on/after parent year 1809"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001": {
+   "raw_candidates": [
+    {
+     "name": "RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+     "year": 1990,
+     "lens": "L2",
+     "type": "software",
+     "domain": "computer graphics / languages",
+     "definition": "The shading language of Pixar's RenderMan, published as Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations' (SIGGRAPH 1990): a C-like procedural language in which surface, light, displacement and volume shaders are written once and executed by the renderer, with a standard library of graphics primitives (noise, transforms, illuminance loops). The parent paper: 'The most common shading language in use today is the RenderMan Shading Language, which provides for movie production-quality procedural shading effects for software batch-rendering systems.'",
+     "causal_claim": "THE DEFERRED HEARING (carried since the early sessions). The parent takes over the candidate's design: its language is modelled on RenderMan SL's shader kinds and procedural model - the parent's own paper frames shading languages as descending from Cook through this language, and its surface and light shaders are the candidate's, re-founded on computation frequencies for hardware. The channel is personal as well as textual: Pat Hanrahan co-authored both the 1990 language paper and the parent.",
+     "source_title": "Hanrahan & Lawson, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001 (introduction and related work); Mark, Stanford RTSL SIGGRAPH 2001 course notes (April 18, 2001), graphics.stanford.edu/courses and the RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+     "source_url": "https://graphics.stanford.edu/papers/rtsl/"
+    },
+    {
+     "name": "Cook, Shade Trees (1984)",
+     "year": 1984,
+     "lens": "L1",
+     "type": "theory",
+     "domain": "computer graphics",
+     "definition": "Robert L. Cook's 'Shade Trees' (SIGGRAPH 1984): shading described as a tree of procedural nodes evaluated per visible point - the founding formulation of programmable procedural shading, from which, in the parent paper's own words, 'shading languages developed'.",
+     "causal_claim": "The parent's introduction names Cook's shade trees as the origin of shading languages. The hearing: whether that descent reaches the parent directly, or arrives embodied in RenderMan SL - the language that implemented the shade-tree idea as a textual language and the one the parent actually models itself on.",
+     "source_title": "Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001 (introduction: 'Shading languages developed from the work of Cook...')",
+     "source_url": ""
+    },
+    {
+     "name": "PixelFlow and pfman, a RenderMan-like language on custom hardware (Olano & Lastra, 1998)",
+     "year": 1998,
+     "lens": "L1",
+     "type": "system",
+     "domain": "computer graphics / hardware",
+     "definition": "The UNC PixelFlow system and its pfman language (Olano & Lastra, Graphics Hardware 1998): a RenderMan-like shading language compiled to PixelFlow's SIMD processing arrays - a shading language running on real graphics hardware three years before the parent, on a one-off research machine. The parent paper cites it directly: 'Olano and Lastra describe pfman, a RenderMan-like language for the PixelFlow system that is compiled to PixelFlow's SIMD processing arrays.'",
+     "causal_claim": "The parent's own verification record concedes the Q1 pressure: PixelFlow had a RenderMan-like language on hardware first. The hearing at this parent: is pfman a consumed predecessor or a parallel system the parent compares itself against - the parent's leap being retargetability across commodity machines, pfman's being bound to one custom machine?",
+     "source_title": "Olano & Lastra (1998) as cited in Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; the parent node's verification notes (admission at HLSL)",
+     "source_url": ""
+    },
+    {
+     "name": "Interactive Shading / ISL (Peercy, Olano, Airey & Ungar, SGI, 2000)",
+     "year": 2000,
+     "lens": "L1",
+     "type": "software",
+     "domain": "computer graphics / languages",
+     "definition": "SGI's Interactive Shading work (SIGGRAPH 2000): the demonstration that a RenderMan-style shading language could be compiled to commodity fixed-function hardware by multipass rendering under OpenGL 1.2 - the technique the parent's fragment back end uses as its fallback path when no programmable fragment hardware is present.",
+     "causal_claim": "The parent's multipass-OpenGL fragment back end is the candidate's demonstrated technique, taken over as one back end among several. The hearing: consumed component (the components discipline - a component is not the leap) or separable predecessor (the first proof that a shading language could run on commodity hardware at all)?",
+     "source_title": "Peercy et al., Interactive Shading, SIGGRAPH 2000, as characterized in Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001",
+     "source_url": ""
+    },
+    {
+     "name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+     "year": 1987,
+     "lens": "L1",
+     "type": "architecture",
+     "domain": "computer graphics",
+     "definition": "The REYES architecture ('Renders Everything You Ever Saw', SIGGRAPH 1987): Pixar's software rendering architecture - micropolygon dicing, stochastic sampling - inside which RenderMan Shading Language shaders execute in the offline pipeline.",
+     "causal_claim": "Filed for the discrimination the RenderMan hearing needs: the parent takes over RenderMan's LANGUAGE while expressly abandoning its software-rendering architecture for rasterization hardware organized by computation frequency. If the language is consumed and the architecture is not, the two records must be separable.",
+     "source_title": "Cook, Carpenter & Catmull, The REYES Image Rendering Architecture, SIGGRAPH 1987",
+     "source_url": ""
+    },
+    {
+     "name": "Perlin, An Image Synthesizer (1985)",
+     "year": 1985,
+     "lens": "L19",
+     "type": "method",
+     "domain": "computer graphics",
+     "definition": "Ken Perlin's 'An Image Synthesizer' (SIGGRAPH 1985): procedural texture synthesis with the noise function that became the standard primitive of procedural shading, built into RenderMan SL's standard library and inherited by every shading language after it.",
+     "causal_claim": "The parent's shaders use the procedural vocabulary (noise and its derivatives) that Perlin founded and RenderMan SL standardized. The hearing is the mediation shape: does any Perlin mechanism reach the parent except as embodied in RenderMan SL's library?",
+     "source_title": "Perlin, SIGGRAPH 1985; Hanrahan & Lawson (1990) on the RenderMan SL standard library",
+     "source_url": ""
+    },
+    {
+     "name": "RenderMan Interface Specification (Pixar, 1988)",
+     "year": 1988,
+     "lens": "L16",
+     "type": "standard",
+     "domain": "computer graphics / standards",
+     "definition": "Pixar's RenderMan Interface Specification (first issued 1988; v3.0, 1989): the scene-description and rendering interface standard that defines the environment in which RenderMan shaders are written and executed - the 'RenderMan-compliant renderer' contract.",
+     "causal_claim": "The parent's language lives in the world this specification defines. The hearing: the parent models its language on the shading language the specification carries - consumption of the specification itself, or of the language artifact (Hanrahan & Lawson 1990) that the specification contains?",
+     "source_title": "Pixar, The RenderMan Interface Specification (1988/1989)",
+     "source_url": ""
+    },
+    {
+     "name": "DirectX 8 shader models and shader assembly (Microsoft, 2000)",
+     "year": 2000,
+     "lens": "L13",
+     "type": "software",
+     "domain": "computer graphics / platforms",
+     "definition": "Microsoft's DirectX 8 (2000): the first commodity programmable-pipeline API - vertex shader 1.1 and pixel shader 1.x assembly models for GeForce3-class hardware, the vendor-assembly stratum the parent's stored prior_state names ('DirectX 8 shader models, OpenGL extensions').",
+     "causal_claim": "The parent compiles toward the world the candidate defines - programmable vertex units addressed in assembly. The hearing: consumed substrate (the parent's back ends presuppose and target these models) or one target among several (vertex hardware, CPU, multipass OpenGL), whose assembly the parent exists to make unnecessary to write?",
+     "source_title": "Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Microsoft DirectX 8 SDK documentation (shader models)",
+     "source_url": ""
+    },
+    {
+     "name": "NV_register_combiners OpenGL extension (NVIDIA, 2000)",
+     "year": 2000,
+     "lens": "L13",
+     "type": "software",
+     "domain": "computer graphics / platforms",
+     "definition": "NVIDIA's OpenGL register-combiner extension (2000): the configurable fragment-computation units of the GeForce/GeForce2/3 line, exposed as a general-computation register file - the actual fragment target of the parent's compiled output on GeForce3 ('fragment code (register combiner configuration)'), with the back end detailed in the companion paper 'Compiling to a VLIW Fragment Pipeline' (Mark & Proudfoot, Graphics Hardware 2001).",
+     "causal_claim": "The parent's fragment back end emits register-combiner configurations - the candidate is the mechanism one of its back ends programs. The hearing: the specific-enabling-step shape (the CUDA pattern) or a target substrate whose generality the parent's language abstracts away?",
+     "source_title": "Mark, Stanford RTSL SIGGRAPH 2001 course notes (April 18, 2001), graphics.stanford.edu/courses and the RTSL project page (graphics.stanford.edu/papers/rtsl/); Mark & Proudfoot, Compiling to a VLIW Fragment Pipeline, Graphics Hardware 2001",
+     "source_url": ""
+    },
+    {
+     "name": "OpenGL and the fixed-function graphics pipeline (1992)",
+     "year": 1992,
+     "lens": "L6",
+     "type": "software",
+     "domain": "computer graphics / platforms",
+     "definition": "SGI's OpenGL (1992): the standard immediate-mode graphics API whose fixed-function transform-and-lighting and texture-combining pipeline defined commodity 3D graphics for a decade - and the API under which the parent's multipass fragment fallback runs (OpenGL 1.2 multipass rendering).",
+     "causal_claim": "Double relation, judged on both halves: the parent is defined against the fixed-function pipeline (its whole point is that shading becomes programmable instead), AND it consumes OpenGL as the substrate of its fallback back end. Defined-against incumbents fail directness even with high scores; the consumed half must be weighed as what it is - the fallback target, not the design.",
+     "source_title": "Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Peercy et al. (2000) on multipass rendering under OpenGL 1.2",
+     "source_url": ""
+    },
+    {
+     "name": "NVIDIA GeForce 3 (NV20) (2001)",
+     "year": 2001,
+     "lens": "L9",
+     "type": "machine",
+     "domain": "computer graphics / hardware",
+     "definition": "NVIDIA's GeForce 3 (announced February 2001): the first commodity GPU with programmable vertex processing (nfiniteFX engine) and register-combiner fragment hardware - the machine the parent's compiled examples target ('example compiled output is for a GeForce3'). Filed under its canonical year: it is the SAME year as the parent, so the resolve date bound is expected to drop it - the drop itself is the record that month-level order (the machine shipped months before the August 2001 paper) is inexpressible under the year-granularity bound, the session-27/40 structural pattern.",
+     "causal_claim": "No causal claim is adjudicated - the year bound decides first. Filed for the record, per the standing instruction to log same-year artifacts as structural notes.",
+     "source_title": "Mark, Stanford RTSL SIGGRAPH 2001 course notes (April 18, 2001), graphics.stanford.edu/courses and the RTSL project page (graphics.stanford.edu/papers/rtsl/); NVIDIA GeForce 3 launch materials (February 2001)",
+     "source_url": ""
+    },
+    {
+     "name": "Mark & Proudfoot, Compiling to a VLIW Fragment Pipeline (2001)",
+     "year": 2001,
+     "lens": "L20",
+     "type": "method",
+     "domain": "computer graphics / compilers",
+     "definition": "The parent's companion paper (Graphics Hardware 2001): the design of the RTSL compiler's fragment back end for the register-combiner architecture, by two of the parent's authors. Filed under its canonical year - the same year as the parent - so the resolve date bound is expected to drop it: the record that the parent's own back-end detail paper is its coeval companion, not its predecessor.",
+     "causal_claim": "No causal claim is adjudicated - the year bound decides first. The companion relationship is recorded in the register-combiner candidate's evidence instead.",
+     "source_title": "Mark & Proudfoot, Compiling to a VLIW Fragment Pipeline, Proc. Graphics Hardware 2001",
+     "source_url": ""
+    },
+    {
+     "name": "Apodaca & Gritz, Advanced RenderMan (1999)",
+     "year": 1999,
+     "lens": "L11",
+     "type": "method",
+     "domain": "computer graphics / books",
+     "definition": "Apodaca & Gritz, 'Advanced RenderMan: Creating CGI for Motion Pictures' (Morgan Kaufmann, 1999): the field's working textbook of RenderMan shading-language practice at the end of the 1990s - how production shaders were actually written, organized, and optimized.",
+     "causal_claim": "The documentation through which the era's practitioners - including, plausibly, the parent's authors' students and readers - learned the candidate language's practice. The hearing: documentation of a mediator is mediated by it; any claim runs through the RenderMan SL artifact itself.",
+     "source_title": "Apodaca & Gritz (1999)",
+     "source_url": ""
+    },
+    {
+     "name": "Pixar Animation Studios (1986)",
+     "year": 1986,
+     "lens": "L21",
+     "type": "institution",
+     "domain": "computer graphics / institutions",
+     "definition": "Pixar: the institution that created and carried RenderMan - its interface specification, its shading language, and its production practice - from the Lucasfilm Computer Division spinoff (1986) through the 1990s.",
+     "causal_claim": "Filed for the decomposition test: the institution acts, if at all, through the specific artifacts it carried - the interface specification and the shading language, both filed separately. An institutional edge on top of the artifact edges would double-count them.",
+     "source_title": "Pixar corporate history; the RenderMan artifacts as filed",
+     "source_url": ""
+    },
+    {
+     "name": "Stanford Computer Graphics Laboratory (Hanrahan's group)",
+     "year": 2001,
+     "lens": "L21",
+     "type": "institution",
+     "domain": "computer graphics / institutions",
+     "definition": "The Stanford laboratory in which the parent was built - Hanrahan's group, the parent's institutional home, whose earlier systems work (including Hanrahan's own RenderMan-era research) formed its members. Filed with year 2001 (the parent's year is the only honest date for the lab-as-parent's-home; a founding-year filing would pretend the carried artifact is the lab's age). Expected: the resolve date bound drops it as same-year, and the substance is self-carriage in any case - recorded in the run log either way.",
+     "causal_claim": "Self-carriage test: an institution whose carried artifact at this parent is the parent itself is not a predecessor. Hanrahan's separable earlier artifact is the shading language, filed at L2 - through the person, the channel is already in the graph's candidate set once.",
+     "source_title": "Stanford Graphics Laboratory history; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001 (affiliations)",
+     "source_url": ""
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+      "candidate": {
+       "name": "RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+       "year": 1990,
+       "lens": "L2",
+       "type": "software",
+       "domain": "computer graphics / languages",
+       "definition": "The shading language of Pixar's RenderMan, published as Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations' (SIGGRAPH 1990): a C-like procedural language in which surface, light, displacement and volume shaders are written once and executed by the renderer, with a standard library of graphics primitives (noise, transforms, illuminance loops). The parent paper: 'The most common shading language in use today is the RenderMan Shading Language, which provides for movie production-quality procedural shading effects for software batch-rendering systems.'",
+       "causal_claim": "THE DEFERRED HEARING (carried since the early sessions). The parent takes over the candidate's design: its language is modelled on RenderMan SL's shader kinds and procedural model - the parent's own paper frames shading languages as descending from Cook through this language, and its surface and light shaders are the candidate's, re-founded on computation frequencies for hardware. The channel is personal as well as textual: Pat Hanrahan co-authored both the 1990 language paper and the parent.",
+       "source_title": "Hanrahan & Lawson, SIGGRAPH 1990; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001 (introduction and related work); Mark, Stanford RTSL SIGGRAPH 2001 course notes (April 18, 2001), graphics.stanford.edu/courses and the RTSL project page (graphics.stanford.edu/papers/rtsl/)",
+       "source_url": "https://graphics.stanford.edu/papers/rtsl/"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cook-shade-trees-1984-1984",
+      "candidate": {
+       "name": "Cook, Shade Trees (1984)",
+       "year": 1984,
+       "lens": "L1",
+       "type": "theory",
+       "domain": "computer graphics",
+       "definition": "Robert L. Cook's 'Shade Trees' (SIGGRAPH 1984): shading described as a tree of procedural nodes evaluated per visible point - the founding formulation of programmable procedural shading, from which, in the parent paper's own words, 'shading languages developed'.",
+       "causal_claim": "The parent's introduction names Cook's shade trees as the origin of shading languages. The hearing: whether that descent reaches the parent directly, or arrives embodied in RenderMan SL - the language that implemented the shade-tree idea as a textual language and the one the parent actually models itself on.",
+       "source_title": "Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001 (introduction: 'Shading languages developed from the work of Cook...')",
+       "source_url": ""
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Cook, Shade Trees (1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pixelflow-and-pfman-a-renderman-like-language-on-custom-hard-1998",
+      "candidate": {
+       "name": "PixelFlow and pfman, a RenderMan-like language on custom hardware (Olano & Lastra, 1998)",
+       "year": 1998,
+       "lens": "L1",
+       "type": "system",
+       "domain": "computer graphics / hardware",
+       "definition": "The UNC PixelFlow system and its pfman language (Olano & Lastra, Graphics Hardware 1998): a RenderMan-like shading language compiled to PixelFlow's SIMD processing arrays - a shading language running on real graphics hardware three years before the parent, on a one-off research machine. The parent paper cites it directly: 'Olano and Lastra describe pfman, a RenderMan-like language for the PixelFlow system that is compiled to PixelFlow's SIMD processing arrays.'",
+       "causal_claim": "The parent's own verification record concedes the Q1 pressure: PixelFlow had a RenderMan-like language on hardware first. The hearing at this parent: is pfman a consumed predecessor or a parallel system the parent compares itself against - the parent's leap being retargetability across commodity machines, pfman's being bound to one custom machine?",
+       "source_title": "Olano & Lastra (1998) as cited in Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; the parent node's verification notes (admission at HLSL)",
+       "source_url": ""
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "PixelFlow and pfman, a RenderMan-like language on custom hardware (Olano & Lastra, 1998)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "interactive-shading-isl-peercy-olano-airey-ungar-sgi-2000-2000",
+      "candidate": {
+       "name": "Interactive Shading / ISL (Peercy, Olano, Airey & Ungar, SGI, 2000)",
+       "year": 2000,
+       "lens": "L1",
+       "type": "software",
+       "domain": "computer graphics / languages",
+       "definition": "SGI's Interactive Shading work (SIGGRAPH 2000): the demonstration that a RenderMan-style shading language could be compiled to commodity fixed-function hardware by multipass rendering under OpenGL 1.2 - the technique the parent's fragment back end uses as its fallback path when no programmable fragment hardware is present.",
+       "causal_claim": "The parent's multipass-OpenGL fragment back end is the candidate's demonstrated technique, taken over as one back end among several. The hearing: consumed component (the components discipline - a component is not the leap) or separable predecessor (the first proof that a shading language could run on commodity hardware at all)?",
+       "source_title": "Peercy et al., Interactive Shading, SIGGRAPH 2000, as characterized in Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001",
+       "source_url": ""
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Interactive Shading / ISL (Peercy, Olano, Airey & Ungar, SGI, 2000)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "reyes-rendering-architecture-cook-carpenter-catmull-1987-1987",
+      "candidate": {
+       "name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+       "year": 1987,
+       "lens": "L1",
+       "type": "architecture",
+       "domain": "computer graphics",
+       "definition": "The REYES architecture ('Renders Everything You Ever Saw', SIGGRAPH 1987): Pixar's software rendering architecture - micropolygon dicing, stochastic sampling - inside which RenderMan Shading Language shaders execute in the offline pipeline.",
+       "causal_claim": "Filed for the discrimination the RenderMan hearing needs: the parent takes over RenderMan's LANGUAGE while expressly abandoning its software-rendering architecture for rasterization hardware organized by computation frequency. If the language is consumed and the architecture is not, the two records must be separable.",
+       "source_title": "Cook, Carpenter & Catmull, The REYES Image Rendering Architecture, SIGGRAPH 1987",
+       "source_url": ""
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "perlin-an-image-synthesizer-1985-1985",
+      "candidate": {
+       "name": "Perlin, An Image Synthesizer (1985)",
+       "year": 1985,
+       "lens": "L19",
+       "type": "method",
+       "domain": "computer graphics",
+       "definition": "Ken Perlin's 'An Image Synthesizer' (SIGGRAPH 1985): procedural texture synthesis with the noise function that became the standard primitive of procedural shading, built into RenderMan SL's standard library and inherited by every shading language after it.",
+       "causal_claim": "The parent's shaders use the procedural vocabulary (noise and its derivatives) that Perlin founded and RenderMan SL standardized. The hearing is the mediation shape: does any Perlin mechanism reach the parent except as embodied in RenderMan SL's library?",
+       "source_title": "Perlin, SIGGRAPH 1985; Hanrahan & Lawson (1990) on the RenderMan SL standard library",
+       "source_url": ""
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Perlin, An Image Synthesizer (1985)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "renderman-interface-specification-pixar-1988-1988",
+      "candidate": {
+       "name": "RenderMan Interface Specification (Pixar, 1988)",
+       "year": 1988,
+       "lens": "L16",
+       "type": "standard",
+       "domain": "computer graphics / standards",
+       "definition": "Pixar's RenderMan Interface Specification (first issued 1988; v3.0, 1989): the scene-description and rendering interface standard that defines the environment in which RenderMan shaders are written and executed - the 'RenderMan-compliant renderer' contract.",
+       "causal_claim": "The parent's language lives in the world this specification defines. The hearing: the parent models its language on the shading language the specification carries - consumption of the specification itself, or of the language artifact (Hanrahan & Lawson 1990) that the specification contains?",
+       "source_title": "Pixar, The RenderMan Interface Specification (1988/1989)",
+       "source_url": ""
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "RenderMan Interface Specification (Pixar, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "directx-8-shader-models-and-shader-assembly-microsoft-2000-2000",
+      "candidate": {
+       "name": "DirectX 8 shader models and shader assembly (Microsoft, 2000)",
+       "year": 2000,
+       "lens": "L13",
+       "type": "software",
+       "domain": "computer graphics / platforms",
+       "definition": "Microsoft's DirectX 8 (2000): the first commodity programmable-pipeline API - vertex shader 1.1 and pixel shader 1.x assembly models for GeForce3-class hardware, the vendor-assembly stratum the parent's stored prior_state names ('DirectX 8 shader models, OpenGL extensions').",
+       "causal_claim": "The parent compiles toward the world the candidate defines - programmable vertex units addressed in assembly. The hearing: consumed substrate (the parent's back ends presuppose and target these models) or one target among several (vertex hardware, CPU, multipass OpenGL), whose assembly the parent exists to make unnecessary to write?",
+       "source_title": "Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Microsoft DirectX 8 SDK documentation (shader models)",
+       "source_url": ""
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "DirectX 8 shader models and shader assembly (Microsoft, 2000)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nv-register-combiners-opengl-extension-nvidia-2000-2000",
+      "candidate": {
+       "name": "NV_register_combiners OpenGL extension (NVIDIA, 2000)",
+       "year": 2000,
+       "lens": "L13",
+       "type": "software",
+       "domain": "computer graphics / platforms",
+       "definition": "NVIDIA's OpenGL register-combiner extension (2000): the configurable fragment-computation units of the GeForce/GeForce2/3 line, exposed as a general-computation register file - the actual fragment target of the parent's compiled output on GeForce3 ('fragment code (register combiner configuration)'), with the back end detailed in the companion paper 'Compiling to a VLIW Fragment Pipeline' (Mark & Proudfoot, Graphics Hardware 2001).",
+       "causal_claim": "The parent's fragment back end emits register-combiner configurations - the candidate is the mechanism one of its back ends programs. The hearing: the specific-enabling-step shape (the CUDA pattern) or a target substrate whose generality the parent's language abstracts away?",
+       "source_title": "Mark, Stanford RTSL SIGGRAPH 2001 course notes (April 18, 2001), graphics.stanford.edu/courses and the RTSL project page (graphics.stanford.edu/papers/rtsl/); Mark & Proudfoot, Compiling to a VLIW Fragment Pipeline, Graphics Hardware 2001",
+       "source_url": ""
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "NV_register_combiners OpenGL extension (NVIDIA, 2000)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "opengl-and-the-fixed-function-graphics-pipeline-1992-1992",
+      "candidate": {
+       "name": "OpenGL and the fixed-function graphics pipeline (1992)",
+       "year": 1992,
+       "lens": "L6",
+       "type": "software",
+       "domain": "computer graphics / platforms",
+       "definition": "SGI's OpenGL (1992): the standard immediate-mode graphics API whose fixed-function transform-and-lighting and texture-combining pipeline defined commodity 3D graphics for a decade - and the API under which the parent's multipass fragment fallback runs (OpenGL 1.2 multipass rendering).",
+       "causal_claim": "Double relation, judged on both halves: the parent is defined against the fixed-function pipeline (its whole point is that shading becomes programmable instead), AND it consumes OpenGL as the substrate of its fallback back end. Defined-against incumbents fail directness even with high scores; the consumed half must be weighed as what it is - the fallback target, not the design.",
+       "source_title": "Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001; Peercy et al. (2000) on multipass rendering under OpenGL 1.2",
+       "source_url": ""
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "OpenGL and the fixed-function graphics pipeline (1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "apodaca-gritz-advanced-renderman-1999-1999",
+      "candidate": {
+       "name": "Apodaca & Gritz, Advanced RenderMan (1999)",
+       "year": 1999,
+       "lens": "L11",
+       "type": "method",
+       "domain": "computer graphics / books",
+       "definition": "Apodaca & Gritz, 'Advanced RenderMan: Creating CGI for Motion Pictures' (Morgan Kaufmann, 1999): the field's working textbook of RenderMan shading-language practice at the end of the 1990s - how production shaders were actually written, organized, and optimized.",
+       "causal_claim": "The documentation through which the era's practitioners - including, plausibly, the parent's authors' students and readers - learned the candidate language's practice. The hearing: documentation of a mediator is mediated by it; any claim runs through the RenderMan SL artifact itself.",
+       "source_title": "Apodaca & Gritz (1999)",
+       "source_url": ""
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Apodaca & Gritz, Advanced RenderMan (1999)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pixar-animation-studios-1986-1986",
+      "candidate": {
+       "name": "Pixar Animation Studios (1986)",
+       "year": 1986,
+       "lens": "L21",
+       "type": "institution",
+       "domain": "computer graphics / institutions",
+       "definition": "Pixar: the institution that created and carried RenderMan - its interface specification, its shading language, and its production practice - from the Lucasfilm Computer Division spinoff (1986) through the 1990s.",
+       "causal_claim": "Filed for the decomposition test: the institution acts, if at all, through the specific artifacts it carried - the interface specification and the shading language, both filed separately. An institutional edge on top of the artifact edges would double-count them.",
+       "source_title": "Pixar corporate history; the RenderMan artifacts as filed",
+       "source_url": ""
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Pixar Animation Studios (1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "NVIDIA GeForce 3 (NV20) (2001)",
+       "year": 2001,
+       "lens": "L9",
+       "type": "machine",
+       "domain": "computer graphics / hardware",
+       "definition": "NVIDIA's GeForce 3 (announced February 2001): the first commodity GPU with programmable vertex processing (nfiniteFX engine) and register-combiner fragment hardware - the machine the parent's compiled examples target ('example compiled output is for a GeForce3'). Filed under its canonical year: it is the SAME year as the parent, so the resolve date bound is expected to drop it - the drop itself is the record that month-level order (the machine shipped months before the August 2001 paper) is inexpressible under the year-granularity bound, the session-27/40 structural pattern.",
+       "causal_claim": "No causal claim is adjudicated - the year bound decides first. Filed for the record, per the standing instruction to log same-year artifacts as structural notes.",
+       "source_title": "Mark, Stanford RTSL SIGGRAPH 2001 course notes (April 18, 2001), graphics.stanford.edu/courses and the RTSL project page (graphics.stanford.edu/papers/rtsl/); NVIDIA GeForce 3 launch materials (February 2001)",
+       "source_url": ""
+      },
+      "reason": "dated on/after parent year 2001"
+     },
+     {
+      "candidate": {
+       "name": "Mark & Proudfoot, Compiling to a VLIW Fragment Pipeline (2001)",
+       "year": 2001,
+       "lens": "L20",
+       "type": "method",
+       "domain": "computer graphics / compilers",
+       "definition": "The parent's companion paper (Graphics Hardware 2001): the design of the RTSL compiler's fragment back end for the register-combiner architecture, by two of the parent's authors. Filed under its canonical year - the same year as the parent - so the resolve date bound is expected to drop it: the record that the parent's own back-end detail paper is its coeval companion, not its predecessor.",
+       "causal_claim": "No causal claim is adjudicated - the year bound decides first. The companion relationship is recorded in the register-combiner candidate's evidence instead.",
+       "source_title": "Mark & Proudfoot, Compiling to a VLIW Fragment Pipeline, Proc. Graphics Hardware 2001",
+       "source_url": ""
+      },
+      "reason": "dated on/after parent year 2001"
+     },
+     {
+      "candidate": {
+       "name": "Stanford Computer Graphics Laboratory (Hanrahan's group)",
+       "year": 2001,
+       "lens": "L21",
+       "type": "institution",
+       "domain": "computer graphics / institutions",
+       "definition": "The Stanford laboratory in which the parent was built - Hanrahan's group, the parent's institutional home, whose earlier systems work (including Hanrahan's own RenderMan-era research) formed its members. Filed with year 2001 (the parent's year is the only honest date for the lab-as-parent's-home; a founding-year filing would pretend the carried artifact is the lab's age). Expected: the resolve date bound drops it as same-year, and the substance is self-carriage in any case - recorded in the run log either way.",
+       "causal_claim": "Self-carriage test: an institution whose carried artifact at this parent is the parent itself is not a predecessor. Hanrahan's separable earlier artifact is the shading language, filed at L2 - through the person, the channel is already in the graph's candidate set once.",
+       "source_title": "Stanford Graphics Laboratory history; Proudfoot, Mark, Tzvetkov & Hanrahan, A Real-Time Procedural Shading System for Programmable Graphics Hardware, Proc. SIGGRAPH 2001 (affiliations)",
+       "source_url": ""
+      },
+      "reason": "dated on/after parent year 2001"
      }
     ],
     "prefiltered": []

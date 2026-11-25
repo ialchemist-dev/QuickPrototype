@@ -2089,3 +2089,83 @@
   "expansions_done": 91
  }
 }
+{
+ "ts": "2026-11-25T11:17:59Z",
+ "session": "run session 41 (v4), expansion 2 of 2",
+ "kind": "expansion",
+ "parent": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+ "parent_name": "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)",
+ "raw": 15,
+ "dry_notes": "13 dry/shortfall notes filed. L3 meta dry (the historiography and the parent's own related work name exactly the filed ancestry). L4 shortfall (the programmable-shading problem has no separable posing document apart from Cook 1984 and the substrate filings). L5 dry (fixed-function rigidity is the prior state; document forms filed at L6/L13). L7 dry (assembly practice's artifact forms filed at L13). L8/L10/L15/L18 dry (no data, materials, services, instruments). L12 dry (the parent IS the programmability layer). L14 shortfall (development hardware = the GeForce filing at L9). L17 dry (no benchmark registers the leap). L22 dry (the era condition's document forms are the DX8/combiner/GeForce filings). L23 meta dry (The Cg Tutorial's heritage account is an account OF the parent's descent - used as channel evidence in the SL verification, not a candidate; it postdates the parent in any case). Resolve: 12 distinct, 0 matched existing, 0 judge queue, 0 prefiltered, 3 date-dropped (below). Parent stored record verified COMPLETE this session (definition, bottleneck, leap, prior_state all present - no session-31 defect at this parent).",
+ "date_dropped": [
+  "NVIDIA GeForce 3 (NV20) (2001) - same year as the parent; the resolve date bound dropped it ('dated on/after parent year 2001'). STRUCTURAL NOTE: month-level order EXISTS here (the machine was announced February 2001 and the parent's compiled examples target it - 'example compiled output is for a GeForce3', course notes - months before the August 2001 paper), and the year-granularity bound cannot express it. The session-27/40 pattern, in its mildest form: the bound drops a genuine, documented substrate because the run dates artifacts by year. Logged for the article; no re-dating attempted.",
+  "Mark & Proudfoot, Compiling to a VLIW Fragment Pipeline (2001) - the parent's own companion paper (Graphics Hardware 2001), dropped by the same bound: the parent's back-end detail paper is its coeval companion, not its predecessor. Its substance is recorded inside the register-combiner evaluation.",
+  "Stanford Computer Graphics Laboratory (Hanrahan's group) - filed at 2001 (the only honest year for the lab-as-parent's-home) and dropped by the bound; the substance is self-carriage in any case (the lab's separable earlier artifact is the shading language, admitted on its own edge)."
+ ],
+ "distinct": 12,
+ "evaluated": 12,
+ "survivors": 1,
+ "rejected": 11,
+ "mediated": 4,
+ "survivors_detail": [
+  {
+   "name": "RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+   "score": 7.5,
+   "kind": "NEW",
+   "argument": "THE DEFERRED HEARING (carried since the early sessions) DISCHARGED AS AN ADMISSION. The parent models its language on the candidate: shader kinds (surface, light), the procedural form, the standard-library vocabulary - re-founded on computation frequencies for hardware. The paper frames the candidate as the reigning shading language ('the most common shading language in use today... for software batch-rendering systems') whose confinement to offline rendering the parent exists to end. Channel is triple: citation, instantiation, and authorship (Pat Hanrahan co-authored both the 1990 language paper and the parent). Q3 partial honestly - the transfer was ripe (PixelFlow, ISL) - but both multiples themselves take SL as their language model, so they reinforce this channel rather than rival it (recorded in the verification). New node at depth 7; new frontier head."
+  }
+ ],
+ "rejections_of_note": [
+  {
+   "name": "Interactive Shading / ISL (Peercy, Olano, Airey & Ungar, SGI, 2000)",
+   "reason": "THIS EXPANSION'S MOST CONTESTABLE CALL. Fail-closed partial with the consumption conceded in full: the parent's multipass-OpenGL fragment back end IS the candidate's demonstrated technique. It fails on the components discipline (Fisher's MLE shape): the technique is one back end among several - and the legacy one; remove it and the parent's language, frequency organization, and programmable back ends stand (operative-carrier test, falsification condition written into its Q3: revise if the parent's headline demonstrations ran primarily via multipass). As a system, ISL is also a coeval multiple of the parent's ambition. Discriminated from SL at the same parent: SL supplies the language model itself; ISL supplies one target technique."
+  },
+  {
+   "name": "NV_register_combiners OpenGL extension (NVIDIA, 2000)",
+   "reason": "Fail-closed partial; the CUDA-pattern argument weighed and refused. CUDA passed where a parent consumed the substrate's programming model AS ITS MEDIUM; the parent's medium is its own language, and the combiners are an output format - programmed, moreover, by the parent's own companion compiler (Mark & Proudfoot 2001, date-dropped above). The consumption is recorded, not denied: the parent's compiled GeForce3 examples ARE combiner configurations (course notes)."
+  },
+  {
+   "name": "PixelFlow and pfman (Olano & Lastra, 1998)",
+   "reason": "Parallel system, compared not consumed: cited in the parent's related work as the comparable prior system; no pfman mechanism (SIMD decomposition) appears in the parent's compiler. Both systems take RenderMan SL as their model - the shared ancestry is recorded at SL's edge. Consistent with the parent's own verification record at its admission (PixelFlow as the Q1 pressure and a Q3 multiple)."
+  },
+  {
+   "name": "Cook, Shade Trees (1984)",
+   "reason": "MEDIATED via RenderMan SL: the parent names Cook as the origin of shading languages, then models itself on the language that embodied the shade-tree idea as a textual language. Descent acknowledged; consumption located in the mediator; the chain carried by its cited final link."
+  },
+  {
+   "name": "RenderMan Interface Specification (Pixar, 1988)",
+   "reason": "MEDIATED via RenderMan SL, by containment (the Dickson-appendix shape): the specification contains a language definition, and containment is not ancestry - the parent implements no RenderMan interface and compiles to GPU back ends, not RIB. The language/architecture/specification three-way split is this expansion's structural discrimination: language admitted, architecture (REYES) defined-against, specification mediated."
+  },
+  {
+   "name": "Perlin, An Image Synthesizer (1985)",
+   "reason": "MEDIATED via RenderMan SL: the noise primitive reaches the parent as part of the mediator's standard library - a library primitive inherited through a language is the language's edge, not a second edge."
+  },
+  {
+   "name": "Apodaca & Gritz, Advanced RenderMan (1999)",
+   "reason": "MEDIATED via RenderMan SL: documentation of the mediator is mediated by it; the parent's authors needed no textbook channel to a language their senior author designed."
+  },
+  {
+   "name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+   "reason": "Defined-against: the parent's founding move is to leave the software-rendering architecture for frequency-organized rasterization hardware. The container is not consumed when the parent's premise is exiting it."
+  },
+  {
+   "name": "DirectX 8 shader models and shader assembly (Microsoft, 2000)",
+   "reason": "Fail-closed partial (substrate triad, 1 of 3): one output dialect among several back-end targets (OpenGL vertex programs, combiners, CPU, multipass); the parent's stored prior_state names it as the assembly world the parent replaces."
+  },
+  {
+   "name": "OpenGL and the fixed-function graphics pipeline (1992)",
+   "reason": "Fail-closed partial (substrate triad, 3 of 3): double relation, both halves judged - defined-against as the fixed-function incumbent, consumed only as the legacy fallback's API substrate (the ISL shape). Neither half is the design's enabler."
+  },
+  {
+   "name": "Pixar Animation Studios (1986)",
+   "reason": "Institution decomposition refusal: Pixar acts at this parent only through its two filed artifacts (the language, admitted; the specification, mediated). An institutional edge would double-count them."
+  }
+ ],
+ "notes": "One survivor, four mediations - all four THROUGH the survivor: the RenderMan cluster resolves into a single edge, and the language/architecture/specification split (admit / defined-against / mediated-by-containment) is the expansion's structural finding. The graphics line now runs HLSL <- RTSL <- RenderMan SL, and the new frontier head is RenderMan SL itself (depth 7, priority 7.5) - its own ancestry (Cook, REYES, Pixar, Perlin) is already half-recorded in this session's mediations, which per the mediation discipline are expected to resurface as direct hearings at its expansion. Adversarial verification applied to the survivor (outcome provisional; Q1 attack partially lands on the node's broad form and fails on the edge-scoped form; multiples misfire against this edge because both multiples run through SL; three mediation attacks refused). Most contestable call of the expansion: the ISL fail-closed partial (above). Dual-write confirmed: this record in run-log.jsonl and the expansion state in graph.json (expansions_done incremented to 92). Session 41 totals: 193 nodes / 245 edges, budget 193/2000. Depth-cap note unchanged: De Moivre (depth 10) remains terminal; Jerry's decision pending. InstructGPT/RLHF flag not surfaced.",
+ "totals_after": {
+  "nodes": 193,
+  "edges": 245,
+  "budget": 193,
+  "expansions_done": 92
+ }
+}
