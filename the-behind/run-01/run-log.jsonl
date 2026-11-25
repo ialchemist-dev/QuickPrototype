@@ -3928,3 +3928,36 @@
   "expansions_done": 128
  }
 }
+{
+ "ts": "2026-11-25T17:36:15Z",
+ "session": 60,
+ "kind": "expansion",
+ "parent": "rfc-1737-functional-requirements-for-uniform-resource-names-1994",
+ "parent_name": "RFC 1737, Functional Requirements for Uniform Resource Names (Sollins & Masinter, 1994)",
+ "provenance": "Regular session-60 expansion 1 of 2 (the frontier's first node; the run's own best-first ordering governs). Parent stored record verified complete before evaluating (no session-31 defect): definition/bottleneck/leap/prior_state all present and consistent with the session-59 evaluation that admitted the node at RFC 2141. RFC 1737 read in full this session (rfc-editor.org): it has NO references section and NO acknowledgments; its only provenance sentence (S1) names the uri@bunyip.com list and the URI WG sessions; S2's legacy clause names ISBN, ISO public identifiers and UPC; S5 discusses ISBN's assignment algorithm and MD5 as examples. Verdicts structure copied literally from run-01/work/build_verdicts_rfc2141.py; dry-run through score.rank_candidates before applying (zero survivors, no correction needed); every cand_id taken from the show-distinct output.",
+ "raw": 43,
+ "dry_notes": 14,
+ "date_dropped": 9,
+ "distinct": 19,
+ "evaluated": 19,
+ "survivors": 0,
+ "rejected": 19,
+ "mediated": 1,
+ "survivors_detail": [],
+ "rejections_of_note": [
+  "Weider & Deutsch, Uniform Resource Names proposal (Internet-Draft, 1993) - FAIL-CLOSED PARTIAL, flagged this expansion's MOST CONTESTABLE NEGATIVE: the draft's naming-authority structure is the closest structural echo of S4's delegation implication, but the draft's own cover note (Weider, May 1993) records that the scheme embodied what the Columbus meeting had already converged on - a carrier of a consensus is not its channel; and the parent charters itself (S1) as 'a basis for evaluating standards for URNs', making the proposal field its object, not its input (the Gopher shape: surveyed content).",
+  "Berners-Lee, Universal Document Identifiers draft (1992) - MEDIATED via RFC 1630: the parent's stored prior state names RFC 1630, not the draft; the mediation is recorded against a date-dropped mediator (1630 was dropped at this resolve, June vs December 1994), the Family-likeness shape.",
+  "DNS - refused a SIXTH time, argued fresh from this parent's text: never mentioned in it; the resolution requirement is scheme-agnostic and the independence/persistence clauses define names against location-bound resolution of the DNS kind (the conduit discipline).",
+  "ISBN / SGML formal public identifiers / UPC - the S2 legacy class given direct hearings at its origin document: named exemplars are the requirement's objects, not consumed specifications (the Gopher discrimination at the class's source); ISSN (an unnamed class member) and MD5 (S5's illustrative example - cited-in-text-but-not-instantiated) fail closed on the same stratum.",
+  "Kunze, URN and URC proposals (1992-93) and Spero, URN proposal with name semantics (1992) - the semantics-in-the-name pole, cited as such in the Weider-Deutsch draft's S3.2: the road S5 expressly discourages; arbitrated positions are the parent's objects, not its sources. Kunze's third hearing in the run (after RFC 1738 and RFC 1630), same shape.",
+  "Houston IETF URI WG definitions of URL, URN and URC (1993) - fail-closed partial: the family's functional partition is the parent's presupposed framing, existing as meeting consensus inside the programme's process (Masinter at Seattle, April 1994: the definitions 'we developed at the Houston meeting... generally agreed upon'); no separable artifact - programme formation.",
+  "uri@bunyip.com mailing list and the IETF URI Working Group (1992) - refused under the arena discipline and decomposition/self-carriage respectively; both are NAMED in S1 as the requirements' venues of discussion, and a venue is not a channel.",
+  "Grapevine naming and registration system (1982) and Prospero resource discovery system (1992) - anticipation/parallel without a junction: importance without a documented channel is not ancestry (the Koyanagi discipline). Kahle, WAIS and Z39.50 identifier practice (1991) failed closed a third time on the same absence - this parent cites nothing at all."
+ ],
+ "notes": "ZERO survivors - the run's ELEVENTH zero (after Gage, Weber, Family likeness, MDP, Gauss, ChatGPT, REINFORCE, Walsh & Herzog, RFC 1738, RFC 1630). The zero is structural in the same way as RFC 1630's: the parent is a requirements synthesis whose entire expressible stratum is its occasion (the proposal field it exists to evaluate), its surveyed content (the legacy class), its venues (the list, the WG), its presupposed framing (the Houston definitions), or its era condition (Mosaic) - while its two strongest documentary relations are same-year and were dropped by the year bound: RFC 1630 (June 1994 - the parent's stored prior state itself) and the parent's own draft line (draft-sollins-urn, rev. March 1994; replaced by draft-ietf-uri-urn-req-00, 10 September 1994). Nine date-dropped filings in total: RFC 1630 x3, RFC 1738 x1, the draft line x2, the URL functional-requirements draft x1, the IAB IIIA workshop x1, the Seattle WG session minutes x1 - month order logged in the scout record (June precedes December), never re-dated. The draft line's merits record stands from session 59 (refused on IDENTITY at RFC 2141 as 1737's own draft form); here the calendar forecloses the filing itself, so no second identity record is created. RFC 1737's edge-scoped record is now complete in every direction: refused at RFC 2396 and at RFC 1808, admitted at RFC 2141 (6.5), and itself a zero as a parent. No verification file (no survivors to verify). Neither pending design decision surfaced at this parent (no programme-internal practice artifact was a candidate; the WWW system was not filed). The InstructGPT/RLHF carried flag did not surface. Frontier head after this expansion: the Pascal-Fermat correspondence (1654), then Stirling (1730), TSMC 90nm, Tcl.",
+ "totals_after": {
+  "nodes": 236,
+  "edges": 302,
+  "expansions_done": 129
+ }
+}
