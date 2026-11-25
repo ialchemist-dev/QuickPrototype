@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T07:47:47+00:00",
-  "expansions_done": 64,
-  "raw_candidates_seen": 3128,
+  "updated_at": "2026-11-25T07:55:13+00:00",
+  "expansions_done": 65,
+  "raw_candidates_seen": 3153,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -15084,6 +15084,93 @@
     "name": "Microsoft-OpenAI partnership (2019)",
     "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
     "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "H5N1 gain-of-function publication controversy (NSABB redaction recommendation)",
+    "reason": "mediated_via: The Malicious Use of Artificial Intelligence (Brundage et al., 2018)",
+    "at": "2026-11-25T07:54:34+00:00",
+    "mediated_via": "The Malicious Use of Artificial Intelligence (Brundage et al., 2018)"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "US dual-use research of concern (DURC) oversight framework (NSABB)",
+    "reason": "mediated_via: The Malicious Use of Artificial Intelligence (Brundage et al., 2018)",
+    "at": "2026-11-25T07:54:34+00:00",
+    "mediated_via": "The Malicious Use of Artificial Intelligence (Brundage et al., 2018)"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Asilomar conference on recombinant DNA and the NIH guidelines",
+    "reason": "mediated_via: The Malicious Use of Artificial Intelligence (Brundage et al., 2018)",
+    "at": "2026-11-25T07:54:34+00:00",
+    "mediated_via": "The Malicious Use of Artificial Intelligence (Brundage et al., 2018)"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "BERT (Bidirectional Encoder Representations from Transformers)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Microsoft Tay chatbot release failure",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Deepfakes (consumer synthetic-media phenomenon)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "AI and Compute (Amodei & Hernandez, 2018)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Concrete Problems in AI Safety (Amodei et al., 2016)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Datasheets for Datasets (Gebru et al., 2018)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Partnership on AI",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Future of Humanity Institute",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "OpenAI",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Canary release and staged rollout practice in large-scale software deployment",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "gpt-2-staged-release-openai-2019-2019",
+    "name": "Import AI newsletter (Jack Clark)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:54:34+00:00"
    }
   ]
  },
@@ -15519,12 +15606,16 @@
     {
      "title": "Improving Language Understanding by Generative Pre-Training",
      "url": "https://openai.com/blog/language-unsupervised/"
+    },
+    {
+     "title": "GPT-1 (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/GPT-1"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Multiples test on Q3 lands partially and is already priced in: ULMFiT (Howard & Ruder, Jan 2018) carried the same pretrain-then-fine-tune paradigm independently, months before GPT-1 (Jun 2018) - the paradigm was ripe, but GPT-2 descends from the GPT carrier specifically (same lab, architecture, objective), so within-lineage necessity stands and Q3 stays partial. Q1 attack partially lands: GPT-1 flipped transfer-by-fine-tuning, not zero-shot elicitation; the edge records GPT-1 as the recipe parent of GPT-2's leap, not as the flip itself - GPT-2's own contribution (conditioning instead of fine-tuning) is exactly the delta. Date and causal direction verified (GPT-1 Jun 2018, GPT-2 Feb 2019; GPT-2's paper explicitly continues the 2018 approach at ~10x scale with WebText replacing BooksCorpus). Mediation attack fails on both attempts: via the Transformer (a component inside GPT-1's recipe, not a channel between GPT-1 and GPT-2) and via WebText (GPT-2's own data contribution, not an intermediary). No mediation downgrade. Node stays provisional pending a later verification pass.",
-    "at": "2026-11-24T22:49:03+00:00"
+    "notes": "LINK survivor of the gpt-2-staged-release expansion (session 28), score 3.0 - the edge records GPT-1's release practice as the ancestor the parent modified. Q1 attack: GPT-1's release was not the era's only full release (BERT, November 2018, is the same default at another lab, rejected in this expansion as the defined-against exemplar); the edge survives because the parent's own prior_state names the GPT-1 practice specifically ('Immediate full publication of model checkpoints (the GPT-1 practice)') and the February post frames GPT-2 as GPT's direct scale-up inside the same lab. Multiples test on Q3: necessity partial as scored - the parent could have defined itself against BERT alone, but did not. Date/direction: June 2018 release precedes February 2019; direction is practice-to-modification, documented. Mediation attack (via the GPT-2 model): FAILS on the year-bound record - the model is coeval-year (2019) and was date-dropped at resolve in this expansion; the edge claimed here is to the predecessor release act, not to the model, and the model's technical lineage is carried by its own node's other edges. Outcome provisional.",
+    "at": "2026-11-25T07:55:13+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-24T22:48:42+00:00"
@@ -19512,7 +19603,7 @@
    "prior_state": "Immediate full publication of model checkpoints (the GPT-1 practice).",
    "status": "provisional",
    "depth": 2,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -19556,6 +19647,93 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T07:47:21+00:00"
+  },
+  "openai-charter-2018": {
+   "id": "openai-charter-2018",
+   "name": "OpenAI Charter",
+   "aliases": [],
+   "year": 2018,
+   "domain": "artificial intelligence governance",
+   "type": "other",
+   "definition": "OpenAI's April 2018 principles document committing the lab to broad benefit, long-term safety, and reduced traditional publishing as safety and security concerns grow.",
+   "bottleneck": "Before the OpenAI Charter, a frontier lab had no pre-committed public principle under which withholding a model was a governed act rather than an ad hoc one, because publication restraint had never been written into a lab's founding commitments.",
+   "leap": "The Charter (April 2018) wrote the reduction of traditional publishing on safety and security grounds into OpenAI's founding principles - the sentence the GPT-2 announcement quoted as its warrant a year later.",
+   "prior_state": "Labs published by default under community norms; safety commitments were informal and unwritten.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "Better language models and their implications (OpenAI, Feb 2019)",
+     "url": "https://openai.com/index/better-language-models/?href=askgpt.ai"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Survivor of the gpt-2-staged-release expansion (session 28), score 4.5. Q1 attack: withholding per se was not impossible before the Charter - labs had occasionally delayed or limited releases ad hoc - but the edge's claim is narrower and survives: no pre-committed public principle existed under which withholding was a governed act, and the parent's founding document quotes the Charter's sentence as its warrant. Multiples test on Q3: Google's AI Principles (June 2018) are a parallel principles document but concern military use and do not address publication; no second document states the publishing-reduction commitment, so necessity is not downgraded to ripe on this record - it stays as scored (pass on the parent's own citation). Date/direction: Charter April 2018 (enclosed in Clark's House testimony, 18 April 2018), influence runs forward into the February 2019 announcement's verbatim quotation. Mediation attack (via the Malicious Use report, Feb 2018): FAILS - the Charter is independently quoted in the parent's text; the two 2018 documents are parallel channels, neither carries the other. Outcome provisional per run convention (no node in run-01 is verified).",
+    "at": "2026-11-25T07:55:13+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:54:34+00:00"
+  },
+  "the-malicious-use-of-artificial-intelligence-brundage-et-al-2018": {
+   "id": "the-malicious-use-of-artificial-intelligence-brundage-et-al-2018",
+   "name": "The Malicious Use of Artificial Intelligence (Brundage et al., 2018)",
+   "aliases": [],
+   "year": 2018,
+   "domain": "artificial intelligence governance",
+   "type": "other",
+   "definition": "The February 2018 multi-institution report that forecast malicious uses of AI and recommended changed publication norms, pre-publication risk assessment, and imported computer-security best practices.",
+   "bottleneck": "Before the Malicious Use report, whether and how to publish dual-use AI had no shared forecasting document or recommendation set, because the threat landscape and the openness options had never been surveyed together.",
+   "leap": "The February 2018 report surveyed the malicious-use landscape and recommended reimagined openness norms - pre-publication risk assessment, alternative access and licensing models, and importing computer security's practices (responsible disclosure, red teaming) into AI.",
+   "prior_state": "Publication decisions made lab-by-lab under the default open-science norm, with misuse discussed anecdotally.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation (arXiv:1802.07228)",
+     "url": "https://arxiv.org/pdf/1802.07228"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Survivor of the gpt-2-staged-release expansion (session 28), score 4.5. Q1 attack: sustained in part and already priced - the report posed the problem and solved nothing, so Q1 was scored partial; the edge claims the problem statement and the remedy menu, not the flip. Multiples test on Q3: openness-model thinking was in the air in 2018 (Partnership on AI discussions, responsible-AI discourse), so necessity stays partial ('ripe' pressure recorded); but no parallel document matches this report's combination of threat survey, named interventions (pre-publication risk assessment, access licensing, responsible-disclosure import), and direct authorship by the deciding lab's policy and research leads (Clark, Amodei among 26 authors). Date/direction: February 2018, a full year before the parent; textual descent into Solaiman et al. 2019 (shared authors Brundage, Clark) confirms direction. Mediation attack (via the Charter): FAILS - parallel channels; the report's recommendations are not in the Charter, and the parent implements the report's programme, not the Charter's text. Mediation attack (via coordinated disclosure): FAILS - the report is the prescriber of that import, not its conduit; the disclosure practice is separately admitted on the parent's own naming of it. Outcome provisional.",
+    "at": "2026-11-25T07:55:13+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:54:34+00:00"
+  },
+  "coordinated-vulnerability-disclosure-responsible-disclosure-2000": {
+   "id": "coordinated-vulnerability-disclosure-responsible-disclosure-2000",
+   "name": "Coordinated vulnerability disclosure (responsible disclosure practice in computer security)",
+   "aliases": [],
+   "year": 2000,
+   "domain": "computer security",
+   "type": "method",
+   "definition": "The computer-security norm, codified around 2000 (CERT/CC and RFPolicy-era policies), of coordinating the timing of vulnerability publication so defenders can prepare before full disclosure.",
+   "bottleneck": "Before coordinated disclosure norms, whoever found a dangerous capability faced a binary choice - publish immediately or suppress indefinitely - because no accepted practice existed for timing a release so defenders could prepare first.",
+   "leap": "Around 2000 computer security codified coordinated/responsible disclosure: publication timing itself became a defensive instrument - the frame the GPT-2 announcement explicitly imported ('an experiment in responsible disclosure').",
+   "prior_state": "Full-and-immediate disclosure versus indefinite secrecy, contested case by case in 1990s security practice.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 3.5,
+   "sources": [
+    {
+     "title": "GPT-2 and the Staged-Release Safety Debate (escapement.info)",
+     "url": "https://www.escapement.info/publications/gpt2-staged-release-safety-debate"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Survivor of the gpt-2-staged-release expansion (session 28), score 3.5 - the expansion's closest call, admitted on the documented framing channel. Q1 attack: the practice flipped publication timing only inside computer security; for this parent its flip is borrowed, scored partial accordingly. Multiples test: the biosecurity DURC lineage was a simultaneously available alternative frame (recorded as mediated rejections in this expansion), which is why necessity is partial, not pass. Date/direction: the practice was codified around 2000 (CERT/CC-era policies), two decades before the parent; direction is confirmed by the parent's own words. MEDIATION ATTACK PARTIALLY LANDS (downgrade): the strongest route for the disclosure frame into the February 2019 announcement plausibly runs through the Malicious Use report, which had prescribed importing exactly this practice a year earlier (recommendation 3; 'responsible disclosure of AI vulnerabilities' named in its research areas). The attack does not kill the edge: the parent's founding document names 'responsible disclosure' in its own voice ('As an experiment in responsible disclosure, we are instead releasing a much smaller model'), a direct textual channel independent of the report. Recorded as a downgrade challenge on the edge; the mechanism difference (a smaller model released vs. a patch window) is also on the record. Outcome provisional, capped by the mediation challenge.",
+    "at": "2026-11-25T07:55:13+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:54:34+00:00"
   }
  },
  "edges": [
@@ -38810,6 +38988,401 @@
     "counterfactual": "Remove OpenAI LP and the June 2020 launch has neither its capital nor its mandate: the Microsoft $1B (July 2019) was invested into the capped-profit structure, and a pure nonprofit with donation funding does not build a metered commercial service as its next act - the announcement itself frames the API as the company's first commercial product, a category the LP created.",
     "mediator": null,
     "evidence": "A separable published artifact (the March 2019 restructuring, announced as its own document) with a documented function: raise investment capital for compute while the nonprofit retains control. The mediation attack via the Microsoft partnership fails on direction: the partnership is downstream of the LP (the investment required the vehicle), so the LP is not carried by it. The LP is the parent's organizational precondition, distinct from the parent itself - the discrimination the institution rule requires."
+   }
+  },
+  {
+   "predecessor_id": "openai-charter-2018",
+   "successor_id": "gpt-2-staged-release-openai-2019-2019",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The Charter's publishing clause made the parent's specific act possible as a governed decision: the February 2019 post quotes it verbatim ('we expect that safety and security concerns will reduce our traditional publishing in the future') as the basis for withholding - before the clause, withholding had no pre-committed warrant.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Generativity is partial: the clause generalizes across OpenAI's future releases (it is the stated basis of a policy family), but its generated space is one lab's publication practice, not a field-wide space.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Necessity passes on the parent's own record: the announcement presents the Charter sentence as the decision's warrant ('Nearly a year ago we wrote in the OpenAI Charter...'), so the leap in the form it took runs through this document.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "The Charter collapsed no cost.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The Charter made nothing measurable.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Understanding passes: the clause supplied the explanatory model - reduced publishing as a safety consequence, not secrecy - under which the decision was designed and publicly defended.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: a principles text other labs could cite and imitate (and later did, in their own charters), but it is not an interface in the technical sense.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: the charter genre spread to other labs' governance documents, beyond this parent.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "The Charter changed no iteration speed.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: it began displacing publish-everything as OpenAI's own default, by pre-commitment rather than by the release itself.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: in the history that happened, the Charter is the trunk governance document of the lineage, and the parent's founding document cites it by name.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility passes: once publicly committed, the principle could not be un-stated; it permanently reset OpenAI's publishing baseline.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); OpenAI Charter (April 2018), quoted in Jack Clark's House testimony of 18 April 2018",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:54:34+00:00",
+   "leap": {
+    "prior_state": "Immediate full publication of model checkpoints on announcement: GPT-1 (June 2018) shipped paper, code, and weights at once, and BERT's full release (November 2018) was the same default at Google. No frontier lab had a worked-out graduated distribution policy for a model judged too risky to release outright.",
+    "jump": "In February 2019 OpenAI released only the 124M GPT-2, withholding the larger variants over misuse concerns, then released 355M (May), 774M (August), and 1.5B (November 2019) with monitoring, partnership research, and risk analysis between stages. Release of a frontier model became a graduated, evidence-gated process rather than a single publication event - the policy whose endpoint is no weights at all, only revocable service access.",
+    "date": 2019
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Charter's publishing clause and the February 2019 announcement loses the warrant it actually states: the post introduces the withholding by quoting the Charter, presenting the staging as the clause's first enactment. The decision might still have been taken ad hoc, but the leap as it happened - a pre-committed policy, defended as principle rather than improvisation - does not occur in that form.",
+    "mediator": null,
+    "evidence": "The parent's founding document cites the candidate by name and quotes its operative sentence; citation + instantiation in the strongest form (the quoted sentence is the policy being enacted)."
+   }
+  },
+  {
+   "predecessor_id": "the-malicious-use-of-artificial-intelligence-brundage-et-al-2018",
+   "successor_id": "gpt-2-staged-release-openai-2019-2019",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Impossibility flip is partial: the report posed and named the problem (publication decisions for dual-use AI) but itself solved nothing - the flip to a worked release policy is the parent's.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes: the report opened the whole intervention space the parent instantiates - its 'Exploring different openness models' programme names pre-publication risk assessment, central access licensing, and safety-favouring sharing regimes as the options to develop.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the Charter alone, or internal judgment, could have carried the decision; but the report is the documented intellectual source, co-authored by the two OpenAI leads (Clark, Amodei) who owned the decision.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "The report collapsed no cost.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Measurability is partial: its threat-landscape survey made misuse forecastable as a structured landscape (digital/physical/political domains, attacker classes) rather than anecdote.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Understanding passes: it supplied the explanatory model - dual-use dynamics, attacker/defender asymmetries - under which the staged release was designed; the Release Strategies report descends from it directly.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: its four recommendations became a reference framework other organizations built policy on.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: the survey itself spans digital, physical, and political security, and its recommendations were addressed to the whole field.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "The report changed no iteration speed.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: it began displacing the publish-by-default norm in governance discourse a year before the parent displaced it in practice.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: the trunk document of the AI-misuse governance lineage; the parent's own documentation (Solaiman et al.) sits in its direct descent, sharing authors Brundage and Clark.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: norms can erode, but the report's framing (dual-use as a standing property of AI publication) has not been un-thought since.",
+     "source": "Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228); Solaiman et al. 2019, Release Strategies (arXiv:1908.09203)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:54:34+00:00",
+   "leap": {
+    "prior_state": "Immediate full publication of model checkpoints on announcement: GPT-1 (June 2018) shipped paper, code, and weights at once, and BERT's full release (November 2018) was the same default at Google. No frontier lab had a worked-out graduated distribution policy for a model judged too risky to release outright.",
+    "jump": "In February 2019 OpenAI released only the 124M GPT-2, withholding the larger variants over misuse concerns, then released 355M (May), 774M (August), and 1.5B (November 2019) with monitoring, partnership research, and risk analysis between stages. Release of a frontier model became a graduated, evidence-gated process rather than a single publication event - the policy whose endpoint is no weights at all, only revocable service access.",
+    "date": 2019
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the report and the parent loses its problem statement and its remedy menu: the staged release is the report's 'different openness models' programme executed on a specific model, by a team two of whose leaders (Clark as OpenAI policy director, Amodei as VP Research) are among the report's 26 authors, and whose lead author Brundage co-authored the parent's own Release Strategies documentation. No other 2018 document poses this problem in this form.",
+    "mediator": null,
+    "evidence": "Documented channel at three levels: shared personnel (Clark, Amodei), textual descent (the Release Strategies report's framing and recommendations continue the 2018 report's), and the recommendation-implementation match (pre-publication risk assessment and staged openness are the report's named interventions)."
+   }
+  },
+  {
+   "predecessor_id": "coordinated-vulnerability-disclosure-responsible-disclosure-2000",
+   "successor_id": "gpt-2-staged-release-openai-2019-2019",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Impossibility flip is partial: coordinated disclosure flipped publication timing in its own field; for this parent the flip is borrowed, not native.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes on the import: once imported, the frame generalizes - any dual-use artifact's release can be timed and staged for defender preparation; the parent's announcement performs exactly this generalization in words.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the biosecurity lineage was an available alternative frame, but the parent's own text chose this one ('an experiment in responsible disclosure') - chosen, not the only path.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "The practice collapsed no cost for the parent.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The practice supplied no metric to the parent.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Understanding passes: it supplied the operative explanatory model - release timing as a defensive variable - that the February 2019 post uses to explain the staging to its readers.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: a named, citable practice functions as an interface for norms - other labs could adopt 'responsible disclosure' as a legible policy label.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach passes: the claim itself is a cross-domain transfer (computer security to AI publication), documented in the parent's founding document and prefigured in the Malicious Use report's recommendation 3 (import best practices from computer security, responsible disclosure named).",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "The practice changed no iteration speed for the parent.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "The practice displaced no incumbent inside the parent's field; within security it was already established, so no displacement is scored here.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Lineage centrality is partial: a real, documented channel in the parent's lineage, but a tributary - the trunk runs through the Charter and the Malicious Use report.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: the import, once made in the founding document, permanently entered AI governance vocabulary, though the practice's grip on any given lab is revocable.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); Brundage et al. 2018, The Malicious Use of AI (arXiv:1802.07228) (recommendation 3 and the responsible-disclosure research area)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 3.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:54:34+00:00",
+   "leap": {
+    "prior_state": "Immediate full publication of model checkpoints on announcement: GPT-1 (June 2018) shipped paper, code, and weights at once, and BERT's full release (November 2018) was the same default at Google. No frontier lab had a worked-out graduated distribution policy for a model judged too risky to release outright.",
+    "jump": "In February 2019 OpenAI released only the 124M GPT-2, withholding the larger variants over misuse concerns, then released 355M (May), 774M (August), and 1.5B (November 2019) with monitoring, partnership research, and risk analysis between stages. Release of a frontier model became a graduated, evidence-gated process rather than a single publication event - the policy whose endpoint is no weights at all, only revocable service access.",
+    "date": 2019
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the security disclosure practice and the parent loses the named frame its founding document actually uses: the February 2019 post calls the staging 'an experiment in responsible disclosure', and the Malicious Use report had already prescribed importing this specific practice. The staging might have been described some other way, but the leap's self-understanding and public defence ran through this channel. This is the expansion's closest call: the mechanism differs (a smaller model released, not a patch window), and the admission rests on the documented framing channel, recorded here so verification can attack it.",
+    "mediator": null,
+    "evidence": "Citation + partial instantiation: the practice is named in the parent's founding document and prescribed by name in the 2018 report (recommendation 3; 'responsible disclosure of AI vulnerabilities' in its research areas). The Malicious Use report is a fellow survivor, not a mediator: the disclosure practice is independently named in the parent's own text, so the channel does not run only through the report."
+   },
+   "mediation_challenges": [
+    {
+     "mediator": "The Malicious Use of Artificial Intelligence (Brundage et al., 2018)",
+     "action": "downgrade",
+     "at": "2026-11-25T07:55:13+00:00"
+    }
+   ]
+  },
+  {
+   "predecessor_id": "generative-pretraining-gpt-1-2018",
+   "successor_id": "gpt-2-staged-release-openai-2019-2019",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Impossibility flip passes through the ancestor-modified channel: GPT-1 established the artifact class and its distribution practice (a frontier language model released in full at announcement) - the specific thing whose modification IS the parent's leap; without a released-in-full predecessor act there is nothing to graduate.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Generativity is partial: GPT-1 generated the GPT lineage and the checkpoint-release practice, but the space the parent opens (release policy) is generated by the parent, not by GPT-1.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the parent could in principle have defined itself against BERT's release alone, but on the record it modified its own lab's GPT-1 practice - the parent's prior_state names exactly that.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "GPT-1 collapsed no cost relevant to release policy.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "GPT-1 supplied no metric registering the parent's leap.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: GPT-1's zero-shot capability demonstrations supplied the capability picture from which the misuse extrapolation was drawn.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: the downloadable-checkpoint release is the interface the staging subdivides into size classes.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "GPT-1's cross-domain reach does not carry into this parent's policy content.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "GPT-1 changed no iteration speed for release decisions.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: the staged release displaced GPT-1's practice as OpenAI's default - the displacement is the parent's act, scored partial here as its object.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: the GPT lineage trunk - the parent is unintelligible except as the successor act to GPT-1's release (the February post: 'GPT-2 is a direct scale-up of GPT').",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: GPT-1's own release was a completed act; what is irreversible is the lineage it started.",
+     "source": "OpenAI, 'Better language models and their implications' (Feb 2019); GPT-1 paper and release (June 2018)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 3.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:54:34+00:00",
+   "leap": {
+    "prior_state": "Immediate full publication of model checkpoints on announcement: GPT-1 (June 2018) shipped paper, code, and weights at once, and BERT's full release (November 2018) was the same default at Google. No frontier lab had a worked-out graduated distribution policy for a model judged too risky to release outright.",
+    "jump": "In February 2019 OpenAI released only the 124M GPT-2, withholding the larger variants over misuse concerns, then released 355M (May), 774M (August), and 1.5B (November 2019) with monitoring, partnership research, and risk analysis between stages. Release of a frontier model became a graduated, evidence-gated process rather than a single publication event - the policy whose endpoint is no weights at all, only revocable service access.",
+    "date": 2019
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove GPT-1's release and the parent's leap has no object: the staged release is defined as the modification of the immediate-full-publication practice GPT-1's June 2018 release instantiated inside the same lab (the parent node's own prior_state: 'Immediate full publication of model checkpoints (the GPT-1 practice)').",
+    "mediator": null,
+    "evidence": "Ancestor-modified relation on the parent's own record: same lab, same artifact lineage, the practice named in the parent's prior_state. The GPT-2 model itself is coeval-year and date-bound (recorded at resolve); this edge is to the predecessor release act, not the model."
    }
   }
  ],
@@ -149207,6 +149780,974 @@
       }
      },
      "similarity": 0.6972,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "gpt-2-staged-release-openai-2019-2019": {
+   "raw_candidates": [
+    {
+     "causal_claim": "The OpenAI Charter directly enabled the GPT-2 staged release's leap by pre-committing the lab, in April 2018, to the principle the release enacted: the February 2019 announcement quotes it verbatim ('we expect that safety and security concerns will reduce our traditional publishing in the future') as the warrant for withholding the model.",
+     "definition": "OpenAI's April 2018 principles document committing the lab to broad benefit, long-term safety, and reduced traditional publishing as safety and security concerns grow.",
+     "domain": "artificial intelligence governance",
+     "lens": "L4",
+     "name": "OpenAI Charter",
+     "source_title": "Better language models and their implications (OpenAI, Feb 2019)",
+     "source_url": "https://openai.com/index/better-language-models/?href=askgpt.ai",
+     "type": "other",
+     "year": 2018
+    },
+    {
+     "causal_claim": "The Malicious Use report directly enabled the staged release's leap by posing, one year earlier, the exact problem the release answered (dual-use publication decisions for AI) and prescribing the remedy the release instantiated: pre-publication risk assessment, alternative openness models, and importing computer-security practices such as responsible disclosure; two of its authors (Jack Clark, Dario Amodei) were OpenAI's policy and research leads.",
+     "definition": "The February 2018 multi-institution report that forecast malicious uses of AI and recommended changed publication norms, pre-publication risk assessment, and imported computer-security best practices.",
+     "domain": "artificial intelligence governance",
+     "lens": "L4",
+     "name": "The Malicious Use of Artificial Intelligence (Brundage et al., 2018)",
+     "source_title": "The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation (arXiv:1802.07228)",
+     "source_url": "https://arxiv.org/pdf/1802.07228",
+     "type": "other",
+     "year": 2018
+    },
+    {
+     "causal_claim": "Generative pretraining (GPT-1) directly enabled the staged release's leap as the single direct precursor whose distribution the parent modified: GPT-1 was published immediately and in full (paper, code, and weights, June 2018), and the staged release is that same lab's release act re-run with the publication step replaced by graduated, monitored stages.",
+     "definition": "OpenAI's first generative pre-trained transformer (June 2018), released immediately and in full under the then-default open publication practice.",
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "name": "Generative pretraining (GPT-1)",
+     "source_title": "GPT-1 (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/GPT-1",
+     "type": "method",
+     "year": 2018
+    },
+    {
+     "causal_claim": "GPT-2 is the artifact whose release the parent staged; proposed so the record shows the model and its release policy are coeval-year (2019) and the edge is a year-bound question, not an oversight.",
+     "definition": "OpenAI's 1.5B-parameter language model (February 2019), the substance distributed by the staged release.",
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "name": "GPT-2",
+     "source_title": "GPT-2 (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+     "type": "method",
+     "year": 2019
+    },
+    {
+     "causal_claim": "Coordinated vulnerability disclosure directly enabled the staged release's leap by supplying the named template the parent imported: the February 2019 announcement calls the staging 'an experiment in responsible disclosure', borrowing the security practice of delaying full release while defenders prepare.",
+     "definition": "The computer-security norm, codified around 2000 (CERT/CC and RFPolicy-era policies), of coordinating the timing of vulnerability publication so defenders can prepare before full disclosure.",
+     "domain": "computer security",
+     "lens": "L19",
+     "name": "Coordinated vulnerability disclosure (responsible disclosure practice in computer security)",
+     "source_title": "GPT-2 and the Staged-Release Safety Debate (escapement.info)",
+     "source_url": "https://www.escapement.info/publications/gpt2-staged-release-safety-debate",
+     "type": "method",
+     "year": 2000
+    },
+    {
+     "causal_claim": "The H5N1 controversy allegedly enabled the staged release by establishing, in 2011-12, that a research community could recommend withholding/redacting dual-use findings (the NSABB's unprecedented redaction recommendation for the Fouchier and Kawaoka papers) - the biosecurity precedent later governance writing groups with GPT-2.",
+     "definition": "The 2011-12 episode in which the US NSABB recommended redacting two H5N1 transmissibility papers, the canonical modern precedent for staged or withheld publication of dual-use research.",
+     "domain": "biosecurity governance",
+     "lens": "L19",
+     "name": "H5N1 gain-of-function publication controversy (NSABB redaction recommendation)",
+     "source_title": "Dual-Use Research Norms (DURC for AI) (policywindow.org)",
+     "source_url": "https://www.policywindow.org/wiki/dual-use-research-taxonomy",
+     "type": "other",
+     "year": 2012
+    },
+    {
+     "causal_claim": "The DURC framework allegedly enabled the staged release by supplying, from 2007, the standing category ('dual-use research of concern') and oversight vocabulary that AI governance later transplanted to model publication decisions.",
+     "definition": "The NSABB's 2007 framework defining dual-use research of concern and proposing oversight of life-science publication and funding decisions.",
+     "domain": "biosecurity governance",
+     "lens": "L19",
+     "name": "US dual-use research of concern (DURC) oversight framework (NSABB)",
+     "source_title": "Dual-Use Research Norms (DURC for AI) (policywindow.org)",
+     "source_url": "https://www.policywindow.org/wiki/dual-use-research-taxonomy",
+     "type": "other",
+     "year": 2007
+    },
+    {
+     "causal_claim": "Asilomar allegedly enabled the staged release as the founding precedent that a research community can govern its own outputs upstream of regulators, deciding which findings circulate freely and which are withheld or staged - the lineage retrospective AI-governance writing cites for GPT-2.",
+     "definition": "The 1975 Asilomar conference and ensuing NIH guidelines, in which molecular biologists voluntarily paused and then staged recombinant-DNA research under self-imposed containment rules.",
+     "domain": "biosecurity governance",
+     "lens": "L19",
+     "name": "Asilomar conference on recombinant DNA and the NIH guidelines",
+     "source_title": "Dual-Use Research Norms (DURC for AI) (policywindow.org)",
+     "source_url": "https://www.policywindow.org/wiki/dual-use-research-taxonomy",
+     "type": "other",
+     "year": 1975
+    },
+    {
+     "causal_claim": "BERT is proposed as the incumbent defined-against: Google's November 2018 full, immediate release of code and weights for a state-of-the-art language model exemplified the default publication practice the staged release broke with three months later.",
+     "definition": "Google's 2018 transformer language model, released immediately and in full - the era's default open-release practice for frontier language models.",
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "name": "BERT (Bidirectional Encoder Representations from Transformers)",
+     "source_title": "GPT-2 (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+     "type": "method",
+     "year": 2018
+    },
+    {
+     "causal_claim": "Tay allegedly enabled the staged release as the adjacent failure record: Microsoft's March 2016 chatbot was corrupted by coordinated users within a day and withdrawn, the era's most visible demonstration that releasing a language system without staged safeguards fails publicly.",
+     "definition": "Microsoft's 2016 Twitter chatbot, withdrawn within 16 hours after coordinated manipulation made it produce abusive output - the canonical pre-2019 language-system release failure.",
+     "domain": "artificial intelligence",
+     "lens": "L7",
+     "name": "Microsoft Tay chatbot release failure",
+     "source_title": "GPT-2 staged release scout research (session 28)",
+     "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+     "type": "other",
+     "year": 2016
+    },
+    {
+     "causal_claim": "Deepfakes allegedly enabled the staged release by changing the surroundings: from late 2017, consumer face-swap tools made synthetic-media misuse a public, named phenomenon, so a convincing text generator in February 2019 landed in a world already primed to fear scalable synthetic content.",
+     "definition": "The late-2017 emergence of consumer deepfake tools (r/deepfakes, FaceSwap), which made AI-generated synthetic media a mainstream misuse concern before GPT-2.",
+     "domain": "artificial intelligence",
+     "lens": "L22",
+     "name": "Deepfakes (consumer synthetic-media phenomenon)",
+     "source_title": "Dual-Use Research Norms (DURC for AI) (policywindow.org)",
+     "source_url": "https://www.policywindow.org/wiki/dual-use-research-taxonomy",
+     "type": "other",
+     "year": 2017
+    },
+    {
+     "causal_claim": "AI and Compute allegedly enabled the staged release by making the capability trajectory legible inside OpenAI itself: its May 2018 measurement (doubling every 3.4 months) framed GPT-2-scale jumps as a continuing trend that release policy would repeatedly face, not a one-off.",
+     "definition": "OpenAI's May 2018 analysis showing compute used in landmark training runs doubling every ~3.4 months since 2012.",
+     "domain": "artificial intelligence",
+     "lens": "L22",
+     "name": "AI and Compute (Amodei & Hernandez, 2018)",
+     "source_title": "GPT-2 staged release scout research (session 28)",
+     "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+     "type": "other",
+     "year": 2018
+    },
+    {
+     "causal_claim": "Concrete Problems allegedly enabled the staged release by establishing OpenAI's internal safety-research programme (accidents, robustness, safe exploration) from which its policy apparatus grew - proposed so the record can judge whether the safety-problem framing, as distinct from the publication-problem framing, fed the release decision.",
+     "definition": "The 2016 Google Brain/OpenAI paper posing five concrete accident-risk research problems for AI safety.",
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "name": "Concrete Problems in AI Safety (Amodei et al., 2016)",
+     "source_title": "GPT-2 staged release scout research (session 28)",
+     "source_url": "https://arxiv.org/pdf/1802.07228",
+     "type": "other",
+     "year": 2016
+    },
+    {
+     "causal_claim": "Datasheets allegedly enabled the staged release as part of the 2018 documentation-norm stratum (standardized disclosure documents accompanying artifacts) within which release documentation and staged disclosure became thinkable as lab practice.",
+     "definition": "The 2018 proposal (Gebru et al.) that every dataset ship with a standardized datasheet documenting its provenance, composition, and intended uses.",
+     "domain": "artificial intelligence governance",
+     "lens": "L16",
+     "name": "Datasheets for Datasets (Gebru et al., 2018)",
+     "source_title": "GPT-2 staged release scout research (session 28)",
+     "source_url": "https://arxiv.org/pdf/1802.07228",
+     "type": "other",
+     "year": 2018
+    },
+    {
+     "causal_claim": "The Partnership on AI allegedly enabled the staged release as the multi-lab forum (OpenAI a founding member, 2016) in which publication-norm questions for dual-use AI were being collectively discussed in the years before the release.",
+     "definition": "The 2016 multi-stakeholder industry partnership (Amazon, Apple, Facebook, Google, IBM, Microsoft, later OpenAI and others) convening on AI best practices, including publication and safety norms.",
+     "domain": "artificial intelligence governance",
+     "lens": "L21",
+     "name": "Partnership on AI",
+     "source_title": "GPT-2 staged release scout research (session 28)",
+     "source_url": "https://arxiv.org/pdf/1802.07228",
+     "type": "institution",
+     "year": 2016
+    },
+    {
+     "causal_claim": "FHI allegedly enabled the staged release as the institutional home of the Malicious Use report's lead author (Brundage) and of the misuse-forecasting programme the release drew on - proposed so the record can apply the decomposition rule (report judged as artifact; institution credited only for a separable carried artifact).",
+     "definition": "Oxford's Future of Humanity Institute (founded 2005), the research institute whose AI-governance programme produced the 2018 Malicious Use report.",
+     "domain": "artificial intelligence governance",
+     "lens": "L21",
+     "name": "Future of Humanity Institute",
+     "source_title": "The Malicious Use of Artificial Intelligence (arXiv:1802.07228)",
+     "source_url": "https://arxiv.org/pdf/1802.07228",
+     "type": "institution",
+     "year": 2005
+    },
+    {
+     "causal_claim": "OpenAI is proposed for the decomposition test: the staged release is OpenAI's own act, and the record must judge whether the institution adds anything beyond its separable artifacts already proposed (Charter, GPT-1 practice) or whether crediting it double-counts the parent itself.",
+     "definition": "The AI research lab (founded 2015) whose policy team designed and executed the GPT-2 staged release.",
+     "domain": "artificial intelligence",
+     "lens": "L21",
+     "name": "OpenAI",
+     "source_title": "Release Strategies and the Social Impacts of Language Models (arXiv:1908.09203)",
+     "source_url": "https://arxiv.org/pdf/1908.09203",
+     "type": "institution",
+     "year": 2015
+    },
+    {
+     "causal_claim": "Proposed so the record shows the capped-profit restructuring is coeval-year (March 2019) with the parent and date-bound, not an oversight.",
+     "definition": "OpenAI's March 2019 capped-profit restructuring, admitted at Hosted LLM APIs as the API's organizational precondition.",
+     "domain": "artificial intelligence",
+     "lens": "L21",
+     "name": "OpenAI LP capped-profit restructuring (2019)",
+     "source_title": "Release Strategies and the Social Impacts of Language Models (arXiv:1908.09203)",
+     "source_url": "https://arxiv.org/pdf/1908.09203",
+     "type": "institution",
+     "year": 2019
+    },
+    {
+     "causal_claim": "Staged rollout allegedly enabled the staged release as the wielded process template: by ~2010 large software firms routinely shipped capability in graduated stages (canary cohorts, percentage rollouts) with monitoring between stages - the operational shape the model release copied.",
+     "definition": "The software-engineering practice of graduated deployment (canary releases, staged percentage rollouts) with monitoring gates between stages, standard at large web firms by the early 2010s.",
+     "domain": "software engineering",
+     "lens": "L11",
+     "name": "Canary release and staged rollout practice in large-scale software deployment",
+     "source_title": "GPT-2 staged release scout research (session 28)",
+     "source_url": "https://www.escapement.info/publications/gpt2-staged-release-safety-debate",
+     "type": "method",
+     "year": 2010
+    },
+    {
+     "causal_claim": "Import AI allegedly enabled the staged release through creator lineage: Jack Clark, OpenAI's policy director and a Malicious Use co-author, had run the Import AI newsletter since 2016, the vehicle through which misuse and governance concerns were tracked into OpenAI's policy work.",
+     "definition": "Jack Clark's weekly AI newsletter (founded 2016), a running survey of AI capability and governance developments read across the field.",
+     "domain": "artificial intelligence governance",
+     "lens": "L20",
+     "name": "Import AI newsletter (Jack Clark)",
+     "source_title": "The Malicious Use of Artificial Intelligence (arXiv:1802.07228)",
+     "source_url": "https://arxiv.org/pdf/1802.07228",
+     "type": "other",
+     "year": 2016
+    },
+    {
+     "causal_claim": "Proposed so the record shows the parent's own documentation report is coeval-year (August/November 2019) and date-bound: it records the staged release, it does not precede it.",
+     "definition": "OpenAI's 2019 report (Solaiman, Brundage, Clark, Askell et al.) documenting the staged release, its partnership research, and its publication-norm recommendations.",
+     "domain": "artificial intelligence governance",
+     "lens": "L3",
+     "name": "Release Strategies and the Social Impacts of Language Models (Solaiman et al., 2019)",
+     "source_title": "Release Strategies and the Social Impacts of Language Models (arXiv:1908.09203)",
+     "source_url": "https://arxiv.org/pdf/1908.09203",
+     "type": "other",
+     "year": 2019
+    },
+    {
+     "causal_claim": "Proposed so the record shows GROVER is coeval-year (2019) and date-bound: its generator/detector pair diagnosed neural fake news in the same season the staged release was already under way.",
+     "definition": "The University of Washington/AI2 system (2019) that both generated and detected neural fake news, demonstrating the generator-as-best-detector result.",
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "name": "GROVER (Defending Against Neural Fake News, Zellers et al., 2019)",
+     "source_title": "GPT-2 staged release scout research (session 28)",
+     "source_url": "https://arxiv.org/pdf/1908.09203",
+     "type": "method",
+     "year": 2019
+    },
+    {
+     "causal_claim": "Proposed so the record shows GLTR is coeval-year (2019) and date-bound: a forensic visualization instrument for detecting machine text, built during the staged release it might otherwise be mistaken as enabling.",
+     "definition": "The Harvard/MIT-IBM Watson AI Lab tool (2019) that visualizes token-probability statistics to help humans detect machine-generated text.",
+     "domain": "artificial intelligence",
+     "lens": "L18",
+     "name": "GLTR (Giant Language model Test Room, Gehrmann et al., 2019)",
+     "source_title": "GPT-2 staged release scout research (session 28)",
+     "source_url": "https://arxiv.org/pdf/1908.09203",
+     "type": "method",
+     "year": 2019
+    },
+    {
+     "causal_claim": "Proposed so the record shows the detector is coeval-year (released November 2019 with the full model) and date-bound: it was a component of the staged release's own monitoring apparatus, built inside the parent, not a predecessor of it.",
+     "definition": "OpenAI's fine-tuned RoBERTa classifier for detecting GPT-2 outputs (~95% accuracy), released alongside the full 1.5B model in November 2019.",
+     "domain": "artificial intelligence",
+     "lens": "L17",
+     "name": "OpenAI's RoBERTa-based GPT-2 output detector",
+     "source_title": "Release Strategies and the Social Impacts of Language Models (arXiv:1908.09203)",
+     "source_url": "https://arxiv.org/pdf/1908.09203",
+     "type": "method",
+     "year": 2019
+    },
+    {
+     "causal_claim": "Proposed so the record shows WebText is coeval-year (2019) and date-bound, and is in any case the model's training data - the substance of the artifact being staged, not an enabler of the release policy.",
+     "definition": "GPT-2's 40GB training corpus of web pages linked from Reddit (2019).",
+     "domain": "artificial intelligence",
+     "lens": "L8",
+     "name": "WebText dataset",
+     "source_title": "GPT-2 (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+     "type": "other",
+     "year": 2019
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "openai-charter-2018",
+      "candidate": {
+       "causal_claim": "The OpenAI Charter directly enabled the GPT-2 staged release's leap by pre-committing the lab, in April 2018, to the principle the release enacted: the February 2019 announcement quotes it verbatim ('we expect that safety and security concerns will reduce our traditional publishing in the future') as the warrant for withholding the model.",
+       "definition": "OpenAI's April 2018 principles document committing the lab to broad benefit, long-term safety, and reduced traditional publishing as safety and security concerns grow.",
+       "domain": "artificial intelligence governance",
+       "lens": "L4",
+       "name": "OpenAI Charter",
+       "source_title": "Better language models and their implications (OpenAI, Feb 2019)",
+       "source_url": "https://openai.com/index/better-language-models/?href=askgpt.ai",
+       "type": "other",
+       "year": 2018
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "OpenAI Charter"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-malicious-use-of-artificial-intelligence-brundage-et-al-2018",
+      "candidate": {
+       "causal_claim": "The Malicious Use report directly enabled the staged release's leap by posing, one year earlier, the exact problem the release answered (dual-use publication decisions for AI) and prescribing the remedy the release instantiated: pre-publication risk assessment, alternative openness models, and importing computer-security practices such as responsible disclosure; two of its authors (Jack Clark, Dario Amodei) were OpenAI's policy and research leads.",
+       "definition": "The February 2018 multi-institution report that forecast malicious uses of AI and recommended changed publication norms, pre-publication risk assessment, and imported computer-security best practices.",
+       "domain": "artificial intelligence governance",
+       "lens": "L4",
+       "name": "The Malicious Use of Artificial Intelligence (Brundage et al., 2018)",
+       "source_title": "The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation (arXiv:1802.07228)",
+       "source_url": "https://arxiv.org/pdf/1802.07228",
+       "type": "other",
+       "year": 2018
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "The Malicious Use of Artificial Intelligence (Brundage et al., 2018)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "generative-pretraining-gpt-1-2018",
+      "candidate": {
+       "causal_claim": "Generative pretraining (GPT-1) directly enabled the staged release's leap as the single direct precursor whose distribution the parent modified: GPT-1 was published immediately and in full (paper, code, and weights, June 2018), and the staged release is that same lab's release act re-run with the publication step replaced by graduated, monitored stages.",
+       "definition": "OpenAI's first generative pre-trained transformer (June 2018), released immediately and in full under the then-default open publication practice.",
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "name": "Generative pretraining (GPT-1)",
+       "source_title": "GPT-1 (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/GPT-1",
+       "type": "method",
+       "year": 2018
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Generative pretraining (GPT-1)"
+      ],
+      "matched_node_id": "generative-pretraining-gpt-1-2018",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "coordinated-vulnerability-disclosure-responsible-disclosure-2000",
+      "candidate": {
+       "causal_claim": "Coordinated vulnerability disclosure directly enabled the staged release's leap by supplying the named template the parent imported: the February 2019 announcement calls the staging 'an experiment in responsible disclosure', borrowing the security practice of delaying full release while defenders prepare.",
+       "definition": "The computer-security norm, codified around 2000 (CERT/CC and RFPolicy-era policies), of coordinating the timing of vulnerability publication so defenders can prepare before full disclosure.",
+       "domain": "computer security",
+       "lens": "L19",
+       "name": "Coordinated vulnerability disclosure (responsible disclosure practice in computer security)",
+       "source_title": "GPT-2 and the Staged-Release Safety Debate (escapement.info)",
+       "source_url": "https://www.escapement.info/publications/gpt2-staged-release-safety-debate",
+       "type": "method",
+       "year": 2000
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Coordinated vulnerability disclosure (responsible disclosure practice in computer security)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "h5n1-gain-of-function-publication-controversy-nsabb-redactio-2012",
+      "candidate": {
+       "causal_claim": "The H5N1 controversy allegedly enabled the staged release by establishing, in 2011-12, that a research community could recommend withholding/redacting dual-use findings (the NSABB's unprecedented redaction recommendation for the Fouchier and Kawaoka papers) - the biosecurity precedent later governance writing groups with GPT-2.",
+       "definition": "The 2011-12 episode in which the US NSABB recommended redacting two H5N1 transmissibility papers, the canonical modern precedent for staged or withheld publication of dual-use research.",
+       "domain": "biosecurity governance",
+       "lens": "L19",
+       "name": "H5N1 gain-of-function publication controversy (NSABB redaction recommendation)",
+       "source_title": "Dual-Use Research Norms (DURC for AI) (policywindow.org)",
+       "source_url": "https://www.policywindow.org/wiki/dual-use-research-taxonomy",
+       "type": "other",
+       "year": 2012
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "H5N1 gain-of-function publication controversy (NSABB redaction recommendation)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "us-dual-use-research-of-concern-durc-oversight-framework-nsa-2007",
+      "candidate": {
+       "causal_claim": "The DURC framework allegedly enabled the staged release by supplying, from 2007, the standing category ('dual-use research of concern') and oversight vocabulary that AI governance later transplanted to model publication decisions.",
+       "definition": "The NSABB's 2007 framework defining dual-use research of concern and proposing oversight of life-science publication and funding decisions.",
+       "domain": "biosecurity governance",
+       "lens": "L19",
+       "name": "US dual-use research of concern (DURC) oversight framework (NSABB)",
+       "source_title": "Dual-Use Research Norms (DURC for AI) (policywindow.org)",
+       "source_url": "https://www.policywindow.org/wiki/dual-use-research-taxonomy",
+       "type": "other",
+       "year": 2007
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "US dual-use research of concern (DURC) oversight framework (NSABB)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "asilomar-conference-on-recombinant-dna-and-the-nih-guideline-1975",
+      "candidate": {
+       "causal_claim": "Asilomar allegedly enabled the staged release as the founding precedent that a research community can govern its own outputs upstream of regulators, deciding which findings circulate freely and which are withheld or staged - the lineage retrospective AI-governance writing cites for GPT-2.",
+       "definition": "The 1975 Asilomar conference and ensuing NIH guidelines, in which molecular biologists voluntarily paused and then staged recombinant-DNA research under self-imposed containment rules.",
+       "domain": "biosecurity governance",
+       "lens": "L19",
+       "name": "Asilomar conference on recombinant DNA and the NIH guidelines",
+       "source_title": "Dual-Use Research Norms (DURC for AI) (policywindow.org)",
+       "source_url": "https://www.policywindow.org/wiki/dual-use-research-taxonomy",
+       "type": "other",
+       "year": 1975
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Asilomar conference on recombinant DNA and the NIH guidelines"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bert-bidirectional-encoder-representations-from-transformers-2018",
+      "candidate": {
+       "causal_claim": "BERT is proposed as the incumbent defined-against: Google's November 2018 full, immediate release of code and weights for a state-of-the-art language model exemplified the default publication practice the staged release broke with three months later.",
+       "definition": "Google's 2018 transformer language model, released immediately and in full - the era's default open-release practice for frontier language models.",
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "name": "BERT (Bidirectional Encoder Representations from Transformers)",
+       "source_title": "GPT-2 (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+       "type": "method",
+       "year": 2018
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "BERT (Bidirectional Encoder Representations from Transformers)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "microsoft-tay-chatbot-release-failure-2016",
+      "candidate": {
+       "causal_claim": "Tay allegedly enabled the staged release as the adjacent failure record: Microsoft's March 2016 chatbot was corrupted by coordinated users within a day and withdrawn, the era's most visible demonstration that releasing a language system without staged safeguards fails publicly.",
+       "definition": "Microsoft's 2016 Twitter chatbot, withdrawn within 16 hours after coordinated manipulation made it produce abusive output - the canonical pre-2019 language-system release failure.",
+       "domain": "artificial intelligence",
+       "lens": "L7",
+       "name": "Microsoft Tay chatbot release failure",
+       "source_title": "GPT-2 staged release scout research (session 28)",
+       "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+       "type": "other",
+       "year": 2016
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Microsoft Tay chatbot release failure"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "deepfakes-consumer-synthetic-media-phenomenon-2017",
+      "candidate": {
+       "causal_claim": "Deepfakes allegedly enabled the staged release by changing the surroundings: from late 2017, consumer face-swap tools made synthetic-media misuse a public, named phenomenon, so a convincing text generator in February 2019 landed in a world already primed to fear scalable synthetic content.",
+       "definition": "The late-2017 emergence of consumer deepfake tools (r/deepfakes, FaceSwap), which made AI-generated synthetic media a mainstream misuse concern before GPT-2.",
+       "domain": "artificial intelligence",
+       "lens": "L22",
+       "name": "Deepfakes (consumer synthetic-media phenomenon)",
+       "source_title": "Dual-Use Research Norms (DURC for AI) (policywindow.org)",
+       "source_url": "https://www.policywindow.org/wiki/dual-use-research-taxonomy",
+       "type": "other",
+       "year": 2017
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Deepfakes (consumer synthetic-media phenomenon)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ai-and-compute-amodei-hernandez-2018-2018",
+      "candidate": {
+       "causal_claim": "AI and Compute allegedly enabled the staged release by making the capability trajectory legible inside OpenAI itself: its May 2018 measurement (doubling every 3.4 months) framed GPT-2-scale jumps as a continuing trend that release policy would repeatedly face, not a one-off.",
+       "definition": "OpenAI's May 2018 analysis showing compute used in landmark training runs doubling every ~3.4 months since 2012.",
+       "domain": "artificial intelligence",
+       "lens": "L22",
+       "name": "AI and Compute (Amodei & Hernandez, 2018)",
+       "source_title": "GPT-2 staged release scout research (session 28)",
+       "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+       "type": "other",
+       "year": 2018
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "AI and Compute (Amodei & Hernandez, 2018)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "concrete-problems-in-ai-safety-amodei-et-al-2016-2016",
+      "candidate": {
+       "causal_claim": "Concrete Problems allegedly enabled the staged release by establishing OpenAI's internal safety-research programme (accidents, robustness, safe exploration) from which its policy apparatus grew - proposed so the record can judge whether the safety-problem framing, as distinct from the publication-problem framing, fed the release decision.",
+       "definition": "The 2016 Google Brain/OpenAI paper posing five concrete accident-risk research problems for AI safety.",
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "name": "Concrete Problems in AI Safety (Amodei et al., 2016)",
+       "source_title": "GPT-2 staged release scout research (session 28)",
+       "source_url": "https://arxiv.org/pdf/1802.07228",
+       "type": "other",
+       "year": 2016
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Concrete Problems in AI Safety (Amodei et al., 2016)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "datasheets-for-datasets-gebru-et-al-2018-2018",
+      "candidate": {
+       "causal_claim": "Datasheets allegedly enabled the staged release as part of the 2018 documentation-norm stratum (standardized disclosure documents accompanying artifacts) within which release documentation and staged disclosure became thinkable as lab practice.",
+       "definition": "The 2018 proposal (Gebru et al.) that every dataset ship with a standardized datasheet documenting its provenance, composition, and intended uses.",
+       "domain": "artificial intelligence governance",
+       "lens": "L16",
+       "name": "Datasheets for Datasets (Gebru et al., 2018)",
+       "source_title": "GPT-2 staged release scout research (session 28)",
+       "source_url": "https://arxiv.org/pdf/1802.07228",
+       "type": "other",
+       "year": 2018
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Datasheets for Datasets (Gebru et al., 2018)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "partnership-on-ai-2016",
+      "candidate": {
+       "causal_claim": "The Partnership on AI allegedly enabled the staged release as the multi-lab forum (OpenAI a founding member, 2016) in which publication-norm questions for dual-use AI were being collectively discussed in the years before the release.",
+       "definition": "The 2016 multi-stakeholder industry partnership (Amazon, Apple, Facebook, Google, IBM, Microsoft, later OpenAI and others) convening on AI best practices, including publication and safety norms.",
+       "domain": "artificial intelligence governance",
+       "lens": "L21",
+       "name": "Partnership on AI",
+       "source_title": "GPT-2 staged release scout research (session 28)",
+       "source_url": "https://arxiv.org/pdf/1802.07228",
+       "type": "institution",
+       "year": 2016
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Partnership on AI"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "future-of-humanity-institute-2005",
+      "candidate": {
+       "causal_claim": "FHI allegedly enabled the staged release as the institutional home of the Malicious Use report's lead author (Brundage) and of the misuse-forecasting programme the release drew on - proposed so the record can apply the decomposition rule (report judged as artifact; institution credited only for a separable carried artifact).",
+       "definition": "Oxford's Future of Humanity Institute (founded 2005), the research institute whose AI-governance programme produced the 2018 Malicious Use report.",
+       "domain": "artificial intelligence governance",
+       "lens": "L21",
+       "name": "Future of Humanity Institute",
+       "source_title": "The Malicious Use of Artificial Intelligence (arXiv:1802.07228)",
+       "source_url": "https://arxiv.org/pdf/1802.07228",
+       "type": "institution",
+       "year": 2005
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Future of Humanity Institute"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "openai-2015",
+      "candidate": {
+       "causal_claim": "OpenAI is proposed for the decomposition test: the staged release is OpenAI's own act, and the record must judge whether the institution adds anything beyond its separable artifacts already proposed (Charter, GPT-1 practice) or whether crediting it double-counts the parent itself.",
+       "definition": "The AI research lab (founded 2015) whose policy team designed and executed the GPT-2 staged release.",
+       "domain": "artificial intelligence",
+       "lens": "L21",
+       "name": "OpenAI",
+       "source_title": "Release Strategies and the Social Impacts of Language Models (arXiv:1908.09203)",
+       "source_url": "https://arxiv.org/pdf/1908.09203",
+       "type": "institution",
+       "year": 2015
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "OpenAI"
+      ],
+      "matched_node_id": "openai-2015",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "canary-release-and-staged-rollout-practice-in-large-scale-so-2010",
+      "candidate": {
+       "causal_claim": "Staged rollout allegedly enabled the staged release as the wielded process template: by ~2010 large software firms routinely shipped capability in graduated stages (canary cohorts, percentage rollouts) with monitoring between stages - the operational shape the model release copied.",
+       "definition": "The software-engineering practice of graduated deployment (canary releases, staged percentage rollouts) with monitoring gates between stages, standard at large web firms by the early 2010s.",
+       "domain": "software engineering",
+       "lens": "L11",
+       "name": "Canary release and staged rollout practice in large-scale software deployment",
+       "source_title": "GPT-2 staged release scout research (session 28)",
+       "source_url": "https://www.escapement.info/publications/gpt2-staged-release-safety-debate",
+       "type": "method",
+       "year": 2010
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "Canary release and staged rollout practice in large-scale software deployment"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "import-ai-newsletter-jack-clark-2016",
+      "candidate": {
+       "causal_claim": "Import AI allegedly enabled the staged release through creator lineage: Jack Clark, OpenAI's policy director and a Malicious Use co-author, had run the Import AI newsletter since 2016, the vehicle through which misuse and governance concerns were tracked into OpenAI's policy work.",
+       "definition": "Jack Clark's weekly AI newsletter (founded 2016), a running survey of AI capability and governance developments read across the field.",
+       "domain": "artificial intelligence governance",
+       "lens": "L20",
+       "name": "Import AI newsletter (Jack Clark)",
+       "source_title": "The Malicious Use of Artificial Intelligence (arXiv:1802.07228)",
+       "source_url": "https://arxiv.org/pdf/1802.07228",
+       "type": "other",
+       "year": 2016
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "Import AI newsletter (Jack Clark)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:0:openai-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "OpenAI Charter",
+        "aliases": [],
+        "year": 2018,
+        "domain": "artificial intelligence governance",
+        "type": "other",
+        "definition": "OpenAI's April 2018 principles document committing the lab to broad benefit, long-term safety, and reduced traditional publishing as safety and security concerns grow.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "openai-2015",
+       "card": {
+        "name": "OpenAI",
+        "aliases": [],
+        "year": 2015,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "The research organization founded in 2015 (restructured with a capped-profit LP in 2019) whose alignment team produced the RLHF lineage: Christiano 2017, Ziegler 2019, Stiennon 2020, InstructGPT 2022.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6501,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:16:hosted-llm-apis-openai-api-2020",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 16,
+       "card": {
+        "name": "OpenAI",
+        "aliases": [],
+        "year": 2015,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "The AI research lab (founded 2015) whose policy team designed and executed the GPT-2 staged release.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "hosted-llm-apis-openai-api-2020",
+       "card": {
+        "name": "Hosted LLM APIs (OpenAI API)",
+        "aliases": [],
+        "year": 2020,
+        "domain": "artificial intelligence",
+        "type": "other",
+        "definition": "Commercial API access to GPT-3 (June 2020 beta) and successors; models as a metered cloud service.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6272,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:0:16",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "OpenAI Charter",
+        "aliases": [],
+        "year": 2018,
+        "domain": "artificial intelligence governance",
+        "type": "other",
+        "definition": "OpenAI's April 2018 principles document committing the lab to broad benefit, long-term safety, and reduced traditional publishing as safety and security concerns grow.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 16,
+       "card": {
+        "name": "OpenAI",
+        "aliases": [],
+        "year": 2015,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "The AI research lab (founded 2015) whose policy team designed and executed the GPT-2 staged release.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.7551,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "GPT-2 is the artifact whose release the parent staged; proposed so the record shows the model and its release policy are coeval-year (2019) and the edge is a year-bound question, not an oversight.",
+       "definition": "OpenAI's 1.5B-parameter language model (February 2019), the substance distributed by the staged release.",
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "name": "GPT-2",
+       "source_title": "GPT-2 (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+       "type": "method",
+       "year": 2019
+      },
+      "reason": "dated on/after parent year 2019"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Proposed so the record shows the capped-profit restructuring is coeval-year (March 2019) with the parent and date-bound, not an oversight.",
+       "definition": "OpenAI's March 2019 capped-profit restructuring, admitted at Hosted LLM APIs as the API's organizational precondition.",
+       "domain": "artificial intelligence",
+       "lens": "L21",
+       "name": "OpenAI LP capped-profit restructuring (2019)",
+       "source_title": "Release Strategies and the Social Impacts of Language Models (arXiv:1908.09203)",
+       "source_url": "https://arxiv.org/pdf/1908.09203",
+       "type": "institution",
+       "year": 2019
+      },
+      "reason": "dated on/after parent year 2019"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Proposed so the record shows the parent's own documentation report is coeval-year (August/November 2019) and date-bound: it records the staged release, it does not precede it.",
+       "definition": "OpenAI's 2019 report (Solaiman, Brundage, Clark, Askell et al.) documenting the staged release, its partnership research, and its publication-norm recommendations.",
+       "domain": "artificial intelligence governance",
+       "lens": "L3",
+       "name": "Release Strategies and the Social Impacts of Language Models (Solaiman et al., 2019)",
+       "source_title": "Release Strategies and the Social Impacts of Language Models (arXiv:1908.09203)",
+       "source_url": "https://arxiv.org/pdf/1908.09203",
+       "type": "other",
+       "year": 2019
+      },
+      "reason": "dated on/after parent year 2019"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Proposed so the record shows GROVER is coeval-year (2019) and date-bound: its generator/detector pair diagnosed neural fake news in the same season the staged release was already under way.",
+       "definition": "The University of Washington/AI2 system (2019) that both generated and detected neural fake news, demonstrating the generator-as-best-detector result.",
+       "domain": "artificial intelligence",
+       "lens": "L5",
+       "name": "GROVER (Defending Against Neural Fake News, Zellers et al., 2019)",
+       "source_title": "GPT-2 staged release scout research (session 28)",
+       "source_url": "https://arxiv.org/pdf/1908.09203",
+       "type": "method",
+       "year": 2019
+      },
+      "reason": "dated on/after parent year 2019"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Proposed so the record shows GLTR is coeval-year (2019) and date-bound: a forensic visualization instrument for detecting machine text, built during the staged release it might otherwise be mistaken as enabling.",
+       "definition": "The Harvard/MIT-IBM Watson AI Lab tool (2019) that visualizes token-probability statistics to help humans detect machine-generated text.",
+       "domain": "artificial intelligence",
+       "lens": "L18",
+       "name": "GLTR (Giant Language model Test Room, Gehrmann et al., 2019)",
+       "source_title": "GPT-2 staged release scout research (session 28)",
+       "source_url": "https://arxiv.org/pdf/1908.09203",
+       "type": "method",
+       "year": 2019
+      },
+      "reason": "dated on/after parent year 2019"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Proposed so the record shows the detector is coeval-year (released November 2019 with the full model) and date-bound: it was a component of the staged release's own monitoring apparatus, built inside the parent, not a predecessor of it.",
+       "definition": "OpenAI's fine-tuned RoBERTa classifier for detecting GPT-2 outputs (~95% accuracy), released alongside the full 1.5B model in November 2019.",
+       "domain": "artificial intelligence",
+       "lens": "L17",
+       "name": "OpenAI's RoBERTa-based GPT-2 output detector",
+       "source_title": "Release Strategies and the Social Impacts of Language Models (arXiv:1908.09203)",
+       "source_url": "https://arxiv.org/pdf/1908.09203",
+       "type": "method",
+       "year": 2019
+      },
+      "reason": "dated on/after parent year 2019"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Proposed so the record shows WebText is coeval-year (2019) and date-bound, and is in any case the model's training data - the substance of the artifact being staged, not an enabler of the release policy.",
+       "definition": "GPT-2's 40GB training corpus of web pages linked from Reddit (2019).",
+       "domain": "artificial intelligence",
+       "lens": "L8",
+       "name": "WebText dataset",
+       "source_title": "GPT-2 (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/GPT-2",
+       "type": "other",
+       "year": 2019
+      },
+      "reason": "dated on/after parent year 2019"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:0:openai-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "OpenAI Charter",
+       "aliases": [],
+       "year": 2018,
+       "domain": "artificial intelligence governance",
+       "type": "other",
+       "definition": "OpenAI's April 2018 principles document committing the lab to broad benefit, long-term safety, and reduced traditional publishing as safety and security concerns grow.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "openai-2015",
+      "card": {
+       "name": "OpenAI",
+       "aliases": [],
+       "year": 2015,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "The research organization founded in 2015 (restructured with a capped-profit LP in 2019) whose alignment team produced the RLHF lineage: Christiano 2017, Ziegler 2019, Stiennon 2020, InstructGPT 2022.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6501,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:16:hosted-llm-apis-openai-api-2020",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 16,
+      "card": {
+       "name": "OpenAI",
+       "aliases": [],
+       "year": 2015,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "The AI research lab (founded 2015) whose policy team designed and executed the GPT-2 staged release.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "hosted-llm-apis-openai-api-2020",
+      "card": {
+       "name": "Hosted LLM APIs (OpenAI API)",
+       "aliases": [],
+       "year": 2020,
+       "domain": "artificial intelligence",
+       "type": "other",
+       "definition": "Commercial API access to GPT-3 (June 2020 beta) and successors; models as a metered cloud service.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6272,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:0:16",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "OpenAI Charter",
+       "aliases": [],
+       "year": 2018,
+       "domain": "artificial intelligence governance",
+       "type": "other",
+       "definition": "OpenAI's April 2018 principles document committing the lab to broad benefit, long-term safety, and reduced traditional publishing as safety and security concerns grow.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 16,
+      "card": {
+       "name": "OpenAI",
+       "aliases": [],
+       "year": 2015,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "The AI research lab (founded 2015) whose policy team designed and executed the GPT-2 staged release.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.7551,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
