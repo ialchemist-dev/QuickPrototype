@@ -1015,3 +1015,139 @@
   "expansions_done": 76
  }
 }
+{
+ "ts": "2026-11-25T09:30:36.579368+00:00",
+ "session": "run session 34 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "fisher-the-arrangement-of-field-experiments-1926-1926",
+ "parent_name": "Fisher, The arrangement of field experiments (1926)",
+ "raw": 25,
+ "dry_notes": "16 of 23 lenses dry or shortfall, recorded in work/dry_notes_fisher-the-arrangement-of-field-experiments-1926-1926.json: shortfalls L5 (2), L6 (2), L11 (1), L13 (1), L17 (1), L18 (1), L19 (2), L21 (1); dry L7, L9, L10, L12, L14, L15, L16, L22. Raw 25 against raw_target 140 - the bounded-world pattern for a 1926 journal essay whose lineage runs through one author's programme at one station.",
+ "date_dropped": [
+  {
+   "name": "Russell, Field experiments and statistical inference (1926)",
+   "year": 1926,
+   "note": "STRUCTURAL (year-bound, sessions 27-33 pattern): Speed records that Russell's 1926 essay in the same journal was probably the direct cause of the parent being written - the parent's documented occasion - and the year-granularity bound drops it at resolve regardless. Logged, not re-dated."
+  }
+ ],
+ "distinct": 17,
+ "evaluated": 17,
+ "survivors": [
+  {
+   "name": "Fisher and Mackenzie, Studies in crop variation II (1923)",
+   "id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+   "score": 7.0,
+   "kind": "new",
+   "note": "The origin artifact: first published analysis-of-variance table (Speed: received 20 March 1923) and the first print statement that plots arranged 'deliberately at random' yield a valid estimate of error. The essay generalizes exactly this demonstration into doctrine. At the 1935 treatise this paper failed the leap gate as a demonstration instance; at the 1926 essay the relation is tighter - the essay IS the generalization of the demonstration - and it is admitted on the essay's own documents. Via-SMRW mediation attack answered by components discrimination (origin vs codification; Speed lists both among the essay's sources)."
+  },
+  {
+   "name": "Fisher, Statistical Methods for Research Workers (1925)",
+   "id": "fisher-statistical-methods-for-research-workers-1925-1925",
+   "score": 6.5,
+   "kind": "link to existing node",
+   "note": "Ancestor-modified, not coeval sibling: Speed records that most of the essay's ideas had been published in the previous 2-3 years 'in the book SMRW' (somewhat scattered there), and that randomization's validity role was 'touched upon, but not explained very fully in the 1925 book' - the essay is the book's completion. Chronology (1925 < 1926) and presupposition both run one way."
+  }
+ ],
+ "rejected": 15,
+ "mediated": 6,
+ "rejections_of_note": [
+  {
+   "name": "Mercer and Hall, The experimental error of field trials (1911)",
+   "reason": "mediated_via: Fisher, Statistical Methods for Research Workers (1925). The Hochreiter test answered head-on with a discrimination by parent: at Yates this candidate failed closed as a diagnosis answered but not consumed; HERE consumption of their data is documented - but the consuming documents are the book's (Speed: SMRW's blocking/Latin-square precision illustrations are layouts 'randomly imposed on the mangold uniformity data of Mercer and Hall (1911)'), while the essay itself has 'the total absence of numerical or algebraic calculations'. The candidate's hearing belongs to SMRW's expansion (session 34, expansion 2), where the derivation documents live."
+  },
+  {
+   "name": "Fisher, The correlation between relatives (1918)",
+   "reason": "mediated_via: Fisher and Mackenzie (1923). Speed's lineage sentence - the 1918 paper 'provided the foundation for his work on the design and analysis of field experiments' - runs through the 1923 junction that first ran the partition on field data; the mediation chain is carried by its cited final link."
+  },
+  {
+   "name": "Student's t-distribution (Gosset, 1908)",
+   "reason": "Leap gate (directness pass recorded): significance testing is one of the essay's five stated topics and the machinery is presupposed, but the essay's argument is about arrangement, not inference - a consumed component is not a leap (the Fisher-MLE shape; third Fisher-stratum application after Bradley-Terry/MDN and the treatise)."
+  },
+  {
+   "name": "The half-drill strip and balanced systematic arrangements (Gosset, 1923)",
+   "reason": "Defined-against incumbent: the doctrine the essay argues against. The one apparent junction dissolves - the Fisher solution printed as a footnote in Gosset (1923) is Fisher's own, 'identical to that embodied in his paper with Mackenzie' (Speed): self-carriage through another's paper; the channel is Fisher and Mackenzie (1923) itself, admitted directly."
+  },
+  {
+   "name": "Peirce and Jastrow, On small differences of sensation (1885)",
+   "reason": "Anticipation without a junction: randomization 'had been used by Charles Sanders Peirce in 1885 but the practice was not continued' (Hall 2007); Fisher's concepts developed in discussions with 'Student' and his Rothamsted work. Recorded as multiples evidence; consistent with the treatise disposition."
+  },
+  {
+   "name": "Neyman, On the application of probability theory to agricultural experiments (1923)",
+   "reason": "Parallel formalization, untranslated until 1990; multiples evidence for the era, not a channel. Consistent with the treatise disposition."
+  }
+ ],
+ "notes": "Grounding: Speed's introduction to the essay (Berkeley TR 253, 1990 - the node's own cited source) read directly; Hall (2007) on randomization's advocacy; Zhao's Cambridge Statslab Fisher talk for the 1923 verbatim sentence. CORRECTION TO THE BRIEF, verified against the graph before scouting: no Galton, Pearson, Student, or Gosset NODE exists in run-01 - at SMRW's expansion Galton is a creation question, not a link question. Both parents' stored fields verified COMPLETE before evaluation (no repeat of the session-32 empty-text problem). STRUCTURAL NOTE (year-granularity bound, 8th recorded instance family): Russell's 1926 essay - the parent's documented occasion per Speed - was date-dropped at resolve (25 raw, 1 dropped); logged in date_dropped, not re-dated. DISCRIMINATION RECORDED: Fisher and Mackenzie (1923) admitted HERE at 7.0 after failing the leap gate at the treatise (session 33) - same candidate, two parents, opposite outcomes, argued from each parent's own documents: at the treatise it is one demonstration instance behind the codification; at the essay it is the origin artifact the essay generalizes. Mercer and Hall's disposition likewise discriminates by parent (fail-closed partial at Yates; mediated via SMRW here; direct hearing at SMRW next). Verification: both survivors provisional after the four attacks; the via-SMRW mediation attack on Fisher & Mackenzie was run and answered by components discrimination (no mediation object recorded - the mediated path does not dominate the arrangement mechanism). InstructGPT/RLHF flag not surfaced.",
+ "totals_after": {
+  "nodes": 177,
+  "edges": 224,
+  "budget": "177/2000",
+  "expansions_done": 77
+ }
+}
+{
+ "ts": "2026-11-25T09:34:47.989381+00:00",
+ "session": "run session 34 (v4), expansion 2 of 2",
+ "kind": "expansion",
+ "parent": "fisher-statistical-methods-for-research-workers-1925-1925",
+ "parent_name": "Fisher, Statistical Methods for Research Workers (1925)",
+ "raw": 27,
+ "dry_notes": "16 of 23 lenses dry or shortfall, recorded in work/dry_notes_fisher-statistical-methods-for-research-workers-1925-1925.json: shortfalls L5 (1), L6 (2), L8 (2), L17 (1), L18 (1), L21 (1); dry L7, L9, L10, L11, L12, L13, L14, L15, L19, L22. Raw 27 against raw_target 140 - the bounded-world pattern: a 1925 manual whose ancestry is its author's own papers, one dataset, and the biometric tradition it re-founded.",
+ "date_dropped": [],
+ "distinct": 22,
+ "evaluated": 22,
+ "survivors": [
+  {
+   "name": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+   "id": "fisher-the-correlation-between-relatives-on-the-supposition-1918",
+   "score": 6.5,
+   "kind": "link to existing node",
+   "note": "Chapter VII of the book is titled 'Intraclass Correlations and the Analysis of Variance' - intraclass correlation IS the 1918 paper's subject (correlation between relatives), and the ANOVA taught there is the 1918 partition reworked so experimental factors are the causes partitioned. Components discrimination against the treatise edge (session 33): the treatise consumes the partition as design analysis, the book as the general machinery of its analysis chapters - same artifact, two channels, each argued from the child's own documents. Negative evidence confronted head-on: Fisher 1918 does NOT appear in the book's 'sources used for data and methods' list - that list covers data/methods for worked examples, not the book's theoretical basis; the chapter title is the instantiation."
+  },
+  {
+   "name": "Mercer and Hall, The experimental error of field trials (1911)",
+   "id": "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911",
+   "score": 5.5,
+   "kind": "new",
+   "note": "Data consumed inside the parent's own demonstrations: Speed records that the book's blocking and Latin-square precision illustrations 'refer to layouts randomly imposed on the mangold uniformity data of Mercer and Hall (1911)', and the paper stands in the book's own sources list - citation plus instantiation, the strong channel (the LOB-at-IAM shape). THE THREE-PARENT DISCRIMINATION IS THE RECORD: fail-closed partial at Yates (diagnosis answered, not consumed - the Hochreiter condition), mediated via SMRW at Fisher 1926 (the consuming documents are the book's; the essay has no calculations), admitted HERE where the derivation documents are the parent itself."
+  }
+ ],
+ "rejected": 20,
+ "mediated": 3,
+ "rejections_of_note": [
+  {
+   "name": "Student's t-distribution (Gosset, 1908)",
+   "reason": "Leap gate, directness pass recorded - and the EXPOSITION-AS-CONSUMPTION argument answered explicitly, as the brief required: the claim was that a textbook's leap includes making machinery usable, so exposited machinery is consumed as a leap. It does not follow: the exposition is the PARENT's leap; the component's contribution remains component-shaped (one distribution). Crediting every exposited component would dissolve the components rule - every textbook would inherit its whole contents as ancestors and no codification could be a leap in its own right. Strengthening fact: the form the book expounds is Fisher's own re-derivation of the distribution's theory (1925). Fourth application of the Fisher-MLE shape (Bradley-Terry, MDN, treatise, Fisher 1926, here)."
+  },
+  {
+   "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+   "reason": "Fail-closed partial on the book's own publication history: cited in the sources list, but the 2nd-edition preface (1928) states estimation 'received only general discussion in the first edition', and the estimation chapter (Ch. IX) was added only in 1928 - the 1925 book's procedures run on the specific distribution papers, not on the estimation criteria. Citation without instantiation. Consistent with the treatise disposition."
+  },
+  {
+   "name": "Fisher, On the interpretation of chi-square from contingency tables (1922) / Fisher, On the probable error of a coefficient of correlation (1921)",
+   "reason": "Both directness-pass, leap-gate rejections: the exact forms Chapters IV and VI instantiate (corrected degrees of freedom; the z-transformation), cited in the book's own sources list - and both component-shaped toward the codification leap. Pearson (1900) is mediated via the 1922 paper and Pearson (1896) via the 1921 paper: in each lineage the channel to the book is Fisher's reworking, not the biometric original."
+  },
+  {
+   "name": "Galton, Natural Inheritance (1889)",
+   "reason": "mediated_via: Fisher (1918). CORRECTION TO THE BRIEF, verified against the graph before scouting: no Galton node existed in run-01 - Galton entered this expansion as a creation candidate, not a link, and leaves it mediated through the 1918 reworking that the book's Chapter VII generalizes."
+  },
+  {
+   "name": "Fisher and Mackenzie, Studies in crop variation II (1923)",
+   "reason": "Instance at this parent (directness partial, fail-closed): Chapter VIII (Further Applications of ANOVA) re-presents such analyses as worked applications of a machinery whose exposition (Ch. VII) is built on the 1918 subject. The same paper was admitted at Fisher 1926 in this same session as the origin artifact, and failed the leap gate at the treatise as a demonstration instance - origin at the essay, instance at the book and the treatise, each argued from the child's own documents."
+  },
+  {
+   "name": "Pearson's tables (Incomplete Gamma-function 1922; Tables for Statisticians and Biometricians 1914) and Student's tables (1917)",
+   "reason": "Instruments wielded, not ancestry: supplying its OWN tables is part of the book's leap. The 1917 tables are additionally a rendering of the 1908 component, whose hearing is its own record."
+  },
+  {
+   "name": "Yule (1917), Kelley (1923), Elderton (1902)",
+   "reason": "Incumbent textbooks: all three are cited in the book's sources list - Yule for data/methods in examples - and citation as a data source is not machinery consumption. The book's leap displaces exactly this textbook tradition with exact small-sample methods the incumbents lack."
+  }
+ ],
+ "notes": "Grounding: the book's own 'Sources used for data and methods' list (York University Classics in the History of Psychology) read directly - it cites Fisher (1921) foundations, Fisher (1921) z-transformation, Fisher (1922) chi-square interpretation, Fisher & Mackenzie (1923), Fisher, Thornton & Mackenzie (1922), Mercer & Hall (1911), Pearson (1900), Pearson (1922) Gamma tables, Sheppard (1907), 'Student' (1907/1908/1917), Elderton (1902), Miner (1922), Yule (1917), Kelley (1923); the 1st-edition contents (Ch. VII 'Intraclass Correlations and the Analysis of Variance'; Ch. IX on estimation added only in the 2nd edition, 1928) and the 1st-edition preface (Rothamsted, Feb 1925; thanks Gosset, Somerfield, Mackenzie). Miner (1922) from the sources list was NOT scouted: its identity could not be grounded from the sources read, and ungrounded candidates are not filed. BRIEF CORRECTION (recorded in the Fisher 1926 record as well): the brief's open question 'Galton link (node?)' is answered - no Galton, Pearson, Student, or Gosset node existed at session start; the graph check was done before scouting. Fisher & Mackenzie (1923) MATCHED the node created in expansion 1 of this session, so its hearing here was a link hearing; rejected as an instance, no edge created, node unaffected. Verification: both survivors provisional after the four attacks; the via-Fisher-&-Mackenzie mediation attack on the 1918 edge was run and failed (an application instance cannot mediate its own machinery's exposition); the Q1 attack on Mercer & Hall (Wood & Stratton 1910 as near-miss prior form) was run and answered by scope. InstructGPT/RLHF flag not surfaced by either of session 34's expansions.",
+ "totals_after": {
+  "nodes": 178,
+  "edges": 226,
+  "budget": "178/2000",
+  "expansions_done": 78
+ }
+}
