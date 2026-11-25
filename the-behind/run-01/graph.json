@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T06:00:22+00:00",
-  "expansions_done": 49,
-  "raw_candidates_seen": 2781,
+  "updated_at": "2026-11-25T06:03:35+00:00",
+  "expansions_done": 50,
+  "raw_candidates_seen": 2799,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -13484,6 +13484,95 @@
     "name": "Calgary corpus (1989)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+    "reason": "mediated_via: Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)",
+    "at": "2026-11-25T06:03:25+00:00",
+    "mediated_via": "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "Shade Trees (Cook, 1984)",
+    "reason": "mediated_via: RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+    "at": "2026-11-25T06:03:25+00:00",
+    "mediated_via": "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "Perlin's Image Synthesizer shading language (1985)",
+    "reason": "mediated_via: RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+    "at": "2026-11-25T06:03:25+00:00",
+    "mediated_via": "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "Direct3D shader assembly - DirectX 8 shader models (2000)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "GeForce 3 - programmable consumer GPU (NVIDIA, 2001)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "C programming language (1972)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "PixelFlow real-time shading language (Olano & Lastra, 1998)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "Interactive Shading Language - ISL (SGI, 2000)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "OpenGL 2.0 Shading Language white paper (3Dlabs, 2001)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "NVIDIA (1993)",
+    "reason": "mediated_via: Cg - C for Graphics (NVIDIA, 2002)",
+    "at": "2026-11-25T06:03:25+00:00",
+    "mediated_via": "Cg - C for Graphics (NVIDIA, 2002)"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "Pixar (1986)",
+    "reason": "mediated_via: RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+    "at": "2026-11-25T06:03:25+00:00",
+    "mediated_via": "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "Microsoft (1975)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "OpenGL (SGI, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
+   },
+   {
+    "parent_id": "high-level-shading-language-hlsl-2002-2002",
+    "name": "Pixel-Planes 5 programmable shading interface (UNC, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:03:25+00:00"
    }
   ]
  },
@@ -17153,7 +17242,7 @@
    "prior_state": "Shader assembly languages (vs_1_1/ps_1_x and OpenGL extension equivalents); RenderMan's language confined to offline rendering; Stanford's RTSL an academic prototype.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -17197,6 +17286,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T05:55:00+00:00"
+  },
+  "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001": {
+   "id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+   "name": "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)",
+   "aliases": [],
+   "year": 2001,
+   "domain": "graphics languages",
+   "type": "method",
+   "definition": "The Stanford Real-Time Shading Language system (Proudfoot, Mark, Tzvetkov & Hanrahan, SIGGRAPH 2001): a procedural shading language for programmable graphics hardware organized around computation frequencies (vertex, fragment), with a retargetable compiler mapping one procedure to hardware or CPU back ends.",
+   "bottleneck": "Before RTSL (2001), programmable graphics hardware could be addressed only in vendor assembly or through fixed-function configuration, because no language system organized shading computations by their computation frequency and compiled them retargetably to the hardware.",
+   "leap": "The Stanford Real-Time Shading Language system (Proudfoot, Mark, Tzvetkov & Hanrahan, SIGGRAPH 2001): a procedural shading language whose programs mix vertex and fragment computations in one procedure, compiled by frequency-specific back ends to programmable hardware, the host CPU, or multipass OpenGL - the design the commercial Cg/HLSL language directly inherited.",
+   "prior_state": "Programmable hardware programmed in assembly (DirectX 8 shader models, OpenGL extensions); RenderMan's shading language confined to offline rendering; hardware shading research (PixelFlow) tied to one-off research machines.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "A Real-Time Procedural Shading System for Programmable Graphics Hardware (Stanford)",
+     "url": "http://graphics.stanford.edu/papers/rtsl/"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Provisional. Q1 attack partially lands: PixelFlow (Olano & Lastra, 1998) had already demonstrated a RenderMan-like shading language on real graphics hardware, so RTSL's impossibility flip is narrower than 'first on hardware' - its defensible form is the first retargetable language system for commodity programmable GPUs (multiple back ends: vertex hardware, fragment hardware, CPU, multipass), and the node stands on that form. Multiples on Q3 recorded: ISL (SGI, 2000) and PixelFlow are near-simultaneous alternative real-time shading systems, consistent with the Q3 partial already scored. Date and direction check out (SIGGRAPH 2001; the channel is documented by The Cg Tutorial's heritage account and by William R. Mark's authorship on both the RTSL and Cg papers). Mediation attack fails to land: the only candidate intermediate is Cg, which is the child's coeval twin (same co-design, same Dec. 2002 ship month), not a step between RTSL and HLSL - RTSL feeds the shared design that both twins embody.",
+    "at": "2026-11-25T06:03:35+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T06:03:25+00:00"
   }
  },
  "edges": [
@@ -32370,6 +32488,103 @@
     "counterfactual": "Remove Direct3D 9 and the D3D10 effort has nothing to redesign and no one to redesign it with: the parent's own design paper (Blythe 2006) names the Direct3D system (Gray 2003) as one of the two prior architectures it succeeds; the leap is defined term-by-term against D3D9's model (caps vs guaranteed set, split shader models vs common core, divergent precision vs unified rules); and the multi-year IHV collaboration the paper describes was a collaboration OF the D3D9 ecosystem - the vendors, driver teams and developer base D3D9 created. The G70-at-G80 discrimination does not apply: G70 was a chip whose mechanisms the child did not consume, while D3D9 is the artifact whose architecture, authoring language and ecosystem the parent directly reworks - the Smalltalk-72-at--76 pattern, where the parent IS the redesign of this stratum.",
     "mediator": null,
     "evidence": "Blythe (2006), The Direct3D 10 System, Introduction and motivations; Microsoft Learn, Graphics APIs in Windows."
+   }
+  },
+  {
+   "predecessor_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+   "successor_id": "high-level-shading-language-hlsl-2002-2002",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "RTSL flipped real-time shading of programmable hardware from assembly-only to a high-level language: its paper demonstrates complex programmed shaders running in real time on a variety of programmable hardware, which no earlier system had done in language form.",
+     "source": "",
+     "falsification": "Dies if an earlier system is documented demonstrating a high-level shading language running complex shaders in real time on programmable graphics hardware."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative: RTSL opened the design space the commercial languages occupy - computation frequencies, one procedure spanning vertex and fragment stages, retargetable back ends - the space Cg/HLSL then industrialized.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity capped: the 2002 design had other documented inputs (RenderMan's model, C's philosophy), so another path existed in principle; the path actually taken is documented to run through RTSL (Tutorial heritage + the Mark carrier), so partial, not fail.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse in the authoring dimension: one RTSL procedure could be mapped to vertex hardware, fragment hardware, the host CPU or multipass OpenGL by the compiler's back ends - replacing per-target hand-written assembly for each platform with a single source.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "RTSL made nothing previously unobservable measurable; it is a language system, not an instrument or metric.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Understanding: the computation-frequency model is an explanatory model of where shading computation lives (per-vertex, per-fragment, per-object) that lets designers place operations deliberately - the model the 2002 language inherits.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: a single procedure spanning more than one computation frequency behind a unified interface is an abstraction others build on without knowing the hardware back end - the profile/back-end split the commercial languages ship.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach was real but narrow: RTSL's influence ran into the commercial graphics languages rather than across fields; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed: retargetable compilation shortened the research experiment loop across hardware targets; the production-scale loop collapse belongs to the 2002 languages themselves. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement: RTSL itself, a research prototype, displaced no commercial practice; within the lineage that shipped, its design displaced the assembly-first approach. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality at this parent is documentary: the named direct ancestor in the child design's own tutorial, with a named human carrier (Mark) on both author lists.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility: the frequency/unified-procedure model persists in every modern shading language, but RTSL the artifact was superseded within a year by its own descendants. Partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T06:03:25+00:00",
+   "leap": {
+    "prior_state": "By 2001-02 GPUs had become programmable (DirectX 8 / GeForce 3) but only in per-vendor shader assembly (vs_1_1/ps_1_x and OpenGL extension equivalents); the one mature shading language, RenderMan's, was confined to offline rendering, and Stanford's RTSL was an academic prototype demonstrating a real-time shading language on programmable hardware.",
+    "jump": "HLSL (Microsoft, with DirectX 9.0, Dec. 2002; co-designed with NVIDIA's Cg as one language under two names): a C-like high-level shading language with a compiler targeting the shader models - shader programs became portable source code instead of per-target assembly, and HLSL became the required language of Direct3D 10's unified shader model.",
+    "date": 2002
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove RTSL and the 2002 language loses its documented direct ancestor: The Cg Tutorial traces Cg's heritage to RTSL as the most direct ancestor, and William R. Mark - an RTSL author - physically carried the design from Stanford into the Cg design team (he is a Cg paper author, SIGGRAPH 2003). HLSL is the same co-designed language on the Microsoft side, so the channel reaches the parent undivided. Mediation check: the only candidate M is Cg, but Cg is the parent's coeval twin - same design, same ship month (Dec. 2002) - not an intermediate step in time or derivation; a twin cannot mediate. No other milestone sits between RTSL (2001) and the parent (2002).",
+    "mediator": null,
+    "evidence": "The Cg Tutorial heritage account (Cg's ancestry traced to RTSL first); Proudfoot, Mark, Tzvetkov & Hanrahan, SIGGRAPH 2001 (abstract: computation frequencies, unified interface, retargetable compiler); Mark, Glanville, Akeley & Kilgard, SIGGRAPH 2003 (Cg paper author list)."
    }
   }
  ],
@@ -130199,6 +130414,656 @@
       }
      },
      "similarity": 0.8289,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "high-level-shading-language-hlsl-2002-2002": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Cg directly enabled HLSL's leap as its co-designed twin: NVIDIA and Microsoft agreed a common syntax and feature set during 2001-02, NVIDIA's own tutorial calls Cg and HLSL 'the same language' under two names, and the two shipped the same month (Dec. 2002) - the identity boundary the evaluator must adjudicate: one language design, two vendor artifacts.",
+     "definition": "NVIDIA's Cg ('C for Graphics', announced 13 June 2002, shipped Dec. 2002): a C-like high-level shading language and compiler developed in close collaboration with Microsoft, retargetable across Direct3D and OpenGL profiles - the twin implementation of the design that shipped inside DirectX 9 as HLSL.",
+     "domain": "graphics languages",
+     "lens": "L2",
+     "name": "Cg - C for Graphics (NVIDIA, 2002)",
+     "source_title": "Cg (CodeArchaeology)",
+     "source_url": "https://www.codearchaeology.dev/languages/cg/",
+     "type": "other",
+     "year": 2002
+    },
+    {
+     "causal_claim": "RTSL directly enabled HLSL's leap as the documented direct ancestor of the shared Cg/HLSL design: The Cg Tutorial traces Cg's heritage to RTSL first, RTSL's computation-frequency model and retargetable compiler are the design the 2002 language inherits, and its author William R. Mark physically carried it from Stanford into the Cg design team.",
+     "definition": "The Stanford Real-Time Shading Language system (Proudfoot, Mark, Tzvetkov & Hanrahan, SIGGRAPH 2001): a procedural shading language for programmable graphics hardware organized around computation frequencies (vertex, fragment), with a retargetable compiler mapping one procedure to hardware or CPU back ends.",
+     "domain": "graphics languages",
+     "lens": "L2",
+     "name": "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)",
+     "source_title": "A Real-Time Procedural Shading System for Programmable Graphics Hardware (Stanford)",
+     "source_url": "http://graphics.stanford.edu/papers/rtsl/",
+     "type": "method",
+     "year": 2001
+    },
+    {
+     "causal_claim": "RTSL directly enabled HLSL's leap through the creator channel: its designers (Mark, Hanrahan) are the people who built the 2002 language - Mark is a Cg paper author, Hanrahan co-authored both the RenderMan shading language and RTSL - so the parent's design knowledge physically arrived via RTSL's team.",
+     "definition": "The Stanford Real-Time Shading Language system (Proudfoot, Mark, Tzvetkov & Hanrahan, SIGGRAPH 2001): a procedural shading language for programmable graphics hardware organized around computation frequencies (vertex, fragment), with a retargetable compiler mapping one procedure to hardware or CPU back ends.",
+     "domain": "graphics languages",
+     "lens": "L20",
+     "name": "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)",
+     "source_title": "Cg (CodeArchaeology)",
+     "source_url": "https://www.codearchaeology.dev/languages/cg/",
+     "type": "method",
+     "year": 2001
+    },
+    {
+     "causal_claim": "The RenderMan Shading Language directly enabled HLSL's leap as the model the shared design was built to bring to hardware: NVIDIA states Cg took its inspiration from RenderMan, and McCool's shading-language overview records that RenderMan's language 'strongly influenced the design of modern real-time shading languages, particularly the idea of uniform and varying parameters' - concepts inside HLSL's own parameter model.",
+     "definition": "Pixar's RenderMan Shading Language (Upstill, The RenderMan Companion, 1989; Hanrahan & Lawson, SIGGRAPH 1990): a C-like language for writing surface, light and displacement shaders in offline rendering - the first widely used shading language and the design model for all its successors.",
+     "domain": "graphics languages",
+     "lens": "L19",
+     "name": "RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+     "source_title": "Shading Language Overview (McCool, 2004)",
+     "source_url": "https://www.researchgate.net/publication/242385062_Shading_Language_Overview",
+     "type": "other",
+     "year": 1990
+    },
+    {
+     "causal_claim": "Shade Trees directly enabled HLSL's leap by originating the shading-language concept the parent embodies: Cook's 1984 system first let appearance be specified as parsed shading expressions with typed shaders (surface, light, atmosphere) - the idea Pixar built RenderMan on and the 2002 language ultimately carried to hardware.",
+     "definition": "Robert Cook's Shade Trees (SIGGRAPH 1984): a mechanism for expressing shading as composable expression trees with distinct shader types - the first published shading-language system, from which the RenderMan line descends.",
+     "domain": "computer graphics",
+     "lens": "L5",
+     "name": "Shade Trees (Cook, 1984)",
+     "source_title": "Early stories of shading on graphics hardware (Olano)",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+     "type": "method",
+     "year": 1984
+    },
+    {
+     "causal_claim": "Perlin's Image Synthesizer directly enabled HLSL's leap by first expanding shade-tree expressions into a full procedural language - functions, loops, branching, and the noise function - the completeness of language (not just expressions) that every later shading language, HLSL included, takes as its template.",
+     "definition": "Ken Perlin's Image Synthesizer (SIGGRAPH 1985): a full procedural shading/texturing language with functions, control flow and solid texture, introducing the noise function - the second founding document of the shading-language line.",
+     "domain": "computer graphics",
+     "lens": "L19",
+     "name": "Perlin's Image Synthesizer shading language (1985)",
+     "source_title": "Early stories of shading on graphics hardware (Olano)",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+     "type": "method",
+     "year": 1985
+    },
+    {
+     "causal_claim": "DirectX 8's shader assembly directly enabled HLSL's leap as the incumbent it layers over and is defined against: HLSL exists because vertex/pixel programs in vs_1_1/ps_1_x assembly were unportable and specialist-written, and HLSL's compiler targets exactly those shader-model instruction sets - the assembly models are the machine the language abstracts.",
+     "definition": "DirectX 8.0's programmable pipeline (2000): the first mainstream API exposing GPU vertex and pixel programmability, programmed in low-level shader assembly (vs_1_0/ps_1_0 and successors) tied to specific hardware generations.",
+     "domain": "graphics APIs",
+     "lens": "L6",
+     "name": "Direct3D shader assembly - DirectX 8 shader models (2000)",
+     "source_title": "HLSL (CodeArchaeology)",
+     "source_url": "https://www.codearchaeology.dev/languages/hlsl/",
+     "type": "other",
+     "year": 2000
+    },
+    {
+     "causal_claim": "The GeForce 3 directly enabled HLSL's leap by creating the programmable hardware the language is for: the first mass-market GPU with programmable vertex and pixel stages (Feb. 2001, with DirectX 8) - the demand and the target that made a high-level shading language necessary rather than speculative.",
+     "definition": "NVIDIA's GeForce 3 (2001): the first consumer GPU with programmable vertex and pixel shader units (nfiniteFX engine), launched alongside DirectX 8 - the hardware that opened the programmable-graphics era HLSL was written for.",
+     "domain": "graphics hardware",
+     "lens": "L9",
+     "name": "GeForce 3 - programmable consumer GPU (NVIDIA, 2001)",
+     "source_title": "Nvidia readies C for Graphics (GameSpot, 2002)",
+     "source_url": "https://www.gamespot.com/articles/nvidia-readies-c-for-graphics/1100-2870699/",
+     "type": "device",
+     "year": 2001
+    },
+    {
+     "causal_claim": "C directly enabled HLSL's leap as its documented syntactic and philosophical donor: the Cg design paper states the language follows 'the philosophy of C', and HLSL's C-like syntax, types and control flow are the reason C programmers could write shaders without learning a new paradigm.",
+     "definition": "The C programming language (Kernighan & Ritchie, 1970s): the systems language whose syntax and philosophy the 2002 shading-language design deliberately adopted ('Cg follows the philosophy of C' - Mark et al., SIGGRAPH 2003).",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "C programming language (1972)",
+     "source_title": "Cg (CodeArchaeology)",
+     "source_url": "https://www.codearchaeology.dev/languages/cg/",
+     "type": "other",
+     "year": 1972
+    },
+    {
+     "causal_claim": "PixelFlow's shading work directly enabled HLSL's leap as the academic proof that high-level shading belonged on graphics hardware at all: Olano & Lastra's SIGGRAPH 1998 system implemented a RenderMan-like language on real hardware years before commodity GPUs, the demonstration line (with RTSL) that made a commercial hardware shading language credible.",
+     "definition": "Marc Olano and Anselmo Lastra's real-time shading language work on the PixelFlow hardware (UNC; SIGGRAPH 1998): a RenderMan-model shading language compiled to a SIMD graphics machine - the first high-level programmable shading on actual graphics hardware.",
+     "domain": "graphics languages",
+     "lens": "L19",
+     "name": "PixelFlow real-time shading language (Olano & Lastra, 1998)",
+     "source_title": "Early stories of shading on graphics hardware (Olano)",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+     "type": "method",
+     "year": 1998
+    },
+    {
+     "causal_claim": "SGI's Interactive Shading Language directly enabled HLSL's leap as the commercial incumbent attempt on the OpenGL side: a shading-language specification compiled to multipass OpenGL (SIGGRAPH 2000), part of the documented field of attempts that defined what a production shading language had to do better.",
+     "definition": "SGI's Interactive Shading Language (Peercy et al., SIGGRAPH 2000): a RenderMan-like shading language compiled to multipass fixed-function OpenGL implementations - the incumbent vendor attempt at interactive shading on the OpenGL side.",
+     "domain": "graphics languages",
+     "lens": "L6",
+     "name": "Interactive Shading Language - ISL (SGI, 2000)",
+     "source_title": "Shading Language Overview (McCool, 2004)",
+     "source_url": "https://www.researchgate.net/publication/242385062_Shading_Language_Overview",
+     "type": "method",
+     "year": 2000
+    },
+    {
+     "causal_claim": "The OpenGL 2.0 shading-language white paper directly enabled HLSL's leap as the rival design in circulation from October 2001: 3Dlabs' proposal (the future GLSL) fixed the competing specification the Microsoft/NVIDIA design was positioned against in the same standardization window.",
+     "definition": "3Dlabs' OpenGL 2.0 Shading Language white paper (Baldwin, Oct. 2001): the proposal that became GLSL - a C-like shading language for OpenGL, circulating as the rival standard design while Cg/HLSL were being agreed.",
+     "domain": "graphics standards",
+     "lens": "L6",
+     "name": "OpenGL 2.0 Shading Language white paper (3Dlabs, 2001)",
+     "source_title": "Shading Language Overview (McCool, 2004)",
+     "source_url": "https://www.researchgate.net/publication/242385062_Shading_Language_Overview",
+     "type": "other",
+     "year": 2001
+    },
+    {
+     "causal_claim": "NVIDIA directly enabled HLSL's leap as the co-designing institution: its Cg team sat in the design process that fixed the shared syntax and feature set, and its compiler work (cgc targeting DirectX profiles) is part of how the language became real in 2002 - the institution acting through the co-design itself.",
+     "definition": "NVIDIA Corporation (founded 1993): the GPU company whose Cg language team co-designed the 2002 shading language with Microsoft and shipped the twin compiler - already in this graph as the institution behind CUDA and the G80 line.",
+     "domain": "graphics industry",
+     "lens": "L21",
+     "name": "NVIDIA (1993)",
+     "source_title": "NVIDIA unleashes C for Graphics (InternetNews, June 2002)",
+     "source_url": "https://www.internetnews.com/developer/nvidia-unleashes-c-for-graphics/",
+     "type": "institution",
+     "year": 1993
+    },
+    {
+     "causal_claim": "Pixar directly enabled HLSL's leap as the institution that carried the shading-language idea into an industry standard: Pixar built Cook's and Perlin's concepts into RenderMan and published the language (Companion 1989; Hanrahan & Lawson 1990), creating the model every real-time language, HLSL included, measures itself against.",
+     "definition": "Pixar (1986): the animation company whose RenderMan system and shading language set the offline-rendering standard and supplied the design model - and, via Hanrahan, key personnel - for the real-time shading languages.",
+     "domain": "computer graphics",
+     "lens": "L21",
+     "name": "Pixar (1986)",
+     "source_title": "Early stories of shading on graphics hardware (Olano)",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+     "type": "institution",
+     "year": 1986
+    },
+    {
+     "causal_claim": "Microsoft directly enabled HLSL's leap as the institution that specified DirectX 9.0, employed the language's designers, and shipped the FXC compiler - recorded for completeness; the evaluator must weigh the self-carriage rule (the parent IS Microsoft's artifact) against it.",
+     "definition": "Microsoft Corporation (founded 1975): the platform company whose Direct3D team designed HLSL as the shading language of DirectX 9.0 and shipped its compiler - the parent artifact's own institution.",
+     "domain": "software industry",
+     "lens": "L21",
+     "name": "Microsoft (1975)",
+     "source_title": "HLSL (CodeArchaeology)",
+     "source_url": "https://www.codearchaeology.dev/languages/hlsl/",
+     "type": "institution",
+     "year": 1975
+    },
+    {
+     "causal_claim": "OpenGL directly enabled HLSL's leap as the rival standard whose existence structured the design: HLSL is deliberately Direct3D-only, and the shared Cg design's cross-API ambition (with Cg compiling to OpenGL profiles) was defined against OpenGL's lack of a standard shading language before GLSL.",
+     "definition": "OpenGL (SGI, 1992): the open cross-platform graphics API standard - the incumbent API ecosystem, lacking a standard high-level shading language until GLSL (2004), against which the Direct3D-side language design positioned itself.",
+     "domain": "graphics standards",
+     "lens": "L16",
+     "name": "OpenGL (SGI, 1992)",
+     "source_title": "Shading Language Overview (McCool, 2004)",
+     "source_url": "https://www.researchgate.net/publication/242385062_Shading_Language_Overview",
+     "type": "other",
+     "year": 1992
+    },
+    {
+     "causal_claim": "DirectX 9.0 directly enabled HLSL's leap as its launch vehicle: HLSL shipped inside DirectX 9.0 (Dec. 2002) as the high-level alternative to its shader assembly - recorded so the evaluator can adjudicate carrier vs predecessor on the documents (same release, same month).",
+     "definition": "Microsoft's DirectX 9.0 / Direct3D 9 (Dec. 2002): the API release that introduced Shader Model 2.0 and shipped HLSL as its high-level shading language - the platform the parent is a component of.",
+     "domain": "graphics APIs",
+     "lens": "L15",
+     "name": "DirectX 9.0 / Direct3D 9 (Microsoft, 2002)",
+     "source_title": "HLSL (CodeArchaeology)",
+     "source_url": "https://www.codearchaeology.dev/languages/hlsl/",
+     "type": "other",
+     "year": 2002
+    },
+    {
+     "causal_claim": "UNC's Pixel-Planes work directly enabled HLSL's leap as the earliest end-user programmable shading in graphics hardware: by 1992 the Pixel-Planes 5 group had an assembly interface users could program directly - the negative-space record of how far hardware programmability got without a high-level language, defining the gap the 2002 language closed.",
+     "definition": "The University of North Carolina's Pixel-Planes 5 project (by 1992): a processor-per-pixel SIMD machine whose group built an assembly-language interface for end-user programmable shading - the earliest documented user-programmable shading in graphics hardware.",
+     "domain": "graphics hardware research",
+     "lens": "L7",
+     "name": "Pixel-Planes 5 programmable shading interface (UNC, 1992)",
+     "source_title": "Early stories of shading on graphics hardware (Olano)",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+     "type": "method",
+     "year": 1992
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+      "candidate": {
+       "causal_claim": "RTSL directly enabled HLSL's leap as the documented direct ancestor of the shared Cg/HLSL design: The Cg Tutorial traces Cg's heritage to RTSL first, RTSL's computation-frequency model and retargetable compiler are the design the 2002 language inherits, and its author William R. Mark physically carried it from Stanford into the Cg design team.",
+       "definition": "The Stanford Real-Time Shading Language system (Proudfoot, Mark, Tzvetkov & Hanrahan, SIGGRAPH 2001): a procedural shading language for programmable graphics hardware organized around computation frequencies (vertex, fragment), with a retargetable compiler mapping one procedure to hardware or CPU back ends.",
+       "domain": "graphics languages",
+       "lens": "L2",
+       "name": "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)",
+       "source_title": "A Real-Time Procedural Shading System for Programmable Graphics Hardware (Stanford)",
+       "source_url": "http://graphics.stanford.edu/papers/rtsl/",
+       "type": "method",
+       "year": 2001
+      },
+      "members": [
+       1,
+       2
+      ],
+      "member_names": [
+       "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)",
+       "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+      "candidate": {
+       "causal_claim": "The RenderMan Shading Language directly enabled HLSL's leap as the model the shared design was built to bring to hardware: NVIDIA states Cg took its inspiration from RenderMan, and McCool's shading-language overview records that RenderMan's language 'strongly influenced the design of modern real-time shading languages, particularly the idea of uniform and varying parameters' - concepts inside HLSL's own parameter model.",
+       "definition": "Pixar's RenderMan Shading Language (Upstill, The RenderMan Companion, 1989; Hanrahan & Lawson, SIGGRAPH 1990): a C-like language for writing surface, light and displacement shaders in offline rendering - the first widely used shading language and the design model for all its successors.",
+       "domain": "graphics languages",
+       "lens": "L19",
+       "name": "RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+       "source_title": "Shading Language Overview (McCool, 2004)",
+       "source_url": "https://www.researchgate.net/publication/242385062_Shading_Language_Overview",
+       "type": "other",
+       "year": 1990
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "RenderMan Shading Language (Hanrahan & Lawson, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "shade-trees-cook-1984-1984",
+      "candidate": {
+       "causal_claim": "Shade Trees directly enabled HLSL's leap by originating the shading-language concept the parent embodies: Cook's 1984 system first let appearance be specified as parsed shading expressions with typed shaders (surface, light, atmosphere) - the idea Pixar built RenderMan on and the 2002 language ultimately carried to hardware.",
+       "definition": "Robert Cook's Shade Trees (SIGGRAPH 1984): a mechanism for expressing shading as composable expression trees with distinct shader types - the first published shading-language system, from which the RenderMan line descends.",
+       "domain": "computer graphics",
+       "lens": "L5",
+       "name": "Shade Trees (Cook, 1984)",
+       "source_title": "Early stories of shading on graphics hardware (Olano)",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+       "type": "method",
+       "year": 1984
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Shade Trees (Cook, 1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "perlin-s-image-synthesizer-shading-language-1985-1985",
+      "candidate": {
+       "causal_claim": "Perlin's Image Synthesizer directly enabled HLSL's leap by first expanding shade-tree expressions into a full procedural language - functions, loops, branching, and the noise function - the completeness of language (not just expressions) that every later shading language, HLSL included, takes as its template.",
+       "definition": "Ken Perlin's Image Synthesizer (SIGGRAPH 1985): a full procedural shading/texturing language with functions, control flow and solid texture, introducing the noise function - the second founding document of the shading-language line.",
+       "domain": "computer graphics",
+       "lens": "L19",
+       "name": "Perlin's Image Synthesizer shading language (1985)",
+       "source_title": "Early stories of shading on graphics hardware (Olano)",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+       "type": "method",
+       "year": 1985
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Perlin's Image Synthesizer shading language (1985)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "direct3d-shader-assembly-directx-8-shader-models-2000-2000",
+      "candidate": {
+       "causal_claim": "DirectX 8's shader assembly directly enabled HLSL's leap as the incumbent it layers over and is defined against: HLSL exists because vertex/pixel programs in vs_1_1/ps_1_x assembly were unportable and specialist-written, and HLSL's compiler targets exactly those shader-model instruction sets - the assembly models are the machine the language abstracts.",
+       "definition": "DirectX 8.0's programmable pipeline (2000): the first mainstream API exposing GPU vertex and pixel programmability, programmed in low-level shader assembly (vs_1_0/ps_1_0 and successors) tied to specific hardware generations.",
+       "domain": "graphics APIs",
+       "lens": "L6",
+       "name": "Direct3D shader assembly - DirectX 8 shader models (2000)",
+       "source_title": "HLSL (CodeArchaeology)",
+       "source_url": "https://www.codearchaeology.dev/languages/hlsl/",
+       "type": "other",
+       "year": 2000
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Direct3D shader assembly - DirectX 8 shader models (2000)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "geforce-3-programmable-consumer-gpu-nvidia-2001-2001",
+      "candidate": {
+       "causal_claim": "The GeForce 3 directly enabled HLSL's leap by creating the programmable hardware the language is for: the first mass-market GPU with programmable vertex and pixel stages (Feb. 2001, with DirectX 8) - the demand and the target that made a high-level shading language necessary rather than speculative.",
+       "definition": "NVIDIA's GeForce 3 (2001): the first consumer GPU with programmable vertex and pixel shader units (nfiniteFX engine), launched alongside DirectX 8 - the hardware that opened the programmable-graphics era HLSL was written for.",
+       "domain": "graphics hardware",
+       "lens": "L9",
+       "name": "GeForce 3 - programmable consumer GPU (NVIDIA, 2001)",
+       "source_title": "Nvidia readies C for Graphics (GameSpot, 2002)",
+       "source_url": "https://www.gamespot.com/articles/nvidia-readies-c-for-graphics/1100-2870699/",
+       "type": "device",
+       "year": 2001
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "GeForce 3 - programmable consumer GPU (NVIDIA, 2001)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "c-programming-language-1972-1972",
+      "candidate": {
+       "causal_claim": "C directly enabled HLSL's leap as its documented syntactic and philosophical donor: the Cg design paper states the language follows 'the philosophy of C', and HLSL's C-like syntax, types and control flow are the reason C programmers could write shaders without learning a new paradigm.",
+       "definition": "The C programming language (Kernighan & Ritchie, 1970s): the systems language whose syntax and philosophy the 2002 shading-language design deliberately adopted ('Cg follows the philosophy of C' - Mark et al., SIGGRAPH 2003).",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "C programming language (1972)",
+       "source_title": "Cg (CodeArchaeology)",
+       "source_url": "https://www.codearchaeology.dev/languages/cg/",
+       "type": "other",
+       "year": 1972
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "C programming language (1972)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pixelflow-real-time-shading-language-olano-lastra-1998-1998",
+      "candidate": {
+       "causal_claim": "PixelFlow's shading work directly enabled HLSL's leap as the academic proof that high-level shading belonged on graphics hardware at all: Olano & Lastra's SIGGRAPH 1998 system implemented a RenderMan-like language on real hardware years before commodity GPUs, the demonstration line (with RTSL) that made a commercial hardware shading language credible.",
+       "definition": "Marc Olano and Anselmo Lastra's real-time shading language work on the PixelFlow hardware (UNC; SIGGRAPH 1998): a RenderMan-model shading language compiled to a SIMD graphics machine - the first high-level programmable shading on actual graphics hardware.",
+       "domain": "graphics languages",
+       "lens": "L19",
+       "name": "PixelFlow real-time shading language (Olano & Lastra, 1998)",
+       "source_title": "Early stories of shading on graphics hardware (Olano)",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+       "type": "method",
+       "year": 1998
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "PixelFlow real-time shading language (Olano & Lastra, 1998)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "interactive-shading-language-isl-sgi-2000-2000",
+      "candidate": {
+       "causal_claim": "SGI's Interactive Shading Language directly enabled HLSL's leap as the commercial incumbent attempt on the OpenGL side: a shading-language specification compiled to multipass OpenGL (SIGGRAPH 2000), part of the documented field of attempts that defined what a production shading language had to do better.",
+       "definition": "SGI's Interactive Shading Language (Peercy et al., SIGGRAPH 2000): a RenderMan-like shading language compiled to multipass fixed-function OpenGL implementations - the incumbent vendor attempt at interactive shading on the OpenGL side.",
+       "domain": "graphics languages",
+       "lens": "L6",
+       "name": "Interactive Shading Language - ISL (SGI, 2000)",
+       "source_title": "Shading Language Overview (McCool, 2004)",
+       "source_url": "https://www.researchgate.net/publication/242385062_Shading_Language_Overview",
+       "type": "method",
+       "year": 2000
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Interactive Shading Language - ISL (SGI, 2000)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "opengl-2-0-shading-language-white-paper-3dlabs-2001-2001",
+      "candidate": {
+       "causal_claim": "The OpenGL 2.0 shading-language white paper directly enabled HLSL's leap as the rival design in circulation from October 2001: 3Dlabs' proposal (the future GLSL) fixed the competing specification the Microsoft/NVIDIA design was positioned against in the same standardization window.",
+       "definition": "3Dlabs' OpenGL 2.0 Shading Language white paper (Baldwin, Oct. 2001): the proposal that became GLSL - a C-like shading language for OpenGL, circulating as the rival standard design while Cg/HLSL were being agreed.",
+       "domain": "graphics standards",
+       "lens": "L6",
+       "name": "OpenGL 2.0 Shading Language white paper (3Dlabs, 2001)",
+       "source_title": "Shading Language Overview (McCool, 2004)",
+       "source_url": "https://www.researchgate.net/publication/242385062_Shading_Language_Overview",
+       "type": "other",
+       "year": 2001
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "OpenGL 2.0 Shading Language white paper (3Dlabs, 2001)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nvidia-1993-1993",
+      "candidate": {
+       "causal_claim": "NVIDIA directly enabled HLSL's leap as the co-designing institution: its Cg team sat in the design process that fixed the shared syntax and feature set, and its compiler work (cgc targeting DirectX profiles) is part of how the language became real in 2002 - the institution acting through the co-design itself.",
+       "definition": "NVIDIA Corporation (founded 1993): the GPU company whose Cg language team co-designed the 2002 shading language with Microsoft and shipped the twin compiler - already in this graph as the institution behind CUDA and the G80 line.",
+       "domain": "graphics industry",
+       "lens": "L21",
+       "name": "NVIDIA (1993)",
+       "source_title": "NVIDIA unleashes C for Graphics (InternetNews, June 2002)",
+       "source_url": "https://www.internetnews.com/developer/nvidia-unleashes-c-for-graphics/",
+       "type": "institution",
+       "year": 1993
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "NVIDIA (1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pixar-1986-1986",
+      "candidate": {
+       "causal_claim": "Pixar directly enabled HLSL's leap as the institution that carried the shading-language idea into an industry standard: Pixar built Cook's and Perlin's concepts into RenderMan and published the language (Companion 1989; Hanrahan & Lawson 1990), creating the model every real-time language, HLSL included, measures itself against.",
+       "definition": "Pixar (1986): the animation company whose RenderMan system and shading language set the offline-rendering standard and supplied the design model - and, via Hanrahan, key personnel - for the real-time shading languages.",
+       "domain": "computer graphics",
+       "lens": "L21",
+       "name": "Pixar (1986)",
+       "source_title": "Early stories of shading on graphics hardware (Olano)",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+       "type": "institution",
+       "year": 1986
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Pixar (1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "microsoft-1975-1975",
+      "candidate": {
+       "causal_claim": "Microsoft directly enabled HLSL's leap as the institution that specified DirectX 9.0, employed the language's designers, and shipped the FXC compiler - recorded for completeness; the evaluator must weigh the self-carriage rule (the parent IS Microsoft's artifact) against it.",
+       "definition": "Microsoft Corporation (founded 1975): the platform company whose Direct3D team designed HLSL as the shading language of DirectX 9.0 and shipped its compiler - the parent artifact's own institution.",
+       "domain": "software industry",
+       "lens": "L21",
+       "name": "Microsoft (1975)",
+       "source_title": "HLSL (CodeArchaeology)",
+       "source_url": "https://www.codearchaeology.dev/languages/hlsl/",
+       "type": "institution",
+       "year": 1975
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Microsoft (1975)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "opengl-sgi-1992-1992",
+      "candidate": {
+       "causal_claim": "OpenGL directly enabled HLSL's leap as the rival standard whose existence structured the design: HLSL is deliberately Direct3D-only, and the shared Cg design's cross-API ambition (with Cg compiling to OpenGL profiles) was defined against OpenGL's lack of a standard shading language before GLSL.",
+       "definition": "OpenGL (SGI, 1992): the open cross-platform graphics API standard - the incumbent API ecosystem, lacking a standard high-level shading language until GLSL (2004), against which the Direct3D-side language design positioned itself.",
+       "domain": "graphics standards",
+       "lens": "L16",
+       "name": "OpenGL (SGI, 1992)",
+       "source_title": "Shading Language Overview (McCool, 2004)",
+       "source_url": "https://www.researchgate.net/publication/242385062_Shading_Language_Overview",
+       "type": "other",
+       "year": 1992
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "OpenGL (SGI, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pixel-planes-5-programmable-shading-interface-unc-1992-1992",
+      "candidate": {
+       "causal_claim": "UNC's Pixel-Planes work directly enabled HLSL's leap as the earliest end-user programmable shading in graphics hardware: by 1992 the Pixel-Planes 5 group had an assembly interface users could program directly - the negative-space record of how far hardware programmability got without a high-level language, defining the gap the 2002 language closed.",
+       "definition": "The University of North Carolina's Pixel-Planes 5 project (by 1992): a processor-per-pixel SIMD machine whose group built an assembly-language interface for end-user programmable shading - the earliest documented user-programmable shading in graphics hardware.",
+       "domain": "graphics hardware research",
+       "lens": "L7",
+       "name": "Pixel-Planes 5 programmable shading interface (UNC, 1992)",
+       "source_title": "Early stories of shading on graphics hardware (Olano)",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/",
+       "type": "method",
+       "year": 1992
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "Pixel-Planes 5 programmable shading interface (UNC, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:6:direct3d-9-2002-2002",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 6,
+       "card": {
+        "name": "Direct3D shader assembly - DirectX 8 shader models (2000)",
+        "aliases": [],
+        "year": 2000,
+        "domain": "graphics APIs",
+        "type": "other",
+        "definition": "DirectX 8.0's programmable pipeline (2000): the first mainstream API exposing GPU vertex and pixel programmability, programmed in low-level shader assembly (vs_1_0/ps_1_0 and successors) tied to specific hardware generations.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "direct3d-9-2002-2002",
+       "card": {
+        "name": "Direct3D 9 (2002)",
+        "aliases": [],
+        "year": 2002,
+        "domain": "graphics APIs",
+        "type": "other",
+        "definition": "Microsoft's Direct3D 9 API (released Dec. 2002; 9.0c/Shader Model 3.0 in 2004): the programmable vertex/pixel pipeline with per-vendor capability bits and HLSL authoring - the incumbent the D3D10 effort redesigned.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8214,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       1,
+       2
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "Cg directly enabled HLSL's leap as its co-designed twin: NVIDIA and Microsoft agreed a common syntax and feature set during 2001-02, NVIDIA's own tutorial calls Cg and HLSL 'the same language' under two names, and the two shipped the same month (Dec. 2002) - the identity boundary the evaluator must adjudicate: one language design, two vendor artifacts.",
+       "definition": "NVIDIA's Cg ('C for Graphics', announced 13 June 2002, shipped Dec. 2002): a C-like high-level shading language and compiler developed in close collaboration with Microsoft, retargetable across Direct3D and OpenGL profiles - the twin implementation of the design that shipped inside DirectX 9 as HLSL.",
+       "domain": "graphics languages",
+       "lens": "L2",
+       "name": "Cg - C for Graphics (NVIDIA, 2002)",
+       "source_title": "Cg (CodeArchaeology)",
+       "source_url": "https://www.codearchaeology.dev/languages/cg/",
+       "type": "other",
+       "year": 2002
+      },
+      "reason": "dated on/after parent year 2002"
+     },
+     {
+      "candidate": {
+       "causal_claim": "DirectX 9.0 directly enabled HLSL's leap as its launch vehicle: HLSL shipped inside DirectX 9.0 (Dec. 2002) as the high-level alternative to its shader assembly - recorded so the evaluator can adjudicate carrier vs predecessor on the documents (same release, same month).",
+       "definition": "Microsoft's DirectX 9.0 / Direct3D 9 (Dec. 2002): the API release that introduced Shader Model 2.0 and shipped HLSL as its high-level shading language - the platform the parent is a component of.",
+       "domain": "graphics APIs",
+       "lens": "L15",
+       "name": "DirectX 9.0 / Direct3D 9 (Microsoft, 2002)",
+       "source_title": "HLSL (CodeArchaeology)",
+       "source_url": "https://www.codearchaeology.dev/languages/hlsl/",
+       "type": "other",
+       "year": 2002
+      },
+      "reason": "dated on/after parent year 2002"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:6:direct3d-9-2002-2002",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 6,
+      "card": {
+       "name": "Direct3D shader assembly - DirectX 8 shader models (2000)",
+       "aliases": [],
+       "year": 2000,
+       "domain": "graphics APIs",
+       "type": "other",
+       "definition": "DirectX 8.0's programmable pipeline (2000): the first mainstream API exposing GPU vertex and pixel programmability, programmed in low-level shader assembly (vs_1_0/ps_1_0 and successors) tied to specific hardware generations.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "direct3d-9-2002-2002",
+      "card": {
+       "name": "Direct3D 9 (2002)",
+       "aliases": [],
+       "year": 2002,
+       "domain": "graphics APIs",
+       "type": "other",
+       "definition": "Microsoft's Direct3D 9 API (released Dec. 2002; 9.0c/Shader Model 3.0 in 2004): the programmable vertex/pixel pipeline with per-vendor capability bits and HLSL authoring - the incumbent the D3D10 effort redesigned.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8214,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
