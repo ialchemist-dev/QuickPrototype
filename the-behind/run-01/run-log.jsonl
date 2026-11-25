@@ -3422,3 +3422,42 @@
   "expansions_done": 117
  }
 }
+{
+ "ts": "2026-11-25T09:35:00-07:00",
+ "session": "run session 54 (v4), expansion 2 of 2",
+ "kind": "expansion",
+ "parent": "tsmc-20nm-soc-process-20soc-2014-2014",
+ "parent_name": "TSMC 20nm SoC process (20SoC, 2014)",
+ "provenance": "Parent stored fields verified COMPLETE before evaluation (no session-31 defect). Grounding: TSMC's own 2010 symposium announcement ('a planar process with enhanced high-K metal gate, novel strained silicon, and low-resistance copper Ultra-Low-K interconnects'); Chiang's symposium keynote as reported by EDN (20 nm continues planar bulk MOSFETs 'eschewing the move either to finFETs or to SOI'; strain knob 'one more notch'; 'stay with its high-k/metal-gate, gate-last formula'; new elements named: millisecond anneal, M0 slot contacts, lower-k dielectrics, double patterning, first production SMO; EUV watched, 193i committed as 'the only technology that certainly will be available'); EE Times (10-level metal; 22 nm skipped on a value calculation); KitGuru (20SOC/16FF/16FF+ share one BEOL flow). CORRECTION to the expansion-1 record: its notes said the record would ride THIS sync; in fact it was re-synced immediately and landed at commit 3b15b2c3 (the sync call's internal verify raced and reported failure on run-log.jsonl; independent GitHub-API blob-SHA verification confirmed all three files byte-exact at 3b15b2c3 - the sessions 42/51 precedent). Filing-year note: the TSMC institution filing was made at year 2014 (the parent's year) and was date-dropped by the calendar, so the decomposition judgment for the firm is NOT on this parent's record; it is noted here instead - the firm acts through its artifacts, all judged above. The InstructGPT/RLHF carried flag did not surface.",
+ "raw": 24,
+ "dry_notes": "filed for all 23 lenses: met L1, L2; shortfall with specific findings L4, L5, L6, L7, L10, L11, L12, L13, L14, L17, L19, L20, L21, L22, L23; dry: L3 (surveys postdate or are the parent's own publicity), L8 (no dataset), L9 (parent IS the process generation; machines at L14), L15 (no services), L16 dry WITH the standards-lens inversion milder form (parent implements no external standard; it IS a qualified platform), L18 (metrology era-generic)",
+ "date_dropped": 3,
+ "distinct": 21,
+ "evaluated": 21,
+ "survivors": 1,
+ "rejected": 20,
+ "mediated": 6,
+ "survivors_detail": [
+  {
+   "name": "TSMC 28 nm HKMG process generation (2011)",
+   "id": "tsmc-28-nm-hkmg-process-generation-2011-2011",
+   "is_new": true,
+   "score": 5.0,
+   "decisive": "Argued fresh at the proximate parent, the session-53 fail-closed partial at 16FF+ (formation/components, two generations removed) discharges as a direct admission: TSMC's symposium record describes 20 nm as the continuation of 28 nm's formula with mechanisms named - planar bulk MOSFETs, the gate-last high-k-last HKMG formula, strain engineering turned 'one more notch' - and the modifications named separately (double patterning, M0 slot contacts, millisecond anneal, ultra-low-k push). Ancestor-modified (formula retained and pushed; patterning and contacts new), the P100-at-V100 documentary shape at platform scale. Q3 partial: the generational counterfactual is honestly weak, and the score (5.0, below 20SoC's own 6.0 at 16FF+) prices that in."
+  }
+ ],
+ "rejections_of_note": [
+  "The assigned Cu/low-k BEOL hearing resolved as a components split landing on one mediation: damascene (LINK, existing node) mediated via the 28 nm generation - the stack 20SoC received was the predecessor platform's qualified Cu/ULK stack, five TSMC generations downstream of 1997, carried by unbroken intra-firm descent (contrast its admission at the IBM carrier, which rested on a documented cross-domain transfer); the low-k half judged separately as assigned - Black Diamond (1999) mediated via 28 nm with it, and the porous ULK class (c. 2005) fail-closed partial as the consumed component whose specific qualified instance is the firm's own and publicly unnamed.",
+  "Five of the six mediations run through the admitted 28 nm node (damascene, Black Diamond, Intel HKMG - TSMC's operative HKMG is its own gate-last form whose qualification node is 28 nm, TSMC 90 nm LINK, TSMC 40 nm); the sixth is CMP (LINK) mediated via damascene, the chain carried by its cited links. Strained silicon was not separately filed: on Chiang's record it is one of the continued formula's named knobs, and it rides inside the 28 nm admission's decisive text.",
+  "The FinFET formulation (LINK, existing node) refused as DEFINED-AGAINST with full-strength scores - the direction-discipline record: it predates the parent by fourteen years, was demonstrated in-house to 'record-setting feasibility', and was explicitly eschewed for this node. The graph now holds both directions of the formulation/20SoC relation, each judged on its own parent's documents (the formulation's child 16FF+ consumes this parent's BEOL at 6.0). Intel 22 nm Tri-Gate fail-closed partial at its second hearing - here it is not even the same transistor family; it is the rejected alternative itself.",
+  "LELE double patterning and SMO fail-closed partial as the technique pair: genuinely consumed and named in the parent's record, but both are the industry's techniques whose first TSMC production use is AT this parent - the discriminating act is the qualification, which is the parent's own work. ASML 193i scanners fail-closed partial (equipment, the 16FF+ shape argued fresh). EUV delay record refused as negative space (an absence cannot be consumed; Chiang's watching brief quoted in the record).",
+  "Apple anchor-customer commitment (2013) fail-closed partial - this expansion's institutional hearing, decided on the same discipline as the DARPA contract at expansion 1: demand explains the ramp's steepness (two GIGAFABs), not the platform's content; its artifact (the A8) is among the date-drops. The ARM SoC product form (A4, 2010) refused - a market form is not process ancestry. OIP reference flows fail-closed partial as intra-firm platform formation (the TSMC-IIPD shape). ITRS 2011 refused as a requirement specification (with the note that TSMC departed from its node naming). Dark silicon (2011) and Bohr's RC wall (1995) fail-closed partial as the diagnosis pair, the Hochreiter condition applied at both - Bohr argued fresh, its damascene partial's symmetry recorded. TSMC's own 2013 announcement record refused (a document about the advance).",
+  "Date-dropped (3, all the parent's own year 2014): Apple A8 (the anchor artifact is coeval with its platform - the A9-at-16FF+ shape), Samsung/GlobalFoundries 20LPM (the generation's rival multiple, decided by the calendar; the evaluated multiples witness is Intel Tri-Gate), and the TSMC institution filing (filed at 2014; see provenance)."
+ ],
+ "notes": "MOST CONTESTABLE ADMISSION OF THE SESSION, flagged in the 28 nm verification: the discrimination from K80/M40 at P100 rests on Chiang's continuation record naming consumed mechanisms - thinner than P100-at-V100's section-by-section whitepaper; a future session holding TSMC's 20 nm technology papers could re-argue it either way, and the verification file says so. Structural finding for the article: at a platform parent, ancestry CONCENTRATES - one predecessor platform carries the transistor formula, the interconnect stack, the gate stack and the elder generations into the child, while everything else at the parent is either the parent's own new work (DP, M0, millisecond anneal), its defined-against rival (the FinFET formulation), or its demand context (Apple). Session totals after both expansions: 223 nodes / 287 edges, expansions_done 118, depth d5 now 49. New frontier head: DELTA (1989, depth 5, priority 6.5), then Kneser-Ney (1995), RFC 2396 (1998), TSMC 90 nm (2004), Tcl (1988). The 28 nm node enters the frontier carrying five recorded mediations as its direct hearings - the highest-leverage next expansion on the process line. Run-log dual-write CONFIRMED for session 54: both records are in run-log.jsonl and ride this checkpoint sync; blob SHAs verified in the session report.",
+ "totals_after": {
+  "nodes": 223,
+  "edges": 287,
+  "expansions_done": 118
+ }
+}
