@@ -2169,3 +2169,85 @@
   "expansions_done": 92
  }
 }
+{
+ "ts": "2026-11-25T11:26:04Z",
+ "session": "run session 42 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "renderman-shading-language-hanrahan-lawson-1990-1990",
+ "parent_name": "RenderMan Shading Language (Hanrahan & Lawson, 1990)",
+ "raw": 18,
+ "dry_notes": "21 dry/shortfall notes filed, covering every content lens under the floor. L3 meta dry (historiography and the parent's own introduction name exactly the filed ancestry). L4/L5/L6/L9/L12/L16/L21 shortfalls (the filed candidates ARE those lenses' document forms: Whitted, Kajiya, distributed ray tracing, the Pixar Image Computer, C, the RISpec, Pixar + Lucasfilm). L7/L8/L10/L11/L13/L14/L15/L17/L18/L20/L22 dry (negative space has no artifact form beyond the prior state; no data, materials, external recipe, framework, equipment, services, benchmark or instrument; creator lineage is carried inside the filed documents; the timeliness condition is institutional backdrop in the Pixar filing). L19 shortfall 2 (Catmull, PostScript). L23 meta shortfall (Upstill filed; the Apodaca & Mantle 1990 product account not separately filed - the parent's own year and its own publicity).",
+ "date_dropped": [
+  "Abram & Whitted, Building Block Shaders (1990) - same year as the parent; the resolve date bound dropped it ('dated on/after parent year 1990'). STRUCTURAL NOTE: a coeval twin formulation published in the SAME proceedings (pp. 283-288, immediately before the parent paper) - composition of building blocks vs a textual language. Month-level order is meaningless here (same conference); the two formulations are genuine twins, and the graph cannot order them. Its existence is multiples evidence about the parent's ripeness. No re-dating attempted."
+ ],
+ "distinct": 17,
+ "evaluated": 17,
+ "survivors": 3,
+ "rejected": 14,
+ "mediated": 2,
+ "survivors_detail": [
+  {
+   "name": "Perlin, An Image Synthesizer (1985)",
+   "score": 6.0,
+   "kind": "NEW",
+   "argument": "THE DIRECT HEARING (mediated via SL's library at RTSL, session 41) DISCHARGED AS AN ADMISSION. The parent paper's abstract states the design 'incorporates features of both Cook's and Perlin's systems', and its introduction enumerates Perlin's contribution as a parts list of the parent's own language: conditional and looping constructs, function and procedure definitions, a full set of arithmetic and logical operators - plus the noise/turbulence vocabulary that fills the parent's standard library. Components discrimination against Cook: Perlin channels the LANGUAGE FORM, Cook the SHADER-KIND SEPARATION; neither mediates the other. Q3 partial honestly (two-ancestor merge). Verification: Q1 attack lands only on the broad form; Peachey recorded as this node's multiples fact and as mediated via it."
+  },
+  {
+   "name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+   "score": 6.0,
+   "kind": "NEW",
+   "argument": "THE DIRECT HEARING (defined-against at RTSL, session 41) DISCHARGED AS AN ADMISSION - the relation at this parent is the opposite one: design-target. The language was built at Pixar as the shading component of the REYES renderer; its execution semantics (whole micropolygon grids shaded at once, derivatives across grid neighbours, shading before visibility, ShadingRate) are the architecture's semantics, and the interface it lives in 'was designed around' REYES. Verification's strongest attack - mediation via the RISpec - refused: the dependency runs spec-around-architecture, the language was implemented in the renderer itself (PRMan), and the child's container cannot carry the child's edge from its design target. The language/architecture/specification three-way split of session 41 completes at the source: language's ancestors are a formulation (Cook), a language (Perlin) and an architecture (REYES); the specification is refused on containment."
+  },
+  {
+   "name": "Cook, Shade Trees (1984)",
+   "score": 5.5,
+   "kind": "NEW",
+   "argument": "THE DIRECT HEARING (mediated via SL at RTSL, session 41) DISCHARGED AS AN ADMISSION. The parent paper's introduction credits Cook with the model that 'separated the conceptually independent tasks of light source specification, surface reflectance, and atmospheric effects' - the separation the parent's shader kinds (surface, light, volume/displacement) instantiate, and the shader types are 'still present in RenderMan today' (Olano). Citation + instantiation in the parent's own documents; mediation via Perlin refused by the components discrimination, via the RISpec refused (a container of the child cannot carry an edge into the child). Q3 partial (two-ancestor merge, Perlin the parallel channel)."
+  }
+ ],
+ "rejections_of_note": [
+  {
+   "name": "RenderMan Interface Specification (Pixar, 1988)",
+   "reason": "THE SESSION'S ASSIGNED DISCRIMINATION, answered: the spec is the language's CONTAINER, not a consumed framework. Three grounds, argued in full on the record. (1) Containment: v3.0 'set out the core API, RIB and the Shading Language' - the candidate contains the parent's design as one part among three; containment is not ancestry (Dickson's appendix inside Natural Inheritance). (2) Own first form: insofar as the spec's shading-language chapter IS the parent's design in an earlier document, the relation is the parent's own first form (Laplace's 1810 memoir at the 1812 treatise) - a node cannot be its own predecessor. (3) Single design act: the ACM record makes Hanrahan 'main architect' of the spec and author of 'its Shading Language' in one breath (Pixar 1986-89); the channel between the documents is the man - self-carriage through the institution's own specification. NO mediator recordable: the failure is not mediation. The candidate's own Q-scores are high (Q2/Q7/Q10/Q11/Q12 pass) and are recorded in full - importance is not the question; channel shape is. REVISIT CONDITION in its Q3 falsification (a document showing the 1990 design deriving FROM the spec as an external constraint). The session-41 RTSL record (mediated via SL) is untouched and consistent: at RTSL the spec's content reached the parent THROUGH the language."
+  },
+  {
+   "name": "Upstill, The RenderMan Companion (1989)",
+   "reason": "The parent design's own first book-form publication, written from inside Pixar a year before the paper ('published in The RenderMan Companion in 1989, with more technical detail in Hanrahan and Lawson's 1990 SIGGRAPH paper'). Documentation of the parent is not a predecessor of the parent."
+  },
+  {
+   "name": "Kajiya, The rendering equation (1986)",
+   "reason": "Fail-closed partial (the Hochreiter condition): the parent paper's design goals invoke an abstract model 'suitable for both global and local illumination models', and Kajiya's equation is the era's general frame for that ambition - but no derivation in the paper runs on the equation and the paper's model is deliberately local ray optics. A framework the era names is not a mechanism the parent's documents derive from. The strongest claim is recorded in full on the evaluation."
+  },
+  {
+   "name": "Whitted, An improved illumination model for shaded display (1980)",
+   "reason": "Anticipation without a junction: the dispatch table of BUILT-IN shaders poses extensibility, not a user-writable language; the parent paper's own introduction passes from Whitted's proposal to Cook's model as the operative step (the Masse discipline)."
+  },
+  {
+   "name": "The C programming language (Kernighan & Ritchie, 1978)",
+   "reason": "Statement form, not mechanism (the Booth-at-Jordan discrimination): RSL's C-likeness is familiarity engineering for programmer users; the parent's mechanisms (shader kinds, renderer interface, grid execution) are none of C's. Discriminated from Church at Lisp, where the form IS the mechanism."
+  },
+  {
+   "name": "Pixar Animation Studios (1986)",
+   "reason": "Self-carriage: the parent is Pixar's own artifact, designed by its employees as its product. Everything separable the institution carried was heard as an artifact (REYES admitted; the RISpec refused on containment). An institutional edge would double-count them."
+  },
+  {
+   "name": "Lucasfilm Computer Division, Computer Graphics Project (1979)",
+   "reason": "Decomposition: the division's contribution is exhausted by the two artifacts it carried, both admitted directly at this expansion (shade trees; REYES). Catmull's own account assigns the carriage to the artifacts and the team ('the technology, of course, followed us')."
+  },
+  {
+   "name": "PostScript page description language (Adobe, 1984)",
+   "reason": "The PostScript analogy ('like PostScript for 3D') governs the design of the RenderMan INTERFACE - the parent's container - not the language, whose documented models are Cook and Perlin. An import consumed by the container is not consumed by the contained."
+  },
+  {
+   "name": "Cook & Torrance (1981) / Blinn (1977)",
+   "reason": "Content, not mechanism: reflectance models are what the language EXPRESSES (library shaders) and what the pre-language renderers hard-coded (the parent's prior state). Components of the leap's demonstrations / the displaced incumbents - not predecessors (the components discipline)."
+  }
+ ],
+ "notes": "Three survivors, two mediations (Peachey via Perlin; Catmull via REYES) - both mediations terminate at nodes admitted in this same expansion, so the session-41 RTSL mediation records (Cook, Perlin, RISpec via SL) now resolve one level down exactly as the mediation discipline predicts: of the three, Cook and Perlin are ADMITTED here as direct channels, and the RISpec is refused here on containment - its RTSL mediation record stands as a claim about RTSL's channel, not about SL's ancestry. The graphics line now runs HLSL <- RTSL <- SL <- {Cook 1984, Perlin 1985, REYES 1987}. Parent stored record verified complete before evaluation (no session-31 defect). Dual-write confirmed: this record plus the graph.json changes (expansions_done 93).",
+ "totals_after": {
+  "nodes": 196,
+  "edges": 248,
+  "budget": 196,
+  "expansions_done": 93
+ }
+}

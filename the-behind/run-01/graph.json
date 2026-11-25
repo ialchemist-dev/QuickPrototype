@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T11:17:43+00:00",
-  "expansions_done": 92,
-  "raw_candidates_seen": 3655,
+  "updated_at": "2026-11-25T11:25:39+00:00",
+  "expansions_done": 93,
+  "raw_candidates_seen": 3673,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -17560,6 +17560,92 @@
     "name": "Pixar Animation Studios (1986)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T11:17:18+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "RenderMan Interface Specification (Pixar, 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Upstill, The RenderMan Companion (1989)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Whitted, An improved illumination model for shaded display (1980)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Cook & Torrance, A reflectance model for computer graphics (1981)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Blinn, Models of light reflection for computer synthesized pictures (1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Peachey, Solid texturing of complex surfaces (1985)",
+    "reason": "mediated_via: Perlin, An Image Synthesizer (1985)",
+    "at": "2026-11-25T11:25:19+00:00",
+    "mediated_via": "Perlin, An Image Synthesizer (1985)"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Catmull, Texture mapping on curved surfaces (1974)",
+    "reason": "mediated_via: REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+    "at": "2026-11-25T11:25:19+00:00",
+    "mediated_via": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Kajiya, The rendering equation (1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Cook, Porter & Carpenter, Distributed ray tracing (1984)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "The C programming language (Kernighan & Ritchie, 1978)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Pixar Image Computer (1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Pixar Animation Studios (1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "Lucasfilm Computer Division, Computer Graphics Project (1979)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
+   },
+   {
+    "parent_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+    "name": "PostScript page description language (Adobe, 1984)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T11:25:19+00:00"
    }
   ]
  },
@@ -23258,7 +23344,7 @@
    "prior_state": "Hard-coded shading models inside renderers; Cook's shade trees as a research formulation without a production language.",
    "status": "provisional",
    "depth": 7,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.5,
    "sources": [
     {
@@ -23273,6 +23359,93 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T11:17:18+00:00"
+  },
+  "perlin-an-image-synthesizer-1985-1985": {
+   "id": "perlin-an-image-synthesizer-1985-1985",
+   "name": "Perlin, An Image Synthesizer (1985)",
+   "aliases": [],
+   "year": 1985,
+   "domain": "computer graphics",
+   "type": "method",
+   "definition": "Ken Perlin's 'An Image Synthesizer' (SIGGRAPH 1985): a pixel-stream shading language with conditional and looping constructs, function and procedure definitions, and the procedural noise and turbulence functions that became the standard vocabulary of procedural shading.",
+   "bottleneck": "Before Perlin's synthesizer, procedural shading had no full language and no compact computable primitive for natural irregularity, because shade formulations lacked control flow, functions and a noise primitive.",
+   "leap": "Perlin (1985) carried procedural shading into a full language - conditionals, loops, functions - and gave it the noise primitive every later shading library inherited.",
+   "prior_state": "Cook's shade trees as an expression formulation without control flow or function definitions.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction); Olano (2014): 'In 1985, Ken Perlin's Image Synthesizer expanded this into a full language, with functions, loops and branching'",
+     "url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run on the Perlin (1985) -> RenderMan SL edge (6.0). (1) Q1 attack: partially lands on the broad claim - Cook had posed procedural shading a year earlier, so Perlin did not flip shading from impossible to posable. It fails on the edge-scoped form: the flip THIS edge carries is from formulation to full language (conditionals, loops, function definitions, the noise primitive), and the parent paper's introduction enumerates exactly those constructs as Perlin's contribution. (2) Multiples test on Q3: Peachey's solid texturing (same year, 1985) is the parallel technique-side statement of the same stratum - recorded at this expansion as mediated via this candidate (the stratum's language-side carrier), and Q3 was already scored partial. No further downgrade. (3) Date and direction check out: SIGGRAPH 1985; the parent paper states it 'incorporates features of both Cook's and Perlin's systems'. (4) Mediation attack: via Cook refused (distinct components - the synthesizer's constructs are not Cook's content carried forward; Perlin's paper is an independent construction); via Peachey refused on direction (a parallel, not an intermediary). No mediation object. Strongest standing caveat: the Q3 partial - the parent merges two ancestors, and this edge rests on the specificity of the constructs consumed, not on sole necessity. Outcome provisional.",
+    "at": "2026-11-25T11:25:39+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T11:25:19+00:00"
+  },
+  "reyes-rendering-architecture-cook-carpenter-catmull-1987-1987": {
+   "id": "reyes-rendering-architecture-cook-carpenter-catmull-1987-1987",
+   "name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+   "aliases": [],
+   "year": 1987,
+   "domain": "computer graphics",
+   "type": "architecture",
+   "definition": "The REYES architecture ('Renders Everything You Ever Saw', Cook, Carpenter & Catmull, SIGGRAPH 1987): primitives are diced into micropolygon grids, shaded as whole grids, then sampled - the architecture Pixar's renderer implemented and the one the RenderMan Interface was designed around.",
+   "bottleneck": "Before REYES, film-quality rendering had no unified architecture, because geometry, shading and sampling were handled by incompatible special-purpose code.",
+   "leap": "Cook, Carpenter & Catmull (1987) unified film rendering in one micropolygon architecture whose shading stage is executed per grid - the execution world the RenderMan Shading Language was designed for.",
+   "prior_state": "Ad hoc production renderers with hard-coded shading; ray tracers too slow for feature-film complexity.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "ACM Turing Award profile of Pat Hanrahan: 'Hanrahan's team built RenderMan on top of a system previously developed by Catmull along with Loren Carpenter and Rob Cook called REYES'; RenderMan Interface Specification schematic: 'REYES is where RenderMan started... the architecture the RenderMan Interface Specification was designed around... it shaped the spec's semantics, including ShadingRate, the shading-before-visibility order'",
+     "url": "https://amturing.acm.org/award_winners/hanrahan_4652251.cfm"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run on the REYES (1987) -> RenderMan SL edge (6.0). (1) Q1 attack: lands on the broad form, as scored - REYES did not make shading programmable (Q1 was scored partial for exactly this); the edge-scoped claim is narrower and stands: the parent language's execution semantics (whole micropolygon grids shaded at once, derivatives across grid neighbours, shading before visibility) are the architecture's semantics, and a production language of this form has no referent without them. (2) Multiples test on Q3: renderer architectures were multiple in the era (production ray tracers, ad hoc film renderers) - the REYES bet was one of several, and Q3 was scored partial; the edge rests on this language's documented design target, not on the architecture's uniqueness. (3) Date and direction check out: SIGGRAPH 1987; the language was built at Pixar by the RISpec's architect as the shading component of the REYES renderer (ACM record: Hanrahan's team 'built RenderMan on top of' REYES). (4) Mediation attack - the strongest available: via the RenderMan Interface Specification, on the ground that the language's renderer interface is specified IN the spec, so the architecture might reach the language only through the document. Refused: the dependency runs the other way - the spec 'was designed around' REYES and codified the architecture's pre-existing semantics (ShadingRate, shading-before-visibility); Hanrahan implemented the language in the REYES renderer itself (PRMan), not in the document; and a container of the child, refused at this same parent on containment, cannot simultaneously be the carrier of the child's edge from its design target. No mediation object. Outcome provisional; the Q3 partial is the standing caveat.",
+    "at": "2026-11-25T11:25:39+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T11:25:19+00:00"
+  },
+  "cook-shade-trees-1984-1984": {
+   "id": "cook-shade-trees-1984-1984",
+   "name": "Cook, Shade Trees (1984)",
+   "aliases": [],
+   "year": 1984,
+   "domain": "computer graphics",
+   "type": "theory",
+   "definition": "Robert L. Cook's 'Shade Trees' (SIGGRAPH 1984): shading described as a tree of procedural nodes evaluated per visible point, with light source specification, surface reflectance and atmospheric effects separated as conceptually independent tasks - the founding formulation of programmable procedural shading.",
+   "bottleneck": "Before shade trees, shading was a fixed computation inside each renderer, because no formulation separated the shading computation into composable procedural parts.",
+   "leap": "Cook (1984) formulated shading as an evaluable tree of procedures with separated shader kinds - the model from which shading languages developed.",
+   "prior_state": "Fixed illumination models (Phong and kin) implemented as renderer code.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction); Olano, 'Early stories of shading on graphics hardware' (2014): 'It also introduced the shader types of surface, light, atmosphere, etc. still present in RenderMan today'",
+     "url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run on the Cook (1984) -> RenderMan SL edge (5.5). (1) Q1 attack: partially lands on the broad form - shade trees were a research formulation, never a production system, so 'programmable shading' was posable but not practicable before the parent. It fails on the edge-scoped form: what the parent consumes is the formulation itself (the separation of shading into light / surface / atmosphere as composable procedural parts), and the parent paper's introduction credits exactly that separation to Cook. The edge stands on the formulation. (2) Multiples test on Q3: Perlin's Image Synthesizer (1985) is a near-simultaneous independent line feeding the same parent - the two-ancestor structure IS the multiples fact, and Q3 was already scored partial for it; no downgrade beyond the recorded partial. (3) Date and direction check out: SIGGRAPH 1984, six years before the parent; direction documented by the parent paper's abstract ('based on previous work of Cook and Perlin') and introduction. (4) Mediation attack, three mediators tried. Via Perlin: refused - the components discrimination (Cook channels the shader-kind separation, Perlin the language form); neither artifact carries the other's content. Via the RISpec: refused - the spec postdates the model and contains the CHILD; it cannot carry Cook into the child. Via Lucasfilm's internal shade-tree implementations: refused - the candidate's own production, not a separable milestone. No mediation object. Outcome provisional, per the run's standing (no node is verified).",
+    "at": "2026-11-25T11:25:39+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T11:25:19+00:00"
   }
  },
  "edges": [
@@ -47456,6 +47629,297 @@
     "counterfactual": "Remove RenderMan SL: the parent loses its language model - the shader kinds its procedures are written in, the procedural form, the library vocabulary - and would have to invent a shading language and its hardware compiler simultaneously. The documented design (the reigning shading language, co-authored by the parent's own senior author, re-founded on computation frequencies) does not exist without it.",
     "mediator": null,
     "evidence": "Citation plus instantiation plus a personal channel: the parent's paper frames its language against the candidate's ('the most common shading language in use today'), its surface and light shaders ARE the candidate's shader kinds compiled by frequency, and Pat Hanrahan co-authored both the 1990 language paper and the parent. Mediation checked: the channel does not run through the RISpec (the parent implements no RenderMan interface - it consumes the language, judged separately below) nor through Cook's shade trees (which reach the parent embodied in this language - Cook's candidacy is mediated via this node). The deferred hearing carried since the early sessions is discharged as an admission."
+   }
+  },
+  {
+   "predecessor_id": "perlin-an-image-synthesizer-1985-1985",
+   "successor_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before the Image Synthesizer, procedural shading formulations lacked the machinery of a language: no conditionals, no loops, no function definitions. Perlin's system supplied all three (the parent paper's introduction lists them), making open-ended procedural appearance programmable in practice, not just posable.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes: the synthesizer's procedural vocabulary - above all noise and turbulence - unblocked procedural texturing as a field; its functions became the standard library vocabulary the parent and every later shading language ship.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial, honestly: the parent merges two ancestors (Cook's model, Perlin's language). Remove Perlin and the parent could still have been designed from Cook's model plus Pixar's own engineering, but its language form - control flow, user functions, the built-in procedural vocabulary - is Perlin's contribution, documented as incorporated.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "This partial dies if a document shows the parent's control-flow and function machinery deriving from a named third source (e.g. a specific Pixar-internal language) with Perlin's system as survey decoration only."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost collapse is partial: procedural generation collapsed the cost of texture authorship in the research setting; the production collapse is the parent's.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The candidate supplies no metric; scored fail.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: the synthesizer modelled appearance as computation over position (solid procedural thinking), a design stance the parent adopts, though the parent's own explanatory model is Cook's separation.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability passes: function and procedure definitions made shading code reusable and composable by construction - the parent's user-defined shaders and its library of built-in functions are this mechanism at production scale.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach passes: Perlin noise escaped graphics into simulation, games, film and procedural content generally - the widest-reaching single primitive of the era's graphics.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: procedural iteration replaced painted-texture round trips in the research practice; production-scale evidence is the parent's era, not 1985's.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: the synthesizer displaced no production incumbent (it was a research system); displacement belongs to the production language that incorporated it.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: with Cook, one of the two ancestors the parent paper itself names in its abstract; the lineage surveys repeat the pairing ('outgrowth of Cook's shade trees and Perlin's pixel stream language').",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility passes: after 1985, procedural noise and language-level control flow are permanent fixtures of shading; no later language omitted them.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T11:25:19+00:00",
+   "leap": {
+    "prior_state": "Hard-coded shading models inside renderers; Cook's shade trees as a research formulation without a production language.",
+    "jump": "Hanrahan & Lawson (1990) made shading a language: appearance became portable, user-authored procedural code - surface and light shaders - instead of renderer internals.",
+    "date": 1990
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Perlin's synthesizer while keeping Cook: the parent loses the full-language form it incorporates - conditional and looping constructs, function and procedure definitions, and the procedural vocabulary (noise, turbulence) that fills its standard library. A shade-tree notation without these is not the parent's language.",
+    "mediator": null,
+    "evidence": "Citation plus instantiation in the parent's own abstract and introduction ('incorporates features of both Cook's and Perlin's systems'; the introduction's enumeration of Perlin's constructs is a parts list of the parent's own language). Mediation checked: Peachey's solid texturing is the same stratum's technique-side statement and is recorded as mediated via THIS candidate; Cook does not mediate Perlin (distinct components - see the Cook record). The library channel RTSL recorded ('via SL's library') terminates here at its source."
+   }
+  },
+  {
+   "predecessor_id": "reyes-rendering-architecture-cook-carpenter-catmull-1987-1987",
+   "successor_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Impossibility flip is partial, honestly: REYES alone did not make shading programmable (that is the language's flip, fed by Cook/Perlin). What REYES made possible is the parent's SPECIFIC existence: a production shading language needs a production renderer whose shading stage is a defined, uniform execution context - REYES supplied it (whole grids shaded at once, before visibility).",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes: the architecture generated the production-rendering space the language lives in - the RenderMan ecosystem of shaders, tools and films exists because REYES made one renderer architecture the industry's reference.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: a shading language could in principle have been designed for a ray tracer (Whitted's context). But THIS language's semantics - execution per micropolygon grid point, derivatives from grid neighbours, the global-state interface to a REYES-style pipeline - are REYES-shaped throughout; remove REYES and the designed artifact is a different language.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "This partial dies if the 1990 paper's design documents show the language specified independently of any REYES execution context (e.g. a renderer-neutral semantics with REYES as merely the first port), reducing the architecture to first customer."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost collapse is partial on this edge: REYES collapsed the cost of film-complexity scenes (bounded memory via buckets, cheap texture filtering via grids), which is the economic premise of the parent's production use; the collapse is the architecture's, shared with the language's record.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The candidate supplies no metric; scored fail.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: the micropolygon model (dice, shade grids, sample) is a genuine explanatory model of rendering that the language's design reasons in, though the language's own model is Cook's separation.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability passes: REYES defined the execution contract - a uniform shading stage with a specified interface to geometry and sampling - that the language composes against; the RISpec then standardized that contract.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: the architecture's reach ran through film rendering and renderer design, not across distant fields.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: bucket-bounded memory and grid shading made large-scene iteration practical at Pixar; the documented speed claims belong to the RenderMan system as a whole.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Displacement passes: REYES displaced ad hoc production renderers as the reference architecture of film rendering - the renderer class the parent's language serves, and for two decades the industry's default back end for RenderMan shaders.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: the architecture is the trunk of the RenderMan line - 'REYES is where RenderMan started' (RISpec schematic); the Turing citation for RenderMan names it as the system Hanrahan's team built on.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility passes: once a renderer architecture exposed a uniform programmable shading stage, renderer design never returned to shading as scattered special-purpose code.",
+     "source": "ACM Turing Award profile of Pat Hanrahan; RenderMan Interface Specification schematic (vectree)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T11:25:19+00:00",
+   "leap": {
+    "prior_state": "Hard-coded shading models inside renderers; Cook's shade trees as a research formulation without a production language.",
+    "jump": "Hanrahan & Lawson (1990) made shading a language: appearance became portable, user-authored procedural code - surface and light shaders - instead of renderer internals.",
+    "date": 1990
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove REYES: the parent language's execution semantics lose their referent - shaders in the 1990 design run over micropolygon grids, take derivatives across grid neighbours, and are invoked in REYES's shading-before-visibility order through the interface the paper specifies. The language was designed at Pixar, by the RISpec's architect, as the shading component of the REYES renderer; without the architecture there is no designed artifact of this form in 1990.",
+    "mediator": null,
+    "evidence": "Design-target consumption, documented: Hanrahan's team 'built RenderMan on top of' REYES (ACM profile); the interface the language lives in 'was designed around' REYES, whose semantics (ShadingRate, shading-before-visibility, grid shading) the spec - and with it the language's execution model - presupposes (RISpec schematic). Mediation checked: the RISpec does not mediate this edge - the dependency runs the other way (the spec was designed around the architecture), and the language was implemented in the REYES renderer (PRMan), not in the document. Discriminated from the RTSL record, where REYES was defined-against the HARDWARE move; at the parent, the architecture is the home the language was built in. Cook/Porter/Carpenter's stochastic sampling content belongs to this node's own record, not the language's (see the DRT rejection)."
+   }
+  },
+  {
+   "predecessor_id": "cook-shade-trees-1984-1984",
+   "successor_id": "renderman-shading-language-hanrahan-lawson-1990-1990",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before shade trees, user-programmable shading did not exist in any form: shading was a fixed computation inside each renderer. Cook's model - shading as a tree of procedural nodes with light, surface and atmosphere separated - is the formulation that made the parent's problem (a LANGUAGE for shading) posable at all; the parent paper's introduction credits exactly this separation to Cook [6].",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The formulation generated the entire shading-language line: the parent paper's own framing ('shading languages developed from the work of Cook', as the lineage surveys repeat) and the parent's abstract ('based on previous work of Cook and Perlin') name it as a generative source, not a single-problem fix.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial, honestly: the parent merges TWO ancestors - Cook's separation model and Perlin's full-language form. Remove Cook and a language could still have been built on Perlin's synthesizer alone, but it would not have had the shader-kind architecture (surface/light/atmosphere as separate composable kinds) that is the parent's organizing design. The channel is specific even where it is not sole.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "This partial dies if a document shows the parent's shader-kind architecture deriving from a source other than Cook's model (e.g. solely from the RISpec process), leaving Cook as survey decoration."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost collapse is partial: shade trees as a research formulation collapsed no production cost by themselves; the collapse arrived with the production language built on the model.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The candidate supplies no metric or measurement; scored fail.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The candidate IS an explanatory model: it taught the field to think of shading as the composition of independent procedural parts (light / surface / atmosphere), which is the design model the parent's language is organized around - deliberate design replaced renderer folklore.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability passes: the tree is a composition discipline - nodes combine without knowledge of each other's internals - and the parent's shader kinds inherit exactly this composability as language-level structure.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: the formulation's reach ran inside rendering (into every shading language), not across distant fields.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Iteration speed: no documented collapse attributable to the 1984 formulation itself; scored fail.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: shade trees displaced no production incumbent by themselves (no production system shipped them as such); the displacement belongs to the language built on the model.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: the historiography is unanimous - 'the idea of a shading language is often credited to Cook' (shading-language surveys); the shader types he introduced are 'still present in RenderMan today' (Olano).",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility passes: once shading was conceived as composable procedure with separated kinds, no later system returned to monolithic shading code; the separation is permanent in every shading language since.",
+     "source": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990; Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T11:25:19+00:00",
+   "leap": {
+    "prior_state": "Hard-coded shading models inside renderers; Cook's shade trees as a research formulation without a production language.",
+    "jump": "Hanrahan & Lawson (1990) made shading a language: appearance became portable, user-authored procedural code - surface and light shaders - instead of renderer internals.",
+    "date": 1990
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Cook's 1984 model while keeping Perlin: the parent loses its organizing architecture - the separation of shading into light-source, surface-reflectance and atmospheric kinds, which the parent paper's introduction attributes to Cook by name and which its shader kinds (surface, light, volume/displacement) directly instantiate. The language that remains would be a texture-synthesis language, not the parent's design.",
+    "mediator": null,
+    "evidence": "Citation plus instantiation in the parent's own documents: the abstract states the design is 'based on previous work of Cook and Perlin' and 'incorporates features of both Cook's and Perlin's systems'; the introduction expounds Cook's separation model as the step it builds on. Mediation checked both ways against Perlin: the two channels are distinct components (Cook = the shader-kind separation; Perlin = the language form and procedural vocabulary) - neither artifact carries the other's content, so neither mediates the other (the components discrimination). The Lucasfilm-internal implementations of shade trees are the candidate's own production, not an intermediary milestone."
    }
   }
  ],
@@ -175614,6 +176078,609 @@
        "source_url": ""
       },
       "reason": "dated on/after parent year 2001"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "renderman-shading-language-hanrahan-lawson-1990-1990": {
+   "raw_candidates": [
+    {
+     "name": "Cook, Shade Trees (1984)",
+     "year": 1984,
+     "lens": "L1",
+     "type": "theory",
+     "domain": "computer graphics",
+     "definition": "Robert L. Cook's 'Shade Trees' (SIGGRAPH 1984): shading described as a tree of procedural nodes evaluated per visible point, with the conceptually independent tasks of light source specification, surface reflectance and atmospheric effects separated - the founding formulation of programmable procedural shading, and the origin of the surface/light/atmosphere shader types RenderMan retains.",
+     "causal_claim": "THE DIRECT HEARING (mediated via SL at RTSL, session 41). The parent paper's introduction: 'Cook developed a model which separated the conceptually independent tasks of light source specification, surface reflectance, and atmospheric effects' - and the abstract states the new language is 'based on previous work of Cook and Perlin' and 'incorporates features of both'. The hearing: whether the shade-tree formulation is consumed and reworked by the parent (as a textual language with shader kinds), or whether an intermediate carries it.",
+     "source_title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction); Olano, 'Early stories of shading on graphics hardware' (2014): 'It also introduced the shader types of surface, light, atmosphere, etc. still present in RenderMan today'",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+    },
+    {
+     "name": "Perlin, An Image Synthesizer (1985)",
+     "year": 1985,
+     "lens": "L2",
+     "type": "method",
+     "domain": "computer graphics",
+     "definition": "Ken Perlin's 'An Image Synthesizer' (SIGGRAPH 1985): a pixel-stream shading language with conditional and looping constructs, function and procedure definitions, and a full set of arithmetic and logical operators, together with the procedural noise and turbulence functions that became the standard library vocabulary of procedural shading.",
+     "causal_claim": "THE DIRECT HEARING (mediated via SL's library at RTSL, session 41). The parent paper's introduction: 'Perlin's image synthesizer carried this idea further by providing a full language including conditional and looping constructs, function and procedure definitions' - and the abstract: the new language 'incorporates features of both Cook's and Perlin's systems'. The hearing: whether Perlin's full-language form is the ancestor the parent modified (Cook supplied the shader-type separation; Perlin supplied the language), judged on the paper's own text.",
+     "source_title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction); Olano (2014): 'In 1985, Ken Perlin's Image Synthesizer expanded this into a full language, with functions, loops and branching'",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+    },
+    {
+     "name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+     "year": 1987,
+     "lens": "L1",
+     "type": "architecture",
+     "domain": "computer graphics",
+     "definition": "The REYES image rendering architecture (Cook, Carpenter & Catmull, SIGGRAPH 1987), built at Lucasfilm's Computer Division and carried to Pixar: primitives are diced into micropolygon grids, shaded as whole grids, then sampled - the architecture Pixar's renderer implemented and the one the RenderMan Interface was designed around.",
+     "causal_claim": "THE DIRECT HEARING (defined-against at RTSL, session 41 - a different relation there). At the parent the relation is design-target: the language was built at Pixar as the shading component of the REYES renderer; the interface it lives in 'was designed around' REYES, whose semantics (shading whole micropolygon grids before visibility, ShadingRate) the language's execution model presupposes - shaders run per grid point, with derivatives and texture filtering cheap because grids are shaded at once. The hearing: consumed target architecture, judged on the 1990 paper's design and implementation record.",
+     "source_title": "ACM Turing Award profile of Pat Hanrahan: 'Hanrahan's team built RenderMan on top of a system previously developed by Catmull along with Loren Carpenter and Rob Cook called REYES'; RenderMan Interface Specification schematic: 'REYES is where RenderMan started... the architecture the RenderMan Interface Specification was designed around... it shaped the spec's semantics, including ShadingRate, the shading-before-visibility order'",
+     "source_url": "https://amturing.acm.org/award_winners/hanrahan_4652251.cfm"
+    },
+    {
+     "name": "RenderMan Interface Specification (Pixar, 1988)",
+     "year": 1988,
+     "lens": "L16",
+     "type": "standard",
+     "domain": "computer graphics / standards",
+     "definition": "Pixar's RenderMan Interface Specification, first published 1988 (v3.0; 3.1 in 1989): the standard interface between modelers and photorealistic renderers - the Ri procedural API, the RIB bytestream format, and the first specification of the shading language itself. Pat Hanrahan was its main architect.",
+     "causal_claim": "THE SESSION'S ASSIGNED DISCRIMINATION TEST (mediation by containment at RTSL, session 41). The spec's v3.0 'set out the core API, RIB and the Shading Language' - so the candidate CONTAINS the parent's design in its first specified form, two years before the parent paper. The hearing: does the 1990 language consume the spec's framework (the interface discipline, the global-state interface the paper says it 'clearly specified'), or is the spec the language's container and first publication form - the same design act by the same architect (Hanrahan led both), in which case containment is not ancestry?",
+     "source_title": "RenderMan Interface Specification schematic (vectree): 'The RenderMan Interface Specification was published by Pixar in 1988. Pat Hanrahan was its main architect... Version 3.0 (1988) set out the core API, RIB and the Shading Language'; ACM Hanrahan profile: 'Hanrahan's principal contributions were the RenderMan Interface Specification (RISpec) and its Shading Language'",
+     "source_url": "https://vectree.io/pdf/c/renderman-interface-specification"
+    },
+    {
+     "name": "Upstill, The RenderMan Companion (1989)",
+     "year": 1989,
+     "lens": "L23",
+     "type": "other",
+     "domain": "computer graphics",
+     "definition": "Steve Upstill's 'The RenderMan Companion' (Addison-Wesley, 1989): the first book-length published description of RenderMan and its shading language, written from inside Pixar a year before the Hanrahan & Lawson paper.",
+     "causal_claim": "Filed as the contemporaneous-account carrier: Pixar 'built a shading language based on these ideas into RenderMan. This was published in The RenderMan Companion by Steve Upstill in 1989, with more technical detail in Hanrahan and Lawson's 1990 SIGGRAPH paper.' The hearing: the book is the parent design's own documentation and first publication form, not a source the design consumed - documentation of the parent, judged as such.",
+     "source_title": "Olano, 'Early stories of shading on graphics hardware' (2014)",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+    },
+    {
+     "name": "Whitted, An improved illumination model for shaded display (1980)",
+     "year": 1980,
+     "lens": "L4",
+     "type": "method",
+     "domain": "computer graphics",
+     "definition": "Turner Whitted's 1980 recursive ray-tracing illumination model, in which - as the parent paper's introduction records - Whitted proposed that the rendering system have a collection of built-in shaders accessible via a shader dispatch table: the earliest posed form of extensible shading inside a renderer.",
+     "causal_claim": "The parent paper's introduction names Whitted's dispatch-table proposal in its ancestry survey. The hearing: a posed possibility (extensibility via a table of BUILT-IN shaders) is not the parent's mechanism (a user-writable LANGUAGE); anticipation of the problem's shape, judged against the paper's own framing, which passes from Whitted to Cook's model as the operative step.",
+     "source_title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction) (introduction: 'Whitted proposed that the rendering system have a collection of built-in shaders accessible via a shader dispatch table [31]')",
+     "source_url": ""
+    },
+    {
+     "name": "Cook & Torrance, A reflectance model for computer graphics (1981)",
+     "year": 1981,
+     "lens": "L1",
+     "type": "theory",
+     "domain": "computer graphics",
+     "definition": "Cook & Torrance's physically-based specular reflectance model (SIGGRAPH 1981 / TOG 1982): the microfacet BRDF that became standard content for shading systems' libraries and example surface shaders.",
+     "causal_claim": "Filed as the library-content representative: reflectance models of this class are what a shading language's built-in functions and standard surface shaders EXPRESS. The hearing: a model the language can express is content inside the leap, not the leap's enabler - the components discrimination, judged against the parent's design (a language, not a model).",
+     "source_title": "Cook & Torrance, SIGGRAPH 1981; standard histories of shading models",
+     "source_url": ""
+    },
+    {
+     "name": "Blinn, Models of light reflection for computer synthesized pictures (1977)",
+     "year": 1977,
+     "lens": "L1",
+     "type": "theory",
+     "domain": "computer graphics",
+     "definition": "James Blinn's 1977 half-vector specular model and associated reflection models: with Phong's 1975 model, the default local illumination content that renderers hard-coded before shading languages, and that shading libraries thereafter supplied as built-in surface shaders.",
+     "causal_claim": "Filed with Cook & Torrance as the incumbent content stratum: these models are what the pre-language renderers hard-coded (the parent's prior state) and what the parent's library re-supplies as code. The hearing: content expressed by the language, and the very incumbents whose hard-coding defines the prior state - not a consumed predecessor of the language design.",
+     "source_title": "Blinn, SIGGRAPH 1977; the parent paper's prior-state record",
+     "source_url": ""
+    },
+    {
+     "name": "Peachey, Solid texturing of complex surfaces (1985)",
+     "year": 1985,
+     "lens": "L1",
+     "type": "method",
+     "domain": "computer graphics",
+     "definition": "Darwyn Peachey's 'Solid texturing of complex surfaces' (SIGGRAPH 1985): procedural three-dimensional texture functions evaluated in object space - with Perlin's synthesizer, the founding statement of procedural solid texturing as a practice.",
+     "causal_claim": "Filed as the procedural-texturing practice stratum: solid texturing is the flagship USE the parent language serves. The hearing: the practice reaches the language embodied in Perlin's synthesizer (the language-side carrier, filed at L2) - Peachey's paper is the technique-side statement of the same stratum; mediation via Perlin is the expected record, judged on whether any Peachey-specific mechanism is consumed by the language design itself.",
+     "source_title": "Peachey, SIGGRAPH 1985; standard procedural-texturing histories",
+     "source_url": ""
+    },
+    {
+     "name": "Catmull, Texture mapping on curved surfaces (1974)",
+     "year": 1974,
+     "lens": "L19",
+     "type": "method",
+     "domain": "computer graphics",
+     "definition": "Ed Catmull's 1974 Utah dissertation work: texture mapping and the rendering of bicubic patch surfaces - the origin of the texture-access practice every later shading system presupposes, and of the patch-primitive world REYES diced.",
+     "causal_claim": "Filed for completeness of the consumed-practice stratum: texture access is inside the parent's library (texture() is a core built-in). The hearing: the practice reaches the parent through the REYES pipeline (which carries texture mapping into the shading context) and through the library designs of Cook/Perlin - a distant fundamental with named intermediaries; mediation is the expected record.",
+     "source_title": "Catmull, University of Utah dissertation, 1974; RenderMan histories (personnel/technology tables list Catmull: 'Z-buffer, Texturing')",
+     "source_url": ""
+    },
+    {
+     "name": "Kajiya, The rendering equation (1986)",
+     "year": 1986,
+     "lens": "L5",
+     "type": "theory",
+     "domain": "computer graphics",
+     "definition": "James Kajiya's 'The Rendering Equation' (SIGGRAPH 1986): the integral-equation formulation of light transport - the general physical framework against which any shading model's adequacy is measured.",
+     "causal_claim": "Filed as the framework/diagnosis candidate: the parent paper states as a design goal 'an abstract shading model based on ray optics suitable for both global and local illumination models'. The hearing: the parent's model is a deliberately local, ray-optics abstraction; Kajiya's equation is the era's general frame but no derivation in the paper runs on it - a framework named by the era is not a consumed mechanism (the Hochreiter-condition shape).",
+     "source_title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction) (design goals); Kajiya, SIGGRAPH 1986",
+     "source_url": ""
+    },
+    {
+     "name": "Cook, Porter & Carpenter, Distributed ray tracing (1984)",
+     "year": 1984,
+     "lens": "L6",
+     "type": "method",
+     "domain": "computer graphics",
+     "definition": "Cook, Porter & Carpenter's distributed ray tracing (SIGGRAPH 1984): stochastic sampling extended through the ray tracer for motion blur, depth of field and gloss - the Lucasfilm group's flagship rendering technique of the same moment as shade trees.",
+     "causal_claim": "Filed as the incumbent/sibling-technique candidate: distributed ray tracing is the ray-tracing line's answer to the same realism problems; REYES (and with it the parent's home renderer) was designed on a different bet (micropolygon rasterization over ray tracing). The hearing: a sibling technique from the same laboratory, compared not consumed - its stochastic-sampling content belongs to REYES's record, not to the language's.",
+     "source_title": "Cook, Porter & Carpenter, SIGGRAPH 1984; Catmull interview (CGW 2009): 'Rob came up with stochastic sampling... the architecture was originally called REYES'",
+     "source_url": ""
+    },
+    {
+     "name": "The C programming language (Kernighan & Ritchie, 1978)",
+     "year": 1978,
+     "lens": "L12",
+     "type": "other",
+     "domain": "programming languages",
+     "definition": "The C language (K&R, 1978): the systems-programming lingua franca whose syntax and procedural form the RenderMan Shading Language deliberately echoes - RSL is universally described as 'a C-like programming language'.",
+     "causal_claim": "Filed as the programmability/form candidate: the parent is C-LIKE by design, for familiarity to its programmer users. The hearing: the Booth-at-Jordan discrimination - a borrowed statement FORM is not the leap's enabler where the form is not the mechanism (discriminated from Church at Lisp, where the form IS the mechanism); the parent's mechanisms are its shader kinds, its renderer interface and its execution model, none of which is C's.",
+     "source_title": "RenderMan Interface Specification schematic: 'The RenderMan Shading Language is the C-like programming language in the RenderMan Interface Specification'",
+     "source_url": "https://vectree.io/pdf/c/renderman-interface-specification"
+    },
+    {
+     "name": "Pixar Image Computer (1986)",
+     "year": 1986,
+     "lens": "L9",
+     "type": "device",
+     "domain": "computer graphics / hardware",
+     "definition": "The Pixar Image Computer (1986): Pixar's first commercial product, a channel-processor image machine - the hardware Hanrahan initially worked on when he joined Pixar in 1986, before pitching RenderMan as the product when the machine struggled to find a market.",
+     "causal_claim": "Filed as the machines-consumed candidate for completeness: the parent language's implementation (PhotoRealistic RenderMan) ran on general-purpose workstations, not on the Image Computer; the machine is the institutional backdrop of the parent's origin (its commercial failure is WHY RenderMan became a product), not a substrate the language consumed. Judged on the counterfactual: remove the machine, the language design is unchanged.",
+     "source_title": "ACM Turing Award profile of Pat Hanrahan: 'Initially he worked on software for the company's first commercial product, the Pixar Image Computer. When it struggled to find a market, Hanrahan pitched the idea of taking Pixar's in-house rendering software and selling it as a commercial product. This became RenderMan'",
+     "source_url": "https://amturing.acm.org/award_winners/hanrahan_4652251.cfm"
+    },
+    {
+     "name": "Pixar Animation Studios (1986)",
+     "year": 1986,
+     "lens": "L21",
+     "type": "institution",
+     "domain": "computer graphics",
+     "definition": "Pixar (1986): the company formed when Steve Jobs acquired Lucasfilm's Computer Division - the institution that employed Hanrahan (1986-89), Lawson, and the REYES team, and that published the RenderMan Interface and shipped PhotoRealistic RenderMan.",
+     "causal_claim": "Filed for the institution hearing: the parent is Pixar's OWN artifact, designed by its employees as its product - the self-carriage shape (compare the Anthropometric Laboratory at Galton, Bern IAM at the offline DB). The institution's separable contributions are the artifacts heard directly (REYES, the RISpec); the company as such is the parent's home, not its predecessor.",
+     "source_title": "ACM Turing Award profile of Pat Hanrahan: 'Pixar Animation Studios (Senior Scientist 1986-1989)... In 1986 Hanrahan joined fellow Turing award winner Ed Catmull and computer graphics pioneer Alvy Ray Smith at Pixar'",
+     "source_url": "https://amturing.acm.org/award_winners/hanrahan_4652251.cfm"
+    },
+    {
+     "name": "Lucasfilm Computer Division, Computer Graphics Project (1979)",
+     "year": 1979,
+     "lens": "L21",
+     "type": "institution",
+     "domain": "computer graphics",
+     "definition": "Lucasfilm's Computer Division graphics group (founded 1979 under Ed Catmull): the laboratory where Cook developed shade trees and stochastic sampling and where REYES was built, before the division was acquired and became Pixar in 1986, the team and technology following.",
+     "causal_claim": "Filed for the institution-through-artifact hearing: the division's contribution to the parent is exhausted by the specific artifacts it carried - Cook's shade trees and the REYES architecture, both heard directly at L1. The decomposition discipline: an institution is admitted, if at all, through the separable artifact it carried that the others do not cover; here the artifacts cover it. Catmull's own account: 'The architecture was originally called REYES... When we spun out and became Pixar, the technology, of course, followed us.'",
+     "source_title": "Catmull interview, Computer Graphics World (2009): 'We were at Lucasfilm then... Yes. The architecture was originally called REYES, which Loren [Carpenter] named'",
+     "source_url": "https://www.cgw.com/Publications/CGW/2009/Volume-32-Issue-2-Feb-2009-/Everything-You-Ever-Saw.aspx"
+    },
+    {
+     "name": "Abram & Whitted, Building Block Shaders (1990)",
+     "year": 1990,
+     "lens": "L2",
+     "type": "method",
+     "domain": "computer graphics",
+     "definition": "Gregory Abram and Turner Whitted's 'Building Block Shaders' (SIGGRAPH 1990): shading assembled from composable building blocks inside a ray-tracing system - a coeval alternative formulation of programmable shading, published in the same proceedings as the parent paper (pp. 283-288, immediately before it).",
+     "causal_claim": "Filed knowing it is the parent's OWN YEAR: the year-granularity date bound is expected to drop it at resolve, and the drop is the record - a coeval twin formulation (composition of blocks vs a textual language) that the graph cannot order against the parent. No re-dating will be attempted. Its existence is multiples evidence about the parent's ripeness, recorded here and in the run log.",
+     "source_title": "Abram & Whitted, SIGGRAPH 1990; Olano (2014): the graphical node/network interpretation 'was Abram and Whitted's Building Block Shaders in 1990'",
+     "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+    },
+    {
+     "name": "PostScript page description language (Adobe, 1984)",
+     "year": 1984,
+     "lens": "L19",
+     "type": "standard",
+     "domain": "computing / publishing",
+     "definition": "Adobe PostScript (1984): the page-description language that separated document creation from printers - the explicit model for the RenderMan INTERFACE's separation of scene description from renderers ('like PostScript for 3D').",
+     "causal_claim": "Filed as the cross-field import candidate, scoped honestly: the PostScript analogy governs the INTERFACE's design (the RISpec candidate's record), not the shading language's design - the language's models are Cook and Perlin, not a page-description language. The hearing: an import consumed by the parent's container is not consumed by the parent; expected record is failure at this parent with the channel noted as belonging to the RISpec's (already-refused) hearing.",
+     "source_title": "RenderMan Interface Specification schematic: 'Pixar modeled this on PostScript, where a page description language separated document creation from printers... a standard interface between modelers and photorealistic renderers, like PostScript for 3D'",
+     "source_url": "https://vectree.io/pdf/c/renderman-interface-specification"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "cook-shade-trees-1984-1984",
+      "candidate": {
+       "name": "Cook, Shade Trees (1984)",
+       "year": 1984,
+       "lens": "L1",
+       "type": "theory",
+       "domain": "computer graphics",
+       "definition": "Robert L. Cook's 'Shade Trees' (SIGGRAPH 1984): shading described as a tree of procedural nodes evaluated per visible point, with the conceptually independent tasks of light source specification, surface reflectance and atmospheric effects separated - the founding formulation of programmable procedural shading, and the origin of the surface/light/atmosphere shader types RenderMan retains.",
+       "causal_claim": "THE DIRECT HEARING (mediated via SL at RTSL, session 41). The parent paper's introduction: 'Cook developed a model which separated the conceptually independent tasks of light source specification, surface reflectance, and atmospheric effects' - and the abstract states the new language is 'based on previous work of Cook and Perlin' and 'incorporates features of both'. The hearing: whether the shade-tree formulation is consumed and reworked by the parent (as a textual language with shader kinds), or whether an intermediate carries it.",
+       "source_title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction); Olano, 'Early stories of shading on graphics hardware' (2014): 'It also introduced the shader types of surface, light, atmosphere, etc. still present in RenderMan today'",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Cook, Shade Trees (1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "perlin-an-image-synthesizer-1985-1985",
+      "candidate": {
+       "name": "Perlin, An Image Synthesizer (1985)",
+       "year": 1985,
+       "lens": "L2",
+       "type": "method",
+       "domain": "computer graphics",
+       "definition": "Ken Perlin's 'An Image Synthesizer' (SIGGRAPH 1985): a pixel-stream shading language with conditional and looping constructs, function and procedure definitions, and a full set of arithmetic and logical operators, together with the procedural noise and turbulence functions that became the standard library vocabulary of procedural shading.",
+       "causal_claim": "THE DIRECT HEARING (mediated via SL's library at RTSL, session 41). The parent paper's introduction: 'Perlin's image synthesizer carried this idea further by providing a full language including conditional and looping constructs, function and procedure definitions' - and the abstract: the new language 'incorporates features of both Cook's and Perlin's systems'. The hearing: whether Perlin's full-language form is the ancestor the parent modified (Cook supplied the shader-type separation; Perlin supplied the language), judged on the paper's own text.",
+       "source_title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction); Olano (2014): 'In 1985, Ken Perlin's Image Synthesizer expanded this into a full language, with functions, loops and branching'",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Perlin, An Image Synthesizer (1985)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "reyes-rendering-architecture-cook-carpenter-catmull-1987-1987",
+      "candidate": {
+       "name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+       "year": 1987,
+       "lens": "L1",
+       "type": "architecture",
+       "domain": "computer graphics",
+       "definition": "The REYES image rendering architecture (Cook, Carpenter & Catmull, SIGGRAPH 1987), built at Lucasfilm's Computer Division and carried to Pixar: primitives are diced into micropolygon grids, shaded as whole grids, then sampled - the architecture Pixar's renderer implemented and the one the RenderMan Interface was designed around.",
+       "causal_claim": "THE DIRECT HEARING (defined-against at RTSL, session 41 - a different relation there). At the parent the relation is design-target: the language was built at Pixar as the shading component of the REYES renderer; the interface it lives in 'was designed around' REYES, whose semantics (shading whole micropolygon grids before visibility, ShadingRate) the language's execution model presupposes - shaders run per grid point, with derivatives and texture filtering cheap because grids are shaded at once. The hearing: consumed target architecture, judged on the 1990 paper's design and implementation record.",
+       "source_title": "ACM Turing Award profile of Pat Hanrahan: 'Hanrahan's team built RenderMan on top of a system previously developed by Catmull along with Loren Carpenter and Rob Cook called REYES'; RenderMan Interface Specification schematic: 'REYES is where RenderMan started... the architecture the RenderMan Interface Specification was designed around... it shaped the spec's semantics, including ShadingRate, the shading-before-visibility order'",
+       "source_url": "https://amturing.acm.org/award_winners/hanrahan_4652251.cfm"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "renderman-interface-specification-pixar-1988-1988",
+      "candidate": {
+       "name": "RenderMan Interface Specification (Pixar, 1988)",
+       "year": 1988,
+       "lens": "L16",
+       "type": "standard",
+       "domain": "computer graphics / standards",
+       "definition": "Pixar's RenderMan Interface Specification, first published 1988 (v3.0; 3.1 in 1989): the standard interface between modelers and photorealistic renderers - the Ri procedural API, the RIB bytestream format, and the first specification of the shading language itself. Pat Hanrahan was its main architect.",
+       "causal_claim": "THE SESSION'S ASSIGNED DISCRIMINATION TEST (mediation by containment at RTSL, session 41). The spec's v3.0 'set out the core API, RIB and the Shading Language' - so the candidate CONTAINS the parent's design in its first specified form, two years before the parent paper. The hearing: does the 1990 language consume the spec's framework (the interface discipline, the global-state interface the paper says it 'clearly specified'), or is the spec the language's container and first publication form - the same design act by the same architect (Hanrahan led both), in which case containment is not ancestry?",
+       "source_title": "RenderMan Interface Specification schematic (vectree): 'The RenderMan Interface Specification was published by Pixar in 1988. Pat Hanrahan was its main architect... Version 3.0 (1988) set out the core API, RIB and the Shading Language'; ACM Hanrahan profile: 'Hanrahan's principal contributions were the RenderMan Interface Specification (RISpec) and its Shading Language'",
+       "source_url": "https://vectree.io/pdf/c/renderman-interface-specification"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "RenderMan Interface Specification (Pixar, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "upstill-the-renderman-companion-1989-1989",
+      "candidate": {
+       "name": "Upstill, The RenderMan Companion (1989)",
+       "year": 1989,
+       "lens": "L23",
+       "type": "other",
+       "domain": "computer graphics",
+       "definition": "Steve Upstill's 'The RenderMan Companion' (Addison-Wesley, 1989): the first book-length published description of RenderMan and its shading language, written from inside Pixar a year before the Hanrahan & Lawson paper.",
+       "causal_claim": "Filed as the contemporaneous-account carrier: Pixar 'built a shading language based on these ideas into RenderMan. This was published in The RenderMan Companion by Steve Upstill in 1989, with more technical detail in Hanrahan and Lawson's 1990 SIGGRAPH paper.' The hearing: the book is the parent design's own documentation and first publication form, not a source the design consumed - documentation of the parent, judged as such.",
+       "source_title": "Olano, 'Early stories of shading on graphics hardware' (2014)",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Upstill, The RenderMan Companion (1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "whitted-an-improved-illumination-model-for-shaded-display-19-1980",
+      "candidate": {
+       "name": "Whitted, An improved illumination model for shaded display (1980)",
+       "year": 1980,
+       "lens": "L4",
+       "type": "method",
+       "domain": "computer graphics",
+       "definition": "Turner Whitted's 1980 recursive ray-tracing illumination model, in which - as the parent paper's introduction records - Whitted proposed that the rendering system have a collection of built-in shaders accessible via a shader dispatch table: the earliest posed form of extensible shading inside a renderer.",
+       "causal_claim": "The parent paper's introduction names Whitted's dispatch-table proposal in its ancestry survey. The hearing: a posed possibility (extensibility via a table of BUILT-IN shaders) is not the parent's mechanism (a user-writable LANGUAGE); anticipation of the problem's shape, judged against the paper's own framing, which passes from Whitted to Cook's model as the operative step.",
+       "source_title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction) (introduction: 'Whitted proposed that the rendering system have a collection of built-in shaders accessible via a shader dispatch table [31]')",
+       "source_url": ""
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Whitted, An improved illumination model for shaded display (1980)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cook-torrance-a-reflectance-model-for-computer-graphics-1981-1981",
+      "candidate": {
+       "name": "Cook & Torrance, A reflectance model for computer graphics (1981)",
+       "year": 1981,
+       "lens": "L1",
+       "type": "theory",
+       "domain": "computer graphics",
+       "definition": "Cook & Torrance's physically-based specular reflectance model (SIGGRAPH 1981 / TOG 1982): the microfacet BRDF that became standard content for shading systems' libraries and example surface shaders.",
+       "causal_claim": "Filed as the library-content representative: reflectance models of this class are what a shading language's built-in functions and standard surface shaders EXPRESS. The hearing: a model the language can express is content inside the leap, not the leap's enabler - the components discrimination, judged against the parent's design (a language, not a model).",
+       "source_title": "Cook & Torrance, SIGGRAPH 1981; standard histories of shading models",
+       "source_url": ""
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Cook & Torrance, A reflectance model for computer graphics (1981)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "blinn-models-of-light-reflection-for-computer-synthesized-pi-1977",
+      "candidate": {
+       "name": "Blinn, Models of light reflection for computer synthesized pictures (1977)",
+       "year": 1977,
+       "lens": "L1",
+       "type": "theory",
+       "domain": "computer graphics",
+       "definition": "James Blinn's 1977 half-vector specular model and associated reflection models: with Phong's 1975 model, the default local illumination content that renderers hard-coded before shading languages, and that shading libraries thereafter supplied as built-in surface shaders.",
+       "causal_claim": "Filed with Cook & Torrance as the incumbent content stratum: these models are what the pre-language renderers hard-coded (the parent's prior state) and what the parent's library re-supplies as code. The hearing: content expressed by the language, and the very incumbents whose hard-coding defines the prior state - not a consumed predecessor of the language design.",
+       "source_title": "Blinn, SIGGRAPH 1977; the parent paper's prior-state record",
+       "source_url": ""
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Blinn, Models of light reflection for computer synthesized pictures (1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "peachey-solid-texturing-of-complex-surfaces-1985-1985",
+      "candidate": {
+       "name": "Peachey, Solid texturing of complex surfaces (1985)",
+       "year": 1985,
+       "lens": "L1",
+       "type": "method",
+       "domain": "computer graphics",
+       "definition": "Darwyn Peachey's 'Solid texturing of complex surfaces' (SIGGRAPH 1985): procedural three-dimensional texture functions evaluated in object space - with Perlin's synthesizer, the founding statement of procedural solid texturing as a practice.",
+       "causal_claim": "Filed as the procedural-texturing practice stratum: solid texturing is the flagship USE the parent language serves. The hearing: the practice reaches the language embodied in Perlin's synthesizer (the language-side carrier, filed at L2) - Peachey's paper is the technique-side statement of the same stratum; mediation via Perlin is the expected record, judged on whether any Peachey-specific mechanism is consumed by the language design itself.",
+       "source_title": "Peachey, SIGGRAPH 1985; standard procedural-texturing histories",
+       "source_url": ""
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Peachey, Solid texturing of complex surfaces (1985)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "catmull-texture-mapping-on-curved-surfaces-1974-1974",
+      "candidate": {
+       "name": "Catmull, Texture mapping on curved surfaces (1974)",
+       "year": 1974,
+       "lens": "L19",
+       "type": "method",
+       "domain": "computer graphics",
+       "definition": "Ed Catmull's 1974 Utah dissertation work: texture mapping and the rendering of bicubic patch surfaces - the origin of the texture-access practice every later shading system presupposes, and of the patch-primitive world REYES diced.",
+       "causal_claim": "Filed for completeness of the consumed-practice stratum: texture access is inside the parent's library (texture() is a core built-in). The hearing: the practice reaches the parent through the REYES pipeline (which carries texture mapping into the shading context) and through the library designs of Cook/Perlin - a distant fundamental with named intermediaries; mediation is the expected record.",
+       "source_title": "Catmull, University of Utah dissertation, 1974; RenderMan histories (personnel/technology tables list Catmull: 'Z-buffer, Texturing')",
+       "source_url": ""
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Catmull, Texture mapping on curved surfaces (1974)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "kajiya-the-rendering-equation-1986-1986",
+      "candidate": {
+       "name": "Kajiya, The rendering equation (1986)",
+       "year": 1986,
+       "lens": "L5",
+       "type": "theory",
+       "domain": "computer graphics",
+       "definition": "James Kajiya's 'The Rendering Equation' (SIGGRAPH 1986): the integral-equation formulation of light transport - the general physical framework against which any shading model's adequacy is measured.",
+       "causal_claim": "Filed as the framework/diagnosis candidate: the parent paper states as a design goal 'an abstract shading model based on ray optics suitable for both global and local illumination models'. The hearing: the parent's model is a deliberately local, ray-optics abstraction; Kajiya's equation is the era's general frame but no derivation in the paper runs on it - a framework named by the era is not a consumed mechanism (the Hochreiter-condition shape).",
+       "source_title": "Hanrahan & Lawson, 'A Language for Shading and Lighting Calculations', Proc. SIGGRAPH 1990 (abstract and introduction) (design goals); Kajiya, SIGGRAPH 1986",
+       "source_url": ""
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Kajiya, The rendering equation (1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cook-porter-carpenter-distributed-ray-tracing-1984-1984",
+      "candidate": {
+       "name": "Cook, Porter & Carpenter, Distributed ray tracing (1984)",
+       "year": 1984,
+       "lens": "L6",
+       "type": "method",
+       "domain": "computer graphics",
+       "definition": "Cook, Porter & Carpenter's distributed ray tracing (SIGGRAPH 1984): stochastic sampling extended through the ray tracer for motion blur, depth of field and gloss - the Lucasfilm group's flagship rendering technique of the same moment as shade trees.",
+       "causal_claim": "Filed as the incumbent/sibling-technique candidate: distributed ray tracing is the ray-tracing line's answer to the same realism problems; REYES (and with it the parent's home renderer) was designed on a different bet (micropolygon rasterization over ray tracing). The hearing: a sibling technique from the same laboratory, compared not consumed - its stochastic-sampling content belongs to REYES's record, not to the language's.",
+       "source_title": "Cook, Porter & Carpenter, SIGGRAPH 1984; Catmull interview (CGW 2009): 'Rob came up with stochastic sampling... the architecture was originally called REYES'",
+       "source_url": ""
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Cook, Porter & Carpenter, Distributed ray tracing (1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-c-programming-language-kernighan-ritchie-1978-1978",
+      "candidate": {
+       "name": "The C programming language (Kernighan & Ritchie, 1978)",
+       "year": 1978,
+       "lens": "L12",
+       "type": "other",
+       "domain": "programming languages",
+       "definition": "The C language (K&R, 1978): the systems-programming lingua franca whose syntax and procedural form the RenderMan Shading Language deliberately echoes - RSL is universally described as 'a C-like programming language'.",
+       "causal_claim": "Filed as the programmability/form candidate: the parent is C-LIKE by design, for familiarity to its programmer users. The hearing: the Booth-at-Jordan discrimination - a borrowed statement FORM is not the leap's enabler where the form is not the mechanism (discriminated from Church at Lisp, where the form IS the mechanism); the parent's mechanisms are its shader kinds, its renderer interface and its execution model, none of which is C's.",
+       "source_title": "RenderMan Interface Specification schematic: 'The RenderMan Shading Language is the C-like programming language in the RenderMan Interface Specification'",
+       "source_url": "https://vectree.io/pdf/c/renderman-interface-specification"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "The C programming language (Kernighan & Ritchie, 1978)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pixar-image-computer-1986-1986",
+      "candidate": {
+       "name": "Pixar Image Computer (1986)",
+       "year": 1986,
+       "lens": "L9",
+       "type": "device",
+       "domain": "computer graphics / hardware",
+       "definition": "The Pixar Image Computer (1986): Pixar's first commercial product, a channel-processor image machine - the hardware Hanrahan initially worked on when he joined Pixar in 1986, before pitching RenderMan as the product when the machine struggled to find a market.",
+       "causal_claim": "Filed as the machines-consumed candidate for completeness: the parent language's implementation (PhotoRealistic RenderMan) ran on general-purpose workstations, not on the Image Computer; the machine is the institutional backdrop of the parent's origin (its commercial failure is WHY RenderMan became a product), not a substrate the language consumed. Judged on the counterfactual: remove the machine, the language design is unchanged.",
+       "source_title": "ACM Turing Award profile of Pat Hanrahan: 'Initially he worked on software for the company's first commercial product, the Pixar Image Computer. When it struggled to find a market, Hanrahan pitched the idea of taking Pixar's in-house rendering software and selling it as a commercial product. This became RenderMan'",
+       "source_url": "https://amturing.acm.org/award_winners/hanrahan_4652251.cfm"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Pixar Image Computer (1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pixar-animation-studios-1986-1986",
+      "candidate": {
+       "name": "Pixar Animation Studios (1986)",
+       "year": 1986,
+       "lens": "L21",
+       "type": "institution",
+       "domain": "computer graphics",
+       "definition": "Pixar (1986): the company formed when Steve Jobs acquired Lucasfilm's Computer Division - the institution that employed Hanrahan (1986-89), Lawson, and the REYES team, and that published the RenderMan Interface and shipped PhotoRealistic RenderMan.",
+       "causal_claim": "Filed for the institution hearing: the parent is Pixar's OWN artifact, designed by its employees as its product - the self-carriage shape (compare the Anthropometric Laboratory at Galton, Bern IAM at the offline DB). The institution's separable contributions are the artifacts heard directly (REYES, the RISpec); the company as such is the parent's home, not its predecessor.",
+       "source_title": "ACM Turing Award profile of Pat Hanrahan: 'Pixar Animation Studios (Senior Scientist 1986-1989)... In 1986 Hanrahan joined fellow Turing award winner Ed Catmull and computer graphics pioneer Alvy Ray Smith at Pixar'",
+       "source_url": "https://amturing.acm.org/award_winners/hanrahan_4652251.cfm"
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Pixar Animation Studios (1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lucasfilm-computer-division-computer-graphics-project-1979-1979",
+      "candidate": {
+       "name": "Lucasfilm Computer Division, Computer Graphics Project (1979)",
+       "year": 1979,
+       "lens": "L21",
+       "type": "institution",
+       "domain": "computer graphics",
+       "definition": "Lucasfilm's Computer Division graphics group (founded 1979 under Ed Catmull): the laboratory where Cook developed shade trees and stochastic sampling and where REYES was built, before the division was acquired and became Pixar in 1986, the team and technology following.",
+       "causal_claim": "Filed for the institution-through-artifact hearing: the division's contribution to the parent is exhausted by the specific artifacts it carried - Cook's shade trees and the REYES architecture, both heard directly at L1. The decomposition discipline: an institution is admitted, if at all, through the separable artifact it carried that the others do not cover; here the artifacts cover it. Catmull's own account: 'The architecture was originally called REYES... When we spun out and became Pixar, the technology, of course, followed us.'",
+       "source_title": "Catmull interview, Computer Graphics World (2009): 'We were at Lucasfilm then... Yes. The architecture was originally called REYES, which Loren [Carpenter] named'",
+       "source_url": "https://www.cgw.com/Publications/CGW/2009/Volume-32-Issue-2-Feb-2009-/Everything-You-Ever-Saw.aspx"
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Lucasfilm Computer Division, Computer Graphics Project (1979)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "postscript-page-description-language-adobe-1984-1984",
+      "candidate": {
+       "name": "PostScript page description language (Adobe, 1984)",
+       "year": 1984,
+       "lens": "L19",
+       "type": "standard",
+       "domain": "computing / publishing",
+       "definition": "Adobe PostScript (1984): the page-description language that separated document creation from printers - the explicit model for the RenderMan INTERFACE's separation of scene description from renderers ('like PostScript for 3D').",
+       "causal_claim": "Filed as the cross-field import candidate, scoped honestly: the PostScript analogy governs the INTERFACE's design (the RISpec candidate's record), not the shading language's design - the language's models are Cook and Perlin, not a page-description language. The hearing: an import consumed by the parent's container is not consumed by the parent; expected record is failure at this parent with the channel noted as belonging to the RISpec's (already-refused) hearing.",
+       "source_title": "RenderMan Interface Specification schematic: 'Pixar modeled this on PostScript, where a page description language separated document creation from printers... a standard interface between modelers and photorealistic renderers, like PostScript for 3D'",
+       "source_url": "https://vectree.io/pdf/c/renderman-interface-specification"
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "PostScript page description language (Adobe, 1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Abram & Whitted, Building Block Shaders (1990)",
+       "year": 1990,
+       "lens": "L2",
+       "type": "method",
+       "domain": "computer graphics",
+       "definition": "Gregory Abram and Turner Whitted's 'Building Block Shaders' (SIGGRAPH 1990): shading assembled from composable building blocks inside a ray-tracing system - a coeval alternative formulation of programmable shading, published in the same proceedings as the parent paper (pp. 283-288, immediately before it).",
+       "causal_claim": "Filed knowing it is the parent's OWN YEAR: the year-granularity date bound is expected to drop it at resolve, and the drop is the record - a coeval twin formulation (composition of blocks vs a textual language) that the graph cannot order against the parent. No re-dating will be attempted. Its existence is multiples evidence about the parent's ripeness, recorded here and in the run log.",
+       "source_title": "Abram & Whitted, SIGGRAPH 1990; Olano (2014): the graphical node/network interpretation 'was Abram and Whitted's Building Block Shaders in 1990'",
+       "source_url": "https://gaim.umbc.edu/2014/09/12/gh-shading/"
+      },
+      "reason": "dated on/after parent year 1990"
      }
     ],
     "prefiltered": []
