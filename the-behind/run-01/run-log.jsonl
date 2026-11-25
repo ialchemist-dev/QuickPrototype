@@ -2031,3 +2031,61 @@
   "expansions_done": 90
  }
 }
+{
+ "ts": "2026-11-25T11:13:58Z",
+ "session": "run session 41 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "normal-law-of-error-gauss-1809-1809",
+ "parent_name": "Normal law of error (Gauss, 1809)",
+ "raw": 16,
+ "dry_notes": "16 dry/shortfall notes filed. L3 meta dry: the historiography (Stigler 1981/1986; Hald 1998 Part III; Plackett; Eisenhart) names exactly the filed ancestry - nothing further. L23 meta dry: the contemporaneous record is the priority dispute itself (Legendre's 1809 letter) - an account OF the parent, used as evidence in the Legendre evaluation, not a candidate. L7 dry (failed fitting rules are the prior state; artifact forms filed at L1/L6). L8 dry (the one dataset with a claim, Piazzi's Ceres arc, filed at L4). L9/L10/L12/L15/L16 dry (no machines, materials, programmability, services or standards for an 1809 treatise). L11 shortfall (the combination recipes ARE the filed artifacts - Mayer L2, Boscovich L1, Legendre L1). L13 dry (log tables = generic infrastructure). L14/L18 dry (the law theorizes instrument error; it wields no instrument). L17 dry (no external metric - the parent CREATES the metric, h). L22 dry (the era condition's document form is the Ceres problem, L4). L2 scope note: Book I's orbit-method ancestry (Olbers 1797; Lambert's orbit theorem 1761) deliberately NOT filed - this node is the error law of Book II, not the Theoria Motus as an orbit system. Resolve: 15 distinct, 1 matched existing (De Moivre), 0 judge queue, 0 prefiltered, 1 date-dropped (below). PARENT-FIELD VERIFICATION (the session-31 defect): the node's stored bottleneck/leap/prior_state are EMPTY, as flagged in sessions 32-40; its stored definition is present ('The Gaussian error law from Gauss's Theoria Motus: observational errors follow the normal distribution.'). CORRECTED RECORD, reconstructed from Theoria Motus Book II §§175-189 and the session-31 Fechner admission (edge at 6.0; cf. the session-30 Thurstone builder's Gauss META entry), used for this expansion and stated here per protocol - graph.json NOT hand-edited. bottleneck: 'Before the error law, observational error had no mathematical form, because discrepancies among observations were treated as mistakes to be discarded or averaged by rule of thumb rather than as draws from a probability distribution.' leap: 'Gauss (1809, Theoria Motus §§175-189) gave observational error a law: postulating in §177 that the arithmetic mean is the most probable value, he derived the unique error density phi(Delta) = (h/sqrt(pi)) * exp(-h^2 Delta^2) - with h the measure of precision - and obtained the method of least squares as its consequence (§186: 'principium nostrum, quo iam inde ab anno 1795 usi sumus'), converting the combination of observations from craft practice into probabilistic inference.' prior_state: 'Astronomers and geodesists combined discordant observations by ad hoc rules - the arithmetic mean by custom, rejection of outliers by judgment, Mayer's grouping, Boscovich's absolute-deviation fit - with no probability law for error itself: Simpson (1755) and Lambert had treated error distributions for special cases, Daniel Bernoulli (1778) had posed the most-probable-value question under an assumed semicircular law, and Legendre (1805) had published least squares as a purely algebraic recipe with no probabilistic justification.'",
+ "date_dropped": [
+  "Laplace, Theorie analytique des probabilites (1812) - filed under its canonical name and year for the record and dropped by the resolve date bound ('dated on/after parent year 1809'). The parallel founder's canonical artifact POSTDATES the parent (Gauss 1809 precedes Laplace's 1810 memoir and 1812 treatise): the components discrimination of sessions 38-39 (Gauss channels the derivation, Laplace the limit theorem) is a downstream synthesis, not an edge into 1809. Direction matters."
+ ],
+ "distinct": 15,
+ "evaluated": 15,
+ "survivors": 0,
+ "rejected": 15,
+ "mediated": 0,
+ "rejections_of_note": [
+  {
+   "name": "Legendre, Nouvelles methodes pour la determination des orbites des cometes (1805)",
+   "reason": "THE SOURCE HEARING (carried from Galton/Quetelet/Laplace records). Fail-closed at the directness gate and Q3. The documented relation is a priority dispute, not a channel: §186's 'principium nostrum, quo iam inde ab anno 1795 usi sumus' is a counter-claim AGAINST the 1805 publication, and Legendre's letter answers it as one ('je n'ai jamais appele principium nostrum un principe qu'un autre avait publie avant moi'). §§175-189 name no source; the derivation runs from the mean postulate alone. Engagement with a rival is not consumption (session-39 Gauss-at-Laplace, applied symmetrically). Stigler: Gauss probably possessed the method earlier, not conclusively; Legendre keeps priority of publication - a fact about the record, not a channel. Q11 scored PASS on Legendre's own centrality; the hearing does not fail there. REVISIT CONDITION (in the Q3 falsification): any document showing Gauss working FROM the 1805 appendix (annotated copy, letter, draft). Flagged as this expansion's most contestable call."
+  },
+  {
+   "name": "De Moivre, The Doctrine of Chances (1738) [LINK candidate, existing node]",
+   "reason": "Directness fail, NO mediator recordable - the session's structural subtlety: the only documented junction of the binomial-approximation tradition with the error law is Laplace's limit-theorem synthesis of 1810/1812, which POSTDATES the parent; a later artifact cannot mediate an edge into 1809. Gauss's derivation takes no binomial limit and cites no approximation; the two derivations of the same curve are independent constructions joined downstream. Consistent with, and not imported from, the session-38 (mediated via Laplace at Quetelet) and session-39 (admitted at Laplace) records - chronology runs the other way here. Q11 pass on the candidate's own record."
+  },
+  {
+   "name": "Adrain, Research concerning the probabilities of the errors which happen in making observations (1808)",
+   "reason": "The multiples test in its purest form in the run: the same error law and least squares, derived independently in Philadelphia in the same season (manuscript 1808; the Analyst issue probably appeared 1809), unknown to Gauss, with zero influence on the subject ('did not influence the development of the subject' - Patel & Read; rediscovered by Abbe 1871). Q1 scored PASS on Adrain's own record; Q3 and directness fail outright. Recorded as multiples evidence about the parent's ripeness, not as ancestry. His one possible channel runs to Legendre (he may have read the 1805 book), not to Gauss."
+  },
+  {
+   "name": "Daniel Bernoulli, Diiudicatio maxime probabilis plurium observationum discrepantium (1778)",
+   "reason": "The closest anticipation: Bernoulli posed the parent's exact question in the parent's exact form (the most probable value for the complex of observations - Kendall 1961) a generation early, under an ASSUMED semicircular law. Gauss's procedure inverts Bernoulli's (postulate the estimator, derive the law). No document carries the memoir into the parent; Kendall's 'astonishingly in advance of its time' is the historiography of non-transmission. Form anticipated is not form consumed (the Masse discipline)."
+  },
+  {
+   "name": "Piazzi's Ceres observations and the orbit-recovery problem (1801)",
+   "reason": "Fail-closed partial, discriminated from Lashley at Jordan (session 40): Lashley's lecture is a published FORMULATION whose refutations the parent adopts verbatim as design constraints; the Ceres case has no formulation document - it is a circumstance (a lost planet, a short arc), its constraints are the generic condition of orbit work since Kepler, and the parent's own preface derives the problem from Kepler and Tycho while treating planets and comets generally. The specific observations are consumed material (an instance - the Eden discrimination), and their working belongs to the author's 1801 computations, judged separately. Revisit condition recorded in the Q3 falsification."
+  },
+  {
+   "name": "Gauss, recovery of Ceres and the published orbit computations (1801)",
+   "reason": "Own-version exception argued and REFUSED: the admitted instances (Simula I; Fechner 1858; D3D9) share one shape - the earlier artifact CONTAINS the mechanism the parent reworks. The 1801 artifact contains the parent's APPLICATION, not its mechanism: no error law is stated in 1801 for 1809 to consume. Operative-carrier test also fails (remove the publications, keep the practice the parent dates to 1795, and §§175-189 are unchanged). What remains is formation plus demonstration case (instance + motive). Directness partial, honestly - the practice is the author's own, continuously held."
+  },
+  {
+   "name": "Simpson, On the advantage of taking the mean of a number of observations (1755)",
+   "reason": "Fail-closed partial. Simpson founded the presupposed concept (error as a distributed quantity), and a documented carrier into the Continental tradition exists - Lagrange's 1770-73 memoir reproduced him without acknowledgment (Kendall); at Laplace (session 39) Simpson was mediated via that memoir because Laplace's memoirs engage the tradition directly. At THIS parent no document shows Gauss consuming Simpson or Lagrange's error memoir; the concept arrived as diffuse practice. Anticipation absorbed into practice is not a channel (the Bouguer discipline)."
+  },
+  {
+   "name": "Laplace, Memoire sur la probabilite des causes par les evenements (1774)",
+   "reason": "Parallel founder, symmetric with session 39's Gauss-at-Laplace record: the parent inverts no probability, assumes no double-exponential, and takes the mean where Laplace's first law takes the median. The traditions join only in Laplace's own 1810/1812 synthesis, downstream of the parent."
+  }
+ ],
+ "notes": "ZERO SURVIVORS - the fifth zero-survivor expansion of the run (Gage, Weber, Family likeness, the MDP, now Gauss). The zero is the finding, and it is overdetermined: each refusal rests on a different rule (priority dispute, post-parent junction, multiples, inverted anticipation, no formulation document, own-version mechanism test, practice absorption, parallel foundation, defined-against incumbents x2, problem-form without adoption, vocabulary inheritance, institutional self-carriage). Substantively: §177's derivation is self-contained BY DESIGN - Gauss postulates the mean as 'an axiom' ('It has been customary certainly to regard as an axiom the hypothesis that... the arithmetical mean of the observed values affords the most probable value') and solves for the unique density; the error-theory tradition reaches 1809 as PRACTICE embodied in the postulate's plausibility, not as documents the derivation runs on. The node that six mediation records point INTO (sessions 31-39) thus has, on its own documents, no predecessors in the graph: the law's ancestry is a tradition, and the tradition's artifacts fail the channel test one by one. Adversarial verification: no survivors, so no verification file - there was nothing for the verifier to attack; the dry-run through score.rank_candidates confirmed 0 survivors before the single apply. Gauss is now expanded; the frontier head passes to RTSL. Dual-write confirmed: this record in run-log.jsonl and the expansion state in graph.json (expansions_done incremented).",
+ "totals_after": {
+  "nodes": 192,
+  "edges": 244,
+  "budget": 192,
+  "expansions_done": 91
+ }
+}
