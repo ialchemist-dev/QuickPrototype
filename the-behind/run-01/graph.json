@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T07:05:20+00:00",
-  "expansions_done": 58,
-  "raw_candidates_seen": 2998,
+  "updated_at": "2026-11-25T07:10:42+00:00",
+  "expansions_done": 59,
+  "raw_candidates_seen": 3019,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -14489,6 +14489,104 @@
     "name": "Methodus Inveniendi (Euler, 1744)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "SIMSCRIPT",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:10:29+00:00"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "GPSS (General Purpose Simulation System)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:10:29+00:00"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "SOL (Simulation Oriented Language)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:10:29+00:00"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "Three-phase approach to simulation (Tocher)",
+    "reason": "mediated_via: Simula I",
+    "at": "2026-11-25T07:10:29+00:00",
+    "mediated_via": "Simula I"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "Monte Carlo method",
+    "reason": "mediated_via: Simula I",
+    "at": "2026-11-25T07:10:29+00:00",
+    "mediated_via": "Simula I"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "Lisp",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:10:29+00:00"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "Sketchpad",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:10:29+00:00"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "Plex structure (Ross, AED)",
+    "reason": "mediated_via: Record Handling (Hoare)",
+    "at": "2026-11-25T07:10:29+00:00",
+    "mediated_via": "Record Handling (Hoare)"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "ALGOL W",
+    "reason": "mediated_via: Record Handling (Hoare)",
+    "at": "2026-11-25T07:10:29+00:00",
+    "mediated_via": "Record Handling (Hoare)"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "Coroutines (Conway)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:10:29+00:00"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "UNIVAC 1107",
+    "reason": "mediated_via: Simula I",
+    "at": "2026-11-25T07:10:29+00:00",
+    "mediated_via": "Simula I"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "List-structured free store for block instances (Dahl)",
+    "reason": "mediated_via: Simula I",
+    "at": "2026-11-25T07:10:29+00:00",
+    "mediated_via": "Simula I"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "Norwegian Computing Center",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:10:29+00:00"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "UNIVAC ALGOL 60 compiler",
+    "reason": "mediated_via: Simula I",
+    "at": "2026-11-25T07:10:29+00:00",
+    "mediated_via": "Simula I"
+   },
+   {
+    "parent_id": "simula-67-1967",
+    "name": "Nygaard's Monte Carlo reactor and operations-research computations at NDRE",
+    "reason": "mediated_via: Simula I",
+    "at": "2026-11-25T07:10:29+00:00",
+    "mediated_via": "Simula I"
    }
   ]
  },
@@ -16893,12 +16991,16 @@
     {
      "title": "History of the Scheme programming language (mirror)",
      "url": "https://static.hlt.bme.hu/semantics/external/pages/John_McCarthy/en.wikipedia.org/wiki/History_of_the_Scheme_programming_language.html"
+    },
+    {
+     "title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Multiples test on Q3: the lambda calculus itself also carried lexical binding - a genuine multiple, recorded on the Q3 verdict (partial); this edge carries only the implemented-example channel. Weakest-evidence attack on Q1: the 'Sussman's studies of ALGOL' impetus rests on history-page summaries rather than a 1975 document; it is corroborated by the design fact itself - lexical scope had exactly two possible sources in 1975 and the other (the calculus) is separately admitted, so no double-counting occurs. Mediation attack: via Landin's correspondence papers - fails: the correspondence is a result ABOUT this candidate and is disposed at this parent via ALGOL 60; the recorded channel is direct study of the language. Anachronism check: the 1960 Revised Report precedes 1975. Edge stands, provisional.",
-    "at": "2026-11-25T03:59:18+00:00"
+    "notes": "Q1 attack fails to land: the impossibility claim is scoped to the block-as-template mechanism, and Dahl's own record ('the block structure turned out to be essential to our approach'; the FORTRAN-based version abandoned) documents that no substitute base carried it. Mediation attack via Simula I considered and answered: the ALGOL substrate also runs directly into Simula 67 - the Common Base Language is itself an ALGOL 60 extension by its own text (approximate superset, sec. 1.3.1), so the edge is not exhausted by the Simula I path. Date and direction sound. Kept provisional per run convention.",
+    "at": "2026-11-25T07:10:42+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T03:58:48+00:00"
@@ -17599,7 +17701,7 @@
    "prior_state": "ALGOL 60 blocks and record handling; hand-built simulation code.",
    "status": "provisional",
    "depth": 6,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -18665,6 +18767,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T07:05:00+00:00"
+  },
+  "simula-i-1965": {
+   "id": "simula-i-1965",
+   "name": "Simula I",
+   "aliases": [],
+   "year": 1965,
+   "domain": "programming languages",
+   "type": "other",
+   "definition": "Dahl & Nygaard's discrete-event simulation language (designed 1962-64, operational on the UNIVAC 1107 by January 1965, CACM 1966): ALGOL 60 plus activity/process declarations whose block instances escaped the stack discipline - the direct precursor Simula 67 generalized.",
+   "bottleneck": "Before Simula I, describing a discrete-event system meant hand-coding its processes and event scheduling in a general-purpose language: there was no language whose components were the system's own processes, carrying data and actions over simulated time.",
+   "leap": "Simula I (operational 1965; CACM 1966) makes the system's processes the program's components: activity declarations give block instances an independent existence off the stack, referenced explicitly, inspectable from outside, and sequenced quasi-parallel over simulated time.",
+   "prior_state": "Hand-built simulation code in FORTRAN or ALGOL; special-purpose simulation packages without process structure.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Own-version scrutiny re-run at verification (the D3D9 exception, argued in the evaluation): Simula I is a separable published artifact - CACM 1966 paper, implemented under a UNIVAC contract, taught and used at several sites, Burroughs port advocated by third parties - whose mechanisms the child consumes and reworks (SIMULATION class), not an earlier draft of the 1967 document; the exception stands and does not swallow the rule (contrast Bellman's 1952-54 announcements). Mediation attack via Hoare fails: Hoare supplied records, not the process/activity mechanisms this edge carries. Multiples: SOL is a sibling, not a multiple of the same design. Provisional.",
+    "at": "2026-11-25T07:10:42+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:10:29+00:00"
+  },
+  "record-handling-hoare-1965": {
+   "id": "record-handling-hoare-1965",
+   "name": "Record Handling (Hoare)",
+   "aliases": [],
+   "year": 1965,
+   "domain": "programming languages",
+   "type": "theory",
+   "definition": "Hoare's 1965 proposal for representing complex structured objects in an ALGOL 60 extension: dynamically created records belonging to declared record classes, fields declared in the class, class-qualified references, and subclasses - the record-class half of what Simula 67 fused with the ALGOL block.",
+   "bottleneck": "Before Hoare's proposal, structured data in a general-purpose language was ad-hoc: arrays and pointer conventions with no declared kind of object, no fields fixed by a class declaration, and no reference qualified by the class it may point to.",
+   "leap": "Hoare's Record Handling (WG 2.1 Working Paper, Oct 1965; ALGOL Bulletin 21.3.6) proposes record classes: declare a kind of object once, create and destroy its records dynamically, access fields by dot notation, and qualify references by class - with subclasses as specializations.",
+   "prior_state": "ALGOL 60's scalars and arrays; application-specific record layouts in assembly and FORTRAN.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "C. A. R. Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965); WG 2.1 Working Paper, Oct 1965",
+     "url": "http://archive.computerhistory.org/resources/text/algol/ACM_Algol_bulletin/1061032/p39-hoare.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Date verified against the ALGOL 68 Revised Report bibliography: 'Record Handling, WG 2.1 Working Paper, October 1965; also AB.21.3.6, November 1965' - the 1965 dating is sound, and Dahl's Villard-de-Lans (1966) account fixes the personal channel before the January 1967 breakthrough. Mediation attack via ALGOL W fails: the channel is the proposal itself, heard from Hoare in person; ALGOL W is a parallel carrier, recorded as mediated in the other direction. Multiples pressure recorded (Ross's plex upstream; necessity already scored partial). Components discrimination held: Hoare's records carry no procedures - the behaviour half of the class is Simula I's, so this edge and the Simula I edge carry disjoint components. Provisional.",
+    "at": "2026-11-25T07:10:42+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:10:29+00:00"
   }
  },
  "edges": [
@@ -35972,6 +36132,297 @@
     "counterfactual": "The institution question reopens on this parent's own record and resolves differently from Howard: there, RAND was the PREDECESSOR's institution (it carried Bellman, one step removed from Howard) and was rejected as a double-count. Here RAND is the parent's OWN institution, and the separable carried artifact is specifiable: the DP report programme (R-245, R-271 and companions) that the monograph - catalogued as a RAND research study - collects and systematizes. The discrimination from self-carriage (Microsoft at D3D10): RAND is not the author; it is the carrier, as Bern IAM carried the database line at IAM-OnDB and the Gatsby Unit carried Kakade's milieu. Scored 3.0 - the run's thinnest institutional admission - because the artifact, while separable, is the parent's own earlier output in report form.",
     "mediator": null,
     "evidence": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record"
+   }
+  },
+  {
+   "predecessor_id": "algol-60-1960",
+   "successor_id": "simula-67-1967",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before ALGOL 60's block there was no construct whose activation could serve as the template of a kind of thing; Dahl's retrospective states the class concept was inspired by the ALGOL 60 block, and Simula 67 is syntactically an approximate superset of ALGOL 60 (Common Base Language, sec. 1.3.1).",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The block ALGOL supplied is what Dahl generalized into the whole space of class uses the ACM Turing materials enumerate: record structures, procedural data abstractions, processes, packaging by prefixing, and subclassing.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "The designers chose ALGOL 60 deliberately and abandoned UNIVAC's requested FORTRAN-based version 'because the block structure turned out to be essential to our approach' (Dahl 2001) - no other base on offer carried the mechanism.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Partial: block structure and programming security were chosen partly to cut the cost of system description versus hand-coded FORTRAN simulation, but no order-of-magnitude figure is documented.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "ALGOL 60 supplies no metric or benchmark that registers Simula 67's leap.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The block - a named scope bundling declarations with statements, with its own activation lifetime - is the explanatory model the class reworks: 'Dahl generalized the Algol block, first by freeing blocks from the stack discipline' (ACM Turing materials).",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Simula 67 is defined as an extension of ALGOL 60: an ALGOL program is (approximately) a Simula program, and Simula 67's own SIMULATION class is written in the substrate ALGOL provided - composability by literal supersetting.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "ALGOL 60 was the era's cross-domain algorithmic language and the vehicle of WG 2.1, through which Hoare's record proposal also travelled - its reach carried the block far beyond simulation.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Partial: block-structured programming shortened the write-test loop relative to the era's FORTRAN practice, but the parent's iteration gain is not separately documented.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Partial: ALGOL 60 displaced FORTRAN as the default in the European academic milieu the designers worked in, though never globally.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the ALGOL block is the documented ancestor of the class, and the parent's own node record names ALGOL 60 blocks as its prior state.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once block structure existed, language design never returned to flat global scope; lexical block structure is the permanent baseline Simula itself presupposes.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:10:29+00:00",
+   "leap": {
+    "prior_state": "ALGOL 60 blocks and record handling; hand-built simulation code: a program's data and the procedures on it lived apart - ALGOL offered blocks bound to the stack discipline and (in Hoare's 1965 proposal) records as pure data, while simulation models were hand-coded or written in special-purpose languages (Simula I's activities among them) with no general construct that bundled a kind of thing's state with its behaviour, made instances of it, and let kinds specialize one another.",
+    "jump": "The class: a template bundling data with procedures, objects as its dynamically created instances freed from the stack discipline, subclassing by class prefixing (inheritance), virtual procedures, and garbage collection - presented in 'Class and Subclass Declarations' at the IFIP Working Conference on Simulation Languages, Oslo, May 1967, and the origin of every class-based object system after it.",
+    "date": 1967
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove ALGOL 60 and there is nothing to generalize: no block to free from the stack, no superset relation for the Common Base Language, no base language at all - the 1967 design as documented does not occur.",
+    "mediator": null,
+    "evidence": "Dahl (2001): ALGOL 60 chosen for 'the block structure'; the class is the generalized ALGOL block. ACM Turing materials: the class concept 'was inspired by the Algol 60 block'."
+   }
+  },
+  {
+   "predecessor_id": "simula-i-1965",
+   "successor_id": "simula-67-1967",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Simula I made discrete-event system description a language activity: processes as data carriers executing actions over simulated time (CACM 1966) - the capability Simula 67 presupposes and generalizes into the class.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Its activity/process concepts, 'if stripped from all references to simulated time, would be useful for programming and system design in general' (Dahl 2001) - that unblocking is exactly the space Simula 67 occupies.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Simula 67 is 'a generalization and refinement of the former' (Dahl 2001), by the same two authors at the same institution; no other path to the 1967 design exists in the record.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Partial: Simula I cut simulation effort in practice (used for simulation and teaching at several locations at home and abroad), but no quantified collapse is documented.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Simula I supplies no metric or benchmark that registers the child's leap.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The activity/process model - a class of processes described by one declaration, each process a referenceable data structure carrying its actions - is the explanatory model the class formalizes (CACM 1966 account).",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Simula 67's predefined SIMULATION class re-expresses Simula I's special-purpose facilities inside the new language - 'the special purpose activity declarator is replaced by process class' (Dahl 2001): the predecessor's mechanisms became composable content of the successor.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: Simula I spread to several countries and a Burroughs port, but its reach beyond simulation is the child's achievement rather than its own.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "A working implemented language (operational January 1965) gave two years of user experience - the documented route by which the generalization pressure arose ('it became increasingly clear...', Dahl 2001).",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Partial: within the NCC group's practice Simula I displaced hand-coded simulation; globally it remained a specialist tool.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk of this branch: every retrospective (Dahl 2001; Krogdahl 2003; IEEE Milestone 1961-1967) routes the class through Simula I's generalized blocks.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once block instances had independent existence and explicit references, the stack-only regime was permanently superseded in this lineage.",
+     "source": "Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:10:29+00:00",
+   "leap": {
+    "prior_state": "ALGOL 60 blocks and record handling; hand-built simulation code: a program's data and the procedures on it lived apart - ALGOL offered blocks bound to the stack discipline and (in Hoare's 1965 proposal) records as pure data, while simulation models were hand-coded or written in special-purpose languages (Simula I's activities among them) with no general construct that bundled a kind of thing's state with its behaviour, made instances of it, and let kinds specialize one another.",
+    "jump": "The class: a template bundling data with procedures, objects as its dynamically created instances freed from the stack discipline, subclassing by class prefixing (inheritance), virtual procedures, and garbage collection - presented in 'Class and Subclass Declarations' at the IFIP Working Conference on Simulation Languages, Oslo, May 1967, and the origin of every class-based object system after it.",
+    "date": 1967
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Simula I and the January 1967 breakthrough has no subject: it consisted in recognizing that Simula I's activity/process concepts generalize beyond simulated time, and Simula 67's anchoring SIMULATION class is Simula I's facility set re-defined inside the new language.",
+    "mediator": null,
+    "evidence": "Dahl (2001), sec. 3. Own-version exception argued explicitly (the D3D9 precedent): Simula I is a separable published artifact - CACM 1966 paper, implemented under a UNIVAC contract, used and taught at several sites - whose mechanisms (activities, process references, inspect, quasi-parallel sequencing) are consumed and reworked by the child, not an earlier draft of the same document; contrast Bellman's 1952-54 programme statements, which were announcements of one programme rather than a working system in other people's hands."
+   }
+  },
+  {
+   "predecessor_id": "record-handling-hoare-1965",
+   "successor_id": "simula-67-1967",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Hoare's proposal made dynamically created, class-qualified structured objects representable in a general-purpose language at all: 'a method is proposed for the representation in a computer of complex structured objects' as records of declared classes, created and destroyed under program control (AB21.3.6) - the data half of Simula 67's class had no other documented source.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Record classes with subclasses and qualified references unblocked the space of typed object structures: declare a kind once, instantiate it, specialize it, reference it safely - the space Simula 67's subclassing occupies.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: Dahl & Nygaard's own generalized blocks might eventually have been named classes without Hoare, but the documented record shows the subclass notion and the very terms 'class' and 'object' arriving via his proposal at Villard-de-Lans; Ross's plexes upstream also cap uniqueness.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to the proposal itself.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The proposal supplies no metric or benchmark registering the parent's leap.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The record class is an explanatory model: declare a kind of object once, fix its fields in the class declaration, and read every record's properties off the class - design by declaration instead of convention, which Simula's class adopts.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Qualified references and dot notation are an interface discipline: a reference qualified by class C is used through C's attributes without knowing deeper levels - precisely Simula 67's access scheme ('accessible by dot notation down to the prefix level of the qualifying class', Dahl 2001).",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: the proposal also fed the ALGOL X / ALGOL 68 process (WG 2.1 working paper) and ALGOL W - a reach beyond simulation, though its widest effects run through Simula.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "The proposal changed no iteration speed available to the parent.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Partial: record classes displaced ad-hoc layout conventions inside the designs that adopted them (Simula 67, ALGOL W), but records alone did not become the default - the fused class did.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk for the data half of the class: Dahl's retrospective introduces Simula 67's class and subclass choices in the paragraph that presents Hoare's proposal.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once kinds of objects could be declared with their fields and referenced under class qualification, no later object language returned to unqualified raw pointers as the organizing device.",
+     "source": "Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:10:29+00:00",
+   "leap": {
+    "prior_state": "ALGOL 60 blocks and record handling; hand-built simulation code: a program's data and the procedures on it lived apart - ALGOL offered blocks bound to the stack discipline and (in Hoare's 1965 proposal) records as pure data, while simulation models were hand-coded or written in special-purpose languages (Simula I's activities among them) with no general construct that bundled a kind of thing's state with its behaviour, made instances of it, and let kinds specialize one another.",
+    "jump": "The class: a template bundling data with procedures, objects as its dynamically created instances freed from the stack discipline, subclassing by class prefixing (inheritance), virtual procedures, and garbage collection - presented in 'Class and Subclass Declarations' at the IFIP Working Conference on Simulation Languages, Oslo, May 1967, and the origin of every class-based object system after it.",
+    "date": 1967
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Hoare's proposal and Simula 67 loses the subclass notion and its terminology at the documented moment of adoption (Villard-de-Lans 1966, breakthrough January 1967): what remains is Simula I's processes without the record-class half - the 1967 leap as published does not happen in that form.",
+    "mediator": null,
+    "evidence": "Dahl (2001), sec. 3: 'At the Vilard-de-Lans Summer School Tony Hoare had put forth a proposal for record handling with record classes and subclasses, as well as record references restricted to, or qualified by, a given class... We chose the terms class and objects of classes for our new Simula. The notion of subclass was especially appealing to us.' Corroborated by Wikipedia's history: 'In 1966 C. A. R. Hoare introduced the concept of record class construct, which Dahl and Nygaard extended with the concept of prefixing.' Components discrimination: Hoare's records carry data only - no procedures; the behaviour half of the class comes from Simula I's processes."
    }
   }
  ],
@@ -141567,6 +142018,875 @@
       }
      },
      "similarity": 0.8083,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "simula-67-1967": {
+   "raw_candidates": [
+    {
+     "causal_claim": "ALGOL 60 directly enabled Simula 67's leap by supplying the block structure that the class generalizes: Simula 67 is an approximate superset of ALGOL 60, and Dahl's own account says the class concept was inspired by the ALGOL 60 block, freed from stack discipline.",
+     "definition": "The 1960 algorithmic language whose block structure, lexical scoping and procedure activations Simula 67 inherited wholesale and generalized into the class.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "ALGOL 60",
+     "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+     "type": "other",
+     "year": 1960
+    },
+    {
+     "causal_claim": "Simula I directly enabled Simula 67's leap as the ancestor modified: its activity/process declarations, process references, inspect construct and quasi-parallel sequencing are the mechanisms Simula 67 generalized into classes, and Simula 67's predefined SIMULATION class re-defines Simula I's simulation facilities inside the new language.",
+     "definition": "Dahl & Nygaard's discrete-event simulation language (designed 1962-64, operational on the UNIVAC 1107 by January 1965, CACM 1966): ALGOL 60 plus activity/process declarations whose block instances escaped the stack discipline - the direct precursor Simula 67 generalized.",
+     "domain": "programming languages",
+     "lens": "L2",
+     "name": "Simula I",
+     "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+     "type": "other",
+     "year": 1965
+    },
+    {
+     "causal_claim": "Hoare's record handling proposal directly enabled Simula 67's leap by supplying record classes and subclasses, references qualified by a declared class, and dot-notation attribute access: Dahl records that Hoare put the proposal forth at the Villard-de-Lans summer school and 'We chose the terms class and objects of classes for our new Simula. The notion of subclass was especially appealing to us', and class prefixing was the solution built on it.",
+     "definition": "Hoare's 1965 proposal for representing complex structured objects in an ALGOL 60 extension: dynamically created records belonging to declared record classes, fields declared in the class, class-qualified references, and subclasses - the record-class half of what Simula 67 fused with the ALGOL block.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "Record Handling (Hoare)",
+     "source_title": "C. A. R. Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965); WG 2.1 Working Paper, Oct 1965",
+     "source_url": "http://archive.computerhistory.org/resources/text/algol/ACM_Algol_bulletin/1061032/p39-hoare.pdf",
+     "type": "theory",
+     "year": 1965
+    },
+    {
+     "causal_claim": "Hoare physically carried the record-class proposal into the Simula design room: he presented it at the 1966 NATO Summer School at Villard-de-Lans, where Dahl was lecturing on Simula I, immediately before the January 1967 breakthrough that produced Simula 67's class and subclass declarations.",
+     "definition": "Hoare's 1965 record handling proposal (record classes, subclasses, qualified references, dot notation), presented by Hoare in person at Villard-de-Lans in 1966 and adopted by Dahl & Nygaard as the data half of the Simula 67 class.",
+     "domain": "programming languages",
+     "lens": "L20",
+     "name": "Record Handling (Hoare)",
+     "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+     "type": "theory",
+     "year": 1965
+    },
+    {
+     "causal_claim": "SIMSCRIPT's entity-attribute-set system-description world view is asserted by reference works to have influenced Simula's design: a system is described as classes of entities with attributes before any code runs.",
+     "definition": "Markowitz, Hausner & Karr's RAND simulation language (RM-3310, 1962): a system description built from entities, their attributes, and sets, with an event scheduler - the American system-description world view contemporary with Simula I.",
+     "domain": "simulation languages",
+     "lens": "L19",
+     "name": "SIMSCRIPT",
+     "source_title": "Simula (programming language), Wikipedia - 'also influenced by the design of SIMSCRIPT', citing Dahl & Nygaard's HOPL account",
+     "source_url": "https://en.wikipedia.org/wiki/Simula_(programming_language)",
+     "type": "other",
+     "year": 1962
+    },
+    {
+     "causal_claim": "GPSS was the incumbent discrete-event simulation system Simula's designers worked in the shadow of: Gordon's transaction-flow block diagram language at IBM defined what a simulation language was in 1961-67.",
+     "definition": "Geoffrey Gordon's IBM simulation system (1961): models as block diagrams through which transactions flow - the dominant American discrete-event simulation approach parallel to Simula.",
+     "domain": "simulation languages",
+     "lens": "L6",
+     "name": "GPSS (General Purpose Simulation System)",
+     "source_title": "Perspectives on the Evolution of Simulation (Nance & Sargent)",
+     "source_url": "https://citeseerx.ist.psu.edu/document?doi=85dde8b739becd25b64253f346c373df5aee930f&repid=rep1&type=pdf",
+     "type": "other",
+     "year": 1961
+    },
+    {
+     "causal_claim": "SOL was the other ALGOL-based simulation language of the moment: Knuth & McNeley's ALGOL-like simulation language whose authors later advocated the Burroughs version of Simula - a sibling attempt at the same problem.",
+     "definition": "Knuth & McNeley's ALGOL-based simulation language (1964), a contemporary sibling of Simula I in the small family of ALGOL-derived simulation languages.",
+     "domain": "simulation languages",
+     "lens": "L6",
+     "name": "SOL (Simulation Oriented Language)",
+     "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+     "type": "other",
+     "year": 1964
+    },
+    {
+     "causal_claim": "Tocher's The Art of Simulation (1963) formulated the process/activity view of discrete simulation - the problem formulation (describe a system as interacting activities) that simulation languages of the decade answered.",
+     "definition": "K. D. Tocher's simulation methodology (The Art of Simulation, 1963): the three-phase executive and activity-based description of discrete systems, the British formulation of the simulation problem.",
+     "domain": "simulation methodology",
+     "lens": "L4",
+     "name": "Three-phase approach to simulation (Tocher)",
+     "source_title": "Perspectives on the Evolution of Simulation (Nance & Sargent)",
+     "source_url": "https://citeseerx.ist.psu.edu/document?doi=85dde8b739becd25b64253f346c373df5aee930f&repid=rep1&type=pdf",
+     "type": "method",
+     "year": 1963
+    },
+    {
+     "causal_claim": "The Monte Carlo method posed the problem family Simula was born to serve: Nygaard's path to a simulation language ran through Monte Carlo computations (uranium-rod calibration, operations research) at NDRE, where describing queuing and discrete-event systems by hand-coded Monte Carlo programs was the pain.",
+     "definition": "The statistical sampling method for computing system behaviour (Metropolis & Ulam, 1949): the computational practice whose system-description burden motivated dedicated simulation languages.",
+     "domain": "computational mathematics",
+     "lens": "L4",
+     "name": "Monte Carlo method",
+     "source_title": "Stein Krogdahl, The Birth of Simula (2003)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/history/sk-the-birth-of-simula.pdf",
+     "type": "method",
+     "year": 1949
+    },
+    {
+     "causal_claim": "Lisp's garbage collection is the cross-field import behind Simula 67's storage discipline: Simula 67 deletes objects 'by garbage collector alone', and automatic reclamation of unreachable storage was the technique Lisp had introduced in 1960.",
+     "definition": "McCarthy's list-processing language (1960), the origin of garbage collection: automatic reclamation of storage no longer reachable - the storage discipline Simula 67's object deletion presupposes.",
+     "domain": "programming languages",
+     "lens": "L19",
+     "name": "Lisp",
+     "source_title": "Garbage Collection lecture notes (Univ. of Iowa) - GC a term coined in the context of LISP; Simula 67 among the languages featuring it",
+     "source_url": "http://homepage.divms.uiowa.edu/~jones/opsys/fall02/notes/19.html",
+     "type": "other",
+     "year": 1960
+    },
+    {
+     "causal_claim": "Sketchpad's master drawings and instances were a parallel invention of the template/instance idea: Sutherland's masters could be instantiated many times over, each instance sharing the master's structure - the American graphics line's version of class and object.",
+     "definition": "Ivan Sutherland's interactive graphics system (1963) built on master drawings and their instances - a parallel, independent arrival at the template/instance structure.",
+     "domain": "computer graphics",
+     "lens": "L19",
+     "name": "Sketchpad",
+     "source_title": "Simula (programming language), Wikipedia, and IEEE Milestones: Object-oriented programming, 1961-1967",
+     "source_url": "https://ieeemilestones.ethw.org/Milestones:Object-oriented_programming",
+     "type": "other",
+     "year": 1963
+    },
+    {
+     "causal_claim": "Douglas Ross's plex - a structured data aggregate with named components, from his generalized technique for symbol manipulation - is the source Hoare drew on for record classes: Hoare learned about plexes from Ross and renamed them records.",
+     "definition": "Douglas T. Ross's plex (from his 1961 generalized technique for symbol manipulation and the AED work): a structured aggregate of named data components - the ancestor of Hoare's record class.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "Plex structure (Ross, AED)",
+     "source_title": "Simone Martini, Types in Programming Languages between Modelling, Abstraction, and Correctness (CiE 2016)",
+     "source_url": "http://www.cs.unibo.it/~martini/TALKS/martini-CiE2016.pdf",
+     "type": "theory",
+     "year": 1961
+    },
+    {
+     "causal_claim": "Wirth & Hoare's ALGOL W (1966) implemented Hoare's record classes as reference types in a working ALGOL descendant - the record-class idea in executable form in the same years Dahl & Nygaard were designing Simula 67.",
+     "definition": "Wirth & Hoare's ALGOL extension (1966) whose record classes and references put Hoare's record handling proposal into a designed language - the sibling carrier of the same record-class idea.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "ALGOL W",
+     "source_title": "Wirth & Hoare, A Contribution to the Development of ALGOL, CACM (1966)",
+     "source_url": "https://api.openalex.org/works/doi:10.1145%2F365696.365702",
+     "type": "other",
+     "year": 1966
+    },
+    {
+     "causal_claim": "Conway's coroutines - separable transition-diagram modules that resume where they left off - name the control structure Simula's quasi-parallel processes resemble: Dahl describes Simula processes as executing 'in a coroutine-like fashion' and Simula 67 defines resume as 'a basic coroutine call'.",
+     "definition": "Melvin Conway's coroutine concept (1963, 'Design of a Separable Transition-Diagram Compiler'): subroutines that pass control back and forth, resuming at the point of last suspension - the control structure Simula's processes and resume operator instantiate.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "Coroutines (Conway)",
+     "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+     "type": "method",
+     "year": 1963
+    },
+    {
+     "causal_claim": "The UNIVAC 1107 was the machine Simula ran on: NCC received one in August 1963 at a considerable discount and Dahl implemented Simula I on it under contract with UNIVAC, based on the UNIVAC ALGOL 60 compiler.",
+     "definition": "UNIVAC's transistorized mainframe (1962), the machine whose discounted sale to NCC carried the Simula I implementation contract.",
+     "domain": "computing hardware",
+     "lens": "L9",
+     "name": "UNIVAC 1107",
+     "source_title": "Stein Krogdahl, The Birth of Simula (2003)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/history/sk-the-birth-of-simula.pdf",
+     "type": "device",
+     "year": 1962
+    },
+    {
+     "causal_claim": "Dahl's storage management package 'based on a two-dimensional free area list' (completed by May 1963) directly enabled the Simula class: it freed block activations from the stack discipline, giving block instances an independent existence that could be referenced - the mechanism the ACM's account says 'made possible the Simula class'.",
+     "definition": "Dahl's 1963 storage-management package (list-structured free store, two-dimensional free area list) that let ALGOL block instances outlive their callers - the implementation mechanism underneath Simula's processes and classes.",
+     "domain": "programming language implementation",
+     "lens": "L11",
+     "name": "List-structured free store for block instances (Dahl)",
+     "source_title": "ACM Turing Award additional materials: Ole-Johan Dahl",
+     "source_url": "https://amturing.acm.org/info/dahl_6917600.cfm",
+     "type": "method",
+     "year": 1963
+    },
+    {
+     "causal_claim": "The Norwegian Computing Center was the institutional vehicle of Simula 67: it employed both authors, and where Simula I had been made under a UNIVAC contract, 'the second version, Simula 67, was sponsored by the NCC itself' (Dahl).",
+     "definition": "The Norwegian Computing Center (NCC, Norsk Regnesentral, founded 1952): the semi-governmental Oslo institute that employed Dahl and Nygaard and sponsored Simula 67's development itself.",
+     "domain": "research institution",
+     "lens": "L21",
+     "name": "Norwegian Computing Center",
+     "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+     "type": "institution",
+     "year": 1952
+    },
+    {
+     "causal_claim": "The Simula I implementation was built as a run-time system for the ALGOL system provided by UNIVAC: 'the bulk of the implementation effort consisted in writing a new run time system for the Algol system provided by UNIVAC; the compiler extensions, on the other hand, were minimal' (Dahl) - the tooling Simula was built with.",
+     "definition": "UNIVAC's ALGOL 60 compiler system for the 1107, the build substrate into which Dahl inserted Simula I's run-time system.",
+     "domain": "programming language implementation",
+     "lens": "L13",
+     "name": "UNIVAC ALGOL 60 compiler",
+     "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+     "type": "other",
+     "year": 1963
+    },
+    {
+     "causal_claim": "Nygaard's own pre-Simula work - Monte Carlo computations calibrating uranium rods for a nuclear reactor and operations research on military systems at the Norwegian Defence Research Establishment, and simulation programs written from 1957 - is the creator-lineage origin of the demand for a system description language.",
+     "definition": "Kristen Nygaard's 1950s NDRE practice: hand-built Monte Carlo simulation programs for reactor calibration and military operations research - the work whose description burden he set out to remove.",
+     "domain": "operations research",
+     "lens": "L20",
+     "name": "Nygaard's Monte Carlo reactor and operations-research computations at NDRE",
+     "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+     "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+     "type": "other",
+     "year": 1957
+    },
+    {
+     "causal_claim": "The IFIP working conference on simulation languages in Oslo (May 1967) is where Dahl & Nygaard presented 'Class and Subclass Declarations' - the occasion that forced the hectic winter months of design and gave Simula 67 its first formal definition.",
+     "definition": "The IFIP-sponsored Oslo working conference of May 1967 at which Simula 67's class and subclass declarations were presented - the venue that registered the leap.",
+     "domain": "scientific conference",
+     "lens": "L23",
+     "name": "IFIP Working Conference on Simulation Languages (Oslo)",
+     "source_title": "Simula (programming language), Wikipedia - History",
+     "source_url": "https://en.wikipedia.org/wiki/Simula_(programming_language)",
+     "type": "other",
+     "year": 1967
+    },
+    {
+     "causal_claim": "ALGOL 68 was the other great ALGOL-line design of the decade, absorbing Hoare's record handling into the WG 2.1 process - the rival successor language against which Simula 67's independent path is defined.",
+     "definition": "The WG 2.1 successor language to ALGOL 60 (report adopted December 1968), the committee-designed rival heir of the ALGOL line.",
+     "domain": "programming languages",
+     "lens": "L6",
+     "name": "ALGOL 68",
+     "source_title": "A Revised Report on the Algorithmic Language ALGOL 68",
+     "source_url": "https://ifipwg21wiki.cs.kuleuven.be/wiki/images/6/64/Algol68_Revised_Report.pdf",
+     "type": "other",
+     "year": 1968
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "algol-60-1960",
+      "candidate": {
+       "causal_claim": "ALGOL 60 directly enabled Simula 67's leap by supplying the block structure that the class generalizes: Simula 67 is an approximate superset of ALGOL 60, and Dahl's own account says the class concept was inspired by the ALGOL 60 block, freed from stack discipline.",
+       "definition": "The 1960 algorithmic language whose block structure, lexical scoping and procedure activations Simula 67 inherited wholesale and generalized into the class.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "ALGOL 60",
+       "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+       "type": "other",
+       "year": 1960
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "ALGOL 60"
+      ],
+      "matched_node_id": "algol-60-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "simula-i-1965",
+      "candidate": {
+       "causal_claim": "Simula I directly enabled Simula 67's leap as the ancestor modified: its activity/process declarations, process references, inspect construct and quasi-parallel sequencing are the mechanisms Simula 67 generalized into classes, and Simula 67's predefined SIMULATION class re-defines Simula I's simulation facilities inside the new language.",
+       "definition": "Dahl & Nygaard's discrete-event simulation language (designed 1962-64, operational on the UNIVAC 1107 by January 1965, CACM 1966): ALGOL 60 plus activity/process declarations whose block instances escaped the stack discipline - the direct precursor Simula 67 generalized.",
+       "domain": "programming languages",
+       "lens": "L2",
+       "name": "Simula I",
+       "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+       "type": "other",
+       "year": 1965
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Simula I"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "record-handling-hoare-1965",
+      "candidate": {
+       "causal_claim": "Hoare's record handling proposal directly enabled Simula 67's leap by supplying record classes and subclasses, references qualified by a declared class, and dot-notation attribute access: Dahl records that Hoare put the proposal forth at the Villard-de-Lans summer school and 'We chose the terms class and objects of classes for our new Simula. The notion of subclass was especially appealing to us', and class prefixing was the solution built on it.",
+       "definition": "Hoare's 1965 proposal for representing complex structured objects in an ALGOL 60 extension: dynamically created records belonging to declared record classes, fields declared in the class, class-qualified references, and subclasses - the record-class half of what Simula 67 fused with the ALGOL block.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "Record Handling (Hoare)",
+       "source_title": "C. A. R. Hoare, Record Handling, ALGOL Bulletin 21.3.6 (Nov 1965); WG 2.1 Working Paper, Oct 1965",
+       "source_url": "http://archive.computerhistory.org/resources/text/algol/ACM_Algol_bulletin/1061032/p39-hoare.pdf",
+       "type": "theory",
+       "year": 1965
+      },
+      "members": [
+       2,
+       3
+      ],
+      "member_names": [
+       "Record Handling (Hoare)",
+       "Record Handling (Hoare)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "simscript-1962",
+      "candidate": {
+       "causal_claim": "SIMSCRIPT's entity-attribute-set system-description world view is asserted by reference works to have influenced Simula's design: a system is described as classes of entities with attributes before any code runs.",
+       "definition": "Markowitz, Hausner & Karr's RAND simulation language (RM-3310, 1962): a system description built from entities, their attributes, and sets, with an event scheduler - the American system-description world view contemporary with Simula I.",
+       "domain": "simulation languages",
+       "lens": "L19",
+       "name": "SIMSCRIPT",
+       "source_title": "Simula (programming language), Wikipedia - 'also influenced by the design of SIMSCRIPT', citing Dahl & Nygaard's HOPL account",
+       "source_url": "https://en.wikipedia.org/wiki/Simula_(programming_language)",
+       "type": "other",
+       "year": 1962
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "SIMSCRIPT"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "gpss-general-purpose-simulation-system-1961",
+      "candidate": {
+       "causal_claim": "GPSS was the incumbent discrete-event simulation system Simula's designers worked in the shadow of: Gordon's transaction-flow block diagram language at IBM defined what a simulation language was in 1961-67.",
+       "definition": "Geoffrey Gordon's IBM simulation system (1961): models as block diagrams through which transactions flow - the dominant American discrete-event simulation approach parallel to Simula.",
+       "domain": "simulation languages",
+       "lens": "L6",
+       "name": "GPSS (General Purpose Simulation System)",
+       "source_title": "Perspectives on the Evolution of Simulation (Nance & Sargent)",
+       "source_url": "https://citeseerx.ist.psu.edu/document?doi=85dde8b739becd25b64253f346c373df5aee930f&repid=rep1&type=pdf",
+       "type": "other",
+       "year": 1961
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "GPSS (General Purpose Simulation System)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sol-simulation-oriented-language-1964",
+      "candidate": {
+       "causal_claim": "SOL was the other ALGOL-based simulation language of the moment: Knuth & McNeley's ALGOL-like simulation language whose authors later advocated the Burroughs version of Simula - a sibling attempt at the same problem.",
+       "definition": "Knuth & McNeley's ALGOL-based simulation language (1964), a contemporary sibling of Simula I in the small family of ALGOL-derived simulation languages.",
+       "domain": "simulation languages",
+       "lens": "L6",
+       "name": "SOL (Simulation Oriented Language)",
+       "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+       "type": "other",
+       "year": 1964
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "SOL (Simulation Oriented Language)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "three-phase-approach-to-simulation-tocher-1963",
+      "candidate": {
+       "causal_claim": "Tocher's The Art of Simulation (1963) formulated the process/activity view of discrete simulation - the problem formulation (describe a system as interacting activities) that simulation languages of the decade answered.",
+       "definition": "K. D. Tocher's simulation methodology (The Art of Simulation, 1963): the three-phase executive and activity-based description of discrete systems, the British formulation of the simulation problem.",
+       "domain": "simulation methodology",
+       "lens": "L4",
+       "name": "Three-phase approach to simulation (Tocher)",
+       "source_title": "Perspectives on the Evolution of Simulation (Nance & Sargent)",
+       "source_url": "https://citeseerx.ist.psu.edu/document?doi=85dde8b739becd25b64253f346c373df5aee930f&repid=rep1&type=pdf",
+       "type": "method",
+       "year": 1963
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Three-phase approach to simulation (Tocher)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "monte-carlo-method-1949",
+      "candidate": {
+       "causal_claim": "The Monte Carlo method posed the problem family Simula was born to serve: Nygaard's path to a simulation language ran through Monte Carlo computations (uranium-rod calibration, operations research) at NDRE, where describing queuing and discrete-event systems by hand-coded Monte Carlo programs was the pain.",
+       "definition": "The statistical sampling method for computing system behaviour (Metropolis & Ulam, 1949): the computational practice whose system-description burden motivated dedicated simulation languages.",
+       "domain": "computational mathematics",
+       "lens": "L4",
+       "name": "Monte Carlo method",
+       "source_title": "Stein Krogdahl, The Birth of Simula (2003)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/history/sk-the-birth-of-simula.pdf",
+       "type": "method",
+       "year": 1949
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Monte Carlo method"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lisp-1960",
+      "candidate": {
+       "causal_claim": "Lisp's garbage collection is the cross-field import behind Simula 67's storage discipline: Simula 67 deletes objects 'by garbage collector alone', and automatic reclamation of unreachable storage was the technique Lisp had introduced in 1960.",
+       "definition": "McCarthy's list-processing language (1960), the origin of garbage collection: automatic reclamation of storage no longer reachable - the storage discipline Simula 67's object deletion presupposes.",
+       "domain": "programming languages",
+       "lens": "L19",
+       "name": "Lisp",
+       "source_title": "Garbage Collection lecture notes (Univ. of Iowa) - GC a term coined in the context of LISP; Simula 67 among the languages featuring it",
+       "source_url": "http://homepage.divms.uiowa.edu/~jones/opsys/fall02/notes/19.html",
+       "type": "other",
+       "year": 1960
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Lisp"
+      ],
+      "matched_node_id": "lisp-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sketchpad-1963",
+      "candidate": {
+       "causal_claim": "Sketchpad's master drawings and instances were a parallel invention of the template/instance idea: Sutherland's masters could be instantiated many times over, each instance sharing the master's structure - the American graphics line's version of class and object.",
+       "definition": "Ivan Sutherland's interactive graphics system (1963) built on master drawings and their instances - a parallel, independent arrival at the template/instance structure.",
+       "domain": "computer graphics",
+       "lens": "L19",
+       "name": "Sketchpad",
+       "source_title": "Simula (programming language), Wikipedia, and IEEE Milestones: Object-oriented programming, 1961-1967",
+       "source_url": "https://ieeemilestones.ethw.org/Milestones:Object-oriented_programming",
+       "type": "other",
+       "year": 1963
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Sketchpad"
+      ],
+      "matched_node_id": "sketchpad-1963",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "plex-structure-ross-aed-1961",
+      "candidate": {
+       "causal_claim": "Douglas Ross's plex - a structured data aggregate with named components, from his generalized technique for symbol manipulation - is the source Hoare drew on for record classes: Hoare learned about plexes from Ross and renamed them records.",
+       "definition": "Douglas T. Ross's plex (from his 1961 generalized technique for symbol manipulation and the AED work): a structured aggregate of named data components - the ancestor of Hoare's record class.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "Plex structure (Ross, AED)",
+       "source_title": "Simone Martini, Types in Programming Languages between Modelling, Abstraction, and Correctness (CiE 2016)",
+       "source_url": "http://www.cs.unibo.it/~martini/TALKS/martini-CiE2016.pdf",
+       "type": "theory",
+       "year": 1961
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Plex structure (Ross, AED)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "algol-w-1966",
+      "candidate": {
+       "causal_claim": "Wirth & Hoare's ALGOL W (1966) implemented Hoare's record classes as reference types in a working ALGOL descendant - the record-class idea in executable form in the same years Dahl & Nygaard were designing Simula 67.",
+       "definition": "Wirth & Hoare's ALGOL extension (1966) whose record classes and references put Hoare's record handling proposal into a designed language - the sibling carrier of the same record-class idea.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "ALGOL W",
+       "source_title": "Wirth & Hoare, A Contribution to the Development of ALGOL, CACM (1966)",
+       "source_url": "https://api.openalex.org/works/doi:10.1145%2F365696.365702",
+       "type": "other",
+       "year": 1966
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "ALGOL W"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "coroutines-conway-1963",
+      "candidate": {
+       "causal_claim": "Conway's coroutines - separable transition-diagram modules that resume where they left off - name the control structure Simula's quasi-parallel processes resemble: Dahl describes Simula processes as executing 'in a coroutine-like fashion' and Simula 67 defines resume as 'a basic coroutine call'.",
+       "definition": "Melvin Conway's coroutine concept (1963, 'Design of a Separable Transition-Diagram Compiler'): subroutines that pass control back and forth, resuming at the point of last suspension - the control structure Simula's processes and resume operator instantiate.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "Coroutines (Conway)",
+       "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+       "type": "method",
+       "year": 1963
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Coroutines (Conway)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "univac-1107-1962",
+      "candidate": {
+       "causal_claim": "The UNIVAC 1107 was the machine Simula ran on: NCC received one in August 1963 at a considerable discount and Dahl implemented Simula I on it under contract with UNIVAC, based on the UNIVAC ALGOL 60 compiler.",
+       "definition": "UNIVAC's transistorized mainframe (1962), the machine whose discounted sale to NCC carried the Simula I implementation contract.",
+       "domain": "computing hardware",
+       "lens": "L9",
+       "name": "UNIVAC 1107",
+       "source_title": "Stein Krogdahl, The Birth of Simula (2003)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/history/sk-the-birth-of-simula.pdf",
+       "type": "device",
+       "year": 1962
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "UNIVAC 1107"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "list-structured-free-store-for-block-instances-dahl-1963",
+      "candidate": {
+       "causal_claim": "Dahl's storage management package 'based on a two-dimensional free area list' (completed by May 1963) directly enabled the Simula class: it freed block activations from the stack discipline, giving block instances an independent existence that could be referenced - the mechanism the ACM's account says 'made possible the Simula class'.",
+       "definition": "Dahl's 1963 storage-management package (list-structured free store, two-dimensional free area list) that let ALGOL block instances outlive their callers - the implementation mechanism underneath Simula's processes and classes.",
+       "domain": "programming language implementation",
+       "lens": "L11",
+       "name": "List-structured free store for block instances (Dahl)",
+       "source_title": "ACM Turing Award additional materials: Ole-Johan Dahl",
+       "source_url": "https://amturing.acm.org/info/dahl_6917600.cfm",
+       "type": "method",
+       "year": 1963
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "List-structured free store for block instances (Dahl)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "norwegian-computing-center-1952",
+      "candidate": {
+       "causal_claim": "The Norwegian Computing Center was the institutional vehicle of Simula 67: it employed both authors, and where Simula I had been made under a UNIVAC contract, 'the second version, Simula 67, was sponsored by the NCC itself' (Dahl).",
+       "definition": "The Norwegian Computing Center (NCC, Norsk Regnesentral, founded 1952): the semi-governmental Oslo institute that employed Dahl and Nygaard and sponsored Simula 67's development itself.",
+       "domain": "research institution",
+       "lens": "L21",
+       "name": "Norwegian Computing Center",
+       "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+       "type": "institution",
+       "year": 1952
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Norwegian Computing Center"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "univac-algol-60-compiler-1963",
+      "candidate": {
+       "causal_claim": "The Simula I implementation was built as a run-time system for the ALGOL system provided by UNIVAC: 'the bulk of the implementation effort consisted in writing a new run time system for the Algol system provided by UNIVAC; the compiler extensions, on the other hand, were minimal' (Dahl) - the tooling Simula was built with.",
+       "definition": "UNIVAC's ALGOL 60 compiler system for the 1107, the build substrate into which Dahl inserted Simula I's run-time system.",
+       "domain": "programming language implementation",
+       "lens": "L13",
+       "name": "UNIVAC ALGOL 60 compiler",
+       "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+       "type": "other",
+       "year": 1963
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "UNIVAC ALGOL 60 compiler"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nygaard-s-monte-carlo-reactor-and-operations-research-comput-1957",
+      "candidate": {
+       "causal_claim": "Nygaard's own pre-Simula work - Monte Carlo computations calibrating uranium rods for a nuclear reactor and operations research on military systems at the Norwegian Defence Research Establishment, and simulation programs written from 1957 - is the creator-lineage origin of the demand for a system description language.",
+       "definition": "Kristen Nygaard's 1950s NDRE practice: hand-built Monte Carlo simulation programs for reactor calibration and military operations research - the work whose description burden he set out to remove.",
+       "domain": "operations research",
+       "lens": "L20",
+       "name": "Nygaard's Monte Carlo reactor and operations-research computations at NDRE",
+       "source_title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
+       "source_url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf",
+       "type": "other",
+       "year": 1957
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "Nygaard's Monte Carlo reactor and operations-research computations at NDRE"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:17:algol-60-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 17,
+       "card": {
+        "name": "UNIVAC ALGOL 60 compiler",
+        "aliases": [],
+        "year": 1963,
+        "domain": "programming language implementation",
+        "type": "other",
+        "definition": "UNIVAC's ALGOL 60 compiler system for the 1107, the build substrate into which Dahl inserted Simula I's run-time system.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "algol-60-1960",
+       "card": {
+        "name": "ALGOL 60",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5985,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:0:17",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "ALGOL 60",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "The 1960 algorithmic language whose block structure, lexical scoping and procedure activations Simula 67 inherited wholesale and generalized into the class.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 17,
+       "card": {
+        "name": "UNIVAC ALGOL 60 compiler",
+        "aliases": [],
+        "year": 1963,
+        "domain": "programming language implementation",
+        "type": "other",
+        "definition": "UNIVAC's ALGOL 60 compiler system for the 1107, the build substrate into which Dahl inserted Simula I's run-time system.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.7007,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:2:12",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 2,
+       "card": {
+        "name": "Record Handling (Hoare)",
+        "aliases": [],
+        "year": 1965,
+        "domain": "programming languages",
+        "type": "theory",
+        "definition": "Hoare's 1965 proposal for representing complex structured objects in an ALGOL 60 extension: dynamically created records belonging to declared record classes, fields declared in the class, class-qualified references, and subclasses - the record-class half of what Simula 67 fused with the ALGOL block.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 12,
+       "card": {
+        "name": "ALGOL W",
+        "aliases": [],
+        "year": 1966,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "Wirth & Hoare's ALGOL extension (1966) whose record classes and references put Hoare's record handling proposal into a designed language - the sibling carrier of the same record-class idea.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8108,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       2,
+       3
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "The IFIP working conference on simulation languages in Oslo (May 1967) is where Dahl & Nygaard presented 'Class and Subclass Declarations' - the occasion that forced the hectic winter months of design and gave Simula 67 its first formal definition.",
+       "definition": "The IFIP-sponsored Oslo working conference of May 1967 at which Simula 67's class and subclass declarations were presented - the venue that registered the leap.",
+       "domain": "scientific conference",
+       "lens": "L23",
+       "name": "IFIP Working Conference on Simulation Languages (Oslo)",
+       "source_title": "Simula (programming language), Wikipedia - History",
+       "source_url": "https://en.wikipedia.org/wiki/Simula_(programming_language)",
+       "type": "other",
+       "year": 1967
+      },
+      "reason": "dated on/after parent year 1967"
+     },
+     {
+      "candidate": {
+       "causal_claim": "ALGOL 68 was the other great ALGOL-line design of the decade, absorbing Hoare's record handling into the WG 2.1 process - the rival successor language against which Simula 67's independent path is defined.",
+       "definition": "The WG 2.1 successor language to ALGOL 60 (report adopted December 1968), the committee-designed rival heir of the ALGOL line.",
+       "domain": "programming languages",
+       "lens": "L6",
+       "name": "ALGOL 68",
+       "source_title": "A Revised Report on the Algorithmic Language ALGOL 68",
+       "source_url": "https://ifipwg21wiki.cs.kuleuven.be/wiki/images/6/64/Algol68_Revised_Report.pdf",
+       "type": "other",
+       "year": 1968
+      },
+      "reason": "dated on/after parent year 1967"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:17:algol-60-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 17,
+      "card": {
+       "name": "UNIVAC ALGOL 60 compiler",
+       "aliases": [],
+       "year": 1963,
+       "domain": "programming language implementation",
+       "type": "other",
+       "definition": "UNIVAC's ALGOL 60 compiler system for the 1107, the build substrate into which Dahl inserted Simula I's run-time system.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "algol-60-1960",
+      "card": {
+       "name": "ALGOL 60",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5985,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:0:17",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "ALGOL 60",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "The 1960 algorithmic language whose block structure, lexical scoping and procedure activations Simula 67 inherited wholesale and generalized into the class.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 17,
+      "card": {
+       "name": "UNIVAC ALGOL 60 compiler",
+       "aliases": [],
+       "year": 1963,
+       "domain": "programming language implementation",
+       "type": "other",
+       "definition": "UNIVAC's ALGOL 60 compiler system for the 1107, the build substrate into which Dahl inserted Simula I's run-time system.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.7007,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:2:12",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 2,
+      "card": {
+       "name": "Record Handling (Hoare)",
+       "aliases": [],
+       "year": 1965,
+       "domain": "programming languages",
+       "type": "theory",
+       "definition": "Hoare's 1965 proposal for representing complex structured objects in an ALGOL 60 extension: dynamically created records belonging to declared record classes, fields declared in the class, class-qualified references, and subclasses - the record-class half of what Simula 67 fused with the ALGOL block.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 12,
+      "card": {
+       "name": "ALGOL W",
+       "aliases": [],
+       "year": 1966,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "Wirth & Hoare's ALGOL extension (1966) whose record classes and references put Hoare's record handling proposal into a designed language - the sibling carrier of the same record-class idea.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8108,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
