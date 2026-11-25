@@ -1,20 +1,20 @@
 # Tracing the Milestones: A Recursive Pipeline from the AI Agent Backwards
 
-**The Behind · 01 · Design v2 · 2026-11-24**
+**The Behind · 01 · Design v3.1 · 2026-11-24**
 
 ## §0 The idea in one paragraph
 
-Start from a single node, the modern AI agent. Ask: what had to exist before this became possible? Generate about 100 candidate predecessors, interrogate every candidate with 12 fixed questions, prune hard to at most 20 survivors, and recurse on each survivor. Because the same predecessor (electricity, calculus, the transistor) is reached from many children, the result is not a tree but a merged graph (a DAG) of the breakthroughs that made the agent possible, each admitted only after passing the same interrogation, each carrying its evidence. The graph then becomes an interactive page on AI Praxis Lab (The Behind) that readers can explore node by node.
+Start from a single node, the modern AI agent. Ask: what appeared shortly before it that directly made its leap possible? Generate about 100 candidate proximate predecessors, interrogate every candidate with 12 fixed questions plus a directness gate, prune hard to at most 20 survivors, and recurse on each survivor. Every node is a **leap**: a discontinuous, widely recognized improvement over the state of the art immediately before it. Every edge means the predecessor was the **direct enabler of that leap** — not a mediated ancestor. This matters because importance is transitive but directness is not: a deep fundamental (gradient descent, electricity, calculus) genuinely matters to everything downstream, yet it reaches any given node only through intermediaries, so it must surface at the depth where it was the proximate enabler, not at depth 1. Because the same predecessor is reached from many children, the result is not a tree but a merged graph (a DAG) of the breakthroughs that made the agent possible, each admitted only after passing the same interrogation, each carrying its evidence. The graph then becomes an interactive page on AI Praxis Lab (The Behind) that readers can explore node by node.
 
 ## §1 The process
 
 ```mermaid
 flowchart TD
     A["ROOT NODE<br/>The modern AI agent · 2020s"] --> B["EXPANSION<br/>run per frontier node"]
-    B --> B1["① Generate ≈100 candidates<br/>10 search lenses, prompt in §4"]
+    B --> B1["① Generate ≈100 candidates<br/>12 search lenses, prompt in §4"]
     B1 --> B2["② Dedupe & resolve identities<br/>merge variants → ≈50–70 real candidates"]
-    B2 --> B3["③ Evaluate: the 12 questions<br/>every 'yes' needs evidence"]
-    B3 --> B4["④ Gates → rank → cap 20<br/>rule in §5"]
+    B2 --> B3["③ Evaluate: leap record + 12 questions + directness<br/>every 'yes' needs evidence"]
+    B3 --> B4["④ Gates (incl. directness) → rank → cap 20<br/>rule in §5"]
     B4 --> C["Survivors become new frontier nodes<br/>each with its own bottleneck sentence"]
     C -->|"RECURSE, depth ≤ ~10"| B
     B -.-> G["GRAPH STORE<br/>checkpointed; duplicates merge → DAG, not a tree"]
@@ -27,10 +27,10 @@ flowchart TD
 
 - **ROOT NODE** (The modern AI agent · 2020s)
 - → one expansion box run per frontier node with four steps:
-  1. Generate ≈100 candidates (10 search lenses, prompt in §4)
+  1. Generate ≈100 proximate candidates (12 search lenses, prompt in §4)
   2. Dedupe & resolve identities (merge variants → ≈50–70 real candidates)
-  3. Evaluate: the 12 questions (every "yes" needs evidence)
-  4. Gates → rank → cap 20 (rule in §5)
+  3. Evaluate: the parent's leap record, the 12 questions, and the directness test (every "yes" needs evidence)
+  4. Gates (question gates + the directness gate) → rank → cap 20 (rule in §5)
 - Survivors become new frontier nodes, each with its own bottleneck sentence; loop labeled "RECURSE, depth ≤ ~10".
 - Side boxes: **GRAPH STORE** (checkpointed; duplicates merge → DAG, not a tree) and **ADVERSARIAL VERIFIER** (tries to kill each survivor).
 - Output: graph data → interactive page → published on AI Praxis Lab, The Behind.
@@ -39,17 +39,21 @@ Two structural choices keep a day-long run sane: **merging** (one transistor nod
 
 ## §2 Node and edge format
 
-Every node = one breakthrough + one bottleneck sentence of the form "Before X, Y was impossible or impractical because Z."
+Every node = one breakthrough + one bottleneck sentence of the form "Before X, Y was impossible or impractical because Z." Every node is also a **leap** (§5.1): it carries a record of the state of the art immediately before it and what discontinuously jumped when it appeared.
 
-Every edge reads "enabled by": the child node's bottleneck was removed by the parent advance.
+Every edge reads "enabled by" — and since v3 that phrase is strict: the predecessor **directly enabled the child node's leap**. A mediated ancestor, however important, is not an edge at this level; it is rejected with the mediator named (`mediated_via: M`) and is expected to be rediscovered when M itself is expanded.
 
 **Root node:**
 
 - **Name:** "The modern AI agent"
 - **Era:** 2020s
 - **Bottleneck sentence:** "Before the modern AI agent, machines could not perceive, reason over, and act on open-ended tasks in a loop, because no model could flexibly convert between language, perception and action, and there was no practical way to train or steer such a model."
+- **State of the art just before:** chatbots and task-specific ML systems — models could complete text or classify inputs, but could not follow open-ended instructions reliably, use external tools, or chain reasoning and action toward a goal.
+- **The leap:** instruction-following LLMs wrapped in a reason–act loop with tool use (2022–23) turned a text completer into a general task executor — a capability jump, not an incremental accuracy gain.
 
-**Node record fields:** canonical name, approx. year, domain, type, bottleneck sentence, status (provisional / verified), the 12 verdicts with evidence, source list.
+**Node record fields:** canonical name, approx. year, domain, type, bottleneck sentence, prior-state sentence, leap sentence, status (provisional / verified), source list.
+
+**Edge record fields:** the 12 verdicts with evidence (of the predecessor, in relation to the child), the **leap record** (prior state / what jumped / the child's date, with evidence), and the **directness record** (counterfactual argument, mediator — null for admitted edges, evidence).
 
 ## §3 The 12 questions
 
@@ -74,7 +78,7 @@ Every candidate is interrogated with the same 12 questions, always in relation t
 
 ## §4 Candidate generation
 
-Scoring is strict, so generation must be loose. The scout prompt is deliberately forbidden from judging importance: its job is to over-propose roughly 100 dated, named candidates with a causal claim each, and let the 12 questions do the filtering. One run of this prompt happens per frontier node. It is a fan-out: ten lenses, each a separate search pass with its own query templates, each expected to return about ten candidates.
+Scoring is strict, so generation must be loose — but, since v3, loose in one direction only: **backwards by a single step**. The scout is forbidden from judging importance, and equally forbidden from trawling deep history: its job is to over-propose roughly 100 dated, named candidates that appeared shortly before the parent and plausibly enabled the parent's leap *directly*, each with a causal claim, and let the 12 questions and the directness gate do the filtering. Time is a first-class dimension: every search is anchored in the parent's immediate pre-history — the state of the art just before it, the systems it was compared against, and contemporaneous accounts of why it jumped. Distant fundamentals are explicitly out of scope at this level; they belong to deeper expansions. One run of this prompt happens per frontier node. It is a fan-out: twelve lenses, each a separate search pass with its own query templates, each expected to return about ten candidates.
 
 ### 4.1 Inputs
 
@@ -84,33 +88,47 @@ Slots filled per node:
 - `{parent_year}` (hard upper bound — every candidate must be earlier)
 - `{parent_domain}`
 - `{bottleneck_statement}`
+- `{immediate_prior_state}` (the state of the art just before the parent appeared — what the best existing approach could and could not do)
+- `{parent_leap}` (what discontinuously jumped when the parent appeared)
 - `{existing_nodes}` (canonical names already in the graph, attached so the scout reuses exact names — this is what lets the graph merge)
-- `{already_rejected}` (candidates previously evaluated and rejected for this parent — never re-propose)
+- `{already_rejected}` (candidates previously evaluated and rejected for this parent, including any rejected as mediated — never re-propose)
 
-### 4.2 The ten lenses
+### 4.2 The twelve lenses (v3: all aimed at the immediate pre-history; lenses 11–12 added in v3.1)
 
 | # | Lens | What it looks for | Example query templates |
 |---|---|---|---|
-| 1 | Bottleneck-direct | ask the bottleneck question head-on | "what made {capability} possible" · "history of {domain}" · "{parent} prerequisites" · "why was {parent} impossible before {parent_year}" |
-| 2 | Components | decompose the parent into subsystems; one search per subsystem | "history of {subsystem}" · "{subsystem} invention" · "first practical {subsystem}" |
-| 3 | Underlying science | theories and discoveries the parent silently rests on | "{parent} scientific basis" · "discovery that enabled {domain}" |
-| 4 | Instruments | tools needed to observe, measure, build or test it | "instruments used in early {domain}" · "how was {quantity} first measured" |
-| 5 | Materials | materials that had to exist, be purified, or be manufacturable | "{material} production history" · "history of {material} purification" |
-| 6 | Mathematics | formalisms, notation, algorithms that had to exist first | "mathematics behind {parent}" · "history of {formalism}" |
-| 7 | Infrastructure | energy, transport, communication, manufacturing base it assumes | "what infrastructure did {domain} depend on" |
-| 8 | Cross-domain transfer | advances imported from unrelated fields | "{technique} applied to {domain} history" · "{parent} borrowed from which field" |
-| 9 | Methods | process innovations: machining, printing, lens grinding, sterilization… | "process that made {parent} manufacturable" · "history of {process}" |
-| 10 | Timelines | reference works and surveys that already list the chain | "timeline of {domain}" · encyclopedia / survey history of {domain} |
+| 1 | Immediate prior state of the art | what the parent was directly compared against, and the incumbent's known bottleneck | "{parent} vs {predecessor_system} comparison" · "limitations of {prior_approach}" · "state of the art before {parent}" |
+| 2 | The differentiating move | the specific technique, component, or combination first introduced — or first combined — shortly before the parent (the ChatGPT→RLHF pattern) | "what was new in {parent}" · "{parent} key innovation" · "why did {parent} outperform {predecessor_system}" |
+| 3 | First-order components | the subsystems the parent is directly assembled from — one step in, no deeper | "{parent} architecture components" · "what is {parent} built on" |
+| 4 | Contemporaneous accounts | papers, reviews, and reports from the parent's own moment explaining why it jumped | "{parent} review {parent_year}" · "why {parent} is a breakthrough" · contemporary analysis of {parent} |
+| 5 | Benchmarks & measurement | the metric or evaluation that registered the leap, and the measurement advance just before that made the jump visible or trainable | "{parent} benchmark results" · "{metric} introduced" · "evaluation of {parent} vs prior" |
+| 6 | Method / recipe introduced shortly before | the training procedure, process, or recipe whose arrival closed the gap | "{parent} training method" · "how was {parent} made" · "{technique} first used for {parent}" |
+| 7 | Infrastructure at hand | the compute, platform, or production base the parent directly ran on, as it existed at that moment | "{parent} hardware used" · "{parent} built with what tools" |
+| 8 | Direct transfers | people, techniques, or results that moved directly into the parent's lineage shortly before | "{creator} previous work before {parent}" · "{technique} applied in {parent}" |
+| 9 | Negative space | what the immediate predecessors tried that failed, and the specific fix that replaced it | "failed attempts at {capability} before {parent}" · "{prior_approach} problems solved by {parent}" |
+| 10 | Timelines of the immediate lineage | reference works and surveys that list the parent's immediate ancestry | "timeline of {domain} {parent_year}" · "history of {parent} development" · survey of {lineage} |
+| 11 | Hardware & devices (v3.1) | the compute hardware, accelerators, memory/interconnect, and the software layer that made the hardware usable (e.g. a CUDA-class programmability milestone); the devices the parent directly ran on or was demonstrated on | "{parent} ran on what hardware" · "{accelerator} first used to train {parent}" · "{platform} programmability layer {parent_year}" |
+| 12 | Data (v3.1) | the datasets, benchmarks-as-data, and large-scale data collection/curation pipelines the parent's leap directly consumed | "{parent} training data" · "{dataset} collected how" · "data curation pipeline behind {parent}" |
 
-### 4.3 The scout prompt template
+Lenses 11 and 12 are **mandatory for every parent** (v3.1), even when the parent looks purely algorithmic — and doubly so for compute-hungry or data-hungry leaps. A leap that reads as pure method often directly consumed a specific machine, platform, or dataset; if the scout never looks, the graph never sees it.
+
+### 4.3 The scout prompt template (v3.1)
 
 ```
 ROLE
 You are the candidate scout for a recursive history-of-technology trace.
-Your job is breadth, not judgment. A later stage will interrogate every
-candidate with 12 fixed questions and prune hard. If you pre-filter by
-importance, the trace loses exactly the candidates that matter most.
-Over-propose.
+Your job is breadth, not judgment — but breadth in ONE direction only:
+backwards by a single step. This trace is built from proximate leaps.
+Each node is a discontinuity: a jump over the state of the art that
+immediately preceded it. Your candidates are the advances that appeared
+shortly before the parent and directly made the parent's leap possible.
+A later stage will interrogate every candidate with 12 fixed questions,
+a directness gate, and hard pruning. If you pre-filter by importance,
+or reach back to deep fundamentals, you corrupt the trace: importance
+is transitive, directness is not. A fundamental that enabled the parent
+only through intermediaries does NOT belong at this level — it will be
+found when the intermediary is expanded. Over-propose proximate
+candidates; never propose mediated ones you can already see through.
 
 PARENT NODE
 Name: {parent_name}
@@ -119,27 +137,48 @@ Domain: {parent_domain}
 Bottleneck this node removed: {bottleneck_statement}
 Read it as: "Before {parent_name}, {capability} was impossible or
 impractical because {constraint}."
+State of the art immediately before {parent_name}: {immediate_prior_state}
+The parent's leap: {parent_leap}
 
 TASK
-Find approximately 100 earlier advances that plausibly removed part of
-that bottleneck, or were necessary preconditions for {parent_name}.
-Work through all 10 search lenses (attached). Run real web searches for
-each lens, at least 2 query variants per lens, and read the strongest
-sources, preferring reference works, textbooks, and scholarly histories
-over popular listicles.
+Find approximately 100 advances that appeared shortly before
+{parent_name} and directly enabled its leap: the techniques,
+components, results, or resources whose arrival closed the gap between
+the immediate prior state of the art and {parent_name}. Work through
+all 12 search lenses (attached). Run real web searches for each lens,
+at least 2 query variants per lens, and read the strongest sources,
+preferring reference works, textbooks, and scholarly histories over
+popular listicles. Anchor every search in the parent's immediate
+pre-history: the years just before {parent_year}, the systems it was
+directly compared against, and the accounts written at the time of why
+it outperformed them. The Hardware & devices and Data lenses are
+mandatory for every parent, even when the parent looks purely
+algorithmic: a leap that reads as pure method often directly consumed
+a specific machine, platform, or dataset.
 
 RULES
-- Dated and named. Every candidate is a specific advance with an
-  approximate year. Era-words are banned: not "electricity" but
-  "Gramme dynamo (1871)"; not "computers" but "stored-program
-  architecture (1945)".
-- Causal claim required. One sentence: "{candidate} made {parent_name}
-  possible by ..." If you cannot write that sentence, drop the candidate.
+- Proximate, dated, named. Every candidate is a specific advance with
+  an approximate year, close enough to the parent that no other named
+  milestone sits causally between it and the parent. Era-words are
+  banned: not "electricity" but "Gramme dynamo (1871)"; not
+  "computers" but "stored-program architecture (1945)".
+- Directness is the claim. One sentence: "{candidate} directly enabled
+  {parent_name}'s leap by ..." — the sentence must describe the last
+  causal step, not a chain. If writing it honestly requires "...which
+  later made X possible, which in turn ...", the candidate is mediated:
+  drop it (it belongs to a deeper level).
+- Contemporaneous evidence preferred. Why did {parent_name} beat its
+  immediate predecessors, according to sources from its own moment or
+  careful retrospectives? Candidates that answer that question rank
+  first in your list.
 - Reuse canonical names. If a candidate matches a node in EXISTING
   NODES (attached), use that exact name. This is what lets the graph merge.
-- Never re-propose anything in ALREADY REJECTED (attached).
+- Never re-propose anything in ALREADY REJECTED (attached) — including
+  candidates previously rejected as mediated for this parent.
 - Borderline is fine. Duplicates across lenses are fine; dedupe comes
-  later. Importance filtering is NOT your job.
+  later. Importance filtering is NOT your job — but neither is
+  deep-history trawling: distant fundamentals are explicitly out of
+  scope at this level.
 
 OUTPUT
 A JSON array only, one object per candidate:
@@ -186,15 +225,42 @@ Three places:
 
 ## §5 Evaluation and pruning
 
-**Evaluation contract:** the evaluator receives one candidate + the parent node + the causal claim, and must answer all 12 questions with verdicts pass / partial / fail. Every "pass" requires (a) a short evidence quote, (b) a source, (c) a falsification note: "this pass dies if …". No evidence, no pass.
+**Evaluation contract:** the evaluator receives one candidate + the parent node + the causal claim, and must (1) record the parent's leap (§5.1), (2) answer all 12 questions with verdicts pass / partial / fail, and (3) run the directness test (§5.2). Every "pass" requires (a) a short evidence quote, (b) a source, (c) a falsification note: "this pass dies if …". No evidence, no pass.
 
-> **Gates:** A candidate survives only if Q1 **OR** Q2 passes (it flipped an impossibility for this child, or opened the space) **AND** Q3 is not a clear fail (not demonstrably substitutable).
+### 5.1 The leap test (recorded per edge, with evidence)
 
-Survivors are ranked by their score across the remaining nine questions and capped at 20 per parent node. Everything else is recorded as rejected-with-reason (rejections are data: they feed the `{already_rejected}` list and keep later rounds honest).
+A node earns its place in the graph by being a discontinuity, so every evaluation must state the parent's leap explicitly:
+
+- **prior state** — the state of the art immediately before the parent appeared: what the best existing approach could and could not do;
+- **the jump** — what discontinuously improved when the parent appeared: the metric or benchmark that jumped, or the capability that was impossible just before and possible just after;
+- **the date** — the parent's year.
+
+Time is the organizing dimension: the leap is always measured against the *immediate* predecessor state, never against a distant past. (The worked example is the owner's: many large language models existed before ChatGPT (2022); what made ChatGPT leap was its special training method — reinforcement learning from human feedback. The leap record names that discontinuity, and the directness test then asks which advances directly produced it.)
+
+### 5.2 The directness gate (new in v3, hard gate)
+
+A candidate X survives for parent N only if X **directly** enabled N's leap. The evaluator applies two tests:
+
+- **(a) Counterfactual.** Remove X, and N's leap does not happen when it did — it is delayed, diminished, or takes a different form.
+- **(b) No mediation.** There is no other milestone M such that X enabled N only through M. If such an M can be named, X **fails** directness for N, and the rejection is recorded as `mediated_via: M`. X is not unimportant; it is one level too deep, and it is expected to be rediscovered when M is expanded.
+
+A large year gap between X and N is a red flag demanding a stronger directness argument (why did nothing in between mediate?), not an automatic fail. A "partial" directness verdict — the mediation question genuinely unresolvable on current evidence — does **not** satisfy the gate.
+
+> **Gates (v3):** A candidate survives only if Q1 **OR** Q2 passes (it flipped an impossibility for this child, or opened the space) **AND** Q3 is not a clear fail (not demonstrably substitutable) **AND** the directness test passes with no mediator named.
+
+**Gate guidance (v3.1): substrate is not a rejection class.** A hardware or data candidate is judged by exactly the same tests as any other candidate — never rejected merely for being "substrate" or "infrastructure":
+
+- **(i) Counterfactual, at the parent's time and scale.** Could the parent's leap have happened *when it did, at the scale it did*, without this hardware capability or this data? An algorithm can exist on paper for years before the hardware lets it run; that gap is precisely what this test measures.
+- **(ii) Direct consumption.** Did the parent actually use it — named in the paper or system, part of the demonstrated result? Consumption is what separates an enabler from background conditions.
+- **(iii) Mediation still applies.** If the candidate reached the parent only through a named intermediate milestone, it fails directness here and resurfaces when that milestone is expanded — hardware and data get no exemption from the mediation check, and no special suspicion either.
+
+The line is between the **specific enabling step** and **generic infrastructure**. The specific step can pass: a programmability layer the parent's code was actually written in, a cluster-scale training capability the run demonstrably used, the dataset the headline result was produced on. Generic infrastructure fails: electricity, the transistor in the abstract, "computers". Earlier run-01 verdicts that rejected candidates *as a class* under a "substrate" label (CUDA, GPUs, backprop-era compute, datasets) are superseded by this guidance for future judgments; the verdicts themselves are not retroactively changed by this edit — the retro-sweep (RUNBOOK.md) handles discovery through the normal gates.
+
+Survivors are ranked by their score across the remaining nine questions and capped at 20 per parent node. Everything else is recorded as rejected-with-reason (rejections are data: they feed the `{already_rejected}` list and keep later rounds honest; mediated rejections additionally name the mediator, which tells the frontier where the rejected candidate should resurface).
 
 ## §6 Adversarial verification
 
-Survivors get a second, hostile pass. The verifier's job is to kill the node: attack Q1 (was it truly impossible before, or merely hard, expensive, or unfashionable?); attack Q3 with the multiples test (search for independent simultaneous discoverers — if two others did it in the same decade, necessity is downgraded to "ripe"); check the date and the causal direction. Nodes that survive are marked verified; the rest stay provisional, and the interactive page shows the distinction.
+Survivors get a second, hostile pass. The verifier's job is to kill the node: attack Q1 (was it truly impossible before, or merely hard, expensive, or unfashionable?); attack Q3 with the multiples test (search for independent simultaneous discoverers — if two others did it in the same decade, necessity is downgraded to "ripe"); check the date and the causal direction; and — new in v3 — run the **mediation attack** on every accepted edge X→N: deliberately try to name an intermediate milestone M such that X enabled N only through M (X→M→N). A convincing M kills the edge (the rejection is logged as `mediated_via: M`, and X is expected to resurface when M is expanded) or, where X also had a direct channel but the mediated path dominates, downgrades the edge and caps the node at provisional. Nodes that survive all attacks are marked verified; the rest stay provisional, and the interactive page shows the distinction.
 
 ## §7 Budgets and stop conditions
 
@@ -214,20 +280,25 @@ A node stops expanding when:
 
 ## §8 Worked example
 
-The root's first round, illustrative:
+The root's first round, illustrative (v3):
 
-**Parent:** The modern AI agent (2020s).
+**Parent:** The modern AI agent (2020s). Its leap (§5.1): against the immediate prior state — capable but unsteerable text completers — instruction-following models in a reason–act loop with tools turned a text completer into a general task executor.
 
 A few of the ~100 the scout should find, by lens:
 
-- **Components** — Transformer architecture (2017); Backpropagation popularized (1986).
-- **Infrastructure** — CUDA / GPGPU computing (2007); the web as a text corpus (1990s).
-- **Instruments** — ImageNet (2009), the dataset as measuring instrument.
-- **Methods** — RLHF (2022), teaching a model to follow instructions.
-- **Mathematics** — Stochastic gradient descent; information theory (1948).
-- **Underlying science** — the connectionist program / perceptron (1958).
+- **The differentiating move** — RLHF (2022), the training method that made ChatGPT's leap over the LLMs that preceded it; instruction tuning (2021).
+- **First-order components** — Transformer architecture (2017); large-scale pretraining, GPT-3 generation (2020).
+- **Contemporaneous accounts** — ReAct (2022), the reason–act loop pattern the agent is built from; chain-of-thought prompting (2022).
+- **Infrastructure at hand** — the hosted LLM API / function-calling surface (2022–23).
 
-Then each of these faces the same 12 questions against the root, the gates, and the cap of 20, and each survivor (say, the Transformer) becomes a parent: "Before the Transformer, sequence models could not attend over long contexts in parallel because recurrence forced serial computation…" and the recursion walks back.
+And a few the scout may borderline-propose that the directness gate exists to catch at this level:
+
+- **Gradient descent** — genuinely fundamental, but it reached the agent only through backpropagation-trained networks: rejected here as `mediated_via: Backpropagation`, to be rediscovered deeper.
+- **Backpropagation itself** — reached the agent only through the architectures and training runs it made possible: `mediated_via: Transformer architecture` (and pretraining).
+- **Bahdanau attention (2014)** — reached the agent through the Transformer: `mediated_via: Transformer architecture`; it resurfaces, correctly, when the Transformer is expanded.
+- **Stored-program architecture (1945), cross-entropy loss (1948), the perceptron (1958)** — mediated ancestors all; each belongs to a deeper level.
+
+Then each candidate faces the leap record, the 12 questions, the directness test, and the cap of 20, and each survivor (say, RLHF) becomes a parent: "Before RLHF, deployed language models could not be steered to follow human intent reliably because pretraining optimizes text completion, not judged helpfulness…" and the recursion walks back — one leap at a time.
 
 ## §9 Output and the interactive page
 
@@ -240,7 +311,27 @@ The run emits one graph file: nodes, edges, per-node verdicts and evidence. The 
 3. The Batch 0 harness is adjusted to this spec (in this repo, that harness is RUNBOOK.md + pipeline/).
 4. The day-long run starts from the root.
 5. The interactive page is generated from the resulting graph and placed on AI Praxis Lab.
+6. (v3.1) A one-time **retro-sweep** re-checks the already-expanded nodes under the new Hardware & devices and Data lenses, so the hardware and data enablers the early expansions missed can enter through the normal gates (protocol in RUNBOOK.md).
+
+## Changelog
+
+**v3.1 — 2026-11-24 (owner feedback on the run-01 graph: hardware & data blindness).** The owner reviewed the growing run-01 graph and found a systematic blindness: *every node so far is an algorithm or method — there are no physical, hardware, or device milestones at all, and no data milestones either.* As the recursion deepens it must reach the hardware that made the computation possible, and hardware should in fact appear at relatively shallow depth: an algorithm can exist on paper for years before the hardware lets it run. Large-scale data collection and curation work is likewise a major milestone type in its own right. Diagnosis, from the run's own logs: (1) the scout lenses skew to methods and papers, so hardware/data candidates rarely surface; (2) a standing judgment hardened across expansions — "substrate rejected as such" — which rejected CUDA, GPUs, backprop-era compute, and datasets as a class instead of applying the counterfactual test per candidate; (3) the directness gate's mediation check routed enabling hardware into "substrate" rather than asking whether the parent directly consumed it. Changes:
+
+1. **Two new scout lenses** (§4.2): **Hardware & devices** — compute hardware, accelerators, memory/interconnect, and the software layer that made the hardware usable (e.g. CUDA-class programmability milestones), plus devices; and **Data** — datasets, benchmarks-as-data, and large-scale data collection/curation pipelines. Both lenses are mandatory for every parent, especially compute-hungry or data-hungry leaps.
+2. **Gate guidance: substrate is not a rejection class** (§5.2): a hardware or data candidate is judged by the same tests as any candidate — the counterfactual at the parent's time and scale, direct consumption by the parent, and the mediation check. The specific enabling step the leap directly consumed can pass; generic infrastructure (electricity, the transistor in the abstract, "computers") still fails. The "substrate rejected as such" precedents in run-01 are superseded by this rule for future judgments; existing verdicts are NOT retroactively changed by this edit.
+3. **Retro-sweep** (RUNBOOK.md): a one-time supplementary pass over already-expanded nodes — priority: the root (the modern AI agent), large-scale pretraining/GPT-3, Transformer, RLHF, in-context learning — scouting only the hardware and data lenses for missed proximate enablers, run through the full identity / 12-question / directness / verifier loop, with edges recorded like any expansion and marked as retro-sweep in the run log. Executed as its own run session after this revision lands.
+4. Unchanged: the 12 questions, the directness gate itself, §4.5 identity resolution, gates' question side, budgets, caps, checkpointing.
+
+**v3 — 2026-11-24 (owner feedback on the v2 smoke-test graph).** The owner reviewed the smoke graph and found the structural flaw: *gradient descent appeared as a direct predecessor of the root at depth 1*. Gradient descent is genuinely important, but it should surface only many layers deep. Diagnosis: the v2 gates score **importance**, and importance is transitive, so deep fundamentals leak into layer 1. The recursion's core must instead be the **proximate leap**: each step back finds the direct enabler of the current node's leap. Changes:
+
+1. **Directness gate** (new hard gate, §5.2): counterfactual test + mediation check; mediated candidates are rejected with the mediator named (`mediated_via: M`) and are expected to resurface when M is expanded. A large year gap is a red flag, not an automatic fail.
+2. **Leap test** (§5.1): every node is a leap — a discontinuous, widely recognized improvement over the immediately prior state of the art; the evaluation records prior state / what jumped / date, with evidence. Time is a first-class dimension (the owner's example: ChatGPT, 2022 — many LLMs preceded it; its leap is tied to its special training method, RLHF; then RLHF's own enablers, and separately the Transformer, 2017, whose arrival was a metric/benchmark jump).
+3. **Scout re-aimed** (§4): lenses and prompt now target the parent's immediate pre-history and its differentiating move; distant fundamentals are explicitly out of scope at each level.
+4. **Verifier mediation attack** (§6): for every accepted edge X→N the verifier must try to name an intermediate M (X→M→N); a convincing M kills or downgrades the edge and logs the mediation.
+5. Unchanged: the 12 questions, §4.5 identity resolution, gates' question side, budgets, caps, checkpointing.
+
+**v2 — 2026-11-24.** The 12-question design as approved by the owner (gate rule confirmed 2026-11-24); smoke test at depth 2 executed under this version (see SMOKE_TEST.md).
 
 ---
 
-*The Behind 01 · Design v2 · Prepared for Jerry Yu · 2026-11-24.*
+*The Behind 01 · Design v3.1 · Prepared for Jerry Yu · 2026-11-24.*

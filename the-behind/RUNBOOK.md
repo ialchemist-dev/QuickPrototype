@@ -1,5 +1,14 @@
 # RUNBOOK — The Behind 01: Recursive Milestone Pipeline
 
+**Design v3.1 · 2026-11-24.** (v3 added the directness gate, the leap
+record, the re-aimed scout, and the verifier's mediation attack, after
+the owner found gradient descent sitting at depth 1 in the v2 smoke
+graph. v3.1 added the Hardware & devices and Data scout lenses, the
+"substrate is not a rejection class" gate guidance, and the one-time
+retro-sweep protocol (§9), after the owner found run-01's graph
+contained no hardware or data milestones at all. See the changelog in
+`DESIGN.md`.)
+
 **Read only this file and you can execute the entire pipeline.** It is
 self-contained: purpose, setup, configuration, the graph format, the
 step-by-step loop, every prompt verbatim, exact commands, the
@@ -9,13 +18,14 @@ not need it to run.
 
 ---
 
-## 0. Purpose (5 lines)
+## 0. Purpose (6 lines)
 
 1. Trace the breakthroughs that made the modern AI agent possible, backwards through history, as a merged graph (DAG), not a tree.
-2. Start from one root node; repeatedly expand the best unexpanded node: scout ≈100 earlier candidate advances, resolve their identities, interrogate each with 12 fixed questions, prune by fixed gates to a capped set of survivors.
-3. Each survivor becomes a node with a "bottleneck sentence"; edges read "enabled by". The same advance reached from many children is one node — convergence is the point.
-4. Survivors face an adversarial verifier (multiples test, date check) and are marked `verified` or stay `provisional`.
-5. At any point, render the graph to a single interactive HTML page.
+2. Start from one root node; repeatedly expand the best unexpanded node: scout ≈100 earlier **proximate** candidate advances, resolve their identities, interrogate each with 12 fixed questions plus the directness test, prune by fixed gates to a capped set of survivors.
+3. Each survivor becomes a node with a "bottleneck sentence"; edges read "enabled by" and mean **direct enabler of the child's leap** — never a mediated ancestor. The same advance reached from many children is one node — convergence is the point.
+4. Every node is a leap: a discontinuous jump over the state of the art immediately before it. Time is a first-class dimension; each step back moves one leap, not one era.
+5. Survivors face an adversarial verifier (multiples test, date check, mediation attack) and are marked `verified` or stay `provisional`.
+6. At any point, render the graph to a single interactive HTML page.
 
 Your role as the executing agent: you do the judgment work (scouting,
 evaluating, judging identity pairs, verifying). The CLI in `pipeline/`
@@ -103,19 +113,27 @@ One JSON file per run (path = `G`). Top-level keys:
 
 - `config` — the profile snapshot (§2).
 - `run_state` — `expansions_done`, `raw_candidates_seen`, and
-  `rejected`: every rejected candidate with its parent and reason. This
-  list is the `{already_rejected}` input for future scouts of the same
-  parent, and `resolve` automatically drops exact repeats of it.
+  `rejected`: every rejected candidate with its parent and reason.
+  Rejections by mediation additionally carry `mediated_via` (the named
+  mediator). This list is the `{already_rejected}` input for future
+  scouts of the same parent, and `resolve` automatically drops exact
+  repeats of it.
 - `nodes` — id → node record: `name`, `aliases`, `year`, `domain`,
   `type` (`device|theory|method|material|institution|other`),
   `definition` (one sentence), `bottleneck` (one sentence, form:
-  "Before X, Y was impossible or impractical because Z."), `status`
-  (`provisional|verified`), `depth`, `expanded`, `priority` (admission
-  score; frontier is best-first), `sources` (list of `{title, url}`),
-  `verification`, `merged_into` (union-find pointer; non-null nodes are
-  merged away and invisible).
-- `edges` — `{predecessor_id, successor_id, verdicts, score, gate}`.
-  Reads: predecessor **enabled** successor (removed its bottleneck).
+  "Before X, Y was impossible or impractical because Z."), `leap`
+  (one–two sentences: what discontinuously jumped when this node
+  appeared), `prior_state` (the state of the art immediately before
+  it), `status` (`provisional|verified`), `depth`, `expanded`,
+  `priority` (admission score; frontier is best-first), `sources`
+  (list of `{title, url}`), `verification`, `merged_into` (union-find
+  pointer; non-null nodes are merged away and invisible).
+- `edges` — `{predecessor_id, successor_id, verdicts, score, gate}`,
+  plus v3 fields `leap` (`{prior_state, jump, date}` — the *successor's*
+  leap, recorded with this evaluation) and `directness`
+  (`{verdict, counterfactual, mediator, evidence}`), and optionally
+  `mediation_challenges` (verifier attacks that landed as downgrades).
+  Reads: predecessor **directly enabled** successor's leap.
   `verdicts` holds the 12 answers for that predecessor *in relation to
   that successor*.
 - `merge_log` — every identity merge with signals, scores, and the
@@ -149,13 +167,20 @@ Note its `id`, `name`, `year`, `domain`, `bottleneck`. Call it PARENT.
 
 Fill the SCOUT PROMPT (§6.1) slots for PARENT:
 
+- `{immediate_prior_state}` and `{parent_leap}`: PARENT's `prior_state`
+  and `leap` fields from its node record (the root ships with both;
+  every admitted node carries the ones its evaluator wrote).
 - `{existing_nodes}`: the canonical names of all live nodes — get them
   from `status` output / the graph's node names you already know.
 - `{already_rejected}`: names in `run_state.rejected` with
-  `parent_id == PARENT.id` (empty on a first expansion).
+  `parent_id == PARENT.id` (empty on a first expansion). Mediated
+  rejections are included — never re-propose them for this parent.
 
-Run the 10 lenses, ≥2 query variants each, and write the resulting
-JSON array to `work/candidates_<PARENT_ID>.json`. Candidate objects
+Run the 12 lenses, ≥2 query variants each, and write the resulting
+JSON array to `work/candidates_<PARENT_ID>.json`. Lenses 11 (Hardware
+& devices) and 12 (Data) are mandatory for every parent (v3.1), even
+when the parent looks purely algorithmic — and doubly so for
+compute-hungry or data-hungry leaps. Candidate objects
 must carry the §4.3 fields **plus** the two identity-card fields §4.5
 requires: `"type"` and `"definition"` (one sentence: what it is and
 what it enabled). Then:
@@ -207,20 +232,33 @@ python3 pipeline/pipeline.py show-distinct --graph $G --parent <PARENT_ID>
 
 For **every** distinct candidate, apply the EVALUATOR CONTRACT (§6.2):
 answer Q1–Q12 in relation to PARENT, each verdict `pass|partial|fail`,
-every pass carrying evidence + source + a falsification note. Also
-write the candidate's `bottleneck` sentence (the bottleneck IT removed,
-in the §3 form — this becomes its node text if admitted) and confirm
-its `year`, `type`, `definition`. Write `work/verdicts_<PARENT_ID>.json`:
+every pass carrying evidence + source + a falsification note; record
+PARENT's **leap** (§5.1 of DESIGN.md: prior state / jump / date — the
+same record for every candidate of this parent, stored per edge); run
+the **directness test** (§5.2: counterfactual + mediation check — if a
+mediator can be named, directness is `fail` and `mediator` names it).
+Also write the candidate's own `bottleneck` sentence (the bottleneck IT
+removed, in the §3 form — this becomes its node text if admitted), its
+own `node_leap` and `node_prior_state` (used when IT is expanded), and
+confirm its `year`, `type`, `definition`. Write
+`work/verdicts_<PARENT_ID>.json`:
 
 ```json
 {"evaluations": [
   {"cand_id": "<from show-distinct>", "bottleneck": "Before X, …",
+   "node_leap": "…", "node_prior_state": "…",
+   "leap": {"prior_state": "…", "jump": "…", "date": 2023},
+   "directness": {"verdict": "pass", "counterfactual": "…",
+                  "mediator": null, "evidence": "…"},
    "verdicts": {"Q1": {"verdict": "pass", "evidence": "…", "source": "…", "falsification": "…"},
                 "Q2": {"…": "…"}, "Q12": {"…": "…"}}}
 ]}
 ```
 
-All 12 keys are required per evaluation (missing keys count as `fail`).
+All 12 keys are required per evaluation (missing keys count as `fail`),
+and the `directness` object is required: a missing one counts as
+`fail` (fail-closed), and a named `mediator` forces `fail` whatever
+verdict label was written.
 
 ### Step 5 — Apply verdicts (CLI: gates, ranking, insertion)
 
@@ -229,23 +267,39 @@ python3 pipeline/pipeline.py apply-verdicts --graph $G --parent <PARENT_ID> --fi
 # smoke depth-2 expansions only: add --cap 6
 ```
 
-The CLI applies the §5 gates ((Q1 or Q2 pass) and Q3 not a clear fail),
-downgrades evidence-less passes to `partial`, ranks survivors by score
-across the other nine questions, caps them, creates nodes (or links to
-existing nodes the candidates matched — that is convergence), writes
-edges with the verdicts, records every rejection with its reason, marks
-PARENT expanded, and checkpoints. It prints survivor / created /
-linked / rejected counts and the next frontier.
+The CLI applies the §5 gates ((Q1 or Q2 pass) and Q3 not a clear fail
+**and the v3 directness gate**: directness `pass` with no mediator
+named), downgrades evidence-less passes to `partial`, ranks survivors
+by score across the other nine questions, caps them, creates nodes (or
+links to existing nodes the candidates matched — that is convergence),
+writes edges with the verdicts + leap + directness records, records
+every rejection with its reason (mediated rejections as
+`mediated_via: M`, also listed separately in the command output as
+`mediated_rejections`), marks PARENT expanded, and checkpoints. It
+prints survivor / created / linked / rejected counts and the next
+frontier.
 
 ### Step 6 — Verify (you, then CLI)
 
 For each survivor created or linked in Step 5, run the VERIFIER
 instructions (§6.4): multiples test on Q3, attack on Q1, date and
-causal-direction check. Write `work/verification_<PARENT_ID>.json`:
+causal-direction check, and the **mediation attack** on the edge that
+admitted it (try to name an intermediate M: X→M→PARENT). Write
+`work/verification_<PARENT_ID>.json`:
 
 ```json
-{"verifications": [{"node_id": "…", "outcome": "verified|provisional|killed", "notes": "…"}]}
+{"verifications": [{"node_id": "…", "outcome": "verified|provisional|killed", "notes": "…",
+                     "mediation": {"mediator": "M", "action": "kill_edge|downgrade",
+                                   "successor_id": "<PARENT_ID>"}}]}
 ```
+
+The `mediation` object is present only when the attack lands.
+`kill_edge` removes that edge, logs the rejection as
+`mediated_via: M`, and — if the node is left with no edges — takes the
+node out of the frontier (it stays visible in the graph). `downgrade`
+keeps the edge, records the challenge on it, and caps the node at
+provisional. Any mediation finding also caps a `verified` outcome at
+provisional in the CLI.
 
 ```sh
 python3 pipeline/pipeline.py apply-verification --graph $G --file work/verification_<PARENT_ID>.json
@@ -284,15 +338,23 @@ interruption (crash, restart, new agent):
 
 ## 6. Prompts (verbatim)
 
-### 6.1 Scout prompt (DESIGN.md §4.3)
+### 6.1 Scout prompt (DESIGN.md §4.3, v3.1)
 
 ```
 ROLE
 You are the candidate scout for a recursive history-of-technology trace.
-Your job is breadth, not judgment. A later stage will interrogate every
-candidate with 12 fixed questions and prune hard. If you pre-filter by
-importance, the trace loses exactly the candidates that matter most.
-Over-propose.
+Your job is breadth, not judgment — but breadth in ONE direction only:
+backwards by a single step. This trace is built from proximate leaps.
+Each node is a discontinuity: a jump over the state of the art that
+immediately preceded it. Your candidates are the advances that appeared
+shortly before the parent and directly made the parent's leap possible.
+A later stage will interrogate every candidate with 12 fixed questions,
+a directness gate, and hard pruning. If you pre-filter by importance,
+or reach back to deep fundamentals, you corrupt the trace: importance
+is transitive, directness is not. A fundamental that enabled the parent
+only through intermediaries does NOT belong at this level — it will be
+found when the intermediary is expanded. Over-propose proximate
+candidates; never propose mediated ones you can already see through.
 
 PARENT NODE
 Name: {parent_name}
@@ -301,27 +363,48 @@ Domain: {parent_domain}
 Bottleneck this node removed: {bottleneck_statement}
 Read it as: "Before {parent_name}, {capability} was impossible or
 impractical because {constraint}."
+State of the art immediately before {parent_name}: {immediate_prior_state}
+The parent's leap: {parent_leap}
 
 TASK
-Find approximately 100 earlier advances that plausibly removed part of
-that bottleneck, or were necessary preconditions for {parent_name}.
-Work through all 10 search lenses (attached). Run real web searches for
-each lens, at least 2 query variants per lens, and read the strongest
-sources, preferring reference works, textbooks, and scholarly histories
-over popular listicles.
+Find approximately 100 advances that appeared shortly before
+{parent_name} and directly enabled its leap: the techniques,
+components, results, or resources whose arrival closed the gap between
+the immediate prior state of the art and {parent_name}. Work through
+all 12 search lenses (attached). Run real web searches for each lens,
+at least 2 query variants per lens, and read the strongest sources,
+preferring reference works, textbooks, and scholarly histories over
+popular listicles. Anchor every search in the parent's immediate
+pre-history: the years just before {parent_year}, the systems it was
+directly compared against, and the accounts written at the time of why
+it outperformed them. The Hardware & devices and Data lenses are
+mandatory for every parent, even when the parent looks purely
+algorithmic: a leap that reads as pure method often directly consumed
+a specific machine, platform, or dataset.
 
 RULES
-- Dated and named. Every candidate is a specific advance with an
-  approximate year. Era-words are banned: not "electricity" but
-  "Gramme dynamo (1871)"; not "computers" but "stored-program
-  architecture (1945)".
-- Causal claim required. One sentence: "{candidate} made {parent_name}
-  possible by ..." If you cannot write that sentence, drop the candidate.
+- Proximate, dated, named. Every candidate is a specific advance with
+  an approximate year, close enough to the parent that no other named
+  milestone sits causally between it and the parent. Era-words are
+  banned: not "electricity" but "Gramme dynamo (1871)"; not
+  "computers" but "stored-program architecture (1945)".
+- Directness is the claim. One sentence: "{candidate} directly enabled
+  {parent_name}'s leap by ..." — the sentence must describe the last
+  causal step, not a chain. If writing it honestly requires "...which
+  later made X possible, which in turn ...", the candidate is mediated:
+  drop it (it belongs to a deeper level).
+- Contemporaneous evidence preferred. Why did {parent_name} beat its
+  immediate predecessors, according to sources from its own moment or
+  careful retrospectives? Candidates that answer that question rank
+  first in your list.
 - Reuse canonical names. If a candidate matches a node in EXISTING
   NODES (attached), use that exact name. This is what lets the graph merge.
-- Never re-propose anything in ALREADY REJECTED (attached).
+- Never re-propose anything in ALREADY REJECTED (attached) — including
+  candidates previously rejected as mediated for this parent.
 - Borderline is fine. Duplicates across lenses are fine; dedupe comes
-  later. Importance filtering is NOT your job.
+  later. Importance filtering is NOT your job — but neither is
+  deep-history trawling: distant fundamentals are explicitly out of
+  scope at this level.
 
 OUTPUT
 A JSON array only, one object per candidate:
@@ -335,28 +418,49 @@ card; add these two fields to every object):
 `"definition": "one sentence: what it is and what it enabled"`.
 For a smoke run, "approximately 100" reads as the smoke `raw_target`.
 
-The 10 lenses (attach to the prompt): 1 Bottleneck-direct ("what made
-{capability} possible", "history of {domain}", "{parent} prerequisites",
-"why was {parent} impossible before {parent_year}") · 2 Components
-("history of {subsystem}", "{subsystem} invention", "first practical
-{subsystem}") · 3 Underlying science ("{parent} scientific basis",
-"discovery that enabled {domain}") · 4 Instruments ("instruments used
-in early {domain}", "how was {quantity} first measured") · 5 Materials
-("{material} production history", "history of {material} purification")
-· 6 Mathematics ("mathematics behind {parent}", "history of
-{formalism}") · 7 Infrastructure ("what infrastructure did {domain}
-depend on") · 8 Cross-domain transfer ("{technique} applied to
-{domain} history", "{parent} borrowed from which field") · 9 Methods
-("process that made {parent} manufacturable", "history of {process}")
-· 10 Timelines ("timeline of {domain}", encyclopedia / survey history
-of {domain}).
+The 12 lenses, v3.1 (attach to the prompt): 1 Immediate prior state of
+the art ("{parent} vs {predecessor} comparison", "limitations of
+{prior approach}", "state of the art before {parent}") · 2 The
+differentiating move ("what was new in {parent}", "{parent} key
+innovation", "why did {parent} outperform {predecessor}") · 3
+First-order components ("{parent} architecture components", "what is
+{parent} built on") · 4 Contemporaneous accounts ("{parent} review
+{parent_year}", "why {parent} is a breakthrough") · 5 Benchmarks &
+measurement ("{parent} benchmark results", "evaluation of {parent} vs
+prior") · 6 Method / recipe introduced shortly before ("{parent}
+training method", "how was {parent} made", "{technique} first used for
+{parent}") · 7 Infrastructure at hand ("{parent} hardware used",
+"{parent} built with what tools") · 8 Direct transfers ("{creator}
+previous work before {parent}", "{technique} applied in {parent}") ·
+9 Negative space ("failed attempts at {capability} before {parent}",
+"{prior approach} problems solved by {parent}") · 10 Timelines of the
+immediate lineage ("timeline of {domain} {parent_year}", "history of
+{parent} development") · 11 Hardware & devices ("{parent} ran on what
+hardware", "{accelerator} first used to train {parent}", "{platform}
+programmability layer") · 12 Data ("{parent} training data", "{dataset}
+collected how", "data curation pipeline behind {parent}"). Lenses 11
+and 12 are mandatory for every parent (v3.1).
 
-### 6.2 Evaluator contract (DESIGN.md §5)
+### 6.2 Evaluator contract (DESIGN.md §5, v3.1)
 
 ```
 You receive ONE candidate, the PARENT node it claims to enable, and the
-candidate's causal claim. Answer all 12 questions about the candidate
-IN RELATION TO THE PARENT. Verdicts: pass / partial / fail.
+candidate's causal claim. You produce three things: the parent's LEAP
+RECORD, the 12 question verdicts about the candidate IN RELATION TO
+THE PARENT, and the DIRECTNESS verdict for the candidate–parent pair.
+
+THE LEAP RECORD (required — it belongs to the parent, and the
+directness test is meaningless without it). State, with evidence:
+- prior_state: the state of the art immediately before the PARENT
+  appeared (what the best existing approach could and could not do).
+- jump: what discontinuously improved when the parent appeared — the
+  metric or benchmark that jumped, or the capability that was
+  impossible just before and possible just after.
+- date: the parent's year.
+Measure the leap against the IMMEDIATE predecessor state, never
+against a distant past.
+
+THE 12 QUESTIONS. Verdicts: pass / partial / fail.
 
 Q1 Impossibility flip — Before this, was there a specific problem that
    could not be solved at all, and did this make it solvable?
@@ -387,14 +491,49 @@ Evidence discipline: every "pass" requires (a) a short evidence quote
 or concrete factual claim, (b) a source, (c) a falsification note of
 the form "this pass dies if …". A pass without evidence is recorded as
 partial by the pipeline. Be strict: partial is the honest verdict for
-"plausibly yes, thin evidence". Also return the candidate's bottleneck
-sentence: "Before <candidate>, <capability> was impossible or
-impractical because <constraint>."
+"plausibly yes, thin evidence".
+
+THE DIRECTNESS TEST (required, hard gate). Candidate X is a DIRECT
+enabler of the parent's leap only if BOTH hold:
+(a) Counterfactual: remove X, and the parent's leap does not happen
+    when it did — it is delayed, diminished, or takes a different form.
+(b) No mediation: there is no other milestone M such that X enabled
+    the parent only through M. If you can name such an M, X FAILS
+    directness for this parent: set verdict "fail" and "mediator" to
+    M's name. X is not unimportant; it is one level too deep, and will
+    be rediscovered when M is expanded.
+A large year gap between X and the parent is a red flag: it demands a
+stronger directness argument (why did nothing between them mediate?),
+not an automatic fail. A "partial" — mediation genuinely unresolvable
+on current evidence — does NOT satisfy the gate.
+Return: {"verdict": "pass|partial|fail", "counterfactual": "…",
+"mediator": null or "M", "evidence": "…"}.
+
+SUBSTRATE IS NOT A REJECTION CLASS (v3.1). A hardware or data
+candidate is judged by exactly the tests above — never rejected merely
+for being "substrate" or "infrastructure". Ask: (i) counterfactual at
+the parent's time and scale — could the leap have happened then, at
+that scale, without it? An algorithm can exist on paper for years
+before the hardware lets it run. (ii) direct consumption — did the
+parent actually use it: named in the paper or system, part of the
+demonstrated result? (iii) mediation, exactly as above — no exemption,
+no special suspicion. The SPECIFIC enabling step can pass: a
+programmability layer the parent's code was actually written in, a
+cluster-scale training capability the run demonstrably used, the
+dataset the headline result was produced on. GENERIC infrastructure
+fails: electricity, the transistor in the abstract, "computers".
+
+Also return the candidate's own bottleneck sentence ("Before
+<candidate>, <capability> was impossible or impractical because
+<constraint>."), its own leap sentence and prior-state sentence (they
+become its node record if it is admitted), and confirm its year, type,
+and definition.
 ```
 
 Gates applied by the CLI (you do not apply them): survive iff
-(Q1 pass OR Q2 pass) AND Q3 is not a clear fail; rank by score across
-Q4–Q12 (pass 1.0, partial 0.5, fail 0); cap per profile.
+(Q1 pass OR Q2 pass) AND Q3 is not a clear fail AND directness passes
+with no mediator named; rank by score across Q4–Q12 (pass 1.0, partial
+0.5, fail 0); cap per profile.
 
 ### 6.3 Identity judge instructions (DESIGN.md §4.5)
 
@@ -418,11 +557,11 @@ history. Answer with the decision and ONE sentence of reason; the
 reason is written to the merge log.
 ```
 
-### 6.4 Verifier instructions (DESIGN.md §6)
+### 6.4 Verifier instructions (DESIGN.md §6, v3)
 
 ```
 You are the adversarial verifier. Your job is to KILL this node. For a
-survivor node and the edge that admitted it, run three attacks:
+survivor node and the edge that admitted it, run four attacks:
 
 1. Attack Q1: was the problem truly impossible before this advance, or
    merely hard, expensive, or unfashionable? Search for prior art.
@@ -433,11 +572,26 @@ survivor node and the edge that admitted it, run three attacks:
    on necessity grounds).
 3. Check the date and the causal direction: is the year defensible, and
    did the influence really run from this node toward the child?
+4. Mediation attack (v3): for the edge X -> parent, try to name an
+   intermediate milestone M such that X enabled the parent only
+   through M (X -> M -> parent). Search deliberately for what sits
+   between X and the parent, in time and in the causal chain. If you
+   find a convincing M, record it in your verification entry as
+   "mediation": {"mediator": "M", "action": "kill_edge"} when the
+   mediation is complete (X contributed nothing to the parent except
+   through M — the edge is removed and the rejection logged as
+   mediated_via: M; X is expected to resurface when M is expanded),
+   or {"mediator": "M", "action": "downgrade"} when X also had a
+   direct channel but the mediated path dominates (the edge stays,
+   the challenge is recorded on it, the node is capped at
+   provisional).
 
-Outcomes: "verified" only if all three attacks fail to land. "killed"
+Outcomes: "verified" only if all four attacks fail to land. "killed"
 if the date is wrong, the causal direction is reversed, or the advance
 did not exist as described. Otherwise "provisional", with the strongest
-attack recorded in your notes.
+attack recorded in your notes. A node whose edge you killed via the
+mediation attack is not "killed" as a node — it is re-filed one level
+down; use outcome "provisional" with the mediation object set.
 ```
 
 ---
@@ -452,10 +606,11 @@ Produces ONE self-contained HTML file (no external assets; graph data
 embedded). Open it in any browser. Features: Trace view (layered DAG by
 depth, +/− collapse on nodes with predecessors), Timeline view (nodes
 on a year axis), search by name/alias, and a detail panel per node:
-bottleneck sentence, definition, status badge, sources, and the full
-12-question verdict table with evidence and falsification notes for
-every node it enables. Render after every expansion; rendering never
-mutates the graph.
+bottleneck sentence, its leap and prior-state sentences, definition,
+status badge, sources, and — for every node it enables — the leap
+record, the directness record (with any mediation challenges), and the
+full 12-question verdict table with evidence and falsification notes.
+Render after every expansion; rendering never mutates the graph.
 
 For the eventual AI Praxis Lab integration, this same file is the
 artifact to embed (DESIGN.md §9).
@@ -484,7 +639,70 @@ exhausted: scouts return only already-rejected or post-dated items.
 
 ---
 
-## 9. Troubleshooting
+## 9. Retro-sweep protocol (v3.1 — one-time supplementary pass)
+
+**Why.** The early run-01 expansions were scouted before lenses 11
+(Hardware & devices) and 12 (Data) existed, and a hardened "substrate
+rejected as such" judgment rejected hardware/data candidates as a
+class. The graph therefore contains no hardware or data nodes. This
+protocol repairs *discovery* for the already-expanded part of the
+graph. It does NOT re-open or alter any existing verdict: everything
+the sweep finds enters through the normal gates, and everything it
+rejects is recorded like any other rejection.
+
+**When.** As its own dedicated run session, after the v3.1 doc
+revision lands, before (or interleaved with) further frontier
+expansion. Run it once.
+
+**Scope and priority.** Already-expanded nodes, in this order:
+
+1. The root (the modern AI agent)
+2. Large-scale pretraining / GPT-3
+3. Transformer architecture
+4. RLHF
+5. In-context learning
+
+Then any other already-expanded node, in frontier order, as budget
+allows.
+
+**Procedure, per node P:**
+
+1. Scout ONLY lenses 11 and 12 for P, using the §6.1 prompt with the
+   lens list restricted to those two and the raw target scaled to
+   ~20–30 candidates. Fill every other slot exactly as in §4 Step 1
+   (`{immediate_prior_state}`, `{parent_leap}`, `{existing_nodes}`,
+   `{already_rejected}`).
+2. Run §4 Steps 2–6 unchanged: resolve identities, judge the gray
+   zone, evaluate every distinct candidate (12 questions + leap record
+   + directness test, under the v3.1 gate guidance — substrate is not
+   a rejection class), apply verdicts, verify survivors (multiples /
+   Q1 / mediation attacks).
+3. Survivors are inserted or linked, and edges recorded, exactly as in
+   a normal expansion. Mark every run-log line for the sweep with
+   `retro-sweep` so the additions stay distinguishable from frontier
+   expansions.
+
+**Two cautions.**
+
+- *Previously rejected candidates.* A candidate rejected for P under
+  the superseded substrate-class judgment may be re-proposed in the
+  sweep when its claim is direct consumption the original evaluation
+  never considered. `resolve` drops exact repeats of P's rejection
+  list automatically; if it drops a re-proposal, do NOT rename the
+  candidate to evade the filter — record the candidate and the block
+  in the run log and escalate the tooling gap.
+- *CLI limits.* If the CLI refuses a supplementary expansion on an
+  already-expanded node, stop and escalate. Never edit `graph.json` by
+  hand to force it (§0).
+
+**Stop.** The sweep ends when the priority list is exhausted or the
+profile `node_budget` is reached (sweep survivors count against the
+same global budget). Render (§7), sync, and then resume the normal
+loop (§4, §5).
+
+---
+
+## 10. Troubleshooting
 
 - **`graph file not found`** — run `init` first, and check `--graph`
   points at the run's graph (paths are relative to where you invoke).
@@ -503,6 +721,26 @@ exhausted: scouts return only already-rejected or post-dated items.
   evidence quotes and re-apply verdicts for that parent (the expansion
   is still open until `apply-verdicts` succeeds once — after it has,
   re-applying is not supported; escalate instead).
+- **Everything is failing the directness gate (v3)** — three usual
+  causes: (1) the verdicts file is missing the `directness` object per
+  evaluation (missing counts as `fail`, fail-closed); (2) evaluators
+  are writing `partial` — honest, but it does not satisfy the gate;
+  the mediation question must actually be resolved; (3) the scout
+  trawled deep history instead of the parent's immediate pre-history,
+  so most candidates genuinely are mediated for this parent — re-scout
+  with the v3 lenses rather than weakening verdicts.
+- **A famous fundamental was rejected as `mediated_via: M`** — that is
+  v3 working as designed, not a bug. Importance is transitive;
+  directness is not. The candidate is expected to resurface when M is
+  expanded; the rejection record (with `mediated_via`) is what keeps
+  the scout from re-proposing it at this level.
+- **Hardware/data candidates keep dying as "substrate" (v3.1)** —
+  that is the pre-v3.1 habit the gate guidance removed. "Substrate" is
+  not a rejection class: apply the counterfactual at the parent's time
+  and scale, ask whether the parent directly consumed it, and run the
+  mediation check — no more, no less (§6.2). If the candidate is
+  generic infrastructure (electricity, "computers"), it fails on those
+  tests, not on its category.
 - **Embedder shows `tfidf-fallback`** — expected without
   `sentence-transformers`. Consequences: fewer auto-merges, more pairs
   decided "different" by default, name-containment pairs still routed
@@ -515,7 +753,7 @@ exhausted: scouts return only already-rejected or post-dated items.
 
 ---
 
-## 10. File map
+## 11. File map
 
 ```
 the-behind/
