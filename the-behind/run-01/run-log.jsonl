@@ -4786,5 +4786,92 @@
   "applied-optimal-control-bryson-ho-1969-1969",
   "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961"
  ],
+ "sync_commit": "70f473b3"
+}
+{
+ "session": 76,
+ "expansion": 161,
+ "parent": "pwb-shell-mashey-shell-1975-1975",
+ "parent_name": "PWB shell (Mashey shell, 1975)",
+ "parent_year": 1975,
+ "parent_depth": 6,
+ "date": "2026-11-25",
+ "provenance": "Session 76, expansion 1 of 2 (the frontier head per status after session 75). Scouted, resolved, judged and verified from scratch by session 76.",
+ "grounding": "The parent's stratum grounded on its two authoritative accounts, read/fetched this session: (1) Mashey, 'Shell history, true facts', net.unix-wizards, 18 Mar 1986 (read in full) - the designer's own history: the PWB shell 'first appeared in mid-1975', 'derived from a set of requirements and suggestions from me in early 1975 in trying to do serious shell programming'; mid-1975 'the shell acquired variables, including 3 that were derived from per-process data. This is where the idea of more generalised path-searching came in. Some of the existing support commands were beefed up, including if/else/endif. Most of this work was done by Alan Glasser or Dick Haight'; and the grading this expansion rests on: 'fundamentally still a Thompson shell with selected additions and tunings by various of us, constrained to be mostly upward compatible'; USG (UNIX Support Group at Murray Hill) 'added some things, and so did we' (1973-76, parallel). (2) Dolotta, Haight & Mashey, 'UNIX Time-Sharing System: The Programmer's Workbench', BSTJ 57(6):2177-2200 (1978), sec. 8.5 and sec. III (grounded via the published text): 'During 1974 and early 1975, the pwb/unix shell was the same as the Research UNIX shell'; extensions to support shell programming 'implemented in mid-1975'; the facility a network of PDP-11/45s and /70s. Feature record (variables $s->$HOME, $p->$PATH; generalized searching; invocable procedures via pexec, ancestor of execvp; internal if/then/else/endif, switch/breaksw/endsw, while/end/break/continue; onintr) and programme record (begun 1973 by Evan Ivie and Rudd Canaday for a 1000-employee Bell Labs division, BISP, the largest UNIX site of its era; the $p mechanism explained in the reference accounts by groups who 'could not change the contents of /bin or /usr/bin, but wanted to create their own sets of shared commands') from the reference accounts, consistent with both primary documents. AUDIT SCOPE, stated honestly: PWB internal reports (the documents named in the parent's re-hearing condition) were not obtained; absence claims (Dijkstra/ALGOL/TENEX non-citation) are scoped to the two authoritative accounts above, which are otherwise specific about the shell's sources.",
+ "parent_record_note": "Parent stored fields verified intact before evaluating (definition, bottleneck, leap, prior_state all non-empty, read verbatim; no reconstruction). The parent's session-66 verification record was read before evaluating, as instructed: the node is capped provisional on attribution precision (Mashey's collective-dialog account; the USG group's contemporary shell work in the same laboratory), with a re-hearing condition keyed to PWB internal reports or BSTJ drafts attributing features feature-by-feature. That softening concerns feature provenance INSIDE the PWB programme; this expansion's central question (the base's identity) is answered by both primary documents without hedging. Stored sources carry the Bourne BSTJ paper - not empty, no defect recorded.",
+ "scout": {
+  "builder": "run-01/work/build_scout_pwb.py",
+  "raw_candidates": 54,
+  "per_lens_floors": "complete - every content lens with filings (L1, L2, L4-L7, L9, L11, L13, L19-L22) filed >=3 on the builder's output, checked before resolve; L12/L14/L17 thin-with-finding (filings plus dry notes); FIVE full dry notes with findings: L8 (no corpus - inputs are command lines), L10 (no material dependency), L15 (no run-time service; the center itself judged at L21), L16 (no command-language standard existed; POSIX a decade away - the parent's tutorial is the maker direction), L18 (no observation instrument; performance analysis used the system's own accounting). Meta passes L3/L23 filed within the combined cap (direction records carried there)."
+ },
+ "resolution": {
+  "distinct": 18,
+  "dropped": 14,
+  "matched_existing": 4,
+  "auto_merges": 22,
+  "judge_queue": 0,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 0 - no pairs to judge. All 4 graph-existing candidates matched existing nodes at resolve under their exact canonical names and stored type strings (Thompson shell 'system'; Multics I/O redirection 'method'; ALGOL 60 'method'; garden-hose memo 'other'), verified against show-distinct's matched_node_id fields before verdicts.",
+ "calendar_dropped_at_resolve": [
+  "14 direction filings, all same-year or postdating, filed so their direction is on the scout record: Mashey's requirements and suggestions for serious shell programming (early 1975) x4 filings - the parent's own problem-posing document, the designer's own and same-year (the hand-simulation shape at IPL); Dolotta & Mashey, An Introduction to the Programmer's Workbench (ICSE 1976) - the programme's own conference text; Mashey, Using a Command Language as a High-Level Programming Language (ICSE 1976) - the usage-data paper, the parent's own programme text; Dolotta, Haight & Mashey (BSTJ 1978) x2 filings - the parent's own account (the Totta & Sopher shape); Bourne shell (1977) - the from-scratch descendant; SCCS (1975) and Ratfor (1975) - same-year sibling artifacts of the programme and of the laboratory's structured-programming moment; Version 6 UNIX (1975) x2 filings - the contemporary Research release; the Programmer's Workbench toolset (1975) - the sibling utilities. Thompson's 'The UNIX Command Language' (Infotech, March 1975) was identified in Mashey's reference list and deliberately NOT filed: a same-year document about the admitted base, its drop a foregone conclusion, noted here for completeness."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_pwb-shell-mashey-shell-1975-1975.json",
+  "builder": "run-01/work/build_verdicts_pwb.py",
+  "evaluations": 18,
+  "count_check": "evaluations == distinct candidates from show-distinct (18 == 18, verified programmatically - exact cand_id set match; field discipline asserted on every evaluation by the builder: cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); scout reconciliation: 54 raw - 14 resolve drops - 22 auto-merges = 18 distinct; per-lens floor verified on the builder's output before resolve; dry run through score.rank_candidates reproduced exactly the intended outcome (1 survivor, Thompson LINK at 6.5; 17 rejected, with the component signature visible on the external if/goto: directness_ok true, q1_or_q2 false) BEFORE applying; no correction used; apply-verdicts run exactly once",
+  "survivors": [
+   "Thompson shell (the original UNIX shell, 1971) - LINK, 6.5: ancestor-modified in the purest documentary form in the run - the child's designer grades the child as this artifact with additions ('fundamentally still a Thompson shell with selected additions and tunings by various of us, constrained to be mostly upward compatible'), and the programme's BSTJ paper records the two shells as the same artifact through early 1975, extended mid-1975. The interpreter core, pipes, globbing, redirection and command files the parent runs on are the candidate's; the parent's additions are additions TO it."
+  ],
+  "mediated": [
+   "Multics I/O stream redirection mechanism (iocall attach, 1965) LINK via the Thompson shell - its edge-scoped admission at the Thompson shell stands; here it arrives inside the base's feature set",
+   "Multics shell (Pouzin's SHELL paper, 1965) via the Thompson shell - its direct hearing was at the Thompson shell (fail-closed partial, session 67, most contestable negative there); at this parent the mediation is complete on the parent's documents, which engage exactly one shell",
+   "RUNCOM (Pouzin, 1964) via the Multics shell (and thence via the Thompson shell) - the chain recorded complete",
+   "CTSS (1963) via RUNCOM - containment: the system that housed the lineage's first artifact; its shell-relevant content is RUNCOM itself",
+   "McIlroy's garden-hose memo (1964) LINK via the Thompson shell - its VERIFIED edge at the Thompson shell (session 67) stands; pipes are part of what 'fundamentally still a Thompson shell' means at this parent"
+  ],
+  "fail_closed_partials": [
+   "PWB/UNIX facility at BISP (Ivie & Canaday, 1973) - MOST CONTESTABLE NEGATIVE: formation with a documented demand channel. Argued at full strength: the facility's specific operating structure (shared machines, protected /bin and /usr/bin, sovereign group command sets) is the recorded cause of the parent's most distinctive mechanism (generalized path searching, $p) and of invocable procedures (pexec) - a problem-side channel of the Lashley-at-Jordan kind, not generic funding. Answered on formation: the posing and the answering are one organization's single act (the shell is the facility's own artifact, by its staff, for its users), and the natural separable requirement document (Mashey's memo) is the designer's own and same-year. Re-hearing condition recorded: a PWB internal requirements or design document, distinct from the shell's own texts, deriving the path-search or procedure-invocation features from the center's operating requirements",
+   "USG (UNIX Support Group) shell additions (1974) - the parallel multiple inside one laboratory: Mashey's 'USG added some things, and so did we' documents parallelism, not transmission; this stratum is precisely the attribution softening on the parent's own verification record. Re-hearing condition shared with that record: PWB or USG internal reports attributing specific features across the two lines",
+   "Research UNIX operating system (1971) - containment with a component-level channel: the new variables included '3 that were derived from per-process data' (Mashey) - genuine consumption of the kernel's data model, recorded; but the system is the parent's container, and its shell-specific content is the Thompson shell, admitted directly (the SLT-at-flip-chip shape)"
+  ],
+  "components": [
+   "External if and goto commands of the Thompson shell (1971) - directness PASSING in full (Mashey: the existing support commands were 'beefed up, including if/else/endif'; he was 'moving most of the control structure commands into the shell' - the parent's internal commands ARE these commands reworked), Q1/Q2 FAILING: a component mechanism of the admitted ancestor's leap, not a leap of its own; its channel into the parent is the Thompson LINK itself (the UBM/high-Pb shape)"
+  ],
+  "rejected": [
+   "Dijkstra, Go To Statement Considered Harmful (1968) and Structured Programming (Dahl, Dijkstra & Hoare, 1972) - the era's doctrine and its codification: the shell embodies the doctrine, but no PWB document cites either text; Mashey's genealogy of the control commands runs entirely inside the shell line. A familiarity tradition / a consensus carrier is not a channel (Kepler at Cavalieri; the SMRW discipline)",
+   "ALGOL 60 LINK refused - presupposed design vocabulary: the keyword forms are the era's common inheritance; the documented ALGOL affinity in this family belongs to the Bourne shell, a descendant, and cannot be imported backwards (the IPL discipline). The node's other edges are untouched",
+   "JCL (1964) - defined-against batch incumbent, third hearing (refused at UNIX shells and at the Thompson shell on the same shape)",
+   "TENEX EXEC (1971) - the parallel summit in another institution's line; simultaneity is not a channel",
+   "PDP-11 (1970) - generic substrate: necessary as a class, substitutable as an instance; no parent feature tied to the machine's properties",
+   "C programming language (1972) - implementation substrate shared with the base; wielded medium, not consumed mechanism",
+   "Bell Telephone Laboratories (1925) - formation at the largest scale: the common container of ancestor and child alike"
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_pwb-shell-mashey-shell-1975-1975.json",
+  "outcomes": {
+   "thompson-shell-the-original-unix-shell-1971-1971": "verified (EDGE-scoped outcome for the new Thompson -> PWB edge at 6.5; the node's own status was already verified and is unchanged). All four attacks fail on the parent's documents: Q1 (the parent's presupposed capability has no other candidate document); multiples (the USG additions are a multiple of the modification activity, not a rival origin of the base - descent stated by designer and programme paper alike); date/direction (1971 < 1975, code descent under a stated upward-compatibility constraint); mediation (the Multics shell foreclosed as an intermediary at this edge by the BSTJ identity sentence; its content in the base was adjudicated at the base's own expansion)"
+  }
+ },
+ "totals_after": {
+  "nodes": 274,
+  "edges": 345,
+  "budget": "274/2000",
+  "expansions_done": 161,
+  "depth_distribution": {
+   "note": "unchanged from the session-75 distribution (no nodes created; one LINK edge added at depth 6): d0x1, d1x14, d2x28, d3x32, d4x37, d5x57, d6x45, d7x30, d8x12, d9x6, d10x1, d11x2, d12x5, d13x2, d14x2"
+  },
+  "status_split": {
+   "provisional": 257,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "applied-optimal-control-bryson-ho-1969-1969",
+  "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+  "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911"
+ ],
  "sync_commit": null
 }
