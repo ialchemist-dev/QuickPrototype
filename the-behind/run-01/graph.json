@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T04:30:54+00:00",
-  "expansions_done": 38,
-  "raw_candidates_seen": 2463,
+  "updated_at": "2026-11-25T04:43:09+00:00",
+  "expansions_done": 39,
+  "raw_candidates_seen": 2501,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -12238,6 +12238,111 @@
     "name": "Minorization-maximization algorithms (Hunter & Lange)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T04:30:36+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Markov Decision Processes (Puterman)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Policy gradient estimation bounds (Bartlett & Baxter)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Stable Function Approximation in Dynamic Programming (Gordon)",
+    "reason": "mediated_via: Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)",
+    "at": "2026-11-25T04:42:54+00:00",
+    "mediated_via": "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Generalization in Reinforcement Learning: Safely Approximating the Value Function (Boyan & Moore)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms (Singh et al.)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "PEGASUS (Ng & Jordan)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "REINFORCE (Williams)",
+    "reason": "mediated_via: Policy gradient theorem (Sutton et al.)",
+    "at": "2026-11-25T04:42:54+00:00",
+    "mediated_via": "Policy gradient theorem (Sutton et al.)"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Importance sampling for exploration (Meuleau et al.)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Hoeffding's inequality",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Reinforcement Learning: An Introduction (Sutton & Barto)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Dynamic programming (Bellman)",
+    "reason": "mediated_via: Markov Decision Processes (Puterman)",
+    "at": "2026-11-25T04:42:54+00:00",
+    "mediated_via": "Markov Decision Processes (Puterman)"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Optimizing Average Reward Using Discounted Rewards (Kakade)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "A Natural Policy Gradient (Kakade)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T04:42:54+00:00"
+   },
+   {
+    "parent_id": "conservative-policy-iteration-kakade-langford-2002",
+    "name": "Efficient Exploration in Reinforcement Learning (Thrun)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T04:42:54+00:00"
    }
   ]
  },
@@ -13035,12 +13140,16 @@
     {
      "title": "Trust Region Policy Optimization (Schulman et al., ICML 2015)",
      "url": "https://arxiv.org/pdf/1502.05477"
+    },
+    {
+     "title": "Policy Gradient Methods for Reinforcement Learning with Function Approximation (Sutton, McAllester, Singh & Mansour, NeurIPS 1999 record)",
+     "url": "https://proceedings.neurips.cc/paper_files/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Link verification (node already in the graph via PPO). Mediation attack: could TRPO's consumption run through REINFORCE instead? No - the parent's Equation 4 is the general identity (surrogate gradient equals true gradient at the current policy), and its estimators (single-path credited to the Bartlett & Baxter tradition; vine new) estimate the theorem's expectation, not Williams's episodic estimator; consistently, REINFORCE was rejected at this same parent as mediated via this node. Multiples attack on Q3: REINFORCE predates the theorem without needing its general form - Q3 partial already records this. The edge makes the theorem a convergence point of the policy-gradient spine (PPO and TRPO both consume it). Stands provisional.",
-    "at": "2026-11-25T04:30:54+00:00"
+    "notes": "Adversarial pass for the CPI edge specifically (session 15): the parent's section 6 takes the advantage definition, the discounted future-state distribution and the gradient identity from sutton99policy by name - a direct documentary channel, not an inference. Mediation attack (REINFORCE as the true ancestor): REINFORCE was separately judged at this parent and rejected as mediated via this theorem. Edge stands, provisional.",
+    "at": "2026-11-25T04:43:09+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-24T23:05:05+00:00"
@@ -15020,7 +15129,7 @@
    "prior_state": "Exact policy iteration and infinitesimal-step policy gradients, neither with an approximate-setting step-size guarantee.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.0,
    "sources": [
     {
@@ -15122,6 +15231,151 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T04:30:36+00:00"
+  },
+  "policy-iteration-howard-1960": {
+   "id": "policy-iteration-howard-1960",
+   "name": "Policy iteration (Howard)",
+   "aliases": [],
+   "year": 1960,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "Ronald Howard's policy iteration (in 'Dynamic Programming and Markov Processes', 1960): alternate exact policy evaluation with greedy policy improvement; Howard proved the procedure reaches an optimal policy in finitely many iterations - the exact algorithm the parent makes approximate and certifies.",
+   "bottleneck": "Before Howard (1960), computing an optimal policy for a discounted MDP meant value iteration - an asymptotic procedure with no finite termination - or solving the optimality equations directly; there was no finite exact algorithm that improved a policy step by step.",
+   "leap": "Howard's policy iteration (1960): alternate exact evaluation of the current policy with greedy improvement against it, and the procedure reaches an optimal policy in finitely many iterations - the exact skeleton that approximate policy iteration, and this parent, are modifications of.",
+   "prior_state": "Value iteration and direct solution of the Bellman optimality equations.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "Policy iteration (AI Wiki) - relation table listing conservative policy iteration",
+     "url": "https://aiwiki.ai/wiki/policy_iteration"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (Howard, Dynamic Programming and Markov Processes, 1960; finite-termination policy iteration). Channel attack: does the parent reach policy iteration only through the MDP textbooks it cites? Rebutted - the textbooks restate Howard's loop; the parent's name, loop shape and per-step guarantee form are the algorithm itself, and no intermediate milestone carries a different improvement mechanism. Mediation attack (modified policy iteration / Bertsekas variants as intermediate): the variants postdate and presuppose Howard; none is the parent's stated skeleton. Edge stands, provisional.",
+    "at": "2026-11-25T04:43:09+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:42:54+00:00"
+  },
+  "sparse-sampling-kearns-mansour-ng-1999": {
+   "id": "sparse-sampling-kearns-mansour-ng-1999",
+   "name": "Sparse sampling (Kearns, Mansour & Ng)",
+   "aliases": [],
+   "year": 1999,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "Michael Kearns, Yishay Mansour and Andrew Ng, 'A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov Decision Processes' (IJCAI 1999; Machine Learning 49, 2002): given a generative model of an MDP, plan by sampling a sparse lookahead tree whose depth and width depend on the horizon and accuracy but not on the size of the state space.",
+   "bottleneck": "Before Kearns, Mansour & Ng (1999), planning in an MDP was costed in the size of the state space: lookahead and value computation touched states in proportion to |S|, so large-state planning had no sample-based route with a state-space-independent guarantee.",
+   "leap": "Sparse sampling (IJCAI 1999): given a generative model of the MDP, build a sparse sampled lookahead tree whose size depends on the horizon and the accuracy target but not on the number of states, and act near-optimally - the first planning guarantee independent of state-space size, and the paper that defined the generative-model access instrument.",
+   "prior_state": "Exhaustive lookahead and full-model dynamic programming, both scaling with the state space.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov Decision Processes (Kearns, Mansour & Ng, Machine Learning 49, 2002; IJCAI-99 version 1999)",
+     "url": "https://www.cis.upenn.edu/~mkearns/papers/sparsesampling-journal.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (IJCAI-99; journal Machine Learning 49, 2002 - first-publication year 1999 used). Channel attack: is the generative model mediated via the Kearns school's E3 line? Rebutted - the parent's text names kearns99sparse itself for the model it weakens ('a slightly weaker version of the generative model in kearns99sparse'); E3 was separately rejected at this parent on partial directness. Edge stands, provisional.",
+    "at": "2026-11-25T04:43:09+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:42:54+00:00"
+  },
+  "complexity-of-reinforcement-learning-whitehead-1991": {
+   "id": "complexity-of-reinforcement-learning-whitehead-1991",
+   "name": "Complexity of reinforcement learning (Whitehead)",
+   "aliases": [],
+   "year": 1991,
+   "domain": "artificial intelligence",
+   "type": "theory",
+   "definition": "Steven Whitehead, 'Complexity and the Value of Time' (AAAI 1991) and the associated complexity analyses: reinforcement learning problems on which any learning rule can be forced to need exponentially many samples - the founding statement of RL's sample-complexity problem.",
+   "bottleneck": "Before Whitehead (1991), how many samples a reinforcement learner could be forced to need was folklore: no complexity result separated problems where learning is cheap from problems where any learner can be made to sample exponentially long.",
+   "leap": "Whitehead's complexity-of-RL results (1991): a class of MDPs on which learning rules can be forced to require exponentially many samples - the founding lower-bound statement that made sample complexity a property to prove about an RL algorithm, and the diagnosis (gradient following included) that this parent's section 3 exhibits and its certificate answers.",
+   "prior_state": "Sample requirements discussed anecdotally; no lower-bound class and no sample-complexity criterion for RL algorithms.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Complexity and the Value of Time (Whitehead, AAAI 1991)",
+     "url": "https://cdn.aaai.org/AAAI/1991/AAAI91-095.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (Whitehead, AAAI 1991, complexity and the value of time). Hochreiter-condition check: the diagnosis is admitted because the parent's own section 3 derives its motivation from the exponential-samples class and cites whitehead91complexity for it - not on thematic adjacency. Mediation attack (Thrun's report as the real carrier): the parent adapts Thrun's example but cites Whitehead for the class claim the argument rests on; Thrun was judged separately and rejected as the example-component. Edge stands, provisional.",
+    "at": "2026-11-25T04:43:09+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:42:54+00:00"
+  },
+  "advantage-updating-baird-1993": {
+   "id": "advantage-updating-baird-1993",
+   "name": "Advantage updating (Baird)",
+   "aliases": [],
+   "year": 1993,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "Leemon Baird's 'Advantage Updating' (Wright Laboratory technical report WL-TR-93-1146, 1993): learn the advantage function A(s,a) = Q(s,a) - V(s) instead of absolute action values, so that updates are invariant to the value offset and remain well-behaved at fine time discretizations where Q-learning degrades.",
+   "bottleneck": "Before Baird (1993), value-based learners represented absolute action values Q(s,a); as the time discretization refines, the differences between actions' Q-values shrink toward zero while their common level does not, so the learnable signal drowns in the offset - and no representation separated the two.",
+   "leap": "Baird's advantage updating (1993): learn the advantage function A(s,a) = Q(s,a) - V(s) - how much better an action is than the policy's own average - instead of absolute values. The representation is invariant to the value offset and stays well-defined in the fine-discretization limit; the advantage becomes the object a policy improvement step is built from, which is exactly the quantity this parent's Theorem 1 bounds.",
+   "prior_state": "Absolute action-value representations (Q-learning and kin) with the offset pathology unseparated.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Advantage Updating (Baird, WL-TR-93-1146, 1993)",
+     "url": "http://www.leemon.com/papers/1993b.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (Baird, Advantage Updating, WL-TR-93-1146, 1993). Mediation attack - the strongest against this edge: the parent defines its advantage 'as in sutton99policy (much as in baird93advantage)', so does Baird reach the parent only through Sutton et al.? Recorded and not killed: the parent's own defining sentence names Baird directly as the advantage's source ('much as in'), Sutton et al. supply the gradient-compatible form, and both edges are admitted so the graph states exactly the dual channel the documents state. Downgrade considered and declined; the dual citation is the parent's, not an evaluator's construction. Edge stands, provisional.",
+    "at": "2026-11-25T04:43:09+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:42:54+00:00"
+  },
+  "gatsby-computational-neuroscience-unit-1998": {
+   "id": "gatsby-computational-neuroscience-unit-1998",
+   "name": "Gatsby Computational Neuroscience Unit",
+   "aliases": [],
+   "year": 1998,
+   "domain": "institutions",
+   "type": "institution",
+   "definition": "The Gatsby Computational Neuroscience Unit (UCL, founded July 1998 by Geoffrey Hinton and Peter Dayan with Gatsby Foundation funding): a small theoretical-neuroscience and machine-learning institute whose early-2000s research program in reinforcement learning theory - Dayan's group, Kakade's doctorate - produced the parent.",
+   "bottleneck": "Before the Gatsby Unit (1998), reinforcement learning theory of this kind had no dedicated institutional home in the UK: the work sat scattered across psychology, neuroscience and computer science groups with no concentrated theory program joining them.",
+   "leap": "The Gatsby Computational Neuroscience Unit (UCL, founded July 1998 by Geoffrey Hinton and Peter Dayan): a small institute built to do theoretical neuroscience and machine learning as one subject. Its reinforcement-learning theory program - Dayan's group, in which Kakade did his doctorate - is the carried environment of this parent, whose acknowledgments thank Dayan for 'numerous critical comments'.",
+   "prior_state": "RL theory dispersed across departments with no dedicated theory institute.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 2.5,
+   "sources": [
+    {
+     "title": "About the Gatsby Computational Neuroscience Unit (UCL)",
+     "url": "https://www.ucl.ac.uk/life-sciences/gatsby/about"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial pass (session 15): identity/date verified (Gatsby Computational Neuroscience Unit, UCL, founded July 1998; Hinton founding director, Dayan co-founder and director 2002-2017). Institution attack (NPLM L21 precedent - author-group-only institutions are recorded dry): distinguished on the record - the parent's acknowledgments thank the unit's director for 'numerous critical comments' on this work, a documented non-author channel, and the unit was the author's doctoral home; CMU was recorded dry in the same expansion for lacking exactly this. Edge stands at the run's thinnest institutional score band, provisional.",
+    "at": "2026-11-25T04:43:09+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T04:42:54+00:00"
   }
  },
  "edges": [
@@ -26609,6 +26863,588 @@
     "counterfactual": "Remove the ALE and the parent's second headline - one method, unchanged, learning locomotion AND playing Atari games from raw images - has no arena: its section 8.2 states the games were 'made available through the Arcade Learning Environment (Bellemare et al., 2013)', its Table 1 is a comparison under the ALE protocol against the two prior methods that reported on it, and its generality conclusion ('the ability to apply the same policy search method to methods as diverse as robotic locomotion and image-based game playing') is an ALE-shaped claim.",
     "mediator": null,
     "evidence": "The parent's section 8.2 and Table 1; the platform's own record (JAIR 2013: an evaluation platform and methodology for general agents, 55+ games)."
+   }
+  },
+  {
+   "predecessor_id": "policy-iteration-howard-1960",
+   "successor_id": "conservative-policy-iteration-kakade-langford-2002",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the finiteness question: before Howard, optimal-policy computation was an asymptotic limit (value iteration) or a direct equation solve; policy iteration terminates at the optimum in finitely many steps.",
+     "source": "",
+     "falsification": "Dies if a finite exact policy-improvement algorithm for discounted MDPs is documented before 1960."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative in the documentary sense: the evaluation/improvement loop generated modified policy iteration, approximate policy iteration, and this parent - the whole family is Howard's loop with steps replaced.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Value iteration is a genuine alternative route to optimal policies, so policy iteration was not strictly necessary for MDP solution; the parent's form, however, is policy iteration's, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse: exact policy iteration is expensive per iteration (a full evaluation solve), and its economy is in iteration count, not cost.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "The evaluation step made a policy's quality exactly measurable at each iterate - the quantity improvement is measured against; partial because the measurability is inherited from the MDP frame itself.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory decomposition the parent argues in: performance change as the accumulated advantage of the new policy's actions under the current one - the performance-difference view is policy iteration's improvement step, analyzed.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composition is its structure: evaluation and improvement are interchangeable modules, and the parent exists precisely by swapping both modules (restart estimation in, chooser in, mixture in) while keeping the loop.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach is the MDP/control world and everything built on it; within that world it is total, across domains partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Finite, typically few-iteration convergence against value iteration's asymptotic crawl is an iteration-speed leap of the first order.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced value iteration as the canonical exact method in the textbook line, though value iteration persists where evaluation solves are infeasible; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary trunk: the parent is named policy iteration and restates its loop as its own algorithm.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once policy improvement existed as a discrete certified step, the framing never reversed - the parent and TRPO both presuppose the settlement.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:42:54+00:00",
+   "leap": {
+    "prior_state": "Policy updates with no certificate: policy gradient theory guaranteed improvement only for infinitesimal steps, exact policy iteration only for exact greedy updates, and approximate greedy steps carried only a degradation bound (2 gamma eps/(1-gamma)) with no safe step size.",
+    "jump": "Kakade and Langford (ICML 2002) proposed conservative policy iteration - mix the current policy with an approximately greedy one, pi_new = (1-alpha) pi + alpha pi' - and proved an explicit lower bound on the improvement (Theorem 1), termination in at most 72 R^2/eps^2 chooser calls, and approximate optimality up to a distribution-mismatch factor: the first certified finite policy-improvement step in the approximate setting.",
+    "date": 2002
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove policy iteration and the parent has no skeleton: its name, its algorithm shape (evaluate, improve, repeat) and its guarantee's form (a bound on one improvement step) are all policy iteration with the two exact steps replaced - evaluation by restart-based advantage estimation, greedy improvement by an epsilon-greedy chooser, and the full switch by a conservative mixture. No intermediate milestone carries 'policy iteration' to the parent; the textbooks restate Howard's algorithm, they do not mediate it.",
+    "mediator": null,
+    "evidence": "The parent's title and algorithm; the AI Wiki relation table records conservative policy iteration as policy iteration's approximate descendant."
+   }
+  },
+  {
+   "predecessor_id": "policy-gradient-theorem-sutton-et-al-2000",
+   "successor_id": "conservative-policy-iteration-kakade-langford-2002",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the principled-method question: before it, gradient-based policy improvement with function approximation had no correctness theorem; after it, the gradient was an estimable, well-defined object.",
+     "source": "",
+     "falsification": "Dies if an equivalent compatible-approximation gradient identity is documented earlier."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative in the documentary sense: the modern policy-gradient family - and through this parent and TRPO, trust-region and clipped-surrogate methods - descends from this identity.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Value-based routes (policy iteration / approximate DP) are genuine alternatives to policy improvement; the theorem is necessary for the gradient route specifically, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to the theorem.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "It made policy quality differentiable and its improvement measurable as a gradient/advantage quantity - the exact measurability the parent's certificate bounds.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory frame the parent argues in: performance difference as accumulated advantage under the visitation distribution - the parent's section 6 is this frame restated for its setting.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The identity composes with any differentiable policy class and any advantage estimator, and the parent's estimator plugs into it; the composition is real but the theorem is one identity, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach runs across reinforcement learning and parameterized control; beyond that, partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "It enabled gradient iteration but only with the infinitesimal-step caveat the parent exists to remove; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced purely value-greedy improvement as the only principled route, without displacing it in practice everywhere; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary trunk: the parent takes its two working objects from this paper by name in its own text.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once return was differentiable in the policy, policy optimization never returned to a pre-gradient framing.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:42:54+00:00",
+   "leap": {
+    "prior_state": "Policy updates with no certificate: policy gradient theory guaranteed improvement only for infinitesimal steps, exact policy iteration only for exact greedy updates, and approximate greedy steps carried only a degradation bound (2 gamma eps/(1-gamma)) with no safe step size.",
+    "jump": "Kakade and Langford (ICML 2002) proposed conservative policy iteration - mix the current policy with an approximately greedy one, pi_new = (1-alpha) pi + alpha pi' - and proved an explicit lower bound on the improvement (Theorem 1), termination in at most 72 R^2/eps^2 chooser calls, and approximate optimality up to a distribution-mismatch factor: the first certified finite policy-improvement step in the approximate setting.",
+    "date": 2002
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove this paper and the parent's section 6 has no objects: the policy advantage is defined 'as in sutton99policy', the discounted future-state distribution d_{pi,mu} and the gradient identity are taken from it, and the parent's estimation procedure exists to estimate this theorem's quantities from restarts. The parent's Theorem 1 is a bound on the improvement of a step whose size the theorem left infinitesimal - a direct continuation, unmediated.",
+    "mediator": null,
+    "evidence": "The parent's section 6, passim: both definitions and the gradient identity are credited to sutton99policy in the text."
+   }
+  },
+  {
+   "predecessor_id": "sparse-sampling-kearns-mansour-ng-1999",
+   "successor_id": "conservative-policy-iteration-kakade-langford-2002",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the state-space impossibility: near-optimal planning was shown possible with sample cost independent of |S| - before it, no such guarantee existed at any sample cost.",
+     "source": "",
+     "falsification": "Dies if an earlier sampling-based planner with a state-space-independent guarantee is documented."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generative: it opened the generative-model planning line and, more importantly for this parent, the practice of stating RL results relative to an explicit access model - the framing the parent's whole setting inherits.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Model-based learning (E3's route) is a genuine second path to polynomial guarantees in the same program; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "A cost collapse along exactly one axis - state-space size - while remaining exponential in the horizon; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "It made 'near-optimal from samples' a quantified claim with explicit error bounds - the measurability standard the parent's certificate also answers to.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The sampled-lookahead-tree picture explains why local sampling suffices, but the parent's argument runs on advantage estimation, not lookahead; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The generative model as an interface composes with any planner, but the composition the parent performs (weakening it to restarts) is the parent's move; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach is planning and RL theory; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed claim: sparse sampling is a planning procedure exponential in the horizon, not a faster loop.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced exhaustive lookahead as the reference method for large MDPs in the theory literature; practice went other routes, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary trunk for the setting: the parent names this paper's model as the thing it weakens.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once access models were separated from algorithms, RL theory never returned to assuming the full model by default; the parent's restart model presupposes the separation.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:42:54+00:00",
+   "leap": {
+    "prior_state": "Policy updates with no certificate: policy gradient theory guaranteed improvement only for infinitesimal steps, exact policy iteration only for exact greedy updates, and approximate greedy steps carried only a degradation bound (2 gamma eps/(1-gamma)) with no safe step size.",
+    "jump": "Kakade and Langford (ICML 2002) proposed conservative policy iteration - mix the current policy with an approximately greedy one, pi_new = (1-alpha) pi + alpha pi' - and proved an explicit lower bound on the improvement (Theorem 1), termination in at most 72 R^2/eps^2 chooser calls, and approximate optimality up to a distribution-mismatch factor: the first certified finite policy-improvement step in the approximate setting.",
+    "date": 2002
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove this paper and the parent's setting loses its stated ancestor: the parent assumes 'a slightly weaker version of the generative model in kearns99sparse' - a mu-restart distribution in place of the full generative model - and the weakening is only statable against this paper's instrument. The channel is the parent's own stipulation, not a family resemblance.",
+    "mediator": null,
+    "evidence": "The parent's setting section, verbatim: its access is 'a slightly weaker version of the generative model' of this paper."
+   }
+  },
+  {
+   "predecessor_id": "complexity-of-reinforcement-learning-whitehead-1991",
+   "successor_id": "conservative-policy-iteration-kakade-langford-2002",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the sample question from folklore to theorem: exponential sample requirements are provably forcible, so a learning guarantee must be a sample bound - the impossibility the parent's polynomial certificate is meaningful against.",
+     "source": "",
+     "falsification": "Dies if an earlier RL sample-complexity lower bound of this form is documented."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It helped generate the sample-complexity research program (with the Kearns school's positive results as the other half); a lower bound alone generates a question more than a method, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The same diagnosis could in principle be carried by examples alone (Thrun's), but the class-level claim is this work's; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "A lower bound collapses no cost.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "It made sample requirement a measurable, provable property of a learning problem - the axis on which the parent's guarantee (chooser calls bounded by 72 R^2/eps^2) is plotted.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory frame - exploration/sample hardness - in which the parent's section 3 argues and against which a certificate is a contribution.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "A lower-bound class does not compose into constructions.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The complexity framing reached into learning theory generally; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced the assumption that interaction volume straightforwardly fixes learning; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary: the parent cites the class for its central failure exhibit.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Sample complexity as a criterion for RL algorithms never reversed after this; the parent's bounded-chooser-calls theorem presupposes it.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:42:54+00:00",
+   "leap": {
+    "prior_state": "Policy updates with no certificate: policy gradient theory guaranteed improvement only for infinitesimal steps, exact policy iteration only for exact greedy updates, and approximate greedy steps carried only a degradation bound (2 gamma eps/(1-gamma)) with no safe step size.",
+    "jump": "Kakade and Langford (ICML 2002) proposed conservative policy iteration - mix the current policy with an approximately greedy one, pi_new = (1-alpha) pi + alpha pi' - and proved an explicit lower bound on the improvement (Theorem 1), termination in at most 72 R^2/eps^2 chooser calls, and approximate optimality up to a distribution-mismatch factor: the first certified finite policy-improvement step in the approximate setting.",
+    "date": 2002
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove this work and the parent's section 3 loses the claim its central exhibit illustrates: the parent's Figure 1 example - gradient following needing exponentially many samples - is presented as a member of the class this work defined, and the parent cites whitehead91complexity for it. The diagnosis the parent derives its motivation from (the Hochreiter condition) is stated here in proposition form; Thrun's report, rejected separately, carries only the illustrating example.",
+    "mediator": null,
+    "evidence": "The parent's section 3 and Figure 1 discussion, citing whitehead91complexity for the exponential-samples class."
+   }
+  },
+  {
+   "predecessor_id": "advantage-updating-baird-1993",
+   "successor_id": "conservative-policy-iteration-kakade-langford-2002",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the representation assumption: a learner need not represent absolute values at all - relative advantages suffice for improvement and remain learnable exactly where absolute values collapse (fine discretizations).",
+     "source": "",
+     "falsification": "Dies if an earlier advantage/relative-value learning rule with the offset-invariance argument is documented."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The advantage object propagated into Sutton et al.'s definition and this parent's theorem, but Baird's own algorithmic line stayed thin; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Absolute Q-values are a workable representation in coarse settings, so the advantage was not strictly necessary in general; for certified improvement statements it became the natural quantity, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to a representation change in a 1993 technical report.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "The advantage is precisely the measurable quantity an improvement step needs - how much better this action is than the policy's average - and the parent's bound is stated in it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory object (relative value) in which the parent's Theorem 1 is phrased: improvement as expected advantage under the new policy's visitation.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Advantages compose with baselines and estimators (the parent's restart estimator estimates exactly this), but the composition machinery is the consumers'; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach is reinforcement learning's value/policy interface; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed claim attaches to the representation.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced absolute-value thinking at the policy-improvement interface specifically; Q-learning's practice continued, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary: the parent's defining sentence for its central quantity names this report.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The advantage framing persisted (advantage actor-critic, later GAE), though Baird's specific algorithm did not; partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:42:54+00:00",
+   "leap": {
+    "prior_state": "Policy updates with no certificate: policy gradient theory guaranteed improvement only for infinitesimal steps, exact policy iteration only for exact greedy updates, and approximate greedy steps carried only a degradation bound (2 gamma eps/(1-gamma)) with no safe step size.",
+    "jump": "Kakade and Langford (ICML 2002) proposed conservative policy iteration - mix the current policy with an approximately greedy one, pi_new = (1-alpha) pi + alpha pi' - and proved an explicit lower bound on the improvement (Theorem 1), termination in at most 72 R^2/eps^2 chooser calls, and approximate optimality up to a distribution-mismatch factor: the first certified finite policy-improvement step in the approximate setting.",
+    "date": 2002
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove this paper and the parent's central quantity loses its origin: the parent's section 6 defines its policy advantage 'as in sutton99policy (much as in baird93advantage)' - Sutton et al. supply the gradient-compatible form, but the advantage as the estimable relative-value object is Baird's construction, named in the parent's own defining sentence. The dual citation is the parent's, not the evaluator's inference.",
+    "mediator": null,
+    "evidence": "The parent's section 6 definition of A_{pi,mu}, citing sutton99policy and baird93advantage together."
+   }
+  },
+  {
+   "predecessor_id": "gatsby-computational-neuroscience-unit-1998",
+   "successor_id": "conservative-policy-iteration-kakade-langford-2002",
+   "verdicts": {
+    "Q1": {
+     "verdict": "fail",
+     "evidence": "An institute flips no impossibility.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity in the institutional sense used for Google Brain and the MIT AI Lab in this run: the unit was founded to create a research direction, and its RL-theory program generated this parent and the author's thesis line within four years.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The work could in principle have been done at another institution; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The unit's theoretical-neuroscience framing shaped the work's style - RL stated as mathematics first; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "No composability content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The unit's reach spans neuroscience and machine learning; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed content.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "It displaced no incumbent method.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Documentary lineage: the parent is a product of the unit's program, with the director's acknowledged critical comments on this paper.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The unit persists and its program's framing endured; partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 2.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T04:42:54+00:00",
+   "leap": {
+    "prior_state": "Policy updates with no certificate: policy gradient theory guaranteed improvement only for infinitesimal steps, exact policy iteration only for exact greedy updates, and approximate greedy steps carried only a degradation bound (2 gamma eps/(1-gamma)) with no safe step size.",
+    "jump": "Kakade and Langford (ICML 2002) proposed conservative policy iteration - mix the current policy with an approximately greedy one, pi_new = (1-alpha) pi + alpha pi' - and proved an explicit lower bound on the improvement (Theorem 1), termination in at most 72 R^2/eps^2 chooser calls, and approximate optimality up to a distribution-mismatch factor: the first certified finite policy-improvement step in the approximate setting.",
+    "date": 2002
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Gatsby Unit and the parent loses its documented production environment: the author did the doctorate this paper comes from there, under the unit's co-founder, and the paper's acknowledgments record the director's critical engagement with this work by name. The institution acts through the specific carried channel - the Dayan group's RL-theory program - not as a postal address (contrast the dry CMU record in this expansion's scout notes).",
+    "mediator": null,
+    "evidence": "The parent's acknowledgments ('warm thanks to Peter Dayan for numerous critical comments'); the Gatsby Unit's own record (founded July 1998; Dayan co-founder, director 2002-2017)."
    }
   }
  ],
@@ -112940,6 +113776,1220 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "conservative-policy-iteration-kakade-langford-2002": {
+   "raw_candidates": [
+    {
+     "name": "Policy gradient theorem (Sutton et al.)",
+     "year": 2000,
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "type": "theory",
+     "causal_claim": "The parent's section 6 takes both of its working objects from this paper: the policy advantage is defined 'as in sutton99policy', and the discounted future-state distribution d_{pi,mu} and the gradient identity (Eq. policy_grad) are 'as shown in sutton99policy'. The parent's estimation procedure exists to estimate exactly this theorem's quantities from restarts. (Already a node in this graph, admitted at PPO's expansion; proposed here so the link is judged on this parent's documents.)",
+     "source_title": "Policy Gradient Methods for Reinforcement Learning with Function Approximation (Sutton, McAllester, Singh & Mansour, NeurIPS 1999 record)",
+     "source_url": "https://proceedings.neurips.cc/paper_files/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html",
+     "definition": "Sutton, McAllester, Singh and Mansour's policy gradient theorem (NIPS 1999 / 2000): the gradient of expected return with respect to policy parameters expressed through the advantage/action-value function and the score function, with compatible function approximation preserving the gradient."
+    },
+    {
+     "name": "Advantage updating (Baird)",
+     "year": 1993,
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "type": "method",
+     "causal_claim": "The parent's Theorem 1 is stated in terms of the policy advantage A_{pi,mu}, and its section 6 defines that advantage 'as in sutton99policy (much as in baird93advantage)': the advantage - value relative to the policy's own average - as the estimable object a policy update should be built from is Baird's construction, reaching the parent through both citations.",
+     "source_title": "Advantage Updating (Baird, WL-TR-93-1146, 1993)",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "definition": "Leemon Baird's 'Advantage Updating' (Wright Laboratory technical report WL-TR-93-1146, 1993): learn the advantage function A(s,a) = Q(s,a) - V(s) instead of absolute action values, so that updates are invariant to the value offset and remain well-behaved at fine time discretizations where Q-learning degrades."
+    },
+    {
+     "name": "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)",
+     "year": 1996,
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "type": "other",
+     "causal_claim": "The parent cites this book at two load-bearing points: its epsilon-greedy policy chooser G_eps is implementable by the regression algorithms for value functions developed here, and its section 3 diagnosis of approximate value methods opens from this book's greedy-degradation bound (V_pi' >= V_pi - 2 gamma eps/(1-gamma)) - the statement of how badly an uncertified approximate greedy step can hurt.",
+     "source_title": "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis, Athena Scientific, 1996)",
+     "source_url": "http://athenasc.com/ndpbook.html",
+     "definition": "Dimitri Bertsekas and John Tsitsiklis, 'Neuro-Dynamic Programming' (Athena Scientific, 1996): the first systematic treatment of approximate dynamic programming - value-function approximation by regression and simulation-based methods, with error bounds for approximate policy iteration - which made large-scale DP a rigorous methodology."
+    },
+    {
+     "name": "Markov Decision Processes (Puterman)",
+     "year": 1994,
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "type": "other",
+     "causal_claim": "The parent states its entire setting - states, actions, transition model, discounted return - in the formalism of this text, which its bibliography cites (puterman-book) as the MDP reference the result is formulated against.",
+     "source_title": "Martin L. Puterman - CV (lists Markov Decision Processes, Wiley, 1994)",
+     "source_url": "https://org-www.sauder.ubc.ca/sites/default/files/2019-10/cv-puterman%20-%20May%202019.pdf",
+     "definition": "Martin L. Puterman, 'Markov Decision Processes: Discrete Stochastic Dynamic Programming' (Wiley, 1994): the standard rigorous formulation of the MDP framework - the setting in which policy iteration, value iteration and their guarantees are stated."
+    },
+    {
+     "name": "Policy iteration (Howard)",
+     "year": 1960,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "method",
+     "causal_claim": "The parent is policy iteration with both of its exact steps replaced: the exact greedy improvement becomes an epsilon-greedy chooser call, and the full switch to the greedy policy becomes a conservative mixture pi_new = (1-alpha) pi + alpha pi'. The AI Wiki relation table records conservative policy iteration as policy iteration's approximate descendant.",
+     "source_title": "Policy iteration (AI Wiki) - relation table listing conservative policy iteration",
+     "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+     "definition": "Ronald Howard's policy iteration (in 'Dynamic Programming and Markov Processes', 1960): alternate exact policy evaluation with greedy policy improvement; Howard proved the procedure reaches an optimal policy in finitely many iterations - the exact algorithm the parent makes approximate and certifies."
+    },
+    {
+     "name": "Policy gradient theorem (Sutton et al.)",
+     "year": 2000,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "theory",
+     "causal_claim": "The parent modifies the gradient route this theorem opened: where the theorem certifies improvement only for infinitesimal steps along the gradient, the parent replaces the infinitesimal step with a finite conservative mixture whose improvement is bounded explicitly. Cross-listed from L1.",
+     "source_title": "Approximately Optimal Approximate Reinforcement Learning (Kakade & Langford, ICML 2002) - full text",
+     "source_url": "https://www.cs.cmu.edu/~jcl/papers/aoarl/Final.tex_back",
+     "definition": "Sutton, McAllester, Singh and Mansour's policy gradient theorem (2000): policy improvement via gradient ascent on expected return, with guarantees only in the infinitesimal-step limit."
+    },
+    {
+     "name": "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)",
+     "year": 1996,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "other",
+     "causal_claim": "The approximate policy iteration methodology systematized here - evaluate approximately, improve greedily, accept the degradation bound - is what the parent re-engineers: keep the approximately greedy step, but mix conservatively so the degradation becomes a bounded, certified quantity. Cross-listed from L1.",
+     "source_title": "Approximately Optimal Approximate Reinforcement Learning (Kakade & Langford, ICML 2002) - full text",
+     "source_url": "https://www.cs.cmu.edu/~jcl/papers/aoarl/Final.tex_back",
+     "definition": "Bertsekas and Tsitsiklis's approximate dynamic programming methodology (1996): approximate evaluation plus greedy improvement, with the known bound that each greedy step can degrade performance by up to 2 gamma eps/(1-gamma)."
+    },
+    {
+     "name": "Sparse sampling (Kearns, Mansour & Ng)",
+     "year": 1999,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "method",
+     "causal_claim": "The parent's access model is this paper's, weakened by the parent's own stipulation: the paper's setting is 'a slightly weaker version of the generative model in kearns99sparse' - the parent assumes only a mu-restart distribution instead of a full generative model, and still certifies improvement.",
+     "source_title": "A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov Decision Processes (Kearns, Mansour & Ng, Machine Learning 49, 2002; IJCAI-99 version 1999)",
+     "source_url": "https://www.cis.upenn.edu/~mkearns/papers/sparsesampling-journal.pdf",
+     "definition": "Michael Kearns, Yishay Mansour and Andrew Ng, 'A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov Decision Processes' (IJCAI 1999; Machine Learning 49, 2002): given a generative model of an MDP, plan by sampling a sparse lookahead tree whose depth and width depend on the horizon and accuracy but not on the size of the state space."
+    },
+    {
+     "name": "Conservative policy iteration in the policy-iteration lineage (AI Wiki survey record)",
+     "year": 2026,
+     "domain": "artificial intelligence",
+     "lens": "L3",
+     "type": "other",
+     "causal_claim": "Meta pass: the survey record whose relation table places conservative policy iteration in the policy-iteration family tree - the lineage map a survey draws of this parent. Proposed with its true (present-day) year; the resolver's date drop is the record.",
+     "source_title": "Policy iteration (AI Wiki) - relation table listing conservative policy iteration",
+     "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+     "definition": "The AI Wiki's policy iteration survey page: its relation table lists conservative policy iteration (Kakade & Langford, 2002) among the descendants/variants of Howard's policy iteration."
+    },
+    {
+     "name": "Langford's reinforcement learning bibliography",
+     "year": 2026,
+     "domain": "artificial intelligence",
+     "lens": "L3",
+     "type": "other",
+     "causal_claim": "Meta pass: the co-author's own project page curating this paper inside his reinforcement learning research line - the creator-side record of where the parent sits. Proposed with a present-day year as a living page; the resolver's date drop is the record.",
+     "source_title": "John Langford's reinforcement learning project page",
+     "source_url": "https://hunch.net/~jl/projects/RL/RL.html",
+     "definition": "John Langford's reinforcement learning project page (hunch.net): his curated record of the RL research program this paper belongs to, including the approximately optimal approximate RL line."
+    },
+    {
+     "name": "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+     "year": 1998,
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "type": "theory",
+     "causal_claim": "This paper (the E3 algorithm) posed the problem the parent's program answers a sibling of: what can be certified about reinforcement learning with polynomially many samples - near-optimal behavior in polynomial time. The parent certifies a different quantity (per-step improvement) inside the same polynomial-guarantee program Kearns's group opened.",
+     "source_title": "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+     "source_url": "https://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf",
+     "definition": "Michael Kearns and Satinder Singh, 'Near-Optimal Reinforcement Learning in Polynomial Time' (ICML 1998; Machine Learning 49, 2002): the E3 algorithm - explore or exploit provably, attaining near-optimal average reward with sample and time complexity polynomial in the relevant quantities, the first such guarantee for RL."
+    },
+    {
+     "name": "Complexity of reinforcement learning (Whitehead)",
+     "year": 1991,
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "type": "theory",
+     "causal_claim": "The problem statement in its negative form: this work's complexity results made 'how many samples can a learning rule need' a precise question - the question the parent's sample-bounded improvement certificate answers positively for its setting. Cross-listed from L5.",
+     "source_title": "Complexity and the Value of Time (Whitehead, AAAI 1991)",
+     "source_url": "https://cdn.aaai.org/AAAI/1991/AAAI91-095.pdf",
+     "definition": "Steven Whitehead, 'Complexity and the Value of Time' (AAAI 1991) and the associated complexity analyses: reinforcement learning problems on which any learning rule can be forced to need exponentially many samples - the founding statement of RL's sample-complexity problem."
+    },
+    {
+     "name": "Complexity of reinforcement learning (Whitehead)",
+     "year": 1991,
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "type": "theory",
+     "causal_claim": "The parent's Figure 1 example - a problem on which following the policy gradient can require exponentially many samples - is drawn from the class this work defined: the diagnosis that gradient following has no sample bound is stated here in complexity form, and the parent's certificate is the counter-move.",
+     "source_title": "Complexity and the Value of Time (Whitehead, AAAI 1991)",
+     "source_url": "https://cdn.aaai.org/AAAI/1991/AAAI91-095.pdf",
+     "definition": "Whitehead's complexity-of-RL results (1991): a class of MDPs on which sample requirements explode exponentially - the obstruction the parent's section 3 restates as the policy-gradient failure mode."
+    },
+    {
+     "name": "Efficient Exploration in Reinforcement Learning (Thrun)",
+     "year": 1992,
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "type": "other",
+     "causal_claim": "The parent's Figure 1 - its central exhibit that a policy gradient step can be catastrophically uninformative - is adapted from this report (thrun92efficient): the concrete example through which the parent presents the gradient failure its whole construction answers.",
+     "source_title": "Efficient Exploration in Reinforcement Learning (Thrun, CMU, 1992)",
+     "source_url": "https://publications.ri.cmu.edu/storage/publications/pub_files/pub1/thrun_sebastian_1992_1/thrun_sebastian_1992_1.pdf",
+     "definition": "Sebastian Thrun, 'Efficient Exploration in Reinforcement Learning' (CMU technical report, 1992): a survey and analysis of exploration methods whose examples include the case the parent adapts - a problem where the policy gradient direction gives no useful signal about the distant reward, so gradient following needs exponentially many samples."
+    },
+    {
+     "name": "Policy gradient estimation bounds (Bartlett & Baxter)",
+     "year": 2000,
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "type": "theory",
+     "causal_claim": "The parent cites this work (bartlett00estimation) for the sharp form of the gradient obstruction: even estimating the gradient's direction is not enough - policy improvement needs the gradient's magnitude, which is what sample-based estimation cannot cheaply deliver; the parent's advantage-estimation route is built to sidestep exactly this.",
+     "source_title": "Policy gradient estimation bounds (Bartlett & Baxter, COLT 2000)",
+     "source_url": "http://www.learningtheory.org/colt2000/papers/BartlettBaxter.pdf",
+     "definition": "Peter Bartlett and Jonathan Baxter, policy-gradient estimation results (COLT 2000 and companions): bounds and constructions showing what estimating the policy gradient from samples costs, including that direction alone does not determine a safe step - the magnitude problem."
+    },
+    {
+     "name": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett)",
+     "year": 2001,
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "type": "theory",
+     "causal_claim": "The GPOMDP line is the gradient-estimation incumbent at its strongest: an unbiased gradient estimator with controlled variance. The parent's restart-based advantage estimation is positioned against this family's remaining weakness - no finite-step improvement certificate comes with the estimate. Cross-listed at L6.",
+     "source_title": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett, JAIR 2001)",
+     "source_url": "https://www.cis.upenn.edu/~mkearns/finread/BaxterBartlett.pdf",
+     "definition": "Jonathan Baxter and Peter Bartlett, 'Infinite-Horizon Policy-Gradient Estimation' (JAIR 2001): GPOMDP, an algorithm estimating the average-reward policy gradient from a single trajectory with a bias-variance tradeoff controlled by a discount-like parameter."
+    },
+    {
+     "name": "Stable Function Approximation in Dynamic Programming (Gordon)",
+     "year": 1995,
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "type": "theory",
+     "causal_claim": "The value-side obstruction in its precise form: fitted value iteration with general function approximators can diverge or chatter; only averager-type approximators are stable. The parent's section 3 diagnosis of approximate value methods is this obstruction's policy-iteration form. Cross-listed at L6.",
+     "source_title": "Stable Function Approximation in Dynamic Programming (Gordon, ICML 1995)",
+     "source_url": "http://people.eecs.berkeley.edu/~pabbeel/cs287-fa11/optreadings/Gordon-1995.pdf",
+     "definition": "Geoffrey Gordon, 'Stable Function Approximation in Dynamic Programming' (ICML 1995): approximate value iteration is stable only for restricted (averager) function approximators; with general approximators the iteration can fail to converge - the precise statement of why approximate greedy improvement was untrustworthy."
+    },
+    {
+     "name": "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)",
+     "year": 1996,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "other",
+     "causal_claim": "The incumbent methodology the parent competes with and partially builds on: approximate value iteration / policy iteration as systematized here is one of the two families the parent's section 3 diagnoses and its algorithm replaces with a certified update. Cross-listed from L1.",
+     "source_title": "Approximately Optimal Approximate Reinforcement Learning (Kakade & Langford, ICML 2002) - full text",
+     "source_url": "https://www.cs.cmu.edu/~jcl/papers/aoarl/Final.tex_back",
+     "definition": "The approximate dynamic programming incumbent (1996): learn an approximate value function by regression/simulation, act greedily against it, and accept the 2 gamma eps/(1-gamma) degradation bound per step."
+    },
+    {
+     "name": "Generalization in Reinforcement Learning: Safely Approximating the Value Function (Boyan & Moore)",
+     "year": 1995,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "method",
+     "causal_claim": "An incumbent attempt at the parent's own adjective: value-function approximation designed to be 'safe' (local, averager-based approximators that keep approximate policy iteration stable). The parent achieves safety by a different mechanism - conservative mixing with a certificate - against this family's approximation-architecture route.",
+     "source_title": "Generalization in Reinforcement Learning: Safely Approximating the Value Function (Boyan & Moore, NIPS 1995)",
+     "source_url": "https://v1.endtoend.ai/papers/generalization-in-reinforcement-learning-safely-approximating-the-value-function.pdf",
+     "definition": "Justin Boyan and Andrew Moore, 'Generalization in Reinforcement Learning: Safely Approximating the Value Function' (NIPS 1995): value approximation with local averagers (and the Boyan chain testbed) so that approximate policy iteration generalizes without the instabilities of global approximators."
+    },
+    {
+     "name": "Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms (Singh et al.)",
+     "year": 2000,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "theory",
+     "causal_claim": "The strongest convergence theory of the incumbent TD family at the parent's moment: asymptotic convergence for single-step on-policy methods with function approximation. The parent's finite-sample, per-step certificate is the contrasting form of guarantee this line did not provide.",
+     "source_title": "Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms (Singh, Jaakkola, Littman & Szepesvari, Machine Learning 2000)",
+     "source_url": "https://ics.uci.edu/~dechter/courses/ics-295/fall-2019/papers/2000-singh-littmansingh98convergence.pdf",
+     "definition": "Satinder Singh, Tommi Jaakkola, Michael Littman and Csaba Szepesvari, 'Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms' (Machine Learning 40, 2000): convergence proofs for TD-style algorithms with linear function approximation - the incumbent theory of the value-based family."
+    },
+    {
+     "name": "PEGASUS (Ng & Jordan)",
+     "year": 2000,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "method",
+     "causal_claim": "The alternative policy-search incumbent: evaluate many policies on a fixed stream of random seeds through a deterministic simulator, turning policy search into deterministic optimization. The parent's restart-distribution access is weaker than PEGASUS's simulator, and its guarantee is of a different kind (per-step improvement, not uniform value estimates).",
+     "source_title": "PEGASUS: A Policy Search Method for Large MDPs (Ng & Jordan, UAI 2000)",
+     "source_url": "https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgJordan-Pegasus-UAI2000.pdf",
+     "definition": "Andrew Ng and Michael Jordan, 'PEGASUS: A Policy Search Method for Large MDPs and POMDPs' (UAI 2000): fix the random numbers, represent the simulator as a deterministic function, and estimate every policy's value on the same sample paths - policy search with uniform convergence over policy classes."
+    },
+    {
+     "name": "REINFORCE (Williams)",
+     "year": 1992,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "method",
+     "causal_claim": "The founding policy-gradient incumbent. The parent does not cite it - its gradient discussion runs through Sutton et al. 2000 and Bartlett & Baxter - so the proposal exists for the absence to be judged on the documents, not assumed. (Already a node in this graph, admitted at REINFORCE's own place in the policy-gradient spine.)",
+     "source_title": "Approximately Optimal Approximate Reinforcement Learning (Kakade & Langford, ICML 2002) - full text",
+     "source_url": "https://www.cs.cmu.edu/~jcl/papers/aoarl/Final.tex_back",
+     "definition": "Ronald Williams, 'Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning' (1992): REINFORCE - estimate the gradient of expected return from sampled episodes and ascend it, the original policy-gradient method."
+    },
+    {
+     "name": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett)",
+     "year": 2001,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "theory",
+     "causal_claim": "The gradient incumbent at full strength, cross-listed from L5: GPOMDP made gradient estimation statistically respectable, but an estimate is not a step-size certificate - the gap the parent fills.",
+     "source_title": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett, JAIR 2001)",
+     "source_url": "https://www.cis.upenn.edu/~mkearns/finread/BaxterBartlett.pdf",
+     "definition": "Baxter & Bartlett's GPOMDP (JAIR 2001): the state-of-the-art policy-gradient estimator at the parent's moment."
+    },
+    {
+     "name": "Importance sampling for exploration (Meuleau et al.)",
+     "year": 2001,
+     "domain": "artificial intelligence",
+     "lens": "L7",
+     "type": "method",
+     "causal_claim": "The road the parent explicitly refuses: its text dismisses importance-sampling-based exploration/evaluation (citing meuleau01exploration) as requiring too many samples - the parent's restart-based estimation is chosen against this alternative on the record.",
+     "source_title": "Policy Improvement for POMDPs using Normalized Importance Sampling (Shelton) - documents Meuleau, Peshkin & Kim 2001",
+     "source_url": "http://www.cs.ucr.edu/~cshelton/papers/docs/pomdpis.pdf",
+     "definition": "Nicolas Meuleau, Leonid Peshkin, Kee-Eung Kim and Leslie Kaelbling (2001): importance sampling for exploration in reinforcement learning / POMDPs - reuse off-policy trajectories by likelihood-ratio reweighting, at a variance cost the parent judges prohibitive."
+    },
+    {
+     "name": "PEGASUS (Ng & Jordan)",
+     "year": 2000,
+     "domain": "artificial intelligence",
+     "lens": "L7",
+     "type": "method",
+     "causal_claim": "Distinguished on access: PEGASUS presupposes a deterministic simulator of the MDP (a stronger instrument); the parent assumes only the ability to restart from a distribution mu - the weaker access is part of the parent's claim. Cross-listed from L6.",
+     "source_title": "Approximately Optimal Approximate Reinforcement Learning (Kakade & Langford, ICML 2002) - full text",
+     "source_url": "https://www.cs.cmu.edu/~jcl/papers/aoarl/Final.tex_back",
+     "definition": "PEGASUS (UAI 2000): policy search given a deterministic-simulator representation of the environment."
+    },
+    {
+     "name": "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+     "year": 1998,
+     "domain": "artificial intelligence",
+     "lens": "L7",
+     "type": "theory",
+     "causal_claim": "Distinguished on the guarantee's object: E3 certifies near-optimal behavior by exploring a learned model; the parent certifies improvement of the current policy without a model and without exploration - the model-free sibling the parent separates itself from. Cross-listed from L4.",
+     "source_title": "Approximately Optimal Approximate Reinforcement Learning (Kakade & Langford, ICML 2002) - full text",
+     "source_url": "https://www.cs.cmu.edu/~jcl/papers/aoarl/Final.tex_back",
+     "definition": "Kearns & Singh's E3 (1998): near-optimal behavior certified through explicit exploration of a learned model."
+    },
+    {
+     "name": "Hoeffding's inequality",
+     "year": 1963,
+     "domain": "mathematics",
+     "lens": "L11",
+     "type": "theory",
+     "causal_claim": "A recipe the parent wields by name: its estimation procedure for the policy advantage bounds the required number of restart samples 'by Hoeffding's inequality' - the concentration bound is inside the parent's sample-complexity arithmetic.",
+     "source_title": "Hoeffding's inequality (Hoeffding, 1963)",
+     "source_url": "https://en.wikipedia.org/wiki/Hoeffding%27s_inequality",
+     "definition": "Wassily Hoeffding, 'Probability Inequalities for Sums of Bounded Random Variables' (JASA, 1963): the exponential concentration bound for sums of bounded independent random variables - the standard tool converting sample averages into high-confidence estimates."
+    },
+    {
+     "name": "Sparse sampling (Kearns, Mansour & Ng)",
+     "year": 1999,
+     "domain": "artificial intelligence",
+     "lens": "L17",
+     "type": "method",
+     "causal_claim": "The access instrument, cross-listed from L2: the generative model - sample any state-action's successor on demand - is the instrument this paper defined for planning; the parent's mu-restart distribution is that instrument with the state-targeting removed.",
+     "source_title": "A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov Decision Processes (Kearns, Mansour & Ng, Machine Learning 49, 2002; IJCAI-99 version 1999)",
+     "source_url": "https://www.cis.upenn.edu/~mkearns/papers/sparsesampling-journal.pdf",
+     "definition": "The generative model of Kearns, Mansour & Ng (1999): a sampling oracle for the MDP's transitions, used as the planning instrument in sparse sampling."
+    },
+    {
+     "name": "Markov Decision Processes (Puterman)",
+     "year": 1994,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "other",
+     "causal_claim": "The imported frame, cross-listed from L1: the parent imports the MDP formalism wholesale from this text; its theorem is a statement inside that frame.",
+     "source_title": "Approximately Optimal Approximate Reinforcement Learning (Kakade & Langford, ICML 2002) - full text",
+     "source_url": "https://www.cs.cmu.edu/~jcl/papers/aoarl/Final.tex_back",
+     "definition": "Puterman's MDP text (1994): the discrete stochastic dynamic programming frame - states, actions, transition kernels, discounting, optimality equations."
+    },
+    {
+     "name": "Reinforcement Learning: An Introduction (Sutton & Barto)",
+     "year": 1998,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "other",
+     "causal_claim": "The parent cites this synthesis (sutton-book) alongside Neuro-Dynamic Programming for implementing its epsilon-greedy policy chooser by regression algorithms for value functions - the textbook frame through which the chooser construction was standard practice.",
+     "source_title": "Neuro-Dynamic Programming: An Overview (Bertsekas, CPC VI, 2002) - treats Sutton & Barto as the companion synthesis",
+     "source_url": "https://folk.ntnu.no/skoge/prost/proceedings/cpc6-jan2002/bertsekas.pdf",
+     "definition": "Richard Sutton and Andrew Barto, 'Reinforcement Learning: An Introduction' (MIT Press, 1998): the field's textbook synthesis - TD learning, value-function approximation, and policy-gradient methods in one frame, including the regression-based value estimation the parent's chooser relies on."
+    },
+    {
+     "name": "Dynamic programming (Bellman)",
+     "year": 1957,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "theory",
+     "causal_claim": "The founding frame the whole setting presupposes: Bellman's principle of optimality and the optimality equation define what a value function and a policy improvement are; the parent's performance-difference reasoning is conducted inside this frame, reached through the MDP textbook line.",
+     "source_title": "Bellman equation (AI Wiki)",
+     "source_url": "https://aiwiki.ai/wiki/bellman_equation",
+     "definition": "Richard Bellman, 'Dynamic Programming' (Princeton, 1957): the principle of optimality and the Bellman equation - the recursive structure of optimal sequential decision-making that defines value functions and policy improvement."
+    },
+    {
+     "name": "Hoeffding's inequality",
+     "year": 1963,
+     "domain": "mathematics",
+     "lens": "L19",
+     "type": "theory",
+     "causal_claim": "The imported probability frame, cross-listed from L11: PAC-style sample guarantees in this literature are stated through concentration bounds of this form.",
+     "source_title": "Hoeffding's inequality (Hoeffding, 1963)",
+     "source_url": "https://en.wikipedia.org/wiki/Hoeffding%27s_inequality",
+     "definition": "Hoeffding's inequality (1963): the concentration-of-measure frame for turning sampled averages into certified estimates."
+    },
+    {
+     "name": "Optimizing Average Reward Using Discounted Rewards (Kakade)",
+     "year": 2001,
+     "domain": "artificial intelligence",
+     "lens": "L20",
+     "type": "theory",
+     "causal_claim": "The author's own prior result, cited inside the parent: the parent's average-reward remark ports its discounted-return guarantee to the average-reward setting via this COLT 2001 paper (Sham_colt) - a documented creator-lineage channel in the parent's own text.",
+     "source_title": "Optimizing Average Reward Using Discounted Rewards (Kakade, COLT 2001)",
+     "source_url": "https://link.springer.com/chapter/10.1007/3-540-44581-1_40",
+     "definition": "Sham Kakade, 'Optimizing Average Reward Using Discounted Rewards' (COLT 2001): an optimal average-reward policy can be recovered from discounted-reward optimization with a discount factor close enough to 1 - the bridge the parent cites to extend its guarantee beyond the discounted setting."
+    },
+    {
+     "name": "A Natural Policy Gradient (Kakade)",
+     "year": 2001,
+     "domain": "artificial intelligence",
+     "lens": "L20",
+     "type": "theory",
+     "causal_claim": "Creator lineage only, proposed so the channel is judged on its own evidence: the same author's NIPS 2001 paper is the sibling route to safe policy steps (geometry instead of mixing), but the parent does not cite it and its Theorem 1 is not derived from it - the two Kakade papers' channels are distinct, and this proposal tests exactly that. (Already a node in this graph, admitted at TRPO's expansion.)",
+     "source_title": "On the Limits and Potentials of Reinforcement Learning (Kakade thesis page)",
+     "source_url": "https://homes.cs.washington.edu/~sham/papers/thesis/sham_thesis.html",
+     "definition": "Sham Kakade, 'A Natural Policy Gradient' (NIPS 14, 2001): steepest descent under the Fisher information metric of the policy manifold - the geometric route to parameterization-independent policy steps."
+    },
+    {
+     "name": "On the Limits and Potentials of Reinforcement Learning (Kakade thesis)",
+     "year": 2003,
+     "domain": "artificial intelligence",
+     "lens": "L20",
+     "type": "other",
+     "causal_claim": "Downstream record: the author's 2003 thesis, whose chapter 7 is this parent itself - the thesis is the parent's later container, not its predecessor. Proposed so the date drop records the direction honestly.",
+     "source_title": "On the Limits and Potentials of Reinforcement Learning (Kakade thesis page)",
+     "source_url": "https://homes.cs.washington.edu/~sham/papers/thesis/sham_thesis.html",
+     "definition": "Sham Kakade's PhD thesis (Gatsby Computational Neuroscience Unit, UCL, 2003): 'On the Limits and Potentials of Reinforcement Learning' - chapter 7 presents the conservative policy iteration work that appeared as the parent paper in 2002."
+    },
+    {
+     "name": "Gatsby Computational Neuroscience Unit",
+     "year": 1998,
+     "domain": "institutions",
+     "lens": "L21",
+     "type": "institution",
+     "causal_claim": "The institution the parent was produced inside: Kakade's home unit (his PhD under Peter Dayan), and the parent's acknowledgments give 'warm thanks to Peter Dayan for numerous critical comments' - Dayan co-founded the Gatsby Unit in 1998 and directed it from 2002; the unit is the carried environment of the work, with a named, documented critical channel from its director into this paper.",
+     "source_title": "About the Gatsby Computational Neuroscience Unit (UCL)",
+     "source_url": "https://www.ucl.ac.uk/life-sciences/gatsby/about",
+     "definition": "The Gatsby Computational Neuroscience Unit (UCL, founded July 1998 by Geoffrey Hinton and Peter Dayan with Gatsby Foundation funding): a small theoretical-neuroscience and machine-learning institute whose early-2000s research program in reinforcement learning theory - Dayan's group, Kakade's doctorate - produced the parent."
+    },
+    {
+     "name": "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+     "year": 1998,
+     "domain": "artificial intelligence",
+     "lens": "L22",
+     "type": "theory",
+     "causal_claim": "The ripeness condition, cross-listed from L4: by 2002 the polynomial-guarantee program E3 opened had made 'certified RL' the field's live question - the parent is the program's model-free improvement-side answer, inconceivable as a contribution before E3 posed the standard.",
+     "source_title": "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+     "source_url": "https://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf",
+     "definition": "E3 (Kearns & Singh, 1998): the result that made polynomial sample guarantees the standard an RL theory paper of 2002 had to meet."
+    },
+    {
+     "name": "R-max (Brafman & Tennenholtz)",
+     "year": 2002,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "theory",
+     "causal_claim": "Coeval artifact, proposed for the structural record: published in JMLR in the parent's own year (submitted November 2001), R-max is the other polynomial-time near-optimal RL theorem of 2002 - the model-based sibling result, neither citing nor cited by the parent; the two papers are the same moment's two answers (optimism-driven exploration vs certified improvement).",
+     "source_title": "R-max - A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning (Brafman & Tennenholtz, JMLR 3, 2002)",
+     "source_url": "https://ics.uci.edu/~dechter/courses/ics-295/winter-2018/papers/2002-brafman02a.pdf",
+     "definition": "Ronen Brafman and Moshe Tennenholtz, 'R-max - A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning' (JMLR 3, 2002): initialize unknown state-actions optimistically at maximal reward and plan in the learned model - near-optimal average reward in polynomial time, formalizing optimism under uncertainty."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "policy-gradient-theorem-sutton-et-al-2000",
+      "candidate": {
+       "name": "Policy gradient theorem (Sutton et al.)",
+       "year": 2000,
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "type": "theory",
+       "causal_claim": "The parent's section 6 takes both of its working objects from this paper: the policy advantage is defined 'as in sutton99policy', and the discounted future-state distribution d_{pi,mu} and the gradient identity (Eq. policy_grad) are 'as shown in sutton99policy'. The parent's estimation procedure exists to estimate exactly this theorem's quantities from restarts. (Already a node in this graph, admitted at PPO's expansion; proposed here so the link is judged on this parent's documents.)",
+       "source_title": "Policy Gradient Methods for Reinforcement Learning with Function Approximation (Sutton, McAllester, Singh & Mansour, NeurIPS 1999 record)",
+       "source_url": "https://proceedings.neurips.cc/paper_files/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html",
+       "definition": "Sutton, McAllester, Singh and Mansour's policy gradient theorem (NIPS 1999 / 2000): the gradient of expected return with respect to policy parameters expressed through the advantage/action-value function and the score function, with compatible function approximation preserving the gradient."
+      },
+      "members": [
+       0,
+       5
+      ],
+      "member_names": [
+       "Policy gradient theorem (Sutton et al.)",
+       "Policy gradient theorem (Sutton et al.)"
+      ],
+      "matched_node_id": "policy-gradient-theorem-sutton-et-al-2000",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "advantage-updating-baird-1993",
+      "candidate": {
+       "name": "Advantage updating (Baird)",
+       "year": 1993,
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "type": "method",
+       "causal_claim": "The parent's Theorem 1 is stated in terms of the policy advantage A_{pi,mu}, and its section 6 defines that advantage 'as in sutton99policy (much as in baird93advantage)': the advantage - value relative to the policy's own average - as the estimable object a policy update should be built from is Baird's construction, reaching the parent through both citations.",
+       "source_title": "Advantage Updating (Baird, WL-TR-93-1146, 1993)",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "definition": "Leemon Baird's 'Advantage Updating' (Wright Laboratory technical report WL-TR-93-1146, 1993): learn the advantage function A(s,a) = Q(s,a) - V(s) instead of absolute action values, so that updates are invariant to the value offset and remain well-behaved at fine time discretizations where Q-learning degrades."
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Advantage updating (Baird)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "neuro-dynamic-programming-bertsekas-tsitsiklis-1996",
+      "candidate": {
+       "name": "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)",
+       "year": 1996,
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "type": "other",
+       "causal_claim": "The parent cites this book at two load-bearing points: its epsilon-greedy policy chooser G_eps is implementable by the regression algorithms for value functions developed here, and its section 3 diagnosis of approximate value methods opens from this book's greedy-degradation bound (V_pi' >= V_pi - 2 gamma eps/(1-gamma)) - the statement of how badly an uncertified approximate greedy step can hurt.",
+       "source_title": "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis, Athena Scientific, 1996)",
+       "source_url": "http://athenasc.com/ndpbook.html",
+       "definition": "Dimitri Bertsekas and John Tsitsiklis, 'Neuro-Dynamic Programming' (Athena Scientific, 1996): the first systematic treatment of approximate dynamic programming - value-function approximation by regression and simulation-based methods, with error bounds for approximate policy iteration - which made large-scale DP a rigorous methodology."
+      },
+      "members": [
+       2,
+       6,
+       17
+      ],
+      "member_names": [
+       "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)",
+       "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)",
+       "Neuro-Dynamic Programming (Bertsekas & Tsitsiklis)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "markov-decision-processes-puterman-1994",
+      "candidate": {
+       "name": "Markov Decision Processes (Puterman)",
+       "year": 1994,
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "type": "other",
+       "causal_claim": "The parent states its entire setting - states, actions, transition model, discounted return - in the formalism of this text, which its bibliography cites (puterman-book) as the MDP reference the result is formulated against.",
+       "source_title": "Martin L. Puterman - CV (lists Markov Decision Processes, Wiley, 1994)",
+       "source_url": "https://org-www.sauder.ubc.ca/sites/default/files/2019-10/cv-puterman%20-%20May%202019.pdf",
+       "definition": "Martin L. Puterman, 'Markov Decision Processes: Discrete Stochastic Dynamic Programming' (Wiley, 1994): the standard rigorous formulation of the MDP framework - the setting in which policy iteration, value iteration and their guarantees are stated."
+      },
+      "members": [
+       3,
+       28
+      ],
+      "member_names": [
+       "Markov Decision Processes (Puterman)",
+       "Markov Decision Processes (Puterman)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "policy-iteration-howard-1960",
+      "candidate": {
+       "name": "Policy iteration (Howard)",
+       "year": 1960,
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "type": "method",
+       "causal_claim": "The parent is policy iteration with both of its exact steps replaced: the exact greedy improvement becomes an epsilon-greedy chooser call, and the full switch to the greedy policy becomes a conservative mixture pi_new = (1-alpha) pi + alpha pi'. The AI Wiki relation table records conservative policy iteration as policy iteration's approximate descendant.",
+       "source_title": "Policy iteration (AI Wiki) - relation table listing conservative policy iteration",
+       "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+       "definition": "Ronald Howard's policy iteration (in 'Dynamic Programming and Markov Processes', 1960): alternate exact policy evaluation with greedy policy improvement; Howard proved the procedure reaches an optimal policy in finitely many iterations - the exact algorithm the parent makes approximate and certifies."
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Policy iteration (Howard)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sparse-sampling-kearns-mansour-ng-1999",
+      "candidate": {
+       "name": "Sparse sampling (Kearns, Mansour & Ng)",
+       "year": 1999,
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "type": "method",
+       "causal_claim": "The parent's access model is this paper's, weakened by the parent's own stipulation: the paper's setting is 'a slightly weaker version of the generative model in kearns99sparse' - the parent assumes only a mu-restart distribution instead of a full generative model, and still certifies improvement.",
+       "source_title": "A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov Decision Processes (Kearns, Mansour & Ng, Machine Learning 49, 2002; IJCAI-99 version 1999)",
+       "source_url": "https://www.cis.upenn.edu/~mkearns/papers/sparsesampling-journal.pdf",
+       "definition": "Michael Kearns, Yishay Mansour and Andrew Ng, 'A Sparse Sampling Algorithm for Near-Optimal Planning in Large Markov Decision Processes' (IJCAI 1999; Machine Learning 49, 2002): given a generative model of an MDP, plan by sampling a sparse lookahead tree whose depth and width depend on the horizon and accuracy but not on the size of the state space."
+      },
+      "members": [
+       7,
+       27
+      ],
+      "member_names": [
+       "Sparse sampling (Kearns, Mansour & Ng)",
+       "Sparse sampling (Kearns, Mansour & Ng)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "near-optimal-reinforcement-learning-in-polynomial-time-kearn-1998",
+      "candidate": {
+       "name": "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+       "year": 1998,
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "type": "theory",
+       "causal_claim": "This paper (the E3 algorithm) posed the problem the parent's program answers a sibling of: what can be certified about reinforcement learning with polynomially many samples - near-optimal behavior in polynomial time. The parent certifies a different quantity (per-step improvement) inside the same polynomial-guarantee program Kearns's group opened.",
+       "source_title": "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+       "source_url": "https://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf",
+       "definition": "Michael Kearns and Satinder Singh, 'Near-Optimal Reinforcement Learning in Polynomial Time' (ICML 1998; Machine Learning 49, 2002): the E3 algorithm - explore or exploit provably, attaining near-optimal average reward with sample and time complexity polynomial in the relevant quantities, the first such guarantee for RL."
+      },
+      "members": [
+       10,
+       25,
+       36
+      ],
+      "member_names": [
+       "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+       "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)",
+       "Near-Optimal Reinforcement Learning in Polynomial Time (Kearns & Singh)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "complexity-of-reinforcement-learning-whitehead-1991",
+      "candidate": {
+       "name": "Complexity of reinforcement learning (Whitehead)",
+       "year": 1991,
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "type": "theory",
+       "causal_claim": "The problem statement in its negative form: this work's complexity results made 'how many samples can a learning rule need' a precise question - the question the parent's sample-bounded improvement certificate answers positively for its setting. Cross-listed from L5.",
+       "source_title": "Complexity and the Value of Time (Whitehead, AAAI 1991)",
+       "source_url": "https://cdn.aaai.org/AAAI/1991/AAAI91-095.pdf",
+       "definition": "Steven Whitehead, 'Complexity and the Value of Time' (AAAI 1991) and the associated complexity analyses: reinforcement learning problems on which any learning rule can be forced to need exponentially many samples - the founding statement of RL's sample-complexity problem."
+      },
+      "members": [
+       11,
+       12
+      ],
+      "member_names": [
+       "Complexity of reinforcement learning (Whitehead)",
+       "Complexity of reinforcement learning (Whitehead)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "efficient-exploration-in-reinforcement-learning-thrun-1992",
+      "candidate": {
+       "name": "Efficient Exploration in Reinforcement Learning (Thrun)",
+       "year": 1992,
+       "domain": "artificial intelligence",
+       "lens": "L5",
+       "type": "other",
+       "causal_claim": "The parent's Figure 1 - its central exhibit that a policy gradient step can be catastrophically uninformative - is adapted from this report (thrun92efficient): the concrete example through which the parent presents the gradient failure its whole construction answers.",
+       "source_title": "Efficient Exploration in Reinforcement Learning (Thrun, CMU, 1992)",
+       "source_url": "https://publications.ri.cmu.edu/storage/publications/pub_files/pub1/thrun_sebastian_1992_1/thrun_sebastian_1992_1.pdf",
+       "definition": "Sebastian Thrun, 'Efficient Exploration in Reinforcement Learning' (CMU technical report, 1992): a survey and analysis of exploration methods whose examples include the case the parent adapts - a problem where the policy gradient direction gives no useful signal about the distant reward, so gradient following needs exponentially many samples."
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Efficient Exploration in Reinforcement Learning (Thrun)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "policy-gradient-estimation-bounds-bartlett-baxter-2000",
+      "candidate": {
+       "name": "Policy gradient estimation bounds (Bartlett & Baxter)",
+       "year": 2000,
+       "domain": "artificial intelligence",
+       "lens": "L5",
+       "type": "theory",
+       "causal_claim": "The parent cites this work (bartlett00estimation) for the sharp form of the gradient obstruction: even estimating the gradient's direction is not enough - policy improvement needs the gradient's magnitude, which is what sample-based estimation cannot cheaply deliver; the parent's advantage-estimation route is built to sidestep exactly this.",
+       "source_title": "Policy gradient estimation bounds (Bartlett & Baxter, COLT 2000)",
+       "source_url": "http://www.learningtheory.org/colt2000/papers/BartlettBaxter.pdf",
+       "definition": "Peter Bartlett and Jonathan Baxter, policy-gradient estimation results (COLT 2000 and companions): bounds and constructions showing what estimating the policy gradient from samples costs, including that direction alone does not determine a safe step - the magnitude problem."
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Policy gradient estimation bounds (Bartlett & Baxter)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "infinite-horizon-policy-gradient-estimation-baxter-bartlett-2001",
+      "candidate": {
+       "name": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett)",
+       "year": 2001,
+       "domain": "artificial intelligence",
+       "lens": "L5",
+       "type": "theory",
+       "causal_claim": "The GPOMDP line is the gradient-estimation incumbent at its strongest: an unbiased gradient estimator with controlled variance. The parent's restart-based advantage estimation is positioned against this family's remaining weakness - no finite-step improvement certificate comes with the estimate. Cross-listed at L6.",
+       "source_title": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett, JAIR 2001)",
+       "source_url": "https://www.cis.upenn.edu/~mkearns/finread/BaxterBartlett.pdf",
+       "definition": "Jonathan Baxter and Peter Bartlett, 'Infinite-Horizon Policy-Gradient Estimation' (JAIR 2001): GPOMDP, an algorithm estimating the average-reward policy gradient from a single trajectory with a bias-variance tradeoff controlled by a discount-like parameter."
+      },
+      "members": [
+       15,
+       22
+      ],
+      "member_names": [
+       "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett)",
+       "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "stable-function-approximation-in-dynamic-programming-gordon-1995",
+      "candidate": {
+       "name": "Stable Function Approximation in Dynamic Programming (Gordon)",
+       "year": 1995,
+       "domain": "artificial intelligence",
+       "lens": "L5",
+       "type": "theory",
+       "causal_claim": "The value-side obstruction in its precise form: fitted value iteration with general function approximators can diverge or chatter; only averager-type approximators are stable. The parent's section 3 diagnosis of approximate value methods is this obstruction's policy-iteration form. Cross-listed at L6.",
+       "source_title": "Stable Function Approximation in Dynamic Programming (Gordon, ICML 1995)",
+       "source_url": "http://people.eecs.berkeley.edu/~pabbeel/cs287-fa11/optreadings/Gordon-1995.pdf",
+       "definition": "Geoffrey Gordon, 'Stable Function Approximation in Dynamic Programming' (ICML 1995): approximate value iteration is stable only for restricted (averager) function approximators; with general approximators the iteration can fail to converge - the precise statement of why approximate greedy improvement was untrustworthy."
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Stable Function Approximation in Dynamic Programming (Gordon)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "generalization-in-reinforcement-learning-safely-approximatin-1995",
+      "candidate": {
+       "name": "Generalization in Reinforcement Learning: Safely Approximating the Value Function (Boyan & Moore)",
+       "year": 1995,
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "type": "method",
+       "causal_claim": "An incumbent attempt at the parent's own adjective: value-function approximation designed to be 'safe' (local, averager-based approximators that keep approximate policy iteration stable). The parent achieves safety by a different mechanism - conservative mixing with a certificate - against this family's approximation-architecture route.",
+       "source_title": "Generalization in Reinforcement Learning: Safely Approximating the Value Function (Boyan & Moore, NIPS 1995)",
+       "source_url": "https://v1.endtoend.ai/papers/generalization-in-reinforcement-learning-safely-approximating-the-value-function.pdf",
+       "definition": "Justin Boyan and Andrew Moore, 'Generalization in Reinforcement Learning: Safely Approximating the Value Function' (NIPS 1995): value approximation with local averagers (and the Boyan chain testbed) so that approximate policy iteration generalizes without the instabilities of global approximators."
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "Generalization in Reinforcement Learning: Safely Approximating the Value Function (Boyan & Moore)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "convergence-results-for-single-step-on-policy-reinforcement-2000",
+      "candidate": {
+       "name": "Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms (Singh et al.)",
+       "year": 2000,
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "type": "theory",
+       "causal_claim": "The strongest convergence theory of the incumbent TD family at the parent's moment: asymptotic convergence for single-step on-policy methods with function approximation. The parent's finite-sample, per-step certificate is the contrasting form of guarantee this line did not provide.",
+       "source_title": "Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms (Singh, Jaakkola, Littman & Szepesvari, Machine Learning 2000)",
+       "source_url": "https://ics.uci.edu/~dechter/courses/ics-295/fall-2019/papers/2000-singh-littmansingh98convergence.pdf",
+       "definition": "Satinder Singh, Tommi Jaakkola, Michael Littman and Csaba Szepesvari, 'Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms' (Machine Learning 40, 2000): convergence proofs for TD-style algorithms with linear function approximation - the incumbent theory of the value-based family."
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms (Singh et al.)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pegasus-ng-jordan-2000",
+      "candidate": {
+       "name": "PEGASUS (Ng & Jordan)",
+       "year": 2000,
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "type": "method",
+       "causal_claim": "The alternative policy-search incumbent: evaluate many policies on a fixed stream of random seeds through a deterministic simulator, turning policy search into deterministic optimization. The parent's restart-distribution access is weaker than PEGASUS's simulator, and its guarantee is of a different kind (per-step improvement, not uniform value estimates).",
+       "source_title": "PEGASUS: A Policy Search Method for Large MDPs (Ng & Jordan, UAI 2000)",
+       "source_url": "https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgJordan-Pegasus-UAI2000.pdf",
+       "definition": "Andrew Ng and Michael Jordan, 'PEGASUS: A Policy Search Method for Large MDPs and POMDPs' (UAI 2000): fix the random numbers, represent the simulator as a deterministic function, and estimate every policy's value on the same sample paths - policy search with uniform convergence over policy classes."
+      },
+      "members": [
+       20,
+       24
+      ],
+      "member_names": [
+       "PEGASUS (Ng & Jordan)",
+       "PEGASUS (Ng & Jordan)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "reinforce-williams-1992",
+      "candidate": {
+       "name": "REINFORCE (Williams)",
+       "year": 1992,
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "type": "method",
+       "causal_claim": "The founding policy-gradient incumbent. The parent does not cite it - its gradient discussion runs through Sutton et al. 2000 and Bartlett & Baxter - so the proposal exists for the absence to be judged on the documents, not assumed. (Already a node in this graph, admitted at REINFORCE's own place in the policy-gradient spine.)",
+       "source_title": "Approximately Optimal Approximate Reinforcement Learning (Kakade & Langford, ICML 2002) - full text",
+       "source_url": "https://www.cs.cmu.edu/~jcl/papers/aoarl/Final.tex_back",
+       "definition": "Ronald Williams, 'Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning' (1992): REINFORCE - estimate the gradient of expected return from sampled episodes and ascend it, the original policy-gradient method."
+      },
+      "members": [
+       21
+      ],
+      "member_names": [
+       "REINFORCE (Williams)"
+      ],
+      "matched_node_id": "reinforce-williams-1992",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "importance-sampling-for-exploration-meuleau-et-al-2001",
+      "candidate": {
+       "name": "Importance sampling for exploration (Meuleau et al.)",
+       "year": 2001,
+       "domain": "artificial intelligence",
+       "lens": "L7",
+       "type": "method",
+       "causal_claim": "The road the parent explicitly refuses: its text dismisses importance-sampling-based exploration/evaluation (citing meuleau01exploration) as requiring too many samples - the parent's restart-based estimation is chosen against this alternative on the record.",
+       "source_title": "Policy Improvement for POMDPs using Normalized Importance Sampling (Shelton) - documents Meuleau, Peshkin & Kim 2001",
+       "source_url": "http://www.cs.ucr.edu/~cshelton/papers/docs/pomdpis.pdf",
+       "definition": "Nicolas Meuleau, Leonid Peshkin, Kee-Eung Kim and Leslie Kaelbling (2001): importance sampling for exploration in reinforcement learning / POMDPs - reuse off-policy trajectories by likelihood-ratio reweighting, at a variance cost the parent judges prohibitive."
+      },
+      "members": [
+       23
+      ],
+      "member_names": [
+       "Importance sampling for exploration (Meuleau et al.)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hoeffding-s-inequality-1963",
+      "candidate": {
+       "name": "Hoeffding's inequality",
+       "year": 1963,
+       "domain": "mathematics",
+       "lens": "L11",
+       "type": "theory",
+       "causal_claim": "A recipe the parent wields by name: its estimation procedure for the policy advantage bounds the required number of restart samples 'by Hoeffding's inequality' - the concentration bound is inside the parent's sample-complexity arithmetic.",
+       "source_title": "Hoeffding's inequality (Hoeffding, 1963)",
+       "source_url": "https://en.wikipedia.org/wiki/Hoeffding%27s_inequality",
+       "definition": "Wassily Hoeffding, 'Probability Inequalities for Sums of Bounded Random Variables' (JASA, 1963): the exponential concentration bound for sums of bounded independent random variables - the standard tool converting sample averages into high-confidence estimates."
+      },
+      "members": [
+       26,
+       31
+      ],
+      "member_names": [
+       "Hoeffding's inequality",
+       "Hoeffding's inequality"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "reinforcement-learning-an-introduction-sutton-barto-1998",
+      "candidate": {
+       "name": "Reinforcement Learning: An Introduction (Sutton & Barto)",
+       "year": 1998,
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "type": "other",
+       "causal_claim": "The parent cites this synthesis (sutton-book) alongside Neuro-Dynamic Programming for implementing its epsilon-greedy policy chooser by regression algorithms for value functions - the textbook frame through which the chooser construction was standard practice.",
+       "source_title": "Neuro-Dynamic Programming: An Overview (Bertsekas, CPC VI, 2002) - treats Sutton & Barto as the companion synthesis",
+       "source_url": "https://folk.ntnu.no/skoge/prost/proceedings/cpc6-jan2002/bertsekas.pdf",
+       "definition": "Richard Sutton and Andrew Barto, 'Reinforcement Learning: An Introduction' (MIT Press, 1998): the field's textbook synthesis - TD learning, value-function approximation, and policy-gradient methods in one frame, including the regression-based value estimation the parent's chooser relies on."
+      },
+      "members": [
+       29
+      ],
+      "member_names": [
+       "Reinforcement Learning: An Introduction (Sutton & Barto)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dynamic-programming-bellman-1957",
+      "candidate": {
+       "name": "Dynamic programming (Bellman)",
+       "year": 1957,
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "type": "theory",
+       "causal_claim": "The founding frame the whole setting presupposes: Bellman's principle of optimality and the optimality equation define what a value function and a policy improvement are; the parent's performance-difference reasoning is conducted inside this frame, reached through the MDP textbook line.",
+       "source_title": "Bellman equation (AI Wiki)",
+       "source_url": "https://aiwiki.ai/wiki/bellman_equation",
+       "definition": "Richard Bellman, 'Dynamic Programming' (Princeton, 1957): the principle of optimality and the Bellman equation - the recursive structure of optimal sequential decision-making that defines value functions and policy improvement."
+      },
+      "members": [
+       30
+      ],
+      "member_names": [
+       "Dynamic programming (Bellman)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "optimizing-average-reward-using-discounted-rewards-kakade-2001",
+      "candidate": {
+       "name": "Optimizing Average Reward Using Discounted Rewards (Kakade)",
+       "year": 2001,
+       "domain": "artificial intelligence",
+       "lens": "L20",
+       "type": "theory",
+       "causal_claim": "The author's own prior result, cited inside the parent: the parent's average-reward remark ports its discounted-return guarantee to the average-reward setting via this COLT 2001 paper (Sham_colt) - a documented creator-lineage channel in the parent's own text.",
+       "source_title": "Optimizing Average Reward Using Discounted Rewards (Kakade, COLT 2001)",
+       "source_url": "https://link.springer.com/chapter/10.1007/3-540-44581-1_40",
+       "definition": "Sham Kakade, 'Optimizing Average Reward Using Discounted Rewards' (COLT 2001): an optimal average-reward policy can be recovered from discounted-reward optimization with a discount factor close enough to 1 - the bridge the parent cites to extend its guarantee beyond the discounted setting."
+      },
+      "members": [
+       32
+      ],
+      "member_names": [
+       "Optimizing Average Reward Using Discounted Rewards (Kakade)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-natural-policy-gradient-kakade-2001",
+      "candidate": {
+       "name": "A Natural Policy Gradient (Kakade)",
+       "year": 2001,
+       "domain": "artificial intelligence",
+       "lens": "L20",
+       "type": "theory",
+       "causal_claim": "Creator lineage only, proposed so the channel is judged on its own evidence: the same author's NIPS 2001 paper is the sibling route to safe policy steps (geometry instead of mixing), but the parent does not cite it and its Theorem 1 is not derived from it - the two Kakade papers' channels are distinct, and this proposal tests exactly that. (Already a node in this graph, admitted at TRPO's expansion.)",
+       "source_title": "On the Limits and Potentials of Reinforcement Learning (Kakade thesis page)",
+       "source_url": "https://homes.cs.washington.edu/~sham/papers/thesis/sham_thesis.html",
+       "definition": "Sham Kakade, 'A Natural Policy Gradient' (NIPS 14, 2001): steepest descent under the Fisher information metric of the policy manifold - the geometric route to parameterization-independent policy steps."
+      },
+      "members": [
+       33
+      ],
+      "member_names": [
+       "A Natural Policy Gradient (Kakade)"
+      ],
+      "matched_node_id": "a-natural-policy-gradient-kakade-2001",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "gatsby-computational-neuroscience-unit-1998",
+      "candidate": {
+       "name": "Gatsby Computational Neuroscience Unit",
+       "year": 1998,
+       "domain": "institutions",
+       "lens": "L21",
+       "type": "institution",
+       "causal_claim": "The institution the parent was produced inside: Kakade's home unit (his PhD under Peter Dayan), and the parent's acknowledgments give 'warm thanks to Peter Dayan for numerous critical comments' - Dayan co-founded the Gatsby Unit in 1998 and directed it from 2002; the unit is the carried environment of the work, with a named, documented critical channel from its director into this paper.",
+       "source_title": "About the Gatsby Computational Neuroscience Unit (UCL)",
+       "source_url": "https://www.ucl.ac.uk/life-sciences/gatsby/about",
+       "definition": "The Gatsby Computational Neuroscience Unit (UCL, founded July 1998 by Geoffrey Hinton and Peter Dayan with Gatsby Foundation funding): a small theoretical-neuroscience and machine-learning institute whose early-2000s research program in reinforcement learning theory - Dayan's group, Kakade's doctorate - produced the parent."
+      },
+      "members": [
+       35
+      ],
+      "member_names": [
+       "Gatsby Computational Neuroscience Unit"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:14:22",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 14,
+       "card": {
+        "name": "Policy gradient estimation bounds (Bartlett & Baxter)",
+        "aliases": [],
+        "year": 2000,
+        "domain": "artificial intelligence",
+        "type": "theory",
+        "definition": "Peter Bartlett and Jonathan Baxter, policy-gradient estimation results (COLT 2000 and companions): bounds and constructions showing what estimating the policy gradient from samples costs, including that direction alone does not determine a safe step - the magnitude problem.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 22,
+       "card": {
+        "name": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett)",
+        "aliases": [],
+        "year": 2001,
+        "domain": "artificial intelligence",
+        "type": "theory",
+        "definition": "Baxter & Bartlett's GPOMDP (JAIR 2001): the state-of-the-art policy-gradient estimator at the parent's moment.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8444,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       5
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       6
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       17
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       28
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       7,
+       27
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       10,
+       25
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       10,
+       36
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       11,
+       12
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       15,
+       22
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       20,
+       24
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       26,
+       31
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Conservative policy iteration in the policy-iteration lineage (AI Wiki survey record)",
+       "year": 2026,
+       "domain": "artificial intelligence",
+       "lens": "L3",
+       "type": "other",
+       "causal_claim": "Meta pass: the survey record whose relation table places conservative policy iteration in the policy-iteration family tree - the lineage map a survey draws of this parent. Proposed with its true (present-day) year; the resolver's date drop is the record.",
+       "source_title": "Policy iteration (AI Wiki) - relation table listing conservative policy iteration",
+       "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+       "definition": "The AI Wiki's policy iteration survey page: its relation table lists conservative policy iteration (Kakade & Langford, 2002) among the descendants/variants of Howard's policy iteration."
+      },
+      "reason": "dated on/after parent year 2002"
+     },
+     {
+      "candidate": {
+       "name": "Langford's reinforcement learning bibliography",
+       "year": 2026,
+       "domain": "artificial intelligence",
+       "lens": "L3",
+       "type": "other",
+       "causal_claim": "Meta pass: the co-author's own project page curating this paper inside his reinforcement learning research line - the creator-side record of where the parent sits. Proposed with a present-day year as a living page; the resolver's date drop is the record.",
+       "source_title": "John Langford's reinforcement learning project page",
+       "source_url": "https://hunch.net/~jl/projects/RL/RL.html",
+       "definition": "John Langford's reinforcement learning project page (hunch.net): his curated record of the RL research program this paper belongs to, including the approximately optimal approximate RL line."
+      },
+      "reason": "dated on/after parent year 2002"
+     },
+     {
+      "candidate": {
+       "name": "On the Limits and Potentials of Reinforcement Learning (Kakade thesis)",
+       "year": 2003,
+       "domain": "artificial intelligence",
+       "lens": "L20",
+       "type": "other",
+       "causal_claim": "Downstream record: the author's 2003 thesis, whose chapter 7 is this parent itself - the thesis is the parent's later container, not its predecessor. Proposed so the date drop records the direction honestly.",
+       "source_title": "On the Limits and Potentials of Reinforcement Learning (Kakade thesis page)",
+       "source_url": "https://homes.cs.washington.edu/~sham/papers/thesis/sham_thesis.html",
+       "definition": "Sham Kakade's PhD thesis (Gatsby Computational Neuroscience Unit, UCL, 2003): 'On the Limits and Potentials of Reinforcement Learning' - chapter 7 presents the conservative policy iteration work that appeared as the parent paper in 2002."
+      },
+      "reason": "dated on/after parent year 2002"
+     },
+     {
+      "candidate": {
+       "name": "R-max (Brafman & Tennenholtz)",
+       "year": 2002,
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "type": "theory",
+       "causal_claim": "Coeval artifact, proposed for the structural record: published in JMLR in the parent's own year (submitted November 2001), R-max is the other polynomial-time near-optimal RL theorem of 2002 - the model-based sibling result, neither citing nor cited by the parent; the two papers are the same moment's two answers (optimism-driven exploration vs certified improvement).",
+       "source_title": "R-max - A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning (Brafman & Tennenholtz, JMLR 3, 2002)",
+       "source_url": "https://ics.uci.edu/~dechter/courses/ics-295/winter-2018/papers/2002-brafman02a.pdf",
+       "definition": "Ronen Brafman and Moshe Tennenholtz, 'R-max - A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning' (JMLR 3, 2002): initialize unknown state-actions optimistically at maximal reward and plan in the learned model - near-optimal average reward in polynomial time, formalizing optimism under uncertainty."
+      },
+      "reason": "dated on/after parent year 2002"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:14:22",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 14,
+      "card": {
+       "name": "Policy gradient estimation bounds (Bartlett & Baxter)",
+       "aliases": [],
+       "year": 2000,
+       "domain": "artificial intelligence",
+       "type": "theory",
+       "definition": "Peter Bartlett and Jonathan Baxter, policy-gradient estimation results (COLT 2000 and companions): bounds and constructions showing what estimating the policy gradient from samples costs, including that direction alone does not determine a safe step - the magnitude problem.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 22,
+      "card": {
+       "name": "Infinite-Horizon Policy-Gradient Estimation (Baxter & Bartlett)",
+       "aliases": [],
+       "year": 2001,
+       "domain": "artificial intelligence",
+       "type": "theory",
+       "definition": "Baxter & Bartlett's GPOMDP (JAIR 2001): the state-of-the-art policy-gradient estimator at the parent's moment.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8444,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }
