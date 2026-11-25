@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T09:13:00+00:00",
-  "expansions_done": 75,
-  "raw_candidates_seen": 3348,
+  "updated_at": "2026-11-25T09:19:44+00:00",
+  "expansions_done": 76,
+  "raw_candidates_seen": 3358,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -16087,6 +16087,49 @@
     "name": "Euler's Latin squares and the problem of the 36 officers (1782)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T09:12:41+00:00"
+   },
+   {
+    "parent_id": "iam-database-offline-handwriting-database-marti-bunke-1999-1999",
+    "name": "Bunke, Roth and Schukat-Talamazzini, Off-line cursive handwriting recognition using hidden Markov models (1995)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:19:33+00:00"
+   },
+   {
+    "parent_id": "iam-database-offline-handwriting-database-marti-bunke-1999-1999",
+    "name": "Hull, A database for handwritten text recognition research (1994)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:19:33+00:00"
+   },
+   {
+    "parent_id": "iam-database-offline-handwriting-database-marti-bunke-1999-1999",
+    "name": "NIST Special Database 19 (1995)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:19:33+00:00"
+   },
+   {
+    "parent_id": "iam-database-offline-handwriting-database-marti-bunke-1999-1999",
+    "name": "UNIPEN data exchange format (Guyon et al., 1994)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:19:33+00:00"
+   },
+   {
+    "parent_id": "iam-database-offline-handwriting-database-marti-bunke-1999-1999",
+    "name": "Tappert, Suen and Wakahara, The state of the art in on-line handwriting recognition (1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:19:33+00:00"
+   },
+   {
+    "parent_id": "iam-database-offline-handwriting-database-marti-bunke-1999-1999",
+    "name": "Institute of Computer Science and Applied Mathematics (IAM), University of Bern (1984)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:19:33+00:00"
+   },
+   {
+    "parent_id": "iam-database-offline-handwriting-database-marti-bunke-1999-1999",
+    "name": "Brown Corpus (1964)",
+    "reason": "mediated_via: LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+    "at": "2026-11-25T09:19:33+00:00",
+    "mediated_via": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)"
    }
   ]
  },
@@ -19672,7 +19715,7 @@
    "prior_state": "Private collections and isolated-character specimen sets (NIST-style) without sentence transcriptions.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -19707,12 +19750,16 @@
     {
      "title": "Liwicki & Bunke, IAM-OnDB (ICDAR 2005)",
      "url": "https://fki.tic.heia-fr.ch/databases/iam-on-line-handwriting-database"
+    },
+    {
+     "title": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (ICDAR 1999); Zimmermann & Bunke, Segmentation of the IAM off-line database (IAM-01-004, 2001): 'The text categories are defined by the Lancaster-Oslo/Bergen corpus (LOB)'",
+     "url": "https://fki.tic.heia-fr.ch/databases/iam-handwriting-database"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Adversarial pass (session 18): identity/date verified - Johansson, Leech & Goodluck (eds.), the Lancaster-Oslo/Bergen Corpus, compiled through the 1970s and published 1978; one million words, 500 samples, 15 categories. Mediation attack (LOB reaches the parent only through the offline IAM database's 1999 design choice, so the edge should be mediated via that node): not sustained - LOB is consumed verbatim in the parent itself: the writer forms of IAM-OnDB present LOB sentences and every ground-truth transcription is a LOB sentence, so the corpus is inside the parent's own data files, not merely inherited as a design decision. This matches the run's treatment of consumed corpora (WSJ corpus admitted directly at RNNLM). Multiples attack (the Brown Corpus as the alternative balanced corpus): recorded - Q3 partial; the IAM family chose LOB (British English), and the choice is documented in both database papers. Direction check: 1978 precedes both databases; no chronology issue. Edge stands, provisional.",
-    "at": "2026-11-25T05:43:46+00:00"
+    "notes": "Edge LOB Corpus -> IAM database (off-line), admitted this session at 5.5 (the corpus's second edge in the run; at IAM-OnDB it stands at 4.5, where the channel was inherited through this parent). Mediation attack: LOB's sampling design descends from the Brown Corpus, so is this edge mediated via Brown? It fails as an attack on THIS edge: the parent consumes LOB's actual texts (forms generated from LOB, writers copying LOB sentences, transcriptions identical to LOB sentences, text categories LOB's own), while Brown contributes only the design one level further back - Brown is recorded at this parent as mediated via LOB, which is the correct direction of the chain. Substitutability attack (Q3): another text stock could in principle have served - recorded as Q3 partial in the evaluation; the edge is a historical channel claim (this corpus, in these forms), not a necessity claim, and survives as such. Multiples test: Brown is the design multiple/parent, handled above; no second corpus was used or considered in the parent's documents. Date/direction check: LOB published 1978 (texts sampled from 1961 publications), 21 years before the parent. Outcome provisional, as everywhere in this run.",
+    "at": "2026-11-25T09:19:44+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T05:43:31+00:00"
@@ -43142,6 +43189,103 @@
     "counterfactual": "Remove the 1918 decomposition and the treatise's every analysis loses its form: the ANOVA of a designed layout is the 1918 partition reworked so that layout factors are the causes partitioned. The mediation attack - that the channel runs through SMRW - is answered by components discrimination: SMRW carries the test machinery built on the partition, but the partition principle itself is this artifact's, and the treatise's design-specific partitions (blocks, rows, columns, treatments) are reworkings of it, not quotations of SMRW.",
     "mediator": null,
     "evidence": "The word 'variance' is coined in the 1918 paper; Speed's (1990) chronology derives the analysis-of-variance table (1923) and the design analyses from this decomposition line."
+   }
+  },
+  {
+   "predecessor_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+   "successor_id": "iam-database-offline-handwriting-database-marti-bunke-1999-1999",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "LOB flipped nothing about handwriting data itself; scored partial because a structured corpus of natural sentences is what made a sentence-level database buildable at all - the parent's unit of data is LOB's unit of text.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "A structured corpus of natural text is generative in the corpus sense (the Brown-at-NPLM precedent): it unblocks every artifact that needs representative text, and here it constitutes the artifact's content outright.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: another text stock could in principle have been chosen; the historical parent chose LOB, and its category structure is LOB's.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to LOB in the parent's record.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "LOB made English usage measurable in samples; inside the parent it supplies the ground-truth text against which every handwritten line is measured.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: LOB's category design is an explanatory model of text variety, imported wholesale as the parent's text categories.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: the 15-category sampling scheme is a reusable standard for corpus building, which the parent reuses as its own organization.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "From corpus linguistics the corpus reached every text science; its sentences here reach handwriting recognition.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change is attributable to LOB for the parent.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: structured corpora displaced ad hoc text collection in the fields that adopted them.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "A trunk artifact of corpus linguistics, and named in every account of the parent: the database is 'based on the LOB corpus' in its own title abstract.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once a database's texts are a published corpus's sentences, the ground truth is permanently anchored to a public reference.",
+     "source": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T09:19:33+00:00",
+   "leap": {
+    "prior_state": "Private collections and isolated-character specimen sets (NIST-style) without sentence transcriptions.",
+    "jump": "Marti & Bunke's IAM database (ICDAR 1999; IJDAR 2002): scanned handwritten English sentences from many writers, texts drawn from the LOB Corpus, with segmentation and transcriptions at sentence, line, word and character level, freely distributed.",
+    "date": 1999
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove LOB and the parent has no content: its forms were generated from LOB texts, writers copied LOB sentences, its transcriptions are LOB sentences, and its text categories are LOB's categories. This is content consumption, the strongest channel in the run (citation plus instantiation in the artifact's own construction). The mediation attack - that LOB's design descends from Brown - does not mediate this edge: the parent consumes LOB's actual texts, not Brown's, and Brown is filed separately as mediated via LOB. Scored above its 4.5 at IAM-OnDB, where the channel was inherited through this parent; here it is direct.",
+    "mediator": null,
+    "evidence": "Marti & Bunke (1999): 'The database is based on the Lancaster-Oslo/Bergen (LOB) corpus. This corpus is a collection of texts that were used to generate forms, which subsequently were filled out by persons with their handwriting.' Zimmermann & Bunke (2001): 'The text categories are defined by the Lancaster-Oslo/Bergen corpus (LOB).'"
    }
   }
  ],
@@ -160830,6 +160974,399 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "iam-database-offline-handwriting-database-marti-bunke-1999-1999": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Every text in the parent is a LOB Corpus sentence: the database's forms were generated from LOB texts and filled in by writers, and its text categories are the LOB categories - content consumed verbatim.",
+     "definition": "The Lancaster-Oslo/Bergen Corpus (1978): a one-million-word corpus of printed British English in 500 text samples across 15 categories, compiled as the British counterpart to the Brown Corpus - the text source from which the IAM database's handwritten forms were generated.",
+     "domain": "dataset",
+     "lens": "L1",
+     "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+     "source_title": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (ICDAR 1999); Zimmermann & Bunke, Segmentation of the IAM off-line database (IAM-01-004, 2001): 'The text categories are defined by the Lancaster-Oslo/Bergen corpus (LOB)'",
+     "source_url": "https://fki.tic.heia-fr.ch/databases/iam-handwriting-database",
+     "type": "dataset",
+     "year": 1978
+    },
+    {
+     "causal_claim": "The Bern group's segmentation-free HMM recognition line is the programme the database was built to serve: the parent's stated aim is to provide training and test data for a segmentation-free recognition system for cursive handwriting, and its ground truth was acquired only at the level of complete text lines because that system needs no word-level segmentation.",
+     "definition": "The University of Bern group's 1995 offline cursive handwriting recognizer: continuous-density hidden Markov models over sliding-window features, recognizing whole text lines without prior segmentation into words or characters - the recognition programme whose data requirements the IAM database was built to meet.",
+     "domain": "method",
+     "lens": "L2",
+     "name": "Bunke, Roth and Schukat-Talamazzini, Off-line cursive handwriting recognition using hidden Markov models (1995)",
+     "source_title": "Bunke, Roth & Schukat-Talamazzini, Off-line cursive handwriting recognition using hidden Markov models (Pattern Recognition 28, 1995); Zimmermann & Bunke (2001) on the database's original aim",
+     "source_url": "",
+     "type": "method",
+     "year": 1995
+    },
+    {
+     "causal_claim": "Hull's paper is the field's standard-database argument - that the replication and comparison criticisms of experimental pattern recognition 'could be answered with a standard database that contains precisely defined training and testing sets' - and its first general research database of handwritten text images (CEDAR, Buffalo; city/state names, ZIP codes, characters scanned from live mail). The parent instantiates that practice at sentence level with unconstrained vocabulary.",
+     "definition": "Jonathan Hull's 1994 CEDAR database paper: images of roughly 5,000 city names, 5,000 state names, 10,000 ZIP codes and 50,000 alphanumeric characters scanned from mail in a working post office at 300 ppi, with explicitly defined training and testing sets - the founding statement of the public handwriting-database practice.",
+     "domain": "dataset",
+     "lens": "L1",
+     "name": "Hull, A database for handwritten text recognition research (1994)",
+     "source_title": "Hull, A database for handwritten text recognition research (IEEE Trans. PAMI 16(5):550-554, 1994)",
+     "source_url": "http://jonathanjhull.com/plain_html_site/pubs/hull_pami94.pdf",
+     "type": "dataset",
+     "year": 1994
+    },
+    {
+     "causal_claim": "The incumbent public handwriting data practice the parent departs from: specimen forms of isolated characters and digits. The parent programme's own documents compare against it directly: 'the NIST database is based on a small vocabulary' (Zimmermann & Bunke 2001).",
+     "definition": "NIST's handwriting specimen databases (SD19, 1995, from the Handwriting Sample Form collection): isolated handwritten characters and digits from thousands of writers, distributed as the field's standard public specimen set - character-level, small-vocabulary data.",
+     "domain": "dataset",
+     "lens": "L6",
+     "name": "NIST Special Database 19 (1995)",
+     "source_title": "NIST Special Database 19 (Handwriting Sample Forms, 1995); comparison in Zimmermann & Bunke, Segmentation of the IAM off-line database (IAM-01-004, 2001)",
+     "source_url": "",
+     "type": "dataset",
+     "year": 1995
+    },
+    {
+     "causal_claim": "The era's handwriting-data exchange standard and content model: writer-organized samples with transcriptions, defined for on-line pen-trajectory data. The parent organizes its data in the era's terms, but as an off-line image database it cannot adopt the trajectory format.",
+     "definition": "UNIPEN (1994): the community standard format for exchanging on-line handwriting data (pen trajectories with transcriptions and segmentation), established under the UNIPEN project in the mid-1990s - the format lineage against which any 1990s handwriting database positioned itself.",
+     "domain": "standard",
+     "lens": "L19",
+     "name": "UNIPEN data exchange format (Guyon et al., 1994)",
+     "source_title": "Guyon et al., UNIPEN project (IWFHR 1994): a standard for on-line handwriting data exchange",
+     "source_url": "",
+     "type": "other",
+     "year": 1994
+    },
+    {
+     "causal_claim": "The era's canonical formulation of the handwriting recognition problem - its difficulties (writer variability, segmentation ambiguity, context) and its task taxonomy - that the database's design answers.",
+     "definition": "Tappert, Suen and Wakahara's 1990 IEEE PAMI survey: the canonical statement of the handwriting recognition problem at the decade's start - the reference formulation of what a recognizer must handle and, by implication, what its training data must contain.",
+     "domain": "survey",
+     "lens": "L4",
+     "name": "Tappert, Suen and Wakahara, The state of the art in on-line handwriting recognition (1990)",
+     "source_title": "Tappert, Suen & Wakahara, The state of the art in on-line handwriting recognition (IEEE Trans. PAMI 12(8), 1990)",
+     "source_url": "",
+     "type": "other",
+     "year": 1990
+    },
+    {
+     "causal_claim": "The institute employing both authors, whose acronym the database bears. Heard here on the separable-artifact test: at this parent, the artifact the institute carries would be the parent itself.",
+     "definition": "The University of Bern's Institute of Computer Science and Applied Mathematics (IAM), Horst Bunke's institute from 1984: the institutional home of the Bern handwriting-recognition programme and the source of the IAM database family's name.",
+     "domain": "institution",
+     "lens": "L21",
+     "name": "Institute of Computer Science and Applied Mathematics (IAM), University of Bern (1984)",
+     "source_title": "FKI / University of Bern IAM database documentation; Bunke biography (joined Bern 1984)",
+     "source_url": "https://fki.tic.heia-fr.ch/databases/iam-handwriting-database",
+     "type": "institution",
+     "year": 1984
+    },
+    {
+     "causal_claim": "The venue at which the parent was presented (Proc. 5th International Conference on Document Analysis and Recognition, Bangalore, pp. 705-708) - the field's arena, not an input to the artifact.",
+     "definition": "The 5th International Conference on Document Analysis and Recognition (Bangalore, 1999): the document-analysis field's principal venue, where the IAM database was first published.",
+     "domain": "venue",
+     "lens": "L18",
+     "name": "ICDAR 1999 (Bangalore)",
+     "source_title": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708; DOI 10.1109/ICDAR.1999.791885)",
+     "source_url": "",
+     "type": "other",
+     "year": 1999
+    },
+    {
+     "causal_claim": "The corpus-design model of which the LOB Corpus is the deliberate British counterpart; any channel to the parent runs through LOB's design, not through Brown's texts (the parent contains no Brown text).",
+     "definition": "The Brown Corpus (1964): the first one-million-word structured corpus of printed English (American, 15 categories), whose sampling design the LOB Corpus replicated for British English.",
+     "domain": "dataset",
+     "lens": "L3",
+     "name": "Brown Corpus (1964)",
+     "source_title": "Francis & Kucera, Brown Corpus (1964); LOB Corpus design documentation",
+     "source_url": "",
+     "type": "dataset",
+     "year": 1964
+    },
+    {
+     "causal_claim": "The coeval dual on/off-line handwriting database (Nantes, UNIPEN format), presented at the same conference as the parent (ICDAR 1999, pp. 455-458) - filed so its standing is judged; same-year as the parent.",
+     "definition": "The IRONOFF database (IRESTE, Nantes, 1999): a dual on-line/off-line handwriting database of isolated words and characters in UNIPEN format, presented at ICDAR 1999 - the parent's coeval counterpart in the online line.",
+     "domain": "dataset",
+     "lens": "L6",
+     "name": "IRONOFF database (Viard-Gaudin et al., 1999)",
+     "source_title": "Viard-Gaudin, Lallican, Knerr & Binter, The IRESTE on/off (IRONOFF) dual handwriting database (Proc. ICDAR 1999, Bangalore, pp. 455-458; DOI 10.1109/ICDAR.1999.791823)",
+     "source_url": "",
+     "type": "dataset",
+     "year": 1999
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+      "candidate": {
+       "causal_claim": "Every text in the parent is a LOB Corpus sentence: the database's forms were generated from LOB texts and filled in by writers, and its text categories are the LOB categories - content consumed verbatim.",
+       "definition": "The Lancaster-Oslo/Bergen Corpus (1978): a one-million-word corpus of printed British English in 500 text samples across 15 categories, compiled as the British counterpart to the Brown Corpus - the text source from which the IAM database's handwritten forms were generated.",
+       "domain": "dataset",
+       "lens": "L1",
+       "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+       "source_title": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (ICDAR 1999); Zimmermann & Bunke, Segmentation of the IAM off-line database (IAM-01-004, 2001): 'The text categories are defined by the Lancaster-Oslo/Bergen corpus (LOB)'",
+       "source_url": "https://fki.tic.heia-fr.ch/databases/iam-handwriting-database",
+       "type": "dataset",
+       "year": 1978
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)"
+      ],
+      "matched_node_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bunke-roth-and-schukat-talamazzini-off-line-cursive-handwrit-1995",
+      "candidate": {
+       "causal_claim": "The Bern group's segmentation-free HMM recognition line is the programme the database was built to serve: the parent's stated aim is to provide training and test data for a segmentation-free recognition system for cursive handwriting, and its ground truth was acquired only at the level of complete text lines because that system needs no word-level segmentation.",
+       "definition": "The University of Bern group's 1995 offline cursive handwriting recognizer: continuous-density hidden Markov models over sliding-window features, recognizing whole text lines without prior segmentation into words or characters - the recognition programme whose data requirements the IAM database was built to meet.",
+       "domain": "method",
+       "lens": "L2",
+       "name": "Bunke, Roth and Schukat-Talamazzini, Off-line cursive handwriting recognition using hidden Markov models (1995)",
+       "source_title": "Bunke, Roth & Schukat-Talamazzini, Off-line cursive handwriting recognition using hidden Markov models (Pattern Recognition 28, 1995); Zimmermann & Bunke (2001) on the database's original aim",
+       "source_url": "",
+       "type": "method",
+       "year": 1995
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Bunke, Roth and Schukat-Talamazzini, Off-line cursive handwriting recognition using hidden Markov models (1995)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hull-a-database-for-handwritten-text-recognition-research-19-1994",
+      "candidate": {
+       "causal_claim": "Hull's paper is the field's standard-database argument - that the replication and comparison criticisms of experimental pattern recognition 'could be answered with a standard database that contains precisely defined training and testing sets' - and its first general research database of handwritten text images (CEDAR, Buffalo; city/state names, ZIP codes, characters scanned from live mail). The parent instantiates that practice at sentence level with unconstrained vocabulary.",
+       "definition": "Jonathan Hull's 1994 CEDAR database paper: images of roughly 5,000 city names, 5,000 state names, 10,000 ZIP codes and 50,000 alphanumeric characters scanned from mail in a working post office at 300 ppi, with explicitly defined training and testing sets - the founding statement of the public handwriting-database practice.",
+       "domain": "dataset",
+       "lens": "L1",
+       "name": "Hull, A database for handwritten text recognition research (1994)",
+       "source_title": "Hull, A database for handwritten text recognition research (IEEE Trans. PAMI 16(5):550-554, 1994)",
+       "source_url": "http://jonathanjhull.com/plain_html_site/pubs/hull_pami94.pdf",
+       "type": "dataset",
+       "year": 1994
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Hull, A database for handwritten text recognition research (1994)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nist-special-database-19-1995-1995",
+      "candidate": {
+       "causal_claim": "The incumbent public handwriting data practice the parent departs from: specimen forms of isolated characters and digits. The parent programme's own documents compare against it directly: 'the NIST database is based on a small vocabulary' (Zimmermann & Bunke 2001).",
+       "definition": "NIST's handwriting specimen databases (SD19, 1995, from the Handwriting Sample Form collection): isolated handwritten characters and digits from thousands of writers, distributed as the field's standard public specimen set - character-level, small-vocabulary data.",
+       "domain": "dataset",
+       "lens": "L6",
+       "name": "NIST Special Database 19 (1995)",
+       "source_title": "NIST Special Database 19 (Handwriting Sample Forms, 1995); comparison in Zimmermann & Bunke, Segmentation of the IAM off-line database (IAM-01-004, 2001)",
+       "source_url": "",
+       "type": "dataset",
+       "year": 1995
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "NIST Special Database 19 (1995)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "unipen-data-exchange-format-guyon-et-al-1994-1994",
+      "candidate": {
+       "causal_claim": "The era's handwriting-data exchange standard and content model: writer-organized samples with transcriptions, defined for on-line pen-trajectory data. The parent organizes its data in the era's terms, but as an off-line image database it cannot adopt the trajectory format.",
+       "definition": "UNIPEN (1994): the community standard format for exchanging on-line handwriting data (pen trajectories with transcriptions and segmentation), established under the UNIPEN project in the mid-1990s - the format lineage against which any 1990s handwriting database positioned itself.",
+       "domain": "standard",
+       "lens": "L19",
+       "name": "UNIPEN data exchange format (Guyon et al., 1994)",
+       "source_title": "Guyon et al., UNIPEN project (IWFHR 1994): a standard for on-line handwriting data exchange",
+       "source_url": "",
+       "type": "other",
+       "year": 1994
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "UNIPEN data exchange format (Guyon et al., 1994)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "tappert-suen-and-wakahara-the-state-of-the-art-in-on-line-ha-1990",
+      "candidate": {
+       "causal_claim": "The era's canonical formulation of the handwriting recognition problem - its difficulties (writer variability, segmentation ambiguity, context) and its task taxonomy - that the database's design answers.",
+       "definition": "Tappert, Suen and Wakahara's 1990 IEEE PAMI survey: the canonical statement of the handwriting recognition problem at the decade's start - the reference formulation of what a recognizer must handle and, by implication, what its training data must contain.",
+       "domain": "survey",
+       "lens": "L4",
+       "name": "Tappert, Suen and Wakahara, The state of the art in on-line handwriting recognition (1990)",
+       "source_title": "Tappert, Suen & Wakahara, The state of the art in on-line handwriting recognition (IEEE Trans. PAMI 12(8), 1990)",
+       "source_url": "",
+       "type": "other",
+       "year": 1990
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Tappert, Suen and Wakahara, The state of the art in on-line handwriting recognition (1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "institute-of-computer-science-and-applied-mathematics-iam-un-1984",
+      "candidate": {
+       "causal_claim": "The institute employing both authors, whose acronym the database bears. Heard here on the separable-artifact test: at this parent, the artifact the institute carries would be the parent itself.",
+       "definition": "The University of Bern's Institute of Computer Science and Applied Mathematics (IAM), Horst Bunke's institute from 1984: the institutional home of the Bern handwriting-recognition programme and the source of the IAM database family's name.",
+       "domain": "institution",
+       "lens": "L21",
+       "name": "Institute of Computer Science and Applied Mathematics (IAM), University of Bern (1984)",
+       "source_title": "FKI / University of Bern IAM database documentation; Bunke biography (joined Bern 1984)",
+       "source_url": "https://fki.tic.heia-fr.ch/databases/iam-handwriting-database",
+       "type": "institution",
+       "year": 1984
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Institute of Computer Science and Applied Mathematics (IAM), University of Bern (1984)"
+      ],
+      "matched_node_id": "institute-of-computer-science-and-applied-mathematics-iam-un-1984",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "brown-corpus-1964-1964",
+      "candidate": {
+       "causal_claim": "The corpus-design model of which the LOB Corpus is the deliberate British counterpart; any channel to the parent runs through LOB's design, not through Brown's texts (the parent contains no Brown text).",
+       "definition": "The Brown Corpus (1964): the first one-million-word structured corpus of printed English (American, 15 categories), whose sampling design the LOB Corpus replicated for British English.",
+       "domain": "dataset",
+       "lens": "L3",
+       "name": "Brown Corpus (1964)",
+       "source_title": "Francis & Kucera, Brown Corpus (1964); LOB Corpus design documentation",
+       "source_url": "",
+       "type": "dataset",
+       "year": 1964
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Brown Corpus (1964)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:0:8",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+        "aliases": [],
+        "year": 1978,
+        "domain": "dataset",
+        "type": "dataset",
+        "definition": "The Lancaster-Oslo/Bergen Corpus (1978): a one-million-word corpus of printed British English in 500 text samples across 15 categories, compiled as the British counterpart to the Brown Corpus - the text source from which the IAM database's handwritten forms were generated.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 8,
+       "card": {
+        "name": "Brown Corpus (1964)",
+        "aliases": [],
+        "year": 1964,
+        "domain": "dataset",
+        "type": "dataset",
+        "definition": "The Brown Corpus (1964): the first one-million-word structured corpus of printed English (American, 15 categories), whose sampling design the LOB Corpus replicated for British English.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8062,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "The venue at which the parent was presented (Proc. 5th International Conference on Document Analysis and Recognition, Bangalore, pp. 705-708) - the field's arena, not an input to the artifact.",
+       "definition": "The 5th International Conference on Document Analysis and Recognition (Bangalore, 1999): the document-analysis field's principal venue, where the IAM database was first published.",
+       "domain": "venue",
+       "lens": "L18",
+       "name": "ICDAR 1999 (Bangalore)",
+       "source_title": "Marti & Bunke, A full English sentence database for off-line handwriting recognition (Proc. ICDAR 1999, Bangalore, pp. 705-708; DOI 10.1109/ICDAR.1999.791885)",
+       "source_url": "",
+       "type": "other",
+       "year": 1999
+      },
+      "reason": "dated on/after parent year 1999"
+     },
+     {
+      "candidate": {
+       "causal_claim": "The coeval dual on/off-line handwriting database (Nantes, UNIPEN format), presented at the same conference as the parent (ICDAR 1999, pp. 455-458) - filed so its standing is judged; same-year as the parent.",
+       "definition": "The IRONOFF database (IRESTE, Nantes, 1999): a dual on-line/off-line handwriting database of isolated words and characters in UNIPEN format, presented at ICDAR 1999 - the parent's coeval counterpart in the online line.",
+       "domain": "dataset",
+       "lens": "L6",
+       "name": "IRONOFF database (Viard-Gaudin et al., 1999)",
+       "source_title": "Viard-Gaudin, Lallican, Knerr & Binter, The IRESTE on/off (IRONOFF) dual handwriting database (Proc. ICDAR 1999, Bangalore, pp. 455-458; DOI 10.1109/ICDAR.1999.791823)",
+       "source_url": "",
+       "type": "dataset",
+       "year": 1999
+      },
+      "reason": "dated on/after parent year 1999"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:0:8",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+       "aliases": [],
+       "year": 1978,
+       "domain": "dataset",
+       "type": "dataset",
+       "definition": "The Lancaster-Oslo/Bergen Corpus (1978): a one-million-word corpus of printed British English in 500 text samples across 15 categories, compiled as the British counterpart to the Brown Corpus - the text source from which the IAM database's handwritten forms were generated.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 8,
+      "card": {
+       "name": "Brown Corpus (1964)",
+       "aliases": [],
+       "year": 1964,
+       "domain": "dataset",
+       "type": "dataset",
+       "definition": "The Brown Corpus (1964): the first one-million-word structured corpus of printed English (American, 15 categories), whose sampling design the LOB Corpus replicated for British English.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8062,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }
