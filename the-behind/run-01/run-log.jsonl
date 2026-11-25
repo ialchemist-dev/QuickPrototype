@@ -2344,3 +2344,56 @@
   "expansions_done": 94
  }
 }
+
+{
+ "ts": "2026-11-25T11:47:25Z",
+ "session": "run session 43 (v4), expansion 1 of 2 (recovery)",
+ "kind": "expansion",
+ "parent": "perlin-an-image-synthesizer-1985-1985",
+ "parent_name": "Perlin, An Image Synthesizer (1985)",
+ "provenance": "RECOVERY SESSION (sessions 39/42 precedent): the original session-43 agent scouted this parent and ran resolve (the graph held the expansion at stage 'resolved', judge queue 0, judgments applied) but applied NO verdicts and left no final report; graph node/edge counts were unchanged at 196/250. The recovery session audited the scout against the RUNBOOK floor discipline - every content lens (L1, L2, L4-L22) carries >=3 candidates or a dry note (19 dry/shortfall notes on file, incl. the L2 note flagging Peachey as the expected date-bound drop) - found it complete, verified the parent's stored record complete (no session-31 defect), re-grounded every evaluation in the parent paper's full text (CMU PDF), and ran evaluate/apply/verify from the stored resolution. Nothing needed re-applying; nothing was re-scouted.",
+ "raw": 23,
+ "dry_notes": "19 dry/shortfall notes on file covering every content lens under the floor. L1/L6/L19/L20 met the floor; L2 shortfall (2 filed: Cook; Peachey - dropped at resolve, see below; the parent names exactly one ancestor it modifies and one coeval twin); shortfalls at L4 (1), L5 (1), L7 (1), L9 (1), L13 (1), L21 (2), L23 (1). Dry: L8 (no dataset is consumed - the paper's point is replacing stored data with functions), L10 (no material/phenomenon is harnessed; the phenomena are simulated, not physical), L11, L12 (the PSE is the parent itself, not a layer it was built with), L14, L15, L16 (no standard implemented; the paper predates the RenderMan specification it later fed), L17 (no external benchmark registers the leap; the only comparison is the Reeves speed note, filed at L6/L23), L18, L22 (the timeliness conditions - memory-poor production machines - are carried inside the MAGI evaluation, not filed as separate candidates). Meta passes: L3 dry (surveys route through the same filings), L23 filed 1 (Gardner 1985, dropped at resolve).",
+ "date_dropped": [
+  "Peachey, Solid Texturing of Complex Surfaces (1985) - the parent's coeval twin: the two papers are coeval formulations of solid texture in a single proceedings, Peachey's pages immediately preceding the parent's, while the parent's abstract claims 'We introduce the concept of solid texture to the field of CGI.' The direct hearing assigned at RenderMan SL (session 42, where Peachey was recorded as mediated via this parent) cannot be expressed at year granularity; the simultaneity is the multiples fact of the parent's own leap. No re-dating attempted.",
+  "Gardner, Visual Simulation of Clouds (1985) - same-year filing (L23), dropped by the bound; the 1984 Gardner paper was evaluated on its own record."
+ ],
+ "distinct": 21,
+ "evaluated": 21,
+ "survivors": 2,
+ "rejected": 19,
+ "mediated": [
+  "Mandelbrot, The Fractal Geometry of Nature (1982) - mediated via Fournier, Fussell & Carpenter, Computer Rendering of Stochastic Models (1982): Mandelbrot is not cited anywhere in the parent; the fractal stratum reaches the paper only through its cited carriers/contrasts ([5], [14])."
+ ],
+ "survivors_detail": [
+  {
+   "name": "Cook, Shade Trees (1984)",
+   "kind": "LINK (existing node)",
+   "score": 6.0,
+   "argument": "The ancestor modified, on the parent's own text: 'Cook [1] has proposed an expression parser for this purpose. We have taken the same idea somewhat farther by providing an entire high level programming language available at the pixel level. Unlike [1], the PSE contains general flow of control structures.' The parent's stored prior_state names Cook's formulation as its departure point. Q3 capped partial on multiples (Peachey coeval, Williams parallel); verification's mediation attack (via Ferraro / via the 1984 notes) refused on the components discrimination."
+  },
+  {
+   "name": "Ferraro, functional composition for texture (personal communication, c. 1984)",
+   "kind": "NEW node, depth 9",
+   "score": 3.5,
+   "argument": "The person-carried hearing, admitted narrowly on the child's own testimony: 'Mike Ferraro originated the crucial concept of using functional composition to create texture [13]. Much of this paper has its roots in his powerful idea.' The abstract states that concept as the work's first principle. Components discrimination vs Cook: Cook channels the language-side formulation, Ferraro the founding design concept. Discriminated from the Darwin-counsel precedents: counsel points at an instance; this communication supplied the design principle itself (the Lashley shape). FLAGGED MOST CONTESTABLE in its verification record, with a re-hearing condition: any dated document showing Perlin composing functions for texture before contact with Ferraro, or the concept arriving via Cook 1984, kills the edge."
+  }
+ ],
+ "rejections_of_note": [
+  "Blinn, Simulation of Wrinkled Surfaces (1978) - directness PASS, leap-gate fail (the ISL-at-RTSL shape): 'Dnoise() provides a simple way of specifying normal perturbation [7]' - a component technique genuinely consumed by the parent's machinery, not the leap's predecessor.",
+  "Blinn, A Generalization of Algebraic Surface Drawing (1982) - fail-closed partial: 'we have generalized on the work of Blinn [15]' reaches the closing stochastic-shapes coda, not the leap (the Legendre-at-Laplace shape).",
+  "Porter & Duff (1984) - fail-closed partial: the PSE 'as a digital image compositor... functions as a generalization of [10]' - a component application the parent subsumes.",
+  "Fournier, Fussell & Carpenter (1982) and Voss (1983) - defined-against: 'Unlike subdivision based [5] or Fourier space [14] fractal simulations, the above algorithm proceeds independently at all sample points.'",
+  "Perlin, A Unified Texture/Reflectance Model (1984) - own-version refusal: the author's seminar formulation of the same work (Heckbert cites it AS the reference for the parent's approach); formation, not a separable artifact consumed.",
+  "Perlin, the Noise function as developed at MAGI (1983) - own-formation refusal (a node cannot be its own predecessor): the parent is the 1983 mechanism's publication; the 1983 date is logged for the article (the ICS-8506 shape), never used to re-date the parent.",
+  "MAGI SynthaVision (1972) - institution refused by decomposition: the separable artifact (the CSG renderer) is not consumed; what MAGI carried is conditions and formation (Tron's machine-like look as provocation, memory-poor machines that 'couldn't fit detailed texture images into memory', facilities thanked in the acknowledgements), recorded in full on the evaluation.",
+  "Max (1981) - fail-closed partial: negative space at example scale (the water section's diagnosis-and-fix is built from the parent's own Dnoise). Sverdrup et al. (1942) - one exponent in one example (Dphase proportional to f^1/2). Marr (1982) - fail-closed partial: design rationale for band-limited noise, no derivation runs on it (Hochreiter condition). K&R C (1978) - statement form (Booth discrimination). Reeves (1983) - compared alternative, multiples evidence. Gould SEL 3287 (1983) - substrate tests run and failed on the paper's own machine-independence statements; generic plant. Courant Institute - self-carriage/formation. Williams (1984) - multiples, filed by the parent itself ('pursuing a similar line of research'). Gardner (1984) - 2D-domain incumbent. Schachter (1980) - survey-sentence citation, no mechanism taken."
+ ],
+ "notes": "Two survivors (one LINK, one NEW at depth 9), one mediated rejection. The graphics line now runs HLSL <- RTSL <- RenderMan SL <- Perlin <- {Cook 1984 (also SL's ancestor - convergence), Ferraro c.1984}. Cook now has two children in the shading line (SL and the parent). The InstructGPT/RLHF flag did not surface.",
+ "totals_after": {
+  "nodes": 197,
+  "edges": 252,
+  "budget": 197,
+  "expansions_done": 95
+ }
+}
