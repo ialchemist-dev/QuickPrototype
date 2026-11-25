@@ -2667,3 +2667,49 @@
   "expansions_done": 100
  }
 }
+{
+ "ts": "2026-11-25T05:50:17-07:00",
+ "session": "run session 46 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "gsm8k-benchmark-of-math-word-problems-cobbe-et-al-2021-2021",
+ "parent_name": "GSM8K benchmark of math word problems (Cobbe et al., 2021)",
+ "provenance": "Parent stored record verified COMPLETE this session (no session-31 defect): definition, bottleneck, leap, prior_state all present. Grounding from the parent paper's own full text (Cobbe et al., 'Training Verifiers to Solve Math Word Problems', arXiv:2110.14168, read via ar5iv HTML): Sec.2 design principles (human writers, agreement QC <2% breaking errors, anti-template diversity, moderate difficulty, natural-language solutions); Sec.3.1 dataset survey; Appendix A production pipeline (Upwork seed tranche, Surge AI scale-up, re-solving QC with 1.7% residual disagreement, seed questions 'automatically generated from a few-shot prompted 175B GPT-3 model', pairwise-similarity policing); Appendix C calculator annotations machine-generated. Two grounding corrections recorded: (1) ASDiv's year is 2020 (Miao, Liang & Su, ACL 2020) - the parent paper cites it as '(Miao et al., 2021)' but the artifact's publication year is 2020; filed at 2020, never re-dated. (2) SVAMP (Patel et al., 2021) appears NOWHERE in the parent paper (verified by full-text search) - the shallow-heuristics diagnosis is real and proximate but undocumented as a channel in the child.",
+ "raw": 51,
+ "dry_notes": "16 dry/shortfall notes covering every lens under the floor of 3: L10, L12, L14, L18 fully dry (a text dataset has no material, no programmability layer, no apparatus; its one observation instrument - the pairwise-similarity computation - is an unnamed in-house script, recorded in the L18 note rather than filed under an invented name); shortfalls on L5 (2 filings, both same-year), L7 (2, both cross-filings), L8 (1 filing - by design the corpus consumes almost no external data; the GPT-3 seed stream is the only documented external data input), L9 (1, cross-filed), L13 (2 - Appendix A names exactly two platforms), L15 (2, cross-filings; Hosted LLM APIs deliberately NOT filed - the paper does not say the seed generation ran through the public API), L16 (2, cross-filings), L17 (2, cross-filings), L19 (2), L20 (2), L21 (1 - exactly one producing institution, no external funder in the documents), L22 (2).",
+ "date_dropped": 5,
+ "distinct": 24,
+ "evaluated": 24,
+ "survivors": 2,
+ "rejected": 22,
+ "mediated": 8,
+ "survivors_detail": [
+  {
+   "name": "ASDiv (Miao et al., 2020)",
+   "id": "asdiv-miao-et-al-2020-2020",
+   "is_new": true,
+   "score": 5.0,
+   "decisive": "The ancestor-modified relation in the parent's own words (Sec.3.1): 'We share those design principles in the creation of GSM8K. However, we note that GSM8K is larger, provides natural language solutions, and consists of problems that on average require more steps to solve.' Citation + instantiation: the diversity criterion is enforced during production (pairwise similarity fed back to writers, Appendix A) and the quality criterion by the re-solving agreement protocol (1.7% residual disagreement). Mediation attacks (via MAWPS, via the 2021 MathQA analysis) answered in the edge record and again in verification. Admitted at depth 3."
+  },
+  {
+   "name": "Large-scale pretraining (GPT-3)",
+   "id": "large-scale-pretraining-gpt-3-2020",
+   "is_new": false,
+   "score": 4.5,
+   "decisive": "LINK on two documented channels: (i) production consumption - Appendix A's seed questions were 'automatically generated from a few-shot prompted 175B GPT-3 model' and placed in the writers' hands (usable directly, as inspiration, or ignored); (ii) calibration - the 'moderate difficulty' bracket and the headline measurement are defined by GPT-3-family finetuned solve rates. Discriminated from TensorFlow Datasets at FLAN: the seed stream is this corpus's specific starting material (not a generic pantry), and the calibration channel is independent of the seeds. Q3 scored partial honestly (writers could write unaided)."
+  }
+ ],
+ "rejections_of_note": [
+  "AQuA-RAT (2017) REFUSED - the expansion's strongest refusal: it pioneered natural-language solutions at scale, but the parent's text frames it purely as the flaw ('a high degree of problem templatization and poor quality control of the natural language solutions'), never as the format's source; the NL worked solution has an older, larger carrier (the textbook worked-example tradition - era condition, no single artifact); what the parent demonstrably took from a named predecessor is ASDiv's criteria. RE-HEARING CONDITION recorded in the evaluation: an author statement or production document showing GSM8K's solution style modelled on AQuA's rationales reopens the hearing.",
+  "MAWPS, Kushman et al. (2014), Roy & Roth (2015), AddSub (2014) and STUDENT (Bobrow, 1964) all recorded MEDIATED VIA ASDiv - the cited-final-link rule: the parent's text engages the prior-datasets stratum only through the criteria discussion whose terminal artifact is ASDiv (and never names MAWPS at all). Math23K mediated via Ape210K (its successor, the corpus the parent actually engages). In-context learning and Kaplan scaling laws mediated via GPT-3 (mechanism and programme framing carried inside the admitted artifact's use).",
+  "Procgen (Cobbe et al., 2020) FAIL-CLOSED PARTIAL - the expansion's most contestable refusal: same first author, identical doctrine (enforced variation defeats memorization), but the Ferraro channel at Perlin required the CHILD's own testimony carrying the concept; no sentence in the parent names Procgen, and the in-family document channel (ASDiv) exists and is admitted. RE-HEARING CONDITION recorded: any author statement tying GSM8K's diversity design to the Procgen experience reopens it.",
+  "Surge AI FAIL-CLOSED PARTIAL (named and used in Appendix A, but fungible - the TensorFlow Datasets shape: workforce logistics, the pantry not the ingredient); Upwork refused (seed tranche only, most fungible). SNLI FAIL-CLOSED PARTIAL (the write-then-validate recipe is era-generic and multiply carried; unlike T5's recipe at FLAN it is instantiated-in-resemblance only, never cited). Riley, Greeno & Heller (1983) FAIL-CLOSED PARTIAL (the genre's scholarly form, but the parent cites no mathematics-education literature - genre as era condition, the Weldon discrimination).",
+  "Dolphin18K REFUSED as defined-against, with the scale claim failing on the numbers (the parent's 8.5K is SMALLER than Dolphin18K's 18K - scale was traded for quality, not inherited). Ape210K refused as a compared multiple (the parent measures itself against it and states it cannot use it). Nichols et al. (2020) REFUSED ON SCOPE: it is an ancestor of the sibling verifier node's method (Sec.3.2), not of the dataset artifact - the session-27 method/dataset discrimination assigns it to Training verifiers' own expansion. OpenAI refused as self-carriage (the parent is the institution's own artifact; its separable carriage, GPT-3, was heard directly).",
+  "DATE-DROPPED at resolve (5, all the parent's own year 2021, logged for the article): SVAMP (the shallow-heuristics diagnosis - real, proximate, and NOT cited by the parent), the MATH dataset (the parent's introduction leans on it twice - the faltering-models diagnosis and the too-hard bracket), Training verifiers (the sibling node from the same paper), Generate & Rank (Shen et al., named concurrent work), HumanEval (the same lab's sibling benchmark, shared co-author). The pattern is the ChatGPT/FLAN one: the parent's entire diagnosis cohort shares its year, so its ancestry attaches one level deeper - to the criteria document (ASDiv, 2020) and the production artifact (GPT-3, 2020)."
+ ],
+ "notes": "Two survivors: one NEW (ASDiv, depth 3, 5.0) and one LINK (GPT-3, 4.5). Adversarial verification run on both edges (multiples test, Q1 attack, date/direction, mediation attack - for GPT-3 the ICL mediation attack was tried and answered by the reverse assignment: the mechanism is recorded as mediated via the artifact); both outcomes provisional, no mediation actions. Structural note for the article: this is the first dataset parent in the run whose ancestry is dominated by a CRITERIA document rather than a data artifact - the lineage's problems, formats and recipes were all refused or mediated, and what passed the gate was a standard of corpus quality plus the model the corpus was built against. The InstructGPT/RLHF flag did not surface at this parent.",
+ "totals_after": {
+  "nodes": 203,
+  "edges": 261,
+  "expansions_done": 101
+ }
+}
