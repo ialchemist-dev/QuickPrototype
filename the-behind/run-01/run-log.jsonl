@@ -3380,3 +3380,45 @@
   "expansions_done": 116
  }
 }
+{
+ "ts": "2026-11-25T09:05:00-07:00",
+ "session": "run session 54 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "self-aligned-double-gate-finfet-device-formulation-hu-et-al-2000",
+ "parent_name": "Self-aligned double-gate FinFET device formulation (Hu et al., IEEE TED 2000)",
+ "provenance": "Parent stored fields verified COMPLETE before evaluation (no session-31 defect): definition, bottleneck, leap (formulation arc IEDM 1998 -> Huang 1999 -> TED 2000) and prior_state all present; neither parent of this session had prior rejections. Grounding from the TED 2000 paper's own text (abstract + body): 'Based on the DELTA structure [10], after reduction of the vertical feature height, the gate-channel-gate stacked structure is realized'; starting material an SOI wafer (400 nm buried oxide, 50 nm Si film, synthesis route unnamed); 'the elevated S/D process first applied on DELTA [11]'; boron-doped Si0.4Ge0.6 gate for threshold voltage. The FinFET patent (US 6,413,802, filed 23 Oct 2000) names SIMOX only as an example ('e.g., SIMOX') and cites DELTA, the folded-channel paper, Huang 1999, Subramanian UTB 1999 and Auth 1996. DARPA's 1997 contract was awarded 'to develop a deep sub-micron transistor based on DELTA technology' (Wikipedia FinFET history; O'Reagan & Fleming 2018: 10-12 scaled-MOS proposals received, Berkeley's judged most thorough). All five session-53 mediations into this stratum were given direct hearings: DELTA ADMITTED; Frank-Taur-Wong fail-closed partial; Hisamoto's move mediated via DELTA; the DARPA contract fail-closed partial; Hu's TSMC CTO move (2001) POSTDATES the 2000 parent - its session-53 mediation pointed at 16FF+ (2015), not at this parent, so at this parent it is a direction finding, not a hearing: the channel runs parent -> Hu -> TSMC, downstream. The InstructGPT/RLHF carried flag did not surface.",
+ "raw": 38,
+ "dry_notes": "filed for all 23 lenses: 8 met (L1, L2, L4, L5, L6, L10 + L19), 9 shortfall with specific findings (L7, L11, L14, L17->dry, L18, L20, L21, L22, L23), dry: L8 (no dataset - device paper), L9 (parent IS the machine change; modified machine at L6), L12 (no programmability layer), L13 (TCAD unnamed in the paper), L15 (no services), L16 dry WITH the standards-lens inversion (parent implements no external standard; roadmaps filed at L4/L22), L3 (surveys postdate the parent by decades - used as sources, not candidates)",
+ "date_dropped": 1,
+ "distinct": 35,
+ "evaluated": 35,
+ "survivors": 1,
+ "rejected": 34,
+ "mediated": 4,
+ "survivors_detail": [
+  {
+   "name": "DELTA fully-depleted lean-channel transistor (Hisamoto et al., Hitachi CRL, 1989)",
+   "id": "delta-fully-depleted-lean-channel-transistor-hisamoto-et-al-1989",
+   "is_new": true,
+   "score": 6.5,
+   "decisive": "Citation + instantiation in the strongest textual form the run has: the parent paper states 'Based on the DELTA structure' and records its elevated S/D process as DELTA's; the DARPA contract that assembled the parent group was awarded for a transistor 'based on DELTA technology'; the inventor is the same person. DELTA's vertical ultrathin fully depleted lean channel is consumed and reworked (tall pillar reduced to the quasi-planar fin; two side gates made one self-aligned gate). Q3 partial on multiples (GAA 1990, Auth 1996) - the same cap Intel/Samsung placed on the formulation's own Q3 at 16FF+."
+  }
+ ],
+ "rejections_of_note": [
+  "Frank-Taur-Wong generalized scale length (1998) - fail-closed partial, the assigned theory hearing: the design rule the fin geometry instantiates, but no citation or instantiation is confirmed in the TED paper, whose documents ground the fin-thickness choice in DELTA's geometry and the group's own devices; a design rule in the air is not a consumed rule (Hochreiter condition). RE-HEARING CONDITION: dies if the TED reference list is shown to cite Frank, Taur & Wong 1998 AND its design discussion uses the generalized scale length to set the fin thickness. Yan (1992) and Suzuki (1993) mediated via it - the chain carried by its final link.",
+  "DARPA contract (1997) - fail-closed partial, the assigned institutional hearing: the counterfactual is the strongest of any funding filing in the run (no contract, no Hisamoto-at-Berkeley in 1997), but funding enabled the work without being inside the device, and the parent acknowledges support rather than instantiating a contract artifact (OpenPOWER discriminated: there the ecosystem was part of the product's own definition). The solicitation (1996) judged consistently as the same vehicle. RE-HEARING CONDITION: the Berkeley proposal's own text, if produced, showing the device direction specified in terms the TED paper instantiates.",
+  "Hisamoto's move to Berkeley (1997) - mediated via DELTA with FULL-STRENGTH scores recorded: the Ferraro discrimination applied exactly as at 16FF+ - where the separable artifact exists and is admitted, the person is recorded as the artifact's carriage, not as a second node.",
+  "The parent's own arc papers - folded-channel (IEDM 1998) and Huang sub-50nm PMOS (IEDM 1999) - refused on IDENTITY with full-strength scores: the parent node is defined over the 1998-2000 arc (its stored leap text names both), so they are its own first forms, not predecessors (16FF at 16FF+ shape).",
+  "Poly-SiGe gate electrode (King line) - directness PASSES (named in the parent's abstract as the Vt solution) and still fails the leap gate: consumed-as-component (Blinn-1978-at-Perlin branch of the components discrimination).",
+  "The SOI material stratum refused route by route on a fungibility finding: SIMOX (1978), BESOI/Lasky (1986), Smart Cut (1995) all fail-closed partial - the TED paper names no synthesis route ('a SOI wafer'), the patent names SIMOX only as an example ('e.g.'), and three routes coexisted in 2000; the material stratum is presupposition (Walsh & Herzog workpiece discipline). Silicon-on-sapphire (1964) refused as the stratum's root (origin is not ancestry when carriers intervene).",
+  "GAA (Colinge 1990) and Auth surrounding-gate pillars (1996) - fail-closed partials as parallel carriers/multiples: GAA's own later patent record states its gates 'are not self-aligned and have poor scaling characteristics' - the parent's leap is precisely the form GAA lacked. XMOS (1984) and Farrah & Steinberg (1967) refused as anticipation without a junction; Balestra volume inversion (1987) fail-closed partial as the phenomenon-side filing (physics inside the parent's regime, no documentary leg).",
+  "Roadmaps refused as requirement specifications (NTRS 1997, ITRS 1999 - judged DIFFERENT artifacts, successive editions, same ground); Taur (1997) and Wong (1999) fail-closed partial as the diagnosis stratum (Hochreiter); the non-self-aligned DG fabrication record fail-closed partial as the failure record the self-alignment dissolves; PD-SOI refused as defined-against inside the SOI family; planar bulk incumbent refused as defined-against.",
+  "Date-dropped (1): the FinFET patent (filed Oct 2000) - the parent's OWN year, the calendar pre-empting the operative-carrier hearing it received at 16FF+; logged as the parent's own legal form, coeval with the paper it protects."
+ ],
+ "notes": "One survivor, and it is the hearing the whole stratum pointed at: DELTA is the third node in this run admitted on a paper's own basis sentence (after Galton 1889 at Pearson and RFC 2396 at Namespaces' citation+instantiation class). Structural finding for the article: the formulation's ancestry is a single deep root (DELTA, 1989) plus four refused strata, each refused on a different rule - theory (scale length, unconfirmed citation), phenomenon (volume inversion, no documentary leg), material (SOI, fungible presupposition), institution (DARPA, funding not inside the result) - and its own arc papers refused on identity. The device tree's shape here is a taproot, not a fan. Verification: multiples (GAA, Auth) cap Q3; mediation attacks via the 1998 arc paper (identity), via Hisamoto (artifact-first carriage), and via the DARPA contract (names the artifact, strengthens the edge) all fail. New frontier head after this expansion: DELTA itself (depth 5, priority 6.5), then 20SoC. Checkpoint sync a25b7388 landed BEFORE this record was appended; the record rides the expansion-2 checkpoint sync, and both records' presence in the remote blob is verified in the expansion-2 record.",
+ "totals_after": {
+  "nodes": 222,
+  "edges": 286,
+  "expansions_done": 117
+ }
+}
