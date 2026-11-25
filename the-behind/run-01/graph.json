@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T07:22:36+00:00",
-  "expansions_done": 61,
-  "raw_candidates_seen": 3047,
+  "updated_at": "2026-11-25T07:30:28+00:00",
+  "expansions_done": 62,
+  "raw_candidates_seen": 3066,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -14733,6 +14733,81 @@
     "name": "Norwegian Computing Center",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T07:22:24+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "KiddiKomp (Kay)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "Planner",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "JOSS",
+    "reason": "mediated_via: FLEX language and machine (Kay)",
+    "at": "2026-11-25T07:30:11+00:00",
+    "mediated_via": "FLEX language and machine (Kay)"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "Euler",
+    "reason": "mediated_via: FLEX language and machine (Kay)",
+    "at": "2026-11-25T07:30:11+00:00",
+    "mediated_via": "FLEX language and machine (Kay)"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "Burroughs B5000",
+    "reason": "mediated_via: FLEX language and machine (Kay)",
+    "at": "2026-11-25T07:30:11+00:00",
+    "mediated_via": "FLEX language and machine (Kay)"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "GRAIL",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "NLS (Engelbart's Augment)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "Data General Nova",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "BASIC",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "Smalltalk-71 (Kay)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "Xerox PARC",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
+   },
+   {
+    "parent_id": "smalltalk-72-1972",
+    "name": "ARPAnet",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:30:11+00:00"
    }
   ]
  },
@@ -17017,8 +17092,8 @@
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Adversarial pass for the Smalltalk-80 edge specifically (session 15): attack - the channel is the creator's formation (Kay's HOPL dedication), not the parent book's text, which foregrounds Simula; Q11 was accordingly scored partial, not pass. The consumed content is specific (resident inspectable image, automatic storage management, interactive redefinition - the Blue Book's virtual image is that world rebuilt from objects), which distinguishes it from a bare dedication mention (contrast JOSS, rejected at this parent). Edge stands, provisional.",
-    "at": "2026-11-25T04:50:21+00:00"
+    "notes": "Mediation attack: could the eval channel have reached the parent through FLEX, Kay's own kernel language? Answered on chronology and documents: Kay's Lisp encounter (the 1.5 manual) belongs to his pre-FLEX formation, FLEX itself is documented as Euler-like rather than Lisp-derived, and the parent's interpreter design (HOPL Appendix II) is presented as a fresh construction on the eval pattern. Attack fails. Multiples: none for the artifact. Q1 stays partial (shared flip) - outcome provisional, as with every edge in this run.",
+    "at": "2026-11-25T07:30:28+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T03:58:48+00:00"
@@ -17861,8 +17936,8 @@
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Adversarial pass (session 16): identity/date verified (presented 1967; Common Base Language 1968). Mediation attack (via Smalltalk-72: the line already had classes, so Simula arrives inside -72): rebutted on the mechanism record - -72's classes parsed their own incoming messages, a different mechanism from Simula's; what -76 ADOPTED - subclassing with inheritance under the class/instance notion - is precisely the SIMULA notion the -76 paper's introduction names as its point of departure. The adoption event is at this parent, so the channel is direct here even though Simula also holds an edge at Smalltalk-80 on that parent's preface. Edge stands, provisional.",
-    "at": "2026-11-25T05:02:16+00:00"
+    "notes": "Mediation/identity attack - the expansion's most serious: Kay's documented 1966 encounter was with Simula I-era material (an ALGOL program whose documentation 'read like Norwegian translated into English'), before Simula 67 existed; does the edge belong to Simula I? The attack partially lands and is recorded. It does not move the edge: what the parent generalizes is the class as a general construct - Simula 67's published form (1967), available to Kay for five years before the -71 bet - while Simula I's activities are simulation-bound, the confinement the parent's prior_state itself names. Kay's HOPL dedication says 'SIMULA' undifferentiated. The graph now also carries Simula I -> Simula 67, so the lineage is connected on either reading; outcome provisional, capped by this attack.",
+    "at": "2026-11-25T07:30:28+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T04:50:06+00:00"
@@ -17923,8 +17998,8 @@
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Adversarial pass (session 15): identity/date verified (Sutherland, MIT thesis, January 1963; masters/occurrences and constraint maintenance). Channel attack (formation-only, like JOSS): distinguished on the record - Kay names Sketchpad a direct inspiration for object-oriented programming, and the consumed content is identifiable in the parent (master/instance as class/object; direct manipulation as the environment's premise), where JOSS contributes no identifiable mechanism. Edge stands, provisional.",
-    "at": "2026-11-25T04:50:21+00:00"
+    "notes": "Attack: milieu vs mechanism - Kay was in Sutherland's Utah circle, and no Smalltalk-72 document cites a Sketchpad mechanism by name. Partially lands: the channel rests on the author's own lineage statement (the HOPL dedication, Sketchpad named first among the four conceptions) plus the identifiable master/instance form in the parent's object model, not on a citation inside the interpreter's design. That is the documented-consumption standard this run accepts for design descent (cf. Self at Smalltalk), but it is weaker than a textual citation - outcome provisional.",
+    "at": "2026-11-25T07:30:28+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T04:50:06+00:00"
@@ -18004,7 +18079,7 @@
    "prior_state": "Simula's class construct confined to simulation; Lisp environments; no object language.",
    "status": "provisional",
    "depth": 7,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -19000,6 +19075,54 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T07:22:24+00:00"
+  },
+  "logo-1967": {
+   "id": "logo-1967",
+   "name": "Logo",
+   "aliases": [],
+   "year": 1967,
+   "domain": "programming languages",
+   "type": "other",
+   "definition": "Feurzeig, Papert & Solomon's language for children (BBN, 1967): an interactive, radically simple language (turtle geometry) proving children could program and think with computers.",
+   "bottleneck": "Before Logo, programming was held to be an adult professional skill; no working language existed that a child could use to think with.",
+   "leap": "Logo proves the demand and the possibility: children programming as a medium for learning - the audience and the standard of simplicity every later children's language is measured against.",
+   "prior_state": "Drill-and-practice computer-aided instruction; BASIC in a few schools.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 3.5,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Attack: problem-formulation admissions are this run's softest class - is Logo merely admired milieu (the Papert dedication) rather than a channel? Partially lands and is recorded: no Logo mechanism is consumed, by design of the evaluation. The edge stands on the problem side: the LRG's founding brief (a language children think in, simple enough for a one-page definition) is the demand Logo had already made real and measurable, and Kay's engagement with Papert is documented personally, not just bibliographically. Outcome provisional; this is the expansion's most contestable admission alongside the Simula 67 identity question.",
+    "at": "2026-11-25T07:30:28+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:30:11+00:00"
+  },
+  "flex-language-and-machine-kay-1969": {
+   "id": "flex-language-and-machine-kay-1969",
+   "name": "FLEX language and machine (Kay)",
+   "aliases": [],
+   "year": 1969,
+   "domain": "programming languages",
+   "type": "other",
+   "definition": "Kay's extensible kernel language and personal machine (notes 1967; MSc 1968; PhD thesis 'The Reactive Engine', Utah, 1969): an Euler-like, interactive, self-extending language with object-oriented aspects, designed to be executed directly by a small personal computer; compiled by others for the Univac 1108 and the SDS 940.",
+   "bottleneck": "Before FLEX, no design joined a small extensible interactive language to a personal machine that executes it directly: languages belonged to institutions' batch and timesharing systems.",
+   "leap": "FLEX: a language as the kernel of a personal computer - interactive, extensible by its users, with objects avant la lettre; the design stock (and the research programme) Kay carried to PARC.",
+   "prior_state": "JOSS-style timesharing interactivity without extensibility; Euler without a machine; batch personal computing nonexistent.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 3.0,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Own-version attack, the strongest available against this edge: FLEX is the same author's earlier system, so is it the parent's draft rather than its predecessor? Recorded in full in the evaluation and answered there: FLEX is a separable published artifact (1967 note; 1968 MSc; 1969 PhD thesis 'The Reactive Engine'), implemented by other hands on other machines (Gouraud's compiler for Engelbart's SDS 940; Newman's mini-FLEX on the PDP-9 serving four users), in a different lineage (Euler/ALGOL) from the parent's message-passing design - the Simula-I-at-Simula-67 shape. The attack still caps the outcome at provisional: the mechanisms consumed are design stock (extensible kernel, interactivity, language-as-machine-kernel), not a named procedure. Multiples test: none. Date/direction: 1967-69 precedes 1972; direction is the author's own HOPL periodization.",
+    "at": "2026-11-25T07:30:28+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:30:11+00:00"
   }
  },
  "edges": [
@@ -36986,6 +37109,491 @@
     "counterfactual": "Remove Dahl's free store and the parent's leap collapses to ordinary ALGOL: processes are block instances that exist independently of the stack, and without the store there is no such existence - the ACM record dates the package's completion to May 1963, before the language design phase closed (March 1964), i.e. it is a separable, separately presented artifact the design then consumed, not a restatement of the leap.",
     "mediator": null,
     "evidence": "Dahl 2001: 'a new storage management system was developed based on a list structured free store' as the precondition for profiting from block structure; ACM Turing additional materials: Dahl's 'alternative storage management package based on a two-dimensional free area list' 'made possible the Simula class', completed by May 1963."
+   }
+  },
+  {
+   "predecessor_id": "lisp-1960",
+   "successor_id": "smalltalk-72-1972",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The flip is shared: Lisp flipped computation from numeric batch to symbolic interaction, but the parent's own flip is objects - partial.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The space the parent presupposes - interactive, dynamic, symbolic systems built by extending a tiny kernel - is the space Lisp opened; Smalltalk-72 is unthinkable as a 1972 artifact without it.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: Simula supplied the object idea, but the parent's interpreter model (a page-sized semantics, objects interpreting token streams) is Lisp's eval idea, and Kay's record names the Lisp 1.5 manual as a formative revelation - no other source carries that channel.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to Lisp in the parent's own record.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Lisp supplies no metric registering the parent's leap.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Eval/apply is the explanatory model the parent's design is a transformation of: a language's whole meaning in a page - Kay's bet that Smalltalk could be defined on one page is that idea, re-aimed at message passing.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability is a pass: Lisp is the era's composable substrate (symbolic expressions, dynamic extension) whose culture of building languages inside a language the parent inherits wholesale.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach is a pass: Lisp reached AI, education and systems; within this parent it carries a language for children, a domain far from its home.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: Lisp's interactive immediacy is the tempo the parent adopts, though the record does not isolate it as Lisp's gift rather than JOSS's.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: within the parent's practice, Lisp environments are the incumbent the new object language both grows from and replaces at PARC's LRG.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality is a pass: Kay's own HOPL dedication names Lisp among the four great conceptions of the sixties, and the parent's stored prior_state itself names 'Lisp environments'.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility is a pass: the parent's dynamic, late-bound, image-like world is Lisp's baseline made permanent in the object line.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:30:11+00:00",
+   "leap": {
+    "prior_state": "Simula's class construct confined to simulation; Lisp environments; no object language: programming meant procedures acting on passive data in batch or timeshared systems, and the languages a child could think in (Logo) had no objects at all.",
+    "jump": "Smalltalk-72 (Kay's design, implemented by Dan Ingalls in about 700 lines of BASIC on a Data General Nova, October 1972): the first working Smalltalk - a small language of communicating objects whose classes parse their own incoming messages, evaluated by a token-stream interpreter; everything is an object, and the whole language fits the one-page definition Kay had bet on.",
+    "date": 1972
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Lisp and the parent's construction loses its interpreter: Smalltalk-72's token-stream design, in which each object interprets its own incoming messages, is Kay's reworking of the eval insight he documents from the Lisp 1.5 manual - a page-sized universal semantics - and the parent's own stored prior_state names Lisp environments as its starting point.",
+    "mediator": null,
+    "evidence": "Kay HOPL-II names Lisp one of 'the four great programming conceptions of the sixties' (dedication) and recounts the manual's eval/apply as a formative revelation; the parent node record (admitted at Smalltalk-76) carries 'Lisp environments' in its prior_state."
+   }
+  },
+  {
+   "predecessor_id": "simula-67-1967",
+   "successor_id": "smalltalk-72-1972",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The flip is shared: Simula made objects exist in a language; the parent's flip is making them everything, in a general medium - partial.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Simula's class idea, freed from simulation, is exactly the space the parent opens: Kay's -71 bet was explicitly 'a programming language based on the idea of message passing inspired by Simula' - the generative seed is documented, not inferred.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: Sketchpad also carried an object idea to Kay, so Simula is not the sole possible source - but it is the documented linguistic source, encountered by Kay at Utah in 1966.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to Simula 67 in the parent's record.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Simula supplies no metric registering the parent's leap.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Understanding is a pass: the class - a kind bundling state with procedures, with instances - is the explanatory model the parent radicalizes (in -72 the class itself becomes an object that parses its own messages).",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: -72 deliberately does NOT adopt Simula's class/inheritance execution model (that adoption is Smalltalk-76's documented move), so what composes here is the object idea, not Simula's machinery.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach is a pass: a simulation language's construct carried, via this parent, into a general medium for children and personal computing.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Simula changed no iteration speed available to the parent.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: the parent displaces Simula's framing (classes confined to simulation) while standing on its construct.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality is a pass: Kay's HOPL dedication names Simula among the four great conceptions, and the parent's stored prior_state opens with 'Simula's class construct confined to simulation'.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility is a pass: after -72 the class idea never returns to simulation-only confinement in this lineage.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:30:11+00:00",
+   "leap": {
+    "prior_state": "Simula's class construct confined to simulation; Lisp environments; no object language: programming meant procedures acting on passive data in batch or timeshared systems, and the languages a child could think in (Logo) had no objects at all.",
+    "jump": "Smalltalk-72 (Kay's design, implemented by Dan Ingalls in about 700 lines of BASIC on a Data General Nova, October 1972): the first working Smalltalk - a small language of communicating objects whose classes parse their own incoming messages, evaluated by a token-stream interpreter; everything is an object, and the whole language fits the one-page definition Kay had bet on.",
+    "date": 1972
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Simula and Kay's own account of the parent's origin collapses: the bet that produced the design was a bet about a message-passing language 'inspired by Simula', and the encounter is documented (Utah, 1966, analyzing an ALGOL program that proved to be Simula). The consumption is the class/object idea itself - discriminated from the execution model, which -72 pointedly did not take (Smalltalk-76 did).",
+    "mediator": null,
+    "evidence": "Kay HOPL-II: dedication to 'SKETCHPAD, JOSS, LISP and SIMULA, the four great programming conceptions of the sixties'; Wikipedia's summary of the same record: Smalltalk-71 'created by Kay in a few mornings on a bet that a programming language based on the idea of message passing inspired by Simula could be implemented in a page of code', and Smalltalk-76 later created 'by adopting a Simula-like class inheritance model of execution' - i.e. -72 had not adopted it."
+   }
+  },
+  {
+   "predecessor_id": "logo-1967",
+   "successor_id": "smalltalk-72-1972",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The flip is shared: Logo flipped who may programme (children), not what a programme is made of - partial.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Logo opened the space the parent exists to fill: a real language as a child's medium for thought. Smalltalk-72's defining constraints - one page, total simplicity, interactivity - are answers to the demand Logo posed and proved.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the Dynabook/KiddiKomp vision also posed the demand from Kay's side; Logo is the working existence proof that made the demand concrete rather than utopian.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to Logo in the parent's record.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Logo supplies no metric registering the parent's leap.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: Logo's model (a child instructs an agent - the turtle) is a proto-message picture, but the parent's semantics do not derive from it.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "Logo offers no composable interface the parent builds on.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach is a pass: from education research into the founding brief of personal computing's first language.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Logo changed no iteration speed available to the parent.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: the parent displaces Logo's own claim to be the children's language by re-founding the niche on objects - the LRG programme is Logo's demand answered against Logo's design.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality is a pass within its line: in the languages-for-children lineage Logo is the central node, and Kay's HOPL dedication to Seymour Papert personally documents the channel.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: the niche Logo founded is permanent; the parent's share of that permanence is shared with it.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 3.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:30:11+00:00",
+   "leap": {
+    "prior_state": "Simula's class construct confined to simulation; Lisp environments; no object language: programming meant procedures acting on passive data in batch or timeshared systems, and the languages a child could think in (Logo) had no objects at all.",
+    "jump": "Smalltalk-72 (Kay's design, implemented by Dan Ingalls in about 700 lines of BASIC on a Data General Nova, October 1972): the first working Smalltalk - a small language of communicating objects whose classes parse their own incoming messages, evaluated by a token-stream interpreter; everything is an object, and the whole language fits the one-page definition Kay had bet on.",
+    "date": 1972
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Logo and the parent loses its brief's existence proof: Kay's PARC programme - a language children think in - is the demand Papert's group had already made real, Kay engaged Papert directly (the HOPL history is dedicated in part to him), and the parent's extreme simplicity is a deliberate answer in a new medium to the standard Logo set. The channel is problem-formulation plus working exemplar, the strongest form the problem side takes in this run's precedents.",
+    "mediator": null,
+    "evidence": "Kay HOPL-II dedication ('--To Dave Evans, Bob Barton, Marvin Minsky, and Seymour Papert'); the LRG's founding mission (a Dynabook language for children) is the documented frame of the parent's design in the same history."
+   }
+  },
+  {
+   "predecessor_id": "sketchpad-1963",
+   "successor_id": "smalltalk-72-1972",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The flip is shared: Sketchpad flipped graphical entities from output to objects, but the parent's flip is linguistic - partial.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Sketchpad opened the space the parent's medium presupposes: objects as manipulable things on a display - masters with instances a user can inspect and act on. The parent was built from its first months for exactly that graphical medium (Kaehler's bitmap routines, December 1972); the space of 'things on a screen that behave' is Sketchpad's creation, as the programmable-graphics era was D3D9's for its child.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: Simula carried the linguistic form of the object idea; Sketchpad carried its manipulable form - Kay names both, and neither alone accounts for the parent's objects-you-programme.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to Sketchpad in the parent's record.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Sketchpad supplies no metric registering the parent's leap.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Understanding is a pass: the master drawing and its instances ARE the class/object explanatory model in its clearest early form - a kind, and copies that inherit its structure - which Kay met in Sutherland's Utah milieu before he met it in any language.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "Sketchpad offers no composable language interface the parent builds on.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: from CAD outward to all interactive computing, though the reach into this parent runs through Kay personally.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Sketchpad changed no iteration speed available to the parent.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Sketchpad displaced no incumbent inside the parent's practice.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality is a pass on the parent's own record: Kay's dedication lists Sketchpad first among the four great conceptions.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: the instance idea, once joined to a language in the parent, is permanent in the lineage; Sketchpad's own contribution is the form, not the permanence.",
+     "source": "Kay, The Early History of Smalltalk (HOPL-II, 1993)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 3.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:30:11+00:00",
+   "leap": {
+    "prior_state": "Simula's class construct confined to simulation; Lisp environments; no object language: programming meant procedures acting on passive data in batch or timeshared systems, and the languages a child could think in (Logo) had no objects at all.",
+    "jump": "Smalltalk-72 (Kay's design, implemented by Dan Ingalls in about 700 lines of BASIC on a Data General Nova, October 1972): the first working Smalltalk - a small language of communicating objects whose classes parse their own incoming messages, evaluated by a token-stream interpreter; everything is an object, and the whole language fits the one-page definition Kay had bet on.",
+    "date": 1972
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Sketchpad and the parent's objects lose their manipulable form: Kay's record places Sketchpad at the head of his four formative conceptions and puts him in Sutherland's Utah circle while the FLEX design formed; the parent's objects - things a user inspects and sends messages to, in a graphical medium - are Sketchpad's instances made programmable, a channel argued from Kay's own lineage statement, not from resemblance.",
+    "mediator": null,
+    "evidence": "Kay HOPL-II dedication ('To SKETCHPAD, JOSS, LISP and SIMULA, the four great programming conceptions of the sixties'); Kay was a Utah graduate student under Evans in Sutherland's milieu (HOPL introduction)."
+   }
+  },
+  {
+   "predecessor_id": "flex-language-and-machine-kay-1969",
+   "successor_id": "smalltalk-72-1972",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The flip is partial: FLEX flipped the language's home from the institution's machine to a personal one, but objects-as-everything is the parent's own further flip.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity is a pass at the programme scale (the Schmidhuber-project precedent at Hochreiter): FLEX opened the design space of the personal medium - a self-extending kernel language as a personal computer's native tongue - and that space is precisely the one the parent, and the LRG's whole output after it, was built in; the thesis is the programme's founding document, and FLEX itself escaped its author (implemented on the Univac 1108 and the SDS 940 by other hands).",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Necessity is a pass on this parent's record: Kay's design trajectory to -72 runs through FLEX - the HOPL history gives the FLEX machine its own era (1967-69) as the second of the parent's three formative periods, and the thesis's programme (personal machine, extensible interactive kernel language) is the one PARC hired.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to FLEX in the parent's record.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "FLEX supplies no metric registering the parent's leap.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: FLEX's extensible kernel - a small language that extends itself into more desirable forms - is the parent's one-page-kernel idea in embryo, but the parent's semantics (message passing) are not FLEX's.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: FLEX was actually composed on by others (compilers for the Univac 1108 and Engelbart's SDS 940; a mini-FLEX serving four time-shared graphics users), which is part of what makes it a separable artifact rather than a sketch.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: a language design that is simultaneously a computer architecture - the co-design stance the parent inherits as the Dynabook's software/hardware unity.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: FLEX's interpreted interactivity is the working tempo Kay brought to the parent's design sessions.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "FLEX displaced no incumbent inside the parent's practice.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Lineage centrality is partial: FLEX is central in Kay's own lineage and nearly invisible outside it - scored on this parent's record, where it is the named predecessor system.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: the personal-machine-plus-kernel-language baseline FLEX set is the one the parent and the whole PARC programme never went back from.",
+     "source": "Kay, The Reactive Engine (PhD thesis, University of Utah, 1969)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 3.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:30:11+00:00",
+   "leap": {
+    "prior_state": "Simula's class construct confined to simulation; Lisp environments; no object language: programming meant procedures acting on passive data in batch or timeshared systems, and the languages a child could think in (Logo) had no objects at all.",
+    "jump": "Smalltalk-72 (Kay's design, implemented by Dan Ingalls in about 700 lines of BASIC on a Data General Nova, October 1972): the first working Smalltalk - a small language of communicating objects whose classes parse their own incoming messages, evaluated by a token-stream interpreter; everything is an object, and the whole language fits the one-page definition Kay had bet on.",
+    "date": 1972
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove FLEX and there is no Kay trajectory to the parent: the thesis is the research programme PARC's Learning Research Group was founded to continue, and its documented features - an interactive, self-extending kernel language with object-oriented aspects, executed directly by a personal machine - are the design stock reworked into -72. The own-version objection is answered on the record: FLEX is a separable published artifact (1967 note, 1968 MSc, 1969 PhD thesis) implemented by other hands on other machines (Gouraud's compiler on the SDS 940, Newman's PDP-9 mini-FLEX), in a different lineage (Euler/ALGOL) from the parent's message-passing design - the Simula-I-at-Simula-67 / D3D9 shape, not the Bellman-trio shape.",
+    "mediator": null,
+    "evidence": "Kay, The Reactive Engine (1969): FLEX 'comprehensive enough to provide the basic dialogue, extend itself into more desirable forms, and describe other languages'; Mprove's summary of the same record: 'FLEX shares these characteristic features with Smalltalk, which make it to a direct predecessor for Smalltalk'; Kay HOPL-II contents give '1967-69 - The FLEX Machine, an OOP-Based Personal Computer' its own formative section."
    }
   }
  ],
@@ -144517,6 +145125,562 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "smalltalk-72-1972": {
+   "raw_candidates": [
+    {
+     "aliases": [],
+     "definition": "McCarthy's language (1960): symbolic expressions, dynamic typing, interactive interpretation, and the eval/apply core Kay read in the Lisp 1.5 manual as the revelation that a language's whole semantics could fit in a page.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "Lisp",
+     "type": "other",
+     "year": 1960
+    },
+    {
+     "aliases": [],
+     "definition": "Dahl & Nygaard's class language (1967): the class construct Kay encountered as a Utah graduate student and named, with Sketchpad, JOSS and Lisp, one of 'the four great programming conceptions of the sixties' in his HOPL history.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "Simula 67",
+     "type": "other",
+     "year": 1967
+    },
+    {
+     "aliases": [],
+     "definition": "Sutherland's interactive graphics system (1963): master drawings and their instances - the first objects - manipulated directly on a display; Kay was at Utah in Sutherland's milieu and names Sketchpad first among the four great conceptions.",
+     "domain": "interactive computing",
+     "lens": "L1",
+     "name": "Sketchpad",
+     "type": "other",
+     "year": 1963
+    },
+    {
+     "aliases": [],
+     "definition": "Feurzeig, Papert & Solomon's language for children (BBN, 1967): an interactive, radically simple language whose existence posed the demand Smalltalk answered - a real language children could think in; Kay engaged Papert's work directly (HOPL dedication).",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "Logo",
+     "type": "other",
+     "year": 1967
+    },
+    {
+     "aliases": [
+      "The Reactive Engine"
+     ],
+     "definition": "Kay's own earlier design (language notes 1967; MSc 1968; PhD thesis 'The Reactive Engine', Utah, 1969): an Euler-like, extensible, interactive kernel language with object-oriented aspects, meant to be executed directly by a personal machine - compiled by others (Newman/Gouraud) for the Univac 1108 and Engelbart's SDS 940.",
+     "domain": "programming languages",
+     "lens": "L2",
+     "name": "FLEX language and machine (Kay)",
+     "type": "other",
+     "year": 1969
+    },
+    {
+     "aliases": [],
+     "definition": "Kay's November 1970 Stanford AI Project lab-notebook memo 'Rambling towards a KiddiKomp': the book-sized personal computer for children that the Dynabook paper (1972) then published - the demand-side concept Smalltalk was being designed to serve.",
+     "domain": "personal computing",
+     "lens": "L20",
+     "name": "KiddiKomp (Kay)",
+     "type": "other",
+     "year": 1970
+    },
+    {
+     "aliases": [],
+     "definition": "Kay's personal-computer concept (ACM paper, August 1972): a book-sized dynamic medium for children of all ages, whose software was to be Smalltalk - proposed here on the concept's documented 1968-70 lineage; its node year is the parent's own year.",
+     "domain": "personal computing",
+     "lens": "L4",
+     "name": "Dynabook (Kay)",
+     "type": "other",
+     "year": 1972
+    },
+    {
+     "aliases": [],
+     "definition": "Hewitt's MIT language (1969): pattern-directed invocation - a goal is stated and procedures decide how to answer it, the goal-side relative of message passing in the milieu Kay worked in and cited.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "Planner",
+     "type": "other",
+     "year": 1969
+    },
+    {
+     "aliases": [],
+     "definition": "Cliff Shaw's RAND system (operational 1963): conversational, immediate-execution computing for non-programmers - one of Kay's four great conceptions, and the interactivity FLEX was explicitly modelled on ('interpreted and therefore highly interactive like JOSS').",
+     "domain": "interactive computing",
+     "lens": "L13",
+     "name": "JOSS",
+     "type": "other",
+     "year": 1963
+    },
+    {
+     "aliases": [],
+     "definition": "Wirth & Weber's ALGOL generalization (1966): a small, dynamic, list-based language - the stated model for Kay's FLEX ('an Euler-like language', thesis record), hence upstream of the parent through Kay's own schooling.",
+     "domain": "programming languages",
+     "lens": "L1",
+     "name": "Euler",
+     "type": "other",
+     "year": 1966
+    },
+    {
+     "aliases": [],
+     "definition": "The descriptor-based stack machine (1961) designed under Bob Barton - Kay's Utah teacher, named in his HOPL dedication - whose hardware/software co-design shaped Kay's FLEX-machine thinking about language executed by the machine itself.",
+     "domain": "computer architecture",
+     "lens": "L9",
+     "name": "Burroughs B5000",
+     "type": "device",
+     "year": 1961
+    },
+    {
+     "aliases": [],
+     "definition": "RAND's graphical input language (Ellis et al., from 1968): flowchart symbols drawn on a tablet are recognized as objects and executed - part of the graphical-objects milieu Kay surveyed before PARC.",
+     "domain": "interactive computing",
+     "lens": "L18",
+     "name": "GRAIL",
+     "type": "other",
+     "year": 1968
+    },
+    {
+     "aliases": [],
+     "definition": "Engelbart's SRI system (demonstrated December 1968): mouse, windows, hypertext - the interactive-computing exemplar of Kay's ARPA milieu; Kay built a FLEX compiler for Engelbart's SDS 940 (via Gouraud) in 1969.",
+     "domain": "interactive computing",
+     "lens": "L18",
+     "name": "NLS (Engelbart's Augment)",
+     "type": "other",
+     "year": 1968
+    },
+    {
+     "aliases": [],
+     "definition": "Data General's 16-bit minicomputer (1969): the machine on which Ingalls wrote the first Smalltalk-72 interpreter (about 700 lines of BASIC, October 1972) - the parent's first substrate, replaced by the Alto port in April 1973.",
+     "domain": "computer hardware",
+     "lens": "L9",
+     "name": "Data General Nova",
+     "type": "device",
+     "year": 1969
+    },
+    {
+     "aliases": [],
+     "definition": "Kemeny & Kurtz's beginner language (1964): the implementation language of Ingalls's first Smalltalk-72 interpreter - a wielded tool, chosen for availability on the Nova.",
+     "domain": "programming languages",
+     "lens": "L13",
+     "name": "BASIC",
+     "type": "other",
+     "year": 1964
+    },
+    {
+     "aliases": [],
+     "definition": "Kay's unpublished 1971 design, 'created in a few mornings on a bet' that a message-passing language inspired by Simula could be defined in a page of code - the parent's own immediate predecessor design, never implemented.",
+     "domain": "programming languages",
+     "lens": "L2",
+     "name": "Smalltalk-71 (Kay)",
+     "type": "other",
+     "year": 1971
+    },
+    {
+     "aliases": [],
+     "definition": "Xerox Palo Alto Research Center (founded 1970): Kay's Learning Research Group's home - the institution node already in the graph (admitted at Smalltalk-76 and Smalltalk-80), proposed here for the parent's own year, 1972.",
+     "domain": "research institutions",
+     "lens": "L21",
+     "name": "Xerox PARC",
+     "type": "institution",
+     "year": 1970
+    },
+    {
+     "aliases": [],
+     "definition": "Hewitt, Bishop & Steiger's model of computation (1973): proposed here because the brief expects the Planner/actor milieu - but its year postdates the parent, and published accounts record Smalltalk-72's November 1972 MIT demonstration as an influence ON the actor model's development.",
+     "domain": "computer science",
+     "lens": "L1",
+     "name": "Actor model",
+     "type": "theory",
+     "year": 1973
+    },
+    {
+     "aliases": [],
+     "definition": "The ARPA network (first nodes 1969): the connective infrastructure of the research community (Utah, SRI, MIT, PARC) inside which the parent's influences travelled - milieu, not mechanism.",
+     "domain": "networks",
+     "lens": "L15",
+     "name": "ARPAnet",
+     "type": "other",
+     "year": 1969
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "lisp-1960",
+      "candidate": {
+       "aliases": [],
+       "definition": "McCarthy's language (1960): symbolic expressions, dynamic typing, interactive interpretation, and the eval/apply core Kay read in the Lisp 1.5 manual as the revelation that a language's whole semantics could fit in a page.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "Lisp",
+       "type": "other",
+       "year": 1960
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Lisp"
+      ],
+      "matched_node_id": "lisp-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "simula-67-1967",
+      "candidate": {
+       "aliases": [],
+       "definition": "Dahl & Nygaard's class language (1967): the class construct Kay encountered as a Utah graduate student and named, with Sketchpad, JOSS and Lisp, one of 'the four great programming conceptions of the sixties' in his HOPL history.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "Simula 67",
+       "type": "other",
+       "year": 1967
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Simula 67"
+      ],
+      "matched_node_id": "simula-67-1967",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sketchpad-1963",
+      "candidate": {
+       "aliases": [],
+       "definition": "Sutherland's interactive graphics system (1963): master drawings and their instances - the first objects - manipulated directly on a display; Kay was at Utah in Sutherland's milieu and names Sketchpad first among the four great conceptions.",
+       "domain": "interactive computing",
+       "lens": "L1",
+       "name": "Sketchpad",
+       "type": "other",
+       "year": 1963
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Sketchpad"
+      ],
+      "matched_node_id": "sketchpad-1963",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "logo-1967",
+      "candidate": {
+       "aliases": [],
+       "definition": "Feurzeig, Papert & Solomon's language for children (BBN, 1967): an interactive, radically simple language whose existence posed the demand Smalltalk answered - a real language children could think in; Kay engaged Papert's work directly (HOPL dedication).",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "Logo",
+       "type": "other",
+       "year": 1967
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Logo"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "flex-language-and-machine-kay-1969",
+      "candidate": {
+       "aliases": [
+        "The Reactive Engine"
+       ],
+       "definition": "Kay's own earlier design (language notes 1967; MSc 1968; PhD thesis 'The Reactive Engine', Utah, 1969): an Euler-like, extensible, interactive kernel language with object-oriented aspects, meant to be executed directly by a personal machine - compiled by others (Newman/Gouraud) for the Univac 1108 and Engelbart's SDS 940.",
+       "domain": "programming languages",
+       "lens": "L2",
+       "name": "FLEX language and machine (Kay)",
+       "type": "other",
+       "year": 1969
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "FLEX language and machine (Kay)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "kiddikomp-kay-1970",
+      "candidate": {
+       "aliases": [],
+       "definition": "Kay's November 1970 Stanford AI Project lab-notebook memo 'Rambling towards a KiddiKomp': the book-sized personal computer for children that the Dynabook paper (1972) then published - the demand-side concept Smalltalk was being designed to serve.",
+       "domain": "personal computing",
+       "lens": "L20",
+       "name": "KiddiKomp (Kay)",
+       "type": "other",
+       "year": 1970
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "KiddiKomp (Kay)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "planner-1969",
+      "candidate": {
+       "aliases": [],
+       "definition": "Hewitt's MIT language (1969): pattern-directed invocation - a goal is stated and procedures decide how to answer it, the goal-side relative of message passing in the milieu Kay worked in and cited.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "Planner",
+       "type": "other",
+       "year": 1969
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Planner"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "joss-1963",
+      "candidate": {
+       "aliases": [],
+       "definition": "Cliff Shaw's RAND system (operational 1963): conversational, immediate-execution computing for non-programmers - one of Kay's four great conceptions, and the interactivity FLEX was explicitly modelled on ('interpreted and therefore highly interactive like JOSS').",
+       "domain": "interactive computing",
+       "lens": "L13",
+       "name": "JOSS",
+       "type": "other",
+       "year": 1963
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "JOSS"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "euler-1966",
+      "candidate": {
+       "aliases": [],
+       "definition": "Wirth & Weber's ALGOL generalization (1966): a small, dynamic, list-based language - the stated model for Kay's FLEX ('an Euler-like language', thesis record), hence upstream of the parent through Kay's own schooling.",
+       "domain": "programming languages",
+       "lens": "L1",
+       "name": "Euler",
+       "type": "other",
+       "year": 1966
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Euler"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "burroughs-b5000-1961",
+      "candidate": {
+       "aliases": [],
+       "definition": "The descriptor-based stack machine (1961) designed under Bob Barton - Kay's Utah teacher, named in his HOPL dedication - whose hardware/software co-design shaped Kay's FLEX-machine thinking about language executed by the machine itself.",
+       "domain": "computer architecture",
+       "lens": "L9",
+       "name": "Burroughs B5000",
+       "type": "device",
+       "year": 1961
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Burroughs B5000"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "grail-1968",
+      "candidate": {
+       "aliases": [],
+       "definition": "RAND's graphical input language (Ellis et al., from 1968): flowchart symbols drawn on a tablet are recognized as objects and executed - part of the graphical-objects milieu Kay surveyed before PARC.",
+       "domain": "interactive computing",
+       "lens": "L18",
+       "name": "GRAIL",
+       "type": "other",
+       "year": 1968
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "GRAIL"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nls-engelbart-s-augment-1968",
+      "candidate": {
+       "aliases": [],
+       "definition": "Engelbart's SRI system (demonstrated December 1968): mouse, windows, hypertext - the interactive-computing exemplar of Kay's ARPA milieu; Kay built a FLEX compiler for Engelbart's SDS 940 (via Gouraud) in 1969.",
+       "domain": "interactive computing",
+       "lens": "L18",
+       "name": "NLS (Engelbart's Augment)",
+       "type": "other",
+       "year": 1968
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "NLS (Engelbart's Augment)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "data-general-nova-1969",
+      "candidate": {
+       "aliases": [],
+       "definition": "Data General's 16-bit minicomputer (1969): the machine on which Ingalls wrote the first Smalltalk-72 interpreter (about 700 lines of BASIC, October 1972) - the parent's first substrate, replaced by the Alto port in April 1973.",
+       "domain": "computer hardware",
+       "lens": "L9",
+       "name": "Data General Nova",
+       "type": "device",
+       "year": 1969
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Data General Nova"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "basic-1964",
+      "candidate": {
+       "aliases": [],
+       "definition": "Kemeny & Kurtz's beginner language (1964): the implementation language of Ingalls's first Smalltalk-72 interpreter - a wielded tool, chosen for availability on the Nova.",
+       "domain": "programming languages",
+       "lens": "L13",
+       "name": "BASIC",
+       "type": "other",
+       "year": 1964
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "BASIC"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "smalltalk-71-kay-1971",
+      "candidate": {
+       "aliases": [],
+       "definition": "Kay's unpublished 1971 design, 'created in a few mornings on a bet' that a message-passing language inspired by Simula could be defined in a page of code - the parent's own immediate predecessor design, never implemented.",
+       "domain": "programming languages",
+       "lens": "L2",
+       "name": "Smalltalk-71 (Kay)",
+       "type": "other",
+       "year": 1971
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Smalltalk-71 (Kay)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xerox-parc-1970",
+      "candidate": {
+       "aliases": [],
+       "definition": "Xerox Palo Alto Research Center (founded 1970): Kay's Learning Research Group's home - the institution node already in the graph (admitted at Smalltalk-76 and Smalltalk-80), proposed here for the parent's own year, 1972.",
+       "domain": "research institutions",
+       "lens": "L21",
+       "name": "Xerox PARC",
+       "type": "institution",
+       "year": 1970
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Xerox PARC"
+      ],
+      "matched_node_id": "xerox-parc-1970",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "arpanet-1969",
+      "candidate": {
+       "aliases": [],
+       "definition": "The ARPA network (first nodes 1969): the connective infrastructure of the research community (Utah, SRI, MIT, PARC) inside which the parent's influences travelled - milieu, not mechanism.",
+       "domain": "networks",
+       "lens": "L15",
+       "name": "ARPAnet",
+       "type": "other",
+       "year": 1969
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "ARPAnet"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "aliases": [],
+       "definition": "Kay's personal-computer concept (ACM paper, August 1972): a book-sized dynamic medium for children of all ages, whose software was to be Smalltalk - proposed here on the concept's documented 1968-70 lineage; its node year is the parent's own year.",
+       "domain": "personal computing",
+       "lens": "L4",
+       "name": "Dynabook (Kay)",
+       "type": "other",
+       "year": 1972
+      },
+      "reason": "dated on/after parent year 1972"
+     },
+     {
+      "candidate": {
+       "aliases": [],
+       "definition": "Hewitt, Bishop & Steiger's model of computation (1973): proposed here because the brief expects the Planner/actor milieu - but its year postdates the parent, and published accounts record Smalltalk-72's November 1972 MIT demonstration as an influence ON the actor model's development.",
+       "domain": "computer science",
+       "lens": "L1",
+       "name": "Actor model",
+       "type": "theory",
+       "year": 1973
+      },
+      "reason": "dated on/after parent year 1972"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
