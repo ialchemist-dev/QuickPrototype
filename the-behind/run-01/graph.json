@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T12:26:18+00:00",
-  "expansions_done": 99,
-  "raw_candidates_seen": 4007,
+  "updated_at": "2026-11-25T12:35:56+00:00",
+  "expansions_done": 100,
+  "raw_candidates_seen": 4073,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -18846,6 +18846,244 @@
     "name": "Hosted LLM APIs (OpenAI API)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T12:26:08+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "BART: Denoising Sequence-to-Sequence Pre-training",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+    "reason": "mediated_via: ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "T5 (text-to-text transfer transformer)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "BERT",
+    "reason": "mediated_via: Dense Passage Retrieval (DPR)",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "Dense Passage Retrieval (DPR)"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "FAISS (Facebook AI Similarity Search)",
+    "reason": "mediated_via: Dense Passage Retrieval (DPR)",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "Dense Passage Retrieval (DPR)"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "HNSW: Hierarchical Navigable Small World graphs",
+    "reason": "mediated_via: Dense Passage Retrieval (DPR)",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "Dense Passage Retrieval (DPR)"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Wikipedia",
+    "reason": "mediated_via: Dense Passage Retrieval (DPR)",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "Dense Passage Retrieval (DPR)"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Product Quantization for Nearest Neighbor Search",
+    "reason": "mediated_via: Dense Passage Retrieval (DPR)",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "Dense Passage Retrieval (DPR)"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Teaching Machines to Read and Comprehend",
+    "reason": "mediated_via: ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "A Discrete Hard EM Approach for Weakly Supervised Question Answering",
+    "reason": "mediated_via: ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "TF-IDF (term frequency-inverse document frequency weighting)",
+    "reason": "mediated_via: DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "DrQA: Reading Wikipedia to Answer Open-Domain Questions"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Generative Question Answering: Learning to Answer the Whole Question",
+    "reason": "mediated_via: BART: Denoising Sequence-to-Sequence Pre-training",
+    "at": "2026-11-25T12:35:41+00:00",
+    "mediated_via": "BART: Denoising Sequence-to-Sequence Pre-training"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Natural Questions",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "TriviaQA",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "NVIDIA V100 GPU",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "SQuAD (Stanford Question Answering Dataset)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "PyTorch",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Apache Lucene",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Facebook AI Research (FAIR)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "MediaWiki",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Memory Networks",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "End-to-End Memory Networks",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "BM25 (Okapi BM25 ranking function)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Vector space model for information retrieval",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Latent Dirichlet Allocation",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Semantic Parsing on Freebase from Question-Answer Pairs (WebQuestions)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Freebase",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Deep Neural Networks for YouTube Recommendations (two-tower retrieval)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Locality-Sensitive Hashing",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Universal Sentence Encoder",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "HuggingFace Transformers library",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "fairseq (Facebook AI Research Sequence-to-Sequence Toolkit)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Annoy (Approximate Nearest Neighbors Oh Yeah)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "MLQA: MultiLingual Question Answering benchmark",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Universal Schema for relation extraction",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Expectation-Maximization algorithm",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
+   },
+   {
+    "parent_id": "retrieval-augmented-generation-2020",
+    "name": "Common Crawl",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T12:35:41+00:00"
    }
   ]
  },
@@ -19193,7 +19431,7 @@
    "prior_state": "Closed-book LMs answering from weights; separate IR pipelines feeding rigid templates.",
    "status": "provisional",
    "depth": 1,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.5,
    "sources": [
     {
@@ -24774,6 +25012,54 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T12:26:08+00:00"
+  },
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019": {
+   "id": "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+   "name": "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering",
+   "aliases": [],
+   "year": 2019,
+   "domain": "",
+   "type": "other",
+   "definition": "",
+   "bottleneck": "Before ORQA, open-domain QA systems could not learn retrieval from question-answer pairs alone because the evidence passage is never labelled, so retrievers were trained on heuristics or distant supervision and readers were extractive span predictors bolted onto them.",
+   "leap": "ORQA (Lee, Chang & Toutanova, ACL 2019) made retrieval itself a latent variable trained end-to-end for open-domain QA: an Inverse Cloze Task pretrained dual-encoder retriever over Wikipedia passages, jointly fine-tuned with a BERT reader by marginalizing over retrieved evidence - and fixed the field's corpus convention (the December 2018 Wikipedia dump in passage form).",
+   "prior_state": "Pipeline retrieve-and-extract systems (DrQA) with TF-IDF retrieval trained independently of the reader; no end-to-end latent retrieval.",
+   "status": "provisional",
+   "depth": 2,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run. (1) Q1 attack: Q1 was scored partial at evaluation (ORQA's flip is the latent-retrieval formulation, not the generative capability, which is the parent's own) - the admission rests on Q2 generativity, which survives: REALM and the parent were built in ORQA's space within a year. (2) Multiples test on Q3: REALM (Feb 2020, date-dropped here) performed the same formulation modification in parallel - a genuine multiple, already reflected in Q3 partial; the edge does not stand on necessity. (3) Date/direction: ORQA is dated by its carrying publications (arXiv:1906.00300, Jun 2019; ACL 2019); the direction ORQA -> RAG is documented in the parent's methods text ('Following Lee et al. ... we use the December 2018 dump') and introduction. (4) Mediation attack via DPR: DPR carries the parent's retriever weights and its index, but the two channels claimed for ORQA - the corpus convention and the latent-retrieval formulation - both exist inside ORQA before DPR (ORQA's retriever is ICT-pretrained, its corpus is the same dump in the same passage form), and the parent's citation for the corpus runs to Lee et al., not to Karpukhin et al. Attack fails. Strongest residual attack (recorded): that ORQA contributes 'only' the formulation while every working part of the parent comes from elsewhere (DPR's retriever, BART, the corpus artifact) - answered by the design/component distinction: a formulation is not a component inside the runs, it is what the runs instantiate; the same attack would dissolve the Cook-at-REYES presupposition edge. Outcome provisional, as for all nodes in this run.",
+    "at": "2026-11-25T12:35:56+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T12:35:41+00:00"
+  },
+  "language-models-as-knowledge-bases-lama-probe-2019": {
+   "id": "language-models-as-knowledge-bases-lama-probe-2019",
+   "name": "Language Models as Knowledge Bases? (LAMA probe)",
+   "aliases": [],
+   "year": 2019,
+   "domain": "",
+   "type": "other",
+   "definition": "",
+   "bottleneck": "Before the LAMA probe, whether a pretrained language model's parameters function as a knowledge base was impractical to state, let alone measure, because no controlled probe separated stored relational knowledge from surface cues.",
+   "leap": "Petroni et al. (EMNLP 2019) showed pretrained LMs do store relational knowledge retrievable by cloze queries - and, in the same programme, mapped the limits of parametric storage (no provenance, no updatability), posing the problem the parent's design answers.",
+   "prior_state": "Language models treated as text models; their knowledge content unexamined as an object of study.",
+   "status": "provisional",
+   "depth": 2,
+   "expanded": false,
+   "priority": 2.0,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run; this is the expansion's MOST CONTESTABLE admission and is flagged as such. (1) Q1 attack: partial at evaluation; the admission rests on Q2 (programme generativity: probing, KILT, knowledge editing, and the retrieval response inside the same laboratory). The Q2 attack - that the retrieval response would have happened without LAMA - cannot be fully closed; it is answered only by the documentary chain (same lab, Petroni on both papers, the parent's introduction adopting the parametric/non-parametric framing and its three failure modes as design requirements). (2) Multiples on Q3: the closed-book QA programme (Roberts et al., Feb 2020, date-dropped here) posed the same underlying question with the opposite answer - a rival, not a multiple; it strengthens that the problem was posed, not who posed it. Q3 stays partial. (3) Date/direction: EMNLP 2019 (arXiv Sep 2019), clean; direction is programme-internal and documented by authorship and framing adoption. (4) Mediation attack via ORQA/REALM: both are method papers of 2019/2020 that presuppose the problem rather than pose it; neither carries the problem document's framing into the parent - the carrier is the laboratory's own programme, whose dated document is LAMA itself. Attack fails. The Hochreiter-condition attack (diagnosis answered is not derivation) was the strongest: it is answered in the verdict by the adoption of LAMA's terms as the parent architecture's organizing distinction, but a future design review could reasonably re-hear this edge as fail-closed partial; the re-hearing condition is a showing that the parent's framing language circulated independently of the LAMA programme before Sep 2019. Outcome provisional.",
+    "at": "2026-11-25T12:35:56+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T12:35:41+00:00"
   }
  },
  "edges": [
@@ -50121,6 +50407,192 @@
     "counterfactual": "Remove T5's formulation - the unified text-to-text format, the at-scale supervised multi-task mixture, and its documented mixing recipe - and the parent's training object does not exist in its documented form: FLAN's mixture construction adopts T5's examples-proportional mixing with a per-dataset cap, and its rendering of every task as natural-language text in/out is T5's format move generalized from prefixes to instructions.",
     "mediator": null,
     "evidence": "The parent paper aggregates 62 datasets into one finetuning mixture and renders every task as text with natural-language instructions; its mixture uses examples-proportional mixing with a mixing-rate maximum, the strategy documented in Raffel et al. Mediation check: LaMDA-PT carries the parent's weights and architecture, not its recipe or format - the recipe channel runs paper-to-paper. T0 cannot mediate (Oct 2021, after the parent). DecaNLP is upstream of T5, so T5 is the cited final link of the format line. The format-plus-recipe is the presupposition of the parent's training object, not a component inside it (the Cook-at-REYES discrimination)."
+   }
+  },
+  {
+   "predecessor_id": "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+   "successor_id": "retrieval-augmented-generation-2020",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "ORQA made end-to-end latent retrieval for open QA possible; the generative half of the flip is the parent's own, so partial.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It opened the retrieval-augmented LM space: REALM and the parent are built directly in the space ORQA staked out, within a year.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is real but shared: the formulation's other carrier (REALM) is coeval and date-dropped, and DPR supplies the parent's actual retriever - partial, honestly capped.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse attributable to ORQA in relation to the parent.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "It made open-QA trainable from QA pairs alone (weak supervision as measurement of retrieval quality); partial.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the design model the parent works in: retriever and reader as one latent-variable system over a passage corpus.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Its passage-corpus convention became the shared interface of the line: the December 2018 dump in 100-word passage form is the exact artifact form DPR built its index in and the parent consumed - a convention other systems compose against.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach at the parent is within the QA/retrieval field; partial.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed effect on the parent.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced the independently-trained TF-IDF pipeline as the field's reference design; partial on this edge.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "A trunk node of the retrieval-augmented line: the parent's introduction names exactly two retrieval-augmented predecessors, and this is the expressible one - the line's own text assigns it centrality.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The latent-retrieval baseline was never reverted; partial.",
+     "source": "Lee, Chang & Toutanova, ACL 2019 (arXiv:1906.00300); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T12:35:41+00:00",
+   "leap": "Before RAG, answering knowledge-intensive questions with a language model was impractical in a specific way: everything the model knew had to be stored in its parameters at training time, so its knowledge could not be updated, inspected or attributed, and generation drifted into hallucination - while the retrieval-augmented models that existed (ORQA, REALM) put the retriever behind an extractive or masked-LM reader, not a generator. RAG's discontinuous step was the general-purpose formulation: a pretrained seq2seq generator coupled to a pretrained dense retriever over a 21M-passage Wikipedia index, the retrieved documents treated as latent variables and marginalized (per-sequence or per-token), the pair fine-tuned end-to-end - parametric and non-parametric memory as one trainable object, demonstrated across open-domain QA, fact verification and generation tasks at once.",
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove ORQA and the parent loses both its stated corpus convention (the parent adopts Lee et al.'s dump and passage form verbatim, by citation) and the formulation it transforms: latent retrieval over Wikipedia, marginalized, trained end-to-end. DPR supplies better retriever weights, but the object being trained - and the corpus it runs on - is ORQA's construction.",
+    "mediator": null,
+    "evidence": "Two documented channels in the parent's own text: the methods section follows Lee et al. [31] for the non-parametric memory's construction, and the introduction names ORQA as one of the two retrieval-augmented models whose formulation the parent generalizes (reader made generative, retriever initialized from DPR instead of ICT). Ancestor-modified with the mechanism retained (latent-variable marginalization over retrieved passages IS the parent's training object) - the Rumelhart & Norman successor shape, not a component: ORQA is not inside the parent's runs, it is the design the parent's runs instantiate."
+   }
+  },
+  {
+   "predecessor_id": "language-models-as-knowledge-bases-lama-probe-2019",
+   "successor_id": "retrieval-augmented-generation-2020",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "It flipped no capability; it made the parent's problem statable - partial.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It opened a programme others actually built in: LM probing, knowledge editing, the KILT benchmark suite, and the retrieval response of which the parent is the flagship - the space the parent occupies was staked out by this framing.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the problem could have been posed from the QA side alone, but in this programme it was posed here, and the parent's text adopts the posing.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "LAMA made parametric knowledge measurable (cloze probing as an instrument); partial, and about the problem rather than the parent's results.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the parent's organizing distinction - parametric memory as a knowledge store with named failure modes - which is the parent's title-level frame: the paper is structured as the construction of the non-parametric counterpart this distinction demands.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "No interface.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "No cross-domain reach in relation to the parent.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration effect.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "It displaced no incumbent; it reframed one.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "A remembered formulation of its programme; partial.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    },
+    "Q12": {
+     "verdict": "fail",
+     "evidence": "No irreversibility on this edge.",
+     "source": "Petroni et al., EMNLP-IJCNLP 2019 (arXiv:1909.01066); Lewis et al., 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', arXiv:2005.11401 (2020), NeurIPS 2020",
+     "falsification": "Would change if the cited record showed the contrary."
+    }
+   },
+   "score": 2.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T12:35:41+00:00",
+   "leap": "Before RAG, answering knowledge-intensive questions with a language model was impractical in a specific way: everything the model knew had to be stored in its parameters at training time, so its knowledge could not be updated, inspected or attributed, and generation drifted into hallucination - while the retrieval-augmented models that existed (ORQA, REALM) put the retriever behind an extractive or masked-LM reader, not a generator. RAG's discontinuous step was the general-purpose formulation: a pretrained seq2seq generator coupled to a pretrained dense retriever over a 21M-passage Wikipedia index, the retrieved documents treated as latent variables and marginalized (per-sequence or per-token), the pair fine-tuned end-to-end - parametric and non-parametric memory as one trainable object, demonstrated across open-domain QA, fact verification and generation tasks at once.",
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the LAMA line and the parent's problem statement loses its documented basis inside its own programme: the introduction's case against parametric memory (knowledge cannot be expanded or revised, predictions cannot be attributed, generation hallucinates) is the LAMA programme's findings restated as design requirements, by an overlapping author team in the same laboratory, a year earlier.",
+    "mediator": null,
+    "evidence": "Problem-side admission (the Lashley-at-Jordan shape): a specific document, not an era mood - the parent's own laboratory's probe paper, with a co-author (Petroni) on both papers, and the parent's KILT-era programme (same lab, same authors) built on the same framing. The Hochreiter condition is met in its problem-side form: the parent's documents do not merely share the diagnosis, they adopt its terms (parametric vs non-parametric memory) as their architecture's organizing distinction."
    }
   }
  ],
@@ -191564,6 +192036,2134 @@
       }
      },
      "similarity": 0.7309,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "retrieval-augmented-generation-2020": {
+   "raw_candidates": [
+    {
+     "lens": "L1",
+     "name": "Dense Passage Retrieval (DPR)",
+     "year": 2020,
+     "kind": "method",
+     "relation": "the parent's retriever, initialized from DPR and its index",
+     "why": "The parent paper: 'The retriever (Dense Passage Retriever [26], henceforth DPR) provides latent documents conditioned on the input'. Same year as the parent - expected date-drop; the components hearing is recorded in drop form."
+    },
+    {
+     "lens": "L1",
+     "name": "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering",
+     "year": 2019,
+     "kind": "method",
+     "relation": "the latent-retrieval formulation ancestor; the parent follows Lee et al. for the corpus convention",
+     "why": "The parent: 'Following Lee et al. [31] and Karpukhin et al. [26], we use the December 2018 dump'; the introduction names ORQA as one of the two recently introduced retrieval-augmented models it generalizes (extractive reader -> generative generator)."
+    },
+    {
+     "lens": "L1",
+     "name": "REALM: Retrieval-Augmented Language Model Pre-Training",
+     "year": 2020,
+     "kind": "method",
+     "relation": "the coeval retrieval-augmented pretraining line named in the parent's introduction",
+     "why": "Named in the parent's introduction alongside ORQA. Same year (Feb 2020) - expected date-drop; multiples evidence for the formulation's ripeness."
+    },
+    {
+     "lens": "L1",
+     "name": "BART: Denoising Sequence-to-Sequence Pre-training",
+     "year": 2019,
+     "kind": "architecture",
+     "relation": "the parent's generator, used in every headline result",
+     "why": "The parent: 'the seq2seq model (BART [32]) then conditions on these latent documents together with the input to generate the output'. The generator-component hearing."
+    },
+    {
+     "lens": "L1",
+     "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+     "year": 2017,
+     "kind": "method",
+     "relation": "the retrieve-and-read architecture that formulated open-domain QA over Wikipedia",
+     "why": "Chen et al. 2017: TF-IDF retriever + neural reader over all of Wikipedia - the task formulation and pipeline shape the parent inherits and generalizes."
+    },
+    {
+     "lens": "L1",
+     "name": "T5 (text-to-text transfer transformer)",
+     "year": 2019,
+     "kind": "architecture",
+     "relation": "the parametric-only seq2seq baseline the parent is framed against ('Like T5 or BART, RAG can be fine-tuned on any seq2seq task')",
+     "why": "Existing graph node (admitted at FLAN, session 45 exp.1). At this parent it is the compared incumbent, not the generator - edge-scoped hearing."
+    },
+    {
+     "lens": "L2",
+     "name": "Dense Passage Retrieval (DPR)",
+     "year": 2020,
+     "kind": "method",
+     "relation": "component: the retriever half of the parent",
+     "why": "Duplicate filing of the L1 candidate under the component lens."
+    },
+    {
+     "lens": "L2",
+     "name": "BART: Denoising Sequence-to-Sequence Pre-training",
+     "year": 2019,
+     "kind": "architecture",
+     "relation": "component: the generator half of the parent",
+     "why": "Duplicate filing under the component lens."
+    },
+    {
+     "lens": "L2",
+     "name": "BERT",
+     "year": 2018,
+     "kind": "architecture",
+     "relation": "component: DPR's dual encoders are BERT models; the extractive predecessors' reader",
+     "why": "DPR initializes both encoders from BERT; the channel into the parent runs through DPR."
+    },
+    {
+     "lens": "L2",
+     "name": "FAISS (Facebook AI Similarity Search)",
+     "year": 2017,
+     "kind": "software",
+     "relation": "component: the library that builds and serves the parent's 21M-passage MIPS index",
+     "why": "The parent: 'build a single MIPS index using FAISS with a Hierarchical Navigable Small World approximation'."
+    },
+    {
+     "lens": "L2",
+     "name": "HNSW: Hierarchical Navigable Small World graphs",
+     "year": 2016,
+     "kind": "method",
+     "relation": "component: the approximate-nearest-neighbour algorithm inside the parent's index",
+     "why": "Malkov & Yashunin; the ANN approximation the parent's retrieval runs on."
+    },
+    {
+     "lens": "L2",
+     "name": "DPR Wikipedia passage index (December 2018 dump, 21M passages)",
+     "year": 2020,
+     "kind": "data",
+     "relation": "component: the parent's non-parametric memory as a built artifact",
+     "why": "The corpus in its consumed form - DPR's construction (100-word disjoint chunks, document-encoder embeddings, FAISS index). Same year - expected date-drop; the content/form split is argued at the Wikipedia filing."
+    },
+    {
+     "lens": "L3",
+     "name": "Wikipedia",
+     "year": 2001,
+     "kind": "data",
+     "relation": "the knowledge source whose December 2018 dump is the parent's non-parametric memory",
+     "why": "Content side of the corpus hearing; the consumed form is the 2020 index artifact."
+    },
+    {
+     "lens": "L3",
+     "name": "DPR Wikipedia passage index (December 2018 dump, 21M passages)",
+     "year": 2020,
+     "kind": "data",
+     "relation": "the corpus artifact in consumed form",
+     "why": "Duplicate filing under the data lens."
+    },
+    {
+     "lens": "L3",
+     "name": "Natural Questions",
+     "year": 2019,
+     "kind": "data",
+     "relation": "the parent's headline open-domain QA task (train + evaluation)",
+     "why": "Kwiatkowski et al. 2019; RAG sets SOTA on open NQ. Constituent-of-experiments hearing."
+    },
+    {
+     "lens": "L3",
+     "name": "TriviaQA",
+     "year": 2017,
+     "kind": "data",
+     "relation": "a headline evaluation task of the parent",
+     "why": "Joshi et al. 2017; the parent 'strongly outperforms recent approaches that use specialised pre-training objectives on TriviaQA'."
+    },
+    {
+     "lens": "L4",
+     "name": "FAISS (Facebook AI Similarity Search)",
+     "year": 2017,
+     "kind": "software",
+     "relation": "substrate: the similarity-search substrate of the retrieval step",
+     "why": "Duplicate filing under the substrate lens."
+    },
+    {
+     "lens": "L4",
+     "name": "HNSW: Hierarchical Navigable Small World graphs",
+     "year": 2016,
+     "kind": "method",
+     "relation": "substrate: the ANN algorithm",
+     "why": "Duplicate filing under the substrate lens."
+    },
+    {
+     "lens": "L4",
+     "name": "NVIDIA V100 GPU",
+     "year": 2017,
+     "kind": "machine",
+     "relation": "substrate: the accelerator generation of the parent lab's training fleet in the period",
+     "why": "Existing graph node. No document names the parent's training hardware; the generic-substrate hearing."
+    },
+    {
+     "lens": "L5",
+     "name": "FAISS (Facebook AI Similarity Search)",
+     "year": 2017,
+     "kind": "software",
+     "relation": "instrument: MIPS over 21M vectors as the parent's retrieval instrument",
+     "why": "Duplicate filing under the instrument lens."
+    },
+    {
+     "lens": "L5",
+     "name": "HNSW: Hierarchical Navigable Small World graphs",
+     "year": 2016,
+     "kind": "method",
+     "relation": "instrument: the ANN method that makes 21M-scale retrieval interactive",
+     "why": "Duplicate filing under the instrument lens."
+    },
+    {
+     "lens": "L5",
+     "name": "SQuAD (Stanford Question Answering Dataset)",
+     "year": 2016,
+     "kind": "data",
+     "relation": "instrument: the extractive-QA measurement regime (span exact-match) the parent's task line inherits and departs from",
+     "why": "Rajpurkar et al. 2016; the measurement tradition of the QA field the parent re-aims at generation."
+    },
+    {
+     "lens": "L5",
+     "name": "Natural Questions",
+     "year": 2019,
+     "kind": "data",
+     "relation": "instrument: the realistic-query measurement of open-domain QA ability",
+     "why": "Duplicate filing under the instrument lens."
+    },
+    {
+     "lens": "L6",
+     "name": "PyTorch",
+     "year": 2016,
+     "kind": "software",
+     "relation": "the framework of the parent lab's research stack in the period",
+     "why": "Generic-framework hearing (the PyTorch-at-Codex shape): plausible, undocumented for this parent."
+    },
+    {
+     "lens": "L6",
+     "name": "FAISS (Facebook AI Similarity Search)",
+     "year": 2017,
+     "kind": "software",
+     "relation": "the parent lab's similarity-search library, consumed by name",
+     "why": "Duplicate filing under the software lens."
+    },
+    {
+     "lens": "L6",
+     "name": "Apache Lucene",
+     "year": 1999,
+     "kind": "software",
+     "relation": "the incumbent open-source search library of the IR tradition the parent's retriever departs from",
+     "why": "The sparse-retrieval era's standard substrate; background of the DrQA-line retrievers."
+    },
+    {
+     "lens": "L7",
+     "name": "Facebook AI Research (FAIR)",
+     "year": 2015,
+     "kind": "institution",
+     "relation": "the parent's home laboratory; carrier of DPR, BART-adjacent and LAMA programmes",
+     "why": "Decomposition hearing: the institution acts through its artifacts, each filed individually."
+    },
+    {
+     "lens": "L7",
+     "name": "Dense Passage Retrieval (DPR)",
+     "year": 2020,
+     "kind": "method",
+     "relation": "institutional sibling: the same lab's retriever programme, eight shared authors' programme",
+     "why": "Duplicate filing under the institution lens (Karpukhin, Petroni, Kuttler, Yih are co-authors of both papers)."
+    },
+    {
+     "lens": "L7",
+     "name": "Language Models as Knowledge Bases? (LAMA probe)",
+     "year": 2019,
+     "kind": "problem-formulation",
+     "relation": "the home lab's problem document: Petroni et al. showed LMs store relational knowledge in parameters, and probed its limits",
+     "why": "Petroni is a co-author of both papers; the parent's introduction frames exactly LAMA's problem (parametric memory cannot be revised, cannot attribute, hallucinates). Problem-side hearing."
+    },
+    {
+     "lens": "L8",
+     "name": "MediaWiki",
+     "year": 2002,
+     "kind": "software",
+     "relation": "the platform whose dump format defines the corpus artifact's raw form",
+     "why": "Weak filing: the December 2018 dump is a MediaWiki export; format background of the data artifact."
+    },
+    {
+     "lens": "L9",
+     "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+     "year": 2017,
+     "kind": "method",
+     "relation": "problem formulation: open-domain QA - answer any question from all of Wikipedia",
+     "why": "Duplicate filing under the problem lens."
+    },
+    {
+     "lens": "L9",
+     "name": "Language Models as Knowledge Bases? (LAMA probe)",
+     "year": 2019,
+     "kind": "problem-formulation",
+     "relation": "problem formulation: the LM-as-knowledge-base framing and its stated limits",
+     "why": "Duplicate filing under the problem lens."
+    },
+    {
+     "lens": "L9",
+     "name": "Memory Networks",
+     "year": 2014,
+     "kind": "method",
+     "relation": "problem formulation: QA over an explicit memory store - the 'memory' framing's founding artifact in this lab's line",
+     "why": "Weston et al. 2014 (FAIR): models that read from a memory component; the parametric/non-parametric memory vocabulary's ancestor."
+    },
+    {
+     "lens": "L9",
+     "name": "Teaching Machines to Read and Comprehend",
+     "year": 2015,
+     "kind": "method",
+     "relation": "problem formulation: neural reading comprehension as the QA task form",
+     "why": "Hermann et al. 2015 (DeepMind): the cloze-style neural reader formulation the extractive-QA stratum descends from."
+    },
+    {
+     "lens": "L10",
+     "name": "T5 (text-to-text transfer transformer)",
+     "year": 2019,
+     "kind": "architecture",
+     "relation": "negative space: the parametric-only giant (T5-11B) the parent beats with 626M trainable parameters",
+     "why": "Duplicate filing under the negative-space lens; the defined-against incumbent of the headline comparison."
+    },
+    {
+     "lens": "L10",
+     "name": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+     "year": 2020,
+     "kind": "method",
+     "relation": "negative space: the closed-book QA programme (Roberts et al.) - knowledge in parameters only",
+     "why": "Same year as the parent - expected date-drop; the rival answer to the same problem, logged in drop form."
+    },
+    {
+     "lens": "L10",
+     "name": "GPT-3: Language Models are Few-Shot Learners",
+     "year": 2020,
+     "kind": "method",
+     "relation": "negative space: the parametric-scaling answer of the same season",
+     "why": "Same year - expected date-drop; existing graph node under its graph name in other lenses - filed here under its paper title as the era's parametric pole."
+    },
+    {
+     "lens": "L11",
+     "name": "BM25 (Okapi BM25 ranking function)",
+     "year": 1994,
+     "kind": "method",
+     "relation": "import: the sparse-retrieval incumbent of the IR field - DPR's baseline and the DrQA-era retriever family",
+     "why": "Robertson et al.; the retriever the dense line defines itself against."
+    },
+    {
+     "lens": "L11",
+     "name": "TF-IDF (term frequency-inverse document frequency weighting)",
+     "year": 1972,
+     "kind": "theory",
+     "relation": "import: the weighting scheme of DrQA's retriever and the classical IR stratum",
+     "why": "Sparck Jones 1972 / Salton's vector-space development; DrQA's retriever is TF-IDF over bigrams."
+    },
+    {
+     "lens": "L11",
+     "name": "Vector space model for information retrieval",
+     "year": 1975,
+     "kind": "theory",
+     "relation": "import: documents and queries as vectors in a shared space - the deep form of dense retrieval",
+     "why": "Salton et al. 1975; the representation the parent's MIPS geometry inherits at several removes."
+    },
+    {
+     "lens": "L12",
+     "name": "Latent Dirichlet Allocation",
+     "year": 2003,
+     "kind": "theory",
+     "relation": "equivalence: documents as latent variables to be inferred - the statistical ancestor of latent-document modelling",
+     "why": "Blei et al. 2003; analogy hearing - latent document variables in topic models vs the parent's retrieved-document latent variables."
+    },
+    {
+     "lens": "L12",
+     "name": "End-to-End Memory Networks",
+     "year": 2015,
+     "kind": "method",
+     "relation": "equivalence: differentiable reading from a memory store, trained end-to-end",
+     "why": "Sukhbaatar et al. 2015 (FAIR): the end-to-end memory-reading formulation; the parent's 'memory' language's nearer carrier."
+    },
+    {
+     "lens": "L12",
+     "name": "A Discrete Hard EM Approach for Weakly Supervised Question Answering",
+     "year": 2019,
+     "kind": "method",
+     "relation": "equivalence: latent retrieval trained under weak supervision (Min et al.) - the training stratum of the ORQA line",
+     "why": "Min et al. 2019: hard-EM over latent evidence for open QA; the weakly-supervised latent-retrieval training tradition ORQA and the parent inherit."
+    },
+    {
+     "lens": "L13",
+     "name": "Semantic Parsing on Freebase from Question-Answer Pairs (WebQuestions)",
+     "year": 2013,
+     "kind": "method",
+     "relation": "equivalence: QA over a structured knowledge base (Berant et al.) - the rival knowledge paradigm",
+     "why": "The KB-QA formulation: answers from Freebase facts, not text; the parent's text-retrieval paradigm is defined partly against it."
+    },
+    {
+     "lens": "L13",
+     "name": "Freebase",
+     "year": 2007,
+     "kind": "data",
+     "relation": "equivalence: the structured knowledge base as the knowledge source of the rival paradigm",
+     "why": "Metaweb/Google's knowledge graph; the non-parametric memory of the KB-QA line."
+    },
+    {
+     "lens": "L13",
+     "name": "Deep Neural Networks for YouTube Recommendations (two-tower retrieval)",
+     "year": 2016,
+     "kind": "method",
+     "relation": "equivalence: dual-encoder candidate retrieval at industrial scale in recommender systems",
+     "why": "Covington et al. 2016: the two-tower retrieval form in a neighbouring field - parallel instance hearing."
+    },
+    {
+     "lens": "L15",
+     "name": "Locality-Sensitive Hashing",
+     "year": 1998,
+     "kind": "method",
+     "relation": "instrument in another field: the original ANN family (Indyk & Motwani) that HNSW's generation superseded",
+     "why": "The ANN stratum's founding approach; background of the index instrument."
+    },
+    {
+     "lens": "L15",
+     "name": "Product Quantization for Nearest Neighbor Search",
+     "year": 2011,
+     "kind": "method",
+     "relation": "instrument: the vector-compression method inside FAISS indexes at scale (Jegou et al.)",
+     "why": "The parent's index memory footprint (100GB -> 36GB compressed per the paper's appendix discussion) rests on this stratum."
+    },
+    {
+     "lens": "L15",
+     "name": "HNSW: Hierarchical Navigable Small World graphs",
+     "year": 2016,
+     "kind": "method",
+     "relation": "instrument: the ANN method actually used",
+     "why": "Duplicate filing under the cross-field instrument lens."
+    },
+    {
+     "lens": "L17",
+     "name": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+     "year": 2019,
+     "kind": "method",
+     "relation": "formulation in another register: sentence-level dense embeddings for semantic search",
+     "why": "Reimers & Gurevych 2019; the sentence-embedding turn parallel to DPR's passage embeddings."
+    },
+    {
+     "lens": "L17",
+     "name": "Universal Sentence Encoder",
+     "year": 2018,
+     "kind": "architecture",
+     "relation": "formulation: a general-purpose sentence encoder as a reusable retrieval component",
+     "why": "Cer et al. 2018 (Google); the encoder-as-service formulation of the same turn."
+    },
+    {
+     "lens": "L17",
+     "name": "Deep Neural Networks for YouTube Recommendations (two-tower retrieval)",
+     "year": 2016,
+     "kind": "method",
+     "relation": "formulation: retrieval as the first stage of a generate/rank pipeline, in recommender systems",
+     "why": "Duplicate filing under the cross-field problem lens."
+    },
+    {
+     "lens": "L18",
+     "name": "HuggingFace Transformers library",
+     "year": 2019,
+     "kind": "software",
+     "relation": "production: the library in which the parent's code was open-sourced at publication",
+     "why": "The parent paper's footnote: code open-sourced as part of HuggingFace Transformers. Direction hearing: the library distributes the parent."
+    },
+    {
+     "lens": "L18",
+     "name": "fairseq (Facebook AI Research Sequence-to-Sequence Toolkit)",
+     "year": 2019,
+     "kind": "software",
+     "relation": "production: the home lab's seq2seq toolkit, the BART line's tooling",
+     "why": "Ott et al. 2019; plausible tooling of the generator's lineage, undocumented for the parent itself."
+    },
+    {
+     "lens": "L18",
+     "name": "Annoy (Approximate Nearest Neighbors Oh Yeah)",
+     "year": 2015,
+     "kind": "software",
+     "relation": "production: Spotify's production ANN library - the ANN-in-production stratum the parent's FAISS choice sits in",
+     "why": "Filed for completeness of the ANN production stratum; the parent used FAISS, not Annoy."
+    },
+    {
+     "lens": "L19",
+     "name": "Generative Question Answering: Learning to Answer the Whole Question",
+     "year": 2019,
+     "kind": "method",
+     "relation": "inventor's earlier work: Mike Lewis (BART's and the parent's co-author) on generative QA with Fan",
+     "why": "The generator-side design intent (generate whole answers, not spans) in the co-author's own prior line."
+    },
+    {
+     "lens": "L19",
+     "name": "MLQA: MultiLingual Question Answering benchmark",
+     "year": 2019,
+     "kind": "data",
+     "relation": "inventor's earlier work: Patrick Lewis (first author) on cross-lingual QA evaluation",
+     "why": "Biography hearing: the first author's QA-evaluation work in the same period."
+    },
+    {
+     "lens": "L19",
+     "name": "Universal Schema for relation extraction",
+     "year": 2013,
+     "kind": "method",
+     "relation": "inventor's earlier work: Riedel (senior co-author) on jointly embedding KB and text relations",
+     "why": "Biography hearing: the senior author's knowledge-representation line."
+    },
+    {
+     "lens": "L20",
+     "name": "Expectation-Maximization algorithm",
+     "year": 1977,
+     "kind": "theory",
+     "relation": "enabling mathematics: latent-variable marginalization - the parent's training objective marginalizes latent documents",
+     "why": "Dempster et al. 1977; the parent optimizes the marginal likelihood directly by gradient, but the latent-variable machinery is EM's stratum."
+    },
+    {
+     "lens": "L20",
+     "name": "A Discrete Hard EM Approach for Weakly Supervised Question Answering",
+     "year": 2019,
+     "kind": "method",
+     "relation": "enabling mathematics in applied form: hard-EM training of latent retrieval",
+     "why": "Duplicate filing under the mathematics lens."
+    },
+    {
+     "lens": "L20",
+     "name": "End-to-End Memory Networks",
+     "year": 2015,
+     "kind": "method",
+     "relation": "enabling form: soft attention over memory slots as differentiable retrieval",
+     "why": "Duplicate filing under the mathematics lens: attention-as-retrieval is the differentiable form the dense retriever inherits."
+    },
+    {
+     "lens": "L21",
+     "name": "NVIDIA V100 GPU",
+     "year": 2017,
+     "kind": "machine",
+     "relation": "enabling instrument: the accelerator generation",
+     "why": "Duplicate filing under the enabling-instrument lens."
+    },
+    {
+     "lens": "L21",
+     "name": "FAISS (Facebook AI Similarity Search)",
+     "year": 2017,
+     "kind": "software",
+     "relation": "enabling instrument: the similarity-search library",
+     "why": "Duplicate filing under the enabling-instrument lens."
+    },
+    {
+     "lens": "L21",
+     "name": "Product Quantization for Nearest Neighbor Search",
+     "year": 2011,
+     "kind": "method",
+     "relation": "enabling instrument: index compression",
+     "why": "Duplicate filing under the enabling-instrument lens."
+    },
+    {
+     "lens": "L22",
+     "name": "Wikipedia",
+     "year": 2001,
+     "kind": "data",
+     "relation": "era condition: a comprehensive, freely licensed encyclopedia exists to serve as the knowledge source",
+     "why": "Duplicate filing under the era lens."
+    },
+    {
+     "lens": "L22",
+     "name": "Common Crawl",
+     "year": 2008,
+     "kind": "data",
+     "relation": "era condition: web-scale text corpora as the pretraining substrate of the parent's components (BART's pretraining corpus line)",
+     "why": "Existing graph node; the era's corpus condition, heard here as background."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+      "candidate": {
+       "lens": "L1",
+       "name": "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering",
+       "year": 2019,
+       "kind": "method",
+       "relation": "the latent-retrieval formulation ancestor; the parent follows Lee et al. for the corpus convention",
+       "why": "The parent: 'Following Lee et al. [31] and Karpukhin et al. [26], we use the December 2018 dump'; the introduction names ORQA as one of the two recently introduced retrieval-augmented models it generalizes (extractive reader -> generative generator)."
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bart-denoising-sequence-to-sequence-pre-training-2019",
+      "candidate": {
+       "lens": "L1",
+       "name": "BART: Denoising Sequence-to-Sequence Pre-training",
+       "year": 2019,
+       "kind": "architecture",
+       "relation": "the parent's generator, used in every headline result",
+       "why": "The parent: 'the seq2seq model (BART [32]) then conditions on these latent documents together with the input to generate the output'. The generator-component hearing."
+      },
+      "members": [
+       3,
+       7
+      ],
+      "member_names": [
+       "BART: Denoising Sequence-to-Sequence Pre-training",
+       "BART: Denoising Sequence-to-Sequence Pre-training"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "drqa-reading-wikipedia-to-answer-open-domain-questions-2017",
+      "candidate": {
+       "lens": "L1",
+       "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+       "year": 2017,
+       "kind": "method",
+       "relation": "the retrieve-and-read architecture that formulated open-domain QA over Wikipedia",
+       "why": "Chen et al. 2017: TF-IDF retriever + neural reader over all of Wikipedia - the task formulation and pipeline shape the parent inherits and generalizes."
+      },
+      "members": [
+       4,
+       30
+      ],
+      "member_names": [
+       "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+       "DrQA: Reading Wikipedia to Answer Open-Domain Questions"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "t5-text-to-text-transfer-transformer-2019",
+      "candidate": {
+       "lens": "L1",
+       "name": "T5 (text-to-text transfer transformer)",
+       "year": 2019,
+       "kind": "architecture",
+       "relation": "the parametric-only seq2seq baseline the parent is framed against ('Like T5 or BART, RAG can be fine-tuned on any seq2seq task')",
+       "why": "Existing graph node (admitted at FLAN, session 45 exp.1). At this parent it is the compared incumbent, not the generator - edge-scoped hearing."
+      },
+      "members": [
+       5,
+       34
+      ],
+      "member_names": [
+       "T5 (text-to-text transfer transformer)",
+       "T5 (text-to-text transfer transformer)"
+      ],
+      "matched_node_id": "t5-text-to-text-transfer-transformer-2019",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bert-2018",
+      "candidate": {
+       "lens": "L2",
+       "name": "BERT",
+       "year": 2018,
+       "kind": "architecture",
+       "relation": "component: DPR's dual encoders are BERT models; the extractive predecessors' reader",
+       "why": "DPR initializes both encoders from BERT; the channel into the parent runs through DPR."
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "BERT"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "faiss-facebook-ai-similarity-search-2017",
+      "candidate": {
+       "lens": "L2",
+       "name": "FAISS (Facebook AI Similarity Search)",
+       "year": 2017,
+       "kind": "software",
+       "relation": "component: the library that builds and serves the parent's 21M-passage MIPS index",
+       "why": "The parent: 'build a single MIPS index using FAISS with a Hierarchical Navigable Small World approximation'."
+      },
+      "members": [
+       9,
+       16,
+       19,
+       24,
+       62
+      ],
+      "member_names": [
+       "FAISS (Facebook AI Similarity Search)",
+       "FAISS (Facebook AI Similarity Search)",
+       "FAISS (Facebook AI Similarity Search)",
+       "FAISS (Facebook AI Similarity Search)",
+       "FAISS (Facebook AI Similarity Search)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hnsw-hierarchical-navigable-small-world-graphs-2016",
+      "candidate": {
+       "lens": "L2",
+       "name": "HNSW: Hierarchical Navigable Small World graphs",
+       "year": 2016,
+       "kind": "method",
+       "relation": "component: the approximate-nearest-neighbour algorithm inside the parent's index",
+       "why": "Malkov & Yashunin; the ANN approximation the parent's retrieval runs on."
+      },
+      "members": [
+       10,
+       17,
+       20,
+       48
+      ],
+      "member_names": [
+       "HNSW: Hierarchical Navigable Small World graphs",
+       "HNSW: Hierarchical Navigable Small World graphs",
+       "HNSW: Hierarchical Navigable Small World graphs",
+       "HNSW: Hierarchical Navigable Small World graphs"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "wikipedia-2001",
+      "candidate": {
+       "lens": "L3",
+       "name": "Wikipedia",
+       "year": 2001,
+       "kind": "data",
+       "relation": "the knowledge source whose December 2018 dump is the parent's non-parametric memory",
+       "why": "Content side of the corpus hearing; the consumed form is the 2020 index artifact."
+      },
+      "members": [
+       12,
+       64
+      ],
+      "member_names": [
+       "Wikipedia",
+       "Wikipedia"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "natural-questions-2019",
+      "candidate": {
+       "lens": "L3",
+       "name": "Natural Questions",
+       "year": 2019,
+       "kind": "data",
+       "relation": "the parent's headline open-domain QA task (train + evaluation)",
+       "why": "Kwiatkowski et al. 2019; RAG sets SOTA on open NQ. Constituent-of-experiments hearing."
+      },
+      "members": [
+       14,
+       22
+      ],
+      "member_names": [
+       "Natural Questions",
+       "Natural Questions"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "triviaqa-2017",
+      "candidate": {
+       "lens": "L3",
+       "name": "TriviaQA",
+       "year": 2017,
+       "kind": "data",
+       "relation": "a headline evaluation task of the parent",
+       "why": "Joshi et al. 2017; the parent 'strongly outperforms recent approaches that use specialised pre-training objectives on TriviaQA'."
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "TriviaQA"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nvidia-v100-gpu-2017",
+      "candidate": {
+       "lens": "L4",
+       "name": "NVIDIA V100 GPU",
+       "year": 2017,
+       "kind": "machine",
+       "relation": "substrate: the accelerator generation of the parent lab's training fleet in the period",
+       "why": "Existing graph node. No document names the parent's training hardware; the generic-substrate hearing."
+      },
+      "members": [
+       18,
+       61
+      ],
+      "member_names": [
+       "NVIDIA V100 GPU",
+       "NVIDIA V100 GPU"
+      ],
+      "matched_node_id": "nvidia-v100-gpu-2017",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "squad-stanford-question-answering-dataset-2016",
+      "candidate": {
+       "lens": "L5",
+       "name": "SQuAD (Stanford Question Answering Dataset)",
+       "year": 2016,
+       "kind": "data",
+       "relation": "instrument: the extractive-QA measurement regime (span exact-match) the parent's task line inherits and departs from",
+       "why": "Rajpurkar et al. 2016; the measurement tradition of the QA field the parent re-aims at generation."
+      },
+      "members": [
+       21
+      ],
+      "member_names": [
+       "SQuAD (Stanford Question Answering Dataset)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pytorch-2016",
+      "candidate": {
+       "lens": "L6",
+       "name": "PyTorch",
+       "year": 2016,
+       "kind": "software",
+       "relation": "the framework of the parent lab's research stack in the period",
+       "why": "Generic-framework hearing (the PyTorch-at-Codex shape): plausible, undocumented for this parent."
+      },
+      "members": [
+       23
+      ],
+      "member_names": [
+       "PyTorch"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "apache-lucene-1999",
+      "candidate": {
+       "lens": "L6",
+       "name": "Apache Lucene",
+       "year": 1999,
+       "kind": "software",
+       "relation": "the incumbent open-source search library of the IR tradition the parent's retriever departs from",
+       "why": "The sparse-retrieval era's standard substrate; background of the DrQA-line retrievers."
+      },
+      "members": [
+       25
+      ],
+      "member_names": [
+       "Apache Lucene"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "facebook-ai-research-fair-2015",
+      "candidate": {
+       "lens": "L7",
+       "name": "Facebook AI Research (FAIR)",
+       "year": 2015,
+       "kind": "institution",
+       "relation": "the parent's home laboratory; carrier of DPR, BART-adjacent and LAMA programmes",
+       "why": "Decomposition hearing: the institution acts through its artifacts, each filed individually."
+      },
+      "members": [
+       26
+      ],
+      "member_names": [
+       "Facebook AI Research (FAIR)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "language-models-as-knowledge-bases-lama-probe-2019",
+      "candidate": {
+       "lens": "L7",
+       "name": "Language Models as Knowledge Bases? (LAMA probe)",
+       "year": 2019,
+       "kind": "problem-formulation",
+       "relation": "the home lab's problem document: Petroni et al. showed LMs store relational knowledge in parameters, and probed its limits",
+       "why": "Petroni is a co-author of both papers; the parent's introduction frames exactly LAMA's problem (parametric memory cannot be revised, cannot attribute, hallucinates). Problem-side hearing."
+      },
+      "members": [
+       28,
+       31
+      ],
+      "member_names": [
+       "Language Models as Knowledge Bases? (LAMA probe)",
+       "Language Models as Knowledge Bases? (LAMA probe)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mediawiki-2002",
+      "candidate": {
+       "lens": "L8",
+       "name": "MediaWiki",
+       "year": 2002,
+       "kind": "software",
+       "relation": "the platform whose dump format defines the corpus artifact's raw form",
+       "why": "Weak filing: the December 2018 dump is a MediaWiki export; format background of the data artifact."
+      },
+      "members": [
+       29
+      ],
+      "member_names": [
+       "MediaWiki"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "memory-networks-2014",
+      "candidate": {
+       "lens": "L9",
+       "name": "Memory Networks",
+       "year": 2014,
+       "kind": "method",
+       "relation": "problem formulation: QA over an explicit memory store - the 'memory' framing's founding artifact in this lab's line",
+       "why": "Weston et al. 2014 (FAIR): models that read from a memory component; the parametric/non-parametric memory vocabulary's ancestor."
+      },
+      "members": [
+       32
+      ],
+      "member_names": [
+       "Memory Networks"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "teaching-machines-to-read-and-comprehend-2015",
+      "candidate": {
+       "lens": "L9",
+       "name": "Teaching Machines to Read and Comprehend",
+       "year": 2015,
+       "kind": "method",
+       "relation": "problem formulation: neural reading comprehension as the QA task form",
+       "why": "Hermann et al. 2015 (DeepMind): the cloze-style neural reader formulation the extractive-QA stratum descends from."
+      },
+      "members": [
+       33
+      ],
+      "member_names": [
+       "Teaching Machines to Read and Comprehend"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bm25-okapi-bm25-ranking-function-1994",
+      "candidate": {
+       "lens": "L11",
+       "name": "BM25 (Okapi BM25 ranking function)",
+       "year": 1994,
+       "kind": "method",
+       "relation": "import: the sparse-retrieval incumbent of the IR field - DPR's baseline and the DrQA-era retriever family",
+       "why": "Robertson et al.; the retriever the dense line defines itself against."
+      },
+      "members": [
+       37
+      ],
+      "member_names": [
+       "BM25 (Okapi BM25 ranking function)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "tf-idf-term-frequency-inverse-document-frequency-weighting-1972",
+      "candidate": {
+       "lens": "L11",
+       "name": "TF-IDF (term frequency-inverse document frequency weighting)",
+       "year": 1972,
+       "kind": "theory",
+       "relation": "import: the weighting scheme of DrQA's retriever and the classical IR stratum",
+       "why": "Sparck Jones 1972 / Salton's vector-space development; DrQA's retriever is TF-IDF over bigrams."
+      },
+      "members": [
+       38
+      ],
+      "member_names": [
+       "TF-IDF (term frequency-inverse document frequency weighting)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "vector-space-model-for-information-retrieval-1975",
+      "candidate": {
+       "lens": "L11",
+       "name": "Vector space model for information retrieval",
+       "year": 1975,
+       "kind": "theory",
+       "relation": "import: documents and queries as vectors in a shared space - the deep form of dense retrieval",
+       "why": "Salton et al. 1975; the representation the parent's MIPS geometry inherits at several removes."
+      },
+      "members": [
+       39
+      ],
+      "member_names": [
+       "Vector space model for information retrieval"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "latent-dirichlet-allocation-2003",
+      "candidate": {
+       "lens": "L12",
+       "name": "Latent Dirichlet Allocation",
+       "year": 2003,
+       "kind": "theory",
+       "relation": "equivalence: documents as latent variables to be inferred - the statistical ancestor of latent-document modelling",
+       "why": "Blei et al. 2003; analogy hearing - latent document variables in topic models vs the parent's retrieved-document latent variables."
+      },
+      "members": [
+       40
+      ],
+      "member_names": [
+       "Latent Dirichlet Allocation"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "end-to-end-memory-networks-2015",
+      "candidate": {
+       "lens": "L12",
+       "name": "End-to-End Memory Networks",
+       "year": 2015,
+       "kind": "method",
+       "relation": "equivalence: differentiable reading from a memory store, trained end-to-end",
+       "why": "Sukhbaatar et al. 2015 (FAIR): the end-to-end memory-reading formulation; the parent's 'memory' language's nearer carrier."
+      },
+      "members": [
+       41,
+       60
+      ],
+      "member_names": [
+       "End-to-End Memory Networks",
+       "End-to-End Memory Networks"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-discrete-hard-em-approach-for-weakly-supervised-question-a-2019",
+      "candidate": {
+       "lens": "L12",
+       "name": "A Discrete Hard EM Approach for Weakly Supervised Question Answering",
+       "year": 2019,
+       "kind": "method",
+       "relation": "equivalence: latent retrieval trained under weak supervision (Min et al.) - the training stratum of the ORQA line",
+       "why": "Min et al. 2019: hard-EM over latent evidence for open QA; the weakly-supervised latent-retrieval training tradition ORQA and the parent inherit."
+      },
+      "members": [
+       42,
+       59
+      ],
+      "member_names": [
+       "A Discrete Hard EM Approach for Weakly Supervised Question Answering",
+       "A Discrete Hard EM Approach for Weakly Supervised Question Answering"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "semantic-parsing-on-freebase-from-question-answer-pairs-webq-2013",
+      "candidate": {
+       "lens": "L13",
+       "name": "Semantic Parsing on Freebase from Question-Answer Pairs (WebQuestions)",
+       "year": 2013,
+       "kind": "method",
+       "relation": "equivalence: QA over a structured knowledge base (Berant et al.) - the rival knowledge paradigm",
+       "why": "The KB-QA formulation: answers from Freebase facts, not text; the parent's text-retrieval paradigm is defined partly against it."
+      },
+      "members": [
+       43
+      ],
+      "member_names": [
+       "Semantic Parsing on Freebase from Question-Answer Pairs (WebQuestions)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "freebase-2007",
+      "candidate": {
+       "lens": "L13",
+       "name": "Freebase",
+       "year": 2007,
+       "kind": "data",
+       "relation": "equivalence: the structured knowledge base as the knowledge source of the rival paradigm",
+       "why": "Metaweb/Google's knowledge graph; the non-parametric memory of the KB-QA line."
+      },
+      "members": [
+       44
+      ],
+      "member_names": [
+       "Freebase"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "deep-neural-networks-for-youtube-recommendations-two-tower-r-2016",
+      "candidate": {
+       "lens": "L13",
+       "name": "Deep Neural Networks for YouTube Recommendations (two-tower retrieval)",
+       "year": 2016,
+       "kind": "method",
+       "relation": "equivalence: dual-encoder candidate retrieval at industrial scale in recommender systems",
+       "why": "Covington et al. 2016: the two-tower retrieval form in a neighbouring field - parallel instance hearing."
+      },
+      "members": [
+       45,
+       51
+      ],
+      "member_names": [
+       "Deep Neural Networks for YouTube Recommendations (two-tower retrieval)",
+       "Deep Neural Networks for YouTube Recommendations (two-tower retrieval)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "locality-sensitive-hashing-1998",
+      "candidate": {
+       "lens": "L15",
+       "name": "Locality-Sensitive Hashing",
+       "year": 1998,
+       "kind": "method",
+       "relation": "instrument in another field: the original ANN family (Indyk & Motwani) that HNSW's generation superseded",
+       "why": "The ANN stratum's founding approach; background of the index instrument."
+      },
+      "members": [
+       46
+      ],
+      "member_names": [
+       "Locality-Sensitive Hashing"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "product-quantization-for-nearest-neighbor-search-2011",
+      "candidate": {
+       "lens": "L15",
+       "name": "Product Quantization for Nearest Neighbor Search",
+       "year": 2011,
+       "kind": "method",
+       "relation": "instrument: the vector-compression method inside FAISS indexes at scale (Jegou et al.)",
+       "why": "The parent's index memory footprint (100GB -> 36GB compressed per the paper's appendix discussion) rests on this stratum."
+      },
+      "members": [
+       47,
+       63
+      ],
+      "member_names": [
+       "Product Quantization for Nearest Neighbor Search",
+       "Product Quantization for Nearest Neighbor Search"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sentence-bert-sentence-embeddings-using-siamese-bert-network-2019",
+      "candidate": {
+       "lens": "L17",
+       "name": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+       "year": 2019,
+       "kind": "method",
+       "relation": "formulation in another register: sentence-level dense embeddings for semantic search",
+       "why": "Reimers & Gurevych 2019; the sentence-embedding turn parallel to DPR's passage embeddings."
+      },
+      "members": [
+       49
+      ],
+      "member_names": [
+       "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "universal-sentence-encoder-2018",
+      "candidate": {
+       "lens": "L17",
+       "name": "Universal Sentence Encoder",
+       "year": 2018,
+       "kind": "architecture",
+       "relation": "formulation: a general-purpose sentence encoder as a reusable retrieval component",
+       "why": "Cer et al. 2018 (Google); the encoder-as-service formulation of the same turn."
+      },
+      "members": [
+       50
+      ],
+      "member_names": [
+       "Universal Sentence Encoder"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "huggingface-transformers-library-2019",
+      "candidate": {
+       "lens": "L18",
+       "name": "HuggingFace Transformers library",
+       "year": 2019,
+       "kind": "software",
+       "relation": "production: the library in which the parent's code was open-sourced at publication",
+       "why": "The parent paper's footnote: code open-sourced as part of HuggingFace Transformers. Direction hearing: the library distributes the parent."
+      },
+      "members": [
+       52
+      ],
+      "member_names": [
+       "HuggingFace Transformers library"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fairseq-facebook-ai-research-sequence-to-sequence-toolkit-2019",
+      "candidate": {
+       "lens": "L18",
+       "name": "fairseq (Facebook AI Research Sequence-to-Sequence Toolkit)",
+       "year": 2019,
+       "kind": "software",
+       "relation": "production: the home lab's seq2seq toolkit, the BART line's tooling",
+       "why": "Ott et al. 2019; plausible tooling of the generator's lineage, undocumented for the parent itself."
+      },
+      "members": [
+       53
+      ],
+      "member_names": [
+       "fairseq (Facebook AI Research Sequence-to-Sequence Toolkit)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "annoy-approximate-nearest-neighbors-oh-yeah-2015",
+      "candidate": {
+       "lens": "L18",
+       "name": "Annoy (Approximate Nearest Neighbors Oh Yeah)",
+       "year": 2015,
+       "kind": "software",
+       "relation": "production: Spotify's production ANN library - the ANN-in-production stratum the parent's FAISS choice sits in",
+       "why": "Filed for completeness of the ANN production stratum; the parent used FAISS, not Annoy."
+      },
+      "members": [
+       54
+      ],
+      "member_names": [
+       "Annoy (Approximate Nearest Neighbors Oh Yeah)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "generative-question-answering-learning-to-answer-the-whole-q-2019",
+      "candidate": {
+       "lens": "L19",
+       "name": "Generative Question Answering: Learning to Answer the Whole Question",
+       "year": 2019,
+       "kind": "method",
+       "relation": "inventor's earlier work: Mike Lewis (BART's and the parent's co-author) on generative QA with Fan",
+       "why": "The generator-side design intent (generate whole answers, not spans) in the co-author's own prior line."
+      },
+      "members": [
+       55
+      ],
+      "member_names": [
+       "Generative Question Answering: Learning to Answer the Whole Question"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mlqa-multilingual-question-answering-benchmark-2019",
+      "candidate": {
+       "lens": "L19",
+       "name": "MLQA: MultiLingual Question Answering benchmark",
+       "year": 2019,
+       "kind": "data",
+       "relation": "inventor's earlier work: Patrick Lewis (first author) on cross-lingual QA evaluation",
+       "why": "Biography hearing: the first author's QA-evaluation work in the same period."
+      },
+      "members": [
+       56
+      ],
+      "member_names": [
+       "MLQA: MultiLingual Question Answering benchmark"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "universal-schema-for-relation-extraction-2013",
+      "candidate": {
+       "lens": "L19",
+       "name": "Universal Schema for relation extraction",
+       "year": 2013,
+       "kind": "method",
+       "relation": "inventor's earlier work: Riedel (senior co-author) on jointly embedding KB and text relations",
+       "why": "Biography hearing: the senior author's knowledge-representation line."
+      },
+      "members": [
+       57
+      ],
+      "member_names": [
+       "Universal Schema for relation extraction"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "expectation-maximization-algorithm-1977",
+      "candidate": {
+       "lens": "L20",
+       "name": "Expectation-Maximization algorithm",
+       "year": 1977,
+       "kind": "theory",
+       "relation": "enabling mathematics: latent-variable marginalization - the parent's training objective marginalizes latent documents",
+       "why": "Dempster et al. 1977; the parent optimizes the marginal likelihood directly by gradient, but the latent-variable machinery is EM's stratum."
+      },
+      "members": [
+       58
+      ],
+      "member_names": [
+       "Expectation-Maximization algorithm"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "common-crawl-2008",
+      "candidate": {
+       "lens": "L22",
+       "name": "Common Crawl",
+       "year": 2008,
+       "kind": "data",
+       "relation": "era condition: web-scale text corpora as the pretraining substrate of the parent's components (BART's pretraining corpus line)",
+       "why": "Existing graph node; the era's corpus condition, heard here as background."
+      },
+      "members": [
+       65
+      ],
+      "member_names": [
+       "Common Crawl"
+      ],
+      "matched_node_id": "common-crawl-2008",
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:4:12",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 4,
+       "card": {
+        "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+        "aliases": [],
+        "year": 2017,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 12,
+       "card": {
+        "name": "Wikipedia",
+        "aliases": [],
+        "year": 2001,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.532,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:4:64",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 4,
+       "card": {
+        "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+        "aliases": [],
+        "year": 2017,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 64,
+       "card": {
+        "name": "Wikipedia",
+        "aliases": [],
+        "year": 2001,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.532,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:8:49",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 8,
+       "card": {
+        "name": "BERT",
+        "aliases": [],
+        "year": 2018,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 49,
+       "card": {
+        "name": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+        "aliases": [],
+        "year": 2019,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.516,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:12:30",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 12,
+       "card": {
+        "name": "Wikipedia",
+        "aliases": [],
+        "year": 2001,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 30,
+       "card": {
+        "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+        "aliases": [],
+        "year": 2017,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.532,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:30:64",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 30,
+       "card": {
+        "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+        "aliases": [],
+        "year": 2017,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 64,
+       "card": {
+        "name": "Wikipedia",
+        "aliases": [],
+        "year": 2001,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.532,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:32:41",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 32,
+       "card": {
+        "name": "Memory Networks",
+        "aliases": [],
+        "year": 2014,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 41,
+       "card": {
+        "name": "End-to-End Memory Networks",
+        "aliases": [],
+        "year": 2015,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8304,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:32:60",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 32,
+       "card": {
+        "name": "Memory Networks",
+        "aliases": [],
+        "year": 2014,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 60,
+       "card": {
+        "name": "End-to-End Memory Networks",
+        "aliases": [],
+        "year": 2015,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8304,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:43:44",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 43,
+       "card": {
+        "name": "Semantic Parsing on Freebase from Question-Answer Pairs (WebQuestions)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 44,
+       "card": {
+        "name": "Freebase",
+        "aliases": [],
+        "year": 2007,
+        "domain": "",
+        "type": "other",
+        "definition": "",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.3755,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       3,
+       7
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       4,
+       30
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       5,
+       34
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       16
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       19
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       24
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       62
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       10,
+       17
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       10,
+       20
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       10,
+       48
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       12,
+       64
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       14,
+       22
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       18,
+       61
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       28,
+       31
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       41,
+       60
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       42,
+       59
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       45,
+       51
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       47,
+       63
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "lens": "L1",
+       "name": "Dense Passage Retrieval (DPR)",
+       "year": 2020,
+       "kind": "method",
+       "relation": "the parent's retriever, initialized from DPR and its index",
+       "why": "The parent paper: 'The retriever (Dense Passage Retriever [26], henceforth DPR) provides latent documents conditioned on the input'. Same year as the parent - expected date-drop; the components hearing is recorded in drop form."
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "lens": "L1",
+       "name": "REALM: Retrieval-Augmented Language Model Pre-Training",
+       "year": 2020,
+       "kind": "method",
+       "relation": "the coeval retrieval-augmented pretraining line named in the parent's introduction",
+       "why": "Named in the parent's introduction alongside ORQA. Same year (Feb 2020) - expected date-drop; multiples evidence for the formulation's ripeness."
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "lens": "L2",
+       "name": "Dense Passage Retrieval (DPR)",
+       "year": 2020,
+       "kind": "method",
+       "relation": "component: the retriever half of the parent",
+       "why": "Duplicate filing of the L1 candidate under the component lens."
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "lens": "L2",
+       "name": "DPR Wikipedia passage index (December 2018 dump, 21M passages)",
+       "year": 2020,
+       "kind": "data",
+       "relation": "component: the parent's non-parametric memory as a built artifact",
+       "why": "The corpus in its consumed form - DPR's construction (100-word disjoint chunks, document-encoder embeddings, FAISS index). Same year - expected date-drop; the content/form split is argued at the Wikipedia filing."
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "lens": "L3",
+       "name": "DPR Wikipedia passage index (December 2018 dump, 21M passages)",
+       "year": 2020,
+       "kind": "data",
+       "relation": "the corpus artifact in consumed form",
+       "why": "Duplicate filing under the data lens."
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "lens": "L7",
+       "name": "Dense Passage Retrieval (DPR)",
+       "year": 2020,
+       "kind": "method",
+       "relation": "institutional sibling: the same lab's retriever programme, eight shared authors' programme",
+       "why": "Duplicate filing under the institution lens (Karpukhin, Petroni, Kuttler, Yih are co-authors of both papers)."
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "lens": "L10",
+       "name": "How Much Knowledge Can You Pack Into the Parameters of a Language Model?",
+       "year": 2020,
+       "kind": "method",
+       "relation": "negative space: the closed-book QA programme (Roberts et al.) - knowledge in parameters only",
+       "why": "Same year as the parent - expected date-drop; the rival answer to the same problem, logged in drop form."
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "lens": "L10",
+       "name": "GPT-3: Language Models are Few-Shot Learners",
+       "year": 2020,
+       "kind": "method",
+       "relation": "negative space: the parametric-scaling answer of the same season",
+       "why": "Same year - expected date-drop; existing graph node under its graph name in other lenses - filed here under its paper title as the era's parametric pole."
+      },
+      "reason": "dated on/after parent year 2020"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:4:12",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 4,
+      "card": {
+       "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+       "aliases": [],
+       "year": 2017,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 12,
+      "card": {
+       "name": "Wikipedia",
+       "aliases": [],
+       "year": 2001,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.532,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:4:64",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 4,
+      "card": {
+       "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+       "aliases": [],
+       "year": 2017,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 64,
+      "card": {
+       "name": "Wikipedia",
+       "aliases": [],
+       "year": 2001,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.532,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:8:49",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 8,
+      "card": {
+       "name": "BERT",
+       "aliases": [],
+       "year": 2018,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 49,
+      "card": {
+       "name": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+       "aliases": [],
+       "year": 2019,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.516,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:12:30",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 12,
+      "card": {
+       "name": "Wikipedia",
+       "aliases": [],
+       "year": 2001,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 30,
+      "card": {
+       "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+       "aliases": [],
+       "year": 2017,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.532,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:30:64",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 30,
+      "card": {
+       "name": "DrQA: Reading Wikipedia to Answer Open-Domain Questions",
+       "aliases": [],
+       "year": 2017,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 64,
+      "card": {
+       "name": "Wikipedia",
+       "aliases": [],
+       "year": 2001,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.532,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:32:41",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 32,
+      "card": {
+       "name": "Memory Networks",
+       "aliases": [],
+       "year": 2014,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 41,
+      "card": {
+       "name": "End-to-End Memory Networks",
+       "aliases": [],
+       "year": 2015,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8304,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:32:60",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 32,
+      "card": {
+       "name": "Memory Networks",
+       "aliases": [],
+       "year": 2014,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 60,
+      "card": {
+       "name": "End-to-End Memory Networks",
+       "aliases": [],
+       "year": 2015,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8304,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:43:44",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 43,
+      "card": {
+       "name": "Semantic Parsing on Freebase from Question-Answer Pairs (WebQuestions)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 44,
+      "card": {
+       "name": "Freebase",
+       "aliases": [],
+       "year": 2007,
+       "domain": "",
+       "type": "other",
+       "definition": "",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.3755,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],

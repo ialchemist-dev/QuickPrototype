@@ -2618,3 +2618,52 @@
   "expansions_done": 99
  }
 }
+{
+ "ts": "2026-11-25T06:20:00-07:00",
+ "session": "run session 45 (v4), expansion 2 of 2",
+ "kind": "expansion",
+ "parent": "retrieval-augmented-generation-2020",
+ "parent_name": "Retrieval-augmented generation",
+ "provenance": "Parent stored record verified complete this session (no session-31 defect). Grounding from the parent paper's own text (Lewis et al., arXiv:2005.11401, May 2020): retriever = DPR initialized with its index, document encoder FROZEN during the parent's training; generator = BART-large; corpus = December 2018 Wikipedia dump in 21M disjoint 100-word passages, FAISS/HNSW MIPS index, the convention adopted 'Following Lee et al. [ORQA] and Karpukhin et al. [DPR]'; the introduction names ORQA and REALM as the two recently introduced retrieval-augmented models.",
+ "raw": 66,
+ "dry_notes": "L14 and L16 dry; L8 single filing (MediaWiki) with dry note; L22 shortfall (2 filings); L23 meta note - the dated-invisible stratum named for the article: DPR (Apr 2020), REALM (Feb 2020), the closed-book QA paper (Feb 2020), GPT-3 (May 2020), FiD (Sep 2020, descendant direction) all date-dropped; KILT (Sep 2020) postdates the parent and was NOT filed (a direction exclusion, not a year-bound case).",
+ "date_dropped": 8,
+ "distinct": 40,
+ "evaluated": 40,
+ "survivors": 2,
+ "rejected": 38,
+ "mediated": 10,
+ "survivors_detail": [
+  {
+   "name": "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering",
+   "id": "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+   "is_new": true,
+   "score": 5.0,
+   "decisive": "The formulation ancestor, admitted on two documented channels: (i) the corpus convention - the parent adopts Lee et al.'s December 2018 dump and passage form by explicit citation in its methods section; (ii) the formulation - latent retrieval over Wikipedia passages, marginalized and trained end-to-end, which the parent inherits and transforms (extractive BERT reader -> generative BART generator; ICT pretraining -> DPR initialization). Ancestor-modified, mechanism retained (Rumelhart & Norman successor shape). Mediation attack via DPR answered in verification: DPR carries retriever weights and index, not the formulation or the convention, both of which exist inside ORQA before DPR. Q3 partial - REALM is a genuine coeval multiple. Verification provisional."
+  },
+  {
+   "name": "Language Models as Knowledge Bases? (LAMA probe)",
+   "id": "language-models-as-knowledge-bases-lama-probe-2019",
+   "is_new": true,
+   "score": 2.0,
+   "decisive": "Problem-side admission (the Lashley-at-Jordan shape): a specific document from the parent's own laboratory and programme (Petroni et al., EMNLP 2019; Petroni is a co-author of both papers) that posed the problem the parent's introduction takes up - parametric memory stores knowledge but cannot be revised, cannot attribute, and hallucinates - with the parametric/non-parametric distinction adopted as the parent architecture's organizing frame. Q2 pass on programme generativity (probing, KILT, the retrieval response). FLAGGED MOST CONTESTABLE of this expansion: the Hochreiter-condition attack (diagnosis vs derivation) is answered by the framing-adoption argument but a re-hearing condition is recorded in the verification file (a showing that the framing circulated independently of the LAMA programme before Sep 2019 reopens it as fail-closed partial). Verification provisional."
+  }
+ ],
+ "rejections_of_note": [
+  "DPR (Dense Passage Retrieval): the brief's assigned components hearing is INEXPRESSIBLE at this parent - DPR (arXiv Apr 2020) is the same year as the parent (May 2020) and was date-dropped at resolve (3 filings among the 8 drops), together with its constructed corpus artifact, the DPR Wikipedia passage index (2 filings). The components argument is therefore recorded here and in ten mediation records rather than in a verdict: DPR is consumed wholesale (the parent initializes from it and never retrains its document encoder - the frozen encoder means the parent's non-parametric memory IS DPR's artifact), and had it been expressible it would have faced the same components test as BART, with one asymmetry in its favour - the index artifact is not fungible the way the generator is (no substitute 21M-passage dense index existed), so the presupposition shape (Cook at REYES) would have been genuinely arguable. The year bound, not the gate, decided this hearing; logged as the session's principal structural note.",
+  "BART (2019): the components hearing that WAS expressible, refused - a consumed component-instance, fungible: Fusion-in-Decoder ran the same formulation on T5 within the year, so the counterfactual (substitute the generator) leaves the parent's leap unchanged. The Codex discrimination is recorded in full in the verdict (at Codex the admitted artifact's capability was the phenomenon under study; here the claim is about the coupling, and the paper says so: 'Like T5 or BART, RAG can be fine-tuned on any seq2seq task'). The class-level presupposition (a pretrained seq2seq generator exists) is recorded; the instance fails.",
+  "REALM (Feb 2020): date-dropped (coeval multiple of the formulation; its existence caps ORQA's Q3 at partial). FiD (Sep 2020): date-dropped and descendant-direction (it builds on the parent). The closed-book QA paper (Roberts et al., Feb 2020) and GPT-3 under its paper-title filing (May 2020): date-dropped - the parent's entire proximate stratum is intra-2020, the third consecutive modern-stratum session with this structure (FLAN, ChatGPT/Codex, RAG).",
+  "T5 (matched existing node): compared, not consumed - the parametric-only baseline of the headline comparison. Edge-scoped record: T5's admission at FLAN (this session, exp.1) does not transfer; relations are judged per parent.",
+  "Wikipedia (2001): mediated via DPR - the content/form split (LOB discrimination): the parent's content arrives only inside the dropped 2020 passage-index construction. BERT, FAISS, HNSW, Product Quantization likewise mediated via DPR (the dropped index artifact and its tooling).",
+  "DrQA (2017): mediated via ORQA - the open-domain QA formulation reaches the parent through its latent-retrieval reformulation, which is the version the parent's citations engage. TF-IDF mediated via DrQA; Teaching Machines to Read and Comprehend and Min et al.'s Hard EM mediated via ORQA; Generative QA (Lewis & Fan 2019) mediated via BART (the co-author's design intent carried by the artifact).",
+  "Natural Questions and TriviaQA: constituents of the parent's experiments, refused under the components discipline with the GSM8K discrimination (ownership-and-form) recorded; WebQuestions' paper (Berant 2013) refused on both of its grounds - rival KB paradigm as method, constituent as dataset.",
+  "Memory Networks and End-to-End Memory Networks: fail-closed partials - the 'memory' vocabulary's ancestry is real but vocabulary is not a channel, and MemN2N's mechanism (attention over a small jointly-embedded store) differs in kind from dual-encoder retrieval over 21M static passages.",
+  "HuggingFace Transformers: direction refusal - the library distributes the parent (its code release vehicle), and what carries the parent is not consumed by it (the Upstill discrimination). FAIR: decomposition/self-carriage. Sentence-BERT and Universal Sentence Encoder: the parallel branch of the embedding turn (sentence similarity), refused - the parent descends from the passage-retrieval branch. YouTube two-tower retrieval: parallel field instance, multiples evidence only."
+ ],
+ "notes": "Two survivors, both NEW, both at depth 2. The session's structural finding, completing the FLAN pattern: at the modern stratum the year bound removes the parent's retriever, its corpus artifact, its coeval twin (REALM) and its rival answer (closed-book QA) in one pass, so the graph's RAG ancestry attaches to the formulation's expressible carrier (ORQA, 2019) and to the problem document (LAMA, 2019) - the paper's proximate story (DPR + BART) is exactly the part the graph cannot express, BART by the gate and DPR by the calendar. Scout-filing note for future sessions: this scout's builder used kind/relation/why field names where the FLAN scout used type/definition/domain; resolve normalized them (cards stored with empty definition) without affecting merges, matches or drops - noted so the next scout builder copies the FLAN field names.",
+ "totals_after": {
+  "nodes": 202,
+  "edges": 259,
+  "expansions_done": 100
+ }
+}
