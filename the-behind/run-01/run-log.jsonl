@@ -4394,5 +4394,152 @@
   "ion-assisted-plasma-etching-mechanism-coburn-winters-1979-1979",
   "kleene-introduction-to-metamathematics-the-theory-of-partial-1952"
  ],
+ "sync_commit": "24d4efdd"
+}
+{
+ "session": 74,
+ "expansion": 158,
+ "parent": "ipl-information-processing-language-newell-shaw-simon-1956-1956",
+ "parent_name": "IPL - Information Processing Language (Newell, Shaw & Simon, 1956)",
+ "parent_year": 1956,
+ "parent_depth": 6,
+ "date": "2026-11-25",
+ "provenance": "Session 74, expansion 2 of 2 (the frontier's second node per status after expansion 157 took the head, Fisher 1922). Scouted, resolved, judged from scratch by session 74. ZERO survivors - no verification step was required and no nodes were created.",
+ "grounding": "Grounded on the IPL documents, stated per the brief's requirement: (1) Newell & Simon, The Logic Theory Machine: A Complex Information Processing System, RAND P-868, 15 June 1956 (IRE Trans. Information Theory IT-2(3):61-79) - FULL TEXT read this session (CMU Simon archive scan). This is the IPL-I stratum: LT is specified in 'the logic language (LL)', and a near-identical language 'is in the process of being coded' - the IPL-II realization. (2) Newell, Shaw & Simon, Empirical Explorations of the Logic Theory Machine (WJCC, Feb. 1957) - read this session: LT run on the JOHNNIAC; PM's axiom system; the companion paper (Newell & Shaw, Programming the Logic Theory Machine, WJCC 1957, pp. 230-240) cited at p. 230. (3) The IPL-V manual stratum and the WJCC programming paper's full text were NOT read this session; IPL-II's feature record (cells with SYMB/LINK fields, H1 as program counter whose LINK is the call stack, ~150 primitive operations, description lists) is grounded via the reference literature and McCarthy's History of Lisp (1979), which records IPL-2 described at Dartmouth 1956 and IPL's form 'based on a JOHNNIAC loader that happened to be available to them'. AUDIT on P-868 (find-verified): Turing 0 occurrences; Neumann 0; Duncker 0. P-868 has NO reference list; footnote citations are exactly: Bowden (ed.), Faster Than Thought (1953) for the Kalin-Burkhart machine; Whitehead & Russell, Principia Mathematica vol. 1, 2nd ed. (1925) - 'For definiteness, we have used the system of A.M. Whitehead and Bertrand Russell'; Hilbert & Ackermann (Chelsea 1950) ch. 1 as the readers' introduction. Acknowledgment footnote: indebtedness '(1) to research on automatic programming of digital computers, for the approach to the construction of LL; and (2) to research on human problem solving, for the basic structure of the program of LT', plus 'a specific indebtedness to the work of O.G. Selfridge and G.P. Dinneen on pattern recognition, which clarified many basic conceptual issues in the specification and realization of complex information processes'. NOTE ON THE BRIEF: the brief expected NSS's documents to engage computability/Turing; the 1956 documents do NOT (find-verified absence) - the engagement belongs to Simon's later retrospective writings and was not imported backwards. The Turing (1936) verdict records a re-hearing condition accordingly.",
+ "parent_record_note": "Parent stored fields verified intact before evaluating (definition, bottleneck, leap, prior_state all non-empty, read verbatim; priority 5.5, provisional, depth 6). Parent had NO prior expansion and NO prior rejections. Graph searches before scouting: RAND Corporation (1948) node exists (filed as LINK, exact name/type); Lambda calculus (1936, theory) node exists (filed as LINK, exact name/type); NO Turing, von Neumann, JOHNNIAC or Logic Theorist node exists; Lisp 1960/MacLisp exist downstream (Lisp filed once under L23 as a direction record; calendar-dropped as expected). The parent's stored sources field cites the child's (Lisp's) paper - a stored-record wart of the admission edge, logged here unedited.",
+ "scout": {
+  "raw_filed": 77,
+  "note": "76 filings from the scout builder + 1 top-up filing added BEFORE resolve when the per-lens floor check caught L11 at 2 (JOHNNIAC machine-code practice added at L11 as the parent's production process); floors then satisfied on all 19 non-dry lenses.",
+  "per_lens": {
+   "L1": 5,
+   "L2": 4,
+   "L3": 3,
+   "L4": 4,
+   "L5": 3,
+   "L6": 3,
+   "L7": 3,
+   "L8": 3,
+   "L9": 4,
+   "L11": 3,
+   "L12": 4,
+   "L13": 3,
+   "L16": 3,
+   "L17": 3,
+   "L19": 12,
+   "L20": 3,
+   "L21": 4,
+   "L22": 3,
+   "L23": 7
+  },
+  "dry_notes": [
+   "L10",
+   "L14",
+   "L15",
+   "L18"
+  ],
+  "dry_note_finding": "L10 dry (software parent; the JOHNNIAC's storage technology is a machine component judged at L9/L22 - and in fact the 1956 JOHNNIAC store was Williams-tube, which separately sinks the core-memory candidacy). L14 dry (production equipment = the consumed machine itself, at L9; the loader at L1/L11/L13). L15 dry (no hosted services exist in 1956; machine time was institutional, at L21). L18 dry (behaviour observed by hand simulation, at L11/L20, and by printed proof traces on the consumed machine)."
+ },
+ "resolution": {
+  "raw": 77,
+  "dropped": 6,
+  "distinct_before_judgments": 45,
+  "matched_existing": 2,
+  "auto_merges": 26,
+  "judge_queue": 5,
+  "matched_existing_nodes": [
+   "lambda-calculus-1936",
+   "rand-corporation-1948-1948"
+  ],
+  "judgments": "All 5 judge pairs were Principia Mathematica (1910) filings vs Principia Mathematica vol. 1, 2nd edition (1925) filings; all judged SAME (one work, two editions - the 1925 edition is the text P-868 names). Distinct count 45 -> 44."
+ },
+ "calendar_dropped_at_resolve": [
+  "Backus et al., The FORTRAN Automatic Coding System (1957) - postdates; the parallel line's release form (its 1954 Preliminary Report survived and was refused on the merits).",
+  "McCarthy, LISP (1960) - postdates; the parent's famous descendant, filed under L23 so its non-predecessor status is on this expansion's record (session 69's IPL-at-McIlroy record is the mirror image and stands).",
+  "Newell, Shaw & Simon, The General Problem Solver (1957) - postdates; the parent's sibling application.",
+  "Newell (ed.), Information Processing Language-V Manual (1960) - postdates; the parent's own later version (own-version discipline would cap it in any case).",
+  "Newell & Shaw, Programming the Logic Theory Machine (1957) - postdates; the parent's own documenting account (the Totta & Sopher shape: an account OF the advance, not an ancestor).",
+  "The Dartmouth Summer Research Project workshop (1956) - same year as the parent; the presentation arena (its 1955 proposal document survived resolve and was refused as arena/field-frame)."
+ ],
+ "verdicts": {
+  "evaluated": 44,
+  "survivors": 0,
+  "rejected": 44,
+  "fail_closed_partials": 9,
+  "headline": "ZERO SURVIVORS - the run's 17th zero. The expansion's central discrimination is IPL-the-LANGUAGE vs LT-the-APPLICATION: nearly every plausible ancestor belongs to the programme written IN the language (PM, Shannon's chess design, Post's truth tables, the Kalin-Burkhart contrast), to the presupposed substrate (stored-program architecture, the machines, computability), or to research AREAS the parent's acknowledgment names without naming documents (automatic programming; human problem solving). IPL's own mechanism - list structures in memory as the medium of symbolic computation - has no documentary ancestor in its stratum; on its documents it is a formation node, and a formation node is a legitimate zero.",
+  "most_contestable_negative": "Whitehead & Russell, Principia Mathematica (1910) - FAIL-CLOSED PARTIAL. For: LL (IPL-I) is defined over PM expressions; P-868's coding section reads PM's notation into list-held elements and symbols; PM's Ch. 2 sequence is LT's data and benchmark; the axiom system is PM's verbatim. Against: (i) substitutability on the author's own word - the system was adopted 'for definiteness', with Hilbert & Ackermann offered in the same footnote as the sufficient alternative presentation; (ii) mechanism absence - the leap (lists in memory) is nowhere in PM, whose expressions are ink on paper; (iii) generality - the language was designed for complex information processing systems as a class (LT the first instance) and was applied to chess and GPS within three years. PM's genuine ancestry is to LT-the-programme; the parent here is the language. RE-HEARING CONDITION: an NSS document presenting list structure itself as derived from PM's expression structure rather than as the medium chosen to hold it.",
+  "fail_closed_partials_other": [
+   "Selfridge & Dinneen, pattern recognition research (1955) - the ONLY specific external work P-868 acknowledges ('clarified many basic conceptual issues in the specification and realization of complex information processes'); clarification of the makers' concepts is a person-carried formation channel, not a consumed mechanism. RE-HEARING CONDITION: a document attributing a specific IPL design element to the Selfridge-Dinneen work.",
+   "The JOHNNIAC loader (Shaw, 1953) - McCarthy's independent grading puts it inside IPL's FORM ('its form was based on a JOHNNIAC loader that happened to be available to them'); the graph records mechanisms, not packaging, and IPL does not continue the loader's mechanism (loading) - it abandons it for interpretation.",
+   "Von Neumann, First Draft of a Report on the EDVAC (1945) - framework presupposition (the MDP shape): constitutive for all 1956 programming, cited by none of the parent's documents ('Neumann' 0 occurrences).",
+   "The JOHNNIAC computer (1953) - the practice's machine: necessary as a class, substitutable as an instance (IPL-V's portability is the proof), credited with no mechanism.",
+   "Wilkes, Wheeler & Gill (1951) - IPL's library-of-routines construction discipline IS WGW's, under an area-level acknowledgment; by 1956 the subroutine library was the era's universal repertoire.",
+   "Backus, Speedcoding (1953) - the interpretive pseudo-code scheme identical in kind (P-868 uses the same words for LL), no document channel; parallel invention inside the acknowledged area.",
+   "Hand simulation of the Logic Theorist (1955) - the makers' own design process; the language's primitives were fixed by what hand execution needed, but the carrier is the authors themselves (self-carriage / own-version cap).",
+   "RAND Corporation (1948) LINK - formation in complete form (employer, machine owner, publisher); judged on the gates per the L21 owner decision and refused as formation, not by class (the SLT/Princeton/PARC shape)."
+  ],
+  "rejections_of_note": [
+   "Turing, On computable numbers (1936) - refused on a find-verified ABSENCE record (0 occurrences in P-868; no Turing document in any 1956-57 IPL document read). RE-HEARING CONDITION recorded: a 1956-stratum NSS document engaging Turing. No Turing node exists in the graph, so no LINK was possible in any case; the refusal is this parent's record for if one is created.",
+   "Lambda calculus LINK - refused: never cited, and IPL's processes-as-data is a programming practice (named routines in lists), not Church's formalism (no abstraction operator, no conversion rules). The node's edge-scoped admissions elsewhere stand.",
+   "The LT-stratum refusals as a class (Shannon chess 1950; Post 1921; Kalin & Burkhart 1952; Bowden 1953 as the contrast's carrier; Turing 1950; the Dartmouth proposal 1955): each is an ancestor, exemplar, incumbent or arena OF THE APPLICATION OR THE FIELD, and the expansion's discipline is that the parent is the language. Bowden is additionally the audit's weakest citation class (a survey cited for a rival's description).",
+   "The automatic-programming area's documents refused severally (AUTOCODE 1952; Laning & Zierler 1954; Rutishauser 1951; Hopper 1952 - the last also under the Hochreiter condition, its diagnosis answered by NSS in their own terms; FORTRAN Preliminary Report 1954 as the purest parallel line): an area acknowledgment does not descend to the area's documents.",
+   "The psychology area's documents refused severally (Duncker 1945 - find-verified 0 occurrences; Wertheimer 1945; Polya 1945 - a vocabulary is not a mechanism; De Groot 1946 - Dutch, NSS's engagement later): the acknowledgment's second area, same discipline.",
+   "Turing ACE report (1946) and Luhn chained addressing (1953) - the mechanism anticipations: bury/unbury (a report circulated to a small official list, unpublished in full until 1972) and hash-overflow chains (an unpublished IBM internal memo, a different function). Anticipation without access or junction, both.",
+   "Boole (1854) and Frege (1879) refused AS MEDIATED via Principia Mathematica - PM's own ancestry, which does not transmit through a refused link."
+  ]
+ },
+ "mediated_rejections": [
+  {
+   "name": "Burks, Goldstine & Von Neumann, Preliminary Discussion of the Logical Design (1946)",
+   "mediated_via": "The JOHNNIAC computer (RAND, 1953)",
+   "note": "The IAS design reached RAND embodied in its clone; a design that travels as hardware is judged at the hardware."
+  },
+  {
+   "name": "The IAS machine (1952)",
+   "mediated_via": "The JOHNNIAC computer (RAND, 1953)",
+   "note": "The parent consumed the clone, not the Princeton machine."
+  },
+  {
+   "name": "Boole, An Investigation of the Laws of Thought (1854)",
+   "mediated_via": "Whitehead & Russell, Principia Mathematica (1910)",
+   "note": "PM's ancestry; does not transmit through PM's refused link."
+  },
+  {
+   "name": "Frege, Begriffsschrift (1879)",
+   "mediated_via": "Whitehead & Russell, Principia Mathematica (1910)",
+   "note": "Same record as Boole, one remove further; LT's sentential calculus does not even exercise Frege's quantificational leap."
+  }
+ ],
+ "verification": "Not applicable - zero survivors, nothing admitted to verify. The adversarial work for this expansion is inside the verdicts (each partial carries its own counterfactual and falsification conditions).",
+ "created_node_field_check": "Vacuous - zero nodes created this expansion; nothing to spot-check. (Expansion 157's created node, Bayes 1763, was spot-checked in that record: all stored fields non-empty.)",
+ "totals_after": {
+  "nodes": 272,
+  "edges": 341,
+  "budget": "272/2000",
+  "expansions_done": 158,
+  "provisional": 255,
+  "verified": 17,
+  "by_depth": {
+   "0": 1,
+   "1": 14,
+   "2": 28,
+   "3": 32,
+   "4": 37,
+   "5": 57,
+   "6": 45,
+   "7": 28,
+   "8": 12,
+   "9": 6,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  }
+ },
+ "frontier_next": [
+  "ion-assisted-plasma-etching-mechanism-coburn-winters-1979-1979",
+  "kleene-introduction-to-metamathematics-the-theory-of-partial-1952",
+  "pwb-shell-mashey-shell-1975-1975"
+ ],
  "sync_commit": "PENDING"
 }
