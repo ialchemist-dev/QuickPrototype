@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T16:38:02+00:00",
-  "expansions_done": 123,
-  "raw_candidates_seen": 4858,
+  "updated_at": "2026-11-25T16:45:46+00:00",
+  "expansions_done": 124,
+  "raw_candidates_seen": 4883,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -22196,6 +22196,80 @@
     "name": "Mosaic web browser (NCSA, 1993)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T16:38:02+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "CERN libwww Library of Common Code and HTParse (1993)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "Berners-Lee, World Wide Web hypertext system (1990)",
+    "reason": "mediated_via: rfc-1630-universal-resource-identifiers-in-www-berners-lee-1-1994",
+    "at": "2026-11-25T16:45:15+00:00",
+    "mediated_via": "rfc-1630-universal-resource-identifiers-in-www-berners-lee-1-1994"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "Domain Name System (RFC 1034/1035, 1987)",
+    "reason": "mediated_via: rfc-1738-uniform-resource-locators-url-berners-lee-masinter-1994",
+    "at": "2026-11-25T16:45:15+00:00",
+    "mediated_via": "rfc-1738-uniform-resource-locators-url-berners-lee-masinter-1994"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "Hypertext Markup Language draft (Berners-Lee, 1993)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "MIME, Multipurpose Internet Mail Extensions (RFC 1521, 1993)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "Standard for the Format of ARPA Internet Text Messages (RFC 822, 1982)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "POSIX.1 pathname standard (IEEE Std 1003.1, 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "IETF URI Working Group (1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "RFC 1737, Functional Requirements for Uniform Resource Names (1994)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "Mosaic web browser (NCSA, 1993)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "Relative URL Internet-Draft line (Fielding, 1994-95)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
+   },
+   {
+    "parent_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+    "name": "Hypertext Transfer Protocol specification (Berners-Lee, 1993)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T16:45:15+00:00"
    }
   ]
  },
@@ -28977,12 +29051,16 @@
     {
      "title": "RFC 2396, Uniform Resource Identifiers (URI): Generic Syntax (IETF, August 1998)",
      "url": "https://ftp.nic.funet.fi/index/RFC/rfc2396.txt.pdf"
+    },
+    {
+     "title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Strongest channel class in this expansion: the child's own revision statement. Q3 partial recorded honestly (scheme-specific parts excluded by the child).",
-    "at": "2026-11-25T16:26:03+00:00"
+    "notes": "LINK confirmed at 6.0. Channel class: citation + instantiation + correction - the strongest after outright revision (priced below the 8.5 revision relation at RFC 2396 accordingly). The edge completes the standards family's local structure: 1630 -> 1738 (inexpressible, coeval) is now paralleled by the drawable 1630 -> 1808 and 1738 -> 1808 edges.",
+    "at": "2026-11-25T16:45:46+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T16:25:41+00:00"
@@ -29004,7 +29082,7 @@
    "prior_state": "RFC 1738 stated absolute URLs and described relative handling informally; implementations resolved relative references inconsistently.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 8.0,
    "sources": [
     {
@@ -29043,12 +29121,16 @@
     {
      "title": "RFC 2396, Uniform Resource Identifiers (URI): Generic Syntax (IETF, August 1998)",
      "url": "https://ftp.nic.funet.fi/index/RFC/rfc2396.txt.pdf"
+    },
+    {
+     "title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Problem-formulation admission (K9), the Lashley/LAMA shape: Q3 partial, Q5 fail, recorded honestly.",
-    "at": "2026-11-25T16:26:03+00:00"
+    "notes": "LINK confirmed at 3.0 - FLAGGED as this expansion's most contestable admission. The channel is a stated descent of a CONCEPT (Section 7's derivation statement), not consumption of a mechanism; the score prices exactly that. Re-hearing condition: if the early RFC 1738 draft's relative-URL appendix surfaces as a separately circulated document (independent distribution beyond the draft line), the mediation attack reopens and this edge should be re-judged as mediated. Second re-hearing condition: the libwww re-hearing condition (a documentary channel from HTParse to Fielding's drafting) would also reopen the multiples balance here.",
+    "at": "2026-11-25T16:45:46+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T16:25:41+00:00"
@@ -58304,6 +58386,200 @@
     "counterfactual": "Remove RFC 2141: at August 1998 the child's 'generic syntax for all URI' covers only locators in standardised form; the unification that is the child's leap has no second pole. The channel is the family's documented sequence plus the child's construction of its scheme component to accommodate the urn form.",
     "mediator": null,
     "evidence": "Family-sequence + construction evidence (Wikipedia's URI history, corroborated by the RFC record: 2141 May 1997, 2396 Aug 1998; 2396 does not obsolete or revise 2141 - the relation is accommodation of a sibling standard into the genus, judged fresh at this parent as the brief directed). The Namespaces mediation is discharged as an admission. Most contestable admission of this expansion: the channel is construction-and-sequence, not a normative citation inside 2396's grammar sections."
+   }
+  },
+  {
+   "predecessor_id": "rfc-1738-uniform-resource-locators-url-berners-lee-masinter-1994",
+   "successor_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The relative form's impossibility was precise: a standardised relative reference requires a standardised absolute form whose components it can inherit and against which it resolves. RFC 1738 supplied exactly that, six months before the parent - and expressly left the relative form open (its Section 2.3), defining the parent's task.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If a component model for URLs had existed in another standard before 1738, Q1 would fail."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The absolute standard generated the family the parent completes; the parent's own generativity (resolution as a reusable algorithm) is its own.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the parent's resolution machinery were itself 1738's, Q2 would pass."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Remove RFC 1738: Section 2.1's definitions are dangling cross-references ('as per' 1738 Sections 2.1/3.1/3.2.2/3.3), Section 2.3 has no text to correct, and there is no defined absolute form for a relative reference to resolve against. The parent is unwritable as specified - the counterfactual is decisive.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If 1808 defined its components independently and merely compared them to 1738's, Q3 would fail."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "One base standard collapsed every implementer's cost of supporting relative references - shared with the parent's own contribution.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the cost collapse were wholly the base document's, Q4 would pass."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The base standard supplies no metric the parent uses.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If 1808 cited a 1738 conformance measure, Q5 would not fail."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The component model IS the understanding: a URL as scheme/net_loc/path/params/query/fragment is 1738's decomposition, and the parent's entire analysis is conducted in it.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the parent's model were an independent decomposition, Q6 would fail."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Resolution composes base + relative strictly along 1738's component split (inherit scheme/net_loc, merge paths, override params/query) - the parent's algorithm is composition over the candidate's structure.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If resolution operated on whole strings rather than 1738's components, Q7 would fail."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Through the parent, 1738's component model became the working model of every referencing system (HTML, and later the generic syntax) - the base form's reach was realised by the relative machinery that made it usable at document scale.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If relative references had remained a CERN-local practice, Q8 would fail."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The six-month gap (Dec 1994 to June 1995) is the family's fastest standards cycle - enabled by the base document's completeness.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the parent had taken years, Q9 would fail."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "1738 displaced informal URL practice - the precondition displacement, shared with the family.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If informal practice had persisted alongside, Q10 would fail."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Reference [2] of six; Section 1's first sentence ('a companion to RFC 1738'); Section 2.3's corrections of 1738 Section 5 - this document is the parent's trunk, not a branch.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If 1738 appeared only in a bibliography without textual engagement, Q11 would fail."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The component model is irreversible - through the parent and RFC 2396 jointly.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the model had been replaced rather than revised, Q12 would fail."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T16:45:15+00:00",
+   "leap": {
+    "prior_state": "Relative references existed in Web practice (and in CERN's libwww parsing code) but had no standard: RFC 1738 Section 2.3 states 'Relative links are not described in this document'.",
+    "jump": "RFC 1808 defined relative URLs as their own form - a reference parsed into components against a base URL established from the embedding context, the encapsulating entity, the retrieval URL or a default, and resolved by a component-wise merge algorithm - the machinery RFC 2396 Section 5 then carries into the generic syntax.",
+    "date": 1995
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove RFC 1738 and the parent collapses (see Q3): no mediator carries this channel - the parent engages the base document's own text, to the point of correcting its Section 5 errors (Section 2.3). A document one corrects is a document one has consumed directly; the RFC 1630 formulation, judged separately below, carries the CONCEPT of the relative form, not the component definitions.",
+    "mediator": null,
+    "evidence": "Citation + instantiation + correction: the strongest textual channel class after revision itself. Components discrimination vs the RFC 2396 hearing (session 56): there, 1738 carried the absolute form INTO the revision; here, 1738 is the defined-against base - the relative form presupposes it in every definition and repairs it in Section 2.3. Relation judged fresh at this parent, not imported."
+   }
+  },
+  {
+   "predecessor_id": "rfc-1630-universal-resource-identifiers-in-www-berners-lee-1-1994",
+   "successor_id": "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The parent's own Section 7 performs the derivation: 'Relative URLs are described as \"Partial URLs\" in RFC 1630 [1]. That description was expanded for inclusion as an appendix for an early draft of RFC 1738... the URI-WG decided to specify Relative URLs separately in this document.' The concept the parent specifies was first FORMULATED in this document - the problem-formulation channel (the Lashley/LAMA shape; the same document's admission at RFC 2396 in session 56 was on the same discipline, judged there for the whole URI concept and here specifically for the partial form).",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If Section 7 did not exist, or if the partial-URL description were located in another document, Q1 would fail."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "1630's formulation generated the whole identifier programme; the relative form is one branch of that generation.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the partial form alone had generated a field, Q2 would pass."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Remove RFC 1630: the parent's machinery (which runs on 1738's components) survives, but its subject loses its documented origin - the specification's own account of where its object was first described. Necessity for the MECHANISM fails; necessity for the document's derivation is stated in its own text. Honest partial (the Hochreiter discipline applied to oneself: an acknowledgement of descent is stronger than stimulation - it names the artefact that was expanded - but it is not mechanism consumption).",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the parent's algorithm were derived from 1630's text, Q3 would pass; if Section 7 were a courtesy citation, Q3 would fail."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse in producing the parent is attributable to the formulation.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the drafting record showed one, Q4 would not fail."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No metric passes from 1630 into the parent.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If 1808 cited a 1630 measure, Q5 would not fail."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The partial-URL concept - an identifier whose interpretation depends on its context - is the parent's object and its base-URL machinery is that concept operationalised; the understanding is 1630's formulation made algorithmic.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the parent's base concept came from elsewhere (e.g. filesystem practice alone), Q6 would fail."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The context principle composes with the component model - the composition is the parent's act.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the composition were 1630's, Q7 would pass."
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "No cross-domain transfer from 1630 into the parent beyond the family itself.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the partial-form concept had been imported from another field via 1630, Q8 would not fail."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed effect on the parent is attributable to 1630.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the parent's drafting cycle ran on 1630 revisions, Q9 would not fail."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "1630 displaced nothing on the parent's line.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If it had, Q10 would not fail."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Reference [1] of six and the subject of Section 7's derivation statement - the document the parent itself names as its subject's source.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the references were ordered by anything but derivation here, the textual evidence (Section 7) still carries Q11."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The partial/relative form is irreversible - through the parent and 2396; the formulation's share is the concept.",
+     "source": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "falsification": "If the form had been abandoned, Q12 would fail."
+    }
+   },
+   "score": 3.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T16:45:15+00:00",
+   "leap": {
+    "prior_state": "Relative references existed in Web practice (and in CERN's libwww parsing code) but had no standard: RFC 1738 Section 2.3 states 'Relative links are not described in this document'.",
+    "jump": "RFC 1808 defined relative URLs as their own form - a reference parsed into components against a base URL established from the embedding context, the encapsulating entity, the retrieval URL or a default, and resolved by a component-wise merge algorithm - the machinery RFC 2396 Section 5 then carries into the generic syntax.",
+    "date": 1995
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove RFC 1630 as a direct candidate: the parent's Section 7 derivation loses its stated source. The mediation attack - that the description reached the parent through the early RFC 1738 draft's appendix - fails on identity: a draft appendix of the sibling standard is not a separable milestone (the own-first-form discipline, applied at RFC 1738's expansion to its draft line), so there is no mediator node the chain could be carried by; the chain's cited final link is 1630 itself (the Bernoulli-carries-Huygens shape). The libwww practice (judged below) is a parallel embodiment without a document channel to this single-author text.",
+    "mediator": null,
+    "evidence": "Problem-formulation admission on the parent's own derivation statement. Flagged in verification as this expansion's most contestable admission: the channel is a stated descent of a CONCEPT, not consumption of a mechanism; the score (3.0) prices exactly that."
    }
   }
  ],
@@ -228989,6 +229265,823 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "rfc-1808-relative-uniform-resource-locators-fielding-1995-1995": {
+   "raw_candidates": [
+    {
+     "name": "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+     "year": 1994,
+     "type": "standard (K8)",
+     "domain": "internet standards",
+     "lens": "L1 mechanism",
+     "definition": "The absolute URL standard: scheme ':' scheme-specific-part with per-scheme parts and a common Internet syntax (host, port, path).",
+     "causal_claim": "1808 Section 1: 'a companion to RFC 1738'; Section 2.1 defines every component 'as per' 1738's Sections 2.1/3.1/3.2.2/3.3, and Section 2.3 corrects two errors in 1738's Section 5 - the relative form is defined against, and repairs, this document.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "CERN libwww Library of Common Code and HTParse (1993)",
+     "year": 1993,
+     "type": "software platform",
+     "domain": "web software",
+     "lens": "L1 mechanism",
+     "definition": "CERN's shared Web library: HTParse parses a URI relative to another URI, HTRelative makes a relative (partial) URI, HTSimplify removes dot segments - relative resolution as running code, documented in the Library of Common Code manual (HTParse.c (c) CERN 1994).",
+     "causal_claim": "The parent's exact mechanism (parse relative to a base; remove '.' and '..' segments) existed as documented library behaviour before the RFC - the practice-embodied claim, in its strongest form.",
+     "source_title": "URI Parsing in the WWW Library (HTParse), CERN Library of Common Code documentation",
+     "source_url": "https://www.cs.cmu.edu/~fgandon/research/2013_edidb/www/Library/src/HTParse.html"
+    },
+    {
+     "name": "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+     "year": 1994,
+     "type": "standard (K8)",
+     "domain": "internet standards",
+     "lens": "L1 mechanism",
+     "definition": "Same document, second lens: 1738 Section 2.3 states 'Relative links are not described in this document' and its BNF has no relative production - the deliberate absence the parent fills.",
+     "causal_claim": "The parent exists because the base standard expressly left the relative form unspecified; the gap is documented in the base document itself.",
+     "source_title": "RFC 1738, Uniform Resource Locators (URL) (IETF, December 1994)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1738.txt"
+    },
+    {
+     "name": "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)",
+     "year": 1994,
+     "type": "standard (K8)",
+     "domain": "internet standards",
+     "lens": "L2 problem formulation",
+     "definition": "The Web's design write-up: the URI concept stated as design - names, addresses, and 'Partial URLs', the within-context abbreviated form of an identifier.",
+     "causal_claim": "1808 Section 7: 'Relative URLs are described as \"Partial URLs\" in RFC 1630 [1]. That description was expanded for inclusion as an appendix for an early draft of RFC 1738... the URI-WG decided to specify Relative URLs separately in this document.' The parent's own text documents its subject's descent from this formulation.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)",
+     "year": 1994,
+     "type": "standard (K8)",
+     "domain": "internet standards",
+     "lens": "L2 problem formulation",
+     "definition": "Same document, second lens: the context principle - an identifier's interpretation depends on the context (document) in which it appears.",
+     "causal_claim": "The base-URL concept (the parent's Section 3) is the operational form of 1630's context principle for partial forms.",
+     "source_title": "RFC 1630, Universal Resource Identifiers in WWW (IETF, June 1994)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1630.txt"
+    },
+    {
+     "name": "RFC 1736, Functional Recommendations for Internet Resource Locators (1995)",
+     "year": 1995,
+     "type": "requirements document",
+     "domain": "internet standards",
+     "lens": "L2 problem formulation",
+     "definition": "The URI programme's recommendations for resource locators (Feb 1995) - the requirements-side document of the parent's family.",
+     "causal_claim": "Filed at its true year: 1808 Section 7 states the document is 'intended to fulfill the recommendations for Internet Resource Locators as stated in [6]'. Dated Feb 1995 - months before the parent (June 1995) but the SAME YEAR: inexpressible under the year-granularity bound, exactly as designed; its requirement-specification hearing was executed at RFC 2396 (session 56).",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "Hypertext Markup Language specification, HTML 2.0 draft (Berners-Lee & Connolly, 1995)",
+     "year": 1995,
+     "type": "specification",
+     "domain": "web architecture",
+     "lens": "L3 architecture",
+     "definition": "The HTML specification in its February 1995 work-in-progress form - the document 1808 cites as reference [3] for the embedding context of relative URLs.",
+     "causal_claim": "Filed at its true year (1995, the parent's own year; the Feb draft precedes the June RFC by months - month order documented, never used to re-date). 1808 Section 3.1 defers the embedding syntax to each media type's specification and its HTML appendix 'does not form a part of the relative URL specification' - presupposition by the parent's own text.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "Hypertext Markup Language draft (Berners-Lee, 1993)",
+     "year": 1993,
+     "type": "specification",
+     "domain": "web architecture",
+     "lens": "L3 architecture",
+     "definition": "The 1993 HTML draft: anchors with HREF attributes carrying URLs - the embedding context in its first written form, within which abbreviated (relative) references were already used in practice.",
+     "causal_claim": "The expressible member of the embedding-context stratum: the practice of document-relative references lives in HTML documents; whether the parent consumes this document or presupposes the context is the hearing.",
+     "source_title": "Berners-Lee, Hypertext Markup Language (HTML) draft (CERN, 1993)",
+     "source_url": "https://www.w3.org/History/199306/draft-ietf-iiir-html-01.txt"
+    },
+    {
+     "name": "Berners-Lee, World Wide Web hypertext system (1990)",
+     "year": 1990,
+     "type": "system",
+     "domain": "hypertext systems",
+     "lens": "L3 architecture",
+     "definition": "The running Web: documents containing links whose targets are interpreted in the containing document's context - the practice the relative form serves.",
+     "causal_claim": "The embedding practice originates here; its channel to the parent is expected to run through RFC 1630's formulation (the chain carried by its cited final link).",
+     "source_title": "Berners-Lee, Information Management: A Proposal (CERN, 1989-90)",
+     "source_url": "https://www.w3.org/History/1989/proposal.html"
+    },
+    {
+     "name": "CERN libwww Library of Common Code and HTParse (1993)",
+     "year": 1993,
+     "type": "software platform",
+     "domain": "web software",
+     "lens": "L6 software platform",
+     "definition": "Same library, platform lens: the shared implementation through which the Web's parsing practice propagated to early browsers and servers.",
+     "causal_claim": "If the standard codifies the library's behaviour, the platform is the practice's carrier - judged with the L1 filing as one candidate.",
+     "source_title": "URI Parsing in the WWW Library (HTParse), CERN Library of Common Code documentation",
+     "source_url": "https://www.cs.cmu.edu/~fgandon/research/2013_edidb/www/Library/src/HTParse.html"
+    },
+    {
+     "name": "POSIX.1 pathname standard (IEEE Std 1003.1, 1988)",
+     "year": 1988,
+     "type": "standard",
+     "domain": "operating systems",
+     "lens": "L6 software platform",
+     "definition": "The standardised Unix pathname conventions: hierarchical paths, '.' and '..' components with their traversal semantics.",
+     "causal_claim": "The parent's dot-segment removal (Section 2.4.3 / the abnormal-examples discussion) is the filesystem convention carried into URL paths - a generic-practice claim with no document channel in the parent (uncited).",
+     "source_title": "IEEE Std 1003.1-1988, POSIX.1",
+     "source_url": "https://en.wikipedia.org/wiki/POSIX"
+    },
+    {
+     "name": "Domain Name System (RFC 1034/1035, 1987)",
+     "year": 1987,
+     "type": "infrastructure standard",
+     "domain": "internet infrastructure",
+     "lens": "L7 substrate",
+     "definition": "The distributed naming system whose names populate the host component of the parent's base form.",
+     "causal_claim": "The parent never touches DNS directly: its host component is 1738's, incorporated by the Section 2.1 cross-references - a mediation hearing (via RFC 1738), argued on this parent's text.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "MIME, Multipurpose Internet Mail Extensions (RFC 1521, 1993)",
+     "year": 1993,
+     "type": "standard",
+     "domain": "internet standards",
+     "lens": "L7 substrate",
+     "definition": "The media-type system: composite types (multipart, message) whose encapsulating entities can supply a base URL.",
+     "causal_claim": "1808 reference [4], used in exactly one place: Section 3.2, where the base of an encapsulating entity of a composite MIME type defaults to the base of its contents - a component of the base-establishment machinery.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "Standard for the Format of ARPA Internet Text Messages (RFC 822, 1982)",
+     "year": 1982,
+     "type": "standard",
+     "domain": "internet standards",
+     "lens": "L7 substrate",
+     "definition": "The message-format standard whose BNF conventions the RFC series writes grammars in.",
+     "causal_claim": "1808 reference [5], cited in Section 2.2 for the grammar's notation conventions only - the specification-as-notation hearing.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "IETF URI Working Group (1992)",
+     "year": 1992,
+     "type": "institution",
+     "domain": "internet standards",
+     "lens": "L10 institution",
+     "definition": "The IETF working group for the URI family: the body whose decision (recorded in 1808 Section 7) split the relative-URL specification out of the RFC 1738 draft into a separate document.",
+     "causal_claim": "The parent's origin act is a WG decision; under the decomposition discipline the vehicle is judged separately from the artifacts it carried.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+     "year": 1994,
+     "type": "standard (K8)",
+     "domain": "internet standards",
+     "lens": "L14 standards family",
+     "definition": "Same document, family lens: the companion standard - 1808 Section 1's first sentence places the two documents as one specification in two parts.",
+     "causal_claim": "Companion-document relation judged on the texts: components discrimination vs the RFC 2396 hearing (there, 1738 carried the absolute form and 1808 the resolution form into the revision; here, 1738 is the defined-against base the relative form presupposes and corrects).",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "RFC 1736, Functional Recommendations for Internet Resource Locators (1995)",
+     "year": 1995,
+     "type": "requirements document",
+     "domain": "internet standards",
+     "lens": "L14 standards family",
+     "definition": "Same document, family lens (see L2 filing): the family's recommendations document, cited as reference [6].",
+     "causal_claim": "Coeval filing (Feb 1995 vs the parent's June 1995): date-dropped at resolve by design; the requirement-specification discipline's hearing for it was executed at RFC 2396.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "RFC 1737, Functional Requirements for Uniform Resource Names (1994)",
+     "year": 1994,
+     "type": "requirements document",
+     "domain": "internet standards",
+     "lens": "L14 standards family",
+     "definition": "The name-side requirements document of the same December 1994 package as RFC 1738 - the sibling boundary of the family.",
+     "causal_claim": "Expressible at this parent (Dec 1994 < June 1995) but uncited in 1808 and without a junction: the name programme's requirements do not intersect the resolution machinery. A genuine hearing, expected negative.",
+     "source_title": "RFC 1737, Functional Requirements for Uniform Resource Names (IETF, December 1994)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1737.txt"
+    },
+    {
+     "name": "Standard for the Format of ARPA Internet Text Messages (RFC 822, 1982)",
+     "year": 1982,
+     "type": "standard",
+     "domain": "internet standards",
+     "lens": "L16 standards substrate",
+     "definition": "Same document, grammar lens: Section 2.2's BNF 'using the conventions of RFC 822'.",
+     "causal_claim": "Notation hearing, judged with the L7 filing as one candidate (the ABNF-at-2396 / 822-at-1738 discipline, argued fresh).",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "MIME, Multipurpose Internet Mail Extensions (RFC 1521, 1993)",
+     "year": 1993,
+     "type": "standard",
+     "domain": "internet standards",
+     "lens": "L16 standards substrate",
+     "definition": "Same document, family lens (see L7 filing): one of only six references - the media-type standard the base-establishment section composes with.",
+     "causal_claim": "Composition with a standard in exactly one rule (Section 3.2) - component hearing.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "IETF URI Working Group (1992)",
+     "year": 1992,
+     "type": "institution",
+     "domain": "internet standards",
+     "lens": "L21 vehicle",
+     "definition": "Same body, process lens: the WG process (and its URI Syntax subgroup discussions on www-talk / uri mailing lists) within which Fielding's drafts were reviewed.",
+     "causal_claim": "Judged with the L10 filing as one candidate (decomposition discipline).",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "Mosaic web browser (NCSA, 1993)",
+     "year": 1993,
+     "type": "software artifact",
+     "domain": "web software",
+     "lens": "L22 era condition",
+     "definition": "The browser that took the Web mass-market in 1993-94, rendering documents dense with relative references.",
+     "causal_claim": "Era condition: deployment pressure, and a consumer of the forms - no mechanism channel into a single-author mechanism RFC.",
+     "source_title": "Wikipedia, Mosaic (web browser)",
+     "source_url": "https://en.wikipedia.org/wiki/Mosaic_(web_browser)"
+    },
+    {
+     "name": "Relative URL Internet-Draft line (Fielding, 1994-95)",
+     "year": 1994,
+     "type": "document line",
+     "domain": "internet standards",
+     "lens": "L23 negative space",
+     "definition": "Fielding's own draft iterations of this specification (the draft-ietf-uri-relative line, 1994-95), from which the RFC was published.",
+     "causal_claim": "Identity hearing: the parent's own first form (the own-version discipline) - nothing reworked between draft and RFC makes the drafts a separable predecessor.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)",
+     "year": 1994,
+     "type": "standard (K8)",
+     "domain": "internet standards",
+     "lens": "L23 negative space",
+     "definition": "Same document, meta lens: Section 7's acknowledgement is the family's own record of where the relative form was first described and how it was split out - the derivation record itself.",
+     "causal_claim": "Judged with the L2 filings as one candidate; the acknowledgement is the strongest derivation statement in the parent's text.",
+     "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+     "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+    },
+    {
+     "name": "Hypertext Transfer Protocol specification (Berners-Lee, 1993)",
+     "year": 1993,
+     "type": "specification",
+     "domain": "web architecture",
+     "lens": "L23 negative space",
+     "definition": "The 1993 HTTP specification: the retrieval practice whose request URI is the parent's third base-establishment route ('the URL used to retrieve the entity', Section 3.1.3).",
+     "causal_claim": "Thin hearing: the retrieval-URL base rule presupposes the retrieval practice this document codifies - sibling codification / presupposition, argued on the parent's text (uncited in 1808).",
+     "source_title": "Berners-Lee, Hypertext Transfer Protocol specification (CERN, November 1993)",
+     "source_url": "https://www.w3.org/Protocols/HTTP/HTTP2.html"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "rfc-1738-uniform-resource-locators-url-berners-lee-masinter-1994",
+      "candidate": {
+       "name": "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+       "year": 1994,
+       "type": "standard (K8)",
+       "domain": "internet standards",
+       "lens": "L1 mechanism",
+       "definition": "The absolute URL standard: scheme ':' scheme-specific-part with per-scheme parts and a common Internet syntax (host, port, path).",
+       "causal_claim": "1808 Section 1: 'a companion to RFC 1738'; Section 2.1 defines every component 'as per' 1738's Sections 2.1/3.1/3.2.2/3.3, and Section 2.3 corrects two errors in 1738's Section 5 - the relative form is defined against, and repairs, this document.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "members": [
+       0,
+       2,
+       15
+      ],
+      "member_names": [
+       "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+       "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+       "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)"
+      ],
+      "matched_node_id": "rfc-1738-uniform-resource-locators-url-berners-lee-masinter-1994",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cern-libwww-library-of-common-code-and-htparse-1993-1993",
+      "candidate": {
+       "name": "CERN libwww Library of Common Code and HTParse (1993)",
+       "year": 1993,
+       "type": "software platform",
+       "domain": "web software",
+       "lens": "L1 mechanism",
+       "definition": "CERN's shared Web library: HTParse parses a URI relative to another URI, HTRelative makes a relative (partial) URI, HTSimplify removes dot segments - relative resolution as running code, documented in the Library of Common Code manual (HTParse.c (c) CERN 1994).",
+       "causal_claim": "The parent's exact mechanism (parse relative to a base; remove '.' and '..' segments) existed as documented library behaviour before the RFC - the practice-embodied claim, in its strongest form.",
+       "source_title": "URI Parsing in the WWW Library (HTParse), CERN Library of Common Code documentation",
+       "source_url": "https://www.cs.cmu.edu/~fgandon/research/2013_edidb/www/Library/src/HTParse.html"
+      },
+      "members": [
+       1,
+       9
+      ],
+      "member_names": [
+       "CERN libwww Library of Common Code and HTParse (1993)",
+       "CERN libwww Library of Common Code and HTParse (1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rfc-1630-universal-resource-identifiers-in-www-berners-lee-1-1994",
+      "candidate": {
+       "name": "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)",
+       "year": 1994,
+       "type": "standard (K8)",
+       "domain": "internet standards",
+       "lens": "L2 problem formulation",
+       "definition": "The Web's design write-up: the URI concept stated as design - names, addresses, and 'Partial URLs', the within-context abbreviated form of an identifier.",
+       "causal_claim": "1808 Section 7: 'Relative URLs are described as \"Partial URLs\" in RFC 1630 [1]. That description was expanded for inclusion as an appendix for an early draft of RFC 1738... the URI-WG decided to specify Relative URLs separately in this document.' The parent's own text documents its subject's descent from this formulation.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "members": [
+       3,
+       4,
+       23
+      ],
+      "member_names": [
+       "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)",
+       "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)",
+       "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)"
+      ],
+      "matched_node_id": "rfc-1630-universal-resource-identifiers-in-www-berners-lee-1-1994",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hypertext-markup-language-draft-berners-lee-1993-1993",
+      "candidate": {
+       "name": "Hypertext Markup Language draft (Berners-Lee, 1993)",
+       "year": 1993,
+       "type": "specification",
+       "domain": "web architecture",
+       "lens": "L3 architecture",
+       "definition": "The 1993 HTML draft: anchors with HREF attributes carrying URLs - the embedding context in its first written form, within which abbreviated (relative) references were already used in practice.",
+       "causal_claim": "The expressible member of the embedding-context stratum: the practice of document-relative references lives in HTML documents; whether the parent consumes this document or presupposes the context is the hearing.",
+       "source_title": "Berners-Lee, Hypertext Markup Language (HTML) draft (CERN, 1993)",
+       "source_url": "https://www.w3.org/History/199306/draft-ietf-iiir-html-01.txt"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Hypertext Markup Language draft (Berners-Lee, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "berners-lee-world-wide-web-hypertext-system-1990-1990",
+      "candidate": {
+       "name": "Berners-Lee, World Wide Web hypertext system (1990)",
+       "year": 1990,
+       "type": "system",
+       "domain": "hypertext systems",
+       "lens": "L3 architecture",
+       "definition": "The running Web: documents containing links whose targets are interpreted in the containing document's context - the practice the relative form serves.",
+       "causal_claim": "The embedding practice originates here; its channel to the parent is expected to run through RFC 1630's formulation (the chain carried by its cited final link).",
+       "source_title": "Berners-Lee, Information Management: A Proposal (CERN, 1989-90)",
+       "source_url": "https://www.w3.org/History/1989/proposal.html"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Berners-Lee, World Wide Web hypertext system (1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "posix-1-pathname-standard-ieee-std-1003-1-1988-1988",
+      "candidate": {
+       "name": "POSIX.1 pathname standard (IEEE Std 1003.1, 1988)",
+       "year": 1988,
+       "type": "standard",
+       "domain": "operating systems",
+       "lens": "L6 software platform",
+       "definition": "The standardised Unix pathname conventions: hierarchical paths, '.' and '..' components with their traversal semantics.",
+       "causal_claim": "The parent's dot-segment removal (Section 2.4.3 / the abnormal-examples discussion) is the filesystem convention carried into URL paths - a generic-practice claim with no document channel in the parent (uncited).",
+       "source_title": "IEEE Std 1003.1-1988, POSIX.1",
+       "source_url": "https://en.wikipedia.org/wiki/POSIX"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "POSIX.1 pathname standard (IEEE Std 1003.1, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "domain-name-system-rfc-1034-1035-1987-1987",
+      "candidate": {
+       "name": "Domain Name System (RFC 1034/1035, 1987)",
+       "year": 1987,
+       "type": "infrastructure standard",
+       "domain": "internet infrastructure",
+       "lens": "L7 substrate",
+       "definition": "The distributed naming system whose names populate the host component of the parent's base form.",
+       "causal_claim": "The parent never touches DNS directly: its host component is 1738's, incorporated by the Section 2.1 cross-references - a mediation hearing (via RFC 1738), argued on this parent's text.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Domain Name System (RFC 1034/1035, 1987)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mime-multipurpose-internet-mail-extensions-rfc-1521-1993-1993",
+      "candidate": {
+       "name": "MIME, Multipurpose Internet Mail Extensions (RFC 1521, 1993)",
+       "year": 1993,
+       "type": "standard",
+       "domain": "internet standards",
+       "lens": "L7 substrate",
+       "definition": "The media-type system: composite types (multipart, message) whose encapsulating entities can supply a base URL.",
+       "causal_claim": "1808 reference [4], used in exactly one place: Section 3.2, where the base of an encapsulating entity of a composite MIME type defaults to the base of its contents - a component of the base-establishment machinery.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "members": [
+       12,
+       19
+      ],
+      "member_names": [
+       "MIME, Multipurpose Internet Mail Extensions (RFC 1521, 1993)",
+       "MIME, Multipurpose Internet Mail Extensions (RFC 1521, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "standard-for-the-format-of-arpa-internet-text-messages-rfc-8-1982",
+      "candidate": {
+       "name": "Standard for the Format of ARPA Internet Text Messages (RFC 822, 1982)",
+       "year": 1982,
+       "type": "standard",
+       "domain": "internet standards",
+       "lens": "L7 substrate",
+       "definition": "The message-format standard whose BNF conventions the RFC series writes grammars in.",
+       "causal_claim": "1808 reference [5], cited in Section 2.2 for the grammar's notation conventions only - the specification-as-notation hearing.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "members": [
+       13,
+       18
+      ],
+      "member_names": [
+       "Standard for the Format of ARPA Internet Text Messages (RFC 822, 1982)",
+       "Standard for the Format of ARPA Internet Text Messages (RFC 822, 1982)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ietf-uri-working-group-1992-1992",
+      "candidate": {
+       "name": "IETF URI Working Group (1992)",
+       "year": 1992,
+       "type": "institution",
+       "domain": "internet standards",
+       "lens": "L10 institution",
+       "definition": "The IETF working group for the URI family: the body whose decision (recorded in 1808 Section 7) split the relative-URL specification out of the RFC 1738 draft into a separate document.",
+       "causal_claim": "The parent's origin act is a WG decision; under the decomposition discipline the vehicle is judged separately from the artifacts it carried.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "members": [
+       14,
+       20
+      ],
+      "member_names": [
+       "IETF URI Working Group (1992)",
+       "IETF URI Working Group (1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rfc-1737-functional-requirements-for-uniform-resource-names-1994",
+      "candidate": {
+       "name": "RFC 1737, Functional Requirements for Uniform Resource Names (1994)",
+       "year": 1994,
+       "type": "requirements document",
+       "domain": "internet standards",
+       "lens": "L14 standards family",
+       "definition": "The name-side requirements document of the same December 1994 package as RFC 1738 - the sibling boundary of the family.",
+       "causal_claim": "Expressible at this parent (Dec 1994 < June 1995) but uncited in 1808 and without a junction: the name programme's requirements do not intersect the resolution machinery. A genuine hearing, expected negative.",
+       "source_title": "RFC 1737, Functional Requirements for Uniform Resource Names (IETF, December 1994)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1737.txt"
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "RFC 1737, Functional Requirements for Uniform Resource Names (1994)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mosaic-web-browser-ncsa-1993-1993",
+      "candidate": {
+       "name": "Mosaic web browser (NCSA, 1993)",
+       "year": 1993,
+       "type": "software artifact",
+       "domain": "web software",
+       "lens": "L22 era condition",
+       "definition": "The browser that took the Web mass-market in 1993-94, rendering documents dense with relative references.",
+       "causal_claim": "Era condition: deployment pressure, and a consumer of the forms - no mechanism channel into a single-author mechanism RFC.",
+       "source_title": "Wikipedia, Mosaic (web browser)",
+       "source_url": "https://en.wikipedia.org/wiki/Mosaic_(web_browser)"
+      },
+      "members": [
+       21
+      ],
+      "member_names": [
+       "Mosaic web browser (NCSA, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "relative-url-internet-draft-line-fielding-1994-95-1994",
+      "candidate": {
+       "name": "Relative URL Internet-Draft line (Fielding, 1994-95)",
+       "year": 1994,
+       "type": "document line",
+       "domain": "internet standards",
+       "lens": "L23 negative space",
+       "definition": "Fielding's own draft iterations of this specification (the draft-ietf-uri-relative line, 1994-95), from which the RFC was published.",
+       "causal_claim": "Identity hearing: the parent's own first form (the own-version discipline) - nothing reworked between draft and RFC makes the drafts a separable predecessor.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "members": [
+       22
+      ],
+      "member_names": [
+       "Relative URL Internet-Draft line (Fielding, 1994-95)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hypertext-transfer-protocol-specification-berners-lee-1993-1993",
+      "candidate": {
+       "name": "Hypertext Transfer Protocol specification (Berners-Lee, 1993)",
+       "year": 1993,
+       "type": "specification",
+       "domain": "web architecture",
+       "lens": "L23 negative space",
+       "definition": "The 1993 HTTP specification: the retrieval practice whose request URI is the parent's third base-establishment route ('the URL used to retrieve the entity', Section 3.1.3).",
+       "causal_claim": "Thin hearing: the retrieval-URL base rule presupposes the retrieval practice this document codifies - sibling codification / presupposition, argued on the parent's text (uncited in 1808).",
+       "source_title": "Berners-Lee, Hypertext Transfer Protocol specification (CERN, November 1993)",
+       "source_url": "https://www.w3.org/Protocols/HTTP/HTTP2.html"
+      },
+      "members": [
+       24
+      ],
+      "member_names": [
+       "Hypertext Transfer Protocol specification (Berners-Lee, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:3:rfc-2396-uniform-resource-identifiers-generic-syntax-berners-1998",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 3,
+       "card": {
+        "name": "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)",
+        "aliases": [],
+        "year": 1994,
+        "domain": "internet standards",
+        "type": "standard (K8)",
+        "definition": "The Web's design write-up: the URI concept stated as design - names, addresses, and 'Partial URLs', the within-context abbreviated form of an identifier.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "rfc-2396-uniform-resource-identifiers-generic-syntax-berners-1998",
+       "card": {
+        "name": "RFC 2396, Uniform Resource Identifiers: Generic Syntax (Berners-Lee, Fielding & Masinter, 1998)",
+        "aliases": [],
+        "year": 1998,
+        "domain": "internet standards / web architecture",
+        "type": "standard (K8)",
+        "definition": "The IETF standards-track generic syntax for URIs: 'A Uniform Resource Identifier (URI) is a compact string of characters for identifying an abstract or physical resource' - defining absolute and relative URI references (including fragment identifiers) as one scheme-independent grammar that 'revises and replaces the generic definitions in RFC 1738 and RFC 1808'. The parent Recommendation's core definition reads: 'An XML namespace is a collection of names, identified by a URI reference [RFC2396]' - the parent normatively cites this document for the form of its namespace names, and its uniqueness argument is 'the combination of the universally-managed URI namespace and the document's own namespace produces identifiers that are universally unique'.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8031,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       2
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       0,
+       15
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       9
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       4
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       23
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       12,
+       19
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       13,
+       18
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       14,
+       20
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "RFC 1736, Functional Recommendations for Internet Resource Locators (1995)",
+       "year": 1995,
+       "type": "requirements document",
+       "domain": "internet standards",
+       "lens": "L2 problem formulation",
+       "definition": "The URI programme's recommendations for resource locators (Feb 1995) - the requirements-side document of the parent's family.",
+       "causal_claim": "Filed at its true year: 1808 Section 7 states the document is 'intended to fulfill the recommendations for Internet Resource Locators as stated in [6]'. Dated Feb 1995 - months before the parent (June 1995) but the SAME YEAR: inexpressible under the year-granularity bound, exactly as designed; its requirement-specification hearing was executed at RFC 2396 (session 56).",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "reason": "dated on/after parent year 1995"
+     },
+     {
+      "candidate": {
+       "name": "Hypertext Markup Language specification, HTML 2.0 draft (Berners-Lee & Connolly, 1995)",
+       "year": 1995,
+       "type": "specification",
+       "domain": "web architecture",
+       "lens": "L3 architecture",
+       "definition": "The HTML specification in its February 1995 work-in-progress form - the document 1808 cites as reference [3] for the embedding context of relative URLs.",
+       "causal_claim": "Filed at its true year (1995, the parent's own year; the Feb draft precedes the June RFC by months - month order documented, never used to re-date). 1808 Section 3.1 defers the embedding syntax to each media type's specification and its HTML appendix 'does not form a part of the relative URL specification' - presupposition by the parent's own text.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "reason": "dated on/after parent year 1995"
+     },
+     {
+      "candidate": {
+       "name": "RFC 1736, Functional Recommendations for Internet Resource Locators (1995)",
+       "year": 1995,
+       "type": "requirements document",
+       "domain": "internet standards",
+       "lens": "L14 standards family",
+       "definition": "Same document, family lens (see L2 filing): the family's recommendations document, cited as reference [6].",
+       "causal_claim": "Coeval filing (Feb 1995 vs the parent's June 1995): date-dropped at resolve by design; the requirement-specification discipline's hearing for it was executed at RFC 2396.",
+       "source_title": "RFC 1808, Relative Uniform Resource Locators (IETF, June 1995)",
+       "source_url": "https://www.rfc-editor.org/rfc/rfc1808.txt"
+      },
+      "reason": "dated on/after parent year 1995"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:3:rfc-2396-uniform-resource-identifiers-generic-syntax-berners-1998",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 3,
+      "card": {
+       "name": "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994)",
+       "aliases": [],
+       "year": 1994,
+       "domain": "internet standards",
+       "type": "standard (K8)",
+       "definition": "The Web's design write-up: the URI concept stated as design - names, addresses, and 'Partial URLs', the within-context abbreviated form of an identifier.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "rfc-2396-uniform-resource-identifiers-generic-syntax-berners-1998",
+      "card": {
+       "name": "RFC 2396, Uniform Resource Identifiers: Generic Syntax (Berners-Lee, Fielding & Masinter, 1998)",
+       "aliases": [],
+       "year": 1998,
+       "domain": "internet standards / web architecture",
+       "type": "standard (K8)",
+       "definition": "The IETF standards-track generic syntax for URIs: 'A Uniform Resource Identifier (URI) is a compact string of characters for identifying an abstract or physical resource' - defining absolute and relative URI references (including fragment identifiers) as one scheme-independent grammar that 'revises and replaces the generic definitions in RFC 1738 and RFC 1808'. The parent Recommendation's core definition reads: 'An XML namespace is a collection of names, identified by a URI reference [RFC2396]' - the parent normatively cites this document for the form of its namespace names, and its uniqueness argument is 'the combination of the universally-managed URI namespace and the document's own namespace produces identifiers that are universally unique'.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8031,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }
