@@ -286,3 +286,75 @@
   "expansions_done": 66
  }
 }
+{
+ "ts": "2026-11-25T01:20:00-07:00",
+ "session": 29,
+ "kind": "expansion",
+ "parent": "bradley-terry-model-of-paired-comparisons-1952",
+ "parent_name": "Bradley-Terry model of paired comparisons",
+ "raw": 18,
+ "dry_notes": 19,
+ "date_dropped": [
+  {
+   "name": "Scheffe's analysis of variance for paired comparisons (1952)",
+   "reason": "coeval-year bound: Scheffe's JASA method is 1952, the parent's own year - dropped at resolve by the year-granularity bound, the same structural shape as sessions 27-28 (GPT-3/API; TREX/RELAX NG at XSD). Bradley's 1953 survey lists exactly three methods - Thurstone's, Bradley-Terry, Scheffe's - and the graph can hold only the first two at this parent."
+  }
+ ],
+ "survivors": [
+  {
+   "name": "Thurstone's law of comparative judgment",
+   "score": 7.5,
+   "notes": "Ancestor modified, on the author's own statement: Bradley (1953) names Thurstone's and 'Terry with the present author's' as the two comparable methods, expounds Thurstone's principles as the frame, and notes that replacing the normal density in Thurstone's formula by the logistic density yields the Bradley-Terry model. Verification records the multiples finding (Zermelo 1929) capping necessity at ripe; provisional."
+  },
+  {
+   "name": "Yates, Incomplete randomised blocks",
+   "score": 6.0,
+   "notes": "Problem posed in the exact form answered: the parent is 'Rank analysis of incomplete block designs: I', and blocks of size 2 are the incomplete-block case Yates's 1936 Rothamsted paper created. Mediation attack via Fisher's 1935 book fails (the book has complete blocks; the incomplete mechanism is Yates's). Provisional."
+  }
+ ],
+ "rejections_of_note": [
+  {
+   "name": "Zermelo's tournament rating model (1929)",
+   "reason": "directness fail, no channel - the Massé pattern in its purest form: the same model AND nearly the same iterative algorithm, 23 years early, and demonstrably unread by the parent. Glickman's survey: no 1950s paired-comparison researcher cited Zermelo; earliest literature citation is Good (1955). Anticipation without a junction stays unlinked; recorded as priority/multiples evidence in Thurstone's verification as well (necessity ripe)."
+  },
+  {
+   "name": "Mosteller's paired-comparison papers (1951)",
+   "reason": "mediated_via: Thurstone's law of comparative judgment - the trilogy is Case V's own estimation machinery (least squares, aberrant variance, goodness of fit for Thurstone's method); Bradley 1953 cites Mosteller as Thurstone's summarizer. The parent consumes none of it; its tests are likelihood-ratio tests under its own model."
+  },
+  {
+   "name": "Fisher's maximum likelihood estimation (1922)",
+   "reason": "leap gate (Q1/Q2 partial in relation to this parent), directness PASSES and is recorded as passing: MLE is directly consumed (the abstract says so) but is the general engine of the parent's machinery, not the parent's discontinuity - a consumed component, not a predecessor leap (Madsen-at-Amari-1982 pattern)."
+  },
+  {
+   "name": "Wilks's theorem on the likelihood-ratio statistic (1938)",
+   "reason": "leap gate, directness passes: the parent's 'tests of a general class' are exactly Wilks-calibrated large-sample LR tests - a consumed theorem inside the machinery, rejected as a component under the same rule as MLE."
+  },
+  {
+   "name": "Fisher, The Design of Experiments (1935)",
+   "reason": "mediated_via: Yates, Incomplete randomised blocks - the framework is real ancestry one level down; the specific content the parent's title consumes is Yates's 1936 contribution."
+  },
+  {
+   "name": "Neyman-Pearson likelihood ratio test (1928)",
+   "reason": "mediated_via: Wilks's theorem - the usable form the parent instantiates is Wilks's large-sample calibration."
+  },
+  {
+   "name": "Weber-Fechner psychophysics (1860)",
+   "reason": "mediated_via: Thurstone's law of comparative judgment - Thurstone explicitly founded his law on Weber and Fechner; that is the channel, and it terminates at the proximate formulation."
+  },
+  {
+   "name": "Kendall & Babington Smith (1940) / Kendall's tau (1938) / K&BS m rankings (1939) / Friedman (1937) / Bose & Nair (1939) / Berkson (1944) / Kendall's Rank Correlation Methods (1948) / Virginia Agricultural Experiment Station",
+   "reason": "fail-closed partials, each on its own record: KBS 1940 is documented milieu (Bradley 1953 cites it) but its null-case coefficients are not consumed; tau and m-rankings are the complete-block prior state carried in the leap record; Friedman is the defined-against incumbent; BIBD's balance is not required by the parent's size-2 analysis; Berkson has no citation or junction (parallel logistic tradition); the 1948 monograph is a lineage survey, not a mechanism; the station fails the separable-artifact test (its candidate artifact, the 1953 survey, postdates the parent - NCC pattern, RAND distinguished)."
+  }
+ ],
+ "structural_notes": [
+  "Luce's choice axiom (1959) postdates the parent and was NOT proposed: the Bradley-Terry-Luce equivalence is a 1959 recognition, a descendant-side fact. The graph's Bradley-Terry node will meet Luce only if a later parent's documents carry the channel.",
+  "Thin survivor set (2 of 17 evaluated) is the finding, not a shortfall: this parent's ancestry decomposes into one formulation ancestor (Thurstone), one problem-side artifact (Yates), a consumed inference engine that fails the leap gate as a component (MLE + Wilks), and the field's most famous anticipation without a junction (Zermelo).",
+  "Brief correction: HyperTalk stands at depth 4 in the graph, not depth 3 as the session brief stated; its expansion follows as expansion 2 of this session."
+ ],
+ "totals_after": {
+  "nodes": 162,
+  "edges": 206,
+  "budget": "162/2000",
+  "expansions_done": 67
+ }
+}
