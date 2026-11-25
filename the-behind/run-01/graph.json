@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T06:20:40+00:00",
-  "expansions_done": 52,
-  "raw_candidates_seen": 2853,
+  "updated_at": "2026-11-25T06:33:06+00:00",
+  "expansions_done": 53,
+  "raw_candidates_seen": 2884,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -13845,6 +13845,102 @@
     "name": "Banach fixed-point theorem (Banach, 1922)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Information and Exponential Families (Barndorff-Nielsen, 1978)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T06:32:22+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Fisher information (Fisher, 1925)",
+    "reason": "mediated_via: Fisher-Rao metric (Rao, 1945)",
+    "at": "2026-11-25T06:32:22+00:00",
+    "mediated_via": "Fisher-Rao metric (Rao, 1945)"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Cramer-Rao bound (Cramer, 1946)",
+    "reason": "mediated_via: Fisher-Rao metric (Rao, 1945)",
+    "at": "2026-11-25T06:32:22+00:00",
+    "mediated_via": "Fisher-Rao metric (Rao, 1945)"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Kullback-Leibler divergence (Kullback & Leibler, 1951)",
+    "reason": "mediated_via: f-divergence geometry (Csiszar, 1967)",
+    "at": "2026-11-25T06:32:22+00:00",
+    "mediated_via": "f-divergence geometry (Csiszar, 1967)"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "f-divergence geometry (Csiszar, 1967)",
+    "reason": "mediated_via: Dual connections and dually flat spaces (Amari & Nagaoka, 1982)",
+    "at": "2026-11-25T06:32:22+00:00",
+    "mediated_via": "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Jeffreys prior (Jeffreys, 1946)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:32:22+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Hotelling's Riemannian structure on distribution spaces (Hotelling, 1930)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:32:22+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Exponential family characterization (Darmois, Koopman & Pitman, 1936)",
+    "reason": "mediated_via: Information and Exponential Families (Barndorff-Nielsen, 1978)",
+    "at": "2026-11-25T06:32:22+00:00",
+    "mediated_via": "Information and Exponential Families (Barndorff-Nielsen, 1978)"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Ancillary statistics and conditional inference (Fisher, 1934)",
+    "reason": "mediated_via: Differential geometry of curved exponential families (Amari, 1982)",
+    "at": "2026-11-25T06:32:22+00:00",
+    "mediated_via": "Differential geometry of curved exponential families (Amari, 1982)"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Dawid's discussion of Efron's curvature paper (Dawid, 1975)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:32:22+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Riemannian geometry (Riemann, 1854)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:32:22+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Theory of adaptive pattern classifiers (Amari, 1967)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:32:22+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Category of mathematical statistics (Morse & Sacksteder, 1966)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:32:22+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Observed versus expected Fisher information (Efron & Hinkley, 1978)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:32:22+00:00"
+   },
+   {
+    "parent_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+    "name": "Theoretical Statistics (Cox & Hinkley, 1974)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:32:22+00:00"
    }
   ]
  },
@@ -17601,7 +17697,7 @@
    "prior_state": "Fisher information as an estimation-theoretic quantity (Fisher 1925; Rao 1945's metric insight largely dormant); Efron's 1975 statistical curvature an isolated geometric observation without a general framework.",
    "status": "provisional",
    "depth": 6,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.5,
    "sources": [
     {
@@ -17636,12 +17732,16 @@
     {
      "title": "Amari (1998), sec. 3.1 and reference list",
      "url": "https://bsi-ni.brain.riken.jp/database/file/176/181.pdf"
+    },
+    {
+     "title": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks (Rao 1945 'epoch-making')",
+     "url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Multiples test LANDS on necessity: Jeffreys (1946) independently read the Fisher quadratic form geometrically within a year (deriving his prior from the metric), and Hotelling proposed the structure in 1930 (unpublished, no channel). Necessity is therefore capped at 'ripe' and the node can never be verified on necessity grounds. Mediation attack (the strongest available): everything Rao supplies reaches the parent packaged inside Amari's information geometry, so the edge should be mediated via Amari 1985. Answered on the record, attack does not land: the parent cites Rao directly at the definitional sentence of sec. 3.1 and instantiates Rao's own objects - the metric tensor of eq. 3.5 and the Cramer-Rao bound of eq. 4.2 - while the component it takes from the 1985 monograph (neural parameter spaces as statistical manifolds in a dual geometry) is a different component with its own channel. Q1 attack partially lands: the flip is statability of a coordinate-free geometry of estimation, not removal of a practical impossibility. Date/direction: 1945, Bull. Calcutta Math. Soc. 37:81-91; direction correct. Outcome provisional (multiples + Q1 attack recorded).",
-    "at": "2026-11-25T06:13:11+00:00"
+    "notes": "Link to the existing node (admitted at Amari 1998 in session 21 at 5.5; here 6.5 - the same object one level closer to its working-out; the Q7 difference is documented in the edge verdicts: at 1998 the dormancy was the point, here the framework that ends the dormancy is the parent itself). [multiples] Jeffreys (1946) introduced the same Fisher quadratic form geometrically within a year, and Hotelling sketched the structure in 1930 - Rao was not the only carrier of the metric idea, so the monograph's foundation might not need Rao specifically. -> Survives as multiples pressure, already priced in: Q3 is partial. The documentary channel into the monograph runs through Rao (Kass pairs the two introducers but the book's lineage, and the programme's own Nagaoka-Amari statement, name Rao); Hotelling's manuscript was unpublished and has no channel at all (rejected in this expansion on the Linnainmaa pattern). [necessity] The metric slept for forty years; a monograph founding a geometry could in principle have constructed its own metric rather than consuming Rao's - is the edge fame rather than consumption? -> Answered from the record: the monograph's metric IS the Fisher information tensor in Rao's Riemannian reading - the object whose geometry the whole book works out - and the field's surveys (Ay et al. 2017; Kass 1987) root the book's framework in Rao's paper. Consumption, not fame; the edge stands, provisional as all run edges are.",
+    "at": "2026-11-25T06:33:06+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T06:12:51+00:00"
@@ -17732,6 +17832,122 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T06:20:18+00:00"
+  },
+  "differential-geometry-of-curved-exponential-families-amari-1-1982": {
+   "id": "differential-geometry-of-curved-exponential-families-amari-1-1982",
+   "name": "Differential geometry of curved exponential families (Amari, 1982)",
+   "aliases": [],
+   "year": 1982,
+   "domain": "statistics",
+   "type": "theory",
+   "definition": "Amari's 1982 Annals of Statistics paper (10:357-385) defining the one-parameter family of alpha-connections and the curvature theory of curved exponential families, giving the multiparameter geometrical form of higher-order estimation theory.",
+   "bottleneck": "Before Amari (1982), Efron's statistical curvature was a one-parameter observation without a multiparameter machinery: the information loss and higher-order efficiency of estimators in curved families could not be computed geometrically in general.",
+   "leap": "Amari (1982) introduces the alpha-connections and the curvature theory of curved exponential families, giving Efron's curvature programme its multiparameter geometrical form - Kass: 'The final simplicity of the complete geometrical version appeared in Amari's 1982 Annals paper.'",
+   "prior_state": "Efron's 1975 curvature for one-parameter subfamilies; Rao's 1945 metric dormant; higher-order asymptotics a collection of analytic expansions without geometry.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 7.0,
+   "sources": [
+    {
+     "title": "Ay et al. (2017): 'Inspired by Efron's paper, S. Amari [Ann. Stat. 10, 357-385 (1982)] introduced the notion of alpha-connections'",
+     "url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "The monograph's estimation half. Highest-scoring survivor of the expansion (7.0) and the new frontier head. [mediation] The 1982 paper is Efron's programme completed - is the real ancestor Efron 1975, with the 1982 paper a mere transmission into the book? -> Answered by the components discrimination: Efron supplies the problem and the original one-parameter quantity (admitted separately, 5.5); the 1982 paper supplies the multiparameter machinery - the alpha-connections and the completed geometrical decomposition Kass names as the field's founding version. The monograph consumes both components through distinct channels. [identity] The monograph is the author's own synthesis of his papers - is the 1982 Annals paper a separate milestone or merely the book's draft? -> A separate published artifact with its own reception: Kass's 1987 survey treats the 1982 paper, not the book, as where 'the final simplicity of the complete geometrical version appeared', and Ay et al. credit it with introducing the alpha-connections. The book generalizes and systematizes it (adding the dualistic structure from METR 82-7). Ancestor-modified, not a draft.",
+    "at": "2026-11-25T06:33:06+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T06:32:22+00:00"
+  },
+  "dual-connections-and-dually-flat-spaces-amari-nagaoka-1982-1982": {
+   "id": "dual-connections-and-dually-flat-spaces-amari-nagaoka-1982-1982",
+   "name": "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)",
+   "aliases": [],
+   "year": 1982,
+   "domain": "statistics",
+   "type": "theory",
+   "definition": "Amari & Nagaoka's 1982 University of Tokyo technical report (METR 82-7) introducing pairs of dual affine connections with respect to a Riemannian metric and the theory of dually flat spaces with Legendre-dual coordinates.",
+   "bottleneck": "Before Amari & Nagaoka (1982), a statistical manifold carried a metric and at most a single connection: there was no notion of a dual pair of connections, hence no dually flat geometry and no Legendre-dual coordinate systems for distribution families.",
+   "leap": "METR 82-7 introduces dual connections and the general theory of dually flat spaces: a metric plus a pair of dual affine connections, with dual affine coordinates related by Legendre transformation - the dualistic structure at the heart of information geometry.",
+   "prior_state": "Chentsov's single (exponential) affine connection; Rao's metric without connection duality; exponential families handled algebraically.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "Ay et al. (2017): 'Amari and Nagaoka [METR 82-7 (1982)] introduced the notion of dual connections and developed the general theory of dually flat spaces'",
+     "url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "The monograph's second pillar. Its own expansion will hear Csiszar 1967 directly (mediated via this node in the present expansion - the mediation inverts there). [mediation] Chentsov already had an affine connection on statistical manifolds; a dual pair could be read as an increment on Chentsov, making this report mediated via him. -> Answered: Chentsov's theory has a single connection and no duality concept; the dual pair - two connections dual with respect to the metric, generating dually flat spaces and Legendre-dual coordinates - is a new structure, credited to this report by Ay et al. Chentsov is admitted separately for his distinct component (the invariance foundation). [documentary] METR 82-7 is a technical report - did it circulate widely enough to be a milestone rather than an internal memo absorbed by its own authors' book? -> Partially lands on circulation, not on ancestry: the channel into the monograph is direct (the report's content IS the book's dualistic structure, per Ay et al. and the published Nagaoka-Amari text), and the milestone claim rests on that consumption plus the field's retrospective crediting, not on the report's print run. Stays provisional.",
+    "at": "2026-11-25T06:33:06+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T06:32:22+00:00"
+  },
+  "statistical-curvature-efron-1975-1975": {
+   "id": "statistical-curvature-efron-1975-1975",
+   "name": "Statistical curvature (Efron, 1975)",
+   "aliases": [],
+   "year": 1975,
+   "domain": "statistics",
+   "type": "theory",
+   "definition": "Efron's 1975 Annals of Statistics paper 'Defining the curvature of a statistical problem (with applications to second order efficiency)': the statistical curvature gamma of a curved exponential family and the decomposition of an estimator's information loss into curvature terms.",
+   "bottleneck": "Before Efron (1975), the accuracy of an estimator in a curved statistical model could not be decomposed or quantified beyond first-order variance: how much information a curved family loses relative to its exponential embedding was not a measurable quantity.",
+   "leap": "Efron defines the statistical curvature gamma of a curved exponential family and decomposes an estimator's information loss into curvature terms, making second-order efficiency a geometric quantity - one of the two roots (with Rao's metric) from which geometrical inference developed (Kass 1987).",
+   "prior_state": "First-order Cramer-Rao efficiency only; Fisher's conditioning ideas and Rao's second-order efficiency definitions unconnected to any geometry of the model itself.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Kass (1987), Introduction to Differential Geometry in Statistical Inference (IMS): the field developed from Rao's metric idea and Efron's curvature idea",
+     "url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "The deferred hearing from session 21 (where Efron was mediated via this monograph at the 1998 paper) discharged as direct at this parent, on this parent's own record. [mediation] The strongest attack in this expansion: the monograph's curvature and information-loss theory IS Amari 1982's theory, inside which Efron's gamma appears as the one-parameter special case - so Efron reaches the book only through the 1982 paper, and the edge should be mediated via Amari 1982 (the treatment session 21 gave Chentsov at the 1998 paper). -> Answered, with the contestability recorded. The discrimination is components, applied exactly as session 21 applied it to Rao at 1998 (admitted direct alongside Amari 1985): the book consumes from 1982 the multiparameter machinery; from Efron it consumes the problem itself and the original quantity - curvature as the measure of information loss - which the 1982 machinery exists to generalize. Kass's lineage survey, the closest contemporaneous account, roots the field in Efron's paper directly alongside Rao's, not as a footnote to Amari. The attack partially lands in this sense: of the expansion's five edges this is the one a future session could most plausibly re-argue, and it stays provisional for that reason. [multiples] Second-order efficiency had parallel strands - Rao's 1963 definition of second-order efficiency and Fisher's conditioning ideas - so Efron's curvature was one formulation among several. -> Recorded; Q3 is already partial. The curvature formulation is the one the monograph's geometry generalizes (Kass), which is the channel that matters.",
+    "at": "2026-11-25T06:33:06+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T06:32:22+00:00"
+  },
+  "statistical-decision-rules-and-optimal-inference-chentsov-19-1972": {
+   "id": "statistical-decision-rules-and-optimal-inference-chentsov-19-1972",
+   "name": "Statistical Decision Rules and Optimal Inference (Chentsov, 1972)",
+   "aliases": [],
+   "year": 1972,
+   "domain": "statistics",
+   "type": "theory",
+   "definition": "Chentsov's monograph (Russian 1972; English AMS 1982) proving the invariance characterization of the Fisher metric and the cubic tensor on statistical manifolds and introducing an affine (exponential) connection on families of distributions.",
+   "bottleneck": "Before Chentsov, the Fisher metric's status was a proposal, not a theorem: there was no proof that one metric (and one cubic tensor) on a statistical model is forced by invariance, and no affine connection in the theory at all.",
+   "leap": "Chentsov's monograph proves the invariance characterization - the Fisher metric and the cubic (Amari-Chentsov) tensor are the unique tensor pair invariant under Markov morphisms - and introduces an affine (exponential) connection on families of distributions, founding the systematic theory jointly with Amari.",
+   "prior_state": "Rao's 1945 metric as an unratified proposal; Jeffreys' 1946 independent use of the same quadratic form; no invariance theory of statistical structures.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Nagaoka & Amari, Differential geometry of smooth families of probability distributions, introduction (lineage statement: Rao, Cencov, Csiszar, Efron)",
+     "url": "https://link.springer.com/article/10.1007/s41884-025-00187-y"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "The session-21 deferral discharged: at the 1998 paper Chentsov was a parenthesis (invoked, never used); in the monograph his theorem and tensor are load-bearing. Citation-in-parenthesis vs citation-plus-instantiation, decided per parent as the standing rule requires. [mediation] The monograph's (g, T) pair and its connections arrive through the author's own 1982 papers - Chentsov mediated via Amari 1982, the mirror of the Efron attack. -> Answered: the 1982 papers presuppose what Chentsov supplies - the invariance theorem that makes (g, T) canonical and the e-connection the alpha-family generalizes ('tightly connected with Cencov's', Nagaoka-Amari). A machinery cannot mediate its own foundation. Distinct components again: theorem + first connection (Chentsov) vs multiparameter estimation machinery (1982) vs dual structure (METR 82-7). [channel] The 1972 book is Russian (English translation only 1982); the fine timing of Amari's engagement with it before the 1985 monograph is not documented in the sources consulted. -> Partially lands on timing detail. The channel itself is documented by the programme's own usage: the cubic tensor carries Chentsov's name in Amari's framework (the Amari-Chentsov tensor), and the Nagaoka-Amari lineage text engages Cencov's connections explicitly. Stays provisional; a session with the monograph's full bibliography in hand could sharpen the date of first engagement. [multiples] Morse & Sacksteder (1966) independently introduced the category of mathematical statistics, and Campbell's extended characterization of the Fisher metric was contemporaneous with the monograph - the invariance programme was not Chentsov's alone. -> Recorded as multiples evidence; Q3 is partial. Campbell 1985 was date-dropped at resolve in this expansion (coeval with the monograph) and is logged in the run log as a structural note.",
+    "at": "2026-11-25T06:33:06+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T06:32:22+00:00"
   }
  },
  "edges": [
@@ -33487,6 +33703,491 @@
     "counterfactual": "Remove the MDP formulation and policy iteration has no object - there is no 'policy' to evaluate or improve until the process, its rewards, and policies as the search object are posed. Mediation check: the paper is not mediated via the companion monograph - the monograph is the general DP theory, while this paper is the specific Markovian formulation the parent's title and content take as their subject ('Dynamic Programming AND MARKOV PROCESSES'); the two 1957 artifacts supply different components (framework vs problem), the discrimination session 21 also applied at Amari (Rao vs the 1985 monograph). Sutton & Barto credit the formulation to this paper and the method to Howard (1960) in adjacent sentences. Note: the paper gestures at policy-space reasoning, but the algorithm - exact evaluation by linear equations, greedy improvement, finite termination - is Howard's, as the parent node's own record states.",
     "mediator": null,
     "evidence": "Sutton & Barto sec. 1.6; J. Math. Mech. 6:679-684 (1957)."
+   }
+  },
+  {
+   "predecessor_id": "differential-geometry-of-curved-exponential-families-amari-1-1982",
+   "successor_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before 1982, the complete geometrical version of higher-order estimation - information loss decomposed geometrically in the multiparameter case - could not be stated; Kass records that it 'appeared in Amari's 1982 Annals paper'. The monograph's estimation chapters are that version, systematized.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if the multiparameter geometrical decomposition is shown to appear in an earlier document the monograph follows instead."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The alpha-connections opened a space, not a point: a one-parameter family of geometries on every statistical model, from which the dualistic structure and the whole information-geometry programme unfold - the monograph is the unfolding.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the alpha-family is shown to collapse to a single connection with no further structure."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity capped at ripe: the geometry was forming in several hands (Chentsov's connections preceded; Efron's problem awaited a machinery), but the alpha-connection form the monograph wields is this paper's own.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Higher-order corrections became computable in closed geometric form where they had been intractable expansions - a real but specialist cost reduction, scored partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "Curvature and information loss became measurable geometric quantities for general curved families, not only Efron's one-parameter case - the quantities the monograph's theory computes.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if the 1982 paper's curvature quantities are shown to be definitional only, never computed for an estimation problem."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It is the explanatory model of estimation geometry: efficiency, bias and loss become curvature - designable and interpretable geometrically. The monograph teaches estimation through exactly this model.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the paper is shown to be a formal exercise whose quantities carry no estimation meaning."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The alpha-connection language is the interface the field composes on: the monograph, the 1987 IMS volume and all later information geometry are written in it.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if later accounts are shown to bypass the alpha-connection formalism."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach into learning and signal processing is real but arrives through the monograph and the 1998 paper.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment-loop effect is attributable to the 1982 paper.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Within higher-order inference it displaced the purely analytic treatment: after 1982 (and the 1985 book) the geometrical version is the standard account of curvature and loss.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if post-1985 higher-order inference is shown to proceed without the geometric formalism."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the founding paper of the alpha-geometry, cited as such by every lineage account (Ay et al.; Kass; Nagaoka-Amari).",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the field's founding paper is shown to be a different document."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once estimation has a geometry, the analytic-only baseline does not return inside the lineage.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the lineage is shown to have abandoned the geometric account of higher-order inference."
+    }
+   },
+   "score": 7.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T06:32:22+00:00",
+   "leap": {
+    "prior_state": "Fisher information as an estimation-theoretic quantity (Fisher 1925; Rao 1945's metric insight largely dormant); Efron's 1975 statistical curvature an isolated geometric observation without a general framework; Chentsov's invariance results confined to the Soviet literature; no differential geometry of statistical models existed as a stated framework.",
+    "jump": "Amari's 1985 monograph founds information geometry: a statistical model is a manifold carrying the Fisher metric and a one-parameter family of dual alpha-connections; estimation theory - efficiency, curvature, information loss, ancillarity - is rewritten as geometry, and higher-order inference becomes a set of computable geometric quantities.",
+    "date": 1985
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 1982 paper and the monograph loses its estimation half: the book is the author's synthesis of 'the results he had published in a series of papers' (Springer review), and this paper is the series' core - the alpha-connections it introduced (Ay et al.: 'Inspired by Efron's paper, S. Amari [1982] introduced the notion of alpha-connections and exhibited its usefulness in the asymptotic theory of statistical estimation') are the monograph's central objects, and its curved-family curvature and information-loss theory is this paper's theory in general form. Mediation check: Efron does not mediate it (the 1982 paper is where Efron's problem receives its machinery - the direction runs Efron -> 1982 -> book, and Efron is admitted separately for the distinct component he supplies); Rao does not mediate it (the metric underlies it, and is admitted separately). The ancestor-modified pattern: the monograph reworks this paper's constructions into a complete framework.",
+    "mediator": null,
+    "evidence": "Ay et al. (2017); Kass (1987); Springer review of the monograph (GB)."
+   }
+  },
+  {
+   "predecessor_id": "dual-connections-and-dually-flat-spaces-amari-nagaoka-1982-1982",
+   "successor_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before this report, a whole class of constructions could not be stated: dual geodesics, dually flat spaces, Legendre-dual coordinates on a distribution family. The monograph's dualistic structure is exactly this class.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if dual connections are shown to appear in an earlier document the monograph follows (e.g. in Chentsov's book in dual form)."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Duality is generative: it yields the alpha-divergence/Pythagorean structure, dual coordinate systems, and later the flat-geometry machinery used across exponential-family computation.",
+     "source": "Nagaoka & Amari, Differential geometry of smooth families of probability distributions (the 1982 paper's introduction)",
+     "falsification": "This pass dies if the dual structure is shown to have no consequences beyond its definition."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity capped at ripe: the ingredients (metric, Chentsov's connection) existed, and the dual idea was this team's own step - but it is the step the monograph's structure is built from, and no rival document supplies it.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No order-of-magnitude cost collapse is attributable to the report itself.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Duality makes flatness and coordinate-duality checkable properties of a family - a structural measurability, scored partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplies the explanatory core of the monograph's model: a statistical geometry is a metric plus two dual ways of being straight - the idea that organizes the entire book.",
+     "source": "Nagaoka & Amari, Differential geometry of smooth families of probability distributions (the 1982 paper's introduction)",
+     "falsification": "This pass dies if the monograph's organization is shown to rest on the single-connection picture instead."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The dually flat machinery is an interface others compose on without re-deriving it: dual coordinates and divergences become standard tools (the monograph itself is the first large composition).",
+     "source": "Nagaoka & Amari, Differential geometry of smooth families of probability distributions (the 1982 paper's introduction)",
+     "falsification": "This pass dies if later work is shown to re-derive duality case by case."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The dual structure reached far beyond estimation: exponential-family duality underlies later work in machine learning, thermodynamics of inference and optimization geometry - reach realized through the monograph's codification of this report.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the dual structure is shown to remain a statistics-internal device."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment-loop effect is attributable to the report.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Dual connections became the default language of the field: post-1985 information geometry is written as dualistic structure, displacing the single-connection picture.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the field's standard accounts are shown to use a single connection."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: with the 1982 Annals paper, this report is one of the two documents the monograph synthesizes and every history names (Ay et al.).",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if METR 82-7 is shown to be a restatement of an earlier dual-connection document."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once duality exists, the geometry of statistical models does not revert to metric-only descriptions inside the lineage.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the lineage is shown to have dropped the dual structure."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T06:32:22+00:00",
+   "leap": {
+    "prior_state": "Fisher information as an estimation-theoretic quantity (Fisher 1925; Rao 1945's metric insight largely dormant); Efron's 1975 statistical curvature an isolated geometric observation without a general framework; Chentsov's invariance results confined to the Soviet literature; no differential geometry of statistical models existed as a stated framework.",
+    "jump": "Amari's 1985 monograph founds information geometry: a statistical model is a manifold carrying the Fisher metric and a one-parameter family of dual alpha-connections; estimation theory - efficiency, curvature, information loss, ancillarity - is rewritten as geometry, and higher-order inference becomes a set of computable geometric quantities.",
+    "date": 1985
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove METR 82-7 and the monograph loses its second pillar: the book's structure is not metric-plus-connections but metric-plus-DUAL-connections, and Ay et al. credit this report with the notions themselves: 'Amari and Nagaoka [METR 82-7 (1982)] have introduced the notion of dual connections and developed the general theory of dually flat spaces, which was applied successfully to the geometry of alpha-connections.' The Nagaoka-Amari paper text develops exactly the monograph's material: alpha-flat manifolds, Legendre-dual affine coordinate systems, the alpha-divergence. Mediation check: Chentsov does not mediate it (his single e-connection is one member of the family; the DUALITY is this report's act, and Chentsov is admitted separately for the invariance foundation); Amari 1982 does not mediate it (the Annals paper's machinery is the curved-family estimation theory - a distinct component, admitted separately).",
+    "mediator": null,
+    "evidence": "Ay et al. (2017); Nagaoka & Amari (Springer text of the 1982 paper)."
+   }
+  },
+  {
+   "predecessor_id": "fisher-rao-metric-rao-1945-1945",
+   "successor_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Rao's construction made a previously unstatable object statable: a coordinate-free distance between distributions. The monograph's every covariant construction presupposes exactly this metric.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the monograph's metric is shown to be constructed independently of Rao's tensor (e.g. derived in the book from the KL divergence rather than taken as the Fisher tensor)."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The metric is the generative substrate of the whole field the monograph founds: connections, duality, curvature and the natural gradient all live on it.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the monograph's constructions are shown to proceed on a different base structure."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Multiples cap necessity at ripe: Jeffreys (1946) independently read the Fisher quadratic form geometrically within a year, and Hotelling proposed the structure in 1930 (unpublished, no channel). Rao's is the channel that actually ran.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost, time, or effort collapse is attributable to the 1945 paper.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "The metric made statistical distinguishability measurable: distance between nearby distributions becomes a computable geometric quantity - the quantity the monograph's geometry manipulates throughout.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the monograph is shown to use Fisher information only as an estimation bound, never as a distance."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the first explanatory geometric model of statistical estimation: parameters live on a curved space, and accuracy is a property of that space - the model the monograph completes.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if Rao's paper is shown to use the metric as a computational trick without the geometric model."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "At this parent the metric's composability is exercised, not merely potential: the monograph equips arbitrary models with it and builds connections and dualities on top - an interface the whole subsequent field composes on. (Session 21 scored Q7 partial at the 1998 paper because the dormancy was the point there; here the framework that ends the dormancy is the parent itself.)",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if the monograph is shown to equip only one special family with the metric."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its cross-domain reach (learning, signal processing) is real but realized through the monograph and its children.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment-loop effect is attributable to the 1945 paper.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Within the lineage the displacement is complete: the Fisher metric became THE canonical metric on statistical models, ratified by Chentsov's uniqueness theorem - the monograph assumes it without argument.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the monograph is shown to argue for a rival metric against the Fisher metric."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: every history of information geometry begins with Rao 1945 (Ay et al. 2017; Kass 1987; the half-century accounts).",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the lineage is shown to begin with a different document (e.g. if Hotelling's 1930 proposal is shown to have circulated)."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once the Fisher metric exists as the canonical structure - and Chentsov proves the choice forced - the geometry of estimation does not revert to coordinate-bound summaries.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the field is shown to have settled on a different canonical metric."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T06:32:22+00:00",
+   "leap": {
+    "prior_state": "Fisher information as an estimation-theoretic quantity (Fisher 1925; Rao 1945's metric insight largely dormant); Efron's 1975 statistical curvature an isolated geometric observation without a general framework; Chentsov's invariance results confined to the Soviet literature; no differential geometry of statistical models existed as a stated framework.",
+    "jump": "Amari's 1985 monograph founds information geometry: a statistical model is a manifold carrying the Fisher metric and a one-parameter family of dual alpha-connections; estimation theory - efficiency, curvature, information loss, ancillarity - is rewritten as geometry, and higher-order inference becomes a set of computable geometric quantities.",
+    "date": 1985
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Rao 1945 and the monograph loses its foundation object: the book's entire construction equips a statistical model with Rao's Fisher-information metric tensor and then defines connections, duality and curvature relative to it. The programme's own lineage statement is explicit - 'Rao seems to be the first who explicitly introduced a Riemannian metric in a model of probability distributions with the help of Fisher information matrix' (Nagaoka & Amari) - and Kass roots the field in this paper. Mediation check: Fisher 1925 does not mediate Rao here - what the book consumes is the tensor (Rao's geometrization), not the bare quantity; and Amari 1982 does not mediate it either, since the metric precedes and underlies the 1982 machinery itself. Citation + instantiation at the strongest level: the book is, in large part, the working-out of this object's geometry.",
+    "mediator": null,
+    "evidence": "Nagaoka & Amari introduction; Kass (1987); Ay et al. (2017)."
+   }
+  },
+  {
+   "predecessor_id": "statistical-curvature-efron-1975-1975",
+   "successor_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Efron, the information loss of an estimator in a curved family could not be quantified at all - there was no quantity to compute. His decomposition made second-order efficiency a solvable problem; the monograph's estimation theory is its general solution.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if a pre-1975 document is shown to quantify information loss for curved families."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the higher-order geometry programme, but the space it opened was realized by Amari's machinery; generativity in relation to this parent is real but shared, scored partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity capped at ripe: Fisher's conditioning ideas and Rao's second-order efficiency definitions were adjacent strands (Kass records both), and the curvature idea answered a problem several authors were circling.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to the 1975 paper.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "Curvature made information loss measurable: gamma is a number attached to a model that predicts the loss - the monograph's theory computes its generalizations.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if gamma is shown to be a purely formal quantity with no loss interpretation in the monograph's use."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the first geometric explanatory model of estimation beyond first order: a model is a curved surface inside an exponential family, and loss is curvature. The monograph's estimation chapters teach through this model.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the monograph's estimation theory is shown to proceed without the curved-surface picture."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Statistical curvature became standard vocabulary others cite, but as a working interface it is the monograph's generalization, not the 1975 quantity itself, that later work composes on.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The curvature idea's reach beyond its home problem is real but realized through Amari's framework.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment-loop effect.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "'Statistical curvature' became the standard name of the phenomenon, but the default workflow of statistics did not reorganize around it; displacement is lineage-local.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: Kass's survey names Efron 1975, with Rao 1945, as one of the two ideas from which the whole field developed.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if the field's surveys are shown to root it elsewhere."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once information loss has a geometric measure, higher-order inference does not revert to ignoring it inside the lineage.",
+     "source": "Kass (1987), Introduction, in Differential Geometry in Statistical Inference (IMS Lecture Notes-Monograph 10)",
+     "falsification": "This pass dies if later higher-order theory is shown to drop the curvature quantity."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T06:32:22+00:00",
+   "leap": {
+    "prior_state": "Fisher information as an estimation-theoretic quantity (Fisher 1925; Rao 1945's metric insight largely dormant); Efron's 1975 statistical curvature an isolated geometric observation without a general framework; Chentsov's invariance results confined to the Soviet literature; no differential geometry of statistical models existed as a stated framework.",
+    "jump": "Amari's 1985 monograph founds information geometry: a statistical model is a manifold carrying the Fisher metric and a one-parameter family of dual alpha-connections; estimation theory - efficiency, curvature, information loss, ancillarity - is rewritten as geometry, and higher-order inference becomes a set of computable geometric quantities.",
+    "date": 1985
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Efron 1975 and the monograph loses the problem its estimation half exists to answer and the quantity that half generalizes: Kass's lineage survey - the closest contemporaneous account of the field the monograph founds - roots geometrical inference in two ideas, Rao's metric and Efron's: 'the second led Efron (1975) to quantify departures from exponentiality by defining the curvature of a statistical model'. Ay et al.: Efron 'extended Rao's ideas to a higher-order asymptotic theory of statistical inference, defining smooth subfamilies of large exponential families and their statistical curvature'. The monograph's curvature chapters state Efron's gamma as the one-parameter case of their general construction and build the information-loss theory on his decomposition. Mediation check (the session-21 deferral, re-examined on this parent's own record): Amari 1982 does NOT exhaust Efron's channel to the book. What the book consumes from 1982 is the multiparameter machinery (alpha-connections, the completed decomposition); what it consumes from Efron is the problem and the original quantity - the curvature of a model as the measure of its information loss. Two components, two channels - the same discrimination session 21 applied to Rao at 1998 (admitted direct alongside Amari 1985) and to RHW at BPTT. The mediation attack is recorded for the verification step.",
+    "mediator": null,
+    "evidence": "Kass (1987) Introduction; Ay et al. (2017)."
+   }
+  },
+  {
+   "predecessor_id": "statistical-decision-rules-and-optimal-inference-chentsov-19-1972",
+   "successor_id": "differential-geometrical-methods-in-statistics-amari-1985-1985",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Chentsov, a specific question could not be answered at all: which geometric structures on a statistical model are canonical? His invariance theorem answers it, and the monograph's foundational claim - these objects, no others - rests on that answer.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the monograph is shown to found its choice of (g, T) on grounds independent of the invariance characterization."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The invariance programme opened a space (canonical structures for statistics), but its generativity was realized jointly with Amari's framework; scored partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity capped at ripe: Morse & Sacksteder independently introduced the category of mathematical statistics in 1966, and Campbell's extended characterization was contemporaneous with the monograph - the invariance idea was in several hands.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to the 1972 book.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Invariance made 'canonical' a checkable property of a proposed structure - a measurability of foundations, scored partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model for WHY this metric and this tensor: they are the unique structures statistics itself forces. The monograph's foundations are unintelligible without that explanation.",
+     "source": "Nagaoka & Amari, Differential geometry of smooth families of probability distributions (the 1982 paper's introduction)",
+     "falsification": "This pass dies if the monograph is shown to present (g, T) as arbitrary choices."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The (g, T) pair is the interface of the lineage's formalism, but statisticians outside it did not compose on T; scored partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "His categorical programme reached mathematical statistics broadly; the geometric channel's cross-domain reach arrives through Amari.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment-loop effect.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "The uniqueness result ratified the Fisher metric as the default within the lineage, but Chentsov's own school remained a parallel tradition (Russian-language, AMS translation only in 1982).",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the field's references name Chentsov and Amari as the two founders of the systematic theory (nLab; Ay et al.).",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the lineage is shown to treat Chentsov as a footnote rather than a founder."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "A uniqueness theorem is irreversibility in its purest form: once the canonical structures are proved forced, the baseline cannot un-force them.",
+     "source": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks",
+     "falsification": "This pass dies if the characterization is shown to fail (e.g. if the invariance class admits rival tensor pairs)."
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T06:32:22+00:00",
+   "leap": {
+    "prior_state": "Fisher information as an estimation-theoretic quantity (Fisher 1925; Rao 1945's metric insight largely dormant); Efron's 1975 statistical curvature an isolated geometric observation without a general framework; Chentsov's invariance results confined to the Soviet literature; no differential geometry of statistical models existed as a stated framework.",
+    "jump": "Amari's 1985 monograph founds information geometry: a statistical model is a manifold carrying the Fisher metric and a one-parameter family of dual alpha-connections; estimation theory - efficiency, curvature, information loss, ancillarity - is rewritten as geometry, and higher-order inference becomes a set of computable geometric quantities.",
+    "date": 1985
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Chentsov and the monograph loses the foundation of its two fundamental objects: the book builds on the pair (g, T) - the Fisher metric and the cubic tensor that bears his name (the Amari-Chentsov tensor) - whose canonical status is his invariance theorem, and its connection family contains his e-connection as the alpha=1 member. The programme's own lineage statement names him as a root, not a footnote: 'Cencov used the differential-geometrical method to study the properties of families of probability distributions by introducing affine connections... Amari defined alpha-connections, which turned out to be tightly connected with Cencov's' (Nagaoka & Amari). This is the discrimination session 21 deferred: at the 1998 paper Chentsov appears only in a joint uniqueness parenthesis (invoked, never used - mediated via the 1985 book); in the monograph itself the theorem and the tensor are load-bearing - citation + instantiation. Mediation check: Amari 1982 does not exhaust the channel - the 1982 paper's machinery presupposes the (g, T) pair and the connection idea it generalizes; the attack is recorded for verification. Morse & Sacksteder's parallel categorical introduction (1966) is multiples evidence, not a channel.",
+    "mediator": null,
+    "evidence": "Nagaoka & Amari introduction; Ay et al. (2017)."
    }
   }
  ],
@@ -133855,6 +134556,959 @@
        "year": 1960
       },
       "reason": "dated on/after parent year 1960"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "differential-geometrical-methods-in-statistics-amari-1985-1985": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Rao's Fisher-information Riemannian metric is the foundation object of the monograph: its early chapters take the statistical model as a manifold carrying exactly this metric, and the alpha-connections and duality are defined relative to it.",
+     "definition": "Rao's 1945 construction of the Fisher information matrix as a Riemannian metric on a family of probability distributions, with the Cramer-Rao inequality derived from the geometry.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Fisher-Rao metric (Rao, 1945)",
+     "source_title": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks (Rao 1945 'epoch-making')",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1945
+    },
+    {
+     "causal_claim": "Amari's 1982 Annals paper introduced the alpha-connections and the geometrical theory of curved exponential families (curvatures, information loss, higher-order efficiency); the 1985 monograph is the book-form synthesis whose estimation chapters are this paper's theory generalized and systematized.",
+     "definition": "Amari's 1982 Annals of Statistics paper defining the one-parameter family of alpha-connections and the curvature theory of curved exponential families, giving the multiparameter geometrical form of higher-order estimation theory.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Differential geometry of curved exponential families (Amari, 1982)",
+     "source_title": "Ay et al. (2017): 'Inspired by Efron's paper, S. Amari [Ann. Stat. 10, 357-385 (1982)] introduced the notion of alpha-connections'",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1982
+    },
+    {
+     "causal_claim": "METR 82-7 introduced dual connections and the general theory of dually flat spaces; the monograph's dualistic structure (a metric plus a pair of dual alpha-connections, Legendre-dual affine coordinates) is this report's theory taken as one of the book's two pillars.",
+     "definition": "Amari & Nagaoka's 1982 University of Tokyo technical report (METR 82-7) introducing pairs of dual affine connections with respect to a Riemannian metric and the theory of dually flat spaces with Legendre-dual coordinates.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)",
+     "source_title": "Ay et al. (2017): 'Amari and Nagaoka [METR 82-7 (1982)] introduced the notion of dual connections and developed the general theory of dually flat spaces'",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1982
+    },
+    {
+     "causal_claim": "Efron posed and named the problem the monograph's estimation half answers: the curvature of a statistical model as the measure of information loss and departure from exponentiality; the monograph's general curvature theory for curved families subsumes Efron's one-parameter gamma as its special case, and Kass's lineage survey roots the whole field in Rao 1945 and Efron 1975 as its two sources.",
+     "definition": "Efron's 1975 Annals paper defining the statistical curvature gamma of a curved exponential family and decomposing the information loss of an estimator into curvature terms.",
+     "domain": "statistics",
+     "lens": "L5",
+     "name": "Statistical curvature (Efron, 1975)",
+     "source_title": "Kass (1987), Introduction to Differential Geometry in Statistical Inference (IMS): the field developed from Rao's metric idea and Efron's curvature idea",
+     "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+     "type": "theory",
+     "year": 1975
+    },
+    {
+     "causal_claim": "Chentsov's invariant characterization supplies the monograph's two fundamental objects: the Fisher metric and the cubic (Amari-Chentsov) tensor are the unique invariant tensor pair, his e-connection is the alpha=1 member of the book's connection family, and the Nagaoka-Amari lineage statement names Cencov's affine connections as one of the programme's roots ('Amari defined alpha-connections, which turned out to be tightly connected with Cencov's').",
+     "definition": "Chentsov's monograph (Russian 1972; English AMS 1982) proving the invariance characterization of the Fisher metric and the cubic tensor on statistical manifolds and introducing an affine (exponential) connection on families of distributions.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Statistical Decision Rules and Optimal Inference (Chentsov, 1972)",
+     "source_title": "Nagaoka & Amari, Differential geometry of smooth families of probability distributions, introduction (lineage statement: Rao, Cencov, Csiszar, Efron)",
+     "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+     "type": "theory",
+     "year": 1972
+    },
+    {
+     "causal_claim": "Fisher's information quantity supplies the components of the metric the monograph geometrizes.",
+     "definition": "Fisher's 1925 information measure: the expected squared score as the quantitative measure of the information a sample carries about a parameter.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Fisher information (Fisher, 1925)",
+     "source_title": "Stepanov & Mikes (2020) lineage: Fisher 1925 -> Rao 1945 -> Efron -> Chentsov -> Amari (as recorded in session 21)",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1925
+    },
+    {
+     "causal_claim": "The estimation-efficiency benchmark the monograph's theory refines to higher order.",
+     "definition": "The Cramer-Rao lower bound on estimator variance in terms of Fisher information (Cramer 1946; Rao 1945 in Fisher-metric form).",
+     "domain": "statistics",
+     "lens": "L17",
+     "name": "Cramer-Rao bound (Cramer, 1946)",
+     "source_title": "Ay et al. (2017): Rao's 1945 metric construction 'enabled Rao to derive the Cramer-Rao inequality' in Fisher form",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1946
+    },
+    {
+     "causal_claim": "The canonical divergence of the monograph's divergence theory: the alpha-divergence reduces to the Kullback divergence at alpha=-1, and Csiszar's f-divergence geometry - the line the programme generalizes - takes KL as its leading special case.",
+     "definition": "Kullback & Leibler's 1951 directed divergence between probability distributions, the canonical member of the divergence family from which statistical geometry can be generated.",
+     "domain": "information theory",
+     "lens": "L1",
+     "name": "Kullback-Leibler divergence (Kullback & Leibler, 1951)",
+     "source_title": "Nagaoka & Amari introduction: 'Csiszar used the f-divergence including Kullback divergence as a special case as quasi squared distances'; alpha-divergence 'reduces to the Kullback divergence for alpha=-1'",
+     "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+     "type": "theory",
+     "year": 1951
+    },
+    {
+     "causal_claim": "Csiszar's f-divergences as quasi-distances for the geometry of distribution families are the imported construction the Amari programme's alpha-divergence generalizes: the Nagaoka-Amari text states the programme 'generalize[s] and unify[ies] Csiszar's geometry' along the line of Amari 1982's appendix.",
+     "definition": "Csiszar's 1967 f-divergence: a class of divergence measures between distributions (KL as special case) used as quasi squared distances to study the geometry of families of distributions.",
+     "domain": "information theory",
+     "lens": "L19",
+     "name": "f-divergence geometry (Csiszar, 1967)",
+     "source_title": "Nagaoka & Amari, introduction (Springer text of the 1982 paper)",
+     "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+     "type": "theory",
+     "year": 1967
+    },
+    {
+     "causal_claim": "Jeffreys independently introduced the Fisher-information Riemannian metric (for his invariant prior's volume element) one year after Rao - Kass's survey pairs them as the metric idea's two introducers.",
+     "definition": "Jeffreys' 1946 invariant prior, proportional to the square root of the Fisher information determinant - i.e. the volume element of the Fisher metric, introduced independently of Rao.",
+     "domain": "statistics",
+     "lens": "L17",
+     "name": "Jeffreys prior (Jeffreys, 1946)",
+     "source_title": "Kass (1987) Introduction: 'The first led Jeffreys (1946) and Rao (1945) to introduce a Riemannian metric defined by Fisher information'",
+     "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+     "type": "theory",
+     "year": 1946
+    },
+    {
+     "causal_claim": "Lineage surveys record Hotelling's unpublished 1930 manuscript as an anticipation of the Fisher-metric idea; it was unpublished and forgotten (Springer editorial history, as recorded in session 21).",
+     "definition": "Hotelling's 1930 unpublished manuscript sketching a Riemannian structure on spaces of probability distributions, never published and without influence on the later field.",
+     "domain": "statistics",
+     "lens": "L3",
+     "name": "Hotelling's Riemannian structure on distribution spaces (Hotelling, 1930)",
+     "source_title": "Springer (2022), Half a Century of Information Geometry, editorial history (via session 21 record)",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1930
+    },
+    {
+     "causal_claim": "Barndorff-Nielsen's monograph is the era's standard formulation of exponential-family theory - the apparatus of families, canonical statistics and likelihood equations the monograph's curved-family geometry presupposes; the term index of Amari's monograph shows Barndorff-Nielsen engaged in its text.",
+     "definition": "Barndorff-Nielsen's 1978 Wiley monograph systematizing exponential families in statistical inference - the standard reference formulation of the family apparatus on which curved exponential family theory builds.",
+     "domain": "statistics",
+     "lens": "L13",
+     "name": "Information and Exponential Families (Barndorff-Nielsen, 1978)",
+     "source_title": "Google Books record of Differential-Geometrical Methods in Statistics: 'Barndorff-Nielsen' among the monograph's indexed terms",
+     "source_url": "https://www.google.co.uk/books/edition/Differential_geometry_in_statistical_inf/iDlwknoRcNIC?hl=en&sa=X&ved=2ahUKEwiV55KloNeXAxUBkYkEHSm0EEQQiqUDegQIFxAI",
+     "type": "theory",
+     "year": 1978
+    },
+    {
+     "causal_claim": "The characterization of the exponential family itself - the class of models whose subfamilies ('curved exponential families') are the monograph's central objects.",
+     "definition": "The Darmois-Koopman-Pitman theorem (1935-36) characterizing exponential families as the distributions admitting fixed-dimensional sufficient statistics.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Exponential family characterization (Darmois, Koopman & Pitman, 1936)",
+     "source_title": "Standard lineage as recorded in information-geometry surveys (Ay et al. 2017 historical remarks)",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1936
+    },
+    {
+     "causal_claim": "Fisher's ancillarity idea posed the conditioning problem the monograph's higher-order theory answers geometrically (ancillary families are among the monograph's indexed core terms; Kass calls Fisher's conditioning justification 'the most basic success of the geometrical method').",
+     "definition": "Fisher's ancillary statistic concept (1934-35) and the conditional-inference programme: inference should condition on statistics whose distribution is parameter-free, recovering information lost by marginal procedures.",
+     "domain": "statistics",
+     "lens": "L4",
+     "name": "Ancillary statistics and conditional inference (Fisher, 1934)",
+     "source_title": "Kass (1987) Introduction; Google Books term index of the monograph ('ancillary', 'ancillary family')",
+     "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+     "type": "theory",
+     "year": 1934
+    },
+    {
+     "causal_claim": "Dawid's published discussion of Efron 1975 'pointed out the geometrical fertility of Efron's rather intuitive approach' (Nagaoka-Amari lineage statement) - the contemporaneous account that marked the curvature idea as geometry.",
+     "definition": "A. P. Dawid's 1975 discussion contribution responding to Efron's statistical curvature paper, remarking on its geometrical significance.",
+     "domain": "statistics",
+     "lens": "L23",
+     "name": "Dawid's discussion of Efron's curvature paper (Dawid, 1975)",
+     "source_title": "Nagaoka & Amari introduction: 'Dawid [9,10] pointed out the geometrical fertility of Efron's rather intuitive approach'",
+     "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+     "type": "theory",
+     "year": 1975
+    },
+    {
+     "causal_claim": "The general mathematical framework (manifolds, metrics, connections) the monograph specializes to statistical models.",
+     "definition": "Riemann's 1854 framework of manifolds with metrics - the general differential geometry of which information geometry is a specialization.",
+     "domain": "mathematics",
+     "lens": "L19",
+     "name": "Riemannian geometry (Riemann, 1854)",
+     "source_title": "Generic background (as assessed in session 21 at Amari 1998)",
+     "source_url": "https://en.wikipedia.org/wiki/Information_Geometry",
+     "type": "theory",
+     "year": 1854
+    },
+    {
+     "causal_claim": "The author's own earlier research strand (adaptive pattern classifiers, stochastic-approximation learning) - creator lineage; the monograph is a work of pure statistical geometry from his other strand.",
+     "definition": "Amari's 1967 theory of adaptive pattern classifiers: a general schema of stochastic learning rules for layered classifiers, the founding document of his learning-theory strand.",
+     "domain": "neural networks",
+     "lens": "L20",
+     "name": "Theory of adaptive pattern classifiers (Amari, 1967)",
+     "source_title": "Session 21 record: the 1967 paper is the learning-algorithms strand the 1998 paper later bridges to the geometry",
+     "source_url": "https://bsi-ni.brain.riken.jp/database/file/176/181.pdf",
+     "type": "theory",
+     "year": 1967
+    },
+    {
+     "causal_claim": "Campbell's contemporaneous information-theoretic characterization work (the extended Cencov characterization) - same-year parallel pressure on the monograph's foundations.",
+     "definition": "L. L. Campbell's mid-1980s work relating information theory to the differential geometry of statistical models, including an extended Cencov characterization of the information metric (Proc. AMS 1986 form).",
+     "domain": "statistics",
+     "lens": "L5",
+     "name": "The relation between information theory and the differential-geometric approach to statistics (Campbell, 1985)",
+     "source_title": "Session 21 candidate record (Campbell 1985, cited jointly with Chentsov in the 1998 paper's uniqueness parenthesis)",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1985
+    },
+    {
+     "causal_claim": "Lineage surveys (Ay et al.) record Morse & Sacksteder as independent near-simultaneous introducers, with Chentsov 1965, of the category of mathematical statistics - the invariance programme in categorical form.",
+     "definition": "Morse & Sacksteder's 1966 category-theoretic formulation of mathematical statistics, an independent parallel to Chentsov's invariance programme.",
+     "domain": "statistics",
+     "lens": "L3",
+     "name": "Category of mathematical statistics (Morse & Sacksteder, 1966)",
+     "source_title": "Ay et al. (2017): 'N. N. Chentsov [1965] and N. Morse and R. Sacksteder [1966] independently introduced the category of mathematical statistics almost simultaneously'",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1966
+    },
+    {
+     "causal_claim": "Efron & Hinkley's 1978 Biometrika paper is a central document of the conditional-inference literature (observed vs expected information, conditioning on ancillaries) whose problem world the monograph's higher-order chapters inhabit.",
+     "definition": "Efron & Hinkley's 1978 paper arguing, via conditional inference, for observed over expected Fisher information in assessing estimator accuracy.",
+     "domain": "statistics",
+     "lens": "L5",
+     "name": "Observed versus expected Fisher information (Efron & Hinkley, 1978)",
+     "source_title": "Kass (1987) Introduction (the conditional-inference context of the geometrical programme)",
+     "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+     "type": "theory",
+     "year": 1978
+    },
+    {
+     "causal_claim": "The era's standard estimation-theory reference text - part of the textbook apparatus background of the monograph's generation.",
+     "definition": "Cox & Hinkley's 1974 textbook systematizing classical statistical inference theory, including conditional inference and higher-order approximations.",
+     "domain": "statistics",
+     "lens": "L13",
+     "name": "Theoretical Statistics (Cox & Hinkley, 1974)",
+     "source_title": "Standard reference of the period (scouted for completeness of the tooling lens)",
+     "source_url": "https://encyclopediaofmath.org/index.php?title=Differential_geometry_in_statistical_inference&oldid=46687",
+     "type": "theory",
+     "year": 1974
+    },
+    {
+     "causal_claim": "The single direct precursor the monograph modifies and extends: the book is this paper's theory (plus the dual-connection theory) re-presented as a complete framework - Springer review of the monograph: it describes 'his differential-geometric approach to parametrical statistical problems summarizing the results he had published in a series of papers'.",
+     "definition": "Amari's 1982 Annals of Statistics paper defining the one-parameter family of alpha-connections and the curvature theory of curved exponential families, giving the multiparameter geometrical form of higher-order estimation theory.",
+     "domain": "statistics",
+     "lens": "L2",
+     "name": "Differential geometry of curved exponential families (Amari, 1982)",
+     "source_title": "Springer review of the monograph (Google Books record)",
+     "source_url": "https://www.google.co.uk/books/edition/Differential_geometry_in_statistical_inf/iDlwknoRcNIC?hl=en&sa=X&ved=2ahUKEwiV55KloNeXAxUBkYkEHSm0EEQQiqUDegQIFxAI",
+     "type": "theory",
+     "year": 1982
+    },
+    {
+     "causal_claim": "Ancestor modified alongside the 1982 Annals paper: the monograph absorbs METR 82-7's dual-connection theory as its second pillar, generalizing it into the book's dualistic structure.",
+     "definition": "Amari & Nagaoka's 1982 University of Tokyo technical report (METR 82-7) introducing pairs of dual affine connections with respect to a Riemannian metric and the theory of dually flat spaces with Legendre-dual coordinates.",
+     "domain": "statistics",
+     "lens": "L2",
+     "name": "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)",
+     "source_title": "Ay et al. (2017) historical remarks",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1982
+    },
+    {
+     "causal_claim": "Lineage surveys (Kass 1987) name Rao 1945 and Efron 1975 as the two ideas from which geometrical inference developed - Rao's metric is the monograph's first root.",
+     "definition": "Rao's 1945 construction of the Fisher information matrix as a Riemannian metric on a family of probability distributions, with the Cramer-Rao inequality derived from the geometry.",
+     "domain": "statistics",
+     "lens": "L3",
+     "name": "Fisher-Rao metric (Rao, 1945)",
+     "source_title": "Kass (1987) Introduction",
+     "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+     "type": "theory",
+     "year": 1945
+    },
+    {
+     "causal_claim": "Lineage surveys name Efron 1975 as the field's second root: 'the second [idea] led Efron (1975) to quantify departures from exponentiality by defining the curvature of a statistical model' (Kass).",
+     "definition": "Efron's 1975 Annals paper defining the statistical curvature gamma of a curved exponential family and decomposing the information loss of an estimator into curvature terms.",
+     "domain": "statistics",
+     "lens": "L3",
+     "name": "Statistical curvature (Efron, 1975)",
+     "source_title": "Kass (1987) Introduction",
+     "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+     "type": "theory",
+     "year": 1975
+    },
+    {
+     "causal_claim": "Problem posed: Efron's paper posed the problem the monograph's estimation theory answers - how curvature of a model quantifies information loss and second-order efficiency.",
+     "definition": "Efron's 1975 Annals paper defining the statistical curvature gamma of a curved exponential family and decomposing the information loss of an estimator into curvature terms.",
+     "domain": "statistics",
+     "lens": "L4",
+     "name": "Statistical curvature (Efron, 1975)",
+     "source_title": "Ay et al. (2017): Efron 'extended Rao's ideas to a higher-order asymptotic theory of statistical inference, defining smooth subfamilies and their statistical curvature'",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1975
+    },
+    {
+     "causal_claim": "Problem posed in invariance form: Chentsov posed the question of which geometric structures on a statistical model are canonical (invariant under Markov morphisms) - the question the monograph's choice of (g, T, alpha-connections) answers.",
+     "definition": "Chentsov's monograph (Russian 1972; English AMS 1982) proving the invariance characterization of the Fisher metric and the cubic tensor on statistical manifolds and introducing an affine (exponential) connection on families of distributions.",
+     "domain": "statistics",
+     "lens": "L4",
+     "name": "Statistical Decision Rules and Optimal Inference (Chentsov, 1972)",
+     "source_title": "Ay et al. (2017) historical remarks; nLab information geometry: 'Founders of the systematical theory are N. N. Chentsov and Shun-ichi Amari'",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1972
+    },
+    {
+     "causal_claim": "The measure that registered the field's quantities: Fisher information is the monograph's metric in component form and its efficiency yardstick.",
+     "definition": "Fisher's 1925 information measure: the expected squared score as the quantitative measure of the information a sample carries about a parameter.",
+     "domain": "statistics",
+     "lens": "L17",
+     "name": "Fisher information (Fisher, 1925)",
+     "source_title": "Ay et al. (2017) historical remarks",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1925
+    },
+    {
+     "causal_claim": "Cross-field import: the information-theoretic divergence imported into statistical geometry, where the monograph's programme treats it as the alpha=-1 member of its divergence family.",
+     "definition": "Kullback & Leibler's 1951 directed divergence between probability distributions, the canonical member of the divergence family from which statistical geometry can be generated.",
+     "domain": "information theory",
+     "lens": "L19",
+     "name": "Kullback-Leibler divergence (Kullback & Leibler, 1951)",
+     "source_title": "Nagaoka & Amari introduction (Springer text)",
+     "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+     "type": "theory",
+     "year": 1951
+    },
+    {
+     "causal_claim": "Creator lineage: the author's own immediately prior paper - the monograph is Amari's synthesis of his 1982-84 published series (Springer review).",
+     "definition": "Amari's 1982 Annals of Statistics paper defining the one-parameter family of alpha-connections and the curvature theory of curved exponential families, giving the multiparameter geometrical form of higher-order estimation theory.",
+     "domain": "statistics",
+     "lens": "L20",
+     "name": "Differential geometry of curved exponential families (Amari, 1982)",
+     "source_title": "Springer review of the monograph (Google Books record)",
+     "source_url": "https://www.google.co.uk/books/edition/Differential_geometry_in_statistical_inf/iDlwknoRcNIC?hl=en&sa=X&ved=2ahUKEwiV55KloNeXAxUBkYkEHSm0EEQQiqUDegQIFxAI",
+     "type": "theory",
+     "year": 1982
+    },
+    {
+     "causal_claim": "Creator lineage: the author's own immediately prior technical report, written with his Tokyo colleague Nagaoka, absorbed into the monograph.",
+     "definition": "Amari & Nagaoka's 1982 University of Tokyo technical report (METR 82-7) introducing pairs of dual affine connections with respect to a Riemannian metric and the theory of dually flat spaces with Legendre-dual coordinates.",
+     "domain": "statistics",
+     "lens": "L20",
+     "name": "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)",
+     "source_title": "Ay et al. (2017) historical remarks",
+     "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+     "type": "theory",
+     "year": 1982
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "fisher-rao-metric-rao-1945-1945",
+      "candidate": {
+       "causal_claim": "Rao's Fisher-information Riemannian metric is the foundation object of the monograph: its early chapters take the statistical model as a manifold carrying exactly this metric, and the alpha-connections and duality are defined relative to it.",
+       "definition": "Rao's 1945 construction of the Fisher information matrix as a Riemannian metric on a family of probability distributions, with the Cramer-Rao inequality derived from the geometry.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Fisher-Rao metric (Rao, 1945)",
+       "source_title": "Ay, Jost, Le & Schwachhofer (2017), Information Geometry, historical remarks (Rao 1945 'epoch-making')",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1945
+      },
+      "members": [
+       0,
+       23
+      ],
+      "member_names": [
+       "Fisher-Rao metric (Rao, 1945)",
+       "Fisher-Rao metric (Rao, 1945)"
+      ],
+      "matched_node_id": "fisher-rao-metric-rao-1945-1945",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "differential-geometry-of-curved-exponential-families-amari-1-1982",
+      "candidate": {
+       "causal_claim": "Amari's 1982 Annals paper introduced the alpha-connections and the geometrical theory of curved exponential families (curvatures, information loss, higher-order efficiency); the 1985 monograph is the book-form synthesis whose estimation chapters are this paper's theory generalized and systematized.",
+       "definition": "Amari's 1982 Annals of Statistics paper defining the one-parameter family of alpha-connections and the curvature theory of curved exponential families, giving the multiparameter geometrical form of higher-order estimation theory.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Differential geometry of curved exponential families (Amari, 1982)",
+       "source_title": "Ay et al. (2017): 'Inspired by Efron's paper, S. Amari [Ann. Stat. 10, 357-385 (1982)] introduced the notion of alpha-connections'",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1982
+      },
+      "members": [
+       1,
+       21,
+       29
+      ],
+      "member_names": [
+       "Differential geometry of curved exponential families (Amari, 1982)",
+       "Differential geometry of curved exponential families (Amari, 1982)",
+       "Differential geometry of curved exponential families (Amari, 1982)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dual-connections-and-dually-flat-spaces-amari-nagaoka-1982-1982",
+      "candidate": {
+       "causal_claim": "METR 82-7 introduced dual connections and the general theory of dually flat spaces; the monograph's dualistic structure (a metric plus a pair of dual alpha-connections, Legendre-dual affine coordinates) is this report's theory taken as one of the book's two pillars.",
+       "definition": "Amari & Nagaoka's 1982 University of Tokyo technical report (METR 82-7) introducing pairs of dual affine connections with respect to a Riemannian metric and the theory of dually flat spaces with Legendre-dual coordinates.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)",
+       "source_title": "Ay et al. (2017): 'Amari and Nagaoka [METR 82-7 (1982)] introduced the notion of dual connections and developed the general theory of dually flat spaces'",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1982
+      },
+      "members": [
+       2,
+       22,
+       30
+      ],
+      "member_names": [
+       "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)",
+       "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)",
+       "Dual connections and dually flat spaces (Amari & Nagaoka, 1982)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "statistical-curvature-efron-1975-1975",
+      "candidate": {
+       "causal_claim": "Efron posed and named the problem the monograph's estimation half answers: the curvature of a statistical model as the measure of information loss and departure from exponentiality; the monograph's general curvature theory for curved families subsumes Efron's one-parameter gamma as its special case, and Kass's lineage survey roots the whole field in Rao 1945 and Efron 1975 as its two sources.",
+       "definition": "Efron's 1975 Annals paper defining the statistical curvature gamma of a curved exponential family and decomposing the information loss of an estimator into curvature terms.",
+       "domain": "statistics",
+       "lens": "L5",
+       "name": "Statistical curvature (Efron, 1975)",
+       "source_title": "Kass (1987), Introduction to Differential Geometry in Statistical Inference (IMS): the field developed from Rao's metric idea and Efron's curvature idea",
+       "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+       "type": "theory",
+       "year": 1975
+      },
+      "members": [
+       3,
+       24,
+       25
+      ],
+      "member_names": [
+       "Statistical curvature (Efron, 1975)",
+       "Statistical curvature (Efron, 1975)",
+       "Statistical curvature (Efron, 1975)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "statistical-decision-rules-and-optimal-inference-chentsov-19-1972",
+      "candidate": {
+       "causal_claim": "Chentsov's invariant characterization supplies the monograph's two fundamental objects: the Fisher metric and the cubic (Amari-Chentsov) tensor are the unique invariant tensor pair, his e-connection is the alpha=1 member of the book's connection family, and the Nagaoka-Amari lineage statement names Cencov's affine connections as one of the programme's roots ('Amari defined alpha-connections, which turned out to be tightly connected with Cencov's').",
+       "definition": "Chentsov's monograph (Russian 1972; English AMS 1982) proving the invariance characterization of the Fisher metric and the cubic tensor on statistical manifolds and introducing an affine (exponential) connection on families of distributions.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Statistical Decision Rules and Optimal Inference (Chentsov, 1972)",
+       "source_title": "Nagaoka & Amari, Differential geometry of smooth families of probability distributions, introduction (lineage statement: Rao, Cencov, Csiszar, Efron)",
+       "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+       "type": "theory",
+       "year": 1972
+      },
+      "members": [
+       4,
+       26
+      ],
+      "member_names": [
+       "Statistical Decision Rules and Optimal Inference (Chentsov, 1972)",
+       "Statistical Decision Rules and Optimal Inference (Chentsov, 1972)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-information-fisher-1925-1925",
+      "candidate": {
+       "causal_claim": "Fisher's information quantity supplies the components of the metric the monograph geometrizes.",
+       "definition": "Fisher's 1925 information measure: the expected squared score as the quantitative measure of the information a sample carries about a parameter.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Fisher information (Fisher, 1925)",
+       "source_title": "Stepanov & Mikes (2020) lineage: Fisher 1925 -> Rao 1945 -> Efron -> Chentsov -> Amari (as recorded in session 21)",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1925
+      },
+      "members": [
+       5,
+       27
+      ],
+      "member_names": [
+       "Fisher information (Fisher, 1925)",
+       "Fisher information (Fisher, 1925)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cramer-rao-bound-cramer-1946-1946",
+      "candidate": {
+       "causal_claim": "The estimation-efficiency benchmark the monograph's theory refines to higher order.",
+       "definition": "The Cramer-Rao lower bound on estimator variance in terms of Fisher information (Cramer 1946; Rao 1945 in Fisher-metric form).",
+       "domain": "statistics",
+       "lens": "L17",
+       "name": "Cramer-Rao bound (Cramer, 1946)",
+       "source_title": "Ay et al. (2017): Rao's 1945 metric construction 'enabled Rao to derive the Cramer-Rao inequality' in Fisher form",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1946
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Cramer-Rao bound (Cramer, 1946)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "kullback-leibler-divergence-kullback-leibler-1951-1951",
+      "candidate": {
+       "causal_claim": "The canonical divergence of the monograph's divergence theory: the alpha-divergence reduces to the Kullback divergence at alpha=-1, and Csiszar's f-divergence geometry - the line the programme generalizes - takes KL as its leading special case.",
+       "definition": "Kullback & Leibler's 1951 directed divergence between probability distributions, the canonical member of the divergence family from which statistical geometry can be generated.",
+       "domain": "information theory",
+       "lens": "L1",
+       "name": "Kullback-Leibler divergence (Kullback & Leibler, 1951)",
+       "source_title": "Nagaoka & Amari introduction: 'Csiszar used the f-divergence including Kullback divergence as a special case as quasi squared distances'; alpha-divergence 'reduces to the Kullback divergence for alpha=-1'",
+       "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+       "type": "theory",
+       "year": 1951
+      },
+      "members": [
+       7,
+       28
+      ],
+      "member_names": [
+       "Kullback-Leibler divergence (Kullback & Leibler, 1951)",
+       "Kullback-Leibler divergence (Kullback & Leibler, 1951)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "f-divergence-geometry-csiszar-1967-1967",
+      "candidate": {
+       "causal_claim": "Csiszar's f-divergences as quasi-distances for the geometry of distribution families are the imported construction the Amari programme's alpha-divergence generalizes: the Nagaoka-Amari text states the programme 'generalize[s] and unify[ies] Csiszar's geometry' along the line of Amari 1982's appendix.",
+       "definition": "Csiszar's 1967 f-divergence: a class of divergence measures between distributions (KL as special case) used as quasi squared distances to study the geometry of families of distributions.",
+       "domain": "information theory",
+       "lens": "L19",
+       "name": "f-divergence geometry (Csiszar, 1967)",
+       "source_title": "Nagaoka & Amari, introduction (Springer text of the 1982 paper)",
+       "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+       "type": "theory",
+       "year": 1967
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "f-divergence geometry (Csiszar, 1967)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "jeffreys-prior-jeffreys-1946-1946",
+      "candidate": {
+       "causal_claim": "Jeffreys independently introduced the Fisher-information Riemannian metric (for his invariant prior's volume element) one year after Rao - Kass's survey pairs them as the metric idea's two introducers.",
+       "definition": "Jeffreys' 1946 invariant prior, proportional to the square root of the Fisher information determinant - i.e. the volume element of the Fisher metric, introduced independently of Rao.",
+       "domain": "statistics",
+       "lens": "L17",
+       "name": "Jeffreys prior (Jeffreys, 1946)",
+       "source_title": "Kass (1987) Introduction: 'The first led Jeffreys (1946) and Rao (1945) to introduce a Riemannian metric defined by Fisher information'",
+       "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+       "type": "theory",
+       "year": 1946
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Jeffreys prior (Jeffreys, 1946)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hotelling-s-riemannian-structure-on-distribution-spaces-hote-1930",
+      "candidate": {
+       "causal_claim": "Lineage surveys record Hotelling's unpublished 1930 manuscript as an anticipation of the Fisher-metric idea; it was unpublished and forgotten (Springer editorial history, as recorded in session 21).",
+       "definition": "Hotelling's 1930 unpublished manuscript sketching a Riemannian structure on spaces of probability distributions, never published and without influence on the later field.",
+       "domain": "statistics",
+       "lens": "L3",
+       "name": "Hotelling's Riemannian structure on distribution spaces (Hotelling, 1930)",
+       "source_title": "Springer (2022), Half a Century of Information Geometry, editorial history (via session 21 record)",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1930
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Hotelling's Riemannian structure on distribution spaces (Hotelling, 1930)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "information-and-exponential-families-barndorff-nielsen-1978-1978",
+      "candidate": {
+       "causal_claim": "Barndorff-Nielsen's monograph is the era's standard formulation of exponential-family theory - the apparatus of families, canonical statistics and likelihood equations the monograph's curved-family geometry presupposes; the term index of Amari's monograph shows Barndorff-Nielsen engaged in its text.",
+       "definition": "Barndorff-Nielsen's 1978 Wiley monograph systematizing exponential families in statistical inference - the standard reference formulation of the family apparatus on which curved exponential family theory builds.",
+       "domain": "statistics",
+       "lens": "L13",
+       "name": "Information and Exponential Families (Barndorff-Nielsen, 1978)",
+       "source_title": "Google Books record of Differential-Geometrical Methods in Statistics: 'Barndorff-Nielsen' among the monograph's indexed terms",
+       "source_url": "https://www.google.co.uk/books/edition/Differential_geometry_in_statistical_inf/iDlwknoRcNIC?hl=en&sa=X&ved=2ahUKEwiV55KloNeXAxUBkYkEHSm0EEQQiqUDegQIFxAI",
+       "type": "theory",
+       "year": 1978
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Information and Exponential Families (Barndorff-Nielsen, 1978)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "exponential-family-characterization-darmois-koopman-pitman-1-1936",
+      "candidate": {
+       "causal_claim": "The characterization of the exponential family itself - the class of models whose subfamilies ('curved exponential families') are the monograph's central objects.",
+       "definition": "The Darmois-Koopman-Pitman theorem (1935-36) characterizing exponential families as the distributions admitting fixed-dimensional sufficient statistics.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Exponential family characterization (Darmois, Koopman & Pitman, 1936)",
+       "source_title": "Standard lineage as recorded in information-geometry surveys (Ay et al. 2017 historical remarks)",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1936
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Exponential family characterization (Darmois, Koopman & Pitman, 1936)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ancillary-statistics-and-conditional-inference-fisher-1934-1934",
+      "candidate": {
+       "causal_claim": "Fisher's ancillarity idea posed the conditioning problem the monograph's higher-order theory answers geometrically (ancillary families are among the monograph's indexed core terms; Kass calls Fisher's conditioning justification 'the most basic success of the geometrical method').",
+       "definition": "Fisher's ancillary statistic concept (1934-35) and the conditional-inference programme: inference should condition on statistics whose distribution is parameter-free, recovering information lost by marginal procedures.",
+       "domain": "statistics",
+       "lens": "L4",
+       "name": "Ancillary statistics and conditional inference (Fisher, 1934)",
+       "source_title": "Kass (1987) Introduction; Google Books term index of the monograph ('ancillary', 'ancillary family')",
+       "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+       "type": "theory",
+       "year": 1934
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Ancillary statistics and conditional inference (Fisher, 1934)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dawid-s-discussion-of-efron-s-curvature-paper-dawid-1975-1975",
+      "candidate": {
+       "causal_claim": "Dawid's published discussion of Efron 1975 'pointed out the geometrical fertility of Efron's rather intuitive approach' (Nagaoka-Amari lineage statement) - the contemporaneous account that marked the curvature idea as geometry.",
+       "definition": "A. P. Dawid's 1975 discussion contribution responding to Efron's statistical curvature paper, remarking on its geometrical significance.",
+       "domain": "statistics",
+       "lens": "L23",
+       "name": "Dawid's discussion of Efron's curvature paper (Dawid, 1975)",
+       "source_title": "Nagaoka & Amari introduction: 'Dawid [9,10] pointed out the geometrical fertility of Efron's rather intuitive approach'",
+       "source_url": "https://link.springer.com/article/10.1007/s41884-025-00187-y",
+       "type": "theory",
+       "year": 1975
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Dawid's discussion of Efron's curvature paper (Dawid, 1975)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "riemannian-geometry-riemann-1854-1854",
+      "candidate": {
+       "causal_claim": "The general mathematical framework (manifolds, metrics, connections) the monograph specializes to statistical models.",
+       "definition": "Riemann's 1854 framework of manifolds with metrics - the general differential geometry of which information geometry is a specialization.",
+       "domain": "mathematics",
+       "lens": "L19",
+       "name": "Riemannian geometry (Riemann, 1854)",
+       "source_title": "Generic background (as assessed in session 21 at Amari 1998)",
+       "source_url": "https://en.wikipedia.org/wiki/Information_Geometry",
+       "type": "theory",
+       "year": 1854
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Riemannian geometry (Riemann, 1854)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "theory-of-adaptive-pattern-classifiers-amari-1967-1967",
+      "candidate": {
+       "causal_claim": "The author's own earlier research strand (adaptive pattern classifiers, stochastic-approximation learning) - creator lineage; the monograph is a work of pure statistical geometry from his other strand.",
+       "definition": "Amari's 1967 theory of adaptive pattern classifiers: a general schema of stochastic learning rules for layered classifiers, the founding document of his learning-theory strand.",
+       "domain": "neural networks",
+       "lens": "L20",
+       "name": "Theory of adaptive pattern classifiers (Amari, 1967)",
+       "source_title": "Session 21 record: the 1967 paper is the learning-algorithms strand the 1998 paper later bridges to the geometry",
+       "source_url": "https://bsi-ni.brain.riken.jp/database/file/176/181.pdf",
+       "type": "theory",
+       "year": 1967
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Theory of adaptive pattern classifiers (Amari, 1967)"
+      ],
+      "matched_node_id": "theory-of-adaptive-pattern-classifiers-amari-1967-1967",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "category-of-mathematical-statistics-morse-sacksteder-1966-1966",
+      "candidate": {
+       "causal_claim": "Lineage surveys (Ay et al.) record Morse & Sacksteder as independent near-simultaneous introducers, with Chentsov 1965, of the category of mathematical statistics - the invariance programme in categorical form.",
+       "definition": "Morse & Sacksteder's 1966 category-theoretic formulation of mathematical statistics, an independent parallel to Chentsov's invariance programme.",
+       "domain": "statistics",
+       "lens": "L3",
+       "name": "Category of mathematical statistics (Morse & Sacksteder, 1966)",
+       "source_title": "Ay et al. (2017): 'N. N. Chentsov [1965] and N. Morse and R. Sacksteder [1966] independently introduced the category of mathematical statistics almost simultaneously'",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1966
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "Category of mathematical statistics (Morse & Sacksteder, 1966)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "observed-versus-expected-fisher-information-efron-hinkley-19-1978",
+      "candidate": {
+       "causal_claim": "Efron & Hinkley's 1978 Biometrika paper is a central document of the conditional-inference literature (observed vs expected information, conditioning on ancillaries) whose problem world the monograph's higher-order chapters inhabit.",
+       "definition": "Efron & Hinkley's 1978 paper arguing, via conditional inference, for observed over expected Fisher information in assessing estimator accuracy.",
+       "domain": "statistics",
+       "lens": "L5",
+       "name": "Observed versus expected Fisher information (Efron & Hinkley, 1978)",
+       "source_title": "Kass (1987) Introduction (the conditional-inference context of the geometrical programme)",
+       "source_url": "https://www.cmat.edu.uy/~mordecki/digital-library/60-Probability-Theory-and-Stochastic-Processes/10%20Differential%20Geometry%20in%20Statistical%20Inference%201987/001-018_Kass_Introduction.pdf",
+       "type": "theory",
+       "year": 1978
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "Observed versus expected Fisher information (Efron & Hinkley, 1978)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "theoretical-statistics-cox-hinkley-1974-1974",
+      "candidate": {
+       "causal_claim": "The era's standard estimation-theory reference text - part of the textbook apparatus background of the monograph's generation.",
+       "definition": "Cox & Hinkley's 1974 textbook systematizing classical statistical inference theory, including conditional inference and higher-order approximations.",
+       "domain": "statistics",
+       "lens": "L13",
+       "name": "Theoretical Statistics (Cox & Hinkley, 1974)",
+       "source_title": "Standard reference of the period (scouted for completeness of the tooling lens)",
+       "source_url": "https://encyclopediaofmath.org/index.php?title=Differential_geometry_in_statistical_inference&oldid=46687",
+       "type": "theory",
+       "year": 1974
+      },
+      "members": [
+       20
+      ],
+      "member_names": [
+       "Theoretical Statistics (Cox & Hinkley, 1974)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       23
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       21
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       29
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       22
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       30
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       24
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       25
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       4,
+       26
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       5,
+       27
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       7,
+       28
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "Campbell's contemporaneous information-theoretic characterization work (the extended Cencov characterization) - same-year parallel pressure on the monograph's foundations.",
+       "definition": "L. L. Campbell's mid-1980s work relating information theory to the differential geometry of statistical models, including an extended Cencov characterization of the information metric (Proc. AMS 1986 form).",
+       "domain": "statistics",
+       "lens": "L5",
+       "name": "The relation between information theory and the differential-geometric approach to statistics (Campbell, 1985)",
+       "source_title": "Session 21 candidate record (Campbell 1985, cited jointly with Chentsov in the 1998 paper's uniqueness parenthesis)",
+       "source_url": "https://tsukuba.repo.nii.ac.jp/record/53712/files/06770983.pdf",
+       "type": "theory",
+       "year": 1985
+      },
+      "reason": "dated on/after parent year 1985"
      }
     ],
     "prefiltered": []
