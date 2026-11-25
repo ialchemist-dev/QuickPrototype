@@ -2874,3 +2874,49 @@
   "expansions_done": 104
  }
 }
+{
+ "ts": "2026-11-25T06:52:00-07:00",
+ "session": "run session 48 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "cowos-silicon-interposer-packaging-tsmc-2011",
+ "parent_name": "CoWoS silicon-interposer packaging (TSMC)",
+ "provenance": "Parent stored record verified COMPLETE before evaluation (no session-31 defect): definition, bottleneck, leap, prior_state all present. The definition's own dating note stands (TSMC's retrospective dates the platform's introduction to 2012; the run uses the documented 2011 first-product date) - no re-dating was performed or needed. No prior rejections exist for this parent. Grounding fetched this session: the SSI announcement (PR Newswire, 26 Oct 2010) and first-shipment release (25 Oct 2011); TSMC Annual Report 2011; Knickerbocker et al. CICC 2005 / IBM J. Res. Dev. 49(4) 2005 and the POWER4 MCM paper (IBM JRD 46(6) 2002); IBM's April 2007 TSV manufacturing announcement; the TSV history literature (IFTLE 95; Wikipedia); Landman & Russo 1971; Totta's C4 retrospective and the C4NP abstract; Wulf & McKee 1995; the eWLB fan-out survey; the JMEMS TSV review. Meta passes L3/L23 were run (IFTLE 3DIC retrospective; TSV lineage surveys; EE Times' contemporaneous SSI cover story) and yielded no separable artifact beyond the content filings - recorded here per the V100 precedent. The InstructGPT/RLHF flag did not surface at this parent.",
+ "raw": 28,
+ "dry_notes": "16 dry/shortfall notes covering every content lens under floor: L8, L9, L10, L12, L13, L15, L18 fully dry (a packaging platform consumes no dataset; it IS the plant; its material is commodity silicon - the absence of a materials leap is itself recorded as the finding; no programmability layer; no runtime service; no observation instrument); L16 dry WITH a finding - CoWoS implements no external standard: its interfaces were proprietary, JEDEC Wide I/O (JESD229, Dec 2011) is the parent's own year, and the HBM standard that later defined its headline use dates to 2013 - the exact inverse of the JSON Schema case. Shortfalls on L4 (2), L5 (2), L7 (2), L11 (2, one a cross-lens duplicate), L14 (1), L17 (1, cross-lens duplicate), L20 (1), L22 (1). No lens was padded.",
+ "date_dropped": 0,
+ "distinct": 25,
+ "evaluated": 25,
+ "survivors": 2,
+ "rejected": 23,
+ "mediated": 5,
+ "survivors_detail": [
+  {
+   "name": "Through-silicon via (TSV) manufacturing technology (IBM, 2007)",
+   "id": "through-silicon-via-tsv-manufacturing-technology-ibm-2007-2007",
+   "is_new": true,
+   "score": 6.5,
+   "decisive": "NEW, depth 4 - the production process the parent's interposer presupposes: without manufacturing-grade TSVs the carrier has no feed-through to the substrate and the parent's form cannot be built. The mediation attack (via the silicon carrier) answered by the components discrimination: the carrier is the architecture, TSV is the process it presupposes; the process also reaches the parent directly (the interposer's feed-through IS TSVs, in the parent's contemporaneous accounts). Q3 capped at partial by the multiples test: Samsung's WSP shipped TSV NAND stacks from 2006 - a year BEFORE the IBM announcement - and Elpida completed a Cu-TSV DRAM in 2009; the node is the manufacturing-grade, industry-facing instance of a ripe process, and its verification records that it must never be verified on necessity grounds."
+  },
+  {
+   "name": "IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+   "id": "ibm-silicon-carrier-packaging-knickerbocker-et-al-2005-2005",
+   "is_new": true,
+   "score": 6.0,
+   "decisive": "NEW, depth 4 - the parent's single direct precursor: the architecture (dies on a TSV-bearing silicon carrier used as a wiring medium, 50 um pitch, >16x chip I/O, 20-100x the wiring density of organic and ceramic packaging, heterogeneous dies as one 'virtual chip') in published, quantified form; CoWoS is this architecture productized as a foundry platform. Mediation attacks answered: via SSI (refused here on identity; the carrier predates it by five years on an independent lineage) and via TSV (containment of a component is not mediation of the architecture). Flagged the expansion's MOST CONTESTABLE edge in its verification record - parallel interposer programmes existed and TSMC's line might have converged independently; re-hearing condition recorded."
+  }
+ ],
+ "rejections_of_note": [
+  "THE IDENTITY HEARING - Xilinx Stacked Silicon Interconnect technology (2010) REFUSED as the parent's own first commercial form: the parent node is dated by and defined through the Virtex-7 2000T, TSMC's 2011 annual report claims the same 2011 demonstration as CoWoS's own proprietary technology, and the announcement attributes one technology jointly to both houses. A node cannot be its own predecessor (the Laplace-1810 / proto-Reyes shape); the announcement-to-shipment interval of a single programme is not an ancestor relation. No mediator recordable - the failure is not mediation. The Xilinx-TSMC partnership REFUSED with it as the parent's own formation arrangement (the NVLink discrimination inverted: there an instrument distinct from the parent carried the channel; here no instrument distinct from the parent exists).",
+  "TSMC IIPD (2008) REFUSED on self-carriage: the parent is this institution's own artifact (the Pixar shape), discriminated from OpenPOWER at NVLink where the admitted vehicle was external to the parent. Shang-yi Chiang's 2009 return REFUSED fail-closed partial with it (biography - the Catanzaro discrimination; his spokesman role in the SSI announcement is recorded in full).",
+  "C4NP fine-pitch micro-bump (2008): directness PASSES (the joints are consumed) but the leap gate refuses it as a component of the parent's leap - the fastener, not the platform (the Fisher-MLE shape). C4 (1962) mediated via C4NP - the mediation chain carried by its cited final link.",
+  "IBM glass-ceramic MCM (2001) and the TCM (1981) both mediated via the silicon carrier (IBM's own successor architecture); the TCM's stronger 'lessons of the failure record' claim refused as historiography (the Denis shape).",
+  "Memory wall (1995) fail-closed partial under the Hochreiter condition, argued fresh: the parent's documents frame wiring density and monolithic capacity, never the 1995 diagnosis - consistent with its P100 and NVLink refusals. Rent's rule (1971) and Donath (1979) fail-closed partial on the same discipline: the field's quantitative background, carried by no document into the parent (importance without a channel).",
+  "Samsung WSP (2006) fail-closed partial - a parallel productization and multiple of the admitted TSV node (verification evidence for its ripeness), whose vertical form the parent defines against. Silex MEMS TSV (2005) and ASET (1999) mediated via TSV manufacturing. Intel's TSV programme (2005) refused: anticipation/negative space without a junction (the Masse discipline). GDDR5 and the Akita wire-bonded stack refused as defined-against incumbents (GDDR5 argued fresh on the parent's stored bottleneck). eWLB fail-closed partial (shared BEOL ancestor, no junction). DRIE fail-closed partial (equipment; laser drilling defeats necessity - heard properly at the TSV node's own expansion). Thin-wafer handling refused (origin vs instance: the craft is consumed, this vendor's instance is not the channel). NEDO refused on decomposition (the institution behind a candidate, not the parent - the 2011 parent contains no Elpida component). More than Moore (2005) and the 28 nm economics (2010) refused as roadmap framing and timeliness condition - background, judged by the gate as L4/L22 intend."
+ ],
+ "notes": "Two survivors, both NEW at depth 4 - the hardware line's ancestry now runs V100 <- CoWoS <- {TSV manufacturing, IBM silicon carrier}. Structural findings: (1) This parent's ancestry is a PROCESS and an ARCHITECTURE, not products: the platform's two parents are the via process it presupposes and the carrier design it productizes - the components discrimination applied to packaging. (2) The identity hearing is the session's headline judgment: SSI and CoWoS are one programme with two names (customer's and foundry's), and the graph records the foundry name as the node and the customer's as its defining first instance - the reverse assignment would have produced the same refusal with the names exchanged. (3) The institutional stratum at this parent is entirely self-carriage and formation (IIPD, the partnership, Chiang) - where NVLink's institution was external and admissible, CoWoS's are its own house, and the graph records the contrast. Session 48 expansion 1 is complete and checkpointed; HBM2 follows as expansion 2.",
+ "totals_after": {
+  "nodes": 210,
+  "edges": 271,
+  "expansions_done": 105
+ }
+}

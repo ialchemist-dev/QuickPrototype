@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T13:34:38+00:00",
-  "expansions_done": 104,
-  "raw_candidates_seen": 4244,
+  "updated_at": "2026-11-25T13:45:18+00:00",
+  "expansions_done": 105,
+  "raw_candidates_seen": 4272,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -19644,6 +19644,149 @@
     "reason": "mediated_via: NVLink interconnect",
     "at": "2026-11-25T13:34:10+00:00",
     "mediated_via": "NVLink interconnect"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "C4NP fine-pitch micro-bump solder interconnect (IBM, 2008)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "C4 controlled-collapse flip-chip connection (IBM, 1962)",
+    "reason": "mediated_via: C4NP fine-pitch micro-bump solder interconnect (IBM, 2008)",
+    "at": "2026-11-25T13:45:01+00:00",
+    "mediated_via": "C4NP fine-pitch micro-bump solder interconnect (IBM, 2008)"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "IBM glass-ceramic multi-chip module (POWER4 'Regatta' MCM, 2001)",
+    "reason": "mediated_via: IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+    "at": "2026-11-25T13:45:01+00:00",
+    "mediated_via": "IBM silicon carrier packaging (Knickerbocker et al., 2005)"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Xilinx Stacked Silicon Interconnect technology (2010)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Rent's rule (Landman & Russo, 1971)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "ITRS 'More than Moore' integration agenda (2005)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Memory wall (Wulf & McKee, 1995)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Rent-based wire-length distribution theory (Donath, 1979)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Wire-bonded stacked-die memory package (Akita Elpida 20-die MCP, 2007)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Samsung wafer-level stack package (WSP) TSV NAND (2006)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "GDDR5 board-level memory interface (2008)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "IBM thermal conduction module (TCM, 1981)",
+    "reason": "mediated_via: IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+    "at": "2026-11-25T13:45:01+00:00",
+    "mediated_via": "IBM silicon carrier packaging (Knickerbocker et al., 2005)"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Intel TSV 3D-integration programme (Rattner IDF demonstration, 2005)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Thin-wafer handling and wafer thinning process (Akita Elpida, 2007)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Deep reactive-ion etching (Bosch process, 1996)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "eWLB fan-out wafer-level packaging (Infineon, 2007)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "MEMS through-silicon via foundry practice (Silex Microsystems, 2005)",
+    "reason": "mediated_via: Through-silicon via (TSV) manufacturing technology (IBM, 2007)",
+    "at": "2026-11-25T13:45:01+00:00",
+    "mediated_via": "Through-silicon via (TSV) manufacturing technology (IBM, 2007)"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Shang-yi Chiang returns to TSMC to lead the packaging programme (2009)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "TSMC Integrated Interconnect & Packaging programme (IIPD, 2008)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "ASET TSV consortium (1999)",
+    "reason": "mediated_via: Through-silicon via (TSV) manufacturing technology (IBM, 2007)",
+    "at": "2026-11-25T13:45:01+00:00",
+    "mediated_via": "Through-silicon via (TSV) manufacturing technology (IBM, 2007)"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "NEDO TSV development grant programme (Elpida, 2004)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "Xilinx-TSMC SSI co-development partnership (2010)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
+   },
+   {
+    "parent_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+    "name": "28-nanometre reticle-limit and yield economics (2010)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T13:45:01+00:00"
    }
   ]
  },
@@ -25724,7 +25867,7 @@
    "prior_state": "High-performance parts shipped on organic substrates with board-routed memory interfaces a few hundred bits wide; silicon-interposer packaging was a research technique without a production platform.",
    "status": "provisional",
    "depth": 3,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.5,
    "sources": [
     {
@@ -25797,6 +25940,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T13:34:10+00:00"
+  },
+  "through-silicon-via-tsv-manufacturing-technology-ibm-2007-2007": {
+   "id": "through-silicon-via-tsv-manufacturing-technology-ibm-2007-2007",
+   "name": "Through-silicon via (TSV) manufacturing technology (IBM, 2007)",
+   "aliases": [],
+   "year": 2007,
+   "domain": "computer engineering",
+   "type": "method",
+   "definition": "IBM's April 2007 announcement took TSVs from laboratory to manufacturing line: vertical connections etched through thinned silicon wafers and filled with metal, sample chips in H2 2007 and production planned for 2008, after 'more than a decade of pioneering research'.",
+   "bottleneck": "Before production TSV technology, signals could not be carried vertically through a silicon wafer or carrier at manufacturing yield, because the via process existed only as laboratory demonstrations and captive prototypes.",
+   "leap": "IBM's 2007 manufacturing step (with parallel productizations at Samsung and Elpida) made the through-silicon via a production process: etched, insulated, metal-filled vertical connections through thinned silicon, on a fab line.",
+   "prior_state": "Vertical chip connection meant wire bonds at the die edge or flip-chip onto a substrate; TSVs were a research technique with a 1958 patent origin and 1990s consortium study.",
+   "status": "provisional",
+   "depth": 4,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (TSV manufacturing announcement, 12 Apr 2007)",
+     "url": "https://phys.org/news/2007-04-ibm-law-dimension.html"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run. (1) Q1 attack: TSVs existed before 2007 - Shockley's 1958 patent, 1990s consortium study, university polysilicon-via work. The attack does not land on the node as scoped: its claim is the manufacturing step (production process on a fab line), and its stored bottleneck is written at manufacturing yield, not at invention. (2) Multiples test on Q3 LANDS and is already priced: Samsung's WSP shipped TSV NAND stacks from 2006 (a year before the IBM announcement) and Elpida completed a Cu-TSV DRAM in 2009 on the NEDO programme - the process was ripe and multiply carried; Q3 stands at partial and the node must never be verified on necessity grounds. (3) Date and direction: April 2007 announcement with samples H2 2007 is defensible; influence runs process -> platform. (4) Mediation attack: TSV reaches CoWoS only through the silicon carrier (the carrier is the artifact that contains TSVs). ANSWERED by the components discrimination: the carrier is an architecture that presupposes the process; the process also reaches the parent directly - the interposer's feed-through to the substrate IS TSVs, described as such in the parent's contemporaneous accounts (EE Times on SSI). No mediation object recorded. Outcome provisional: the multiples finding caps necessity permanently.",
+    "at": "2026-11-25T13:45:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T13:45:01+00:00"
+  },
+  "ibm-silicon-carrier-packaging-knickerbocker-et-al-2005-2005": {
+   "id": "ibm-silicon-carrier-packaging-knickerbocker-et-al-2005-2005",
+   "name": "IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+   "aliases": [],
+   "year": 2005,
+   "domain": "computer engineering",
+   "type": "method",
+   "definition": "IBM's silicon-carrier system-on-package technology (CICC 2005; IBM J. Res. Dev. 49(4), 2005): multiple chips on a silicon carrier containing through-silicon vias, 50 um fine-pitch interconnection, >16x standard chip I/O and 20-100x the wiring density of traditional organic and ceramic packaging; mini-multichip modules integrating heterogeneous dies into a single 'virtual chip'.",
+   "bottleneck": "Before the silicon carrier, multiple dies could not be wired together at lithographic density on a shared carrier, because organic and ceramic substrates route at 20-100x coarser pitch.",
+   "leap": "Knickerbocker et al. (2005) demonstrated and characterized the silicon carrier: production dies mounted on a TSV-bearing silicon wafer used purely as a wiring medium, at 50 um interconnection pitch - the 2.5D architecture in published, quantified form.",
+   "prior_state": "Multichip modules on glass-ceramic or organic laminate carriers; silicon interposers a scattered research topic without a characterized platform publication.",
+   "status": "provisional",
+   "depth": 4,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "Knickerbocker et al., 'Three dimensional silicon integration using fine pitch interconnection, silicon processing and silicon carrier packaging technology' (CICC 2005); IBM J. Res. Dev. 49(4), 2005",
+     "url": "https://research.ibm.com/publications/three-dimensional-silicon-integration-using-fine-pitch-interconnection-silicon-processing-and-silicon-carrier-packaging-technology"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks run. (1) Q1 attack: silicon-carrier and interposer research existed at other laboratories in the same years (European and US packaging groups), so 'no demonstrated architecture before 2005' is too strong in the abstract; the node survives as scoped - the published, quantified characterization with production dies (>16x I/O, 20-100x wiring density, 50 um pitch) is the form the lineage cites. (2) Multiples test on Q3 LANDS partially and is already priced at partial: parallel interposer programmes existed, and TSMC's own line might have converged independently through the SSI co-development - this is the expansion's MOST CONTESTABLE edge. Re-hearing condition: a document showing TSMC's interposer programme derived its architecture from a different named source, or that the SSI design work proceeded in documented ignorance of the carrier literature, reopens this edge. (3) Date and direction: CICC September 2005 and IBM J. Res. Dev. 49(4) 2005 are defensible; direction architecture -> platform is correct. (4) Mediation attacks: via Xilinx SSI - answered (SSI is refused at this parent on identity grounds as the parent's own first form, and the carrier predates it by five years on an independent IBM lineage); via TSV - answered (containment of a component is not mediation of the architecture's channel; components discrimination). No mediation object recorded. Outcome provisional.",
+    "at": "2026-11-25T13:45:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T13:45:01+00:00"
   }
  },
  "edges": [
@@ -52300,6 +52501,200 @@
     "counterfactual": "Remove CoWoS-class interposer packaging and the parent's physical form does not exist: an 815 mm2 die wired to four HBM2 stacks across a 4096-bit interface cannot be routed through an organic substrate - the same counterfactual that admitted the platform at P100, at a larger die.",
     "mediator": null,
     "evidence": "The platform consumed again, directly: GV100's package is a CoWoS-class interposer assembly, as GP100's was. Mediation check via P100: the platform is TSMC's artifact, consumed by both products from the foundry; the fellow-consumer discrimination (argued in full at HBM2, same shape) applies - P100 does not carry TSMC's platform into V100, TSMC does."
+   }
+  },
+  {
+   "predecessor_id": "through-silicon-via-tsv-manufacturing-technology-ibm-2007-2007",
+   "successor_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before 2007 no manufacturing line produced through-silicon vertical connections: IBM's announcement is precisely the lab-to-fab step ('already running chips using TSV technology in its manufacturing line', samples H2 2007, production 2008) - the interposer's feed-through problem was unsolved in production until this step.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The announcement's own scope spans wireless power amplifiers, Power processors, Blue Gene supercomputers and high-bandwidth memory - one process unblocking stacked memory, silicon interposers and 3D logic at once.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Multiples cap necessity at partial: Samsung shipped TSV NAND stacks (WSP, 2006) and Elpida completed a Cu-TSV DRAM in 2009 on a parallel national programme. The process was ripe and multiply carried; IBM's step is its manufacturing-grade, industry-facing instance, not the only path.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "IBM claims wire lengths shortened up to 1000x and up to 100x more pathways - an order-of-magnitude interconnect improvement; scored partial because the figures are the vendor's and per-unit TSV cost stayed high for years.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "TSV supplies no metric or measurement scheme; it is a connection, not an observation.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "It gave designers a new primitive - the vertical via as a routable connection through silicon - but the explanatory model of 2.5D integration belongs to the carrier papers, scored there.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "TSV became a standard process module in foundry and OSAT flows (via-first / via-middle / via-last options) - an interface others build on without re-deriving it.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Adopted across CMOS image sensors (the first volume application), MEMS, stacked DRAM/HBM and logic interposers - far beyond its first field.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Wafer-level vertical processing shortened some development paths, but TSV initially lengthened process development; the iteration claim is mixed, scored partial.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "For advanced packages the TSV displaced edge wiring as the default vertical connection; HBM stacks and interposer products are unthinkable in wire-bond form.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk node: HBM, CoWoS, 3D memory stacks and chiplet interposers all descend through production TSV technology.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once a production via process existed, advanced packaging never returned to edge-only connection; the baseline reset is permanent.",
+     "source": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (12 Apr 2007); Wikipedia, 'Through-silicon via'; Phil Garrou, IFTLE 95 (Semiconductor Digest, Apr 2012)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T13:45:01+00:00",
+   "leap": {
+    "prior_state": "High-performance parts shipped on organic substrates with board-routed memory interfaces a few hundred bits wide; silicon-interposer packaging was a research technique without a production platform.",
+    "jump": "TSMC's CoWoS (first commercial product 2011) productized 2.5D integration: logic and memory dies side by side on a silicon interposer with >10,000-connection die-to-die wiring, making wide-interface HBM-class systems manufacturable at production scale.",
+    "date": 2011
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove production TSV technology and the parent's interposer has no vertical feed-through to the package substrate: CoWoS's 2011 form - dies on a TSV-bearing silicon carrier mounted on a substrate - cannot be built, and the leap collapses to a wiring sheet with no way off itself.",
+    "mediator": null,
+    "evidence": "The parent's structure (chip-on-wafer-on-substrate) requires vias through the interposer; contemporaneous SSI accounts describe TSVs passing signals through the interposer to the C4 bumps beneath it (EE Times). The mediation attack - that TSV reaches the parent only through the silicon carrier - is answered by the components discrimination: the carrier is an architecture, TSV is the process it presupposes; neither contains the other's mechanism, and both are admitted as separable ancestors."
+   }
+  },
+  {
+   "predecessor_id": "ibm-silicon-carrier-packaging-knickerbocker-et-al-2005-2005",
+   "successor_id": "cowos-silicon-interposer-packaging-tsmc-2011",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before these papers, wiring multiple production dies together at lithographic density had no demonstrated architecture: the carrier work quantifies the flip - >16x standard chip I/O, 20-100x the wiring density of traditional organic and ceramic packaging, at 50 um fine-pitch interconnection.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The 'virtual chip' / mini-multichip-module concept - heterogeneous dies integrated so they behave as a single device - is the generative space every later 2.5D platform occupies.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Multiples and parallel work cap necessity at partial: interposer research existed at other laboratories in the same years, and TSMC's own line (via the SSI co-development) might in principle have converged independently. The papers are the published, characterized instance, not provably the only path.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The density gains are quantified in the papers, but the carrier itself was no cost collapse - IBM's carrier stayed a research and high-end technology; the production cost curve was the foundry's later contribution.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The papers supply characterizations, not a measurement scheme or benchmark; no Q5 pass is claimed.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The papers supply the explanatory model - silicon-on-silicon integration with through-vias, fine-pitch interconnection and integrated passives - that lets later designers design 2.5D systems deliberately instead of by trial.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The carrier IS a composability artifact: a standard wiring medium on which arbitrary known-good dies compose into one module without understanding each other's internals.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The papers name optoelectronic transceivers and high-performance computing modules among applications - reach beyond a single product, scored partial because the lineage that matters runs through packaging.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The papers claim a known-good-die wafer-testing basis for the carrier, which shortens module bring-up; scored partial on the papers' own claim.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "The carrier architecture displaced ceramic and organic carriers only at the high end, and only later through its foundry descendants; in 2005 it had displaced nothing in volume.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the direct published ancestor of the 2.5D interposer platforms - the lineage's retrospectives start the interposer story with the silicon-carrier work and the Xilinx/TSMC productization.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once chips-on-silicon-carrier was demonstrated with production dies, high-end packaging's baseline permanently included the silicon interposer option; the field never returned to substrate-only wiring for its densest modules.",
+     "source": "Knickerbocker et al., CICC 2005; IBM J. Res. Dev. 49(4), 2005",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T13:45:01+00:00",
+   "leap": {
+    "prior_state": "High-performance parts shipped on organic substrates with board-routed memory interfaces a few hundred bits wide; silicon-interposer packaging was a research technique without a production platform.",
+    "jump": "TSMC's CoWoS (first commercial product 2011) productized 2.5D integration: logic and memory dies side by side on a silicon interposer with >10,000-connection die-to-die wiring, making wide-interface HBM-class systems manufacturable at production scale.",
+    "date": 2011
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the silicon-carrier architecture and CoWoS has no design to productize: the parent is this architecture - dies on a TSV-bearing silicon carrier used as a wiring medium - carried into a foundry platform; without the 2005 published, characterized form, the 2011 platform step has no proximate ancestor.",
+    "mediator": null,
+    "evidence": "Identity of architecture between the carrier papers and the parent's stored definition (dies side by side on a silicon interposer whose dense wiring carries the wide interface; TSV feed-through to the substrate). Mediation attacks answered: TSV is a component the carrier presupposes, not an intermediate carrying the carrier's architectural content (components discrimination); Xilinx SSI is the same programme generation's application, not an intermediate between 2005 and the parent - and is itself refused at this parent on identity grounds."
    }
   }
  ],
@@ -201446,6 +201841,923 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "cowos-silicon-interposer-packaging-tsmc-2011": {
+   "raw_candidates": [
+    {
+     "name": "Through-silicon via (TSV) manufacturing technology (IBM, 2007)",
+     "year": 2007,
+     "domain": "computer engineering",
+     "lens": "L1",
+     "type": "method",
+     "definition": "IBM's April 2007 announcement took TSVs from laboratory to manufacturing line: vertical connections etched through thinned silicon wafers and filled with metal, sample chips in H2 2007 and production planned for 2008, after 'more than a decade of pioneering research'.",
+     "causal_claim": "TSV manufacturing directly enabled CoWoS's leap by supplying the vertical feed-throughs that carry signals and power from the interposer's wiring layers down to the package substrate: without a production TSV process, a silicon interposer is a wiring sheet with no way off itself.",
+     "source_title": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (TSV manufacturing announcement, 12 Apr 2007)",
+     "source_url": "https://phys.org/news/2007-04-ibm-law-dimension.html"
+    },
+    {
+     "name": "C4NP fine-pitch micro-bump solder interconnect (IBM, 2008)",
+     "year": 2008,
+     "domain": "computer engineering",
+     "lens": "L1",
+     "type": "method",
+     "definition": "IBM's C4NP (Controlled Collapse Chip Connection - New Process) mold-transfer solder bumping, extended in 2008 to micro-bumps for 3D packaging, with 50 um-pitch bumping of 300 mm wafers demonstrated.",
+     "causal_claim": "Fine-pitch micro-bumping directly enabled CoWoS's leap by providing the tens-of-micrometres-pitch joints that attach dies to the interposer across thousands of connections per die pair - the parent's 'chip-on-wafer' step is a micro-bump assembly.",
+     "source_title": "Perfecto, Shih et al., 'C4NP - solder bumps for flip chip and microbumps for 3D' (IBM extended abstract, GBC 2008)",
+     "source_url": "https://research.ibm.com/publications/extended-abstract-c4np-solder-bumps-for-flip-chip-and-microbumps-for-3d"
+    },
+    {
+     "name": "C4 controlled-collapse flip-chip connection (IBM, 1962)",
+     "year": 1962,
+     "domain": "computer engineering",
+     "lens": "L1",
+     "type": "method",
+     "definition": "IBM's controlled-collapse chip connection: solder bumps on the chip face joined simultaneously to a carrier by reflow, reduced to practice in summer 1962 and later extended from the chip edge to the full area array (bump counts growing from 3 to 7,018 per chip over 40 years).",
+     "causal_claim": "C4 directly enabled CoWoS's leap as the originating form of the area-array solder joint the interposer's micro-bumps miniaturize; the evaluator must test whether the channel runs through C4NP rather than directly - the mediation question is the hearing.",
+     "source_title": "Paul A. Totta, 'Forty Years of Flip Chips with Solder Bumps' (retrospective abstract)",
+     "source_url": "http://www.seas.ucla.edu/ethinfilm/Pb-freeWorkshop/abs/totta.html"
+    },
+    {
+     "name": "IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+     "year": 2005,
+     "domain": "computer engineering",
+     "lens": "L2",
+     "type": "method",
+     "definition": "IBM's silicon-carrier system-on-package technology (CICC 2005; IBM J. Res. Dev. 49(4), 2005): multiple chips on a silicon carrier containing through-silicon vias, 50 um fine-pitch interconnection, >16x standard chip I/O and 20-100x the wiring density of traditional organic and ceramic packaging; mini-multichip modules integrating heterogeneous dies into a single 'virtual chip'.",
+     "causal_claim": "The silicon carrier directly enabled CoWoS's leap as its single direct precursor: CoWoS is this architecture - chips on a TSV-bearing silicon carrier used as a wiring medium - productized as a foundry platform with a named first customer and a production line.",
+     "source_title": "Knickerbocker et al., 'Three dimensional silicon integration using fine pitch interconnection, silicon processing and silicon carrier packaging technology' (CICC 2005); IBM J. Res. Dev. 49(4), 2005",
+     "source_url": "https://research.ibm.com/publications/three-dimensional-silicon-integration-using-fine-pitch-interconnection-silicon-processing-and-silicon-carrier-packaging-technology"
+    },
+    {
+     "name": "IBM glass-ceramic multi-chip module (POWER4 'Regatta' MCM, 2001)",
+     "year": 2001,
+     "domain": "computer engineering",
+     "lens": "L2",
+     "type": "device",
+     "definition": "IBM's high-performance glass-ceramic multichip module carrying four POWER4 chips, each attached through 7,018 flip-chip solder connections, with 1.7 million internal copper vias in co-sintered glass-ceramic (IBM J. Res. Dev. 46(6), 2002).",
+     "causal_claim": "The glass-ceramic MCM directly enabled CoWoS's leap as the incumbent multi-die carrier whose wiring-density ceiling the silicon interposer broke: the ancestor whose carrier material - ceramic at ~200 um pad pitch - CoWoS replaced with lithographically wired silicon.",
+     "source_title": "Knickerbocker et al., 'An advanced multichip module (MCM)' - POWER4 Regatta glass-ceramic MCM (IBM J. Res. Dev. 46(6), 2002)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/466/knickerbocker.pdf"
+    },
+    {
+     "name": "Xilinx Stacked Silicon Interconnect technology (2010)",
+     "year": 2010,
+     "domain": "computer engineering",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Xilinx's SSI, announced 26 Oct 2010: multiple FPGA dies on a passive silicon interposer fabricated with TSMC technology, more than 10,000 routing connections between adjacent dies, 100x the die-to-die connectivity bandwidth-per-watt of board-level integration; first shipped in the Virtex-7 2000T on 25 Oct 2011.",
+     "causal_claim": "SSI directly enabled CoWoS's leap as the co-developed first application in which the platform was proven: 'five years of Xilinx research and development coupled with industry leading technology from TSMC', with TSMC's R&D chief describing the TSV-and-interposer approach in the same release. Whether SSI is the parent's ancestor, its first instance, or the parent itself under a customer name is the hearing.",
+     "source_title": "Xilinx, 'Xilinx Stacked Silicon Interconnect Extends FPGA Technology' (PR Newswire, 26 Oct 2010); Xilinx, 'Xilinx Ships World's Highest Capacity FPGA' - Virtex-7 2000T first shipments (PR Newswire via EDN, 25 Oct 2011)",
+     "source_url": "https://www.eejournal.com/article/20101027-02/"
+    },
+    {
+     "name": "Rent's rule (Landman & Russo, 1971)",
+     "year": 1971,
+     "domain": "computer engineering",
+     "lens": "L4",
+     "type": "theory",
+     "definition": "The empirical power law T = t*B^p relating a logic module's terminal count to its block count, observed in E. F. Rent's 1960 IBM internal memoranda and published by Landman & Russo (IEEE Trans. Computers C-20(12):1469-1479, Dec 1971), with Rent exponent 0.57-0.75.",
+     "causal_claim": "Rent's rule directly enabled CoWoS's leap as the founding quantitative statement of the problem the parent answers: terminal demand grows inexorably with logic size while a package's pins cannot, so the interface must eventually move into a wiring medium of lithographic density.",
+     "source_title": "Landman & Russo, 'On a Pin Versus Block Relationship for Partitions of Logic Graphs', IEEE Trans. Computers C-20(12), Dec 1971",
+     "source_url": "https://research.ibm.com/publications/on-a-pin-versus-block-relationship-for-partitions-of-logic-graphs"
+    },
+    {
+     "name": "ITRS 'More than Moore' integration agenda (2005)",
+     "year": 2005,
+     "domain": "computer engineering",
+     "lens": "L4",
+     "type": "other",
+     "definition": "The concept introduced in the 2005 edition of the International Technology Roadmap for Semiconductors: value increasingly comes from heterogeneous functional integration ('More than Moore') rather than from transistor scaling ('More Moore') alone.",
+     "causal_claim": "'More than Moore' directly enabled CoWoS's leap by posing, at roadmap level, the problem the parent answers - system performance through integration of separately manufactured components - six years before the foundry platform that answered it.",
+     "source_title": "Graef et al., 'Positioning More Than Moore Characterization Needs and Methods Within the 2011 ITRS' (concept introduced in the 2005 ITRS edition)",
+     "source_url": "https://repository.tudelft.nl/file/File_b97b49f7-364a-440f-a6ae-b86c4bf9074c?preview=1"
+    },
+    {
+     "name": "Memory wall (Wulf & McKee, 1995)",
+     "year": 1995,
+     "domain": "computer engineering",
+     "lens": "L5",
+     "type": "theory",
+     "definition": "Wulf & McKee's 'Hitting the Memory Wall' (ACM SIGARCH Computer Architecture News 23(1):20-24, Mar 1995): processor performance improving ~60%/yr against DRAM speed ~7%/yr implies systems become wholly memory-bound.",
+     "causal_claim": "The memory-wall diagnosis directly enabled CoWoS's leap as the named obstruction the parent's wide on-package interface answers; the evaluator must apply the Hochreiter condition - whether any CoWoS-side document derives from this diagnosis (the same candidate was refused at P100 and at NVLink on exactly that test).",
+     "source_title": "Wulf & McKee, 'Hitting the Memory Wall: Implications of the Obvious', ACM SIGARCH Computer Architecture News 23(1):20-24, Mar 1995",
+     "source_url": "http://ciar.org/ttk/wall.pdf"
+    },
+    {
+     "name": "Rent-based wire-length distribution theory (Donath, 1979)",
+     "year": 1979,
+     "domain": "computer engineering",
+     "lens": "L5",
+     "type": "theory",
+     "definition": "W. E. Donath's Rent-based analysis of placement and average interconnection lengths (1979), turning Rent's rule into a predictive stochastic theory of wiring demand within and between logic blocks.",
+     "causal_claim": "Donath's theory directly enabled CoWoS's leap by converting the pin problem into a computable wiring-demand distribution - the design-side instrument that states how much wiring a partition needs, and hence when a package substrate's wiring runs out.",
+     "source_title": "Donath's Rent-based wire-length distribution theory (1979), as surveyed in the SLIP literature on Rent's rule and interconnect prediction",
+     "source_url": "http://nthucad.cs.nthu.edu.tw/TingTingHwang/paper_present/old_season_20040519/2003.09.19_cyliu/20030919cyliu.pdf"
+    },
+    {
+     "name": "Wire-bonded stacked-die memory package (Akita Elpida 20-die MCP, 2007)",
+     "year": 2007,
+     "domain": "computer engineering",
+     "lens": "L6",
+     "type": "device",
+     "definition": "Akita Elpida's 2007 demonstration of 20 stacked dies inside a 1.4 mm package using wafer thinning, thin-wafer handling and low-loop wire bonding - the high-water mark of edge-wired die stacking.",
+     "causal_claim": "The wire-bonded stack directly enabled CoWoS's leap as the incumbent it is defined against: stacking by edge wires caps connections at the die perimeter, which is precisely the constraint the interposer's area-array wiring removes.",
+     "source_title": "Semiconductor Digest, 'Packaging Beat: Industry leaders vie for memory-stacking bragging rights' (June 2007)",
+     "source_url": "https://sst.semiconductor-digest.com/2007/06/packaging-beat-industry-leaders-vie-for-memory-stacking-bragging-rights/"
+    },
+    {
+     "name": "Samsung wafer-level stack package (WSP) TSV NAND (2006)",
+     "year": 2006,
+     "domain": "computer engineering",
+     "lens": "L6",
+     "type": "device",
+     "definition": "Samsung's April 2006 wafer-level processed stack package: laser-drilled, copper-filled through-silicon vias stacking NAND flash dies vertically, announced for mass production from 2007.",
+     "causal_claim": "Samsung's WSP directly enabled CoWoS's leap as the first production TSV stack - proof that TSV stacking ships - whose vertical, single-function form CoWoS's lateral, heterogeneous interposer form is defined against and extends.",
+     "source_title": "Phil Garrou, IFTLE 95, '3DIC - Time Flies When You're Having Fun' (Semiconductor Digest, Apr 2012)",
+     "source_url": "https://sst.semiconductor-digest.com/insights-from-leading-edge/2012/04/iftle-95-3dic-%ef%bf%bd%ef%bf%bd-time-flies-when-youre-having-fun-further-details-on-the-micron-hmc-equipment-suppliers-continue-consolidation-evg-temp-adhesive-open-platform/"
+    },
+    {
+     "name": "GDDR5 board-level memory interface (2008)",
+     "year": 2008,
+     "domain": "computer engineering",
+     "lens": "L6",
+     "type": "device",
+     "definition": "GDDR5, the fifth-generation graphics DRAM interface commercialized in 2008: 32-bit-per-chip channels routed across the package substrate and circuit board between a GPU and discrete memory chips.",
+     "causal_claim": "GDDR5 directly enabled CoWoS's leap as the defined-against incumbent memory interface: a few hundred board-routed bits is the prior state the parent's wide on-package interface displaces (refused in the defined-against role at P100 and at V100; argued fresh here, where the parent's own stored bottleneck names the substrate-routing limit).",
+     "source_title": "Anton Shilov, 'AMD started to work on HBM technology nearly a decade ago' (KitGuru, 2015; GDDR5 commercialized 2008)",
+     "source_url": "https://www.kitguru.net/components/graphic-cards/anton-shilov/amd-started-to-work-on-hbm-technology-nearly-a-decade-ago/"
+    },
+    {
+     "name": "IBM thermal conduction module (TCM, 1981)",
+     "year": 1981,
+     "domain": "computer engineering",
+     "lens": "L7",
+     "type": "device",
+     "definition": "IBM's thermal conduction module for the 3081 processor generation: up to roughly a hundred chips flip-chip mounted on a multilayer ceramic substrate with piston cooling - the mainframe era's high-density multichip module.",
+     "causal_claim": "The TCM directly enabled CoWoS's leap through the failure record: ceramic multichip modules delivered wiring density at mainframe prices and never crossed into volume markets, teaching the field that the carrier's wiring medium must itself be a volume manufacturing process, not a bespoke ceramic.",
+     "source_title": "Fried et al., 'A VLSI Bipolar Metallization Design with Three-Level Wiring and Area Array Solder Connections' (IBM J. Res. Dev. 26(3), 1982; 3081 thermal conduction module technology)",
+     "source_url": "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1147.zip/10.1147%252Frd.263.0362.pdf"
+    },
+    {
+     "name": "Intel TSV 3D-integration programme (Rattner IDF demonstration, 2005)",
+     "year": 2005,
+     "domain": "computer engineering",
+     "lens": "L7",
+     "type": "method",
+     "definition": "Intel's spring-2005 IDF presentation of stacked dies and wafers using through-silicon vias 'showing promise in meeting the memory bandwidth challenge' - a programme that produced demonstrations but no commercial TSV product in the following decade.",
+     "causal_claim": "Intel's stalled programme directly enabled CoWoS's leap as adjacent negative space: the largest chipmaker's failure to commercialize TSV stacking left the production-platform step to a foundry-FPGA pair to take.",
+     "source_title": "Phil Garrou, IFTLE 95, '3DIC - Time Flies When You're Having Fun' (Semiconductor Digest, Apr 2012)",
+     "source_url": "https://sst.semiconductor-digest.com/insights-from-leading-edge/2012/04/iftle-95-3dic-%ef%bf%bd%ef%bf%bd-time-flies-when-youre-having-fun-further-details-on-the-micron-hmc-equipment-suppliers-continue-consolidation-evg-temp-adhesive-open-platform/"
+    },
+    {
+     "name": "Through-silicon via (TSV) manufacturing technology (IBM, 2007)",
+     "year": 2007,
+     "domain": "computer engineering",
+     "lens": "L11",
+     "type": "method",
+     "definition": "IBM's April 2007 announcement took TSVs from laboratory to manufacturing line: vertical connections etched through thinned silicon wafers and filled with metal, sample chips in H2 2007 and production planned for 2008, after 'more than a decade of pioneering research'.",
+     "causal_claim": "As the wielded recipe, TSV fabrication - deep etch, insulation, copper fill, wafer thinning, via reveal - is the manufacturing process the CoWoS line runs; cross-filed under the recipe lens per the scout's cross-lens rule (duplicate of the L1 filing).",
+     "source_title": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (TSV manufacturing announcement, 12 Apr 2007)",
+     "source_url": "https://phys.org/news/2007-04-ibm-law-dimension.html"
+    },
+    {
+     "name": "Thin-wafer handling and wafer thinning process (Akita Elpida, 2007)",
+     "year": 2007,
+     "domain": "computer engineering",
+     "lens": "L11",
+     "type": "method",
+     "definition": "The wafer-thinning, thin-wafer handling and die-handling technology Akita Elpida cited in 2007 as the enabling craft of its 20-die stack: grinding and handling silicon at tens-of-micrometres thickness without breakage.",
+     "causal_claim": "Thin-wafer handling directly enabled CoWoS's leap because an interposer is a thinned wafer: TSVs can only be revealed, and the carrier made package-thin, if wafers are routinely thinned and handled at production yield.",
+     "source_title": "Semiconductor Digest, 'Packaging Beat: Industry leaders vie for memory-stacking bragging rights' (June 2007)",
+     "source_url": "https://sst.semiconductor-digest.com/2007/06/packaging-beat-industry-leaders-vie-for-memory-stacking-bragging-rights/"
+    },
+    {
+     "name": "Deep reactive-ion etching (Bosch process, 1996)",
+     "year": 1996,
+     "domain": "computer engineering",
+     "lens": "L14",
+     "type": "method",
+     "definition": "The Bosch process (Laermer & Schilp, patented 1993-1996): alternating etch and passivation plasma cycles producing deep, near-vertical silicon trenches and holes - the standard etch for TSVs and MEMS structures.",
+     "causal_claim": "DRIE directly enabled CoWoS's leap as the equipment-side process that cuts the interposer's vias: high-aspect-ratio vertical holes in silicon are a plasma-etch artifact before they are a packaging feature.",
+     "source_title": "'3-D Integration and Through-Silicon Vias in MEMS and Microsensors', J. Micromech. Microeng./JMEMS review (2015)",
+     "source_url": "https://www.researchgate.net/publication/282404075_3-D_Integration_and_Through-Silicon_Vias_in_MEMS_and_Microsensors"
+    },
+    {
+     "name": "Rent's rule (Landman & Russo, 1971)",
+     "year": 1971,
+     "domain": "computer engineering",
+     "lens": "L17",
+     "type": "theory",
+     "definition": "The empirical power law T = t*B^p relating a logic module's terminal count to its block count, observed in E. F. Rent's 1960 IBM internal memoranda and published by Landman & Russo (IEEE Trans. Computers C-20(12):1469-1479, Dec 1971), with Rent exponent 0.57-0.75.",
+     "causal_claim": "As the measurement model, Rent's rule is the metric that registered the wiring-demand growth the parent answers - the number every packaging generation is scored against; cross-filed under the metrics lens per the scout's cross-lens rule (duplicate of the L4 filing).",
+     "source_title": "Landman & Russo, 'On a Pin Versus Block Relationship for Partitions of Logic Graphs', IEEE Trans. Computers C-20(12), Dec 1971",
+     "source_url": "https://research.ibm.com/publications/on-a-pin-versus-block-relationship-for-partitions-of-logic-graphs"
+    },
+    {
+     "name": "eWLB fan-out wafer-level packaging (Infineon, 2007)",
+     "year": 2007,
+     "domain": "computer engineering",
+     "lens": "L19",
+     "type": "method",
+     "definition": "Infineon's embedded wafer-level ball grid array, introduced fall 2007: dies embedded in a reconstituted wafer with thin-film redistribution wiring fanning out beyond the die footprint; licensed to ASE, STMicroelectronics and STATS ChipPAC; volume commercialization 2009/2010.",
+     "causal_claim": "eWLB directly enabled CoWoS's leap as the cross-field import: it proved redistribution wiring at wafer level could carry a production package's interconnect, transferring front-end-style thin-film wiring into the packaging field the parent works in.",
+     "source_title": "Semiconductor Digest, 'Fan-out wafer level packaging set to expand' (eWLB introduced by Infineon fall 2007; volume 2009/2010)",
+     "source_url": "https://sst.semiconductor-digest.com/2015/07/fan-out-wafer-level-packaging-set-to-expand/"
+    },
+    {
+     "name": "MEMS through-silicon via foundry practice (Silex Microsystems, 2005)",
+     "year": 2005,
+     "domain": "computer engineering",
+     "lens": "L19",
+     "type": "method",
+     "definition": "Silex Microsystems, the first MEMS foundry to offer through-silicon via foundry services (polysilicon and single-crystalline TSV variants), carrying the via craft as a purchasable service in the microsystems field by the mid-2000s.",
+     "causal_claim": "MEMS TSV practice directly enabled CoWoS's leap as the donor field's carried craft: via formation, sidewall insulation and thin-wafer handling existed as a foundry service in MEMS while the IC-packaging field still treated TSVs as research.",
+     "source_title": "'3-D Integration and Through-Silicon Vias in MEMS and Microsensors', J. Micromech. Microeng./JMEMS review (2015)",
+     "source_url": "https://www.researchgate.net/publication/282404075_3-D_Integration_and_Through-Silicon_Vias_in_MEMS_and_Microsensors"
+    },
+    {
+     "name": "IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+     "year": 2005,
+     "domain": "computer engineering",
+     "lens": "L19",
+     "type": "method",
+     "definition": "IBM's silicon-carrier system-on-package technology (CICC 2005; IBM J. Res. Dev. 49(4), 2005): multiple chips on a silicon carrier containing through-silicon vias, 50 um fine-pitch interconnection, >16x standard chip I/O and 20-100x the wiring density of traditional organic and ceramic packaging; mini-multichip modules integrating heterogeneous dies into a single 'virtual chip'.",
+     "causal_claim": "As the cross-field import, the silicon carrier is front-end silicon processing - lithography, thin films, wafer fabrication - transferred wholesale into packaging; cross-filed under the import lens per the scout's cross-lens rule (duplicate of the L2 filing).",
+     "source_title": "Knickerbocker et al., 'Three dimensional silicon integration using fine pitch interconnection, silicon processing and silicon carrier packaging technology' (CICC 2005); IBM J. Res. Dev. 49(4), 2005",
+     "source_url": "https://research.ibm.com/publications/three-dimensional-silicon-integration-using-fine-pitch-interconnection-silicon-processing-and-silicon-carrier-packaging-technology"
+    },
+    {
+     "name": "Shang-yi Chiang returns to TSMC to lead the packaging programme (2009)",
+     "year": 2009,
+     "domain": "computer engineering",
+     "lens": "L20",
+     "type": "other",
+     "definition": "Shang-yi Chiang, TSMC's former R&D senior vice president, returned to TSMC in 2009 at Morris Chang's invitation and started its advanced-packaging R&D programme (reported at roughly US$100M with a team of more than 400 engineers), from which CoWoS emerged; Chiang is the TSMC voice quoted on TSV and silicon-interposer technology in Xilinx's October 2010 SSI announcement.",
+     "causal_claim": "Chiang's return directly enabled CoWoS's leap as the creator-lineage carrier: the person who had run the foundry's R&D was brought back to build the packaging programme, and he personally fronted the interposer technology to its first customer in the SSI announcement.",
+     "source_title": "Granite Firm, 'TSMC Advanced Packaging Evolution History' (2025) - secondary history; Xilinx, 'Xilinx Stacked Silicon Interconnect Extends FPGA Technology' (PR Newswire, 26 Oct 2010)",
+     "source_url": "https://www.granitefirm.com/blog/us/2025/01/31/tsmc-advanced-packaging-evolution-history/?no_cache=1"
+    },
+    {
+     "name": "TSMC Integrated Interconnect & Packaging programme (IIPD, 2008)",
+     "year": 2008,
+     "domain": "computer engineering",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "TSMC's Integrated Interconnect and Packaging Technology Integration Department, established 2008, and the funded advanced-packaging programme built under it from 2009 - the organizational vehicle that developed CoWoS.",
+     "causal_claim": "The IIPD programme directly enabled CoWoS's leap as its institutional vehicle; the evaluator must apply the self-carriage test - the parent is this institution's own artifact (the Pixar-at-SL shape) - against the OpenPOWER-at-NVLink discrimination, where the admitted vehicle was external to the parent.",
+     "source_title": "Granite Firm, 'TSMC Advanced Packaging Evolution History' (2025) - secondary history",
+     "source_url": "https://www.granitefirm.com/blog/us/2025/01/31/tsmc-advanced-packaging-evolution-history/?no_cache=1"
+    },
+    {
+     "name": "ASET TSV consortium (1999)",
+     "year": 1999,
+     "domain": "computer engineering",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Association of Super Advanced Electronics Technologies consortium (Fujitsu, Toshiba, NEC, Oki, Renesas and others), formed in 1999 to study direct connection of chips by through-silicon vias as a pre-competitive programme.",
+     "causal_claim": "ASET directly enabled CoWoS's leap as the institutional ripening of TSV: a decade of consortium process work across the Japanese industry is part of what a foundry platform in 2011 could stand on.",
+     "source_title": "Phil Garrou, IFTLE 95, '3DIC - Time Flies When You're Having Fun' (Semiconductor Digest, Apr 2012)",
+     "source_url": "https://sst.semiconductor-digest.com/insights-from-leading-edge/2012/04/iftle-95-3dic-%ef%bf%bd%ef%bf%bd-time-flies-when-youre-having-fun-further-details-on-the-micron-hmc-equipment-suppliers-continue-consolidation-evg-temp-adhesive-open-platform/"
+    },
+    {
+     "name": "NEDO TSV development grant programme (Elpida, 2004)",
+     "year": 2004,
+     "domain": "computer engineering",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Japanese NEDO grant programme under which Elpida began TSV development in 2004, leading to its Cu-TSV multi-layer DRAM - development completed August 2009, sample shipments scheduled before the end of 2009, on a dedicated Hiroshima TSV line.",
+     "causal_claim": "The NEDO programme directly enabled CoWoS's leap by funding the memory-side TSV production craft that made stacked DRAM a manufacturable component - the class of component the interposer exists to wire.",
+     "source_title": "Elpida Memory, 'Elpida Completes Development of Cu-TSV Multi-Layer 8-Gigabit DRAM' (31 Aug 2009)",
+     "source_url": "https://phys.org/news/2009-08-elpida-cu-tsv-silicon-multi-layer-gigabit.html?loadCommentsForm=1"
+    },
+    {
+     "name": "Xilinx-TSMC SSI co-development partnership (2010)",
+     "year": 2010,
+     "domain": "computer engineering",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Xilinx-TSMC collaboration behind SSI - 'five years of Xilinx research and development coupled with industry leading technology from TSMC', with assembly suppliers - announced 26 Oct 2010.",
+     "causal_claim": "The partnership directly enabled CoWoS's leap as the junction vehicle: platform and first customer were co-developed, so the channel may be carried by this vehicle or by the SSI artifact itself; the evaluator must not count both (the NVLink partnership discrimination).",
+     "source_title": "Xilinx, 'Xilinx Stacked Silicon Interconnect Extends FPGA Technology' (PR Newswire, 26 Oct 2010)",
+     "source_url": "https://www.eejournal.com/article/20101027-02/"
+    },
+    {
+     "name": "28-nanometre reticle-limit and yield economics (2010)",
+     "year": 2010,
+     "domain": "computer engineering",
+     "lens": "L22",
+     "type": "other",
+     "definition": "The cost condition at the 28 nm generation: defect-free monolithic dies at the reticle limit could not supply the logic capacity leading designs demanded, making multi-die assembly the only route to beyond-Moore capacity in that generation - the SSI announcement's own framing ('capacities that otherwise wouldn't be possible in an FPGA for at least another process generation').",
+     "causal_claim": "The 28 nm economics directly enabled CoWoS's leap as the timeliness condition: the platform's first customer needed twice the largest feasible monolithic FPGA in that process generation, or the product did not exist.",
+     "source_title": "EE Times, 'Stacked and Loaded: Xilinx SSI, 28-Gbps I/O yield amazing FPGAs' (Xcell Journal cover story, Q1 2011)",
+     "source_url": "https://www.eetimes.com/stacked-and-loaded-xilinx-ssi-28-gbps-i-o-yield-amazing-fpgas/"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "through-silicon-via-tsv-manufacturing-technology-ibm-2007-2007",
+      "candidate": {
+       "name": "Through-silicon via (TSV) manufacturing technology (IBM, 2007)",
+       "year": 2007,
+       "domain": "computer engineering",
+       "lens": "L1",
+       "type": "method",
+       "definition": "IBM's April 2007 announcement took TSVs from laboratory to manufacturing line: vertical connections etched through thinned silicon wafers and filled with metal, sample chips in H2 2007 and production planned for 2008, after 'more than a decade of pioneering research'.",
+       "causal_claim": "TSV manufacturing directly enabled CoWoS's leap by supplying the vertical feed-throughs that carry signals and power from the interposer's wiring layers down to the package substrate: without a production TSV process, a silicon interposer is a wiring sheet with no way off itself.",
+       "source_title": "IBM, 'IBM Extends Moore's Law to the Third Dimension' (TSV manufacturing announcement, 12 Apr 2007)",
+       "source_url": "https://phys.org/news/2007-04-ibm-law-dimension.html"
+      },
+      "members": [
+       0,
+       15
+      ],
+      "member_names": [
+       "Through-silicon via (TSV) manufacturing technology (IBM, 2007)",
+       "Through-silicon via (TSV) manufacturing technology (IBM, 2007)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "c4np-fine-pitch-micro-bump-solder-interconnect-ibm-2008-2008",
+      "candidate": {
+       "name": "C4NP fine-pitch micro-bump solder interconnect (IBM, 2008)",
+       "year": 2008,
+       "domain": "computer engineering",
+       "lens": "L1",
+       "type": "method",
+       "definition": "IBM's C4NP (Controlled Collapse Chip Connection - New Process) mold-transfer solder bumping, extended in 2008 to micro-bumps for 3D packaging, with 50 um-pitch bumping of 300 mm wafers demonstrated.",
+       "causal_claim": "Fine-pitch micro-bumping directly enabled CoWoS's leap by providing the tens-of-micrometres-pitch joints that attach dies to the interposer across thousands of connections per die pair - the parent's 'chip-on-wafer' step is a micro-bump assembly.",
+       "source_title": "Perfecto, Shih et al., 'C4NP - solder bumps for flip chip and microbumps for 3D' (IBM extended abstract, GBC 2008)",
+       "source_url": "https://research.ibm.com/publications/extended-abstract-c4np-solder-bumps-for-flip-chip-and-microbumps-for-3d"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "C4NP fine-pitch micro-bump solder interconnect (IBM, 2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "c4-controlled-collapse-flip-chip-connection-ibm-1962-1962",
+      "candidate": {
+       "name": "C4 controlled-collapse flip-chip connection (IBM, 1962)",
+       "year": 1962,
+       "domain": "computer engineering",
+       "lens": "L1",
+       "type": "method",
+       "definition": "IBM's controlled-collapse chip connection: solder bumps on the chip face joined simultaneously to a carrier by reflow, reduced to practice in summer 1962 and later extended from the chip edge to the full area array (bump counts growing from 3 to 7,018 per chip over 40 years).",
+       "causal_claim": "C4 directly enabled CoWoS's leap as the originating form of the area-array solder joint the interposer's micro-bumps miniaturize; the evaluator must test whether the channel runs through C4NP rather than directly - the mediation question is the hearing.",
+       "source_title": "Paul A. Totta, 'Forty Years of Flip Chips with Solder Bumps' (retrospective abstract)",
+       "source_url": "http://www.seas.ucla.edu/ethinfilm/Pb-freeWorkshop/abs/totta.html"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "C4 controlled-collapse flip-chip connection (IBM, 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-silicon-carrier-packaging-knickerbocker-et-al-2005-2005",
+      "candidate": {
+       "name": "IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+       "year": 2005,
+       "domain": "computer engineering",
+       "lens": "L2",
+       "type": "method",
+       "definition": "IBM's silicon-carrier system-on-package technology (CICC 2005; IBM J. Res. Dev. 49(4), 2005): multiple chips on a silicon carrier containing through-silicon vias, 50 um fine-pitch interconnection, >16x standard chip I/O and 20-100x the wiring density of traditional organic and ceramic packaging; mini-multichip modules integrating heterogeneous dies into a single 'virtual chip'.",
+       "causal_claim": "The silicon carrier directly enabled CoWoS's leap as its single direct precursor: CoWoS is this architecture - chips on a TSV-bearing silicon carrier used as a wiring medium - productized as a foundry platform with a named first customer and a production line.",
+       "source_title": "Knickerbocker et al., 'Three dimensional silicon integration using fine pitch interconnection, silicon processing and silicon carrier packaging technology' (CICC 2005); IBM J. Res. Dev. 49(4), 2005",
+       "source_url": "https://research.ibm.com/publications/three-dimensional-silicon-integration-using-fine-pitch-interconnection-silicon-processing-and-silicon-carrier-packaging-technology"
+      },
+      "members": [
+       3,
+       21
+      ],
+      "member_names": [
+       "IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+       "IBM silicon carrier packaging (Knickerbocker et al., 2005)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-glass-ceramic-multi-chip-module-power4-regatta-mcm-2001-2001",
+      "candidate": {
+       "name": "IBM glass-ceramic multi-chip module (POWER4 'Regatta' MCM, 2001)",
+       "year": 2001,
+       "domain": "computer engineering",
+       "lens": "L2",
+       "type": "device",
+       "definition": "IBM's high-performance glass-ceramic multichip module carrying four POWER4 chips, each attached through 7,018 flip-chip solder connections, with 1.7 million internal copper vias in co-sintered glass-ceramic (IBM J. Res. Dev. 46(6), 2002).",
+       "causal_claim": "The glass-ceramic MCM directly enabled CoWoS's leap as the incumbent multi-die carrier whose wiring-density ceiling the silicon interposer broke: the ancestor whose carrier material - ceramic at ~200 um pad pitch - CoWoS replaced with lithographically wired silicon.",
+       "source_title": "Knickerbocker et al., 'An advanced multichip module (MCM)' - POWER4 Regatta glass-ceramic MCM (IBM J. Res. Dev. 46(6), 2002)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/466/knickerbocker.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "IBM glass-ceramic multi-chip module (POWER4 'Regatta' MCM, 2001)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xilinx-stacked-silicon-interconnect-technology-2010-2010",
+      "candidate": {
+       "name": "Xilinx Stacked Silicon Interconnect technology (2010)",
+       "year": 2010,
+       "domain": "computer engineering",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Xilinx's SSI, announced 26 Oct 2010: multiple FPGA dies on a passive silicon interposer fabricated with TSMC technology, more than 10,000 routing connections between adjacent dies, 100x the die-to-die connectivity bandwidth-per-watt of board-level integration; first shipped in the Virtex-7 2000T on 25 Oct 2011.",
+       "causal_claim": "SSI directly enabled CoWoS's leap as the co-developed first application in which the platform was proven: 'five years of Xilinx research and development coupled with industry leading technology from TSMC', with TSMC's R&D chief describing the TSV-and-interposer approach in the same release. Whether SSI is the parent's ancestor, its first instance, or the parent itself under a customer name is the hearing.",
+       "source_title": "Xilinx, 'Xilinx Stacked Silicon Interconnect Extends FPGA Technology' (PR Newswire, 26 Oct 2010); Xilinx, 'Xilinx Ships World's Highest Capacity FPGA' - Virtex-7 2000T first shipments (PR Newswire via EDN, 25 Oct 2011)",
+       "source_url": "https://www.eejournal.com/article/20101027-02/"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Xilinx Stacked Silicon Interconnect technology (2010)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rent-s-rule-landman-russo-1971-1971",
+      "candidate": {
+       "name": "Rent's rule (Landman & Russo, 1971)",
+       "year": 1971,
+       "domain": "computer engineering",
+       "lens": "L4",
+       "type": "theory",
+       "definition": "The empirical power law T = t*B^p relating a logic module's terminal count to its block count, observed in E. F. Rent's 1960 IBM internal memoranda and published by Landman & Russo (IEEE Trans. Computers C-20(12):1469-1479, Dec 1971), with Rent exponent 0.57-0.75.",
+       "causal_claim": "Rent's rule directly enabled CoWoS's leap as the founding quantitative statement of the problem the parent answers: terminal demand grows inexorably with logic size while a package's pins cannot, so the interface must eventually move into a wiring medium of lithographic density.",
+       "source_title": "Landman & Russo, 'On a Pin Versus Block Relationship for Partitions of Logic Graphs', IEEE Trans. Computers C-20(12), Dec 1971",
+       "source_url": "https://research.ibm.com/publications/on-a-pin-versus-block-relationship-for-partitions-of-logic-graphs"
+      },
+      "members": [
+       6,
+       18
+      ],
+      "member_names": [
+       "Rent's rule (Landman & Russo, 1971)",
+       "Rent's rule (Landman & Russo, 1971)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "itrs-more-than-moore-integration-agenda-2005-2005",
+      "candidate": {
+       "name": "ITRS 'More than Moore' integration agenda (2005)",
+       "year": 2005,
+       "domain": "computer engineering",
+       "lens": "L4",
+       "type": "other",
+       "definition": "The concept introduced in the 2005 edition of the International Technology Roadmap for Semiconductors: value increasingly comes from heterogeneous functional integration ('More than Moore') rather than from transistor scaling ('More Moore') alone.",
+       "causal_claim": "'More than Moore' directly enabled CoWoS's leap by posing, at roadmap level, the problem the parent answers - system performance through integration of separately manufactured components - six years before the foundry platform that answered it.",
+       "source_title": "Graef et al., 'Positioning More Than Moore Characterization Needs and Methods Within the 2011 ITRS' (concept introduced in the 2005 ITRS edition)",
+       "source_url": "https://repository.tudelft.nl/file/File_b97b49f7-364a-440f-a6ae-b86c4bf9074c?preview=1"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "ITRS 'More than Moore' integration agenda (2005)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "memory-wall-wulf-mckee-1995-1995",
+      "candidate": {
+       "name": "Memory wall (Wulf & McKee, 1995)",
+       "year": 1995,
+       "domain": "computer engineering",
+       "lens": "L5",
+       "type": "theory",
+       "definition": "Wulf & McKee's 'Hitting the Memory Wall' (ACM SIGARCH Computer Architecture News 23(1):20-24, Mar 1995): processor performance improving ~60%/yr against DRAM speed ~7%/yr implies systems become wholly memory-bound.",
+       "causal_claim": "The memory-wall diagnosis directly enabled CoWoS's leap as the named obstruction the parent's wide on-package interface answers; the evaluator must apply the Hochreiter condition - whether any CoWoS-side document derives from this diagnosis (the same candidate was refused at P100 and at NVLink on exactly that test).",
+       "source_title": "Wulf & McKee, 'Hitting the Memory Wall: Implications of the Obvious', ACM SIGARCH Computer Architecture News 23(1):20-24, Mar 1995",
+       "source_url": "http://ciar.org/ttk/wall.pdf"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Memory wall (Wulf & McKee, 1995)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rent-based-wire-length-distribution-theory-donath-1979-1979",
+      "candidate": {
+       "name": "Rent-based wire-length distribution theory (Donath, 1979)",
+       "year": 1979,
+       "domain": "computer engineering",
+       "lens": "L5",
+       "type": "theory",
+       "definition": "W. E. Donath's Rent-based analysis of placement and average interconnection lengths (1979), turning Rent's rule into a predictive stochastic theory of wiring demand within and between logic blocks.",
+       "causal_claim": "Donath's theory directly enabled CoWoS's leap by converting the pin problem into a computable wiring-demand distribution - the design-side instrument that states how much wiring a partition needs, and hence when a package substrate's wiring runs out.",
+       "source_title": "Donath's Rent-based wire-length distribution theory (1979), as surveyed in the SLIP literature on Rent's rule and interconnect prediction",
+       "source_url": "http://nthucad.cs.nthu.edu.tw/TingTingHwang/paper_present/old_season_20040519/2003.09.19_cyliu/20030919cyliu.pdf"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Rent-based wire-length distribution theory (Donath, 1979)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "wire-bonded-stacked-die-memory-package-akita-elpida-20-die-m-2007",
+      "candidate": {
+       "name": "Wire-bonded stacked-die memory package (Akita Elpida 20-die MCP, 2007)",
+       "year": 2007,
+       "domain": "computer engineering",
+       "lens": "L6",
+       "type": "device",
+       "definition": "Akita Elpida's 2007 demonstration of 20 stacked dies inside a 1.4 mm package using wafer thinning, thin-wafer handling and low-loop wire bonding - the high-water mark of edge-wired die stacking.",
+       "causal_claim": "The wire-bonded stack directly enabled CoWoS's leap as the incumbent it is defined against: stacking by edge wires caps connections at the die perimeter, which is precisely the constraint the interposer's area-array wiring removes.",
+       "source_title": "Semiconductor Digest, 'Packaging Beat: Industry leaders vie for memory-stacking bragging rights' (June 2007)",
+       "source_url": "https://sst.semiconductor-digest.com/2007/06/packaging-beat-industry-leaders-vie-for-memory-stacking-bragging-rights/"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Wire-bonded stacked-die memory package (Akita Elpida 20-die MCP, 2007)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "samsung-wafer-level-stack-package-wsp-tsv-nand-2006-2006",
+      "candidate": {
+       "name": "Samsung wafer-level stack package (WSP) TSV NAND (2006)",
+       "year": 2006,
+       "domain": "computer engineering",
+       "lens": "L6",
+       "type": "device",
+       "definition": "Samsung's April 2006 wafer-level processed stack package: laser-drilled, copper-filled through-silicon vias stacking NAND flash dies vertically, announced for mass production from 2007.",
+       "causal_claim": "Samsung's WSP directly enabled CoWoS's leap as the first production TSV stack - proof that TSV stacking ships - whose vertical, single-function form CoWoS's lateral, heterogeneous interposer form is defined against and extends.",
+       "source_title": "Phil Garrou, IFTLE 95, '3DIC - Time Flies When You're Having Fun' (Semiconductor Digest, Apr 2012)",
+       "source_url": "https://sst.semiconductor-digest.com/insights-from-leading-edge/2012/04/iftle-95-3dic-%ef%bf%bd%ef%bf%bd-time-flies-when-youre-having-fun-further-details-on-the-micron-hmc-equipment-suppliers-continue-consolidation-evg-temp-adhesive-open-platform/"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Samsung wafer-level stack package (WSP) TSV NAND (2006)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "gddr5-board-level-memory-interface-2008-2008",
+      "candidate": {
+       "name": "GDDR5 board-level memory interface (2008)",
+       "year": 2008,
+       "domain": "computer engineering",
+       "lens": "L6",
+       "type": "device",
+       "definition": "GDDR5, the fifth-generation graphics DRAM interface commercialized in 2008: 32-bit-per-chip channels routed across the package substrate and circuit board between a GPU and discrete memory chips.",
+       "causal_claim": "GDDR5 directly enabled CoWoS's leap as the defined-against incumbent memory interface: a few hundred board-routed bits is the prior state the parent's wide on-package interface displaces (refused in the defined-against role at P100 and at V100; argued fresh here, where the parent's own stored bottleneck names the substrate-routing limit).",
+       "source_title": "Anton Shilov, 'AMD started to work on HBM technology nearly a decade ago' (KitGuru, 2015; GDDR5 commercialized 2008)",
+       "source_url": "https://www.kitguru.net/components/graphic-cards/anton-shilov/amd-started-to-work-on-hbm-technology-nearly-a-decade-ago/"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "GDDR5 board-level memory interface (2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-thermal-conduction-module-tcm-1981-1981",
+      "candidate": {
+       "name": "IBM thermal conduction module (TCM, 1981)",
+       "year": 1981,
+       "domain": "computer engineering",
+       "lens": "L7",
+       "type": "device",
+       "definition": "IBM's thermal conduction module for the 3081 processor generation: up to roughly a hundred chips flip-chip mounted on a multilayer ceramic substrate with piston cooling - the mainframe era's high-density multichip module.",
+       "causal_claim": "The TCM directly enabled CoWoS's leap through the failure record: ceramic multichip modules delivered wiring density at mainframe prices and never crossed into volume markets, teaching the field that the carrier's wiring medium must itself be a volume manufacturing process, not a bespoke ceramic.",
+       "source_title": "Fried et al., 'A VLSI Bipolar Metallization Design with Three-Level Wiring and Area Array Solder Connections' (IBM J. Res. Dev. 26(3), 1982; 3081 thermal conduction module technology)",
+       "source_url": "https://archive.org/download/wikipedia-scholarly-sources-corpus/10.1147.zip/10.1147%252Frd.263.0362.pdf"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "IBM thermal conduction module (TCM, 1981)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "intel-tsv-3d-integration-programme-rattner-idf-demonstration-2005",
+      "candidate": {
+       "name": "Intel TSV 3D-integration programme (Rattner IDF demonstration, 2005)",
+       "year": 2005,
+       "domain": "computer engineering",
+       "lens": "L7",
+       "type": "method",
+       "definition": "Intel's spring-2005 IDF presentation of stacked dies and wafers using through-silicon vias 'showing promise in meeting the memory bandwidth challenge' - a programme that produced demonstrations but no commercial TSV product in the following decade.",
+       "causal_claim": "Intel's stalled programme directly enabled CoWoS's leap as adjacent negative space: the largest chipmaker's failure to commercialize TSV stacking left the production-platform step to a foundry-FPGA pair to take.",
+       "source_title": "Phil Garrou, IFTLE 95, '3DIC - Time Flies When You're Having Fun' (Semiconductor Digest, Apr 2012)",
+       "source_url": "https://sst.semiconductor-digest.com/insights-from-leading-edge/2012/04/iftle-95-3dic-%ef%bf%bd%ef%bf%bd-time-flies-when-youre-having-fun-further-details-on-the-micron-hmc-equipment-suppliers-continue-consolidation-evg-temp-adhesive-open-platform/"
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Intel TSV 3D-integration programme (Rattner IDF demonstration, 2005)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "thin-wafer-handling-and-wafer-thinning-process-akita-elpida-2007",
+      "candidate": {
+       "name": "Thin-wafer handling and wafer thinning process (Akita Elpida, 2007)",
+       "year": 2007,
+       "domain": "computer engineering",
+       "lens": "L11",
+       "type": "method",
+       "definition": "The wafer-thinning, thin-wafer handling and die-handling technology Akita Elpida cited in 2007 as the enabling craft of its 20-die stack: grinding and handling silicon at tens-of-micrometres thickness without breakage.",
+       "causal_claim": "Thin-wafer handling directly enabled CoWoS's leap because an interposer is a thinned wafer: TSVs can only be revealed, and the carrier made package-thin, if wafers are routinely thinned and handled at production yield.",
+       "source_title": "Semiconductor Digest, 'Packaging Beat: Industry leaders vie for memory-stacking bragging rights' (June 2007)",
+       "source_url": "https://sst.semiconductor-digest.com/2007/06/packaging-beat-industry-leaders-vie-for-memory-stacking-bragging-rights/"
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Thin-wafer handling and wafer thinning process (Akita Elpida, 2007)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "deep-reactive-ion-etching-bosch-process-1996-1996",
+      "candidate": {
+       "name": "Deep reactive-ion etching (Bosch process, 1996)",
+       "year": 1996,
+       "domain": "computer engineering",
+       "lens": "L14",
+       "type": "method",
+       "definition": "The Bosch process (Laermer & Schilp, patented 1993-1996): alternating etch and passivation plasma cycles producing deep, near-vertical silicon trenches and holes - the standard etch for TSVs and MEMS structures.",
+       "causal_claim": "DRIE directly enabled CoWoS's leap as the equipment-side process that cuts the interposer's vias: high-aspect-ratio vertical holes in silicon are a plasma-etch artifact before they are a packaging feature.",
+       "source_title": "'3-D Integration and Through-Silicon Vias in MEMS and Microsensors', J. Micromech. Microeng./JMEMS review (2015)",
+       "source_url": "https://www.researchgate.net/publication/282404075_3-D_Integration_and_Through-Silicon_Vias_in_MEMS_and_Microsensors"
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "Deep reactive-ion etching (Bosch process, 1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ewlb-fan-out-wafer-level-packaging-infineon-2007-2007",
+      "candidate": {
+       "name": "eWLB fan-out wafer-level packaging (Infineon, 2007)",
+       "year": 2007,
+       "domain": "computer engineering",
+       "lens": "L19",
+       "type": "method",
+       "definition": "Infineon's embedded wafer-level ball grid array, introduced fall 2007: dies embedded in a reconstituted wafer with thin-film redistribution wiring fanning out beyond the die footprint; licensed to ASE, STMicroelectronics and STATS ChipPAC; volume commercialization 2009/2010.",
+       "causal_claim": "eWLB directly enabled CoWoS's leap as the cross-field import: it proved redistribution wiring at wafer level could carry a production package's interconnect, transferring front-end-style thin-film wiring into the packaging field the parent works in.",
+       "source_title": "Semiconductor Digest, 'Fan-out wafer level packaging set to expand' (eWLB introduced by Infineon fall 2007; volume 2009/2010)",
+       "source_url": "https://sst.semiconductor-digest.com/2015/07/fan-out-wafer-level-packaging-set-to-expand/"
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "eWLB fan-out wafer-level packaging (Infineon, 2007)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mems-through-silicon-via-foundry-practice-silex-microsystems-2005",
+      "candidate": {
+       "name": "MEMS through-silicon via foundry practice (Silex Microsystems, 2005)",
+       "year": 2005,
+       "domain": "computer engineering",
+       "lens": "L19",
+       "type": "method",
+       "definition": "Silex Microsystems, the first MEMS foundry to offer through-silicon via foundry services (polysilicon and single-crystalline TSV variants), carrying the via craft as a purchasable service in the microsystems field by the mid-2000s.",
+       "causal_claim": "MEMS TSV practice directly enabled CoWoS's leap as the donor field's carried craft: via formation, sidewall insulation and thin-wafer handling existed as a foundry service in MEMS while the IC-packaging field still treated TSVs as research.",
+       "source_title": "'3-D Integration and Through-Silicon Vias in MEMS and Microsensors', J. Micromech. Microeng./JMEMS review (2015)",
+       "source_url": "https://www.researchgate.net/publication/282404075_3-D_Integration_and_Through-Silicon_Vias_in_MEMS_and_Microsensors"
+      },
+      "members": [
+       20
+      ],
+      "member_names": [
+       "MEMS through-silicon via foundry practice (Silex Microsystems, 2005)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "shang-yi-chiang-returns-to-tsmc-to-lead-the-packaging-progra-2009",
+      "candidate": {
+       "name": "Shang-yi Chiang returns to TSMC to lead the packaging programme (2009)",
+       "year": 2009,
+       "domain": "computer engineering",
+       "lens": "L20",
+       "type": "other",
+       "definition": "Shang-yi Chiang, TSMC's former R&D senior vice president, returned to TSMC in 2009 at Morris Chang's invitation and started its advanced-packaging R&D programme (reported at roughly US$100M with a team of more than 400 engineers), from which CoWoS emerged; Chiang is the TSMC voice quoted on TSV and silicon-interposer technology in Xilinx's October 2010 SSI announcement.",
+       "causal_claim": "Chiang's return directly enabled CoWoS's leap as the creator-lineage carrier: the person who had run the foundry's R&D was brought back to build the packaging programme, and he personally fronted the interposer technology to its first customer in the SSI announcement.",
+       "source_title": "Granite Firm, 'TSMC Advanced Packaging Evolution History' (2025) - secondary history; Xilinx, 'Xilinx Stacked Silicon Interconnect Extends FPGA Technology' (PR Newswire, 26 Oct 2010)",
+       "source_url": "https://www.granitefirm.com/blog/us/2025/01/31/tsmc-advanced-packaging-evolution-history/?no_cache=1"
+      },
+      "members": [
+       22
+      ],
+      "member_names": [
+       "Shang-yi Chiang returns to TSMC to lead the packaging programme (2009)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "tsmc-integrated-interconnect-packaging-programme-iipd-2008-2008",
+      "candidate": {
+       "name": "TSMC Integrated Interconnect & Packaging programme (IIPD, 2008)",
+       "year": 2008,
+       "domain": "computer engineering",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "TSMC's Integrated Interconnect and Packaging Technology Integration Department, established 2008, and the funded advanced-packaging programme built under it from 2009 - the organizational vehicle that developed CoWoS.",
+       "causal_claim": "The IIPD programme directly enabled CoWoS's leap as its institutional vehicle; the evaluator must apply the self-carriage test - the parent is this institution's own artifact (the Pixar-at-SL shape) - against the OpenPOWER-at-NVLink discrimination, where the admitted vehicle was external to the parent.",
+       "source_title": "Granite Firm, 'TSMC Advanced Packaging Evolution History' (2025) - secondary history",
+       "source_url": "https://www.granitefirm.com/blog/us/2025/01/31/tsmc-advanced-packaging-evolution-history/?no_cache=1"
+      },
+      "members": [
+       23
+      ],
+      "member_names": [
+       "TSMC Integrated Interconnect & Packaging programme (IIPD, 2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "aset-tsv-consortium-1999-1999",
+      "candidate": {
+       "name": "ASET TSV consortium (1999)",
+       "year": 1999,
+       "domain": "computer engineering",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Association of Super Advanced Electronics Technologies consortium (Fujitsu, Toshiba, NEC, Oki, Renesas and others), formed in 1999 to study direct connection of chips by through-silicon vias as a pre-competitive programme.",
+       "causal_claim": "ASET directly enabled CoWoS's leap as the institutional ripening of TSV: a decade of consortium process work across the Japanese industry is part of what a foundry platform in 2011 could stand on.",
+       "source_title": "Phil Garrou, IFTLE 95, '3DIC - Time Flies When You're Having Fun' (Semiconductor Digest, Apr 2012)",
+       "source_url": "https://sst.semiconductor-digest.com/insights-from-leading-edge/2012/04/iftle-95-3dic-%ef%bf%bd%ef%bf%bd-time-flies-when-youre-having-fun-further-details-on-the-micron-hmc-equipment-suppliers-continue-consolidation-evg-temp-adhesive-open-platform/"
+      },
+      "members": [
+       24
+      ],
+      "member_names": [
+       "ASET TSV consortium (1999)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nedo-tsv-development-grant-programme-elpida-2004-2004",
+      "candidate": {
+       "name": "NEDO TSV development grant programme (Elpida, 2004)",
+       "year": 2004,
+       "domain": "computer engineering",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Japanese NEDO grant programme under which Elpida began TSV development in 2004, leading to its Cu-TSV multi-layer DRAM - development completed August 2009, sample shipments scheduled before the end of 2009, on a dedicated Hiroshima TSV line.",
+       "causal_claim": "The NEDO programme directly enabled CoWoS's leap by funding the memory-side TSV production craft that made stacked DRAM a manufacturable component - the class of component the interposer exists to wire.",
+       "source_title": "Elpida Memory, 'Elpida Completes Development of Cu-TSV Multi-Layer 8-Gigabit DRAM' (31 Aug 2009)",
+       "source_url": "https://phys.org/news/2009-08-elpida-cu-tsv-silicon-multi-layer-gigabit.html?loadCommentsForm=1"
+      },
+      "members": [
+       25
+      ],
+      "member_names": [
+       "NEDO TSV development grant programme (Elpida, 2004)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xilinx-tsmc-ssi-co-development-partnership-2010-2010",
+      "candidate": {
+       "name": "Xilinx-TSMC SSI co-development partnership (2010)",
+       "year": 2010,
+       "domain": "computer engineering",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Xilinx-TSMC collaboration behind SSI - 'five years of Xilinx research and development coupled with industry leading technology from TSMC', with assembly suppliers - announced 26 Oct 2010.",
+       "causal_claim": "The partnership directly enabled CoWoS's leap as the junction vehicle: platform and first customer were co-developed, so the channel may be carried by this vehicle or by the SSI artifact itself; the evaluator must not count both (the NVLink partnership discrimination).",
+       "source_title": "Xilinx, 'Xilinx Stacked Silicon Interconnect Extends FPGA Technology' (PR Newswire, 26 Oct 2010)",
+       "source_url": "https://www.eejournal.com/article/20101027-02/"
+      },
+      "members": [
+       26
+      ],
+      "member_names": [
+       "Xilinx-TSMC SSI co-development partnership (2010)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "28-nanometre-reticle-limit-and-yield-economics-2010-2010",
+      "candidate": {
+       "name": "28-nanometre reticle-limit and yield economics (2010)",
+       "year": 2010,
+       "domain": "computer engineering",
+       "lens": "L22",
+       "type": "other",
+       "definition": "The cost condition at the 28 nm generation: defect-free monolithic dies at the reticle limit could not supply the logic capacity leading designs demanded, making multi-die assembly the only route to beyond-Moore capacity in that generation - the SSI announcement's own framing ('capacities that otherwise wouldn't be possible in an FPGA for at least another process generation').",
+       "causal_claim": "The 28 nm economics directly enabled CoWoS's leap as the timeliness condition: the platform's first customer needed twice the largest feasible monolithic FPGA in that process generation, or the product did not exist.",
+       "source_title": "EE Times, 'Stacked and Loaded: Xilinx SSI, 28-Gbps I/O yield amazing FPGAs' (Xcell Journal cover story, Q1 2011)",
+       "source_url": "https://www.eetimes.com/stacked-and-loaded-xilinx-ssi-28-gbps-i-o-yield-amazing-fpgas/"
+      },
+      "members": [
+       27
+      ],
+      "member_names": [
+       "28-nanometre reticle-limit and yield economics (2010)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       15
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       21
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       6,
+       18
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
