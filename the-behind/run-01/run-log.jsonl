@@ -358,3 +358,70 @@
   "expansions_done": 67
  }
 }
+{
+ "ts": "2026-11-25T01:23:01.281026-07:00",
+ "session": 29,
+ "kind": "expansion",
+ "parent": "hypertalk-1987",
+ "parent_name": "HyperTalk",
+ "raw": 20,
+ "dry_notes": 19,
+ "date_dropped": [
+  {
+   "name": "HyperCard (1987)",
+   "reason": "coeval-year bound: HyperCard-the-product is 1987, the parent's own year - dropped at resolve by the year-granularity bound (the sessions 27-29 structural shape). Substantively this is the language-vs-container discrimination the brief posed: the graph's HyperTalk node already encodes the language-within-HyperCard (its definition is 'the scripting language of Apple's HyperCard'), so the container is the parent's substance and carrier, not a predecessor; nothing is lost by the drop, and the discrimination is recorded here."
+  }
+ ],
+ "survivors": [
+  {
+   "name": "Smalltalk-80 (Goldberg & Robson)",
+   "score": 5.5,
+   "notes": "LINK to the existing node (no new node; edges 206 -> 207). The designer's own contemporaneous statement carries the edge: Atkinson in the Goodman interview (1987) - 'It also borrows some concepts from SmallTalk - the inheritance concepts. If you send a message to the card and the card doesn't understand it, it falls through the background of it... That inheritance is similar to what they have in SmallTalk.' Citation plus instantiation (the fall-through is HyperTalk's shipped semantics). Q1 scored partial (the headline impossibility is flipped by the parent's own English surface), Q2 passes on the documented design arc (attribute-button mockup with 'no language' -> the five-day outline built on object naming and message fall-through). Verification records the attribution caveat: Atkinson's exposure was to 1970s LRG Smalltalk; the edge is to the model via its canonical published node. Provisional."
+  }
+ ],
+ "rejections_of_note": [
+  {
+   "name": "Dynabook (Kay)",
+   "reason": "mediated_via: Smalltalk-80 (Goldberg & Robson) - the vision's technical content IS Smalltalk, admitted on its own edge; the remainder (the personal-medium ambition) reached the parent through Atkinson's own cancelled Magic Slate, which he names as a root of HyperCard - the parent's own lineage, not a separable predecessor artifact. The language's mechanisms are not the 1972 paper's."
+  },
+  {
+   "name": "Xerox PARC",
+   "reason": "institution decomposition (NCC/OpenAI pattern): its separable artifact at this parent is Smalltalk, admitted on its own edge; the Alto/GUI line is the container platform's ancestry. Atkinson's PARC exposure (LRG school courses; 1979 visits) is the channel OF the Smalltalk borrowing, not a second contribution beside it."
+  },
+  {
+   "name": "Logo / PILOT / Guide / PLATO-TUTOR (the designer's comparison class)",
+   "reason": "fail-closed partials, each on its own record: Atkinson names all four himself as the fair comparison class for an authoring tool ('I would compare it with authoring tools like Owl's Guide, like Plato, like Pilot, like Logo'). A designer's named comparison class is the field the parent answers - prior state and proved demand (Logo) - not a channel; no mechanism of any of the four is consumed by HyperTalk."
+  },
+  {
+   "name": "NoteCards (1985)",
+   "reason": "anticipation/parallel without a junction: the derivation claim in tertiary histories is unsupported by the primary record - Atkinson's contemporaneous account and Belleville's insider account derive HyperCard from Magic Slate and Rolodex-plus-MacPaint, and NoteCards is never mentioned. Mechanisms also differ (typed links/browsers in Lisp vs message-passing scripts on interface objects)."
+  },
+  {
+   "name": "Nelson's hypertext (1965)",
+   "reason": "the concept is not a channel: Atkinson's interview never mentions Nelson; Belleville grants Nelson the two-decade-old concept while deriving the artifact elsewhere; the product's name itself was a trademark substitution (WildCard -> HyperCard). Button-linking grew from the parent's own mockup."
+  },
+  {
+   "name": "Pascal",
+   "reason": "the designers' fluency and the container's implementation language (Atkinson: 'HyperTalk has some background in Pascal just because that's what I speak a lot of'; HyperCard is 80 percent Pascal). Surface influence documented and scored partial; the parent's leap - English-like scripts for non-programmers - is precisely the part that is not Pascal."
+  },
+  {
+   "name": "Apple Computer",
+   "reason": "institution decomposition: the separable contributions are judged on their own records - the Macintosh as platform substrate (fail-closed), and Atkinson's free-bundling condition as a distribution condition (it put the language in millions of hands but is not a mechanism of the language). Institution link refused against double-counting."
+  },
+  {
+   "name": "Atkinson's five-day HyperTalk outline (1986)",
+   "reason": "own-version discipline: the outline IS the parent's founding design (object naming, ordinals) and Winkler's development of it is the parent itself; a component of the leap, not a predecessor leap. The FLEX/Simula-I exception does not apply - never a separable published artifact. The designer's account is preserved in the evaluation."
+  }
+ ],
+ "structural_notes": [
+  "Single-survivor expansion (1 link, 0 new nodes) is the finding, not a shortfall: the primary design record names exactly one borrowed mechanism (Smalltalk inheritance), one personal background (Pascal), and one comparison class (Guide/PLATO/PILOT/Logo) - and the graph now says exactly that.",
+  "Language-vs-container: the brief's HyperCard question is answered by the date bound plus the node's own definition - HyperCard-the-product is the parent's substance/carrier, and its separable ancestry (Rolodex, MacPaint, Magic Slate) argues at the product level; at the language parent those channels fail closed, each recorded in its evaluation.",
+  "Depth bookkeeping: HyperTalk stands at depth 4 (corrected in expansion 1's entry); the new edge gives Smalltalk-80 a second child in the language lineage and does not change the depth distribution."
+ ],
+ "totals_after": {
+  "nodes": 162,
+  "edges": 207,
+  "budget": "162/2000",
+  "expansions_done": 68
+ }
+}
