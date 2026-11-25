@@ -2397,3 +2397,64 @@
   "expansions_done": 95
  }
 }
+
+{
+ "ts": "2026-11-25T11:54:35Z",
+ "session": "run session 43 (v4), expansion 2 of 2 (recovery)",
+ "kind": "expansion",
+ "parent": "reyes-rendering-architecture-cook-carpenter-catmull-1987-1987",
+ "parent_name": "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)",
+ "provenance": "RECOVERY SESSION (sessions 39/42 precedent): session 43's original agent ended without a report having applied nothing; expansion 1 (Perlin 1985) was completed by this recovery session first and checkpointed separately (sync commit 9ee9dd4d, blob SHAs verified). This expansion was scouted fresh by the recovery session, grounded in the parent paper's full text and complete reference list (CMU/Utah PDFs) plus the Reyes histories for the Genesis record. Parent stored record verified complete before evaluation (no session-31 defect).",
+ "raw": 26,
+ "dry_notes": "20 dry/shortfall notes filed. Floors met: L1 (10 filed), L2 (3), L20 (3). Shortfalls: L4 (1 - Genesis; the problem is posed by the paper's own section 1), L5 (1 - Kajiya), L6 (2 - the third incumbent, ad hoc production renderers, is not a named artifact), L9 (1 - Chap), L12 (0 - the SL proper postdates the parent), L19 (2), L21 (2), L23 meta (1). Dry: L3 meta (surveys converge on the filed set), L7 (negative space is the proto-system's limits, filed at L20), L8, L10, L11 (the recipe is the parent itself; constituents filed at L1), L13, L14, L15, L16 (the RenderMan Interface Specification 1988 POSTDATES the parent - the standard is its descendant), L17 (no benchmark; productions filed at L23), L18, L22 (conditions carried inside the Genesis and Chap evaluations).",
+ "date_dropped": [
+  "No candidate was dropped at this resolve (26 raw, 0 dropped). STRUCTURAL NOTE, logged in the L3 dry note: the fourth constituent on the parent's own list - the antialiased depth map shadow algorithm, Reeves, Salesin & Cook, 'Shadowing with Texture Maps' (SIGGRAPH 1987) - is dated the parent's own year, so the graph cannot connect the parent to one of the four algorithms its own introduction names as developed for it. The year bound was applied as designed; nothing was re-dated. (Red's Dream, 1987, cited in the parent's results, is the same shape on the production side.)"
+ ],
+ "distinct": 26,
+ "evaluated": 26,
+ "survivors": 3,
+ "rejected": 23,
+ "mediated": [
+  "The Monte Carlo method (Metropolis & Ulam, 1949) - mediated via Cook, Stochastic Sampling in Computer Graphics (1986), admitted at this same expansion.",
+  "Catmull & Clark (1978) - mediated via Catmull, A Subdivision Algorithm for Computer Display of Curved Surfaces (1974), admitted at this same expansion: the parent cites the dissertation, not the refinement, and its primitives are parametric patches, not subdivision surfaces."
+ ],
+ "survivors_detail": [
+  {
+   "name": "Catmull, A Subdivision Algorithm for Computer Display of Curved Surfaces (1974)",
+   "kind": "NEW node, depth 9",
+   "score": 4.5,
+   "argument": "The direct hearing assigned at RenderMan SL (session 42, where Catmull was mediated via REYES), discharged as an admission: the paper cites the dissertation [8], and three of its mechanisms are the parent's working parts - subdivision (dicing's ancestor), the z-buffer (the hider's buffer, named in the abstract: 'stochastic point sampling with a z buffer'), texture mapping (the texture stage). Q3 capped partial on the Strasser z-buffer multiple (1974, independent)."
+  },
+  {
+   "name": "Cook, Shade Trees (1984)",
+   "kind": "LINK (existing node)",
+   "score": 4.5,
+   "argument": "The parent lists shade trees among the algorithms 'developed for the Reyes architecture' [11] and states in its design assumptions: 'we consider a programmable shader a necessity.' Admission rests on the discrimination recorded in the evaluation and flagged MOST CONTESTABLE in verification: the shader model is not a component technique consumed (the Blinn-1978 shape) but the presupposition of the architecture's central design decision - grids shaded together before visibility. Cook now has three children in the shading line (Perlin, RenderMan SL, REYES). Re-hearing condition on the verification record."
+  },
+  {
+   "name": "Cook, Stochastic Sampling in Computer Graphics (1986)",
+   "kind": "NEW node, depth 9",
+   "score": 4.0,
+   "argument": "The hider's defining method, incorporated by reference: the abstract defines visibility as stochastic point sampling with a z buffer; motion blur and depth of field run on jittered time/lens samples of micropolygons. Discriminated from ISL-at-RTSL: a whole stage's method on the headline path, published as a separable artifact by the architecture's own first author (own-version exception shape), not a technique serving a fallback path."
+  }
+ ],
+ "rejections_of_note": [
+  "Lane, Carpenter, Whitted & Blinn (1980) - fail-closed partial: the paper's own word is 'similar' ('This adaptive approach is similar to the Lane-Carpenter patch dicing algorithm'); Reyes's object-space grids shaded as units re-found the approach rather than consume the scanline mechanism. The dice stage's descent claim is recorded in full.",
+  "The ray-tracing split, recorded explicitly: Whitted (1980) defined-against at the ARCHITECTURE level (the stored prior state: 'ray tracers too slow for feature-film complexity'); Cook, Porter & Carpenter, Distributed Ray Tracing (1984) fail-closed partial at the TECHNIQUE level - an incorporated constituent for shader effects, but the stages do not run on it. Relations judged per level, never merged.",
+  "The Lucasfilm in-house Reyes system (c. 1982-86) - own first form: the paper is the system's publication ('developed at Lucasfilm Ltd. and currently in use at Pixar'); a node cannot be its own predecessor.",
+  "The Genesis effect sequence (1982) - fail-closed partial (the Weldon shape): the production posed the programme's demand and exercised the proto-system, but the paper poses its problem in its own section 1 and never names the sequence; the channel runs to the programme, not the paper.",
+  "Young Sherlock Holmes, stained glass man sequence (1985) - direction refusal: cited by the parent itself [25] as its results-section evidence (Sherlock frames, render times) - the parent's RESULT, downstream of the design. Duff (1985) likewise downstream (compositing consumes the renderer's output).",
+  "Lucasfilm Computer Graphics Project (1979) - decomposition refusal (the session-42 SL precedent): its contribution is exhausted by the artifacts heard directly here. Pixar (1986) - self-carriage.",
+  "Levinthal & Porter, Chap (1984) - substrate tests failed: one implementation target among several (the chas port; the main implementation is the C one), and the vectorization principle is machine-general by stated design (the OpenGL-at-RTSL shape).",
+  "Blinn & Newell (1976) - fail-closed partial: texture practice reaches the parent through several carriers; its specific contribution (reflection mapping) is one texture use in the results, and the originating artifact (Catmull 1974) is admitted separately. Williams (1983) - fail-closed partial (the parent's filtering route is its own CAT design). Crow (1984) - compared alternative. Feibush, Levoy & Cook (1980) - bibliography stratum. Clark (1979) - fail-closed partial (stratum; the dicing statement names Lane-Carpenter). Atherton (1983) - stratum citation; the parent's basic structure expressly excludes CSG.",
+  "Carpenter (1980) and Fournier, Fussell & Carpenter (1982) - own-lineage formation refusals (the team's prior work as the authors' formation, not artifacts the architecture consumes). FFC's record here (formation) stands alongside its Perlin record (defined-against): two refusals on two parents' documents.",
+  "Kajiya (1986) - fail-closed partial (Hochreiter condition), consistent with RenderMan SL. Denning (1968) - analogy is not consumption: the paging/locality vocabulary is borrowed, no OS mechanism runs inside the architecture. Reeves (1983) - fail-closed partial: a modelling technique whose outputs the architecture renders (upstream content)."
+ ],
+ "notes": "Three survivors (one LINK, two NEW at depth 9), two mediated rejections, both terminating at nodes admitted in this same expansion. The graphics line now runs HLSL <- RTSL <- RenderMan SL <- REYES <- {Catmull 1974, Cook 1984, Cook 1986}, with Cook 1984 also parenting Perlin 1985 (convergence). Session 43 closes with both scoped expansions complete. The InstructGPT/RLHF flag did not surface. Depth-cap flag unchanged: De Moivre (1738) at depth 10 remains terminal and unexpanded.",
+ "totals_after": {
+  "nodes": 199,
+  "edges": 255,
+  "budget": 199,
+  "expansions_done": 96
+ }
+}
