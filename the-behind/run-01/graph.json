@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T09:55:38+00:00",
-  "expansions_done": 81,
-  "raw_candidates_seen": 3480,
+  "updated_at": "2026-11-25T10:04:11+00:00",
+  "expansions_done": 82,
+  "raw_candidates_seen": 3495,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -16679,6 +16679,66 @@
     "name": "Bravais, Analyse mathematique sur les probabilites des erreurs de situation d'un point (1846)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T09:55:16+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "FLPL — FORTRAN List Processing Language (Gelernter, 1958)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "FORTRAN (Backus, 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "Combinatory logic (Curry & Feys, 1958)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "IBM 704 computer (1954)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "Turing's universal machine (1936)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "McCarthy, Programs with Common Sense — the Advice Taker proposal (1958)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "The Logic Theorist (Newell, Shaw & Simon, 1956)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "Dartmouth Summer Research Project on Artificial Intelligence — the 1955 proposal and 1956 workshop",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "Russell's hand-coded eval interpreter for the IBM 704 (1959)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:03:33+00:00"
+   },
+   {
+    "parent_id": "lisp-1960",
+    "name": "McCarthy's conditional-expression proposal to the ALGOL committee (1959)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T10:03:33+00:00"
    }
   ]
  },
@@ -18965,7 +19025,7 @@
    "prior_state": "Fortran-era numerical programming and IPL-style list processing without first-class functions.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -19004,12 +19064,16 @@
     {
      "title": "Lambda Calculus | AI Wiki",
      "url": "https://aiwiki.ai/wiki/lambda_calculus"
+    },
+    {
+     "title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Multiples test on Q3: Turing machines and combinatory logic were rival formalisms, but for the semantics of function values there was no substitute in the room; Q3 stays partial, node provisional. Weakest-evidence attack on Q1: a 1936 formalism as 'direct enabler' risks the transitive trap; it survives because the parent's own title defines it as an interpreter FOR this candidate and AIM-349 p.23 argues from the calculus's axioms directly - the channel is the parent's self-specification, not family resemblance. Mediation attack: via ISWIM or Landin's correspondence - fails: ISWIM is disposed at this parent as mediated via the calculus (reverse direction) and the correspondence via ALGOL 60. Anachronism check: the 1936 mature form precedes 1975 by four decades; no later formulation is load-bearing. Edge stands, provisional.",
-    "at": "2026-11-25T03:59:18+00:00"
+    "notes": "Three attacks on the edge Lambda calculus (1936) -> Lisp (1960). (1) NOTATION-ONLY ATTACK (the strongest): McCarthy's own retrospective says he took Church's lambda notation because 'to use functions as arguments, one needs a notation for functions', adding 'I didn't understand the rest of the book, so I wasn't tempted to try to implement his more general mechanism for defining functions.' If all that crossed was a notation, the components rule (a notation inside the parent is a component, not an ancestor) should kill the edge. Answered: what the parent's section 2e takes from Church [3] is the function/form DISTINCTION together with the notation — the conceptual apparatus (bound and free variables, functions as values that forms apply) that constitutes the parent's function mechanism; the parent's functions ARE lambda expressions and its eval is defined over them. This is the Fisher 1918 at Fisher & Mackenzie shape: the child's central form is the ancestor's mechanism in new dress. What McCarthy did NOT take — conversion as the computation mechanism — is what the parent's eval replaces, which is the ancestor-modified relation, not independence. Attack fails; Q3 was nevertheless scored only partial at evaluation on exactly this testimony, and that scoring stands. (2) MEDIATION ATTACK via Kleene: Church and Kleene were collaborators (Kleene was Church's student; the equivalence of the calculi dates to 1936), so the Church channel might be the Kleene channel in disguise. Answered by the components split, which the parent's own text enforces: section 2e cites Church for the function form; the introduction frames the system on the partial-recursive-function scheme. Two separable components, two channels, both admitted with the split recorded; equivalence of the formalisms does not merge their channels into this parent. Attack fails. (3) SCOPING DIVERGENCE: the implemented Lisp used dynamic binding, not the lexical discipline of Church's calculus (and of this node's own stored leap text, written for the Scheme line). Recorded as part of the ancestor-modified finding: the parent deviates from Church substantially in evaluation discipline while taking the form; the edge is to the calculus as the source of the function concept and notation, which is what the parent's documents claim. No mediation actions taken.",
+    "at": "2026-11-25T10:04:11+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T03:58:48+00:00"
@@ -22119,6 +22183,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T09:55:16+00:00"
+  },
+  "kleene-introduction-to-metamathematics-the-theory-of-partial-1952": {
+   "id": "kleene-introduction-to-metamathematics-the-theory-of-partial-1952",
+   "name": "Kleene, Introduction to Metamathematics — the theory of partial recursive functions (1952)",
+   "aliases": [],
+   "year": 1952,
+   "domain": "mathematical logic",
+   "type": "theory",
+   "definition": "Kleene's codification (1952) of the theory of (partial) recursive functions: functions defined from elementary functions by composition, recursion and minimisation — the definitional scheme of computability McCarthy's formalism re-targets.",
+   "bottleneck": "Before Kleene's codification, what it means for a function to be effectively calculable had no single standard definitional scheme a new formalism could take as its basis.",
+   "leap": "Kleene's theory of partial recursive functions (1952) gave computability its canonical definitional scheme — functions built from elementary functions by composition, primitive recursion and minimisation — the scheme the parent re-targets from numbers to symbolic expressions.",
+   "prior_state": "Competing accounts of effective calculability (Church's thesis, Turing's machines) without one standard reference treatment of recursive definition.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Turner, Some History of Functional Programming Languages (slides)",
+     "url": "https://www.lambdadays.org/static/upload/media/1487239321204160davidturner.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Three attacks on the edge Kleene, theory of partial recursive functions (1952) -> Lisp (1960). (1) MEDIATION ATTACK via Church: Kleene's scheme grew inside Church's Princeton group, so the recursive-function channel might run through the lambda calculus after all. Answered: the parent's documents keep the channels apart — Church is cited in section 2e for notation and the function/form distinction; the recursive scheme is the paper's framing basis ('a scheme for representing the partial recursive functions'), and the independent summary of the design (Turner: 'McCarthy's model was Kleene's theory of recursive functions') names Kleene, not Church, for the model. The 1936 equivalence of the formalisms is a fact about the formalisms, not about which documents this parent consumed. Attack fails. (2) Q1 ATTACK: the scheme's impossibility flip (definability of computability) belongs to the 1930s in mathematics, not to the parent's programming problem. Conceded at evaluation: Q1 scored partial, the admission resting on Q2 (generativity — the space of computation-as-formal-system within which the parent states its basis). The concession is on the record and the score (5.5) reflects it. (3) TEXTUAL ATTACK: the 1960 paper does not name Kleene in a reference-list entry visible in its annotated text (its Kleene connection appears via the propositional apparatus and the recursive framing, with the annotator's 'reference Kleene' pointer). Answered: the channel evidence is the paper's own framing sentence plus Turner's documented summary plus McCarthy's documented study of Introduction to Metamathematics; absence of a bibliography line is weaker evidence than the framing sentence is strong — contrast the Jordan & Rumelhart at MDN case, where absence from a complete list counted against a candidate whose mechanism was also absent from the text. Here the mechanism (recursive definition of partial functions) saturates the text. Attack fails. No mediation actions taken.",
+    "at": "2026-11-25T10:04:11+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T10:03:33+00:00"
+  },
+  "ipl-information-processing-language-newell-shaw-simon-1956-1956": {
+   "id": "ipl-information-processing-language-newell-shaw-simon-1956-1956",
+   "name": "IPL — Information Processing Language (Newell, Shaw & Simon, 1956)",
+   "aliases": [],
+   "year": 1956,
+   "domain": "programming languages",
+   "type": "method",
+   "definition": "Newell, Shaw and Simon's IPL (IPL-II described at Dartmouth, 1956; IPL-V by 1960): the first list-processing language, whose list structures in memory carried the Logic Theorist and the first symbolic AI programs.",
+   "bottleneck": "Before IPL, a program could not manipulate symbolic expressions as data, because computation was numerical and machine-shaped: there was no list structure a reasoning program could be built from.",
+   "leap": "Newell, Shaw and Simon's IPL (1956) made list structures in memory the medium of symbolic computation — the Logic Theorist proved theorems of Principia Mathematica in it — establishing list processing as the substrate every later symbolic language, the parent included, builds on.",
+   "prior_state": "Numerical, machine-shaped programming; symbolic reasoning done by hand or not at all.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Three attacks on the edge IPL (1956) -> Lisp (1960). (1) MEDIATION ATTACK via the Logic Theorist: the parent might consume IPL only as the Logic Theorist's medium, making the programme the real predecessor. Answered: the parent's introduction names the list structures of Newell, Shaw and Simon directly ('list structures similar to those used by Newell, Shaw and Simon'), not their programme; the Logic Theorist was evaluated separately at this parent and rejected as instance plus motive, its mechanisms being IPL's. The channel attaches to the language, where the parent's citation puts it. Attack fails. (2) COMPONENTS ATTACK: list structures might be a mere data device inside the parent (the Student's t shape). Answered by the successor-language precedent (ALGOL 60 at Simula 67): IPL was itself a leap — the first list-processing language, with a headline result (the Logic Theorist, 1956) — whose central mechanism the parent inherits and rebuilds a language around; a predecessor language is not a subroutine inside its successor. Attack fails. (3) INSPIRATION-ONLY ATTACK: McCarthy's History says he was 'inspired by' IPL but 'did not use it' (different hardware; algebraic form preferred). Answered: the parent's own text upgrades inspiration to avowed adoption of the representation ('similar to those used by...'), and the History sentence itself gives the discrimination — the FORM was refused, the list-processing mechanism taken. That is the ancestor-modified relation. Q3 scored partial at evaluation on this record; the scoring stands. No mediation actions taken.",
+    "at": "2026-11-25T10:04:11+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T10:03:33+00:00"
   }
  },
  "edges": [
@@ -45138,6 +45260,297 @@
     "counterfactual": "Remove Quetelet's transfer and the parent's Chapter V loses its warrant: the book's entire apparatus presupposes that human measures obey the law of error, and the book itself dates that presupposition to Quetelet — the law 'was excogitated for the use of astronomers... without the slightest idea until the time of Quetelet that they might be applicable to human measures'.",
     "mediator": null,
     "evidence": "Natural Inheritance, Ch. V (Normal Variability): the law of error passage naming Quetelet as the turning point for human measures; the parent's schemes of deviation are Quetelet's application generalised. The documented route of Galton's acquaintance (Herschel's and Spottiswoode's writings on Quetelet — Stigler) carries Quetelet's own procedure and results, not a different milestone's: carriers of the candidate's work are not a mediator milestone."
+   }
+  },
+  {
+   "predecessor_id": "lambda-calculus-1936",
+   "successor_id": "lisp-1960",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Church, the parent's section 2e problem — distinguishing a function from the form that applies it, so that functions can be arguments and results — had no solution in any notation. The calculus made functions-as-values statable at all; the paper takes the solution from Church by name.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if a pre-1936 notation is produced in which functions are first-class values with formal binding and substitution, and which the parent could have taken instead."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It unblocked the whole space of function-valued computation the parent inhabits: once functions are values in a formal notation, a programming language can be designed around them — which is the parent's design.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the parent's function mechanism is shown to descend from a different source than Church's notation."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial on the author's own testimony: he took the notation and the function/form distinction, expressly not the calculus's general mechanism for defining functions ('I didn't understand the rest of the book'). The parent's recursion runs on label and conditional expressions, not on conversion — so the calculus was the path taken for the function form, not for the whole machine.",
+     "source": "ExchangeTuts: Link between lambda calculus and lambda expressions (quoting McCarthy's retrospective on Church)",
+     "falsification": "This partial rises to pass if the parent's derivations are shown to depend on conversion or on the calculus's definitional machinery beyond notation and the distinction."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse of any computation is attributable to the calculus in relation to the parent.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This fail dies on evidence that the notation cheapened some class of work by an order of magnitude."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The calculus made nothing measurable in relation to the parent; it is a notation, not a metric.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This fail dies if a measurement practice is shown to descend from it into the parent."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model the paper reasons with: binding, free and bound variables, substitution — section 2e's whole apparatus for saying what a function is.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if section 2e's apparatus is shown to be the author's independent construction merely labelled with Church's name."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: the lambda form became the standard interface for functions — the unit every later language's closures and function values implement, and the parent's own composable unit.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the parent's lambda form is shown to be a dead notation unused by its descendants."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach is the candidate's essence here: a construction of mathematical logic carried into the design of a programming language.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the transfer is shown to be nominal — the same word for a different thing."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No collapse of an experiment feedback loop is attributable to the calculus in relation to the parent.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This fail dies on evidence the notation shortened any design or programming cycle of the parent's."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Displacement, documented inside the parent itself: section 2e weighs the combinator alternative for combining functions and sets it aside ('the combinatory expressions for interesting combinations of functions tend to be lengthy and unreadable') — lambda is the notation that won the parent's own design decision.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the parent's choice is shown to have been made without the combinator comparison, or to have gone the other way in the implemented system."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the lineage of every first-class-function language passes through this node; the parent's own stored record and the graph's structure (this node already parents the Scheme line) agree.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the parent's function concept is shown to descend through a different trunk (e.g. purely through Kleene's scheme)."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversible: once functions were formal values, no subsequent language design could un-know it; the parent and all its descendants presuppose it.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if function values are shown to have been abandoned and reinvented."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T10:03:33+00:00",
+   "leap": {
+    "prior_state": "Fortran-era numerical programming and IPL-style list processing without first-class functions.",
+    "jump": "McCarthy's Lisp (CACM, 1960) introduced s-expressions, lambda notation borrowed from Church, conditional expressions and a meta-circular evaluator — the design the whole Lisp family, Scheme included, descends from.",
+    "date": 1960
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Church's calculus and the parent's section 2e has no function concept to build on: the paper's functions are lambda expressions, its eval is defined over lambda expressions, and the paper says so in terms — 'This distinction and a notation for describing it, from which we deviate trivially, is given by Church [3]'. The components-rule attack (lambda as a mere notation inside the parent) is answered by the Fisher 1918 at Fisher & Mackenzie precedent: the child's central form IS the ancestor's mechanism in new dress — the parent's leap is functions-as-data, and lambda is not a tool the parent uses but the form its functions take. Ancestor modified, not component consumed: the parent reworks the calculus (labels for recursion, an evaluator in place of conversion, dynamic binding in the implementation).",
+    "mediator": null,
+    "evidence": "Parent, section 2e ('Functions and Forms'): the Church citation [3] for the function/form distinction and the lambda notation, followed by the paper's own exposition of bound and free variables. McCarthy's retrospective confirms the channel and its exact scope: 'To use functions as arguments, one needs a notation for functions, and it seems natural to use the lambda-notation of Church. I didn't understand the rest of the book, so I wasn't tempted to try to implement his more general mechanism for defining functions' — what was taken is precisely the part that constitutes the parent's function mechanism; conversion-as-computation is what the parent's eval replaces."
+   }
+  },
+  {
+   "predecessor_id": "kleene-introduction-to-metamathematics-the-theory-of-partial-1952",
+   "successor_id": "lisp-1960",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The recursive-function theory flipped the impossibility of defining computability — in mathematics, in the 1930s. In relation to the parent, the scheme is the definitional skeleton rather than a flipped impossibility of programming: the parent's impossibility (no language for symbolic computation) is flipped by the parent itself standing on the scheme.",
+     "source": "Turner, Some History of Functional Programming Languages (Lambda Days slides)",
+     "falsification": "This partial rises if the parent's text is shown to present the scheme itself as the newly possible thing."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It unblocked the space the parent defines itself within: computation described as a formal system of function definitions, inside which a 'scheme for representing the partial recursive functions' of a new domain is a meaningful and checkable ambition.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the parent's framing is shown to be decorative — its formalism owing nothing to the recursive scheme."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the definitional basis could have been Church's conversion or Turing's machines (both live options in 1958, both engaged elsewhere in this evaluation set); the documents show the recursive scheme was the model actually taken.",
+     "source": "Turner, Some History of Functional Programming Languages (Lambda Days slides)",
+     "falsification": "This partial rises to pass if McCarthy is shown to have had no working access to the alternatives."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse in relation to the parent.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This fail dies on evidence the scheme cheapened any computation."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The scheme made nothing measurable in relation to the parent.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This fail dies if a metric descends from it into the parent."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model of definition-by-recursion the parent's sections instantiate: partial functions, predicates, definition by cases and recursion — the paper's apparatus is the scheme re-targeted at S-expressions.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the paper's apparatus is shown to be modelled on a different formalism's treatment."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The scheme is the standard interface of recursive function theory — the form in which the parent can state its basis and be understood by any reader of the literature.",
+     "source": "Turner, Some History of Functional Programming Languages (Lambda Days slides)",
+     "falsification": "This pass dies if the scheme is shown to have been one idiosyncratic treatment among equals in 1958."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain: from mathematical logic into the theory of computation and programming-language design — the parent is itself one of the transfer events.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the scheme is shown to have stayed inside logic."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed effect in relation to the parent.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This fail dies on evidence of a shortened loop."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Within the parent's own programme the recursive scheme displaced flowchart description — the paper ends by proposing 'a recursive function interpretation of flow charts' — a displacement local to the parent's line.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This partial dies if the closing proposal is shown to be unrelated to the scheme."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk of computability: the definitional line from the 1930s formalisms to programming-language semantics passes through Kleene's codification.",
+     "source": "Turner, Some History of Functional Programming Languages (Lambda Days slides)",
+     "falsification": "This pass dies if the parent's basis is shown to descend through Church's or Turing's texts alone."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversible: recursive definability as the standard of computability was never withdrawn.",
+     "source": "Turner, Some History of Functional Programming Languages (Lambda Days slides)",
+     "falsification": "This pass dies if the scheme is shown to have been superseded in substance."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T10:03:33+00:00",
+   "leap": {
+    "prior_state": "Fortran-era numerical programming and IPL-style list processing without first-class functions.",
+    "jump": "McCarthy's Lisp (CACM, 1960) introduced s-expressions, lambda notation borrowed from Church, conditional expressions and a meta-circular evaluator — the design the whole Lisp family, Scheme included, descends from.",
+    "date": 1960
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Kleene's scheme and the parent loses its stated basis: the introduction says the system 'eventually came to be based on a scheme for representing the partial recursive functions of a certain class of symbolic expressions', and the paper's closing programme is 'a recursive function interpretation of flow charts'. The components split against Church is explicit and documented: Church channels the function form and notation (section 2e), Kleene channels the definitional scheme — what a partial function is and how functions are built by recursion (Turner: 'McCarthy's model was Kleene's theory of recursive functions'). McCarthy's limiting quote about Church ('I didn't understand the rest of the book') cuts in this candidate's favour: the definitional machinery the parent runs on is not Church's conversion but the recursive scheme. The mediation attack (via Church, Kleene's own teacher and the scheme's co-founder) fails: the equivalence of the two formalisms (1936) does not merge their channels into this parent — the paper engages them as distinct sources, citing Church for notation and framing itself on the recursive scheme.",
+    "mediator": null,
+    "evidence": "Parent, Introduction (the partial-recursive-functions sentence) and final section (the recursive-function interpretation of flow charts); the paper's propositional apparatus carries the annotator's pointer 'reference Kleene'; Turner: 'McCarthy's model was Kleene's theory of recursive functions', and McCarthy studied Kleene's Introduction to Metamathematics for the theory."
+   }
+  },
+  {
+   "predecessor_id": "ipl-information-processing-language-newell-shaw-simon-1956-1956",
+   "successor_id": "lisp-1960",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before IPL, list processing as a machine language did not exist: symbolic expressions could not be manipulated by program at all. IPL flipped that — the Logic Theorist ran on it in 1956 — and the parent's whole enterprise presupposes the flip.",
+     "source": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "falsification": "This pass dies if an earlier list-processing language is produced."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It unblocked symbolic AI programming as a practice — the space the parent enters four years later: heuristic search, theorem proving and symbolic manipulation as programmable activities.",
+     "source": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "falsification": "This pass dies if IPL is shown to have remained a one-programme curiosity unused beyond its authors' group."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial on the author's own account: McCarthy expressly did not use IPL (different hardware; its form depended on an available loader) and could in principle have invented list structures independently — what the documents show is the representation taken over and avowed in the parent's text, not an absence of alternatives.",
+     "source": "Lisp (programming language) — Wikipedia (drawing on McCarthy, History of Lisp, HOPL 1979)",
+     "falsification": "This partial rises to pass if the parent's representation is shown to be IPL's in detail (cell layout, primitives) rather than 'similar to' it."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "List processing made symbolic experiments vastly cheaper than hand simulation, but no order-of-magnitude figure attaches in relation to the parent.",
+     "source": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "falsification": "This partial dies if IPL programming is shown to have been as laborious as the machine coding it replaced."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "IPL made nothing measurable in relation to the parent.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This fail dies if a metric or benchmark is shown to descend from IPL into the parent."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the working model the parent adopts: memory as list structures, expressions as linked cells — the constructive picture section 1 of the parent presupposes when it places S-expressions in the 704's memory.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the parent's memory model is shown to derive from a different source (e.g. FLPL's FORTRAN arrays)."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "List structures became a reusable representation others built on — the parent among them — though IPL itself offered no compositional interface in the parent's sense.",
+     "source": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "falsification": "This partial dies if no successor is shown to have taken up the representation."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach by 1960 was the AI field itself — broad within one domain, not yet across domains.",
+     "source": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "falsification": "This partial dies if IPL's use is shown to have been confined to the Logic Theorist alone."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "It made symbolic experiments iterable at all (the Logic Theorist's development), a large practical acceleration short of a documented loop collapse for the parent.",
+     "source": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "falsification": "This partial dies if IPL work is shown to have been slower than the hand methods it replaced."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "IPL was the incumbent symbolic language the parent displaced — the displacement is the parent's career, and in relation to the parent it is recorded as partial: IPL continued in use into the 1960s.",
+     "source": "Lisp (programming language) — Wikipedia (drawing on McCarthy, History of Lisp, HOPL 1979)",
+     "falsification": "This partial dies if IPL is shown to have already been abandoned before 1960."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk of the symbolic line: the parent's representation, and through the parent the whole Lisp family's, descends from the list-processing turn IPL made.",
+     "source": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "falsification": "This pass dies if the parent's list structures are shown to be an independent invention with the citation a courtesy."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversible: once memory could hold list-structured expressions, symbolic computation never returned to purely numerical arrays.",
+     "source": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "falsification": "This pass dies if list-structured memory is shown to have been abandoned and reinvented."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T10:03:33+00:00",
+   "leap": {
+    "prior_state": "Fortran-era numerical programming and IPL-style list processing without first-class functions.",
+    "jump": "McCarthy's Lisp (CACM, 1960) introduced s-expressions, lambda notation borrowed from Church, conditional expressions and a meta-circular evaluator — the design the whole Lisp family, Scheme included, descends from.",
+    "date": 1960
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove IPL and the parent loses the representation its introduction avows: S-expressions are represented in the 704's memory 'by list structures similar to those used by Newell, Shaw and Simon [2]'. The successor-language shape is the ALGOL 60 at Simula 67 precedent: a predecessor language whose central mechanism is consumed and reworked — the parent inherits list-structured memory and rebuilds the language around it (algebraic ambition, recursion, conditional expressions, eval). The components attack (list structures as a mere data trick inside the parent) fails because IPL was itself a leap — the first list-processing language, with a headline result (the Logic Theorist) — not a subroutine inside the parent's machinery (contrast Student's t inside Fisher's).",
+    "mediator": null,
+    "evidence": "Parent, Introduction: the list-structures sentence citing Newell, Shaw and Simon [2]. McCarthy's History (via Wikipedia/Calo): he 'was inspired by Information Processing Language, which was also based on list processing, but did not use it because it was designed for different hardware and he found an algebraic language more appealing' — inspiration with the mechanism taken and the form rebuilt, the ancestor-modified relation stated by the author himself."
    }
   }
  ],
@@ -167322,6 +167735,502 @@
     "judge_queue": [],
     "auto_merges": [],
     "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "lisp-1960": {
+   "raw_candidates": [
+    {
+     "name": "Lambda calculus",
+     "year": 1936,
+     "domain": "mathematical logic",
+     "lens": "L2",
+     "type": "theory",
+     "definition": "Church's lambda calculus (1936; The Calculi of Lambda-Conversion, 1941): a formal system of functions defined by lambda abstraction, with binding and substitution — the source of the parent's lambda notation and of its distinction between functions and forms.",
+     "causal_claim": "The lambda calculus directly enabled Lisp's leap by supplying its function concept: the parent's section 2e states 'This distinction and a notation for describing it, from which we deviate trivially, is given by Church [3]', and the parent's functions are lambda expressions over which its eval is defined.",
+     "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    },
+    {
+     "name": "IPL — Information Processing Language (Newell, Shaw & Simon, 1956)",
+     "year": 1956,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Newell, Shaw and Simon's IPL (IPL-II described at Dartmouth, 1956; IPL-V by 1960): the first list-processing language, whose list structures in memory carried the Logic Theorist and the first symbolic AI programs.",
+     "causal_claim": "IPL directly enabled Lisp's leap by supplying the list-structure representation the parent adopts: the parent's introduction states its S-expressions are represented in the memory of the IBM 704 'by list structures similar to those used by Newell, Shaw and Simon [2]'.",
+     "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    },
+    {
+     "name": "Kleene, Introduction to Metamathematics — the theory of partial recursive functions (1952)",
+     "year": 1952,
+     "domain": "mathematical logic",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "Kleene's codification (1952) of the theory of (partial) recursive functions: functions defined from elementary functions by composition, recursion and minimisation — the definitional scheme of computability McCarthy's formalism re-targets.",
+     "causal_claim": "Kleene's theory directly enabled Lisp's leap by supplying its definitional skeleton: the parent's introduction states the system 'came to be based on a scheme for representing the partial recursive functions of a certain class of symbolic expressions', and its model was Kleene's theory of recursive functions (Turner).",
+     "source_title": "Turner, Some History of Functional Programming Languages (slides)",
+     "source_url": "https://www.lambdadays.org/static/upload/media/1487239321204160davidturner.pdf"
+    },
+    {
+     "name": "McCarthy, Programs with Common Sense — the Advice Taker proposal (1958)",
+     "year": 1958,
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "type": "theory",
+     "definition": "McCarthy's November 1958 proposal of the Advice Taker: a program instructed in declarative and imperative sentences of a formal language, deciding by deduction — the system the parent was built to serve.",
+     "causal_claim": "The Advice Taker proposal directly enabled Lisp's leap by posing the problem it answers: the parent's first paragraph states the system 'was designed to facilitate experiments with a proposed system called the Advice Taker', whose main requirement was 'a programming system for manipulating expressions representing formalized declarative and imperative sentences'.",
+     "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    },
+    {
+     "name": "The Logic Theorist (Newell, Shaw & Simon, 1956)",
+     "year": 1956,
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "type": "method",
+     "definition": "Newell, Shaw and Simon's Logic Theorist (1956), the first AI program, which proved theorems of Principia Mathematica in IPL — the existence proof that machines could manipulate symbolic expressions to reason.",
+     "causal_claim": "The Logic Theorist directly enabled Lisp's leap by demonstrating, four years earlier, that list-processed symbolic expressions could carry machine reasoning — the demonstration that made a symbolic-processing language worth building.",
+     "source_title": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "source_url": "https://federicocalo.dev/en/blog/the-lisp-of-john-mccarthy-when-a-search-language-became-the-language-of-ai"
+    },
+    {
+     "name": "FORTRAN (Backus, 1957)",
+     "year": 1957,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "method",
+     "definition": "Backus's FORTRAN (1957): the first algebraic high-level language — programs written as formulas rather than machine steps — whose example set the parent's author the ambition of an algebraic list-processing language.",
+     "causal_claim": "FORTRAN directly enabled Lisp's leap by supplying the model of algebraic notation: McCarthy's wish (History of Lisp) was for a list-processing language in algebraic form on FORTRAN's example, after hearing IPL described at Dartmouth in 1956 — 'FORTRAN's idea of writing programs in algebraic form struck him as attractive' (Calo).",
+     "source_title": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "source_url": "https://federicocalo.dev/en/blog/the-lisp-of-john-mccarthy-when-a-search-language-became-the-language-of-ai"
+    },
+    {
+     "name": "Combinatory logic (Curry & Feys, 1958)",
+     "year": 1958,
+     "domain": "mathematical logic",
+     "lens": "L6",
+     "type": "theory",
+     "definition": "Curry's combinatory logic (systematised in Curry & Feys, Combinatory Logic Vol. I, 1958): functions combined by variable-free operators (combinators) — the alternative machinery for functions-as-values the parent's text weighs.",
+     "causal_claim": "Combinatory logic directly enabled Lisp's leap by being the alternative its section 2e considers for combining functions without variables — and sets aside ('the combinatory expressions for interesting combinations of functions tend to be lengthy and unreadable'), fixing lambda as the parent's choice.",
+     "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    },
+    {
+     "name": "ALGOL 60 (1960)",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "method",
+     "definition": "The ALGOL 60 Report (Naur et al., May 1960): the algorithmic language whose committee received — and rejected — the parent author's proposal for conditional expressions, adopting Backus's if-then-else instead (parent, footnote to section 2c).",
+     "causal_claim": "ALGOL 60 directly enabled Lisp's leap by being the coeval language-design forum in which the parent's conditional expressions were contested and refused — the refusal recorded in the parent's own footnote.",
+     "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    },
+    {
+     "name": "FLPL — FORTRAN List Processing Language (Gelernter, 1958)",
+     "year": 1958,
+     "domain": "programming languages",
+     "lens": "L7",
+     "type": "method",
+     "definition": "Gelernter's FLPL (IBM, 1958; built by Gelernter and Gerberich on Rochester's and McCarthy's advice): list processing as a package of FORTRAN subroutines for the Geometry Theorem Machine — no conditional expressions, no recursion, abandoned lists deleted by hand.",
+     "causal_claim": "FLPL directly enabled Lisp's leap by being the predecessor attempt whose documented lacks define it: a subroutine package inside FORTRAN could not recurse, could not branch on conditions, and could not reclaim storage — the three lacks the parent's design (recursive S-functions, conditional expressions, a language of its own) answers point for point.",
+     "source_title": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "source_url": "https://federicocalo.dev/en/blog/the-lisp-of-john-mccarthy-when-a-search-language-became-the-language-of-ai"
+    },
+    {
+     "name": "IBM 704 computer (1954)",
+     "year": 1954,
+     "domain": "computing machines",
+     "lens": "L9",
+     "type": "device",
+     "definition": "IBM's 704 (1954): the stored-program scientific computer (index registers, 36-bit words with address and decrement fields) for which the parent system was developed at MIT — the machine whose instruction-word fields named the parent's car and cdr.",
+     "causal_claim": "The IBM 704 directly enabled Lisp's leap by being the machine it was developed for (the parent's first sentence) and consumed: its list structures live in 704 memory, and car/cdr are the 'contents of the address/decrement part of register' of its instruction format.",
+     "source_title": "Lisp (programming language) — Wikipedia (drawing on McCarthy, History of Lisp, HOPL 1979)",
+     "source_url": "https://en.wikipedia.org/wiki/Lisp_programming_language"
+    },
+    {
+     "name": "Turing's universal machine (1936)",
+     "year": 1936,
+     "domain": "mathematical logic / computability",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "Turing's 1936 universal machine: a single machine that reads a description of any other machine and does what it would do — the concept of the interpreter as a universal function.",
+     "causal_claim": "Turing's universal machine directly enabled Lisp's leap by supplying the theoretical role of its central construction: the parent describes its universal S-function apply as playing 'the theoretical role of a universal Turing machine and the practical role of an interpreter'.",
+     "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    },
+    {
+     "name": "Russell's hand-coded eval interpreter for the IBM 704 (1959)",
+     "year": 1959,
+     "domain": "programming languages",
+     "lens": "L20",
+     "type": "method",
+     "definition": "Steve Russell's 1959-60 hand translation of the parent's eval function into IBM 704 machine code — the first Lisp interpreter, produced when Russell, a student of the parent's author, saw that eval could itself be programmed.",
+     "causal_claim": "Russell's interpreter directly enabled Lisp's leap by realising it: the parent's author records his surprise ('Steve Russell said, look, why don't I program this eval... and I said to him, ho ho, you're confusing theory with practice') — the hand-coded eval turned the paper's formalism into the running system the paper reports.",
+     "source_title": "Lisp (programming language) — Wikipedia (drawing on McCarthy, History of Lisp, HOPL 1979)",
+     "source_url": "https://en.wikipedia.org/wiki/Lisp_programming_language"
+    },
+    {
+     "name": "McCarthy's conditional-expression proposal to the ALGOL committee (1959)",
+     "year": 1959,
+     "domain": "programming languages",
+     "lens": "L20",
+     "type": "method",
+     "definition": "McCarthy's 1959 CACM letter proposing conditional expressions for what became ALGOL 60 — demoted by the editor to a letter, rejected for ALGOL ('no new mathematical notation'), and published a year before the parent, whose section 2c presents the conditional expression as its own new device.",
+     "causal_claim": "The 1959 proposal directly enabled Lisp's leap by first publishing the parent's signature device — the conditional expression, 'believed to be new' (parent, section 2) — in the forum where ALGOL refused it.",
+     "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+     "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    },
+    {
+     "name": "The LISP Programmer's Manual (McCarthy, 1960)",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L13",
+     "type": "other",
+     "definition": "The MIT Computation Center's LISP Programmer's Manual (1960): the reference document of the implemented LISP 1 system, companion to the parent paper.",
+     "causal_claim": "The manual directly enabled Lisp's leap by documenting the implemented system the parent expounds — the two documents are the 1960 system's paper and manual faces.",
+     "source_title": "Lisp (programming language) — Wikipedia (drawing on McCarthy, History of Lisp, HOPL 1979)",
+     "source_url": "https://en.wikipedia.org/wiki/Lisp_programming_language"
+    },
+    {
+     "name": "Dartmouth Summer Research Project on Artificial Intelligence — the 1955 proposal and 1956 workshop",
+     "year": 1955,
+     "domain": "artificial intelligence / institutions",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Dartmouth proposal (McCarthy, Minsky, Rochester, Shannon, 1955) and the 1956 workshop it funded: the founding programme of AI, at which Newell, Shaw and Simon described IPL-II and the parent's author formed the wish for an algebraic list-processing language.",
+     "causal_claim": "The Dartmouth programme directly enabled Lisp's leap by being the occasion and the institution of its conception: the wish for the language arose at the 1956 workshop (History of Lisp), in the room where IPL was described.",
+     "source_title": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+     "source_url": "https://federicocalo.dev/en/blog/the-lisp-of-john-mccarthy-when-a-search-language-became-the-language-of-ai"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "lambda-calculus-1936",
+      "candidate": {
+       "name": "Lambda calculus",
+       "year": 1936,
+       "domain": "mathematical logic",
+       "lens": "L2",
+       "type": "theory",
+       "definition": "Church's lambda calculus (1936; The Calculi of Lambda-Conversion, 1941): a formal system of functions defined by lambda abstraction, with binding and substitution — the source of the parent's lambda notation and of its distinction between functions and forms.",
+       "causal_claim": "The lambda calculus directly enabled Lisp's leap by supplying its function concept: the parent's section 2e states 'This distinction and a notation for describing it, from which we deviate trivially, is given by Church [3]', and the parent's functions are lambda expressions over which its eval is defined.",
+       "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+       "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Lambda calculus"
+      ],
+      "matched_node_id": "lambda-calculus-1936",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ipl-information-processing-language-newell-shaw-simon-1956-1956",
+      "candidate": {
+       "name": "IPL — Information Processing Language (Newell, Shaw & Simon, 1956)",
+       "year": 1956,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Newell, Shaw and Simon's IPL (IPL-II described at Dartmouth, 1956; IPL-V by 1960): the first list-processing language, whose list structures in memory carried the Logic Theorist and the first symbolic AI programs.",
+       "causal_claim": "IPL directly enabled Lisp's leap by supplying the list-structure representation the parent adopts: the parent's introduction states its S-expressions are represented in the memory of the IBM 704 'by list structures similar to those used by Newell, Shaw and Simon [2]'.",
+       "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+       "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "IPL — Information Processing Language (Newell, Shaw & Simon, 1956)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "kleene-introduction-to-metamathematics-the-theory-of-partial-1952",
+      "candidate": {
+       "name": "Kleene, Introduction to Metamathematics — the theory of partial recursive functions (1952)",
+       "year": 1952,
+       "domain": "mathematical logic",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "Kleene's codification (1952) of the theory of (partial) recursive functions: functions defined from elementary functions by composition, recursion and minimisation — the definitional scheme of computability McCarthy's formalism re-targets.",
+       "causal_claim": "Kleene's theory directly enabled Lisp's leap by supplying its definitional skeleton: the parent's introduction states the system 'came to be based on a scheme for representing the partial recursive functions of a certain class of symbolic expressions', and its model was Kleene's theory of recursive functions (Turner).",
+       "source_title": "Turner, Some History of Functional Programming Languages (slides)",
+       "source_url": "https://www.lambdadays.org/static/upload/media/1487239321204160davidturner.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Kleene, Introduction to Metamathematics — the theory of partial recursive functions (1952)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mccarthy-programs-with-common-sense-the-advice-taker-proposa-1958",
+      "candidate": {
+       "name": "McCarthy, Programs with Common Sense — the Advice Taker proposal (1958)",
+       "year": 1958,
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "type": "theory",
+       "definition": "McCarthy's November 1958 proposal of the Advice Taker: a program instructed in declarative and imperative sentences of a formal language, deciding by deduction — the system the parent was built to serve.",
+       "causal_claim": "The Advice Taker proposal directly enabled Lisp's leap by posing the problem it answers: the parent's first paragraph states the system 'was designed to facilitate experiments with a proposed system called the Advice Taker', whose main requirement was 'a programming system for manipulating expressions representing formalized declarative and imperative sentences'.",
+       "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+       "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "McCarthy, Programs with Common Sense — the Advice Taker proposal (1958)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-logic-theorist-newell-shaw-simon-1956-1956",
+      "candidate": {
+       "name": "The Logic Theorist (Newell, Shaw & Simon, 1956)",
+       "year": 1956,
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "type": "method",
+       "definition": "Newell, Shaw and Simon's Logic Theorist (1956), the first AI program, which proved theorems of Principia Mathematica in IPL — the existence proof that machines could manipulate symbolic expressions to reason.",
+       "causal_claim": "The Logic Theorist directly enabled Lisp's leap by demonstrating, four years earlier, that list-processed symbolic expressions could carry machine reasoning — the demonstration that made a symbolic-processing language worth building.",
+       "source_title": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+       "source_url": "https://federicocalo.dev/en/blog/the-lisp-of-john-mccarthy-when-a-search-language-became-the-language-of-ai"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "The Logic Theorist (Newell, Shaw & Simon, 1956)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fortran-backus-1957-1957",
+      "candidate": {
+       "name": "FORTRAN (Backus, 1957)",
+       "year": 1957,
+       "domain": "programming languages",
+       "lens": "L6",
+       "type": "method",
+       "definition": "Backus's FORTRAN (1957): the first algebraic high-level language — programs written as formulas rather than machine steps — whose example set the parent's author the ambition of an algebraic list-processing language.",
+       "causal_claim": "FORTRAN directly enabled Lisp's leap by supplying the model of algebraic notation: McCarthy's wish (History of Lisp) was for a list-processing language in algebraic form on FORTRAN's example, after hearing IPL described at Dartmouth in 1956 — 'FORTRAN's idea of writing programs in algebraic form struck him as attractive' (Calo).",
+       "source_title": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+       "source_url": "https://federicocalo.dev/en/blog/the-lisp-of-john-mccarthy-when-a-search-language-became-the-language-of-ai"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "FORTRAN (Backus, 1957)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "combinatory-logic-curry-feys-1958-1958",
+      "candidate": {
+       "name": "Combinatory logic (Curry & Feys, 1958)",
+       "year": 1958,
+       "domain": "mathematical logic",
+       "lens": "L6",
+       "type": "theory",
+       "definition": "Curry's combinatory logic (systematised in Curry & Feys, Combinatory Logic Vol. I, 1958): functions combined by variable-free operators (combinators) — the alternative machinery for functions-as-values the parent's text weighs.",
+       "causal_claim": "Combinatory logic directly enabled Lisp's leap by being the alternative its section 2e considers for combining functions without variables — and sets aside ('the combinatory expressions for interesting combinations of functions tend to be lengthy and unreadable'), fixing lambda as the parent's choice.",
+       "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+       "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Combinatory logic (Curry & Feys, 1958)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "flpl-fortran-list-processing-language-gelernter-1958-1958",
+      "candidate": {
+       "name": "FLPL — FORTRAN List Processing Language (Gelernter, 1958)",
+       "year": 1958,
+       "domain": "programming languages",
+       "lens": "L7",
+       "type": "method",
+       "definition": "Gelernter's FLPL (IBM, 1958; built by Gelernter and Gerberich on Rochester's and McCarthy's advice): list processing as a package of FORTRAN subroutines for the Geometry Theorem Machine — no conditional expressions, no recursion, abandoned lists deleted by hand.",
+       "causal_claim": "FLPL directly enabled Lisp's leap by being the predecessor attempt whose documented lacks define it: a subroutine package inside FORTRAN could not recurse, could not branch on conditions, and could not reclaim storage — the three lacks the parent's design (recursive S-functions, conditional expressions, a language of its own) answers point for point.",
+       "source_title": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+       "source_url": "https://federicocalo.dev/en/blog/the-lisp-of-john-mccarthy-when-a-search-language-became-the-language-of-ai"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "FLPL — FORTRAN List Processing Language (Gelernter, 1958)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-704-computer-1954-1954",
+      "candidate": {
+       "name": "IBM 704 computer (1954)",
+       "year": 1954,
+       "domain": "computing machines",
+       "lens": "L9",
+       "type": "device",
+       "definition": "IBM's 704 (1954): the stored-program scientific computer (index registers, 36-bit words with address and decrement fields) for which the parent system was developed at MIT — the machine whose instruction-word fields named the parent's car and cdr.",
+       "causal_claim": "The IBM 704 directly enabled Lisp's leap by being the machine it was developed for (the parent's first sentence) and consumed: its list structures live in 704 memory, and car/cdr are the 'contents of the address/decrement part of register' of its instruction format.",
+       "source_title": "Lisp (programming language) — Wikipedia (drawing on McCarthy, History of Lisp, HOPL 1979)",
+       "source_url": "https://en.wikipedia.org/wiki/Lisp_programming_language"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "IBM 704 computer (1954)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "turing-s-universal-machine-1936-1936",
+      "candidate": {
+       "name": "Turing's universal machine (1936)",
+       "year": 1936,
+       "domain": "mathematical logic / computability",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "Turing's 1936 universal machine: a single machine that reads a description of any other machine and does what it would do — the concept of the interpreter as a universal function.",
+       "causal_claim": "Turing's universal machine directly enabled Lisp's leap by supplying the theoretical role of its central construction: the parent describes its universal S-function apply as playing 'the theoretical role of a universal Turing machine and the practical role of an interpreter'.",
+       "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+       "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Turing's universal machine (1936)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "russell-s-hand-coded-eval-interpreter-for-the-ibm-704-1959-1959",
+      "candidate": {
+       "name": "Russell's hand-coded eval interpreter for the IBM 704 (1959)",
+       "year": 1959,
+       "domain": "programming languages",
+       "lens": "L20",
+       "type": "method",
+       "definition": "Steve Russell's 1959-60 hand translation of the parent's eval function into IBM 704 machine code — the first Lisp interpreter, produced when Russell, a student of the parent's author, saw that eval could itself be programmed.",
+       "causal_claim": "Russell's interpreter directly enabled Lisp's leap by realising it: the parent's author records his surprise ('Steve Russell said, look, why don't I program this eval... and I said to him, ho ho, you're confusing theory with practice') — the hand-coded eval turned the paper's formalism into the running system the paper reports.",
+       "source_title": "Lisp (programming language) — Wikipedia (drawing on McCarthy, History of Lisp, HOPL 1979)",
+       "source_url": "https://en.wikipedia.org/wiki/Lisp_programming_language"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Russell's hand-coded eval interpreter for the IBM 704 (1959)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mccarthy-s-conditional-expression-proposal-to-the-algol-comm-1959",
+      "candidate": {
+       "name": "McCarthy's conditional-expression proposal to the ALGOL committee (1959)",
+       "year": 1959,
+       "domain": "programming languages",
+       "lens": "L20",
+       "type": "method",
+       "definition": "McCarthy's 1959 CACM letter proposing conditional expressions for what became ALGOL 60 — demoted by the editor to a letter, rejected for ALGOL ('no new mathematical notation'), and published a year before the parent, whose section 2c presents the conditional expression as its own new device.",
+       "causal_claim": "The 1959 proposal directly enabled Lisp's leap by first publishing the parent's signature device — the conditional expression, 'believed to be new' (parent, section 2) — in the forum where ALGOL refused it.",
+       "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+       "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "McCarthy's conditional-expression proposal to the ALGOL committee (1959)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dartmouth-summer-research-project-on-artificial-intelligence-1955",
+      "candidate": {
+       "name": "Dartmouth Summer Research Project on Artificial Intelligence — the 1955 proposal and 1956 workshop",
+       "year": 1955,
+       "domain": "artificial intelligence / institutions",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Dartmouth proposal (McCarthy, Minsky, Rochester, Shannon, 1955) and the 1956 workshop it funded: the founding programme of AI, at which Newell, Shaw and Simon described IPL-II and the parent's author formed the wish for an algebraic list-processing language.",
+       "causal_claim": "The Dartmouth programme directly enabled Lisp's leap by being the occasion and the institution of its conception: the wish for the language arose at the 1956 workshop (History of Lisp), in the room where IPL was described.",
+       "source_title": "Calo, The Lisp of John McCarthy: when a search language became the language of AI (from McCarthy's 1979 History and the 1960 paper)",
+       "source_url": "https://federicocalo.dev/en/blog/the-lisp-of-john-mccarthy-when-a-search-language-became-the-language-of-ai"
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Dartmouth Summer Research Project on Artificial Intelligence — the 1955 proposal and 1956 workshop"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "ALGOL 60 (1960)",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L6",
+       "type": "method",
+       "definition": "The ALGOL 60 Report (Naur et al., May 1960): the algorithmic language whose committee received — and rejected — the parent author's proposal for conditional expressions, adopting Backus's if-then-else instead (parent, footnote to section 2c).",
+       "causal_claim": "ALGOL 60 directly enabled Lisp's leap by being the coeval language-design forum in which the parent's conditional expressions were contested and refused — the refusal recorded in the parent's own footnote.",
+       "source_title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
+       "source_url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+      },
+      "reason": "dated on/after parent year 1960"
+     },
+     {
+      "candidate": {
+       "name": "The LISP Programmer's Manual (McCarthy, 1960)",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L13",
+       "type": "other",
+       "definition": "The MIT Computation Center's LISP Programmer's Manual (1960): the reference document of the implemented LISP 1 system, companion to the parent paper.",
+       "causal_claim": "The manual directly enabled Lisp's leap by documenting the implemented system the parent expounds — the two documents are the 1960 system's paper and manual faces.",
+       "source_title": "Lisp (programming language) — Wikipedia (drawing on McCarthy, History of Lisp, HOPL 1979)",
+       "source_url": "https://en.wikipedia.org/wiki/Lisp_programming_language"
+      },
+      "reason": "dated on/after parent year 1960"
+     }
+    ],
     "prefiltered": []
    },
    "judge_queue": [],

@@ -1390,3 +1390,92 @@
   "expansions_done": 81
  }
 }
+{
+ "ts": "2026-11-25T10:04:46.513847+00:00",
+ "session": "run session 36 (v4), expansion 2 of 2",
+ "kind": "expansion",
+ "parent": "lisp-1960",
+ "parent_name": "Lisp (McCarthy, 1960)",
+ "raw": 15,
+ "dry_notes": "19 of 23 lenses dry or shortfall, recorded in work/dry_notes_lisp-1960.json: shortfalls L1 (1 \u2014 Kleene; Church filed at L2 as the ancestor), L2 (2 \u2014 lambda calculus, IPL), L4 (2 \u2014 Advice Taker proposal, Logic Theorist), L9 (1 \u2014 the IBM 704), L19 (1 \u2014 Turing; Ershov's operator algorithms 1958 surveyed as the Soviet parallel and NOT proposed, no channel in the parent's documents), L20 (2 \u2014 Russell's implementation, the 1959 conditional-expression letter), L21 (1 \u2014 Dartmouth; Project MAC considered and EXCLUDED on chronology, founded 1963, three years after the parent); dry L5 (the obstruction diagnoses are FLPL's and IPL's documented lacks, filed at L7/L2), L8 (no dataset consumed; programs are the parent's medium), L10, L11 (the production act is Russell's implementation, filed at L20), L12 (the programmability layer for the parent's line is FLPL at L7; the parent itself is the layer), L14 (equipment = the 704, filed at L9), L15, L16 (no external standard implemented), L17 (no benchmark registered the parent in 1960), L18, L22 (timeliness conditions name no separable artifact). Raw 15 against raw_target 140 \u2014 the bounded-world pattern for a single 1960 paper. Resolve: 13 distinct, 1 matched existing (Lambda calculus), judge queue 0, 2 dropped (coeval), 0 prefiltered.",
+ "date_dropped": [
+  "ALGOL 60 (1960) \u2014 coeval with the parent under the year-granularity bound (sessions 27-35 structural fact, applied as designed, never re-dated). Structural note: this is the junction where the documented traffic runs between the two designs in the same season \u2014 the parent's own footnote records that its author's conditional-expression proposal was rejected by the ALGOL process ('no new mathematical notation') and that ALGOL's if-then-else was suggested by Backus. The pair is inexpressible in the graph as designed; the traffic is recorded here and in the 1959 letter's evaluation.",
+  "The LISP Programmer's Manual (MIT Computation Center, 1960) \u2014 coeval sibling document: the implemented system's manual face, the paper's companion, not its predecessor."
+ ],
+ "distinct": 13,
+ "evaluated": 13,
+ "survivors": [
+  {
+   "name": "Lambda calculus",
+   "id": "lambda-calculus-1936",
+   "score": 6.0,
+   "kind": "link",
+   "note": "Ancestor modified, on the parent's own citation: section 2e takes the function/form distinction and the lambda notation from Church [3] ('from which we deviate trivially'), and the parent's eval is defined over lambda expressions. The components-rule attack is answered by the Fisher 1918 at Fisher & Mackenzie precedent \u2014 the child's central form IS the ancestor's mechanism in new dress; what the parent replaces is conversion-as-computation (eval instead), and its implementation deviates further (dynamic binding), all recorded in verification. McCarthy's limiting retrospective ('I didn't understand the rest of the book') is on the record and caps Q3 at partial. The graph's long-carried unlinked node (admitted at Scheme's expansion) now parents the Lisp line as well \u2014 a convergence."
+  },
+  {
+   "name": "IPL \u2014 Information Processing Language (Newell, Shaw & Simon, 1956)",
+   "id": "ipl-information-processing-language-newell-shaw-simon-1956-1956",
+   "score": 5.5,
+   "kind": "new",
+   "note": "Successor-language shape (ALGOL 60 at Simula 67): the parent's introduction avows S-expressions represented in the 704's memory 'by list structures similar to those used by Newell, Shaw and Simon [2]'. IPL was itself a leap (first list-processing language; the Logic Theorist ran on it), and the parent inherits its central data mechanism while rebuilding the language around it \u2014 algebraic ambition, recursion, conditionals, eval. McCarthy's History discriminates the relation himself: inspired by IPL, did not use it (different hardware, loader-bound form) \u2014 the form refused, the mechanism taken. Verification answers the Logic Theorist mediation attack (the paper names the list structures, not the programme) and the components attack."
+  },
+  {
+   "name": "Kleene, Introduction to Metamathematics \u2014 the theory of partial recursive functions (1952)",
+   "id": "kleene-introduction-to-metamathematics-the-theory-of-partial-1952",
+   "score": 5.5,
+   "kind": "new",
+   "note": "Components split against Church, recorded explicitly: Church channels the function form and notation; Kleene channels the definitional scheme \u2014 the parent's introduction states the system 'came to be based on a scheme for representing the partial recursive functions of a certain class of symbolic expressions', and Turner summarises 'McCarthy's model was Kleene's theory of recursive functions'. Q1 scored partial on the record (the scheme's flip belongs to 1930s mathematics); admission rests on Q2. Verification answers the via-Church mediation attack (equivalence of the formalisms does not merge their channels into this parent) and the textual attack (the mechanism saturates the paper's framing even where a bibliography line is not visible in the annotated text)."
+  }
+ ],
+ "rejected": 10,
+ "mediated": 0,
+ "rejections_of_note": [
+  {
+   "name": "Turing's universal machine (1936) \u2014 scored 5.0",
+   "reason": "Fail-closed partial on directness \u2014 the session's sharpest negative. The parent's own sentence gives the candidate its best claim ('apply plays the theoretical role of a universal Turing machine and the practical role of an interpreter'), and the sentence states the relation as a ROLE: what apply is built from is recursive S-functions (Kleene's channel) over lambda forms (Church's channel); no Turing mechanism (tape, machine table) is instantiated anywhere in the paper. Analogy is not consumption (the confounding-at-Yates rule). High question scores, failed channel \u2014 the Gauss-at-Galton shape."
+  },
+  {
+   "name": "IBM 704 computer (1954)",
+   "reason": "Fail-closed partial \u2014 consumed substrate, honestly recorded: the paper's first sentence develops the system 'for the IBM 704 computer' and car/cdr are the machine's address/decrement fields. But the leap is a design the paper itself declares 'independent of the IBM 704 computer, or of any other electronic computer'; the machine is the occasion and the representation's residue, not the precondition (contrast V100 at GPT-3, a capability jump the run demonstrably required at scale). Substrate guidance applied: the SPECIFIC enabling step must be the candidate's, and here the enabling steps are the formalism's."
+  },
+  {
+   "name": "FLPL \u2014 FORTRAN List Processing Language (Gelernter, 1958)",
+   "reason": "Fail-closed partial \u2014 predecessor-in-experience, defined-against in design: its documented lacks (no recursion, no conditional expressions, manual list deletion) are the parent's negative space, and the author's advisory experience of it is biographical channel; but no FLPL mechanism is consumed \u2014 the parent starts over with S-expressions rather than extending the subroutine package."
+  },
+  {
+   "name": "FORTRAN (Backus, 1957)",
+   "reason": "Fail-closed partial \u2014 milieu plus the abandoned path: FORTRAN's algebraic form was the documented inspiration for the wish (Dartmouth 1956, per the History), but the ambition's vehicle was the M-expression design, discarded the moment S-expression eval was implemented. The parent that exists cites no FORTRAN artifact and consumes no FORTRAN mechanism; its surviving form defines itself against the algebraic-notation plan."
+  },
+  {
+   "name": "McCarthy, Programs with Common Sense \u2014 the Advice Taker proposal (1958)",
+   "reason": "Fail-closed partial \u2014 the strongest problem-side candidate: the parent's first paragraph states it was designed to facilitate experiments with the Advice Taker. But its vocabulary (sentences, deduction) is not the parent's vocabulary (S-functions, eval); discriminated from Bateson at Fisher 1918, whose formulation the child computes in \u2014 here the child computes in nothing of the proposal's. Purpose is motive, filed by the parent itself as reference [1], its motivation."
+  },
+  {
+   "name": "The Logic Theorist (Newell, Shaw & Simon, 1956)",
+   "reason": "Instance plus motive (the Sears-at-Howard shape): the demonstration that made symbolic computation vivid and public; its mechanisms are IPL's, admitted separately at this parent \u2014 double-counting them here would violate the components discipline."
+  },
+  {
+   "name": "McCarthy's conditional-expression proposal to the ALGOL committee (1959)",
+   "reason": "Component of the parent published early \u2014 directness PASS recorded, gate failed on Q1/Q2 (the Dickson-at-Galton shape): the parent's section 2c claims the conditional expression as its own novelty ('the notion of conditional expression is believed to be new'); the 1959 CACM letter is the same author's prior publication of the parent's signature device, rejected by the ALGOL process (the parent's own footnote preserves the episode). A component standing in a letter is not a predecessor."
+  },
+  {
+   "name": "Russell's hand-coded eval interpreter for the IBM 704 (1959)",
+   "reason": "The parent's own production: Russell's hand-coding of eval is the parent system being born (the author's recorded surprise \u2014 'ho ho, you're confusing theory with practice' \u2014 marks it as the parent's internal realisation event). Ancestry and production are different relations; recorded in full as the latter."
+  },
+  {
+   "name": "Combinatory logic (Curry & Feys, 1958)",
+   "reason": "Directness FAIL \u2014 compared and set aside in the parent's own text: section 2e describes the combinator alternative fairly and refuses it ('the combinatory expressions for interesting combinations of functions tend to be lengthy and unreadable'). A not-consumed finding from the primary text; the refusal also does positive work in the Church edge's Q10 (displacement documented inside the parent)."
+  },
+  {
+   "name": "Dartmouth Summer Research Project on Artificial Intelligence \u2014 the 1955 proposal and 1956 workshop",
+   "reason": "Fail-closed partial \u2014 occasion without a consumed artifact (decomposition rule): the institution's carried artifact into this line is IPL, admitted on its own documents; the proposal names the field, not list processing. Also recorded at L21: the brief's Project MAC prompt fails on chronology \u2014 Project MAC was founded in 1963, three years AFTER the parent; a descendant institution cannot be decomposed into a predecessor. The MIT AI group is the parent's own home (self-carriage), not proposed."
+  }
+ ],
+ "notes": "Grounding: the parent's own text read directly (Fermat's Library annotated edition) \u2014 Introduction (the Advice Taker purpose [1]; the partial-recursive-functions basis; apply's Turing sentence; the Newell-Shaw-Simon list-structures sentence [2]), section 2 (the conditional expression 'believed to be new'; the ALGOL footnote: the author's proposal demoted to a CACM letter, August 1959, 'rejected for Algol 60'), section 2e (the Church citation [3] and the combinators refusal); McCarthy's retrospective on Church via ExchangeTuts; the History of Lisp record (IPL inspiration and non-use; FLPL's lacks; Russell's implementation; the Dartmouth 1956 wish) via Wikipedia and Calo; Turner for the Kleene model claim. Parent stored fields verified COMPLETE before evaluation (no session-31 defect here). Brief corrections recorded: (1) Project MAC postdates the parent (1963) and was excluded at the scout, not evaluated; (2) Lisp's actual depth is 5 and its pre-existing edges run to Scheme 1975, Smalltalk-80 and Smalltalk-72 \u2014 Elman-line nodes do not link to it; (3) the lambda-calculus node already existed (depth 5, admitted at Scheme's expansion), so Church entered as a LINK, not a new node. Verification: all three survivors provisional after three attacks each; the notation-only attack on Church, the Logic Theorist mediation attack on IPL, and the via-Church mediation attack on Kleene are the session's verification records. InstructGPT/RLHF flag not surfaced.",
+ "totals_after": {
+  "nodes": 186,
+  "edges": 236,
+  "budget": "186/2000",
+  "expansions_done": 82
+ }
+}
