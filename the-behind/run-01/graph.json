@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T07:38:57+00:00",
-  "expansions_done": 63,
-  "raw_candidates_seen": 3109,
+  "updated_at": "2026-11-25T07:47:47+00:00",
+  "expansions_done": 64,
+  "raw_candidates_seen": 3128,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -14999,6 +14999,91 @@
     "name": "Pre-train, Prompt, and Predict: A Survey of Prompting Methods (Liu et al., 2021)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T07:38:20+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "AI Dungeon (Latitude, 2019)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Synthetic media misuse wave (2019)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Hugging Face model hub (2019)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Google Cloud Vision API (2016)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "IBM Watson Developer Cloud APIs (2014)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Algorithmia model marketplace (2013)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Microsoft Azure cloud platform (2010)",
+    "reason": "mediated_via: Microsoft-OpenAI partnership (2019)",
+    "at": "2026-11-25T07:47:21+00:00",
+    "mediated_via": "Microsoft-OpenAI partnership (2019)"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "JSON (RFC 4627)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "OpenAPI specification",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Stripe API platform (2011)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Twilio API (2008)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Amazon Web Services (2006)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "OpenAI",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:47:21+00:00"
+   },
+   {
+    "parent_id": "hosted-llm-apis-openai-api-2020",
+    "name": "Microsoft-OpenAI partnership (2019)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T07:47:21+00:00"
    }
   ]
  },
@@ -15197,7 +15282,7 @@
    "prior_state": "Downloadable checkpoints for small models; in-house serving for large ones.",
    "status": "provisional",
    "depth": 1,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -19413,6 +19498,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T07:38:20+00:00"
+  },
+  "gpt-2-staged-release-openai-2019-2019": {
+   "id": "gpt-2-staged-release-openai-2019-2019",
+   "name": "GPT-2 staged release (OpenAI, 2019)",
+   "aliases": [],
+   "year": 2019,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "OpenAI's 2019 policy of releasing GPT-2 in stages (117M in February, full 1.5B in November 2019) over misuse concerns - the staged-download distribution model for frontier language models.",
+   "bottleneck": "Before the GPT-2 staged release, frontier models were simply published; there was no worked-out distribution policy for a model judged too risky to release outright, because the question had never been forced at this capability level.",
+   "leap": "OpenAI's staged release (2019) invents graduated distribution for frontier language models: capability is released in steps while misuse is monitored - the policy whose endpoint is releasing no weights at all, only revocable service access.",
+   "prior_state": "Immediate full publication of model checkpoints (the GPT-1 practice).",
+   "status": "provisional",
+   "depth": 2,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "GPT-2: 1.5B release (OpenAI, 5 November 2019)",
+     "url": "https://openai.com/blog/openai-api/"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Survivor of the hosted-llm-apis-openai-api-2020 expansion (session 27), score 6.0. Multiples test on Q3: no rival 2019 frontier staged release is documented - OpenAI's was the era's worked example, and later labs' graduated-access policies cite the pattern, not a parallel invention; Q3 stays partial because other resolutions of the GPT-3 distribution problem existed (repeat staging, exclusive licensing). Mediation attack 1 (via GPT-3): FAILS - the components discrimination holds; GPT-3 is the artifact distributed, this candidate is the distribution policy, and the parent's leap is a distribution form. Mediation attack 2 (via the 2019 misuse wave): FAILS - the specific-document rule; the diagnosis the parent's design answers is the institution's own staged-release record, and the wave candidate was separately rejected in this expansion as an era condition without a document. Q1 attack: the flip is completed by the parent, not by this candidate - sustained in part; the edge claims ancestry of the distribution form (graduated, monitored, revocable access), which the announcement's own safety paragraphs ('private beta rather than general availability', termination of harmful use-cases) continue verbatim in logic. The attack caps the claim at the form, which is what the edge asserts. Stays provisional.",
+    "at": "2026-11-25T07:47:47+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:47:21+00:00"
+  },
+  "openai-lp-capped-profit-restructuring-2019-2019": {
+   "id": "openai-lp-capped-profit-restructuring-2019-2019",
+   "name": "OpenAI LP capped-profit restructuring (2019)",
+   "aliases": [],
+   "year": 2019,
+   "domain": "artificial intelligence",
+   "type": "institution",
+   "definition": "OpenAI LP (March 2019): the capped-profit subsidiary restructuring that let OpenAI raise investment capital while keeping the nonprofit parent in control.",
+   "bottleneck": "Before OpenAI LP, OpenAI's nonprofit form could not raise the investment capital frontier-scale compute required, because investors had no vehicle and the lab had no revenue model.",
+   "leap": "OpenAI LP (March 2019) invents the capped-profit structure for a frontier AI lab - the organizational artifact that makes a commercial product (the API, four months after the Microsoft investment it enabled) both necessary and possible.",
+   "prior_state": "Pure nonprofit funding (donations and grants) for frontier AI research.",
+   "status": "provisional",
+   "depth": 2,
+   "expanded": false,
+   "priority": 3.5,
+   "sources": [
+    {
+     "title": "OpenAI LP announcement (OpenAI, 11 March 2019)",
+     "url": "https://openai.com/blog/openai-api/"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Survivor of the hosted-llm-apis-openai-api-2020 expansion (session 27), score 3.5 - a thin institutional-organizational admission, recorded as such. Double-count attack (the LP is just the OpenAI institution node under another name): ANSWERED on separability - the LP is a distinct, dated (March 2019), separately announced legal artifact with a function the 2015 founding does not have (raising capped investment capital); the institution node itself was refused at this parent in the same expansion precisely because its separable artifacts, this one included, are judged individually. Mediation attack (via the Microsoft partnership): FAILS on direction - the partnership is downstream of the LP (the July 2019 investment required the capped-profit vehicle), so the LP is the partnership's precondition, not its product. Q3 attack: a nonprofit could in principle have run a cost-recovery service - sustained in part; necessity stays partial (shared with the release-risk line), and the score stays low. The edge's claim is narrow: organizational precondition (capital vehicle + commercial mandate), not technical ancestry. Stays provisional.",
+    "at": "2026-11-25T07:47:47+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:47:21+00:00"
   }
  },
  "edges": [
@@ -38474,6 +38617,200 @@
      "at": "2026-11-25T07:38:57+00:00"
     }
    ]
+  },
+  {
+   "predecessor_id": "gpt-2-staged-release-openai-2019-2019",
+   "successor_id": "hosted-llm-apis-openai-api-2020",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The staged release flipped the distribution question the parent answers: a frontier model judged too risky to publish became usable in graduated form - and the parent's announcement completes the logic, making the model usable by vetted users with no weights released at all. Before 2019, 'too dangerous to release' meant 'not usable'; after the staged release, graduated access was a worked-out form.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The staged release unblocked the whole space of controlled-access distribution: every later frontier-access arrangement (API-only releases, structured access, red-teamed rollouts) is a point in the space it opened.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: other resolutions existed - repeat the staged release for GPT-3, or license exclusively (the path Microsoft's September 2020 GPT-3 license partially took). The API was the resolution that happened, not the only one.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "For consumers, the graduated-access line collapses the cost of using a frontier model from training/hosting it yourself to being vetted and calling a service - the collapse the parent completes.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The staged release supplies no metric registering the parent's leap.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Partial: the staged-release debate produced the era's working model of release risk - monitor misuse at each capability step - which the parent's design (private beta, use-case termination) operationalizes.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Partial: graduated access became a reusable policy interface between labs and the public, though not a technical standard.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: the distribution-form question generalized to every frontier lab's release decisions after 2019.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Partial: staged release slowed the release loop deliberately; the speed it changed was misuse-response, not iteration.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "After the parent, staged downloads of frontier checkpoints stopped being the default: the service form displaced the policy this candidate began.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "In the history that happened this is the trunk of the distribution lineage: GPT-1 published outright (2018), GPT-2 staged (2019), GPT-3 service-only (2020) - the parent's own institution narrates the API as the continuation of the GPT-2 release caution.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Frontier models never returned to downloadable-by-default after this line completed; the baseline reset permanently.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:47:21+00:00",
+   "leap": {
+    "prior_state": "Downloadable checkpoints for small models; in-house serving for large ones. ML capability reached developers as single-use-case cloud APIs (a vision endpoint, a speech endpoint) or as weights they downloaded and hosted themselves; no one sold metered access to a general model, and OpenAI's own frontier distribution policy was the GPT-2 staged release of downloadable checkpoints.",
+    "jump": "On 11 June 2020 OpenAI launched a private-beta API whose single general-purpose 'text in, text out' interface ran the GPT-3 family: a frontier model became a metered cloud service, programmable by showing it a few examples, with access vetted and revocable per user. Within three years the agent ecosystem ran overwhelmingly on hosted frontier APIs.",
+    "date": 2020
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the GPT-2 staged release and its controversy, and the default distribution for GPT-3 in mid-2020 is the GPT-1 pattern - publish the checkpoints. The API form is the documented endpoint of the staged-release dilemma: the announcement justifies the private beta, per-user vetting, and revocable access ('We will terminate API access for obviously harmful use-cases... launching today in a private beta rather than general availability') in exactly the staged release's terms.",
+    "mediator": null,
+    "evidence": "Ancestor-modified, same institution, same problem, documented in the parent's own text: the announcement's safety paragraphs are the staged release's logic carried to its endpoint (graduated access with monitoring becomes no-weights access with revocation). The mediation attack via GPT-3 fails on the components discrimination: GPT-3 is the model distributed; this candidate is the distribution policy - the parent's leap is a distribution form, and its policy ancestry runs through 2019, not through the model artifact (which is in any case date-bound at this parent)."
+   }
+  },
+  {
+   "predecessor_id": "openai-lp-capped-profit-restructuring-2019-2019",
+   "successor_id": "hosted-llm-apis-openai-api-2020",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Partial: the LP flipped OpenAI's own impossibility - frontier-scale research with no capital vehicle - but the flip is organizational and internal to one institution, not a capability flip for the field.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The capped-profit form unblocked the commercialization space the parent inhabits: the Microsoft investment (July 2019, into this structure), the API as first commercial product, and the later product line all exist inside the space the LP opened.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: alternatives existed (continued nonprofit fundraising, acquisition, staying small); the LP was the chosen resolution, and the API's form also answers the independent release-risk line - necessity is shared, not unique.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "The LP collapsed no end-user cost; its cost effect is on capital formation, scored under generativity.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The LP supplies no metric registering the parent's leap.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Partial: the capped-profit design is an explanatory model for how a mission-driven lab funds frontier compute - studied as such - but it explains the institution, not the service's mechanics.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Partial: the form became a reusable organizational template examined by every later frontier lab, though each adopted different forms.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: its reach is the frontier-lab sector's organizational design, beyond OpenAI itself.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "The LP changed no iteration speed available to the parent.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Partial: within OpenAI it displaced the pure-nonprofit form permanently; across the field the displacement is partial (other labs chose other forms).",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Partial: a trunk artifact of the parent's institutional lineage, though a side branch of AI history generally.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "OpenAI never reverted to the pure nonprofit form; the structure the parent was launched inside persists.",
+     "source": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 3.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:47:21+00:00",
+   "leap": {
+    "prior_state": "Downloadable checkpoints for small models; in-house serving for large ones. ML capability reached developers as single-use-case cloud APIs (a vision endpoint, a speech endpoint) or as weights they downloaded and hosted themselves; no one sold metered access to a general model, and OpenAI's own frontier distribution policy was the GPT-2 staged release of downloadable checkpoints.",
+    "jump": "On 11 June 2020 OpenAI launched a private-beta API whose single general-purpose 'text in, text out' interface ran the GPT-3 family: a frontier model became a metered cloud service, programmable by showing it a few examples, with access vetted and revocable per user. Within three years the agent ecosystem ran overwhelmingly on hosted frontier APIs.",
+    "date": 2020
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove OpenAI LP and the June 2020 launch has neither its capital nor its mandate: the Microsoft $1B (July 2019) was invested into the capped-profit structure, and a pure nonprofit with donation funding does not build a metered commercial service as its next act - the announcement itself frames the API as the company's first commercial product, a category the LP created.",
+    "mediator": null,
+    "evidence": "A separable published artifact (the March 2019 restructuring, announced as its own document) with a documented function: raise investment capital for compute while the nonprofit retains control. The mediation attack via the Microsoft partnership fails on direction: the partnership is downstream of the LP (the investment required the vehicle), so the LP is not carried by it. The LP is the parent's organizational precondition, distinct from the parent itself - the discrimination the institution rule requires."
+   }
   }
  ],
  "merge_log": [
@@ -148008,6 +148345,868 @@
       }
      },
      "similarity": 0.8237,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "hosted-llm-apis-openai-api-2020": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Large-scale pretraining (GPT-3) directly enabled hosted LLM APIs' leap by being the artifact the service exists to serve: the announcement states 'Today the API runs models with weights from the GPT-3 family', and the general-purpose interface is meaningful only because the model behind it is general.",
+     "definition": "GPT-3 (Brown et al., 2020): a 175B autoregressive language model whose scale made few-shot prompting a general interface.",
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "name": "Large-scale pretraining (GPT-3)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "method",
+     "year": 2020
+    },
+    {
+     "causal_claim": "In-context learning directly enabled hosted LLM APIs' leap by supplying the interface semantics the API exposes: the announcement's pitch is that 'you can program it by showing it a few examples' - the text-in/text-out endpoint is the few-shot paradigm delivered as a service.",
+     "definition": "The paradigm (Brown et al., 2020) in which a frozen large language model performs a task from a few input-output exemplars placed in its prompt, with no gradient updates.",
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "name": "In-context learning",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "method",
+     "year": 2020
+    },
+    {
+     "causal_claim": "The GPT-2 staged release directly enabled hosted LLM APIs' leap by being the single direct precursor the parent alters: OpenAI's 2019 distribution policy (release the model in stages, checkpoints downloadable) is replaced by its endpoint - no weights at all, access only as a revocable service.",
+     "definition": "OpenAI's 2019 policy of releasing GPT-2 in stages (117M in February, full 1.5B in November 2019) over misuse concerns - the staged-download distribution model for frontier language models.",
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "name": "GPT-2 staged release (OpenAI, 2019)",
+     "source_title": "GPT-2: 1.5B release (OpenAI, 5 November 2019)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "method",
+     "year": 2019
+    },
+    {
+     "causal_claim": "AI Dungeon directly enabled hosted LLM APIs' leap by demonstrating, a year before, mass consumer demand for hosted generative text: a GPT-2-based game whose players generated stories through a hosted model - the demand the API productizes.",
+     "definition": "Latitude's AI Dungeon (December 2019): a text-adventure game running on hosted GPT-2, demonstrating large consumer demand for open-ended generative text.",
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "name": "AI Dungeon (Latitude, 2019)",
+     "source_title": "TechCrunch coverage of the OpenAI API launch (11 June 2020)",
+     "source_url": "https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/",
+     "type": "other",
+     "year": 2019
+    },
+    {
+     "causal_claim": "The synthetic-media misuse wave directly enabled hosted LLM APIs' leap by posing the obstruction its form answers: the announcement justifies the private beta and revocable access by misuse risk ('We will terminate API access for obviously harmful use-cases... launching today in a private beta rather than general availability') - the design constraint the 2019 deepfake wave created.",
+     "definition": "The 2019 wave of synthetic-media misuse and public alarm (face-swap deepfakes, thispersondoesnotexist, GPT-2 fake-news fears) that made uncontrolled release of generative models untenable.",
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "name": "Synthetic media misuse wave (2019)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2019
+    },
+    {
+     "causal_claim": "The model hub directly enabled hosted LLM APIs' leap as the incumbent distribution default it defines itself against: the parent node's own prior_state is 'downloadable checkpoints for small models', and the API's founding decision is that the frontier model will NOT join that regime.",
+     "definition": "Hugging Face's Transformers library and model hub (2019): the default channel for distributing pretrained model checkpoints for download and self-hosting.",
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "name": "Hugging Face model hub (2019)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2019
+    },
+    {
+     "causal_claim": "The Cloud Vision API directly enabled hosted LLM APIs' leap as the named incumbent class the announcement defines the parent against: 'Unlike most AI systems which are designed for one use-case, the API today provides a general-purpose text in, text out interface' - the single-use-case ML API is the foil.",
+     "definition": "Google Cloud Vision API (beta February 2016): a metered cloud API selling one capability (image understanding) per endpoint - the canonical single-use-case ML API.",
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "name": "Google Cloud Vision API (2016)",
+     "source_title": "Google Cloud Vision API beta announcement (February 2016)",
+     "source_url": "https://techxplore.com/news/2016-02-google-cloud-vision-api-beta.amp",
+     "type": "other",
+     "year": 2016
+    },
+    {
+     "causal_claim": "Watson Developer Cloud directly enabled hosted LLM APIs' leap as the earlier enterprise form of the same foil: ML capability sold as metered single-purpose APIs, a decade of precedent the parent's general-purpose interface departs from.",
+     "definition": "IBM's Watson Developer Cloud (from 2014): Watson's capabilities sold as a suite of single-purpose metered APIs (language, vision, speech).",
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "name": "IBM Watson Developer Cloud APIs (2014)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2014
+    },
+    {
+     "causal_claim": "Algorithmia directly enabled hosted LLM APIs' leap as the adjacent failure record: a marketplace selling hosted model inference per-model since 2013 that never became the default - the missing ingredient was a single general model worth metering, which is what the parent adds.",
+     "definition": "Algorithmia (founded 2013): a marketplace/platform for hosting and selling access to individual ML models via APIs.",
+     "domain": "artificial intelligence",
+     "lens": "L7",
+     "name": "Algorithmia model marketplace (2013)",
+     "source_title": "Algorithmia company record",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2013
+    },
+    {
+     "causal_claim": "Azure directly enabled hosted LLM APIs' leap by being the physical plant the service runs on: contemporaneous reporting describes the API as 'accessible via an API from Microsoft's Azure cloud platform', and GPT-3's training/serving supercomputer was built with Microsoft.",
+     "definition": "Microsoft Azure (2010): Microsoft's cloud computing platform - the hosting substrate on which the OpenAI API runs.",
+     "domain": "artificial intelligence",
+     "lens": "L9",
+     "name": "Microsoft Azure cloud platform (2010)",
+     "source_title": "The Register, OpenAI API launch coverage (12 June 2020)",
+     "source_url": "https://www.theregister.com/software/2020/06/12/well-we-tried-being-a-non-profit-openai-is-now-open-as-in-open-for-business-with-gpt-3-cloud-language-model-api/1181071",
+     "type": "other",
+     "year": 2010
+    },
+    {
+     "causal_claim": "JSON directly enabled hosted LLM APIs' leap by being the data format of the API's requests and responses - the interface convention the service is expressed in.",
+     "definition": "JSON as standardized by RFC 4627 (2006): the text data-interchange format of web APIs.",
+     "domain": "artificial intelligence",
+     "lens": "L12",
+     "name": "JSON (RFC 4627)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2006
+    },
+    {
+     "causal_claim": "The OpenAPI specification directly enabled hosted LLM APIs' leap by being the standard description format for HTTP APIs of which the parent is an instance - the interface contract convention it interoperates through.",
+     "definition": "The OpenAPI Specification (3.0, 2017): the standard machine-readable description of HTTP APIs, descended from Swagger.",
+     "domain": "artificial intelligence",
+     "lens": "L16",
+     "name": "OpenAPI specification",
+     "source_title": "OpenAPI Specification 3.0 (2017)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2017
+    },
+    {
+     "causal_claim": "Stripe directly enabled hosted LLM APIs' leap by originating the developer-platform pattern the parent imports: a capability sold as a metered, self-serve, documentation-first API product with usage-based billing - the business form, transferred from payments to model access.",
+     "definition": "Stripe (launched 2011): the developer-first payments API company that established the metered API-as-product pattern (self-serve keys, per-call pricing, docs as product).",
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "name": "Stripe API platform (2011)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2011
+    },
+    {
+     "causal_claim": "Twilio directly enabled hosted LLM APIs' leap by being the original 'API for a capability' company: telephony sold as metered API calls - the cross-field template for selling a complex capability as a simple metered interface.",
+     "definition": "Twilio (founded 2008): communications capabilities (voice, SMS) sold as metered API calls - the canonical API-as-product for a capability.",
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "name": "Twilio API (2008)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2008
+    },
+    {
+     "causal_claim": "AWS directly enabled hosted LLM APIs' leap by originating metered infrastructure-as-API: computing itself sold by the unit through APIs (EC2/S3, 2006), the root of the cloud-metering pattern the parent applies to a model.",
+     "definition": "Amazon Web Services (2006): metered cloud infrastructure (EC2, S3) sold through APIs - the origin of usage-metered computing as a product.",
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "name": "Amazon Web Services (2006)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "other",
+     "year": 2006
+    },
+    {
+     "causal_claim": "OpenAI directly enabled hosted LLM APIs' leap as the institution whose separable carried artifact is the GPT programme itself - proposed for the institution test: at this parent the institution's artifact arguably IS the service, so the NCC-at-Simula discrimination (carried artifact = the parent itself, reject) and the RAND-at-Bellman discrimination (separable programme, admit) must be argued against each other on this record.",
+     "definition": "OpenAI (founded 2015): the research organization that built GPT-2 and GPT-3 and launched the API as its first commercial product.",
+     "domain": "artificial intelligence",
+     "lens": "L21",
+     "name": "OpenAI",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "institution",
+     "year": 2015
+    },
+    {
+     "causal_claim": "The capped-profit restructuring directly enabled hosted LLM APIs' leap by creating the organizational artifact whose purpose the API fulfils: OpenAI LP (March 2019) exists to raise and return capital, and the API - 'OpenAI's first commercial product' - is the revenue mechanism that structure required.",
+     "definition": "OpenAI LP (March 2019): the capped-profit subsidiary restructuring that let OpenAI raise investment capital while keeping the nonprofit parent in control.",
+     "domain": "artificial intelligence",
+     "lens": "L21",
+     "name": "OpenAI LP capped-profit restructuring (2019)",
+     "source_title": "OpenAI LP announcement (OpenAI, 11 March 2019)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "institution",
+     "year": 2019
+    },
+    {
+     "causal_claim": "The Microsoft partnership directly enabled hosted LLM APIs' leap by supplying the serving arrangement the launch ran on: the $1B investment (July 2019) made Azure OpenAI's preferred cloud, and contemporaneous reporting describes the API as served from Microsoft's Azure platform.",
+     "definition": "The July 2019 Microsoft-OpenAI partnership: a $1B investment, Azure as OpenAI's preferred cloud provider, and a jointly built Azure AI supercomputer.",
+     "domain": "artificial intelligence",
+     "lens": "L21",
+     "name": "Microsoft-OpenAI partnership (2019)",
+     "source_title": "The Register, OpenAI API launch coverage (12 June 2020)",
+     "source_url": "https://www.theregister.com/software/2020/06/12/well-we-tried-being-a-non-profit-openai-is-now-open-as-in-open-for-business-with-gpt-3-cloud-language-model-api/1181071",
+     "type": "institution",
+     "year": 2019
+    },
+    {
+     "causal_claim": "Scaling laws directly enabled hosted LLM APIs' leap by creating the timeliness condition: the Kaplan-framed scale race made a 175B model exist in May 2020 - a model too large for the download regime, whose only viable distribution was a service.",
+     "definition": "Kaplan et al. (2020) establish empirical scaling laws relating language-model performance to model size, data, and compute.",
+     "domain": "artificial intelligence",
+     "lens": "L22",
+     "name": "Scaling Laws for Neural Language Models (Kaplan et al., 2020)",
+     "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+     "source_url": "https://openai.com/blog/openai-api/",
+     "type": "theory",
+     "year": 2020
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "gpt-2-staged-release-openai-2019-2019",
+      "candidate": {
+       "causal_claim": "The GPT-2 staged release directly enabled hosted LLM APIs' leap by being the single direct precursor the parent alters: OpenAI's 2019 distribution policy (release the model in stages, checkpoints downloadable) is replaced by its endpoint - no weights at all, access only as a revocable service.",
+       "definition": "OpenAI's 2019 policy of releasing GPT-2 in stages (117M in February, full 1.5B in November 2019) over misuse concerns - the staged-download distribution model for frontier language models.",
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "name": "GPT-2 staged release (OpenAI, 2019)",
+       "source_title": "GPT-2: 1.5B release (OpenAI, 5 November 2019)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "method",
+       "year": 2019
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "GPT-2 staged release (OpenAI, 2019)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ai-dungeon-latitude-2019-2019",
+      "candidate": {
+       "causal_claim": "AI Dungeon directly enabled hosted LLM APIs' leap by demonstrating, a year before, mass consumer demand for hosted generative text: a GPT-2-based game whose players generated stories through a hosted model - the demand the API productizes.",
+       "definition": "Latitude's AI Dungeon (December 2019): a text-adventure game running on hosted GPT-2, demonstrating large consumer demand for open-ended generative text.",
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "name": "AI Dungeon (Latitude, 2019)",
+       "source_title": "TechCrunch coverage of the OpenAI API launch (11 June 2020)",
+       "source_url": "https://techcrunch.com/2020/06/11/openai-makes-an-all-purpose-api-for-its-text-based-ai-capabilities/",
+       "type": "other",
+       "year": 2019
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "AI Dungeon (Latitude, 2019)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "synthetic-media-misuse-wave-2019-2019",
+      "candidate": {
+       "causal_claim": "The synthetic-media misuse wave directly enabled hosted LLM APIs' leap by posing the obstruction its form answers: the announcement justifies the private beta and revocable access by misuse risk ('We will terminate API access for obviously harmful use-cases... launching today in a private beta rather than general availability') - the design constraint the 2019 deepfake wave created.",
+       "definition": "The 2019 wave of synthetic-media misuse and public alarm (face-swap deepfakes, thispersondoesnotexist, GPT-2 fake-news fears) that made uncontrolled release of generative models untenable.",
+       "domain": "artificial intelligence",
+       "lens": "L5",
+       "name": "Synthetic media misuse wave (2019)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2019
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Synthetic media misuse wave (2019)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hugging-face-model-hub-2019-2019",
+      "candidate": {
+       "causal_claim": "The model hub directly enabled hosted LLM APIs' leap as the incumbent distribution default it defines itself against: the parent node's own prior_state is 'downloadable checkpoints for small models', and the API's founding decision is that the frontier model will NOT join that regime.",
+       "definition": "Hugging Face's Transformers library and model hub (2019): the default channel for distributing pretrained model checkpoints for download and self-hosting.",
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "name": "Hugging Face model hub (2019)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2019
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Hugging Face model hub (2019)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "google-cloud-vision-api-2016-2016",
+      "candidate": {
+       "causal_claim": "The Cloud Vision API directly enabled hosted LLM APIs' leap as the named incumbent class the announcement defines the parent against: 'Unlike most AI systems which are designed for one use-case, the API today provides a general-purpose text in, text out interface' - the single-use-case ML API is the foil.",
+       "definition": "Google Cloud Vision API (beta February 2016): a metered cloud API selling one capability (image understanding) per endpoint - the canonical single-use-case ML API.",
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "name": "Google Cloud Vision API (2016)",
+       "source_title": "Google Cloud Vision API beta announcement (February 2016)",
+       "source_url": "https://techxplore.com/news/2016-02-google-cloud-vision-api-beta.amp",
+       "type": "other",
+       "year": 2016
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Google Cloud Vision API (2016)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-watson-developer-cloud-apis-2014-2014",
+      "candidate": {
+       "causal_claim": "Watson Developer Cloud directly enabled hosted LLM APIs' leap as the earlier enterprise form of the same foil: ML capability sold as metered single-purpose APIs, a decade of precedent the parent's general-purpose interface departs from.",
+       "definition": "IBM's Watson Developer Cloud (from 2014): Watson's capabilities sold as a suite of single-purpose metered APIs (language, vision, speech).",
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "name": "IBM Watson Developer Cloud APIs (2014)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2014
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "IBM Watson Developer Cloud APIs (2014)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "algorithmia-model-marketplace-2013-2013",
+      "candidate": {
+       "causal_claim": "Algorithmia directly enabled hosted LLM APIs' leap as the adjacent failure record: a marketplace selling hosted model inference per-model since 2013 that never became the default - the missing ingredient was a single general model worth metering, which is what the parent adds.",
+       "definition": "Algorithmia (founded 2013): a marketplace/platform for hosting and selling access to individual ML models via APIs.",
+       "domain": "artificial intelligence",
+       "lens": "L7",
+       "name": "Algorithmia model marketplace (2013)",
+       "source_title": "Algorithmia company record",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2013
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Algorithmia model marketplace (2013)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "microsoft-azure-cloud-platform-2010-2010",
+      "candidate": {
+       "causal_claim": "Azure directly enabled hosted LLM APIs' leap by being the physical plant the service runs on: contemporaneous reporting describes the API as 'accessible via an API from Microsoft's Azure cloud platform', and GPT-3's training/serving supercomputer was built with Microsoft.",
+       "definition": "Microsoft Azure (2010): Microsoft's cloud computing platform - the hosting substrate on which the OpenAI API runs.",
+       "domain": "artificial intelligence",
+       "lens": "L9",
+       "name": "Microsoft Azure cloud platform (2010)",
+       "source_title": "The Register, OpenAI API launch coverage (12 June 2020)",
+       "source_url": "https://www.theregister.com/software/2020/06/12/well-we-tried-being-a-non-profit-openai-is-now-open-as-in-open-for-business-with-gpt-3-cloud-language-model-api/1181071",
+       "type": "other",
+       "year": 2010
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Microsoft Azure cloud platform (2010)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "json-rfc-4627-2006",
+      "candidate": {
+       "causal_claim": "JSON directly enabled hosted LLM APIs' leap by being the data format of the API's requests and responses - the interface convention the service is expressed in.",
+       "definition": "JSON as standardized by RFC 4627 (2006): the text data-interchange format of web APIs.",
+       "domain": "artificial intelligence",
+       "lens": "L12",
+       "name": "JSON (RFC 4627)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2006
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "JSON (RFC 4627)"
+      ],
+      "matched_node_id": "json-rfc-4627-2006",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "openapi-specification-2017",
+      "candidate": {
+       "causal_claim": "The OpenAPI specification directly enabled hosted LLM APIs' leap by being the standard description format for HTTP APIs of which the parent is an instance - the interface contract convention it interoperates through.",
+       "definition": "The OpenAPI Specification (3.0, 2017): the standard machine-readable description of HTTP APIs, descended from Swagger.",
+       "domain": "artificial intelligence",
+       "lens": "L16",
+       "name": "OpenAPI specification",
+       "source_title": "OpenAPI Specification 3.0 (2017)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2017
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "OpenAPI specification"
+      ],
+      "matched_node_id": "openapi-specification-2016",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "stripe-api-platform-2011-2011",
+      "candidate": {
+       "causal_claim": "Stripe directly enabled hosted LLM APIs' leap by originating the developer-platform pattern the parent imports: a capability sold as a metered, self-serve, documentation-first API product with usage-based billing - the business form, transferred from payments to model access.",
+       "definition": "Stripe (launched 2011): the developer-first payments API company that established the metered API-as-product pattern (self-serve keys, per-call pricing, docs as product).",
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "name": "Stripe API platform (2011)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2011
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Stripe API platform (2011)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "twilio-api-2008-2008",
+      "candidate": {
+       "causal_claim": "Twilio directly enabled hosted LLM APIs' leap by being the original 'API for a capability' company: telephony sold as metered API calls - the cross-field template for selling a complex capability as a simple metered interface.",
+       "definition": "Twilio (founded 2008): communications capabilities (voice, SMS) sold as metered API calls - the canonical API-as-product for a capability.",
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "name": "Twilio API (2008)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2008
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Twilio API (2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "amazon-web-services-2006-2006",
+      "candidate": {
+       "causal_claim": "AWS directly enabled hosted LLM APIs' leap by originating metered infrastructure-as-API: computing itself sold by the unit through APIs (EC2/S3, 2006), the root of the cloud-metering pattern the parent applies to a model.",
+       "definition": "Amazon Web Services (2006): metered cloud infrastructure (EC2, S3) sold through APIs - the origin of usage-metered computing as a product.",
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "name": "Amazon Web Services (2006)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "other",
+       "year": 2006
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Amazon Web Services (2006)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "openai-2015",
+      "candidate": {
+       "causal_claim": "OpenAI directly enabled hosted LLM APIs' leap as the institution whose separable carried artifact is the GPT programme itself - proposed for the institution test: at this parent the institution's artifact arguably IS the service, so the NCC-at-Simula discrimination (carried artifact = the parent itself, reject) and the RAND-at-Bellman discrimination (separable programme, admit) must be argued against each other on this record.",
+       "definition": "OpenAI (founded 2015): the research organization that built GPT-2 and GPT-3 and launched the API as its first commercial product.",
+       "domain": "artificial intelligence",
+       "lens": "L21",
+       "name": "OpenAI",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "institution",
+       "year": 2015
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "OpenAI"
+      ],
+      "matched_node_id": "openai-2015",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "openai-lp-capped-profit-restructuring-2019-2019",
+      "candidate": {
+       "causal_claim": "The capped-profit restructuring directly enabled hosted LLM APIs' leap by creating the organizational artifact whose purpose the API fulfils: OpenAI LP (March 2019) exists to raise and return capital, and the API - 'OpenAI's first commercial product' - is the revenue mechanism that structure required.",
+       "definition": "OpenAI LP (March 2019): the capped-profit subsidiary restructuring that let OpenAI raise investment capital while keeping the nonprofit parent in control.",
+       "domain": "artificial intelligence",
+       "lens": "L21",
+       "name": "OpenAI LP capped-profit restructuring (2019)",
+       "source_title": "OpenAI LP announcement (OpenAI, 11 March 2019)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "institution",
+       "year": 2019
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "OpenAI LP capped-profit restructuring (2019)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "microsoft-openai-partnership-2019-2019",
+      "candidate": {
+       "causal_claim": "The Microsoft partnership directly enabled hosted LLM APIs' leap by supplying the serving arrangement the launch ran on: the $1B investment (July 2019) made Azure OpenAI's preferred cloud, and contemporaneous reporting describes the API as served from Microsoft's Azure platform.",
+       "definition": "The July 2019 Microsoft-OpenAI partnership: a $1B investment, Azure as OpenAI's preferred cloud provider, and a jointly built Azure AI supercomputer.",
+       "domain": "artificial intelligence",
+       "lens": "L21",
+       "name": "Microsoft-OpenAI partnership (2019)",
+       "source_title": "The Register, OpenAI API launch coverage (12 June 2020)",
+       "source_url": "https://www.theregister.com/software/2020/06/12/well-we-tried-being-a-non-profit-openai-is-now-open-as-in-open-for-business-with-gpt-3-cloud-language-model-api/1181071",
+       "type": "institution",
+       "year": 2019
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "Microsoft-OpenAI partnership (2019)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:16:openai-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 16,
+       "card": {
+        "name": "OpenAI LP capped-profit restructuring (2019)",
+        "aliases": [],
+        "year": 2019,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "OpenAI LP (March 2019): the capped-profit subsidiary restructuring that let OpenAI raise investment capital while keeping the nonprofit parent in control.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "openai-2015",
+       "card": {
+        "name": "OpenAI",
+        "aliases": [],
+        "year": 2015,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "The research organization founded in 2015 (restructured with a capped-profit LP in 2019) whose alignment team produced the RLHF lineage: Christiano 2017, Ziegler 2019, Stiennon 2020, InstructGPT 2022.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6078,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:17:openai-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 17,
+       "card": {
+        "name": "Microsoft-OpenAI partnership (2019)",
+        "aliases": [],
+        "year": 2019,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "The July 2019 Microsoft-OpenAI partnership: a $1B investment, Azure as OpenAI's preferred cloud provider, and a jointly built Azure AI supercomputer.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "openai-2015",
+       "card": {
+        "name": "OpenAI",
+        "aliases": [],
+        "year": 2015,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "The research organization founded in 2015 (restructured with a capped-profit LP in 2019) whose alignment team produced the RLHF lineage: Christiano 2017, Ziegler 2019, Stiennon 2020, InstructGPT 2022.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.635,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:15:16",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 15,
+       "card": {
+        "name": "OpenAI",
+        "aliases": [],
+        "year": 2015,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "OpenAI (founded 2015): the research organization that built GPT-2 and GPT-3 and launched the API as its first commercial product.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 16,
+       "card": {
+        "name": "OpenAI LP capped-profit restructuring (2019)",
+        "aliases": [],
+        "year": 2019,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "OpenAI LP (March 2019): the capped-profit subsidiary restructuring that let OpenAI raise investment capital while keeping the nonprofit parent in control.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.566,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:15:17",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 15,
+       "card": {
+        "name": "OpenAI",
+        "aliases": [],
+        "year": 2015,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "OpenAI (founded 2015): the research organization that built GPT-2 and GPT-3 and launched the API as its first commercial product.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 17,
+       "card": {
+        "name": "Microsoft-OpenAI partnership (2019)",
+        "aliases": [],
+        "year": 2019,
+        "domain": "artificial intelligence",
+        "type": "institution",
+        "definition": "The July 2019 Microsoft-OpenAI partnership: a $1B investment, Azure as OpenAI's preferred cloud provider, and a jointly built Azure AI supercomputer.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6972,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "Large-scale pretraining (GPT-3) directly enabled hosted LLM APIs' leap by being the artifact the service exists to serve: the announcement states 'Today the API runs models with weights from the GPT-3 family', and the general-purpose interface is meaningful only because the model behind it is general.",
+       "definition": "GPT-3 (Brown et al., 2020): a 175B autoregressive language model whose scale made few-shot prompting a general interface.",
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "name": "Large-scale pretraining (GPT-3)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "method",
+       "year": 2020
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "causal_claim": "In-context learning directly enabled hosted LLM APIs' leap by supplying the interface semantics the API exposes: the announcement's pitch is that 'you can program it by showing it a few examples' - the text-in/text-out endpoint is the few-shot paradigm delivered as a service.",
+       "definition": "The paradigm (Brown et al., 2020) in which a frozen large language model performs a task from a few input-output exemplars placed in its prompt, with no gradient updates.",
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "name": "In-context learning",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "method",
+       "year": 2020
+      },
+      "reason": "dated on/after parent year 2020"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Scaling laws directly enabled hosted LLM APIs' leap by creating the timeliness condition: the Kaplan-framed scale race made a 175B model exist in May 2020 - a model too large for the download regime, whose only viable distribution was a service.",
+       "definition": "Kaplan et al. (2020) establish empirical scaling laws relating language-model performance to model size, data, and compute.",
+       "domain": "artificial intelligence",
+       "lens": "L22",
+       "name": "Scaling Laws for Neural Language Models (Kaplan et al., 2020)",
+       "source_title": "OpenAI API announcement (OpenAI, 11 June 2020)",
+       "source_url": "https://openai.com/blog/openai-api/",
+       "type": "theory",
+       "year": 2020
+      },
+      "reason": "dated on/after parent year 2020"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:16:openai-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 16,
+      "card": {
+       "name": "OpenAI LP capped-profit restructuring (2019)",
+       "aliases": [],
+       "year": 2019,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "OpenAI LP (March 2019): the capped-profit subsidiary restructuring that let OpenAI raise investment capital while keeping the nonprofit parent in control.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "openai-2015",
+      "card": {
+       "name": "OpenAI",
+       "aliases": [],
+       "year": 2015,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "The research organization founded in 2015 (restructured with a capped-profit LP in 2019) whose alignment team produced the RLHF lineage: Christiano 2017, Ziegler 2019, Stiennon 2020, InstructGPT 2022.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6078,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:17:openai-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 17,
+      "card": {
+       "name": "Microsoft-OpenAI partnership (2019)",
+       "aliases": [],
+       "year": 2019,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "The July 2019 Microsoft-OpenAI partnership: a $1B investment, Azure as OpenAI's preferred cloud provider, and a jointly built Azure AI supercomputer.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "openai-2015",
+      "card": {
+       "name": "OpenAI",
+       "aliases": [],
+       "year": 2015,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "The research organization founded in 2015 (restructured with a capped-profit LP in 2019) whose alignment team produced the RLHF lineage: Christiano 2017, Ziegler 2019, Stiennon 2020, InstructGPT 2022.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.635,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:15:16",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 15,
+      "card": {
+       "name": "OpenAI",
+       "aliases": [],
+       "year": 2015,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "OpenAI (founded 2015): the research organization that built GPT-2 and GPT-3 and launched the API as its first commercial product.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 16,
+      "card": {
+       "name": "OpenAI LP capped-profit restructuring (2019)",
+       "aliases": [],
+       "year": 2019,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "OpenAI LP (March 2019): the capped-profit subsidiary restructuring that let OpenAI raise investment capital while keeping the nonprofit parent in control.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.566,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:15:17",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 15,
+      "card": {
+       "name": "OpenAI",
+       "aliases": [],
+       "year": 2015,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "OpenAI (founded 2015): the research organization that built GPT-2 and GPT-3 and launched the API as its first commercial product.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 17,
+      "card": {
+       "name": "Microsoft-OpenAI partnership (2019)",
+       "aliases": [],
+       "year": 2019,
+       "domain": "artificial intelligence",
+       "type": "institution",
+       "definition": "The July 2019 Microsoft-OpenAI partnership: a $1B investment, Azure as OpenAI's preferred cloud provider, and a jointly built Azure AI supercomputer.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6972,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
