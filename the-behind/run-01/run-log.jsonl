@@ -520,3 +520,107 @@
   "expansions_done": 69
  }
 }
+{
+ "ts": "2026-11-25T08:50:00Z",
+ "session": 30,
+ "kind": "expansion",
+ "parent": "mixture-density-networks-bishop-1994",
+ "parent_name": "Mixture density networks (Bishop)",
+ "raw": 22,
+ "dry_notes": [
+  "L7",
+  "L8",
+  "L9",
+  "L10",
+  "L12",
+  "L14",
+  "L15",
+  "L16",
+  "L17",
+  "L18",
+  "L2 (shortfall)",
+  "L4 (shortfall)",
+  "L5 (shortfall)",
+  "L6 (shortfall)",
+  "L11 (shortfall)",
+  "L13 (shortfall)",
+  "L19 (shortfall)",
+  "L20 (shortfall)",
+  "L21 (shortfall)",
+  "L22 (shortfall)",
+  "L3 (meta)"
+ ],
+ "date_dropped": [
+  "Novelty detection and neural network validation (Bishop, 1994)",
+  "Hierarchical mixtures of experts and the EM algorithm (Jordan and Jacobs, 1994)"
+ ],
+ "survivors": [
+  {
+   "name": "Adaptive mixtures of local experts (Jacobs, Jordan, Nowlan and Hinton, 1991)",
+   "score": 5.5,
+   "kind": "new node",
+   "note": "Ancestor-modified, documented by the parent at three points: softmax mixing coefficients cited to it, the mixture-representation benefit cited to it, and the report's own statement that its error function is 'formally equivalent to the error function used in the competing local experts model of Jacobs et al.' - with the interpretation discriminated (full conditional density, not a posterior over experts). Verification provisional: necessity ripe (independent statistics-side channel)."
+  },
+  {
+   "name": "Mixture Models: Inference and Applications to Clustering (McLachlan and Basford, 1988)",
+   "score": 5.0,
+   "kind": "new node",
+   "note": "The incorporated half of the parent's two-part construction, named at the construction sentence: 'replacing the Gaussian distribution in (11) with a mixture model (McLachlan and Basford, 1988)'. Verification records the genuine multiple: Titterington, Smith & Makov (1985), a rival consolidation - the edge stands on the parent's specific citation."
+  },
+  {
+   "name": "Probabilistic interpretation of feedforward classification network outputs (Bridle, 1990)",
+   "score": 4.0,
+   "kind": "new node",
+   "note": "Scoped admission: the softmax stage for the mixing coefficients (cited first in the report's parenthesis) and the probabilistic-output precedent. Flagged in verification as the expansion's most contestable admission, with an explicit revisit condition (if the softmax sentence derives from Jacobs's text rather than Bridle's, re-file as mediated via Jacobs)."
+  }
+ ],
+ "rejections_of_note": [
+  {
+   "name": "Maximum likelihood estimation (Fisher, 1922)",
+   "reason": "Directness PASSES (the parent's error function is the negative log likelihood of its mixture) but the leap gate fails - neither Q1 nor Q2 passes in relation to this parent. The Fisher-at-Bradley-Terry shape exactly: a consumed component is not a leap. Recorded deliberately for precedent consistency."
+  },
+  {
+   "name": "Pearson's mixture decomposition (1894)",
+   "reason": "mediated_via McLachlan and Basford (1988): the mixture form the parent incorporates is the modern likelihood-era consolidation it cites; Pearson's channel runs through it."
+  },
+  {
+   "name": "EM algorithm (Dempster, Laird and Rubin, 1977)",
+   "reason": "Rejected at the directness gate as the bypassed incumbent recipe: the parent's construction is precisely to fit the mixture by gradient descent through the network instead of EM. Not cited in the report. Its direct hearing belongs to the mixture-model node's own expansion."
+  },
+  {
+   "name": "Backpropagation (RHW, 1986) - matched existing node, no edge",
+   "reason": "Generic training substrate on this parent's documents: the report derives the error gradients wrt the network outputs itself, then uses standard gradient training, and does not cite RHW. The scoped Elman admission does not generalize (same shape as the seq2seq/BiRNN/LSTM rejections)."
+  },
+  {
+   "name": "Forward models (Jordan and Rumelhart, 1992)",
+   "reason": "fail-closed partial - the expansion's closest call on the problem side. It poses the same obstruction (multi-valued inverse mappings) but is NOT in the report's complete eleven-entry reference list, and its answer (distal teacher through a forward model) is a different response from the parent's (model the density). Parallel posing, not a channel; absence from a short complete list is a finding."
+  },
+  {
+   "name": "Learning in artificial neural networks: a statistical perspective (White, 1989)",
+   "reason": "fail-closed partial: cited at the parent's framing sentence, but the instantiated content (the joint-density decomposition) is elementary probability; White's specific estimation machinery is not consumed. Framing descent is not a mechanism channel."
+  },
+  {
+   "name": "Hornik, Stinchcombe and White (1989)",
+   "reason": "fail-closed partial: a cited capacity warrant for the parent's off-the-shelf MLP half - generic machinery, not a consumed mechanism (Banach discipline)."
+  },
+  {
+   "name": "Specht GRNN (1991) / Silverman kernel density (1986)",
+   "reason": "fail-closed partials: the nonparametric density branch - functional rivals, neither cited; the parent's ancestry runs through the mixture branch the report actually cites. Roads not taken stay unlinked."
+  },
+  {
+   "name": "Neural Computing Research Group, Aston (1990)",
+   "reason": "fail-closed partial: the author's own group and the parent's own report series - self-carriage (NCC/IJR discipline); no separable artifact the parent consumes."
+  }
+ ],
+ "structural_notes": [
+  "Year-granularity bound, fifth recorded instance: both of the parent's 1994 coevals are date-dropped - Bishop's own Novelty detection paper (cited inside the parent for the p(x) validation strand) and Jordan and Jacobs's Hierarchical mixtures of experts, the experts line's own generalization, published the same year as the report. The MDN and HME are coeval-year twins under the run's rules; no re-dating attempted.",
+  "The parent's reference list is short and complete (eleven entries), which makes its absences evidential: EM, Specht, Silverman, Jordan & Rumelhart and RHW 1986 are all absent, and each absence is recorded as a finding in its evaluation rather than repaired by inference.",
+  "Depth bookkeeping: MDN verified at depth 4 as briefed. Its three survivors land at depth 5. The new frontier head is this session's own Thurstone survivor, Fechner (1860) at 7.5 - best-first order working as designed across sessions."
+ ],
+ "totals_after": {
+  "nodes": 167,
+  "edges": 212,
+  "budget": "167/2000",
+  "expansions_done": 70
+ }
+}

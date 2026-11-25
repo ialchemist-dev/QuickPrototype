@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T08:29:24+00:00",
-  "expansions_done": 69,
-  "raw_candidates_seen": 3243,
+  "updated_at": "2026-11-25T08:33:24+00:00",
+  "expansions_done": 70,
+  "raw_candidates_seen": 3265,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -15593,6 +15593,85 @@
     "name": "US Army Alpha and Beta testing programme (Yerkes, 1921)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T08:29:09+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Multilayer feedforward networks are universal approximators (Hornik, Stinchcombe and White, 1989)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Learning in artificial neural networks: a statistical perspective (White, 1989)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Simplifying neural networks by soft weight sharing (Nowlan and Hinton, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Maximum likelihood estimation (Fisher, 1922)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Forward models: supervised learning with a distal teacher (Jordan and Rumelhart, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Neural networks and the bias/variance dilemma (Geman, Bienenstock and Doursat, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "General regression neural network (Specht, 1991)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Density Estimation for Statistics and Data Analysis (Silverman, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "EM algorithm (Dempster, Laird and Rubin, 1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Numerical Recipes in C (Press, Teukolsky, Vetterling and Flannery, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Pearson's mixture decomposition by the method of moments (1894)",
+    "reason": "mediated_via: Mixture Models: Inference and Applications to Clustering (McLachlan and Basford, 1988)",
+    "at": "2026-11-25T08:33:08+00:00",
+    "mediated_via": "Mixture Models: Inference and Applications to Clustering (McLachlan and Basford, 1988)"
+   },
+   {
+    "parent_id": "mixture-density-networks-bishop-1994",
+    "name": "Neural Computing Research Group, Aston University (1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:33:08+00:00"
    }
   ]
  },
@@ -16756,7 +16835,7 @@
    "prior_state": "Least-squares regression networks that averaged mutually exclusive outcomes into a single mean prediction.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -20450,6 +20529,93 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T08:29:09+00:00"
+  },
+  "adaptive-mixtures-of-local-experts-jacobs-jordan-nowlan-and-1991": {
+   "id": "adaptive-mixtures-of-local-experts-jacobs-jordan-nowlan-and-1991",
+   "name": "Adaptive mixtures of local experts (Jacobs, Jordan, Nowlan and Hinton, 1991)",
+   "aliases": [],
+   "year": 1991,
+   "domain": "neural networks",
+   "type": "method",
+   "definition": "Jacobs, Jordan, Nowlan and Hinton's 1991 model: a gating network assigns inputs to expert networks, trained by a mixture likelihood so experts specialize on different regions of input space.",
+   "bottleneck": "Before mixtures of local experts, a single network had to fit an entire input-output mapping with one set of weights, because no architecture divided the input space among specialized sub-networks.",
+   "leap": "Jacobs et al. (1991) made the mixture a trainable architecture: a gating network's softmax outputs weight competing experts, and the whole system learns by a mixture likelihood.",
+   "prior_state": "Monolithic MLPs trained by backpropagation on the whole task.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994), text and references",
+     "url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Q1 attack: input-dependent weighting had looser antecedents in modular-network practice, but no earlier artifact combines a trained gating posterior with a mixture likelihood - the claim survives as stated. Multiples test on Q3: the experts line's own generalization (Jordan and Jacobs, hierarchical mixtures of experts) is 1994, coeval with the CHILD, not with this node, so it does not multiply the 1991 advance; necessity was already scored partial in evaluation because the statistics-side mixture channel (McLachlan and Basford) is independent - ripe, recorded. Date/direction check passes (1991 < 1994; the parent cites and discriminates the candidate in its own text). Mediation attack: the strongest intermediate is Bridle (1990), jointly cited with Jacobs for the softmax - but the components discrimination holds: Bridle's edge is scoped to the output-probability stage, while the parent's error-function equivalence is stated with Jacobs et al. alone ('formally equivalent to the error function used in the competing local experts model of Jacobs et al.'), and the architecture (input-weighted mixture) is Jacobs's form. The attack does not land as complete mediation; no mediation object recorded. Outcome provisional on the ripe-necessity cap.",
+    "at": "2026-11-25T08:33:24+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:33:08+00:00"
+  },
+  "mixture-models-inference-and-applications-to-clustering-mcla-1988": {
+   "id": "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+   "name": "Mixture Models: Inference and Applications to Clustering (McLachlan and Basford, 1988)",
+   "aliases": [],
+   "year": 1988,
+   "domain": "statistics",
+   "type": "theory",
+   "definition": "McLachlan and Basford's 1988 monograph, the standard reference for finite mixture models: likelihood inference and applications for weighted sums of component densities.",
+   "bottleneck": "Before McLachlan and Basford, mixture-model results were scattered across the statistical literature, because no single reference consolidated their likelihood theory and practice.",
+   "leap": "McLachlan and Basford (1988) consolidated finite mixture models into the standard statistical technology for representing arbitrary densities as weighted component sums.",
+   "prior_state": "Mixture results dispersed across journals since Pearson (1894), with EM-era fitting practice uncodified in one place.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Q1 attack partially lands and is recorded: mixture models were not invented in 1988 - Pearson fitted one in 1894 - so the node's claim is consolidation into the standard likelihood-era technology, which is exactly what its node record states and exactly what the parent cites at its construction sentence ('replacing the Gaussian distribution with a mixture model (McLachlan and Basford, 1988)'). Multiples test lands as a genuine multiple: Titterington, Smith and Makov's Statistical Analysis of Finite Mixture Distributions (1985) is a rival consolidation three years earlier; the edge stands because the parent cites McLachlan and Basford specifically, and necessity was already scored partial. Date/direction check passes. Mediation attack: no artifact sits between the monograph's mixture form and the parent - the parent instantiates the form directly; Pearson (1894) is upstream of the monograph, not between it and the parent (recorded as mediated in the opposite direction in this expansion's rejections). Outcome provisional on the multiples record.",
+    "at": "2026-11-25T08:33:24+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:33:08+00:00"
+  },
+  "probabilistic-interpretation-of-feedforward-classification-n-1990": {
+   "id": "probabilistic-interpretation-of-feedforward-classification-n-1990",
+   "name": "Probabilistic interpretation of feedforward classification network outputs (Bridle, 1990)",
+   "aliases": [],
+   "year": 1990,
+   "domain": "neural networks",
+   "type": "method",
+   "definition": "Bridle's 1990 chapter giving feedforward classification network outputs a probabilistic interpretation, including the softmax output stage.",
+   "bottleneck": "Before Bridle, classifier network outputs were uninterpreted scores, because no probabilistic reading of the output stage existed.",
+   "leap": "Bridle (1990) read network outputs as posterior probabilities and gave the softmax stage its probabilistic justification - the output-layer machinery probabilistic network models inherit.",
+   "prior_state": "Ad hoc output codings (1-of-N targets) without a probabilistic semantics.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.0,
+   "sources": [
+    {
+     "title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Q1 attack partially lands: Bridle removed only the output-semantics half of the parent's impossibility (the mixture step does the rest), which is why Q1 was scored partial in evaluation. Multiples test: the softmax device has two carriers in the parent's own citation ('(Bridle, 1990; Jacobs et al., 1991)'), so necessity is ripe, as scored. Date/direction check passes (1990 < 1994). Mediation attack: try Jacobs et al. as the mediator for the softmax channel - it does not land as complete mediation, because the report cites Bridle first in that parenthesis and Bridle's contribution (the probabilistic semantics of the output stage, including softmax) is a distinct component from Jacobs's architecture; the evaluation's counterfactual already concedes the parent could be assembled from Jacobs alone in diminished form, and the edge is scored accordingly (4.0, the expansion's lowest admission). Outcome provisional; this is the expansion's most contestable admission and the revisit condition is: if the report's softmax sentence is shown to derive from Jacobs's text rather than Bridle's, this edge should be re-filed as mediated via Jacobs et al.",
+    "at": "2026-11-25T08:33:24+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:33:08+00:00"
   }
  },
  "edges": [
@@ -41166,6 +41332,297 @@
     "counterfactual": "Remove Urban's psychometric function and the parent loses its working machinery: the conversion of an observed proportion into a normal deviate of scale separation exists in 1927 only in Urban's form. Thurstone would have had to invent the ogive fitting himself, against a literature that treated proportions as raw counts - the leap is delayed and takes a different form.",
     "mediator": null,
     "evidence": "The parent's Case V computation is Urban's phi-gamma construction with the stimulus difference replaced by scale-value difference and the discriminal dispersion as unit; the parent's own 1927 companion paper ('Three psychophysical laws') discusses the Weber/Fechner frame Urban worked in, and the 1932 sequel applies the law explicitly to the method of constant stimuli - Urban's home method. Histories (Ellinghaus) place Urban's statistical treatment as the immediate precursor of Thurstone's formulation."
+   }
+  },
+  {
+   "predecessor_id": "adaptive-mixtures-of-local-experts-jacobs-jordan-nowlan-and-1991",
+   "successor_id": "mixture-density-networks-bishop-1994",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before mixtures of local experts, a mixture's components could not be assigned by the input through a trained network at all; Jacobs et al. made input-dependent mixture weighting a trainable object - the parent's construction starts exactly there (its mixing coefficients are a gating-style function of x).",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The experts architecture unblocked the whole conditional-mixture space: divide-and-conquer learning, specialization, and later hierarchical and sparse variants all grow from this node; the parent is one of its generated branches.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: the parent also stands on the statistics-side mixture model (McLachlan and Basford) and could in principle have been assembled from that side alone - the two channels are independent, so necessity for this one is ripe, not unique.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No documented cost collapse attributable to Jacobs et al. in the parent's record.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Partial: the gating posterior over experts made responsibility measurable per input region, but the full conditional density as the measured object is the parent's step.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The competing-experts error function supplied the explanatory model the parent explicitly works from: the report notes its own error function is 'formally equivalent to the error function used in the competing local experts model of Jacobs et al. (1991)' - a design model, not a black box.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The gating-plus-experts pattern became a composable architectural interface: others instantiate it without re-deriving it, and the parent instantiates it with density components in place of experts.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: the architecture reached across tasks within supervised learning; the cross-field reach is the parent's extension of it into density estimation.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change documented.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Partial: within conditional-computation practice the mixture architecture displaced the monolithic default for heterogeneous mappings, but not across the field generally.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The parent cites Jacobs et al. at three separate points of its construction (softmax mixing coefficients, mixture representation, error function) - the trunk channel of this expansion, stated in the parent's own text.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once input-weighted mixtures existed as a trainable form, conditional modelling never returned to input-independent mixtures alone; the baseline reset is permanent.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:33:08+00:00",
+   "leap": {
+    "prior_state": "Conventional networks trained by minimizing sum-of-squares or cross-entropy error output the conditional averages of the target data. For multi-valued inverse problems - robot inverse kinematics, reconstruction - the average of several correct target values is not itself a correct value, so least-squares networks give completely erroneous results there. The era's density alternatives were nonparametric kernel estimators that store the data, or mixture models with input-independent parameters fitted by EM.",
+    "jump": "Bishop (1994) made a conventional feedforward network output the mixing coefficients, means and variances of a Gaussian mixture, trained by maximum likelihood through the network - a single model representing arbitrary conditional densities p(t|x). On the two-link robot inverse kinematics problem the MDN reduced end-effector positioning RMS error by an order of magnitude versus the least-squares network, with small errors even in the region where the inverse mapping is double-valued.",
+    "date": 1994
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove adaptive mixtures of local experts and the parent loses its architectural template and its error function's precedent: the MDN is the experts construction with each expert replaced by a density kernel and the gating posterior reinterpreted as mixing coefficients. Without the 1991 form in the literature the parent would have had to invent input-dependent mixture weighting and its likelihood training from the statistics side alone - a different and later paper.",
+    "mediator": null,
+    "evidence": "Citation + instantiation at three points of the parent's own text: the softmax choice for mixing coefficients is cited '(Bridle, 1990; Jacobs et al., 1991)'; the mixture representation's variance benefit is cited '(Jacobs et al., 1991; Nowlan and Hinton, 1992)'; and the error-function section states the formal equivalence with Jacobs et al.'s competing-experts error function while discriminating the interpretation (a full conditional density, not a posterior over experts). Ancestor-modified consumption, documented by the parent itself."
+   }
+  },
+  {
+   "predecessor_id": "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+   "successor_id": "mixture-density-networks-bishop-1994",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before the mixture model existed as a consolidated technology, a multimodal density had no tractable parametric form; the parent's representation - a weighted sum of Gaussian kernels - is exactly that form, so the representational impossibility the parent removes is removed with this candidate's machinery.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Mixture modelling generated clustering, model-based classification, and density estimation across statistics; the parent is the neural branch of that generated space.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: kernel density estimation (Silverman) was an alternative density route in the era, so the mixture form was ripe rather than uniquely necessary; the parent's text nonetheless builds on the mixture form specifically.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No documented cost collapse in the parent's record.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Partial: mixture decomposition made latent component structure estimable from data - measurability of components - though conditional measurability as a function of input is the parent's addition.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The mixture model is an explanatory model: data as generated by a weighted population of components. The parent's design reasoning (which kernel family, how many components) is conducted in exactly these terms.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Partial: the mixture form is a reusable representation others instantiate, but as a statistical model rather than an interface with hidden internals.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: mixtures reached every applied-statistics field, but the parent's channel is the density form itself, not the reach.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change documented.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Partial: mixture models displaced single-family fits where multimodality mattered, within statistics practice.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The parent names this monograph at the exact sentence of its construction: 'replacing the Gaussian distribution in (11) with a mixture model (McLachlan and Basford, 1988)'. As direct a lineage statement as the record offers.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once arbitrary densities were representable as finite mixtures, density modelling never returned to single-family forms as the general answer.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:33:08+00:00",
+   "leap": {
+    "prior_state": "Conventional networks trained by minimizing sum-of-squares or cross-entropy error output the conditional averages of the target data. For multi-valued inverse problems - robot inverse kinematics, reconstruction - the average of several correct target values is not itself a correct value, so least-squares networks give completely erroneous results there. The era's density alternatives were nonparametric kernel estimators that store the data, or mixture models with input-independent parameters fitted by EM.",
+    "jump": "Bishop (1994) made a conventional feedforward network output the mixing coefficients, means and variances of a Gaussian mixture, trained by maximum likelihood through the network - a single model representing arbitrary conditional densities p(t|x). On the two-link robot inverse kinematics problem the MDN reduced end-effector positioning RMS error by an order of magnitude versus the least-squares network, with small errors even in the region where the inverse mapping is double-valued.",
+    "date": 1994
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the consolidated mixture model and the parent has no density to parametrize: the MDN is defined as a conventional network whose outputs are the parameters of a mixture model. The mixture form is not background - it is half of the parent's two-part construction, named at the construction sentence.",
+    "mediator": null,
+    "evidence": "The report's mixture section: 'the idea of replacing the Gaussian distribution in (11) with a mixture model (McLachlan and Basford, 1988)', followed by the construction 'we now take the various parameters of the mixture model... to be general (continuous) functions of x... modelled using the outputs of a conventional neural network'. Citation + instantiation of the named monograph's subject matter at the parent's defining step. Pearson (1894), the mixture origin, is mediated via this monograph and judged separately."
+   }
+  },
+  {
+   "predecessor_id": "probabilistic-interpretation-of-feedforward-classification-n-1990",
+   "successor_id": "mixture-density-networks-bishop-1994",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Partial: Bridle made classifier outputs readable as probabilities, but the parent's impossibility (no conditional density from a network) required the mixture step as well; Bridle removes the output-semantics half of it.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Bridle's probabilistic reading unblocked the probabilistic-networks direction generally: outputs as posteriors became the default semantics the parent extends from a categorical distribution to a full density.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: the softmax device was also carried by Jacobs et al. (1991), whom the parent cites at the same sentence - two carriers, necessity ripe.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No documented cost collapse.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Partial: network outputs became measurable as probabilities under Bridle's reading; the density-valued measurement is the parent's.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Partial: Bridle supplied the semantics (outputs as probabilities) but not the parent's explanatory model (conditional density of a mixture).",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Partial: the softmax output stage became the standard probabilistic output interface - the parent uses it verbatim for the mixing coefficients - though as a stage, not a whole-system interface.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: probabilistic outputs reached all of classification practice; the parent's channel is the specific machinery.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change documented.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Partial: softmax displaced ad hoc output codings for probabilistic classification, within that practice.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Partial: a real channel in the parent's text (cited for the softmax at the mixing-coefficient construction), but one component channel among several.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Probabilistic output semantics never reverted: once outputs were probabilities, uninterpreted scores stopped being the standard for classification networks.",
+     "source": "Bishop, Mixture Density Networks, NCRG/94/004, Aston University (February 1994)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:33:08+00:00",
+   "leap": {
+    "prior_state": "Conventional networks trained by minimizing sum-of-squares or cross-entropy error output the conditional averages of the target data. For multi-valued inverse problems - robot inverse kinematics, reconstruction - the average of several correct target values is not itself a correct value, so least-squares networks give completely erroneous results there. The era's density alternatives were nonparametric kernel estimators that store the data, or mixture models with input-independent parameters fitted by EM.",
+    "jump": "Bishop (1994) made a conventional feedforward network output the mixing coefficients, means and variances of a Gaussian mixture, trained by maximum likelihood through the network - a single model representing arbitrary conditional densities p(t|x). On the two-link robot inverse kinematics problem the MDN reduced end-effector positioning RMS error by an order of magnitude versus the least-squares network, with small errors even in the region where the inverse mapping is double-valued.",
+    "date": 1994
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Bridle and the parent loses the cited warrant for its mixing-coefficient parameterization: the report's construction sets the coefficients by 'a softmax function (Bridle, 1990; Jacobs et al., 1991)', and its Section 2 derivation of least squares as Gaussian maximum likelihood stands in the probabilistic-output line Bridle opened. The MDN could still be assembled from Jacobs et al. alone, so the counterfactual is a diminished, not annihilated, parent - which is why the scores, not the gate, carry the qualification.",
+    "mediator": null,
+    "evidence": "Citation + instantiation at the construction: the softmax mixing coefficients (report, mixture section) cite Bridle (1990) first. The claim is scoped to the output-probability machinery; the mixture form itself is McLachlan and Basford's edge and the architecture Jacobs et al.'s - components discrimination across the three admitted edges."
    }
   }
  ],
@@ -155480,6 +155937,702 @@
        "year": 1927
       },
       "reason": "dated on/after parent year 1927"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "mixture-density-networks-bishop-1994": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Adaptive mixtures of local experts directly enabled the MDN by supplying the gating/mixture architecture and the competing-experts error function the report shows its own error function to be formally equivalent to - the ancestor the MDN generalizes from local experts to a full conditional density.",
+     "definition": "Jacobs, Jordan, Nowlan and Hinton's 1991 model: a gating network assigns inputs to expert networks, trained by a mixture likelihood so experts specialize on different regions of input space.",
+     "domain": "neural networks",
+     "lens": "L2",
+     "name": "Adaptive mixtures of local experts (Jacobs, Jordan, Nowlan and Hinton, 1991)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994), text and references",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1991
+    },
+    {
+     "causal_claim": "The mixture model directly enabled the MDN as its defining incorporated component: the report's construction is 'replacing the Gaussian distribution with a mixture model (McLachlan and Basford, 1988)' and making its parameters functions of the input.",
+     "definition": "McLachlan and Basford's 1988 monograph, the standard reference for finite mixture models: likelihood inference and applications for weighted sums of component densities.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Mixture Models: Inference and Applications to Clustering (McLachlan and Basford, 1988)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "theory",
+     "year": 1988
+    },
+    {
+     "causal_claim": "Bridle's probabilistic interpretation directly enabled the MDN by supplying the softmax output machinery the report uses for the mixing coefficients and the precedent of reading network outputs probabilistically.",
+     "definition": "Bridle's 1990 chapter giving feedforward classification network outputs a probabilistic interpretation, including the softmax output stage.",
+     "domain": "neural networks",
+     "lens": "L1",
+     "name": "Probabilistic interpretation of feedforward classification network outputs (Bridle, 1990)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "The universal approximation result directly enabled the MDN as the warrant that a conventional feedforward network can carry the mixture parameters as general functions of the input.",
+     "definition": "Hornik, Stinchcombe and White's 1989 proof that multilayer feedforward networks are universal approximators of measurable functions.",
+     "domain": "neural networks / approximation theory",
+     "lens": "L1",
+     "name": "Multilayer feedforward networks are universal approximators (Hornik, Stinchcombe and White, 1989)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "theory",
+     "year": 1989
+    },
+    {
+     "causal_claim": "White's statistical perspective directly enabled the MDN by framing the data generator as a joint probability density - the framing the report's first section adopts verbatim ('the most general description of the generator of the data is a statistical one (White, 1989)').",
+     "definition": "White's 1989 Neural Computation paper founding the statistical treatment of learning in artificial neural networks (density-based formulation of network learning).",
+     "domain": "neural networks / statistics",
+     "lens": "L1",
+     "name": "Learning in artificial neural networks: a statistical perspective (White, 1989)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "theory",
+     "year": 1989
+    },
+    {
+     "causal_claim": "Soft weight sharing directly enabled the MDN at one documented point: the report cites it (with Jacobs et al.) for the mixture representation's benefit of avoiding pathological configurations in which a variance goes to zero.",
+     "definition": "Nowlan and Hinton's 1992 method of simplifying networks by soft weight sharing, which uses a mixture-of-Gaussians prior over weights.",
+     "domain": "neural networks",
+     "lens": "L1",
+     "name": "Simplifying neural networks by soft weight sharing (Nowlan and Hinton, 1992)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1992
+    },
+    {
+     "causal_claim": "Maximum likelihood directly enabled the MDN as its training principle: the report's error function is the negative log likelihood of the mixture model under the data.",
+     "definition": "Fisher's maximum likelihood estimation: parameters chosen to maximize the probability of the observed data under the model.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Maximum likelihood estimation (Fisher, 1922)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1922
+    },
+    {
+     "causal_claim": "Bridle's interpretation is also the ancestor modified: the MDN extends Bridle's probabilistic reading of outputs from class posteriors (a single categorical distribution) to the parameters of a full conditional density.",
+     "definition": "Bridle's 1990 chapter giving feedforward classification network outputs a probabilistic interpretation, including the softmax output stage.",
+     "domain": "neural networks",
+     "lens": "L2",
+     "name": "Probabilistic interpretation of feedforward classification network outputs (Bridle, 1990)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "Forward models work directly enabled the MDN by posing, in the neural-network literature, the inverse-modelling problem and the difficulty that a distal/inverse mapping can be many-to-one - the obstruction the MDN's density answer addresses.",
+     "definition": "Jordan and Rumelhart's 1992 Cognitive Science paper on forward models and distal supervised learning: learning inverse models for control, with the multi-valued inverse problem made explicit.",
+     "domain": "neural networks / motor control",
+     "lens": "L4",
+     "name": "Forward models: supervised learning with a distal teacher (Jordan and Rumelhart, 1992)",
+     "source_title": "Jordan and Rumelhart, Cognitive Science 16 (1992)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "theory",
+     "year": 1992
+    },
+    {
+     "causal_claim": "White's statistical perspective also posed the parent's problem in its answered form: network learning as density estimation over the joint input-target distribution, whose conditional factor is what the MDN models.",
+     "definition": "White's 1989 Neural Computation paper founding the statistical treatment of learning in artificial neural networks (density-based formulation of network learning).",
+     "domain": "neural networks / statistics",
+     "lens": "L4",
+     "name": "Learning in artificial neural networks: a statistical perspective (White, 1989)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "theory",
+     "year": 1989
+    },
+    {
+     "causal_claim": "The bias/variance work directly enabled the MDN's framing of why least-squares solutions mislead: the report's Section 2 derivation of the conditional-average result is set inside the bias/variance account of network solutions (Geman et al., 1992).",
+     "definition": "Geman, Bienenstock and Doursat's 1992 Neural Computation paper on the bias/variance dilemma in neural network learning.",
+     "domain": "neural networks",
+     "lens": "L5",
+     "name": "Neural networks and the bias/variance dilemma (Geman, Bienenstock and Doursat, 1992)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "theory",
+     "year": 1992
+    },
+    {
+     "causal_claim": "Jordan and Rumelhart's forward-models paper diagnosed the same obstruction from the control side: a learned inverse model trained by distal error averages the branches of a many-to-one mapping - the failure the MDN removes by modelling the density.",
+     "definition": "Jordan and Rumelhart's 1992 Cognitive Science paper on forward models and distal supervised learning: learning inverse models for control, with the multi-valued inverse problem made explicit.",
+     "domain": "neural networks / motor control",
+     "lens": "L5",
+     "name": "Forward models: supervised learning with a distal teacher (Jordan and Rumelhart, 1992)",
+     "source_title": "Jordan and Rumelhart, Cognitive Science 16 (1992)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "theory",
+     "year": 1992
+    },
+    {
+     "causal_claim": "The general regression neural network is the incumbent defined against: a kernel/Parzen conditional-density estimator already existed, against which the MDN's parametric, network-parametrized mixture defines its difference (compact learned representation vs stored exemplars).",
+     "definition": "Specht's 1991 general regression neural network: Parzen-window estimation of the joint density yielding the conditional mean (and in principle the conditional density) from stored training exemplars.",
+     "domain": "neural networks / nonparametric statistics",
+     "lens": "L6",
+     "name": "General regression neural network (Specht, 1991)",
+     "source_title": "Specht, A general regression neural network, IEEE Transactions on Neural Networks 2 (1991)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1991
+    },
+    {
+     "causal_claim": "Kernel density estimation is the incumbent defined against: the era's general method for density estimation, whose fixed kernels and stored data the MDN replaces with a learned parametric mixture whose parameters move with the input.",
+     "definition": "Silverman's 1986 monograph, the standard reference for kernel density estimation: densities estimated by placing fixed kernels on the data points.",
+     "domain": "statistics",
+     "lens": "L6",
+     "name": "Density Estimation for Statistics and Data Analysis (Silverman, 1986)",
+     "source_title": "Silverman, Density Estimation for Statistics and Data Analysis (1986)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1986
+    },
+    {
+     "causal_claim": "The EM algorithm is the recipe the parent pointedly does not wield: mixtures were conventionally fitted by EM, while the MDN fits its mixture by gradient descent on the likelihood through the network - EM is the incumbent fitting recipe the parent's construction bypasses.",
+     "definition": "Dempster, Laird and Rubin's 1977 EM algorithm: iterative maximum-likelihood fitting for incomplete-data models, the standard fitting method for mixture models.",
+     "domain": "statistics",
+     "lens": "L11",
+     "name": "EM algorithm (Dempster, Laird and Rubin, 1977)",
+     "source_title": "Dempster, Laird and Rubin, JRSS-B 39 (1977)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1977
+    },
+    {
+     "causal_claim": "Backpropagation directly enabled the MDN as its training procedure: the report derives the error function's derivatives with respect to the network outputs so the mixture parameters can be learned by standard gradient-based training.",
+     "definition": "Rumelhart, Hinton and Williams's 1986 procedure for training multilayer networks by back-propagating error gradients.",
+     "domain": "neural networks",
+     "lens": "L11",
+     "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1986
+    },
+    {
+     "causal_claim": "Numerical Recipes directly enabled the MDN's use at prediction time as the era's standard numerical tooling (the report's most-probable-prediction step is a non-linear optimization over the mixture density).",
+     "definition": "Press, Teukolsky, Vetterling and Flannery's Numerical Recipes in C (2nd ed., 1992), the standard numerical-methods library/text of the era.",
+     "domain": "numerical computing",
+     "lens": "L13",
+     "name": "Numerical Recipes in C (Press, Teukolsky, Vetterling and Flannery, 1992)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994), references",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1992
+    },
+    {
+     "causal_claim": "Pearson's mixture decomposition directly enabled the MDN as the origin of the mixture model the parent incorporates: the first fitting of a two-component Gaussian mixture to data.",
+     "definition": "Pearson's 1894 method-of-moments decomposition of a skewed frequency distribution (crab measurements) into two normal components - the first mixture-model fit.",
+     "domain": "statistics / biometrics",
+     "lens": "L19",
+     "name": "Pearson's mixture decomposition by the method of moments (1894)",
+     "source_title": "Pearson, Philosophical Transactions A 185 (1894)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1894
+    },
+    {
+     "causal_claim": "Kernel density estimation is also the cross-field import that did not happen: statistics' density-estimation tradition offered densities without parameters, and the MDN's answer came from the mixture-model branch of that tradition instead.",
+     "definition": "Silverman's 1986 monograph, the standard reference for kernel density estimation: densities estimated by placing fixed kernels on the data points.",
+     "domain": "statistics",
+     "lens": "L19",
+     "name": "Density Estimation for Statistics and Data Analysis (Silverman, 1986)",
+     "source_title": "Silverman, Density Estimation for Statistics and Data Analysis (1986)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1986
+    },
+    {
+     "causal_claim": "The Neural Computing Research Group directly enabled the MDN as the institutional vehicle whose technical report series (NCRG/94/004) is the parent's form and distribution channel.",
+     "definition": "Bishop's Neural Computing Research Group at Aston University, whose numbered technical report series carried the MDN report in February 1994.",
+     "domain": "research institution",
+     "lens": "L21",
+     "name": "Neural Computing Research Group, Aston University (1990)",
+     "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994), title page",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "institution",
+     "year": 1990
+    },
+    {
+     "causal_claim": "The author's own novelty-detection work is his contemporaneous account of the input-density half of the same programme (the report's introduction cites it for validating predictions with p(x)).",
+     "definition": "Bishop's 1994 IEE paper on novelty detection and neural network validation via modelling the input density p(x).",
+     "domain": "neural networks",
+     "lens": "L23",
+     "name": "Novelty detection and neural network validation (Bishop, 1994)",
+     "source_title": "Bishop, IEE Proceedings 141 (1994); cited in NCRG/94/004",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1994
+    },
+    {
+     "causal_claim": "Hierarchical mixtures of experts is the contemporaneous sibling account: the experts line's own 1994 generalization, against which the MDN's density-first form defines itself.",
+     "definition": "Jordan and Jacobs's 1994 hierarchical mixtures of experts, trained by EM - the mixture-of-experts line's own generalization, published the same year as the MDN report.",
+     "domain": "neural networks",
+     "lens": "L23",
+     "name": "Hierarchical mixtures of experts and the EM algorithm (Jordan and Jacobs, 1994)",
+     "source_title": "Jordan and Jacobs, Neural Computation 6 (1994)",
+     "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+     "type": "method",
+     "year": 1994
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "adaptive-mixtures-of-local-experts-jacobs-jordan-nowlan-and-1991",
+      "candidate": {
+       "causal_claim": "Adaptive mixtures of local experts directly enabled the MDN by supplying the gating/mixture architecture and the competing-experts error function the report shows its own error function to be formally equivalent to - the ancestor the MDN generalizes from local experts to a full conditional density.",
+       "definition": "Jacobs, Jordan, Nowlan and Hinton's 1991 model: a gating network assigns inputs to expert networks, trained by a mixture likelihood so experts specialize on different regions of input space.",
+       "domain": "neural networks",
+       "lens": "L2",
+       "name": "Adaptive mixtures of local experts (Jacobs, Jordan, Nowlan and Hinton, 1991)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994), text and references",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1991
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Adaptive mixtures of local experts (Jacobs, Jordan, Nowlan and Hinton, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+      "candidate": {
+       "causal_claim": "The mixture model directly enabled the MDN as its defining incorporated component: the report's construction is 'replacing the Gaussian distribution with a mixture model (McLachlan and Basford, 1988)' and making its parameters functions of the input.",
+       "definition": "McLachlan and Basford's 1988 monograph, the standard reference for finite mixture models: likelihood inference and applications for weighted sums of component densities.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Mixture Models: Inference and Applications to Clustering (McLachlan and Basford, 1988)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "theory",
+       "year": 1988
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Mixture Models: Inference and Applications to Clustering (McLachlan and Basford, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "probabilistic-interpretation-of-feedforward-classification-n-1990",
+      "candidate": {
+       "causal_claim": "Bridle's probabilistic interpretation directly enabled the MDN by supplying the softmax output machinery the report uses for the mixing coefficients and the precedent of reading network outputs probabilistically.",
+       "definition": "Bridle's 1990 chapter giving feedforward classification network outputs a probabilistic interpretation, including the softmax output stage.",
+       "domain": "neural networks",
+       "lens": "L1",
+       "name": "Probabilistic interpretation of feedforward classification network outputs (Bridle, 1990)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       2,
+       7
+      ],
+      "member_names": [
+       "Probabilistic interpretation of feedforward classification network outputs (Bridle, 1990)",
+       "Probabilistic interpretation of feedforward classification network outputs (Bridle, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "multilayer-feedforward-networks-are-universal-approximators-1989",
+      "candidate": {
+       "causal_claim": "The universal approximation result directly enabled the MDN as the warrant that a conventional feedforward network can carry the mixture parameters as general functions of the input.",
+       "definition": "Hornik, Stinchcombe and White's 1989 proof that multilayer feedforward networks are universal approximators of measurable functions.",
+       "domain": "neural networks / approximation theory",
+       "lens": "L1",
+       "name": "Multilayer feedforward networks are universal approximators (Hornik, Stinchcombe and White, 1989)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "theory",
+       "year": 1989
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Multilayer feedforward networks are universal approximators (Hornik, Stinchcombe and White, 1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "learning-in-artificial-neural-networks-a-statistical-perspec-1989",
+      "candidate": {
+       "causal_claim": "White's statistical perspective directly enabled the MDN by framing the data generator as a joint probability density - the framing the report's first section adopts verbatim ('the most general description of the generator of the data is a statistical one (White, 1989)').",
+       "definition": "White's 1989 Neural Computation paper founding the statistical treatment of learning in artificial neural networks (density-based formulation of network learning).",
+       "domain": "neural networks / statistics",
+       "lens": "L1",
+       "name": "Learning in artificial neural networks: a statistical perspective (White, 1989)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "theory",
+       "year": 1989
+      },
+      "members": [
+       4,
+       9
+      ],
+      "member_names": [
+       "Learning in artificial neural networks: a statistical perspective (White, 1989)",
+       "Learning in artificial neural networks: a statistical perspective (White, 1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "simplifying-neural-networks-by-soft-weight-sharing-nowlan-an-1992",
+      "candidate": {
+       "causal_claim": "Soft weight sharing directly enabled the MDN at one documented point: the report cites it (with Jacobs et al.) for the mixture representation's benefit of avoiding pathological configurations in which a variance goes to zero.",
+       "definition": "Nowlan and Hinton's 1992 method of simplifying networks by soft weight sharing, which uses a mixture-of-Gaussians prior over weights.",
+       "domain": "neural networks",
+       "lens": "L1",
+       "name": "Simplifying neural networks by soft weight sharing (Nowlan and Hinton, 1992)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1992
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Simplifying neural networks by soft weight sharing (Nowlan and Hinton, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "maximum-likelihood-estimation-fisher-1922-1922",
+      "candidate": {
+       "causal_claim": "Maximum likelihood directly enabled the MDN as its training principle: the report's error function is the negative log likelihood of the mixture model under the data.",
+       "definition": "Fisher's maximum likelihood estimation: parameters chosen to maximize the probability of the observed data under the model.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Maximum likelihood estimation (Fisher, 1922)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1922
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Maximum likelihood estimation (Fisher, 1922)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "forward-models-supervised-learning-with-a-distal-teacher-jor-1992",
+      "candidate": {
+       "causal_claim": "Forward models work directly enabled the MDN by posing, in the neural-network literature, the inverse-modelling problem and the difficulty that a distal/inverse mapping can be many-to-one - the obstruction the MDN's density answer addresses.",
+       "definition": "Jordan and Rumelhart's 1992 Cognitive Science paper on forward models and distal supervised learning: learning inverse models for control, with the multi-valued inverse problem made explicit.",
+       "domain": "neural networks / motor control",
+       "lens": "L4",
+       "name": "Forward models: supervised learning with a distal teacher (Jordan and Rumelhart, 1992)",
+       "source_title": "Jordan and Rumelhart, Cognitive Science 16 (1992)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "theory",
+       "year": 1992
+      },
+      "members": [
+       8,
+       11
+      ],
+      "member_names": [
+       "Forward models: supervised learning with a distal teacher (Jordan and Rumelhart, 1992)",
+       "Forward models: supervised learning with a distal teacher (Jordan and Rumelhart, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "neural-networks-and-the-bias-variance-dilemma-geman-bienenst-1992",
+      "candidate": {
+       "causal_claim": "The bias/variance work directly enabled the MDN's framing of why least-squares solutions mislead: the report's Section 2 derivation of the conditional-average result is set inside the bias/variance account of network solutions (Geman et al., 1992).",
+       "definition": "Geman, Bienenstock and Doursat's 1992 Neural Computation paper on the bias/variance dilemma in neural network learning.",
+       "domain": "neural networks",
+       "lens": "L5",
+       "name": "Neural networks and the bias/variance dilemma (Geman, Bienenstock and Doursat, 1992)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "theory",
+       "year": 1992
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Neural networks and the bias/variance dilemma (Geman, Bienenstock and Doursat, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "general-regression-neural-network-specht-1991-1991",
+      "candidate": {
+       "causal_claim": "The general regression neural network is the incumbent defined against: a kernel/Parzen conditional-density estimator already existed, against which the MDN's parametric, network-parametrized mixture defines its difference (compact learned representation vs stored exemplars).",
+       "definition": "Specht's 1991 general regression neural network: Parzen-window estimation of the joint density yielding the conditional mean (and in principle the conditional density) from stored training exemplars.",
+       "domain": "neural networks / nonparametric statistics",
+       "lens": "L6",
+       "name": "General regression neural network (Specht, 1991)",
+       "source_title": "Specht, A general regression neural network, IEEE Transactions on Neural Networks 2 (1991)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1991
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "General regression neural network (Specht, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "density-estimation-for-statistics-and-data-analysis-silverma-1986",
+      "candidate": {
+       "causal_claim": "Kernel density estimation is the incumbent defined against: the era's general method for density estimation, whose fixed kernels and stored data the MDN replaces with a learned parametric mixture whose parameters move with the input.",
+       "definition": "Silverman's 1986 monograph, the standard reference for kernel density estimation: densities estimated by placing fixed kernels on the data points.",
+       "domain": "statistics",
+       "lens": "L6",
+       "name": "Density Estimation for Statistics and Data Analysis (Silverman, 1986)",
+       "source_title": "Silverman, Density Estimation for Statistics and Data Analysis (1986)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1986
+      },
+      "members": [
+       13,
+       18
+      ],
+      "member_names": [
+       "Density Estimation for Statistics and Data Analysis (Silverman, 1986)",
+       "Density Estimation for Statistics and Data Analysis (Silverman, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "em-algorithm-dempster-laird-and-rubin-1977-1977",
+      "candidate": {
+       "causal_claim": "The EM algorithm is the recipe the parent pointedly does not wield: mixtures were conventionally fitted by EM, while the MDN fits its mixture by gradient descent on the likelihood through the network - EM is the incumbent fitting recipe the parent's construction bypasses.",
+       "definition": "Dempster, Laird and Rubin's 1977 EM algorithm: iterative maximum-likelihood fitting for incomplete-data models, the standard fitting method for mixture models.",
+       "domain": "statistics",
+       "lens": "L11",
+       "name": "EM algorithm (Dempster, Laird and Rubin, 1977)",
+       "source_title": "Dempster, Laird and Rubin, JRSS-B 39 (1977)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1977
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "EM algorithm (Dempster, Laird and Rubin, 1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "learning-representations-by-back-propagating-errors-rumelhar-1986",
+      "candidate": {
+       "causal_claim": "Backpropagation directly enabled the MDN as its training procedure: the report derives the error function's derivatives with respect to the network outputs so the mixture parameters can be learned by standard gradient-based training.",
+       "definition": "Rumelhart, Hinton and Williams's 1986 procedure for training multilayer networks by back-propagating error gradients.",
+       "domain": "neural networks",
+       "lens": "L11",
+       "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1986
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)"
+      ],
+      "matched_node_id": "learning-representations-by-back-propagating-errors-rumelhar-1986",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "numerical-recipes-in-c-press-teukolsky-vetterling-and-flanne-1992",
+      "candidate": {
+       "causal_claim": "Numerical Recipes directly enabled the MDN's use at prediction time as the era's standard numerical tooling (the report's most-probable-prediction step is a non-linear optimization over the mixture density).",
+       "definition": "Press, Teukolsky, Vetterling and Flannery's Numerical Recipes in C (2nd ed., 1992), the standard numerical-methods library/text of the era.",
+       "domain": "numerical computing",
+       "lens": "L13",
+       "name": "Numerical Recipes in C (Press, Teukolsky, Vetterling and Flannery, 1992)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994), references",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1992
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Numerical Recipes in C (Press, Teukolsky, Vetterling and Flannery, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pearson-s-mixture-decomposition-by-the-method-of-moments-189-1894",
+      "candidate": {
+       "causal_claim": "Pearson's mixture decomposition directly enabled the MDN as the origin of the mixture model the parent incorporates: the first fitting of a two-component Gaussian mixture to data.",
+       "definition": "Pearson's 1894 method-of-moments decomposition of a skewed frequency distribution (crab measurements) into two normal components - the first mixture-model fit.",
+       "domain": "statistics / biometrics",
+       "lens": "L19",
+       "name": "Pearson's mixture decomposition by the method of moments (1894)",
+       "source_title": "Pearson, Philosophical Transactions A 185 (1894)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1894
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "Pearson's mixture decomposition by the method of moments (1894)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "neural-computing-research-group-aston-university-1990-1990",
+      "candidate": {
+       "causal_claim": "The Neural Computing Research Group directly enabled the MDN as the institutional vehicle whose technical report series (NCRG/94/004) is the parent's form and distribution channel.",
+       "definition": "Bishop's Neural Computing Research Group at Aston University, whose numbered technical report series carried the MDN report in February 1994.",
+       "domain": "research institution",
+       "lens": "L21",
+       "name": "Neural Computing Research Group, Aston University (1990)",
+       "source_title": "Bishop, Mixture Density Networks, NCRG/94/004 (1994), title page",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "institution",
+       "year": 1990
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "Neural Computing Research Group, Aston University (1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [
+     {
+      "members": [
+       2,
+       7
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       4,
+       9
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       11
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       13,
+       18
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "The author's own novelty-detection work is his contemporaneous account of the input-density half of the same programme (the report's introduction cites it for validating predictions with p(x)).",
+       "definition": "Bishop's 1994 IEE paper on novelty detection and neural network validation via modelling the input density p(x).",
+       "domain": "neural networks",
+       "lens": "L23",
+       "name": "Novelty detection and neural network validation (Bishop, 1994)",
+       "source_title": "Bishop, IEE Proceedings 141 (1994); cited in NCRG/94/004",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1994
+      },
+      "reason": "dated on/after parent year 1994"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Hierarchical mixtures of experts is the contemporaneous sibling account: the experts line's own 1994 generalization, against which the MDN's density-first form defines itself.",
+       "definition": "Jordan and Jacobs's 1994 hierarchical mixtures of experts, trained by EM - the mixture-of-experts line's own generalization, published the same year as the MDN report.",
+       "domain": "neural networks",
+       "lens": "L23",
+       "name": "Hierarchical mixtures of experts and the EM algorithm (Jordan and Jacobs, 1994)",
+       "source_title": "Jordan and Jacobs, Neural Computation 6 (1994)",
+       "source_url": "https://publications.aston.ac.uk/373/1/NCRG_94_004.pdf",
+       "type": "method",
+       "year": 1994
+      },
+      "reason": "dated on/after parent year 1994"
      }
     ],
     "prefiltered": []
