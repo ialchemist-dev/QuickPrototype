@@ -3052,3 +3052,57 @@
   "expansions_done": 108
  }
 }
+{
+ "ts": "2026-11-25T14:32:29.475192+00:00",
+ "session": "run session 50 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "bosch-process-deep-reactive-ion-etching-laermer-schilp-1994-1994",
+ "parent_name": "Bosch process deep reactive-ion etching (Laermer & Schilp, 1994)",
+ "provenance": "Session-50 brief verified against run state before acting: 213 nodes / 276 edges, expansions_done 108, sync be3b9518, frontier[0] = DRIE - all confirmed exactly. Parent stored record verified COMPLETE (definition/bottleneck/leap/prior_state all present; no session-31 defect); no rejections exist for this parent. Parent stored verification notes read (honesty caveat and the non-Bosch-etch re-hearing condition belong to the TSV edge and are untouched). Web grounding fetched this session: the parent's own patent US 5,501,893 full text (Google Patents) and Laermer & Urban, Hilton Head 2010 (the parent node's own source) in full, plus the cryogenic-DRIE review literature and the APS/GEC 2010 plasma-processing history for the Hosokawa/Heinecke records.",
+ "raw": 24,
+ "dry_notes": 18,
+ "date_dropped": [
+  "Black silicon method (Jansen et al., Twente, 1995) - postdates the parent's 1994 publication; the parent's failure record sits one year too late to be its ancestor",
+  "Surface Technology Systems Advanced Silicon Etch (ASE) system (1995) - postdates; the parent's first commercial machine is its carrier, not its ancestor"
+ ],
+ "distinct": 16,
+ "evaluated": 16,
+ "survivors": 1,
+ "rejected": 15,
+ "mediated": [
+  {
+   "name": "Reactive ion etching (Hosokawa, Matsuzaki & Asamaki, 1974)",
+   "via": "Ion-assisted plasma etching mechanism (Coburn & Winters, 1979)",
+   "note": "The 1974 apparatus report instantiated the ion-assisted effect empirically, five years before its explanation; the parent's anisotropy channel is the mechanism, claimed in the patent's functional language. The mediation terminates at a node admitted in this same expansion (the cited-final-link discipline)."
+  }
+ ],
+ "survivors_detail": [
+  {
+   "name": "Ion-assisted plasma etching mechanism (Coburn & Winters, 1979)",
+   "id": "ion-assisted-plasma-etching-mechanism-coburn-winters-1979-1979",
+   "score": 5.5,
+   "kind": "new",
+   "depth": 6,
+   "decisive": "The mechanism the parent's etch step wields, claimed in the patent's own functional language: US 5,501,893 requires ion bombardment during the etching steps, which clears the polymer from the etch base while the sidewall film survives - the 1979 synergy (XeF2 + ion beam, demonstrated reactor-independently) in claim form. Q1 and Q6 pass (it is the explanatory model the patent reasons in); Q3 partial on multiples (RIE embodied the effect empirically in 1974). The patent does not cite the paper by name - the channel is instantiation of a mechanism with a unique founding artifact (the Quetelet shape), recorded in the verification notes."
+  }
+ ],
+ "rejections_of_note": [
+  "Cryogenic deep silicon etching (Tachi et al., Hitachi, 1988) - REFUSED as the defined-against rival family, with its Q1 pass recorded honestly: cryo flipped the same geometry FIRST (1988), by temperature; the parent's answer (time separation at room temperature) is orthogonal, uncited and unconsumed. It stands as the expansion's multiples/anticipation record: the parent's leap is the room-temperature production form of a geometry already shown possible.",
+  "Microwave surfatron high-density plasma source (Moisan, c. 1979) - FAIL-CLOSED PARTIAL, the expansion's MOST CONTESTABLE NEGATIVE: named in the patent's embodiment and in 1990 the ONLY high-density source in existence (the CUDA-pattern argument in its strongest equipment form). Refused on the parent's own documents: the patent states the chamber 'is only selected by way of example' and the invention 'does not relate in detail to the concrete structure of the etching chamber', and the recipe later ran identically on ICP tools - a fungible instance of a multiply-carried class (the BART shape). Re-hearing condition recorded in its directness evidence: a Bosch design document showing the cycle's parameters derived from surfatron-specific plasma properties reopens it.",
+  "Fluorocarbon plasma polymer chemistry (Heinecke, 1975) and plasma polymerization of fluorocarbon films (Yasuda, c. 1985) - both FAIL-CLOSED PARTIAL, jointly the expansion's structural finding (the components asymmetry): the cycle's etch half is admitted because it has a founding mechanism paper that is also a patent claim element; the passivation half is refused because the patent treats fluorocarbon polymer formation as a pre-existing behaviour of the incumbent process (its background complains polymer formers were already in etch plasmas) - a phenomenon with diffuse carriers, not a consumed invention. The asymmetry is in the parent's documents, not imposed by the gate.",
+  "Single-step mixed-gas etching - the 'mixed process' (c. 1988) - REFUSED as the parent's own prior state wearing a name: no founding artifact, author or dateable document; a diffuse shop practice known only through the parent's retrospective label. The parent's stored prior_state already carries its content (the K80/M40 shape).",
+  "Anisotropic etching of silicon (Bean, 1978) and Silicon as a mechanical material (Petersen, 1982) - both FAIL-CLOSED PARTIAL (Hochreiter): the incumbent's codification and the field's charter; the parent's problem statement is its own patent background, and no document derives the parent's design from either.",
+  "Anisotropic wet etching in KOH/EDP (c. 1978) and chlorine-based anisotropic etching (c. 1980) - REFUSED as defined-against incumbents; the parent's retrospective names the first ('free from the design restrictions... of the old wet-etching technology based on KOH'), and the parent wins on the opposite property from the second (fluorine's spontaneous attack tamed by time separation, vs chlorine's ion-conditional chemistry).",
+  "Robert Bosch corporate research microsystems programme (c. 1990) - REFUSED on self-carriage (the IIPD shape): the vehicle and the cargo coincide; discriminated from OpenPOWER at NVLink, where the vehicle was external.",
+  "Automotive airbag inertial-sensor demand (c. 1989) - REFUSED as an era condition with no carrying document (the Charter discrimination: a specific document CAN carry one; none does here).",
+  "Polysilicon surface micromachining (Howe & Muller, c. 1986) - FAIL-CLOSED PARTIAL (arena): the parent's first product is a surface-micromachined accelerometer, but the process is arena-neutral - its defining downstream use in this run is bulk via etching for TSV - and nothing of the arena's content enters the cycle.",
+  "Inductively coupled plasma etch source (c. 1993) - REFUSED on direction: the later equipment carrier (the cuDNN shape); the parent's own retrospective dates the succession (1990 source: surfatron; ICP later). ECR source (1982) fail-closed partial as the parallel source line, absent from the parent's embodiment."
+ ],
+ "notes": "STRUCTURAL FINDINGS. (1) The components asymmetry: a two-half invention whose halves have different ancestry kinds - the etch half descends from a mechanism paper (admitted), the passivation half from a phenomenon the parent presupposes (refused twice). The discrimination is documented in the parent's own patent: ion bombardment is a claim element; polymer formation is background. (2) The parent's failure record (black silicon, 1995) and its first machine (STS ASE, 1995) both postdate its 1994 publication and were date-dropped - the calendar removes the parent's own aftermath from its ancestry, as designed. (3) L16 dry WITH the standards-inversion finding (the parent implements no external standard; its only specification is its patent) and L10 dry WITH a finding (materials conventional; the one harnessed phenomenon is the mechanism, filed under L1). Depth 6 gains its 26th node. InstructGPT/RLHF flag did not resurface.",
+ "totals_after": {
+  "nodes": 214,
+  "edges": 277,
+  "budget": "214/2000",
+  "expansions_done": 109
+ }
+}
