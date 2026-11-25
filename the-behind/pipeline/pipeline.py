@@ -34,7 +34,7 @@ import score as score_mod
 
 PROFILES = {
     "full": {
-        "profile": "full", "raw_target": 100, "survivor_cap": 20,
+        "profile": "full", "raw_target": 140, "survivor_cap": 20,
         "depth_cap": 10, "node_budget": 2000, "min_gate_survivors": 5,
         "year_floor": 1500,
     },
@@ -52,6 +52,8 @@ ROOT = {
     "type": "other",
     "definition": "A software system built on a large language model that perceives its environment, reasons over open-ended tasks, and acts through tools in a loop.",
     "bottleneck": "Before the modern AI agent, machines could not perceive, reason over, and act on open-ended tasks in a loop, because no model could flexibly convert between language, perception and action, and there was no practical way to train or steer such a model.",
+    "prior_state": "Chatbots and task-specific ML systems: models could complete text or classify inputs, but could not follow open-ended instructions reliably, use external tools, or chain reasoning and action toward a goal.",
+    "leap": "Instruction-following LLMs wrapped in a reason-act loop with tool use (2022-23: ChatGPT, ReAct, function calling) turned a text completer into a general task executor — a capability jump, not an incremental accuracy gain.",
     "sources": [],
 }
 
@@ -248,17 +250,26 @@ def cmd_apply_verdicts(args):
                 "type": s.get("type", cand.get("type", "other")),
                 "definition": s.get("definition", cand.get("definition") or cand.get("causal_claim", "")),
                 "bottleneck": s.get("bottleneck", ""),
+                "leap": s.get("node_leap", ""),
+                "prior_state": s.get("node_prior_state", ""),
                 "depth": parent["depth"] + 1,
                 "priority": s["score"],
                 "sources": sources,
             })
             created.append(node["id"])
-        g.add_edge(node["id"], parent["id"], s["verdicts"], s["score"], s["gate"])
+        g.add_edge(node["id"], parent["id"], s["verdicts"], s["score"], s["gate"],
+                   leap=s.get("leap"), directness=s.get("directness"))
+    mediated = []
     for r in rejected:
-        g.data["run_state"]["rejected"].append({
+        rec = {
             "parent_id": parent["id"], "name": r.get("name", ""),
             "reason": r["reason"], "at": graph_mod.now_iso(),
-        })
+        }
+        med = (r.get("directness") or {}).get("mediator")
+        if med:
+            rec["mediated_via"] = med
+            mediated.append({"name": r.get("name", ""), "mediated_via": med})
+        g.data["run_state"]["rejected"].append(rec)
     parent_node = g.data["nodes"][parent["id"]]
     parent_node["expanded"] = True
     g.data["run_state"]["expansions_done"] += 1
@@ -268,7 +279,7 @@ def cmd_apply_verdicts(args):
     out({"ok": True, "parent": parent["id"], "cap": cap,
          "evaluated": len(evaluations), "survivors": len(survivors),
          "created_nodes": created, "linked_existing": linked,
-         "rejected": len(rejected),
+         "rejected": len(rejected), "mediated_rejections": mediated,
          "node_budget_used": st["node_budget_used"], "node_budget": st["node_budget"],
          "frontier_next": st["frontier"][:5]})
 
@@ -295,6 +306,7 @@ def cmd_apply_verification(args):
     with open(args.file, encoding="utf-8") as f:
         items = json.load(f).get("verifications", [])
     applied = []
+    mediation_actions = []
     for it in items:
         node = g.get_node(it["node_id"])
         if node is None:
@@ -307,9 +319,49 @@ def cmd_apply_verification(args):
         elif outcome == "killed":
             node["status"] = "provisional"
             node["dead"] = True
+        # v3 mediation attack (§6.4 attack 4): the verifier may name an
+        # intermediate M for an edge that admitted this node. A
+        # "kill_edge" removes the edge and logs the rejection as
+        # mediated_via: M; a "downgrade" keeps the edge, records the
+        # challenge on it, and caps the node at provisional.
+        med = it.get("mediation") or {}
+        mediator = str(med.get("mediator") or "").strip()
+        if mediator:
+            action = str(med.get("action", "downgrade")).lower()
+            succ = med.get("successor_id")
+            targets = [e for e in g.data["edges"]
+                       if e["predecessor_id"] == node["id"]
+                       and (succ is None or e["successor_id"] == succ)]
+            for e in targets:
+                e.setdefault("mediation_challenges", []).append(
+                    {"mediator": mediator, "action": action,
+                     "at": graph_mod.now_iso()})
+                if action == "kill_edge":
+                    g.data["edges"].remove(e)
+                    g.data["run_state"]["rejected"].append({
+                        "parent_id": e["successor_id"], "name": node["name"],
+                        "reason": f"mediated_via: {mediator}",
+                        "mediated_via": mediator, "via_verifier": True,
+                        "at": graph_mod.now_iso()})
+                    mediation_actions.append({
+                        "node": node["id"], "successor": e["successor_id"],
+                        "mediator": mediator, "action": "kill_edge"})
+                else:
+                    mediation_actions.append({
+                        "node": node["id"], "successor": e["successor_id"],
+                        "mediator": mediator, "action": "downgrade"})
+            if node["status"] == "verified":
+                node["status"] = "provisional"  # a live mediation challenge caps verification
+            if action == "kill_edge":
+                remaining = [e for e in g.data["edges"]
+                             if e["predecessor_id"] == node["id"]]
+                if not remaining and node["depth"] > 0:
+                    # orphaned by the mediation kill: out of the frontier,
+                    # still visible in the graph and the render.
+                    node["dead"] = True
         applied.append(node["id"])
     g.save()
-    out({"ok": True, "applied": applied})
+    out({"ok": True, "applied": applied, "mediation_actions": mediation_actions})
 
 
 def cmd_status(args):
