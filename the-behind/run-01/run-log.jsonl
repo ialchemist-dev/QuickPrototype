@@ -4541,5 +4541,110 @@
   "kleene-introduction-to-metamathematics-the-theory-of-partial-1952",
   "pwb-shell-mashey-shell-1975-1975"
  ],
- "sync_commit": "PENDING"
+ "sync_commit": "3ede3edc"
+}
+{
+ "session": 75,
+ "expansion": 159,
+ "parent": "ion-assisted-plasma-etching-mechanism-coburn-winters-1979-1979",
+ "parent_name": "Coburn & Winters, ion-assisted plasma etching mechanism (1979)",
+ "parent_year": 1979,
+ "parent_depth": 6,
+ "date": "2026-11-25",
+ "provenance": "Session 75, expansion 1 of 2 (the frontier head per status after session 74). Scouted, resolved, judged and verified from scratch by session 75.",
+ "grounding": "The two 1979 documents grounded on their published abstracts and apparatus (AIP and IBM Research pages, fetched this session): J. Appl. Phys. 50:3189-3196, 'Ion- and electron-assisted gas-surface chemistry' (reactions of Si, SiO2, Si3N4 with XeF2, F2, Cl2 examined experimentally; mechanisms for the radiation-induced enhancement discussed; implications for plasma etching and lithography) and J. Vac. Sci. Technol. 16:391-403, 'Plasma etching - A discussion of mechanisms' (the process in three steps - adsorption, product formation, product desorption; experiments in well-defined nonplasma environments; the concepts related to etching anisotropy, selective etching, the loading effect, and the role of additive gases; energetic particle bombardment emphasized). AUDIT SCOPE, stated honestly: full texts of the two papers were NOT obtained this session; absence claims are scoped to the grounded record (abstracts, the stored graph records, the retrospective literature), not asserted of the full texts - Hosokawa's re-hearing condition is keyed to the JVST full text. Supporting record grounded by search: Winters & Coburn, Appl. Phys. Lett. 34:70-73 (1979) (XeF2 etches Si isotropically to 7000 A/min, no observable SiO2/Si3N4/SiC attack - 'the first paper documenting the etching of silicon with XeF2 vapor was published in 1979 by Winters and Coburn', Berkeley MEMS record; Winters & Graves 2007 likewise); the canonical beam numbers from the retrospective/teaching record (XeF2 alone ~0.5 nm/min, Ar+ alone ~0.2-0.3 nm/min, both together ~5.5-6.7 nm/min); Lieberman's plasma-processing history (Hosokawa 1974 = ref [2], 'the discovery of ion-enhanced (anisotropic) etching'; Heinecke 1975 = ref [3], selectivity); Sigmund (1969), Phys. Rev. 184:383-416 (yield formula from the paper's record and Citation Classic); Mogab (1977) loading-effect model; Mogab, Adams & Flamm (1978); Coburn & Kay (1972), J. Appl. Phys. 43:4965 (verbatim in a citing reference list); Coburn & Kay (1979), IBM J. Res. Dev. 23(1):33; Schwartz & Schaible (1979), JVST 16:410 (the SAME issue as the mechanisms paper); Kinoshita & Jinno (1977), JJAP 16:381; Kaufman's gridded source (NASA Lewis record; etching adaptation late-1970s, industry-side) against the National Academies (1996) account of the parent's own method ('the Ultrahigh-Vacuum Approach Using Mass and Energy Selected Reactive Beams - Winters and Coburn, and the FOM group'); Coburn's Physics Today obituary (joined IBM San Jose 1968; built the electrostatic-extraction mass-spectrometry facility with Eric Kay's group; the UHV ion-beam experiments with Winters his 'most influential technical contribution'); Winters at IBM San Jose 1963-1993.",
+ "parent_record_note": "Parent stored fields verified intact before evaluating (definition, bottleneck, leap, prior_state all non-empty, read verbatim; no reconstruction). The node's stored sources list carries only one weak secondary source (an academicjobs.com DRIE history feature) - not empty, so no defect is recorded, but the expansion grounded on the primary papers' published abstracts instead. The stored session-50 verification record (outcome under the old 'confirmed' vocabulary) stands: Q3 partial honestly - the effect was embodied in RIE practice (Hosokawa 1974) five years before its explanation; the DRIE edge rests on instantiation, not citation (US 5,501,893 does not name C&W). 0 already-rejected candidates: first expansion of this node. Graph searched by concept/synonym before scouting: NO existing nodes for Sigmund, sputtering, plasma etching, ion beam or any etching-stratum candidate - so NO LINKs were filed; every candidate is a new filing judged fresh at this parent.",
+ "scout": {
+  "builder": "run-01/work/build_scout_coburn_winters.py",
+  "raw_candidates": 59,
+  "per_lens_floors": "complete - every content lens (L1, L2, L4-L7, L9-L11, L13, L14, L17-L22) filed >=3 on the builder's output, checked before resolve; dry notes with findings for L8 (no data corpus - the paper's evidence is its own beam measurements), L12 (no programmability layer in 1979 process equipment), L15 (no hosted services; IBM internal shops are formation, judged at L21), L16 (no interface standards in 1979 plasma etching; the JVST special issue is a venue, not a standard - contrast Fisher 1922's maker-form dry note); meta L3=3 + L23=3 = 6 within the ~10 cap",
+  "dry_notes_file": "run-01/work/dry_notes_ion-assisted-plasma-etching-mechanism-coburn-winters-1979-1979.json",
+  "identity_discipline": "concept/synonym greps before scouting (sigmund / sputter / plasma / etch / ion beam / xef2); no graph node answers any lens, so no exact-name LINK filings arise; the parent's own same-year stratum (the XeF2 letter, the IBM JRD fluorocarbon paper, the Auger paper, Schwartz & Schaible's same-issue RIE account) was filed deliberately so its direction is on the record at resolve"
+ },
+ "resolution": {
+  "distinct": 33,
+  "dropped": 11,
+  "matched_existing": 0,
+  "auto_merges": 15,
+  "judge_queue": 2,
+  "prefiltered": 0
+ },
+ "judgments": "2 pairs, both the same pair (ion milling 1977 vs Harper 1978 - Harper was filed under two lenses): both DIFFERENT - the practice vs its codifying document (a document about a practice is not the practice; judged separately, the practice as defined-against incumbent, the chapter as its codification). No merges resulted.",
+ "calendar_dropped_at_resolve": [
+  "Winters & Coburn, 'The etching of silicon with XeF2 vapor', Appl. Phys. Lett. 34:70-73 (1979) - filed twice (L1, L10): the chemistry half of the synergy is the authors' own SAME-YEAR letter; dropped on the year bound, logged, not re-dated. It re-enters this expansion's record as the named mediator of Bartlett (1962).",
+  "Coburn & Kay, 'Some chemical aspects of the fluorocarbon plasma etching of silicon and its compounds', IBM J. Res. Dev. 23(1):33 (1979) - the diagnosis-side twin; same year; re-enters as the named mediator of Yasuda (1976).",
+  "Schwartz & Schaible, 'Reactive ion etching of silicon', JVST 16:410-413 (1979) - the SAME issue as the parent's mechanisms paper (16:391); a coeval process account, not an ancestor.",
+  "Coburn, 'In situ Auger electron spectroscopy of Si and SiO2 surfaces plasma etched in CF4-H2', J. Appl. Phys. 50:5210 (1979) - the observation-side twin; same year, same programme.",
+  "Postdating accounts filed as direction records: Lieberman, plasma processing history (2010) x2 filings; Winters & Graves review (2007) x2; Donnelly & Kornblit, JVST history (2013); Harper et al., RIBE quantitative formalization, J. Electrochem. Soc. 128:1077 (1981) - the descendant formalization of the parent's synergy ('a quantitative parameter which characterizes the effectiveness of ion bombardment in enhancing chemical etching'), logged here so its direction is on the record"
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_ion-assisted-plasma-etching-mechanism-coburn-winters-1979-1979.json",
+  "builder": "run-01/work/build_verdicts_coburn_winters.py (+ build_verdicts_coburn_winters_p2.py)",
+  "evaluations": 33,
+  "count_check": "evaluations == distinct candidates from show-distinct (33 == 33, verified programmatically - exact cand_id set match, no missing, no extra, no duplicates; field discipline checked: cand_id / verdicts Q1-Q12 with evidence+source+falsification / directness {verdict, counterfactual, mediator, evidence} / node_leap + node_prior_state / bottleneck / leap = parent's leap record); scout reconciliation: 59 raw - 15 auto-merges - 11 resolve drops = 33 distinct; per-lens floor verified on the builder's output before resolve",
+  "dry_run": "score.rank_candidates reproduced exactly the intended outcome (1 survivor - Sigmund 1969 at 4.5; 32 rejected with the intended shapes, 2 of them mediated_via); NO correction used; applied ONCE (apply-verdicts is not idempotent)",
+  "survivors": [
+   {
+    "name": "Sigmund, Theory of sputtering (1969)",
+    "score": 4.5,
+    "status": "provisional",
+    "argument": "The parent's headline is a three-term accounting - combined rate far exceeding the SUM of chemistry alone and sputtering alone - and the sputtering term has an identity as a mechanism (cascade momentum transfer with a computable yield, Y(E,theta) = Lambda*alpha*S_n(E)/U_s) only inside Sigmund's frame; the synergy factor is computed AGAINST it, and the authors' own sputtering programme worked inside that frame. Verification: multiples attack (Thompson as co-carrier; empirical yield tables) shares Q3 without substituting a carrier; the MEDIATION ATTACK via the authors' own sputtering-measurement stratum (Coburn & Kay 1972; Coburn, Taglauer & Kay 1974) PARTIALLY LANDS - recorded as a downgrade challenge on the edge: the channel narrows from cited text to the frame the programme's measurements were made inside, but the mechanism's identity is the theory's construction, not the measurements' product. Capped provisional (also the ceiling on an abstract-level audit)."
+   }
+  ],
+  "created_nodes_field_check": "the created node (Sigmund 1969, depth 7) read back with non-empty stored definition / bottleneck / leap / prior_state; the admission edge verified present at score 4.5 - NO builder defect (the sessions 66-74 clean streak holds through session 75 expansion 1)",
+  "rejections_of_note": {
+   "most_contestable_negative": {
+    "name": "Hosokawa, Matsuzaki & Asamaki, RF sputter-etching by fluoro-chloro-hydrocarbon gases (1974)",
+    "shape": "fail-closed partial",
+    "argument": "The phenomenon's first carrier (the field's history: 'the discovery of ion-enhanced (anisotropic) etching'; the parent's stored prior_state names RIE 1974 as the unexplained recipe; the session-50 record states the effect was embodied in RIE practice five years before its explanation). Refused on the channel: embodiment in practice is not a document channel into a mechanism paper (libwww at RFC 1738; the WWW system at RFC 1630) - the grounded record shows the 1979 derivation running from beam experiments in nonplasma environments, not from Hosokawa's process paper.",
+    "rehearing_condition": "the full text of J. Vac. Sci. Technol. 16:391 (or J. Appl. Phys. 50:3189) showing the mechanism derived from, or the experiments modelled on, Hosokawa's documented process specifically - as distinct from RIE practice generally"
+   },
+   "named_explananda": {
+    "names": [
+     "Mogab, The loading effect in plasma etching (1977) - fail-closed partial",
+     "Heinecke, Control of relative etch rates of SiO2 and Si in plasma etching (1975) - fail-closed partial"
+    ],
+    "argument": "Both are named in the parent's own JVST abstract among the phenomena its concepts are related to (with anisotropy and additive gases). Explanation-of is not derivation-from (the Hochreiter discipline): the parent's three-step derivation runs from its beam experiments; Mogab's discharge-level model and Heinecke's selectivity control are what it explains."
+   },
+   "apparatus_stratum": {
+    "names": [
+     "UHV mass- and energy-selected beam apparatus tradition (1975) - fail-closed partial",
+     "Kaufman, Gridded broad-beam ion source (1961) - fail-closed partial",
+     "Coburn's electrostatic-extraction mass spectrometry diagnostic (1972) - fail-closed partial"
+    ],
+    "argument": "The beam line is the parent's real enabling instrument (the JVST abstract's 'well-defined (nonplasma) environments'; the National Academies account names the tradition and its practitioners) but it is the authors' own group's craft tradition, not a separable consumed artifact (the CUDA discrimination). Kaufman fails on the documentary record: the parent's apparatus belongs to the UHV tradition, not the production-mill tradition, and no document ties its beam to a Kaufman source. The diagnostic facility is the programme's own infrastructure (formation-side)."
+   },
+   "own_programme_stratum": {
+    "names": [
+     "Coburn & Kay (1972) - fail-closed partial",
+     "Coburn, Taglauer & Kay (1974) - fail-closed partial (thinner record, filed descriptively, noted honestly)"
+    ],
+    "argument": "Creator lineage: genuine documented sourcing inside one author's programme - the Fisher 1912/1920 own-version shape. The discrimination against Kleene (1935) at lambda calculus: there the consuming child was a different author's document."
+   },
+   "mediated": [
+    {
+     "name": "Yasuda, Plasma polymerization (1976)",
+     "via": "Coburn & Kay, fluorocarbon plasma etching chemistry (1979) - a calendar-dropped same-year mediator, named on the run's precedent that a mediation may name a date-dropped mediator"
+    },
+    {
+     "name": "Bartlett, Xenon difluoride (1962)",
+     "via": "Winters & Coburn, The etching of silicon with XeF2 vapor (1979) - the reagent's proximate carrier into the parent is the authors' own letter; the 1962 breakthrough is a ripened condition (R9) whose ancestry belongs to the letter's stratum"
+    }
+   ],
+   "other_shapes": "Thompson (1968) rejected as a component inside Sigmund's synthesis (the Koopman/Aitken shape); Mogab, Adams & Flamm (1978) fail-closed partial (the discharge-chemistry baseline the parent bypasses and reorganizes); ion milling rejected as the defined-against incumbent (its rate is the parent's measured control term - the Rosenblatt shape); Harper (1978) rejected with it (the incumbent's codification); the fluorocarbon passivation stratum rejected as the rival mechanism (its generativity runs into the child, DRIE); Roth (1976) rejected as anticipation in another field's literature (the Amari shape - chemical sputtering in fusion, no junction); the rf diode process rejected as the parent's OBJECT; the F2/Cl2 set rejected as the experiment's own materials; the QCM rejected as a presupposed substitutable instrument (the JOHNNIAC test); Kay's group, IBM San Jose, IBM Yorktown rejected as formation, Bell Labs by decomposition (its artifacts judged individually); the VLSI anisotropy problem fail-closed partial (a posed problem with no document whose clauses the parent implements); the production pull rejected as an era condition; Kinoshita & Jinno (1977), Gerlach-Meyer (1978, thin record), Suzuki (1977), Sovey (1978), commercial ion mills rejected without channels"
+  }
+ },
+ "verification": {
+  "file": "run-01/work/verification_ion-assisted-plasma-etching-mechanism-coburn-winters-1979-1979.json",
+  "outcomes": {
+   "sigmund-theory-of-sputtering-1969-1969": "provisional (mediation attack via the authors' own sputtering-measurement stratum partially lands - recorded as a downgrade challenge on the edge; multiples attack shares Q3 without substituting a carrier)"
+  }
+ },
+ "totals_after": {
+  "nodes": 273,
+  "edges": 342,
+  "budget": "273/2000",
+  "expansions_done": 159
+ },
+ "sync_commit": null
 }
