@@ -1151,3 +1151,70 @@
   "expansions_done": 78
  }
 }
+{
+ "ts": "2026-11-25T09:42:28.646526+00:00",
+ "session": "run session 35 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+ "parent_name": "Fisher and Mackenzie, Studies in crop variation II (1923)",
+ "raw": 20,
+ "dry_notes": "12 of 23 lenses dry or shortfall, recorded in work/dry_notes_fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923.json: shortfalls L11, L13, L17, L19 (1); dry L7, L9, L10, L12, L14, L15, L16, L22. Raw 20 against raw_target 140 - the bounded-world pattern for a 1923 journal paper whose lineage runs through one author's programme at one station.",
+ "date_dropped": [
+  {
+   "name": "Gosset, On testing varieties of cereals (1923)",
+   "year": 1923,
+   "note": "STRUCTURAL (year-bound, sessions 27-34 pattern): the paper that carries Fisher's own appendix solution to the error problem, written nine days after the parent was received (Speed) - the Fisher-Gosset junction of March 1923 is a same-year event the year-granularity bound cannot express. Logged, not re-dated."
+  },
+  {
+   "name": "Neyman, On the application of probability theory to agricultural experiments (1923)",
+   "year": 1923,
+   "note": "STRUCTURAL (year-bound): the parallel potential-outcomes formalization is coeval with the parent (and in Polish, untranslated until 1990); dropped at resolve as designed. At Fisher 1926 it was rejected as a parallel formalization; the same disposition is recorded here in advance of the bound."
+  }
+ ],
+ "distinct": 15,
+ "evaluated": 15,
+ "survivors": [
+  {
+   "name": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+   "id": "fisher-the-correlation-between-relatives-on-the-supposition-1918",
+   "score": 7.5,
+   "kind": "link to existing node",
+   "note": "The 1923 table IS the 1918 variance partition in designed form: sums of squares divided among varieties, manures, interaction and error, each by its degrees of freedom (the paper's Table III, via Parolini). Speed: the 1918 paper 'provided the foundation for his work on the design and analysis of field experiments'. The via-Studies-I mediation attack was run in verification and answered - paper I partitions a time series against rainfall, a sibling application of the same partition; the factorial treatment partition has no source in 1921. The 1918 node now has three children (treatise, SMRW, this paper). Thin survivor set of one link - legitimate (IAM precedent)."
+  }
+ ],
+ "rejected": 14,
+ "mediated": 2,
+ "rejections_of_note": [
+  {
+   "name": "Mercer and Hall, The experimental error of field trials (1911)",
+   "reason": "Fail-closed partial - the FOURTH record for this candidate, discriminated by parent: partial at Yates (diagnosis, not consumed); mediated via SMRW at Fisher 1926 (consuming documents were the book's); admitted at SMRW (derivation documents are the parent itself); HERE consumption of their uniformity discovery is documented but located inside the ANALYSED ARTIFACT - Eden's chessboard layout 'utilizes the discovery from uniformity trials that plots near one another tend to give closely similar yields' (appreciation lecture), and the paper's error discussion turns on that layout's consequence (error inflated because like-treated plots are far apart). The paper's own derivations run on the 1918 partition, compute nothing on Mercer and Hall's data, and no citation of them in the paper is documented. Consumption one step removed from the paper - genuinely unresolvable, and a partial does not satisfy the gate."
+  },
+  {
+   "name": "Eden's Rothamsted potato variety and manurial experiment (1922)",
+   "reason": "Directness PASS recorded, leap gate failed - an instance, not a leap. The parent is this experiment's analysis (its yields are the first ANOVA table's numbers; its factorial structure is the table's rows), but the trial was laid out to the incumbent chessboard doctrine 'following the procedure recommended at that time' and used NO randomization (appreciation lecture). Discrimination from LOB at the offline IAM database: LOB is a corpus designed as a reusable artifact whose categories the child inherits; Eden's trial is one season's experiment in Rothamsted's standard manurial-trial form. BRIEF CORRECTION: the brief framed this candidate as 'Mackenzie's potato experiments' - W. A. Mackenzie (Winifred) was Fisher's statistical assistant and co-analyst; the experiment was T. Eden's (RES report 1927, via Parolini)."
+  },
+  {
+   "name": "Student's t-distribution (Gosset, 1908)",
+   "reason": "Fail-closed partial - the THIRD-parent discrimination is the record's point: at the treatise and at SMRW directness PASSED (t codified and presupposed in both books) and the candidate failed at the leap gate. At THIS parent directness itself fails closed: the 1923 paper's significance machinery is the variance ratio judged by comparing standard deviations of mean squares against 'the standard deviation of the differences between parallel plots' (p. 316) - the t ratio is nowhere the paper's instrument, and the exact distribution of the variance ratio was derived only in 1924 (Speed). A component of the programme is not thereby a component of every paper in it."
+  },
+  {
+   "name": "Fisher, Studies in crop variation I (1921)",
+   "reason": "Own-series discipline: paper I partitions a yield time series against rainfall; paper II partitions a factorial trial among treatments. The shared mechanism is the 1918 partition, admitted directly - paper I is a sibling application (both are 1918's children), not paper II's channel; its specific apparatus (Broadbalk series, rainfall regression) is absent from the potato analysis. Formation, not consumption. Contrast Simula I at Simula 67, where the earlier artifact's OWN mechanism is the later artifact's headline mechanism."
+  },
+  {
+   "name": "Fisher, On the interpretation of chi-square from contingency tables (1922)",
+   "reason": "Directness PASS recorded, leap gate failed (component): the table's divisions by degrees of freedom ('subtracting 1' per factor, the paper's own description via Parolini) embody the 1922 df doctrine with no intermediary - but a consumed component is not a leap toward the parent's leap (the Fisher-MLE shape). Pearson's chi-square (1900) was mediated via this 1922 correction."
+  },
+  {
+   "name": "Systematic chessboard layouts in Rothamsted variety trials",
+   "reason": "Prior-state incumbent embodied in the analysed data: the paper does not consume the doctrine, it prices it - the chessboard's separation of like-treated plots inflates the ANOVA error estimate, and the paper's famous sentence names the remedy ('deliberately at random'). CORRECTION TO THE STORED FRAMING, recorded for the article: the trial the paper analyses was NOT randomized and the paper does not comment on the absence of randomization (appreciation lecture) - the 'deliberately at random' sentence is a methodological remark inside the analysis, not a description of Eden's layout."
+  }
+ ],
+ "notes": "Grounding: Speed's introduction (the node's own cited source); the appreciation lecture 'Fisher and the Analysis of Variance' (Fienberg et al. 1980) for the trial's structure and the no-randomization record; Parolini (2015) for Eden's authorship of the experiment and the p. 316 quotations; the Fisher bibliography (Adelaide) for the 1921/1922 programme papers. Parent stored fields verified COMPLETE before evaluation. Also recorded in the L22 dry note: Fisher's exact distribution of the variance ratio (1924) POSTDATES the parent - the paper judged significance by comparing standard deviations because the exact test did not yet exist; and the paper's first ANOVA was not even additive - it proceeded to a multiplicative model as more reasonable (appreciation lecture). Verification: the single survivor provisional after the four attacks; no mediation object recorded. InstructGPT/RLHF flag not surfaced.",
+ "totals_after": {
+  "nodes": 178,
+  "edges": 227,
+  "budget": "178/2000",
+  "expansions_done": 79
+ }
+}

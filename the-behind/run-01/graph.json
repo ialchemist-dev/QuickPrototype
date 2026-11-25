@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T09:34:28+00:00",
-  "expansions_done": 78,
-  "raw_candidates_seen": 3410,
+  "updated_at": "2026-11-25T09:42:14+00:00",
+  "expansions_done": 79,
+  "raw_candidates_seen": 3430,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -16349,6 +16349,92 @@
     "name": "Rothamsted Experimental Station (1843)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T09:34:14+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Student's t-distribution (Gosset, 1908)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Fisher, On the interpretation of chi-square from contingency tables (1922)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Pearson's chi-square test (1900)",
+    "reason": "mediated_via: Fisher, On the interpretation of chi-square from contingency tables (1922)",
+    "at": "2026-11-25T09:42:06+00:00",
+    "mediated_via": "Fisher, On the interpretation of chi-square from contingency tables (1922)"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Fisher, On the probable error of a coefficient of correlation deduced from a small sample (1921)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Fisher, Studies in crop variation I (1921)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Fisher and Mackenzie, The correlation of weekly rainfall (1922)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Fisher, Thornton and Mackenzie, The accuracy of the plating method of estimating the density of bacterial populations (1922)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Mercer and Hall, The experimental error of field trials (1911)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Wood and Stratton, The interpretation of experimental results (1910)",
+    "reason": "mediated_via: Mercer and Hall, The experimental error of field trials (1911)",
+    "at": "2026-11-25T09:42:06+00:00",
+    "mediated_via": "Mercer and Hall, The experimental error of field trials (1911)"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Eden's Rothamsted potato variety and manurial experiment (1922)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "The Rothamsted long-term experiments (Broadbalk, Lawes and Gilbert, 1843)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Systematic chessboard layouts in Rothamsted variety trials",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
+   },
+   {
+    "parent_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+    "name": "Rothamsted Experimental Station (1843)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T09:42:06+00:00"
    }
   ]
  },
@@ -21552,8 +21638,8 @@
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Verification of the NEW edge Fisher 1918 -> SMRW (the node itself was admitted at the treatise expansion, session 33). Four attacks run on this edge. (1) Q1 attack: lands partially and is already priced in - Q1 scored partial (the 1918 paper flipped no testing impossibility); the gate passed on Q2 generativity. (2) Multiples on Q3: no parallel variance decomposition exists in the decade - the biometric school had correlation without decomposition; the partition is Fisher's alone. Necessity not downgraded. (3) Date/direction: 1918 < 1925; the book's Chapter VII is titled 'Intraclass Correlations and the Analysis of Variance' - intraclass correlation is the 1918 paper's subject by name; direction sound. Negative evidence confronted: Fisher 1918 does NOT appear in the book's 'sources used for data and methods' list - answered on the record: that list covers data and methods for worked examples, not the book's theoretical basis; the chapter title and subject are the instantiation. (4) Mediation attack: Fisher and Mackenzie (1923) named as M - the first worked ANOVA sits between 1918 and the book in time. Attack fails: the book's Chapter VII exposition generalizes the 1918 machinery directly, and in this same expansion the 1923 paper was judged an APPLICATION INSTANCE inside the book (its analyses sit in Chapter VIII, Further Applications) - an instance cannot mediate its own machinery's exposition. Outcome provisional per standing posture.",
-    "at": "2026-11-25T09:34:28+00:00"
+    "notes": "Four attacks run on the edge Fisher 1918 -> Fisher and Mackenzie (1923). (1) Q1 attack: searched for a pre-1918 decomposition of observed variation into attributable components - the biometric tradition (Galton, Pearson, Yule) summarized resemblance in correlations and regressions but partitioned nothing; the attack fails. (2) Multiples test on Q3: no independent near-simultaneous variance partition is documented for 1918-1923; necessity was already scored partial in the evaluation because the counterfactual is a claim about one author's programme, and it stays partial - the node does not stand as verified on necessity grounds. (3) Date and direction: 1918 precedes 1923; the direction is the author's own application of his principle to field data, confirmed by Speed's lineage statement. (4) Mediation attack: the strongest intermediate is Fisher's Studies in crop variation I (1921) - attacked and answered: paper I partitions a yield time series against rainfall, a parallel (sibling) application of the 1918 partition; the parent's factorial treatment partition (varieties x manures x interaction, with degrees of freedom) has no source in 1921 and derives from 1918 directly. The 1922 degrees-of-freedom papers are components of the table's arithmetic, not a channel for the partition itself, and SMRW (1925) postdates the parent. No mediation object recorded: the mediated path does not dominate. Outcome provisional, per run convention (all nodes provisional; the edge is the third child of the 1918 node, after the treatise and SMRW).",
+    "at": "2026-11-25T09:42:14+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T09:12:41+00:00"
@@ -21571,7 +21657,7 @@
    "prior_state": "Uniformity assumptions and systematic layouts in the analysis of variety trials.",
    "status": "provisional",
    "depth": 7,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.0,
    "sources": [
     {
@@ -43955,6 +44041,103 @@
     "counterfactual": "Remove Mercer and Hall and the book's design-precision demonstrations lose their substrate: Speed records that SMRW's illustrations of the precision gained by blocking and Latin squares 'refer to layouts randomly imposed on the mangold uniformity data of Mercer and Hall (1911)', and the paper stands in the book's own 'sources used for data and methods' list - citation plus instantiation, the strong channel. The Hochreiter discrimination across three parents is recorded in full: at Yates the same candidate failed closed (a diagnosis answered is not consumed - Yates's documents do not derive from it); at Fisher 1926 it was mediated via this book (the consuming documents are the book's, the essay has no calculations); HERE the derivation documents are the parent itself, and the verdict is admission - the LOB-at-IAM shape, data consumed inside the parent's own demonstrations.",
     "mediator": null,
     "evidence": "Speed (1990) on SMRW's precision illustrations and Mercer and Hall (1911); SMRW's own sources list cites Mercer and Hall (1911) among the data and methods used."
+   }
+  },
+  {
+   "predecessor_id": "fisher-the-correlation-between-relatives-on-the-supposition-1918",
+   "successor_id": "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The flip is the parent's own premise: before the 1918 partition, variation could be summarized but not attributed to its causes; the 1923 table exists because the partition made a field trial's variation attributable to varieties, manures, interaction and error in one computation.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The partition unblocked the whole space of designed-experiment analysis: any layout whose causes can be named can be partitioned - the parent's factorial trial is the first instance of a general form, not a one-off trick.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the parent is Fisher's own application of his own principle, and no contemporary held the partition - but the counterfactual is a claim about one author's programme, and the score records that honestly.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost is partial: the partition let one trial answer variety, manure and interaction questions at once, but no order-of-magnitude cost claim attaches to a single analysis.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "It made field-trial variation measurable BY CAUSE: the parent's Table III reports mean squares for varieties, manures, interaction and error, each against its degrees of freedom (quoted by Parolini).",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model the parent runs on: observed variability as a sum of components attributable to distinct causes, with variance as the measure - stated in the 1918 paper's opening pages.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The variance partition is a composable form: the parent's table is that form filled with a new subject matter, and every later ANOVA table reuses it unchanged.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The principle crossed domains in the parent itself: framed in 1918 for the genetics of relatives, it is consumed here for agricultural field trials - the cross-domain reach is demonstrated by this very edge.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: partitioned answers shortened the path from trial to conclusion, within the era's manual computation.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: the partition displaced uniformity-assumption analysis inside Fisher's programme, but systematic practice persisted around it for a decade.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Speed's lineage survey runs the design programme's foundation through this paper: 'the foundation for his work on the design and analysis of field experiments'. A trunk artifact.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once variation could be written as a sum of attributable components, no later analysis could un-know the form; the parent's table is unthinkable in the prior idiom.",
+     "source": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 7.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T09:42:06+00:00",
+   "leap": {
+    "prior_state": "Uniformity assumptions and systematic layouts in the analysis of variety trials.",
+    "jump": "Fisher and Mackenzie (1923) ran the first analysis of variance on real field data and stated in print that plots arranged deliberately at random yield a valid estimate of error.",
+    "date": 1923
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 1918 paper and the 1923 table has no decomposition to run: a table dividing a trial's total sum of squares among varieties, manures, their interaction and error, each divided by its degrees of freedom, IS the 1918 variance partition in designed form - the causes are now treatments instead of ancestors, the arithmetic is the same. The via-Studies-I mediation attack is answered in that candidate's own record: the 1921 paper partitions a time series against rainfall, a parallel application of the same partition; the factorial treatment partition the parent performs has no source in 1921 and needs none - its source is 1918, whose channel into field analysis Speed states directly.",
+    "mediator": null,
+    "evidence": "Speed (1990): the 1918 paper 'provided the foundation for his work on the design and analysis of field experiments'. Parolini (2015), quoting the parent's Table III: 'the mean square deviation is found by dividing the sum of squares in each class by the number of degrees of freedom... When this value is significantly greater than the standard deviation of the differences between parallel plots, we may conclude that the corresponding effect is not due to chance' (Fisher and Mackenzie 1923, p. 316)."
    }
   }
  ],
@@ -163772,6 +163955,681 @@
      }
     ],
     "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "fisher-and-mackenzie-studies-in-crop-variation-ii-1923-1923": {
+   "raw_candidates": [
+    {
+     "name": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+     "year": 1918,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "Fisher's 1918 paper that coined 'variance' and first partitioned observed variation into additive components attributable to distinct causes - the variance-decomposition principle of which the analysis of variance is the designed-experiment form.",
+     "causal_claim": "As a component: the 1923 paper's analysis-of-variance table is the 1918 variance partition run on field data - sums of squares divided among varieties, manures, their interaction and error, each divided by its degrees of freedom (the paper's Table III, quoted by Parolini). The partition is inside the parent, one step in.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "As a component: the 1923 paper's analysis-of-variance table is the 1918 variance partition run on field data - sums of squares divided among varieties, manures, their interaction and error, each divided by its degrees of freedom (the paper's Table III, quoted by Parolini). The partition is inside the parent, one step in."
+    },
+    {
+     "name": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+     "year": 1918,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L2",
+     "type": "theory",
+     "definition": "Fisher's 1918 paper that coined 'variance' and first partitioned observed variation into additive components attributable to distinct causes - the variance-decomposition principle of which the analysis of variance is the designed-experiment form.",
+     "causal_claim": "Ancestor modified: the 1923 paper takes the 1918 decomposition - framed there as a genetics argument about relatives - and re-poses it as the analysis of a designed experiment: the causes whose fractions of variance are ascribed are now treatments laid down by the experimenter. Speed calls the 1918 paper the foundation of Fisher's work on the design and analysis of field experiments.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Ancestor modified: the 1923 paper takes the 1918 decomposition - framed there as a genetics argument about relatives - and re-poses it as the analysis of a designed experiment: the causes whose fractions of variance are ascribed are now treatments laid down by the experimenter. Speed calls the 1918 paper the foundation of Fisher's work on the design and analysis of field experiments."
+    },
+    {
+     "name": "Student's t-distribution (Gosset, 1908)",
+     "year": 1908,
+     "domain": "statistical inference",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "Gosset's ('Student', 1908) distribution of the ratio of a mean to its sample standard deviation: the first exact small-sample inference, derived for Guinness brewery samples of four or five observations.",
+     "causal_claim": "Filed as a component candidate so the record at this third Fisher parent is explicit: the 1923 paper's significance machinery is the variance ratio judged by comparing standard deviations of mean squares (its p. 316 criterion), not the t ratio - the claim to be tested at evaluation is non-consumption, discriminated from the treatise and SMRW where t is codified and presupposed.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Filed as a component candidate so the record at this third Fisher parent is explicit: the 1923 paper's significance machinery is the variance ratio judged by comparing standard deviations of mean squares (its p. 316 criterion), not the t ratio - the claim to be tested at evaluation is non-consumption, discriminated from the treatise and SMRW where t is codified and presupposed."
+    },
+    {
+     "name": "Fisher, On the interpretation of chi-square from contingency tables (1922)",
+     "year": 1922,
+     "domain": "statistical inference",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "Fisher's 1922 JRSS paper fixing the degrees of freedom of Pearson's chi-square for contingency tables and the calculation of P - the degrees-of-freedom doctrine of Fisher's testing machinery.",
+     "causal_claim": "As a component: the 1923 table divides each sum of squares by its degrees of freedom, computed 'subtracting 1' per factor (the paper's Table III description, quoted by Parolini) - Fisher's 1922 degrees-of-freedom doctrine embodied in the table's arithmetic.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "As a component: the 1923 table divides each sum of squares by its degrees of freedom, computed 'subtracting 1' per factor (the paper's Table III description, quoted by Parolini) - Fisher's 1922 degrees-of-freedom doctrine embodied in the table's arithmetic."
+    },
+    {
+     "name": "Pearson's chi-square test (1900)",
+     "year": 1900,
+     "domain": "statistical inference",
+     "lens": "L1",
+     "type": "method",
+     "definition": "Pearson's 1900 chi-square criterion: the first general test of goodness of fit, comparing observed frequencies with those expected under a hypothesis by a single discrepancy measure with a known distribution.",
+     "causal_claim": "As a component at one remove: the sampling theory of sums of squares behind the 1923 table is chi-square theory, but in the form Fisher's 1922 correction fixed (degrees of freedom) - the channel claim runs through the correction, filed separately at L1.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "As a component at one remove: the sampling theory of sums of squares behind the 1923 table is chi-square theory, but in the form Fisher's 1922 correction fixed (degrees of freedom) - the channel claim runs through the correction, filed separately at L1."
+    },
+    {
+     "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+     "year": 1922,
+     "domain": "statistical inference",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "Fisher's 1922 Phil. Trans. paper founding estimation theory: consistency, efficiency, sufficiency, and the method of maximum likelihood as the criterion for choosing statistics.",
+     "causal_claim": "Filed so its non-consumption is on the record: the 1923 paper estimates nothing by likelihood and fits no parameters - its argument is partition plus a comparison of standard deviations. The claim is programme adjacency, not a channel.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Filed so its non-consumption is on the record: the 1923 paper estimates nothing by likelihood and fits no parameters - its argument is partition plus a comparison of standard deviations. The claim is programme adjacency, not a channel."
+    },
+    {
+     "name": "Fisher, On the probable error of a coefficient of correlation deduced from a small sample (1921)",
+     "year": 1921,
+     "domain": "statistical inference",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "Fisher's 1921 Metron paper deriving the distribution of the correlation coefficient in small samples via the z-transformation (z = arctanh r) - the first of Fisher's z statistics.",
+     "causal_claim": "Filed to close a naming trap: the 1923 analysis compares variances (a z of variance ratios in later dress), but the exact distribution of that ratio was derived only in 1924 - after the parent - and the 1921 paper's z belongs to the correlation coefficient, a different statistic. No mechanism of the 1921 paper is consumed by the parent.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Filed to close a naming trap: the 1923 analysis compares variances (a z of variance ratios in later dress), but the exact distribution of that ratio was derived only in 1924 - after the parent - and the 1921 paper's z belongs to the correlation coefficient, a different statistic. No mechanism of the 1921 paper is consumed by the parent."
+    },
+    {
+     "name": "Fisher, Studies in crop variation I (1921)",
+     "year": 1921,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Fisher's 1921 first crop-variation study: 67 years of Broadbalk wheat yields decomposed against rainfall - the variation of a time series divided into components representing annual causes and slow deterioration, the first data application of the variance idea in the series the parent continues.",
+     "causal_claim": "Own-series predecessor: paper I of the series applied the variance decomposition to a yield time series; paper II applies it to a factorial field trial. The claim to be tested: whether the 1923 partition is consumed-and-reworked from the 1921 application, or whether both are parallel applications of the shared 1918 partition, whose channel is direct.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Own-series predecessor: paper I of the series applied the variance decomposition to a yield time series; paper II applies it to a factorial field trial. The claim to be tested: whether the 1923 partition is consumed-and-reworked from the 1921 application, or whether both are parallel applications of the shared 1918 partition, whose channel is direct."
+    },
+    {
+     "name": "Fisher, Studies in crop variation I (1921)",
+     "year": 1921,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L20",
+     "type": "method",
+     "definition": "Fisher's 1921 first crop-variation study: 67 years of Broadbalk wheat yields decomposed against rainfall - his first statistical analysis of the Rothamsted records he had been hired to examine.",
+     "causal_claim": "Creator lineage: the first fruit of Russell's 1919 charge to Fisher to examine the station's records; it formed the programme the parent belongs to. Formation claim, filed so evaluation can discriminate it from consumption.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Creator lineage: the first fruit of Russell's 1919 charge to Fisher to examine the station's records; it formed the programme the parent belongs to. Formation claim, filed so evaluation can discriminate it from consumption."
+    },
+    {
+     "name": "Fisher and Mackenzie, The correlation of weekly rainfall (1922)",
+     "year": 1922,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L20",
+     "type": "method",
+     "definition": "Fisher and Mackenzie's 1922 harmonic analysis of Rothamsted weekly rainfall correlations - the same author pair's immediately prior joint analysis, a year before the parent.",
+     "causal_claim": "Creator lineage only: the pair's working practice formed here, but its harmonic machinery appears nowhere in the potato analysis.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Creator lineage only: the pair's working practice formed here, but its harmonic machinery appears nowhere in the potato analysis."
+    },
+    {
+     "name": "Fisher, Thornton and Mackenzie, The accuracy of the plating method of estimating the density of bacterial populations (1922)",
+     "year": 1922,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L20",
+     "type": "method",
+     "definition": "The 1922 Annals of Applied Biology paper by Fisher, Thornton and Mackenzie testing bacterial counts against the Poisson distribution - the team's other joint analysis of the parent's year-minus-one.",
+     "causal_claim": "Creator lineage only: a distribution-fitting exercise on bacterial counts; no mechanism of it is consumed by the analysis of a potato trial.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Creator lineage only: a distribution-fitting exercise on bacterial counts; no mechanism of it is consumed by the analysis of a potato trial."
+    },
+    {
+     "name": "Mercer and Hall, The experimental error of field trials (1911)",
+     "year": 1911,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L5",
+     "type": "method",
+     "definition": "Mercer and Hall's 1911 uniformity-trial study: the experimental error of field trials measured as a function of plot size and shape - the first quantitative statement of the soil-heterogeneity obstruction that blocking answers.",
+     "causal_claim": "Obstruction diagnosed: Mercer and Hall measured the experimental error the parent must estimate - how field error varies with plot size and shape. The claim to be tested at this parent: their uniformity discovery is embodied in the analysed trial's chessboard layout (the appreciation lecture: the arrangement 'utilizes the discovery from uniformity trials that plots near one another in a field tend to give closely similar yields'), and the parent's error discussion turns on that layout's consequence - but the consuming document may be Eden's layout, not the paper.",
+     "source_title": "Fisher and the Analysis of Variance, in Fienberg et al. (eds.), R.A. Fisher: An Appreciation (Springer, 1980)",
+     "source_url": "https://page-one.springer.com/pdf/preview/10.1007/978-1-4612-6079-0_4",
+     "note": "Obstruction diagnosed: Mercer and Hall measured the experimental error the parent must estimate - how field error varies with plot size and shape. The claim to be tested at this parent: their uniformity discovery is embodied in the analysed trial's chessboard layout (the appreciation lecture: the arrangement 'utilizes the discovery from uniformity trials that plots near one another in a field tend to give closely similar yields'), and the parent's error discussion turns on that layout's consequence - but the consuming document may be Eden's layout, not the paper."
+    },
+    {
+     "name": "Mercer and Hall, The experimental error of field trials (1911)",
+     "year": 1911,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L18",
+     "type": "method",
+     "definition": "Mercer and Hall's 1911 uniformity-trial study: the experimental error of field trials measured as a function of plot size and shape - the first quantitative statement of the soil-heterogeneity obstruction that blocking answers.",
+     "causal_claim": "As an instrument of observation: the uniformity trial - harvesting one uniformly treated field in small units - is the apparatus that made plot-to-plot heterogeneity observable as data; the analysed trial's layout presupposes its finding.",
+     "source_title": "Fisher and the Analysis of Variance, in Fienberg et al. (eds.), R.A. Fisher: An Appreciation (Springer, 1980)",
+     "source_url": "https://page-one.springer.com/pdf/preview/10.1007/978-1-4612-6079-0_4",
+     "note": "As an instrument of observation: the uniformity trial - harvesting one uniformly treated field in small units - is the apparatus that made plot-to-plot heterogeneity observable as data; the analysed trial's layout presupposes its finding."
+    },
+    {
+     "name": "Wood and Stratton, The interpretation of experimental results (1910)",
+     "year": 1910,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L4",
+     "type": "method",
+     "definition": "Wood and Stratton's 1910 Journal of Agricultural Science paper applying the theory of errors (probable error) to the interpretation of agricultural experiments - the pre-Fisher statement of the field-trial error problem, by Fisher's Cambridge teacher Stratton and the animal-nutrition experimenter Wood.",
+     "causal_claim": "Problem posed in the incumbent form: Speed records Fisher would have been familiar with this paper 'and a later one, Mercer and Hall (1911), on the same topic' - the same problem, taken up and measured by the later paper, through which any channel runs.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Problem posed in the incumbent form: Speed records Fisher would have been familiar with this paper 'and a later one, Mercer and Hall (1911), on the same topic' - the same problem, taken up and measured by the later paper, through which any channel runs."
+    },
+    {
+     "name": "Eden's Rothamsted potato variety and manurial experiment (1922)",
+     "year": 1922,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L8",
+     "type": "other",
+     "definition": "T. Eden's 1922 Rothamsted field experiment on the response of potato varieties to manures: the field split into dunged and undunged halves, each divided into 36 plots carrying twelve varieties in threefold replication in a chessboard arrangement, with three potash treatments - the 2x12x3 factorial trial the parent analyses (RES report for 1927, via Parolini; appreciation lecture).",
+     "causal_claim": "As data consumed: the parent is this experiment's analysis - its yields are the numbers in the first analysis-of-variance table, and its factorial structure (varieties, manures, interaction, error) is the table's row structure. The claim to be tested against the instance discipline: the trial was laid out to the incumbent chessboard doctrine, 'following the procedure recommended at that time' (appreciation lecture), and used no randomization.",
+     "source_title": "Parolini, The emergence of modern statistics in agricultural science: ANOVA, experimental design and the reshaping of research at Rothamsted, 1919-1933 (J. Hist. Biol. 48, 2015)",
+     "source_url": "https://api-depositonce.tu-berlin.de/server/api/core/bitstreams/ec64b47b-bf4c-4ab3-baf9-133680e993db/content",
+     "note": "As data consumed: the parent is this experiment's analysis - its yields are the numbers in the first analysis-of-variance table, and its factorial structure (varieties, manures, interaction, error) is the table's row structure. The claim to be tested against the instance discipline: the trial was laid out to the incumbent chessboard doctrine, 'following the procedure recommended at that time' (appreciation lecture), and used no randomization."
+    },
+    {
+     "name": "The Rothamsted long-term experiments (Broadbalk, Lawes and Gilbert, 1843)",
+     "year": 1843,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L8",
+     "type": "other",
+     "definition": "The Rothamsted long-term experiments, begun by Lawes and Gilbert in 1843 (Broadbalk wheat sown that autumn): continuous-treatment field plots whose accumulated records were the data tradition Fisher was hired in 1919 to examine.",
+     "causal_claim": "As the data tradition: the records formed the programme's problem consciousness and supplied paper I of the series (filed at L2/L20); the parent analyses a new 1922 trial, not the long-term plots - an arena/tradition claim, consistent with this candidate's disposition at Fisher 1926.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "As the data tradition: the records formed the programme's problem consciousness and supplied paper I of the series (filed at L2/L20); the parent analyses a new 1922 trial, not the long-term plots - an arena/tradition claim, consistent with this candidate's disposition at Fisher 1926."
+    },
+    {
+     "name": "Systematic chessboard layouts in Rothamsted variety trials",
+     "year": 1920,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L6",
+     "type": "method",
+     "definition": "The incumbent arrangement practice for variety trials at Rothamsted: systematic chessboard layouts placing different treatments near one another to neutralize soil trend by symmetry - the layout doctrine Eden's 1922 trial followed and the parent's prior state.",
+     "causal_claim": "Defined-against / prior state embodied in the data: the parent does not consume the doctrine - it exposes its cost (the analysis-of-variance error estimate is inflated because plots treated alike are farther apart than plots treated differently) and remarks the remedy, arrangement 'deliberately at random' (appreciation lecture).",
+     "source_title": "Fisher and the Analysis of Variance, in Fienberg et al. (eds.), R.A. Fisher: An Appreciation (Springer, 1980)",
+     "source_url": "https://page-one.springer.com/pdf/preview/10.1007/978-1-4612-6079-0_4",
+     "note": "Defined-against / prior state embodied in the data: the parent does not consume the doctrine - it exposes its cost (the analysis-of-variance error estimate is inflated because plots treated alike are farther apart than plots treated differently) and remarks the remedy, arrangement 'deliberately at random' (appreciation lecture)."
+    },
+    {
+     "name": "Gosset, On testing varieties of cereals (1923)",
+     "year": 1923,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L6",
+     "type": "method",
+     "definition": "Gosset's ('Student') 1923 Biometrika paper on testing cereal varieties, stating the systematic-arrangement doctrine - and carrying, as an appendix, Fisher's own solution to the error problem, written nine days after the parent paper was received (Speed).",
+     "causal_claim": "Coeval artifact, filed so the record exists: dated the parent's own year, it is expected to fall to the year-granularity bound at resolve (the sessions 27-34 pattern) - the Fisher-Gosset junction of March 1923 is a same-year event the bound cannot express. Logged, not re-dated.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Coeval artifact, filed so the record exists: dated the parent's own year, it is expected to fall to the year-granularity bound at resolve (the sessions 27-34 pattern) - the Fisher-Gosset junction of March 1923 is a same-year event the bound cannot express. Logged, not re-dated."
+    },
+    {
+     "name": "Neyman, On the application of probability theory to agricultural experiments (1923)",
+     "year": 1923,
+     "domain": "statistical theory",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "Neyman's 1923 doctoral paper (in Polish) introducing potential outcomes for agricultural experiments: each plot carries the yields it would give under every treatment, and randomization justifies inference over that scheme - the parallel formalization of the field experiment.",
+     "causal_claim": "Coeval artifact, filed so the record exists: dated the parent's own year and in Polish (untranslated until 1990), it is expected to fall to the year-granularity bound at resolve; at Fisher 1926 it was rejected as a parallel formalization, and the same disposition is recorded here in advance of the bound.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Coeval artifact, filed so the record exists: dated the parent's own year and in Polish (untranslated until 1990), it is expected to fall to the year-granularity bound at resolve; at Fisher 1926 it was rejected as a parallel formalization, and the same disposition is recorded here in advance of the bound."
+    },
+    {
+     "name": "Rothamsted Experimental Station (1843)",
+     "year": 1843,
+     "domain": "experimental design / agricultural statistics",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Rothamsted Experimental Station, founded by John Bennet Lawes in 1843: the agricultural research station that employed Fisher 1919-1933 and held the long-term experiments and records his design programme answered to.",
+     "causal_claim": "Institution claimed: the station employed both authors and ran the trial. Its separable artifacts at this parent are Eden's experiment and Fisher's papers, each proposed and judged separately in this scout - the decomposition discipline applied at Yates, the treatise, and Fisher 1926.",
+     "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+     "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+     "note": "Institution claimed: the station employed both authors and ran the trial. Its separable artifacts at this parent are Eden's experiment and Fisher's papers, each proposed and judged separately in this scout - the decomposition discipline applied at Yates, the treatise, and Fisher 1926."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "fisher-the-correlation-between-relatives-on-the-supposition-1918",
+      "candidate": {
+       "name": "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+       "year": 1918,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "Fisher's 1918 paper that coined 'variance' and first partitioned observed variation into additive components attributable to distinct causes - the variance-decomposition principle of which the analysis of variance is the designed-experiment form.",
+       "causal_claim": "As a component: the 1923 paper's analysis-of-variance table is the 1918 variance partition run on field data - sums of squares divided among varieties, manures, their interaction and error, each divided by its degrees of freedom (the paper's Table III, quoted by Parolini). The partition is inside the parent, one step in.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "As a component: the 1923 paper's analysis-of-variance table is the 1918 variance partition run on field data - sums of squares divided among varieties, manures, their interaction and error, each divided by its degrees of freedom (the paper's Table III, quoted by Parolini). The partition is inside the parent, one step in."
+      },
+      "members": [
+       0,
+       1
+      ],
+      "member_names": [
+       "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)",
+       "Fisher, The correlation between relatives on the supposition of Mendelian inheritance (1918)"
+      ],
+      "matched_node_id": "fisher-the-correlation-between-relatives-on-the-supposition-1918",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "student-s-t-distribution-gosset-1908-1908",
+      "candidate": {
+       "name": "Student's t-distribution (Gosset, 1908)",
+       "year": 1908,
+       "domain": "statistical inference",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "Gosset's ('Student', 1908) distribution of the ratio of a mean to its sample standard deviation: the first exact small-sample inference, derived for Guinness brewery samples of four or five observations.",
+       "causal_claim": "Filed as a component candidate so the record at this third Fisher parent is explicit: the 1923 paper's significance machinery is the variance ratio judged by comparing standard deviations of mean squares (its p. 316 criterion), not the t ratio - the claim to be tested at evaluation is non-consumption, discriminated from the treatise and SMRW where t is codified and presupposed.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Filed as a component candidate so the record at this third Fisher parent is explicit: the 1923 paper's significance machinery is the variance ratio judged by comparing standard deviations of mean squares (its p. 316 criterion), not the t ratio - the claim to be tested at evaluation is non-consumption, discriminated from the treatise and SMRW where t is codified and presupposed."
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Student's t-distribution (Gosset, 1908)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-on-the-interpretation-of-chi-square-from-contingency-1922",
+      "candidate": {
+       "name": "Fisher, On the interpretation of chi-square from contingency tables (1922)",
+       "year": 1922,
+       "domain": "statistical inference",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "Fisher's 1922 JRSS paper fixing the degrees of freedom of Pearson's chi-square for contingency tables and the calculation of P - the degrees-of-freedom doctrine of Fisher's testing machinery.",
+       "causal_claim": "As a component: the 1923 table divides each sum of squares by its degrees of freedom, computed 'subtracting 1' per factor (the paper's Table III description, quoted by Parolini) - Fisher's 1922 degrees-of-freedom doctrine embodied in the table's arithmetic.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "As a component: the 1923 table divides each sum of squares by its degrees of freedom, computed 'subtracting 1' per factor (the paper's Table III description, quoted by Parolini) - Fisher's 1922 degrees-of-freedom doctrine embodied in the table's arithmetic."
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Fisher, On the interpretation of chi-square from contingency tables (1922)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pearson-s-chi-square-test-1900-1900",
+      "candidate": {
+       "name": "Pearson's chi-square test (1900)",
+       "year": 1900,
+       "domain": "statistical inference",
+       "lens": "L1",
+       "type": "method",
+       "definition": "Pearson's 1900 chi-square criterion: the first general test of goodness of fit, comparing observed frequencies with those expected under a hypothesis by a single discrepancy measure with a known distribution.",
+       "causal_claim": "As a component at one remove: the sampling theory of sums of squares behind the 1923 table is chi-square theory, but in the form Fisher's 1922 correction fixed (degrees of freedom) - the channel claim runs through the correction, filed separately at L1.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "As a component at one remove: the sampling theory of sums of squares behind the 1923 table is chi-square theory, but in the form Fisher's 1922 correction fixed (degrees of freedom) - the channel claim runs through the correction, filed separately at L1."
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Pearson's chi-square test (1900)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-on-the-mathematical-foundations-of-theoretical-statis-1922",
+      "candidate": {
+       "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+       "year": 1922,
+       "domain": "statistical inference",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "Fisher's 1922 Phil. Trans. paper founding estimation theory: consistency, efficiency, sufficiency, and the method of maximum likelihood as the criterion for choosing statistics.",
+       "causal_claim": "Filed so its non-consumption is on the record: the 1923 paper estimates nothing by likelihood and fits no parameters - its argument is partition plus a comparison of standard deviations. The claim is programme adjacency, not a channel.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Filed so its non-consumption is on the record: the 1923 paper estimates nothing by likelihood and fits no parameters - its argument is partition plus a comparison of standard deviations. The claim is programme adjacency, not a channel."
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Fisher, On the mathematical foundations of theoretical statistics (1922)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-on-the-probable-error-of-a-coefficient-of-correlation-1921",
+      "candidate": {
+       "name": "Fisher, On the probable error of a coefficient of correlation deduced from a small sample (1921)",
+       "year": 1921,
+       "domain": "statistical inference",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "Fisher's 1921 Metron paper deriving the distribution of the correlation coefficient in small samples via the z-transformation (z = arctanh r) - the first of Fisher's z statistics.",
+       "causal_claim": "Filed to close a naming trap: the 1923 analysis compares variances (a z of variance ratios in later dress), but the exact distribution of that ratio was derived only in 1924 - after the parent - and the 1921 paper's z belongs to the correlation coefficient, a different statistic. No mechanism of the 1921 paper is consumed by the parent.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Filed to close a naming trap: the 1923 analysis compares variances (a z of variance ratios in later dress), but the exact distribution of that ratio was derived only in 1924 - after the parent - and the 1921 paper's z belongs to the correlation coefficient, a different statistic. No mechanism of the 1921 paper is consumed by the parent."
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Fisher, On the probable error of a coefficient of correlation deduced from a small sample (1921)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-studies-in-crop-variation-i-1921-1921",
+      "candidate": {
+       "name": "Fisher, Studies in crop variation I (1921)",
+       "year": 1921,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Fisher's 1921 first crop-variation study: 67 years of Broadbalk wheat yields decomposed against rainfall - the variation of a time series divided into components representing annual causes and slow deterioration, the first data application of the variance idea in the series the parent continues.",
+       "causal_claim": "Own-series predecessor: paper I of the series applied the variance decomposition to a yield time series; paper II applies it to a factorial field trial. The claim to be tested: whether the 1923 partition is consumed-and-reworked from the 1921 application, or whether both are parallel applications of the shared 1918 partition, whose channel is direct.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Own-series predecessor: paper I of the series applied the variance decomposition to a yield time series; paper II applies it to a factorial field trial. The claim to be tested: whether the 1923 partition is consumed-and-reworked from the 1921 application, or whether both are parallel applications of the shared 1918 partition, whose channel is direct."
+      },
+      "members": [
+       7,
+       8
+      ],
+      "member_names": [
+       "Fisher, Studies in crop variation I (1921)",
+       "Fisher, Studies in crop variation I (1921)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-and-mackenzie-the-correlation-of-weekly-rainfall-1922-1922",
+      "candidate": {
+       "name": "Fisher and Mackenzie, The correlation of weekly rainfall (1922)",
+       "year": 1922,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L20",
+       "type": "method",
+       "definition": "Fisher and Mackenzie's 1922 harmonic analysis of Rothamsted weekly rainfall correlations - the same author pair's immediately prior joint analysis, a year before the parent.",
+       "causal_claim": "Creator lineage only: the pair's working practice formed here, but its harmonic machinery appears nowhere in the potato analysis.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Creator lineage only: the pair's working practice formed here, but its harmonic machinery appears nowhere in the potato analysis."
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Fisher and Mackenzie, The correlation of weekly rainfall (1922)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fisher-thornton-and-mackenzie-the-accuracy-of-the-plating-me-1922",
+      "candidate": {
+       "name": "Fisher, Thornton and Mackenzie, The accuracy of the plating method of estimating the density of bacterial populations (1922)",
+       "year": 1922,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L20",
+       "type": "method",
+       "definition": "The 1922 Annals of Applied Biology paper by Fisher, Thornton and Mackenzie testing bacterial counts against the Poisson distribution - the team's other joint analysis of the parent's year-minus-one.",
+       "causal_claim": "Creator lineage only: a distribution-fitting exercise on bacterial counts; no mechanism of it is consumed by the analysis of a potato trial.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Creator lineage only: a distribution-fitting exercise on bacterial counts; no mechanism of it is consumed by the analysis of a potato trial."
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Fisher, Thornton and Mackenzie, The accuracy of the plating method of estimating the density of bacterial populations (1922)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911",
+      "candidate": {
+       "name": "Mercer and Hall, The experimental error of field trials (1911)",
+       "year": 1911,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L5",
+       "type": "method",
+       "definition": "Mercer and Hall's 1911 uniformity-trial study: the experimental error of field trials measured as a function of plot size and shape - the first quantitative statement of the soil-heterogeneity obstruction that blocking answers.",
+       "causal_claim": "Obstruction diagnosed: Mercer and Hall measured the experimental error the parent must estimate - how field error varies with plot size and shape. The claim to be tested at this parent: their uniformity discovery is embodied in the analysed trial's chessboard layout (the appreciation lecture: the arrangement 'utilizes the discovery from uniformity trials that plots near one another in a field tend to give closely similar yields'), and the parent's error discussion turns on that layout's consequence - but the consuming document may be Eden's layout, not the paper.",
+       "source_title": "Fisher and the Analysis of Variance, in Fienberg et al. (eds.), R.A. Fisher: An Appreciation (Springer, 1980)",
+       "source_url": "https://page-one.springer.com/pdf/preview/10.1007/978-1-4612-6079-0_4",
+       "note": "Obstruction diagnosed: Mercer and Hall measured the experimental error the parent must estimate - how field error varies with plot size and shape. The claim to be tested at this parent: their uniformity discovery is embodied in the analysed trial's chessboard layout (the appreciation lecture: the arrangement 'utilizes the discovery from uniformity trials that plots near one another in a field tend to give closely similar yields'), and the parent's error discussion turns on that layout's consequence - but the consuming document may be Eden's layout, not the paper."
+      },
+      "members": [
+       11,
+       12
+      ],
+      "member_names": [
+       "Mercer and Hall, The experimental error of field trials (1911)",
+       "Mercer and Hall, The experimental error of field trials (1911)"
+      ],
+      "matched_node_id": "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "wood-and-stratton-the-interpretation-of-experimental-results-1910",
+      "candidate": {
+       "name": "Wood and Stratton, The interpretation of experimental results (1910)",
+       "year": 1910,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L4",
+       "type": "method",
+       "definition": "Wood and Stratton's 1910 Journal of Agricultural Science paper applying the theory of errors (probable error) to the interpretation of agricultural experiments - the pre-Fisher statement of the field-trial error problem, by Fisher's Cambridge teacher Stratton and the animal-nutrition experimenter Wood.",
+       "causal_claim": "Problem posed in the incumbent form: Speed records Fisher would have been familiar with this paper 'and a later one, Mercer and Hall (1911), on the same topic' - the same problem, taken up and measured by the later paper, through which any channel runs.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Problem posed in the incumbent form: Speed records Fisher would have been familiar with this paper 'and a later one, Mercer and Hall (1911), on the same topic' - the same problem, taken up and measured by the later paper, through which any channel runs."
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Wood and Stratton, The interpretation of experimental results (1910)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "eden-s-rothamsted-potato-variety-and-manurial-experiment-192-1922",
+      "candidate": {
+       "name": "Eden's Rothamsted potato variety and manurial experiment (1922)",
+       "year": 1922,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L8",
+       "type": "other",
+       "definition": "T. Eden's 1922 Rothamsted field experiment on the response of potato varieties to manures: the field split into dunged and undunged halves, each divided into 36 plots carrying twelve varieties in threefold replication in a chessboard arrangement, with three potash treatments - the 2x12x3 factorial trial the parent analyses (RES report for 1927, via Parolini; appreciation lecture).",
+       "causal_claim": "As data consumed: the parent is this experiment's analysis - its yields are the numbers in the first analysis-of-variance table, and its factorial structure (varieties, manures, interaction, error) is the table's row structure. The claim to be tested against the instance discipline: the trial was laid out to the incumbent chessboard doctrine, 'following the procedure recommended at that time' (appreciation lecture), and used no randomization.",
+       "source_title": "Parolini, The emergence of modern statistics in agricultural science: ANOVA, experimental design and the reshaping of research at Rothamsted, 1919-1933 (J. Hist. Biol. 48, 2015)",
+       "source_url": "https://api-depositonce.tu-berlin.de/server/api/core/bitstreams/ec64b47b-bf4c-4ab3-baf9-133680e993db/content",
+       "note": "As data consumed: the parent is this experiment's analysis - its yields are the numbers in the first analysis-of-variance table, and its factorial structure (varieties, manures, interaction, error) is the table's row structure. The claim to be tested against the instance discipline: the trial was laid out to the incumbent chessboard doctrine, 'following the procedure recommended at that time' (appreciation lecture), and used no randomization."
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Eden's Rothamsted potato variety and manurial experiment (1922)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-rothamsted-long-term-experiments-broadbalk-lawes-and-gil-1843",
+      "candidate": {
+       "name": "The Rothamsted long-term experiments (Broadbalk, Lawes and Gilbert, 1843)",
+       "year": 1843,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L8",
+       "type": "other",
+       "definition": "The Rothamsted long-term experiments, begun by Lawes and Gilbert in 1843 (Broadbalk wheat sown that autumn): continuous-treatment field plots whose accumulated records were the data tradition Fisher was hired in 1919 to examine.",
+       "causal_claim": "As the data tradition: the records formed the programme's problem consciousness and supplied paper I of the series (filed at L2/L20); the parent analyses a new 1922 trial, not the long-term plots - an arena/tradition claim, consistent with this candidate's disposition at Fisher 1926.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "As the data tradition: the records formed the programme's problem consciousness and supplied paper I of the series (filed at L2/L20); the parent analyses a new 1922 trial, not the long-term plots - an arena/tradition claim, consistent with this candidate's disposition at Fisher 1926."
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "The Rothamsted long-term experiments (Broadbalk, Lawes and Gilbert, 1843)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "systematic-chessboard-layouts-in-rothamsted-variety-trials-1920",
+      "candidate": {
+       "name": "Systematic chessboard layouts in Rothamsted variety trials",
+       "year": 1920,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L6",
+       "type": "method",
+       "definition": "The incumbent arrangement practice for variety trials at Rothamsted: systematic chessboard layouts placing different treatments near one another to neutralize soil trend by symmetry - the layout doctrine Eden's 1922 trial followed and the parent's prior state.",
+       "causal_claim": "Defined-against / prior state embodied in the data: the parent does not consume the doctrine - it exposes its cost (the analysis-of-variance error estimate is inflated because plots treated alike are farther apart than plots treated differently) and remarks the remedy, arrangement 'deliberately at random' (appreciation lecture).",
+       "source_title": "Fisher and the Analysis of Variance, in Fienberg et al. (eds.), R.A. Fisher: An Appreciation (Springer, 1980)",
+       "source_url": "https://page-one.springer.com/pdf/preview/10.1007/978-1-4612-6079-0_4",
+       "note": "Defined-against / prior state embodied in the data: the parent does not consume the doctrine - it exposes its cost (the analysis-of-variance error estimate is inflated because plots treated alike are farther apart than plots treated differently) and remarks the remedy, arrangement 'deliberately at random' (appreciation lecture)."
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Systematic chessboard layouts in Rothamsted variety trials"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rothamsted-experimental-station-1843-1843",
+      "candidate": {
+       "name": "Rothamsted Experimental Station (1843)",
+       "year": 1843,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Rothamsted Experimental Station, founded by John Bennet Lawes in 1843: the agricultural research station that employed Fisher 1919-1933 and held the long-term experiments and records his design programme answered to.",
+       "causal_claim": "Institution claimed: the station employed both authors and ran the trial. Its separable artifacts at this parent are Eden's experiment and Fisher's papers, each proposed and judged separately in this scout - the decomposition discipline applied at Yates, the treatise, and Fisher 1926.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Institution claimed: the station employed both authors and ran the trial. Its separable artifacts at this parent are Eden's experiment and Fisher's papers, each proposed and judged separately in this scout - the decomposition discipline applied at Yates, the treatise, and Fisher 1926."
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "Rothamsted Experimental Station (1843)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       1
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       7,
+       8
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       11,
+       12
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Gosset, On testing varieties of cereals (1923)",
+       "year": 1923,
+       "domain": "experimental design / agricultural statistics",
+       "lens": "L6",
+       "type": "method",
+       "definition": "Gosset's ('Student') 1923 Biometrika paper on testing cereal varieties, stating the systematic-arrangement doctrine - and carrying, as an appendix, Fisher's own solution to the error problem, written nine days after the parent paper was received (Speed).",
+       "causal_claim": "Coeval artifact, filed so the record exists: dated the parent's own year, it is expected to fall to the year-granularity bound at resolve (the sessions 27-34 pattern) - the Fisher-Gosset junction of March 1923 is a same-year event the bound cannot express. Logged, not re-dated.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Coeval artifact, filed so the record exists: dated the parent's own year, it is expected to fall to the year-granularity bound at resolve (the sessions 27-34 pattern) - the Fisher-Gosset junction of March 1923 is a same-year event the bound cannot express. Logged, not re-dated."
+      },
+      "reason": "dated on/after parent year 1923"
+     },
+     {
+      "candidate": {
+       "name": "Neyman, On the application of probability theory to agricultural experiments (1923)",
+       "year": 1923,
+       "domain": "statistical theory",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "Neyman's 1923 doctoral paper (in Polish) introducing potential outcomes for agricultural experiments: each plot carries the yields it would give under every treatment, and randomization justifies inference over that scheme - the parallel formalization of the field experiment.",
+       "causal_claim": "Coeval artifact, filed so the record exists: dated the parent's own year and in Polish (untranslated until 1990), it is expected to fall to the year-granularity bound at resolve; at Fisher 1926 it was rejected as a parallel formalization, and the same disposition is recorded here in advance of the bound.",
+       "source_title": "Speed, Introduction to 'The Arrangement of Field Experiments' (Berkeley TR 253, 1990)",
+       "source_url": "https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/253.pdf",
+       "note": "Coeval artifact, filed so the record exists: dated the parent's own year and in Polish (untranslated until 1990), it is expected to fall to the year-granularity bound at resolve; at Fisher 1926 it was rejected as a parallel formalization, and the same disposition is recorded here in advance of the bound."
+      },
+      "reason": "dated on/after parent year 1923"
+     }
+    ],
     "prefiltered": []
    },
    "judge_queue": [],
