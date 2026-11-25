@@ -3106,3 +3106,51 @@
   "expansions_done": 109
  }
 }
+{
+ "ts": "2026-11-25T14:37:40.196786+00:00",
+ "session": "run session 50 (v4), expansion 2 of 2",
+ "kind": "expansion",
+ "parent": "ibm-silicon-carrier-packaging-knickerbocker-et-al-2005-2005",
+ "parent_name": "IBM silicon carrier packaging (Knickerbocker et al., 2005)",
+ "provenance": "Frontier taken from run state after expansion 1 (apply-verdicts frontier_next put the carrier first). Parent stored record verified COMPLETE; no rejections exist for this parent; its stored verification notes read (session-48 most-contestable flag and re-hearing condition - that condition concerns the carrier's edge INTO CoWoS and is untouched by this expansion). THREE BRIEF CORRECTIONS, verified against primary records and the graph: (1) the brief dates the glass-ceramic MCM '(2001)' - the fetched record supports the ES/9000 glass-ceramic TCM generation at 1990-92 (Davidson et al., IBM J. Res. Dev. 36(5), 1992); filed at 1990. (2) The brief dates the TCM '(1981)' - it was introduced with the 3081 in 1980 (Blodgett & Barbour, IBM J. Res. Dev. 26(1), 1982); filed at 1980. (3) The brief expects Cu damascene to be an EXISTING node ('ibm-copper-damascene-interconnect-technology-1997-1997') - no such node exists in the graph; damascene was a rejected candidate at TSV (session 49) and never became a node. It was heard here as an ordinary new candidate and admitted as NEW. Web grounding fetched this session: the parent's CICC 2005 abstract (IBM Research), Andry et al. SOP paper text (IBM J. Res. Dev. 49(4/5), 2005), the TCM record (Blodgett & Barbour 1982), the C4 record (Miller 1969 via the Totta retrospective), Intel US 6,562,653 full text, Tsang et al. MRS 2007.",
+ "raw": 17,
+ "dry_notes": 15,
+ "date_dropped": [],
+ "distinct": 15,
+ "evaluated": 15,
+ "survivors": 2,
+ "rejected": 13,
+ "mediated": [],
+ "survivors_detail": [
+  {
+   "name": "Copper damascene interconnect technology (IBM, 1997)",
+   "id": "copper-damascene-interconnect-technology-ibm-1997-1997",
+   "score": 6.5,
+   "kind": "new",
+   "depth": 5,
+   "decisive": "Documented consumption in the parent's own papers: the carrier provides 'very dense package wiring following CMOS back-end-of-line design rules', 'leverages existing manufacturing capability' (Andry et al. 2005), with 'fine pitch Cu wiring' (Tsang et al. 2007). Q7 passes on the design-rules-as-interface argument - the parent composes its substrate IN the BEOL rule system. The TSV discrimination is recorded in full in the verification notes: at TSV this technology failed closed partial (no document connected it to the via fill; undocumented intra-firm craft inheritance); here the connection is the parent's own text. The pair is the run's cleanest documented-consumption vs craft-inheritance discrimination; both records stand, per parent."
+  },
+  {
+   "name": "C4 controlled-collapse chip connection (Miller, 1969)",
+   "id": "c4-controlled-collapse-chip-connection-miller-1969-1969",
+   "score": 5.5,
+   "kind": "new",
+   "depth": 5,
+   "decisive": "Practice-instantiation with a unique founding artifact (the Quetelet shape): the parent's headline - fine-pitch interconnection in its title, 50 um pitch, >16x I/O - is an area-array solder-bump attach, the practice C4 founded (1962 reduction to practice; Miller's 1969 geometric-control paper; 3 to 7,018 bumps over 40 years). Corroboration: Intel's rival interposer patent specifies chips on a silicon interposer 'connected by C4'. FLAGGED MOST CONTESTABLE of the expansion (the parent's papers do not cite 1969; the 2005 joint is the practice's descendant). Re-hearing condition: a document showing the carrier's attach derives from a different named attach technology reopens it. Discriminated from C4NP's three leap-gate refusals (a transfer variant = the leap's fastener; C4 here is the practice itself and interconnection is the headline) and from C4's defined-against refusal at TSV (per-parent relations). C4NP (2008) postdates this parent, so the CoWoS-era mediation of C4 cannot apply here - the hearing is direct by chronology."
+  }
+ ],
+ "rejections_of_note": [
+  "Thermal Conduction Module (TCM) (IBM, 1980) and glass-ceramic MCM substrate (IBM, c. 1990) - both FAIL-CLOSED PARTIAL: the two direct hearings assigned at CoWoS (where both were mediated via the carrier) discharged here as partials. The module concept is retained - the parent's MMCM names itself in the TCM's form - but both artifacts' mechanisms are replaced wholesale (fired ceramic / co-fired glass-ceramic out; silicon with damascene BEOL rules and CTE identity in), the parent's abstract defines its density claim against 'traditional organic and ceramic packaging', and the actual intra-firm channel is formation (programme + lead author, both refused separately). Concept retention plus formation is not consumption of the artifact.",
+  "ITRS off-chip interconnection gap (c. 2003) - FAIL-CLOSED PARTIAL (Hochreiter): cited in the lineage's papers as motivation (Tsang et al. refs [1-2]); the memory-wall shape at a packaging parent. Known-good-die problem (c. 1995) - FAIL-CLOSED PARTIAL: named in the parent's own abstract as what the carrier is the basis for, but a named problem answered is motivation, not a channel (the LAMA discrimination's negative branch: no organizing-frame adoption, and no single founding artifact exists).",
+  "Intel silicon interposer patent (US 6,562,653, filed 2000) - REFUSED as anticipation without a junction, recorded in full: its text states the parent's concept (silicon interposer, through-substrate vias, CTE framing, chips 'connected by C4') three to six years before the parent. Availability in the patent literature is not ancestry; the record disciplines the parent's novelty - its leap is the published, quantified, manufactured form of an already-claimed concept. IMEC MCM-Si (1998) refused as a parallel carrier (multiples evidence capping the parent's necessity). GE HDI overlay MCM (c. 1989) refused as anticipation from the prior decade (evaluation claims kept modest - general record only, noted in its directness evidence).",
+  "IBM advanced packaging programme (c. 2000) - REFUSED on self-carriage in its strongest form: the programme genuinely carried the concept across three substrate generations, but it acts through its artifacts (all heard) and is the parent's own firm (the IIPD shape; OpenPOWER discriminated as external). Knickerbocker's TCM programme work (1991) refused as formation - the lineage's continuity is a person, and a person is not an artifact the parent consumes (the Chiang/Catanzaro shape).",
+  "Organic laminate packaging (c. 2000) - REFUSED as the defined-against incumbent named in the parent's abstract. Wafer thinning & handling (c. 2000) fail-closed partial (presupposed craft, the TSV fill-pair shape). Microchannel cooling (Tuckerman & Pease, 1981) fail-closed partial (ecosystem adjacency: silicon-as-substrate tradition, thermal branch; the parent is the wiring branch and consumes none of it). Post-CMOS system-integration demand (c. 2003) refused as era condition without a carrying document."
+ ],
+ "notes": "DIRECTION RECORD (the brief's TSV point, discharged as designed): TSV was NOT filed as a candidate. The graph's TSV node is dated 2007 (IBM's announcement) and postdates the parent (2005); chronology is a hard veto. The 2005 papers' through-vias are the parent's own feed-throughs - the carrier presupposes the via concept a full two years before the graph's TSV milestone exists, which is a fact about the graph's dating (milestone = the 2007 announcement) rather than about the technology's history, and it is recorded here and in the scout's L1 dry note, never repaired by re-dating or inversion. STRUCTURAL FINDINGS. (1) The carrier's ancestry is a wiring technology and an attach practice - both IBM house technologies with founding documents - while its substrate lineage (TCM, glass-ceramic) and its institution are all refused: at this parent, descent runs through what the artifact is MADE WITH, not what it is the successor OF. (2) Session 50's two expansions are mirror images on the practice-instantiation shape: Coburn & Winters (mechanism, DRIE) and C4 (attach practice, carrier) both admitted without a name-citation in the child, on unique founding artifacts instantiated in the child's own claim language; and damascene's admission against its TSV refusal is the session's second mirror (documented consumption vs craft inheritance). (3) L16 dry WITH the standards-inversion finding (no external standard implemented; its interface is the firm's own C4 practice, heard as a candidate) and L10 dry WITH a finding (materials conventional; the CTE-identity argument is a property of the substrate choice, not a new material). Depth 5 gains its 46th and 47th nodes. InstructGPT/RLHF flag did not resurface.",
+ "totals_after": {
+  "nodes": 216,
+  "edges": 279,
+  "budget": "216/2000",
+  "expansions_done": 110
+ }
+}
