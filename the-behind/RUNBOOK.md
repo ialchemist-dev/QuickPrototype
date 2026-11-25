@@ -217,9 +217,13 @@ python3 pipeline/pipeline.py resolve --graph $G --parent <PARENT_ID>
 Deterministic resolution per §4.5: canonical-ID and alias matches and
 strong-band embedding matches are applied; candidates dated on/after
 the parent are dropped; exact repeats of this parent's rejections are
-dropped. Ambiguous pairs are written to `judge_queue_<PARENT_ID>.json`
-**next to the graph file**. The command prints `distinct`,
-`matched_existing`, `auto_merges`, and `judge_queue` counts.
+dropped by the §4.4 pre-filter — with a record (`prefiltered_records`
+in the output and the stored resolution), never silently. A candidate
+marked `"rehearing": true` is exempt from the pre-filter and resolves
+with a `rehearing_of` annotation (§9). Ambiguous pairs are written to
+`judge_queue_<PARENT_ID>.json` **next to the graph file**. The command
+prints `distinct`, `matched_existing`, `auto_merges`, and
+`judge_queue` counts.
 
 ### Step 3 — Judge the gray zone (you) — skip if `judge_queue` is 0
 
@@ -881,12 +885,20 @@ allows.
 
 - *Previously rejected candidates.* A candidate rejected for P under
   the superseded substrate-class judgment (or never scouted because
-  its lens did not exist) may be proposed in the sweep when its claim
-  is one the original evaluation never considered. `resolve` drops
-  exact repeats of P's rejection list automatically; if it drops a
-  re-proposal, do NOT rename the candidate to evade the filter —
-  record the candidate and the block in the run log and escalate the
-  tooling gap.
+  its lens did not exist) may be re-proposed in the sweep when its
+  claim is one the original evaluation never considered. To get it
+  heard, mark the candidate `"rehearing": true` in the scout batch:
+  `resolve` then carries it through identity resolution with a
+  `rehearing_of` annotation naming the original rejection (parent,
+  date, reason), and the annotation lands on the admission edge or
+  the new rejection record — the new judgment supersedes or confirms
+  the old one on the record. Log every re-hearing and its outcome in
+  the run log (see the `rehearings` list in the `apply-verdicts`
+  output). Only mark genuine re-hearings under a claim the original
+  evaluation never considered. An UNMARKED exact repeat is still
+  dropped by the §4.4 pre-filter — now with a record
+  (`prefiltered_records`), never silently — and renaming a candidate
+  to evade the filter remains forbidden.
 - *CLI limits.* If the CLI refuses a supplementary expansion on an
   already-expanded node, stop and escalate. Never edit `graph.json` by
   hand to force it (§0).
@@ -938,6 +950,21 @@ loop (§4, §5).
   mediation check — no more, no less (§6.2). If the candidate is
   generic infrastructure (electricity, "computers"), it fails on those
   tests, not on its category.
+- **A sweep re-proposal vanished at `resolve` (pre-filter)** — before
+  the rehearing fix, `resolve` silently dropped any candidate whose
+  normalized name exactly matched a prior rejection for the same
+  parent: no dropped record, no claim-awareness, so candidates
+  rejected under superseded judgments (CUDA / cuDNN under the
+  substrate-era directness class, the OpenAPI specification's
+  never-evaluated standards claim) could never be re-heard. Now every
+  pre-filter drop is recorded (`prefiltered` count and
+  `prefiltered_records` in the resolve output and the stored
+  resolution), and a candidate marked `"rehearing": true` in the
+  scout batch is heard with a `rehearing_of` annotation (§9). If a
+  marked re-proposal still disappears, check its name against the
+  rejection list — the match is on the normalized name; if the names
+  genuinely differ, it was never pre-filtered, so look at the
+  resolution `dropped` list (date bound) instead.
 - **A lens returned nothing and there is no dry note (v4)** — the
   scout is incomplete: every content lens owes ≥3 candidates or a
   recorded dry note in `work/dry_notes_<PARENT_ID>.json` (§4 Step 1).

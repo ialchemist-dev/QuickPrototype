@@ -114,15 +114,60 @@ def cmd_resolve(args):
         out({"error": f"parent node not found: {args.parent}"})
         return
     exp = _expansion(g, parent["id"])
-    # drop exact repeats of candidates already rejected for this parent (§4.4)
-    rejected_names = {
-        identity.normalize_name(r["name"])
-        for r in g.data["run_state"]["rejected"] if r["parent_id"] == parent["id"]
-    }
-    cands = [c for c in exp["raw_candidates"]
-             if identity.normalize_name(c.get("name", "")) not in rejected_names]
+    # Pre-filter (§4.4): exact repeats of candidates already rejected for
+    # this parent are dropped before resolution — but never silently:
+    # every drop is recorded in the resolution and echoed on stdout.
+    # A candidate the scout marks "rehearing": true (a retro-sweep
+    # re-proposal, RUNBOOK §9) is NOT dropped: it proceeds through
+    # resolution carrying a rehearing_of annotation naming the original
+    # rejection it re-opens, so the new judgment supersedes or confirms
+    # the old one on the record. (Rejections are appended chronologically,
+    # so the first record per name is the original rejection.)
+    prior_rejections = {}
+    for r in g.data["run_state"]["rejected"]:
+        if r["parent_id"] == parent["id"]:
+            prior_rejections.setdefault(identity.normalize_name(r["name"]), r)
+    cands, prefiltered = [], []
+    for c in exp["raw_candidates"]:
+        prior = prior_rejections.get(identity.normalize_name(c.get("name", "")))
+        if prior is None:
+            cands.append(c)
+        elif c.get("rehearing"):
+            annotation = {
+                "parent_id": prior["parent_id"],
+                "name": prior["name"],
+                "reason": prior.get("reason", ""),
+                "at": prior.get("at"),
+            }
+            if prior.get("mediated_via"):
+                annotation["mediated_via"] = prior["mediated_via"]
+            c["rehearing_of"] = annotation
+            cands.append(c)
+        else:
+            prefiltered.append({
+                "candidate": c.get("name", ""),
+                "parent_id": parent["id"],
+                "matched_rejection": {
+                    "name": prior["name"],
+                    "reason": prior.get("reason", ""),
+                    "at": prior.get("at"),
+                },
+                "reason": "exact repeat of a prior rejection for this parent "
+                          "(§4.4 pre-filter); not submitted as a retro-sweep "
+                          "re-hearing",
+            })
     others = [n for n in g.live_nodes() if n["id"] != parent["id"]]
     res = identity.resolve(cands, others, parent_year=parent.get("year"))
+    res["prefiltered"] = prefiltered
+    # a rehearing annotation must survive candidate merging: if a merged
+    # group's representative does not carry it, inherit it from a member
+    for d in res["distinct"]:
+        if not d["candidate"].get("rehearing_of"):
+            for mi in d["members"]:
+                if cands[mi].get("rehearing_of"):
+                    d["candidate"]["rehearing_of"] = cands[mi]["rehearing_of"]
+                    break
+    rehearings = [c.get("name", "") for c in cands if c.get("rehearing_of")]
     exp["resolution"] = res
     exp["judge_queue"] = res["judge_queue"]
     exp["judgments_applied"] = len(res["judge_queue"]) == 0
@@ -134,6 +179,8 @@ def cmd_resolve(args):
         json.dump(res["judge_queue"], f, ensure_ascii=False, indent=1)
     out({"ok": True, "parent": parent["id"], "embedder": res["embedder"],
          "raw": len(exp["raw_candidates"]), "dropped": len(res["dropped"]),
+         "prefiltered": len(prefiltered), "prefiltered_records": prefiltered,
+         "rehearings": rehearings,
          "distinct": len(res["distinct"]),
          "matched_existing": sum(1 for d in res["distinct"] if d["matched_node_id"]),
          "auto_merges": len(res["auto_merges"]),
@@ -227,6 +274,7 @@ def cmd_apply_verdicts(args):
     cap = args.cap if args.cap is not None else g.data["config"].get("survivor_cap", 20)
     survivors, rejected = score_mod.rank_candidates(evaluations, cap)
     created, linked = [], []
+    rehearings = []
     for s in survivors:
         d = s["_distinct"]
         cand = d["candidate"]
@@ -257,8 +305,14 @@ def cmd_apply_verdicts(args):
                 "sources": sources,
             })
             created.append(node["id"])
+        rehearing_of = cand.get("rehearing_of")
         g.add_edge(node["id"], parent["id"], s["verdicts"], s["score"], s["gate"],
-                   leap=s.get("leap"), directness=s.get("directness"))
+                   leap=s.get("leap"), directness=s.get("directness"),
+                   rehearing_of=rehearing_of)
+        if rehearing_of:
+            rehearings.append({"name": s.get("name") or cand.get("name"),
+                               "outcome": "admitted", "node_id": node["id"],
+                               "rehearing_of": rehearing_of})
     mediated = []
     for r in rejected:
         rec = {
@@ -269,6 +323,11 @@ def cmd_apply_verdicts(args):
         if med:
             rec["mediated_via"] = med
             mediated.append({"name": r.get("name", ""), "mediated_via": med})
+        rehearing_of = ((r.get("_distinct") or {}).get("candidate") or {}).get("rehearing_of")
+        if rehearing_of:
+            rec["rehearing_of"] = rehearing_of
+            rehearings.append({"name": r.get("name", ""), "outcome": "rejected",
+                               "rehearing_of": rehearing_of})
         g.data["run_state"]["rejected"].append(rec)
     parent_node = g.data["nodes"][parent["id"]]
     parent_node["expanded"] = True
@@ -280,6 +339,7 @@ def cmd_apply_verdicts(args):
          "evaluated": len(evaluations), "survivors": len(survivors),
          "created_nodes": created, "linked_existing": linked,
          "rejected": len(rejected), "mediated_rejections": mediated,
+         "rehearings": rehearings,
          "node_budget_used": st["node_budget_used"], "node_budget": st["node_budget"],
          "frontier_next": st["frontier"][:5]})
 
@@ -297,7 +357,8 @@ def cmd_show_distinct(args):
                        "year": d["candidate"].get("year"),
                        "members": d["member_names"],
                        "matched_node_id": d["matched_node_id"],
-                       "pending_judge": d["pending_judge"]}
+                       "pending_judge": d["pending_judge"],
+                       "rehearing_of": d["candidate"].get("rehearing_of")}
                       for d in res["distinct"]]})
 
 

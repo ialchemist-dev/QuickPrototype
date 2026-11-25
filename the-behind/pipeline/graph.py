@@ -99,6 +99,8 @@ class Graph:
             "type": root.get("type", "other"),
             "definition": root.get("definition", ""),
             "bottleneck": root.get("bottleneck", ""),
+            "leap": root.get("leap", ""),
+            "prior_state": root.get("prior_state", ""),
             "status": "provisional",
             "depth": 0,
             "expanded": False,
@@ -174,6 +176,8 @@ class Graph:
             "type": fields.get("type", "other"),
             "definition": fields.get("definition", ""),
             "bottleneck": fields.get("bottleneck", ""),
+            "leap": fields.get("leap", ""),
+            "prior_state": fields.get("prior_state", ""),
             "status": "provisional",
             "depth": fields.get("depth", 0),
             "expanded": False,
@@ -192,7 +196,8 @@ class Graph:
                 return e
         return None
 
-    def add_edge(self, predecessor_id, successor_id, verdicts, score, gate):
+    def add_edge(self, predecessor_id, successor_id, verdicts, score, gate,
+                 leap=None, directness=None, rehearing_of=None):
         existing = self.find_edge(predecessor_id, successor_id)
         if existing:
             return existing
@@ -204,6 +209,14 @@ class Graph:
             "gate": gate,
             "created_at": now_iso(),
         }
+        if leap is not None:
+            edge["leap"] = leap
+        if directness is not None:
+            edge["directness"] = directness
+        if rehearing_of is not None:
+            # retro-sweep re-hearing (RUNBOOK §9): this admission supersedes
+            # the named prior rejection of the same candidate for this parent
+            edge["rehearing_of"] = rehearing_of
         self.data["edges"].append(edge)
         return edge
 
