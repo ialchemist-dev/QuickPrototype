@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T03:43:15+00:00",
-  "expansions_done": 34,
-  "raw_candidates_seen": 2309,
+  "updated_at": "2026-11-25T03:59:18+00:00",
+  "expansions_done": 35,
+  "raw_candidates_seen": 2352,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -11583,6 +11583,180 @@
     "name": "Google Web 1T 5-gram corpus",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T03:42:47+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Lisp 1.5",
+    "reason": "mediated_via: MacLisp",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "MacLisp"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "FUNARG device",
+    "reason": "mediated_via: MacLisp",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "MacLisp"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "SECD machine",
+    "reason": "mediated_via: Lambda calculus",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Lambda calculus"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "ISWIM",
+    "reason": "mediated_via: Lambda calculus",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Lambda calculus"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "PAL",
+    "reason": "mediated_via: ISWIM",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "ISWIM"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Definitional interpreters (Reynolds)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T03:58:48+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "PLASMA (Planner-73)",
+    "reason": "mediated_via: Actor model",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Actor model"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "PLANNER",
+    "reason": "mediated_via: Actor model",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Actor model"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Hairy control structures critique",
+    "reason": "mediated_via: Actor model",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Actor model"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Slagle's funarg failure",
+    "reason": "mediated_via: FUNARG problem (Moses's analysis)",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "FUNARG problem (Moses's analysis)"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Interlisp",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T03:58:48+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "MDL (Muddle)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T03:58:48+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Micro-Planner",
+    "reason": "mediated_via: Conniver",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Conniver"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "PDP-10",
+    "reason": "mediated_via: MacLisp",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "MacLisp"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "PDP-6",
+    "reason": "mediated_via: PDP-10",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "PDP-10"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "MIT Lisp machine project",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T03:58:48+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "McCarthy's meta-circular eval",
+    "reason": "mediated_via: Lisp",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Lisp"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "ITS (Incompatible Timesharing System)",
+    "reason": "mediated_via: MacLisp",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "MacLisp"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Scott-Strachey denotational semantics",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T03:58:48+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Landin's ALGOL-lambda correspondence",
+    "reason": "mediated_via: ALGOL 60",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "ALGOL 60"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Project MAC",
+    "reason": "mediated_via: MIT Artificial Intelligence Laboratory",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "MIT Artificial Intelligence Laboratory"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "ARPA Information Processing Techniques Office",
+    "reason": "mediated_via: Project MAC",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Project MAC"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "ARPANET",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T03:58:48+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "QA4",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T03:58:48+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Smalltalk-72",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T03:58:48+00:00"
+   },
+   {
+    "parent_id": "scheme-1975",
+    "name": "Actor semantics of PLANNER-73 (Greif & Hewitt)",
+    "reason": "mediated_via: Actor model",
+    "at": "2026-11-25T03:58:48+00:00",
+    "mediated_via": "Actor model"
    }
   ]
  },
@@ -13548,7 +13722,7 @@
    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.5,
    "sources": [
     {
@@ -13824,6 +13998,238 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T03:42:47+00:00"
+  },
+  "lisp-1960": {
+   "id": "lisp-1960",
+   "name": "Lisp",
+   "aliases": [],
+   "year": 1960,
+   "domain": "programming languages",
+   "type": "method",
+   "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+   "bottleneck": "Before Lisp, computation was numerical and machine-shaped: there was no notation in which functions were data, no recursive symbolic expressions, and no language a dialect like Scheme could be a dialect of.",
+   "leap": "McCarthy's Lisp (CACM, 1960) introduced s-expressions, lambda notation borrowed from Church, conditional expressions and a meta-circular evaluator - the design the whole Lisp family, Scheme included, descends from.",
+   "prior_state": "Fortran-era numerical programming and IPL-style list processing without first-class functions.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "Lisp - Clojure Applied (O'Reilly)",
+     "url": "https://www.oreilly.com/library/view/clojure-applied/9781680501476/f_0085.html"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Multiples test on Q3: IPL and FLPL carried list processing without lambda semantics; no rival carried this design, but the parent's content might in principle have landed in another host, so Q3 stays partial. Weakest-evidence attack on Q1: the design-descent claim risks the transitive-importance trap this design warns against; it survives because the parent is definitionally a dialect of this candidate, and the two nearer artifacts are disposed on their own records - Lisp 1.5 mediated via MacLisp, MacLisp admitted for the distinct host channel - so this edge carries only the design descent (the two-channel pattern of JSON's JavaScript/ECMA-262 edges, session 10). Mediation attack: via MacLisp - fails on the channel distinction just stated. Anachronism check: CACM, April 1960, precedes 1975. Edge stands, provisional.",
+    "at": "2026-11-25T03:59:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T03:58:48+00:00"
+  },
+  "lambda-calculus-1936": {
+   "id": "lambda-calculus-1936",
+   "name": "Lambda calculus",
+   "aliases": [],
+   "year": 1936,
+   "domain": "mathematical logic",
+   "type": "theory",
+   "definition": "Alonzo Church's formal system (mature form 1936) of function abstraction and application, whose binding and substitution rules define what a lexically-scoped first-class function is.",
+   "bottleneck": "Before the lambda calculus, there was no formal system in which a function value - a rule plus the environment that gives its free variables meaning - could be stated, manipulated and reasoned about.",
+   "leap": "Church's lambda calculus (mature form, 1936) made binding, substitution and function values formal objects: the specification that any language of first-class lexically-scoped functions must implement.",
+   "prior_state": "Informal mathematical practice with functions; combinatory logic as the only rival formalism.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Lambda Calculus | AI Wiki",
+     "url": "https://aiwiki.ai/wiki/lambda_calculus"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Multiples test on Q3: Turing machines and combinatory logic were rival formalisms, but for the semantics of function values there was no substitute in the room; Q3 stays partial, node provisional. Weakest-evidence attack on Q1: a 1936 formalism as 'direct enabler' risks the transitive trap; it survives because the parent's own title defines it as an interpreter FOR this candidate and AIM-349 p.23 argues from the calculus's axioms directly - the channel is the parent's self-specification, not family resemblance. Mediation attack: via ISWIM or Landin's correspondence - fails: ISWIM is disposed at this parent as mediated via the calculus (reverse direction) and the correspondence via ALGOL 60. Anachronism check: the 1936 mature form precedes 1975 by four decades; no later formulation is load-bearing. Edge stands, provisional.",
+    "at": "2026-11-25T03:59:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T03:58:48+00:00"
+  },
+  "maclisp-1966": {
+   "id": "maclisp-1966",
+   "name": "MacLisp",
+   "aliases": [],
+   "year": 1966,
+   "domain": "programming languages",
+   "type": "method",
+   "definition": "Project MAC's Lisp dialect (from 1966, Greenblatt, White et al.), Lisp 1.5's descendant engineered for the lab's PDP-6/PDP-10 installation under ITS; the host dialect in which Scheme was implemented and against which AIM-349 defines its departures.",
+   "bottleneck": "Before MacLisp, MIT's Lisp work ran on the Lisp 1.5 system; there was no Project MAC dialect tuned to the lab's timeshared PDP-6/PDP-10 installation on which a new dialect could be built and measured.",
+   "leap": "MacLisp (from 1966) was Project MAC's own Lisp - Lisp 1.5's descendant engineered for the lab's machines and ITS - and became the substrate in which Macsyma, the Planner implementations and Scheme itself were written.",
+   "prior_state": "Lisp 1.5 as distributed, without the lab's own performance and systems work.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Scheme - An Interpreter for Extended Lambda Calculus (AIM-349, 1975), implementation issues page",
+     "url": "https://en.wikisource.org/wiki/Page:Scheme_-_An_interpreter_for_extended_lambda_calculus.djvu/24"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Multiples test on Q3: Interlisp was the era's alternative dialect, but the host counterfactual is place-specific (MIT, ITS, the PDP-10 installation), so Q3 stays partial, node provisional. Weakest-evidence attack on Q1: MacLisp flips nothing itself and Q1 is already partial; the edge's load rests on the host relation, which is documentary - AIM-349 names MacLISP as its foil and the interpreter was written in it. Mediation attack: via Lisp 1.5 - fails: MacLisp is the laboratory's own re-engineering, not the 1962 system renamed, and Lisp 1.5 is disposed at this parent as mediated via MacLisp (the reverse direction). Anachronism check: MacLisp development from July 1966 precedes 1975. Edge stands, provisional.",
+    "at": "2026-11-25T03:59:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T03:58:48+00:00"
+  },
+  "actor-model-1973": {
+   "id": "actor-model-1973",
+   "name": "Actor model",
+   "aliases": [],
+   "year": 1973,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "Carl Hewitt's formalism (1973, with Bishop and Steiger): computation as actors that, on receiving a message, can send messages, create actors and designate their replacement behavior - proposed as the universal basis for modular AI systems.",
+   "bottleneck": "Before the Actor model, modular AI programs had no single formalism: knowledge, control and data structures were separate ad-hoc mechanisms, and the Planner line's languages kept accumulating special control structures.",
+   "leap": "Hewitt's Actor model (1973) proposed one primitive - actors that create actors, send messages and designate their next behavior - as the universal basis for modular AI systems.",
+   "prior_state": "PLANNER's pattern-directed theorem proving and the proliferating special-purpose control structures of the Planner-derived languages.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "A Universal Modular ACTOR Formalism for Artificial Intelligence (Hewitt, Bishop & Steiger, IJCAI 1973)",
+     "url": "https://ijcai.org/proceedings/1973/31"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Multiples test on Q3: Smalltalk-72's message passing is a parallel answer to the same modularity problem (scouted at this parent, fail-closed for no channel), so necessity stays partial and the node stays provisional. Weakest-evidence attack on Q1: the 'attempt to understand actors' framing rests partly on the makers' own 1998 HOPL retrospective - but it is corroborated by AIM-349's own 1975 text, which presents the actor/closure identity as its result; a contemporaneous source carries the claim. Mediation attack: via PLASMA (the working actor language in the room) - fails: PLASMA is the model's partial implementation and is disposed at this parent as mediated via the Actor model; both retrospectives name the model, not the dialect, as the object of study. Anachronism check: the IJCAI 1973 formalism paper precedes the autumn-1975 modeling work; direction right. Edge stands, provisional.",
+    "at": "2026-11-25T03:59:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T03:58:48+00:00"
+  },
+  "algol-60-1960": {
+   "id": "algol-60-1960",
+   "name": "ALGOL 60",
+   "aliases": [],
+   "year": 1960,
+   "domain": "programming languages",
+   "type": "method",
+   "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+   "bottleneck": "Before ALGOL 60, lexical scoping existed in the lambda calculus but in no working programming language a Lisp designer could study: Lisp's own tradition bound variables dynamically.",
+   "leap": "ALGOL 60 (1960) made block structure and lexical scope the discipline of a real, implemented language - the worked example of lexically-scoped programming available to be transplanted into Lisp.",
+   "prior_state": "Languages with dynamic or purely stack-disciplined binding; lexical binding confined to a mathematical formalism.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "History of the Scheme programming language (mirror)",
+     "url": "https://static.hlt.bme.hu/semantics/external/pages/John_McCarthy/en.wikipedia.org/wiki/History_of_the_Scheme_programming_language.html"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Multiples test on Q3: the lambda calculus itself also carried lexical binding - a genuine multiple, recorded on the Q3 verdict (partial); this edge carries only the implemented-example channel. Weakest-evidence attack on Q1: the 'Sussman's studies of ALGOL' impetus rests on history-page summaries rather than a 1975 document; it is corroborated by the design fact itself - lexical scope had exactly two possible sources in 1975 and the other (the calculus) is separately admitted, so no double-counting occurs. Mediation attack: via Landin's correspondence papers - fails: the correspondence is a result ABOUT this candidate and is disposed at this parent via ALGOL 60; the recorded channel is direct study of the language. Anachronism check: the 1960 Revised Report precedes 1975. Edge stands, provisional.",
+    "at": "2026-11-25T03:59:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T03:58:48+00:00"
+  },
+  "funarg-problem-moses-s-analysis-1970": {
+   "id": "funarg-problem-moses-s-analysis-1970",
+   "name": "FUNARG problem (Moses's analysis)",
+   "aliases": [],
+   "year": 1970,
+   "domain": "programming languages",
+   "type": "theory",
+   "definition": "Joel Moses's MIT memo 'The Function of FUNCTION in LISP' (1970), which analyzed Lisp's function-argument defect into upward and downward cases and specified what a correct treatment requires; cited by name in AIM-349.",
+   "bottleneck": "Before Moses's analysis, Lisp's function-argument failures were folklore: implementations behaved differently for upward and downward funargs and nobody had specified what a correct function semantics had to survive.",
+   "leap": "Moses's memo 'The Function of FUNCTION in LISP' (MIT, 1970) analyzed the funarg problem into its upward and downward cases and specified the shape of a correct treatment - the specification AIM-349's environment design answers.",
+   "prior_state": "The FUNARG device as an opt-in repair, and implementation-specific behavior varying between interpreter and compiler.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.0,
+   "sources": [
+    {
+     "title": "Scheme - An Interpreter for Extended Lambda Calculus (AIM-349, 1975), implementation issues page",
+     "url": "https://en.wikisource.org/wiki/Page:Scheme_-_An_interpreter_for_extended_lambda_calculus.djvu/24"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Multiples test on Q3: the problem was independently visible (Slagle's 1961 failure, the FUNARG device), so necessity stays partial; the analysis admitted is the one the parent cites. Weakest-evidence attack on Q1: is a memo a leap? - under the Hochreiter precedent an analysis is a leap when the parent's documents derive the design from it; AIM-349's '[Moses]' citation together with the tree-like-environment derivation is exactly that pattern, and a standing falsification is recorded on the Q1 verdict. Mediation attack: via MacLisp (the memo concerned the MIT line's FUNCTION) - fails: the citation channel runs memo to memo; MacLisp carries the device, Moses carries the specification. Anachronism check: the 1970 memo precedes 1975. Edge stands, provisional.",
+    "at": "2026-11-25T03:59:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T03:58:48+00:00"
+  },
+  "mit-artificial-intelligence-laboratory-1970": {
+   "id": "mit-artificial-intelligence-laboratory-1970",
+   "name": "MIT Artificial Intelligence Laboratory",
+   "aliases": [],
+   "year": 1970,
+   "domain": "artificial intelligence",
+   "type": "institution",
+   "definition": "The MIT laboratory formed in 1970 when Minsky's AI group separated from Project MAC; home of Hewitt's actor project, of Sussman and Steele, of the ITS PDP-10 installation, and publisher of AI Memo 349.",
+   "bottleneck": "Before the MIT AI Laboratory existed as a separate institution, the people, machines and memo culture that produced Scheme were distributed across Project MAC's broader timesharing program.",
+   "leap": "The MIT AI Laboratory (formed 1970 when Minsky's group separated from Project MAC) concentrated the actor-model group, both of Scheme's makers, the ITS PDP-10 installation and the AI Memo series in one institution - the parent is its collective product.",
+   "prior_state": "The AI group as one project inside Project MAC's general timesharing enterprise.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 2.5,
+   "sources": [
+    {
+     "title": "MIT Artificial Intelligence Laboratory",
+     "url": "https://www.tellworld.net/companies/mit-ai-lab"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Multiples test on Q3: Stanford, CMU and SRI all ran AI laboratories; none held this conjunction (the actor group, both makers, the host dialect, the memo series), so Q3 stays partial, node provisional. Weakest-evidence attack on Q1: institutions flip no technical impossibility and Q1 is already partial; the edge rests on this run's institution precedents (Google Brain at the Transformer, OpenAI at RLHF, Netscape at JavaScript) and passes the same specific-conjunction test they passed. Mediation attack: via Project MAC - fails: Project MAC is disposed at this parent as mediated via this laboratory (the reverse direction); the 1975 work was done under the laboratory formed in 1970. Anachronism check: formed 1970, precedes AIM-349 (1975). Edge stands, provisional.",
+    "at": "2026-11-25T03:59:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T03:58:48+00:00"
+  },
+  "conniver-1972": {
+   "id": "conniver-1972",
+   "name": "Conniver",
+   "aliases": [],
+   "year": 1972,
+   "domain": "programming languages",
+   "type": "method",
+   "definition": "Sussman and McDermott's Planner revision (1972) that exposed the implementation's control primitives to programmers, drawing the 'what are Conniver's semantics?' verdict that the Actor model and then Scheme answered.",
+   "bottleneck": "Before Conniver, the Planner line's control structures were fixed by the language: programmers could not get at the control primitives their AI programs needed to rearrange.",
+   "leap": "Conniver (Sussman & McDermott, 1972) revised Planner by exposing the implementation's control primitives to the programmer - the move whose semantic cost ('what are Conniver's semantics?') the actor model, and then Scheme's design, answered.",
+   "prior_state": "Micro-Planner's partial Planner implementation with fixed automatic backtracking.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 1.0,
+   "sources": [
+    {
+     "title": "History of the Scheme programming language (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Lambda_Papers"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Multiples test on Q3: QA4 and other Planner derivations existed, but the makers' own line ran through Conniver; Q3 stays partial. Weakest-evidence attack on Q1: the edge rests on the maker-carried channel - Sussman authored both Conniver and Scheme; the BrookGPU precedent admits carried channels when the carrier is the parent's documented maker and the carried content is specific (here, the control-primitives lesson and the 'what are Conniver's semantics?' verdict recorded in Conniver's own retrospective). Mediation attack: via the Actor model (Conniver provoked actors, actors provoked Scheme) - fails on the person/artifact distinction: Sussman's design knowledge entered the 1975 work directly, and the Actor model edge separately carries the formalism channel. Recorded honestly: this is the thinnest admitted edge of the expansion (score 1.0) and the first candidate for downgrade if drafting-era documents contradict the lineage. Anachronism check: 1972 precedes the November 1972 actor invention and 1975. Edge stands, provisional.",
+    "at": "2026-11-25T03:59:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T03:58:48+00:00"
   }
  },
  "edges": [
@@ -23080,6 +23486,782 @@
     "counterfactual": "",
     "mediator": null,
     "evidence": "Consumed data under the v4 data guidance: the parent paper states its RT05 models were trained on 37M words from the NYT section of English Gigaword - the data half of its second, harder experiment (5% relative WER gain even against a baseline trained on much more data)."
+   }
+  },
+  {
+   "predecessor_id": "lisp-1960",
+   "successor_id": "scheme-1975",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Lisp made symbolic computation possible at all, but the specific impossibility the parent flips - lexical first-class functions in a Lisp - is the parent's own; in relation to this parent, partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Lisp generated the entire dialect family and the AI language tradition inside which the parent is one deliberate reform.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "No other 1960 language could have played this role for a 1975 MIT dialect, but the parent's actor/lambda content might in principle have landed in another host; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to the 1960 design in relation to this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Lisp registered no measurement.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Lisp supplied the explanatory model - computation as the evaluation of symbolic expressions by eval - that the parent inherits and repairs.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "S-expressions and lambda are a composable substrate: programs as data is the composition discipline the parent's minimalism preserves.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Lisp crossed into every AI subfield and beyond; the parent inherits that reach as its family's.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Lisp's interactive tradition sped iteration at the family level, though the parent's own iteration speed came from its host dialect.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Lisp displaced machine-level AI programming in its niche, but by 1975 it was itself the incumbent being reformed.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The dialect relation is the trunk: the parent names itself a Lisp dialect and is catalogued as one in every history.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once Lisp existed, symbolic AI programming never went back; the parent's reform presupposes that irreversibility.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T03:58:48+00:00",
+   "leap": {
+    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values; functional arguments handled by the opt-in FUNARG device; the Planner line's AI languages accumulating ad-hoc control structures.",
+    "jump": "Sussman and Steele (1975) showed a Lisp whose lambda is lexically scoped and whose functions are first-class closures - and that actors and closures are the same thing - so one mechanism, lambda closed in its lexical environment, carries functions, control and message-passing objects.",
+    "date": 1975
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Lisp and there is nothing to reform: no s-expression notation, no lambda in a programming language, no interpreter tradition, and no family for the parent to be the minimalist dialect of. AIM-349's title and genre - a Lisp dialect paper in the AI Memo series - claim this descent directly.",
+    "mediator": null,
+    "evidence": "The parent's node definition and the memo series frame Scheme as a Lisp dialect; its departures (lexical scope, first-class closures) are stated as repairs to Lisp's own compromises. The design descent runs Lisp to Scheme directly; the implementation descent runs through MacLisp, admitted on its own edge for that distinct channel."
+   }
+  },
+  {
+   "predecessor_id": "lambda-calculus-1936",
+   "successor_id": "scheme-1975",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The calculus supplied the specification of the parent's flip rather than performing it: before it, what a function value IS had no formal answer; the implementation flip is the parent's.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The calculus generated the entire functional-language design space the parent inhabits, from ISWIM to the parent itself.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Turing's machine was the rival formalism, but for the semantics of function values the calculus was the only candidate in the room; necessity is partial because the parent also needed Lisp's substrate.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to a 1936 formalism in relation to this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "The calculus made program meaning analyzable - reduction and conversion as a calculus of behavior - though it registered no empirical measurement.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The calculus IS the explanatory model the parent implements; AIM-349's correctness claims are stated in its terms.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Lambda terms compose by construction; the calculus is the composable core the parent's whole language reduces to.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The calculus's reach runs from logic through computer science to linguistics; the parent inherits its semantics wholesale.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change is attributable to the formalism.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "The calculus displaced nothing in 1975 practice.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The title-level relation makes this edge documentary trunk evidence, not inference.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once functions had a formal semantics, language design could not unsee it; the parent's whole claim rests on that irreversibility.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T03:58:48+00:00",
+   "leap": {
+    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values; functional arguments handled by the opt-in FUNARG device; the Planner line's AI languages accumulating ad-hoc control structures.",
+    "jump": "Sussman and Steele (1975) showed a Lisp whose lambda is lexically scoped and whose functions are first-class closures - and that actors and closures are the same thing - so one mechanism, lambda closed in its lexical environment, carries functions, control and message-passing objects.",
+    "date": 1975
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the lambda calculus and AIM-349 has no subject: the memo defines its language as an interpreter for the extended lambda calculus, and its central claims - that closing each lambda in its lexical environment preserves the axioms of the lambda calculus and enforces referential transparency - are statements about this candidate.",
+    "mediator": null,
+    "evidence": "AIM-349's title is 'Scheme: An Interpreter for Extended Lambda Calculus'; its environment argument (p.23) is conducted as a claim about the calculus's axioms, and the memo's design is the calculus implemented on the Lisp substrate."
+   }
+  },
+  {
+   "predecessor_id": "maclisp-1966",
+   "successor_id": "scheme-1975",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "MacLisp flipped no impossibility itself; it was the incumbent whose limits the parent answers.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "MacLisp generated the laboratory's entire dialect ecology: Macsyma, the Planner implementations and the parent itself were written in or against it.",
+     "source": "",
+     "falsification": "Dies if the parent's implementation is shown to have been written against a different host dialect."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Interlisp was an alternative Lisp elsewhere, but at MIT in 1975 there was no substitute in place; the counterfactual host does not exist in the room.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "MacLisp's systems work (compiler, number and array facilities) lowered the cost of large Lisp programs at the lab, though no single cost collapse defines it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "MacLisp registered no new measurement.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "MacLisp embodied no new model of computation; its semantics were the incumbent dynamic semantics the parent rejects.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "MacLisp's environment was composable in practice - the laboratory built large systems in it - but composition was not its design claim.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "MacLisp spread across AI sites on PDP-10s, but its reach was the Lisp community, not the whole field.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "A fast, timeshared, interactively developed Lisp on the lab's own machines is what made interpreter experiments like the 1975 one a matter of days; iteration speed is the substrate's contribution here.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "At MIT MacLisp displaced Lisp 1.5 entirely as the working dialect; it was the incumbent the parent had to answer.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The host relation is documentary and trunk-level: the parent was implemented in this candidate and defines itself against it by name.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "MacLisp's own idiom did not survive the parent unchanged - the parent replaced its binding discipline - so irreversibility is partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T03:58:48+00:00",
+   "leap": {
+    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values; functional arguments handled by the opt-in FUNARG device; the Planner line's AI languages accumulating ad-hoc control structures.",
+    "jump": "Sussman and Steele (1975) showed a Lisp whose lambda is lexically scoped and whose functions are first-class closures - and that actors and closures are the same thing - so one mechanism, lambda closed in its lexical environment, carries functions, control and message-passing objects.",
+    "date": 1975
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove MacLisp and the 1975 experiment has no host: the interpreter was written in MacLisp on the lab's PDP-10, its primitives and dynamic environment were MacLisp's, and AIM-349 draws its defining contrasts against 'standard stack implementations of LISP such as MacLISP' by name. No milestone sits between the host dialect and the dialect designed inside it.",
+    "mediator": null,
+    "evidence": "The History of Scheme and AIM-349 both place the work inside MacLisp; the memo's environment argument explicitly contrasts its lexical discipline with MacLISP's fluid bindings."
+   }
+  },
+  {
+   "predecessor_id": "actor-model-1973",
+   "successor_id": "scheme-1975",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The model posed the unification problem - one primitive for AI modularity - but Planner systems already worked; the flip it enables is the parent's, so in relation to this parent the verdict is partial.",
+     "source": "",
+     "falsification": "Dies if the 1975 record shows the modeling exercise was framed as routine implementation rather than an attempt to understand an open formalism."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The model was generative in the direct sense: it generated PLASMA, a family of actor languages, and - through the modeling exercise - the parent itself; the design space it opened is the one AIM-349 reports from.",
+     "source": "",
+     "falsification": "Dies if the actor program is shown to have produced no artifacts beyond its own papers before 1975."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Multiples existed - Smalltalk-72's message passing is a parallel answer to the same modularity problem - but the MIT line ran through Hewitt's formalism specifically, so necessity is capped at partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to the formalism itself by 1975.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The model registered no measurement; it was a formalism, not an instrument.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The model supplied the explanatory frame - computation as message passing among encapsulated objects - that the parent's design answers and then dissolves into lambda; AIM-349's argument is conducted in the model's terms.",
+     "source": "",
+     "falsification": "Dies if AIM-349's framing is shown to use actor vocabulary decoratively while its semantics derive from another source."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composition is the formalism's core claim: systems are societies of actors built from three primitive operations, so the parent's inheritance of actor semantics is an inheritance of a composability discipline.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The formalism claimed universality across data structures, control structures and parallelism, but its 1975 reach was still the AI laboratory.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change is attributable to the formalism by 1975.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "The model had displaced nothing in practice by 1975.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality is documentary: the parent's own retrospectives make the actor episode the birth of Scheme; this edge is the trunk of the parent's origin story.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once the identity of actors and closures was exhibited, the field could not unsee it: the result permanently reset how the laboratory thought about both.",
+     "source": "",
+     "falsification": "Dies if later Scheme documents are shown to treat the actor episode as incidental."
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T03:58:48+00:00",
+   "leap": {
+    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values; functional arguments handled by the opt-in FUNARG device; the Planner line's AI languages accumulating ad-hoc control structures.",
+    "jump": "Sussman and Steele (1975) showed a Lisp whose lambda is lexically scoped and whose functions are first-class closures - and that actors and closures are the same thing - so one mechanism, lambda closed in its lexical environment, carries functions, control and message-passing objects.",
+    "date": 1975
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Actor model and there is no modeling experiment in the autumn of 1975: no MacLisp interpreter built to understand actors, no discovery that the apply code for actors and for closures is identical, and no AIM-349. Scheme's defining content - actors are closures - is a statement about this candidate.",
+    "mediator": null,
+    "evidence": "Both primary retrospectives (Steele & Sussman, HOPL 1998; Sussman & Steele, 'Scheme: An Interpreter for Extended Lambda Calculus', AIM-349, 1975) frame the parent as an attempt to understand the Actor model: the makers implemented actors in MacLisp and found the interpreter's actor code and lambda code identical."
+   }
+  },
+  {
+   "predecessor_id": "algol-60-1960",
+   "successor_id": "scheme-1975",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "ALGOL proved lexical scoping implementable in a real language, but the flip for Lisp is the parent's; in relation to this parent, partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "ALGOL's block and lexical model generated the whole Algol-like family and, on this edge, the parent's scoping discipline.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The lambda calculus itself also carried lexical binding, a genuine multiple; ALGOL's distinct contribution is the implemented, studied example, so necessity is partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to ALGOL in relation to this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "ALGOL registered no measurement relevant here.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "ALGOL supplied a worked understanding of block structure, though the parent's semantic model is the calculus's.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Block structure is a composition discipline, but the parent composes with lambda, not blocks.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "ALGOL's reach across all subsequent language design is total; the parent is one of its inheritors.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change is attributable to ALGOL here.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "ALGOL displaced assembly-era practice in its domains, but in 1975 it was itself a receding incumbent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The documented impetus - Sussman's ALGOL studies - makes this edge part of the parent's recorded origin, not a reconstruction.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Lexical scoping, once demonstrated in a working language, never left language design; the parent presupposes that settlement.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T03:58:48+00:00",
+   "leap": {
+    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values; functional arguments handled by the opt-in FUNARG device; the Planner line's AI languages accumulating ad-hoc control structures.",
+    "jump": "Sussman and Steele (1975) showed a Lisp whose lambda is lexically scoped and whose functions are first-class closures - and that actors and closures are the same thing - so one mechanism, lambda closed in its lexical environment, carries functions, control and message-passing objects.",
+    "date": 1975
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove ALGOL 60 and Sussman has no implemented example of lexical scoping to import: the documented impetus for the parent's lexical discipline is his study of ALGOL, and Lisp's own line offered only dynamic binding.",
+    "mediator": null,
+    "evidence": "The Scheme history record states that the impetus to incorporate lexical scoping into Lisp came from Sussman's studies of ALGOL; Landin's correspondence work had already established that ALGOL's block structure and the lambda calculus's binding were the same phenomenon."
+   }
+  },
+  {
+   "predecessor_id": "funarg-problem-moses-s-analysis-1970",
+   "successor_id": "scheme-1975",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The memo converted an implementation embarrassment into a specified problem with a known shape - upward versus downward - which is the precondition for any design answering it; AIM-349's lexical environment is that answer.",
+     "source": "",
+     "falsification": "Dies if AIM-349's [Moses] citation is shown to be decorative rather than load-bearing in its environment argument."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The analysis generated a design requirement every later Lisp had to meet, but its generativity runs through the designs that answer it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The problem was in the air - Slagle's failure and the FUNARG device attest to that - but the analysis the parent cites and derives from is this one.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to a memo.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "The analysis made an invisible semantic failure a named, classifiable phenomenon - upward versus downward - that implementations could be checked against.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model of environments - bindings as structures with lifetimes - that the parent's design embodies.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "The analysis composes nothing itself.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The analysis traveled across all Lisp implementations of the era, though its domain is the one family.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change is attributable to the analysis.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "The analysis displaced no practice directly.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The citation chain memo-to-memo is documentary trunk evidence: AIM-349's environment argument is unintelligible without this candidate.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once the problem was specified, no Lisp design could ignore it - but the specification could in principle have been re-derived, so partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T03:58:48+00:00",
+   "leap": {
+    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values; functional arguments handled by the opt-in FUNARG device; the Planner line's AI languages accumulating ad-hoc control structures.",
+    "jump": "Sussman and Steele (1975) showed a Lisp whose lambda is lexically scoped and whose functions are first-class closures - and that actors and closures are the same thing - so one mechanism, lambda closed in its lexical environment, carries functions, control and message-passing objects.",
+    "date": 1975
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the analysis and AIM-349's central implementation argument loses its stated problem: the memo cites '[Moses]' by name for the upward funarg problem and derives from it the requirement that 'the environment structure be potentially tree-like'.",
+    "mediator": null,
+    "evidence": "AIM-349 (p.23): 'the upward funarg problem [Moses] requires that the environment structure be potentially tree-like, and not merely a stack' - the parent document names the diagnosis and derives a design constraint from it, the Hochreiter-condition channel."
+   }
+  },
+  {
+   "predecessor_id": "mit-artificial-intelligence-laboratory-1970",
+   "successor_id": "scheme-1975",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The laboratory flipped no technical impossibility itself; it made the conjunction that flipped one.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity in the institution sense this run uses: the laboratory's program generated the parent as its collective product - its people posed the problem, its machines hosted the experiment, its memo series published the result.",
+     "source": "",
+     "falsification": "Dies if the 1975 work is shown to have been carried out under a different institution's auspices."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "No other institution held the same conjunction in 1975, but the parent's content is portable in principle; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to the laboratory's formation.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The laboratory registered no measurement.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "The laboratory supplied no explanatory model of its own.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "The laboratory composes nothing itself.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The laboratory's reach across AI was large, but on this edge only its local conjunction matters.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The laboratory's open timesharing culture - ITS, shared machines, no accounting - collapsed the iteration time of language experiments.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "The laboratory displaced no incumbent practice.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The parent is catalogued as this institution's memo and its makers were its staff; the edge is documentary.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The laboratory endured, but institutions are replaceable in principle; partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 2.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T03:58:48+00:00",
+   "leap": {
+    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values; functional arguments handled by the opt-in FUNARG device; the Planner line's AI languages accumulating ad-hoc control structures.",
+    "jump": "Sussman and Steele (1975) showed a Lisp whose lambda is lexically scoped and whose functions are first-class closures - and that actors and closures are the same thing - so one mechanism, lambda closed in its lexical environment, carries functions, control and message-passing objects.",
+    "date": 1975
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the AI Laboratory and the conjunction dissolves: Hewitt's actor group, Sussman and Steele, MacLisp and the ITS machines were one institution's population and plant; no other 1975 institution held all four, and the memo that is the parent was published as its AI Memo 349.",
+    "mediator": null,
+    "evidence": "Institution precedents of this run (Google Brain at the Transformer, OpenAI at RLHF, Netscape at JavaScript): the institution is admitted for the specific conjunction it carried - here, the actor project, the makers, the host dialect and the publication series."
+   }
+  },
+  {
+   "predecessor_id": "conniver-1972",
+   "successor_id": "scheme-1975",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Conniver made control programmable but at a semantic price; the impossibility it exposes is answered by its successors, so in relation to this parent, partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Conniver was generative by negation: its control-primitive exposure provoked the actor model within the year and set the design question - how to give programmers control without losing semantics - that the parent's single-mechanism design answers.",
+     "source": "",
+     "falsification": "Dies if the actor invention is shown to have been motivated independently of the Conniver and Micro-Planner experience."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Other Planner derivations existed - QA4 among them - but the makers' own line ran through Conniver specifically.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse is attributable to Conniver.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Conniver registered no measurement.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Conniver embodied an understanding - control as accessible mechanism - that the parent inverted: control as one more value of the single lambda mechanism.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "Conniver's primitives notoriously did not compose semantically; that is the point of the critique it drew.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Conniver's reach was the one laboratory's Planner community.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed change is attributable to Conniver.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Conniver displaced nothing beyond its own project.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "A documented link in the one lineage that led here - the maker's own previous language - though not trunk for the wider field.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "fail",
+     "evidence": "Conniver's own design was abandoned by its makers; nothing about it was irreversible.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 1.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T03:58:48+00:00",
+   "leap": {
+    "prior_state": "Dynamic-scoped Lisps (MacLisp, Interlisp), with Algol-style block structure kept separate from function values; functional arguments handled by the opt-in FUNARG device; the Planner line's AI languages accumulating ad-hoc control structures.",
+    "jump": "Sussman and Steele (1975) showed a Lisp whose lambda is lexically scoped and whose functions are first-class closures - and that actors and closures are the same thing - so one mechanism, lambda closed in its lexical environment, carries functions, control and message-passing objects.",
+    "date": 1975
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Conniver and the makers' path changes: it was Sussman's own immediately-prior language, its exposed-primitives design drew the documented 'retrograde step' verdict, and Hewitt's actor model was invented partly in reaction to it. The knowledge channel is the maker himself, who carried Conniver's lessons into the 1975 design directly - the BrookGPU/Ian Buck pattern, not a chain through the Actor model's artifact.",
+    "mediator": null,
+    "evidence": "The Conniver retrospective records Hewitt's doubt about its 'hairy control structure' and Hayes's 'what are Conniver's semantics?' verdict; the actor invention followed within months, and Sussman is a maker of both Conniver and Scheme."
    }
   }
  ],
@@ -103939,6 +105121,1740 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "scheme-1975": {
+   "raw_candidates": [
+    {
+     "name": "Lisp",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "other",
+     "causal_claim": "Lisp directly enabled Scheme's leap by supplying the language being reformed: s-expressions, lambda notation, recursion and the evaluator tradition - Scheme is a dialect of Lisp, designed as its simplification.",
+     "source_title": "Lisp - Clojure Applied (O'Reilly)",
+     "source_url": "https://www.oreilly.com/library/view/clojure-applied/9781680501476/f_0085.html",
+     "definition": "McCarthy's language of symbolic expressions (designed 1958, published CACM 1960): s-expressions, lambda notation borrowed from Church, conditional expressions, recursion and a meta-circular evaluator - the family Scheme is a dialect of."
+    },
+    {
+     "name": "Lambda calculus",
+     "year": 1936,
+     "domain": "mathematical logic",
+     "lens": "L1",
+     "type": "theory",
+     "causal_claim": "The lambda calculus directly enabled Scheme's leap as the parent's stated foundation: AIM-349 is titled 'An Interpreter for Extended Lambda Calculus', and the lexical binding that distinguishes Scheme is the calculus's own discipline, which Lisp had not implemented.",
+     "source_title": "Lambda Calculus | AI Wiki",
+     "source_url": "https://aiwiki.ai/wiki/lambda_calculus",
+     "definition": "Church's formal system (1936) of function abstraction and application: variables, lambda abstractions and applications under beta reduction, with lexical binding as its native discipline - the mathematics Scheme's title claims to extend."
+    },
+    {
+     "name": "SECD machine",
+     "year": 1964,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "theory",
+     "causal_claim": "Landin's SECD machine directly enabled Scheme's leap by first showing that a lambda value can be implemented as a closure - code closed in a heap environment - the implementation fact a lexically scoped interpreter embodies.",
+     "source_title": "SECD machine (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/SECD_machine",
+     "definition": "Landin's abstract machine (1964, 'The Mechanical Evaluation of Expressions'): stack, environment, control and dump registers evaluating lambda expressions, in which a function value is a closure - code paired with a heap environment."
+    },
+    {
+     "name": "ISWIM",
+     "year": 1966,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "other",
+     "causal_claim": "ISWIM directly enabled Scheme's leap by stating its design nine years early: a language as sugared lambda calculus with lexical scope and higher-order functions - the template Scheme finally implemented inside Lisp.",
+     "source_title": "ISWIM (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/ISWIM",
+     "definition": "Landin's abstract language family ('The Next 700 Programming Languages', CACM 1966): a functional core of sugared lambda calculus with lexically scoped variables, higher-order functions and the J operator - stated as a design, never implemented."
+    },
+    {
+     "name": "PAL",
+     "year": 1968,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "other",
+     "causal_claim": "PAL directly enabled Scheme's leap as the in-house MIT proof that Landin's ISWIM concepts - lexical scope and closures - could be implemented and taught, years before Scheme, in the same institution.",
+     "source_title": "Definitional Interpreters for Higher-Order Programming Languages (Reynolds, 1972; 1998 reprint)",
+     "source_url": "https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-definitional-interpreters-1998.pdf",
+     "definition": "Art Evans's MIT teaching language (1968), the first working capture of Landin's ISWIM concepts - lexical scope, closures, powerful control transfers - implemented years before Scheme, in the same institution."
+    },
+    {
+     "name": "FUNARG device",
+     "year": 1962,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "method",
+     "causal_claim": "The FUNARG device directly enabled Scheme's leap as the mechanism it generalized: Lisp 1.5's pairing of a lambda with its environment is the closure, which Scheme made the only function semantics instead of an opt-in patch.",
+     "source_title": "A Practical Introduction to Programming Language Design - static vs dynamic scope",
+     "source_url": "https://www.charlie-murphy.dev/books/pl-design/functions/scope.html",
+     "definition": "Lisp 1.5's opt-in closure device: (FUNCTION lambda-expr) evaluated to a FUNARG object pairing the expression with the current a-list environment, patching functional arguments while plain QUOTE stayed dynamically scoped."
+    },
+    {
+     "name": "Definitional interpreters (Reynolds)",
+     "year": 1972,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "theory",
+     "causal_claim": "Reynolds's definitional interpreters directly enabled Scheme's leap by systematizing how an interpreter must make closures and continuations explicit rather than borrow them from the host - the discipline AIM-349's interpreter executes.",
+     "source_title": "Definitional Interpreters for Higher-Order Programming Languages (Reynolds, 1972; 1998 reprint)",
+     "source_url": "https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-definitional-interpreters-1998.pdf",
+     "definition": "Reynolds's 1972 ACM paper classifying definitional interpreters for higher-order languages and deriving, constructively, explicit closures (defunctionalization) and explicit continuations (CPS) from naive meta-circular definitions."
+    },
+    {
+     "name": "Lisp 1.5",
+     "year": 1962,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "causal_claim": "Lisp 1.5 is the specific ancestor Scheme modified: its FUNCTION/QUOTE compromise and SPECIAL-variable dynamic scoping are the standing arrangements Scheme replaced with uniform lexical closures.",
+     "source_title": "A Practical Introduction to Programming Language Design - static vs dynamic scope",
+     "source_url": "https://www.charlie-murphy.dev/books/pl-design/functions/scope.html",
+     "definition": "The 1962 MIT system and manual (LISP 1.5 Programmer's Manual): the distributed form of Lisp in which the FUNARG device, FUNCTION/QUOTE distinction and SPECIAL-variable dynamic scoping were the standing compromises."
+    },
+    {
+     "name": "MacLisp",
+     "year": 1966,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "causal_claim": "MacLisp is the direct precursor Scheme altered: same lab, same machine, same users - the memo's contrasts (no 'fluid' bindings, unlike 'standard stack implementations of LISP such as MacLISP') run against MacLisp by name.",
+     "source_title": "Scheme - An Interpreter for Extended Lambda Calculus (AIM-349, 1975), implementation issues page",
+     "source_url": "https://en.wikisource.org/wiki/Page:Scheme_-_An_interpreter_for_extended_lambda_calculus.djvu/24",
+     "definition": "MIT Project MAC's Lisp dialect (from 1966, Greenblatt/White), descendant of Lisp 1.5 for the PDP-6/PDP-10 under ITS: dynamically scoped, value-cell variables, the AI Lab's working language and Macsyma's implementation language."
+    },
+    {
+     "name": "PLASMA (Planner-73)",
+     "year": 1973,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "other",
+     "causal_claim": "PLASMA is the actor language Scheme re-expressed: Sussman and Steele set out to model PLASMA's actors, noticed its lexical scope was lambda-like, and Scheme is what remained when the actor machinery was rewritten as lambda calculus.",
+     "source_title": "History of the Scheme programming language (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+     "definition": "The partial implementation of the Actor model (Planner-73, later PLASMA) developed at MIT from 1973, whose semantics Greif and Hewitt formalized in 1974; it used lexical scope in a lambda-calculus-like style."
+    },
+    {
+     "name": "Actor model",
+     "year": 1973,
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "type": "theory",
+     "causal_claim": "The Actor model directly enabled Scheme's leap by posing the problem it answers: Hewitt, Bishop and Steiger proposed actors as the single modular basis for AI systems, and Sussman and Steele built their interpreter expressly to understand that model.",
+     "source_title": "A Universal Modular ACTOR Formalism for Artificial Intelligence (Hewitt, Bishop & Steiger, IJCAI 1973)",
+     "source_url": "https://ijcai.org/proceedings/1973/31",
+     "definition": "Hewitt, Bishop and Steiger's model of computation (invented November 1972; IJCAI 1973): active agents that communicate only by sending messages, create actors and designate their own next behavior - proposed as the single modular basis for AI systems."
+    },
+    {
+     "name": "PLANNER",
+     "year": 1969,
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "type": "other",
+     "causal_claim": "PLANNER directly enabled Scheme's leap by posing the problem line it terminates: embedding knowledge procedurally under programmer control - Planner begat Conniver's control experiments, whose difficulties begat Actors, whose modeling begat Scheme.",
+     "source_title": "PLANNER: A Language for Proving Theorems in Robots (Hewitt, IJCAI 1969)",
+     "source_url": "https://ijcai.org/proceedings/1969/29",
+     "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction."
+    },
+    {
+     "name": "FUNARG problem (Moses's analysis)",
+     "year": 1970,
+     "domain": "programming languages",
+     "lens": "L5",
+     "type": "theory",
+     "causal_claim": "Moses's analysis of the FUNARG problem directly enabled Scheme's leap by naming the obstruction its design removes: AIM-349 cites '[Moses]' on the upward funarg problem as a constraint its tree-structured environments must satisfy.",
+     "source_title": "Scheme - An Interpreter for Extended Lambda Calculus (AIM-349, 1975), implementation issues page",
+     "source_url": "https://en.wikisource.org/wiki/Page:Scheme_-_An_interpreter_for_extended_lambda_calculus.djvu/24",
+     "definition": "The diagnosed failure of functional arguments under dynamic scoping, analyzed in Joel Moses's 1970 MIT memo 'The Function of FUNCTION in LISP': free variables of a passed function bind in the caller's environment, not the definer's."
+    },
+    {
+     "name": "Hairy control structures critique",
+     "year": 1973,
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "type": "theory",
+     "causal_claim": "Hewitt's hairy-control-structure critique directly enabled Scheme's leap by diagnosing the disease of the Planner line - ad-hoc control primitives with no unified semantics - to which a language with lambda as its only control mechanism is the answer.",
+     "source_title": "History of the Scheme programming language (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+     "definition": "Hewitt's standing objection (1972-73) that the Planner line's languages accumulated ad-hoc 'hairy control structures' with no unified semantics - the diagnosis the actor model, and then Scheme's lambda-only control, answered."
+    },
+    {
+     "name": "Slagle's funarg failure",
+     "year": 1961,
+     "domain": "programming languages",
+     "lens": "L5",
+     "type": "other",
+     "causal_claim": "Slagle's failed search program directly enabled Scheme's leap as the documented practical failure behind the diagnosis: McCarthy's own history recounts the passed lambda binding the wrong call's variable under dynamic lookup.",
+     "source_title": "A Practical Introduction to Programming Language Design - static vs dynamic scope",
+     "source_url": "https://www.charlie-murphy.dev/books/pl-design/functions/scope.html",
+     "definition": "James Slagle's recursive search program (early 1960s), whose failure McCarthy's 'History of Lisp' recounts: a passed failure-function's lambda captured the wrong call's variable under dynamic lookup - the funarg failure in practice, before it had a name."
+    },
+    {
+     "name": "MacLisp",
+     "year": 1966,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "other",
+     "causal_claim": "MacLisp directly enabled Scheme's leap as the incumbent it is defined against: the memo explicitly contrasts Scheme's lexical closure discipline with the fluid variable bindings of MacLISP.",
+     "source_title": "Scheme - An Interpreter for Extended Lambda Calculus (AIM-349, 1975), implementation issues page",
+     "source_url": "https://en.wikisource.org/wiki/Page:Scheme_-_An_interpreter_for_extended_lambda_calculus.djvu/24",
+     "definition": "MIT Project MAC's Lisp dialect (from 1966, Greenblatt/White), descendant of Lisp 1.5 for the PDP-6/PDP-10 under ITS: dynamically scoped, value-cell variables, the AI Lab's working language and Macsyma's implementation language."
+    },
+    {
+     "name": "Interlisp",
+     "year": 1973,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "other",
+     "causal_claim": "Interlisp directly enabled Scheme's leap as the rival pole of 1970s Lisp: dynamically scoped and environment-maximalist, the other PDP-10 Lisp against which Scheme's semantic minimalism defined itself.",
+     "source_title": "Interlisp (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/InterLisp",
+     "definition": "The BBN/Xerox PARC Lisp line (BBN Lisp 1970, renamed Interlisp 1973): a dynamically scoped dialect whose identity was its integrated interactive environment (DWIM error correction, programmer's assistant)."
+    },
+    {
+     "name": "MDL (Muddle)",
+     "year": 1971,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "other",
+     "causal_claim": "MDL directly enabled Scheme's leap as the same lab's maximalist alternative: Hewitt's extended Lisp direction, against which Scheme's tiny lambda core was the deliberate counter-design.",
+     "source_title": "History of the Scheme programming language (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+     "definition": "MIT's extended Lisp (Muddle, from 1971), built by Sussman, Hewitt and others as a component of Hewitt's Planner project: a maximalist dialect with rich data typing, the lab's other ambitious language direction."
+    },
+    {
+     "name": "FUNARG device",
+     "year": 1962,
+     "domain": "programming languages",
+     "lens": "L7",
+     "type": "method",
+     "causal_claim": "The FUNARG device directly enabled Scheme's leap as the failed fix it replaced: an opt-in patch that worked in the interpreter while compiled code compromised - Scheme's always-lexical rule is the replacement.",
+     "source_title": "A Practical Introduction to Programming Language Design - static vs dynamic scope",
+     "source_url": "https://www.charlie-murphy.dev/books/pl-design/functions/scope.html",
+     "definition": "Lisp 1.5's opt-in closure device: (FUNCTION lambda-expr) evaluated to a FUNARG object pairing the expression with the current a-list environment, patching functional arguments while plain QUOTE stayed dynamically scoped."
+    },
+    {
+     "name": "Conniver",
+     "year": 1972,
+     "domain": "programming languages",
+     "lens": "L7",
+     "type": "other",
+     "causal_claim": "Conniver directly enabled Scheme's leap as the failed direction it answered: exposing Planner's implementation primitives drew the verdict 'a retrograde step (what are Conniver's semantics?)' - Scheme answered by giving control no primitives beyond lambda.",
+     "source_title": "History of the Scheme programming language (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+     "definition": "Sussman and McDermott's 1972 Lisp-based language that revised Planner's automatic backtracking by giving programmers access to the implementation primitives of control - the 'hairy control structures' Hewitt objected to."
+    },
+    {
+     "name": "Micro-Planner",
+     "year": 1971,
+     "domain": "artificial intelligence",
+     "lens": "L7",
+     "type": "other",
+     "causal_claim": "Micro-Planner directly enabled Scheme's leap as the recorded failure that started the line: a partial and somewhat unsatisfactory Planner implementation, whose shortcomings drove Conniver, then Actors, then the modeling experiment that became Scheme.",
+     "source_title": "History of the Scheme programming language (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+     "definition": "The 1971 partial implementation of Planner by Sussman, McDermott and Charniak, described in the retrospective record as partial and somewhat unsatisfactory - the makers' immediately prior system."
+    },
+    {
+     "name": "PDP-10",
+     "year": 1966,
+     "domain": "computing hardware",
+     "lens": "L9",
+     "type": "device",
+     "causal_claim": "The PDP-10 directly enabled Scheme's leap as the machine the first interpreter ran on: the AI Lab's ITS PDP-10s, whose 36-bit word holds exactly one cons cell, were the physical plant of the 1975 experiment.",
+     "source_title": "Maclisp (Vectree knowledge map)",
+     "source_url": "https://vectree.io/pdf/c/maclisp",
+     "definition": "DEC's 36-bit timeshared mainframe line (from 1966): one word holds exactly two 18-bit pointers - one cons cell - and the AI Lab's PDP-10s under ITS were the machines the first Scheme interpreter ran on."
+    },
+    {
+     "name": "PDP-6",
+     "year": 1964,
+     "domain": "computing hardware",
+     "lens": "L9",
+     "type": "device",
+     "causal_claim": "The PDP-6 directly enabled Scheme's leap as the earlier machine of the same installation: the PDP-6/PDP-10 pair under ITS was the lab's computing base on which MacLisp, and then Scheme, were built.",
+     "source_title": "Incompatible Timesharing System (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Incompatible_Time-sharing_System",
+     "definition": "DEC's first 36-bit timesharing machine (1964), the PDP-10's predecessor at MIT, on which ITS and the lab's Lisp work began."
+    },
+    {
+     "name": "MIT Lisp machine project",
+     "year": 1973,
+     "domain": "computing hardware",
+     "lens": "L9",
+     "type": "device",
+     "causal_claim": "The MIT Lisp machine project directly enabled Scheme's leap by registering, in hardware form, the same installation's verdict that Lisp needed a machine of its own - the hardware line contemporary with Scheme's design.",
+     "source_title": "Maclisp (Wikipedia)",
+     "source_url": "http://en.wikipedia.org/wiki/MacLisp",
+     "definition": "Tom Knight's MIT project (from 1973) to build hardware executing Lisp natively - the Lisp machine effort, born of the same PDP-10 installation's limits."
+    },
+    {
+     "name": "McCarthy's meta-circular eval",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L11",
+     "type": "method",
+     "causal_claim": "McCarthy's meta-circular eval directly enabled Scheme's leap as the recipe wielded: define the language by an interpreter written in itself - AIM-349 is exactly such an interpreter paper, for an extended lambda calculus.",
+     "source_title": "Lisp - Clojure Applied (O'Reilly)",
+     "source_url": "https://www.oreilly.com/library/view/clojure-applied/9781680501476/f_0085.html",
+     "definition": "McCarthy's meta-circular eval/apply definition of Lisp in itself (1960): the recipe of defining a language by writing its interpreter in the language - the form AIM-349 itself takes ('An Interpreter for ...')."
+    },
+    {
+     "name": "Definitional interpreters (Reynolds)",
+     "year": 1972,
+     "domain": "programming languages",
+     "lens": "L11",
+     "type": "theory",
+     "causal_claim": "Reynolds's definitional-interpreter method directly enabled Scheme's leap as the process followed: classify the interpreter, then make its borrowed host features - function representation, control - explicit, which is AIM-349's construction.",
+     "source_title": "Definitional Interpreters Revisited (Reynolds, 1998)",
+     "source_url": "https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-definitional-interpreters-revisited.pdf",
+     "definition": "Reynolds's 1972 ACM paper classifying definitional interpreters for higher-order languages and deriving, constructively, explicit closures (defunctionalization) and explicit continuations (CPS) from naive meta-circular definitions."
+    },
+    {
+     "name": "MacLisp",
+     "year": 1966,
+     "domain": "programming languages",
+     "lens": "L12",
+     "type": "other",
+     "causal_claim": "MacLisp directly enabled Scheme's leap as the programmability layer over the PDP-10: the thousand-line first Scheme interpreter was written in MacLisp, in the environment MacLisp provided.",
+     "source_title": "Scheme and SICP - CompHist: The Incomplete History of Computer Science",
+     "source_url": "https://www.geschichte-der-informatik.de/articles/scheme_and_sicp/",
+     "definition": "MIT Project MAC's Lisp dialect (from 1966, Greenblatt/White), descendant of Lisp 1.5 for the PDP-6/PDP-10 under ITS: dynamically scoped, value-cell variables, the AI Lab's working language and Macsyma's implementation language."
+    },
+    {
+     "name": "MacLisp",
+     "year": 1966,
+     "domain": "programming languages",
+     "lens": "L13",
+     "type": "other",
+     "causal_claim": "MacLisp directly enabled Scheme's leap as the build tooling: the interpreter was implemented in MacLisp, using its reader, evaluator and interactive environment as the construction kit.",
+     "source_title": "Scheme and SICP - CompHist: The Incomplete History of Computer Science",
+     "source_url": "https://www.geschichte-der-informatik.de/articles/scheme_and_sicp/",
+     "definition": "MIT Project MAC's Lisp dialect (from 1966, Greenblatt/White), descendant of Lisp 1.5 for the PDP-6/PDP-10 under ITS: dynamically scoped, value-cell variables, the AI Lab's working language and Macsyma's implementation language."
+    },
+    {
+     "name": "ITS (Incompatible Timesharing System)",
+     "year": 1967,
+     "domain": "operating systems",
+     "lens": "L13",
+     "type": "other",
+     "causal_claim": "ITS directly enabled Scheme's leap as the wielded development environment: the AI Lab's own timesharing system on which the interpreter was written, run and shared - and whose six-character filename limit named the language.",
+     "source_title": "Incompatible Timesharing System (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Incompatible_Time-sharing_System",
+     "definition": "The MIT AI Lab's own timesharing operating system for the PDP-6/PDP-10 (from 1967): the open, hacker-maintained interactive environment in which MacLisp and Scheme were built; its six-character filename limit truncated 'Schemer' to 'Scheme'."
+    },
+    {
+     "name": "ALGOL 60",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "causal_claim": "ALGOL 60 directly enabled Scheme's leap as the import from the algorithmic-language tradition: block structure and lexical scope - the retrospective records that the impetus came from Sussman's studies of ALGOL.",
+     "source_title": "History of the Scheme programming language (mirror)",
+     "source_url": "https://static.hlt.bme.hu/semantics/external/pages/John_McCarthy/en.wikipedia.org/wiki/History_of_the_Scheme_programming_language.html",
+     "definition": "The committee language of the 1960 Report: the first language with block structure and nested function definitions under lexical scope, and the era's standard medium for publishing algorithms."
+    },
+    {
+     "name": "Lambda calculus",
+     "year": 1936,
+     "domain": "mathematical logic",
+     "lens": "L19",
+     "type": "theory",
+     "causal_claim": "The lambda calculus directly enabled Scheme's leap as the import from mathematical logic into programming: Church's 1936 formalism, carried into the Lisp world by McCarthy's notation and made executable semantics by Sussman and Steele.",
+     "source_title": "Lambda Calculus | AI Wiki",
+     "source_url": "https://aiwiki.ai/wiki/lambda_calculus",
+     "definition": "Church's formal system (1936) of function abstraction and application: variables, lambda abstractions and applications under beta reduction, with lexical binding as its native discipline - the mathematics Scheme's title claims to extend."
+    },
+    {
+     "name": "Scott-Strachey denotational semantics",
+     "year": 1971,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "theory",
+     "causal_claim": "Scott-Strachey denotational semantics directly enabled Scheme's leap by making 'a language is its lambda-calculus meaning' a rigorous position in the years just before 1975 - the intellectual ground an 'extended lambda calculus' language stood on.",
+     "source_title": "Definitional Interpreters Revisited (Reynolds, 1998)",
+     "source_url": "https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-definitional-interpreters-revisited.pdf",
+     "definition": "Scott and Strachey's Oxford program (from 1969-71) giving the lambda calculus a lattice-theoretic mathematical semantics - the denotational-semantics foundation for treating lambda as a language's whole meaning."
+    },
+    {
+     "name": "Landin's ALGOL-lambda correspondence",
+     "year": 1965,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "theory",
+     "causal_claim": "Landin's correspondence papers directly enabled Scheme's leap by proving the bridge Scheme walks: ALGOL 60's block structure translates into Church's lambda notation, so a Lisp could take its scoping from lambda itself.",
+     "source_title": "Peter Landin (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Peter_Landin",
+     "definition": "Landin's 1965 Computer Journal papers showing ALGOL 60 translates directly into Church's lambda notation - the bridge result identifying Algol's block structure with lambda binding."
+    },
+    {
+     "name": "Conniver",
+     "year": 1972,
+     "domain": "programming languages",
+     "lens": "L20",
+     "type": "other",
+     "causal_claim": "Conniver directly enabled Scheme's leap through the creator lineage: it is Sussman's own immediately prior language (with McDermott), and the naming line Planner-Conniver-Schemer is the makers' own path to the 1975 experiment.",
+     "source_title": "History of the Scheme programming language (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+     "definition": "Sussman and McDermott's 1972 Lisp-based language that revised Planner's automatic backtracking by giving programmers access to the implementation primitives of control - the 'hairy control structures' Hewitt objected to."
+    },
+    {
+     "name": "Micro-Planner",
+     "year": 1971,
+     "domain": "artificial intelligence",
+     "lens": "L20",
+     "type": "other",
+     "causal_claim": "Micro-Planner directly enabled Scheme's leap through the creator lineage: Sussman's own earlier system (with McDermott and Charniak), the first step of the Planner line whose control problems the makers spent 1971-75 answering.",
+     "source_title": "History of the Scheme programming language (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+     "definition": "The 1971 partial implementation of Planner by Sussman, McDermott and Charniak, described in the retrospective record as partial and somewhat unsatisfactory - the makers' immediately prior system."
+    },
+    {
+     "name": "MDL (Muddle)",
+     "year": 1971,
+     "domain": "programming languages",
+     "lens": "L20",
+     "type": "other",
+     "causal_claim": "MDL directly enabled Scheme's leap through the creator lineage: Sussman and Hewitt's shared working language, a component of Hewitt's project - the makers' common ground in the years immediately before Scheme.",
+     "source_title": "History of the Scheme programming language (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+     "definition": "MIT's extended Lisp (Muddle, from 1971), built by Sussman, Hewitt and others as a component of Hewitt's Planner project: a maximalist dialect with rich data typing, the lab's other ambitious language direction."
+    },
+    {
+     "name": "MIT Artificial Intelligence Laboratory",
+     "year": 1970,
+     "domain": "artificial intelligence",
+     "lens": "L21",
+     "type": "institution",
+     "causal_claim": "The MIT AI Laboratory directly enabled Scheme's leap as its institutional vehicle: it employed both makers, ran the PDP-10/ITS installation, housed Hewitt's actor project in the same corridors, and published the result as AI Memo 349.",
+     "source_title": "MIT Artificial Intelligence Laboratory",
+     "source_url": "https://www.tellworld.net/companies/mit-ai-lab",
+     "definition": "The MIT laboratory (formed 1970 out of Project MAC's AI group) that employed both makers, ran the PDP-10/ITS installation, housed Hewitt's actor project and published the result as AI Memo 349."
+    },
+    {
+     "name": "Project MAC",
+     "year": 1963,
+     "domain": "computing",
+     "lens": "L21",
+     "type": "institution",
+     "causal_claim": "Project MAC directly enabled Scheme's leap as the funding-and-environment structure behind it: ARPA's timesharing project built the installation and MacLisp (named for it) inside which the AI Lab's language work ran.",
+     "source_title": "Project MAC | DARPA",
+     "source_url": "https://www.darpa.mil/about/innovation-timeline/project-mac",
+     "definition": "MIT's ARPA-funded project (launched 1 July 1963 with a $2M ARPA grant, Licklider's IPTO vision): the timesharing program that built the environment - and MacLisp, named after it - inside which the AI Lab's language work ran."
+    },
+    {
+     "name": "ARPA Information Processing Techniques Office",
+     "year": 1962,
+     "domain": "computing",
+     "lens": "L21",
+     "type": "institution",
+     "causal_claim": "ARPA's IPTO directly enabled Scheme's leap as the incentive structure at the root: Licklider's office funded Project MAC and sustained the MIT AI program whose memo series carried Scheme.",
+     "source_title": "Project MAC | DARPA",
+     "source_url": "https://www.darpa.mil/about/innovation-timeline/project-mac",
+     "definition": "ARPA's Information Processing Techniques Office (founded 1962 under Licklider): the funding program whose grants created Project MAC and sustained MIT AI research through the period."
+    },
+    {
+     "name": "ARPANET",
+     "year": 1969,
+     "domain": "computing",
+     "lens": "L22",
+     "type": "other",
+     "causal_claim": "ARPANET directly enabled Scheme's leap as a timeliness condition: ITS machines' open guest access over the network made the AI Lab's language work visible and triable beyond MIT in the years around 1975.",
+     "source_title": "Incompatible Timesharing System (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Incompatible_Time-sharing_System",
+     "definition": "The ARPA packet network (from 1969) over which ITS machines offered open guest access, spreading the AI Lab's software and culture beyond MIT."
+    },
+    {
+     "name": "QA4",
+     "year": 1972,
+     "domain": "artificial intelligence",
+     "lens": "L3",
+     "type": "other",
+     "causal_claim": "QA4 directly enabled Scheme's leap, on the lineage surveys' account, as a fellow Planner-derivation AI language of the same community and years, part of the procedural-embedding milieu Scheme emerged from.",
+     "source_title": "Planner (programming language) (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Planner_programming_language",
+     "definition": "Rulifson's SRI language (1972) in the Planner derivation line: question-answering with pattern-directed procedures, an AI tool of the same era and community as Conniver."
+    },
+    {
+     "name": "Smalltalk-72",
+     "year": 1972,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "causal_claim": "Smalltalk-72 directly enabled Scheme's leap, on the surveys' parallel, by making message passing the universal primitive at Xerox PARC in the same years Hewitt's actors did at MIT.",
+     "source_title": "Actors, continuations, and the Church-Turing thesis (Patton)",
+     "source_url": "https://applied-langua.ge/~hayley/actors.pdf",
+     "definition": "The first Smalltalk (Kay's group, Xerox PARC, 1972): message-passing objects as the universal primitive - the parallel California answer to the question Hewitt's actors also answered."
+    },
+    {
+     "name": "Actor semantics of PLANNER-73 (Greif & Hewitt)",
+     "year": 1974,
+     "domain": "artificial intelligence",
+     "lens": "L23",
+     "type": "theory",
+     "causal_claim": "Greif and Hewitt's actor semantics of PLANNER-73 directly enabled Scheme's leap as the contemporaneous formalization: the January 1975 account of what actors mean, against which Sussman and Steele's modeling was done.",
+     "source_title": "Actor Semantics of PLANNER-73 (Greif & Hewitt, MIT AI Lab WP-81, 1974)",
+     "source_url": "https://dspace.mit.edu/entities/publication/b45e996e-9782-45b6-a6e5-2da2f8c1414e",
+     "definition": "Greif and Hewitt's formal actor semantics for PLANNER-73 (MIT AI Working Paper 81, November 1974; POPL January 1975): the contemporaneous formalization of the model Scheme was built to understand."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "lisp-1960",
+      "candidate": {
+       "name": "Lisp",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "other",
+       "causal_claim": "Lisp directly enabled Scheme's leap by supplying the language being reformed: s-expressions, lambda notation, recursion and the evaluator tradition - Scheme is a dialect of Lisp, designed as its simplification.",
+       "source_title": "Lisp - Clojure Applied (O'Reilly)",
+       "source_url": "https://www.oreilly.com/library/view/clojure-applied/9781680501476/f_0085.html",
+       "definition": "McCarthy's language of symbolic expressions (designed 1958, published CACM 1960): s-expressions, lambda notation borrowed from Church, conditional expressions, recursion and a meta-circular evaluator - the family Scheme is a dialect of."
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Lisp"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lambda-calculus-1936",
+      "candidate": {
+       "name": "Lambda calculus",
+       "year": 1936,
+       "domain": "mathematical logic",
+       "lens": "L1",
+       "type": "theory",
+       "causal_claim": "The lambda calculus directly enabled Scheme's leap as the parent's stated foundation: AIM-349 is titled 'An Interpreter for Extended Lambda Calculus', and the lexical binding that distinguishes Scheme is the calculus's own discipline, which Lisp had not implemented.",
+       "source_title": "Lambda Calculus | AI Wiki",
+       "source_url": "https://aiwiki.ai/wiki/lambda_calculus",
+       "definition": "Church's formal system (1936) of function abstraction and application: variables, lambda abstractions and applications under beta reduction, with lexical binding as its native discipline - the mathematics Scheme's title claims to extend."
+      },
+      "members": [
+       1,
+       30
+      ],
+      "member_names": [
+       "Lambda calculus",
+       "Lambda calculus"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "secd-machine-1964",
+      "candidate": {
+       "name": "SECD machine",
+       "year": 1964,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "theory",
+       "causal_claim": "Landin's SECD machine directly enabled Scheme's leap by first showing that a lambda value can be implemented as a closure - code closed in a heap environment - the implementation fact a lexically scoped interpreter embodies.",
+       "source_title": "SECD machine (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/SECD_machine",
+       "definition": "Landin's abstract machine (1964, 'The Mechanical Evaluation of Expressions'): stack, environment, control and dump registers evaluating lambda expressions, in which a function value is a closure - code paired with a heap environment."
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "SECD machine"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "iswim-1966",
+      "candidate": {
+       "name": "ISWIM",
+       "year": 1966,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "other",
+       "causal_claim": "ISWIM directly enabled Scheme's leap by stating its design nine years early: a language as sugared lambda calculus with lexical scope and higher-order functions - the template Scheme finally implemented inside Lisp.",
+       "source_title": "ISWIM (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/ISWIM",
+       "definition": "Landin's abstract language family ('The Next 700 Programming Languages', CACM 1966): a functional core of sugared lambda calculus with lexically scoped variables, higher-order functions and the J operator - stated as a design, never implemented."
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "ISWIM"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pal-1968",
+      "candidate": {
+       "name": "PAL",
+       "year": 1968,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "other",
+       "causal_claim": "PAL directly enabled Scheme's leap as the in-house MIT proof that Landin's ISWIM concepts - lexical scope and closures - could be implemented and taught, years before Scheme, in the same institution.",
+       "source_title": "Definitional Interpreters for Higher-Order Programming Languages (Reynolds, 1972; 1998 reprint)",
+       "source_url": "https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-definitional-interpreters-1998.pdf",
+       "definition": "Art Evans's MIT teaching language (1968), the first working capture of Landin's ISWIM concepts - lexical scope, closures, powerful control transfers - implemented years before Scheme, in the same institution."
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "PAL"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "funarg-device-1962",
+      "candidate": {
+       "name": "FUNARG device",
+       "year": 1962,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "method",
+       "causal_claim": "The FUNARG device directly enabled Scheme's leap as the mechanism it generalized: Lisp 1.5's pairing of a lambda with its environment is the closure, which Scheme made the only function semantics instead of an opt-in patch.",
+       "source_title": "A Practical Introduction to Programming Language Design - static vs dynamic scope",
+       "source_url": "https://www.charlie-murphy.dev/books/pl-design/functions/scope.html",
+       "definition": "Lisp 1.5's opt-in closure device: (FUNCTION lambda-expr) evaluated to a FUNARG object pairing the expression with the current a-list environment, patching functional arguments while plain QUOTE stayed dynamically scoped."
+      },
+      "members": [
+       5,
+       18
+      ],
+      "member_names": [
+       "FUNARG device",
+       "FUNARG device"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "definitional-interpreters-reynolds-1972",
+      "candidate": {
+       "name": "Definitional interpreters (Reynolds)",
+       "year": 1972,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "theory",
+       "causal_claim": "Reynolds's definitional interpreters directly enabled Scheme's leap by systematizing how an interpreter must make closures and continuations explicit rather than borrow them from the host - the discipline AIM-349's interpreter executes.",
+       "source_title": "Definitional Interpreters for Higher-Order Programming Languages (Reynolds, 1972; 1998 reprint)",
+       "source_url": "https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-definitional-interpreters-1998.pdf",
+       "definition": "Reynolds's 1972 ACM paper classifying definitional interpreters for higher-order languages and deriving, constructively, explicit closures (defunctionalization) and explicit continuations (CPS) from naive meta-circular definitions."
+      },
+      "members": [
+       6,
+       25
+      ],
+      "member_names": [
+       "Definitional interpreters (Reynolds)",
+       "Definitional interpreters (Reynolds)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lisp-1-5-1962",
+      "candidate": {
+       "name": "Lisp 1.5",
+       "year": 1962,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "causal_claim": "Lisp 1.5 is the specific ancestor Scheme modified: its FUNCTION/QUOTE compromise and SPECIAL-variable dynamic scoping are the standing arrangements Scheme replaced with uniform lexical closures.",
+       "source_title": "A Practical Introduction to Programming Language Design - static vs dynamic scope",
+       "source_url": "https://www.charlie-murphy.dev/books/pl-design/functions/scope.html",
+       "definition": "The 1962 MIT system and manual (LISP 1.5 Programmer's Manual): the distributed form of Lisp in which the FUNARG device, FUNCTION/QUOTE distinction and SPECIAL-variable dynamic scoping were the standing compromises."
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Lisp 1.5"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "maclisp-1966",
+      "candidate": {
+       "name": "MacLisp",
+       "year": 1966,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "causal_claim": "MacLisp is the direct precursor Scheme altered: same lab, same machine, same users - the memo's contrasts (no 'fluid' bindings, unlike 'standard stack implementations of LISP such as MacLISP') run against MacLisp by name.",
+       "source_title": "Scheme - An Interpreter for Extended Lambda Calculus (AIM-349, 1975), implementation issues page",
+       "source_url": "https://en.wikisource.org/wiki/Page:Scheme_-_An_interpreter_for_extended_lambda_calculus.djvu/24",
+       "definition": "MIT Project MAC's Lisp dialect (from 1966, Greenblatt/White), descendant of Lisp 1.5 for the PDP-6/PDP-10 under ITS: dynamically scoped, value-cell variables, the AI Lab's working language and Macsyma's implementation language."
+      },
+      "members": [
+       8,
+       15,
+       26,
+       27
+      ],
+      "member_names": [
+       "MacLisp",
+       "MacLisp",
+       "MacLisp",
+       "MacLisp"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "plasma-planner-73-1973",
+      "candidate": {
+       "name": "PLASMA (Planner-73)",
+       "year": 1973,
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "type": "other",
+       "causal_claim": "PLASMA is the actor language Scheme re-expressed: Sussman and Steele set out to model PLASMA's actors, noticed its lexical scope was lambda-like, and Scheme is what remained when the actor machinery was rewritten as lambda calculus.",
+       "source_title": "History of the Scheme programming language (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+       "definition": "The partial implementation of the Actor model (Planner-73, later PLASMA) developed at MIT from 1973, whose semantics Greif and Hewitt formalized in 1974; it used lexical scope in a lambda-calculus-like style."
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "PLASMA (Planner-73)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "actor-model-1973",
+      "candidate": {
+       "name": "Actor model",
+       "year": 1973,
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "type": "theory",
+       "causal_claim": "The Actor model directly enabled Scheme's leap by posing the problem it answers: Hewitt, Bishop and Steiger proposed actors as the single modular basis for AI systems, and Sussman and Steele built their interpreter expressly to understand that model.",
+       "source_title": "A Universal Modular ACTOR Formalism for Artificial Intelligence (Hewitt, Bishop & Steiger, IJCAI 1973)",
+       "source_url": "https://ijcai.org/proceedings/1973/31",
+       "definition": "Hewitt, Bishop and Steiger's model of computation (invented November 1972; IJCAI 1973): active agents that communicate only by sending messages, create actors and designate their own next behavior - proposed as the single modular basis for AI systems."
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Actor model"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "planner-1969",
+      "candidate": {
+       "name": "PLANNER",
+       "year": 1969,
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "type": "other",
+       "causal_claim": "PLANNER directly enabled Scheme's leap by posing the problem line it terminates: embedding knowledge procedurally under programmer control - Planner begat Conniver's control experiments, whose difficulties begat Actors, whose modeling begat Scheme.",
+       "source_title": "PLANNER: A Language for Proving Theorems in Robots (Hewitt, IJCAI 1969)",
+       "source_url": "https://ijcai.org/proceedings/1969/29",
+       "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction."
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "PLANNER"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false,
+      "notes": [
+       "judge SUBTYPE in pair cand-cand:11:20: Micro-Planner is a specific partial (subset) implementation of PLANNER by Sussman's group - a variant instance of the Planner design, kept separate because its historical role (the makers' own prior system) is distinct.",
+       "judge SUBTYPE in pair cand-cand:11:34: Same pair as cand-cand:11:20 via the second Micro-Planner candidate instance: a partial subset implementation of PLANNER, kept separate for its distinct creator-lineage role."
+      ]
+     },
+     {
+      "cand_id": "funarg-problem-moses-s-analysis-1970",
+      "candidate": {
+       "name": "FUNARG problem (Moses's analysis)",
+       "year": 1970,
+       "domain": "programming languages",
+       "lens": "L5",
+       "type": "theory",
+       "causal_claim": "Moses's analysis of the FUNARG problem directly enabled Scheme's leap by naming the obstruction its design removes: AIM-349 cites '[Moses]' on the upward funarg problem as a constraint its tree-structured environments must satisfy.",
+       "source_title": "Scheme - An Interpreter for Extended Lambda Calculus (AIM-349, 1975), implementation issues page",
+       "source_url": "https://en.wikisource.org/wiki/Page:Scheme_-_An_interpreter_for_extended_lambda_calculus.djvu/24",
+       "definition": "The diagnosed failure of functional arguments under dynamic scoping, analyzed in Joel Moses's 1970 MIT memo 'The Function of FUNCTION in LISP': free variables of a passed function bind in the caller's environment, not the definer's."
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "FUNARG problem (Moses's analysis)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hairy-control-structures-critique-1973",
+      "candidate": {
+       "name": "Hairy control structures critique",
+       "year": 1973,
+       "domain": "artificial intelligence",
+       "lens": "L5",
+       "type": "theory",
+       "causal_claim": "Hewitt's hairy-control-structure critique directly enabled Scheme's leap by diagnosing the disease of the Planner line - ad-hoc control primitives with no unified semantics - to which a language with lambda as its only control mechanism is the answer.",
+       "source_title": "History of the Scheme programming language (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+       "definition": "Hewitt's standing objection (1972-73) that the Planner line's languages accumulated ad-hoc 'hairy control structures' with no unified semantics - the diagnosis the actor model, and then Scheme's lambda-only control, answered."
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Hairy control structures critique"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "slagle-s-funarg-failure-1961",
+      "candidate": {
+       "name": "Slagle's funarg failure",
+       "year": 1961,
+       "domain": "programming languages",
+       "lens": "L5",
+       "type": "other",
+       "causal_claim": "Slagle's failed search program directly enabled Scheme's leap as the documented practical failure behind the diagnosis: McCarthy's own history recounts the passed lambda binding the wrong call's variable under dynamic lookup.",
+       "source_title": "A Practical Introduction to Programming Language Design - static vs dynamic scope",
+       "source_url": "https://www.charlie-murphy.dev/books/pl-design/functions/scope.html",
+       "definition": "James Slagle's recursive search program (early 1960s), whose failure McCarthy's 'History of Lisp' recounts: a passed failure-function's lambda captured the wrong call's variable under dynamic lookup - the funarg failure in practice, before it had a name."
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Slagle's funarg failure"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "interlisp-1973",
+      "candidate": {
+       "name": "Interlisp",
+       "year": 1973,
+       "domain": "programming languages",
+       "lens": "L6",
+       "type": "other",
+       "causal_claim": "Interlisp directly enabled Scheme's leap as the rival pole of 1970s Lisp: dynamically scoped and environment-maximalist, the other PDP-10 Lisp against which Scheme's semantic minimalism defined itself.",
+       "source_title": "Interlisp (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/InterLisp",
+       "definition": "The BBN/Xerox PARC Lisp line (BBN Lisp 1970, renamed Interlisp 1973): a dynamically scoped dialect whose identity was its integrated interactive environment (DWIM error correction, programmer's assistant)."
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Interlisp"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mdl-muddle-1971",
+      "candidate": {
+       "name": "MDL (Muddle)",
+       "year": 1971,
+       "domain": "programming languages",
+       "lens": "L6",
+       "type": "other",
+       "causal_claim": "MDL directly enabled Scheme's leap as the same lab's maximalist alternative: Hewitt's extended Lisp direction, against which Scheme's tiny lambda core was the deliberate counter-design.",
+       "source_title": "History of the Scheme programming language (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+       "definition": "MIT's extended Lisp (Muddle, from 1971), built by Sussman, Hewitt and others as a component of Hewitt's Planner project: a maximalist dialect with rich data typing, the lab's other ambitious language direction."
+      },
+      "members": [
+       17,
+       35
+      ],
+      "member_names": [
+       "MDL (Muddle)",
+       "MDL (Muddle)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "conniver-1972",
+      "candidate": {
+       "name": "Conniver",
+       "year": 1972,
+       "domain": "programming languages",
+       "lens": "L7",
+       "type": "other",
+       "causal_claim": "Conniver directly enabled Scheme's leap as the failed direction it answered: exposing Planner's implementation primitives drew the verdict 'a retrograde step (what are Conniver's semantics?)' - Scheme answered by giving control no primitives beyond lambda.",
+       "source_title": "History of the Scheme programming language (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+       "definition": "Sussman and McDermott's 1972 Lisp-based language that revised Planner's automatic backtracking by giving programmers access to the implementation primitives of control - the 'hairy control structures' Hewitt objected to."
+      },
+      "members": [
+       19,
+       33
+      ],
+      "member_names": [
+       "Conniver",
+       "Conniver"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "micro-planner-1971",
+      "candidate": {
+       "name": "Micro-Planner",
+       "year": 1971,
+       "domain": "artificial intelligence",
+       "lens": "L7",
+       "type": "other",
+       "causal_claim": "Micro-Planner directly enabled Scheme's leap as the recorded failure that started the line: a partial and somewhat unsatisfactory Planner implementation, whose shortcomings drove Conniver, then Actors, then the modeling experiment that became Scheme.",
+       "source_title": "History of the Scheme programming language (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Lambda_Papers",
+       "definition": "The 1971 partial implementation of Planner by Sussman, McDermott and Charniak, described in the retrospective record as partial and somewhat unsatisfactory - the makers' immediately prior system."
+      },
+      "members": [
+       20,
+       34
+      ],
+      "member_names": [
+       "Micro-Planner",
+       "Micro-Planner"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false,
+      "notes": [
+       "judge SUBTYPE in pair cand-cand:11:20: Micro-Planner is a specific partial (subset) implementation of PLANNER by Sussman's group - a variant instance of the Planner design, kept separate because its historical role (the makers' own prior system) is distinct.",
+       "judge SUBTYPE in pair cand-cand:11:34: Same pair as cand-cand:11:20 via the second Micro-Planner candidate instance: a partial subset implementation of PLANNER, kept separate for its distinct creator-lineage role."
+      ]
+     },
+     {
+      "cand_id": "pdp-10-1966",
+      "candidate": {
+       "name": "PDP-10",
+       "year": 1966,
+       "domain": "computing hardware",
+       "lens": "L9",
+       "type": "device",
+       "causal_claim": "The PDP-10 directly enabled Scheme's leap as the machine the first interpreter ran on: the AI Lab's ITS PDP-10s, whose 36-bit word holds exactly one cons cell, were the physical plant of the 1975 experiment.",
+       "source_title": "Maclisp (Vectree knowledge map)",
+       "source_url": "https://vectree.io/pdf/c/maclisp",
+       "definition": "DEC's 36-bit timeshared mainframe line (from 1966): one word holds exactly two 18-bit pointers - one cons cell - and the AI Lab's PDP-10s under ITS were the machines the first Scheme interpreter ran on."
+      },
+      "members": [
+       21
+      ],
+      "member_names": [
+       "PDP-10"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pdp-6-1964",
+      "candidate": {
+       "name": "PDP-6",
+       "year": 1964,
+       "domain": "computing hardware",
+       "lens": "L9",
+       "type": "device",
+       "causal_claim": "The PDP-6 directly enabled Scheme's leap as the earlier machine of the same installation: the PDP-6/PDP-10 pair under ITS was the lab's computing base on which MacLisp, and then Scheme, were built.",
+       "source_title": "Incompatible Timesharing System (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Incompatible_Time-sharing_System",
+       "definition": "DEC's first 36-bit timesharing machine (1964), the PDP-10's predecessor at MIT, on which ITS and the lab's Lisp work began."
+      },
+      "members": [
+       22
+      ],
+      "member_names": [
+       "PDP-6"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mit-lisp-machine-project-1973",
+      "candidate": {
+       "name": "MIT Lisp machine project",
+       "year": 1973,
+       "domain": "computing hardware",
+       "lens": "L9",
+       "type": "device",
+       "causal_claim": "The MIT Lisp machine project directly enabled Scheme's leap by registering, in hardware form, the same installation's verdict that Lisp needed a machine of its own - the hardware line contemporary with Scheme's design.",
+       "source_title": "Maclisp (Wikipedia)",
+       "source_url": "http://en.wikipedia.org/wiki/MacLisp",
+       "definition": "Tom Knight's MIT project (from 1973) to build hardware executing Lisp natively - the Lisp machine effort, born of the same PDP-10 installation's limits."
+      },
+      "members": [
+       23
+      ],
+      "member_names": [
+       "MIT Lisp machine project"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mccarthy-s-meta-circular-eval-1960",
+      "candidate": {
+       "name": "McCarthy's meta-circular eval",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L11",
+       "type": "method",
+       "causal_claim": "McCarthy's meta-circular eval directly enabled Scheme's leap as the recipe wielded: define the language by an interpreter written in itself - AIM-349 is exactly such an interpreter paper, for an extended lambda calculus.",
+       "source_title": "Lisp - Clojure Applied (O'Reilly)",
+       "source_url": "https://www.oreilly.com/library/view/clojure-applied/9781680501476/f_0085.html",
+       "definition": "McCarthy's meta-circular eval/apply definition of Lisp in itself (1960): the recipe of defining a language by writing its interpreter in the language - the form AIM-349 itself takes ('An Interpreter for ...')."
+      },
+      "members": [
+       24
+      ],
+      "member_names": [
+       "McCarthy's meta-circular eval"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "its-incompatible-timesharing-system-1967",
+      "candidate": {
+       "name": "ITS (Incompatible Timesharing System)",
+       "year": 1967,
+       "domain": "operating systems",
+       "lens": "L13",
+       "type": "other",
+       "causal_claim": "ITS directly enabled Scheme's leap as the wielded development environment: the AI Lab's own timesharing system on which the interpreter was written, run and shared - and whose six-character filename limit named the language.",
+       "source_title": "Incompatible Timesharing System (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Incompatible_Time-sharing_System",
+       "definition": "The MIT AI Lab's own timesharing operating system for the PDP-6/PDP-10 (from 1967): the open, hacker-maintained interactive environment in which MacLisp and Scheme were built; its six-character filename limit truncated 'Schemer' to 'Scheme'."
+      },
+      "members": [
+       28
+      ],
+      "member_names": [
+       "ITS (Incompatible Timesharing System)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "algol-60-1960",
+      "candidate": {
+       "name": "ALGOL 60",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "causal_claim": "ALGOL 60 directly enabled Scheme's leap as the import from the algorithmic-language tradition: block structure and lexical scope - the retrospective records that the impetus came from Sussman's studies of ALGOL.",
+       "source_title": "History of the Scheme programming language (mirror)",
+       "source_url": "https://static.hlt.bme.hu/semantics/external/pages/John_McCarthy/en.wikipedia.org/wiki/History_of_the_Scheme_programming_language.html",
+       "definition": "The committee language of the 1960 Report: the first language with block structure and nested function definitions under lexical scope, and the era's standard medium for publishing algorithms."
+      },
+      "members": [
+       29
+      ],
+      "member_names": [
+       "ALGOL 60"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "scott-strachey-denotational-semantics-1971",
+      "candidate": {
+       "name": "Scott-Strachey denotational semantics",
+       "year": 1971,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "theory",
+       "causal_claim": "Scott-Strachey denotational semantics directly enabled Scheme's leap by making 'a language is its lambda-calculus meaning' a rigorous position in the years just before 1975 - the intellectual ground an 'extended lambda calculus' language stood on.",
+       "source_title": "Definitional Interpreters Revisited (Reynolds, 1998)",
+       "source_url": "https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-definitional-interpreters-revisited.pdf",
+       "definition": "Scott and Strachey's Oxford program (from 1969-71) giving the lambda calculus a lattice-theoretic mathematical semantics - the denotational-semantics foundation for treating lambda as a language's whole meaning."
+      },
+      "members": [
+       31
+      ],
+      "member_names": [
+       "Scott-Strachey denotational semantics"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "landin-s-algol-lambda-correspondence-1965",
+      "candidate": {
+       "name": "Landin's ALGOL-lambda correspondence",
+       "year": 1965,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "theory",
+       "causal_claim": "Landin's correspondence papers directly enabled Scheme's leap by proving the bridge Scheme walks: ALGOL 60's block structure translates into Church's lambda notation, so a Lisp could take its scoping from lambda itself.",
+       "source_title": "Peter Landin (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Peter_Landin",
+       "definition": "Landin's 1965 Computer Journal papers showing ALGOL 60 translates directly into Church's lambda notation - the bridge result identifying Algol's block structure with lambda binding."
+      },
+      "members": [
+       32
+      ],
+      "member_names": [
+       "Landin's ALGOL-lambda correspondence"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mit-artificial-intelligence-laboratory-1970",
+      "candidate": {
+       "name": "MIT Artificial Intelligence Laboratory",
+       "year": 1970,
+       "domain": "artificial intelligence",
+       "lens": "L21",
+       "type": "institution",
+       "causal_claim": "The MIT AI Laboratory directly enabled Scheme's leap as its institutional vehicle: it employed both makers, ran the PDP-10/ITS installation, housed Hewitt's actor project in the same corridors, and published the result as AI Memo 349.",
+       "source_title": "MIT Artificial Intelligence Laboratory",
+       "source_url": "https://www.tellworld.net/companies/mit-ai-lab",
+       "definition": "The MIT laboratory (formed 1970 out of Project MAC's AI group) that employed both makers, ran the PDP-10/ITS installation, housed Hewitt's actor project and published the result as AI Memo 349."
+      },
+      "members": [
+       36
+      ],
+      "member_names": [
+       "MIT Artificial Intelligence Laboratory"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "project-mac-1963",
+      "candidate": {
+       "name": "Project MAC",
+       "year": 1963,
+       "domain": "computing",
+       "lens": "L21",
+       "type": "institution",
+       "causal_claim": "Project MAC directly enabled Scheme's leap as the funding-and-environment structure behind it: ARPA's timesharing project built the installation and MacLisp (named for it) inside which the AI Lab's language work ran.",
+       "source_title": "Project MAC | DARPA",
+       "source_url": "https://www.darpa.mil/about/innovation-timeline/project-mac",
+       "definition": "MIT's ARPA-funded project (launched 1 July 1963 with a $2M ARPA grant, Licklider's IPTO vision): the timesharing program that built the environment - and MacLisp, named after it - inside which the AI Lab's language work ran."
+      },
+      "members": [
+       37
+      ],
+      "member_names": [
+       "Project MAC"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "arpa-information-processing-techniques-office-1962",
+      "candidate": {
+       "name": "ARPA Information Processing Techniques Office",
+       "year": 1962,
+       "domain": "computing",
+       "lens": "L21",
+       "type": "institution",
+       "causal_claim": "ARPA's IPTO directly enabled Scheme's leap as the incentive structure at the root: Licklider's office funded Project MAC and sustained the MIT AI program whose memo series carried Scheme.",
+       "source_title": "Project MAC | DARPA",
+       "source_url": "https://www.darpa.mil/about/innovation-timeline/project-mac",
+       "definition": "ARPA's Information Processing Techniques Office (founded 1962 under Licklider): the funding program whose grants created Project MAC and sustained MIT AI research through the period."
+      },
+      "members": [
+       38
+      ],
+      "member_names": [
+       "ARPA Information Processing Techniques Office"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "arpanet-1969",
+      "candidate": {
+       "name": "ARPANET",
+       "year": 1969,
+       "domain": "computing",
+       "lens": "L22",
+       "type": "other",
+       "causal_claim": "ARPANET directly enabled Scheme's leap as a timeliness condition: ITS machines' open guest access over the network made the AI Lab's language work visible and triable beyond MIT in the years around 1975.",
+       "source_title": "Incompatible Timesharing System (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Incompatible_Time-sharing_System",
+       "definition": "The ARPA packet network (from 1969) over which ITS machines offered open guest access, spreading the AI Lab's software and culture beyond MIT."
+      },
+      "members": [
+       39
+      ],
+      "member_names": [
+       "ARPANET"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "qa4-1972",
+      "candidate": {
+       "name": "QA4",
+       "year": 1972,
+       "domain": "artificial intelligence",
+       "lens": "L3",
+       "type": "other",
+       "causal_claim": "QA4 directly enabled Scheme's leap, on the lineage surveys' account, as a fellow Planner-derivation AI language of the same community and years, part of the procedural-embedding milieu Scheme emerged from.",
+       "source_title": "Planner (programming language) (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Planner_programming_language",
+       "definition": "Rulifson's SRI language (1972) in the Planner derivation line: question-answering with pattern-directed procedures, an AI tool of the same era and community as Conniver."
+      },
+      "members": [
+       40
+      ],
+      "member_names": [
+       "QA4"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "smalltalk-72-1972",
+      "candidate": {
+       "name": "Smalltalk-72",
+       "year": 1972,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "causal_claim": "Smalltalk-72 directly enabled Scheme's leap, on the surveys' parallel, by making message passing the universal primitive at Xerox PARC in the same years Hewitt's actors did at MIT.",
+       "source_title": "Actors, continuations, and the Church-Turing thesis (Patton)",
+       "source_url": "https://applied-langua.ge/~hayley/actors.pdf",
+       "definition": "The first Smalltalk (Kay's group, Xerox PARC, 1972): message-passing objects as the universal primitive - the parallel California answer to the question Hewitt's actors also answered."
+      },
+      "members": [
+       41
+      ],
+      "member_names": [
+       "Smalltalk-72"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "actor-semantics-of-planner-73-greif-hewitt-1974",
+      "candidate": {
+       "name": "Actor semantics of PLANNER-73 (Greif & Hewitt)",
+       "year": 1974,
+       "domain": "artificial intelligence",
+       "lens": "L23",
+       "type": "theory",
+       "causal_claim": "Greif and Hewitt's actor semantics of PLANNER-73 directly enabled Scheme's leap as the contemporaneous formalization: the January 1975 account of what actors mean, against which Sussman and Steele's modeling was done.",
+       "source_title": "Actor Semantics of PLANNER-73 (Greif & Hewitt, MIT AI Lab WP-81, 1974)",
+       "source_url": "https://dspace.mit.edu/entities/publication/b45e996e-9782-45b6-a6e5-2da2f8c1414e",
+       "definition": "Greif and Hewitt's formal actor semantics for PLANNER-73 (MIT AI Working Paper 81, November 1974; POPL January 1975): the contemporaneous formalization of the model Scheme was built to understand."
+      },
+      "members": [
+       42
+      ],
+      "member_names": [
+       "Actor semantics of PLANNER-73 (Greif & Hewitt)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:0:7",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "Lisp",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "McCarthy's language of symbolic expressions (designed 1958, published CACM 1960): s-expressions, lambda notation borrowed from Church, conditional expressions, recursion and a meta-circular evaluator - the family Scheme is a dialect of.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 7,
+       "card": {
+        "name": "Lisp 1.5",
+        "aliases": [],
+        "year": 1962,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "The 1962 MIT system and manual (LISP 1.5 Programmer's Manual): the distributed form of Lisp in which the FUNARG device, FUNCTION/QUOTE distinction and SPECIAL-variable dynamic scoping were the standing compromises.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5968,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:0:23",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "Lisp",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "McCarthy's language of symbolic expressions (designed 1958, published CACM 1960): s-expressions, lambda notation borrowed from Church, conditional expressions, recursion and a meta-circular evaluator - the family Scheme is a dialect of.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 23,
+       "card": {
+        "name": "MIT Lisp machine project",
+        "aliases": [],
+        "year": 1973,
+        "domain": "computing hardware",
+        "type": "device",
+        "definition": "Tom Knight's MIT project (from 1973) to build hardware executing Lisp natively - the Lisp machine effort, born of the same PDP-10 installation's limits.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.311,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:9:11",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 9,
+       "card": {
+        "name": "PLASMA (Planner-73)",
+        "aliases": [],
+        "year": 1973,
+        "domain": "artificial intelligence",
+        "type": "other",
+        "definition": "The partial implementation of the Actor model (Planner-73, later PLASMA) developed at MIT from 1973, whose semantics Greif and Hewitt formalized in 1974; it used lexical scope in a lambda-calculus-like style.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 11,
+       "card": {
+        "name": "PLANNER",
+        "aliases": [],
+        "year": 1969,
+        "domain": "artificial intelligence",
+        "type": "other",
+        "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5542,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:11:20",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "PLANNER",
+        "aliases": [],
+        "year": 1969,
+        "domain": "artificial intelligence",
+        "type": "other",
+        "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 20,
+       "card": {
+        "name": "Micro-Planner",
+        "aliases": [],
+        "year": 1971,
+        "domain": "artificial intelligence",
+        "type": "other",
+        "definition": "The 1971 partial implementation of Planner by Sussman, McDermott and Charniak, described in the retrospective record as partial and somewhat unsatisfactory - the makers' immediately prior system.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5828,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:11:34",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "PLANNER",
+        "aliases": [],
+        "year": 1969,
+        "domain": "artificial intelligence",
+        "type": "other",
+        "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 34,
+       "card": {
+        "name": "Micro-Planner",
+        "aliases": [],
+        "year": 1971,
+        "domain": "artificial intelligence",
+        "type": "other",
+        "definition": "The 1971 partial implementation of Planner by Sussman, McDermott and Charniak, described in the retrospective record as partial and somewhat unsatisfactory - the makers' immediately prior system.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5828,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:11:42",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "PLANNER",
+        "aliases": [],
+        "year": 1969,
+        "domain": "artificial intelligence",
+        "type": "other",
+        "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 42,
+       "card": {
+        "name": "Actor semantics of PLANNER-73 (Greif & Hewitt)",
+        "aliases": [],
+        "year": 1974,
+        "domain": "artificial intelligence",
+        "type": "theory",
+        "definition": "Greif and Hewitt's formal actor semantics for PLANNER-73 (MIT AI Working Paper 81, November 1974; POPL January 1975): the contemporaneous formalization of the model Scheme was built to understand.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5949,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       1,
+       30
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       5,
+       18
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       6,
+       25
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       15
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       26
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       27
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       17,
+       35
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       19,
+       33
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       20,
+       34
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:0:7",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "Lisp",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "McCarthy's language of symbolic expressions (designed 1958, published CACM 1960): s-expressions, lambda notation borrowed from Church, conditional expressions, recursion and a meta-circular evaluator - the family Scheme is a dialect of.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 7,
+      "card": {
+       "name": "Lisp 1.5",
+       "aliases": [],
+       "year": 1962,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "The 1962 MIT system and manual (LISP 1.5 Programmer's Manual): the distributed form of Lisp in which the FUNARG device, FUNCTION/QUOTE distinction and SPECIAL-variable dynamic scoping were the standing compromises.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5968,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:0:23",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "Lisp",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "McCarthy's language of symbolic expressions (designed 1958, published CACM 1960): s-expressions, lambda notation borrowed from Church, conditional expressions, recursion and a meta-circular evaluator - the family Scheme is a dialect of.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 23,
+      "card": {
+       "name": "MIT Lisp machine project",
+       "aliases": [],
+       "year": 1973,
+       "domain": "computing hardware",
+       "type": "device",
+       "definition": "Tom Knight's MIT project (from 1973) to build hardware executing Lisp natively - the Lisp machine effort, born of the same PDP-10 installation's limits.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.311,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:9:11",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 9,
+      "card": {
+       "name": "PLASMA (Planner-73)",
+       "aliases": [],
+       "year": 1973,
+       "domain": "artificial intelligence",
+       "type": "other",
+       "definition": "The partial implementation of the Actor model (Planner-73, later PLASMA) developed at MIT from 1973, whose semantics Greif and Hewitt formalized in 1974; it used lexical scope in a lambda-calculus-like style.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 11,
+      "card": {
+       "name": "PLANNER",
+       "aliases": [],
+       "year": 1969,
+       "domain": "artificial intelligence",
+       "type": "other",
+       "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5542,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:11:20",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "PLANNER",
+       "aliases": [],
+       "year": 1969,
+       "domain": "artificial intelligence",
+       "type": "other",
+       "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 20,
+      "card": {
+       "name": "Micro-Planner",
+       "aliases": [],
+       "year": 1971,
+       "domain": "artificial intelligence",
+       "type": "other",
+       "definition": "The 1971 partial implementation of Planner by Sussman, McDermott and Charniak, described in the retrospective record as partial and somewhat unsatisfactory - the makers' immediately prior system.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5828,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:11:34",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "PLANNER",
+       "aliases": [],
+       "year": 1969,
+       "domain": "artificial intelligence",
+       "type": "other",
+       "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 34,
+      "card": {
+       "name": "Micro-Planner",
+       "aliases": [],
+       "year": 1971,
+       "domain": "artificial intelligence",
+       "type": "other",
+       "definition": "The 1971 partial implementation of Planner by Sussman, McDermott and Charniak, described in the retrospective record as partial and somewhat unsatisfactory - the makers' immediately prior system.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5828,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:11:42",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "PLANNER",
+       "aliases": [],
+       "year": 1969,
+       "domain": "artificial intelligence",
+       "type": "other",
+       "definition": "Hewitt's 1969 MIT language for the procedural embedding of knowledge: pattern-directed invocation giving logical sentences procedural readings (forward/backward chaining), with a hierarchical control structure subordinating deduction.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 42,
+      "card": {
+       "name": "Actor semantics of PLANNER-73 (Greif & Hewitt)",
+       "aliases": [],
+       "year": 1974,
+       "domain": "artificial intelligence",
+       "type": "theory",
+       "definition": "Greif and Hewitt's formal actor semantics for PLANNER-73 (MIT AI Working Paper 81, November 1974; POPL January 1975): the contemporaneous formalization of the model Scheme was built to understand.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5949,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }
