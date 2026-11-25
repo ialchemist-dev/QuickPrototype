@@ -1479,3 +1479,83 @@
   "expansions_done": 82
  }
 }
+{
+ "ts": "2026-11-25T10:13:29.559674+00:00",
+ "session": "run session 37 (v4), expansion 1 of 2",
+ "kind": "expansion",
+ "parent": "galton-co-relations-and-their-measurement-chiefly-from-anthr-1888",
+ "parent_name": "Galton, Co-relations and their measurement, chiefly from anthropometric data (1888)",
+ "raw": 13,
+ "dry_notes": "18 of 21 content lenses dry or shortfall, recorded in work/dry_notes_galton-co-relations-and-their-measurement-chiefly-from-anthr-1888.json: shortfalls L4 (1: Darwin's correlation of growth is the one problem-posing document; the demand for a measure is posed by the paper itself), L8 (1: the laboratory records; the kinship numbers enter through the 1886 memoir at L2), L17 (1: the error law as presupposed metric practice), L18 (1: the quincunx), L21 (1: the laboratory; the Royal Society is a venue, not proposed); dry L5 (the obstruction is diagnosed by the parent itself), L6 (the defined-against incumbent is a practice \u2014 average proportions of limbs \u2014 not a document), L7, L9, L10, L12, L13, L15, L16, and dry-as-separate-filings L11 (recipe = the intercomparison scheme, filed at L1), L14 (the laboratory's instrument battery filed with its institution and its product), L20 (the carrier is Dickson, filed at L1 as his artifact), L22 (the ripened condition is the laboratory archive itself, filed at L8). Raw 13 against raw_target 140 \u2014 the bounded-world pattern for an 1888 paper (cf. sessions 33-36: raw 10-27 for comparably documented worlds). Resolve (MiniLM): 13 distinct, 3 matched existing (the JAI regression memoir, Gauss, Quetelet), 0 dropped, 0 prefiltered, judge queue 0 \u2014 the new 'Family likeness in stature' candidate resolved DISTINCT from the JAI memoir node, as its definition requires (different venue, different contents: Proc. Roy. Soc. 40:42-73 with Dickson's appendix vs JAI 15:246-263).",
+ "date_dropped": [],
+ "distinct": 13,
+ "evaluated": 13,
+ "survivors": [
+  {
+   "name": "Galton, Family likeness in stature (1886)",
+   "id": "galton-family-likeness-in-stature-1886-1886",
+   "score": 6.5,
+   "kind": "new",
+   "note": "The parent's own cited carrier, admitted at depth 9. The 1888 paper cites it by volume and page ('my paper read before this Society on Hereditary Stature, Roy. Soc. Proc., vol. 40, 1886, p. 42'), re-derives its mid-parent case in Q units (2/3 and 1/3 in inches becoming 0.47 and 0.44), and defers its whole rationale to the memoir and Dickson's appendix in it ('therefore I need not repeat them here'). Citation plus instantiation, the strong channel. Verification provisional: the Edgeworth near-multiple caps the surface mathematics' necessity at ripe (Q3 partial as scored); the Dickson-containment and JAI-memoir mediation attacks were run and answered (the appendix has no publication existence outside the memoir; the memoir's own preface states the earlier publications 'dealt with one small portion of the ground covered by the present memoir')."
+  }
+ ],
+ "rejected": 12,
+ "mediated": 5,
+ "rejections_of_note": [
+  {
+   "name": "Dickson, Problems on the bivariate normal surface (1886)",
+   "reason": "Mediated via Family likeness in stature \u2014 mediation by containment: the solutions exist in print only as that memoir's appendix, and the parent cites them as such ('the appendix to it by Mr. J. D. Hamilton Dickson'). Q6 passed honestly (he supplied the surface model). Consistent with session 36, where the same solutions failed the leap gate at Natural Inheritance as a component; the directness form of the same discrimination is recorded here because this parent's citation runs to the memoir as a whole."
+  },
+  {
+   "name": "Galton, Regression towards mediocrity in hereditary stature (1886) \u2014 LINK candidate",
+   "reason": "Mediated via Family likeness in stature \u2014 the cited-final-link rule (Fisher machinery chain at Yates). The 1888 paper names the RS memoir three times and the JAI memoir never; every kinship result it uses is cited from vol. 40, p. 42. EDGE-SCOPED REVERSAL of session 36, recorded deliberately: at Natural Inheritance the RS memoir was mediated via the JAI paper because the book gathers the JAI memoir's material (Ch. VII); here the RS memoir is the cited carrier. Both records stand, each argued from its own parent's documents. The sibling-vs-predecessor question the brief posed is thus answered per-parent: sibling at the book, predecessor-carrier here \u2014 and the JAI memoir is NOT this parent's predecessor."
+  },
+  {
+   "name": "Galton's sweet-pea experiments and 'Typical laws of heredity' (1877)",
+   "reason": "Mediated via Family likeness in stature: the phenomenon's origin (Q1/Q5/Q6 passed honestly) reaches this parent as the 1886 kinship results it cites; the 1888 paper cites no 1877 document. Its direct hearing is the JAI memoir's expansion (this session's expansion 2), where it is admitted."
+  },
+  {
+   "name": "Normal law of error (Gauss, 1809) \u2014 LINK candidate",
+   "reason": "Mediated via Family likeness in stature: the parent names Gauss nowhere (full-text check) and sends the reader for the surface's 'mathematical properties' to Dickson's appendix; the law enters as established practice inside the kinship apparatus. Edge-scoped, consistent with the mediations via Galton (at Fisher 1918) and via Quetelet (at the book). The carried by-name Gauss hearing at Quetelet's expansion is untouched. The Gauss node's stored bottleneck/leap/prior_state remain EMPTY (session-31 defect); the corrected Theoria Motus record was supplied in this evaluation only \u2014 graph not hand-edited."
+  },
+  {
+   "name": "Quetelet, Sur l'homme and the application of the law of error to human measures (1835) \u2014 LINK candidate",
+   "reason": "Mediated via Family likeness in stature \u2014 edge-scoped reversal of the book admission, recorded deliberately: at Natural Inheritance the channel was direct because Ch. V names Quetelet as the turning point; the 1888 paper names no Quetelet, and its probable-error practice arrives inside the 1886 memoir it cites. Importance without a proximate channel at this parent."
+  },
+  {
+   "name": "Galton, Statistics by intercomparison with remarks on the law of frequency of error (1875)",
+   "reason": "Directness PASS, leap-gate rejection (component standing inside the parent): the paper's every deviation is measured from the median in units of Q = half the interquartile range \u2014 the scheme operationalised. The scheme made comparison easy, not possible (Q1 fail), and unblocked no space (Q2 fail). Same disposition as at Natural Inheritance."
+  },
+  {
+   "name": "Anthropometric Laboratory measurement records \u2014 paired measures of some 350 adult males (1884)",
+   "reason": "Directness PASS and Q3 PASS, leap-gate rejection \u2014 mirroring the RFF records at Natural Inheritance deliberately: 'The data were obtained at my anthropometric laboratory at South Kensington... measured in various ways, partly for the purpose of this inquiry.' The author's own production, gathered partly for this inquiry; the impossibility flip belongs to the measure constructed from the records, not to the material. Discriminated from LOB at the IAM database (an independent pre-existing corpus consumed by another team's system)."
+  },
+  {
+   "name": "Edgeworth, Observations and statistics \u2014 an essay on the theory of errors of observation (1885)",
+   "reason": "Directness fail \u2014 a parallel line, not a channel (anticipation-side multiples evidence): the multivariate law of error as pure theory (with the 1887 Hermathena sequel), no data-computed measure, no citation in the parent, no documented contact before 5 December 1888; the documented direction of influence runs the other way (Edgeworth's 1892-93 correlation papers expound 'Mr. Galton's r'). Q6 passed honestly. Consistent with session 36's verification record on this node at the book, where Edgeworth's correlated averages cap the era's necessity at ripe."
+  },
+  {
+   "name": "Galton's quincunx (1873)",
+   "reason": "Directness fail, fail-closed: the paper never mentions it (full-text check); its figure is a smoothed scatter diagram and its machinery is tabulation in Q units. Not-cited is a finding. The instrument belongs to the error-law demonstration line and the 1877 regression line, where the papers invoke it."
+  },
+  {
+   "name": "Darwin, correlation of growth \u2014 The Variation of Animals and Plants under Domestication (1868)",
+   "reason": "Fail-closed partial (directness partial does not satisfy the gate): the paper's opening takes its problem from the phrase's currency in biology ('a phrase much used in biology, and not least in that branch of it which refers to heredity') but names no author and consumes no Darwinian document \u2014 an era condition without a document channel in the parent (the Charter-at-GPT-2 discrimination inverted: there a specific document was quoted in the child's founding text)."
+  },
+  {
+   "name": "Galton's Anthropometric Laboratory (1884)",
+   "reason": "Directness fail \u2014 self-carriage (decomposition discipline, as at Natural Inheritance): the institution's only carried artifact into this parent is its measurement records, judged on their own documents at L8. The Royal Society received and published the paper \u2014 a venue that registers, not an enabler; not proposed."
+  },
+  {
+   "name": "Bravais, Analyse mathematique sur les probabilites des erreurs de situation d'un point (1846)",
+   "reason": "Anticipation without a junction (as at Natural Inheritance): the bivariate surface written forty years early, with no resemblance reading; no evidence Galton read him; Galton's surface came from his smoothed tables and Dickson's derivation. The junction remains Pearson's retrospective construction; the hearing stays assigned to Pearson 1896's expansion."
+  }
+ ],
+ "notes": "Grounding: the parent's full text read directly (York histstat transcription of Proc. Roy. Soc. 45:135-145) \u2014 the opening disclaimer ('I am not aware of any previous attempt to define it clearly... or to show how to measure its degree'); the data statement ('obtained at my anthropometric laboratory at South Kensington... The exact number of 350 is not preserved throughout', Table II's 348 cases); the Q-unit method (deviations from the median in units of half the interquartile range); the three deferrals to the 1886 RS memoir and Dickson's appendix, including the mid-parent recomputation (0.47/0.44); the Bertillon mention (a downstream application pointer inside the parent, not proposed). Family likeness bibliographic record from the Royal Society (Proc. 40:42-73; received 1 Jan 1886; read 21 Jan 1886; its preface on the two recent publications dealing with 'one small portion of the ground'). Edgeworth bibliography (York histstat): the 1885 essay and 1887 Hermathena paper predate the parent; 'Correlated averages' is 1892, after it \u2014 the multiples record is therefore the 1885/87 essays at this parent, where session 36 (at the 1889 book) recorded the 1892 work. Parent stored fields verified COMPLETE before evaluation. No coeval (same-year) candidates arose at this parent; resolve dropped 0. Dry-run through score.rank_candidates reproduced the designed dispositions exactly before the single apply; verdicts never re-applied. Thin survivor set of one \u2014 the IAM/HyperTalk precedent; the finding is that the 1888 paper has exactly one proximate predecessor artifact, the memoir it cites. InstructGPT/RLHF flag not surfaced.",
+ "totals_after": {
+  "nodes": 187,
+  "edges": 237,
+  "budget": "187/2000",
+  "expansions_done": 83
+ }
+}
