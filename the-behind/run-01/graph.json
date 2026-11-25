@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T05:55:12+00:00",
-  "expansions_done": 48,
-  "raw_candidates_seen": 2766,
+  "updated_at": "2026-11-25T06:00:22+00:00",
+  "expansions_done": 49,
+  "raw_candidates_seen": 2781,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -13416,6 +13416,74 @@
     "name": "3DMark benchmark suite (Futuremark, 2003)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T05:55:00+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "LZ77 sliding-window compression (Ziv & Lempel, 1977)",
+    "reason": "mediated_via: LZ78 dictionary compression (Ziv & Lempel, 1978)",
+    "at": "2026-11-25T06:00:22+00:00",
+    "mediated_via": "LZ78 dictionary compression (Ziv & Lempel, 1978)"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "Data compression via textual substitution - macro schemes (Storer & Szymanski, 1982)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "Shannon's information theory - source coding (1948)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "Huffman coding (1952)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "Arithmetic coding (Rissanen & Langdon, 1979)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "Prediction by Partial Matching - PPM (Cleary & Witten, 1984)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "Shannon-Fano coding (1949)",
+    "reason": "mediated_via: Huffman coding (1952)",
+    "at": "2026-11-25T06:00:22+00:00",
+    "mediated_via": "Huffman coding (1952)"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "C programming language (1972)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
+   },
+   {
+    "parent_id": "byte-pair-encoding-compression-algorithm-gage-1994-1994",
+    "name": "Calgary corpus (1989)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:00:22+00:00"
    }
   ]
  },
@@ -16762,7 +16830,7 @@
    "prior_state": "Static-dictionary and codebook compressors (LZ-family, Huffman coding) whose tables are not learned pair-merge inventories.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -129408,6 +129476,729 @@
       }
      },
      "similarity": 0.8432,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "byte-pair-encoding-compression-algorithm-gage-1994-1994": {
+   "raw_candidates": [
+    {
+     "causal_claim": "LZ78 directly enabled Gage's leap by introducing the explicit dictionary learned from the input itself: the input is parsed into phrases, each new phrase is entered in a dictionary, and phrases are emitted as dictionary indices - the learned-substitution-table mechanism family inside which Gage's pair-substitution table sits.",
+     "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+     "domain": "data compression",
+     "lens": "L1",
+     "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+     "source_title": "LZ77 and LZ78 Compression (Matt George)",
+     "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+     "type": "method",
+     "year": 1978
+    },
+    {
+     "causal_claim": "LZ77 directly enabled Gage's leap by founding textual substitution as a practical compression principle: repeated strings are replaced by references to their earlier occurrences, so redundancy in the data itself - not a precomputed codebook - does the work.",
+     "definition": "Ziv & Lempel's 1977 sliding-window compressor: repeated strings are encoded as (distance, length) references to their previous occurrence in a moving window - the first practical dictionary/textual-substitution method.",
+     "domain": "data compression",
+     "lens": "L1",
+     "name": "LZ77 sliding-window compression (Ziv & Lempel, 1977)",
+     "source_title": "LZ77 and LZ78 Compression (Matt George)",
+     "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+     "type": "method",
+     "year": 1977
+    },
+    {
+     "causal_claim": "Storer & Szymanski directly enabled Gage's leap by formalizing the design space he worked in: their JACM paper defines macro schemes - replacing text by pointers to other text - and proves results about optimal parsing, the framework of which Gage's pair substitution is a deliberately minimal member.",
+     "definition": "Storer & Szymanski's 1982 JACM formalization of textual substitution ('macro schemes'): a compressor replaces strings with references to a dictionary or earlier text; the paper also produced LZSS, the break-even refinement of LZ77.",
+     "domain": "data compression theory",
+     "lens": "L1",
+     "name": "Data compression via textual substitution - macro schemes (Storer & Szymanski, 1982)",
+     "source_title": "Lempel-Ziv-Storer-Szymanski (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Storer%E2%80%93Szymanski",
+     "type": "theory",
+     "year": 1982
+    },
+    {
+     "causal_claim": "LZ78 is the closest single precursor whose mechanism Gage's design reworks: both build their substitution structure out of the data being compressed rather than from a fixed codebook, though Gage restricts entries to adjacent pairs and builds them by global frequency rather than by incremental parsing.",
+     "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+     "domain": "data compression",
+     "lens": "L2",
+     "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+     "source_title": "LZ77 and LZ78 Compression (Matt George)",
+     "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+     "type": "method",
+     "year": 1978
+    },
+    {
+     "causal_claim": "LZW is the precursor Gage's article measures itself against line by line: Gage presents BPE as the simpler rival to Welch's adaptive dictionary method - comparable ratio, slower compression, but a much smaller and faster expansion routine - so the parent's design choices are intelligible only as modifications of the LZW design point.",
+     "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+     "domain": "data compression",
+     "lens": "L2",
+     "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+     "source_title": "A New Algorithm for Data Compression (Gage, 1994)",
+     "source_url": "https://github.com/MurageKibicho/LeetArxiv/raw/refs/heads/main/BPE.pdf",
+     "type": "method",
+     "year": 1984
+    },
+    {
+     "causal_claim": "Shannon directly enabled Gage's leap by posing the problem the parent answers: his 1948 theory defines source coding - removing redundancy to approach the entropy limit - as a formal, measurable objective, the objective every compressor including BPE is scored against.",
+     "definition": "Shannon's 1948 mathematical theory of communication: defines entropy as the lower bound on lossless encoding length and poses source coding - exploiting redundancy - as the central problem of data compression.",
+     "domain": "information theory",
+     "lens": "L4",
+     "name": "Shannon's information theory - source coding (1948)",
+     "source_title": "LZ77 and LZ78 Compression (Matt George)",
+     "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+     "type": "theory",
+     "year": 1948
+    },
+    {
+     "causal_claim": "LZW directly enabled Gage's leap as the incumbent it is defined against: Gage's abstract states BPE 'provides almost as much compression as the popular Lempel, Ziv, and Welch (LZW) method' with faster expansion - the documented comparison that frames the parent's contribution.",
+     "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+     "domain": "data compression",
+     "lens": "L6",
+     "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+     "source_title": "A New Algorithm for Data Compression (Gage, 1994)",
+     "source_url": "https://github.com/MurageKibicho/LeetArxiv/raw/refs/heads/main/BPE.pdf",
+     "type": "method",
+     "year": 1984
+    },
+    {
+     "causal_claim": "Huffman coding directly enabled Gage's leap as the statistical incumbent whose limit defines the opening: it assigns optimal prefix codes to single symbols from their frequencies, so pair-level and phrase-level redundancy is exactly what it cannot capture - the gap dictionary methods, and finally Gage's pair merging, moved into.",
+     "definition": "Huffman's 1952 optimal prefix coding: given symbol frequencies, builds a code minimizing average codeword length - the canonical statistical coder, operating on one symbol at a time.",
+     "domain": "data compression",
+     "lens": "L6",
+     "name": "Huffman coding (1952)",
+     "source_title": "LZ77 and LZ78 Compression (Matt George)",
+     "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+     "type": "method",
+     "year": 1952
+    },
+    {
+     "causal_claim": "Arithmetic coding directly enabled Gage's leap as the other pole of the incumbent statistical family: by 1994 the field's frontier was split between statistical coders (Huffman/arithmetic over a model) and dictionary coders; Gage's article is a move on the dictionary side of that documented divide.",
+     "definition": "Rissanen & Langdon's arithmetic coding (1979): encodes an entire message as a single fractional interval, achieving near-entropy rates for a given model - the high-performance statistical coding technique paired with adaptive models.",
+     "domain": "data compression",
+     "lens": "L6",
+     "name": "Arithmetic coding (Rissanen & Langdon, 1979)",
+     "source_title": "Lossless Compression for Text and Images (Moffat, Bell & Witten survey)",
+     "source_url": "https://people.eng.unimelb.edu.au/ammoffat/abstracts/mbw97ijhse.html",
+     "type": "method",
+     "year": 1979
+    },
+    {
+     "causal_claim": "PPM directly enabled Gage's leap as the era's compression-ratio champion on the statistical side: its context-modeling results set the ratio frontier that made a simple dictionary method's selling point - a tiny, fast expander at near-LZW ratios - a legible contribution rather than a compromise.",
+     "definition": "Cleary & Witten's PPM (1984): adaptive context-based statistical compression - predicts each symbol from its preceding context with escape mechanisms, paired with arithmetic coding; the ratio benchmark of late-1980s/early-1990s text compression.",
+     "domain": "data compression",
+     "lens": "L6",
+     "name": "Prediction by Partial Matching - PPM (Cleary & Witten, 1984)",
+     "source_title": "Lossless Compression for Text and Images (Moffat, Bell & Witten survey)",
+     "source_url": "https://people.eng.unimelb.edu.au/ammoffat/abstracts/mbw97ijhse.html",
+     "type": "method",
+     "year": 1984
+    },
+    {
+     "causal_claim": "Shannon-Fano coding directly enabled Gage's leap as the first frequency-based prefix coding: it established that symbol frequencies should drive code assignment - the frequency-driven design instinct Gage radicalizes by letting frequencies build the dictionary itself, not just the code lengths.",
+     "definition": "Shannon-Fano coding (1948-49): the first prefix code built from symbol probabilities by recursively splitting the symbol set - the direct forerunner of Huffman coding and of frequency-driven code design.",
+     "domain": "data compression",
+     "lens": "L6",
+     "name": "Shannon-Fano coding (1949)",
+     "source_title": "Lossless Compression for Text and Images (Moffat, Bell & Witten survey)",
+     "source_url": "https://people.eng.unimelb.edu.au/ammoffat/abstracts/mbw97ijhse.html",
+     "type": "method",
+     "year": 1949
+    },
+    {
+     "causal_claim": "C directly enabled Gage's leap as its implementation and publication medium: the article is a C Users Journal piece whose contribution includes complete ANSI C listings for compressor and expander, written for practitioners to type in and use.",
+     "definition": "The C programming language (Kernighan & Ritchie, 1970s): the systems-programming lingua franca of 1994 practitioner computing and the language of the parent article's published implementation.",
+     "domain": "programming languages",
+     "lens": "L13",
+     "name": "C programming language (1972)",
+     "source_title": "A New Algorithm for Data Compression (Gage, 1994)",
+     "source_url": "https://github.com/MurageKibicho/LeetArxiv/raw/refs/heads/main/BPE.pdf",
+     "type": "other",
+     "year": 1972
+    },
+    {
+     "causal_claim": "The Calgary corpus directly enabled Gage's leap as the field's shared measuring instrument: assembled at the University of Calgary (Bell, Witten & Cleary), it made compressor claims comparable across papers in the years just before 1994 - the benchmark culture in which a claim like 'almost as much compression as LZW' had a checkable meaning.",
+     "definition": "The Calgary corpus (1989): a standard set of text and binary files assembled by Bell, Witten and Cleary for comparing lossless compressors - the era's reference benchmark suite.",
+     "domain": "data compression benchmarks",
+     "lens": "L17",
+     "name": "Calgary corpus (1989)",
+     "source_title": "Lossless Compression for Text and Images (Moffat, Bell & Witten survey)",
+     "source_url": "https://people.eng.unimelb.edu.au/ammoffat/abstracts/mbw97ijhse.html",
+     "type": "other",
+     "year": 1989
+    },
+    {
+     "causal_claim": "Macro schemes directly enabled Gage's leap as a cross-field import: the formal theory of textual substitution, developed in the algorithms literature, is the framework that makes a minimal pair-substitution scheme recognizable as a member of a characterized family rather than an ad hoc trick.",
+     "definition": "Storer & Szymanski's 1982 JACM formalization of textual substitution ('macro schemes'): a compressor replaces strings with references to a dictionary or earlier text; the paper also produced LZSS, the break-even refinement of LZ77.",
+     "domain": "data compression theory",
+     "lens": "L19",
+     "name": "Data compression via textual substitution - macro schemes (Storer & Szymanski, 1982)",
+     "source_title": "Lempel-Ziv-Storer-Szymanski (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Storer%E2%80%93Szymanski",
+     "type": "theory",
+     "year": 1982
+    },
+    {
+     "causal_claim": "Managing Gigabytes is the contemporaneous textbook that names the parent's technique 'digram coding' in the same year - a coeval codification of the same method in the reference literature, evidence the technique was in the field's air in 1994 rather than a channel into Gage's February article.",
+     "definition": "Witten, Moffat & Bell's 1994 textbook 'Managing Gigabytes', whose compression chapters describe digram coding - replacing frequent symbol pairs via a dictionary - the textbook name under which Gage's method also travels.",
+     "domain": "data compression textbooks",
+     "lens": "L3",
+     "name": "Managing Gigabytes - digram coding (Witten, Moffat & Bell, 1994)",
+     "source_title": "Byte-pair encoding (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Byte-pair_encoding",
+     "type": "other",
+     "year": 1994
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "lz78-dictionary-compression-ziv-lempel-1978-1978",
+      "candidate": {
+       "causal_claim": "LZ78 directly enabled Gage's leap by introducing the explicit dictionary learned from the input itself: the input is parsed into phrases, each new phrase is entered in a dictionary, and phrases are emitted as dictionary indices - the learned-substitution-table mechanism family inside which Gage's pair-substitution table sits.",
+       "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+       "domain": "data compression",
+       "lens": "L1",
+       "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+       "source_title": "LZ77 and LZ78 Compression (Matt George)",
+       "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+       "type": "method",
+       "year": 1978
+      },
+      "members": [
+       0,
+       3
+      ],
+      "member_names": [
+       "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+       "LZ78 dictionary compression (Ziv & Lempel, 1978)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lz77-sliding-window-compression-ziv-lempel-1977-1977",
+      "candidate": {
+       "causal_claim": "LZ77 directly enabled Gage's leap by founding textual substitution as a practical compression principle: repeated strings are replaced by references to their earlier occurrences, so redundancy in the data itself - not a precomputed codebook - does the work.",
+       "definition": "Ziv & Lempel's 1977 sliding-window compressor: repeated strings are encoded as (distance, length) references to their previous occurrence in a moving window - the first practical dictionary/textual-substitution method.",
+       "domain": "data compression",
+       "lens": "L1",
+       "name": "LZ77 sliding-window compression (Ziv & Lempel, 1977)",
+       "source_title": "LZ77 and LZ78 Compression (Matt George)",
+       "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+       "type": "method",
+       "year": 1977
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "LZ77 sliding-window compression (Ziv & Lempel, 1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "data-compression-via-textual-substitution-macro-schemes-stor-1982",
+      "candidate": {
+       "causal_claim": "Storer & Szymanski directly enabled Gage's leap by formalizing the design space he worked in: their JACM paper defines macro schemes - replacing text by pointers to other text - and proves results about optimal parsing, the framework of which Gage's pair substitution is a deliberately minimal member.",
+       "definition": "Storer & Szymanski's 1982 JACM formalization of textual substitution ('macro schemes'): a compressor replaces strings with references to a dictionary or earlier text; the paper also produced LZSS, the break-even refinement of LZ77.",
+       "domain": "data compression theory",
+       "lens": "L1",
+       "name": "Data compression via textual substitution - macro schemes (Storer & Szymanski, 1982)",
+       "source_title": "Lempel-Ziv-Storer-Szymanski (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Storer%E2%80%93Szymanski",
+       "type": "theory",
+       "year": 1982
+      },
+      "members": [
+       2,
+       13
+      ],
+      "member_names": [
+       "Data compression via textual substitution - macro schemes (Storer & Szymanski, 1982)",
+       "Data compression via textual substitution - macro schemes (Storer & Szymanski, 1982)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lempel-ziv-welch-compression-welch-1984-1984",
+      "candidate": {
+       "causal_claim": "LZW is the precursor Gage's article measures itself against line by line: Gage presents BPE as the simpler rival to Welch's adaptive dictionary method - comparable ratio, slower compression, but a much smaller and faster expansion routine - so the parent's design choices are intelligible only as modifications of the LZW design point.",
+       "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+       "domain": "data compression",
+       "lens": "L2",
+       "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+       "source_title": "A New Algorithm for Data Compression (Gage, 1994)",
+       "source_url": "https://github.com/MurageKibicho/LeetArxiv/raw/refs/heads/main/BPE.pdf",
+       "type": "method",
+       "year": 1984
+      },
+      "members": [
+       4,
+       6
+      ],
+      "member_names": [
+       "Lempel-Ziv-Welch compression (Welch, 1984)",
+       "Lempel-Ziv-Welch compression (Welch, 1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "shannon-s-information-theory-source-coding-1948-1948",
+      "candidate": {
+       "causal_claim": "Shannon directly enabled Gage's leap by posing the problem the parent answers: his 1948 theory defines source coding - removing redundancy to approach the entropy limit - as a formal, measurable objective, the objective every compressor including BPE is scored against.",
+       "definition": "Shannon's 1948 mathematical theory of communication: defines entropy as the lower bound on lossless encoding length and poses source coding - exploiting redundancy - as the central problem of data compression.",
+       "domain": "information theory",
+       "lens": "L4",
+       "name": "Shannon's information theory - source coding (1948)",
+       "source_title": "LZ77 and LZ78 Compression (Matt George)",
+       "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+       "type": "theory",
+       "year": 1948
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Shannon's information theory - source coding (1948)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "huffman-coding-1952-1952",
+      "candidate": {
+       "causal_claim": "Huffman coding directly enabled Gage's leap as the statistical incumbent whose limit defines the opening: it assigns optimal prefix codes to single symbols from their frequencies, so pair-level and phrase-level redundancy is exactly what it cannot capture - the gap dictionary methods, and finally Gage's pair merging, moved into.",
+       "definition": "Huffman's 1952 optimal prefix coding: given symbol frequencies, builds a code minimizing average codeword length - the canonical statistical coder, operating on one symbol at a time.",
+       "domain": "data compression",
+       "lens": "L6",
+       "name": "Huffman coding (1952)",
+       "source_title": "LZ77 and LZ78 Compression (Matt George)",
+       "source_url": "https://itsmattgeorge.com/blog/lz77-and-lz78-compression",
+       "type": "method",
+       "year": 1952
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Huffman coding (1952)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "arithmetic-coding-rissanen-langdon-1979-1979",
+      "candidate": {
+       "causal_claim": "Arithmetic coding directly enabled Gage's leap as the other pole of the incumbent statistical family: by 1994 the field's frontier was split between statistical coders (Huffman/arithmetic over a model) and dictionary coders; Gage's article is a move on the dictionary side of that documented divide.",
+       "definition": "Rissanen & Langdon's arithmetic coding (1979): encodes an entire message as a single fractional interval, achieving near-entropy rates for a given model - the high-performance statistical coding technique paired with adaptive models.",
+       "domain": "data compression",
+       "lens": "L6",
+       "name": "Arithmetic coding (Rissanen & Langdon, 1979)",
+       "source_title": "Lossless Compression for Text and Images (Moffat, Bell & Witten survey)",
+       "source_url": "https://people.eng.unimelb.edu.au/ammoffat/abstracts/mbw97ijhse.html",
+       "type": "method",
+       "year": 1979
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Arithmetic coding (Rissanen & Langdon, 1979)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "prediction-by-partial-matching-ppm-cleary-witten-1984-1984",
+      "candidate": {
+       "causal_claim": "PPM directly enabled Gage's leap as the era's compression-ratio champion on the statistical side: its context-modeling results set the ratio frontier that made a simple dictionary method's selling point - a tiny, fast expander at near-LZW ratios - a legible contribution rather than a compromise.",
+       "definition": "Cleary & Witten's PPM (1984): adaptive context-based statistical compression - predicts each symbol from its preceding context with escape mechanisms, paired with arithmetic coding; the ratio benchmark of late-1980s/early-1990s text compression.",
+       "domain": "data compression",
+       "lens": "L6",
+       "name": "Prediction by Partial Matching - PPM (Cleary & Witten, 1984)",
+       "source_title": "Lossless Compression for Text and Images (Moffat, Bell & Witten survey)",
+       "source_url": "https://people.eng.unimelb.edu.au/ammoffat/abstracts/mbw97ijhse.html",
+       "type": "method",
+       "year": 1984
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Prediction by Partial Matching - PPM (Cleary & Witten, 1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "shannon-fano-coding-1949-1949",
+      "candidate": {
+       "causal_claim": "Shannon-Fano coding directly enabled Gage's leap as the first frequency-based prefix coding: it established that symbol frequencies should drive code assignment - the frequency-driven design instinct Gage radicalizes by letting frequencies build the dictionary itself, not just the code lengths.",
+       "definition": "Shannon-Fano coding (1948-49): the first prefix code built from symbol probabilities by recursively splitting the symbol set - the direct forerunner of Huffman coding and of frequency-driven code design.",
+       "domain": "data compression",
+       "lens": "L6",
+       "name": "Shannon-Fano coding (1949)",
+       "source_title": "Lossless Compression for Text and Images (Moffat, Bell & Witten survey)",
+       "source_url": "https://people.eng.unimelb.edu.au/ammoffat/abstracts/mbw97ijhse.html",
+       "type": "method",
+       "year": 1949
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Shannon-Fano coding (1949)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "c-programming-language-1972-1972",
+      "candidate": {
+       "causal_claim": "C directly enabled Gage's leap as its implementation and publication medium: the article is a C Users Journal piece whose contribution includes complete ANSI C listings for compressor and expander, written for practitioners to type in and use.",
+       "definition": "The C programming language (Kernighan & Ritchie, 1970s): the systems-programming lingua franca of 1994 practitioner computing and the language of the parent article's published implementation.",
+       "domain": "programming languages",
+       "lens": "L13",
+       "name": "C programming language (1972)",
+       "source_title": "A New Algorithm for Data Compression (Gage, 1994)",
+       "source_url": "https://github.com/MurageKibicho/LeetArxiv/raw/refs/heads/main/BPE.pdf",
+       "type": "other",
+       "year": 1972
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "C programming language (1972)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "calgary-corpus-1989-1989",
+      "candidate": {
+       "causal_claim": "The Calgary corpus directly enabled Gage's leap as the field's shared measuring instrument: assembled at the University of Calgary (Bell, Witten & Cleary), it made compressor claims comparable across papers in the years just before 1994 - the benchmark culture in which a claim like 'almost as much compression as LZW' had a checkable meaning.",
+       "definition": "The Calgary corpus (1989): a standard set of text and binary files assembled by Bell, Witten and Cleary for comparing lossless compressors - the era's reference benchmark suite.",
+       "domain": "data compression benchmarks",
+       "lens": "L17",
+       "name": "Calgary corpus (1989)",
+       "source_title": "Lossless Compression for Text and Images (Moffat, Bell & Witten survey)",
+       "source_url": "https://people.eng.unimelb.edu.au/ammoffat/abstracts/mbw97ijhse.html",
+       "type": "other",
+       "year": 1989
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Calgary corpus (1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:0:4",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+        "aliases": [],
+        "year": 1978,
+        "domain": "data compression",
+        "type": "method",
+        "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 4,
+       "card": {
+        "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+        "aliases": [],
+        "year": 1984,
+        "domain": "data compression",
+        "type": "method",
+        "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8289,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:0:6",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+        "aliases": [],
+        "year": 1978,
+        "domain": "data compression",
+        "type": "method",
+        "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 6,
+       "card": {
+        "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+        "aliases": [],
+        "year": 1984,
+        "domain": "data compression",
+        "type": "method",
+        "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8289,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:3:4",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 3,
+       "card": {
+        "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+        "aliases": [],
+        "year": 1978,
+        "domain": "data compression",
+        "type": "method",
+        "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 4,
+       "card": {
+        "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+        "aliases": [],
+        "year": 1984,
+        "domain": "data compression",
+        "type": "method",
+        "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8289,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:3:6",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 3,
+       "card": {
+        "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+        "aliases": [],
+        "year": 1978,
+        "domain": "data compression",
+        "type": "method",
+        "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 6,
+       "card": {
+        "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+        "aliases": [],
+        "year": 1984,
+        "domain": "data compression",
+        "type": "method",
+        "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8289,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       3
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       13
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       4,
+       6
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "Managing Gigabytes is the contemporaneous textbook that names the parent's technique 'digram coding' in the same year - a coeval codification of the same method in the reference literature, evidence the technique was in the field's air in 1994 rather than a channel into Gage's February article.",
+       "definition": "Witten, Moffat & Bell's 1994 textbook 'Managing Gigabytes', whose compression chapters describe digram coding - replacing frequent symbol pairs via a dictionary - the textbook name under which Gage's method also travels.",
+       "domain": "data compression textbooks",
+       "lens": "L3",
+       "name": "Managing Gigabytes - digram coding (Witten, Moffat & Bell, 1994)",
+       "source_title": "Byte-pair encoding (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Byte-pair_encoding",
+       "type": "other",
+       "year": 1994
+      },
+      "reason": "dated on/after parent year 1994"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:0:4",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+       "aliases": [],
+       "year": 1978,
+       "domain": "data compression",
+       "type": "method",
+       "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 4,
+      "card": {
+       "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+       "aliases": [],
+       "year": 1984,
+       "domain": "data compression",
+       "type": "method",
+       "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8289,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:0:6",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+       "aliases": [],
+       "year": 1978,
+       "domain": "data compression",
+       "type": "method",
+       "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 6,
+      "card": {
+       "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+       "aliases": [],
+       "year": 1984,
+       "domain": "data compression",
+       "type": "method",
+       "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8289,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:3:4",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 3,
+      "card": {
+       "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+       "aliases": [],
+       "year": 1978,
+       "domain": "data compression",
+       "type": "method",
+       "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 4,
+      "card": {
+       "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+       "aliases": [],
+       "year": 1984,
+       "domain": "data compression",
+       "type": "method",
+       "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8289,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:3:6",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 3,
+      "card": {
+       "name": "LZ78 dictionary compression (Ziv & Lempel, 1978)",
+       "aliases": [],
+       "year": 1978,
+       "domain": "data compression",
+       "type": "method",
+       "definition": "Ziv & Lempel's 1978 dictionary compressor: parses the input into phrases not seen before, stores them in an explicit dictionary, and encodes phrases as dictionary indices - the founding explicit-dictionary method from which LZW descends.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 6,
+      "card": {
+       "name": "Lempel-Ziv-Welch compression (Welch, 1984)",
+       "aliases": [],
+       "year": 1984,
+       "domain": "data compression",
+       "type": "method",
+       "definition": "Welch's 1984 refinement of LZ78 (IEEE Computer): an adaptive dictionary compressor that needs no separate dictionary transmission because encoder and decoder build the same phrase dictionary in lockstep; the dominant dictionary compressor of the early 1990s (Unix compress, GIF).",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8289,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
