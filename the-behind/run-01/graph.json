@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T06:13:11+00:00",
-  "expansions_done": 51,
-  "raw_candidates_seen": 2836,
+  "updated_at": "2026-11-25T06:20:40+00:00",
+  "expansions_done": 52,
+  "raw_candidates_seen": 2853,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -13770,6 +13770,81 @@
     "name": "Yang & Amari (1997), preliminary studies of natural gradient learning",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T06:12:51+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Successive approximations / value iteration (Bellman)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Sears catalog mailing problem (Arthur D. Little, mid-1950s)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Stochastic games (Shapley, 1953)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Howard's Sc.D. thesis (MIT, 1958)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Markov chains (Markov, 1906)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Sequential Analysis (Wald, 1947)",
+    "reason": "mediated_via: Dynamic Programming (Bellman, 1957)",
+    "at": "2026-11-25T06:20:18+00:00",
+    "mediated_via": "Dynamic Programming (Bellman, 1957)"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Minimax theorem and game theory (von Neumann, 1928)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+    "reason": "mediated_via: Dynamic Programming (Bellman, 1957)",
+    "at": "2026-11-25T06:20:18+00:00",
+    "mediated_via": "Dynamic Programming (Bellman, 1957)"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Hamilton-Jacobi equation (Jacobi, 1837)",
+    "reason": "mediated_via: Dynamic Programming (Bellman, 1957)",
+    "at": "2026-11-25T06:20:18+00:00",
+    "mediated_via": "Dynamic Programming (Bellman, 1957)"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Linear programming and the simplex method (Dantzig, 1947)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "RAND Corporation dynamic programming programme (1949)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
+   },
+   {
+    "parent_id": "policy-iteration-howard-1960",
+    "name": "Banach fixed-point theorem (Banach, 1922)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T06:20:18+00:00"
    }
   ]
  },
@@ -16694,7 +16769,7 @@
    "prior_state": "Value iteration and direct solution of the Bellman optimality equations.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -17599,6 +17674,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T06:12:51+00:00"
+  },
+  "dynamic-programming-bellman-1957-1957": {
+   "id": "dynamic-programming-bellman-1957-1957",
+   "name": "Dynamic Programming (Bellman, 1957)",
+   "aliases": [],
+   "year": 1957,
+   "domain": "operations research",
+   "type": "theory",
+   "definition": "Richard Bellman's 1957 Princeton monograph founding dynamic programming: the principle of optimality, functional equations for sequential decision problems, and solution by successive approximations (value iteration) across deterministic and stochastic problems.",
+   "bottleneck": "Before Bellman (1957), sequential decision problems under uncertainty had no general computable formulation: each was attacked bespoke, and there was no principle stating what an optimal sequential policy must satisfy.",
+   "leap": "Bellman's Dynamic Programming (Princeton, 1957) founds the field: the principle of optimality plus the functional equation turn sequential decision problems into a computable form, with successive approximations as the solution method.",
+   "prior_state": "Bespoke sequential analysis; Wald's statistical decision theory for the statistical branch; no general optimality principle for staged decision processes.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+     "url": "http://www.incompleteideas.net/book/first/1/node7.html"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Q1 attack partially lands: sequential problems were solved ad hoc before 1957, so the flip is class-level computability (a general principle + equations), not the removal of an absolute impossibility; recorded against the admission, which stands on documented consumption - the parent's evaluation step literally solves this framework's fixed-policy equations and its improvement step is the principle of optimality applied. Multiples test: Shapley (1953) contained value iteration inside stochastic games four years earlier, and Wald's decision theory (1947) is a parallel root for the statistical branch - necessity therefore stays 'ripe' and this node can never be verified on necessity grounds. Mediation attack: the 1954 survey and the RAND reports are the only candidate intermediates; they were judged mediated INTO this monograph in this same expansion (the survey's content reaches the parent packaged inside the book), which is consistent with, not a threat to, this edge. Date/direction: 1957 monograph precedes the 1960 parent; direction correct. Outcome provisional (Q1 attack + multiples recorded).",
+    "at": "2026-11-25T06:20:40+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T06:20:18+00:00"
+  },
+  "a-markovian-decision-process-bellman-1957-1957": {
+   "id": "a-markovian-decision-process-bellman-1957-1957",
+   "name": "A Markovian Decision Process (Bellman, 1957)",
+   "aliases": [],
+   "year": 1957,
+   "domain": "operations research",
+   "type": "theory",
+   "definition": "Bellman's 1957 Journal of Mathematics and Mechanics paper 'A Markovian decision process' (6:679-684): the formal introduction of the Markovian decision process as a mathematical object, including discussion of iteration in policy space.",
+   "bottleneck": "Before this paper, 'the optimal policy of a Markov process with rewards and choices' was not a posed mathematical problem: the process, its rewards, and policies as the object of search had no joint formulation, so no algorithm for the problem could exist.",
+   "leap": "Bellman's 1957 paper poses the Markovian decision process: a Markov process with actions, transition probabilities, and rewards, whose optimal policy is the object of computation - the problem class policy iteration, MDP theory, and later reinforcement learning all address.",
+   "prior_state": "Markov chains as descriptive stochastic processes without decisions or rewards; dynamic programming's general functional equations not yet specialized to the Markovian case.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "Solving stochastic dynamic programming problems by linear programming - an annotated bibliography (reference list)",
+     "url": "https://link.springer.com/article/10.1007/BF01917643"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Strongest attack available - the anticipation attack: this 1957 paper itself discusses iteration in policy space, so is the parent's leap smaller than its record claims? Answered on the consensus record: Sutton & Barto credit the formulation to Bellman (1957b) and the policy iteration METHOD to Howard (1960) in adjacent sentences; the paper poses the process and gestures at policy-space reasoning but contains no exact-evaluation-by-linear-equations procedure and no finite-termination theorem, which are the parent's leap. The attack is recorded because it genuinely bounds what the parent added. Multiples test: Shapley (1953) generalized the formulation to two-player games four years BEFORE this paper - the strongest multiples pressure in the expansion; necessity stays 'ripe'. Mediation attack: via the companion 1957 monograph (same author, same year)? Answered on the components discrimination - monograph = general DP theory, paper = the Markovian formulation the parent's title names; Sutton & Barto cite them as separate references for separate contributions. Date/direction: J. Math. Mech. 6:679-684 (1957) precedes 1960; direction correct. Outcome provisional (anticipation attack + multiples recorded).",
+    "at": "2026-11-25T06:20:40+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T06:20:18+00:00"
   }
  },
  "edges": [
@@ -33160,6 +33293,200 @@
     "counterfactual": "Remove Amari 1967 and the parent's central equation loses its cited source: eq. 3.2 introduces the matrix C(w) with '(see Amari, 1967)'; sec. 4 recalls the gradient online learning rule 'was proposed where C is a positive-definite matrix, and its dynamical behavior was studied by Amari (1967)'; sec. 5's averaged learning equation is '(Amari, 1967, 1977)'. The parent's proposal is literally a choice inside 1967's form: 'In the natural gradient online learning method, it is proposed to put C(w) equal to G^{-1}(w)'. Mediation check: Robbins & Monro's stochastic approximation is the deeper ancestor of the recursion family, but the specific mechanism consumed here - the preconditioning matrix as a free design object - is 1967's, cited at the definitional point; no milestone sits between the 1967 form and its 1998 specialization.",
     "mediator": null,
     "evidence": "Amari (1998) secs. 3, 4, 5 (verbatim citations above)."
+   }
+  },
+  {
+   "predecessor_id": "dynamic-programming-bellman-1957-1957",
+   "successor_id": "policy-iteration-howard-1960",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Dynamic programming made sequential decision problems solvable as a class: before it, each stochastic sequential problem was bespoke; the principle of optimality and the functional equation turned them into computable form - and it is exactly that form the parent's evaluation step solves (the fixed-policy equations) and its improvement step is justified by.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "DP generated the entire space of sequential-decision methods within which policy iteration is one member: value iteration, policy iteration, LP formulations, approximate DP all descend from the 1957 synthesis.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: the MDP line that actually ran to Howard is Bellman's, but multiples exist - Shapley's stochastic games (1953) contained value iteration independently, and Wald's decision theory is a parallel root - so necessity is ripe, not unique.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Partial: DP made whole problem classes computable at all, but the dramatic per-problem cost collapse belongs to the parent's finite algorithm, not to the framework.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The framework supplies no metric or benchmark that registers the parent's leap; finite termination is the parent's own theorem.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The principle of optimality is the explanatory model the parent's improvement step is an application of: an optimal policy's tail is optimal for the tail problem, which is what makes greedy improvement sound.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Partial: the functional-equation form functions as an interface (other solvers plug into it), but it is a mathematical form, not a composable standard in the strong sense.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "DP's reach is documented across control theory, operations research, economics, and later AI - the framework travelled, and the parent is one of its destinations.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Partial: DP shortened the path to solutions versus bespoke analysis, but the iteration-speed gain that defines the parent is the parent's own.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "DP displaced ad-hoc sequential analysis as the default frame for sequential decision problems within a decade.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The 1957 monograph is the trunk document of the field the parent belongs to; every later MDP method cites or presupposes it.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Sequential decision research never reverted to pre-DP bespoke methods; the functional-equation frame is permanent.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T06:20:18+00:00",
+   "leap": {
+    "prior_state": "Sequential stochastic decision problems could be attacked by value iteration - successive approximations toward the optimal value function, an asymptotic procedure with no finite termination and, on 1950s hardware, punishingly slow on problems of practical size (Howard's roughly 50-state Sears model) - or by solving the optimality equations directly. Dynamic programming (Bellman, 1957) supplied the framework and had that same year posed the Markovian decision process, but no finite exact algorithm improved a policy step by step.",
+    "jump": "Policy iteration: evaluate the current policy exactly by solving its linear equations, then improve greedily state by state, with a proof that the procedure reaches an optimal policy in finitely many iterations - replacing an asymptotic crawl with a finite sequence of policy-sized leaps.",
+    "date": 1960
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove dynamic programming and the parent has no formulation to operate on - policy evaluation is solving Bellman's functional equations for a fixed policy, and policy improvement is the principle of optimality applied greedily. Mediation check: no artifact sits between the 1957 monograph and Howard's 1960 development; Howard's book is explicitly a dynamic-programming development (its title pairs DP with Markov processes), Sutton & Barto record Howard (1960) inside the DP lineage they trace from Bellman (1957), and the AI Wiki's history has Howard devising policy iteration in response to the DP/value-iteration state of the art. This is the rare case where the famous framework is genuinely direct, argued from the parent's own construction rather than from fame.",
+    "mediator": null,
+    "evidence": "Sutton & Barto sec. 1.6; AI Wiki policy-iteration history."
+   }
+  },
+  {
+   "predecessor_id": "a-markovian-decision-process-bellman-1957-1957",
+   "successor_id": "policy-iteration-howard-1960",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The paper posed the exact problem the parent solves: before the Markovian decision process was formulated, 'the optimal policy of a Markov process with rewards and choices' was not a posed mathematical problem, so no algorithm for it - finite or otherwise - could exist.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Partial: the formulation generated the MDP field, but the paper itself is a short formulation note; its generativity is realized through the field and the companion monograph.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: the formulation could in principle have been posed by others - Shapley's stochastic games (1953) are the neighbouring generalization, and Howard's own book re-poses the problem - so the channel is the documented one, not a unique possible one.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "A formulation collapses no cost by itself.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The paper supplies no metric or benchmark.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The MDP is the explanatory model of sequential stochastic choice - states, actions, transitions, rewards - inside which the parent's notions (policy, value of a policy) are defined.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The MDP became the standard interface object of the field: later methods, solvers, and eventually reinforcement learning all build on this exact formulation - the strongest composability case available to a 1957 paper.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The formulation's reach is documented across OR, control, economics, and AI; the parent is an early destination.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "A formulation changes no one's iteration speed directly.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "The MDP formulation displaced looser talk of 'sequential decision problems' as the canonical statement of the problem class.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The 1957 J. Math. Mech. paper is the citation anchor for the MDP concept itself (Sutton & Barto: 'Bellman (1957b) also introduced ... Markovian decision processes').",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The field never un-posed the problem; the MDP is the permanent statement of the class.",
+     "source": "Sutton & Barto, A Brief History of Reinforcement Learning (sec. 1.6)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T06:20:18+00:00",
+   "leap": {
+    "prior_state": "Sequential stochastic decision problems could be attacked by value iteration - successive approximations toward the optimal value function, an asymptotic procedure with no finite termination and, on 1950s hardware, punishingly slow on problems of practical size (Howard's roughly 50-state Sears model) - or by solving the optimality equations directly. Dynamic programming (Bellman, 1957) supplied the framework and had that same year posed the Markovian decision process, but no finite exact algorithm improved a policy step by step.",
+    "jump": "Policy iteration: evaluate the current policy exactly by solving its linear equations, then improve greedily state by state, with a proof that the procedure reaches an optimal policy in finitely many iterations - replacing an asymptotic crawl with a finite sequence of policy-sized leaps.",
+    "date": 1960
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the MDP formulation and policy iteration has no object - there is no 'policy' to evaluate or improve until the process, its rewards, and policies as the search object are posed. Mediation check: the paper is not mediated via the companion monograph - the monograph is the general DP theory, while this paper is the specific Markovian formulation the parent's title and content take as their subject ('Dynamic Programming AND MARKOV PROCESSES'); the two 1957 artifacts supply different components (framework vs problem), the discrimination session 21 also applied at Amari (Rao vs the 1985 monograph). Sutton & Barto credit the formulation to this paper and the method to Howard (1960) in adjacent sentences. Note: the paper gestures at policy-space reasoning, but the algorithm - exact evaluation by linear equations, greedy improvement, finite termination - is Howard's, as the parent node's own record states.",
+    "mediator": null,
+    "evidence": "Sutton & Barto sec. 1.6; J. Math. Mech. 6:679-684 (1957)."
    }
   }
  ],
@@ -132978,6 +133305,561 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "policy-iteration-howard-1960": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Dynamic Programming (Bellman, 1957) directly enabled Policy iteration (Howard)'s leap by supplying the framework the parent's every step runs on: the evaluation step solves Bellman's functional equations for a fixed policy, and the improvement step is justified by Bellman's principle of optimality.",
+     "definition": "Richard Bellman's 1957 Princeton monograph founding dynamic programming: the principle of optimality, functional equations for sequential decision problems, and solution by successive approximations (value iteration) across deterministic and stochastic problems.",
+     "domain": "operations research",
+     "lens": "L1",
+     "name": "Dynamic Programming (Bellman, 1957)",
+     "source_title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+     "source_url": "http://www.incompleteideas.net/book/first/1/node7.html",
+     "type": "theory",
+     "year": 1957
+    },
+    {
+     "causal_claim": "A Markovian Decision Process (Bellman, 1957) directly enabled Policy iteration (Howard)'s leap by posing the exact problem the parent solves: the paper formally introduced Markovian decision processes - states, actions, transition probabilities, rewards, and policies as the object of search.",
+     "definition": "Bellman's 1957 Journal of Mathematics and Mechanics paper 'A Markovian decision process' (6:679-684): the formal introduction of the Markovian decision process as a mathematical object, including discussion of iteration in policy space.",
+     "domain": "operations research",
+     "lens": "L4",
+     "name": "A Markovian Decision Process (Bellman, 1957)",
+     "source_title": "Solving stochastic dynamic programming problems by linear programming - an annotated bibliography (reference list)",
+     "source_url": "https://link.springer.com/article/10.1007/BF01917643",
+     "type": "theory",
+     "year": 1957
+    },
+    {
+     "causal_claim": "Successive approximations / value iteration (Bellman) directly enabled Policy iteration (Howard)'s leap by being the incumbent procedure whose asymptotic crawl the parent replaces with finite policy-sized steps - Howard's retrospective says the Sears experience left him 'suspecting there was a way to reach the best policy directly, without value iteration'.",
+     "definition": "Bellman's successive-approximations method for the functional equations of dynamic programming: iterate the optimality operator toward the optimal value function, the procedure later called value iteration - asymptotic, with no finite termination.",
+     "domain": "operations research",
+     "lens": "L6",
+     "name": "Successive approximations / value iteration (Bellman)",
+     "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+     "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+     "type": "method",
+     "year": 1957
+    },
+    {
+     "causal_claim": "Stochastic games (Shapley, 1953) directly enabled Policy iteration (Howard)'s leap by containing, in game form, the value-iteration treatment of Markovian sequential problems of which the single-controller case is a degenerate instance.",
+     "definition": "Lloyd Shapley's 1953 paper 'Stochastic games' (PNAS): two-player Markov games with a value and optimal stationary strategies, containing value iteration as a special case - predating Bellman's explicit MDP treatment.",
+     "domain": "game theory",
+     "lens": "L19",
+     "name": "Stochastic games (Shapley, 1953)",
+     "source_title": "Markov Decision Process (AI Wiki) - History",
+     "source_url": "https://aiwiki.ai/wiki/markov_decision_process_mdp",
+     "type": "theory",
+     "year": 1953
+    },
+    {
+     "causal_claim": "Markov chains (Markov, 1906) directly enabled Policy iteration (Howard)'s leap by supplying the stochastic-process object whose reward-bearing version the parent evaluates: a policy's value is computed from the chain it induces.",
+     "definition": "Andrey Markov's 1906 introduction of chains of dependent random variables - the stochastic process (states, transition probabilities, long-run behaviour) that is the fabric of every Markov decision model.",
+     "domain": "probability theory",
+     "lens": "L1",
+     "name": "Markov chains (Markov, 1906)",
+     "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+     "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+     "type": "theory",
+     "year": 1906
+    },
+    {
+     "causal_claim": "Sequential Analysis (Wald, 1947) directly enabled Policy iteration (Howard)'s leap by founding statistical decision theory's sequential branch: decisions taken over time under uncertainty with costs, the framing dynamic programming absorbed.",
+     "definition": "Abraham Wald's 1947 monograph founding sequential statistical decision theory: sequential probability ratio tests and decision rules that balance observation costs against decision error.",
+     "domain": "mathematical statistics",
+     "lens": "L19",
+     "name": "Sequential Analysis (Wald, 1947)",
+     "source_title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+     "source_url": "http://www.incompleteideas.net/book/first/1/node7.html",
+     "type": "theory",
+     "year": 1947
+    },
+    {
+     "causal_claim": "Minimax theorem and game theory (von Neumann, 1928) directly enabled Policy iteration (Howard)'s leap by supplying the strategic-decision mathematics from which the neighbouring stochastic-games generalization of Markov decision problems was built.",
+     "definition": "John von Neumann's 1928 minimax theorem and the game theory built on it (with Morgenstern, 1944): optimal strategic choice under opposed interests, the donor field for stochastic games.",
+     "domain": "game theory",
+     "lens": "L19",
+     "name": "Minimax theorem and game theory (von Neumann, 1928)",
+     "source_title": "Sampling Techniques for Markov Games (Savagaonkar, Givan & Chong) - introduction",
+     "source_url": "https://engineering.purdue.edu/~givan/papers/sampling.pdf",
+     "type": "theory",
+     "year": 1928
+    },
+    {
+     "causal_claim": "Howard's Sc.D. thesis (1958) directly enabled Policy iteration (Howard)'s leap by being its first form: the 1960 monograph 'grew out of his 1958 Sc.D. thesis at MIT' (AI Wiki), supervised by George E. Kimball.",
+     "definition": "Ronald A. Howard's 1958 MIT Sc.D. thesis, the doctoral work from which the 1960 monograph Dynamic Programming and Markov Processes grew.",
+     "domain": "operations research",
+     "lens": "L2",
+     "name": "Howard's Sc.D. thesis (MIT, 1958)",
+     "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+     "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+     "type": "method",
+     "year": 1958
+    },
+    {
+     "causal_claim": "Howard's Sc.D. thesis (1958) directly enabled Policy iteration (Howard)'s leap by being the parent author's own doctoral vehicle, carried by the same person from thesis to monograph.",
+     "definition": "Ronald A. Howard's 1958 MIT Sc.D. thesis, the doctoral work from which the 1960 monograph Dynamic Programming and Markov Processes grew.",
+     "domain": "operations research",
+     "lens": "L20",
+     "name": "Howard's Sc.D. thesis (MIT, 1958)",
+     "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+     "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+     "type": "method",
+     "year": 1958
+    },
+    {
+     "causal_claim": "Sears catalog mailing problem (Arthur D. Little, mid-1950s) directly enabled Policy iteration (Howard)'s leap by posing the concrete need: a roughly 50-state Markov model of catalog customers whose optimal mailing policy, found by value iteration on vacuum-tube computers, left Howard suspecting a direct route to the best policy existed (his 1978 retrospective).",
+     "definition": "The operations-research engagement (Arthur D. Little's OR group advising Sears, Roebuck) in which the graduate-student Howard modeled catalog customers as a ~50-state Markov process with per-transition profit rewards - the motivating application of policy iteration.",
+     "domain": "operations research",
+     "lens": "L4",
+     "name": "Sears catalog mailing problem (Arthur D. Little, mid-1950s)",
+     "source_title": "Policy iteration (AI Wiki) - Origin at Sears",
+     "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+     "type": "other",
+     "year": 1956
+    },
+    {
+     "causal_claim": "Linear programming and sequential decisions (Manne, 1960) directly enabled Policy iteration (Howard)'s leap by giving the same problem its alternative exact formulation in the same year, defining the methodological fork (iteration in policy space vs linear programming) the field then navigated.",
+     "definition": "Alan S. Manne's 1960 Management Science paper (6:259-267) formulating sequential decision problems as linear programs - the LP route to solving Markov decision problems.",
+     "domain": "operations research",
+     "lens": "L2",
+     "name": "Linear programming and sequential decisions (Manne, 1960)",
+     "source_title": "Solving stochastic dynamic programming problems by linear programming - an annotated bibliography (reference list)",
+     "source_url": "https://link.springer.com/article/10.1007/BF01917643",
+     "type": "method",
+     "year": 1960
+    },
+    {
+     "causal_claim": "Finite Markov Chains (Kemeny & Snell, 1960) directly enabled Policy iteration (Howard)'s leap by systematizing the chain mathematics - fundamental matrices, absorbing and ergodic behaviour - that exact policy evaluation manipulates.",
+     "definition": "John G. Kemeny & J. Laurie Snell's 1960 textbook 'Finite Markov Chains', the era's systematic treatment of the chain theory (fundamental matrix, limiting behaviour) underlying policy evaluation.",
+     "domain": "probability theory",
+     "lens": "L1",
+     "name": "Finite Markov Chains (Kemeny & Snell, 1960)",
+     "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+     "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+     "type": "theory",
+     "year": 1960
+    },
+    {
+     "causal_claim": "The Theory of Dynamic Programming (Bellman, 1954) directly enabled Policy iteration (Howard)'s leap by being the first published statement of the dynamic programming programme - the principle of optimality and the functional-equation method - that the parent's framework descends from.",
+     "definition": "Bellman's 1954 Bulletin of the AMS survey 'The theory of dynamic programming', the first public statement of the DP programme (with parallel RAND reports from 1952-53).",
+     "domain": "operations research",
+     "lens": "L3",
+     "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+     "source_title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+     "source_url": "http://www.incompleteideas.net/book/first/1/node7.html",
+     "type": "theory",
+     "year": 1954
+    },
+    {
+     "causal_claim": "Hamilton-Jacobi equation (Jacobi, 1837) directly enabled Policy iteration (Howard)'s leap by being the continuous variational ancestor of the optimality equations: Sutton & Barto record that Bellman's approach extends 'a 19th century theory of Hamilton and Jacobi' to dynamical systems with a value function.",
+     "definition": "The Hamilton-Jacobi partial differential equation of variational mechanics (Hamilton 1834-35; Jacobi 1837): the optimal-cost function of a continuous control problem satisfies a PDE - the continuous ancestor of the Bellman equation.",
+     "domain": "mathematics",
+     "lens": "L19",
+     "name": "Hamilton-Jacobi equation (Jacobi, 1837)",
+     "source_title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+     "source_url": "http://www.incompleteideas.net/book/first/1/node7.html",
+     "type": "theory",
+     "year": 1837
+    },
+    {
+     "causal_claim": "Linear programming (Dantzig, 1947) directly enabled Policy iteration (Howard)'s leap by supplying the era's exact-optimization machinery - systems of linear equations and inequalities - in whose terms policy evaluation and the rival LP formulation of the same problem are expressed.",
+     "definition": "George Dantzig's 1947 linear programming framework and simplex method: exact optimization of a linear objective over linear constraints, the postwar era's canonical exact method.",
+     "domain": "operations research",
+     "lens": "L11",
+     "name": "Linear programming and the simplex method (Dantzig, 1947)",
+     "source_title": "Solving stochastic dynamic programming problems by linear programming - an annotated bibliography",
+     "source_url": "https://link.springer.com/article/10.1007/BF01917643",
+     "type": "method",
+     "year": 1947
+    },
+    {
+     "causal_claim": "RAND Corporation dynamic programming programme (1949) directly enabled Policy iteration (Howard)'s leap by being the institutional vehicle that organized, funded, and published the dynamic programming research from which the parent's framework comes.",
+     "definition": "The RAND Corporation's mathematics programme from 1949, where Bellman developed dynamic programming under institutional support for sequential-decision research.",
+     "domain": "operations research",
+     "lens": "L21",
+     "name": "RAND Corporation dynamic programming programme (1949)",
+     "source_title": "Markov Decision Process (AI Wiki) - History",
+     "source_url": "https://aiwiki.ai/wiki/markov_decision_process_mdp",
+     "type": "institution",
+     "year": 1949
+    },
+    {
+     "causal_claim": "Banach fixed-point theorem (Banach, 1922) directly enabled Policy iteration (Howard)'s leap by supplying the contraction guarantee under which the incumbent successive-approximations method converges to the optimal value function.",
+     "definition": "Stefan Banach's 1922 contraction mapping theorem: a contraction on a complete metric space has a unique fixed point reachable by iteration - the convergence guarantee behind value iteration.",
+     "domain": "mathematics",
+     "lens": "L1",
+     "name": "Banach fixed-point theorem (Banach, 1922)",
+     "source_title": "The Bellman Equations (MathAtlas) - contraction and fixed point",
+     "source_url": "https://mathatlas.app/reinforcement-learning/bellman-equations",
+     "type": "theory",
+     "year": 1922
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "dynamic-programming-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "Dynamic Programming (Bellman, 1957) directly enabled Policy iteration (Howard)'s leap by supplying the framework the parent's every step runs on: the evaluation step solves Bellman's functional equations for a fixed policy, and the improvement step is justified by Bellman's principle of optimality.",
+       "definition": "Richard Bellman's 1957 Princeton monograph founding dynamic programming: the principle of optimality, functional equations for sequential decision problems, and solution by successive approximations (value iteration) across deterministic and stochastic problems.",
+       "domain": "operations research",
+       "lens": "L1",
+       "name": "Dynamic Programming (Bellman, 1957)",
+       "source_title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+       "source_url": "http://www.incompleteideas.net/book/first/1/node7.html",
+       "type": "theory",
+       "year": 1957
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Dynamic Programming (Bellman, 1957)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-markovian-decision-process-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "A Markovian Decision Process (Bellman, 1957) directly enabled Policy iteration (Howard)'s leap by posing the exact problem the parent solves: the paper formally introduced Markovian decision processes - states, actions, transition probabilities, rewards, and policies as the object of search.",
+       "definition": "Bellman's 1957 Journal of Mathematics and Mechanics paper 'A Markovian decision process' (6:679-684): the formal introduction of the Markovian decision process as a mathematical object, including discussion of iteration in policy space.",
+       "domain": "operations research",
+       "lens": "L4",
+       "name": "A Markovian Decision Process (Bellman, 1957)",
+       "source_title": "Solving stochastic dynamic programming problems by linear programming - an annotated bibliography (reference list)",
+       "source_url": "https://link.springer.com/article/10.1007/BF01917643",
+       "type": "theory",
+       "year": 1957
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "A Markovian Decision Process (Bellman, 1957)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "successive-approximations-value-iteration-bellman-1957",
+      "candidate": {
+       "causal_claim": "Successive approximations / value iteration (Bellman) directly enabled Policy iteration (Howard)'s leap by being the incumbent procedure whose asymptotic crawl the parent replaces with finite policy-sized steps - Howard's retrospective says the Sears experience left him 'suspecting there was a way to reach the best policy directly, without value iteration'.",
+       "definition": "Bellman's successive-approximations method for the functional equations of dynamic programming: iterate the optimality operator toward the optimal value function, the procedure later called value iteration - asymptotic, with no finite termination.",
+       "domain": "operations research",
+       "lens": "L6",
+       "name": "Successive approximations / value iteration (Bellman)",
+       "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+       "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+       "type": "method",
+       "year": 1957
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Successive approximations / value iteration (Bellman)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "stochastic-games-shapley-1953-1953",
+      "candidate": {
+       "causal_claim": "Stochastic games (Shapley, 1953) directly enabled Policy iteration (Howard)'s leap by containing, in game form, the value-iteration treatment of Markovian sequential problems of which the single-controller case is a degenerate instance.",
+       "definition": "Lloyd Shapley's 1953 paper 'Stochastic games' (PNAS): two-player Markov games with a value and optimal stationary strategies, containing value iteration as a special case - predating Bellman's explicit MDP treatment.",
+       "domain": "game theory",
+       "lens": "L19",
+       "name": "Stochastic games (Shapley, 1953)",
+       "source_title": "Markov Decision Process (AI Wiki) - History",
+       "source_url": "https://aiwiki.ai/wiki/markov_decision_process_mdp",
+       "type": "theory",
+       "year": 1953
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Stochastic games (Shapley, 1953)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "markov-chains-markov-1906-1906",
+      "candidate": {
+       "causal_claim": "Markov chains (Markov, 1906) directly enabled Policy iteration (Howard)'s leap by supplying the stochastic-process object whose reward-bearing version the parent evaluates: a policy's value is computed from the chain it induces.",
+       "definition": "Andrey Markov's 1906 introduction of chains of dependent random variables - the stochastic process (states, transition probabilities, long-run behaviour) that is the fabric of every Markov decision model.",
+       "domain": "probability theory",
+       "lens": "L1",
+       "name": "Markov chains (Markov, 1906)",
+       "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+       "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+       "type": "theory",
+       "year": 1906
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Markov chains (Markov, 1906)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sequential-analysis-wald-1947-1947",
+      "candidate": {
+       "causal_claim": "Sequential Analysis (Wald, 1947) directly enabled Policy iteration (Howard)'s leap by founding statistical decision theory's sequential branch: decisions taken over time under uncertainty with costs, the framing dynamic programming absorbed.",
+       "definition": "Abraham Wald's 1947 monograph founding sequential statistical decision theory: sequential probability ratio tests and decision rules that balance observation costs against decision error.",
+       "domain": "mathematical statistics",
+       "lens": "L19",
+       "name": "Sequential Analysis (Wald, 1947)",
+       "source_title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+       "source_url": "http://www.incompleteideas.net/book/first/1/node7.html",
+       "type": "theory",
+       "year": 1947
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Sequential Analysis (Wald, 1947)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "minimax-theorem-and-game-theory-von-neumann-1928-1928",
+      "candidate": {
+       "causal_claim": "Minimax theorem and game theory (von Neumann, 1928) directly enabled Policy iteration (Howard)'s leap by supplying the strategic-decision mathematics from which the neighbouring stochastic-games generalization of Markov decision problems was built.",
+       "definition": "John von Neumann's 1928 minimax theorem and the game theory built on it (with Morgenstern, 1944): optimal strategic choice under opposed interests, the donor field for stochastic games.",
+       "domain": "game theory",
+       "lens": "L19",
+       "name": "Minimax theorem and game theory (von Neumann, 1928)",
+       "source_title": "Sampling Techniques for Markov Games (Savagaonkar, Givan & Chong) - introduction",
+       "source_url": "https://engineering.purdue.edu/~givan/papers/sampling.pdf",
+       "type": "theory",
+       "year": 1928
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Minimax theorem and game theory (von Neumann, 1928)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "howard-s-sc-d-thesis-mit-1958-1958",
+      "candidate": {
+       "causal_claim": "Howard's Sc.D. thesis (1958) directly enabled Policy iteration (Howard)'s leap by being its first form: the 1960 monograph 'grew out of his 1958 Sc.D. thesis at MIT' (AI Wiki), supervised by George E. Kimball.",
+       "definition": "Ronald A. Howard's 1958 MIT Sc.D. thesis, the doctoral work from which the 1960 monograph Dynamic Programming and Markov Processes grew.",
+       "domain": "operations research",
+       "lens": "L2",
+       "name": "Howard's Sc.D. thesis (MIT, 1958)",
+       "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+       "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+       "type": "method",
+       "year": 1958
+      },
+      "members": [
+       7,
+       8
+      ],
+      "member_names": [
+       "Howard's Sc.D. thesis (MIT, 1958)",
+       "Howard's Sc.D. thesis (MIT, 1958)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sears-catalog-mailing-problem-arthur-d-little-mid-1950s-1956",
+      "candidate": {
+       "causal_claim": "Sears catalog mailing problem (Arthur D. Little, mid-1950s) directly enabled Policy iteration (Howard)'s leap by posing the concrete need: a roughly 50-state Markov model of catalog customers whose optimal mailing policy, found by value iteration on vacuum-tube computers, left Howard suspecting a direct route to the best policy existed (his 1978 retrospective).",
+       "definition": "The operations-research engagement (Arthur D. Little's OR group advising Sears, Roebuck) in which the graduate-student Howard modeled catalog customers as a ~50-state Markov process with per-transition profit rewards - the motivating application of policy iteration.",
+       "domain": "operations research",
+       "lens": "L4",
+       "name": "Sears catalog mailing problem (Arthur D. Little, mid-1950s)",
+       "source_title": "Policy iteration (AI Wiki) - Origin at Sears",
+       "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+       "type": "other",
+       "year": 1956
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Sears catalog mailing problem (Arthur D. Little, mid-1950s)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-theory-of-dynamic-programming-bellman-1954-1954",
+      "candidate": {
+       "causal_claim": "The Theory of Dynamic Programming (Bellman, 1954) directly enabled Policy iteration (Howard)'s leap by being the first published statement of the dynamic programming programme - the principle of optimality and the functional-equation method - that the parent's framework descends from.",
+       "definition": "Bellman's 1954 Bulletin of the AMS survey 'The theory of dynamic programming', the first public statement of the DP programme (with parallel RAND reports from 1952-53).",
+       "domain": "operations research",
+       "lens": "L3",
+       "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+       "source_title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+       "source_url": "http://www.incompleteideas.net/book/first/1/node7.html",
+       "type": "theory",
+       "year": 1954
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "The Theory of Dynamic Programming (Bellman, 1954)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hamilton-jacobi-equation-jacobi-1837-1837",
+      "candidate": {
+       "causal_claim": "Hamilton-Jacobi equation (Jacobi, 1837) directly enabled Policy iteration (Howard)'s leap by being the continuous variational ancestor of the optimality equations: Sutton & Barto record that Bellman's approach extends 'a 19th century theory of Hamilton and Jacobi' to dynamical systems with a value function.",
+       "definition": "The Hamilton-Jacobi partial differential equation of variational mechanics (Hamilton 1834-35; Jacobi 1837): the optimal-cost function of a continuous control problem satisfies a PDE - the continuous ancestor of the Bellman equation.",
+       "domain": "mathematics",
+       "lens": "L19",
+       "name": "Hamilton-Jacobi equation (Jacobi, 1837)",
+       "source_title": "Sutton & Barto, History of Reinforcement Learning (sec. 1.6)",
+       "source_url": "http://www.incompleteideas.net/book/first/1/node7.html",
+       "type": "theory",
+       "year": 1837
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Hamilton-Jacobi equation (Jacobi, 1837)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "linear-programming-and-the-simplex-method-dantzig-1947-1947",
+      "candidate": {
+       "causal_claim": "Linear programming (Dantzig, 1947) directly enabled Policy iteration (Howard)'s leap by supplying the era's exact-optimization machinery - systems of linear equations and inequalities - in whose terms policy evaluation and the rival LP formulation of the same problem are expressed.",
+       "definition": "George Dantzig's 1947 linear programming framework and simplex method: exact optimization of a linear objective over linear constraints, the postwar era's canonical exact method.",
+       "domain": "operations research",
+       "lens": "L11",
+       "name": "Linear programming and the simplex method (Dantzig, 1947)",
+       "source_title": "Solving stochastic dynamic programming problems by linear programming - an annotated bibliography",
+       "source_url": "https://link.springer.com/article/10.1007/BF01917643",
+       "type": "method",
+       "year": 1947
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Linear programming and the simplex method (Dantzig, 1947)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rand-corporation-dynamic-programming-programme-1949-1949",
+      "candidate": {
+       "causal_claim": "RAND Corporation dynamic programming programme (1949) directly enabled Policy iteration (Howard)'s leap by being the institutional vehicle that organized, funded, and published the dynamic programming research from which the parent's framework comes.",
+       "definition": "The RAND Corporation's mathematics programme from 1949, where Bellman developed dynamic programming under institutional support for sequential-decision research.",
+       "domain": "operations research",
+       "lens": "L21",
+       "name": "RAND Corporation dynamic programming programme (1949)",
+       "source_title": "Markov Decision Process (AI Wiki) - History",
+       "source_url": "https://aiwiki.ai/wiki/markov_decision_process_mdp",
+       "type": "institution",
+       "year": 1949
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "RAND Corporation dynamic programming programme (1949)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "banach-fixed-point-theorem-banach-1922-1922",
+      "candidate": {
+       "causal_claim": "Banach fixed-point theorem (Banach, 1922) directly enabled Policy iteration (Howard)'s leap by supplying the contraction guarantee under which the incumbent successive-approximations method converges to the optimal value function.",
+       "definition": "Stefan Banach's 1922 contraction mapping theorem: a contraction on a complete metric space has a unique fixed point reachable by iteration - the convergence guarantee behind value iteration.",
+       "domain": "mathematics",
+       "lens": "L1",
+       "name": "Banach fixed-point theorem (Banach, 1922)",
+       "source_title": "The Bellman Equations (MathAtlas) - contraction and fixed point",
+       "source_url": "https://mathatlas.app/reinforcement-learning/bellman-equations",
+       "type": "theory",
+       "year": 1922
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Banach fixed-point theorem (Banach, 1922)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [
+     {
+      "members": [
+       7,
+       8
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "Linear programming and sequential decisions (Manne, 1960) directly enabled Policy iteration (Howard)'s leap by giving the same problem its alternative exact formulation in the same year, defining the methodological fork (iteration in policy space vs linear programming) the field then navigated.",
+       "definition": "Alan S. Manne's 1960 Management Science paper (6:259-267) formulating sequential decision problems as linear programs - the LP route to solving Markov decision problems.",
+       "domain": "operations research",
+       "lens": "L2",
+       "name": "Linear programming and sequential decisions (Manne, 1960)",
+       "source_title": "Solving stochastic dynamic programming problems by linear programming - an annotated bibliography (reference list)",
+       "source_url": "https://link.springer.com/article/10.1007/BF01917643",
+       "type": "method",
+       "year": 1960
+      },
+      "reason": "dated on/after parent year 1960"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Finite Markov Chains (Kemeny & Snell, 1960) directly enabled Policy iteration (Howard)'s leap by systematizing the chain mathematics - fundamental matrices, absorbing and ergodic behaviour - that exact policy evaluation manipulates.",
+       "definition": "John G. Kemeny & J. Laurie Snell's 1960 textbook 'Finite Markov Chains', the era's systematic treatment of the chain theory (fundamental matrix, limiting behaviour) underlying policy evaluation.",
+       "domain": "probability theory",
+       "lens": "L1",
+       "name": "Finite Markov Chains (Kemeny & Snell, 1960)",
+       "source_title": "Policy iteration (AI Wiki) - Howard's formulation and history",
+       "source_url": "https://aiwiki.ai/wiki/policy_iteration",
+       "type": "theory",
+       "year": 1960
+      },
+      "reason": "dated on/after parent year 1960"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
