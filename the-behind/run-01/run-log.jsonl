@@ -3513,3 +3513,50 @@
   "expansions_done": 119
  }
 }
+{
+ "ts": "2026-11-25T16:08:01.371658+00:00",
+ "session": "run session 55 (v4) RECOVERY, expansion 2 of 2",
+ "kind": "expansion",
+ "parent": "kneser-ney-smoothing-1995",
+ "parent_name": "Kneser-Ney smoothing (1995)",
+ "provenance": "Session 55 recovery: the original session-55 agent scouted DELTA only and died before any Kneser-Ney work existed (audit: no KN files anywhere in run-01/work). This expansion was scouted, resolved, evaluated, verified, rendered and synced entirely by the recovery session. The parent paper's full text (Kneser & Ney, ICASSP 1995, RWTH PDF) was read before evaluation; its complete 7-item reference list grounds the citation findings.",
+ "raw": 48,
+ "dry_notes": "L9, L10, L12, L14, L15 dry (compute-trivial method; no material; no programmability layer; no apparatus; no services); L16 dry WITH finding (no standard implemented; the parent's only agreed artifacts are a corpus design, filed at L8, and the perplexity convention, filed at L17); L13 shortfall (only the team's own recognizer qualifies as tooling; era LM toolkits coeval-or-later, unnamed, unused); L18 shortfall (the recognizer is the sole observation instrument - it registered the WER half of the headline); L3/L23 meta notes recorded (Chen & Goodman survey postdates the parent, used as source; MacKay & Peto 1995 filed to log the coeval artifact).",
+ "date_dropped": 1,
+ "distinct": 23,
+ "evaluated": 23,
+ "survivors": 2,
+ "rejected": 20,
+ "mediated": 1,
+ "survivors_detail": [
+  {
+   "name": "Katz backing-off estimation for sparse data (Katz, 1987)",
+   "score": 5.5,
+   "depth": 5,
+   "argument": "The ancestor the parent's title names: 'Improved Backing-Off' improves the model class Katz defined - discounted seen-event estimates plus a normalized fall-back to the lower-order distribution. The parent's Section 2 Eq. 1 is that scheme with the backoff distribution left free (the exact point of modification); citation [5] + instantiation. Q3 partial: the interpolation architecture is the coeval alternative skeleton."
+  },
+  {
+   "name": "Structuring probabilistic dependences in stochastic language modelling (Ney, Essen & Kneser, 1994)",
+   "score": 5.0,
+   "depth": 5,
+   "argument": "The parent authors' own framework paper, admitted under the own-version exception as a separable journal artifact whose mechanisms are consumed and reworked: absolute discounting is the seen-event estimator of Eq. 8, the marginal-constraint solution takes its simple form 'in the case of absolute discounting [6]' (Eqs. 10-13), and every experiment smooths with [6]'s non-linear interpolation. MOST CONTESTABLE ADMISSION of the expansion (verification record carries the full attack): the parent itself names Turing-Good estimates as alternative seen-event estimators, so the admission rests on documented actual consumption at every load-bearing point, not on abstract necessity (Q3 partial)."
+  }
+ ],
+ "rejections_of_note": [
+  "Deleted interpolation (Jelinek & Mercer, 1980) - MEDIATED via the 1994 framework paper: the interpolation the parent consumes and cites is [6]'s non-linear variant; Jelinek & Mercer are nowhere in the parent's references. The mediation chain is carried by its cited final link. (Candidate matched the existing graph node deleted-interpolation-jelinek-mercer-1980 via SAME judgments; no link created at this parent.)",
+  "Good-Turing frequency estimation (Good, 1953) - fail-closed partial: cited once as a class member ('the Turing-Good estimates [3][5]') but never instantiated - both derivations and all experiments run on absolute discounting / [6] interpolation (citation-without-instantiation, the Bravais shape). Its instantiated hearing belongs to Katz's expansion, where GT discounts ARE the seen-event mechanism.",
+  "Leaving-one-out cross-validation (Duda & Hart, 1973) - fail-closed partial: genuinely wielded (Section 4's singleton derivation, Eq. 20, cited to pp. 75) but the filed artifact is a textbook carrier of a generic technique and the parent's headline distribution comes from the other derivation (marginal constraint, Eq. 13).",
+  "Wall Street Journal CSR corpus (Paul & Baker, 1992) - fail-closed partial (LINK candidate, matched existing node wall-street-journal-corpus-darpa-csr-1992; no link created): the headline demonstration's data, but demonstrative not constitutive - the paper stresses both derivations are independent of the particular modeling, and the estimator is also demonstrated on Verbmobil. The LOB-at-IAM distinction (constitutive vs shared arena-data) is stated in the verdict.",
+  "RWTH Aachen recognizer (Aubert et al., 1994) - fail-closed partial on direction: the WER half of the headline exists only as this system's rescoring output [1], but the recognizer CONSUMES the parent (the estimator is its component) and is the team's own system - a testbed is not a predecessor.",
+  "BMFT Verbmobil grant 01 IV 102 B - fail-closed partial under the funding discipline (the DARPA-at-the-formulation precedent, exact shape): named in the parent's own footnote; funding is not inside the artifact.",
+  "Singleton-trigram cutoff practice - directness PASS, leap gate FAIL: a wielded component of the parent's compact-model experiment ('it is well known...'), not a leap toward it.",
+  "ARPA CSR evaluation programme - rejected: the arena that registered the leap (official 1992/1993 test material; the supplied official model of Table 2) registers rather than enables (IEDM discipline). The official ARPA 1993 trigram LM itself rejected as compared-not-consumed.",
+  "Witten-Bell (1991) and PPM (1984) - rejected: the compression field's parallel carriers of the same problem; no citation, no junction into the Aachen work (anticipation/parallel discipline). Church & Gale (1991) and Nadas (1984) - fail-closed partials: the diagnosis stratum, uncited by the parent (Hochreiter discipline). Jelinek's self-organized LM chapter - fail-closed partial: cited twice as apparatus (survey + perplexity source), never as mechanism. Philips Aachen - self-carriage. Standard backoff baseline and ML estimation - the parent's own prior state / negative space. Laplace add-one - bypassed incumbent, uncited."
+ ],
+ "notes": "Coeval artifact logged: MacKay & Peto's hierarchical Dirichlet language model (1995), the Bayesian parallel road, was date-dropped at resolve by the year bound (same year as the parent) - the structural fact applied as designed and recorded here. Judgments: 6 pairs - deleted interpolation and the WSJ corpus matched existing graph nodes (SAME x4, matched_node_id verified after apply); Verbmobil corpus vs Verbmobil project held DIFFERENT (decomposition: data artifact vs programme). InstructGPT/RLHF flag did not surface. Parent stored fields verified complete before evaluation (no session-31 defect); its stored bottleneck ('smoothing distributed unseen-event mass by raw frequency, over-crediting words that are frequent but context-bound') matches the paper's own Section 1 diagnosis (the 'dollars' example). One dry-run through score.rank_candidates before applying; no correction needed; apply-verdicts run exactly once.",
+ "totals_after": {
+  "nodes": 227,
+  "edges": 291,
+  "expansions_done": 120
+ }
+}
