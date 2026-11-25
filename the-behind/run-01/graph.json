@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T10:13:09+00:00",
-  "expansions_done": 83,
-  "raw_candidates_seen": 3508,
+  "updated_at": "2026-11-25T10:20:13+00:00",
+  "expansions_done": 84,
+  "raw_candidates_seen": 3523,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -16816,6 +16816,73 @@
     "name": "Galton's Anthropometric Laboratory (1884)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T10:12:56+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Records of Family Faculties (RFF) family records (1884)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Galton's quincunx (1873)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Darwin's counsel and correspondence on the sweet-pea experiments (1875)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Galton, Hereditary Genius (1869)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Galton, A theory of heredity — the stirp doctrine (1876)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Galton, Statistics by intercomparison with remarks on the law of frequency of error (1875)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Galton's Anthropometric Laboratory (1884)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Jenkin's review of the Origin — the blending 'swamping' objection (1867)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Darwin, The Variation of Animals and Plants under Domestication — the provisional hypothesis of pangenesis (1868)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "British Association Anthropometric Committee reports (1883)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:19:42+00:00"
+   },
+   {
+    "parent_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+    "name": "Normal law of error (Gauss, 1809)",
+    "reason": "mediated_via: Quetelet, Sur l'homme and the application of the law of error to human measures (1835)",
+    "at": "2026-11-25T10:19:42+00:00",
+    "mediated_via": "Quetelet, Sur l'homme and the application of the law of error to human measures (1835)"
    }
   ]
  },
@@ -22216,7 +22283,7 @@
    "prior_state": "Regression glimpsed only in sweet-pea seed weights (1877); human filial resemblance a matter of anecdote and breeder's impression.",
    "status": "provisional",
    "depth": 8,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.0,
    "sources": [
     {
@@ -22251,12 +22318,16 @@
     {
      "title": "Galton, Natural Inheritance (Macmillan, 1889) — full text",
      "url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Four attacks on the edge Quetelet (1835) -> Galton, Natural Inheritance (1889). (1) Q1 attack: searched for a pre-1835 application of the error law to human measurements as a programme — the law existed in astronomy (Gauss, Laplace) and isolated bodily measures existed, but the systematic fitting of the law to human measures (soldiers' chests, conscripts' heights) as the foundation of a science of man is Quetelet's; the parent's own Chapter V names him as the turning point. Attack fails. (2) Multiples test on Q3: no independent near-simultaneous applier of the error law to man in Quetelet's generation — the French/Belgian statistical tradition follows him. Necessity was nevertheless scored only partial at evaluation, because Galton's documented acquaintance with the law arrived through Herschel's and Spottiswoode's writings on Quetelet and his 1908 account minimises Quetelet; that scoring stands. (3) Date and direction: 1835 precedes 1889; the direction is attested by the parent's own sentence (the law had no application to human measures 'until the time of Quetelet'). Attack fails. (4) Mediation attack: the strongest available M is the pair Herschel (1850) / Spottiswoode, the documented carriers of Quetelet's writings to Galton. Answered on the cited-final-link rule: both transmit Quetelet's own procedure and results (Spottiswoode's geological curve-fitting used Quetelet's procedure), so they are the channel of the candidate's work, not a milestone the candidate acted through; the parent names Quetelet, not the carriers. A second M — the astronomical law itself (Gauss 1809) — also fails: the parent engages the law only as applied to man, which is the candidate's own act. Attack recorded; edge stands. Outcome provisional (the run's standing practice).",
-    "at": "2026-11-25T09:55:38+00:00"
+    "notes": "Four attacks on the edge Quetelet, Sur l'homme (1835) -> Regression towards mediocrity in hereditary stature (1886) — the link edge added by this expansion (the node's edge to Natural Inheritance was verified in session 36 and is not re-opened here). (1) Q1 attack: the pass was scoped to the practice (stature as an error-distributed quantity). Prior art tried: the astronomical error law itself (Gauss 1809) — a law of observational error, not of human measures; no pre-1835 fitting of the law to bodily measures was found. The scoped pass stands. (2) Multiples test on Q3: the practice had many carriers by 1886 (committees, Herschel's and Spottiswoode's English presentations, the author's own laboratory) — the memoir itself calls the conformity 'an accepted fact by anthropologists'. This is exactly why Q3 was scored partial (ripe), and why the outcome is provisional: the channel test passed is instantiation of a practice with a unique founding artifact, not documentary citation — the memoir names no Quetelet and carries no reference apparatus at all (Dickson is its only named contemporary). The attack is recorded in full because it is the honest weakness of this edge; it caps, and does not break, the admission. (3) Date and causal direction: 1835, fifty-one years before the child; direction is attested structurally — the memoir's deviates, probable deviation (1.7 in.), and square-root-of-two mid-parent check are the transfer's apparatus in use, and the sibling text (Natural Inheritance, Ch. V) names Quetelet as the turning point for this same practice. Attack fails. (4) Mediation attack: two Ms tried. (a) Statistics by intercomparison (1875) — the author's own grade machinery does carry error-law remarks ('with remarks on the law of frequency of error' is its subtitle), but it is a component judged separately in this expansion, and its error-law remarks themselves descend from the transfer; a descendant component cannot mediate its own ancestor. Components discrimination: what the memoir takes from 1875 is workmanship; what it presupposes from 1835 is that stature is error-distributed at all. (b) Typical laws (1877) — carries the seed phenomenon and the botanical method, not the stature-distribution practice, which predates it in the author's own laboratory and committee work. Attack fails; no mediation object recorded.",
+    "at": "2026-11-25T10:20:13+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T09:55:16+00:00"
@@ -22347,6 +22418,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T10:12:56+00:00"
+  },
+  "galton-s-sweet-pea-experiments-and-typical-laws-of-heredity-1877": {
+   "id": "galton-s-sweet-pea-experiments-and-typical-laws-of-heredity-1877",
+   "name": "Galton's sweet-pea experiments and 'Typical laws of heredity' (1877)",
+   "aliases": [],
+   "year": 1877,
+   "domain": "statistics / heredity",
+   "type": "method",
+   "definition": "Galton's 1877 Royal Institution lecture and paper reporting the sweet-pea experiments: filial seeds regress towards mediocrity in direct proportion to the parental deviation — the first statement of the regression law.",
+   "bottleneck": "Before 'Typical laws of heredity' (1877), no one had shown that offspring systematically fall short of extreme parents, because resemblance was assumed proportional and the shortfall, when noticed, was blamed on imperfect measurement.",
+   "leap": "Galton (1877) showed from his sweet-pea experiments that filial seeds regress towards mediocrity in direct proportion to the parental deviation — heredity's central phenomenon was first observed, measured, and stated as a proportional law, in a controlled experiment with complete data.",
+   "prior_state": "Filial resemblance a matter of breeder's impression; offspring assumed to inherit the parental deviation whole.",
+   "status": "provisional",
+   "depth": 9,
+   "expanded": false,
+   "priority": 7.0,
+   "sources": [
+    {
+     "title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks on the edge Typical laws of heredity (1877) -> Regression towards mediocrity in hereditary stature (1886). (1) Q1 attack: was proportional regression stated anywhere before February 1877? The strongest prior art is breeder's lore about offspring of extreme parents 'throwing back' — qualitative, unmeasured, and usually read as reversion to a remote ancestor rather than as a proportional shortfall towards the population mean; the author's own correction of his 1877 'reversion' reading into 'regression' (Gorroochurn 2016) shows the concept itself was still being separated from that lore a decade later. No pre-1877 statement of a measured ratio was found. Attack fails. (2) Multiples test on Q3: no independent near-multiple of the seed result exists — no other investigator ran a controlled, multi-generational, weighed-seed experiment on filial deviation in the period; the phenomenon had exactly one discoverer, which is why the memoir treats the lecture as its warrant. Necessity nevertheless stays at ripe (partial as scored): the fact was in nature and the family data might in principle have shown it first. Attack caps the score where it was scored; it does not break the edge. (3) Date and causal direction: Royal Institution lecture 9 February 1877 (Proc. Roy. Inst. 9; also Nature, 1877) — nine years before the child, no year-bound issue. Direction is attested by the child twice over: its opening restates the seed ratio as its premise, and its Appendix I republishes the seed data as the law's first evidence ('first observed in the diameters of seeds'). Attack fails. (4) Mediation attack: two Ms tried. (a) The Aberdeen presidential address (1885) — the address is the CHILD's own first form (the memoir reproduces it), not a channel between the lecture and the memoir; the memoir's premise-citation runs to the experiments, and the address itself restates the same seed result. (b) Darwin's correspondence — counsel and encouragement, no artifact consumed; the memoir's Appendix I provenance record (bought seed, country friends, consulted botanists) leaves the letters outside the evidence chain. Attack fails; no mediation object recorded. Own-version scope note: this is the session's second own-version admission of the day (after Family likeness at the 1888 paper); the exception was argued on the mechanism-consumption clause — the memoir re-derives the ratio in man, supplies its explanation, and generalises it in Appendix II — not on authorship alone.",
+    "at": "2026-11-25T10:20:13+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T10:19:42+00:00"
   }
  },
  "edges": [
@@ -45754,6 +45854,200 @@
     "counterfactual": "Remove the memoir and the 1888 paper loses all three of its load-bearing parts: the kinship results it generalises (it cites this memoir by volume and page for them), its one worked case where the two Q-scales differ (the mid-parent case, re-derived in the paper from this memoir's numbers), and the surface mathematics it expressly declines to repeat because the memoir's appendix contains it. The paper would shrink to the organ tables with no rationale and no warrant.",
     "mediator": null,
     "evidence": "The 1888 paper: 'analogous to what was observed in kinship, as I showed in my paper read before this Society on Hereditary Stature (Roy. Soc. Proc., vol. 40, 1886, p. 42)'; the mid-parent recomputation (2/3 and 1/3 in inches becoming 0.47 and 0.44 in Q units) is worked from that memoir's case; 'The rationale of all this will be found discussed in the paper on Hereditary Stature... and in the appendix to it by Mr. J. D. Hamilton Dickson... therefore I need not repeat them here.' Citation plus instantiation, the strong channel."
+   }
+  },
+  {
+   "predecessor_id": "galton-s-sweet-pea-experiments-and-typical-laws-of-heredity-1877",
+   "successor_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before 1877, proportional filial regression had never been observed or stated: offspring were assumed to take the parental deviation whole. The lecture made the shortfall itself the phenomenon — 'the mean filial regression towards mediocrity was directly proportional to the parental deviation' — a fact about heredity that had been invisible inside the assumption it replaced.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This pass dies if a pre-1877 publication is shown to state proportional regression of offspring towards the mean."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The seed law opened the space the memoir works in — a law of heredity statable as a ratio — but the generalisation to kinship in every degree and to correlation waited for the 1886-88 memoirs.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This partial rises if the 1877 lecture is shown to state the law for kinship degrees beyond parent-offspring."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is capped at ripe: the phenomenon is a fact of nature that careful family data might in principle have revealed directly; but as the record stands, the memoir's inquiry was undertaken to test the seed law in man, and its author states that motive in its first pages.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This partial rises to pass if the memoir is shown to have been conceived independently of the seed result."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The seeds collapsed the cost of a heredity experiment: a generation in a season, complete pedigrees, thousands of cases for the price of a bag of peas — against human generations of twenty-five years. A large collapse, though of experiment cost rather than of the parent's own computation.",
+     "source": "Stanton, Galton, Pearson, and the Peas (J. Statistics Education 9(3), 2001)",
+     "falsification": "This partial dies if the seed experiments are shown to have been slower or costlier per datum than the family-record route."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "It made regression measurable for the first time: a ratio (one-third in seeds) stated from complete data, where before there was impression.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This pass dies if the seed ratio is shown to be a restatement of a quantity already measurable."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the phenomenon's first explanatory frame — reversion towards the ancestral type, restated by the memoir as inheritance partly from parents, partly from ancestry — which the memoir's Appendix II turns into the ancestral law's arithmetic (1/2, 1/4, 1/16...).",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This pass dies if the memoir's ancestry explanation is shown to derive from a different source than the seed work's frame."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The seed protocol (weigh, sow, weigh the produce, tabulate against parental deviates) is a reusable experimental interface for heredity, but it carried no standard form others adopted unchanged.",
+     "source": "Stanton, Galton, Pearson, and the Peas (J. Statistics Education 9(3), 2001)",
+     "falsification": "This partial dies if no other investigator is shown to have run the protocol."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The phenomenon crossed from botany to man inside the author's own programme — the crossing the memoir performs; its wider cross-domain life (any quantitative trait) came later.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This partial rises if a pre-1886 application outside the author's programme is shown."
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Annual generations collapsed the feedback loop of heredity research from decades to seasons: the experiments ran through one, two, and three generations of plants while a single human generation was still growing up.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This pass dies if the experiments are shown to have taken comparable calendar time to human pedigree work."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Within the programme it displaced the assumption of whole inheritance of deviation; the field-wide displacement waited for the memoir and the book.",
+     "source": "Gorroochurn, On Galton's change from 'reversion' to 'regression' (2016)",
+     "falsification": "This partial dies if contemporaries are shown to have gone on assuming whole inheritance after 1877 without engaging the seed result."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk node: the standard histories (Stigler; Pearson's Life; Gorroochurn) treat the sweet-pea experiments as the origin of regression — the phenomenon was 'first observed in the diameters of seeds', in the memoir's own words.",
+     "source": "Gorroochurn, On Galton's change from 'reversion' to 'regression' (2016)",
+     "falsification": "This pass dies if the lineage surveys are shown to route the origin of regression around the seed experiments."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once regression was observed as a proportional law in a controlled experiment, heredity could not return to being resemblance-by-impression; every later treatment starts from a measured ratio.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This pass dies if post-1877 practice is shown to have abandoned the ratio form."
+    }
+   },
+   "score": 7.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T10:19:42+00:00",
+   "leap": {
+    "prior_state": "Regression glimpsed only in sweet-pea seed weights (1877); human filial resemblance a matter of anecdote and breeder's impression.",
+    "jump": "Galton (1886) measured regression towards mediocrity in hereditary stature: the offspring of mid-parents deviate two-thirds as much as their parents — filial resemblance became a ratio, and its explanation (inheritance partly from ancestry) pointed straight at the ancestral law.",
+    "date": 1886
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 1877 lecture and the memoir loses its stated reason for existing: it opens by restating the seed result, republishes the seed averages in Appendix I as the law's first evidence, and declares its motive — 'It was anthropological evidence that I desired, caring only for the seeds as means of throwing light on heredity in man.' Without the seed law there is no hypothesis for the family records to test and no two-thirds ratio to find.",
+    "mediator": null,
+    "evidence": "The memoir's opening: 'I then found that the mean filial regression towards mediocrity was directly proportional to the parental deviation from it... The experiments... showed a mean regression... of one-third'; Appendix I republishes the seed data in full ('the diameters of parent seeds and of their offspring... first observed in the diameters of seeds'). Own-version exception argued explicitly: a separable published artifact (Royal Institution lecture, 9 Feb 1877; Proc. Roy. Inst. 9) whose mechanism — proportional regression — is consumed and reworked: the memoir re-derives it in man, explains it (ancestry dilution), and generalises it (Appendix II's ancestral contributions). The mechanism-consumption clause is met."
+   }
+  },
+  {
+   "predecessor_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+   "successor_id": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Scoped to the practice: before 1835 it was not possible to treat the deviation of a man's stature from his population's mean as an error-law quantity with a probable deviation — the memoir's every number presupposes exactly that possibility.",
+     "source": "Quetelet, Sur l'homme (1835)",
+     "falsification": "This pass dies if a pre-1835 publication is shown fitting the error law to human measures."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The transfer opened anthropometry as a quantitative science — the space the memoir works in — but the heredity use of the apparatus is the author's own line from 1877.",
+     "source": "Galton, Natural Inheritance (Macmillan, 1889) — full text, archive.org",
+     "falsification": "This partial rises if Sur l'homme is shown to pose heredity questions in error-law terms."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is capped at ripe: by 1886 the error law's application to man was, in the memoir's words, 'an accepted fact by anthropologists' — a practice in the air, carried by many hands. The founding artifact of that practice is nonetheless unique, and the channel test is instantiation, not citation.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This partial rises to pass if the practice is shown to have had no other plausible carrier into the memoir."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The transfer collapsed the cost of summarising a population's stature from case-by-case description to two constants (mean, probable deviation) — a real but not headline collapse.",
+     "source": "Quetelet, Sur l'homme (1835)",
+     "falsification": "This partial dies if the constants are shown not to have summarised the distributions in practice."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "It made human variation measurable as deviation: the level of mediocrity and the probable deviation — the exact quantities the memoir's ratio is stated in — exist as measurable objects because of the transfer.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This pass dies if the memoir's deviates are shown to be definable without the error-law framing of stature."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "It supplied a model of variation (chance causes about a type) but not the memoir's explanation of regression, which is the ancestry argument; the model is the stage, not the play.",
+     "source": "Quetelet, Sur l'homme (1835)",
+     "falsification": "This partial rises if Sur l'homme is shown to contain a regression-shaped claim."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The average-man apparatus (means and probable errors of bodily measures) was an interface anthropometric committees across Europe applied — a real but loose standard.",
+     "source": "Galton, Natural Inheritance (Macmillan, 1889) — full text, archive.org",
+     "falsification": "This partial dies if the apparatus is shown to have remained Quetelet's alone."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The transfer is itself the cross-domain move — astronomy's law carried into the science of man — and the memoir is one of its downstream crossings (into heredity).",
+     "source": "Quetelet, Sur l'homme (1835)",
+     "falsification": "This pass dies if the transfer is shown to have stayed inside astronomy."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Constants-based summary shortened each new population study, but data collection remained as slow as before.",
+     "source": "Quetelet, Sur l'homme (1835)",
+     "falsification": "This partial rises if the apparatus is shown to have accelerated data gathering itself."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It displaced anecdotal description of human variation across European anthropometry — by 1886 the conformity of stature to the law was, in the memoir's words, an accepted fact.",
+     "source": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "falsification": "This pass dies if the acceptance is shown to postdate the memoir."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk node of the anthropometric line: Natural Inheritance's Chapter V names Quetelet as the one who first saw the law's applicability to human measures, and the standard histories concur.",
+     "source": "Galton, Natural Inheritance (Macmillan, 1889) — full text, archive.org",
+     "falsification": "This pass dies if the surveys are shown to name a different founder for the transfer."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once human measures were error-distributed quantities, they could not return to irregularity; every later anthropometric and biometric treatment starts from the distribution.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This pass dies if post-1835 practice is shown to have abandoned distributional treatment of human measures."
+    }
+   },
+   "score": 7.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T10:19:42+00:00",
+   "leap": {
+    "prior_state": "Regression glimpsed only in sweet-pea seed weights (1877); human filial resemblance a matter of anecdote and breeder's impression.",
+    "jump": "Galton (1886) measured regression towards mediocrity in hereditary stature: the offspring of mid-parents deviate two-thirds as much as their parents — filial resemblance became a ratio, and its explanation (inheritance partly from ancestry) pointed straight at the ancestral law.",
+    "date": 1886
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Quetelet's transfer and the memoir's entire apparatus loses its warrant: there is no 'level of mediocrity' to regress towards, no probable deviation of 1.7 inches, no cross-tests 'based on the abstract law of frequency of error', no ellipse geometry for Table I — because stature would not yet be an error-distributed quantity. The memoir presupposes the transfer on every page and says the conformity is 'an accepted fact by anthropologists' — a fact with exactly one founding artifact.",
+    "mediator": null,
+    "evidence": "The memoir: 'their general conformity with the results of calculations based on the abstract law of frequency of error is an accepted fact by anthropologists. I have made much use of the properties of that law in cross-testing my various conclusions, and always with success'; the mid-parent check ('the probable error of the mid-parental heights would be that of the adult male heights multiplied by the square root of 2... shown to be correct by direct observation'); Table I's ellipse geometry 'supposing the law of frequency of error to be applicable throughout'. Components discrimination recorded: the channel is the stature-distribution practice, not the seed phenomenon (1877, admitted separately) and not the author's grade machinery (1875, a component judged separately) — neither carries the transfer of the error law to human measures, which is Quetelet's alone. The memoir names no Quetelet and has no reference apparatus (Dickson is the only contemporary named in it); the channel is instantiation of a practice whose founding artifact is unique, and Natural Inheritance's Chapter V names Quetelet as the turning point for this same practice."
    }
   }
  ],
@@ -168879,6 +169173,502 @@
     "judge_queue": [],
     "auto_merges": [],
     "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886": {
+   "raw_candidates": [
+    {
+     "name": "Galton's sweet-pea experiments and 'Typical laws of heredity' (1877)",
+     "year": 1877,
+     "domain": "statistics / heredity",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Galton's 1877 Royal Institution lecture and paper reporting the sweet-pea experiments: filial seeds regress towards mediocrity in direct proportion to the parental deviation — the first statement of the regression law.",
+     "causal_claim": "The 1877 lecture directly enabled the 1886 memoir by supplying the phenomenon the memoir exists to confirm in man: the memoir opens by restating the seed result ('the mean filial regression towards mediocrity was directly proportional to the parental deviation'), republishes the seed averages in its Appendix I as the law's first evidence, and states its motive — 'It was anthropological evidence that I desired, caring only for the seeds as means of throwing light on heredity in man.'",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "Quetelet, Sur l'homme and the application of the law of error to human measures (1835)",
+     "year": 1835,
+     "domain": "statistics / anthropometry",
+     "lens": "L19",
+     "type": "method",
+     "definition": "Quetelet's Sur l'homme (1835) first fitted the astronomers' law of error to human measurements (the chests of Scottish soldiers, the heights of French conscripts) and made the 'average man' the object of a science of man.",
+     "causal_claim": "Quetelet's transfer directly enabled the 1886 memoir by making stature a lawful, error-distributed quantity: the memoir presupposes it throughout ('their general conformity with the results of calculations based on the abstract law of frequency of error is an accepted fact by anthropologists. I have made much use of the properties of that law in cross-testing my various conclusions, and always with success') and builds its deviate apparatus — the level of mediocrity, the probable deviation of 1.7 inches — on that presupposition.",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "Records of Family Faculties (RFF) family records (1884)",
+     "year": 1884,
+     "domain": "statistics / heredity",
+     "lens": "L8",
+     "type": "other",
+     "definition": "The family records collected under Galton's 1884 prize offer (the Records of Family Faculties scheme): returns of family measurements from which the memoir's data — the heights of 930 adult children and their 205 parentages — were drawn.",
+     "causal_claim": "The RFF returns directly enabled the 1886 memoir as the data it eats: 'I... make an offer of prizes for Family Records, which was largely responded to, and furnished me last year with what I wanted... My data consisted of the heights of 930 adult children and of their respective parentages, 205 in number.'",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "Galton, Family likeness in stature (1886)",
+     "year": 1886,
+     "domain": "statistics / heredity",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Galton's Proceedings of the Royal Society memoir (40: 42-73; received 1 January 1886, read 21 January 1886), with an appendix by J. D. Hamilton Dickson: formulae for the statures of kinsmen in every degree and the mathematics of the surface of frequency from the RFF family data.",
+     "causal_claim": "Family likeness in stature is the 1886 memoir's twin: the fuller technical memoir of the same stature programme, carrying the fraternal work the JAI memoir expressly defers ('fraternal deviation and collateral descent, which I have also worked out'). Proposed so that the year-granularity bound's disposition of this coeval pair is recorded, not silently omitted: both are dated 1886, and the bound drops same-year candidates as designed.",
+     "source_title": "Galton, Family likeness in stature (Proc. Roy. Soc. 40, 1886) — Royal Society record",
+     "source_url": "https://royalsocietypublishing.org/doi/pdf/10.1098/rspl.1886.0009"
+    },
+    {
+     "name": "Dickson, Problems on the bivariate normal surface (1886)",
+     "year": 1886,
+     "domain": "mathematics / probability",
+     "lens": "L1",
+     "type": "method",
+     "definition": "J. D. Hamilton Dickson's solutions, worked out at Galton's request from 1886 and printed as the appendix to 'Family likeness in stature', of the probability problems of the bivariate normal surface — the mathematics underneath the kinship formulae and the co-relation index.",
+     "causal_claim": "Dickson's solutions stand in a documented relation to this memoir: the memoir's own text records that Galton 'phrased the problem in abstract terms... and in that shape submitted it to Mr. J. Hamilton Dickson', whose answer 'confirm[ed], by purely mathematical reasoning, my various and laborious statistical conclusions'. Proposed so that the year-granularity bound's disposition is recorded: the solution is dated 1886, coeval with the parent, and the bound drops it as designed — a documented same-year junction the bound cannot express (the Gosset-at-Fisher-&-Mackenzie shape).",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "Galton's quincunx (1873)",
+     "year": 1873,
+     "domain": "statistics / instruments",
+     "lens": "L18",
+     "type": "device",
+     "definition": "Galton's shot-and-pin board instrument (first form 1873; two-stage form 1877) that makes the law of error and the mixing of distributions visible as cascades of shot settling into the normal curve.",
+     "causal_claim": "The quincunx directly enabled the 1886 memoir by giving its author the mechanical model of regression — the two-stage sorting by which a population holds its type. (Proposed for the channel test: the memoir's explanation of regression is the ancestry-dilution argument and the equilibrium of two opposed processes; no quincunx passage occurs in its text.)",
+     "source_title": "Gorroochurn, On Galton's change from 'reversion' to 'regression' (2016)",
+     "source_url": "http://www.columbia.edu/~pg2113/index_files/Gorroochurn-On%20Galton's%20Change.pdf"
+    },
+    {
+     "name": "Darwin's counsel and correspondence on the sweet-pea experiments (1875)",
+     "year": 1875,
+     "domain": "biology / heredity theory",
+     "lens": "L20",
+     "type": "other",
+     "definition": "Darwin's documented correspondence with Galton over the sweet-pea experiments of 1875-77 — counsel and encouragement from the period's authority on variation, while the seeds themselves were bought at a nursery garden and grown by Galton's country friends.",
+     "causal_claim": "Darwin's counsel directly enabled the 1886 memoir by standing behind the seed experiments whose result the memoir confirms in man. (Proposed as the provenance test: the memoir's Appendix I records that the seeds were bought commercially, distributed to 'several country friends', and the plant chosen 'after consulting eminent botanists' — correspondence and motive, against a consumed artifact.)",
+     "source_title": "Stanton, Galton, Pearson, and the Peas (J. Statistics Education 9(3), 2001)",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "Galton, Hereditary Genius (1869)",
+     "year": 1869,
+     "domain": "statistics / heredity",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "Galton's 1869 book arguing that mental ability is hereditary and measurable through eminence and pedigree — the founding manifesto of his heredity programme.",
+     "causal_claim": "Hereditary Genius directly enabled the 1886 memoir by founding the programme it executes: heredity as a measurable quantity, pursued from eminence to stature. (Proposed for the formation-vs-consumption test: the memoir names it nowhere and consumes none of its data or results; its data are new — seeds and family records.)",
+     "source_title": "Galton, Natural Inheritance (Macmillan, 1889), Ch. I — full text, archive.org",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Galton, A theory of heredity — the stirp doctrine (1876)",
+     "year": 1876,
+     "domain": "biology / heredity theory",
+     "lens": "L2",
+     "type": "theory",
+     "definition": "Galton's 1876 theory of heredity: the stirp — the sum of fertilised-egg germs, part patent and part latent — as the particulate basis of inheritance, his standing mechanism doctrine of the decade.",
+     "causal_claim": "The stirp doctrine directly enabled the 1886 memoir by supplying the mechanism its explanation of regression presupposes. (Proposed for the consumption test: the memoir's explanation is expressly statistical — ancestry dilution, 'pouring a uniform proportion of pure water into a vessel of wine', the 'generant' a statistical construct — and invokes no stirp or particulate mechanism.)",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "Galton, Statistics by intercomparison with remarks on the law of frequency of error (1875)",
+     "year": 1875,
+     "domain": "statistics",
+     "lens": "L1",
+     "type": "method",
+     "definition": "Galton's 1875 paper introducing the grade-and-scheme method: marshalling measures in order, reading off medians and quartile grades, and comparing distributions without arithmetic means — the percentile machinery of his later statistics.",
+     "causal_claim": "Statistics by intercomparison directly enabled the 1886 memoir by supplying its working method: statures 'statistically marshalled in the order of their heights', deviates taken from the level of mediocrity, variability stated as the probable deviation — the scheme's grades inside the memoir's tables.",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "Galton's Anthropometric Laboratory (1884)",
+     "year": 1884,
+     "domain": "statistics / anthropometry",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "Galton's Anthropometric Laboratory, opened at the International Health Exhibition (1884) and continued at South Kensington: a measuring institution that recorded bodily measures of thousands of visitors for a small fee.",
+     "causal_claim": "The laboratory directly enabled the 1886 memoir through the stature curves the memoir quotes as its best evidence of error-law conformity: 'The best illustrations I have seen of this regularity were the curves of male and female statures that I obtained from the careful measurements made at my Anthropometric Laboratory in the International Health Exhibition last year. They were almost perfect.'",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "Jenkin's review of the Origin — the blending 'swamping' objection (1867)",
+     "year": 1867,
+     "domain": "biology / heredity theory",
+     "lens": "L5",
+     "type": "theory",
+     "definition": "Fleeming Jenkin's 1867 review of the Origin of Species arguing that blending inheritance swamps any single favourable variation — the standing objection that a theory of heredity had to answer about the persistence of types.",
+     "causal_claim": "Jenkin's objection directly enabled the 1886 memoir by posing the stability problem its second half solves: how a population keeps the same distribution of stature generation after generation although offspring regress. (Proposed for the Hochreiter test: Jenkin is unnamed in the memoir, and its equilibrium argument — regression balanced by co-family dispersion — is its own construction.)",
+     "source_title": "Galton, Natural Inheritance (Macmillan, 1889) — full text, archive.org",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Darwin, The Variation of Animals and Plants under Domestication — the provisional hypothesis of pangenesis (1868)",
+     "year": 1868,
+     "domain": "biology / heredity theory",
+     "lens": "L4",
+     "type": "theory",
+     "definition": "Darwin's 1868 statement of pangenesis: every part of the body throws off gemmules that collect in the reproductive elements — the particulate mechanism of heredity the period worked with, inside the period's canonical statement that the laws of inheritance are unknown.",
+     "causal_claim": "The Variation directly enabled the 1886 memoir by posing its problem — the laws of hereditary transmission as an open, findable object — in the form the author's whole programme answers. (Proposed for the problem-side test: the memoir names no Darwin and no pangenesis, and poses its law in its own terms — 'a simple and far-reaching law that governs the hereditary transmission'.)",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    },
+    {
+     "name": "British Association Anthropometric Committee reports (1883)",
+     "year": 1883,
+     "domain": "statistics / anthropometry",
+     "lens": "L21",
+     "type": "other",
+     "definition": "The reports (1878-1883) of the British Association's Anthropometric Committee, on which Galton served: population measurements of the British public, including the distribution of stature — the committee tradition of anthropometric data.",
+     "causal_claim": "The committee reports directly enabled the 1886 memoir by establishing the population stature distributions its deviates presuppose. (Proposed for the instance-vs-channel test: the memoir's constants — mediocrity at 68 1/4 inches, probable deviation 1.7 inches — are computed from its own family records and laboratory curves; no committee figure is cited or consumed.)",
+     "source_title": "Galton, Natural Inheritance (Macmillan, 1889) — full text, archive.org",
+     "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+    },
+    {
+     "name": "Normal law of error (Gauss, 1809)",
+     "year": 1809,
+     "domain": "mathematics / statistics",
+     "lens": "L17",
+     "type": "theory",
+     "definition": "The Gaussian error law from Gauss's Theoria Motus: observational errors follow the normal distribution.",
+     "causal_claim": "The law of error directly enabled the 1886 memoir as the instrument of its cross-tests: the mid-parent variability check (the probable error of mid-parental heights as that of adult male heights multiplied by the square root of two, 'shown to be correct by direct observation'), the ellipse geometry of Table I, and the equation p^2 + f^2 = v^2 all wield the law's properties. (The matched node's stored bottleneck/leap/prior_state are empty — the session-31 field-name defect; the corrected record is the Theoria Motus (1809) derivation of the normal error law.)",
+     "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+     "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "galton-s-sweet-pea-experiments-and-typical-laws-of-heredity-1877",
+      "candidate": {
+       "name": "Galton's sweet-pea experiments and 'Typical laws of heredity' (1877)",
+       "year": 1877,
+       "domain": "statistics / heredity",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Galton's 1877 Royal Institution lecture and paper reporting the sweet-pea experiments: filial seeds regress towards mediocrity in direct proportion to the parental deviation — the first statement of the regression law.",
+       "causal_claim": "The 1877 lecture directly enabled the 1886 memoir by supplying the phenomenon the memoir exists to confirm in man: the memoir opens by restating the seed result ('the mean filial regression towards mediocrity was directly proportional to the parental deviation'), republishes the seed averages in its Appendix I as the law's first evidence, and states its motive — 'It was anthropological evidence that I desired, caring only for the seeds as means of throwing light on heredity in man.'",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Galton's sweet-pea experiments and 'Typical laws of heredity' (1877)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+      "candidate": {
+       "name": "Quetelet, Sur l'homme and the application of the law of error to human measures (1835)",
+       "year": 1835,
+       "domain": "statistics / anthropometry",
+       "lens": "L19",
+       "type": "method",
+       "definition": "Quetelet's Sur l'homme (1835) first fitted the astronomers' law of error to human measurements (the chests of Scottish soldiers, the heights of French conscripts) and made the 'average man' the object of a science of man.",
+       "causal_claim": "Quetelet's transfer directly enabled the 1886 memoir by making stature a lawful, error-distributed quantity: the memoir presupposes it throughout ('their general conformity with the results of calculations based on the abstract law of frequency of error is an accepted fact by anthropologists. I have made much use of the properties of that law in cross-testing my various conclusions, and always with success') and builds its deviate apparatus — the level of mediocrity, the probable deviation of 1.7 inches — on that presupposition.",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Quetelet, Sur l'homme and the application of the law of error to human measures (1835)"
+      ],
+      "matched_node_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "records-of-family-faculties-rff-family-records-1884-1884",
+      "candidate": {
+       "name": "Records of Family Faculties (RFF) family records (1884)",
+       "year": 1884,
+       "domain": "statistics / heredity",
+       "lens": "L8",
+       "type": "other",
+       "definition": "The family records collected under Galton's 1884 prize offer (the Records of Family Faculties scheme): returns of family measurements from which the memoir's data — the heights of 930 adult children and their 205 parentages — were drawn.",
+       "causal_claim": "The RFF returns directly enabled the 1886 memoir as the data it eats: 'I... make an offer of prizes for Family Records, which was largely responded to, and furnished me last year with what I wanted... My data consisted of the heights of 930 adult children and of their respective parentages, 205 in number.'",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Records of Family Faculties (RFF) family records (1884)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "galton-s-quincunx-1873-1873",
+      "candidate": {
+       "name": "Galton's quincunx (1873)",
+       "year": 1873,
+       "domain": "statistics / instruments",
+       "lens": "L18",
+       "type": "device",
+       "definition": "Galton's shot-and-pin board instrument (first form 1873; two-stage form 1877) that makes the law of error and the mixing of distributions visible as cascades of shot settling into the normal curve.",
+       "causal_claim": "The quincunx directly enabled the 1886 memoir by giving its author the mechanical model of regression — the two-stage sorting by which a population holds its type. (Proposed for the channel test: the memoir's explanation of regression is the ancestry-dilution argument and the equilibrium of two opposed processes; no quincunx passage occurs in its text.)",
+       "source_title": "Gorroochurn, On Galton's change from 'reversion' to 'regression' (2016)",
+       "source_url": "http://www.columbia.edu/~pg2113/index_files/Gorroochurn-On%20Galton's%20Change.pdf"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Galton's quincunx (1873)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "darwin-s-counsel-and-correspondence-on-the-sweet-pea-experim-1875",
+      "candidate": {
+       "name": "Darwin's counsel and correspondence on the sweet-pea experiments (1875)",
+       "year": 1875,
+       "domain": "biology / heredity theory",
+       "lens": "L20",
+       "type": "other",
+       "definition": "Darwin's documented correspondence with Galton over the sweet-pea experiments of 1875-77 — counsel and encouragement from the period's authority on variation, while the seeds themselves were bought at a nursery garden and grown by Galton's country friends.",
+       "causal_claim": "Darwin's counsel directly enabled the 1886 memoir by standing behind the seed experiments whose result the memoir confirms in man. (Proposed as the provenance test: the memoir's Appendix I records that the seeds were bought commercially, distributed to 'several country friends', and the plant chosen 'after consulting eminent botanists' — correspondence and motive, against a consumed artifact.)",
+       "source_title": "Stanton, Galton, Pearson, and the Peas (J. Statistics Education 9(3), 2001)",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Darwin's counsel and correspondence on the sweet-pea experiments (1875)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "galton-hereditary-genius-1869-1869",
+      "candidate": {
+       "name": "Galton, Hereditary Genius (1869)",
+       "year": 1869,
+       "domain": "statistics / heredity",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "Galton's 1869 book arguing that mental ability is hereditary and measurable through eminence and pedigree — the founding manifesto of his heredity programme.",
+       "causal_claim": "Hereditary Genius directly enabled the 1886 memoir by founding the programme it executes: heredity as a measurable quantity, pursued from eminence to stature. (Proposed for the formation-vs-consumption test: the memoir names it nowhere and consumes none of its data or results; its data are new — seeds and family records.)",
+       "source_title": "Galton, Natural Inheritance (Macmillan, 1889), Ch. I — full text, archive.org",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Galton, Hereditary Genius (1869)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "galton-a-theory-of-heredity-the-stirp-doctrine-1876-1876",
+      "candidate": {
+       "name": "Galton, A theory of heredity — the stirp doctrine (1876)",
+       "year": 1876,
+       "domain": "biology / heredity theory",
+       "lens": "L2",
+       "type": "theory",
+       "definition": "Galton's 1876 theory of heredity: the stirp — the sum of fertilised-egg germs, part patent and part latent — as the particulate basis of inheritance, his standing mechanism doctrine of the decade.",
+       "causal_claim": "The stirp doctrine directly enabled the 1886 memoir by supplying the mechanism its explanation of regression presupposes. (Proposed for the consumption test: the memoir's explanation is expressly statistical — ancestry dilution, 'pouring a uniform proportion of pure water into a vessel of wine', the 'generant' a statistical construct — and invokes no stirp or particulate mechanism.)",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Galton, A theory of heredity — the stirp doctrine (1876)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "galton-statistics-by-intercomparison-with-remarks-on-the-law-1875",
+      "candidate": {
+       "name": "Galton, Statistics by intercomparison with remarks on the law of frequency of error (1875)",
+       "year": 1875,
+       "domain": "statistics",
+       "lens": "L1",
+       "type": "method",
+       "definition": "Galton's 1875 paper introducing the grade-and-scheme method: marshalling measures in order, reading off medians and quartile grades, and comparing distributions without arithmetic means — the percentile machinery of his later statistics.",
+       "causal_claim": "Statistics by intercomparison directly enabled the 1886 memoir by supplying its working method: statures 'statistically marshalled in the order of their heights', deviates taken from the level of mediocrity, variability stated as the probable deviation — the scheme's grades inside the memoir's tables.",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Galton, Statistics by intercomparison with remarks on the law of frequency of error (1875)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "galton-s-anthropometric-laboratory-1884-1884",
+      "candidate": {
+       "name": "Galton's Anthropometric Laboratory (1884)",
+       "year": 1884,
+       "domain": "statistics / anthropometry",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "Galton's Anthropometric Laboratory, opened at the International Health Exhibition (1884) and continued at South Kensington: a measuring institution that recorded bodily measures of thousands of visitors for a small fee.",
+       "causal_claim": "The laboratory directly enabled the 1886 memoir through the stature curves the memoir quotes as its best evidence of error-law conformity: 'The best illustrations I have seen of this regularity were the curves of male and female statures that I obtained from the careful measurements made at my Anthropometric Laboratory in the International Health Exhibition last year. They were almost perfect.'",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Galton's Anthropometric Laboratory (1884)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "jenkin-s-review-of-the-origin-the-blending-swamping-objectio-1867",
+      "candidate": {
+       "name": "Jenkin's review of the Origin — the blending 'swamping' objection (1867)",
+       "year": 1867,
+       "domain": "biology / heredity theory",
+       "lens": "L5",
+       "type": "theory",
+       "definition": "Fleeming Jenkin's 1867 review of the Origin of Species arguing that blending inheritance swamps any single favourable variation — the standing objection that a theory of heredity had to answer about the persistence of types.",
+       "causal_claim": "Jenkin's objection directly enabled the 1886 memoir by posing the stability problem its second half solves: how a population keeps the same distribution of stature generation after generation although offspring regress. (Proposed for the Hochreiter test: Jenkin is unnamed in the memoir, and its equilibrium argument — regression balanced by co-family dispersion — is its own construction.)",
+       "source_title": "Galton, Natural Inheritance (Macmillan, 1889) — full text, archive.org",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Jenkin's review of the Origin — the blending 'swamping' objection (1867)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "darwin-the-variation-of-animals-and-plants-under-domesticati-1868",
+      "candidate": {
+       "name": "Darwin, The Variation of Animals and Plants under Domestication — the provisional hypothesis of pangenesis (1868)",
+       "year": 1868,
+       "domain": "biology / heredity theory",
+       "lens": "L4",
+       "type": "theory",
+       "definition": "Darwin's 1868 statement of pangenesis: every part of the body throws off gemmules that collect in the reproductive elements — the particulate mechanism of heredity the period worked with, inside the period's canonical statement that the laws of inheritance are unknown.",
+       "causal_claim": "The Variation directly enabled the 1886 memoir by posing its problem — the laws of hereditary transmission as an open, findable object — in the form the author's whole programme answers. (Proposed for the problem-side test: the memoir names no Darwin and no pangenesis, and poses its law in its own terms — 'a simple and far-reaching law that governs the hereditary transmission'.)",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Darwin, The Variation of Animals and Plants under Domestication — the provisional hypothesis of pangenesis (1868)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "british-association-anthropometric-committee-reports-1883-1883",
+      "candidate": {
+       "name": "British Association Anthropometric Committee reports (1883)",
+       "year": 1883,
+       "domain": "statistics / anthropometry",
+       "lens": "L21",
+       "type": "other",
+       "definition": "The reports (1878-1883) of the British Association's Anthropometric Committee, on which Galton served: population measurements of the British public, including the distribution of stature — the committee tradition of anthropometric data.",
+       "causal_claim": "The committee reports directly enabled the 1886 memoir by establishing the population stature distributions its deviates presuppose. (Proposed for the instance-vs-channel test: the memoir's constants — mediocrity at 68 1/4 inches, probable deviation 1.7 inches — are computed from its own family records and laboratory curves; no committee figure is cited or consumed.)",
+       "source_title": "Galton, Natural Inheritance (Macmillan, 1889) — full text, archive.org",
+       "source_url": "https://archive.org/stream/naturalinherita01galtgoog/naturalinherita01galtgoog_djvu.txt"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "British Association Anthropometric Committee reports (1883)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "normal-law-of-error-gauss-1809-1809",
+      "candidate": {
+       "name": "Normal law of error (Gauss, 1809)",
+       "year": 1809,
+       "domain": "mathematics / statistics",
+       "lens": "L17",
+       "type": "theory",
+       "definition": "The Gaussian error law from Gauss's Theoria Motus: observational errors follow the normal distribution.",
+       "causal_claim": "The law of error directly enabled the 1886 memoir as the instrument of its cross-tests: the mid-parent variability check (the probable error of mid-parental heights as that of adult male heights multiplied by the square root of two, 'shown to be correct by direct observation'), the ellipse geometry of Table I, and the equation p^2 + f^2 = v^2 all wield the law's properties. (The matched node's stored bottleneck/leap/prior_state are empty — the session-31 field-name defect; the corrected record is the Theoria Motus (1809) derivation of the normal error law.)",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Normal law of error (Gauss, 1809)"
+      ],
+      "matched_node_id": "normal-law-of-error-gauss-1809-1809",
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Galton, Family likeness in stature (1886)",
+       "year": 1886,
+       "domain": "statistics / heredity",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Galton's Proceedings of the Royal Society memoir (40: 42-73; received 1 January 1886, read 21 January 1886), with an appendix by J. D. Hamilton Dickson: formulae for the statures of kinsmen in every degree and the mathematics of the surface of frequency from the RFF family data.",
+       "causal_claim": "Family likeness in stature is the 1886 memoir's twin: the fuller technical memoir of the same stature programme, carrying the fraternal work the JAI memoir expressly defers ('fraternal deviation and collateral descent, which I have also worked out'). Proposed so that the year-granularity bound's disposition of this coeval pair is recorded, not silently omitted: both are dated 1886, and the bound drops same-year candidates as designed.",
+       "source_title": "Galton, Family likeness in stature (Proc. Roy. Soc. 40, 1886) — Royal Society record",
+       "source_url": "https://royalsocietypublishing.org/doi/pdf/10.1098/rspl.1886.0009"
+      },
+      "reason": "dated on/after parent year 1886"
+     },
+     {
+      "candidate": {
+       "name": "Dickson, Problems on the bivariate normal surface (1886)",
+       "year": 1886,
+       "domain": "mathematics / probability",
+       "lens": "L1",
+       "type": "method",
+       "definition": "J. D. Hamilton Dickson's solutions, worked out at Galton's request from 1886 and printed as the appendix to 'Family likeness in stature', of the probability problems of the bivariate normal surface — the mathematics underneath the kinship formulae and the co-relation index.",
+       "causal_claim": "Dickson's solutions stand in a documented relation to this memoir: the memoir's own text records that Galton 'phrased the problem in abstract terms... and in that shape submitted it to Mr. J. Hamilton Dickson', whose answer 'confirm[ed], by purely mathematical reasoning, my various and laborious statistical conclusions'. Proposed so that the year-granularity bound's disposition is recorded: the solution is dated 1886, coeval with the parent, and the bound drops it as designed — a documented same-year junction the bound cannot express (the Gosset-at-Fisher-&-Mackenzie shape).",
+       "source_title": "Galton, Regression towards mediocrity in hereditary stature (JAI 15, 1886) — full text, York histstat",
+       "source_url": "https://www.york.ac.uk/depts/maths/histstat/galton_reg.pdf"
+      },
+      "reason": "dated on/after parent year 1886"
+     }
+    ],
     "prefiltered": []
    },
    "judge_queue": [],

@@ -1559,3 +1559,91 @@
   "expansions_done": 83
  }
 }
+{
+ "ts": "2026-11-25T10:20:47.231358+00:00",
+ "session": "run session 37 (v4), expansion 2 of 2",
+ "kind": "expansion",
+ "parent": "galton-regression-towards-mediocrity-in-hereditary-stature-1-1886",
+ "parent_name": "Galton, Regression towards mediocrity in hereditary stature (1886)",
+ "raw": 15,
+ "dry_notes": "20 dry/shortfall notes recorded in work/dry_notes_galton-regression-towards-mediocrity-in-hereditary-stature-1-1886.json: shortfalls L2 (2: the 1877 lecture filed as head candidate; the Aberdeen presidential address of 1885 recorded as the parent's own first form \u2014 the memoir expressly reproduces it \u2014 and NOT proposed, since proposing it would ask resolution to distinguish a node from its own earlier statement of the same law on the same data), L4 (1), L5 (1), L8 (1), L17 (1), L18 (1), L19 (1), L20 (1), L21 (2); dry L6 (the defined-against incumbent is a belief in the memoir's own words \u2014 'the current belief that the child tends to resemble its parents' \u2014 not a document), L7 (the failure record is the author's own), L9, L10, L12, L13, L15, L16, and dry-as-separate-filings L11 (the collection protocol is part of the L8 artifact; the 1.08 transmutation factor is the memoir's own convention), L14 (the pulleys-and-weights forecasting machine is described inside the memoir itself, Plate IX fig. b \u2014 the parent's own production), L22 (the ripened condition is the RFF returns' completion \u2014 the L8 artifact's own history). Raw 15 against raw_target 140 \u2014 the bounded-world pattern for an 1886 memoir. Resolve (MiniLM): 13 distinct, 2 matched existing (Quetelet, Gauss), 2 dropped by the year bound (both coeval 1886 \u2014 see date_dropped), 0 prefiltered, judge queue 0.",
+ "date_dropped": [
+  {
+   "name": "Galton, Family likeness in stature (1886)",
+   "reason": "Year-granularity bound: 'dated on/after parent year 1886'. STRUCTURAL NOTE (article-worthy): the dropped candidate is this session's own expansion-1 survivor \u2014 the RS memoir is the JAI memoir's twin from the same programme (received 1 Jan 1886; the JAI memoir read at Aberdeen in Sept 1885 and published 1886). The two 1886 memoirs' true relation (the RS memoir generalises and completes the JAI memoir's programme; the JAI memoir is its premise) is expressible in the graph only one way round: the 1888 paper could admit the RS memoir (1886 < 1888), but the JAI memoir cannot be linked to its twin in either direction. Logged, never re-dated."
+  },
+  {
+   "name": "Dickson, Problems on the bivariate normal surface (1886)",
+   "reason": "Year-granularity bound: 'dated on/after parent year 1886'. STRUCTURAL NOTE (the sharpest instance of the bound yet \u2014 the Gosset-at-Fisher-&-Mackenzie shape, but with the junction documented inside the parent's own text): the memoir records that Galton 'phrased the problem in abstract terms... and in that shape submitted it to Mr. J. Hamilton Dickson', whose answer 'confirm[ed], by purely mathematical reasoning, my various and laborious statistical conclusions' \u2014 a submission made during the memoir's own writing, inexpressible in the graph because both artifacts are dated 1886. Logged, never re-dated."
+  }
+ ],
+ "distinct": 13,
+ "evaluated": 13,
+ "survivors": [
+  {
+   "name": "Galton's sweet-pea experiments and 'Typical laws of heredity' (1877)",
+   "id": "galton-s-sweet-pea-experiments-and-typical-laws-of-heredity-1877",
+   "score": 7.0,
+   "kind": "new",
+   "note": "The carried deferred hearing from session 36 (where it was mediated via this parent at Natural Inheritance) discharged as an ADMISSION \u2014 the inverted hearing the brief assigned. Own-version exception argued explicitly: a separable published artifact (Royal Institution lecture, 9 Feb 1877) whose mechanism is consumed and reworked \u2014 the memoir opens by restating the seed ratio (one-third), republishes the seed data in Appendix I as the law's first evidence ('first observed in the diameters of seeds'), states its motive ('It was anthropological evidence that I desired, caring only for the seeds as means of throwing light on heredity in man'), re-derives the ratio in man (two-thirds), explains it (ancestry dilution), and generalises it (Appendix II). New frontier head (7.0, depth 9). Verification provisional: no multiples of the seed result exist; the Aberdeen address mediation attack answered (the address is the child's own first form, not a channel)."
+  },
+  {
+   "name": "Quetelet, Sur l'homme and the application of the law of error to human measures (1835)",
+   "id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+   "score": 7.0,
+   "kind": "link",
+   "note": "The presupposed-practice hearing, answered as a channel: the memoir wields the error law as its cross-testing instrument throughout ('I have made much use of the properties of that law in cross-testing my various conclusions, and always with success'; the square-root-of-two mid-parent check 'shown to be correct by direct observation'; Table I's ellipses 'supposing the law of frequency of error to be applicable throughout'). Components discrimination against the two rival carriers: the 1877 lecture carries the phenomenon, not the stature-distribution practice; the 1875 intercomparison scheme carries the workmanship, and its own error-law remarks descend from the transfer. Quetelet is now a two-child convergence node (the book at 6.5, this memoir at 7.0). Verification provisional with the honest weakness recorded in full: the memoir names no Quetelet and has no reference apparatus (Dickson is its only named contemporary) \u2014 the channel is instantiation of a practice with a unique founding artifact, and Q3 was scored partial (ripe) for exactly that reason."
+  }
+ ],
+ "rejected": 11,
+ "mediated": 1,
+ "rejections_of_note": [
+  {
+   "name": "Normal law of error (Gauss, 1809) \u2014 LINK candidate",
+   "reason": "Mediated via Quetelet \u2014 the mediation terminates at a node admitted in this same expansion. The memoir names no Gauss (full-text check) and wields the law in its anthropometric form ('an accepted fact by anthropologists'); consistent with the book (mediated via Quetelet) and Fisher 1918 (mediated via Galton). The Gauss node's stored bottleneck/leap/prior_state remain EMPTY (session-31 defect); the corrected Theoria Motus record was supplied in this evaluation only \u2014 graph not hand-edited. The carried by-name Gauss hearing at Quetelet's expansion is untouched \u2014 and Quetelet is now the frontier's second head, so that hearing is the next-but-one in line."
+  },
+  {
+   "name": "Records of Family Faculties (RFF) family records (1884)",
+   "reason": "Directness PASS and Q3 PASS, leap-gate rejection \u2014 mirroring the records' disposition at Natural Inheritance deliberately: 'furnished me last year with what I wanted'; the memoir's 930 children and 205 mid-parents are this artifact's returns. The author's own production, consumed as material; the flip is the ratio computed from the material, not the material."
+  },
+  {
+   "name": "Galton, Statistics by intercomparison (1875)",
+   "reason": "Directness PASS, leap-gate rejection (component standing inside the parent, third consistent record after the book and the 1888 paper): the memoir's marshalling, median level, and probable deviation are the scheme operationalised; the scheme made the comparison orderly, not the phenomenon visible."
+  },
+  {
+   "name": "Galton's quincunx (1873)",
+   "reason": "Fail-closed partial \u2014 the wielded-instrument hearing, answered negatively on this parent's documents: no quincunx passage occurs in the memoir (full-text check); its explanation of regression is the ancestry-dilution argument ('pouring a uniform proportion of pure water into a vessel of wine') plus the equilibrium of two opposed processes, argued in prose. The instrument belongs to the error-law demonstration line and the 1877 lecture's presentation. Not-invoked is a finding, as at the 1888 paper."
+  },
+  {
+   "name": "Darwin's counsel and correspondence on the sweet-pea experiments (1875)",
+   "reason": "Fail-closed partial \u2014 the provenance hearing: instance plus motive is not a separable advance. Appendix I records the data's actual provenance (seed bought at a nursery garden, grown by 'several country friends', the plant chosen 'after consulting eminent botanists'); the documented correspondence is counsel, and the data's channel into the memoir is the 1877 paper, admitted above."
+  },
+  {
+   "name": "Galton, Hereditary Genius (1869) and A theory of heredity \u2014 the stirp doctrine (1876)",
+   "reason": "Both fail-closed partials under own-version discipline, argued fresh from this parent's documents: the manifesto founds the programme but contributes no consumed mechanism, data, or result (formation, mirrored from the book's record); the doctrine's mechanism-consumption clause fails outright \u2014 the memoir's explanation is expressly statistical and mechanism-free, its 'generant' a statistical construct, no stirp invoked anywhere in it."
+  },
+  {
+   "name": "Galton's Anthropometric Laboratory (1884)",
+   "reason": "Directness fail \u2014 self-carriage: the memoir quotes its curves as its best conformity evidence ('almost perfect'), but the carried artifact is the author's own production; decomposition recorded (the curves' content is the Queteletian practice, admitted at L19). Discriminated from the book record (fail-closed partial there) \u2014 here the carried content is wholly the author's own prior production with no separable programme of others' work."
+  },
+  {
+   "name": "Jenkin's review of the Origin \u2014 the blending 'swamping' objection (1867)",
+   "reason": "Fail-closed partial \u2014 a diagnosis answered is not consumed (the Hochreiter condition): the memoir's stability half (regression balanced by co-family dispersion) is built from its own tables, in its own terms; Jenkin is unnamed. Mirrors the book rejection."
+  },
+  {
+   "name": "Darwin, The Variation of Animals and Plants under Domestication \u2014 pangenesis (1868)",
+   "reason": "Fail-closed partial \u2014 problem-side framing only: the memoir names no Darwin and no pangenesis (in a paper whose Appendix I carefully records its lesser debts, the silence is a finding), borrows not even the limited idea the book borrowed, and poses its law in its own terms."
+  },
+  {
+   "name": "British Association Anthropometric Committee reports (1883)",
+   "reason": "Fail-closed partial \u2014 instance of the tradition, not its channel: the memoir's constants (mediocrity 68 1/4 in., probable deviation 1.7 in.) are computed from its own returns and curves; no committee figure is cited or consumed. The tradition's founding artifact is Quetelet, admitted above."
+  }
+ ],
+ "notes": "Grounding: the parent's full text read directly (York histstat transcription of JAI 15:246-263, including Appendix I (seed data and provenance), Appendix II (ancestral contributions), and the Plate explanations) \u2014 the opening restatement of the seed law; the RFF testimony ('furnished me last year with what I wanted'); the error-law cross-testing passage; the dilution figure; the Dickson submission passage; the laboratory-curves quotation; the pulleys-and-weights machine (Plate IX fig. b, the parent's own production, dry-noted at L14). Parent stored fields verified COMPLETE before evaluation (contrast the Gauss node's empty fields, logged again in the Gauss rejection above). Dry-run through score.rank_candidates reproduced the designed dispositions exactly before the single apply; verdicts never re-applied. Session totals after both expansions: 188 nodes / 239 edges, budget 188/2000, expansions_done 84, all provisional, 0 verified, 0 killed; depth d0x1, d1x14, d2x25, d3x27, d4x30, d5x43, d6x23, d7x17, d8x6, d9x2. The Galton cluster is now closed back to 1835 (Quetelet) and 1877 (Typical laws) \u2014 the two new frontier heads, both 7.0 at depth 9 and depth 8 respectively. InstructGPT/RLHF flag not surfaced.",
+ "totals_after": {
+  "nodes": 188,
+  "edges": 239,
+  "budget": "188/2000",
+  "expansions_done": 84
+ }
+}
