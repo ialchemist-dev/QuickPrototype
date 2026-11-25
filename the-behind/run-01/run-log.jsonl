@@ -183,3 +183,106 @@
   "expansions_done": 65
  }
 }
+{
+ "ts": "2026-11-25T00:57:00-07:00",
+ "session": 28,
+ "kind": "expansion",
+ "parent": "w3c-xml-schema-xsd-2001",
+ "parent_name": "W3C XML Schema (XSD)",
+ "raw": 23,
+ "dry_notes": 14,
+ "date_dropped": [
+  {
+   "name": "TREX (Tree Regular Expressions for XML, Clark, 2001)",
+   "reason": "coeval-year bound: same year as the parent (2001) - the year-granularity date bound drops it at resolve; structural note, no re-dating."
+  },
+  {
+   "name": "RELAX NG (2001)",
+   "reason": "coeval-year bound: same year as the parent (2001) - dropped at resolve; the OASIS/ISO rival merges RELAX and TREX and is exactly coeval with the REC it rivals."
+  }
+ ],
+ "survivors": [
+  {
+   "name": "Namespaces in XML (W3C Recommendation, 1999)",
+   "score": 5.5,
+   "notes": "Direct consumption of the parent's headline repair: XSD's namespace-aware declaration (targetNamespace, qualification) is written in this REC's terms; the parent's bottleneck names namespace awareness as half the leap. Substrate consumed by name in the central mechanism (CUDA shape), not generic infrastructure."
+  },
+  {
+   "name": "XML 1.0 (W3C Recommendation, 1998)",
+   "score": 4.5,
+   "notes": "Ancestor-modified: Part 1 generalizes the content-model machinery XML 1.0's DTD component carries; Part 2's abstract defines itself against XML 1.0 DTD capabilities. Components discrimination recorded in the DTD rejection - the consumed component is credited to the artifact that carries it into the parent's world."
+  },
+  {
+   "name": "Schema for Object-oriented XML (SOX, 1998)",
+   "score": 4.5,
+   "notes": "The type-system donor: Commerce One's CR testimonial enumerates SOX features (inheritance, polymorphism, local scoping, modularity, user-defined datatypes, attribute/model groups) as found in the Candidate Recommendation; authors Fuchs and Maloney inside the WG, Maloney co-editing Requirements and Part 1. Testimonial self-interest recorded as a caveat in verification; roster/editorship facts corroborate independently."
+  },
+  {
+   "name": "XML-Data (Microsoft et al., 1998)",
+   "score": 3.5,
+   "notes": "The founding submission (5 Jan 1998): first specified the parent's two defining commitments - schemas in XML's own syntax and a rich datatype set covering database and programming-language types. Contributes the programme and the datatype commitment."
+  },
+  {
+   "name": "XML Schema Requirements (W3C Note, 1999)",
+   "score": 2.5,
+   "notes": "Problem posed in the exact form answered: Part 2 section 1.2 reproduces these requirements as the specification's own mandate (structural constraints, SQL and Java datatype coverage, database import/export adequacy, derivation by facet restriction, DTD migration). Editors Malhotra and Maloney went on to edit Parts 2 and 1."
+  },
+  {
+   "name": "XML-Data Reduced (XDR, 1998)",
+   "score": 2.0,
+   "notes": "Thinnest admission of the expansion, flagged closest call in verification: the implemented reduction (MSXML, SQL Server 2000, BizTalk) plus the carrier - Henry Thompson edited XDR at Edinburgh and then edited Part 1: Structures. Revisit condition recorded: if XDR's own expansion shows its content wholly exhausted by XML-Data's, re-hear."
+  }
+ ],
+ "rejections_of_note": [
+  {
+   "name": "Document Type Definitions (DTD formalism)",
+   "reason": "mediated_via: XML 1.0 - defined-against incumbent (the parent's bottleneck names DTD limits as the constraint removed); its consumed component (content models) reaches the parent inside XML 1.0, admitted here. Crediting DTD separately would double-count the component and misread the negation as ancestry."
+  },
+  {
+   "name": "SGML (ISO 8879)",
+   "reason": "mediated_via: XML 1.0 - the deep ancestor kept one level down; its channel into the parent is the XML profile admitted here."
+  },
+  {
+   "name": "Document Content Description (DCD, 1998)",
+   "reason": "mediated_via: XML-Data - DCD's own abstract states it incorporates a subset of XML-Data; its distinctive addition (the RDF framing) is the part the parent did not take. A restatement is not a second channel."
+  },
+  {
+   "name": "Resource Description Framework (RDF, 1999)",
+   "reason": "mediated_via: DCD - RDF's only route into the schema process was as DCD's expression language; with DCD mediated, the channel closes with it."
+  },
+  {
+   "name": "EXPRESS (ISO 10303-11)",
+   "reason": "mediated_via: SOX - SOX's own abstract names EXPRESS as a donor; a donor's donor terminates at the proximate artifact, admitted here."
+  },
+  {
+   "name": "World Wide Web Consortium (W3C)",
+   "reason": "directness partial, fail-closed - decomposition test fails differently than at RAND/Bellman: the institution's separable artifact here (the Requirements document) is admitted, and the parent IS a W3C Recommendation, so an institution link would credit the body with carrying its own act of issuance."
+  },
+  {
+   "name": "XSV (XML Schema Validator, Thompson & Tobin)",
+   "reason": "directness partial, fail-closed - the process's instrument: it registered and tested the drafts (revised at each stage) but the leap is the WG's text, not the validator's (arena/instrument side of the ALE line). Thompson's personal channel is credited in the XDR edge, not double-counted here."
+  },
+  {
+   "name": "SQL datatype system (SQL-92)",
+   "reason": "directness partial, fail-closed - donor vocabulary named as a coverage target in the Requirements; the facet machinery and type hierarchy are the WG's own construction (Biron & Malhotra). The channel that exists runs through the Requirements document, admitted separately."
+  },
+  {
+   "name": "RELAX (Murata, 2000)",
+   "reason": "directness partial, fail-closed - direction check: designed in reaction to the parent's own drafts by a WG member seeking a simpler alternative; influence at this junction runs from the parent toward RELAX, not the reverse."
+  },
+  {
+   "name": "DDML (1999) / DSD (1999) / Schematron (1999) / DT4DTD (1999) / Java primitive type system / ANSI X12 EDI",
+   "reason": "directness partial, fail-closed - proposal-stratum membership, parallel formal wing, rival approach, thin-record component proposal, coverage-list name, and demand-side instance+motive respectively; no named mechanism into the parent on any document found."
+  }
+ ],
+ "coeval_notes": [
+  "TREX and RELAX NG are both 2001 - the parent's two most important rivals are exactly coeval with the Recommendation and are dropped by the year-granularity bound at resolve; the rivalry that defines XSD's reception is structurally invisible to the graph, the same shape as session 27's GPT-3/API finding.",
+  "The W3C-versus-OASIS standards-track split (XSD vs RELAX NG) is a 2001 event on both sides; the graph records only the W3C side's ancestry."
+ ],
+ "totals_after": {
+  "nodes": 160,
+  "edges": 204,
+  "budget": "160/2000",
+  "expansions_done": 66
+ }
+}

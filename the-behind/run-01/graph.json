@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T07:55:13+00:00",
-  "expansions_done": 65,
-  "raw_candidates_seen": 3153,
+  "updated_at": "2026-11-25T08:05:00+00:00",
+  "expansions_done": 66,
+  "raw_candidates_seen": 3176,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -15171,6 +15171,101 @@
     "name": "Import AI newsletter (Jack Clark)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T07:54:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "Document Type Definitions (DTD formalism)",
+    "reason": "mediated_via: XML 1.0 (W3C Recommendation, 1998)",
+    "at": "2026-11-25T08:04:34+00:00",
+    "mediated_via": "XML 1.0 (W3C Recommendation, 1998)"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "SGML (ISO 8879)",
+    "reason": "mediated_via: XML 1.0 (W3C Recommendation, 1998)",
+    "at": "2026-11-25T08:04:34+00:00",
+    "mediated_via": "XML 1.0 (W3C Recommendation, 1998)"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "Document Content Description (DCD, 1998)",
+    "reason": "mediated_via: XML-Data (Microsoft et al., 1998)",
+    "at": "2026-11-25T08:04:34+00:00",
+    "mediated_via": "XML-Data (Microsoft et al., 1998)"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "Document Definition Markup Language (DDML, 1999)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "Document Structure Description (DSD, 1999)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "Resource Description Framework (RDF, 1999)",
+    "reason": "mediated_via: Document Content Description (DCD, 1998)",
+    "at": "2026-11-25T08:04:34+00:00",
+    "mediated_via": "Document Content Description (DCD, 1998)"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "SQL datatype system (SQL-92)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "RELAX (Murata, 2000)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "World Wide Web Consortium (W3C)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "XSV (XML Schema Validator, Thompson & Tobin)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "EXPRESS (ISO 10303-11, STEP information modeling language)",
+    "reason": "mediated_via: Schema for Object-oriented XML (SOX, 1998)",
+    "at": "2026-11-25T08:04:34+00:00",
+    "mediated_via": "Schema for Object-oriented XML (SOX, 1998)"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "Schematron (Jelliffe, 1999)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "Datatypes for DTDs (DT4DTD)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "ANSI X12 EDI",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
+   },
+   {
+    "parent_id": "w3c-xml-schema-xsd-2001",
+    "name": "Java primitive type system",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T08:04:34+00:00"
    }
   ]
  },
@@ -16782,7 +16877,7 @@
    "prior_state": "DTD grammar declarations without datatypes; per-vendor schema dialects (XML-Data, XDR, SOX) competing without a standard.",
    "status": "provisional",
    "depth": 2,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -19734,6 +19829,180 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T07:54:34+00:00"
+  },
+  "namespaces-in-xml-w3c-recommendation-1999-1999": {
+   "id": "namespaces-in-xml-w3c-recommendation-1999-1999",
+   "name": "Namespaces in XML (W3C Recommendation, 1999)",
+   "aliases": [],
+   "year": 1999,
+   "domain": "software standards",
+   "type": "other",
+   "definition": "The W3C Recommendation of January 1999 defining namespaces in XML - the mechanism by which element and attribute names are partitioned among vocabularies.",
+   "bottleneck": "Before Namespaces in XML, names from different vocabularies collided in one flat space, because XML 1.0 had no partitioning mechanism - the absence DTDs could not repair.",
+   "leap": "Namespaces in XML (January 1999) supplied the name-partitioning mechanism that XSD's namespace-aware declarations (targetNamespace, qualified names) consume as a given.",
+   "prior_state": "Flat name space; vocabulary mixing handled by naming conventions.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "W3C XML Activities timeline (KFUPM mirror)",
+     "url": "https://faculty.kfupm.edu.sa/ics/sukairi/swe423(021)/W3Schools/w3c/w3c_xml.asp.htm"
+    }
+   ],
+   "verification": {
+    "outcome": "confirmed",
+    "notes": "Mediation attack via XML 1.0 fails: Namespaces is a separate Recommendation (Jan 1999) that postdates and layers on XML 1.0; XSD consumes it directly - every targetNamespace declaration and qualification rule is written in this REC's terms, and the parent's own bottleneck names namespace awareness as half its leap. No multiples: no rival name-partitioning mechanism existed in 1999. Counterfactual stands as argued.",
+    "at": "2026-11-25T08:05:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:04:34+00:00"
+  },
+  "xml-1-0-w3c-recommendation-1998-1998": {
+   "id": "xml-1-0-w3c-recommendation-1998-1998",
+   "name": "XML 1.0 (W3C Recommendation, 1998)",
+   "aliases": [],
+   "year": 1998,
+   "domain": "software standards",
+   "type": "other",
+   "definition": "The W3C's February 1998 Recommendation defining XML syntax and document structure, including the DTD formalism for declaring document structure.",
+   "bottleneck": "Before XML 1.0, structured documents on the web had no single simplified, implementable markup standard, because SGML was too complex for web deployment.",
+   "leap": "XML 1.0 (February 1998) defined the document model - elements, attributes, well-formedness, and DTD declarations - that the entire XML family, XSD included, exists to serve and constrain.",
+   "prior_state": "SGML and HTML as separate worlds: full SGML too heavy, HTML a fixed vocabulary.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "World Wide Web Consortium Issues XML Schema as a W3C Recommendation (W3C, 2 May 2001)",
+     "url": "http://www.w3.org/2001/05/xml-schema-testimonial"
+    }
+   ],
+   "verification": {
+    "outcome": "confirmed",
+    "notes": "Transitivity attack considered: 'everything XML descends from XML 1.0' would make this edge vacuous. It is not argued on importance: the edge rests on ancestor-modified mechanism - Part 1 generalizes the content-model machinery (compositors, occurrence) that XML 1.0's DTD component carries, and Part 2 defines itself against XML 1.0 DTD capabilities in its own abstract. The components discrimination against the standalone DTD candidate (defined-against incumbent; consumed component credited to the artifact carrying it) is recorded in that rejection. Edge stays scoped to this parent per the edge-scope rule.",
+    "at": "2026-11-25T08:05:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:04:34+00:00"
+  },
+  "schema-for-object-oriented-xml-sox-1998-1998": {
+   "id": "schema-for-object-oriented-xml-sox-1998-1998",
+   "name": "Schema for Object-oriented XML (SOX, 1998)",
+   "aliases": [],
+   "year": 1998,
+   "domain": "software standards",
+   "type": "other",
+   "definition": "The September 1998 Veo Systems submission (Fuchs, Maloney, Milowski) proposing an object-oriented XML schema facility with inheritance, datatypes, and namespace mechanisms, later developed at Commerce One.",
+   "bottleneck": "Before SOX, no XML schema proposal offered an object-oriented type system - inheritance, polymorphism, user-defined datatypes - because the proposals were grammar-first.",
+   "leap": "SOX (September 1998) introduced and implemented the type-system features - inheritance, polymorphism, local scoping, modularity, user-defined datatypes, attribute and model groups - that Commerce One's own testimonial enumerates as found in the XML Schema Candidate Recommendation.",
+   "prior_state": "Schema proposals as grammar notations without a type system.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "Schema for Object-oriented XML (W3C NOTE-SOX-19980930)",
+     "url": "https://www.w3.org/TR/1998/NOTE-SOX-19980930/"
+    }
+   ],
+   "verification": {
+    "outcome": "confirmed",
+    "notes": "Source-interest attack recorded and weighed: the feature-transfer evidence is Commerce One's own Candidate Recommendation testimonial (Fuchs), a vendor claiming credit for its contribution. The claim is corroborated by roster facts independent of the testimonial - Fuchs and Maloney were XML Schema WG members, and Maloney co-edited the Requirements and Part 1. Mediation attack via XML-Data fails: SOX is a parallel proposal (its abstract builds on XML/SGML and cites EXPRESS, SQL, Java), not XML-Data's descendant. Confirmed with the testimonial-interest caveat standing in the record.",
+    "at": "2026-11-25T08:05:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:04:34+00:00"
+  },
+  "xml-data-microsoft-et-al-1998-1998": {
+   "id": "xml-data-microsoft-et-al-1998-1998",
+   "name": "XML-Data (Microsoft et al., 1998)",
+   "aliases": [],
+   "year": 1998,
+   "domain": "software standards",
+   "type": "other",
+   "definition": "The January 1998 Microsoft/ArborText/DataChannel/Inso submission to the W3C proposing XML-syntax schemas with datatypes, inheritance, and validation - the first full schema-language proposal for XML.",
+   "bottleneck": "Before XML-Data, an XML schema could not be written in XML itself with a datatype vocabulary, because the only declaration mechanism was the DTD's separate, datatype-less syntax.",
+   "leap": "XML-Data (January 1998) first specified the parent's two defining commitments: schemas written in the format's own syntax, and a rich built-in datatype set drawn from database and programming-language types.",
+   "prior_state": "DTDs as the only declaration mechanism; schema ideas scattered in vendor products.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 3.5,
+   "sources": [
+    {
+     "title": "Microsoft, ArborText, DataChannel and Inso Submit XML-Data Specification to W3C (Microsoft, 27 Jan 1998)",
+     "url": "https://news.microsoft.com/source/1998/01/27/microsoft-arbortext-datachannel-and-inso-submit-xml-data-specification-to-w3c/"
+    }
+   ],
+   "verification": {
+    "outcome": "confirmed",
+    "notes": "Mediation attack via XDR pressed in full: XDR is the implemented reduction and was the living line while the WG worked. It does not land as a kill because the components are discriminated and XDR is admitted on its own separate channel in this same expansion: XML-Data contributes the founding programme and the datatype-set commitment (the 5 Jan 1998 submission the standardization process was convened to answer); XDR contributes the implemented reduction and its editor. Two documented channels, no double count of the same component.",
+    "at": "2026-11-25T08:05:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:04:34+00:00"
+  },
+  "xml-schema-requirements-w3c-note-1999-1999": {
+   "id": "xml-schema-requirements-w3c-note-1999-1999",
+   "name": "XML Schema Requirements (W3C Note, 1999)",
+   "aliases": [],
+   "year": 1999,
+   "domain": "software standards",
+   "type": "other",
+   "definition": "The W3C Note of 15 February 1999 specifying the purpose, usage scenarios, design principles, and requirements for an XML schema language.",
+   "bottleneck": "Before the Requirements note, the schema problem had no agreed statement of what a standard must do, because the proposals disagreed about the goal itself.",
+   "leap": "The Requirements note (February 1999) posed the problem in the exact form the Recommendation answered: structural constraints, datatypes covering SQL and Java primitives and adequate for database import/export, user-defined types by facet restriction, and a DTD migration path.",
+   "prior_state": "Competing proposals with incompatible design goals.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 2.5,
+   "sources": [
+    {
+     "title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+     "url": "https://xml.coverpages.org/schemas.html"
+    }
+   ],
+   "verification": {
+    "outcome": "confirmed",
+    "notes": "Process-paper attack considered: every standard has requirements, so is this ancestry or bureaucracy? It lands as ancestry on the parent's own text: Part 2 section 1.2 reproduces the Requirements as the specification's mandate, and the requirements are posed in exactly the form answered (structural constraints, SQL/Java datatype coverage, derivation by facet restriction, DTD migration) - the L4 problem-posed shape at its strongest. Editor continuity (Malhotra to Part 2, Maloney to Part 1) closes the channel.",
+    "at": "2026-11-25T08:05:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:04:34+00:00"
+  },
+  "xml-data-reduced-xdr-1998-1998": {
+   "id": "xml-data-reduced-xdr-1998-1998",
+   "name": "XML-Data Reduced (XDR, 1998)",
+   "aliases": [],
+   "year": 1998,
+   "domain": "software standards",
+   "type": "other",
+   "definition": "XML-Data Reduced (1998): the subset of XML-Data with corrections, edited by Henry Thompson, implemented by Microsoft as its interim schema language until XSD was finalized.",
+   "bottleneck": "Before XDR, typed schema validation of XML existed only as an unimplemented submission, because XML-Data was too large and unrefined to ship.",
+   "leap": "XDR (1998) reduced XML-Data to a shippable language - implemented in MSXML, SQL Server 2000 and BizTalk - and its Edinburgh editor, Henry Thompson, carried the line into the Working Group as editor of XSD Part 1: Structures.",
+   "prior_state": "XML-Data as a paper specification without a running implementation.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 2.0,
+   "sources": [
+    {
+     "title": "XDR Schema (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/XDR_Schema"
+    }
+   ],
+   "verification": {
+    "outcome": "confirmed",
+    "notes": "CLOSEST CALL of the expansion, recorded as such. Two attacks pressed: (1) mediation/double-count via XML-Data - XDR is by its own description 'a subset of XML-Data with corrections'; answered by the components discrimination recorded on the XML-Data verification (programme vs implemented reduction + editor). (2) Direction - the WG's text does not descend from XDR's text; answered by the carrier channel: Henry Thompson edited XDR (Edinburgh) and then edited Part 1: Structures, and XDR's product deployment (SQL Server 2000, BizTalk) was the era's only production feedback on a typed XML schema language. Revisit condition: if XDR's own expansion shows its content wholly exhausted by XML-Data's, this edge should be re-heard.",
+    "at": "2026-11-25T08:05:00+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T08:04:34+00:00"
   }
  },
  "edges": [
@@ -39383,6 +39652,588 @@
     "counterfactual": "Remove GPT-1's release and the parent's leap has no object: the staged release is defined as the modification of the immediate-full-publication practice GPT-1's June 2018 release instantiated inside the same lab (the parent node's own prior_state: 'Immediate full publication of model checkpoints (the GPT-1 practice)').",
     "mediator": null,
     "evidence": "Ancestor-modified relation on the parent's own record: same lab, same artifact lineage, the practice named in the parent's prior_state. The GPT-2 model itself is coeval-year and date-bound (recorded at resolve); this edge is to the predecessor release act, not the model."
+   }
+  },
+  {
+   "predecessor_id": "namespaces-in-xml-w3c-recommendation-1999-1999",
+   "successor_id": "w3c-xml-schema-xsd-2001",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Impossibility flip passes in relation to this parent: namespace-aware declaration - the parent's headline repair of DTDs, named in its bottleneck - was impossible before this Recommendation supplied the partitioning mechanism; DTDs' flat name space is exactly the constraint the parent's leap removes by consuming this artifact.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Generativity is partial in relation: namespaces generated the multi-vocabulary XML world generally, but the space the parent opens (typed declaration) is its own.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial, honestly: XSD could in principle have invented its own partitioning, but it did not - its targetNamespace and qualification machinery is this Recommendation's construct taken as given, and no alternative mechanism existed in 1999.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "Namespaces collapsed no cost for the parent.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Namespaces supplied no metric.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: the namespace model (a name is a URI+local pair) is the conceptual unit Part 1's declarations are built over.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability passes: namespaces ARE the composability interface of XML - vocabularies mix without collision - and XSD schemas are themselves namespace-partitioned documents that declare other namespaces.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach passes: the mechanism unlocked vocabulary composition across every XML domain the parent serves.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Namespaces changed no iteration speed for the parent.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Displacement passes: namespace-aware processing became the universal default; the flat-name world did not return.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: a trunk W3C artifact of the XML family, consumed by the parent as infrastructure of its central feature.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility passes: once names were partitioned, no later XML technology could go back.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001); Namespaces in XML (W3C REC, Jan 1999)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:04:34+00:00",
+   "leap": {
+    "prior_state": "DTD grammar declarations without datatypes and without namespace awareness; per-vendor schema dialects (XML-Data, XDR, SOX) and community proposals competing without a standard.",
+    "jump": "The 2 May 2001 Recommendation supplied the schema-language model: named types, a datatype hierarchy with constraining facets (length, pattern, minimum, maximum, enumeration), and structure declarations written in XML's own syntax and namespace-aware - in three parts (Primer, Structures, Datatypes) that displaced DTDs as the default way to declare an XML vocabulary.",
+    "date": 2001
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Namespaces in XML and the parent's defining feature - namespace-aware declaration, the repair its bottleneck names - has no mechanism to be built from: XSD does not re-invent name partitioning; it presupposes the 1999 Recommendation in every targetNamespace declaration. A substrate that is consumed by name in the parent's central mechanism is direct under the v3.1 guidance (the CUDA shape), not generic infrastructure.",
+    "mediator": null,
+    "evidence": "Direct consumption: the parent's schemas declare targetNamespace and element qualification in the REC's terms; the bottleneck sentence of the parent node itself names namespace awareness as half the leap."
+   }
+  },
+  {
+   "predecessor_id": "xml-1-0-w3c-recommendation-1998-1998",
+   "successor_id": "w3c-xml-schema-xsd-2001",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Impossibility flip is partial: XML 1.0 did not itself make typed schema declaration possible - that is the parent's flip; XML 1.0 created the artifact class (declared-structure documents) the flip operates on.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes in relation to this parent: XML 1.0 generated the entire space the parent serves - every XML vocabulary is a candidate for schema declaration; the schema problem exists because XML 1.0 succeeded.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Necessity passes: the parent is a schema language FOR XML 1.0's document model; remove XML 1.0 and there is no parent in any form.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "XML 1.0 collapsed no cost relevant to the parent's leap.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "XML 1.0 supplied no metric registering the parent's leap.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: XML 1.0's document model (elements, attributes, content models) is the conceptual frame Part 1 generalizes, but the datatype understanding is the parent's own.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability passes: XML 1.0 is the interface the whole family builds on; XSD schemas are themselves XML 1.0 documents.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach passes: XML 1.0's reach (documents, data, messaging) is exactly the reach the parent's declarations serve.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "XML 1.0 changed no iteration speed for schema design.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "XML 1.0 displaced no incumbent inside the parent; it is the ground, not a rival.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: the trunk artifact of the whole XML lineage at this parent.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility passes: once XML 1.0 existed, a schema language for it was a permanent need; the baseline never reverted.",
+     "source": "W3C news release, XML Schema Recommendation (2 May 2001)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:04:34+00:00",
+   "leap": {
+    "prior_state": "DTD grammar declarations without datatypes and without namespace awareness; per-vendor schema dialects (XML-Data, XDR, SOX) and community proposals competing without a standard.",
+    "jump": "The 2 May 2001 Recommendation supplied the schema-language model: named types, a datatype hierarchy with constraining facets (length, pattern, minimum, maximum, enumeration), and structure declarations written in XML's own syntax and namespace-aware - in three parts (Primer, Structures, Datatypes) that displaced DTDs as the default way to declare an XML vocabulary.",
+    "date": 2001
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove XML 1.0 and the parent does not exist: XSD's Structures part generalizes the content-model machinery XML 1.0's DTD component carries (element declarations, sequence/choice compositors, occurrence indicators), and its Datatypes part exists to repair absences inside XML 1.0's own design. The components discrimination against the standalone DTD candidate is recorded in that candidate's rejection: what XSD defines against is the DTD component; what it consumes and generalizes is carried by this artifact.",
+    "mediator": null,
+    "evidence": "Ancestor-modified on the parent's own text: Part 2's abstract defines itself against 'the capabilities found in XML 1.0 document type definitions', and Part 1's compositors are the DTD content-model operators generalized - consumption of the mechanism, negation of its limits, in the same documents."
+   }
+  },
+  {
+   "predecessor_id": "schema-for-object-oriented-xml-sox-1998-1998",
+   "successor_id": "w3c-xml-schema-xsd-2001",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Impossibility flip passes: before SOX, declaring an XML vocabulary with an object-oriented type system - inheritance between element types, user-defined datatypes - was not possible in any schema proposal, because the proposals were grammar notations; SOX specified and implemented it.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes: SOX's type-system features opened the design space the parent standardized - derived types, model and attribute groups, local scoping - a family of mechanisms, not one fix.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the WG had several donors (XML-Data's programme, the Requirements), but for the type-system component specifically, Commerce One's testimonial enumerates SOX's features as the ones found in the Candidate Recommendation, and its authors sat in the WG.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "SOX collapsed no cost.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "SOX supplied no metric registering the parent's leap.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Understanding passes: SOX supplied the explanatory model - schemas as an object-oriented type system - under which Part 1's derivation machinery (extension, restriction, substitution groups) is designed.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability passes: user-defined datatypes, attribute and model groups, and modularity are precisely composable building blocks others assemble without internals.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: SOX's ideas travelled into the parent and into e-commerce modelling, one domain family.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "SOX changed no iteration speed.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement is partial: SOX itself was displaced by the parent, but its feature set displaced the grammar-only conception of a schema language inside the WG.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes on the documentary record: the donor's own CR testimonial (Fuchs) lists the transferred features, and Maloney co-edited both the Requirements and Part 1 - the carrier is named, not inferred.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: the type-system conception, once in the Recommendation, permanently reset what a schema language is; SOX's own syntax is gone.",
+     "source": "Commerce One testimonial, XML Schema Candidate Recommendation (24 Oct 2000); SOX submission (W3C NOTE-SOX-19980930)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:04:34+00:00",
+   "leap": {
+    "prior_state": "DTD grammar declarations without datatypes and without namespace awareness; per-vendor schema dialects (XML-Data, XDR, SOX) and community proposals competing without a standard.",
+    "jump": "The 2 May 2001 Recommendation supplied the schema-language model: named types, a datatype hierarchy with constraining facets (length, pattern, minimum, maximum, enumeration), and structure declarations written in XML's own syntax and namespace-aware - in three parts (Primer, Structures, Datatypes) that displaced DTDs as the default way to declare an XML vocabulary.",
+    "date": 2001
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove SOX and the parent's type-system half loses its documented source: the features Commerce One enumerates (inheritance, polymorphism, local scoping, modularity, user-defined datatypes, attribute and model groups) entered the WG's design from the proposal whose authors (Fuchs, Maloney) were in the room - Maloney as co-editor of the Requirements and of Part 1 itself. No other proposal in the stratum carries the object-oriented type system.",
+    "mediator": null,
+    "evidence": "Citation + instantiation with a named carrier: the CR testimonial is the donor's own feature-by-feature claim, corroborated by the WG roster and editorships. The claim is self-interested (a vendor testimonial) and is recorded as such for verification to weigh."
+   }
+  },
+  {
+   "predecessor_id": "xml-data-microsoft-et-al-1998-1998",
+   "successor_id": "w3c-xml-schema-xsd-2001",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Impossibility flip passes: XML-Data first made it specifiable that a schema be written in XML syntax with a datatype vocabulary - before January 1998 the only declaration mechanism was the DTD's separate, datatype-less syntax.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Generativity is partial: it opened the standardization programme (the WG was the response to the proposal stratum it led), but the generated space was realized by the WG, not by XML-Data itself.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the WG could in principle have started from DCD or SOX alone, but on the record XML-Data is the founding submission - first, most complete, and the one whose commitments (own-syntax, datatype set) the charter took up.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "XML-Data collapsed no cost.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "XML-Data supplied no metric.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: its data-model framing (schemas as descriptions of classes of objects, database transfer as the use case) shaped the WG's data orientation, shared with the Requirements.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability passes: schemas as XML documents - self-describing, processable by the same tools - is the composability commitment the parent inherits whole.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is partial: aimed at database interchange and document structure alike, but its reach was realized through the WG.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "XML-Data changed no iteration speed.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Displacement fails honestly: XML-Data itself was displaced - by its own reduction XDR within a year; what it displaced was the assumption that DTDs sufficed, scored under Q1/Q7 rather than here.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: the founding proposal of the lineage; every history of the parent begins with the January 1998 submission.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: its specific design is gone, but its two commitments (own-syntax schemas, rich datatypes) permanently reset the baseline for what a schema language must be.",
+     "source": "Microsoft news release (27 Jan 1998); XML-Data submission (W3C, 5 Jan 1998)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 3.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:04:34+00:00",
+   "leap": {
+    "prior_state": "DTD grammar declarations without datatypes and without namespace awareness; per-vendor schema dialects (XML-Data, XDR, SOX) and community proposals competing without a standard.",
+    "jump": "The 2 May 2001 Recommendation supplied the schema-language model: named types, a datatype hierarchy with constraining facets (length, pattern, minimum, maximum, enumeration), and structure declarations written in XML's own syntax and namespace-aware - in three parts (Primer, Structures, Datatypes) that displaced DTDs as the default way to declare an XML vocabulary.",
+    "date": 2001
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove XML-Data and the standardization process loses its founding text: the submission (with its datatype set 'covering all popular database and programming language types') is what the W3C process was convened to answer, and its author line (Microsoft's Layman group; Malhotra's IBM circle in the adjacent DCD) feeds directly into the WG's editorships. The two-year WG rework is the parent's own history, not an intermediate milestone: no named artifact sits between XML-Data and the WG's drafts the way XDR sits between XML-Data and Microsoft's products.",
+    "mediator": null,
+    "evidence": "Documented channel: submission of record (5 January 1998), the WG chartered in its wake, personnel continuity into the Requirements and Part 2 editorships. Verification should attack via XDR (the implemented reduction) - the components discrimination is: XML-Data contributes the programme and the datatype commitment; XDR contributes the implemented reduction and its editor. Both channels are documented independently."
+   }
+  },
+  {
+   "predecessor_id": "xml-schema-requirements-w3c-note-1999-1999",
+   "successor_id": "w3c-xml-schema-xsd-2001",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Impossibility flip is partial: the Requirements posed the problem in solvable form but solved nothing themselves.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes: a requirements set that fixes structural constraints, a datatype system, derivation by restriction, and a DTD migration path opens the whole design space the parent then fills - the parent is this document, implemented.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Necessity passes on the WG's own record: the Working Group worked TO this document; Part 2 (section 1.2) reproduces its requirements as the specification's own mandate.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "The Requirements collapsed no cost.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The Requirements supplied no metric.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Understanding passes: the document supplied the design model - the decomposition into structures and datatypes, the usage scenarios (data-oriented vs document-oriented) that Part 2's introduction still uses as its organizing frame.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "The Requirements define no interface others build on.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "The Requirements reached no other domain.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "The Requirements changed no iteration speed.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "The Requirements displaced no incumbent; they indicted one (DTDs) without replacing it.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality passes: the trunk process artifact - every part of the parent answers to it, and its editors (Malhotra, Maloney) went on to edit Parts 1 and 2.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility is partial: a requirements document can be superseded, but this one's framing (structures + datatypes + migration) permanently structured the standard.",
+     "source": "XML Schema Requirements, W3C Note (15 Feb 1999), as reproduced in Part 2 section 1.2; Cover Pages: XML Schemas (xml.coverpages.org)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 2.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:04:34+00:00",
+   "leap": {
+    "prior_state": "DTD grammar declarations without datatypes and without namespace awareness; per-vendor schema dialects (XML-Data, XDR, SOX) and community proposals competing without a standard.",
+    "jump": "The 2 May 2001 Recommendation supplied the schema-language model: named types, a datatype hierarchy with constraining facets (length, pattern, minimum, maximum, enumeration), and structure declarations written in XML's own syntax and namespace-aware - in three parts (Primer, Structures, Datatypes) that displaced DTDs as the default way to declare an XML vocabulary.",
+    "date": 2001
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Requirements note and the WG loses its charter-level specification of the goal: the parent's own Part 2 opens by restating these requirements as its mandate (primitive typing incl. SQL and Java types, database import/export adequacy, user-defined types by constraining facets). The parent is the answer to this document in a way it is the answer to no other single text.",
+    "mediator": null,
+    "evidence": "Problem posed in the form answered (L4's strongest shape): the requirements are quoted inside the parent's own documents, and the personnel continuity (Malhotra to Part 2, Maloney to Part 1) closes the channel."
+   }
+  },
+  {
+   "predecessor_id": "xml-data-reduced-xdr-1998-1998",
+   "successor_id": "w3c-xml-schema-xsd-2001",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Impossibility flip passes in the implementation register: before XDR, typed schema validation of XML in a shipping product was impossible, because the only typed schema language (XML-Data) was an unimplemented submission; XDR shipped in MSXML and SQL Server 2000.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Generativity is partial: XDR's deployment generated the implementation experience (and the user base) the standardization consumed, one vendor's ecosystem.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the WG's design did not textually descend from XDR; the channel is the editor and the implementation record, not the base text.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "XDR collapsed no cost for the parent.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "XDR supplied no metric registering the parent's leap.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding is partial: the reduction itself was an analysis - which parts of XML-Data were essential for document schemas - embodied in a running system.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability is partial: XDR schemas were composable XML documents in products, a partial realization of the parent's model.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "XDR's reach stayed inside Microsoft's stack.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed is partial: a running implementation shortened the design-test loop for its editor's WG work, though XSV (rejected here as the process's instrument) did this more directly for the WG as a whole.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Displacement fails: XDR was displaced BY the parent (Microsoft phased it out once XSD was finalized) - the reverse direction.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Lineage centrality is partial: a real branch of the lineage - the implemented one - but a branch: the WG's text descends from the requirements-and-proposals process, not from XDR's text.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "fail",
+     "evidence": "Irreversibility fails: XDR was explicitly interim and was withdrawn; nothing about it is irreversible except its editor's experience.",
+     "source": "XDR Schema (Wikipedia); XML-Data Reduced note (Univ. of Edinburgh, Henry Thompson)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 2.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T08:04:34+00:00",
+   "leap": {
+    "prior_state": "DTD grammar declarations without datatypes and without namespace awareness; per-vendor schema dialects (XML-Data, XDR, SOX) and community proposals competing without a standard.",
+    "jump": "The 2 May 2001 Recommendation supplied the schema-language model: named types, a datatype hierarchy with constraining facets (length, pattern, minimum, maximum, enumeration), and structure declarations written in XML's own syntax and namespace-aware - in three parts (Primer, Structures, Datatypes) that displaced DTDs as the default way to declare an XML vocabulary.",
+    "date": 2001
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove XDR and the parent loses its only implemented predecessor line: the reduction that proved which parts of XML-Data worked in products, and - decisively - the personal carrier, Henry Thompson, who edited XDR at Edinburgh and then edited Part 1: Structures itself. This is the thinnest admission in the expansion and is recorded as such: the channel is the editor plus the implementation record, not textual descent.",
+    "mediator": null,
+    "evidence": "Carrier + implementation channel: Thompson's editorship runs XDR (1998) to Part 1 (2001) without an intermediate artifact; XDR's product deployment (SQL Server 2000, BizTalk) is the era's only production feedback on a typed XML schema language before the Recommendation."
    }
   }
  ],
@@ -150751,6 +151602,766 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "w3c-xml-schema-xsd-2001": {
+   "raw_candidates": [
+    {
+     "causal_claim": "XML 1.0 directly enabled XSD's leap as the ancestor modified: XSD is a schema language FOR the document model XML 1.0 defined, and its Structures part generalizes the content-model machinery (element declarations, sequences, choices, occurrence indicators) that XML 1.0's DTD component carried - while the datatype and namespace absences XSD repaired are absences inside XML 1.0's own design.",
+     "definition": "The W3C's February 1998 Recommendation defining XML syntax and document structure, including the DTD formalism for declaring document structure.",
+     "domain": "software standards",
+     "lens": "L2",
+     "name": "XML 1.0 (W3C Recommendation, 1998)",
+     "source_title": "World Wide Web Consortium Issues XML Schema as a W3C Recommendation (W3C, 2 May 2001)",
+     "source_url": "http://www.w3.org/2001/05/xml-schema-testimonial",
+     "type": "other",
+     "year": 1998
+    },
+    {
+     "causal_claim": "The DTD formalism is proposed separately so the defined-against question is judged on its own: the parent's bottleneck names DTDs (no datatypes, no namespace awareness) as the constraint removed - but DTD content models are also the machinery XSD generalized, so the record must discriminate incumbent from ancestor component by component.",
+     "definition": "The document type definition formalism (from SGML, carried into XML 1.0) for declaring element structure and content models - the incumbent schema mechanism of the pre-XSD era.",
+     "domain": "software standards",
+     "lens": "L6",
+     "name": "Document Type Definitions (DTD formalism)",
+     "source_title": "Dead Formats: XDR, DSD, and DCD (brainkart.com)",
+     "source_url": "https://www.brainkart.com/article/Dead-Formats--XDR,-DSD,-and-DCD_8674/",
+     "type": "other",
+     "year": 1986
+    },
+    {
+     "causal_claim": "SGML allegedly enabled XSD as the deep ancestor: the DTD formalism and the document-type concept originate in SGML (ISO 8879), and XML itself is SGML's web profile - proposed so the record can judge whether the channel reaches XSD only through XML 1.0.",
+     "definition": "The Standard Generalized Markup Language (ISO 8879, 1986), the meta-language whose document type definitions XML inherited and simplified.",
+     "domain": "software standards",
+     "lens": "L3",
+     "name": "SGML (ISO 8879)",
+     "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+     "source_url": "https://xml.coverpages.org/schemas.html",
+     "type": "other",
+     "year": 1986
+    },
+    {
+     "causal_claim": "XML-Data directly enabled XSD's leap as the founding proposal: submitted to the W3C in January 1998, it first specified schemas written in XML syntax itself with a large built-in datatype set 'covering all popular database and programming language types' - the two defining commitments (own-syntax schemas, rich datatypes) the Working Group was chartered to standardize.",
+     "definition": "The January 1998 Microsoft/ArborText/DataChannel/Inso submission to the W3C proposing XML-syntax schemas with datatypes, inheritance, and validation - the first full schema-language proposal for XML.",
+     "domain": "software standards",
+     "lens": "L1",
+     "name": "XML-Data (Microsoft et al., 1998)",
+     "source_title": "Microsoft, ArborText, DataChannel and Inso Submit XML-Data Specification to W3C (Microsoft, 27 Jan 1998)",
+     "source_url": "https://news.microsoft.com/source/1998/01/27/microsoft-arbortext-datachannel-and-inso-submit-xml-data-specification-to-w3c/",
+     "type": "other",
+     "year": 1998
+    },
+    {
+     "causal_claim": "DCD allegedly enabled XSD as XML-Data's direct refinement: the August 1998 IBM/Microsoft/Textuality submission 'incorporates a subset of the XML-Data submission' in RDF-consistent form, co-authored by Tim Bray, and was read at the time as superseding XML-Data on the path into the Working Group.",
+     "definition": "The August 1998 IBM/Microsoft/Textuality submission proposing a structural schema facility for XML, incorporating a subset of XML-Data expressed as an RDF vocabulary, with basic datatypes.",
+     "domain": "software standards",
+     "lens": "L2",
+     "name": "Document Content Description (DCD, 1998)",
+     "source_title": "Dead Formats: XDR, DSD, and DCD (brainkart.com)",
+     "source_url": "https://www.brainkart.com/article/Dead-Formats--XDR,-DSD,-and-DCD_8674/",
+     "type": "other",
+     "year": 1998
+    },
+    {
+     "causal_claim": "XDR allegedly enabled XSD as the implemented reduction of XML-Data: edited at the University of Edinburgh (Henry Thompson's group), shipped in Microsoft products (MSXML, SQL Server 2000, BizTalk), and the final XSD 'has some similarities to the XML-Data proposal' through this line - with Thompson himself becoming editor of XSD Part 1: Structures.",
+     "definition": "XML-Data Reduced (1998): the subset of XML-Data with corrections, edited by Henry Thompson, implemented by Microsoft as its interim schema language until XSD was finalized.",
+     "domain": "software standards",
+     "lens": "L2",
+     "name": "XML-Data Reduced (XDR, 1998)",
+     "source_title": "XDR Schema (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/XDR_Schema",
+     "type": "other",
+     "year": 1998
+    },
+    {
+     "causal_claim": "SOX directly enabled XSD's leap by Commerce One's own documented claim: its Candidate Recommendation testimonial states SOX 'introduced and implemented ideas such as inheritance, polymorphism, local scoping, a modern modularity mechanism, user-defined datatypes, attribute and model groups... that are found in this Candidate Recommendation' - and SOX's authors Fuchs and Maloney sat inside the Working Group (Maloney co-edited the Requirements and Part 1).",
+     "definition": "The September 1998 Veo Systems submission (Fuchs, Maloney, Milowski) proposing an object-oriented XML schema facility with inheritance, datatypes, and namespace mechanisms, later developed at Commerce One.",
+     "domain": "software standards",
+     "lens": "L1",
+     "name": "Schema for Object-oriented XML (SOX, 1998)",
+     "source_title": "Schema for Object-oriented XML (W3C NOTE-SOX-19980930)",
+     "source_url": "https://www.w3.org/TR/1998/NOTE-SOX-19980930/",
+     "type": "other",
+     "year": 1998
+    },
+    {
+     "causal_claim": "DDML allegedly enabled XSD as the community proposal stratum: the xml-dev community's schema proposal (begun as XSchema, 1998), one of the submissions the Working Group's deliberations explicitly drew on ('the WG could include experiences with several other already existing schema languages, such as XSchema, DDML, XML-Data').",
+     "definition": "The Document Definition Markup Language (1999), the xml-dev community's minimalist schema proposal (formerly XSchema), edited by Simon St.Laurent and others.",
+     "domain": "software standards",
+     "lens": "L2",
+     "name": "Document Definition Markup Language (DDML, 1999)",
+     "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+     "source_url": "https://xml.coverpages.org/schemas.html",
+     "type": "other",
+     "year": 1999
+    },
+    {
+     "causal_claim": "DSD allegedly enabled XSD as the formal wing of the proposal stratum: AT&T Labs and BRICS (Aarhus) built a grammar-formal schema language in 1999 aimed at the same standardization process, part of the documented field of proposals the Working Group considered.",
+     "definition": "The Document Structure Description (1999) by AT&T Labs and BRICS (Moller & Schwartzbach), a formally grounded schema language for XML aimed at web programmers.",
+     "domain": "software standards",
+     "lens": "L2",
+     "name": "Document Structure Description (DSD, 1999)",
+     "source_title": "Dead Formats: XDR, DSD, and DCD (brainkart.com)",
+     "source_url": "https://www.brainkart.com/article/Dead-Formats--XDR,-DSD,-and-DCD_8674/",
+     "type": "other",
+     "year": 1999
+    },
+    {
+     "causal_claim": "The Requirements document directly enabled XSD's leap by posing the problem in exactly the form the parent answered: the February 1999 W3C Note (Malhotra & Maloney, eds.) fixed the design goals - structural constraints, a datatype system providing 'SQL and Java primitive datatypes' adequate for database import/export, user-defined types derived by constraining facets, and a DTD migration path - that Parts 1 and 2 implement point by point.",
+     "definition": "The W3C Note of 15 February 1999 specifying the purpose, usage scenarios, design principles, and requirements for an XML schema language.",
+     "domain": "software standards",
+     "lens": "L4",
+     "name": "XML Schema Requirements (W3C Note, 1999)",
+     "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+     "source_url": "https://xml.coverpages.org/schemas.html",
+     "type": "other",
+     "year": 1999
+    },
+    {
+     "causal_claim": "Namespaces directly enabled XSD's leap as a consumed component: XSD's headline repair of DTDs is namespace awareness (targetNamespace, qualified names), which is the January 1999 Namespaces Recommendation's mechanism taken as given - XSD schemas are themselves namespace-partitioned documents.",
+     "definition": "The W3C Recommendation of January 1999 defining namespaces in XML - the mechanism by which element and attribute names are partitioned among vocabularies.",
+     "domain": "software standards",
+     "lens": "L16",
+     "name": "Namespaces in XML (W3C Recommendation, 1999)",
+     "source_title": "W3C XML Activities timeline (KFUPM mirror)",
+     "source_url": "https://faculty.kfupm.edu.sa/ics/sukairi/swe423(021)/W3Schools/w3c/w3c_xml.asp.htm",
+     "type": "other",
+     "year": 1999
+    },
+    {
+     "causal_claim": "RDF allegedly enabled XSD through the proposal stratum: DCD was expressly 'an RDF vocabulary', and the metadata framing (schemas as resource descriptions) was one of the design currents the Working Group absorbed and then largely dropped - proposed so the record can judge whether any RDF mechanism is actually inside XSD.",
+     "definition": "The Resource Description Framework, the W3C's February 1999 Recommendation for metadata statements about web resources, in terms of which DCD was expressed.",
+     "domain": "software standards",
+     "lens": "L19",
+     "name": "Resource Description Framework (RDF, 1999)",
+     "source_title": "Check out the DCD submission (xml-dev, Aug 1998)",
+     "source_url": "https://www.ch.imperial.ac.uk/rzepa/talks/pmr11/xml-dev/9808/0328.html",
+     "type": "other",
+     "year": 1999
+    },
+    {
+     "causal_claim": "SQL allegedly enabled XSD's datatype leap as the named donor: the Requirements the WG set itself demand primitive typing 'including byte, date, integer, sequence, SQL and Java primitive datatypes' and a type system 'adequate for import/export from database systems' - the datatype vocabulary of Part 2 was specified against SQL's type system.",
+     "definition": "The SQL database language's datatype system (SQL-92), the incumbent vocabulary of typed data values in business systems that XML lacked.",
+     "domain": "software standards",
+     "lens": "L19",
+     "name": "SQL datatype system (SQL-92)",
+     "source_title": "XML Schema Part 2: Datatypes, section 1.2 Requirements (W3C)",
+     "source_url": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes-with-errata.html",
+     "type": "other",
+     "year": 1992
+    },
+    {
+     "causal_claim": "RELAX allegedly enabled XSD as the parallel sibling: designed from 2000 by Murata Makoto - himself an XML Schema Working Group member - as a simpler, mathematically consistent alternative; proposed so the record can judge whether influence ran into XSD or only away from it (a reaction to XSD's complexity during its own drafting).",
+     "definition": "Murata Makoto's REgular LAnguage description for XML (2000), a hedge-automata-based schema language published as a Japanese national standard, designed in explicit reaction against XSD's complexity.",
+     "domain": "software standards",
+     "lens": "L6",
+     "name": "RELAX (Murata, 2000)",
+     "source_title": "Regular Language description for XML (Wikipedia)",
+     "source_url": "https://en.wikipedia.org/wiki/Regular_Language_description_for_XML",
+     "type": "other",
+     "year": 2000
+    },
+    {
+     "causal_claim": "Proposed so the record shows TREX is coeval-year (February 2001) with the parent and date-bound: James Clark's tree-regular-expression schema language, designed as XSD reached Proposed Recommendation.",
+     "definition": "James Clark's Tree Regular Expressions for XML (2001), a pattern-based schema language later unified with RELAX as RELAX NG.",
+     "domain": "software standards",
+     "lens": "L6",
+     "name": "TREX (Tree Regular Expressions for XML, Clark, 2001)",
+     "source_title": "OASIS Unites TREX and RELAX to Create RELAX NG (OASIS, 5 June 2001)",
+     "source_url": "https://www.oasis-open.org/2001/06/04/oasis-unites-trex-and-relax-to-create-lightweight-xml-language-validation-specification/",
+     "type": "other",
+     "year": 2001
+    },
+    {
+     "causal_claim": "Proposed so the record shows RELAX NG is coeval-year (unified June 2001, OASIS Committee Specification December 2001) and date-bound: the rival standardization track that defined itself against XSD in the same season XSD became a Recommendation.",
+     "definition": "The RELAX + TREX unification (OASIS, 2001), the lightweight schema language positioned as the alternative to W3C XML Schema.",
+     "domain": "software standards",
+     "lens": "L6",
+     "name": "RELAX NG (OASIS, 2001)",
+     "source_title": "OASIS RELAX NG Technical Committee Completes RELAX NG Specification (OASIS, 3 Dec 2001)",
+     "source_url": "https://www.oasis-open.org/2001/12/02/oasis-relax-ng-technical-committee-completes-lightweight-xml-language-validation-specificati/",
+     "type": "other",
+     "year": 2001
+    },
+    {
+     "causal_claim": "The W3C is proposed for the institution test: XSD is a W3C Recommendation produced by a W3C Working Group under the W3C process - the record must judge whether the institution carries a separable artifact into this parent (its process, its membership review) or whether crediting it double-counts the standard itself.",
+     "definition": "The World Wide Web Consortium (founded 1994), the standards body whose Working Group process produced XML Schema.",
+     "domain": "software standards",
+     "lens": "L21",
+     "name": "World Wide Web Consortium (W3C)",
+     "source_title": "World Wide Web Consortium Issues XML Schema as a W3C Recommendation (W3C, 2 May 2001)",
+     "source_url": "http://www.w3.org/2001/05/xml-schema-testimonial",
+     "type": "institution",
+     "year": 1994
+    },
+    {
+     "causal_claim": "XSV allegedly enabled XSD's leap as the wielded instrument of its standardization: co-developed by W3C with the University of Edinburgh and revised at each stage of the specification's development, it was the reference validator through which the design was tested into a Recommendation.",
+     "definition": "The XML Schema Validator (Henry Thompson & Richard Tobin, University of Edinburgh / W3C), the reference implementation co-developed alongside the specification.",
+     "domain": "software standards",
+     "lens": "L18",
+     "name": "XSV (XML Schema Validator, Thompson & Tobin)",
+     "source_title": "W3C news release, XML Schema Recommendation (lists.w3.org, 2 May 2001)",
+     "source_url": "https://lists.w3.org/Archives/Public/w3c-news/2001AprJun/0003.html",
+     "type": "method",
+     "year": 2000
+    },
+    {
+     "causal_claim": "EXPRESS allegedly enabled XSD through SOX: the SOX submission states it was 'informed by... the EXPRESS language reference manual' - the STEP standard's information-modeling language is SOX's named donor for its modeling features.",
+     "definition": "The information-modeling language of the STEP standard (ISO 10303-11), used to define product-data schemas with typed entities and constraints.",
+     "domain": "software standards",
+     "lens": "L19",
+     "name": "EXPRESS (ISO 10303-11, STEP information modeling language)",
+     "source_title": "Schema for Object-oriented XML (W3C NOTE-SOX-19980930)",
+     "source_url": "https://www.w3.org/TR/1998/NOTE-SOX-19980930/",
+     "type": "other",
+     "year": 1994
+    },
+    {
+     "causal_claim": "Schematron allegedly enabled XSD as the rival approach in the same proposal field: Rick Jelliffe's assertion-based validation language (1999) posed the alternative (rules over patterns) against which the grammar-based mainstream, XSD included, defined its scope.",
+     "definition": "Rick Jelliffe's 1999 assertion-based schema language, which validates by XPath assertions rather than grammars - the road not taken by the W3C mainstream.",
+     "domain": "software standards",
+     "lens": "L6",
+     "name": "Schematron (Jelliffe, 1999)",
+     "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+     "source_url": "https://xml.coverpages.org/schemas.html",
+     "type": "other",
+     "year": 1999
+    },
+    {
+     "causal_claim": "DT4DTD allegedly enabled XSD as a component proposal: an attempt to bolt a datatype vocabulary onto DTDs themselves, part of the documented pre-XSD effort to repair exactly the absence (datatypes) the parent's Part 2 addresses.",
+     "definition": "Datatypes for DTDs (DT4DTD), a late-1990s proposal to add datatype declarations to DTDs without a new schema language.",
+     "domain": "software standards",
+     "lens": "L1",
+     "name": "Datatypes for DTDs (DT4DTD)",
+     "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+     "source_url": "https://xml.coverpages.org/schemas.html",
+     "type": "other",
+     "year": 1999
+    },
+    {
+     "causal_claim": "X12 allegedly enabled XSD as the demand side: the incumbent electronic-data-interchange standard whose typed business documents (invoices, purchase orders) were the use case XSD's datatype system was built to serve - the parent's own Part 2 opens with a billing invoice whose dates and codes DTDs cannot type.",
+     "definition": "The ANSI X12 EDI standard (from 1979), the incumbent framework for typed electronic business documents that XML-based commerce was built to succeed.",
+     "domain": "software standards",
+     "lens": "L22",
+     "name": "ANSI X12 EDI",
+     "source_title": "XML Schema Part 2: Datatypes, section 1.1 (W3C)",
+     "source_url": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes-with-errata.html",
+     "type": "other",
+     "year": 1979
+    },
+    {
+     "causal_claim": "Java's type system is proposed alongside SQL as the second named donor in the Requirements ('SQL and Java primitive datatypes') - so the record can judge the programming-language import separately from the database import.",
+     "definition": "The Java language's primitive type set (byte, int, float, double, boolean, etc.), named in the XML Schema Requirements as a source the datatype system must cover.",
+     "domain": "software standards",
+     "lens": "L19",
+     "name": "Java primitive type system",
+     "source_title": "XML Schema Part 2: Datatypes, section 1.2 Requirements (W3C)",
+     "source_url": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes-with-errata.html",
+     "type": "other",
+     "year": 1995
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "xml-1-0-w3c-recommendation-1998-1998",
+      "candidate": {
+       "causal_claim": "XML 1.0 directly enabled XSD's leap as the ancestor modified: XSD is a schema language FOR the document model XML 1.0 defined, and its Structures part generalizes the content-model machinery (element declarations, sequences, choices, occurrence indicators) that XML 1.0's DTD component carried - while the datatype and namespace absences XSD repaired are absences inside XML 1.0's own design.",
+       "definition": "The W3C's February 1998 Recommendation defining XML syntax and document structure, including the DTD formalism for declaring document structure.",
+       "domain": "software standards",
+       "lens": "L2",
+       "name": "XML 1.0 (W3C Recommendation, 1998)",
+       "source_title": "World Wide Web Consortium Issues XML Schema as a W3C Recommendation (W3C, 2 May 2001)",
+       "source_url": "http://www.w3.org/2001/05/xml-schema-testimonial",
+       "type": "other",
+       "year": 1998
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "XML 1.0 (W3C Recommendation, 1998)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "document-type-definitions-dtd-formalism-1986",
+      "candidate": {
+       "causal_claim": "The DTD formalism is proposed separately so the defined-against question is judged on its own: the parent's bottleneck names DTDs (no datatypes, no namespace awareness) as the constraint removed - but DTD content models are also the machinery XSD generalized, so the record must discriminate incumbent from ancestor component by component.",
+       "definition": "The document type definition formalism (from SGML, carried into XML 1.0) for declaring element structure and content models - the incumbent schema mechanism of the pre-XSD era.",
+       "domain": "software standards",
+       "lens": "L6",
+       "name": "Document Type Definitions (DTD formalism)",
+       "source_title": "Dead Formats: XDR, DSD, and DCD (brainkart.com)",
+       "source_url": "https://www.brainkart.com/article/Dead-Formats--XDR,-DSD,-and-DCD_8674/",
+       "type": "other",
+       "year": 1986
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Document Type Definitions (DTD formalism)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sgml-iso-8879-1986",
+      "candidate": {
+       "causal_claim": "SGML allegedly enabled XSD as the deep ancestor: the DTD formalism and the document-type concept originate in SGML (ISO 8879), and XML itself is SGML's web profile - proposed so the record can judge whether the channel reaches XSD only through XML 1.0.",
+       "definition": "The Standard Generalized Markup Language (ISO 8879, 1986), the meta-language whose document type definitions XML inherited and simplified.",
+       "domain": "software standards",
+       "lens": "L3",
+       "name": "SGML (ISO 8879)",
+       "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+       "source_url": "https://xml.coverpages.org/schemas.html",
+       "type": "other",
+       "year": 1986
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "SGML (ISO 8879)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xml-data-microsoft-et-al-1998-1998",
+      "candidate": {
+       "causal_claim": "XML-Data directly enabled XSD's leap as the founding proposal: submitted to the W3C in January 1998, it first specified schemas written in XML syntax itself with a large built-in datatype set 'covering all popular database and programming language types' - the two defining commitments (own-syntax schemas, rich datatypes) the Working Group was chartered to standardize.",
+       "definition": "The January 1998 Microsoft/ArborText/DataChannel/Inso submission to the W3C proposing XML-syntax schemas with datatypes, inheritance, and validation - the first full schema-language proposal for XML.",
+       "domain": "software standards",
+       "lens": "L1",
+       "name": "XML-Data (Microsoft et al., 1998)",
+       "source_title": "Microsoft, ArborText, DataChannel and Inso Submit XML-Data Specification to W3C (Microsoft, 27 Jan 1998)",
+       "source_url": "https://news.microsoft.com/source/1998/01/27/microsoft-arbortext-datachannel-and-inso-submit-xml-data-specification-to-w3c/",
+       "type": "other",
+       "year": 1998
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "XML-Data (Microsoft et al., 1998)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "document-content-description-dcd-1998-1998",
+      "candidate": {
+       "causal_claim": "DCD allegedly enabled XSD as XML-Data's direct refinement: the August 1998 IBM/Microsoft/Textuality submission 'incorporates a subset of the XML-Data submission' in RDF-consistent form, co-authored by Tim Bray, and was read at the time as superseding XML-Data on the path into the Working Group.",
+       "definition": "The August 1998 IBM/Microsoft/Textuality submission proposing a structural schema facility for XML, incorporating a subset of XML-Data expressed as an RDF vocabulary, with basic datatypes.",
+       "domain": "software standards",
+       "lens": "L2",
+       "name": "Document Content Description (DCD, 1998)",
+       "source_title": "Dead Formats: XDR, DSD, and DCD (brainkart.com)",
+       "source_url": "https://www.brainkart.com/article/Dead-Formats--XDR,-DSD,-and-DCD_8674/",
+       "type": "other",
+       "year": 1998
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Document Content Description (DCD, 1998)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xml-data-reduced-xdr-1998-1998",
+      "candidate": {
+       "causal_claim": "XDR allegedly enabled XSD as the implemented reduction of XML-Data: edited at the University of Edinburgh (Henry Thompson's group), shipped in Microsoft products (MSXML, SQL Server 2000, BizTalk), and the final XSD 'has some similarities to the XML-Data proposal' through this line - with Thompson himself becoming editor of XSD Part 1: Structures.",
+       "definition": "XML-Data Reduced (1998): the subset of XML-Data with corrections, edited by Henry Thompson, implemented by Microsoft as its interim schema language until XSD was finalized.",
+       "domain": "software standards",
+       "lens": "L2",
+       "name": "XML-Data Reduced (XDR, 1998)",
+       "source_title": "XDR Schema (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/XDR_Schema",
+       "type": "other",
+       "year": 1998
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "XML-Data Reduced (XDR, 1998)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "schema-for-object-oriented-xml-sox-1998-1998",
+      "candidate": {
+       "causal_claim": "SOX directly enabled XSD's leap by Commerce One's own documented claim: its Candidate Recommendation testimonial states SOX 'introduced and implemented ideas such as inheritance, polymorphism, local scoping, a modern modularity mechanism, user-defined datatypes, attribute and model groups... that are found in this Candidate Recommendation' - and SOX's authors Fuchs and Maloney sat inside the Working Group (Maloney co-edited the Requirements and Part 1).",
+       "definition": "The September 1998 Veo Systems submission (Fuchs, Maloney, Milowski) proposing an object-oriented XML schema facility with inheritance, datatypes, and namespace mechanisms, later developed at Commerce One.",
+       "domain": "software standards",
+       "lens": "L1",
+       "name": "Schema for Object-oriented XML (SOX, 1998)",
+       "source_title": "Schema for Object-oriented XML (W3C NOTE-SOX-19980930)",
+       "source_url": "https://www.w3.org/TR/1998/NOTE-SOX-19980930/",
+       "type": "other",
+       "year": 1998
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Schema for Object-oriented XML (SOX, 1998)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "document-definition-markup-language-ddml-1999-1999",
+      "candidate": {
+       "causal_claim": "DDML allegedly enabled XSD as the community proposal stratum: the xml-dev community's schema proposal (begun as XSchema, 1998), one of the submissions the Working Group's deliberations explicitly drew on ('the WG could include experiences with several other already existing schema languages, such as XSchema, DDML, XML-Data').",
+       "definition": "The Document Definition Markup Language (1999), the xml-dev community's minimalist schema proposal (formerly XSchema), edited by Simon St.Laurent and others.",
+       "domain": "software standards",
+       "lens": "L2",
+       "name": "Document Definition Markup Language (DDML, 1999)",
+       "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+       "source_url": "https://xml.coverpages.org/schemas.html",
+       "type": "other",
+       "year": 1999
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Document Definition Markup Language (DDML, 1999)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "document-structure-description-dsd-1999-1999",
+      "candidate": {
+       "causal_claim": "DSD allegedly enabled XSD as the formal wing of the proposal stratum: AT&T Labs and BRICS (Aarhus) built a grammar-formal schema language in 1999 aimed at the same standardization process, part of the documented field of proposals the Working Group considered.",
+       "definition": "The Document Structure Description (1999) by AT&T Labs and BRICS (Moller & Schwartzbach), a formally grounded schema language for XML aimed at web programmers.",
+       "domain": "software standards",
+       "lens": "L2",
+       "name": "Document Structure Description (DSD, 1999)",
+       "source_title": "Dead Formats: XDR, DSD, and DCD (brainkart.com)",
+       "source_url": "https://www.brainkart.com/article/Dead-Formats--XDR,-DSD,-and-DCD_8674/",
+       "type": "other",
+       "year": 1999
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Document Structure Description (DSD, 1999)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xml-schema-requirements-w3c-note-1999-1999",
+      "candidate": {
+       "causal_claim": "The Requirements document directly enabled XSD's leap by posing the problem in exactly the form the parent answered: the February 1999 W3C Note (Malhotra & Maloney, eds.) fixed the design goals - structural constraints, a datatype system providing 'SQL and Java primitive datatypes' adequate for database import/export, user-defined types derived by constraining facets, and a DTD migration path - that Parts 1 and 2 implement point by point.",
+       "definition": "The W3C Note of 15 February 1999 specifying the purpose, usage scenarios, design principles, and requirements for an XML schema language.",
+       "domain": "software standards",
+       "lens": "L4",
+       "name": "XML Schema Requirements (W3C Note, 1999)",
+       "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+       "source_url": "https://xml.coverpages.org/schemas.html",
+       "type": "other",
+       "year": 1999
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "XML Schema Requirements (W3C Note, 1999)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "namespaces-in-xml-w3c-recommendation-1999-1999",
+      "candidate": {
+       "causal_claim": "Namespaces directly enabled XSD's leap as a consumed component: XSD's headline repair of DTDs is namespace awareness (targetNamespace, qualified names), which is the January 1999 Namespaces Recommendation's mechanism taken as given - XSD schemas are themselves namespace-partitioned documents.",
+       "definition": "The W3C Recommendation of January 1999 defining namespaces in XML - the mechanism by which element and attribute names are partitioned among vocabularies.",
+       "domain": "software standards",
+       "lens": "L16",
+       "name": "Namespaces in XML (W3C Recommendation, 1999)",
+       "source_title": "W3C XML Activities timeline (KFUPM mirror)",
+       "source_url": "https://faculty.kfupm.edu.sa/ics/sukairi/swe423(021)/W3Schools/w3c/w3c_xml.asp.htm",
+       "type": "other",
+       "year": 1999
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Namespaces in XML (W3C Recommendation, 1999)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "resource-description-framework-rdf-1999-1999",
+      "candidate": {
+       "causal_claim": "RDF allegedly enabled XSD through the proposal stratum: DCD was expressly 'an RDF vocabulary', and the metadata framing (schemas as resource descriptions) was one of the design currents the Working Group absorbed and then largely dropped - proposed so the record can judge whether any RDF mechanism is actually inside XSD.",
+       "definition": "The Resource Description Framework, the W3C's February 1999 Recommendation for metadata statements about web resources, in terms of which DCD was expressed.",
+       "domain": "software standards",
+       "lens": "L19",
+       "name": "Resource Description Framework (RDF, 1999)",
+       "source_title": "Check out the DCD submission (xml-dev, Aug 1998)",
+       "source_url": "https://www.ch.imperial.ac.uk/rzepa/talks/pmr11/xml-dev/9808/0328.html",
+       "type": "other",
+       "year": 1999
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Resource Description Framework (RDF, 1999)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sql-datatype-system-sql-92-1992",
+      "candidate": {
+       "causal_claim": "SQL allegedly enabled XSD's datatype leap as the named donor: the Requirements the WG set itself demand primitive typing 'including byte, date, integer, sequence, SQL and Java primitive datatypes' and a type system 'adequate for import/export from database systems' - the datatype vocabulary of Part 2 was specified against SQL's type system.",
+       "definition": "The SQL database language's datatype system (SQL-92), the incumbent vocabulary of typed data values in business systems that XML lacked.",
+       "domain": "software standards",
+       "lens": "L19",
+       "name": "SQL datatype system (SQL-92)",
+       "source_title": "XML Schema Part 2: Datatypes, section 1.2 Requirements (W3C)",
+       "source_url": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes-with-errata.html",
+       "type": "other",
+       "year": 1992
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "SQL datatype system (SQL-92)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "relax-murata-2000-2000",
+      "candidate": {
+       "causal_claim": "RELAX allegedly enabled XSD as the parallel sibling: designed from 2000 by Murata Makoto - himself an XML Schema Working Group member - as a simpler, mathematically consistent alternative; proposed so the record can judge whether influence ran into XSD or only away from it (a reaction to XSD's complexity during its own drafting).",
+       "definition": "Murata Makoto's REgular LAnguage description for XML (2000), a hedge-automata-based schema language published as a Japanese national standard, designed in explicit reaction against XSD's complexity.",
+       "domain": "software standards",
+       "lens": "L6",
+       "name": "RELAX (Murata, 2000)",
+       "source_title": "Regular Language description for XML (Wikipedia)",
+       "source_url": "https://en.wikipedia.org/wiki/Regular_Language_description_for_XML",
+       "type": "other",
+       "year": 2000
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "RELAX (Murata, 2000)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "world-wide-web-consortium-w3c-1994",
+      "candidate": {
+       "causal_claim": "The W3C is proposed for the institution test: XSD is a W3C Recommendation produced by a W3C Working Group under the W3C process - the record must judge whether the institution carries a separable artifact into this parent (its process, its membership review) or whether crediting it double-counts the standard itself.",
+       "definition": "The World Wide Web Consortium (founded 1994), the standards body whose Working Group process produced XML Schema.",
+       "domain": "software standards",
+       "lens": "L21",
+       "name": "World Wide Web Consortium (W3C)",
+       "source_title": "World Wide Web Consortium Issues XML Schema as a W3C Recommendation (W3C, 2 May 2001)",
+       "source_url": "http://www.w3.org/2001/05/xml-schema-testimonial",
+       "type": "institution",
+       "year": 1994
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "World Wide Web Consortium (W3C)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xsv-xml-schema-validator-thompson-tobin-2000",
+      "candidate": {
+       "causal_claim": "XSV allegedly enabled XSD's leap as the wielded instrument of its standardization: co-developed by W3C with the University of Edinburgh and revised at each stage of the specification's development, it was the reference validator through which the design was tested into a Recommendation.",
+       "definition": "The XML Schema Validator (Henry Thompson & Richard Tobin, University of Edinburgh / W3C), the reference implementation co-developed alongside the specification.",
+       "domain": "software standards",
+       "lens": "L18",
+       "name": "XSV (XML Schema Validator, Thompson & Tobin)",
+       "source_title": "W3C news release, XML Schema Recommendation (lists.w3.org, 2 May 2001)",
+       "source_url": "https://lists.w3.org/Archives/Public/w3c-news/2001AprJun/0003.html",
+       "type": "method",
+       "year": 2000
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "XSV (XML Schema Validator, Thompson & Tobin)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "express-iso-10303-11-step-information-modeling-language-1994",
+      "candidate": {
+       "causal_claim": "EXPRESS allegedly enabled XSD through SOX: the SOX submission states it was 'informed by... the EXPRESS language reference manual' - the STEP standard's information-modeling language is SOX's named donor for its modeling features.",
+       "definition": "The information-modeling language of the STEP standard (ISO 10303-11), used to define product-data schemas with typed entities and constraints.",
+       "domain": "software standards",
+       "lens": "L19",
+       "name": "EXPRESS (ISO 10303-11, STEP information modeling language)",
+       "source_title": "Schema for Object-oriented XML (W3C NOTE-SOX-19980930)",
+       "source_url": "https://www.w3.org/TR/1998/NOTE-SOX-19980930/",
+       "type": "other",
+       "year": 1994
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "EXPRESS (ISO 10303-11, STEP information modeling language)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "schematron-jelliffe-1999-1999",
+      "candidate": {
+       "causal_claim": "Schematron allegedly enabled XSD as the rival approach in the same proposal field: Rick Jelliffe's assertion-based validation language (1999) posed the alternative (rules over patterns) against which the grammar-based mainstream, XSD included, defined its scope.",
+       "definition": "Rick Jelliffe's 1999 assertion-based schema language, which validates by XPath assertions rather than grammars - the road not taken by the W3C mainstream.",
+       "domain": "software standards",
+       "lens": "L6",
+       "name": "Schematron (Jelliffe, 1999)",
+       "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+       "source_url": "https://xml.coverpages.org/schemas.html",
+       "type": "other",
+       "year": 1999
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "Schematron (Jelliffe, 1999)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "datatypes-for-dtds-dt4dtd-1999",
+      "candidate": {
+       "causal_claim": "DT4DTD allegedly enabled XSD as a component proposal: an attempt to bolt a datatype vocabulary onto DTDs themselves, part of the documented pre-XSD effort to repair exactly the absence (datatypes) the parent's Part 2 addresses.",
+       "definition": "Datatypes for DTDs (DT4DTD), a late-1990s proposal to add datatype declarations to DTDs without a new schema language.",
+       "domain": "software standards",
+       "lens": "L1",
+       "name": "Datatypes for DTDs (DT4DTD)",
+       "source_title": "Cover Pages: XML Schemas (xml.coverpages.org)",
+       "source_url": "https://xml.coverpages.org/schemas.html",
+       "type": "other",
+       "year": 1999
+      },
+      "members": [
+       20
+      ],
+      "member_names": [
+       "Datatypes for DTDs (DT4DTD)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ansi-x12-edi-1979",
+      "candidate": {
+       "causal_claim": "X12 allegedly enabled XSD as the demand side: the incumbent electronic-data-interchange standard whose typed business documents (invoices, purchase orders) were the use case XSD's datatype system was built to serve - the parent's own Part 2 opens with a billing invoice whose dates and codes DTDs cannot type.",
+       "definition": "The ANSI X12 EDI standard (from 1979), the incumbent framework for typed electronic business documents that XML-based commerce was built to succeed.",
+       "domain": "software standards",
+       "lens": "L22",
+       "name": "ANSI X12 EDI",
+       "source_title": "XML Schema Part 2: Datatypes, section 1.1 (W3C)",
+       "source_url": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes-with-errata.html",
+       "type": "other",
+       "year": 1979
+      },
+      "members": [
+       21
+      ],
+      "member_names": [
+       "ANSI X12 EDI"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "java-primitive-type-system-1995",
+      "candidate": {
+       "causal_claim": "Java's type system is proposed alongside SQL as the second named donor in the Requirements ('SQL and Java primitive datatypes') - so the record can judge the programming-language import separately from the database import.",
+       "definition": "The Java language's primitive type set (byte, int, float, double, boolean, etc.), named in the XML Schema Requirements as a source the datatype system must cover.",
+       "domain": "software standards",
+       "lens": "L19",
+       "name": "Java primitive type system",
+       "source_title": "XML Schema Part 2: Datatypes, section 1.2 Requirements (W3C)",
+       "source_url": "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/datatypes-with-errata.html",
+       "type": "other",
+       "year": 1995
+      },
+      "members": [
+       22
+      ],
+      "member_names": [
+       "Java primitive type system"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "Proposed so the record shows TREX is coeval-year (February 2001) with the parent and date-bound: James Clark's tree-regular-expression schema language, designed as XSD reached Proposed Recommendation.",
+       "definition": "James Clark's Tree Regular Expressions for XML (2001), a pattern-based schema language later unified with RELAX as RELAX NG.",
+       "domain": "software standards",
+       "lens": "L6",
+       "name": "TREX (Tree Regular Expressions for XML, Clark, 2001)",
+       "source_title": "OASIS Unites TREX and RELAX to Create RELAX NG (OASIS, 5 June 2001)",
+       "source_url": "https://www.oasis-open.org/2001/06/04/oasis-unites-trex-and-relax-to-create-lightweight-xml-language-validation-specification/",
+       "type": "other",
+       "year": 2001
+      },
+      "reason": "dated on/after parent year 2001"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Proposed so the record shows RELAX NG is coeval-year (unified June 2001, OASIS Committee Specification December 2001) and date-bound: the rival standardization track that defined itself against XSD in the same season XSD became a Recommendation.",
+       "definition": "The RELAX + TREX unification (OASIS, 2001), the lightweight schema language positioned as the alternative to W3C XML Schema.",
+       "domain": "software standards",
+       "lens": "L6",
+       "name": "RELAX NG (OASIS, 2001)",
+       "source_title": "OASIS RELAX NG Technical Committee Completes RELAX NG Specification (OASIS, 3 Dec 2001)",
+       "source_url": "https://www.oasis-open.org/2001/12/02/oasis-relax-ng-technical-committee-completes-lightweight-xml-language-validation-specificati/",
+       "type": "other",
+       "year": 2001
+      },
+      "reason": "dated on/after parent year 2001"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
