@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T07:01:03+00:00",
-  "expansions_done": 57,
-  "raw_candidates_seen": 2979,
+  "updated_at": "2026-11-25T07:05:20+00:00",
+  "expansions_done": 58,
+  "raw_candidates_seen": 2998,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -14416,6 +14416,79 @@
     "name": "Brain Function and Adaptive Systems: A Heterostatic Theory (Klopf, 1972)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T07:00:42+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Sequential Analysis (Wald, 1947)",
+    "reason": "mediated_via: Statistical Decision Functions (Wald, 1950)",
+    "at": "2026-11-25T07:05:00+00:00",
+    "mediated_via": "Statistical Decision Functions (Wald, 1950)"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Differential Games (Isaacs, 1954)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Les Réserves et la Régulation de l'Avenir dans la Vie Économique (Massé, 1946)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Hamilton-Jacobi equation (Jacobi, 1837)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Stochastic Games (Shapley, 1953)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Optimal Inventory Policy (Arrow, Harris & Marschak, 1951)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "An Introduction to the Theory of Dynamic Programming (Bellman, RAND R-245, 1953)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "On the Theory of Dynamic Programming (Bellman, 1952)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Markov chains (Markov, 1906)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
+   },
+   {
+    "parent_id": "dynamic-programming-bellman-1957-1957",
+    "name": "Methodus Inveniendi (Euler, 1744)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T07:05:00+00:00"
    }
   ]
  },
@@ -18275,7 +18348,7 @@
    "prior_state": "Bespoke sequential analysis; Wald's statistical decision theory for the statistical branch; no general optimality principle for staged decision processes.",
    "status": "provisional",
    "depth": 6,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -18505,6 +18578,93 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T07:00:42+00:00"
+  },
+  "statistical-decision-functions-wald-1950-1950": {
+   "id": "statistical-decision-functions-wald-1950-1950",
+   "name": "Statistical Decision Functions (Wald, 1950)",
+   "aliases": [],
+   "year": 1950,
+   "domain": "statistics",
+   "type": "theory",
+   "definition": "Abraham Wald's 1950 monograph founding statistical decision theory: decisions under uncertainty as optimization over decision functions, including the sequential (multi-stage) case - the framework Bellman's 1952 founding note names as dynamic programming's intimate relative.",
+   "bottleneck": "Decisions under uncertainty had no general theory: statistical inference, sequential experimentation, and choice under risk were separate crafts with no common optimization frame.",
+   "leap": "Wald (1950) founds statistical decision theory: a decision problem is an optimization over decision functions against a loss, with sequential problems as staged decisions - the frame Bellman's programme generalizes from inference to control.",
+   "prior_state": "Classical estimation and testing theory (Neyman-Pearson) without a decision-theoretic optimization frame.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952): 'intimately related to the theory of sequential analysis due to Wald', citing Wald (1950)",
+     "url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Edge Statistical Decision Functions (Wald, 1950) -> Dynamic Programming (Bellman, 1957), 5.0. MULTIPLES TEST: anticipations and parallels examined: (a) Masse (1946) - an independent general theory of staged decisions with an optimality-like principle, but no documented junction with Bellman (Girlich's scholarship); it is anticipation, not a parallel channel INTO the monograph, and was rejected in this expansion as no-channel; (b) Arrow-Blackwell-Girshick (1949) - inside Wald's own frame and admitted separately for its recursive construction; the two edges claim different channels (frame vs construction) and both stand. Necessity stays ripe/partial (Q3), as scored. Q1 ATTACK: is Wald here merely cited ancestry - a name in a footnote - while the monograph's actual machinery (functional equations, successive approximations) owes him nothing? Partially lands on the machinery, and the edge does not claim it: the claim is on the PROBLEM FRAME - the monograph's stochastic multistage decision processes are Wald's sequential decision problems generalized, which is exactly what Bellman's 1952 sentence asserts ('intimately related to the theory of sequential analysis due to Wald'). A framework consumed as the problem's form is a channel (compare Dynamic Programming -> Werbos 1974, same session). MEDIATION ATTACK: is the channel mediated via Sequential Analysis (1947)? Inverted: the 1947 book was rejected in this expansion as mediated via THIS book, because the 1950 synthesis is the form Bellman's note cites. Attack fails. Status provisional: rests on the 1952 note's text and the monograph's framing; the monograph's full reference apparatus was sampled, not exhaustively read.",
+    "at": "2026-11-25T07:05:19+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:05:00+00:00"
+  },
+  "bayes-and-minimax-solutions-of-sequential-decision-problems-1949": {
+   "id": "bayes-and-minimax-solutions-of-sequential-decision-problems-1949",
+   "name": "Bayes and Minimax Solutions of Sequential Decision Problems (Arrow, Blackwell & Girshick, 1949)",
+   "aliases": [],
+   "year": 1949,
+   "domain": "statistics",
+   "type": "theory",
+   "definition": "Arrow, Blackwell and Girshick's 1949 Econometrica paper solving sequential decision problems (Bayes and minimax) by a recursive stage-by-stage construction - the earliest backward-induction solution of a multistage decision problem in the literature Bellman cites.",
+   "bottleneck": "Sequential statistical decisions had no solution method: how to choose at each stage, knowing later stages remain, was unformalized.",
+   "leap": "Arrow, Blackwell & Girshick (1949) solve sequential decision problems by backward recursion over decision regions - the DP recursion operating in the statistical setting, eight years before the monograph.",
+   "prior_state": "Wald's sequential analysis for the special case of tests and stopping; no general recursive solution for sequential decisions.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952), footnote citing Arrow, Blackwell & Girshick, Econometrica 17 (1949)",
+     "url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Edge Arrow, Blackwell & Girshick (1949) -> Dynamic Programming (Bellman, 1957), 4.5 - the expansion's most contestable admission, recorded as such. MULTIPLES / PARALLEL-TREATMENT ATTACK (the serious one): Bellman's own 1952 sentence describes the footnote's works as treatments of 'problems of a similar type' - the language of kinship, not descent. If the 1949 paper is a parallel treatment rather than an ancestor, this edge should not exist. The admission rests on the construction, not the citation alone: ABG exhibit the backward recursive construction of an optimal sequential decision (decision regions built stage by stage from the last stage), which is the monograph's solution form in the statistical setting, published eight years earlier inside the frame (Wald's) the monograph explicitly generalizes, and cited by Bellman in the founding document itself. Citation + instantiation of the solution form, in the parent's own founding note: the run's strong-channel pattern. The attack nonetheless caps the score at 4.5 and necessity at ripe. MEDIATION ATTACK: is ABG mediated via Wald (1950), in whose frame it works? The two channels are discriminated per component (the session-22 Amari pattern): Wald supplies the decision-function frame, ABG the recursive construction; the monograph consumes both, and neither contains the other. Attack fails. DISCRIMINATION ON THE RECORD: Arrow, Harris & Marschak (1951), cited in the same footnote, was rejected in this expansion as an application instance - the pair of rulings is the consumed-vs-instance line drawn inside one footnote. Status provisional: if Bellman scholarship shows the 1949 paper unread by Bellman beyond the footnote, this edge is the item to revisit.",
+    "at": "2026-11-25T07:05:19+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:05:00+00:00"
+  },
+  "rand-corporation-1948-1948": {
+   "id": "rand-corporation-1948-1948",
+   "name": "RAND Corporation (1948)",
+   "aliases": [],
+   "year": 1948,
+   "domain": "research institution",
+   "type": "institution",
+   "definition": "The RAND Corporation (founded 1948), where Bellman developed dynamic programming: the monograph is a RAND research study, and the DP report programme (R-245, R-271, and the journal papers) is the institutional output the book collects.",
+   "bottleneck": "Sequential-decision research had no institutional home, funding line, or publication channel after the wartime OR groups disbanded.",
+   "leap": "RAND's mathematics programme carried Bellman's dynamic programming from 1950: the report series (R-245 1953, R-271 1954, and companions) is the separable artifact through which the institution acted - the programme the 1957 monograph collects and systematizes.",
+   "prior_state": "Wartime operations-research groups, disbanding after 1945.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 3.0,
+   "sources": [
+    {
+     "title": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record: 'A Rand Corporation research study'",
+     "url": "https://books.google.com/books/about/Dynamic_Programming.html?id=rA-Y-Awz--8C"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Edge RAND Corporation (1948) -> Dynamic Programming (Bellman, 1957), 3.0 - the run's thinnest institutional admission, scored and recorded as such. MULTIPLES TEST: not applicable in the usual form (an institution has no parallel rediscoverer); the relevant test is the double-count test. DOUBLE-COUNT ATTACK (the serious one): at Howard (session 21) RAND was rejected because it was the PREDECESSOR's institution and its carried artifact (the 1957 monograph) was admitted as itself. Does this admission double-count the same channel at the parent? The discrimination: at Howard the artifact admitted was the monograph, and RAND would have re-labeled Bellman's channel; here the artifact claimed is different and separable - the DP report programme (R-245 1953, R-271 1954, and the companion reports) whose contents the monograph collects. The own-version trio (1952 note, R-245, 1954 survey) was rejected in this expansion as the author's earlier versions, NOT admitted - so the institution edge does not smuggle them in as nodes; it claims only the carrying. An evaluator who holds that a carrier of the parent's own earlier versions is still double-counting would reject this edge; the run records the tension and the low score (3.0, against Bern IAM 1.5 / Gatsby 2.5 / MIT AI Lab 2.5 precedents) reflects it. SELF-CARRIAGE CHECK: RAND is not the author (Bellman is), so the Microsoft-at-D3D10 rule does not apply; the pattern is Bern IAM at IAM-OnDB (the institute carried the parent's direct ancestor line). Q1 ATTACK: the institution flipped nothing theoretically - conceded in scoring (Q1 partial; the admission runs on Q2 generativity of the programme). Status provisional.",
+    "at": "2026-11-25T07:05:20+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T07:05:00+00:00"
   }
  },
  "edges": [
@@ -35521,6 +35681,297 @@
     "counterfactual": "Remove the book and the thesis loses the codified form of the procedure it generalizes: Werbos records that the thesis discussed Bryson & Ho by name as first-generation work (AD2004 ref. [16]), and the thesis's ordered-derivative rule contains the book's adjoint backward sweep as the dynamical special case - ancestor-modified consumption, unlike value iteration at Howard, whose mechanism is NOT inside policy iteration. The channel is doubled personally: co-author Yu-Chi Ho was Werbos's academic advisor at Harvard. Verification must record Werbos's independent-derivation account (Freud's picture plus the ordinary chain rule), which caps necessity at ripe.",
     "mediator": null,
     "evidence": "Werbos, Backwards Differentiation in AD and Neural Nets (AD2004), Sec. 2; Paul Werbos (Wikipedia): other academic advisors Yu-Chi Ho"
+   }
+  },
+  {
+   "predecessor_id": "statistical-decision-functions-wald-1950-1950",
+   "successor_id": "dynamic-programming-bellman-1957-1957",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Wald's frame made decisions under uncertainty an optimization problem as a class - including the sequential case - where before there were separate crafts (testing, estimation, stopping). Bellman's founding note names exactly this as DP's intimate relative: the monograph's stochastic multistage processes are Wald's sequential decision problems with the statistical content replaced by general dynamics.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Partial: Wald's theory generated the decision-theoretic literature the monograph draws on, but the monograph's wider progeny (control, MDP theory) descends from its own synthesis; the candidate's generativity into the parent is the sequential-decision frame specifically.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: multiples and anticipations exist - Massé's independent 1946 theory (no channel), Arrow-Blackwell-Girshick's recursive solutions in the same frame - so necessity is ripe, not unique.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Partial: the frame made sequential problems formulable, but no per-problem cost collapse is attributable to it in the monograph's record.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Wald supplies no metric or benchmark registering the parent's leap.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The decision-function frame IS the monograph's understanding of its stochastic chapters: a policy is a decision function, its risk the expected loss - Wald's vocabulary generalized. Bellman's 1952 note states the relationship himself.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Partial: Wald's frame composes decisions over stages in the statistical setting; the monograph's functional equations generalize that composition, but the compositional machinery (the value function) is Bellman's own.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Wald's frame already spanned statistics and economics; the monograph inherits that span and extends it to control - the reach is partly the candidate's own.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Wald changed no iteration speed available to the parent; successive approximations are the parent's method.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Partial: Wald's theory displaced fixed-sample practice in statistics - a real displacement in the parent field's prior state, though not an enabler mechanism of the monograph.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Wald is the lineage centre of the statistical branch of the parent's ancestry: the 1952 note cites him first among the theory's relations, and the sequential-analysis line runs through his 1950 book.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Partial: once decisions are framed as optimization over functions, the frame is permanent in statistics; the monograph's irreversibility runs mainly through its own principle.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:05:00+00:00",
+   "leap": {
+    "prior_state": "Sequential decision problems were attacked bespoke: Wald's statistical decision theory handled sequential inference for statistical problems, operations research handled inventory and allocation case by case, and the calculus of variations handled continuous deterministic problems trajectory by trajectory. No general principle stated what an optimal sequential policy must satisfy, and no functional-equation form made staged problems computable as a class.",
+    "jump": "Bellman's 1957 monograph founds dynamic programming: the principle of optimality plus functional equations over the value function turn sequential decision problems - deterministic and stochastic, discrete and continuous - into a computable form, solved by successive approximations, across allocation, inventory, games, and variational problems in one framework.",
+    "date": 1957
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Wald's decision theory and the monograph loses its statistical parent: Bellman's founding note (1952) declares DP 'intimately related to the theory of sequential analysis due to Wald' and cites Statistical Decision Functions, and the monograph's stochastic multistage decision processes are that book's sequential decision problems generalized from statistical inference to arbitrary dynamics - the frame is consumed, not merely cited. The inverted hearing from Howard (where Wald was mediated via this monograph) resolves here: at the monograph itself, the channel is direct.",
+    "mediator": null,
+    "evidence": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)"
+   }
+  },
+  {
+   "predecessor_id": "bayes-and-minimax-solutions-of-sequential-decision-problems-1949",
+   "successor_id": "dynamic-programming-bellman-1957-1957",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The paper first made a sequential decision problem SOLVABLE in closed recursive form: Bayes solutions constructed stage by stage over decision regions - a backward recursion - where Wald's frame had posed such problems without a general recursive solution. Bellman's 1952 note cites it in the founding footnote as the kin treatment.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Partial: the paper generated the sequential-design literature within statistics, but its generativity into the parent is the recursion itself, not a wider progeny the monograph consumes.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: Bellman's own sentence calls the cited works treatments of 'problems of a similar type' - kin, not unique source; Wald's frame and Bellman's own functional-equation route are parallel paths. Necessity ripe.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "The paper collapsed no cost in the parent's record.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The paper supplies no metric or benchmark registering the parent's leap.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The paper embodies the understanding the monograph generalizes: an optimal sequential decision is built backwards, the last stage first - the recursive logic the principle of optimality states abstractly.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The decision-region construction composes over stages: each stage's regions are defined from the next stage's solution - the compositional form the monograph's functional equations abstract.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: the paper's reach is statistics and econometrics; its travel into the monograph is by Bellman's own citation, not by wider fame.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "The paper changed no iteration speed available to the parent.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "The paper displaced no incumbent inside the parent's practice.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The paper sits on the direct line the founding note itself draws: it is one of the three works Bellman cites when announcing the theory - lineage centrality by the parent's own documents.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Backward recursion for sequential decisions, once exhibited, is permanent: the monograph's method is unthinkable in a world where the construction had been shown impossible; it had been shown possible, here, in 1949.",
+     "source": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:05:00+00:00",
+   "leap": {
+    "prior_state": "Sequential decision problems were attacked bespoke: Wald's statistical decision theory handled sequential inference for statistical problems, operations research handled inventory and allocation case by case, and the calculus of variations handled continuous deterministic problems trajectory by trajectory. No general principle stated what an optimal sequential policy must satisfy, and no functional-equation form made staged problems computable as a class.",
+    "jump": "Bellman's 1957 monograph founds dynamic programming: the principle of optimality plus functional equations over the value function turn sequential decision problems - deterministic and stochastic, discrete and continuous - into a computable form, solved by successive approximations, across allocation, inventory, games, and variational problems in one framework.",
+    "date": 1957
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 1949 paper and the monograph loses the first worked demonstration that a sequential decision problem solves by backward recursion - the construction Bellman cites in his founding note when announcing the theory. The discrimination against Arrow-Harris-Marschak (1951), cited in the same footnote but rejected in this expansion: AHM is an application instance (one problem solved), while ABG is a method (the recursive construction itself). Verification must record the parallel-treatment attack - Bellman's wording is 'problems of a similar type' - which caps necessity at ripe.",
+    "mediator": null,
+    "evidence": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952)"
+   }
+  },
+  {
+   "predecessor_id": "rand-corporation-1948-1948",
+   "successor_id": "dynamic-programming-bellman-1957-1957",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Partial: RAND made the programme possible institutionally, but the impossibility flip (sequential problems solvable as a class) is the monograph's own theoretical act, not the institution's.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The institution generated the programme: the DP report series (R-245 1953, R-271 1954, the continuous-process and games reports) and the journal papers are RAND's output, and the monograph is that programme collected - generativity through a separable carried artifact, the institution-through-artifact rule satisfied.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Partial: Bellman might have written elsewhere; but the record is that the theory was built inside RAND's mathematics programme over 1950-57, with its problems (games, logistics, variational problems) set by RAND's mission. Necessity ripe.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Partial: RAND's support collapsed the cost of pursuing a multi-year foundational programme at all - no university post of the era offered the same shelter - but no per-problem computational collapse is claimed.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "RAND supplies no metric or benchmark registering the parent's leap.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "RAND supplies no explanatory model; the principle is Bellman's.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "RAND offers no composable interface the parent builds on.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Partial: RAND's reach carried DP into the era's policy and OR worlds (its reports were the field's first literature), a reach the monograph inherits.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Partial: the report series sped the programme's iteration (report, response, revision into the book) - a real but modest speed channel.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "RAND displaced no incumbent inside the parent's practice.",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Partial: RAND is central to this lineage as carrier, not as content - centrality of the vehicle, scored honestly below the content channels (Wald, ABG).",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The programme's output is irreversible in the record: remove the reports and the 1957 book has no contents to collect - the monograph is catalogued as 'A Rand Corporation research study' (Google Books bibliographic record).",
+     "source": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record; Bellman, Dynamic Programming (1957), preface and bibliography (R-245 statement), text at dokumen.pub",
+     "falsification": "Revise if the parent's own record contradicts this reading."
+    }
+   },
+   "score": 3.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T07:05:00+00:00",
+   "leap": {
+    "prior_state": "Sequential decision problems were attacked bespoke: Wald's statistical decision theory handled sequential inference for statistical problems, operations research handled inventory and allocation case by case, and the calculus of variations handled continuous deterministic problems trajectory by trajectory. No general principle stated what an optimal sequential policy must satisfy, and no functional-equation form made staged problems computable as a class.",
+    "jump": "Bellman's 1957 monograph founds dynamic programming: the principle of optimality plus functional equations over the value function turn sequential decision problems - deterministic and stochastic, discrete and continuous - into a computable form, solved by successive approximations, across allocation, inventory, games, and variational problems in one framework.",
+    "date": 1957
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "The institution question reopens on this parent's own record and resolves differently from Howard: there, RAND was the PREDECESSOR's institution (it carried Bellman, one step removed from Howard) and was rejected as a double-count. Here RAND is the parent's OWN institution, and the separable carried artifact is specifiable: the DP report programme (R-245, R-271 and companions) that the monograph - catalogued as a RAND research study - collects and systematizes. The discrimination from self-carriage (Microsoft at D3D10): RAND is not the author; it is the carrier, as Bern IAM carried the database line at IAM-OnDB and the Gatsby Unit carried Kakade's milieu. Scored 3.0 - the run's thinnest institutional admission - because the artifact, while separable, is the parent's own earlier output in report form.",
+    "mediator": null,
+    "evidence": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record"
    }
   }
  ],
@@ -140382,6 +140833,740 @@
       }
      },
      "similarity": 0.8355,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "dynamic-programming-bellman-1957-1957": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Wald's Statistical Decision Functions (1950) directly enabled the monograph's leap: Bellman's founding 1952 note declares 'the theory of dynamic programming is intimately related to the theory of sequential analysis due to Wald' and cites this book - the monograph's stochastic multistage decision processes generalize Wald's sequential statistical decision problems from inference to control.",
+     "definition": "Abraham Wald's 1950 monograph founding statistical decision theory: decisions under uncertainty as optimization over decision functions, including the sequential (multi-stage) case - the framework Bellman's 1952 founding note names as dynamic programming's intimate relative.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Statistical Decision Functions (Wald, 1950)",
+     "source_title": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952): 'intimately related to the theory of sequential analysis due to Wald', citing Wald (1950)",
+     "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+     "type": "theory",
+     "year": 1950
+    },
+    {
+     "causal_claim": "Wald (1950) posed the problem class the monograph generalizes: sequential decisions under uncertainty, where each stage's choice affects what can be learned and done later.",
+     "definition": "Abraham Wald's 1950 monograph founding statistical decision theory: decisions under uncertainty as optimization over decision functions, including the sequential (multi-stage) case - the framework Bellman's 1952 founding note names as dynamic programming's intimate relative.",
+     "domain": "statistics",
+     "lens": "L4",
+     "name": "Statistical Decision Functions (Wald, 1950)",
+     "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952)",
+     "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+     "type": "theory",
+     "year": 1950
+    },
+    {
+     "causal_claim": "Wald's Sequential Analysis (1947) directly enabled the monograph's leap by founding sequential decision-making: optimal stopping and sequential tests, the first theory in which decisions are staged and information arrives over time.",
+     "definition": "Wald's 1947 monograph founding sequential analysis: sequential probability ratio tests and optimal stopping - the first rigorous theory of staged decisions under arriving information.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Sequential Analysis (Wald, 1947)",
+     "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952), citing Wald's sequential analysis",
+     "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+     "type": "theory",
+     "year": 1947
+    },
+    {
+     "causal_claim": "Arrow, Blackwell & Girshick (1949) directly enabled the monograph's leap by first solving a sequential decision problem by backward recursion: their Bayes and minimax solutions partition the sample space into decision regions stage by stage - the DP recursion in the statistical setting - cited by Bellman's 1952 note as the kin treatment.",
+     "definition": "Arrow, Blackwell and Girshick's 1949 Econometrica paper solving sequential decision problems (Bayes and minimax) by a recursive stage-by-stage construction - the earliest backward-induction solution of a multistage decision problem in the literature Bellman cites.",
+     "domain": "statistics",
+     "lens": "L1",
+     "name": "Bayes and Minimax Solutions of Sequential Decision Problems (Arrow, Blackwell & Girshick, 1949)",
+     "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952), footnote citing Arrow, Blackwell & Girshick, Econometrica 17 (1949)",
+     "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+     "type": "theory",
+     "year": 1949
+    },
+    {
+     "causal_claim": "The 1949 paper posed and solved the sequential-decision problem in its statistical form - the problem the monograph re-poses for general staged systems.",
+     "definition": "Arrow, Blackwell and Girshick's 1949 Econometrica paper solving sequential decision problems (Bayes and minimax) by a recursive stage-by-stage construction - the earliest backward-induction solution of a multistage decision problem in the literature Bellman cites.",
+     "domain": "statistics",
+     "lens": "L4",
+     "name": "Bayes and Minimax Solutions of Sequential Decision Problems (Arrow, Blackwell & Girshick, 1949)",
+     "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952), footnote",
+     "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+     "type": "theory",
+     "year": 1949
+    },
+    {
+     "causal_claim": "Optimal Inventory Policy (1951) directly enabled the monograph's leap as the era's canonical multistage stochastic optimization: inventory control over time with uncertain demand, cited in Bellman's 1952 note as related work in the same circle.",
+     "definition": "Arrow, Harris and Marschak's 1951 Econometrica paper: the first rigorous optimal inventory policy - a multistage stochastic decision problem (order quantities over time under uncertain demand) solved as optimization.",
+     "domain": "operations research",
+     "lens": "L6",
+     "name": "Optimal Inventory Policy (Arrow, Harris & Marschak, 1951)",
+     "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952), footnote citing Arrow, Harris & Marschak (1951)",
+     "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+     "type": "theory",
+     "year": 1951
+    },
+    {
+     "causal_claim": "Massé (1946) directly enabled the monograph's leap by first developing, from hydroelectric reservoir management, a general theory of staged decisions over time including a principle of optimality (Girlich's scholarship) - the anticipation of DP a decade before Bellman.",
+     "definition": "Pierre Massé's 1946 two-volume work on reserves and the regulation of the future in economic life: a general theory of decisions over time abstracted from hydroelectric reservoir policy, containing (per Girlich's scholarship) a form of the principle of optimality.",
+     "domain": "operations research",
+     "lens": "L3",
+     "name": "Les Réserves et la Régulation de l'Avenir dans la Vie Économique (Massé, 1946)",
+     "source_title": "Girlich, Pierre Massé and Dynamic Programming (1999); 3rd European Congress of Mathematics poster (2000)",
+     "source_url": "https://www.euro-math-soc.eu/system/files/news/pdf/emis_0.pdf",
+     "type": "theory",
+     "year": 1946
+    },
+    {
+     "causal_claim": "Massé posed the staged-decision problem in general form - managing a stock over time against an uncertain future - a decade before the monograph.",
+     "definition": "Pierre Massé's 1946 two-volume work on reserves and the regulation of the future in economic life: a general theory of decisions over time abstracted from hydroelectric reservoir policy, containing (per Girlich's scholarship) a form of the principle of optimality.",
+     "domain": "operations research",
+     "lens": "L4",
+     "name": "Les Réserves et la Régulation de l'Avenir dans la Vie Économique (Massé, 1946)",
+     "source_title": "Girlich, Pierre Massé and Dynamic Programming (1999)",
+     "source_url": "https://www.euro-math-soc.eu/system/files/news/pdf/emis_0.pdf",
+     "type": "theory",
+     "year": 1946
+    },
+    {
+     "causal_claim": "Shapley's stochastic games (1953) directly enabled the monograph's leap by proving, in the two-player Markov setting, that staged games have a value with stationary optimal strategies computed by a value-iteration contraction - the monograph's Markovian decision process theory in game form, from the same RAND milieu.",
+     "definition": "Lloyd Shapley's 1953 PNAS paper: two-player Markov games have a value and optimal stationary strategies, computed by a value-iteration-like contraction - the game-theoretic sibling of the Markov decision problem.",
+     "domain": "game theory",
+     "lens": "L3",
+     "name": "Stochastic Games (Shapley, 1953)",
+     "source_title": "Shapley, Stochastic Games, Proc. Natl. Acad. Sci. 39(10):1095-1100 (1953)",
+     "source_url": "https://www.pnas.org/doi/10.1073/pnas.39.10.1095",
+     "type": "theory",
+     "year": 1953
+    },
+    {
+     "causal_claim": "Isaacs's differential-games work directly enabled the monograph's leap: his 'tenet of transition' - the principle that an optimal strategy's continuation is optimal - is the principle of optimality in game form, formalized in RAND reports (1951-54) slightly before Bellman's statement, by a RAND colleague.",
+     "definition": "Rufus Isaacs's RAND reports on differential games (1951-54; book 1965), whose 'tenet of transition' states the optimality principle for continuous two-player games - the differential-games form of the principle of optimality, developed at RAND in the same years as Bellman's work.",
+     "domain": "game theory",
+     "lens": "L3",
+     "name": "Differential Games (Isaacs, 1954)",
+     "source_title": "Liberzon, Calculus of Variations and Optimal Control Theory (2012), Historical Remarks: Isaacs formalized the principle as the 'tenet of transition' slightly before Bellman",
+     "source_url": "https://assets.press.princeton.edu/chapters/s9360.pdf",
+     "type": "theory",
+     "year": 1954
+    },
+    {
+     "causal_claim": "The Hamilton-Jacobi equation directly enabled the monograph's leap as its continuous ancestor: the optimal-cost function of a variational problem satisfying a PDE is the value function of the monograph's continuous chapters ('a new formalism in the calculus of variations').",
+     "definition": "The Hamilton-Jacobi partial differential equation of variational mechanics (Hamilton 1834-35; Jacobi 1837): the optimal cost as a function of state satisfies a PDE - the continuous form of what becomes the Bellman equation.",
+     "domain": "mathematics",
+     "lens": "L19",
+     "name": "Hamilton-Jacobi Equation (Jacobi, 1837)",
+     "source_title": "Liberzon, Calculus of Variations and Optimal Control Theory (2012), Historical Remarks: the Bellman-HJB connection was first made explicitly by Kalman in the early 1960s",
+     "source_url": "https://assets.press.princeton.edu/chapters/s9360.pdf",
+     "type": "theory",
+     "year": 1837
+    },
+    {
+     "causal_claim": "Von Neumann & Morgenstern (1944) directly enabled the monograph's leap by founding the mathematical milieu - game theory, expected utility, the RAND circle - in which DP was posed; von Neumann personally communicated Bellman's 1952 founding note to PNAS.",
+     "definition": "Von Neumann and Morgenstern's 1944 Theory of Games and Economic Behavior: the founding text of game theory and expected-utility maximization - the mathematical culture of the RAND milieu in which dynamic programming was formulated.",
+     "domain": "game theory",
+     "lens": "L20",
+     "name": "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)",
+     "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952): 'Communicated by J. von Neumann, June 5, 1952'",
+     "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+     "type": "theory",
+     "year": 1944
+    },
+    {
+     "causal_claim": "Bellman's 1953 RAND monograph R-245 directly enabled the 1957 book's leap as its first full statement: the principle of optimality was first stated there (the 1957 book says so itself), and the book is its expansion.",
+     "definition": "Bellman's RAND Report R-245 (1953), An Introduction to the Theory of Dynamic Programming: the first monograph-length statement of the theory, in which the principle of optimality was first stated (per the 1957 book's own preface).",
+     "domain": "operations research",
+     "lens": "L2",
+     "name": "An Introduction to the Theory of Dynamic Programming (Bellman, RAND R-245, 1953)",
+     "source_title": "Bellman, Dynamic Programming (1957), preface/bibliography: R-245 (1953) as the principle's first statement; text reproduced at dokumen.pub",
+     "source_url": "https://dokumen.pub/dynamic-programming-9780486318524.html",
+     "type": "theory",
+     "year": 1953
+    },
+    {
+     "causal_claim": "Bellman's 1954 Bulletin survey directly enabled the monograph's leap as the programme's public announcement - the statement of DP (principle of optimality, functional equations) from which the 1957 book systematizes.",
+     "definition": "Bellman's 1954 Bulletin of the AMS survey 'The theory of dynamic programming' (60(6):503-515; address delivered Sept 1953): the first public statement of the DP programme to the mathematical community.",
+     "domain": "operations research",
+     "lens": "L2",
+     "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+     "source_title": "Bellman, The Theory of Dynamic Programming, Bull. Amer. Math. Soc. 60(6):503-515 (1954)",
+     "source_url": "https://www.ams.org/journals/bull/1954-60-06/S0002-9904-1954-09848-8/S0002-9904-1954-09848-8.pdf",
+     "type": "theory",
+     "year": 1954
+    },
+    {
+     "causal_claim": "Bellman's 1952 PNAS note directly enabled the monograph's leap as the founding document: the first published statement of the theory of dynamic programming, from which the RAND reports and the book descend.",
+     "definition": "Bellman's 1952 PNAS note 'On the theory of dynamic programming' (38(8):716-719, communicated by von Neumann): the first published statement of the theory, naming its relation to Wald's sequential analysis.",
+     "domain": "operations research",
+     "lens": "L3",
+     "name": "On the Theory of Dynamic Programming (Bellman, 1952)",
+     "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS 38(8) (1952)",
+     "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+     "type": "theory",
+     "year": 1952
+    },
+    {
+     "causal_claim": "The RAND Corporation directly enabled the monograph's leap institutionally: the book is catalogued as 'A Rand Corporation research study', and RAND carried the DP programme - the R-245/R-271 report series the book collects and systematizes - as its separable carried artifact.",
+     "definition": "The RAND Corporation (founded 1948), where Bellman developed dynamic programming: the monograph is a RAND research study, and the DP report programme (R-245, R-271, and the journal papers) is the institutional output the book collects.",
+     "domain": "research institution",
+     "lens": "L21",
+     "name": "RAND Corporation (1948)",
+     "source_title": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record: 'A Rand Corporation research study'",
+     "source_url": "https://books.google.com/books/about/Dynamic_Programming.html?id=rA-Y-Awz--8C",
+     "type": "institution",
+     "year": 1948
+    },
+    {
+     "causal_claim": "Markov chains directly enabled the monograph's leap as its stochastic fabric: the monograph's Markovian decision processes are Markov chains with decisions and rewards attached.",
+     "definition": "Andrey Markov's 1906 introduction of chains of dependent random variables - the stochastic process (states, transition probabilities) that is the fabric of the monograph's Markovian decision processes.",
+     "domain": "probability theory",
+     "lens": "L1",
+     "name": "Markov Chains (Markov, 1906)",
+     "source_title": "Markov (1906), extension of the law of large numbers to dependent variables",
+     "source_url": "https://en.wikipedia.org/wiki/Markov_chain",
+     "type": "theory",
+     "year": 1906
+    },
+    {
+     "causal_claim": "Euler's Methodus Inveniendi (1744) directly enabled the monograph's leap by founding the calculus of variations - the field the monograph's 'new formalism in the calculus of variations' chapter reframes as functional equations over an optimal-cost function.",
+     "definition": "Leonhard Euler's 1744 Methodus Inveniendi: the founding text of the calculus of variations - optimizing functionals over curves, the classical theory the monograph reframes for staged decisions.",
+     "domain": "mathematics",
+     "lens": "L6",
+     "name": "Methodus Inveniendi (Euler, 1744)",
+     "source_title": "Bellman, Dynamic Programming (1957), chapter 'A new formalism in the calculus of variations' (Google Books record)",
+     "source_url": "https://books.google.com/books/about/Dynamic_Programming.html?id=rA-Y-Awz--8C",
+     "type": "theory",
+     "year": 1744
+    },
+    {
+     "causal_claim": "Euler's variational theory is the imported mathematics the monograph translates: trajectory-by-trajectory extremals become an equation for the optimal cost as a function of state.",
+     "definition": "Leonhard Euler's 1744 Methodus Inveniendi: the founding text of the calculus of variations - optimizing functionals over curves, the classical theory the monograph reframes for staged decisions.",
+     "domain": "mathematics",
+     "lens": "L19",
+     "name": "Methodus Inveniendi (Euler, 1744)",
+     "source_title": "Liberzon, Calculus of Variations and Optimal Control Theory (2012), Historical Remarks",
+     "source_url": "https://assets.press.princeton.edu/chapters/s9360.pdf",
+     "type": "theory",
+     "year": 1744
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "statistical-decision-functions-wald-1950-1950",
+      "candidate": {
+       "causal_claim": "Wald's Statistical Decision Functions (1950) directly enabled the monograph's leap: Bellman's founding 1952 note declares 'the theory of dynamic programming is intimately related to the theory of sequential analysis due to Wald' and cites this book - the monograph's stochastic multistage decision processes generalize Wald's sequential statistical decision problems from inference to control.",
+       "definition": "Abraham Wald's 1950 monograph founding statistical decision theory: decisions under uncertainty as optimization over decision functions, including the sequential (multi-stage) case - the framework Bellman's 1952 founding note names as dynamic programming's intimate relative.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Statistical Decision Functions (Wald, 1950)",
+       "source_title": "Bellman, On the Theory of Dynamic Programming, Proc. Natl. Acad. Sci. 38(8):716-719 (1952): 'intimately related to the theory of sequential analysis due to Wald', citing Wald (1950)",
+       "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+       "type": "theory",
+       "year": 1950
+      },
+      "members": [
+       0,
+       1
+      ],
+      "member_names": [
+       "Statistical Decision Functions (Wald, 1950)",
+       "Statistical Decision Functions (Wald, 1950)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sequential-analysis-wald-1947-1947",
+      "candidate": {
+       "causal_claim": "Wald's Sequential Analysis (1947) directly enabled the monograph's leap by founding sequential decision-making: optimal stopping and sequential tests, the first theory in which decisions are staged and information arrives over time.",
+       "definition": "Wald's 1947 monograph founding sequential analysis: sequential probability ratio tests and optimal stopping - the first rigorous theory of staged decisions under arriving information.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Sequential Analysis (Wald, 1947)",
+       "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952), citing Wald's sequential analysis",
+       "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+       "type": "theory",
+       "year": 1947
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Sequential Analysis (Wald, 1947)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bayes-and-minimax-solutions-of-sequential-decision-problems-1949",
+      "candidate": {
+       "causal_claim": "Arrow, Blackwell & Girshick (1949) directly enabled the monograph's leap by first solving a sequential decision problem by backward recursion: their Bayes and minimax solutions partition the sample space into decision regions stage by stage - the DP recursion in the statistical setting - cited by Bellman's 1952 note as the kin treatment.",
+       "definition": "Arrow, Blackwell and Girshick's 1949 Econometrica paper solving sequential decision problems (Bayes and minimax) by a recursive stage-by-stage construction - the earliest backward-induction solution of a multistage decision problem in the literature Bellman cites.",
+       "domain": "statistics",
+       "lens": "L1",
+       "name": "Bayes and Minimax Solutions of Sequential Decision Problems (Arrow, Blackwell & Girshick, 1949)",
+       "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952), footnote citing Arrow, Blackwell & Girshick, Econometrica 17 (1949)",
+       "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+       "type": "theory",
+       "year": 1949
+      },
+      "members": [
+       3,
+       4
+      ],
+      "member_names": [
+       "Bayes and Minimax Solutions of Sequential Decision Problems (Arrow, Blackwell & Girshick, 1949)",
+       "Bayes and Minimax Solutions of Sequential Decision Problems (Arrow, Blackwell & Girshick, 1949)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+      "candidate": {
+       "causal_claim": "Optimal Inventory Policy (1951) directly enabled the monograph's leap as the era's canonical multistage stochastic optimization: inventory control over time with uncertain demand, cited in Bellman's 1952 note as related work in the same circle.",
+       "definition": "Arrow, Harris and Marschak's 1951 Econometrica paper: the first rigorous optimal inventory policy - a multistage stochastic decision problem (order quantities over time under uncertain demand) solved as optimization.",
+       "domain": "operations research",
+       "lens": "L6",
+       "name": "Optimal Inventory Policy (Arrow, Harris & Marschak, 1951)",
+       "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952), footnote citing Arrow, Harris & Marschak (1951)",
+       "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+       "type": "theory",
+       "year": 1951
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Optimal Inventory Policy (Arrow, Harris & Marschak, 1951)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "les-reserves-et-la-regulation-de-l-avenir-dans-la-vie-econom-1946",
+      "candidate": {
+       "causal_claim": "Massé (1946) directly enabled the monograph's leap by first developing, from hydroelectric reservoir management, a general theory of staged decisions over time including a principle of optimality (Girlich's scholarship) - the anticipation of DP a decade before Bellman.",
+       "definition": "Pierre Massé's 1946 two-volume work on reserves and the regulation of the future in economic life: a general theory of decisions over time abstracted from hydroelectric reservoir policy, containing (per Girlich's scholarship) a form of the principle of optimality.",
+       "domain": "operations research",
+       "lens": "L3",
+       "name": "Les Réserves et la Régulation de l'Avenir dans la Vie Économique (Massé, 1946)",
+       "source_title": "Girlich, Pierre Massé and Dynamic Programming (1999); 3rd European Congress of Mathematics poster (2000)",
+       "source_url": "https://www.euro-math-soc.eu/system/files/news/pdf/emis_0.pdf",
+       "type": "theory",
+       "year": 1946
+      },
+      "members": [
+       6,
+       7
+      ],
+      "member_names": [
+       "Les Réserves et la Régulation de l'Avenir dans la Vie Économique (Massé, 1946)",
+       "Les Réserves et la Régulation de l'Avenir dans la Vie Économique (Massé, 1946)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "stochastic-games-shapley-1953-1953",
+      "candidate": {
+       "causal_claim": "Shapley's stochastic games (1953) directly enabled the monograph's leap by proving, in the two-player Markov setting, that staged games have a value with stationary optimal strategies computed by a value-iteration contraction - the monograph's Markovian decision process theory in game form, from the same RAND milieu.",
+       "definition": "Lloyd Shapley's 1953 PNAS paper: two-player Markov games have a value and optimal stationary strategies, computed by a value-iteration-like contraction - the game-theoretic sibling of the Markov decision problem.",
+       "domain": "game theory",
+       "lens": "L3",
+       "name": "Stochastic Games (Shapley, 1953)",
+       "source_title": "Shapley, Stochastic Games, Proc. Natl. Acad. Sci. 39(10):1095-1100 (1953)",
+       "source_url": "https://www.pnas.org/doi/10.1073/pnas.39.10.1095",
+       "type": "theory",
+       "year": 1953
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Stochastic Games (Shapley, 1953)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "differential-games-isaacs-1954-1954",
+      "candidate": {
+       "causal_claim": "Isaacs's differential-games work directly enabled the monograph's leap: his 'tenet of transition' - the principle that an optimal strategy's continuation is optimal - is the principle of optimality in game form, formalized in RAND reports (1951-54) slightly before Bellman's statement, by a RAND colleague.",
+       "definition": "Rufus Isaacs's RAND reports on differential games (1951-54; book 1965), whose 'tenet of transition' states the optimality principle for continuous two-player games - the differential-games form of the principle of optimality, developed at RAND in the same years as Bellman's work.",
+       "domain": "game theory",
+       "lens": "L3",
+       "name": "Differential Games (Isaacs, 1954)",
+       "source_title": "Liberzon, Calculus of Variations and Optimal Control Theory (2012), Historical Remarks: Isaacs formalized the principle as the 'tenet of transition' slightly before Bellman",
+       "source_url": "https://assets.press.princeton.edu/chapters/s9360.pdf",
+       "type": "theory",
+       "year": 1954
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Differential Games (Isaacs, 1954)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hamilton-jacobi-equation-jacobi-1837-1837",
+      "candidate": {
+       "causal_claim": "The Hamilton-Jacobi equation directly enabled the monograph's leap as its continuous ancestor: the optimal-cost function of a variational problem satisfying a PDE is the value function of the monograph's continuous chapters ('a new formalism in the calculus of variations').",
+       "definition": "The Hamilton-Jacobi partial differential equation of variational mechanics (Hamilton 1834-35; Jacobi 1837): the optimal cost as a function of state satisfies a PDE - the continuous form of what becomes the Bellman equation.",
+       "domain": "mathematics",
+       "lens": "L19",
+       "name": "Hamilton-Jacobi Equation (Jacobi, 1837)",
+       "source_title": "Liberzon, Calculus of Variations and Optimal Control Theory (2012), Historical Remarks: the Bellman-HJB connection was first made explicitly by Kalman in the early 1960s",
+       "source_url": "https://assets.press.princeton.edu/chapters/s9360.pdf",
+       "type": "theory",
+       "year": 1837
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Hamilton-Jacobi Equation (Jacobi, 1837)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "theory-of-games-and-economic-behavior-von-neumann-morgenster-1944",
+      "candidate": {
+       "causal_claim": "Von Neumann & Morgenstern (1944) directly enabled the monograph's leap by founding the mathematical milieu - game theory, expected utility, the RAND circle - in which DP was posed; von Neumann personally communicated Bellman's 1952 founding note to PNAS.",
+       "definition": "Von Neumann and Morgenstern's 1944 Theory of Games and Economic Behavior: the founding text of game theory and expected-utility maximization - the mathematical culture of the RAND milieu in which dynamic programming was formulated.",
+       "domain": "game theory",
+       "lens": "L20",
+       "name": "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)",
+       "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS (1952): 'Communicated by J. von Neumann, June 5, 1952'",
+       "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+       "type": "theory",
+       "year": 1944
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "an-introduction-to-the-theory-of-dynamic-programming-bellman-1953",
+      "candidate": {
+       "causal_claim": "Bellman's 1953 RAND monograph R-245 directly enabled the 1957 book's leap as its first full statement: the principle of optimality was first stated there (the 1957 book says so itself), and the book is its expansion.",
+       "definition": "Bellman's RAND Report R-245 (1953), An Introduction to the Theory of Dynamic Programming: the first monograph-length statement of the theory, in which the principle of optimality was first stated (per the 1957 book's own preface).",
+       "domain": "operations research",
+       "lens": "L2",
+       "name": "An Introduction to the Theory of Dynamic Programming (Bellman, RAND R-245, 1953)",
+       "source_title": "Bellman, Dynamic Programming (1957), preface/bibliography: R-245 (1953) as the principle's first statement; text reproduced at dokumen.pub",
+       "source_url": "https://dokumen.pub/dynamic-programming-9780486318524.html",
+       "type": "theory",
+       "year": 1953
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "An Introduction to the Theory of Dynamic Programming (Bellman, RAND R-245, 1953)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-theory-of-dynamic-programming-bellman-1954-1954",
+      "candidate": {
+       "causal_claim": "Bellman's 1954 Bulletin survey directly enabled the monograph's leap as the programme's public announcement - the statement of DP (principle of optimality, functional equations) from which the 1957 book systematizes.",
+       "definition": "Bellman's 1954 Bulletin of the AMS survey 'The theory of dynamic programming' (60(6):503-515; address delivered Sept 1953): the first public statement of the DP programme to the mathematical community.",
+       "domain": "operations research",
+       "lens": "L2",
+       "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+       "source_title": "Bellman, The Theory of Dynamic Programming, Bull. Amer. Math. Soc. 60(6):503-515 (1954)",
+       "source_url": "https://www.ams.org/journals/bull/1954-60-06/S0002-9904-1954-09848-8/S0002-9904-1954-09848-8.pdf",
+       "type": "theory",
+       "year": 1954
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "The Theory of Dynamic Programming (Bellman, 1954)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "on-the-theory-of-dynamic-programming-bellman-1952-1952",
+      "candidate": {
+       "causal_claim": "Bellman's 1952 PNAS note directly enabled the monograph's leap as the founding document: the first published statement of the theory of dynamic programming, from which the RAND reports and the book descend.",
+       "definition": "Bellman's 1952 PNAS note 'On the theory of dynamic programming' (38(8):716-719, communicated by von Neumann): the first published statement of the theory, naming its relation to Wald's sequential analysis.",
+       "domain": "operations research",
+       "lens": "L3",
+       "name": "On the Theory of Dynamic Programming (Bellman, 1952)",
+       "source_title": "Bellman, On the Theory of Dynamic Programming, PNAS 38(8) (1952)",
+       "source_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.38.8.716",
+       "type": "theory",
+       "year": 1952
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "On the Theory of Dynamic Programming (Bellman, 1952)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rand-corporation-1948-1948",
+      "candidate": {
+       "causal_claim": "The RAND Corporation directly enabled the monograph's leap institutionally: the book is catalogued as 'A Rand Corporation research study', and RAND carried the DP programme - the R-245/R-271 report series the book collects and systematizes - as its separable carried artifact.",
+       "definition": "The RAND Corporation (founded 1948), where Bellman developed dynamic programming: the monograph is a RAND research study, and the DP report programme (R-245, R-271, and the journal papers) is the institutional output the book collects.",
+       "domain": "research institution",
+       "lens": "L21",
+       "name": "RAND Corporation (1948)",
+       "source_title": "Bellman, Dynamic Programming (Princeton, 1957), Google Books bibliographic record: 'A Rand Corporation research study'",
+       "source_url": "https://books.google.com/books/about/Dynamic_Programming.html?id=rA-Y-Awz--8C",
+       "type": "institution",
+       "year": 1948
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "RAND Corporation (1948)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "markov-chains-markov-1906-1906",
+      "candidate": {
+       "causal_claim": "Markov chains directly enabled the monograph's leap as its stochastic fabric: the monograph's Markovian decision processes are Markov chains with decisions and rewards attached.",
+       "definition": "Andrey Markov's 1906 introduction of chains of dependent random variables - the stochastic process (states, transition probabilities) that is the fabric of the monograph's Markovian decision processes.",
+       "domain": "probability theory",
+       "lens": "L1",
+       "name": "Markov Chains (Markov, 1906)",
+       "source_title": "Markov (1906), extension of the law of large numbers to dependent variables",
+       "source_url": "https://en.wikipedia.org/wiki/Markov_chain",
+       "type": "theory",
+       "year": 1906
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "Markov Chains (Markov, 1906)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "methodus-inveniendi-euler-1744-1744",
+      "candidate": {
+       "causal_claim": "Euler's Methodus Inveniendi (1744) directly enabled the monograph's leap by founding the calculus of variations - the field the monograph's 'new formalism in the calculus of variations' chapter reframes as functional equations over an optimal-cost function.",
+       "definition": "Leonhard Euler's 1744 Methodus Inveniendi: the founding text of the calculus of variations - optimizing functionals over curves, the classical theory the monograph reframes for staged decisions.",
+       "domain": "mathematics",
+       "lens": "L6",
+       "name": "Methodus Inveniendi (Euler, 1744)",
+       "source_title": "Bellman, Dynamic Programming (1957), chapter 'A new formalism in the calculus of variations' (Google Books record)",
+       "source_url": "https://books.google.com/books/about/Dynamic_Programming.html?id=rA-Y-Awz--8C",
+       "type": "theory",
+       "year": 1744
+      },
+      "members": [
+       17,
+       18
+      ],
+      "member_names": [
+       "Methodus Inveniendi (Euler, 1744)",
+       "Methodus Inveniendi (Euler, 1744)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:12:13",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 12,
+       "card": {
+        "name": "An Introduction to the Theory of Dynamic Programming (Bellman, RAND R-245, 1953)",
+        "aliases": [],
+        "year": 1953,
+        "domain": "operations research",
+        "type": "theory",
+        "definition": "Bellman's RAND Report R-245 (1953), An Introduction to the Theory of Dynamic Programming: the first monograph-length statement of the theory, in which the principle of optimality was first stated (per the 1957 book's own preface).",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 13,
+       "card": {
+        "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+        "aliases": [],
+        "year": 1954,
+        "domain": "operations research",
+        "type": "theory",
+        "definition": "Bellman's 1954 Bulletin of the AMS survey 'The theory of dynamic programming' (60(6):503-515; address delivered Sept 1953): the first public statement of the DP programme to the mathematical community.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8522,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:13:14",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 13,
+       "card": {
+        "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+        "aliases": [],
+        "year": 1954,
+        "domain": "operations research",
+        "type": "theory",
+        "definition": "Bellman's 1954 Bulletin of the AMS survey 'The theory of dynamic programming' (60(6):503-515; address delivered Sept 1953): the first public statement of the DP programme to the mathematical community.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 14,
+       "card": {
+        "name": "On the Theory of Dynamic Programming (Bellman, 1952)",
+        "aliases": [],
+        "year": 1952,
+        "domain": "operations research",
+        "type": "theory",
+        "definition": "Bellman's 1952 PNAS note 'On the theory of dynamic programming' (38(8):716-719, communicated by von Neumann): the first published statement of the theory, naming its relation to Wald's sequential analysis.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8083,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       1
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       4
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       6,
+       7
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       17,
+       18
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:12:13",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 12,
+      "card": {
+       "name": "An Introduction to the Theory of Dynamic Programming (Bellman, RAND R-245, 1953)",
+       "aliases": [],
+       "year": 1953,
+       "domain": "operations research",
+       "type": "theory",
+       "definition": "Bellman's RAND Report R-245 (1953), An Introduction to the Theory of Dynamic Programming: the first monograph-length statement of the theory, in which the principle of optimality was first stated (per the 1957 book's own preface).",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 13,
+      "card": {
+       "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+       "aliases": [],
+       "year": 1954,
+       "domain": "operations research",
+       "type": "theory",
+       "definition": "Bellman's 1954 Bulletin of the AMS survey 'The theory of dynamic programming' (60(6):503-515; address delivered Sept 1953): the first public statement of the DP programme to the mathematical community.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8522,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:13:14",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 13,
+      "card": {
+       "name": "The Theory of Dynamic Programming (Bellman, 1954)",
+       "aliases": [],
+       "year": 1954,
+       "domain": "operations research",
+       "type": "theory",
+       "definition": "Bellman's 1954 Bulletin of the AMS survey 'The theory of dynamic programming' (60(6):503-515; address delivered Sept 1953): the first public statement of the DP programme to the mathematical community.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 14,
+      "card": {
+       "name": "On the Theory of Dynamic Programming (Bellman, 1952)",
+       "aliases": [],
+       "year": 1952,
+       "domain": "operations research",
+       "type": "theory",
+       "definition": "Bellman's 1952 PNAS note 'On the theory of dynamic programming' (38(8):716-719, communicated by von Neumann): the first published statement of the theory, naming its relation to Wald's sequential analysis.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8083,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
