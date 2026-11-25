@@ -12,9 +12,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T10:27:54+00:00",
-  "expansions_done": 85,
-  "raw_candidates_seen": 3539,
+  "updated_at": "2026-11-25T10:34:01+00:00",
+  "expansions_done": 86,
+  "raw_candidates_seen": 3550,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -16964,6 +16964,68 @@
     "name": "Galton, Meteorographica — the weather maps and the anticyclone (1863)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T10:27:46+00:00"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "Normal law of error (Gauss, 1809)",
+    "reason": "mediated_via: Laplace, Théorie analytique des probabilités (1812)",
+    "at": "2026-11-25T10:33:43+00:00",
+    "mediated_via": "Laplace, Théorie analytique des probabilités (1812)"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "De Moivre, The Doctrine of Chances — the normal approximation to the binomial (1738)",
+    "reason": "mediated_via: Laplace, Théorie analytique des probabilités (1812)",
+    "at": "2026-11-25T10:33:43+00:00",
+    "mediated_via": "Laplace, Théorie analytique des probabilités (1812)"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "Legendre, Nouvelles méthodes — the method of least squares (1805)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:33:43+00:00"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "The published anthropometric returns — Edinburgh militia tables (1817) and the French conscript height returns",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T10:33:43+00:00"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "Villermé, On the stature of man in France (1829)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:33:43+00:00"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "Fourier, Recherches statistiques sur la ville de Paris (1821)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:33:43+00:00"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "Süssmilch, Die göttliche Ordnung — population regularities as divine order (1741)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:33:43+00:00"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "Malthus, An Essay on the Principle of Population (1798)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:33:43+00:00"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "The Brussels Observatory (1832)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-25T10:33:43+00:00"
+   },
+   {
+    "parent_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+    "name": "Quetelet, Recherches sur la loi de la croissance de l'homme (1831)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-25T10:33:43+00:00"
    }
   ]
  },
@@ -22393,7 +22455,7 @@
    "prior_state": "The error law confined to astronomy and geodesy; human variation described anecdotally, without distribution or constants.",
    "status": "provisional",
    "depth": 8,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -22532,6 +22594,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-25T10:19:42+00:00"
+  },
+  "laplace-theorie-analytique-des-probabilites-1812-1812": {
+   "id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+   "name": "Laplace, Théorie analytique des probabilités (1812)",
+   "aliases": [],
+   "year": 1812,
+   "domain": "mathematics / probability",
+   "type": "theory",
+   "definition": "Laplace's treatise giving the error law its limit-theorem warrant: the sum of many small independent accidental causes distributes by the curve of frequency of error.",
+   "bottleneck": "Before Laplace's Théorie analytique (1812), the error curve was an empirical rule of the observatory, because no theorem showed why accumulated accidental causes must produce it.",
+   "leap": "Laplace (1810-12) proved that the aggregate of many small independent causes follows the error curve — the curve became a theorem about causes, the warrant on which its transfer to new domains rests.",
+   "prior_state": "The error curve used empirically by astronomers; De Moivre's approximation confined to games of chance.",
+   "status": "provisional",
+   "depth": 9,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "O'Connor & Robertson, Adolphe Quetelet, MacTutor History of Mathematics (2006)",
+     "url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Four attacks on the edge Laplace, Théorie analytique des probabilités (1812) -> Quetelet, Sur l'homme (1835). (1) Q1 attack: the pass was scoped to probability theory — before the limit theorem, the curve's empire could be extended only by analogy, not by argument. Prior art tried: the empirical observatory practice itself (a rule in use, not a warrant — the attack concedes the distinction it tries to collapse); De Moivre's approximation (a limiting shape for the binomial, without the causes theorem — judged in this expansion as mediated via the treatise). The scoped pass stands. (2) Multiples test on Q3: the theorem had exactly one contemporary rival carrier of the law — Gauss's derivation — and the multiples question is therefore the components question: which form does the book consume? The book's documents answer it (the law of accidental causes; no least squares), and Q3 was scored partial (ripe) precisely because the empirical curve existed without either derivation. The outcome is provisional on that partial, recorded honestly: if a document emerges showing Sur l'homme's exposition resting on the Théorie's text by citation, Q3 rises; if one shows the book working from a Belgian textbook tradition independent of the treatise, the edge weakens. (3) Date and causal direction: 1812, twenty-three years before the child; direction attested by the formation record (Paris, 1823 — Quetelet met and studied in the circle of Laplace and Fourier, MacTutor and the SpringerPlus biography concur) and by Hankins's contents, which name Laplace's influence on the population line. Attack fails. (4) Mediation attack: two Ms tried. (a) Fourier — the strongest attack available, because Hankins weights his influence 'especially'. It fails on content: Fourier's Recherches carry tables and ratios, no curve; what Fourier supplied (the bureau model, the formation) is judged at his own candidate in this expansion as fail-closed partial. A mentor of the practice does not mediate the mechanism. (b) The observatory tradition in general — an era condition without a specific document is not a channel; the specific document the book's argumentative form matches is the treatise. Attack fails; no mediation object recorded. Session note: this expansion's most consequential record is the discharged Gauss hearing — the assigned by-name judgment of sessions 36-37 resolved as a mediation via Laplace on components discrimination, with the Brush counter-claim recorded and answered in the evaluation. The expansion's most contestable negative is Fourier (Hankins's 'especially' against the gate's content test; revisit condition stated in the evaluation).",
+    "at": "2026-11-25T10:34:01+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-25T10:33:43+00:00"
   }
  },
  "edges": [
@@ -46230,6 +46321,103 @@
     "counterfactual": "Remove Quetelet's transfer and the lecture's procedure loses its warrant: there is no mediocrity to regress towards as a level, no probable error in which to state the parental deviates, no seven groups at one, two and three probable errors — because a seed's weight would not yet be an error-distributed quantity. The lecture's law is stated in deviates from a type, and the type-with-deviates apparatus is the transfer's founding artifact at work.",
     "mediator": null,
     "evidence": "The lecture's seed procedure (MacKenzie's account): Galton took a large sample of seeds, calculated the mean and the probable error, then separated them into seven groups — the mean group and groups at one, two and three times the probable error either way — and found each progeny group distributed about a regressed centre with the same dispersion. Grouping a natural object by its probable-error units IS the Queteletian practice. Mediation attack via Statistics by intercomparison (1875) answered by components discrimination, mirroring session 37's record at the 1886 memoir: what the lecture takes from 1875 is workmanship (marshalling, grades); what it presupposes from 1835 is that a natural quantity is error-distributed at all — and the 1875 paper's own error-law remarks descend from the transfer, so a descendant component cannot mediate its own ancestor. The channel is instantiation of a practice with a unique founding artifact, as at the book (6.5) and the memoir (7.0); the sibling text names the founder (Natural Inheritance, Ch. V: the law 'was excogitated for the use of astronomers... without the slightest idea until the time of Quetelet that they might be applicable to human measures')."
+   }
+  },
+  {
+   "predecessor_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+   "successor_id": "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Laplace, why the curve governs accumulated causes could not be answered, so its empire could not be extended by argument — only by analogy. The limit theorem made the extension arguable, and the book is the argument carried out: an impossibility flip inside probability theory, consumed at this parent in its exported form.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This pass dies if a pre-1810 limit justification of the curve is shown."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The theorem licenses the curve wherever causes accumulate — a genuinely generative warrant: the transfer to man is its first great exercise, and the book's whole programme (the average man, social physics) is built inside the space the licence opens.",
+     "source": "Stemma, 'Sur l'homme: the astronomers' law of error applied to people'",
+     "falsification": "This pass dies if the book is shown to treat the curve as an observatory rule of thumb rather than a theorem about causes."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is capped at ripe: the empirical curve existed without the theorem, and a bolder empiricist might have fitted it to men anyway. But the book's own argumentative form is the theorem's — the transfer as published argues from accidental causes — so the documented channel runs through the treatise even if a counterfactual carrier is imaginable.",
+     "source": "Stemma, 'Sur l'homme: the astronomers' law of error applied to people'",
+     "falsification": "This partial rises to pass if the book is shown to cite the Théorie analytique by name for the law of accidental causes."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The treatise collapsed the cost of probability computation for its century; the saving that reaches the book is the warrant's — no new derivation was needed for a new domain.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This partial dies if the book is shown to have derived its curve independently of the tradition the treatise codified."
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "The theorem made the curve's constants properties of a generating process (many small causes), not just of a table — the measurability the book exploits when it reads a population's scatter as the signature of its causes.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This pass dies if the book's constants are shown interpretable without the causes model."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model the book speaks in: deviation as the resultant of numerous small independent accidental causes — the model Galton's quincunx still recites ('a number of small and independent accidents') two generations later.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This pass dies if the small-causes model is shown to originate elsewhere."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The treatise was the era's standard probability reference — cited rather than re-derived; the book interoperates with the whole observatory tradition through it.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This partial dies if the book is shown independent of the treatise's forms."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The theorem is itself the cross-domain licence: proved for causes in general, it is what allows a law of the observatory to be claimed for mankind. The book is the crossing; the treatise is what made the crossing a claim of right rather than a metaphor.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This pass dies if the book's crossing is shown to have been argued on purely empirical grounds."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed effect reaches the book: its data cycles are censuses and recruitment years, not Laplacean computation.",
+     "source": "Stemma, 'Sur l'homme: the astronomers' law of error applied to people'",
+     "falsification": "This fail dies if the book's production is shown accelerated by the treatise's tables or methods."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "The treatise displaced earlier probability texts as the standard reference of the observatory sciences; the displacement of anecdote in the science of man is the book's own work, downstream.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This partial rises if the treatise itself is shown displacing anecdote in natural history."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk node of probability theory; Hankins and the standard histories route the book's probability through the Paris school whose head the treatise is.",
+     "source": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+     "falsification": "This pass dies if the surveys are shown to route the book's probability around the treatise."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once the curve had a theorem, its use could not return to rule-of-thumb; the baseline reset permanently — the book itself is evidence, arguing from the theorem a generation later.",
+     "source": "Stigler, The History of Statistics (1986)",
+     "falsification": "This pass dies if post-1812 practice is shown to have abandoned the theorem's curve."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-25T10:33:43+00:00",
+   "leap": {
+    "prior_state": "The law of error belonged to astronomy, and human variation was taken as irregularity, not law.",
+    "jump": "Quetelet (1835) transferred the law of error from astronomy to man: human measures distribute about their mean as errors about a true value — a natural quantity became a lawful quantity with a level and a probable deviation, the presupposition on which every Galton artifact in this lineage runs.",
+    "date": 1835
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Théorie analytique and the transfer loses its warrant: Quetelet would hold the astronomers' empirical curve — a rule of the observatory, fitted to errors of observation about true values — but no theorem licensing its export to a domain where there is no true value and no observation error. The book's argumentative form is the theorem's form: human measures scatter because many small accidental causes accumulate, and accumulated causes follow the curve. That is the law of accidental causes, and it is Laplace's.",
+    "mediator": null,
+    "evidence": "The channel is documentary and biographical together. Formation: Quetelet's 1823 Paris sojourn placed him in the circle of Laplace and Fourier (the SpringerPlus biography: he travelled to Paris in 1823 and met the Paris mathematicians, Laplace among them; MacTutor: 'Influenced by Laplace and Fourier', the theory of probability studied in that circle). Hankins's contents name Laplace's influence on the population line directly. Consumption: the book's probability is the treatise's doctrine — the curve as the limit of the binomial under many small causes — and NOT the error tradition's other machinery: 'Quetelet did not use the method of least squares itself; he took the error distribution from the same tradition' (Stemma) — the distribution in Laplace's form. Mediation attacks answered in the sibling evaluations: Gauss (the rival founder — components discrimination: the book consumes the limit theorem, not the least-squares derivation); Fourier (the other Paris influence — his Recherches carry no curve; the formation he supplied is judged at his own candidate)."
    }
   }
  ],
@@ -170380,6 +170568,385 @@
       "reason": "dated on/after parent year 1877"
      }
     ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "quetelet-sur-l-homme-and-the-application-of-the-law-of-error-1835": {
+   "raw_candidates": [
+    {
+     "name": "Laplace, Théorie analytique des probabilités (1812)",
+     "year": 1812,
+     "domain": "mathematics / probability",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "Laplace's treatise giving the error law its limit-theorem warrant: the sum of many small independent accidental causes distributes by the curve of frequency of error.",
+     "causal_claim": "Laplace's treatise directly enabled Sur l'homme as the book's probability itself: Quetelet formed his probability in Paris (1823) in Laplace's and Fourier's circle, and the book's law of accidental causes — the binomial tending to the curve, the curve as the signature of many small causes — is the treatise's doctrine, carried from the observatory to man.",
+     "source_title": "O'Connor & Robertson, Adolphe Quetelet, MacTutor History of Mathematics (2006)",
+     "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+    },
+    {
+     "name": "Normal law of error (Gauss, 1809)",
+     "year": 1809,
+     "domain": "mathematics / statistics",
+     "lens": "L1",
+     "type": "theory",
+     "definition": "The Gaussian error law from Gauss's Theoria Motus: observational errors follow the normal distribution.",
+     "causal_claim": "Gauss's derivation directly enabled Sur l'homme as the error law's foundation. (Proposed as the LINK candidate for the by-name hearing assigned to this expansion in sessions 36-37: the book must be judged on its own citations — its probability is the Paris school's, its exposition the law of accidental causes in Laplace's form, and it does not use the method of least squares in which Gauss's derivation issues.)",
+     "source_title": "Stemma, 'Sur l'homme: the astronomers' law of error applied to people'",
+     "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+    },
+    {
+     "name": "De Moivre, The Doctrine of Chances — the normal approximation to the binomial (1738)",
+     "year": 1738,
+     "domain": "mathematics / probability",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "De Moivre's approximation (Latin pamphlet 1733; English in the Doctrine of Chances, 2nd ed. 1738): the binomial's terms approach the curve later called normal — the error law's first mathematical form.",
+     "causal_claim": "De Moivre's approximation directly enabled Sur l'homme as the binomial form the book's fits actually tabulate against. (Proposed for the components test: the book's binomial arrives inside Laplace's treatise, which re-derived and generalised the approximation — the cited-final-link question is for the evaluation, not the scout.)",
+     "source_title": "Stigler, The History of Statistics (1986), ch. 5",
+     "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+    },
+    {
+     "name": "Legendre, Nouvelles méthodes — the method of least squares (1805)",
+     "year": 1805,
+     "domain": "mathematics / astronomy",
+     "lens": "L1",
+     "type": "method",
+     "definition": "Legendre's 1805 publication of the method of least squares for combining observations — the error tradition's working procedure, published four years before Gauss's derivation.",
+     "causal_claim": "Legendre's method directly enabled Sur l'homme as the error tradition's procedure. (Proposed for the no-channel record: the book's fits are distributional comparisons against the curve, not least-squares combinations — 'Quetelet did not use the method of least squares itself; he took the error distribution from the same tradition.')",
+     "source_title": "Stemma, 'Sur l'homme: the astronomers' law of error applied to people'",
+     "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+    },
+    {
+     "name": "The published anthropometric returns — Edinburgh militia tables (1817) and the French conscript height returns",
+     "year": 1817,
+     "domain": "statistics / anthropometry",
+     "lens": "L8",
+     "type": "other",
+     "definition": "The published measurement returns Sur l'homme's fits consume: the Edinburgh Medical and Surgical Journal's 1817 'Statement of the sizes of men in different counties of Scotland' (chest and height crossclassified for eleven militias, compiled by an army contractor measuring for uniforms) and the French official recruitment returns whose conscript heights the book analyses.",
+     "causal_claim": "The returns directly enabled Sur l'homme as the data its fits eat: without published measurements of thousands of men, the transfer of the error law to human measures has nothing to fit. (Proposed for the material test: byproduct tables — compiled for uniforms and for administration, not designed as statistical artifacts.)",
+     "source_title": "Stigler (1986) via 'The missing early history of contingency tables' and Harvard Data Science Review 1.2 (2019)",
+     "source_url": "http://www.numdam.org/article/AFST_2002_6_11_4_563_0.pdf"
+    },
+    {
+     "name": "Villermé, On the stature of man in France (1829)",
+     "year": 1829,
+     "domain": "statistics / hygiene",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Villermé's 1829 memoir analysing the official French conscript returns — stature by department and condition — the proximate prior analysis of the same returns Sur l'homme fits.",
+     "causal_claim": "Villermé's memoir directly enabled Sur l'homme as the prior analysis of its headline data. (Proposed for the parallel-analyst test: Villermé's stature work is descriptive — means by department — without the error-law fit that is the book's leap.)",
+     "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+     "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+    },
+    {
+     "name": "Fourier, Recherches statistiques sur la ville de Paris (1821)",
+     "year": 1821,
+     "domain": "statistics / official statistics",
+     "lens": "L20",
+     "type": "method",
+     "definition": "Fourier's statistical volumes on Paris (from 1821): the model of an official statistics of a population — tables of births, deaths, and measures for a whole city, produced under his direction at the Seine prefecture's research bureau.",
+     "causal_claim": "Fourier's Recherches directly enabled Sur l'homme as its author's formation and model: Quetelet's Paris sojourn of 1823 placed him in Fourier's circle, and Hankins names Fourier's influence 'especially' on the population-statistics line. (Proposed for the formation test: the volumes are tabular statistics without the error curve — the book's leap is not their content.)",
+     "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+     "source_url": "https://dn790001.ca.archive.org/0/items/adolphequeteleta00hankuoft/adolphequeteleta00hankuoft.pdf"
+    },
+    {
+     "name": "Süssmilch, Die göttliche Ordnung — population regularities as divine order (1741)",
+     "year": 1741,
+     "domain": "demography / political arithmetic",
+     "lens": "L4",
+     "type": "theory",
+     "definition": "Süssmilch's 1741 treatise: the regularities of births, deaths, and the sex ratio across large populations, read as evidence of divine order — the political-arithmetic line's statement that population phenomena are lawful.",
+     "causal_claim": "Süssmilch directly enabled Sur l'homme by posing its problem a century early: population phenomena as lawful regularities rather than chance. (Proposed for the anticipation test: the frame is theological, the mechanism — the error curve — absent, and the book's frame is Laplacean and secular.)",
+     "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+     "source_url": "https://dn790001.ca.archive.org/0/items/adolphequeteleta00hankuoft/adolphequeteleta00hankuoft.pdf"
+    },
+    {
+     "name": "Malthus, An Essay on the Principle of Population (1798)",
+     "year": 1798,
+     "domain": "political economy / demography",
+     "lens": "L6",
+     "type": "theory",
+     "definition": "Malthus's 1798 Essay: population in geometric ratio against subsistence in arithmetic — the incumbent quantitative account of population that a science of social physics had to answer.",
+     "causal_claim": "Malthus directly enabled Sur l'homme as the incumbent it defines itself against: where Malthus reasoned from two ratios, Quetelet's social physics substitutes measured distributions and their constants. (Proposed for the defined-against test: Hankins names Malthus's influence on the line, but the book's leap — the error-law fit — consumes nothing Malthusian.)",
+     "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+     "source_url": "https://dn790001.ca.archive.org/0/items/adolphequeteleta00hankuoft/adolphequeteleta00hankuoft.pdf"
+    },
+    {
+     "name": "The Brussels Observatory (1832)",
+     "year": 1832,
+     "domain": "astronomy / institutions",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Royal Observatory at Brussels, founded by Quetelet (persuaded the government in the 1820s; built 1832) with Quetelet as its director — his professional base and the source of his astronomer's formation in the error tradition.",
+     "causal_claim": "The Observatory directly enabled Sur l'homme as its author's institution. (Proposed for the decomposition test: the observatory's own observations are not the book's data — the book eats published returns — and the institution's carried artifact here would be the author himself.)",
+     "source_title": "O'Connor & Robertson, Adolphe Quetelet, MacTutor History of Mathematics (2006)",
+     "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+    },
+    {
+     "name": "Quetelet, Recherches sur la loi de la croissance de l'homme (1831)",
+     "year": 1831,
+     "domain": "statistics / anthropometry",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Quetelet's 1831 memoir on the law of human growth: the growth curve of stature and weight from birth to adulthood — a separable prior memoir whose results the 1835 book incorporates into its developmental account of the average man.",
+     "causal_claim": "The growth memoir directly enabled Sur l'homme as a component the book consumes: its developmental chapters restate the memoir's curve and constants. (Proposed under own-version discipline: the book's leap is the transfer, not the growth curve — the memoir is one chapter's content inside a synthesis of the author's memoirs.)",
+     "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+     "source_url": "https://dn790001.ca.archive.org/0/items/adolphequeteleta00hankuoft/adolphequeteleta00hankuoft.pdf"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "laplace-theorie-analytique-des-probabilites-1812-1812",
+      "candidate": {
+       "name": "Laplace, Théorie analytique des probabilités (1812)",
+       "year": 1812,
+       "domain": "mathematics / probability",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "Laplace's treatise giving the error law its limit-theorem warrant: the sum of many small independent accidental causes distributes by the curve of frequency of error.",
+       "causal_claim": "Laplace's treatise directly enabled Sur l'homme as the book's probability itself: Quetelet formed his probability in Paris (1823) in Laplace's and Fourier's circle, and the book's law of accidental causes — the binomial tending to the curve, the curve as the signature of many small causes — is the treatise's doctrine, carried from the observatory to man.",
+       "source_title": "O'Connor & Robertson, Adolphe Quetelet, MacTutor History of Mathematics (2006)",
+       "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Laplace, Théorie analytique des probabilités (1812)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "normal-law-of-error-gauss-1809-1809",
+      "candidate": {
+       "name": "Normal law of error (Gauss, 1809)",
+       "year": 1809,
+       "domain": "mathematics / statistics",
+       "lens": "L1",
+       "type": "theory",
+       "definition": "The Gaussian error law from Gauss's Theoria Motus: observational errors follow the normal distribution.",
+       "causal_claim": "Gauss's derivation directly enabled Sur l'homme as the error law's foundation. (Proposed as the LINK candidate for the by-name hearing assigned to this expansion in sessions 36-37: the book must be judged on its own citations — its probability is the Paris school's, its exposition the law of accidental causes in Laplace's form, and it does not use the method of least squares in which Gauss's derivation issues.)",
+       "source_title": "Stemma, 'Sur l'homme: the astronomers' law of error applied to people'",
+       "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Normal law of error (Gauss, 1809)"
+      ],
+      "matched_node_id": "normal-law-of-error-gauss-1809-1809",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "de-moivre-the-doctrine-of-chances-the-normal-approximation-t-1738",
+      "candidate": {
+       "name": "De Moivre, The Doctrine of Chances — the normal approximation to the binomial (1738)",
+       "year": 1738,
+       "domain": "mathematics / probability",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "De Moivre's approximation (Latin pamphlet 1733; English in the Doctrine of Chances, 2nd ed. 1738): the binomial's terms approach the curve later called normal — the error law's first mathematical form.",
+       "causal_claim": "De Moivre's approximation directly enabled Sur l'homme as the binomial form the book's fits actually tabulate against. (Proposed for the components test: the book's binomial arrives inside Laplace's treatise, which re-derived and generalised the approximation — the cited-final-link question is for the evaluation, not the scout.)",
+       "source_title": "Stigler, The History of Statistics (1986), ch. 5",
+       "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "De Moivre, The Doctrine of Chances — the normal approximation to the binomial (1738)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "legendre-nouvelles-methodes-the-method-of-least-squares-1805-1805",
+      "candidate": {
+       "name": "Legendre, Nouvelles méthodes — the method of least squares (1805)",
+       "year": 1805,
+       "domain": "mathematics / astronomy",
+       "lens": "L1",
+       "type": "method",
+       "definition": "Legendre's 1805 publication of the method of least squares for combining observations — the error tradition's working procedure, published four years before Gauss's derivation.",
+       "causal_claim": "Legendre's method directly enabled Sur l'homme as the error tradition's procedure. (Proposed for the no-channel record: the book's fits are distributional comparisons against the curve, not least-squares combinations — 'Quetelet did not use the method of least squares itself; he took the error distribution from the same tradition.')",
+       "source_title": "Stemma, 'Sur l'homme: the astronomers' law of error applied to people'",
+       "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Legendre, Nouvelles méthodes — the method of least squares (1805)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-published-anthropometric-returns-edinburgh-militia-table-1817",
+      "candidate": {
+       "name": "The published anthropometric returns — Edinburgh militia tables (1817) and the French conscript height returns",
+       "year": 1817,
+       "domain": "statistics / anthropometry",
+       "lens": "L8",
+       "type": "other",
+       "definition": "The published measurement returns Sur l'homme's fits consume: the Edinburgh Medical and Surgical Journal's 1817 'Statement of the sizes of men in different counties of Scotland' (chest and height crossclassified for eleven militias, compiled by an army contractor measuring for uniforms) and the French official recruitment returns whose conscript heights the book analyses.",
+       "causal_claim": "The returns directly enabled Sur l'homme as the data its fits eat: without published measurements of thousands of men, the transfer of the error law to human measures has nothing to fit. (Proposed for the material test: byproduct tables — compiled for uniforms and for administration, not designed as statistical artifacts.)",
+       "source_title": "Stigler (1986) via 'The missing early history of contingency tables' and Harvard Data Science Review 1.2 (2019)",
+       "source_url": "http://www.numdam.org/article/AFST_2002_6_11_4_563_0.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "The published anthropometric returns — Edinburgh militia tables (1817) and the French conscript height returns"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "villerme-on-the-stature-of-man-in-france-1829-1829",
+      "candidate": {
+       "name": "Villermé, On the stature of man in France (1829)",
+       "year": 1829,
+       "domain": "statistics / hygiene",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Villermé's 1829 memoir analysing the official French conscript returns — stature by department and condition — the proximate prior analysis of the same returns Sur l'homme fits.",
+       "causal_claim": "Villermé's memoir directly enabled Sur l'homme as the prior analysis of its headline data. (Proposed for the parallel-analyst test: Villermé's stature work is descriptive — means by department — without the error-law fit that is the book's leap.)",
+       "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+       "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Villermé, On the stature of man in France (1829)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fourier-recherches-statistiques-sur-la-ville-de-paris-1821-1821",
+      "candidate": {
+       "name": "Fourier, Recherches statistiques sur la ville de Paris (1821)",
+       "year": 1821,
+       "domain": "statistics / official statistics",
+       "lens": "L20",
+       "type": "method",
+       "definition": "Fourier's statistical volumes on Paris (from 1821): the model of an official statistics of a population — tables of births, deaths, and measures for a whole city, produced under his direction at the Seine prefecture's research bureau.",
+       "causal_claim": "Fourier's Recherches directly enabled Sur l'homme as its author's formation and model: Quetelet's Paris sojourn of 1823 placed him in Fourier's circle, and Hankins names Fourier's influence 'especially' on the population-statistics line. (Proposed for the formation test: the volumes are tabular statistics without the error curve — the book's leap is not their content.)",
+       "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+       "source_url": "https://dn790001.ca.archive.org/0/items/adolphequeteleta00hankuoft/adolphequeteleta00hankuoft.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Fourier, Recherches statistiques sur la ville de Paris (1821)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sussmilch-die-gottliche-ordnung-population-regularities-as-d-1741",
+      "candidate": {
+       "name": "Süssmilch, Die göttliche Ordnung — population regularities as divine order (1741)",
+       "year": 1741,
+       "domain": "demography / political arithmetic",
+       "lens": "L4",
+       "type": "theory",
+       "definition": "Süssmilch's 1741 treatise: the regularities of births, deaths, and the sex ratio across large populations, read as evidence of divine order — the political-arithmetic line's statement that population phenomena are lawful.",
+       "causal_claim": "Süssmilch directly enabled Sur l'homme by posing its problem a century early: population phenomena as lawful regularities rather than chance. (Proposed for the anticipation test: the frame is theological, the mechanism — the error curve — absent, and the book's frame is Laplacean and secular.)",
+       "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+       "source_url": "https://dn790001.ca.archive.org/0/items/adolphequeteleta00hankuoft/adolphequeteleta00hankuoft.pdf"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Süssmilch, Die göttliche Ordnung — population regularities as divine order (1741)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "malthus-an-essay-on-the-principle-of-population-1798-1798",
+      "candidate": {
+       "name": "Malthus, An Essay on the Principle of Population (1798)",
+       "year": 1798,
+       "domain": "political economy / demography",
+       "lens": "L6",
+       "type": "theory",
+       "definition": "Malthus's 1798 Essay: population in geometric ratio against subsistence in arithmetic — the incumbent quantitative account of population that a science of social physics had to answer.",
+       "causal_claim": "Malthus directly enabled Sur l'homme as the incumbent it defines itself against: where Malthus reasoned from two ratios, Quetelet's social physics substitutes measured distributions and their constants. (Proposed for the defined-against test: Hankins names Malthus's influence on the line, but the book's leap — the error-law fit — consumes nothing Malthusian.)",
+       "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+       "source_url": "https://dn790001.ca.archive.org/0/items/adolphequeteleta00hankuoft/adolphequeteleta00hankuoft.pdf"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Malthus, An Essay on the Principle of Population (1798)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-brussels-observatory-1832-1832",
+      "candidate": {
+       "name": "The Brussels Observatory (1832)",
+       "year": 1832,
+       "domain": "astronomy / institutions",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Royal Observatory at Brussels, founded by Quetelet (persuaded the government in the 1820s; built 1832) with Quetelet as its director — his professional base and the source of his astronomer's formation in the error tradition.",
+       "causal_claim": "The Observatory directly enabled Sur l'homme as its author's institution. (Proposed for the decomposition test: the observatory's own observations are not the book's data — the book eats published returns — and the institution's carried artifact here would be the author himself.)",
+       "source_title": "O'Connor & Robertson, Adolphe Quetelet, MacTutor History of Mathematics (2006)",
+       "source_url": "https://www.stemmascience.org/en/node/quetelet_average_man_1835/"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "The Brussels Observatory (1832)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "quetelet-recherches-sur-la-loi-de-la-croissance-de-l-homme-1-1831",
+      "candidate": {
+       "name": "Quetelet, Recherches sur la loi de la croissance de l'homme (1831)",
+       "year": 1831,
+       "domain": "statistics / anthropometry",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Quetelet's 1831 memoir on the law of human growth: the growth curve of stature and weight from birth to adulthood — a separable prior memoir whose results the 1835 book incorporates into its developmental account of the average man.",
+       "causal_claim": "The growth memoir directly enabled Sur l'homme as a component the book consumes: its developmental chapters restate the memoir's curve and constants. (Proposed under own-version discipline: the book's leap is the transfer, not the growth curve — the memoir is one chapter's content inside a synthesis of the author's memoirs.)",
+       "source_title": "Hankins, Adolphe Quetelet as Statistician (Columbia, 1908)",
+       "source_url": "https://dn790001.ca.archive.org/0/items/adolphequeteleta00hankuoft/adolphequeteleta00hankuoft.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Quetelet, Recherches sur la loi de la croissance de l'homme (1831)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [],
     "prefiltered": []
    },
    "judge_queue": [],
