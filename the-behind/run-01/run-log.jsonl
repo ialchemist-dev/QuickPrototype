@@ -11797,5 +11797,110 @@
   "t5-text-to-text-transfer-transformer-2019",
   "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021"
  ],
- "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82 precedent)"
+ "sync_commit": "80f09afe"
+}
+{
+ "session": 86,
+ "expansion": 181,
+ "parent": "probabilistic-reasoning-in-intelligent-systems-pearl-1988-1988",
+ "parent_name": "Probabilistic Reasoning in Intelligent Systems (Pearl, 1988)",
+ "parent_year": 1988,
+ "parent_depth": 8,
+ "date": "2026-11-25",
+ "provenance": "Session 86, expansion 1 of 2. Scouted, resolved, judged and verified by session 86. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79/82/83/84/85 discipline): add-candidates verified (101 raw filings; then a 3-filing top-up, 104 raw total - see the scout repair below); resolve ran in the foreground via the MiniLM venv python twice (first pass 35 distinct, top-up re-resolve 36 distinct) and was verified on disk at stage 'resolved' (36 distinct, 1 LINK match, 0 judge pairs, 5 calendar drops) before any verdicts work; the LINK match verified programmatically against the graph's actual ids before verdicts (Bayes -> bayes-an-essay-towards-solving-a-problem-in-the-doctrine-of-1763); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors, both NEW: Chow & Liu 4.5, Dawid 4.0; 20 fail-closed partials including the Bayes LINK; 1 mediated; 13 plain rejections); NO dry-run correction was spent; apply-verdicts run exactly once; both created nodes' stored leap/prior_state/bottleneck/definition verified non-empty programmatically. CREATION WART LOGGED (never hand-edited): both created nodes' stored sources lists are EMPTY - the standing wart (Katz, Jaques, Rawlik, AICO, ORQA, Pearl, McEliece et al., SQuAD, and now Chow & Liu and Dawid). SCOUT REPAIR ON RECORD: the main scout builder DEFINED the Howard & Matheson (1981) candidate but never emitted an add() call for it - the session-83 GPT-2-at-ORQA omission shape; caught by the pre-verdicts count check (36 distinct names filed vs 37 intended; the missing name identified by grepping the builder's add() calls against its registry), repaired by a 3-filing top-up (build_scout_pearl_topup.py) and a foreground re-resolve BEFORE verdicts, per the sessions 63/67/78 discipline. The session-85 expansion-180 record's sync_commit field was fixed up in this pass to 80f09afe (the commit that actually carried it); this record's own sync_commit rides the sync that carries it.",
+ "brief_correction": "The brief's three hypotheses were tested on the documents and each split on them. (a) The Bayesian-network formulation stratum: its carriers divide into the author's OWN paper trail (1982/1983/1985/1986/1987 x2, plus Pearl & Paz 1986, Rebane & Pearl 1987, Verma & Pearl 1987 - all fail-closed partials under the own-version discipline inside a self-authored codification) and exactly TWO external results the book REBUILDS inside its own system, both ADMITTED under the codification discrimination (the Godel-at-Kleene-1952 shape): Chow & Liu (1968), rebuilt as Chapter 8's tree-structure learning procedure (the channel documented twice over, including 'the description in [Pearl 1988]' in Heckerman's readings), and Dawid (1979), whose axiom properties s.1.3.2/Chapter 3 rebuild as the graphoid logic of relevance (attribution in Pearl's own later summary: the semi-graphoid axioms 'were first proposed as heuristic properties of conditional independence by Dawid'). (b) The expert-systems uncertainty stratum behaved as the brief sketched: MYCIN certainty factors rejected as the defined-against incumbent; PROSPECTOR rejected as prior-state practice whose mechanism the formalism discards; Dempster-Shafer split - Shafer (1976) a fail-closed partial (Chapter 9's expounded subject, scoped), Dempster (1968) MEDIATED via Shafer (1976). (c) The message-passing stratum's sources the book names are the author's own equations trail - with the documented twist that the polytree equations were derived by Kim (Pearl 1986's acknowledgment), making Kim & Pearl (1983) the strongest own-version channel in the pool, still a partial under Kleene-1936 discipline. Two brief-adjacent expectations did NOT survive the documents: Shenoy & Shafer (1986) is NOT an ancestor in any direction the gate accepts - its own text declares it extends Pearl's idea to belief functions (a descendant/parallel, recorded as multiples evidence); and Lauritzen & Spiegelhalter (1988) never reached evaluation - resolve calendar-dropped all 5 filings (same year as the book), exactly the structural foreclosure the brief's structural-fact note predicts; its multiples role stands as already recorded on the parent's own session-85 verification. The Bayes LINK was judged a fail-closed partial (framework presupposition), with the Fisher-1922 correction-relation admission distinguished on the record: Fisher extracted the essay's worked object against his own concept; Pearl's book presupposes the Bayesian frame wholesale through the intervening tradition.",
+ "grounding": "AUDIT SCOPE STATED HONESTLY: the book's complete bibliography (~550 entries) was NOT read entire. Grounding is (i) the book's full chapter structure and subject index (Morgan Kaufmann 1988, 573 pp.): Ch 1 (extensional vs intensional; s.1.3.2 'Graphoids and the Formalization of Relevance and Causality'); Ch 2 (Bayes' factor at pp. 53, 278); Ch 3 (d-separation ~p. 128; p. 125 traces the models' origins to Wright (1921), per Smyth et al. 1997's citation of the page); Ch 4 (s.4.2 trees; s.4.3 polytrees; s.4.4 loops; simulation); Ch 5 (composite beliefs; s.5.5 medical diagnosis); Ch 6 (s.6.2 decision trees and influence diagrams; arc reversal p. 310; s.6.3 value of information); Ch 8 (s.8.1 tree structures; Appendix 8-B star decomposability 'After Lazarfeld [1966]'); Ch 9 (Dempster-Shafer; ATMS ~p. 455); Ch 10 (Adams' axioms ~p. 516); and (ii) documented channels verified against primary/scholarly sources this session: Pearl (1982) AAAI-82 pp. 133-136; Kim & Pearl (1983) IJCAI-83 pp. 190-193 with Dechter's historical review (trees 1982 -> polytrees 1983 -> 1986); Pearl (1986) AIJ 29:241-288 (Kim acknowledgment; NSF DSR 83-13875; AIJ Classic Paper Award 2015 citation - most cited AIJ paper by 1991); Chow & Liu (1968) IEEE TIT 14(3):462-467 with the two documented descriptions of the book's treatment; Dawid (1979) JRSS-B 41(1):1-15 with the graphoid attribution in Pearl, Geiger & Verma (Kybernetika) and Shachter's graph-based inference paper; Shenoy & Shafer (1986) IEEE Expert 1(3):43-52 (its own direction statement); Shachter (1986) OR 34(6):871-882; Howard & Matheson (1981); Darroch, Lauritzen & Speed (1980) Ann. Statist. 8(3):522-539; Geman & Geman (1984) with Pearl (1987) named beside it in Robert & Casella's MCMC history; Pearl's UCLA CSL publications list (R-25/R-30/R-43/R-56/R-65; AI 33(2):173-215; AI 32(2):245-258).",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state ALL non-empty and coherent; sources list EMPTY (the standing creation wart, logged in provenance; never hand-edited). Stored verification (session 85) caps the Pearl -> Loopy BP edge at provisional on the Q3 multiples attack (Lauritzen & Spiegelhalter 1988 and the Shafer-Shenoy axioms named as parallel formulations) - both artifacts were heard in THIS expansion on their own documents (L&S calendar-dropped; Shenoy & Shafer rejected on direction), and the edge record is untouched. The session-83 EP condition on this node (Pearl as fail-closed partial at EP; re-hearing keyed to a document in the EP apparatus citing Pearl 1988) is EP-edge business; nothing in this expansion's documents bears on it and the EP edge is untouched. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_pearl.py + run-01/work/build_scout_pearl_topup.py (repair)",
+  "raw_candidates": 104,
+  "per_lens_floors": "met on the builder's output before resolve: L1 17, L2 7, L4 6, L5 4, L6 6, L7 5, L8 4, L11 7, L16 5, L17 4, L19 10, L20 10, L22 5; shortfall note for L21 (2 filings - exactly two documentable institutional carriers: the NSF grant acknowledged in Pearl (1986) and the UCLA Cognitive Systems Laboratory); dry notes for L9, L10, L14, L15 (dry) and L12, L13, L18 (dry-with-finding). Meta passes: L3 6 filings, L23 3 filings. Dry notes file: run-01/work/dry_notes_probabilistic-reasoning-in-intelligent-systems-pearl-1988-1988.json. Concept search before scouting verified that among the parent's apparatus only Bayes (1763) exists as a graph node (filed as a LINK under its exact canonical name and stored type 'theory'; resolve matched it). Policy iteration (Howard, 1960) exists but is a different artifact by the decision-analysis Howard; Howard & Matheson (1981) was filed as its own candidate and no judge pairing arose. Scout reconciliation: 104 filings = 37 distinct names intended (36 in the main builder + the topped-up Howard & Matheson); resolve dropped 5 filings (all Lauritzen & Spiegelhalter 1988, same-year), matched 1 existing, and auto-merged the cross-lens duplicates, giving 36 distinct == the verdicts builder's 36 evaluations (count-verified by the builder's missing/extra spec check)."
+ },
+ "resolution": {
+  "distinct": 36,
+  "dropped": 5,
+  "matched_existing": 1,
+  "auto_merges": 63,
+  "judge_queue": 0,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 0 pairs - no judgments step required. The single LINK match's matched_node_id was verified before verdicts (Bayes -> bayes-an-essay-towards-solving-a-problem-in-the-doctrine-of-1763).",
+ "calendar_dropped_at_resolve": [
+  "Local computations with probabilities on graphical structures and their application to expert systems (Lauritzen & Spiegelhalter, 1988) - all 5 filings (L2/L11/L22/L3/L23) dropped at resolve: dated the parent's own year (1988). The statistics line's clique/junction-tree propagation architecture - the parallel exact-propagation formulation named in the parent's own session-85 verification multiples attack. Filed deliberately so the foreclosure is on the record; the parallel-line record is carried by the Darroch-Lauritzen-Speed (1980) evaluation in this same expansion."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_probabilistic-reasoning-in-intelligent-systems-pearl-1988-1988.json",
+  "builder": "run-01/work/build_verdicts_pearl.py",
+  "evaluations": 36,
+  "count_check": "evaluations == distinct candidates from show-distinct (36 == 36), verified by the builder's missing/extra spec check (missing = none; unspec'd = none); field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (2 survivors, both NEW: Chow & Liu 4.5 and Dawid 4.0; 20 fail-closed partials; 1 mediated; 13 plain rejections) BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once; both created nodes' stored leap/prior_state/bottleneck/definition verified non-empty programmatically (sources lists EMPTY - the standing creation wart, logged in provenance)",
+  "survivors": [
+   "Dependence trees (Chow & Liu, 1968) - NEW, 4.5, PROVISIONAL (verification: mediation attacks via Rebane & Pearl (1987) and via Pearl (1986) Part 2 both fail - the extension presupposes the candidate and the structuring paper is itself the candidate's lineage inside the programme; multiples attack lands in downgrade form as the priced Q3 partial; capped provisional on the codification/audit-scope record - the book's full bibliography not read entire), depth 9: Chapter 8 rebuilds the construction as its tree-structure learning procedure - the KL-optimal dependence tree as maximum-weight spanning tree over pairwise mutual informations - the codification configuration (Godel at Kleene 1952): a result REBUILT inside the codifier's own system, documented by two independent descriptions of the book's treatment. Q1 partial, Q2 pass, Q3 partial.",
+   "Conditional independence in statistical theory (Dawid, 1979) - NEW, 4.0, PROVISIONAL (verification: multiples attack lands in downgrade form as priced - Spohn and Smith are parallel formulations; mediation attack via Pearl & Paz (1986) fails - the graphoid paper completes and attributes Dawid's set rather than interposing as its channel; capped provisional on the audit-scope record), depth 9: the axiom properties of conditional independence (symmetry, decomposition, weak union, contraction) that s.1.3.2 and Chapter 3 rebuild as the graphoid logic of relevance - the author's own later attribution (Pearl, Geiger & Verma) names Dawid as the properties' first proposer. Q1 partial, Q2 pass, Q3 partial."
+  ],
+  "mediated": [
+   "A generalization of Bayesian inference (Dempster, 1968) - MEDIATED via A Mathematical Theory of Evidence (Shafer, 1976): the book's Chapter 9 channel into the Dempster-Shafer theory runs through Shafer's codification, whose formulation (belief functions, basic probability assignments) is the form the chapter expounds."
+  ],
+  "fail_closed_partials": [
+   "Bayes, An Essay towards solving a Problem in the Doctrine of Chances (1763) - LINK, directness PARTIAL: framework presupposition - Bayesian inference is the stage the book builds on, engaged through the intervening tradition (and proximately the author's own 1982/1986 papers), not the 1763 essay as a document; the Fisher-1922 correction-relation admission distinguished on the record. Re-hearing condition recorded on the verdict.",
+   "Fusion, propagation, and structuring in belief networks (Pearl, 1986) - directness PARTIAL, THE MOST CONTESTABLE PARTIAL OF THE EXPANSION: the author's own journal paper codified in his own monograph (own-version discipline, Kleene 1936 shape); the separable-artifact exception tested and failed on its child clause (the child is the candidate's own author's book, carrying no independent grading voice - contrast Swagger 2.0 at OpenAPI), while the candidate's OWN independent grading voice is real (most cited AIJ paper by 1991; AIJ Classic Paper Award 2015) and is recorded as re-hearing pressure with an explicit conversion condition.",
+   "A computational model for combined causal and diagnostic reasoning in inference systems (Kim & Pearl, 1983) - directness PARTIAL: own-version, and the strongest own-version channel in the pool - Pearl (1986) acknowledges Kim derived the propagation equations the book presents; the polytree case of Chapter 4 IS this paper's construction. Same re-hearing conversion condition as Pearl (1986).",
+   "Reverend Bayes on inference engines (Pearl, 1982); Bayesian networks: a model of self-activated memory (Pearl, 1985); On the logic of representing dependencies by graphs (Pearl & Paz, 1986); Distributed revision of composite beliefs (Pearl, 1987); Evidential reasoning using stochastic simulation of causal models (Pearl, 1987); The recovery of causal polytrees from statistical data (Rebane & Pearl, 1987); Causal networks: semantics and expressiveness (Verma & Pearl, 1987) - directness PARTIAL each: the author's own programme papers/TRs codified in his own book (own-version discipline); Rebane & Pearl recorded explicitly as NOT the mediator of the Chow & Liu admission, and Pearl (1987) simulation recorded as the carrier of the Geman & Geman channel.",
+   "Correlation and causation (Wright, 1921) - directness PARTIAL: the parent's own origin acknowledgment (p. 125) scoped to the REPRESENTATION (directed causal diagrams); Wright's machinery (linear path coefficients) is instantiated nowhere in the book. Re-hearing condition recorded.",
+   "Evaluating influence diagrams (Shachter, 1986) - directness PARTIAL: citation + instantiation (arc reversal, book p. 310) scoped to Chapter 6's decision evaluation (the Peot & Shachter shape). Re-hearing condition recorded. Influence diagrams (Howard & Matheson, 1981) - directness PARTIAL: the formalism Chapter 6 (s.6.2) adopts, scoped to the decision chapter; distinguished on the record from the graph's existing Policy iteration (Howard, 1960) node - a different artifact by the same author. Re-hearing condition recorded.",
+   "A Mathematical Theory of Evidence (Shafer, 1976) - directness PARTIAL: Chapter 9's principal expounded subject - exposition-as-assessment scoped to the contrast chapters; also the recorded mediator of Dempster (1968) at this parent.",
+   "Markov fields and log-linear interaction models for contingency tables (Darroch, Lauritzen & Speed, 1980) - directness PARTIAL: the statistics line's founding graphical-models formulation, engaged at discussion level in Chapter 3's stratum; the histories record the two lines as independent developments (parallel-line discipline). Re-hearing condition recorded.",
+   "Stochastic relaxation, Gibbs distributions, and the Bayesian restoration of images (Geman & Geman, 1984) - directness PARTIAL: the Gibbs-sampling channel scoped to Chapter 4's simulation section and carried proximately by the author's own 1987 paper (the MCMC histories name the pair together). Re-hearing condition recorded.",
+   "A model-based method for computer-aided medical decision making (CASNET; Weiss, Kulikowski & Safir, 1978) - directness PARTIAL: the causal-network diagnosis predecessor engaged as Chapter 5's worked material/contrast. Latent structure analysis (Lazarsfeld, 1966) - directness PARTIAL: the book's own attribution ('After Lazarfeld [1966]') scoped to Appendix 8-B - the purest scoped-channel instance in the pool. The Logic of Conditionals (Adams, 1975) - directness PARTIAL: Chapter 10's expounded axiom system, scoped to the logic chapter. Markov fields on finite graphs and lattices (Hammersley & Clifford, 1971) - directness PARTIAL: the equivalence theorem s.3.2 states as the foundation of Markov networks, scoped to the undirected section; the manuscript's unpublished status noted (the theorem's published carrier is Besag 1974). Re-hearing conditions recorded on each."
+  ],
+  "rejected_of_note": [
+   "Propagating belief functions with local computations (Shenoy & Shafer, 1986) - REJECTED on DIRECTION, on the candidate's own text ('the basic idea of local computation for propagating probabilities is Judea Pearl's... We see our contribution as extending Pearl's idea'): a self-declared extension of the parent programme is a descendant/parallel, recorded as multiples evidence for the idea's reach.",
+   "A model of inexact reasoning in medicine (Shortliffe & Buchanan, 1975) - the defined-against incumbent (certainty factors; Chapters 1 and 9 argue against its incoherences). Subjective Bayesian methods for rule-based inference systems (Duda, Hart & Nilsson, 1976) - the prior state in Bayesian dress: PROSPECTOR's mechanism is discarded, not continued (the operative-carrier discrimination).",
+   "Categorical and probabilistic reasoning in medical diagnosis (Szolovits & Pauker, 1978) - REJECTED under the Hochreiter condition: a diagnosis answered is not consumed. INTERNIST-1 (Miller, Pople & Myers, 1982) - demonstrative apparatus (the ALARM/QMR-DT shape).",
+   "Grundbegriffe der Wahrscheinlichkeitsrechnung (Kolmogorov, 1933) and The Foundations of Statistics (Savage, 1954) - framework presupposition (the axioms; the subjectivist tradition). Probability and the Weighing of Evidence (Good, 1950) - wielded expository apparatus (Bayes factor displayed at pp. 53, 278; the calculus does not run on it).",
+   "Information value theory (Howard, 1966) - concept origin without a junction (the parent's VOI construction runs on its own propagation over the Ch 6 representation). Decision Analysis (Raiffa, 1968) - the discipline's background text. An assumption-based TMS (de Kleer, 1986) - a compared formalism in a survey chapter, weaker than even the scoped-partial grade.",
+   "NSF grant DSR 83-13875 - funding (the DFG/ARO MURI shape). UCLA Cognitive Systems Laboratory - institutional formation/carriage (the Rothamsted shape)."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s86_pearl.json",
+  "outcomes": {
+   "dependence-trees-chow-liu-1968-1968": "provisional (Q1 partial confirmed as chapter-scoped; multiples attack lands in downgrade form as priced; mediation attacks via Rebane & Pearl and via Pearl (1986) Part 2 both fail; capped provisional on the codification/audit-scope record - full bibliography not read entire; date/direction clean. No mediation object.)",
+   "conditional-independence-in-statistical-theory-dawid-1979-1979": "provisional (Q1 partial confirmed; multiples attack lands in downgrade form as priced - Spohn/Smith parallels; mediation attack via Pearl & Paz fails - the graphoid paper completes and attributes the candidate's set; capped provisional on the audit-scope record; date/direction clean. No mediation object.)"
+  }
+ },
+ "totals_after": {
+  "nodes": 296,
+  "edges": 372,
+  "budget": "296/2000",
+  "expansions_done": 181,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 36,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 279,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "squad-rajpurkar-et-al-2016-2016",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019",
+  "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021",
+  "wmt-2014-english-german-parallel-corpus-2014"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82/85 precedent)"
 }
