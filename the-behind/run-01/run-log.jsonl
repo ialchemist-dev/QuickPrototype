@@ -10736,3 +10736,101 @@
  ],
  "sync_commit": null
 }
+{
+ "session": 81,
+ "expansion": 171,
+ "parent": "rawlik-toussaint-vijayakumar-on-stochastic-optimal-control-a-2012",
+ "parent_name": "Rawlik, Toussaint & Vijayakumar, On stochastic optimal control and reinforcement learning by approximate inference (2012)",
+ "parent_year": 2012,
+ "parent_depth": 4,
+ "date": "2026-11-25",
+ "provenance": "Session 81, expansion 1 of 2. Scouted, resolved, judged and verified by session 81. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79 discipline): add-candidates verified on disk (expansion record at stage 'scouted', 50 raw candidates in graph.json); resolve ran in the foreground via the MiniLM venv python and was verified on disk at stage 'resolved' (39 distinct) before any judgments work; apply-judgments verified (stage 'judged', distinct stayed 39); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor: AICO 6.0; 3 mediated; 4 fail-closed partials); apply-verdicts run exactly once; the created node spot-checked (stored leap/prior_state/bottleneck all non-empty). Checkpoint: render + sync commit 3a3a04f0, blob SHAs verified by the sync script (graph 7b696155, index cb9f734e, log 0fe456ce - the log blob is unchanged because this record rides the NEXT sync, the sessions 61-80 ride-forward pattern; session 80's two records' sync_commit fields ride this sync in the same way).",
+ "brief_correction": "The brief's hypothesis sketches were tested on the paper and mostly REFUTED in detail, in the sessions 76-80 pattern. (a) The brief framed the KL-control / linearly-solvable-MDP stratum as 'the direct question' at this parent, implying Todorov (2007) is the stratum's carrier here: on the documents, the paper's s.III-D3 expressly DELIMITS Todorov's PNAS 2009 formulation (with Kappen, Gomez & Opper 2009) to special cases of its Theorem 1, refutes their implementability assumption (19) by a one-step LQG counterexample, and the supplement proves Theorem 1 by direct KL decomposition with no LMDP machinery - the operative ancestor is the AICO model the duality theorem is proved FOR (s.II-B attribution to [24]). Todorov LINK was therefore REFUSED at this parent (the session's most contestable negative; the Jaques admission of Todorov is untouched - edge-scoped, and the discrimination is stated in the evaluation: at Jaques the paper INSTANTIATES Todorov's objective as its own; here the child paper demotes the framework to a delimited special case and re-derives the duality from a different model). (b) The brief's 'approximate-inference / message-passing stratum the Psi function descends from' is real but its document channel is AICO itself (message passing over the trajectory graphical model), not a separate stratum: the EM branch of that stratum (Toussaint & Storkey 2006; Dayan & Hinton 1997 behind it) is the parent's delimited ancestor - a fail-closed partial and a mediation respectively, not admissions. (c) The brief's 'authors' own earlier stratum' resolved as expected under own-version discipline (NIPS 2010 = fail-closed partial), with one sharpening: the arXiv:1009.3958 text beneath it is a May 2010 PhD progress report, so the stratum's document chain is report -> NIPS paper -> RSS paper, all one team's programme.",
+ "grounding": "The parent grounded on the FULL TEXT of Rawlik, Toussaint & Vijayakumar, 'On Stochastic Optimal Control and Reinforcement Learning by Approximate Inference' (Robotics: Science and Systems VIII, 2012, 8 pp., PDF at homepages.inf.ed.ac.uk) plus the supplementary material (arXiv:1009.3958), read this session: s.II-B (the inference control model - binary task variable r, P(r=1|x,u)=exp{-eta C} - attributed to [24] Toussaint AICO, ICML 2009; Theorem 1 proves the SOC/KL duality for this model); s.III-C (posterior policy iteration; its objective 'is exactly the risk sensitive objective of [8]' Marcus et al. 1997, 'recently also used in the path integral approach [3]' van den Broek et al. 2010); s.III-D1 (DPP [5] Azar, Gomez & Kappen AISTATS 2011 'independently derived'; the parent derives DPP as a special case of its Theorem 2 and extends it to finite horizon and continuous problems); s.III-D2 (AICO = one step of the parent's posterior policy iteration; eta=1 'corresponds to the AICO setting'; the conclusion improves [24]'s shortcomings); s.III-D3 ([10] Kappen, Gomez & Opper 2009 and [22] Todorov PNAS 2009 'constitute special cases of Theorem 1'; their implementability assumption eq. (19) refuted in general by a one-step LQG counterexample); s.III-D4 (EM stratum: [25] Toussaint & Storkey 2006; 'going further back' [4] Dayan & Hinton 1997 and [19] Sabes & Jordan 1996; the parent's constrained E-step is 'a special case of the alternating minimisation procedures of [9]' Gunawardana & Byrne GAM 2005; EM approaches converge only locally, the parent's globally); Lemma 3 convergence 'Following [12]' Kivinen & Warmuth 1997; s.IV-A (Q-learning and TD(0) relations highlighted, not consumed - Psi tends to Q's value only for optimal controls; update (23) tends to TD(0) only under the optimal policy); s.V-A (Gridworld 'a problem used in [22]'; benchmark vs tabular Q-learning [21]); s.V-B (Cart-Pole [21]; procedures and settings of [18] Riedmiller, Peters & Schaal 2007 followed closely; iLQG [13] Li & Todorov 2006 as the reference policy; eNAC comparison reached via [18]; extended Kalman smoother [20] wielded for the s.V-B1 posterior). The COMPLETE bibliography (26 entries) was enumerated this session. FIND-VERIFIED ABSENCES: no Ziebart (MaxEnt IRL), no Ng & Russell, no policy gradient theorem, no Kakade, no Bryson & Ho.",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state all non-empty and consistent with the paper (the s.4.3-generalization admission record from session 80). The node's stored SOURCES list is EMPTY - the same creation wart logged for Jaques and Katz (the paper is RSS 2012; arXiv:1009.3958 is its supplement). The node's verification record carries the session-80 joint-attribution downgrade challenge with Todorov (re-hearing condition: a document showing the generalized-Psi derivation was taken from an intermediary presentation rather than Rawlik itself) - that condition concerns the Rawlik -> Jaques edge and is untouched by this expansion. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_rawlik.py",
+  "raw_candidates": 50,
+  "per_lens_floors": "met on the builder's output before resolve: L1 3, L2 4, L4 6, L5 3, L6 8, L7 3, L8 3, L11 3, L17 3, L18 3, L19 3, L20 3, L22 3 (47 content filings); meta pass L3 2 plus one L3 absence filing counted in the 50; dry notes for L9, L10, L12, L13, L14, L15, L16 (dry-with-finding: the MDP formalism is filed under L4 as the problem frame), L21 (dry-with-formation-finding: affiliations only - Edinburgh and FU Berlin - no funder named in the paper). Dry notes file: run-01/work/dry_notes_rawlik-toussaint-vijayakumar-on-stochastic-optimal-control-a-2012.json. Seven graph-existing candidates were sought by concept search before scouting and filed as LINKs under exact canonical names (MDP (Bellman, 1957), Bryson & Ho (1969), Todorov LMDP (2007), IRL (Ng & Russell), policy gradient theorem, Kakade NPG, Dynamic Programming (Bellman, 1957)) - all 7 matched at resolve, every matched_node_id verified programmatically. One deliberate calendar filing: Zarubin et al. (2012), same year as the parent. Scout reconciliation: 50 raw filings = 40 distinct names intended; resolve dropped the 1 calendar filing, giving 39 distinct == the verdicts builder's 39 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 39,
+  "dropped": 1,
+  "matched_existing": 7,
+  "auto_merges": 10,
+  "judge_queue": 2,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 2 pairs, both the same name collision (cand-cand:28:29 and cand-cand:28:35), adjudicated DIFFERENT on the documents: the Cart-Pole benchmark (the 1983 plant/problem) vs Riedmiller, Peters & Schaal (2007) (an evaluation paper about policy-gradient methods ON that plant) - a benchmark problem and a paper evaluating methods on it are different artifacts. Applied 2/2, no unknown pair ids; distinct stayed 39; all seven LINK matched_node_ids verified after judgments.",
+ "calendar_dropped_at_resolve": [
+  "Zarubin et al. (2012) - same year as the parent; a coeval robotics application of the group's framework. Dropped by the year-granularity bound on the record; content dates logged, no re-dating."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_rawlik-toussaint-vijayakumar-on-stochastic-optimal-control-a-2012.json",
+  "builder": "run-01/work/build_verdicts_rawlik.py",
+  "evaluations": 39,
+  "count_check": "evaluations == distinct candidates from show-distinct (39 == 39), verified by the builder's missing/extra spec check; field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (1 survivor: AICO 6.0; 3 mediated; 4 fail-closed partials) BEFORE applying; the session's one dry-run correction was MECHANICAL (two spec keys aligned to the pool's exact candidate names - 'Kullback-Leibler divergence' and 'Boltzmann distribution' - after the builder's missing-spec check flagged the longer working titles); apply-verdicts run exactly once; the created node spot-checked with non-empty stored leap/prior_state/bottleneck (its stored sources list is empty - the standing creation wart, same as the parent's own record)",
+  "survivors": [
+   "Toussaint, Robot trajectory optimization using approximate inference (AICO) (2009) - NEW, 6.0, PROVISIONAL, depth 5: citation + instantiation in the strong form - s.II-B attributes the inference control model itself to [24] (the binary task variable with exponentiated-cost likelihood), Theorem 1 proves the SOC/KL duality FOR that model, s.III-D2 makes AICO one step of the parent's posterior policy iteration (eta=1 'corresponds to the AICO setting'), and the conclusion improves [24]'s named shortcomings. The parent CONTINUES AICO's headline mechanism (control as approximate inference over trajectories) and removes its unclear relation to SOC - the operative-carrier shape. Capped provisional at verification: a mediation downgrade challenge via the authors' own NIPS 2010 paper partially lands (see verification)."
+  ],
+  "mediated": [
+   "Dayan & Hinton, Using EM for reinforcement learning (1997) - MEDIATED via Toussaint & Storkey (2006): the parent's own text routes the EM stratum through [25] ('going further back' from it to [4]); whatever EM-for-RL ancestry reaches the parent arrives inside the Toussaint & Storkey formulation it engages.",
+   "Kappen, Path integrals and symmetry breaking for optimal control theory (2005) - MEDIATED via Kappen, Gomez & Opper (2009): the path-integral stratum reaches the parent through the graphical-model formulation it recalls and delimits in s.III-D3; the 2005 continuous-time work has no separate presence.",
+   "Episodic Natural Actor Critic (eNAC) (2008) - MEDIATED via Riedmiller, Peters & Schaal (2007): eNAC enters the paper only as the strongest baseline inside the [18] evaluation whose settings and procedures the parent adopts; its channel into the experiment is that evaluation paper."
+  ],
+  "fail_closed_partials": [
+   "Rawlik, Toussaint & Vijayakumar, NIPS 2010 (the authors' own earlier paper) - directness PARTIAL: own-version discipline - the separable-artifact exception (session 79) fails for want of an independent grading voice (one team, one programme, the arXiv text beneath it a PhD progress report); the Kleene-1936 / Bryson & Denham shape, not the Swagger shape.",
+   "Toussaint & Storkey (2006) - directness PARTIAL: the EM-for-MDP ancestor of s.III-D4 is genuinely engaged ('going further back' runs through it), but the parent's model channel runs through AICO and its iteration departs from EM (global vs local convergence is the paper's own contrast); the channel is real and partial.",
+   "Kivinen & Warmuth (1997) - directness PARTIAL: Lemma 3's convergence analysis 'Following [12]' is a real proof debt, but the borrowed step is a replaceable proof device, not the extended mechanism - the Chernoff shape, discriminated from Singh & Yee (whose specific form the parent EXTENDS; here the parent's own theorems carry the result).",
+   "Marcus et al. (1997) - directness PARTIAL: s.III-C's identification of the posterior iteration's objective with [8]'s risk-sensitive objective is derivation-then-identification - the parent derives its iteration from its duality and then names the objective's prior owner; explanation-of is not derivation-from."
+  ],
+  "rejected_of_note": [
+   "Todorov, Linearly-solvable Markov decision problems (2007) - LINK REFUSED, the session's most contestable negative (3.5; Q2 passes honestly, Q3 FAILS, directness fails on delimitation-not-mediation, no mediation recorded): the parent's documents place Todorov's formulation (via its PNAS 2009 form, [22]) among the special cases Theorem 1 subsumes, refute its implementability assumption by counterexample, and prove the duality from the AICO model by direct KL decomposition (supplement s.1.1) with no LMDP machinery. The Gridworld reuse (s.V-A) is a benchmark channel at component grain, judged separately with directness passing and the gates refusing. The discrimination from Jaques (session 80) is stated on the record: there the child INSTANTIATES the objective as its own method; here the child demotes the framework and re-derives from a different model. RE-HEARING CONDITION: a document showing the Psi iteration or Theorem 1's proof actually imports LMDP machinery (the compositionality/Z-transform apparatus) rather than delimiting it.",
+   "Dynamic Policy Programming (Azar, Gomez & Kappen, 2011) - the independently derived multiple: necessity fails by the introduction's own word ('independently derived'), and the documented derivation direction is reversed (the parent derives DPP as a special case of its Theorem 2). A multiple is verification evidence, not an ancestor.",
+   "Kappen, Gomez & Opper (2009) - the subsumed special case: s.III-D3 demotes the framework ('constitutes special cases of Theorem 1') and refutes its implementability assumption; the correction relation was tested and fails on its terms (the parent replaces the worked object rather than extracting it).",
+   "Kullback-Leibler divergence (1951) - the presupposed measure: the formulation is written IN KL throughout, but no 1951 document is cited and the quantity's channel is the AICO model that wields it. Boltzmann distribution (1877) - the paper's own flagged analogy ('we can think of C as an energy function and eta as the inverse temperature'); an analogy is not a channel.",
+   "Absence refusals, all find-verified against the enumerated 26-entry bibliography: IRL (Ng & Russell) LINK, policy gradient theorem LINK, Kakade LINK, Bryson & Ho LINK (the parent's control textbook is Stengel), Ziebart MaxEnt IRL, Kalman duality (a different duality - control/estimation, not SOC/KL). Framework presuppositions: MDP LINK (stated via the textbook, necessary-as-a-class), Dynamic Programming LINK (analogy + presupposed frame), Stengel (1986) (the frame's textbook, also the smoother's citation), Sutton & Barto (1998) (carrier of the formalism). Wielded apparatus with directness PASSING and the gates refusing: Todorov's Gridworld problem, the Cart-Pole benchmark, Riedmiller et al. (2007) (the adopted evaluation protocol - the OpenAI Baselines shape), the extended Kalman filter and smoother. Compared incumbents: Q-learning, TD(0), iLQG. Classification-not-consumption: Gunawardana & Byrne GAM (2005). Claim/motivation citations: Peters et al. (2003) (difficulty), Todorov & Jordan (2002) (normative-model demand). Application stratum / creator lineage: Nakanishi et al. (2011), Mitrovic et al. (2008), Braun et al. (2011). One-clause citations: van den Broek et al. (2010), Theodorou et al. PI^2 (2010), Bishop PRML (2006, textbook carrier)."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s81_rawlik.json",
+  "outcomes": {
+   "toussaint-robot-trajectory-optimization-using-approximate-in-2009": "provisional (mediation downgrade challenge via the authors' own NIPS 2010 paper recorded on the edge). Attack 1 (Q1 bound): confirms the partial scored at evaluation (the control-as-inference idea predates AICO in the EM line; AICO's flip is its specific model + message passing). Attack 2 (multiples on Q3 - Toussaint & Storkey 2006 and Kappen, Gomez & Opper 2009 as substitutes): fails - neither supplies AICO's specific model (binary task variable, exponentiated-cost likelihood, message-passing posterior), and the parent's Theorem 1 is proved for that model. Attack 3 (mediation via the authors' own NIPS 2010 paper): PARTIALLY LANDS in downgrade form - one team, Toussaint co-authoring all three documents, the 2010 paper presenting the same framework; the kill form fails (s.II-B attributes the model to [24] directly; s.III-D2 engages AICO by name). Attack 4 (date/direction): fails. RE-HEARING CONDITION: a document showing the inference control model was taken from the NIPS 2010 presentation (or another intermediary) rather than from Toussaint (2009) itself."
+  }
+ },
+ "totals_after": {
+  "nodes": 284,
+  "edges": 358,
+  "budget": "284/2000",
+  "expansions_done": 171,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 33,
+   "4": 39,
+   "5": 58,
+   "6": 45,
+   "7": 30,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 267,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "toussaint-robot-trajectory-optimization-using-approximate-in-2009",
+  "json-referencing-in-dojo-2008",
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019"
+ ],
+ "sync_commit": "3a3a04f0"
+}
