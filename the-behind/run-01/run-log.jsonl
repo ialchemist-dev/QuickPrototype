@@ -12210,5 +12210,139 @@
   "brookgpu-stream-and-kernel-abstraction-2004",
   "generalized-advantage-estimation-gae-2016"
  ],
+ "sync_commit": "76dceba1"
+}
+{
+ "session": 88,
+ "expansion": 185,
+ "parent": "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021",
+ "parent_name": "Training verifiers to solve math word problems (Cobbe et al., 2021)",
+ "parent_year": 2021,
+ "parent_depth": 2,
+ "date": "2026-11-25",
+ "provenance": "Session 88, expansion 1 of 2. Scouted, resolved, judged and verified by session 88. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/85 discipline): add-candidates verified (80 raw filings, stage 'scouted'); resolve ran in the foreground and was verified on disk (stage 'resolved', 28 distinct, 7 LINK matches - all matched ids program-verified against the graph's actual ids - 13 raw filings calendar-dropped, judge queue 3); all 3 judge pairs decided and applied (stage 'judged', 0 pending flags) before verdicts work; the verdicts builder's count check passed (28 evaluations == 28 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors: GPT-3 LINK 3.5, Ling et al. NEW 2.0; 4 fail-closed partials; 22 plain rejections); NO dry-run correction was spent; apply-verdicts run exactly once (evaluated 28, survivors 2, created 1, linked 1, rejected 26, mediated rejections 4); verification applied from work/verification_s88_cobbe.json (both provisional, no mediation actions); the created node's stored leap/prior_state/bottleneck/definition spot-checked non-empty. Render verified fresh (298 nodes / 379 edges) before syncing.",
+ "brief_correction": "No brief hypothesis required correction this expansion. The brief's three sketches were tested on the paper: (1) the verifier-training stratum resolved to Nichols et al. (2020) as a fail-closed partial (the ranking shape's prior form, every load-bearing choice differing) with the concurrent Shen et al. (2021a) foreclosed by the calendar; (2) the base-model stratum resolved as a LINK admission of GPT-3 - here, unlike Scratchpads, the experiments demonstrably ARE GPT-3 finetunes, so the channel is consumption, not paradigm attribution; (3) the GSM8K dataset-construction stratum: the dataset is the paper's own creation and its node filing calendar-dropped at resolve (same year, 2021); the construction channels that remain are scoped (ICL seed questions, Surge AI platform), both fail-closed partials. The session-87 cross-check was honored in reverse: Scratchpads (Nye et al., 2021) is find-verified ABSENT from this paper's text and its complete 29-entry reference list, and was deliberately not filed.",
+ "grounding": "Full text of arXiv:2110.14168 v2 read this session (abstract, s.1-s.6, Appendices A-F, complete 29-entry reference list). Load-bearing: s.4 (both methods initialize from the GPT-3 family; finetuning 'uses the same language modeling objective as the generative pretraining in GPT-3'); s.4.1 (full NL solution before the answer: 20.6% vs 5.2%); s.4.2 (verifier pipeline: 2-epoch generator, 100 samples per problem labeled solely by final-answer correctness, separate networks, joint LM objective); s.3.1 (dataset stratum with the AQuA-RAT criticism); s.3.2 (Nichols sample-and-rank with a human-preference signal; Shen et al. 2021a 'concurrent work closely related to our own'); s.5.2 (residual dropout cited to Vaswani et al. 2017; Srivastava et al. find-verified ABSENT from the reference list, as is Kingma & Ba despite App. B's Adam); App. A (Upwork seed collection, Surge AI scale-up, few-shot GPT-3 seed questions, agreement QC); acknowledgements (Surge AI 'performed the GSM8K data collection'; OpenAI Supercomputing team thanked, no machine named).",
+ "parent_record_note": "Parent stored record verified COMPLETE this session: definition, bottleneck, leap, prior_state and sources all populated and consistent with the paper (the leap's 'extend Ling et al.' framing is the paper's own positioning as recorded). No reconstruction needed, no discrepancy found. Created-node wart: the new Ling node's stored sources list is EMPTY (the standing pipeline.py:300-302 creation wart) - logged here, never hand-edited; its leap/prior_state/bottleneck/definition are non-empty (spot-checked).",
+ "scout": {
+  "builder": "run-01/work/build_scout_cobbe.py",
+  "raw_filings": 80,
+  "distinct_names_intended": 34,
+  "per_lens": {
+   "L1": 7,
+   "L2": 4,
+   "L3": 3,
+   "L4": 4,
+   "L5": 3,
+   "L6": 14,
+   "L7": 3,
+   "L8": 9,
+   "L9": 1,
+   "L11": 4,
+   "L12": 1,
+   "L13": 3,
+   "L15": 2,
+   "L17": 7,
+   "L19": 3,
+   "L20": 3,
+   "L21": 3,
+   "L22": 3,
+   "L23": 3
+  },
+  "dry_notes_file": "run-01/work/dry_notes_training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021.json",
+  "dry_notes": "L10 dry (software parent); L14 dry (no physical equipment); L16 dry-with-finding (the one format-like artifact, the <<...>> calculator annotation syntax, is the parent's own invention - self-carriage); L18 dry-with-finding (the paper's observation instrument, the token-level verifier confidence visualization of App. F, is the parent's own device). Shortfalls noted on the dry-notes file: L9 (1 filing - no machine, cluster or chip is named anywhere; the consumed compute arrives as the GPT-3 artifacts), L12 (1 filing - Python eval is the only named software layer), L15 (2 filings - the only hosted services are the two data-collection platforms; the public OpenAI API is not used or mentioned). Meta passes L3+L23 = 6 filings (cap ~10). No scout repairs were needed: the count check against intended filings passed on the builder's first output."
+ },
+ "resolution": {
+  "distinct": 28,
+  "matched_existing": 7,
+  "auto_merges": 39,
+  "dropped_raw_filings": 13,
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "matched_node_ids_verified": {
+   "Large-scale pretraining (GPT-3)": "large-scale-pretraining-gpt-3-2020",
+   "Transformer architecture": "transformer-architecture-2017",
+   "Sequence-to-sequence learning": "sequence-to-sequence-learning-2014",
+   "BERT (Devlin et al., 2018)": "bert-devlin-et-al-2018-2018",
+   "ASDiv (Miao et al., 2020)": "asdiv-miao-et-al-2020-2020",
+   "In-context learning": "in-context-learning-2020",
+   "OpenAI": "openai-2015"
+  }
+ },
+ "judgments": {
+  "queue": 3,
+  "decisions": "All DIFFERENT: Sequence-to-sequence learning vs Semi-supervised Sequence Learning (the session-87 precedent, decided three times there); OpenAI (institution, 2015) vs Hosted LLM APIs (OpenAI API) (other, 2020) twice - an organization is not its API product (type clash)."
+ },
+ "calendar_dropped_at_resolve": "13 raw filings, 6 distinct names, all dated the parent's own year 2021, filed deliberately and never re-dated: GSM8K benchmark of math word problems (Cobbe et al., 2021) x2 filings (the parent's own dataset artifact - self-carriage in any case), MATH dataset (Hendrycks et al., 2021) x4, Generate & Rank (Shen et al., 2021) x3 (the concurrent sibling; the paper's s.1 sensitivity diagnosis also cites it), AMPS pretraining corpus (Hendrycks et al., 2021), MathBERT curriculum pretraining corpus (Shen et al., 2021), Masked subexpression prediction (Peng et al., 2021) - the whole s.3.2 additional-pretraining stratum is calendar-foreclosed at this parent.",
+ "verdicts": {
+  "file": "run-01/work/verdicts_training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021.json",
+  "builder": "run-01/work/build_verdicts_cobbe.py",
+  "evaluations": 28,
+  "survivors": [
+   "Large-scale pretraining (GPT-3) - LINK, dry-run score 3.5, provisional. Both of the parent's methods are GPT-3 finetunes (6B and 175B); the finetuning baseline 'uses the same language modeling objective as the generative pretraining in GPT-3' (s.4); App. A's seed questions were generated by a few-shot prompted 175B GPT-3. Capped provisional: necessity is class-level (the method's form is base-agnostic), the Scratchpads cap.",
+   "Program induction by rationale generation (Ling et al., 2017) - NEW, dry-run score 2.0, depth 3, provisional. Ancestor-modified admission: the stored prior state names train-from-scratch rationale generation (Ling et al., 2017) as the immediate predecessor; the parent extends it to a large pretrained model and a far larger rationale dataset and adds trained verifiers; s.2's natural-language-solutions principle and s.4.1's full-solution finding (20.6% vs 5.2%) run inside Ling's form."
+  ],
+  "fail_closed_partials": [
+   "Sample-and-rank for collaborative storytelling (Nichols et al., 2020) - directness partial: s.3.2 documents the channel ('Similar to verification, other methods have finetuned a language model to select among many model completions') but it is scoped to the ranking shape's prior form; the parent's signal (final-answer correctness vs human preference), format (NL reasoning vs stories) and architecture (separate networks) all differ, and Q3 fails.",
+   "ASDiv (Miao et al., 2020) - LINK refused as an admission, directness partial: s.3.1's 'We share those design principles' is a documented channel scoped to the companion dataset's design; the method consumes nothing of ASDiv (no training, no evaluation register). Edge-scoped: ASDiv's own frontier expansion is untouched.",
+   "In-context learning - LINK refused as an admission, directness partial: App. A documents the seed-question channel (few-shot prompted 175B GPT-3), scoped to a subset of the companion dataset's construction; the method instantiates no in-context learning. Edge-scoped: ICL's admissions elsewhere stand.",
+   "Surge AI data collection platform - directness partial: App. A and the acknowledgements document that Surge performed the GSM8K data collection, but the platform is the substitutable carrier of the authors' own protocol (the Daemo-at-SQuAD shape); Q3 fails."
+  ],
+  "mediated_rejections": [
+   "Transformer architecture (LINK) - mediated via Large-scale pretraining (GPT-3): framework presupposition (the Scratchpads shape); the paper's only direct Vaswani citation is residual dropout (s.5.2), a component.",
+   "Learning to automatically solve algebra word problems (Kushman et al., 2014) - mediated via Program induction by rationale generation (Ling et al., 2017): the formulation reaches the parent through Ling's rationale re-posing.",
+   "Solving general arithmetic word problems (Roy & Roth, 2015) - mediated via Ling et al. (2017), same shape.",
+   "MathQA (Amini et al., 2019) - mediated via AQuA-RAT dataset (Ling et al., 2017): a corrected subset of the defined-against incumbent."
+  ],
+  "rejected_of_note": [
+   "AQuA-RAT dataset (Ling et al., 2017) - defined-against data incumbent: criticized in s.3.1 (templatization, poor QC), never consumed; the parent trains on its own GSM8K. The same paper's METHOD is admitted under the separate Ling method filing - the method/corpus discrimination is stated on both verdicts.",
+   "Scaling laws for neural language models (Kaplan et al., 2020) - framing/register channel: s.4.1's extrapolation is computed from the paper's own runs; remove Kaplan and every result is unchanged. Directness fails on the counterfactual.",
+   "BERT (Devlin et al., 2018) (LINK) and Sequence-to-sequence learning (LINK) - compared/historical incumbents of s.3.2, never instantiated; the parent's route is generative finetuning.",
+   "Dropout (Srivastava et al., 2014) - presupposed technique, find-verified ABSENT from the paper's 29-entry reference list (the paper cites the residual form to Vaswani et al.); the parent's dropout finding is its own contribution. Adam optimizer likewise uncited apparatus (App. B).",
+   "Upwork freelance marketplace - substitutable hiring venue for the seed thousand; discriminated from Surge AI's partial on the record (Surge is credited with performing the collection itself).",
+   "OpenAI (LINK) - institutional formation; the institution acts through the GPT-3 artifact, separately admitted (the Google-Brain-at-Jaques shape). SuperGLUE - arena/backdrop of s.1's opening sentence. Python - wielded apparatus at below-milestone grain (App. C's eval). Dolphin18K / Ape210K / Lample & Charton / Xie & Sun / Chen et al. 2019 / Wang et al. 2017 / CommonsenseQA / LogiQA - compared or analogy citations in the s.3.1/s.3.2 surveys, none consumed."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s88_cobbe.json",
+  "outcomes": {
+   "large-scale-pretraining-gpt-3-2020": "provisional",
+   "program-induction-by-rationale-generation-ling-et-al-2017-2017": "provisional"
+  },
+  "note": "GPT-3 capped by the class-level necessity (multiples) pressure, as at Scratchpads. Ling capped provisional: mediation attacks via AQuA-RAT (the corpus is not an intermediary of the method channel - the parent consumes the method while rejecting the corpus) and via GSM8K (the parent's own creation cannot mediate a 2017 method into its creator) both fail. No mediation actions."
+ },
+ "totals_after": {
+  "nodes": 298,
+  "edges": 379,
+  "budget": "298/2000",
+  "expansions_done": 185,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 38,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 281,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "wmt-2014-english-german-parallel-corpus-2014",
+  "asdiv-miao-et-al-2020-2020",
+  "brookgpu-stream-and-kernel-abstraction-2004",
+  "generalized-advantage-estimation-gae-2016",
+  "inverse-reinforcement-learning-ng-russell-2000"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82/85 precedent)"
 }
