@@ -11994,5 +11994,109 @@
   "wmt-2014-english-german-parallel-corpus-2014",
   "asdiv-miao-et-al-2020-2020"
  ],
+ "sync_commit": "1b3cbc09"
+}
+{
+ "session": 87,
+ "expansion": 183,
+ "parent": "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+ "parent_name": "Show Your Work: Scratchpads for Intermediate Computation with Language Models (Nye et al., 2021)",
+ "parent_year": 2021,
+ "parent_depth": 2,
+ "date": "2026-11-25",
+ "provenance": "Session 87, expansion 1 of 2. Scouted, resolved, judged and verified by session 87. Pipeline steps verified on disk after each (the sessions 66/78/85 discipline): add-candidates verified (60 raw filings, stage scouted on disk); the first resolve was auto-backgrounded by the runtime and its completion was verified on disk BEFORE any further step (stage 'resolved', 26 distinct, 9 LINK matches - all matched ids program-verified against the graph's actual ids - 13 calendar drops, 1 judge pair); a scout repair (below) then triggered a top-up add (63 raw) and a FOREGROUND re-resolve, verified on disk (stage 'resolved', 28 distinct, 14 drops, judge queue 1); the judge pair was decided and applied (stage 'judged', 0 pending flags) before verdicts work; the verdicts builder's count check passed (28 evaluations == 28 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors: GPT-3 LINK 6.0, Zaremba & Sutskever NEW 3.5; Transformer scored 4.0 but failed the directness gate; 3 fail-closed partials; 23 plain rejections); NO dry-run correction was spent (the builder's own dry-run print statement crashed on the rank output's list-of-lists shape AFTER the verdicts file was written correctly - a display defect in the builder only, fixed in the builder file for later sessions; the ranking itself was verified by a separate read-only rank call); apply-verdicts run exactly once (evaluated 28, survivors 2, created 1, linked 1, rejected 26, mediated 3). CREATED-NODE SPOT-CHECK: learning-to-execute-zaremba-sutskever-2014-2014 stored leap/prior_state/bottleneck ALL non-empty; its stored sources list is EMPTY (the standing creation wart - logged here, never hand-edited). Verification applied via apply-verification (both edges provisional). The session-86 expansion-182 record's sync_commit field was fixed up in this pass to 1b3cbc09 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it. SCOUT REPAIR ON RECORD (caught by the pre-verdicts count check, repaired by top-up + re-resolve BEFORE verdicts, per sessions 63/67/78/83/86): the main scout builder DEFINED three candidate tuples but never emitted add() calls for them - PonderNet (Banino et al., 2021), Wang et al. (2020), Long Range Arena (Tay et al., 2020) - grep-verified (0 add() calls against 36 intended distinct names; the builder emitted 33); repaired via build_scout_scratchpads_topup.py; PonderNet was then calendar-dropped at re-resolve as same-year (see the calendar record); Wang and Long Range Arena were evaluated in this expansion.",
+ "brief_correction": "The brief's base-model hypothesis ('the Codex/GPT-3 base the experiments run on') is REFUTED on the paper's own text, and the correction is recorded here (documents govern; graph.json never hand-edited): s.2 states the experiments use 'pre-trained dense decoder-only Transformer language models... [that] correspond to the models used in Austin et al. (2021)' - unnamed Google models, NOT Codex and NOT GPT-3. Codex (Chen et al., 2021) is cited only in the abstract and s.1 as evidence that large LMs can synthesize programs. The proximate base-model carrier (Austin et al., 2021) - together with its MBPP dataset and the CodeNet corpus - is calendar-foreclosed at resolve (all dated the parent's own year), so the base-model stratum enters this expansion only as (a) the GPT-3 LINK admission, which rests on the documentary channel (the few-shot paradigm and the cited failure record in Brown et al. 2020), explicitly NOT on artifact identity, and (b) the recorded foreclosure. A second documentary finding: the rationale-finetuning line (Ling et al., 2017; Cobbe et al., 2021) is find-verified ABSENT from the parent's text and its complete 33-entry reference list - the parent's own account of its lineage contains neither; the Chain-of-Thought admission edge's verification note (which records that line as a parallel route at THAT parent) stands untouched, edge-scoped.",
+ "grounding": "The parent grounded on the full text of Nye et al. (arXiv:2112.00114), read entire this session, including the complete 33-entry reference list: abstract (scratchpad definition; Codex cited as synthesis evidence); s.1 (GPT-3's few-shot >3-digit addition failure per Brown et al. 2020; Bieber et al. 2020's GNN systematic-generalization failure; program synthesis/analysis roll-call); s.2 ('In principle, any sequence model could be used'; the two problem classes - learning to execute (Zaremba & Sutskever 2014; Bieber et al. 2020) and direct execution prediction (Austin et al. 2021); NTM compounding-error contrast; scratchpads for addition and execution defined); s.3 (8B finetuned addition, direct vs scratchpad); s.4 (addition to 19 digits; 137B few-shot with n=4 exemplars; polynomial evaluation 'Inspired by the polynomial evaluation subproblem in Saxton et al. (2019)'); s.5.1 (synthetic programs 'modified from Bieber et al. (2020)'; 8B finetuned and 137B 3-exemplar few-shot); s.5.2 (MBPP 'introduced in Austin et al. (2021)'; 'we follow the problem setup from Austin et al. (2021)'; interpreter-generated trace augmentation); s.5.3 (CodeNet 670,904 traces; Greenlee single-line dataset ~9M examples; state printed as JSON 'for convenience'); s.6 ('we modify the task design rather than the model'; the ACT contrast passage - 'In contrast, a scratchpad is a simple way both to provide a transformer model with adaptive computation time, and also to provide supervision about how to use that additional computation, without requiring modification to the underlying architecture'; the Bender & Koller framing; the semantic-parsing closing line, Zelle & Mooney 1996 through Zettlemoyer & Collins 2005); s.7 (512-token window limitation; Long Range Arena named as the active research direction); acknowledgments (Greenlee thanked for the dataset). Find-verified absences: Ling et al. (2017) and Cobbe et al. (2021) nowhere in text or apparatus; no hardware, framework or hosted service named anywhere in the paper.",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state ALL non-empty and coherent; sources list populated (single entry, arXiv:2112.00114). Admission edge: admitted at Chain-of-thought (score 5.0); its stored verification note records the rationale-finetuning line as a parallel route (necessity ripe) and Austin et al. (2021)'s rejection at CoT as mediated via Scratchpads - both records stand, edge-scoped, and are consistent with this session's absence finding (the line is absent from THIS parent's apparatus). Zero prior rejections existed for this parent (first expansion). One stored-record observation, logged not edited: the parent's stored prior_state names exactly the two strands this expansion's survivors formalize (Austin et al. 2021 - foreclosed here; Zaremba & Sutskever 2014 - admitted).",
+ "scout": {
+  "builder": "run-01/work/build_scout_scratchpads.py + run-01/work/build_scout_scratchpads_topup.py (repair)",
+  "raw_candidates": 63,
+  "per_lens_floors": "met on the builders' output before resolve: L1 6, L2 3, L3 3, L4 4, L5 3, L6 9 (incl. top-up 2), L7 4 (incl. top-up 1), L8 4, L11 3, L12 1, L13 3, L14 1, L16 2, L17 3, L19 4, L20 3, L21 1, L22 3, L23 3; shortfall notes for L12 (1 filing - exactly one language artefact, Python), L14 (1 filing - exactly one doctrine, Bender & Koller), L16 (2 filings - exactly two executable artefacts), L21 (1 filing - exactly one institution); dry notes for L9 (dry-with-finding: no substrate named anywhere in the paper - substrate deliberately unexamined), L10 (dry: no cost collapse - the parent inherits its compute regime), L15 (dry-with-finding: no hosted service or platform is named), L18 (dry-with-finding: no governing standard - the JSON format appears as trace notation and is filed under L12/L13). Meta passes: L3 3 filings, L23 3 filings. Dry notes file: run-01/work/dry_notes_show-your-work-scratchpads-for-intermediate-computation-with-2021.json. Concept search before scouting verified the LINK targets' exact canonical names/ids in the graph (Transformer, LSTM, seq2seq, JSON, T5, BERT, GPT-3, In-context learning, Google Brain, Codex, SQuAD - all matched programmatically at resolve). Scout reconciliation: 63 filings = 36 distinct names intended (33 main + 3 topped-up); resolve dropped 14 filings (the 2021 cohort, below), matched 9 existing, auto-merged 21 cross-lens duplicates, giving 28 distinct == the verdicts builder's 28 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 28,
+  "dropped": 14,
+  "matched_existing": 9,
+  "auto_merges": 21,
+  "judge_queue": 1,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 1 pair (cand-node:2:semi-supervised-sequence-learning-2015): the Sequence-to-sequence learning candidate vs the existing Semi-supervised Sequence Learning node (Dai & Le, 2015), similarity 0.608, routed by name containment. Decided DIFFERENT: Sutskever et al. (2014) encoder-decoder transduction vs Dai & Le (2015) pretraining of sequence classifiers - distinct advances; the candidate had already matched the correct seq2seq node. Applied; distinct_now 28, no pending judge flags.",
+ "calendar_dropped_at_resolve": [
+  "Program synthesis with large language models (Austin et al., 2021) - 5 filings dropped: dated the parent's own year (2021). The proximate base-model carrier and the source of the MBPP task form and the s.5 problem setup - the same-year foreclosure is the structural fact working as designed; never re-dated. Its mediation pressure on the GPT-3 edge is recorded in that edge's verification.",
+  "MBPP dataset (Austin et al., 2021) - 3 filings dropped: dated 2021. The parent's s.5.2 evaluation dataset and MBPP-aug source.",
+  "Project CodeNet (Puri et al., 2021) - 1 filing dropped: dated 2021. The source of the parent's 670,904 s.5.3 execution traces.",
+  "Codex code generation model (Chen et al., 2021) - 1 filing dropped: dated 2021. Cited in the parent only as synthesis evidence (see brief_correction).",
+  "Pretrained Transformers as universal computation engines (Lu et al., 2021), Implicit representations of meaning in neural language models (Li et al., 2021), Neural algorithmic reasoning (Velickovic & Blundell, 2021), PonderNet (Banino et al., 2021) - 1 filing each dropped: dated 2021 (s.6/s.1 context citations and the ACT line's third carrier)."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_show-your-work-scratchpads-for-intermediate-computation-with-2021.json",
+  "builder": "run-01/work/build_verdicts_scratchpads.py",
+  "evaluations": 28,
+  "count_check": "evaluations == distinct candidates from show-distinct (28 == 28), verified by the builder's missing/extra spec check; field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run reproduced the intended outcome BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once (evaluated 28, survivors 2, created 1, linked 1, rejected 26, mediated 3). Created node spot-checked: leap/prior_state/bottleneck non-empty; sources EMPTY (standing wart, logged).",
+  "survivors": [
+   "Learning to execute (Zaremba & Sutskever, 2014) - NEW, score 3.5, depth 3, PROVISIONAL: problem-formulation admission - the parent's s.2 names it as the source of one of its two problem classes, its addition experiments descend from the same paper's tasks, and the parent's stored prior_state names it; the formulation channel is textual and direct (cited s.1/s.2), with the Bieber/Austin carrier pressure recorded for verification.",
+   "Large-scale pretraining (GPT-3) - LINK, score 6.0, PROVISIONAL: the few-shot paradigm plus its documented failure record, sourced by the parent to Brown et al. (2020) at three points (abstract capability framing; s.1's >3-digit addition failure; s.4's few-shot premise); necessity class-level (the experiments run on Google's unnamed models) - the cap is recorded on the evaluation and in verification."
+  ],
+  "mediated": [
+   "Long short-term memory (LSTM) - mediated via Learning to execute (Zaremba & Sutskever, 2014): the parent instantiates no recurrence; the LSTM is the admitted formulation's substrate.",
+   "Sequence-to-sequence learning - mediated via Learning to execute (Zaremba & Sutskever, 2014); also not cited in the parent.",
+   "In-context learning - mediated via Large-scale pretraining (GPT-3): the parent never names the phenomenon; its few-shot claims are sourced to Brown et al. (2020), the admitted carrier document."
+  ],
+  "fail_closed_partials": [
+   "Learning to execute programs with instruction pointer attention graph neural networks (Bieber et al., 2020) - directness PARTIAL: documented consumption scoped to s.5.1 (synthetic programs 'modified from Bieber et al. (2020)') plus its s.1 systematic-generalization failure record; the formulation channel runs through Zaremba & Sutskever and the headline-data channel through Austin et al. Re-hearing condition recorded on the verdict.",
+   "Analysing mathematical reasoning abilities of neural models (Saxton et al., 2019) - directness PARTIAL: documented problem channel scoped to s.4 ('Inspired by the polynomial evaluation subproblem in Saxton et al. (2019)') - one of the parent's three tasks; the mechanism owes it nothing. Re-hearing condition recorded.",
+   "Single-line Python programs dataset (Greenlee, 2020) - directness PARTIAL: documented data consumption scoped to s.5.3 (one of two additional tracing corpora; its constructor thanked in the acknowledgments), substitutable as an instance of traced-execution data. Re-hearing condition recorded."
+  ],
+  "rejected_of_note": [
+   "Transformer architecture (LINK) - REJECTED as framework presupposition despite a 4.0 raw score: the parent presupposes decoder-only Transformers as its stage and states substitutability in its own words ('In principle, any sequence model could be used for this'; 'we modify the task design rather than the model', s.6) - the DBN-at-ADF shape, with the author's own agnosticism as the decisive evidence.",
+   "Adaptive computation time for recurrent neural networks (Graves, 2016) - REJECTED as defined-against: s.6's 'In contrast' passage positions the scratchpad as achieving ACT's property by a different route with supervision ACT lacks; the correction relation was tested and fails (the parent replaces the halting mechanism, it does not extract ACT's worked object). Universal Transformers - the same paragraph's architectural rival. Neural Turing Machines - the s.2 compared incumbent (compounding-error contrast).",
+   "Neural programmer-interpreters (Reed & de Freitas, 2016) - anticipation without a junction: learned execution traces in a specialized from-scratch architecture vs the parent's text traces from a pretrained LM; the paper's own s.6 files it in the architecture line. DNC, Neural GPUs, NRAM, Wang et al. (2020) - line carriers of the same class.",
+   "T5 (LINK) and BERT (LINK) - cited-but-not-instantiated / passing mention: s.2 names T5 as one substitutable alternative substrate ('other sequence models could be effective'); BERT appears once in s.1's capability roll-call. JSON (RFC 4627) (LINK) - specification-as-notation for the s.5.3 trace state ('for convenience', the paper's own demotion). Python - wielded apparatus (the interpreter generates ground-truth traces; the language channel arrives inside the foreclosed Austin filing). Google Brain (LINK) - institutional formation/carriage of the unnamed models.",
+   "Zettlemoyer & Collins (2005) and Zelle & Mooney (1996) - anticipation without a junction (the s.6 semantic-parsing line: an executable QUERY over an external database vs the model's own computation record). RobustFill (2017) and Allamanis et al. (2018) - motivation citations (downstream applications the parent addresses; direction reversed). Bender & Koller (2020) - doctrine/framing (the Hochreiter condition). Long Range Arena (Tay et al., 2020) - the s.7 direction-not-taken pointer for the window limitation."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s87_scratchpads.json",
+  "outcomes": {
+   "learning-to-execute-zaremba-sutskever-2014-2014": "provisional",
+   "large-scale-pretraining-gpt-3-2020": "provisional"
+  },
+  "note": "Zaremba & Sutskever capped by the mediation pressure through the calendar-foreclosed Austin et al. (2021) (the execution task's operative form in the paper is Austin's; the admission rests on the s.2 taxonomy + stored prior_state channel). GPT-3 capped by the same Austin mediation pressure at the artifact level plus the class/instance configuration (paradigm + failure record consumed, not the artifact). Both edges' attacks and caps are written out in the verification file."
+ },
+ "totals_after": {
+  "nodes": 297,
+  "edges": 374,
+  "budget": "297/2000",
+  "expansions_done": 183,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 37,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 280,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "t5-text-to-text-transfer-transformer-2019",
+  "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021",
+  "wmt-2014-english-german-parallel-corpus-2014",
+  "asdiv-miao-et-al-2020-2020",
+  "brookgpu-stream-and-kernel-abstraction-2004"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82/85 precedent)"
 }
