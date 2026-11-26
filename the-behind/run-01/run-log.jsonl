@@ -12098,5 +12098,117 @@
   "asdiv-miao-et-al-2020-2020",
   "brookgpu-stream-and-kernel-abstraction-2004"
  ],
+ "sync_commit": "79d64c48"
+}
+{
+ "session": 87,
+ "expansion": 184,
+ "parent": "t5-text-to-text-transfer-transformer-2019",
+ "parent_name": "T5 (text-to-text transfer transformer) - Raffel et al., 2019",
+ "parent_year": 2019,
+ "parent_depth": 2,
+ "date": "2026-11-25",
+ "provenance": "Session 87, expansion 2 of 2. Scouted, resolved, judged and verified by session 87. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/85 discipline): add-candidates verified (71 raw filings; then a 2-filing pre-add top-up - see repairs - 73 raw total, stage 'scouted'); resolve ran in the foreground and was verified on disk (stage 'resolved', 36 distinct, 11 LINK matches - all matched ids program-verified against the graph's actual ids - 17 calendar drops, 1 judge pair); a second repair (Semi-supervised sequence learning top-up) then triggered a further add (74 raw) and a FOREGROUND re-resolve, verified on disk (37 distinct, 12 LINK matches, judge queue 2); both judge pairs decided and applied (stage 'judged', 0 pending flags) before verdicts work; the verdicts builder's count check passed (37 evaluations == 37 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (3 survivors, all LINK: Transformer 5.0, BERT 5.0, Common Crawl 3.5; 6 fail-closed partials; 28 plain rejections); NO dry-run correction was spent; apply-verdicts run exactly once (evaluated 37, survivors 3, created 0, linked 3, rejected 34, mediated 7). NO NODES WERE CREATED, so the created-node field spot-check is vacuous - stated explicitly per the checkpoint protocol. Verification applied via apply-verification (all three edges provisional). The session-87 expansion-183 record's sync_commit field was fixed up in this pass to 79d64c48 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it. SCOUT REPAIRS ON RECORD (two, both the defined-but-unfiled shape of sessions 83/86, both repaired BEFORE verdicts): (1) Taylor (1953) and Bowman et al. (2015) - both named in the s.3.1.4 sentence that defines the baseline objective - were in the intended pool but never emitted by the main builder; caught by the pre-add count check against the builder's printed distinct list and repaired via build_scout_t5_topup.py BEFORE the first resolve (the earliest catch point of this defect shape so far); (2) Semi-supervised sequence learning (Dai & Le, 2015) was named in the main builder's docstring and the session plan but never filed; caught by reconciling the first resolve's LINK list against the intended pool (12 expected LINKs, 11 matched) and repaired via build_scout_t5_topup2.py + foreground re-resolve.",
+ "brief_correction": "No hypothesis of the brief was refuted in this expansion; two were sharpened on the documents. (a) The C4 corpus stratum: the brief framed it as 'the corpus construction as the paper's own enabling step vs external channels' - the documents split it exactly so, and the split ADMITTED: C4's construction is the parent's own work (Appendix A credits Adam Roberts), but the enabling channel is the raw material's scale, and the paper's own s.3.7 argument (the compared variants 'would be repeated hundreds of times' at ~1T tokens; repetition harmful per s.3.4.2) makes Common Crawl itself necessary to the headline configuration - a construction channel, not mere use. (b) The baseline-model stratum: the parent's model is not a neutral presupposition - s.3.2's architecture study empirically vindicates the original encoder-decoder form against the single-stack variants, so the Transformer enters as a finding of the paper, not only as its stage (contrast the same node's framework-presupposition rejection at Scratchpads in this session, where the parent's own text stated substitutability). Two foreclosures of note, recorded not repaired: MT-DNN (2019) - the stored prior_state's own named incumbent - and SpanBERT (2019), the headline objective's named inspiration (s.3.7), are both dated the parent's own year and calendar-dropped at resolve; the unification stratum's remaining live ancestor (decaNLP, 2018) was heard and failed closed.",
+ "grounding": "The parent grounded on Raffel et al., 'Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer' (arXiv:1910.10683; JMLR 21, 2020), read substantially this session: abstract; s.1 (the inspiration sentence - McCann et al. 2018 QA casting, Radford et al. 2019 LM casting, Keskar et al. 2019b span extraction; 'our goal is not to propose new methods... a survey, exploration, and empirical comparison'; word vectors as the historical approach; ImageNet as the vision analogy; Common Crawl as the en-masse source); s.2.1 (model 'roughly equivalent to the original Transformer' with the three deviations; self-attention cited to Cheng et al. 2016, attention to Graves 2013/Bahdanau 2015; Cloud TPU Pod slices of 1,024 TPU v3 chips; Mesh TensorFlow); s.2.2 (C4 from Common Crawl's April 2019 web-extracted text, ~750 GB, heuristics inspired by Grave et al. 2018 / Smith et al. 2013; TensorFlow Datasets release); s.2.3 (GLUE, SuperGLUE, CNN/Daily Mail, SQuAD, WMT En-De/En-Fr/En-Ro; En-De on Vaswani et al.'s training data); s.2.4 (teacher forcing, Williams & Zipser 1989; the decaNLP, GPT-2 and Keskar differentiations); s.3.1.1 (baseline = standard encoder-decoder Transformer, BERT_BASE-sized stacks, ~220M); s.3.1.2 (Adafactor; triangular LR tried and set aside); s.3.1.3 (SentencePiece, 32k); s.3.1.4 (baseline objective 'Inspired by BERT's masked language modeling objective and the word dropout regularization technique (Bowman et al., 2015)'; denoising sourced to Devlin et al. 2018 and Taylor 1953; 15% span corruption to sentinels); s.3.2 (architecture variants; encoder-decoder + denoising best); s.3.3 + s.3.3.2 (BERT-style objective best; 'Simplifying the BERT Objective' derives the baseline); s.3.4 (Table 8 dataset comparison; C4 adopted); s.3.5.1 (adapters and gradual unfreezing tested); s.3.5.2 (multi-task learning per Ruder 2017 / Caruana 1997; examples-proportional mixing with cap K adopted; temperature-scaled variant per Arivazhagan et al. 2019 - verified by targeted find); s.3.5.3 + s.3.7 (multi-task pre-training 'advocated by MT-DNN' adopted; span-corruption objective 'loosely inspired by SpanBERT (Joshi et al., 2019)'; 1M steps x 2^11 x 512 ~ 1 trillion tokens; WMT En-De/En-Fr capped at 1M examples in the mixture; beam search per Sutskever et al. 2014 - s.3.7 read in full this session); s.3.6; s.4.1-4.2 (full fine-tuning beats adapters and gradual unfreezing); Appendix A (Shazeer contributed the text-to-text framework, objectives and mixing strategies; Roberts created C4).",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state ALL non-empty and coherent. STORED SOURCES WART (logged here, never hand-edited): the sources list's single entry titles BOTH papers in one string - \"Raffel et al., 'Exploring the Limits...', arXiv:1910.10683 (2019); Wei et al., 'Finetuned Language Models Are Zero-Shot Learners', arXiv:2109.01652 (S...\" - with the URL pointing at the FLAN ar5iv page. Admission edge: admitted at FLAN (score 5.0); its stored verification note records the components attack answered via the Cook-at-REYES discrimination - that record stands; nothing in this expansion touches the FLAN edge. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_t5.py + run-01/work/build_scout_t5_topup.py + run-01/work/build_scout_t5_topup2.py (repairs)",
+  "raw_candidates": 74,
+  "per_lens_floors": "met on the builders' output before resolve: L1 6, L2 3, L3 3, L4 7 (incl. top-up 2), L5 4 (incl. top-up-2 1), L6 6, L7 3, L8 6, L9 3, L11 3, L12 3, L13 3, L14 2, L15 2, L16 2, L17 5, L19 3, L20 3, L21 1, L22 3, L23 3; shortfall notes for L14 (2 filings - exactly two doctrine documents cited; Sutton's Bitter Lesson is NOT cited anywhere in the paper and was deliberately not filed), L15 (2 - exactly two hosted/release artefacts), L16 (2 - exactly two executable system artefacts), L21 (1 - exactly one institution); dry notes for L10 (dry: scale is an institutional input, not a citable enabler) and L18 (dry-with-finding: no governing standard - the format is the parent's own proposed convention, self-carriage). Dry notes file: run-01/work/dry_notes_t5-text-to-text-transfer-transformer-2019.json. Concept search before scouting verified the LINK targets' exact canonical names/ids in the graph (12 LINKs, all matched programmatically at resolve). Scout reconciliation: 74 filings = 50 distinct names intended (47 main builder + Taylor + Bowman + Semi-supervised); resolve dropped 17 filings (13 distinct 2019 names, below), matched 12 existing, auto-merged 20 cross-lens duplicates, giving 37 distinct == the verdicts builder's 37 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 37,
+  "dropped": 17,
+  "matched_existing": 12,
+  "auto_merges": 20,
+  "judge_queue": 2,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 2 pairs - the same unordered pair in two pairings (cand-node:1:semi-supervised-sequence-learning-2015 and cand-cand:1:73): the Sequence-to-sequence learning candidate vs the Semi-supervised Sequence Learning node/candidate. Both decided DIFFERENT: Sutskever et al. (2014) encoder-decoder transduction vs Dai & Le (2015) pretraining of sequence models - distinct advances, artifact-level identity; each candidate matched its own correct node. Applied; distinct_now 37, no pending judge flags.",
+ "calendar_dropped_at_resolve": [
+  "GPT-2 (Radford et al., 2019) - 3 filings dropped: dated the parent's own year. The s.2.4 zero-shot differentiation is engagement with a coeval rival (the Ziegler configuration, mirrored: there GPT-2 was the parent).",
+  "MT-DNN (Liu et al., 2019) - 1 filing dropped: dated 2019. The stored prior_state's own named incumbent, and the s.3.7 multi-task-pretraining advocate - foreclosed by the calendar, recorded here; never re-dated.",
+  "SpanBERT (Joshi et al., 2019) - 1 filing dropped: dated 2019. The headline objective's named inspiration (s.3.7 'loosely inspired by SpanBERT') - foreclosed; its pressure is recorded in the BERT edge's verification.",
+  "MASS (Song et al., 2019), XLNet (Yang et al., 2019), RoBERTa (Liu et al., 2019) - 1 filing each dropped: dated 2019. The objective multiples; they stand as multiples evidence on the BERT edge's verification.",
+  "CTRL and span-extraction unification (Keskar et al., 2019) - 2 filings dropped: dated 2019. The third named framework of s.1's inspiration sentence - foreclosed; the unification stratum was heard through decaNLP (2018).",
+  "SuperGLUE (Wang et al., 2019), WebText corpus (Radford et al., 2019), RealNews corpus (Zellers et al., 2019), TensorFlow Datasets (2019), Parameter-efficient transfer learning for NLP (Houlsby et al., 2019), Massively multilingual neural machine translation (Arivazhagan et al., 2019) - 1-2 filings each dropped: dated 2019 (the second arena, the compared corpus variants' sources, the release channel, the tested adapter approach, the mixing variant's source)."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_t5-text-to-text-transfer-transformer-2019.json",
+  "builder": "run-01/work/build_verdicts_t5.py",
+  "evaluations": 37,
+  "count_check": "evaluations == distinct candidates from show-distinct (37 == 37), verified by the builder's missing/extra spec check; field discipline on every evaluation; dry run reproduced the intended outcome BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once (evaluated 37, survivors 3, created 0, linked 3, rejected 34, mediated 7). No nodes created - the created-node spot-check is vacuous, stated explicitly.",
+  "survivors": [
+   "Transformer architecture - LINK, score 5.0, PROVISIONAL: the parent's model IS the original encoder-decoder ('closely follows its originally-proposed form', s.2.1; baseline 'as proposed by Vaswani et al. (2017)', s.3.1.1) with three enumerated simplifications, and s.3.2's architecture study vindicates the original form against the single-stack variants - an empirical finding of the paper, not a presupposition.",
+   "BERT (Devlin et al., 2018) - LINK, score 5.0, PROVISIONAL: ancestor-modified admission - the baseline objective is 'Inspired by BERT's masked language modeling objective' (s.3.1.4), s.3.3.2 'Simplifying the BERT Objective' derives the baseline from it, the baseline stacks are BERT_BASE-sized, and the denoising paradigm is sourced to Devlin et al. (2018); capped by the same-season multiples (MASS/XLNet/RoBERTa, foreclosed here).",
+   "Common Crawl - LINK, score 3.5, PROVISIONAL: construction channel - C4 is built from the candidate's April 2019 web-extracted text (s.2.2), and the paper's own s.3.4/s.3.7 record makes the crawl necessary to the headline configuration (variants too small, repetition harmful at ~1T tokens)."
+  ],
+  "mediated": [
+   "Sequence-to-sequence learning - mediated via Transformer architecture (arrives as the architecture's original purpose, s.2.1).",
+   "Bahdanau attention - mediated via Transformer architecture (attention's lineage cited inside the architecture's description; the BERT shape).",
+   "Long short-term memory-networks for machine reading (Cheng et al., 2016) - mediated via Transformer architecture (the citation documents the admitted architecture's ancestry).",
+   "Generating sequences with recurrent neural networks (Graves, 2013) - mediated via Transformer architecture.",
+   "Byte-pair encoding for NMT - mediated via SentencePiece (Kudo & Richardson, 2018), and component-level in any case.",
+   "The cloze procedure (Taylor, 1953) - mediated via BERT (Devlin et al., 2018): the operative carrier named in s.3.1.4's own sentence; at BERT's expansion Taylor was mediated via Melamud - here the carrier is BERT itself.",
+   "Semi-supervised sequence learning - mediated via Generative pretraining (GPT-1): the paradigm reaches this parent through its 2018 carriers (the BERT shape)."
+  ],
+  "fail_closed_partials": [
+   "The Natural Language Decathlon (McCann et al., 2018) - directness PARTIAL: the format ancestor named first in s.1's inspiration sentence, refused on both of its load-bearing design choices (QA casting, mandatory multi-task) in s.2.4 - the problem formulation is consumed, the design is not (the scoped-channel shape at the formulation level). Re-hearing condition recorded.",
+   "ULMFiT (Howard & Ruder, 2018) - directness PARTIAL: the paradigm formulation consumed as the survey's frame, while every signature mechanism is a tested-and-rejected channel (gradual unfreezing, s.3.5.1/s.4.1; triangular rates, s.3.1.2). Re-hearing condition recorded.",
+   "SQuAD (Rajpurkar et al., 2016) - directness PARTIAL: scoped mixture-data channel (a supervised constituent of the recipe's training mixture, s.2.3). Its fourth distinct record: admission at DrQA, partial at ORQA, arena at BERT, scoped partial here - all edge-scoped, all standing.",
+   "WMT 2014 English-German parallel corpus - directness PARTIAL: scoped data channel with a mixture-design footprint (Vaswani's training data per s.2.3; the 1M-example cap inside s.3.7's mixture design).",
+   "Mesh TensorFlow (Shazeer et al., 2018) - directness PARTIAL: the wielded programmability layer (s.2.1), own-team carriage; the CUDA-pattern question answered conservatively - the paper documents use, not dependence of any result on its specifics. Re-hearing condition recorded.",
+   "Cloud TPU Pods (Google, 2017) - directness PARTIAL: named substrate consumption (s.2.1 slices; s.3.7's d_ff choice shaped by TPU matmul efficiency), generic as infrastructure (the ORQA/BERT shape). Re-hearing condition recorded."
+  ],
+  "rejected_of_note": [
+   "Generative pretraining (GPT-1) (LINK) - compared sibling: s.3.2 evaluates the LM single-stack family; the parent's chosen form is the encoder-decoder. Semi-supervised sequence learning (LINK) - mediated (above). BooksCorpus (LINK) and Wikipedia (2001) - the compared s.3.4 variants, not adopted (Wikipedia's configuration here is the opposite of its DrQA/SQuAD partials: compared, not consumed - stated on the verdict, records untouched).",
+   "Layer normalization, Residual networks (He et al., 2016), Relative position representations (Shaw et al., 2018) - components of the admitted architecture, the Shaw filing in its sharpest form (consumed in explicitly simplified form; directness real, gates fail - the WordPiece shape). Dropout and Teacher forcing - presupposed techniques. Generating sentences from a continuous space (Bowman et al., 2015) - a component ingredient of the baseline objective (word dropout).",
+   "Word2vec, GloVe, ELMo - the prior-state carriers of s.1/s.2.1's own history (displaced, not consumed). GLUE benchmark - arena (the discrimination against the SQuAD/WMT partials stated on the verdict). CNN/Daily Mail dataset - data tail (no design footprint; the discrimination stated on the verdict). SentencePiece, Adafactor, TensorFlow - wielded apparatus/framework. Multi-task learning (Caruana, 1997) - framework presupposition (the stage of s.3.5). Ruder (2017) - a document about the field. ImageNet - cross-field analogy in s.1. Google Brain (LINK) - institutional formation."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s87_t5.json",
+  "outcomes": {
+   "transformer-architecture-2017": "provisional",
+   "bert-devlin-et-al-2018-2018": "provisional",
+   "common-crawl-2008": "provisional"
+  },
+  "note": "Transformer capped by the variant question on the three enumerated deviations (pre-norm in particular became the later standard). BERT capped by the multiples pressure (MASS/XLNet/RoBERTa, all calendar-foreclosed at this parent). Common Crawl capped by the value-added split between the crawl's scale and the parent's own cleaning heuristics. All attacks written out in the verification file."
+ },
+ "totals_after": {
+  "nodes": 297,
+  "edges": 377,
+  "budget": "297/2000",
+  "expansions_done": 184,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 37,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 280,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021",
+  "wmt-2014-english-german-parallel-corpus-2014",
+  "asdiv-miao-et-al-2020-2020",
+  "brookgpu-stream-and-kernel-abstraction-2004",
+  "generalized-advantage-estimation-gae-2016"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82/85 precedent)"
 }
