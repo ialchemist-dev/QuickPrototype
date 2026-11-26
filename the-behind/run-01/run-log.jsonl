@@ -11902,5 +11902,97 @@
   "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021",
   "wmt-2014-english-german-parallel-corpus-2014"
  ],
+ "sync_commit": "fefd1437"
+}
+{
+ "session": 86,
+ "expansion": 182,
+ "parent": "squad-rajpurkar-et-al-2016-2016",
+ "parent_name": "SQuAD (Rajpurkar et al., 2016)",
+ "parent_year": 2016,
+ "parent_depth": 4,
+ "date": "2026-11-25",
+ "provenance": "Session 86, expansion 2 of 2. Scouted, resolved, judged and verified by session 86 (no verification step arises: zero survivors, no edges created). All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79/82/83/84/85 discipline): add-candidates verified (55 raw filings; then a 6-filing top-up, 61 raw total - see the scout repairs below); resolve ran in the foreground via the MiniLM venv python twice and was verified on disk at stage 'resolved' (18 distinct, 0 LINK matches, 4 judge pairs, 5 calendar drops) before any verdicts work; all 4 judge pairs were the same unordered pair in cross-filing combinations (Project Nayuki's ranking vs PageRank (1998), sim 0.808), all decided DIFFERENT and applied (distinct_now 18); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (0 survivors; 3 fail-closed partials; 15 plain rejections); NO dry-run correction was spent; apply-verdicts run exactly once (evaluated 18, survivors 0, created 0, rejected 18). No nodes were created, so the created-node field spot-check is vacuous - stated explicitly per the checkpoint protocol. SCOUT REPAIRS ON RECORD (two defects, both caught by the pre-verdicts count check, both repaired by top-up + foreground re-resolve BEFORE verdicts, per sessions 63/67/78/83): (1) the main scout builder DEFINED three candidates but never emitted add() calls for them - WikiQA (Yang et al., 2015), Ravichandran & Hovy (2002), Clark & Etzioni (2016) - the session-83 omission shape, grep-verified (0 add() calls against 20 intended distinct names; the builder emitted 17); repaired via build_scout_squad_topup.py (WikiQA and Ravichandran evaluated in this expansion; Clark & Etzioni was then calendar-dropped at re-resolve as same-year - see the calendar record); (2) the Stanford University institution filing was first dated 2016 (the parent's own year) and calendar-dropped; re-filed in the same top-up at its founding year 1885 (institutions in this run are dated by founding/artifact year, cf. the ARO MURI grant at Loopy BP) and evaluated. The session-86 expansion-181 record's sync_commit field was fixed up in this pass to fefd1437 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it.",
+ "brief_correction": "The brief's three hypothesis strata were tested on the paper's full text and the survivor the brief's framing might have led one to expect - an ancestor for the dataset - does not exist: the expansion is a ZERO (the run's 19th). (a) The reading-comprehension dataset stratum splits on the paper's own s.1 into the small-and-real line and the large-and-semi-synthetic cloze line, and SQuAD defines itself against BOTH: MCTest is the scale foil of the s.1 sentence and the Table 1 row (crowdsourced RC anticipated, but the parent's formulation choices - span vs multiple choice, real paragraphs vs crowdworker fiction - are differentiations FROM it, not derivations); Hermann et al. (2015) and CBT are the defined-against cloze formulation, judged fresh in this parent's frame. (b) The crowdsourcing protocol stratum: the collection method IS the parent's enabling step, but the protocol itself (97%/1000-HIT qualification gates, $9/hour, 4 minutes per paragraph, copy-paste disabled, up to 5 questions, span highlighting, 2 additional shortest-span answers per dev/test question) is the AUTHORS' OWN design - self-carriage, not ancestry; its consumed artifacts split into the named platform (Daemo - fail-closed partial: documented channel, substitutable against its own backend) and the substrate (Amazon Mechanical Turk - rejected: the class behind the specific artifact). The method tradition's founding document (Snow et al., 2008) is find-verified ABSENT from the paper - the channel is era doctrine without a document, recorded as a finding. (c) The Wikipedia selection stratum split into the class/instance pair the run's discipline predicts: Wikipedia itself a fail-closed partial (consumed wholesale; necessary as a class, substitutable as an instance - agreeing with, and edge-scoped from, its DrQA partial), the specific consumed ranking artifact (Project Nayuki's internal PageRanks) a fail-closed partial scoped to curation, and the generic algorithm (PageRank, 1998) rejected as that artifact's component. Two contrary records from other parents were tested and left standing, edge-scoped: Hermann's fail-closed partial at DrQA rested on that parent's reader-design sentence ('in a similar spirit') and is untouched; the TREC track's fail-closed partial at DrQA rested on that parent's definitional sentence PLUS CuratedTREC data consumption - neither element exists in this parent's documents (a Table 1 row and an s.2 survey paragraph), so at this parent the track is an arena rejection, a different configuration on different documents.",
+ "grounding": "The parent grounded on the full text of Rajpurkar, Zhang, Lopyrev & Liang (EMNLP 2016; arXiv:1606.05250 v1), read entire this session: abstract; s.1 (the two-shortcomings framing; 107,785 pairs on 536 articles; no answer choices - systems select from all spans); Table 1 (MCTest 2,640; Algebra 514; Science 855; WikiQA 3,047; TREC-QA 1,479; CNN/Daily Mail 1.4M; CBT 688K; 'similar to TREC-QA in the open-endedness of the answers'); s.2 (Hirschman et al. 1999 and the 600-question origin; MCTest's 660 crowdworker stories; algebra; BAbI; Clark & Etzioni; open-domain QA and TREC (Voorhees & Tice 2000); WikiQA's differentiation sentence; answer extraction (Ravichandran & Hovy 2002 et al.) and its single-passage differentiation; the cloze discussion with Chen et al. 2016's saturation finding); s.3 (Project Nayuki's internal PageRanks -> top 10000 -> 536 sampled; 23,215 paragraphs >=500 characters; article-level 80/10/10 split; Daemo (Gaikwad et al., 2015) with AMT backend; the qualification/pay/interface protocol in full; additional answers, 2 per dev/test question, shortest span); s.4 (CoreNLP constituency/dependency parses + NER for answer types - dates/numbers 19.8%, proper nouns 32.6%, common noun phrases 31.8%; syntactic divergence); s.5 (logistic regression; CoreNLP constituency constituents as candidate answers, 77.3% coverage); s.6 (EM and token-F1 ignoring punctuation and articles, best over references; human performance test EM 77.0 / F1 86.8). Find-verified absence: Snow et al. (2008) nowhere in the text or apparatus.",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state ALL non-empty and coherent; sources list EMPTY (the standing creation wart; never hand-edited). The stored verification (session 85) caps the SQuAD -> DrQA edge at provisional on the multiples attack (CNN/Daily Mail and CBT offered other corpora in different task shapes; necessity shape-specific) - that record stands; both of those corpora were heard in THIS expansion on their own documents as the parent's defined-against stratum, and the edge is untouched. SQuAD's other contrary records (arena at BERT, fail-closed partial at ORQA) likewise stand, edge-scoped. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_squad.py + run-01/work/build_scout_squad_topup.py (repairs)",
+  "raw_candidates": 61,
+  "per_lens_floors": "met on the builders' output before resolve: L1 4, L2 5 (incl. top-up), L4 4 (incl. top-up), L5 3, L6 5 (incl. top-up), L7 4 (incl. top-up), L8 3, L11 4, L13 3, L17 3, L18 3, L19 3, L20 3, L22 4; shortfall notes for L15 (2 filings - exactly two hosted services, both named in s.3) and L21 (1 filing - Stanford only; NIST and Amazon act through their artifacts, filed elsewhere); dry notes for L9, L10, L12, L14 (dry) and L16 (dry-with-finding: the dataset format and EM/F1 protocol are the parent's own specification - self-carriage). Meta passes: L3 3 filings, L23 3 filings. Dry notes file: run-01/work/dry_notes_squad-rajpurkar-et-al-2016-2016.json. Concept search before scouting verified NO graph node matches any artifact in the parent's apparatus (the only 'Stanford' node is the unrelated RTSL shading language) - all filings fresh, no LINKs. Scout reconciliation: 61 filings = 20 distinct names intended (17 in the main builder + 3 topped-up names, plus the re-dated Stanford re-filing); resolve dropped 5 filings (WikiReading x3 and Clark & Etzioni x1, both same-year 2016, and the superseded 2016-dated Stanford filing x1), matched 0 existing, and auto-merged the cross-lens duplicates, giving 18 distinct == the verdicts builder's 18 evaluations (count-verified by the builder's missing/extra spec check)."
+ },
+ "resolution": {
+  "distinct": 18,
+  "dropped": 5,
+  "matched_existing": 0,
+  "auto_merges": 38,
+  "judge_queue": 4,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 4 pairs - all the same unordered pair in cross-filing combinations (cand-cand:2:25, 2:38, 21:25, 21:38): Project Nayuki's Wikipedia internal PageRank ranking vs PageRank (Brin & Page, 1998), similarity 0.808 each. All decided DIFFERENT: a specific computed ranking artifact over one corpus (consumed by the parent as a list) vs the 1998 algorithm paper (the generic procedure) - different authors, years and kinds; the class/instance pair was filed deliberately and identity in this run is artifact-level (the Ryu/Ahn same-pair pattern at DrQA). Applied; distinct_now 18.",
+ "calendar_dropped_at_resolve": [
+  "WikiReading (Hewlett et al., 2016) - all 3 filings (L6/L22/L23) dropped at resolve: dated the parent's own year (2016). The era's other large Wikipedia-QA construction (Wikidata property prediction) - the same-year foreclosure is the structural fact working as designed; never re-dated.",
+  "Combining retrieval, statistics and inference to answer elementary science questions (Clark & Etzioni, 2016) - its single top-up filing (L7) dropped at resolve: dated 2016, the year the parent's own Table 1 assigns it. The standardized-test stratum's evaluation is carried by its sibling Kushman et al. (2014) in this same expansion; never re-dated."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_squad-rajpurkar-et-al-2016-2016.json",
+  "builder": "run-01/work/build_verdicts_squad.py",
+  "evaluations": 18,
+  "count_check": "evaluations == distinct candidates from show-distinct (18 == 18), verified by the builder's missing/extra spec check (missing = none; unspec'd = none); field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (0 survivors; 3 fail-closed partials; 15 plain rejections) BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once (evaluated 18, survivors 0, created 0, linked 0, rejected 18, mediated 0). ZERO SURVIVORS - no verification step arises and the created-node spot-check is vacuous (no nodes created).",
+  "survivors": [],
+  "mediated": [],
+  "fail_closed_partials": [
+   "Daemo crowdsourcing platform (Gaikwad et al., 2015) - directness PARTIAL: the named collection vehicle of s.3 (channel documentary; Figure 2 is its interface), scoped to the collection stage and substitutable against its own named AMT backend - the protocol's load-bearing parameters are the authors' design. Re-hearing condition recorded on the verdict (a Daemo-specific mechanism, distinct from AMT primitives, shown at work in the protocol).",
+   "Wikipedia (2001) - directness PARTIAL: the corpus consumed wholesale (536 articles, 23,215 paragraphs - every passage and answer span), failing closed on the class/instance discrimination (the BooksCorpus shape; agrees with its DrQA partial, edge-scoped). Re-hearing condition recorded.",
+   "Project Nayuki's Wikipedia internal PageRank ranking - directness PARTIAL: the specific curation artifact consumed verbatim in s.3 (the top-10000 frame), scoped to the curation stage and substitutable as a convenience instance of a generic procedure. Re-hearing condition recorded."
+  ],
+  "rejected_of_note": [
+   "MCTest (Richardson et al., 2013) - REJECTED as the compared scale foil: s.1's 'almost two orders of magnitude larger' sentence and the Table 1 row measure the parent against it; the parent's formulation choices are differentiations from it (span vs multiple choice; real paragraphs vs crowdworker fiction) - anticipation of the method family without a junction in formulation.",
+   "Teaching machines to read and comprehend (Hermann et al., 2015) and The Children's Book Test (Hill et al., 2015) - REJECTED as the defined-against cloze formulation (s.1's semi-synthetic class; s.2's cloze discussion). Judged fresh in this parent's frame; Hermann's DrQA partial (reader-design channel) stands untouched, edge-scoped, and is stated on the verdict.",
+   "WikiQA (Yang et al., 2015) - the compared sibling: the paper's own sentence-vs-span differentiation sentence is a definition-against, not a derivation. Deep Read (Hirschman et al., 1999) - anticipation without a junction (the s.2 history sentence records priority, not transmission). Learning surface text patterns (Ravichandran & Hovy, 2002) - answer-extraction anticipation the paper itself differentiates (multi-document redundancy vs the single given passage).",
+   "TREC question answering track (NIST, 1999) - REJECTED at this parent as arena/survey (Table 1 row + s.2 paragraph; the parent's EM/F1 are self-specified in s.6); its DrQA partial rested on that parent's definitional sentence plus CuratedTREC consumption - a different configuration, stated on the verdict, record untouched.",
+   "Amazon Mechanical Turk (2005) - the substrate/class behind the specific platform artifact (Daemo). PageRank (Brin & Page, 1998) - the component algorithm of the consumed Nayuki instance; the judge queue's four pairs against the Nayuki candidate were all decided DIFFERENT on this ground. Stanford CoreNLP (Manning et al., 2014) - wielded apparatus (the analysis instrument of s.4 and the baseline's candidate generator in s.5; the dataset itself is parse-free).",
+   "Cheap and fast - but is it good? (Snow et al., 2008) - REJECTED on find-verified ABSENCE from the parent's text and apparatus: the method tradition's founding document is era doctrine here, not a channel (the Caruana configuration). Modeling biological processes for reading comprehension (Berant et al., 2014), Learning to automatically solve algebra word problems (Kushman et al., 2014) and Towards AI-complete question answering (bAbI; Weston et al., 2015) - the surveyed stratum (an s.1 name-check, a Table 1 row, the synthetic pole). Stanford University - institutional formation."
+  ]
+ },
+ "verification": {
+  "file": null,
+  "outcomes": {},
+  "note": "No verification step: zero survivors, no edges created. The zero is the run's 19th (after Gage, Weber, Family likeness, MDP, Gauss, ChatGPT, REINFORCE, Walsh & Herzog, RFC 1738, RFC 1630, RFC 1737, the Pascal-Fermat correspondence, Black Diamond, Cavalieri, Direct3D 8, the McIlroy macro paper, IPL, Langdon)."
+ },
+ "totals_after": {
+  "nodes": 296,
+  "edges": 372,
+  "budget": "296/2000",
+  "expansions_done": 182,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 36,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 279,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019",
+  "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021",
+  "wmt-2014-english-german-parallel-corpus-2014",
+  "asdiv-miao-et-al-2020-2020"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82/85 precedent)"
 }
