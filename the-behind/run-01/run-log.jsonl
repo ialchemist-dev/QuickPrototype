@@ -12785,5 +12785,122 @@
   "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
   "ecma-262-first-edition-1997"
  ],
+ "sync_commit": "e642f254"
+}
+{
+ "session": 90,
+ "expansion": 190,
+ "parent": "brookgpu-stream-and-kernel-abstraction-2004",
+ "parent_name": "BrookGPU stream and kernel abstraction",
+ "parent_year": 2004,
+ "parent_depth": 3,
+ "date": "2026-11-25",
+ "provenance": "Session 90, expansion 2 of 2. Scouted, resolved, judged and verified by session 90. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/85 discipline): add-candidates verified (34 raw filings, stage 'scouted', graph save confirmed by mtime/size); resolve ran in the foreground under the MiniLM venv and was verified on disk via show-distinct (27 distinct, 6 LINK matches - every matched id program-verified against the graph's actual ids: HLSL -> high-level-shading-language-hlsl-2002-2002; Direct3D 9 -> direct3d-9-2002-2002; Direct3D 8 -> direct3d-8-directx-8-shader-model-1-x-2000-2000; RTSL -> stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001; RenderMan SL -> renderman-shading-language-hanrahan-lawson-1990-1990; REYES -> reyes-rendering-architecture-cook-carpenter-catmull-1987-1987 - 6 auto-merges = the cross-lens duplicate filings, 1 calendar drop (Labonte et al., 2004, the deliberate same-year filing), judge queue 2 pairs, both Direct3D 8 vs Direct3D 9 filings, judged DIFFERENT (successive API generations, already separate graph nodes) and applied, 27 distinct with none pending after judgments); the verdicts builder's count check passed (27 evaluations == 27 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor: Imagine 4.5; 6 fail-closed partials; 20 plain rejections), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 27, survivors 1, created 1, linked 0, rejected 26, mediated rejections 1: Merrimac via Imagine). Created-node spot-check PASSED: the Imagine node's stored definition, bottleneck, leap and prior_state are ALL non-empty (texts in the verdicts builder). Its stored sources list is populated (1 entry) with the same minor wart as expansion 189's created node: the entry's URL is the PARENT paper's PDF (the evidence was read in the parent's text) rather than a candidate-side document URL - logged here, never hand-edited. Verification applied from work/verification_s90_brookgpu.json (Imagine edge provisional, no mediation actions). The session-90 expansion-189 record's sync_commit field was fixed up in this pass to e642f254 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it. Render verified fresh (303 nodes / 385 edges) before syncing.",
+ "brief_correction": "The brief's three hypothesis strata resolved as follows, on the SIGGRAPH paper's documents. (1) The stream-programming stratum: SPLIT - the model's programming-environment formulation (Imagine / StreamC-KernelC, with the Khailany et al. 2001 abstraction citation) is ADMITTED 4.5; the model's flagship machine (Merrimac) is a fail-closed partial mediated through the environment; the parent's own 2003 language version is a fail-closed partial (own-version, no independent grading voice). The stratum's centre is the ENVIRONMENT documents, not the machines and not the child's own prior version. (2) The graphics-API stratum: consumed-vs-presupposed resolved per instance - Direct3D 9 is a fail-closed partial (the consumed substrate whose shader-model-2.0 feature set defines the machine class the runtime virtualizes; instance substitutable against OpenGL), OpenGL is rejected as the second conduit (no feature-set definition role), the shader-language backends split as Cg fail-closed partial (the class's primary standalone system) vs HLSL LINK rejected and GLslang rejected (further instances of a substitutable class). (3) The predecessor-GPGPU-attempt stratum: the hand-written shader practice is the PRIOR STATE itself (rejected as an ancestor - what a leap replaces is not its predecessor), Purcell et al. (2002) is a fail-closed partial (the prior GPU-side statement of the streaming view, scoped to one application's demonstration), and Sh is rejected (defined-against rival; its simultaneous-multiple role on this node's Q3 was already priced in the node's own verification record and stands). No stored-record factual correction arose at this parent; one sources wart is logged in parent_record_note.",
+ "grounding": "Buck, Foley, Horn, Sugerman, Fatahalian, Houston & Hanrahan, 'Brook for GPUs: Stream Computing on Graphics Hardware', ACM SIGGRAPH 2004 - read in full this session (graphics.stanford.edu/papers/brookgpu/brookgpu.pdf). Load-bearing: sec.3 - 'Brook was developed as a language for streaming processors such as Stanford's Merrimac streaming supercomputer [Dally et al. 2003], the Imagine processor [Kapasi et al. 2002], the UT Austin TRIPS processor, and the MIT Raw processor. We have adapted Brook to the capabilities of graphics hardware'; implementations target NVIDIA and ATI hardware through BOTH DirectX and OpenGL, plus a CPU reference implementation. Sec.2.1 - the stream model (streams as data, kernels as computation); the stream-vs-vector abstraction cited to Khailany et al. (2001); StreamC/KernelC is the Imagine programming environment (Mattson, 2002); Labonte et al. (2004) studied GPUs as stream processors (the parent's own year - filed deliberately, calendar-dropped at resolve); lineage survey: England (1986) programmable framebuffer, PixelPlanes/PixelFlow (Fuchs 1989; Molnar 1992) 'most influential', Peercy et al. (2000) abstracted OpenGL as a SIMD processor and compiled RenderMan to OpenGL 1.2, Thompson et al. (2002) GPU as vector processor. Sec.2.2 - the shader languages HLSL [Microsoft 2003], Cg [Mark et al. 2003], GLslang [Kessenich et al. 2003] do not virtualize hardware constraints (register counts, instruction limits, texture formats); Purcell et al. (2002) described the GPU as a streaming processor executing kernels as shaders; Chan et al. (2002) subdivided shaders to fit limits; Sh (McCool et al. 2002; 2004) differentiated as primarily a shading system lacking gathers and reductions; current hardware named ATI X800XT and NVIDIA GeForce 6800 (both 2004, the parent's own year - the DX9 class filed via its 2002 carrier, the Radeon 9700). Lindholm et al. (2001) cited for the programmable vertex-processor architecture. The five demonstration applications (BLAS-class kernels, FFT, ray tracing, segmentation) are demonstrative apparatus.",
+ "parent_record_note": "Parent stored record verified COMPLETE before evaluating (definition, bottleneck, leap, prior_state all populated). One wart logged, not hand-edited: the stored sources list holds ONE entry, an NVIDIA developer-blog retrospective ('Inside the Programming Evolution of GPU Computing'), not the SIGGRAPH paper - the primary document (Stanford-hosted PDF) was read in full this session and governed all verdicts. The node's pre-existing verification record (pricing Sh 2004 as the simultaneous multiple on Q3) was treated as part of the record and is consistent with this expansion's Sh rejection.",
+ "scout": {
+  "builder": "run-01/work/build_scout_brookgpu.py",
+  "raw_filings": 34,
+  "distinct_names_intended": 28,
+  "per_lens": {
+   "L1": 2,
+   "L2": 3,
+   "L3": 4,
+   "L4": 1,
+   "L5": 1,
+   "L6": 5,
+   "L7": 3,
+   "L9": 4,
+   "L12": 3,
+   "L13": 1,
+   "L17": 1,
+   "L19": 3,
+   "L20": 1,
+   "L21": 1,
+   "L23": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_brookgpu-stream-and-kernel-abstraction-2004.json",
+  "dry_notes": "Dry notes recorded as a LIST in the RUNBOOK shape (17 entries). Dry: L10 (no materials), L14 (no equipment beyond the L9 GPUs), L15 (no hosted service). Dry-with-finding: L8 (no dataset consumed; the five applications are demonstrations - BLAS filed once at L17 for the record); L11 (the brcc compiler and Brook runtime are the parent's OWN construction - self-carriage); L16 (the parent implements TO the DirectX/OpenGL specifications; the specs are filed where they act, as substrates at L9/L12 - the standards lens inverts dry at this platform parent); L22 (the timeliness condition - programmable floating-point fragment hardware arriving with the DX9 generation - is carried by the hardware/API filings). Shortfall notes: L2 (Khailany et al. 2001 folded into the Imagine filing as the programme's own concept statement - one programme, one channel, judged once), L4 (Purcell the single GPU-side problem-posing document), L5 (the obstruction is documented as a practice, which is the filing), L13 (Cg the one named external compiler toolchain), L17 (BLAS the one external benchmark family), L20 (RenderMan SL the one creator-lineage document with a channel question; Hanrahan's other shading work reaches the paper, if at all, through RTSL at L12), L21 (Stanford the only formation the documents support; ATI/NVIDIA act through hardware and SDKs - decomposition), L23 (Labonte the contemporaneous account, filed at the parent's own year with the drop expected). Meta passes L3+L23 = 5 filings (cap ~10). Scope: Bove & Watlington (1995), Gokhale et al. (1997) and Russell (1978), named in sec.2.1's deep background, are era context and were not filed; the 2004 hardware instances (X800XT, GeForce 6800) are the parent's own year - the DX9 class was filed via its 2002 carrier."
+ },
+ "resolution": {
+  "distinct": 27,
+  "matched_existing": 6,
+  "auto_merges": 6,
+  "dropped_raw_filings": 1,
+  "prefiltered": 0,
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "matched_node_ids_verified": {
+   "High-Level Shading Language (HLSL, 2002)": "high-level-shading-language-hlsl-2002-2002",
+   "Direct3D 9 (2002)": "direct3d-9-2002-2002",
+   "Direct3D 8 / DirectX 8 shader model 1.x (2000)": "direct3d-8-directx-8-shader-model-1-x-2000-2000",
+   "Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001)": "stanford-real-time-shading-language-rtsl-proudfoot-et-al-200-2001",
+   "RenderMan Shading Language (Hanrahan & Lawson, 1990)": "renderman-shading-language-hanrahan-lawson-1990-1990",
+   "REYES rendering architecture (Cook, Carpenter & Catmull, 1987)": "reyes-rendering-architecture-cook-carpenter-catmull-1987-1987"
+  }
+ },
+ "judgments": {
+  "queue": 2,
+  "decisions": "cand-cand:11:17 and cand-cand:11:19, Direct3D 8 / DirectX 8 shader model 1.x (2000) vs Direct3D 9 (2002): DIFFERENT on both - successive distinct API generations (shader model 1.x vs 2.0, different feature sets), already separate nodes in the graph. File: run-01/work/judgments_brookgpu.json."
+ },
+ "calendar_dropped_at_resolve": "1 filing: 'GPUs as stream processors via a streaming virtual machine (Labonte et al., 2004)' - dated the parent's own year 2004, filed deliberately as the contemporaneous parallel account (a multiple of the parent's framing); the year-granularity bound dropped it and the drop is the record (the Perri-at-Langdon shape). Content date logged, never re-dated.",
+ "verdicts": {
+  "file": "run-01/work/verdicts_brookgpu-stream-and-kernel-abstraction-2004.json",
+  "builder": "run-01/work/build_verdicts_brookgpu.py",
+  "evaluations": 27,
+  "survivors": [
+   "Imagine stream processor and StreamC/KernelC (Kapasi et al., 2002; Mattson, 2002) - NEW node, dry-run score 4.5, provisional (depth 4). Model-provision admission: the parent's sec.3 documents the derivation in its own words (Brook 'was developed as a language for streaming processors such as ... the Imagine processor [Kapasi et al. 2002]... We have adapted Brook to the capabilities of graphics hardware'), sec.2.1 cites the stream-vs-vector abstraction to the group's concept paper (Khailany et al., 2001), and the kernel/stream split the language carries is StreamC/KernelC's environment design. Capped at 4.5: Q3 partial on Merrimac co-carriage (same laboratory's flagship machine instancing the same model) and on Sh as the GPU-side simultaneous multiple already priced in the node's verification record; Q2 partial because the model's GPU-side generativity runs through the parent itself (Brook -> CUDA, per the stored leap). Verification attacks (mediation via the 2003 Brook language - fails, own-version is not a separate-milestone mediator; multiples; the Q1 model-vs-retargeting discrimination; date/direction and the Khailany fold) recorded in the verification file."
+  ],
+  "fail_closed_partials": [
+   "Merrimac streaming supercomputer (Dally et al., 2003) - directness partial WITH mediator named (lands as a mediated rejection via Imagine), dry-run score 0.5. Named first in sec.3's target list, but the machine instances the model rather than formulating it, and being programmed BY Brook is the reverse of the claimed channel; what reaches the parent from Merrimac arrives through the shared programming-environment line.",
+   "Brook stream programming language (Buck et al., 2003) - directness partial, dry-run score 0.5. The parent's own earlier version: the GPU system IS the 2003 language retargeted (sec.3), but the separable-artifact exception fails - same authors, a technical-report lineage, and no independent grading voice in the child (contrast Swagger 2.0 at OpenAPI, RFC 2396 at RFC 3986). The stored leap (the GPU recasting) is the 2004 paper's own contribution, not the 2003 document's.",
+   "Cg shading language (Mark et al., 2003) - directness PASS, gates fail, dry-run score 0.0 (its partial status is carried by the directness record, the operative field - the session-89 Hansard precedent). The class's primary backend carrier: a standalone compiler system the runtime lowers kernels through (sec.2.2 named; sec.3 consumed). A component of the machinery, substitutable as an instance - the multi-backend implementation is the proof - so the gates fail; the class's partial is carried here and the further instances (HLSL, GLslang) are rejected.",
+   "Direct3D 9 (2002) - LINK, directness partial, dry-run score 0.5. The consumed substrate whose shader-model-2.0 feature set defines the machine class the runtime virtualizes (sec.2.2's hardware account is denominated in it; sec.3's implementations run through it) - the scoped-channel shape at platform scale (Cloud TPU at ORQA/BERT); instance substitutable against OpenGL.",
+   "Radeon 9700 (ATI, 2002) - directness partial, dry-run score 0.5. First carrier of the DX9 hardware class: class-necessary (no floating-point fragment class, no BrookGPU; commodity pricing is the cost collapse under the parent), instance-substitutable (NVIDIA's line instances the same class; the paper's named 2004 instances are the class's later members).",
+   "GPU ray tracing and the streaming view of GPUs (Purcell et al., 2002) - directness partial, dry-run score 0.5. The prior GPU-side statement of the parent's framing (sec.2.2 credits it with describing the GPU as a streaming processor executing kernels as shaders), scoped to ONE application's demonstration - the model Brook generalizes is the Imagine line's, so the channel is framing, not formulation."
+  ],
+  "rejections_of_note": "High-Level Shading Language (HLSL, 2002) - LINK rejected: the DirectX path's backend instance; the class's channel is heard on its primary carrier (Cg). OpenGL Shading Language / GLslang (Kessenich et al., 2003): the third instance, named only in sec.2.2's trio. OpenGL graphics API: the second conduit instance - consumed, but no feature-set definition role (that role is Direct3D 9's, where the substrate partial sits); a presupposed conduit can fail at the conduit. Stanford Real-Time Shading Language - RTSL (Proudfoot et al., 2001) - LINK rejected: the parent's paper does not cite or consume RTSL's system (its lineage runs through Peercy et al. 2000); creator-laboratory lineage without a document channel. Per the run's standing note, the shading lineage's direct hearings remain assigned to HLSL's expansion. RenderMan Shading Language (Hanrahan & Lawson, 1990) - LINK rejected: creator lineage (Hanrahan co-authors both) without instantiation; the tradition's documented junctions (Peercy, RTSL) were separately judged here. REYES (Cook, Carpenter & Catmull, 1987) - LINK rejected: a rendering architecture at two removes, no channel into a compute language. Direct3D 8 / shader model 1.x (2000) - LINK rejected: the displaced prior generation, whose feature set is precisely what could not carry the stream model. Sh (McCool et al., 2002): defined-against rival (sec.2.2's differentiation: primarily shading, lacks gathers and reductions) - engagement is not consumption; its multiples role on this node's Q3 stands in the node's verification record. Hand-written shader GPGPU practice: the prior state itself, in practised form - what the leap replaces is not its predecessor (practice origin discriminated from the document channel). OpenGL abstracted as a SIMD processor (Peercy et al., 2000) and GPU as vector processor (Thompson et al., 2002): the departed-from vector/SIMD model class - sec.2.1 positions the stream abstraction against it; the correction relation fails (Brook replaces the abstraction rather than extracting Peercy's worked object). Shader subdivision (Chan et al., 2002): a compared workaround the design bypasses. GeForce FX (NVIDIA, 2003): the second hardware instance. Programmable vertex processor architecture (Lindholm et al., 2001): substrate documentation - a document ABOUT the substrate's programmability is not the programmability layer. TRIPS (2003) and MIT Raw (2002): co-target list membership only - a name in sec.3's list without a second mention is not a channel. BLAS (1979): demonstrative apparatus (the demonstration applications instance it). PixelPlanes/PixelFlow (Fuchs et al., 1989; Molnar et al., 1992) and programmable framebuffers (England, 1986): the lineage survey's honours ('most influential') and origin point - anticipation without a junction. Stanford University: formation at its most concentrated (parent, model sources and lineage system all Stanford artifacts; the channels are the documents)."
+ },
+ "verification": {
+  "file": "run-01/work/verification_s90_brookgpu.json",
+  "outcomes": {
+   "imagine-stream-processor-and-streamc-kernelc-kapasi-et-al-20-2002": "provisional"
+  },
+  "note": "Four attacks recorded in the file: mediation via the Brook language (2003) (fails - the child's own earlier version is not a separate-milestone mediator, and the formulation documents predate both Brook versions); multiples on Q3 (Merrimac co-carriage + Sh + the calendar-dropped Labonte - the class-level cap stands at 4.5); the Q1 discrimination (the edge rests on model provision, documented in sec.3's derivation sentence, not on attributing the retargeting to Imagine); date/direction and the Khailany et al. (2001) fold (filed inside the Imagine candidate as the programme's concept statement; this node's own expansion is the venue if the fold is challenged). No mediation actions."
+ },
+ "totals_after": {
+  "nodes": 303,
+  "edges": 385,
+  "budget": "303/2000",
+  "expansions_done": 190,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 42,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 286,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "generalized-advantage-estimation-gae-2016",
+  "inverse-reinforcement-learning-ng-russell-2000",
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+  "ecma-262-first-edition-1997",
+  "netscape-communications-1994"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
