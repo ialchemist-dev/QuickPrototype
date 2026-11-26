@@ -12672,5 +12672,118 @@
   "inverse-reinforcement-learning-ng-russell-2000",
   "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017"
  ],
+ "sync_commit": "ccadea64"
+}
+{
+ "session": 90,
+ "expansion": 189,
+ "parent": "asdiv-miao-et-al-2020-2020",
+ "parent_name": "ASDiv (Miao et al., 2020)",
+ "parent_year": 2020,
+ "parent_depth": 3,
+ "date": "2026-11-25",
+ "provenance": "Session 90, expansion 1 of 2. Scouted, resolved, judged and verified by session 90. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/85 discipline): add-candidates verified (37 raw filings, stage 'scouted', graph save confirmed by mtime/size); resolve ran in the foreground under the MiniLM venv and was verified on disk via show-distinct (28 distinct, 1 LINK match - the matched id program-verified against the graph's actual ids: Program induction by rationale generation (Ling et al., 2017) -> program-induction-by-rationale-generation-ling-et-al-2017-2017 - 9 auto-merges = the cross-lens duplicate filings, 0 dropped, 0 prefiltered, judge queue 1 pair: ALGES vs KAZB, judged DIFFERENT and applied, 28 distinct with none pending after judgments); the verdicts builder's count check passed (28 evaluations == 28 distinct, missing/extra specs empty). ONE dry-run correction was spent (session-76 precedent): the first dry run exposed a verdict-ENCODING error against score.py's actual gate semantics (admission requires Q1 or Q2 == 'pass' exactly, and the score derives only from Q4-Q12; the builder had encoded the intended survivor's Q1 as 'partial', which the gate cannot admit at any score). The correction re-graded Roy & Roth's Q1 to 'pass' on its already-written evidence (the Hochreiter exception, documented in the verdict text: sec.3.3 DERIVES the construction rule from the removal experiment) and graded its Q4-Q12 individually (Q5 pass; Q6/Q9/Q10/Q11/Q12 partial), landing the judged 3.5; no other candidate's verdict was touched, and the second dry run reproduced the intended outcome exactly (1 survivor 3.5; six fail-closed partials carrying their partial profiles in the record). apply-verdicts run exactly once (evaluated 28, survivors 1, created 1, linked 0, rejected 27, mediated rejections 2: Dolphin18K via Roy & Roth (2017); Achieve Inc. (2008) via Common Core (2010)). Created-node spot-check PASSED: the Roy & Roth node's stored definition, bottleneck, leap and prior_state are ALL non-empty (texts in the verdicts builder). Its stored sources list is populated (1 entry) with one minor wart: the entry's URL is the PARENT paper's PDF (the evidence for the edge was read in the parent's text, where the source_title points) rather than the candidate paper's own URL - logged here, never hand-edited. Verification applied from work/verification_s90_asdiv.json (Roy & Roth edge provisional, no mediation actions). The session-89 expansion-188 record's sync_commit field was fixed up in this pass to ccadea64 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it. Render verified fresh (302 nodes / 384 edges) before syncing.",
+ "brief_correction": "Three corrections, all on the documents. (1) The brief framed ASDiv as 'a fail-closed partial at GSM8K itself (session 88)'. The graph record is finer: ASDiv was ADMITTED into the GSM8K benchmark node (edge score 5.0) in the chain-expansion line, and was a fail-closed partial at the Training Verifiers expansion (session 88, design-principles channel scoped to the companion dataset). Two different children, two edge-scoped records; both stand. This expansion judged ASDiv's OWN ancestry, as the brief's scope note itself directed. (2) The brief's hypothesis strata resolved differently than sketched: the predecessor-corpus stratum SPLIT three ways (the compared census is measured-not-consumed; the audit incumbent MathQA is a fail-closed partial because the correction relation FAILS - sec.3.3 answers the audit with fresh collection, not extraction; the scale incumbent Dolphin18K is a fail-closed partial whose diagnosis channel is mediated by the survivor); the diversity-formulation stratum is the parent's OWN device (self-carriage - the LD metric and its POS n-gram companion were recorded in the L18 dry-with-finding note, not filed), with its component BLEU a fail-closed partial on a definitional channel; and the expansion's actual admission came from the DIAGNOSIS stratum - Roy & Roth (2017), whose removal experiment sec.1 draws the design conclusion from and sec.3.3 implements. The source-collection stratum (28 websites) is a fail-closed partial (raw material, substitutable instances). (3) STORED-RECORD CORRECTION (documents govern; never hand-edited): the parent's stored prior_state names 'the MAWPS pool', but MAWPS appears NOWHERE in the paper's text, tables or reference list (full text verified this session). MAWPS was filed on the strength of the stored record and REJECTED for absence of any document channel; the prior state as documented is the compared-corpus set of Table 2. The stored record stands unedited; this log entry is the correction of record.",
+ "grounding": "Miao, Liang & Su, 'A Diverse Corpus for Evaluating and Developing English Math Word Problem Solvers', ACL 2020 - read in full this session (aclanthology.org/2020.acl-main.92.pdf, including references and appendices). Load-bearing: sec.1 diagnosis - low-diversity corpora yield 'over-optimistic results (Huang et al., 2016) (as the answer frequently can be simply obtained from the existing equation template associated with the most similar MWP in the training-set)'; 'Roy and Roth (2017) shown significantly lowered performance if highly similar MWPs are removed. Therefore, dataset diversity is more critical than the dataset size'; framing sentence cites Clark & Etzioni (2016); tradition cites Bakman (2007), Mukherjee & Garain (2008), Liang et al. (2016). Sec.2: 24 problem types; 'MWPs of the same problem type share a similar pattern (Liang et al., 2018)'; PTs 'usually specified in math textbooks'. Sec.3.1: LD 'in terms of BLEU (Papineni et al., 2002)', bidirectional, n<=4, over sentences normalized via Stanford CoreNLP (Manning et al., 2014) tokenize/POS and NLTK (Bird et al., 2004) lemmatization. Sec.3.2 MathQA audit: CLD 0.05, 85% LD=0, equations solved with SymPy, 27% of annotated formulas mismatch answers (Appendix B: incorrect formula 67%, problematic description 23%, valueless answer 10%); 'building a large corpus via crowdsourcing... can result in a poor-quality corpus'. Sec.3.3: 'To account for the problems observed in MathQA, we first collected MWPs from 28 websites and then either pruned the problem or revised the text if it was highly similar to any existing ones (according to the proposed lexicon usage diversity metric)'; one master-degree RA annotated PT/equation/answer/grade; grade references (footnote 5): Achieve Inc. 2008 and Common Core State Standards for Mathematics (2010); programmatic equation-answer consistency verification. Table 2 census: Dolphin1878 (Shi et al., 2015), AI2 (Hosseini et al., 2014), IL (Roy et al., 2015), KAZB (Kushman et al., 2014), ALGES (Koncel-Kedziorski et al., 2015), DRAW (Upadhyay & Chang, 2015), AllArith (Roy & Roth, 2017), Dolphin18K (Huang et al., 2016), AQuA (Ling et al., 2017), MathQA (Amini et al., 2019). Sec.3.4 diversity census over seven corpora. Sec.4: LCA++ (Roy & Roth, 2015), UnitDep (Roy & Roth, 2017) and GTS (Xie et al., 2019) wielded; MathQA-C and ASDiv-A derived for evaluation; GTS drops to ~36% on ASDiv. MAWPS: absent from text, tables and references (find-verified).",
+ "parent_record_note": "Parent stored record verified COMPLETE before evaluating (definition, bottleneck, leap, prior_state all populated). Two warts logged, neither hand-edited: (a) the stored sources list holds ONE entry whose title conflates the ASDiv ACL 2020 paper AND Cobbe et al., 'Training Verifiers to Solve Math Word Problems', arXiv:2110.14168, with the URL pointing at the Cobbe ar5iv page (https://ar5iv.labs.arxiv.org/html/2110.14168) - the ASDiv paper's own document is the ACL Anthology PDF used for grounding this session; (b) the stored prior_state's 'MAWPS pool' phrase has no document channel in the paper (see brief_correction (3)).",
+ "scout": {
+  "builder": "run-01/work/build_scout_asdiv.py",
+  "raw_filings": 37,
+  "distinct_names_intended": 28,
+  "per_lens": {
+   "L1": 2,
+   "L2": 3,
+   "L3": 3,
+   "L4": 1,
+   "L5": 2,
+   "L6": 10,
+   "L7": 2,
+   "L8": 1,
+   "L11": 1,
+   "L13": 2,
+   "L16": 2,
+   "L17": 3,
+   "L19": 1,
+   "L20": 2,
+   "L21": 1,
+   "L23": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_asdiv-miao-et-al-2020-2020.json",
+  "dry_notes": "Dry notes recorded as a LIST in the RUNBOOK shape (20 entries). Dry: L9 (no compute plant), L10 (no materials), L12 (no programmability layer), L14 (no equipment). Dry-with-finding: L15 (static GitHub distribution, no hosted service); L18 (the observation instruments - LD metric and its POS n-gram syntactic companion - are the parent's OWN devices: self-carriage, the GSM8K calculator-syntax shape; the external metric inside LD, BLEU, filed at L1/L17); L22 (the timeliness condition - solvers saturating low-diversity corpora - is documented inside the diagnosis filings, not a separate artifact). Shortfall notes: L1 (BLEU + the PT scheme are the only components with document channels; the normalization rules are the authors' own), L4 (Clark & Etzioni the single framing document; the textbook PT conventions are an unnamed document class, not filed), L5 (the diagnosis has exactly two carriers), L7, L8 (the 28 websites are the only consumed data; MathQA-C is DERIVED by the authors for evaluation, recorded on the MathQA verdict), L11 (SymPy the one external procedure; the prune/revise rule and consistency check are self-carried), L13, L16, L19 (Wang et al. 2017 the one parallel-line filing; NOTABLY ABSENT - no corpus-linguistics lexical-diversity source is cited anywhere: LD is built directly from BLEU, so the apparent cross-field ancestry has no document channel and was not filed), L20, L21. Meta passes L3+L23 = 4 filings (cap ~10). Scope: SVAMP (Patel et al., 2021) postdates the parent and is built ON ASDiv-A - a descendant, deliberately not filed (already recorded in the node's verification record); ACL 2020 is the venue, not filed."
+ },
+ "resolution": {
+  "distinct": 28,
+  "matched_existing": 1,
+  "auto_merges": 9,
+  "dropped_raw_filings": 0,
+  "prefiltered": 0,
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "matched_node_ids_verified": {
+   "Program induction by rationale generation (Ling et al., 2017)": "program-induction-by-rationale-generation-ling-et-al-2017-2017"
+  }
+ },
+ "judgments": {
+  "queue": 1,
+  "decisions": "cand-cand:13:14 ALGES (Koncel-Kedziorski et al., 2015) vs KAZB (Kushman et al., 2014): DIFFERENT - distinct corpora (514 vs 831 problems) from different papers (TACL 2015 vs ACL 2014) and different research groups; separate rows of the parent's Table 2 census. File: run-01/work/judgments_asdiv.json."
+ },
+ "calendar_dropped_at_resolve": "None. No filing was dated the parent's own year 2020.",
+ "verdicts": {
+  "file": "run-01/work/verdicts_asdiv-miao-et-al-2020-2020.json",
+  "builder": "run-01/work/build_verdicts_asdiv.py",
+  "evaluations": 28,
+  "survivors": [
+   "Roy & Roth (2017), AllArith corpus and Unit Dependency Graph solver - NEW node, dry-run score 3.5, provisional (depth 4). Diagnosis-operationalized admission: sec.1 quotes the removal experiment and draws the design conclusion in the same passage ('Roy and Roth (2017) shown significantly lowered performance if highly similar MWPs are removed. Therefore, dataset diversity is more critical than the dataset size'), and sec.3.3's prune/revise rule ('either pruned the problem or revised the text if it was highly similar to any existing ones') is that experiment's manipulation turned into ASDiv's construction filter - the Hochreiter exception on the documents (derivation, not mere answer). Capped at 3.5: Q3 partial because Huang et al. (2016) states the same diagnosis in prose in the same passage (multiples pressure), Q2 partial because the finding's generativity runs through the parent (SVAMP descends from ASDiv, not directly from 2017). Verification attacks (mediation via Huang; multiples; object-scoping of the bundled node; date/direction) recorded in the verification file; the edge is scoped to the FINDING channel - AllArith as data was never consumed and UnitDep was wielded apparatus."
+  ],
+  "fail_closed_partials": [
+   "MathQA (Amini et al., 2019) - directness partial, dry-run score 0.5. The audited defined-against incumbent: sec.3.2's audit (CLD 0.05; 85% LD=0; 27% formula-answer mismatch; Appendix B taxonomy) shapes sec.3.3's rules by negation, and sec.4 derives MathQA-C from it for evaluation. The correction relation FAILS here (contrast Bayes at Fisher 1922, DrQA at ORQA): the child does not extract and build on the candidate's worked object - it answers the audit with FRESH collection from 28 websites and discards the object. Re-hearing condition: none recorded - the channel is fully documented and the refusal is structural (fresh collection vs extraction), not evidentiary.",
+   "Dolphin18K (Huang et al., 2016) - directness partial WITH mediator named (lands as a mediated rejection), dry-run score 0.5. The scale incumbent and the diagnosis's prose carrier (sec.1's template-matching sentence), but the parent builds on no worked object of it - the corpus IS the prior state the design departs from - and its channel's demonstration is mediated by Roy & Roth (2017), the admitted sibling.",
+   "BLEU metric (Papineni et al., 2002) - directness PASS, gates fail, dry-run score 0.5. The strongest component shape (Gale & Church at Europarl): sec.3.1 defines the parent's headline metric 'in terms of BLEU' - citation plus instantiation inside the definition - but a component of a leap is not the leap, and BLEU is substitutable by any similarity measure in the LD shape (Q3 fail). Edge-scoped: BLEU's register/rejection records at Ziegler, WMT 2014, the WMT series and Europarl stand; here the channel is definitional, hence the partial.",
+   "Liang et al. (2018) meaning-based solver and problem-type scheme - directness partial, dry-run score 0.0. One annotation axis (the PT scheme of sec.2) on a creator-carried channel: Liang co-authors both papers, the types are 'usually specified in math textbooks' (the 2018 paper is carrier, not origin), and the separable-artifact exception fails (a solver paper's notion, no independent grading voice).",
+   "Common Core State Standards for Mathematics (2010) - directness partial, dry-run score 0.0. The scoped-channel shape: footnote 5 names it (with Achieve 2008) as the grade annotation's classification reference - a documented channel scoped to ONE annotation axis.",
+   "Elementary-school math problem websites (28 web sources) - directness PASS, gates fail, dry-run score 0.0. Raw material (the Hansard shape): sec.3.3 documents collection from the 28 sites as the corpus's material origin, but what flows is unfiltered stock, most of it pruned away by the parent's own rule; instances substitutable (Q3 partial)."
+  ],
+  "rejections_of_note": "Program induction by rationale generation (Ling et al., 2017) / AQuA - LINK REJECTED at this parent: Table 2's largest row and sec.3.2's cleanliness contrast, but never audited, never consumed, no design element derives from it (consumed-vs-compared). Edge-scoped: the node's GSM8K-line admission (session 88) is untouched. MAWPS repository (Koncel-Kedziorski et al., 2016): rejected on ABSENCE - named in the parent's stored prior_state but nowhere in the paper's documents; a stored-record mention is not a channel (see brief_correction (3)). The compared-corpus census - AI2/AddSub (Hosseini et al., 2014), IL (Roy et al., 2015), ALGES (Koncel-Kedziorski et al., 2015), KAZB (Kushman et al., 2014), DRAW (Upadhyay & Chang, 2015), Dolphin1878 (Shi et al., 2015): all measured by the parent's metric in sec.3.4/Table 2, none consumed (DRAW's own 'diverse' title is the criterion's prior PROSE form - an era claim, not a channel). Crowdsourcing-based corpus construction at scale: the defined-against method the construction NEGATES (sec.3.2's quality-over-size argument; ASDiv uses one expert RA plus programmatic verification) - engagement with a rival is not consumption. Clark & Etzioni (2016): a single framing citation in sec.1's opening sentence (era doctrine without a consumed document). Achieve Inc. (2008): mediated rejection via Common Core (2010) - its content reaches the annotation only through the standards it proposed. GTS (Xie & Sun, 2019) and LCA++ (Roy & Roth, 2015): wielded SOTA apparatus of sec.4, registering the leap (the three solvers are interchangeable for the purpose). Stanford CoreNLP, NLTK, SymPy: wielded tooling inside the metric pipeline and the audit (directness passes on named use; gates fail - apparatus, substitutable). Deep neural solver and Math23K (Wang et al., 2017): parallel Chinese-language line, one census mention, never measured or consumed - no junction. Liang et al. (2016): creator lineage without instantiation (one tradition-sentence citation; the consumed scheme is the 2018 paper's). Academia Sinica: formation (namesake institution; no documented mechanism). Mukherjee & Garain (2008) and Bakman (2007): tradition citations in sec.1 - lineage accounts, not channels."
+ },
+ "verification": {
+  "file": "run-01/work/verification_s90_asdiv.json",
+  "outcomes": {
+   "roy-roth-2017-allarith-corpus-and-unit-dependency-graph-solv-2017": "provisional"
+  },
+  "note": "Four attacks recorded in the file: mediation via Huang et al. (2016) (fails - prose claim vs demonstrated manipulation; sec.3.3 implements the manipulation, which exists only in Roy & Roth); multiples on Q3 (Huang's claim + DRAW's prose 'diverse' - the class-level cap stands at 3.5); object-scoping (the edge rests on the finding, not on AllArith-as-data or UnitDep-as-apparatus, both separately judged in this expansion); date/direction (AAAI 2017 precedes ACL 2020). No mediation actions."
+ },
+ "totals_after": {
+  "nodes": 302,
+  "edges": 384,
+  "budget": "302/2000",
+  "expansions_done": 189,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 41,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 285,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "brookgpu-stream-and-kernel-abstraction-2004",
+  "generalized-advantage-estimation-gae-2016",
+  "inverse-reinforcement-learning-ng-russell-2000",
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+  "ecma-262-first-edition-1997"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
