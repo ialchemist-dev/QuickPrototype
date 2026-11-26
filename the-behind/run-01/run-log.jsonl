@@ -10074,3 +10074,110 @@
  ],
  "sync_commit": null
 }
+{
+ "session": 78,
+ "expansion": 165,
+ "parent": "statistical-curvature-efron-1975-1975",
+ "parent_name": "Efron, Statistical Curvature (1975)",
+ "parent_year": 1975,
+ "parent_depth": 7,
+ "date": "2026-11-25",
+ "provenance": "Session 78, expansion 1 of 2 (the frontier head at session start). Scouted, resolved, judged and verified by session 78. One pipeline incident occurred and was recovered by the sanctioned checkpoint-restore protocol; it is recorded in full under 'incident' below - the expansion's substantive record (scout, resolution, verdicts) was produced entirely on the restored, verified state.",
+ "brief_correction": "TWO of the session-78 brief's ancestry hypotheses are REFUTED on the paper's own apparatus and are corrected here (the sessions 76-77 discipline: a brief's hypothesis is not evidence). (a) NEYMAN & SCOTT (1948): find-verified ABSENT from the 1975 paper - 'Neyman' occurs only in the Neyman-Davies model (a demonstrative example in Sec. 8, from the Davies strand), the Neyman-Pearson lemma, and Rao 1961's editor credit. Efron's Neyman-Scott engagement is later work; it is not imported backwards. The candidate was filed and rejected as an absence finding. (b) THE FISHER-RAO METRIC (1945) AS THE PAPER'S CONSUMED FRAME: Rao (1945) is NOT among the paper's 13 references, and neither is Jeffreys (1946). The paper's Sec. 3 defines statistical curvature with respect to the ambient exponential family's COVARIANCE inner product, and the apparatus sources that geometry to Fisher (1925) [ref. 7] and Rao (1961, 1962, 1963) [refs. 10-12] - the two admitted predecessors. The stored record's 'one of the two roots (with Rao's metric)' phrasing is Kass's 1987 retrospective on the FIELD's development (via Amari), not a document channel into this paper; the Fisher-Rao LINK is judged a fail-closed partial (most contestable negative) with a re-hearing condition. The brief's remaining hypotheses were confirmed in substance: the exponential-family/sufficiency stratum is presupposed repertoire (Koopman/Pitman/Darmois refused, no mediation recorded - none is documented), and the author's own earlier stratum (Efron & Truax 1968) is a fail-closed partial under own-version discipline.",
+ "grounding": "The parent grounded on the FULL TEXT of Efron (1975), Ann. Statist. 3(6):1219-1242 (JSTOR scan, read this session): the complete 13-item reference list transcribed verbatim - [1] Andrews et al. (1972); [2] Barnett (1966); [3] Chernoff (1952); [4] Davies (1969); [5] Davies (1971); [6] Efron & Truax (1968); [7] Fisher (1925), Theory of statistical estimation, Proc. Camb. Phil. Soc. 22:700-725; [8] Gnedenko & Kolmogorov (1954); [9] Haldane & Smith (1956); [10] Rao (1961), Proc. 4th Berkeley Symp. 1:531-545; [11] Rao (1962), JRSS B 24:46-72; [12] Rao (1963), Sankhya 25:189-206; [13] Struik (1950), Differential Geometry. Sec. 1: 'This theory goes back to Fisher (1925) and Rao (1961, 1962, 1963)'; the bracketed term of eq. (1.1) identified in the text as gamma_theta^2 (Fisher's multinomial information loss, geometrized). Sec. 2 cites Struik (1950) for curvature. Sec. 3 DEFINITION: statistical curvature is the geometrical curvature of the embedded family with respect to the covariance inner product. Sec. 8 uses the Neyman-Davies model as a demonstrative example. Sec. 9: the Fisher-Rao second-order result 'is actually not true for multinomial families' (counterexample), and the ancillary family (Remark 3). Barndorff-Nielsen (1973) is cited IN TEXT ('for a survey of ancillarity') but is NOT in the reference list. The published discussions were read with the paper: Rao names Ghosh and Subramanyam as parallel extenders ('Efron, and also Ghosh and Subrahmaniam extend the results to a wider class'); Pierce's discussion ties the ancillary seed to the final section of Fisher (1925); Cox's discussion invokes Fisher (1934), which is not in the paper's apparatus. Lineage sources read: Kass (1987) IMS introduction (Rao 1961 introduced the second-order efficiency definitions; Rao 1962 computed the multinomial information loss; Rao 1963 gave the decision-theoretic definition; the parent's eq. (10.25) two-term decomposition; ancillary family at Remark 3 of Sec. 9 and the reply p. 1240); Kass & Vos (1997) Ch. 1 (Rao 1945 + Jeffreys 1946 jointly introduced the Fisher-information Riemannian metric; sustained attention only after Efron 1975); Scholarpedia 'Second order efficiency' (Fisher's E' vs Rao's E; Ghosh & Subramanyam 1974 clarified/extended; Efron pointed out E and E' can differ).",
+ "parent_record_note": "Parent stored fields verified intact before evaluating (definition, bottleneck, leap, prior_state all non-empty, read verbatim; no reconstruction). Stored record: type theory, depth 7, provisional, admitted in the Fisher-Rao line; children Amari (1982) and Amari (1985). Its verification record (at Amari 1982) was read before evaluating: it records a Chentsov mediation attack answered by the components discrimination (Chentsov supplies machinery; Efron supplies the problem/quantity) - applied again at this parent, where Chentsov is refused as an uncited parallel. No stored-field discrepancies found at this parent.",
+ "incident": "PIPELINE INCIDENT AND SANCTIONED RECOVERY (recorded in full per the session-72 lesson). The first add-candidates + resolve for this parent was launched as a backgrounded exec; its completion output reported success (added 64; distinct 33), but the graph save did not persist - an on-disk check showed the expansion still at stage 'scouted' with resolution null (the session-66 incident variant). A foreground re-run of add-candidates then double-added the filings (raw pool 128 for 64 unique filings) and the re-resolve produced a degraded state (judge queue ballooned to 60 duplicate-driven pairs; matched_existing differed between runs). Rather than judge a corrupted resolution, session 78 restored graph.json BYTE-EXACT from the last sync checkpoint (commit a18df4cf, session 77 expansion 164) via the GitHub git blobs API: remote blob SHA 8af836fc332e; local run-log.jsonl and index.html were verified to still match that checkpoint exactly (they did - untouched this session); the restored graph verified at 276 nodes / 347 edges / 164 expansions / raw_candidates_seen 7057, frontier head Efron. The scout was then re-run ONCE in the foreground (add: 64, raw_seen 7121; verified on disk at stage 'scouted'), and resolve ONCE in the foreground (33 distinct, 7 matched, 15 judge pairs; verified on disk at stage 'resolved'). All subsequent steps were run in the foreground with on-disk verification after each. The duplicated-pool state was discarded entirely; no record from it survives in the graph or this log.",
+ "scout": {
+  "builder": "run-01/work/build_scout_efron.py",
+  "raw_candidates": 64,
+  "per_lens_floors": "met on the builder's output before resolve: L1 11, L2 4, L4 4, L5 6, L6 3, L7 3, L11 3, L13 5, L17 3, L19 6, L20 3, L22 3; meta passes L3 5 + L23 5 = 10 (at the cap); dry notes (all dry-with-finding) for L8, L9, L10, L12, L14, L15, L16 (maker form - the paper legislates the term 'statistical curvature'), L18, L21 (the IMS discussion format is reception, not a vehicle; Stanford is formation, noted not filed). Dry notes file: run-01/work/dry_notes_statistical-curvature-efron-1975-1975.json. Eight graph-existing candidates were sought by concept search before scouting; SEVEN were filed as LINKs under exact canonical names and stored type strings (Fisher-Rao metric 1945, Chentsov 1972, Fisher 1922, SMRW 1925, Bhattacharyya 1943, Pearson 1896, Gauss 1809) and all seven matched at resolve (matched_node_id verified programmatically). SCOUT OMISSION, noted not repaired (the Dearden & Boutilier pattern): Fisher (1918), 'The correlation between relatives', was intended as an eighth LINK filing but was never emitted by the scout builder (verified by grep over the candidates file: 0 occurrences); its disposition would in any case be the presupposed-repertoire refusal its sibling LINKs receive, and re-running the scout after a verified resolution would churn state for a foregone verdict."
+ },
+ "resolution": {
+  "distinct": 33,
+  "dropped": 0,
+  "matched_existing": 7,
+  "auto_merges": 31,
+  "judge_queue": 15,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 15 pairs - ALL of them Fisher-1922-filing vs Fisher-1925-filing cross pairs (similarity 0.8274); all 15 judged DIFFERENT (the 1922 Phil. Trans. foundations paper and the 1925 Proc. Camb. Phil. Soc. estimation paper are distinct published artifacts, three years apart, with distinct contents). Applied 15/15, no unknown pair ids; distinct stayed 33; matched_node_id verified after judgments: Fisher-Rao metric, Fisher 1922, Bhattacharyya, SMRW, Chentsov, Pearson 1896, Gauss 1809 all matched to their canonical node ids; Fisher (1925) PCPS correctly unmatched (a new node if admitted - it was).",
+ "calendar_dropped_at_resolve": [],
+ "verdicts": {
+  "file": "run-01/work/verdicts_statistical-curvature-efron-1975-1975.json",
+  "builder": "run-01/work/build_verdicts_efron.py",
+  "evaluations": 33,
+  "count_check": "evaluations == distinct candidates from show-distinct (33 == 33); field discipline asserted by the builder on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); scout reconciliation: 64 raw - 0 dropped - 31 auto-merges = 33 distinct == the builder's 33 intended distinct names; dry run through score.rank_candidates reproduced the intended outcome (2 survivors: Fisher 1925 at 4.0, Rao 1961 at 3.5; Fisher 1922 mediated; the component signature on Chernoff and Haldane & Smith - directness passing, Q1/Q2 failing) BEFORE applying; ONE correction used at the dry-run stage: the two survivor rationales' estimated scores (~5.5 / ~5.0) were corrected to the computed scores (4.0 / 3.5) before applying; apply-verdicts run exactly once; post-apply spot-check: both created nodes' stored leap, prior_state and bottleneck are non-empty (verified programmatically)",
+  "survivors": [
+   "Fisher, Theory of statistical estimation (1925) - NEW node, 4.0, PROVISIONAL (depth 8): citation + instantiation at full strength (the Kleene 1935 / Widrow & Hoff shape). Reference [7] of the parent, named first in Sec. 1's attribution, and the bracketed term of eq. (1.1) - identified by the parent as gamma_theta^2 - IS this paper's computed multinomial information loss, generalized by the parent beyond the multinomial case. Pierce's discussion ties the parent's ancillary seed to the paper's final section. Capped provisional at verification: the mediation attack via Rao (1961) partially lands on the joint Sec. 1 attribution (downgrade challenge recorded on the edge).",
+   "Rao, Asymptotic efficiency and limiting information (1961) - NEW node, 3.5, PROVISIONAL (depth 8): the definitional half of the parent's Sec. 1 attribution. Reference [10]; Kass (1987) assigns the second-order efficiency definitions (the E criterion and the second-term variance expansion) to this paper, and the parent is the geometrization of exactly those definitions. Capped provisional at verification: the mirror mediation attack via Fisher (1925) partially lands (downgrade challenge recorded on the edge), and the author's own 1962/1963 papers press as near multiples (both fail-closed partials)."
+  ],
+  "mediated": [
+   "Fisher, On the mathematical foundations of theoretical statistics (1922) - LINK refused, MEDIATED via Fisher, Theory of statistical estimation (1925): uncited by the parent; its criteria (likelihood, sufficiency, efficiency) reach the parent through the cited 1925 paper, which restates and operationalizes them - the operative-carrier discrimination; the mediation chain is carried by its cited final link. The node's other edges are untouched."
+  ],
+  "fail_closed_partials": [
+   "Fisher-Rao metric (Rao, 1945) - LINK refused, MOST CONTESTABLE NEGATIVE: uncited (absent from the complete 13-item reference list, as is Jeffreys 1946); the lineage surveys' descent claim (Kass & Vos) answered on the apparatus - the parent's inner product is the ambient family's covariance product, sourced to Fisher (1925) and Rao (1961-63), and the derivation never opens the 1945 paper. Re-hearing condition: a document showing Efron engaged Rao (1945) - a citation in any version of the paper, a draft, or correspondence. The node's other edges are untouched.",
+   "Rao (1962) - the stratum's worked computations (Kass: the multinomial information loss computed here): cited [11] and named in Sec. 1, but the parent re-derives the loss geometrically and corrects the naive multinomial result (Sec. 9) rather than consuming the computations - the near-miss prior form of the definitions' programme. Re-hearing condition: the parent's text showing a 1962 formula taken over as such.",
+   "Rao (1963) - the decision-theoretic definition of second-order efficiency (Kass): the parent replaces the criterion with a geometric quantity rather than applying it - a definition re-founded, not consumed. Re-hearing condition: the parent's text adopting the 1963 criterion as its own.",
+   "Struik, Differential Geometry (1950) - carrier of the curvature formalism: cited [13] and invoked at Sec. 2, but the parent's decisive step - curvature with respect to the COVARIANCE inner product - is its own generalization, not Struik's. Re-hearing condition: Struik shown to contain curvature relative to a problem-supplied inner product in the parent's sense.",
+   "Barndorff-Nielsen (1973) - in-text survey citation only ('for a survey of ancillarity'), pointedly NOT in the reference list; the parent's ancillary family is built from the Fisher conditioning strand, not from the survey's content. Re-hearing condition: the parent's ancillary family shown to reproduce a 1973 construction.",
+   "Efron & Truax (1968) - the author's own earlier stratum (large deviations in exponential families), cited [6]: own-version discipline - the parent's leap is not the 1968 result continued. Re-hearing condition: the parent's curvature derivation shown to rest on a 1968 theorem."
+  ],
+  "components": [
+   "Chernoff (1952) - directness passing (reference [3], inside the working efficiency apparatus), Q1/Q2 failing: an efficiency measure for tests is a component of the framework, not the parent's mechanism (the Sheppard 1898 disposition).",
+   "Haldane & Smith (1956) - directness passing (reference [9]), Q1/Q2 failing: a higher-order distributional component of the ML apparatus, not the family's geometry."
+  ],
+  "rejected_of_note": [
+   "Chentsov (1972) - LINK refused: uncited parallel line; its claims are adjudicated at the Amari expansions under the components discrimination. The node's other edges are untouched.",
+   "Neyman & Scott (1948) - ABSENCE FINDING (brief correction (a)): not in the paper; 'Neyman' occurs only via the Neyman-Davies model, the Neyman-Pearson lemma, and Rao 1961's editor credit.",
+   "Davies (1969) - cited [4] but compared, not consumed: the Neyman-Davies model is the parent's Sec. 8 demonstrative example, not its machinery.",
+   "Ghosh & Subramanyam (1974) - parallel multiple: named by Rao's discussion as co-extenders of the same programme; multiples are verification evidence, not ancestors.",
+   "Le Cam (1964) - uncited: the absence of the period's rival asymptotic foundation from the apparatus is recorded as a finding.",
+   "Fisher (1934) - absent from the paper's list; enters the printed record only via Cox's discussion (reception, not ancestry).",
+   "Koopman (1936), Pitman (1936), Darmois (1935) - the exponential-family characterization trio: presupposed repertoire forming the parent's medium; NO mediation recorded for any of them - none is documented, and recording one would assert an unsupported transmission.",
+   "SMRW (1925), Bhattacharyya (1943), Pearson (1896), Gauss (1809) - LINKs refused as carrier / presupposed repertoire; all nodes' other edges untouched.",
+   "Barnett (1966), Andrews et al. (1972) - cited apparatus/context, not instantiated. Gnedenko & Kolmogorov (1954), Cramér (1946) - carriers. Jeffreys (1946), Cox (1958), Mahalanobis (1936) - uncited parallels/repertoire. Stein (1956) - motivation context in Rao's discussion. Efron & Morris (1973) - the author's own parallel (Stein) line, uncited and mechanistically disjoint."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s78_efron.json",
+  "outcomes": {
+   "fisher-theory-of-statistical-estimation-1925-1925": "provisional (downgrade challenge recorded on the edge). Attack 1 (multiples): Rao 1961/62/63 and Ghosh & Subramanyam cap exclusivity but supply no rival source for the eq. (1.1) quantity - fails to kill. Attack 2 (date/direction): reference [7] and the Sec. 1 attribution document the direction - fails. Attack 3 (mediation via Rao 1961): PARTIALLY LANDS on the joint attribution; answered on the textual discrimination (Kass assigns the computation to Fisher, the definitions to Rao); edge stands, node capped provisional. Attack 4 (presupposition via 1922/SMRW): both were refused or mediated THROUGH this node at this parent, strengthening the edge. RE-HEARING CONDITION: a document showing the eq. (1.1) quantity computed in an intermediate source the parent used instead.",
+   "rao-asymptotic-efficiency-and-limiting-information-1961-1961": "provisional (downgrade challenge recorded on the edge). Attack 1 (multiples): the author's own 1962/1963 papers and Ghosh & Subramanyam press; Kass assigns the definitions to 1961 specifically - fails to kill. Attack 2 (date/direction): reference [10], Sec. 1 attribution - fails. Attack 3 (mediation via Fisher 1925): PARTIALLY LANDS (mirror challenge); answered on the same discrimination - Fisher's paper contains no second-order definition to mediate. Attack 4 (own-lineage): not the parent's author; no pressure. RE-HEARING CONDITION: the parent's text shown to take its definitions from the 1962 or 1963 papers."
+  }
+ },
+ "totals_after": {
+  "nodes": 278,
+  "edges": 349,
+  "budget": "278/2000",
+  "expansions_done": 165,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 28,
+   "3": 32,
+   "4": 37,
+   "5": 57,
+   "6": 45,
+   "7": 30,
+   "8": 16,
+   "9": 6,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 261,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "cook-shade-trees-1984-1984",
+  "openapi-specification-2016",
+  "fine-tuning-language-models-from-human-preferences-ziegler-e-2019",
+  "json-referencing-in-dojo-2008",
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019"
+ ],
+ "sync_commit": null
+}
