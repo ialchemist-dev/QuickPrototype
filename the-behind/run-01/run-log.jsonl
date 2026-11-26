@@ -11044,5 +11044,111 @@
   "show-your-work-scratchpads-for-intermediate-computation-with-2021",
   "t5-text-to-text-transfer-transformer-2019"
  ],
+ "sync_commit": "894b11f5"
+}
+{
+ "session": 82,
+ "expansion": 174,
+ "parent": "rfc-3986-uniform-resource-identifier-uri-generic-syntax-2005",
+ "parent_name": "RFC 3986, Uniform Resource Identifier (URI): Generic Syntax (2005)",
+ "parent_year": 2005,
+ "parent_depth": 3,
+ "date": "2026-11-25",
+ "provenance": "Session 82, expansion 2 of 2. Scouted, resolved, judged and verified by session 82. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79 discipline): add-candidates verified on disk (stage 'scouted', 56 raw candidates in graph.json); resolve ran in the foreground via the MiniLM venv python (95 s) and was verified on disk at stage 'resolved' (32 distinct, 6 LINK matches) before any judgments work; apply-judgments verified (40/40 applied, no unknown pair ids, distinct stayed 32, all pending_judge flags cleared, all 6 LINK matched_node_ids verified programmatically); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor: RFC 2396 LINK 7.0; 4 mediated; 5 fail-closed partials); NO dry-run correction was spent (the builder's missing/extra spec check passed clean, 32 == 32); apply-verdicts run exactly once (LINK - no node created; the linked node's stored leap/prior_state/bottleneck verified non-empty, as they were at its own creation). The session-82 expansion-173 record's sync_commit field was fixed up in this pass to 894b11f5 (the commit that actually carried it - the session-78 log fix-up precedent); this record's own sync_commit rides the next sync (the sessions 61-81 ride-forward pattern).",
+ "brief_correction": "The brief's hypothesis sketches were tested on the RFC's own text. (a) The RFC 2396 stratum resolved as the brief's first hypothesis suggested - 2396 IS the direct question at this parent and is ADMITTED (LINK, 7.0) - but on sharper grounds than the brief's sketch: the separable-artifact discrimination, not mere derivation. S.9's derivation sentence names three documents (2396, 1808, 1738); only 2396 is the text the parent revises (Appendix D is a diff against 2396 alone), and 1808/1738 were therefore MEDIATED via 2396 on s.1's own merger sentence, not admitted on the s.9 sentence. A derivation sentence is a lineage statement; the diff is the channel evidence. (b) RFC 1630, admitted at RFC 2396 and at RFC 1808 as their problem document, is MEDIATED at this parent: problem-formulation ancestry is edge-scoped - by 2005 the problem had been posed and answered two documents earlier, and what reaches the parent is the answered (merged-syntax) form. (c) The RFC 1737 hypothesis inverted: the requirement-specification exception that ADMITTED 1737 at RFC 2141 was tested here and FAILED - the generic syntax does not implement URN functional requirements as mechanism; it was 'designed to meet' them at design-intent level only. Same document, opposite outcomes at two parents, on the exception's own terms; the RFC 2141 edge is untouched. (d) The Berners-Lee stratum: the 1989 proposal is not cited anywhere in the parent's apparatus (verified against both reference lists) and is mediated via RFC 1630; no WWW-proposal node exists in the graph (searched this session).",
+ "grounding": "The parent grounded on the FULL TEXT of RFC 3986 (STD 66, Jan 2005), read this session: header (Updates: 1738; Obsoletes: 2732, 2396, 1808; draft-fielding-uri-rfc2396bis lineage); s.1 ('derived from concepts introduced by the World Wide Web global information initiative... as described in [RFC1630]'; 'The syntax is designed to meet the recommendations laid out in [RFC1736] and [RFC1737]'; 'This document obsoletes [RFC2396], which merged [RFC1738] and [RFC1808] in order to define a single, generic syntax for all URIs'; 'It obsoletes [RFC2732], which introduced syntax for an IPv6 address'; scheme registration deferred to [BCP35], scheme-design advice to [RFC2718]; character terms per [BCP19]); s.9 Acknowledgements ('This specification is derived from RFC 2396 [RFC2396], RFC 1808 [RFC1808], and RFC 1738 [RFC1738]... It also incorporates the update (with corrections) for IPv6 literals in the host syntax, as defined by [RFC2732]'); s.10.1 NORMATIVE references (ONLY: [ASCII] ANSI X3.4-1986; [RFC2234] ABNF; [STD63] UTF-8 / RFC 3629; [UCS] ISO/IEC 10646:2003); s.10.2 informative references (BCP19, BCP35, RFC 952, RFC 1034, RFC 1123, RFC 1535, RFC 1630, RFC 1736, RFC 1737, RFC 1738, RFC 1808, RFC 2046, RFC 2141, RFC 2396, RFC 2518, RFC 2557, RFC 2718, RFC 2732, RFC 3305, RFC 3490, RFC 3513, Siedzik 2001 on semantic attacks); Appendix D (additions: the URI ABNF rule; IPv6 literals from RFC 2732 with the IPvFuture flag; a new IPv6address ABNF created because RFC 3513 'lacks an ABNF description', matching RFC 3513 s.2.2 text representations; the IPv4address octet-range fix; s.6 normalization 'completely rewritten and extended by using input from Tim Bray and discussion within the W3C Technical Architecture Group'; modifications: RFC 2396's ad-hoc BNF replaced with the ABNF of [RFC2234], rules renamed/simplified with a translation table). FIND-VERIFIED ABSENCE: Fielding's dissertation (2000) appears in NEITHER reference list. RFC 3987 (IRI) was published the same month as the parent (January 2005) - deliberate calendar filing.",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state all non-empty and coherent; sources populated (1 entry - the Dojo guide, its admission source at session 81). The node's verification record carries the session-81 RFC 2396 edition/mediation downgrade challenge on the 3986 -> Dojo edge (re-hearing condition: a document showing dojox.json.ref's resolution follows RFC 2396-era or browser-specific rules where they diverge from 3986). This expansion's admission of the 2396 -> 3986 edge is the mirror image of that challenge, and its own verification records the reverse-direction condition (see verification). Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_rfc3986.py",
+  "raw_candidates": 56,
+  "per_lens_floors": "met on the builder's output before resolve: L1 4, L2 3, L4 3, L5 3, L6 3, L7 6, L11 3, L13 4, L16 8, L19 3, L20 6, L21 3, L22 3 (52 content filings); meta pass L3 4; dry notes for L8, L9, L10, L12, L14, L15, L17, L18 (dry / dry-with-finding) and L23 (dry-with-finding: no re-hearing candidate belongs to this parent's first expansion). Dry notes file: run-01/work/dry_notes_rfc-3986-uniform-resource-identifier-uri-generic-syntax-2005.json. The standards-lens inversion at full strength at a specification parent (L16 the largest lens, 8 filings - the OpenAPI pattern). Six graph-existing candidates were sought by concept search before scouting and filed as LINKs under exact canonical names and the stored type string 'standard (K8)' (RFC 2396, RFC 1808, RFC 1738, RFC 1630, RFC 2141, RFC 1737) - all 6 matched at resolve, every matched_node_id verified programmatically. One deliberate calendar filing: RFC 3987 (2005). Scout reconciliation: 56 raw filings = 33 distinct names intended; resolve dropped the 1 calendar filing, giving 32 distinct == the verdicts builder's 32 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 32,
+  "dropped": 1,
+  "matched_existing": 6,
+  "auto_merges": 23,
+  "judge_queue": 40,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 40 pairs, ALL adjudicated DIFFERENT on the documents - the standards stratum's identity hazard at full strength (Dojo's 17 pairs in session 81 were the previous mark): the collisions are edition/version neighbours among the RFC 2396 / RFC 1808 / RFC 1736 / RFC 1738 / RFC 2141 filings (each filed under up to six lenses, so the same unordered document pair recurs across many pair ids), plus two cand-node pairs (an RFC 1808 filing against the existing RFC 1738 NODE, and the BCP 35 filing against an unrelated programming-language 'Scheme' node). Every pair is two distinct published documents (or a document and an unrelated node); no SAME and no SUBTYPE. Applied 40/40, no unknown pair ids; distinct stayed 32; all pending_judge flags cleared; all six LINK matched_node_ids verified after judgments.",
+ "calendar_dropped_at_resolve": [
+  "RFC 3987, Internationalized Resource Identifiers (IRI) (Duerst & Suignard, 2005) - published the same month as the parent (January 2005); the sibling extension the generic syntax was designed alongside. Dropped by the year-granularity bound on the record; content dates logged, no re-dating."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_rfc-3986-uniform-resource-identifier-uri-generic-syntax-2005.json",
+  "builder": "run-01/work/build_verdicts_rfc3986.py",
+  "evaluations": 32,
+  "count_check": "evaluations == distinct candidates from show-distinct (32 == 32), verified by the builder's missing/extra spec check; field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (1 survivor: RFC 2396 LINK 7.0; 4 mediated; 5 fail-closed partials) BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once; LINK admission created no node - the linked node's stored leap/prior_state/bottleneck verified non-empty",
+  "survivors": [
+   "RFC 2396, Uniform Resource Identifiers: Generic Syntax (Berners-Lee, Fielding & Masinter, 1998) - LINK, 7.0, PROVISIONAL (edge verification), depth 4 (existing node): the immediate predecessor document - header obsoletes it, s.9's derivation sentence names it first, the drafts were named rfc2396bis, and Appendix D is a diff against its text. The edition objection is answered by the separable-artifact discrimination: 2396 was a separately published standard, THE operative URI syntax 1998-2005 with its own revision history and ecosystem, and the graph's own granularity treats the editions as DIFFERENT artifacts (the session-81 Dojo queue and this expansion's 40-pair queue). The parent CONTINUES 2396's headline mechanism (the generic syntax and its resolution algorithm), corrected and extended - the operative-carrier shape. Capped provisional at verification: an edition downgrade challenge via the rfc2396bis draft lineage partially lands (see verification)."
+  ],
+  "mediated": [
+   "RFC 1808, Relative Uniform Resource Locators (Fielding, 1995) - LINK MEDIATED via RFC 2396: s.1's own sentence routes it through the merger ('[RFC2396] merged [RFC1738] and [RFC1808]'); the parent's algorithm is 2396's merged form, revised. Session 81 recorded 1808 mediated via 3986 at Dojo; the chain now reads 1808 -> 2396 -> 3986 -> Dojo, each link carried by its cited final link.",
+   "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994) - LINK MEDIATED via RFC 2396: named in s.9's derivation sentence, but Appendix D diffs against 2396 alone; the mediation chain is carried by its cited final link (the session-75 shape).",
+   "RFC 1630, Universal Resource Identifiers in WWW (Berners-Lee, 1994) - LINK MEDIATED via RFC 2396: the problem document of the 2396 and 1808 parents (admitted at both, edges untouched) reaches 2005 only inside the merged syntax that answered it - problem-formulation ancestry is edge-scoped.",
+   "Berners-Lee, Information Management: A Proposal (1989) - MEDIATED via RFC 1630: not cited anywhere in the parent's apparatus; the documented route to the founding concepts is s.1's reference to 1630."
+  ],
+  "fail_closed_partials": [
+   "RFC 2732, Format for Literal IPv6 Addresses in URL's (1999) - directness PARTIAL (0.5): s.9 documents the incorporation 'with corrections' and Appendix D.1 lists it among the additions - a direct channel carrying a COMPONENT (one grammar production family). Components of a leap are not leaps; directness is necessary, not sufficient.",
+   "RFC 1736, Functional Recommendations for Internet Resource Locators (1995) - directness PARTIAL: the s.1 'designed to meet the recommendations' channel is design-constraint level; no recommendation is implemented as a grammar rule. The requirement-specification exception tested and fails.",
+   "RFC 1737, Functional Requirements for Uniform Resource Names (1994) - directness PARTIAL, the discrimination case of the expansion: ADMITTED at RFC 2141 (session record stands) because the URN syntax implements its clauses as mechanism; REFUSED here because the generic syntax does not implement URN functional requirements (persistence, global scope are properties of the scheme and its resolvers, not of the grammar). The exception's own terms decide both ways.",
+   "RFC 3513, Internet Protocol Version 6 (IPv6) Addressing Architecture (2003) - directness PARTIAL (0.5): Appendix D.1 makes its s.2.2 text representations the object of the parent's new IPv6address ABNF - a real object-level channel carrying a component; the IPv6-into-identifiers mechanism (the bracketed literal) is 2732's, and 3513 expressly 'lacks an ABNF description', so the grammar work is the parent's.",
+   "W3C Technical Architecture Group - directness PARTIAL: Appendix D.1 documents its discussion input to the s.6 normalization rewrite - a documented channel scoped to one section, the Carpenter/Duff shape; an institution acts through the specific artifact it carried, and discussion is not an artifact."
+  ],
+  "rejected_of_note": [
+   "RFC 2234, ABNF (1997) - specification-as-notation, despite being one of only four NORMATIVE references: Appendix D.2 records the parent replacing 2396's ad-hoc BNF with it; the syntax is written IN ABNF, not derived FROM it.",
+   "ASCII (ANSI X3.4-1986), UTF-8 (RFC 3629 / STD 63), ISO/IEC 10646 (2003) - the character substrate: three of the four normative references, all refused as presupposed substrate - the syntax quantifies over the repertoires; it does not derive from their documents.",
+   "RFC 2141, URN Syntax (1997) - LINK REFUSED as sibling: the generic syntax ACCOMMODATES the URN syntax as one scheme family; accommodation is not consumption and the generality direction runs the other way.",
+   "RFC 1034 / RFC 952 / RFC 1123 / RFC 1535 - the presupposed naming apparatus: informative citations; the reg-name carries names governed elsewhere without instantiating their mechanisms.",
+   "BCP 35 (RFC 2717), RFC 2718, BCP 19 (RFC 2978) - the companions the parent's own s.1 scopes OUT (registration, scheme design, terminology): a document's express delimitation of a companion is a boundary, not a channel.",
+   "RFC 3305 (2002) - cited-but-not-instantiated: the terminology report documented the confusion; s.1.1.3's settlement is the parent's own act (a diagnosis answered is not consumed - the Hochreiter condition). Siedzik (2001) - the same shape in the security stratum.",
+   "RFC 2046 / RFC 2518 / RFC 2557 - usage-context citations: specifications that USE URIs; the dependence direction runs toward the syntax, not from it.",
+   "draft-fielding-uri-rfc2396bis (2002-2004) - own draft lineage, the publication shape: no separable published artifact, no independent grading voice - the direct contrast with RFC 2396 itself, admitted at this same parent under the separable-artifact discrimination.",
+   "Fielding, Architectural Styles dissertation (2000) - ABSENCE refusal, find-verified against both reference lists, with the co-authorship sharpening: the dissertation's author co-edited the parent, so any channel would be the person, which is formation (the REST-at-Dojo / Fielding-at-OpenAPI shape).",
+   "RFC 3490, IDNA (2003) - accommodation: the reg-name carries IDNA's output; the ToASCII machinery is nowhere instantiated.",
+   "Internet Engineering Task Force / Internet Society - formation/venue: the masthead is provenance, not ancestry."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s82_rfc3986.json",
+  "outcomes": {
+   "rfc-2396-uniform-resource-identifiers-generic-syntax-berners-1998": "provisional (edition downgrade challenge via the rfc2396bis draft lineage recorded on the edge - the mirror image of session 81's challenge on the 3986 -> Dojo edge). Attack 1 (identity - same milestone as the parent?): kill form FAILS on the graph's own granularity (separately published standard, operative 1998-2005, Appendix D is a diff against it; the separable-artifact discrimination is met). Attack 2 (multiples on Q3): fails - no rival generic syntax was ever published. Attack 3 (mediation via the rfc2396bis drafts): PARTIALLY LANDS in downgrade form - the text was edited through the drafts for ~3 years; the kill form fails (the drafts are the parent's own production stratum, rejected as such at this parent; s.9 names the published 2396 directly). Attack 4 (date/direction): fails. RE-HEARING CONDITION: a document showing the 2005 text was re-founded on the 1738/1808 pair or another base rather than revised from 2396's text, or a programme decision collapsing RFC editions into single milestones (which would merge this edge and re-open the session-81 Dojo-edge challenge in the opposite direction)."
+  }
+ },
+ "totals_after": {
+  "nodes": 286,
+  "edges": 361,
+  "budget": "286/2000",
+  "expansions_done": 174,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 34,
+   "4": 39,
+   "5": 58,
+   "6": 46,
+   "7": 30,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 269,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "expectation-propagation-minka-2001-2001",
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019",
+  "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021"
+ ],
  "sync_commit": "rides the next sync (see provenance)"
 }
