@@ -11264,5 +11264,120 @@
   "show-your-work-scratchpads-for-intermediate-computation-with-2021",
   "t5-text-to-text-transfer-transformer-2019"
  ],
- "sync_commit": "rides the sync that carries this record; fixed up by the session's next append (session-82 precedent)"
+ "sync_commit": "7d863846"
+}
+{
+ "session": 83,
+ "expansion": 176,
+ "parent": "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+ "parent_name": "ORQA: Latent Retrieval for Weakly Supervised Open Domain Question Answering",
+ "parent_year": 2019,
+ "parent_depth": 2,
+ "date": "2026-11-25",
+ "provenance": "Session 83, expansion 2 of 2. Scouted, resolved, judged and verified by session 83. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79/82 discipline): add-candidates verified on disk (stage 'scouted', 57 raw candidates in graph.json); resolve ran in the foreground via the MiniLM venv python (51 s) and was verified on disk at stage 'resolved' (32 distinct, 6 LINK matches, 3 judge pairs) before any judgments work; apply-judgments verified (3/3 applied, no unknown pair ids, distinct stayed 32, pending_judge flags cleared, all 6 LINK matched_node_ids verified programmatically against the graph's actual ids); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors, both NEW: BERT 7.5, DrQA 6.0; 12 fail-closed partials; 5 mediated, all via BERT); apply-verdicts run exactly once; both created nodes' stored leap/prior_state/bottleneck/definition verified non-empty programmatically (sources populated, 1 entry each). Three builder-code syntax slips (stray year arguments in spec() calls) were caught and fixed BEFORE the dry run - the dry run itself passed clean and NO dry-run correction was spent on verdict content. The session-83 expansion-175 record's sync_commit field was fixed up in this pass to 7d863846 (the commit that actually carried it - the session-82 fix-up precedent); this record's own sync_commit rides the sync that carries it.",
+ "brief_correction": "The brief's hypothesis sketches were tested on the paper's own apparatus (arXiv:1906.00300 read in full this session). (a) The BERT stratum: the brief asked 'consumed substrate vs ancestry' - the documents answer CONSUMED, in the strongest form the run has recorded: s.3 states 'all scoring components are derived from BERT', and the paper runs its own substitution experiment (Table 5: NNLM/ELMo encoders collapse to 3-18 EM). BERT was NOT a graph node before this expansion (concept-searched; the brief's '(in graph...)' aside was wrong) - it is created here, NEW, at 7.5. (b) The DrQA stratum: the brief called it 'the open-domain QA problem-formulation stratum (DrQA line)' - confirmed and sharpened: DrQA is admitted (NEW, 6.0) under the correction relation's positive branch (worked object extracted and built on: task formulation, pipeline architecture, open formats 'following DrQA' s.7.1, EM evaluation per DrQA's scripts s.2.1), NOT as a mere formulation citation - the channels are use-level throughout. (c) The dense-retrieval/dual-encoder stratum the brief pointed at largely does NOT exist before the parent: the pre-2019 stratum is reranking over closed candidate sets (Wang 2018; Kratzwald & Feuerriegel 2018; Lee et al. 2018; Das et al. 2019), which the parent names as complementary future work (s.10); the actual dense-retrieval multiples (REALM, DPR) POSTDATE the parent and are direction-barred. What the ICT pretraining builds on is not a retrieval stratum but a representation-learning one (skip-gram's objective family; Logeswaran & Lee's in-batch form) - both judged fail-closed partials as component/genealogy channels. (d) The brief's stored-record warning proved exact: ORQA's stored definition, domain AND sources are all EMPTY (see parent_record_note).",
+ "grounding": "The parent grounded on the FULL TEXT of Lee, Chang & Toutanova, 'Latent Retrieval for Weakly Supervised Open Domain Question Answering' (arXiv:1906.00300, 1 Jun 2019; ACL 2019), read entire this session: abstract (first system to jointly learn retriever + reader from question-answer pairs only; retrieval over all of Wikipedia as a latent variable; ICT pretraining; BM25 sufficient where questioners know the answer, learned retrieval worth up to 19 EM where they do not); s.1 (DrQA = strongly supervised setting on SQuAD triples; weakly supervised setting proposed by TriviaQA/SearchQA/Quasar; 'QA is fundamentally different from IR' (Singh 2012); rerankers only rerank a closed set; Table 1 taxonomy incl. GPT-2 as 'Unsupervised QA'); s.2.1 (EM evaluation following DrQA's scripts); s.3 ('all scoring components are derived from BERT'; dual BERT encoders projected to 128 dimensions; reader a span-based variant of Devlin et al. (2018)'s RC model, span endpoints following Lee et al. (2016); 13M+ Wikipedia blocks); s.4 (ICT inverts the standard Cloze task (Taylor 1953); 90% masking); s.5 (precomputed block index; MIPS 'using existing tools such as Locality Sensitive Hashing'); ss.7.1-7.2 (five datasets converted to open formats 'following DrQA'; dataset bias analysis); s.7.3 (Dec 20 2018 Wikipedia snapshot, deviating from DrQA's 2016 snapshot 'because the original snapshot is no longer publicly available'; 288-wordpiece blocks by BERT's tokenizer; BERT uncased BASE for retriever and reader; ICT pretraining on Google Cloud TPUs, batch 4096, 100k steps); s.8.1 (BM25 (Robertson et al. 2009) on Lucene; hybrid BM25+BERT inspired by BERTserini (Yang et al. 2019); unsupervised neural retrieval 'notoriously difficult' (Lin 2019); NNLM (Bengio et al. 2003) and ELMo (Peters et al. 2018) baselines per Perone et al. (2018)); Table 5 (ORQA 33.3/36.4/30.1 test EM on NQ/WebQuestions/CuratedTrec vs BM25 26.5/17.7/21.3; loses on TriviaQA/SQuAD; NNLM/ELMo collapse); s.9.1 (head-to-head in DrQA's setting on DrQA's Dec 2016 snapshot); s.10 (rerankers 're-rank evidence candidates from a closed set, and we aim to integrate these complementary approaches in future work'; semantic-parsing analogy; 'ICT can be considered a generalization of the skip-gram objective Mikolov et al. (2013), with a coarser granularity, deep architecture, and in-batch negative sampling from Logeswaran and Lee (2018)'; latent retrieval in IE (Narasimhan et al. 2016)); s.11 ('the first open domain question answering system where the retriever and reader are jointly learned end-to-end using only question-answer pairs and without any IR system'). DIRECTION CHECK: REALM (Feb 2020) and DPR (Apr 2020) postdate the parent - descendants and multiples, not predecessors; the parent's verification record already carries the REALM multiple (Q3 partial at the RAG admission).",
+ "parent_record_note": "Parent stored fields verified before evaluating: bottleneck, leap and prior_state non-empty and coherent; DEFINITION EMPTY, DOMAIN EMPTY, SOURCES EMPTY - the pipeline.py:300-302 creation wart (the same defect logged for Katz, Jaques, Rawlik and AICO), logged here, NEVER hand-edited. IDENTITY RECONSTRUCTION (stated per the binding discipline): from the node name, the stored leap/bottleneck/prior_state, and the admission edge (ORQA -> Retrieval-Augmented Generation (2020), score 5.0), the parent is Lee, Chang & Toutanova (Google Research), 'Latent Retrieval for Weakly Supervised Open Domain Question Answering', ACL 2019 (arXiv:1906.00300, 1 Jun 2019): the first open-domain QA system to jointly learn a retriever and reader end-to-end from question-answer string pairs alone, retrieval over 13M+ Wikipedia blocks treated as a latent variable, made practical by Inverse Cloze Task pretraining of a BERT-based dual-encoder retriever with a BERT-based span reader, over the December 20, 2018 Wikipedia snapshot. Evaluation proceeded against this reconstructed record; the stored text is untouched. The node's own verification record (from RAG's expansion) carries the REALM multiple on Q3 and the survived DPR mediation attack - both consistent with this expansion's findings and untouched. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_orqa.py",
+  "raw_candidates": 57,
+  "per_lens_floors": "met on the builder's output before resolve: L1 6, L2 4, L4 6, L5 3, L6 5, L7 4, L8 7, L11 3, L13 3, L17 3, L19 4, L22 3 (49 content filings); L9 1 filing + shortfall dry note (the documents name exactly one compute artifact; fine-tuning hardware is an unnamed 12GB GPU); L20 2 filings + shortfall dry note; L21 1 filing + shortfall dry note (one institutional home, honestly exhausted); meta pass L3 2 filings, L23 dry-with-finding; dry notes for L10, L12, L14, L15, L18 (dry) and L16 (dry-with-finding: the corpus convention is the parent's own act, filed at L8/L22). Dry notes file: run-01/work/dry_notes_orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019.json. Six graph-existing candidates were sought by concept search before scouting and filed as LINKs under exact canonical names and stored type strings (Transformer architecture 'method', Generative pretraining (GPT-1) 'system', Neural probabilistic language model (Bengio et al.) 'method', BooksCorpus 'system', Sequence-to-sequence learning 'method', Semi-supervised sequence learning 'method') - all 6 matched at resolve, every matched_node_id verified programmatically. Five deliberate calendar filings (Lin 2019, BERTserini 2019, Das et al. 2019, Natural Questions 2019 x2). Scout reconciliation: 57 raw filings = 36 distinct names intended; resolve dropped the 5 calendar filings (4 distinct names), giving 32 distinct == the verdicts builder's 32 evaluations (count-verified). SCOUT OMISSION (noted, not repaired - the sessions 78/80 precedent): GPT-2 (Radford et al., 2019), named in the parent's Table 1 as 'Unsupervised QA', was discussed in the scout builder's grounding but never filed; its hearing would have been a calendar drop (same year), so the omission has no evaluative consequence."
+ },
+ "resolution": {
+  "distinct": 32,
+  "dropped": 5,
+  "matched_existing": 6,
+  "auto_merges": 20,
+  "judge_queue": 3,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 3 pairs, ALL adjudicated DIFFERENT on the documents: sequence-to-sequence learning vs semi-supervised sequence learning (an architecture formulation vs a pretraining method - the pair appears twice, as cand-node and cand-cand, because both were filed as LINK candidates), and Google vs Google Brain (the company vs one research group inside it; the parent's documents name Google Research / the Google AI Language Team besides). Applied 3/3, no unknown pair ids; distinct stayed 32; pending_judge flags cleared; all six LINK matched_node_ids verified after judgments.",
+ "calendar_dropped_at_resolve": [
+  "Natural Questions (Kwiatkowski et al., 2019) - the parent's flagship dataset (its largest genuine-question gains; the s.9.2 masking analysis runs on NQ dev), filed twice (L8, L17) and dropped by the year-granularity bound on the record; no re-dating.",
+  "BERTserini (Yang et al., 2019) - the strongest prior open-QA system ('the best system that we are aware of' in DrQA's setting, s.9.1; the parent's hybrid baseline is 'inspired by BERTserini'); February 2019 precedes June 2019 at month granularity, inexpressible.",
+  "Multi-step retriever-reader interaction (Das et al., 2019) - the reranking line's 2019 member, named in ss.1/10; same year.",
+  "The neural hype and comparisons against weak baselines (Lin, 2019) - the s.8.1 diagnosis citation for unsupervised neural retrieval's difficulty; same year."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019.json",
+  "builder": "run-01/work/build_verdicts_orqa.py",
+  "evaluations": 32,
+  "count_check": "evaluations == distinct candidates from show-distinct (32 == 32), verified by the builder's missing/extra spec check; field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (2 survivors, both NEW; 12 fail-closed partials; 5 mediated) BEFORE applying; no dry-run correction spent on verdict content (three builder-code syntax slips were fixed before the dry run existed); apply-verdicts run exactly once; both created nodes' stored leap/prior_state/bottleneck/definition verified non-empty programmatically",
+  "survivors": [
+   "BERT (Devlin et al., 2018) - NEW, 7.5, PROVISIONAL (paradigm-multiples downgrade at verification), depth 3: s.3 'Following recent advances in transfer learning, all scoring components are derived from BERT' - the retriever's dual encoders (BERT + 128-dim projections), the reader ('a span-based variant of the reading comprehension model proposed in Devlin et al. (2018)'), the initialization (uncased BERT BASE), and the corpus's 288-wordpiece segmentation (BERT's tokenizer). The substrate hearing is answered by the paper's own substitution experiment: Table 5's NNLM and ELMo encoders, run through the identical pipeline, collapse to 3-18 EM against ORQA's 26.5-45.1. Specific artifact, total consumption, no intermediary - the CUDA-pattern admission, not generic infrastructure.",
+   "DrQA (Chen et al., 2017) - NEW, 6.0, PROVISIONAL (verification), depth 3: the correction relation's positive branch. The parent extracts and builds on DrQA's worked object - the Wikipedia open-QA task in its open format (s.7.1 conversions 'following DrQA Chen et al. (2017)'), the retrieve-and-read architecture (the retriever STAGE remains; only its training is replaced), the exact-match evaluation (s.2.1, DrQA's scripts), and the comparison frame (s.9.1's head-to-head inside DrQA's setting on DrQA's corpus). What is replaced is a property of the object (how the retriever is obtained), not the object - the opposite of iLQG at AICO. The stored prior_state names DrQA; the paper's genealogy agrees."
+  ],
+  "mediated": [
+   "Transformer architecture (2017) - LINK MEDIATED via BERT: the parent adds no architecture; every architectural property it uses arrives inside BERT.",
+   "Generative pretraining (GPT-1) (2018) - LINK MEDIATED via BERT: the pretraining paradigm's operative carrier for this parent is the artifact s.3 names; GPT-1 is uncited.",
+   "Sequence-to-sequence learning (2014) - LINK MEDIATED via BERT: the reader is BERT's RC model, not a seq2seq decoder; the encoder tradition arrives inside it.",
+   "Semi-supervised sequence learning (2015) - LINK MEDIATED via BERT: the paradigm's 2015 carrier is uncited in the parent; the channel is exhausted by the named artifact.",
+   "BooksCorpus (2015) - LINK MEDIATED via BERT: a constituent of BERT's pretraining data, consumed by BERT, not by the parent."
+  ],
+  "fail_closed_partials": [
+   "An efficient framework for learning sentence representations (Logeswaran & Lee, 2018) - directness PARTIAL, THE MOST CONTESTABLE NEGATIVE of the expansion: s.10 attributes ICT's in-batch negative sampling to this paper, and s.4's ICT objective (softmax over in-batch candidates, inner-product scores) IS the QuickThoughts form. Against admission: the parent's attribution is scoped to the sampling device; ICT's defining construction (a sentence removed from its own context as pseudo-question, 90% masking) has no counterpart in the candidate; and ICT is the parent's own component - components of a leap are not leaps. Re-hearing condition: a document showing ICT's objective was adopted from the QuickThoughts framework as a whole rather than re-derived with its sampling device borrowed.",
+   "Learning recurrent span representations (Lee et al., 2016) - directness PARTIAL: s.3 instantiates its span representation in the reader ('following Lee et al. (2016)') - a consumed COMPONENT, carried by a shared author (Kenton Lee) with a document citation; components are not leaps.",
+   "Cloze procedure (Taylor, 1953) - directness PARTIAL: s.4 defines ICT by inverting the cloze task, named and cited; s.10 adds that ICT is motivated 'from first principles'. An ancestor named to be inverted, at one clause's depth (the correction relation's negative branch).",
+   "Skip-gram word representations (Mikolov et al., 2013) - directness PARTIAL: s.10's retrospective genealogy ('ICT can be considered a generalization of the skip-gram objective') - the objective family's ancestry, stated as a 'can be considered' framing; ICT's operative derivation is s.4's construction.",
+   "TriviaQA (Joshi et al., 2017), SearchQA (Dunn et al., 2017), Quasar (Dhingra et al., 2017) - directness PARTIAL each: s.1 names the three as the proposers of the WEAKLY SUPERVISED SETTING the parent's title announces - a real formulation channel, but carried jointly by three dataset papers; TriviaQA is additionally a training constituent, SearchQA and Quasar are not in the parent's mixture at all. No single one is separably the formulation's carrier.",
+   "SQuAD (Rajpurkar et al., 2016) - directness PARTIAL: three channels (its triples define the strong-supervision setting s.1 replaces; its open conversion is a training constituent; it is the s.9.1 arena), none of them the consumed-formulation shape - that shape belongs to DrQA, which converted SQuAD's task into the parent's. The parent's relation is also substantially critical (ss.7.2, 8.2).",
+   "Entity based Q&A retrieval (Singh, 2012) - directness PARTIAL: s.1's load-bearing framing premise ('QA is fundamentally different from IR (Singh, 2012)') - a diagnosis answered, not a mechanism consumed (the Hochreiter condition).",
+   "Improving information extraction by acquiring external evidence with RL (Narasimhan et al., 2016) - directness PARTIAL: s.10 engages latent retrieval's prior instance in information extraction and differentiates the parent from it ('a much more expressive retriever due to... ICT') - the idea-family ancestor shape (Attias at AICO).",
+   "English Wikipedia, December 2018 snapshot (2018) - directness PARTIAL: genuinely consumed wholesale (retrieval is defined over its 13M+ blocks; s.7.3 documents the deliberate deviation from DrQA's 2016 snapshot), but the counterfactual fails at the kind level - s.9.1 reruns the parent on the 2016 snapshot, so the leap survives substitution. The corpus-convention generativity is recorded in the parent's own leap, where it belongs.",
+   "Google Cloud TPU (2018) - directness PARTIAL: named consumption at the demonstrated scale (s.7.3: ICT pretraining, batch 4096, 100k steps - the load-bearing bootstrap), but the artifact as documented is a service class with no generation specified; the specific-enabling-step test cannot be completed on an unnamed artifact."
+  ],
+  "rejected_of_note": [
+   "BM25 and the probabilistic relevance framework (Robertson & Zaragoza, 2009) - the defined-against incumbent, refused with its subtlety recorded: BM25 IS a component of one system in the paper (the BM25+BERT hybrid, whose final score is a learned weighted sum) - but that system is expressly a BASELINE, not ORQA; consumption inside a non-parent comparison system is not consumption by the parent. The leap's point is that the retriever need not be BM25 (a resisted substrate fails).",
+   "ELMo (Peters et al., 2018) and Neural probabilistic language model (Bengio et al., 2003) LINK - the compared baseline representations of Table 5 (ELMo 3.6-17.7 EM; NNLM 3.2-9.1 EM): consumed-vs-compared; their collapse is the parent's evidence FOR the BERT admission, not a channel of their own. The NNLM identity note stands (the artifact run is the modern TF-Hub NNLM embedding; the node is the 2003 model - the comparison is of the representation class).",
+   "R3: Reinforced ranker-reader (Wang et al., 2018) and Adaptive document retrieval (Kratzwald & Feuerriegel, 2018) - the complementary reranking direction, refused on the parent's own words (s.10: 'we aim to integrate these complementary approaches in future work'). Engagement with a rival direction is not consumption.",
+   "WebQuestions (Berant et al., 2013) and CuratedTrec (Baudis & Sedivy, 2015) - training constituents of the five-dataset mixture (WebQuestions additionally a member of the s.10 semantic-parsing analogy set - 'reminiscent of' is framing, not a channel).",
+   "TREC Question Answering Track (Voorhees, 2001) - cited once for the provenance of CuratedTrec's questions: arena ancestry at two removes.",
+   "Evaluation of sentence embeddings (Perone et al., 2018) - the citation certifying the baselines' state-of-the-art status: a baseline's bibliography is not the parent's ancestry.",
+   "Locality-Sensitive Hashing (Indyk & Motwani, 1998) - cited-but-not-instantiated: s.5's 'using existing tools such as Locality Sensitive Hashing' names an option class; no reported number is documented as LSH-produced (the RFC 3305 shape).",
+   "Anserini (Yang, Fang & Lin, 2017) and Apache Lucene (2001) - the BM25 baseline's implementation apparatus ('Our implementation is based on Lucene', s.8.1): tooling of the compared system, not of the parent.",
+   "Google (1998) - formation under the decomposition discipline: everything separable it carried is heard as an artifact (BERT admitted; Cloud TPU judged); an institutional edge would double-count them."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s83_orqa.json",
+  "outcomes": {
+   "bert-devlin-et-al-2018-2018": "provisional (multiples attack lands at the paradigm level: the 2018 transfer turn had three carriers in one year - ELMo (Feb), GPT-1 (Jun), BERT (Oct) - so pretrained-encoder transfer was ripe; the edge's necessity is artifact-specific and experimentally documented by the parent's own Table 5 substitution test, but the node is never verified on necessity grounds with two same-year paradigm multiples on record. Q1 attack fails (the pass is scoped to the parent's scale and the parent's own table is the impossibility record); date/direction clean; mediation attack fails - the Transformer sits inside BERT, ICT is the parent's own component)",
+   "drqa-chen-et-al-2017-2017": "provisional (the admission rests on Q2 + the correction-relation directness call with Q1/Q3 partial at evaluation. Multiples attack fails - no rival formulation exists in the window; BERTserini is a system inside the setting. Mediation attacks via SQuAD and via BERT both fail - the parent cites and follows DrQA itself. RE-HEARING CONDITION recorded: a document showing ORQA's task formulation was taken from the datasets directly rather than from DrQA's open-QA formulation)"
+  }
+ },
+ "totals_after": {
+  "nodes": 290,
+  "edges": 365,
+  "budget": "290/2000",
+  "expansions_done": 176,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 36,
+   "4": 39,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 273,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "bert-devlin-et-al-2018-2018",
+  "assumed-density-filtering-boyen-koller-1998-1998",
+  "loopy-belief-propagation-murphy-weiss-jordan-1999-1999",
+  "drqa-chen-et-al-2017-2017",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021"
+ ],
+ "sync_commit": "rides the sync that carries this record (session-82 ride-forward pattern)"
 }
