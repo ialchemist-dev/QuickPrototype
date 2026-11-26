@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-26T04:31:38+00:00",
-  "expansions_done": 185,
-  "raw_candidates_seen": 8376,
+  "updated_at": "2026-11-26T04:40:25+00:00",
+  "expansions_done": 186,
+  "raw_candidates_seen": 8425,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -33463,6 +33463,79 @@
     "name": "OpenAI",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-26T04:31:21+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "Phrase-based statistical machine translation (Koehn, Och & Marcu, 2003)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "Sentence alignment (Gale & Church, 1993)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "News Commentary parallel corpus",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "Common Crawl",
+    "reason": "mediated_via: Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+    "at": "2026-11-26T04:40:01+00:00",
+    "mediated_via": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "English Gigaword",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "European Parliament",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "European Commission (MosesCore project)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "Project Syndicate",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "Moses statistical MT toolkit (Koehn et al., 2007)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "UTF-8 / Unicode character encoding",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
+   },
+   {
+    "parent_id": "wmt-2014-english-german-parallel-corpus-2014",
+    "name": "BLEU metric (Papineni et al., 2002)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T04:40:01+00:00"
    }
   ]
  },
@@ -34811,7 +34884,7 @@
    "prior_state": "Fragmented, partly proprietary parallel corpora; results reported on incompatible data.",
    "status": "provisional",
    "depth": 2,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -42145,6 +42218,78 @@
    },
    "merged_into": null,
    "created_at": "2026-11-26T04:31:21+00:00"
+  },
+  "wmt-shared-task-series-koehn-monz-2006-2006": {
+   "id": "wmt-shared-task-series-koehn-monz-2006-2006",
+   "name": "WMT shared task series (Koehn & Monz, 2006)",
+   "aliases": [],
+   "year": 2006,
+   "domain": "natural language processing",
+   "type": "problem formulation",
+   "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+   "bottleneck": "Before the WMT shared tasks, MT results were incomparable across labs, because every group trained and reported on its own partly proprietary data and no institution maintained a common evidence base.",
+   "leap": "Koehn & Monz (2006) founded the annual WMT shared tasks: common training data, common test sets, and published comparable results - the formulation that made shared corpora like the parent an annual institution.",
+   "prior_state": "Ad hoc MT evaluation on private or incompatible datasets.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Session 88 verification. Attack 1 (Q1): pressed - was the comparability flip the series' or the corpora's own? The Findings record the series' objectives (evaluate the state of the art, disseminate common test sets and public training data with published performance numbers, refine evaluation methodologies) and the task page states the corpus-creation goal; the flip from the stored prior state (incompatible private data) to a common evidence base is the formulation's, while Europarl's separate flip (open data availability) is admitted on its own edge - the two are discriminated, neither collapses into the other. Attack 2 (multiples on Q3): shared-task formulations existed in adjacent fields (TREC in IR/QA), so the FORM has multiples; for machine translation in 2006-2014 no second venue assembled shared corpora, and necessity was scored partial (class-level) at evaluation - the multiples pressure is the recorded cap. Attack 3 (date/direction): 2006 precedes 2014; direction is documented - the parent's own documents (task page, Findings) are series documents and state the corpus as the series' product. Attack 4 (mediation): via the WMT 2013 edition - fails (an edition is an instance of the series, not an intermediary between the series and its next product); via MosesCore/European Commission - fails (funding, refused separately at this parent). The arena discrimination stands on the verdict: the 2014 TASK's refusal at the Transformer sweep was arena-for-a-model; this edge is formulation-to-its-own-product. No mediator named. Provisional. Stored-record note: the created node's sources list is EMPTY (the standing pipeline.py:300-302 creation wart) - logged in the run log, never hand-edited; leap/prior_state/bottleneck/definition spot-checked non-empty.",
+    "at": "2026-11-26T04:40:25+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-26T04:40:01+00:00"
+  },
+  "europarl-corpus-koehn-2005-2005": {
+   "id": "europarl-corpus-koehn-2005-2005",
+   "name": "Europarl corpus (Koehn, 2005)",
+   "aliases": [],
+   "year": 2005,
+   "domain": "natural language processing",
+   "type": "data",
+   "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+   "bottleneck": "Before Europarl, no large open sentence-aligned parallel corpus existed, because parallel text at scale sat in fragmented or proprietary collections and Parliament proceedings had never been released as aligned bitext.",
+   "leap": "Koehn (2005) extracted and released the Europarl corpus: sentence-aligned European Parliament proceedings as a large open parallel corpus - the form the shared-task corpora standardized on.",
+   "prior_state": "Fragmented, partly proprietary parallel text; proceedings available only as unaligned documents.",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Session 88 verification. Attack 1 (Q1): pressed - aligned proceedings text existed before 2005 (the Canadian Hansard corpus is the classic earlier instance), so the candidate did not invent aligned bitext; the evaluation already scored Q1 partial on the inherited-flip ground, and the edge rests on constitution (the task page: the EN-DE data is 'mainly taken from version 7 of the Europarl corpus') plus the open-release form at multi-language scale. Attack 2 (multiples on Q3): Hansard and smaller aligned corpora are the multiples; necessity was scored partial (class-level) at evaluation and stays there - the parent as constituted is mostly this corpus, but the main-component slot is a class. Attack 3 (date/direction): 2005 precedes 2014 (v7 edition 2012 also precedes); direction documented on the task page's training-data table. Attack 4 (mediation): via the WMT 2013 corpus - fails (the component enters each edition directly and unchanged; the 2013 set carries it, does not transform it); via the European Parliament - fails (decomposition: the institution acts through this artifact, refused separately). No mediator named. Provisional. Stored-record note: sources list EMPTY (standing creation wart) - logged, never hand-edited; other stored fields spot-checked non-empty.",
+    "at": "2026-11-26T04:40:25+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-26T04:40:01+00:00"
+  },
+  "dirt-cheap-web-scale-parallel-text-from-the-common-crawl-smi-2013": {
+   "id": "dirt-cheap-web-scale-parallel-text-from-the-common-crawl-smi-2013",
+   "name": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+   "aliases": [],
+   "year": 2013,
+   "domain": "natural language processing",
+   "type": "method",
+   "definition": "Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013): mining the Common Crawl for parallel sentence pairs - the method and released extraction that produced the 'Common Crawl corpus' component of the WMT shared-task training data (a new resource from WMT 2013, carried into 2014 unchanged).",
+   "bottleneck": "Before Smith et al. (2013), the Common Crawl archive held no usable parallel text, because nobody had shown how to find and align translation pairs inside web-crawl data at scale.",
+   "leap": "Smith et al. (2013) mined the Common Crawl for parallel sentence pairs and released the extraction - web-scale parallel text produced from crawl data rather than curated sources.",
+   "prior_state": "Parallel corpora built only from curated institutional sources (proceedings, commentary).",
+   "status": "provisional",
+   "depth": 3,
+   "expanded": false,
+   "priority": 4.0,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Session 88 verification. Attack 1 (Q1): pressed - web mining for bitext has earlier research instances (the STRAND line from 1999), so the candidate did not invent crawl mining; the edge rests on production: the parent's Common Crawl component is THIS extraction, named on the task page as the new 2013 resource carried into 2014, and Q1 was scored partial at evaluation. Attack 2 (multiples on Q3): STRAND-era mining is the multiples pressure on the form; it does not touch the production channel for this component, and necessity was scored partial (class-level). Attack 3 (date/direction): 2013 precedes 2014; direction documented (task page lists the Common Crawl corpus as provided training data; Smith et al. is its producing paper). Attack 4 (mediation): via Common Crawl (the raw archive) - fails as a mediator of THIS edge and is recorded in reverse: the archive's own candidacy at this parent was refused as mediated via Smith et al., because the parent consumes the extraction, not the archive; the T5 admission of Common Crawl (child's own cleaning pipeline) stands edge-scoped. No mediator named. Provisional. Stored-record note: sources list EMPTY (standing creation wart) - logged, never hand-edited; other stored fields spot-checked non-empty.",
+    "at": "2026-11-26T04:40:25+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-26T04:40:01+00:00"
   }
  },
  "edges": [
@@ -79441,6 +79586,297 @@
     "counterfactual": "Remove Ling et al. and the parent's baseline loses its form: the stored prior state names 'train-from-scratch rationale generation (Ling et al., 2017)' as the immediate predecessor the parent extends, s.3.1 treats Ling et al. (2017) as the source of the rationale corpus line, and the parent's finetuning trains GPT-3 to generate natural-language solutions - Ling's method - on a larger, cleaner rationale dataset. Mediation checked: AQuA-RAT (judged separately, defined-against as data) is Ling's corpus, not a mediator of the method channel - the parent consumes the method (rationale training) while rejecting the corpus's quality; GSM8K is the parent's own dataset, not an intermediary for a 2017 method.",
     "mediator": null,
     "evidence": "Parent stored prior_state and leap; s.2 (NL solutions principle), s.3.1 (Ling et al. 2017), s.4.1 (full NL solution before the answer)."
+   }
+  },
+  {
+   "predecessor_id": "wmt-shared-task-series-koehn-monz-2006-2006",
+   "successor_id": "wmt-2014-english-german-parallel-corpus-2014",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The flip passes: the shared-task formulation is what flipped MT from the parent's stored prior state - fragmented, partly proprietary corpora with incomparable results - to a common evidence base; the parent's stored bottleneck states the flip in exactly these terms.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes: the series generated a shared corpus and a comparable results table every year from 2006; the parent is the 2014 instance of a form the series created.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: no other venue assembled and released shared MT corpora in this period, so the parent as a shared task corpus presupposes the series; necessity is class-level because an institution of another name could in principle have played the role.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No contribution of this kind to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "Measurability: common test sets and published performance numbers are the series' stated objectives (Findings) - the measurability flip the parent embodies.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "No contribution of this kind to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: each edition's corpus composes the previous editions' components and practices.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "No contribution of this kind to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Iteration speed: the annual cycle is the era's MT iteration loop.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Displacement: shared-task reporting displaced private-data reporting as the field's standard of evidence.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality: the producing formulation of the parent and of the whole WMT corpus line.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility: after the series, a major MT result without a shared benchmark was not credible evidence.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-26T04:40:01+00:00",
+   "leap": {
+    "prior_state": "Fragmented, partly proprietary parallel corpora; results reported on incompatible data.",
+    "jump": "Assembly and release of the ~4.5M-pair English-German training set (Europarl v7, News Commentary, and the mined Common Crawl component) as the shared task corpus of WMT 2014 - the set the Transformer paper's section 5.1 trains on.",
+    "date": 2014
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the series and the parent is not assembled: the corpus's own documents are series documents - the task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation', and the Findings record the objectives the corpus serves. The arena discrimination is stated and edge-scoped: the WMT 2014 TASK was refused at the Transformer sweep as arena for a MODEL; here the candidate is the series as the producing formulation of the corpus itself - the corpus is not a participant in the task but its product, so the channel is formulation-to-artifact (the RFC 1630 at RFC 2396 shape), not venue-to-result. No mediator: the series acts on the corpus directly through its own task page and Findings.",
+    "mediator": null,
+    "evidence": "WMT14 task page (goals); Findings of WMT 2014, objectives passage ('evaluating the state of the art... disseminating common test sets... refining evaluation methodologies'); workshop lineage (Koehn & Monz, 2006; Callison-Burch et al., 2007-2012; Bojar et al., 2013)."
+   }
+  },
+  {
+   "predecessor_id": "europarl-corpus-koehn-2005-2005",
+   "successor_id": "wmt-2014-english-german-parallel-corpus-2014",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The flip is partial in relation to the parent: Europarl's own 2005 flip - Parliament proceedings released as a large open sentence-aligned corpus - is inherited by the parent as its main component; the parent's assembly presupposes that an open proceedings corpus already exists to be taken from.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes: Europarl created the proceedings-mined parallel-corpus form and served as the standard SMT training corpus for a decade; it is a component of every WMT EN-DE set of the era, not only this one.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: as constituted, the parent IS mostly Europarl - the task page names the EN-DE data 'mainly taken from version 7 of the Europarl corpus' (~50M words per language against News Commentary's ~3M) - so removing it removes the parent; but necessity is class-level, since another large proceedings corpus could in principle have filled the main-component slot.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost: an existing open corpus made the 2014 assembly cheap - two of three components were carried unchanged from the previous year.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "pass",
+     "evidence": "Measurability: Europarl's pairs are the training side of the shared benchmark whose results the Findings publish; the corpus is what the era's numbers are denominated in.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "No contribution of this kind to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: the corpus is consumed as a component - it composes into the WMT sets year after year without modification.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "No contribution of this kind to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Iteration speed: a standing open corpus let each WMT edition assemble its training set by refresh rather than by new collection.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Displacement: Europarl displaced fragmented and proprietary parallel text as the field's default training data - the parent's stored prior state is precisely the displaced condition.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality: the main component of the parent and the trunk corpus of the SMT era.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility: after Europarl, open release became the expected form for parallel corpora.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-26T04:40:01+00:00",
+   "leap": {
+    "prior_state": "Fragmented, partly proprietary parallel corpora; results reported on incompatible data.",
+    "jump": "Assembly and release of the ~4.5M-pair English-German training set (Europarl v7, News Commentary, and the mined Common Crawl component) as the shared task corpus of WMT 2014 - the set the Transformer paper's section 5.1 trains on.",
+    "date": 2014
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Europarl and the parent does not exist: the task page specifies the EN-DE training data as Europarl v7 plus two smaller components, and the parent's stored definition names Europarl first among its components. Mediation checked: via the WMT 2013 corpus - fails (the component enters each edition directly and unchanged; the 2013 set is the same component carried forward, not an artifact that transforms it); via the European Parliament - fails (the institution acts through this artifact, judged separately). The components discrimination from the parent's own admission record governs: components are ingredients of the parent, and THIS component is additionally admitted on its own leap and constitution share - the discrimination against News Commentary is stated on that verdict.",
+    "mediator": null,
+    "evidence": "WMT14 task page (training data table: 'Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus'); Findings of WMT 2014 (the same data as last year)."
+   }
+  },
+  {
+   "predecessor_id": "dirt-cheap-web-scale-parallel-text-from-the-common-crawl-smi-2013",
+   "successor_id": "wmt-2014-english-german-parallel-corpus-2014",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The flip is partial in relation to the parent: Smith et al. flipped the source of parallel text from curated institutional collections to the open web crawl; inside this parent, that flip supplies one of the three components - the one the task page calls 'a new data resource from 2013'.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity passes: the mined-crawl corpus form generated the Common Crawl components of the WMT 2013 and 2014 sets and the later web-mined parallel-corpus line; the extraction (with its per-pair source annotations) is a reusable artifact, not a one-off.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial: the parent's Common Crawl component IS this extraction - the component exists because this paper produced it - so the parent as constituted consumes it; necessity is class-level because web mining could in principle have been done by another group.",
+     "source": "WMT 2014 translation task page (statmt.org/wmt14/translation-task.html) and Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58), read this session; parent stored record",
+     "falsification": "Would be falsified by a document showing the contrary channel, mechanism or grading in the parent's own text or apparatus."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse is the candidate's own claim and title: parallel text 'dirt cheap' from crawl data instead of curated collection.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No contribution of this kind to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "No contribution of this kind to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: the extraction drops into the shared-task set as a component alongside the curated corpora.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "No contribution of this kind to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed: crawl mining can be re-run as the crawl grows, unlike fixed curated collections.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement: web mining displaced purely curated sourcing as a legitimate origin for shared-task training data.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Lineage centrality: the production artifact of one of the parent's three components and the founding document of web-mined parallel corpora.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility: after 2013, shared-task corpora routinely include a web-mined component.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-26T04:40:01+00:00",
+   "leap": {
+    "prior_state": "Fragmented, partly proprietary parallel corpora; results reported on incompatible data.",
+    "jump": "Assembly and release of the ~4.5M-pair English-German training set (Europarl v7, News Commentary, and the mined Common Crawl component) as the shared task corpus of WMT 2014 - the set the Transformer paper's section 5.1 trains on.",
+    "date": 2014
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Smith et al. and the parent's Common Crawl component does not exist: the task page lists the 'Common Crawl corpus' as provided EN-DE training data, and that parallel corpus is the artifact Smith et al. produced by mining the crawl (released with source annotations for each pair). Mediation checked: via Common Crawl (the raw archive) - fails as a mediator and is recorded the other way: the parent consumes the EXTRACTION, not the archive; the archive is the substrate the candidate worked on. Contrast T5, where Common Crawl was admitted because the child's own pipeline did the cleaning - here the extraction is a separate published artifact by other authors, so the chain is carried by its final link (the Zaremba & Sutskever shape at Scratchpads).",
+    "mediator": null,
+    "evidence": "WMT14 task page (training data table: Common Crawl corpus, 'A new data resource from 2013'); Smith et al., ACL 2013."
    }
   }
  ],
@@ -364956,6 +365392,2978 @@
       }
      },
      "similarity": 0.5177,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "wmt-2014-english-german-parallel-corpus-2014": {
+   "raw_candidates": [
+    {
+     "name": "WMT shared task series (Koehn & Monz, 2006)",
+     "year": 2006,
+     "type": "problem formulation",
+     "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+     "domain": "natural language processing",
+     "lens": "L1"
+    },
+    {
+     "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+     "year": 2013,
+     "type": "data",
+     "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+     "domain": "natural language processing",
+     "lens": "L1"
+    },
+    {
+     "name": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+     "year": 2013,
+     "type": "method",
+     "definition": "Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013): mining the Common Crawl for parallel sentence pairs - the method and released extraction that produced the 'Common Crawl corpus' component of the WMT shared-task training data (a new resource from WMT 2013, carried into 2014 unchanged).",
+     "domain": "natural language processing",
+     "lens": "L2"
+    },
+    {
+     "name": "Phrase-based statistical machine translation (Koehn, Och & Marcu, 2003)",
+     "year": 2003,
+     "type": "method",
+     "definition": "Koehn, Och & Marcu (2003): phrase-based statistical machine translation - the modeling paradigm the WMT corpora were assembled to train; the dominant MT approach of the WMT series' first decade.",
+     "domain": "natural language processing",
+     "lens": "L2"
+    },
+    {
+     "name": "Sentence alignment (Gale & Church, 1993)",
+     "year": 1993,
+     "type": "method",
+     "definition": "Gale & Church (1993): the length-based sentence alignment algorithm - the presupposed technique by which the corpus's components were sentence-aligned into parallel pairs.",
+     "domain": "natural language processing",
+     "lens": "L2"
+    },
+    {
+     "name": "Phrase-based statistical machine translation (Koehn, Och & Marcu, 2003)",
+     "year": 2003,
+     "type": "method",
+     "definition": "Koehn, Och & Marcu (2003): phrase-based statistical machine translation - the modeling paradigm the WMT corpora were assembled to train; the dominant MT approach of the WMT series' first decade.",
+     "domain": "natural language processing",
+     "lens": "L3"
+    },
+    {
+     "name": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+     "year": 2013,
+     "type": "method",
+     "definition": "Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013): mining the Common Crawl for parallel sentence pairs - the method and released extraction that produced the 'Common Crawl corpus' component of the WMT shared-task training data (a new resource from WMT 2013, carried into 2014 unchanged).",
+     "domain": "natural language processing",
+     "lens": "L3"
+    },
+    {
+     "name": "WMT shared task series (Koehn & Monz, 2006)",
+     "year": 2006,
+     "type": "problem formulation",
+     "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+     "domain": "natural language processing",
+     "lens": "L3"
+    },
+    {
+     "name": "Europarl corpus (Koehn, 2005)",
+     "year": 2005,
+     "type": "data",
+     "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+     "domain": "natural language processing",
+     "lens": "L4"
+    },
+    {
+     "name": "News Commentary parallel corpus",
+     "year": 2008,
+     "type": "data",
+     "definition": "The News Commentary parallel corpus distributed by the WMT workshops: sentence-aligned Project Syndicate opinion commentary in many language pairs; the WMT 2014 task page lists it as provided EN-DE training data ('updated', ~3M words per language; v9 in 2014).",
+     "domain": "natural language processing",
+     "lens": "L4"
+    },
+    {
+     "name": "Common Crawl",
+     "year": 2008,
+     "type": "system",
+     "definition": "Common Crawl: the open web crawl whose text archive is the source from which the WMT 2014 Common Crawl parallel component was mined; filed under the existing node's exact canonical name and type.",
+     "domain": "natural language processing",
+     "lens": "L4"
+    },
+    {
+     "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+     "year": 2013,
+     "type": "data",
+     "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+     "domain": "natural language processing",
+     "lens": "L4"
+    },
+    {
+     "name": "English Gigaword",
+     "year": 2003,
+     "type": "other",
+     "definition": "English Gigaword: the LDC's large English newswire text corpus; the WMT 2014 task page lists it among ADDITIONAL monolingual resources participants were allowed to use - it is not part of the provided parallel training set. Filed under the existing node's exact canonical name and type.",
+     "domain": "natural language processing",
+     "lens": "L4"
+    },
+    {
+     "name": "Europarl corpus (Koehn, 2005)",
+     "year": 2005,
+     "type": "data",
+     "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+     "domain": "natural language processing",
+     "lens": "L6"
+    },
+    {
+     "name": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+     "year": 2013,
+     "type": "method",
+     "definition": "Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013): mining the Common Crawl for parallel sentence pairs - the method and released extraction that produced the 'Common Crawl corpus' component of the WMT shared-task training data (a new resource from WMT 2013, carried into 2014 unchanged).",
+     "domain": "natural language processing",
+     "lens": "L6"
+    },
+    {
+     "name": "WMT shared task series (Koehn & Monz, 2006)",
+     "year": 2006,
+     "type": "problem formulation",
+     "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+     "domain": "natural language processing",
+     "lens": "L6"
+    },
+    {
+     "name": "Common Crawl",
+     "year": 2008,
+     "type": "system",
+     "definition": "Common Crawl: the open web crawl whose text archive is the source from which the WMT 2014 Common Crawl parallel component was mined; filed under the existing node's exact canonical name and type.",
+     "domain": "natural language processing",
+     "lens": "L8"
+    },
+    {
+     "name": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+     "year": 2013,
+     "type": "method",
+     "definition": "Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013): mining the Common Crawl for parallel sentence pairs - the method and released extraction that produced the 'Common Crawl corpus' component of the WMT shared-task training data (a new resource from WMT 2013, carried into 2014 unchanged).",
+     "domain": "natural language processing",
+     "lens": "L8"
+    },
+    {
+     "name": "European Parliament",
+     "year": 1952,
+     "type": "institution",
+     "definition": "The European Parliament: the institution whose proceedings are the raw text of the Europarl corpus, the parent corpus's largest component.",
+     "domain": "natural language processing",
+     "lens": "L10"
+    },
+    {
+     "name": "European Commission (MosesCore project)",
+     "year": 2012,
+     "type": "institution",
+     "definition": "The European Commission: funder of the MosesCore project (grant agreement 288487) under which, per the task page footer, the WMT 2014 shared task was supported.",
+     "domain": "natural language processing",
+     "lens": "L10"
+    },
+    {
+     "name": "Project Syndicate",
+     "year": 1995,
+     "type": "institution",
+     "definition": "Project Syndicate: the commentary syndicate whose opinion articles are the raw text of the News Commentary corpus component.",
+     "domain": "natural language processing",
+     "lens": "L10"
+    },
+    {
+     "name": "Moses statistical MT toolkit (Koehn et al., 2007)",
+     "year": 2007,
+     "type": "system",
+     "definition": "Koehn et al. (2007): the Moses open-source statistical MT toolkit - the era's standard training/decoding pipeline; the WMT 2014 task page distributes its tokenization tools (tokenizer.perl and companions) from the Moses repository for participants to prepare the (untokenized) released data.",
+     "domain": "natural language processing",
+     "lens": "L12"
+    },
+    {
+     "name": "Moses statistical MT toolkit (Koehn et al., 2007)",
+     "year": 2007,
+     "type": "system",
+     "definition": "Koehn et al. (2007): the Moses open-source statistical MT toolkit - the era's standard training/decoding pipeline; the WMT 2014 task page distributes its tokenization tools (tokenizer.perl and companions) from the Moses repository for participants to prepare the (untokenized) released data.",
+     "domain": "natural language processing",
+     "lens": "L13"
+    },
+    {
+     "name": "UTF-8 / Unicode character encoding",
+     "year": 1993,
+     "type": "standard",
+     "definition": "Unicode / UTF-8 (1993): the character encoding standard the WMT 2014 task page specifies for all released data ('All data is in Unicode (UTF-8) format'); the data is released untokenized, so tokenization is participant-side.",
+     "domain": "natural language processing",
+     "lens": "L13"
+    },
+    {
+     "name": "English Gigaword",
+     "year": 2003,
+     "type": "other",
+     "definition": "English Gigaword: the LDC's large English newswire text corpus; the WMT 2014 task page lists it among ADDITIONAL monolingual resources participants were allowed to use - it is not part of the provided parallel training set. Filed under the existing node's exact canonical name and type.",
+     "domain": "natural language processing",
+     "lens": "L15"
+    },
+    {
+     "name": "Sentence alignment (Gale & Church, 1993)",
+     "year": 1993,
+     "type": "method",
+     "definition": "Gale & Church (1993): the length-based sentence alignment algorithm - the presupposed technique by which the corpus's components were sentence-aligned into parallel pairs.",
+     "domain": "natural language processing",
+     "lens": "L16"
+    },
+    {
+     "name": "UTF-8 / Unicode character encoding",
+     "year": 1993,
+     "type": "standard",
+     "definition": "Unicode / UTF-8 (1993): the character encoding standard the WMT 2014 task page specifies for all released data ('All data is in Unicode (UTF-8) format'); the data is released untokenized, so tokenization is participant-side.",
+     "domain": "natural language processing",
+     "lens": "L16"
+    },
+    {
+     "name": "Europarl corpus (Koehn, 2005)",
+     "year": 2005,
+     "type": "data",
+     "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+     "domain": "natural language processing",
+     "lens": "L17"
+    },
+    {
+     "name": "News Commentary parallel corpus",
+     "year": 2008,
+     "type": "data",
+     "definition": "The News Commentary parallel corpus distributed by the WMT workshops: sentence-aligned Project Syndicate opinion commentary in many language pairs; the WMT 2014 task page lists it as provided EN-DE training data ('updated', ~3M words per language; v9 in 2014).",
+     "domain": "natural language processing",
+     "lens": "L17"
+    },
+    {
+     "name": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+     "year": 2013,
+     "type": "method",
+     "definition": "Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013): mining the Common Crawl for parallel sentence pairs - the method and released extraction that produced the 'Common Crawl corpus' component of the WMT shared-task training data (a new resource from WMT 2013, carried into 2014 unchanged).",
+     "domain": "natural language processing",
+     "lens": "L17"
+    },
+    {
+     "name": "BLEU metric (Papineni et al., 2002)",
+     "year": 2002,
+     "type": "method",
+     "definition": "Papineni, Roukos, Ward & Zhu (2002): BLEU, the automatic MT evaluation metric - the register in which the WMT Findings publish the shared task's results and in which the corpus's downstream results (including the Transformer's 28.4) are stated.",
+     "domain": "natural language processing",
+     "lens": "L18"
+    },
+    {
+     "name": "Europarl corpus (Koehn, 2005)",
+     "year": 2005,
+     "type": "data",
+     "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+     "domain": "natural language processing",
+     "lens": "L19"
+    },
+    {
+     "name": "News Commentary parallel corpus",
+     "year": 2008,
+     "type": "data",
+     "definition": "The News Commentary parallel corpus distributed by the WMT workshops: sentence-aligned Project Syndicate opinion commentary in many language pairs; the WMT 2014 task page lists it as provided EN-DE training data ('updated', ~3M words per language; v9 in 2014).",
+     "domain": "natural language processing",
+     "lens": "L19"
+    },
+    {
+     "name": "Common Crawl",
+     "year": 2008,
+     "type": "system",
+     "definition": "Common Crawl: the open web crawl whose text archive is the source from which the WMT 2014 Common Crawl parallel component was mined; filed under the existing node's exact canonical name and type.",
+     "domain": "natural language processing",
+     "lens": "L19"
+    },
+    {
+     "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+     "year": 2013,
+     "type": "data",
+     "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+     "domain": "natural language processing",
+     "lens": "L19"
+    },
+    {
+     "name": "Project Syndicate",
+     "year": 1995,
+     "type": "institution",
+     "definition": "Project Syndicate: the commentary syndicate whose opinion articles are the raw text of the News Commentary corpus component.",
+     "domain": "natural language processing",
+     "lens": "L19"
+    },
+    {
+     "name": "WMT shared task series (Koehn & Monz, 2006)",
+     "year": 2006,
+     "type": "problem formulation",
+     "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+     "domain": "natural language processing",
+     "lens": "L20"
+    },
+    {
+     "name": "European Parliament",
+     "year": 1952,
+     "type": "institution",
+     "definition": "The European Parliament: the institution whose proceedings are the raw text of the Europarl corpus, the parent corpus's largest component.",
+     "domain": "natural language processing",
+     "lens": "L20"
+    },
+    {
+     "name": "European Commission (MosesCore project)",
+     "year": 2012,
+     "type": "institution",
+     "definition": "The European Commission: funder of the MosesCore project (grant agreement 288487) under which, per the task page footer, the WMT 2014 shared task was supported.",
+     "domain": "natural language processing",
+     "lens": "L20"
+    },
+    {
+     "name": "Moses statistical MT toolkit (Koehn et al., 2007)",
+     "year": 2007,
+     "type": "system",
+     "definition": "Koehn et al. (2007): the Moses open-source statistical MT toolkit - the era's standard training/decoding pipeline; the WMT 2014 task page distributes its tokenization tools (tokenizer.perl and companions) from the Moses repository for participants to prepare the (untokenized) released data.",
+     "domain": "natural language processing",
+     "lens": "L20"
+    },
+    {
+     "name": "WMT shared task series (Koehn & Monz, 2006)",
+     "year": 2006,
+     "type": "problem formulation",
+     "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+     "domain": "natural language processing",
+     "lens": "L21"
+    },
+    {
+     "name": "BLEU metric (Papineni et al., 2002)",
+     "year": 2002,
+     "type": "method",
+     "definition": "Papineni, Roukos, Ward & Zhu (2002): BLEU, the automatic MT evaluation metric - the register in which the WMT Findings publish the shared task's results and in which the corpus's downstream results (including the Transformer's 28.4) are stated.",
+     "domain": "natural language processing",
+     "lens": "L21"
+    },
+    {
+     "name": "Phrase-based statistical machine translation (Koehn, Och & Marcu, 2003)",
+     "year": 2003,
+     "type": "method",
+     "definition": "Koehn, Och & Marcu (2003): phrase-based statistical machine translation - the modeling paradigm the WMT corpora were assembled to train; the dominant MT approach of the WMT series' first decade.",
+     "domain": "natural language processing",
+     "lens": "L21"
+    },
+    {
+     "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+     "year": 2013,
+     "type": "data",
+     "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+     "domain": "natural language processing",
+     "lens": "L22"
+    },
+    {
+     "name": "Europarl corpus (Koehn, 2005)",
+     "year": 2005,
+     "type": "data",
+     "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+     "domain": "natural language processing",
+     "lens": "L22"
+    },
+    {
+     "name": "Common Crawl",
+     "year": 2008,
+     "type": "system",
+     "definition": "Common Crawl: the open web crawl whose text archive is the source from which the WMT 2014 Common Crawl parallel component was mined; filed under the existing node's exact canonical name and type.",
+     "domain": "natural language processing",
+     "lens": "L22"
+    },
+    {
+     "name": "WMT shared task series (Koehn & Monz, 2006)",
+     "year": 2006,
+     "type": "problem formulation",
+     "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+     "domain": "natural language processing",
+     "lens": "L23"
+    },
+    {
+     "name": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+     "year": 2013,
+     "type": "method",
+     "definition": "Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013): mining the Common Crawl for parallel sentence pairs - the method and released extraction that produced the 'Common Crawl corpus' component of the WMT shared-task training data (a new resource from WMT 2013, carried into 2014 unchanged).",
+     "domain": "natural language processing",
+     "lens": "L23"
+    },
+    {
+     "name": "Europarl corpus (Koehn, 2005)",
+     "year": 2005,
+     "type": "data",
+     "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+     "domain": "natural language processing",
+     "lens": "L23"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "wmt-shared-task-series-koehn-monz-2006-2006",
+      "candidate": {
+       "name": "WMT shared task series (Koehn & Monz, 2006)",
+       "year": 2006,
+       "type": "problem formulation",
+       "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+       "domain": "natural language processing",
+       "lens": "L1"
+      },
+      "members": [
+       0,
+       7,
+       15,
+       36,
+       40,
+       46
+      ],
+      "member_names": [
+       "WMT shared task series (Koehn & Monz, 2006)",
+       "WMT shared task series (Koehn & Monz, 2006)",
+       "WMT shared task series (Koehn & Monz, 2006)",
+       "WMT shared task series (Koehn & Monz, 2006)",
+       "WMT shared task series (Koehn & Monz, 2006)",
+       "WMT shared task series (Koehn & Monz, 2006)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "wmt-2013-english-german-parallel-corpus-bojar-et-al-2013-2013",
+      "candidate": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "year": 2013,
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "domain": "natural language processing",
+       "lens": "L1"
+      },
+      "members": [
+       1,
+       11,
+       34,
+       43
+      ],
+      "member_names": [
+       "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "WMT 2013 English-German parallel corpus (Bojar et al., 2013)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dirt-cheap-web-scale-parallel-text-from-the-common-crawl-smi-2013",
+      "candidate": {
+       "name": "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+       "year": 2013,
+       "type": "method",
+       "definition": "Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013): mining the Common Crawl for parallel sentence pairs - the method and released extraction that produced the 'Common Crawl corpus' component of the WMT shared-task training data (a new resource from WMT 2013, carried into 2014 unchanged).",
+       "domain": "natural language processing",
+       "lens": "L2"
+      },
+      "members": [
+       2,
+       6,
+       14,
+       17,
+       29,
+       47
+      ],
+      "member_names": [
+       "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+       "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+       "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+       "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+       "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)",
+       "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "phrase-based-statistical-machine-translation-koehn-och-marcu-2003",
+      "candidate": {
+       "name": "Phrase-based statistical machine translation (Koehn, Och & Marcu, 2003)",
+       "year": 2003,
+       "type": "method",
+       "definition": "Koehn, Och & Marcu (2003): phrase-based statistical machine translation - the modeling paradigm the WMT corpora were assembled to train; the dominant MT approach of the WMT series' first decade.",
+       "domain": "natural language processing",
+       "lens": "L2"
+      },
+      "members": [
+       3,
+       5,
+       42
+      ],
+      "member_names": [
+       "Phrase-based statistical machine translation (Koehn, Och & Marcu, 2003)",
+       "Phrase-based statistical machine translation (Koehn, Och & Marcu, 2003)",
+       "Phrase-based statistical machine translation (Koehn, Och & Marcu, 2003)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sentence-alignment-gale-church-1993-1993",
+      "candidate": {
+       "name": "Sentence alignment (Gale & Church, 1993)",
+       "year": 1993,
+       "type": "method",
+       "definition": "Gale & Church (1993): the length-based sentence alignment algorithm - the presupposed technique by which the corpus's components were sentence-aligned into parallel pairs.",
+       "domain": "natural language processing",
+       "lens": "L2"
+      },
+      "members": [
+       4,
+       25
+      ],
+      "member_names": [
+       "Sentence alignment (Gale & Church, 1993)",
+       "Sentence alignment (Gale & Church, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "europarl-corpus-koehn-2005-2005",
+      "candidate": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "year": 2005,
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "domain": "natural language processing",
+       "lens": "L4"
+      },
+      "members": [
+       8,
+       13,
+       27,
+       31,
+       44,
+       48
+      ],
+      "member_names": [
+       "Europarl corpus (Koehn, 2005)",
+       "Europarl corpus (Koehn, 2005)",
+       "Europarl corpus (Koehn, 2005)",
+       "Europarl corpus (Koehn, 2005)",
+       "Europarl corpus (Koehn, 2005)",
+       "Europarl corpus (Koehn, 2005)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "news-commentary-parallel-corpus-2008",
+      "candidate": {
+       "name": "News Commentary parallel corpus",
+       "year": 2008,
+       "type": "data",
+       "definition": "The News Commentary parallel corpus distributed by the WMT workshops: sentence-aligned Project Syndicate opinion commentary in many language pairs; the WMT 2014 task page lists it as provided EN-DE training data ('updated', ~3M words per language; v9 in 2014).",
+       "domain": "natural language processing",
+       "lens": "L4"
+      },
+      "members": [
+       9,
+       28,
+       32
+      ],
+      "member_names": [
+       "News Commentary parallel corpus",
+       "News Commentary parallel corpus",
+       "News Commentary parallel corpus"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "common-crawl-2008",
+      "candidate": {
+       "name": "Common Crawl",
+       "year": 2008,
+       "type": "system",
+       "definition": "Common Crawl: the open web crawl whose text archive is the source from which the WMT 2014 Common Crawl parallel component was mined; filed under the existing node's exact canonical name and type.",
+       "domain": "natural language processing",
+       "lens": "L4"
+      },
+      "members": [
+       10,
+       16,
+       33,
+       45
+      ],
+      "member_names": [
+       "Common Crawl",
+       "Common Crawl",
+       "Common Crawl",
+       "Common Crawl"
+      ],
+      "matched_node_id": "common-crawl-2008",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "english-gigaword-2003",
+      "candidate": {
+       "name": "English Gigaword",
+       "year": 2003,
+       "type": "other",
+       "definition": "English Gigaword: the LDC's large English newswire text corpus; the WMT 2014 task page lists it among ADDITIONAL monolingual resources participants were allowed to use - it is not part of the provided parallel training set. Filed under the existing node's exact canonical name and type.",
+       "domain": "natural language processing",
+       "lens": "L4"
+      },
+      "members": [
+       12,
+       24
+      ],
+      "member_names": [
+       "English Gigaword",
+       "English Gigaword"
+      ],
+      "matched_node_id": "english-gigaword-2003",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "european-parliament-1952",
+      "candidate": {
+       "name": "European Parliament",
+       "year": 1952,
+       "type": "institution",
+       "definition": "The European Parliament: the institution whose proceedings are the raw text of the Europarl corpus, the parent corpus's largest component.",
+       "domain": "natural language processing",
+       "lens": "L10"
+      },
+      "members": [
+       18,
+       37
+      ],
+      "member_names": [
+       "European Parliament",
+       "European Parliament"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "european-commission-mosescore-project-2012",
+      "candidate": {
+       "name": "European Commission (MosesCore project)",
+       "year": 2012,
+       "type": "institution",
+       "definition": "The European Commission: funder of the MosesCore project (grant agreement 288487) under which, per the task page footer, the WMT 2014 shared task was supported.",
+       "domain": "natural language processing",
+       "lens": "L10"
+      },
+      "members": [
+       19,
+       38
+      ],
+      "member_names": [
+       "European Commission (MosesCore project)",
+       "European Commission (MosesCore project)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "project-syndicate-1995",
+      "candidate": {
+       "name": "Project Syndicate",
+       "year": 1995,
+       "type": "institution",
+       "definition": "Project Syndicate: the commentary syndicate whose opinion articles are the raw text of the News Commentary corpus component.",
+       "domain": "natural language processing",
+       "lens": "L10"
+      },
+      "members": [
+       20,
+       35
+      ],
+      "member_names": [
+       "Project Syndicate",
+       "Project Syndicate"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "moses-statistical-mt-toolkit-koehn-et-al-2007-2007",
+      "candidate": {
+       "name": "Moses statistical MT toolkit (Koehn et al., 2007)",
+       "year": 2007,
+       "type": "system",
+       "definition": "Koehn et al. (2007): the Moses open-source statistical MT toolkit - the era's standard training/decoding pipeline; the WMT 2014 task page distributes its tokenization tools (tokenizer.perl and companions) from the Moses repository for participants to prepare the (untokenized) released data.",
+       "domain": "natural language processing",
+       "lens": "L12"
+      },
+      "members": [
+       21,
+       22,
+       39
+      ],
+      "member_names": [
+       "Moses statistical MT toolkit (Koehn et al., 2007)",
+       "Moses statistical MT toolkit (Koehn et al., 2007)",
+       "Moses statistical MT toolkit (Koehn et al., 2007)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "utf-8-unicode-character-encoding-1993",
+      "candidate": {
+       "name": "UTF-8 / Unicode character encoding",
+       "year": 1993,
+       "type": "standard",
+       "definition": "Unicode / UTF-8 (1993): the character encoding standard the WMT 2014 task page specifies for all released data ('All data is in Unicode (UTF-8) format'); the data is released untokenized, so tokenization is participant-side.",
+       "domain": "natural language processing",
+       "lens": "L13"
+      },
+      "members": [
+       23,
+       26
+      ],
+      "member_names": [
+       "UTF-8 / Unicode character encoding",
+       "UTF-8 / Unicode character encoding"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bleu-metric-papineni-et-al-2002-2002",
+      "candidate": {
+       "name": "BLEU metric (Papineni et al., 2002)",
+       "year": 2002,
+       "type": "method",
+       "definition": "Papineni, Roukos, Ward & Zhu (2002): BLEU, the automatic MT evaluation metric - the register in which the WMT Findings publish the shared task's results and in which the corpus's downstream results (including the Transformer's 28.4) are stated.",
+       "domain": "natural language processing",
+       "lens": "L18"
+      },
+      "members": [
+       30,
+       41
+      ],
+      "member_names": [
+       "BLEU metric (Papineni et al., 2002)",
+       "BLEU metric (Papineni et al., 2002)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:0:wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "WMT shared task series (Koehn & Monz, 2006)",
+        "aliases": [],
+        "year": 2006,
+        "domain": "natural language processing",
+        "type": "problem formulation",
+        "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+       "card": {
+        "name": "WMT 2015 shared task (Bojar et al., 2015)",
+        "aliases": [],
+        "year": 2015,
+        "domain": "machine translation",
+        "type": "other",
+        "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8366,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:7:wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 7,
+       "card": {
+        "name": "WMT shared task series (Koehn & Monz, 2006)",
+        "aliases": [],
+        "year": 2006,
+        "domain": "natural language processing",
+        "type": "problem formulation",
+        "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+       "card": {
+        "name": "WMT 2015 shared task (Bojar et al., 2015)",
+        "aliases": [],
+        "year": 2015,
+        "domain": "machine translation",
+        "type": "other",
+        "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8366,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:15:wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 15,
+       "card": {
+        "name": "WMT shared task series (Koehn & Monz, 2006)",
+        "aliases": [],
+        "year": 2006,
+        "domain": "natural language processing",
+        "type": "problem formulation",
+        "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+       "card": {
+        "name": "WMT 2015 shared task (Bojar et al., 2015)",
+        "aliases": [],
+        "year": 2015,
+        "domain": "machine translation",
+        "type": "other",
+        "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8366,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:36:wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 36,
+       "card": {
+        "name": "WMT shared task series (Koehn & Monz, 2006)",
+        "aliases": [],
+        "year": 2006,
+        "domain": "natural language processing",
+        "type": "problem formulation",
+        "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+       "card": {
+        "name": "WMT 2015 shared task (Bojar et al., 2015)",
+        "aliases": [],
+        "year": 2015,
+        "domain": "machine translation",
+        "type": "other",
+        "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8366,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:40:wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 40,
+       "card": {
+        "name": "WMT shared task series (Koehn & Monz, 2006)",
+        "aliases": [],
+        "year": 2006,
+        "domain": "natural language processing",
+        "type": "problem formulation",
+        "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+       "card": {
+        "name": "WMT 2015 shared task (Bojar et al., 2015)",
+        "aliases": [],
+        "year": 2015,
+        "domain": "machine translation",
+        "type": "other",
+        "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8366,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:46:wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 46,
+       "card": {
+        "name": "WMT shared task series (Koehn & Monz, 2006)",
+        "aliases": [],
+        "year": 2006,
+        "domain": "natural language processing",
+        "type": "problem formulation",
+        "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+       "card": {
+        "name": "WMT 2015 shared task (Bojar et al., 2015)",
+        "aliases": [],
+        "year": 2015,
+        "domain": "machine translation",
+        "type": "other",
+        "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8366,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:1:8",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 1,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 8,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:1:13",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 1,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 13,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:1:27",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 1,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 27,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:1:31",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 1,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 31,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:1:44",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 1,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 44,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:1:48",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 1,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 48,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:8:11",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 8,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 11,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:8:34",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 8,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 34,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:8:43",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 8,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 43,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:11:13",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 13,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:11:27",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 27,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:11:31",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 31,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:11:44",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 44,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:11:48",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 48,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:13:34",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 13,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 34,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:13:43",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 13,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 43,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:27:34",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 27,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 34,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:27:43",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 27,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 43,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:31:34",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 31,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 34,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:31:43",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 31,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 43,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:34:44",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 34,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 44,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:34:48",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 34,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 48,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:43:44",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 43,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 44,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:43:48",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 43,
+       "card": {
+        "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+        "aliases": [],
+        "year": 2013,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 48,
+       "card": {
+        "name": "Europarl corpus (Koehn, 2005)",
+        "aliases": [],
+        "year": 2005,
+        "domain": "natural language processing",
+        "type": "data",
+        "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8246,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [
+     {
+      "members": [
+       0,
+       7
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       0,
+       15
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       0,
+       36
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       0,
+       40
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       0,
+       46
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       11
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       34
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       43
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       6
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       14
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       17
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       29
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       47
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       5
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       42
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       4,
+       25
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       13
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       27
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       31
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       44
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       48
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       28
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       32
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       10,
+       16
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       10,
+       33
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       10,
+       45
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       12,
+       24
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       18,
+       37
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       19,
+       38
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       20,
+       35
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       21,
+       22
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       21,
+       39
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       23,
+       26
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       30,
+       41
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:0:wmt-2015-shared-task-bojar-et-al-2015-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "WMT shared task series (Koehn & Monz, 2006)",
+       "aliases": [],
+       "year": 2006,
+       "domain": "natural language processing",
+       "type": "problem formulation",
+       "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "card": {
+       "name": "WMT 2015 shared task (Bojar et al., 2015)",
+       "aliases": [],
+       "year": 2015,
+       "domain": "machine translation",
+       "type": "other",
+       "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8366,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:7:wmt-2015-shared-task-bojar-et-al-2015-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 7,
+      "card": {
+       "name": "WMT shared task series (Koehn & Monz, 2006)",
+       "aliases": [],
+       "year": 2006,
+       "domain": "natural language processing",
+       "type": "problem formulation",
+       "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "card": {
+       "name": "WMT 2015 shared task (Bojar et al., 2015)",
+       "aliases": [],
+       "year": 2015,
+       "domain": "machine translation",
+       "type": "other",
+       "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8366,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:15:wmt-2015-shared-task-bojar-et-al-2015-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 15,
+      "card": {
+       "name": "WMT shared task series (Koehn & Monz, 2006)",
+       "aliases": [],
+       "year": 2006,
+       "domain": "natural language processing",
+       "type": "problem formulation",
+       "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "card": {
+       "name": "WMT 2015 shared task (Bojar et al., 2015)",
+       "aliases": [],
+       "year": 2015,
+       "domain": "machine translation",
+       "type": "other",
+       "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8366,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:36:wmt-2015-shared-task-bojar-et-al-2015-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 36,
+      "card": {
+       "name": "WMT shared task series (Koehn & Monz, 2006)",
+       "aliases": [],
+       "year": 2006,
+       "domain": "natural language processing",
+       "type": "problem formulation",
+       "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "card": {
+       "name": "WMT 2015 shared task (Bojar et al., 2015)",
+       "aliases": [],
+       "year": 2015,
+       "domain": "machine translation",
+       "type": "other",
+       "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8366,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:40:wmt-2015-shared-task-bojar-et-al-2015-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 40,
+      "card": {
+       "name": "WMT shared task series (Koehn & Monz, 2006)",
+       "aliases": [],
+       "year": 2006,
+       "domain": "natural language processing",
+       "type": "problem formulation",
+       "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "card": {
+       "name": "WMT 2015 shared task (Bojar et al., 2015)",
+       "aliases": [],
+       "year": 2015,
+       "domain": "machine translation",
+       "type": "other",
+       "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8366,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:46:wmt-2015-shared-task-bojar-et-al-2015-2015",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 46,
+      "card": {
+       "name": "WMT shared task series (Koehn & Monz, 2006)",
+       "aliases": [],
+       "year": 2006,
+       "domain": "natural language processing",
+       "type": "problem formulation",
+       "definition": "Koehn & Monz (2006) and successors: the annual Workshop on Statistical Machine Translation shared tasks - the institution and problem formulation that assembles, releases and evaluates on common training and test data; the 2014 task page states the goal 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings record WMT's objectives as evaluating the state of the art, disseminating common test sets and public training data with published performance numbers, and refining evaluation methodologies.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "wmt-2015-shared-task-bojar-et-al-2015-2015",
+      "card": {
+       "name": "WMT 2015 shared task (Bojar et al., 2015)",
+       "aliases": [],
+       "year": 2015,
+       "domain": "machine translation",
+       "type": "other",
+       "definition": "The WMT 2015 shared task on translation (Bojar et al., 2015): the annual community benchmark whose constrained training data, official test sets and participant systems define the comparison field.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8366,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:1:8",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 1,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 8,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:1:13",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 1,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 13,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:1:27",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 1,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 27,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:1:31",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 1,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 31,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:1:44",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 1,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 44,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:1:48",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 1,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 48,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:8:11",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 8,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 11,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:8:34",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 8,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 34,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:8:43",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 8,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 43,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:11:13",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 13,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:11:27",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 27,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:11:31",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 31,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:11:44",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 44,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:11:48",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 48,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:13:34",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 13,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 34,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:13:43",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 13,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 43,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:27:34",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 27,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 34,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:27:43",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 27,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 43,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:31:34",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 31,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 34,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:31:43",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 31,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 43,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:34:44",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 34,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 44,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:34:48",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 34,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 48,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:43:44",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 43,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 44,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:43:48",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 43,
+      "card": {
+       "name": "WMT 2013 English-German parallel corpus (Bojar et al., 2013)",
+       "aliases": [],
+       "year": 2013,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Bojar et al. (2013): the previous edition of the WMT English-German training corpus - the Findings and task page record that for 2014 the Europarl and Common Crawl components are 'the same as previous year' while News Commentary was updated; the 2014 set is the 2013 set carried forward with one component refreshed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 48,
+      "card": {
+       "name": "Europarl corpus (Koehn, 2005)",
+       "aliases": [],
+       "year": 2005,
+       "domain": "natural language processing",
+       "type": "data",
+       "definition": "Koehn (2005): the Europarl corpus - sentence-aligned European Parliament proceedings released as parallel text for statistical MT; version 7 (2012) is the edition the WMT 2014 task page names as the EN-DE training data's main component ('Europarl Parallel Corpus - mainly taken from version 7 of the Europarl corpus').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8246,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],

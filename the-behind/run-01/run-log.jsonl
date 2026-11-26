@@ -12344,5 +12344,127 @@
   "generalized-advantage-estimation-gae-2016",
   "inverse-reinforcement-learning-ng-russell-2000"
  ],
+ "sync_commit": "9239d819"
+}
+{
+ "session": 88,
+ "expansion": 186,
+ "parent": "wmt-2014-english-german-parallel-corpus-2014",
+ "parent_name": "WMT 2014 English-German parallel corpus",
+ "parent_year": 2014,
+ "parent_depth": 2,
+ "date": "2026-11-25",
+ "provenance": "Session 88, expansion 2 of 2. Scouted, resolved, judged and verified by session 88. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/85 discipline): add-candidates verified (49 raw filings, stage 'scouted'); resolve ran in the foreground and was verified on disk via show-distinct (15 distinct, 2 LINK matches - both matched ids program-verified against the graph's actual ids - 0 calendar drops, judge queue 30); all 30 judge pairs decided and applied (stage 'judged', 0 pending flags, distinct count unchanged at 15) before verdicts work; the verdicts builder's count check passed (15 evaluations == 15 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (3 survivors, all NEW: WMT shared task series 6.0, Europarl corpus 6.0, Smith et al. 2013 4.0; 1 mediated rejection; 1 fail-closed partial; 10 plain rejections); NO dry-run correction was spent; apply-verdicts run exactly once (evaluated 15, survivors 3, created 3, linked 0, rejected 12, mediated rejections 1); verification applied from work/verification_s88_wmt.json (all three provisional, no mediation actions); all three created nodes' stored leap/prior_state/bottleneck/definition spot-checked non-empty. Render verified fresh (301 nodes / 382 edges) before syncing.",
+ "brief_correction": "Two of the brief's three hypothesis strata resolved against the sketch, on the corpus's own documents. (1) The corpus-assembly stratum SPLIT: of the three components, only Europarl was admitted - News Commentary was refused on the gates (minor, substitutable component with no leap of its own) and the Common Crawl ARCHIVE was refused as mediated via Smith et al. (2013), the separate published extraction artifact the parent actually consumes; the brief's 'components of a corpus vs consumed predecessors' question is answered per-component, not as a class. (2) The shared-task formulation stratum resolved as an ADMISSION of the series as problem formulation - against the arena reading the brief flagged from the Transformer sweep: that refusal was edge-scoped to the 2014 TASK at a model parent; at the corpus, the series is the producing formulation and the corpus its stated product. (3) The tokenization stratum FAILED on the documents, as the brief suspected it might: the task page states the data is released NOT tokenized (UTF-8 plain text), and the tokenization tools are Moses-repository participant-side downloads - tokenization is not a stratum of the corpus at all; the Moses verdict records the correction.",
+ "grounding": "The official WMT14 translation-task page (statmt.org/wmt14/translation-task.html) fetched in full this session, and the Findings of WMT 2014 (Bojar et al., W14 proceedings pp. 12-58; search-surfaced text). Load-bearing: for EN-DE the provided parallel training data is exactly Europarl v7 ('mainly taken from version 7 of the Europarl corpus', ~50M words per language, 'the same data as last year'), News Commentary (~3M words per language, 'updated') and the Common Crawl corpus ('A new data resource from 2013', 'same as previous year', each pair carrying a source annotation); the other pairs' corpora (UN, 10^9 FR-EN, CzEng 1.0, Yandex 1M, HindEnCorp) are NOT in the EN-DE set and were not filed; English Gigaword appears only as an allowed additional LDC monolingual resource; data is released NOT tokenized, in UTF-8; tokenization tools live in the Moses git repository; task goals include 'to create publicly available corpora for machine translation and machine translation evaluation'; the Findings state WMT's objectives (evaluate the state of the art, disseminate common test sets and public training data with published performance numbers, refine evaluation methodologies) and the lineage 'builds on eight previous WMT workshops (Koehn and Monz, 2006; Callison-Burch et al., 2007-2012; Bojar et al., 2013)'; the task page footer records European Commission support under the MosesCore project (grant 288487). The Common Crawl component's production artifact is Smith, Saint-Amand, Plamada, Koehn & Lopez (ACL 2013), 'Dirt Cheap Web-Scale Parallel Text from the Common Crawl'.",
+ "parent_record_note": "Parent stored record verified COMPLETE this session: definition, bottleneck, leap, prior_state and sources all populated and consistent with the task page and Findings (the ~4.5M-pair figure, the three named components, the Transformer s.5.1 framing). Its stored admission-edge verification (Transformer sweep) already records the components discrimination - components of an artifact are ingredients of the candidate, not mediators between it and the child - which this expansion applied per-component at the verdicts. Created-node wart: all three new nodes' stored sources lists are EMPTY (the standing pipeline.py:300-302 creation wart) - logged here, never hand-edited; their leap/prior_state/bottleneck/definition are non-empty (spot-checked).",
+ "scout": {
+  "builder": "run-01/work/build_scout_wmt2014.py",
+  "raw_filings": 49,
+  "distinct_names_intended": 15,
+  "per_lens": {
+   "L1": 2,
+   "L2": 3,
+   "L3": 3,
+   "L4": 5,
+   "L6": 3,
+   "L8": 2,
+   "L10": 3,
+   "L12": 1,
+   "L13": 2,
+   "L15": 1,
+   "L16": 2,
+   "L17": 3,
+   "L18": 1,
+   "L19": 5,
+   "L20": 4,
+   "L21": 3,
+   "L22": 3,
+   "L23": 3
+  },
+  "dry_notes_file": "run-01/work/dry_notes_wmt-2014-english-german-parallel-corpus-2014.json",
+  "dry_notes": "L5 dry-with-finding (the incomparability diagnosis is the task's own stated objective - self-carriage of the diagnosis); L7 dry-with-finding (the failure record is data-quality errata inside the same edition); L9 dry (no machine named; crawl infrastructure sits inside the Common Crawl / Smith et al. artifacts); L11 dry (a text corpus has no materials stratum); L14 dry (no physical equipment). Shortfalls noted: L1 (2 - only the series and its previous edition carry the formulation), L8 (2 - the crawl archive and the mining artifact only), L12 (1 - Moses repository only; the untokenized release is itself the tokenization finding), L13 (2), L15 (1 - static download; the only service-like channel is an excluded resource's LDC distribution), L16 (2), L18 (1 - BLEU is the single presupposed instrument). Meta passes L3+L23 = 6 filings (cap ~10). No scout repairs were needed."
+ },
+ "resolution": {
+  "distinct": 15,
+  "matched_existing": 2,
+  "auto_merges": 34,
+  "dropped_raw_filings": 0,
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "matched_node_ids_verified": {
+   "Common Crawl": "common-crawl-2008",
+   "English Gigaword": "english-gigaword-2003"
+  }
+ },
+ "judgments": {
+  "queue": 30,
+  "decisions": "All DIFFERENT: WMT shared task series (2006) vs the existing WMT 2015 shared task node x6 (the series is not its own 2015 edition; the edition also postdates the parent); WMT 2013 English-German parallel corpus vs Europarl corpus x24 (the whole 2013 set vs one of its components - whole vs component, different artifacts and years)."
+ },
+ "calendar_dropped_at_resolve": "None. No filing was dated the parent's own year 2014. (The neural-MT stratum that would have been coeval - Bahdanau attention, 2014 - was deliberately not filed: it is a consumer-side architecture of the corpus's era, not a predecessor of the corpus, and would in any case have been calendar-dropped.)",
+ "verdicts": {
+  "file": "run-01/work/verdicts_wmt-2014-english-german-parallel-corpus-2014.json",
+  "builder": "run-01/work/build_verdicts_wmt2014.py",
+  "evaluations": 15,
+  "survivors": [
+   "WMT shared task series (Koehn & Monz, 2006) - NEW, dry-run score 6.0, depth 3, provisional. Problem-formulation admission: the corpus is the series' stated product (task page goal: 'to create publicly available corpora for machine translation and machine translation evaluation'; Findings objectives). The arena discrimination is stated on the verdict and is edge-scoped: the 2014 TASK's refusal at the Transformer was arena-for-a-model; the corpus is not a participant in the task but its product (the RFC 1630 at RFC 2396 shape).",
+   "Europarl corpus (Koehn, 2005) - NEW, dry-run score 6.0, depth 3, provisional. The parent's main component: the task page names the EN-DE data 'mainly taken from version 7 of the Europarl corpus' (~50M words/language against News Commentary's ~3M); the candidate's own 2005 leap created the open proceedings-corpus form. Capped provisional on class-level necessity (Hansard-class multiples).",
+   "Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013) - NEW, dry-run score 4.0, depth 3, provisional. The production artifact of the parent's Common Crawl component (the task page's 'new data resource from 2013', carried into 2014 unchanged); the cost-collapse claim is the paper's own title."
+  ],
+  "fail_closed_partials": [
+   "Sentence alignment (Gale & Church, 1993) - directness partial: the era's alignment technique is presupposed inside the components' production, one remove from the 2014 assembly, which received its components pre-aligned and names no alignment step."
+  ],
+  "mediated_rejections": [
+   "Common Crawl (LINK) - mediated via Dirt Cheap Web-Scale Parallel Text from the Common Crawl (Smith et al., 2013): the parent consumes the extraction, not the raw archive. The discrimination against Common Crawl's admission at T5 is stated on the verdict: at T5 the child's own pipeline performed the cleaning, so no separate extraction artifact existed; here the extraction is a separate published artifact by other authors, and the chain is carried by its final link (the Zaremba & Sutskever shape at Scratchpads). Edge-scoped: the T5 edge stands."
+  ],
+  "rejected_of_note": [
+   "WMT 2013 English-German parallel corpus (Bojar et al., 2013) - own-version/edition refusal: the 2014 set is the 2013 set carried forward (Europarl and Common Crawl 'the same as previous year', News Commentary updated); the separable-artifact exception fails (no independent grading voice - 'same as previous year' is a factual note - and no separable ecosystem for an annual refresh).",
+   "News Commentary parallel corpus - refused on the gates with directness PASSING (it is a named, contained component): the discrimination against Europarl's admission is stated on both verdicts - constitution share (main component vs a ~3M-word minor component) plus the candidate's own form-creating leap, which News Commentary lacks (a routine aligned-text distribution maintained by the series itself). Components of a leap are not leaps.",
+   "Moses statistical MT toolkit (Koehn et al., 2007) - direction failure: Moses consumes corpora; the task page's tokenizer distribution is participant-side tooling downstream of the corpus, and the data's untokenized release dissolves the brief's tokenization stratum.",
+   "BLEU metric (Papineni et al., 2002) - the register in which the Findings report and the parent's downstream fame is stated; arena/register shape (GLUE at T5). Phrase-based SMT (Koehn, Och & Marcu, 2003) - framework presupposition: the paradigm the corpus was assembled to serve; the corpus is paradigm-agnostic, its most famous consumer being a non-SMT architecture. English Gigaword (LINK) - listed-but-not-included (an allowed additional resource, explicitly not part of the provided parallel set). European Parliament - decomposition (acts through the Europarl artifact). Project Syndicate - decomposition (acts through the News Commentary artifact). European Commission (MosesCore) - funding is not inside the artifact. UTF-8 / Unicode - specification-as-notation (the distribution's container, not its content; the JSON at Scratchpads shape)."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s88_wmt.json",
+  "outcomes": {
+   "wmt-shared-task-series-koehn-monz-2006-2006": "provisional",
+   "europarl-corpus-koehn-2005-2005": "provisional",
+   "dirt-cheap-web-scale-parallel-text-from-the-common-crawl-smi-2013": "provisional"
+  },
+  "note": "Series capped by the shared-task form's multiples (TREC-class formulations in adjacent fields) with necessity class-level. Europarl capped by the Hansard-class multiples on Q1/Q3 (aligned bitext predates it; the edge rests on constitution plus the open-release form). Smith et al. capped by the STRAND-line multiples on the mining form; its production channel for this component is unmediated. No mediation actions."
+ },
+ "totals_after": {
+  "nodes": 301,
+  "edges": 382,
+  "budget": "301/2000",
+  "expansions_done": 186,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 284,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "europarl-corpus-koehn-2005-2005",
+  "wmt-shared-task-series-koehn-monz-2006-2006",
+  "asdiv-miao-et-al-2020-2020",
+  "brookgpu-stream-and-kernel-abstraction-2004",
+  "generalized-advantage-estimation-gae-2016"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82/85 precedent)"
 }
