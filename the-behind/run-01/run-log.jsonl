@@ -11152,3 +11152,117 @@
  ],
  "sync_commit": "rides the next sync (see provenance)"
 }
+{
+ "session": 83,
+ "expansion": 175,
+ "parent": "expectation-propagation-minka-2001-2001",
+ "parent_name": "Expectation Propagation (Minka, 2001)",
+ "parent_year": 2001,
+ "parent_depth": 6,
+ "date": "2026-11-25",
+ "provenance": "Session 83, expansion 1 of 2. Scouted, resolved, judged and verified by session 83. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79/82 discipline): add-candidates verified on disk (stage 'scouted', 58 raw candidates in graph.json); resolve ran in the foreground via the MiniLM venv python (87 s) and was verified on disk at stage 'resolved' (29 distinct, 1 LINK match, 2 judge pairs) before any judgments work; apply-judgments verified (2/2 applied, no unknown pair ids, distinct stayed 29, pending_judge flags cleared, the single LINK matched_node_id verified programmatically against the graph's actual node id); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors, both NEW: Boyen & Koller ADF 7.0, Murphy et al. loopy BP 6.5; 9 fail-closed partials; 4 mediated); NO dry-run correction was spent (the builder's missing/extra spec check passed clean, 29 == 29); apply-verdicts run exactly once; both created nodes' stored leap/prior_state/bottleneck/definition verified non-empty programmatically. This record's sync_commit rides the sync that carries it and is fixed up by the session's next append (the session-82 fix-up precedent).",
+ "brief_correction": "The brief's hypothesis sketches were tested on EP's own documents (the UAI 2001 paper read in full this session, including its complete 15-entry bibliography). (a) The belief-propagation stratum resolved in a form the brief did not sketch: the admitted carrier is Murphy, Weiss & Jordan (1999) - the empirical-study artifact - while the stratum's theoretical documents split three ways: Yedidia et al. GBP/Bethe (2000) is a fail-closed partial (the parent's fixed-point THEORY is stated in duality with it; its update mechanism is ADF's), Kschischang et al. factor graphs (2000) is a fail-closed partial (the representational form s.4 adopts - notation, not mechanism), and Pearl (1988) is a fail-closed partial of a new sub-shape (named in s.4's text as the derivation EP departs from, find-verified ABSENT from the bibliography - a problem-formulation channel without citation or machinery). At AICO, BP was a presupposed formalism carried by Yedidia et al.; at THIS parent BP is the direct question, and the answer is that the parent consumes BP as an ALGORITHM (subsumption, s.4) while presupposing its theory and its notation. (b) The variational stratum resolved as comparison, not ancestry: variational Bayes is the parent's beaten comparison class (abstract, s.3.2 Figure 1) and its canonical introduction (Jordan et al. 1999) is find-verified ABSENT from the bibliography - the brief's 'variational / assumed-density filtering stratum EP generalizes' is half right: EP generalizes ADF (admitted) and loopy BP (admitted); it does not generalize VB, it outperforms it. (c) The Minka-thesis hypothesis: the thesis (MIT PhD, 2001) is the parent's OWN year - it was calendar-dropped at resolve like any same-year filing, and the substantive answer to the session-82 mediation challenge is recorded under thesis_challenge_answer below.",
+ "thesis_challenge_answer": "Session 82 recorded a mediation downgrade challenge on the EP -> AICO edge via Minka's 2001 thesis ('A Family of Algorithms for Approximate Bayesian Inference', MIT). At THIS parent - the only parent where the thesis is a direct candidate - the documents answer it. The thesis is cited IN the parent's bibliography; the paper cites it for exactly two things: the restricted EP variant (s.3.2) and the general tree-structured approximation algorithm (s.4). Minka's own publications page describes the UAI paper as a short version of the thesis. The configuration is: same author, same institution (MIT Media Lab), same year (2001), the same advance in two publication shapes. The separable-artifact exception (Swagger 2.0 at OpenAPI; RFC 2396 at RFC 3986) requires a separable published artifact with its own revision history and ecosystem AND an independent grading voice in the child; a same-year doctoral thesis has neither - it is the own-version shape (Kleene 1936; Bryson & Denham; Cook & Torrance). CONSEQUENCE: the thesis is not an independent milestone that mediates EP's channel into AICO; the graph's EP node IS the milestone both shapes carry, and the session-82 downgrade challenge on the EP -> AICO edge is answered on this record. The challenge itself stays on that edge as recorded (this expansion does not edit it); any formal removal is the verifier's/owner's act, not this session's.",
+ "grounding": "The parent grounded on the FULL TEXT of Minka, 'Expectation Propagation for Approximate Bayesian Inference', UAI 2001 (pp.362-369), read entire this session: abstract (EP 'unifies two previous techniques: assumed-density filtering, an extension of the Kalman filter, and loopy belief propagation'); s.1 (EP 'is an extension of assumed-density filtering'; ADF examples Maybeck 1982, Opper & Winther 1999, Boyen & Koller 1998; ADF weaknesses sequential/order-sensitive; iterative refinement previously used with sampling (Koller et al. 1999) and EKF (Shachter 1990); loopy BP 'turns out to be a special case of Expectation Propagation'; EP costs a constant factor 4-5 passes over ADF); s.2 (ADF 'independently proposed in the statistics (Lauritzen, 1992), artificial intelligence (Boyen & Koller, 1998; Opper & Winther, 1999), and control (Maybeck, 1982) literatures'; EP's novel interpretation: approximate each TERM, not the posterior); s.3.2 (clutter-problem comparison vs Laplace's method, variational Bayes, importance sampling, Gibbs sampling; 'ADF is the first x'); s.3.3 (fixed-point proof 'analogous to Yedidia et al. (2000)'; the EP energy 'is a dual representation of the Bethe free energy given by Yedidia et al. (2000)'; 'the ADF algorithm of Boyen & Koller (1998)' derived); s.4 ('ADF yields loopy belief propagation' under a disconnected approximation; 'Unlike Pearl's derivation of belief propagation... this derivation is symmetric... it is the form used in factor graphs (Kschischang et al., 2000)'; tree-structured approximation 'done in the ADF context by Frey et al. (2000)'; 'A general algorithm for tree-structured approximation using EP is given by Minka (2001)'); s.5 (EP applied to the Bayes Point Machine (Herbrich et al., 1999); 'Opper & Winther (2000) have derived an equivalent algorithm using statistical physics methods... EP and TAP converge to the same solution'; TAP/MF slower; UCI datasets (Blake & Merz, 1998); FLOPS in Matlab); s.6 ('a generalization of belief propagation which is appropriate for hybrid belief networks'); acknowledgment (MIT Media Lab; Things That Think and Digital Life consortia). COMPLETE bibliography (15 entries) enumerated in the scout builder. FIND-VERIFIED ABSENCES from that bibliography: Pearl (1988) - named in s.4's text but NOT cited; the EM algorithm (Dempster, Laird & Rubin 1977) - absent from text and bibliography although the s.3 testbed is a Gaussian mixture; Jordan et al. (1999), Tierney & Kadane (1986), Geman & Geman (1984) - the compared methods of ss.3.2/5.1 are named without canonical citations; Kullback & Leibler (1951) - the KL criterion used without citation.",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state all non-empty and coherent; sources POPULATED (1 entry - the Toussaint AICO paper, its admission source at session 82; NOT the standing empty-sources wart). The node's verification record carries the session-82 Minka-thesis mediation downgrade challenge on the EP -> AICO edge - answered on this record (see thesis_challenge_answer); the edge itself is untouched. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_ep.py",
+  "raw_candidates": 58,
+  "per_lens_floors": "met on the builder's output before resolve: L1 7, L2 4, L4 4, L5 4, L6 5, L7 4, L8 3, L11 4, L13 3, L16 3, L17 3, L19 4, L21 3, L22 3 (56 content filings); L20 2 filings + a shortfall dry note (the stratum is the author's thesis and his institution, honestly exhausted); meta pass L3 2 filings, L23 dry-with-finding; dry notes for L9, L10, L12, L14, L15, L18 (dry) and L20/L23 as noted. Dry notes file: run-01/work/dry_notes_expectation-propagation-minka-2001-2001.json. One graph-existing candidate was sought by concept search before scouting and filed as a LINK under its exact canonical name and stored type string 'theory' (Mixture Models, McLachlan & Basford, 1988) - matched at resolve, matched_node_id verified programmatically. Two deliberate calendar filings: Minka's MIT PhD thesis (2001) and the clutter problem (2001). Scout reconciliation: 58 raw filings = 31 distinct names intended; resolve dropped the 2 calendar filings, giving 29 distinct == the verdicts builder's 29 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 29,
+  "dropped": 2,
+  "matched_existing": 1,
+  "auto_merges": 27,
+  "judge_queue": 2,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 2 pairs, both the same unordered pair (MIT Media Lab vs Things That Think consortium, the Lab filed under two lenses), both adjudicated DIFFERENT on the documents: the laboratory (founded 1985, the performing venue named in the acknowledgment) and its funding consortium (1995, named as a supporter) are distinct artifacts. Applied 2/2, no unknown pair ids; distinct stayed 29; pending_judge flags cleared.",
+ "calendar_dropped_at_resolve": [
+  "A family of algorithms for approximate Bayesian inference (Minka, MIT PhD thesis, 2001) - the parent's own year; the long form of the same advance (see thesis_challenge_answer). Dropped by the year-granularity bound on the record; no re-dating.",
+  "The clutter problem (Minka's Gaussian-mixture testbed, 2001) - the parent's own year and own production; the parent's central demonstration apparatus is part of the parent, not its predecessor."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_expectation-propagation-minka-2001-2001.json",
+  "builder": "run-01/work/build_verdicts_ep.py",
+  "evaluations": 29,
+  "count_check": "evaluations == distinct candidates from show-distinct (29 == 29), verified by the builder's missing/extra spec check; field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (2 survivors, both NEW; 9 fail-closed partials; 4 mediated) BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once; both created nodes' stored leap/prior_state/bottleneck/definition verified non-empty programmatically",
+  "survivors": [
+   "Assumed-density filtering (Boyen & Koller, 1998) - NEW, 7.0, PROVISIONAL (multiples downgrade at verification), depth 7: the parent's abstract names ADF as one of the two techniques EP unifies; s.1 'Expectation Propagation is an extension of assumed-density filtering'; s.2's novelty is a reinterpretation OF ADF (approximate the term, not the posterior); s.3.3 derives B&K's ADF algorithm inside the paper as EP with a completely disconnected approximation; Figure 1's caption: 'ADF is the first x' - one pass of EP is literally ADF. Citation + derivation + instantiation of the operation itself.",
+   "Loopy belief propagation (Murphy, Weiss & Jordan, 1999) - NEW, 6.5, PROVISIONAL (carrier/multiples note at verification), depth 7: the abstract's second unified technique; s.1 states loopy BP 'turns out to be a special case of Expectation Propagation, where the approximation is a completely disconnected network'; s.4 proves the subsumption; s.6 calls EP 'a generalization of belief propagation'. The parent CONTINUES BP's headline mechanism (iterative local message passing) and generalizes its approximation class - the operative-carrier shape."
+  ],
+  "mediated": [
+   "Kalman filter (Kalman, 1960) - MEDIATED via Boyen & Koller ADF (1998): the abstract's own phrase states the chain ('assumed-density filtering, an extension of the Kalman filter'); what the parent consumes is the generalization, not the 1960 linear-Gaussian recursion.",
+   "A revolution: Belief propagation in graphs with cycles (Frey & MacKay, 1997) - MEDIATED via Murphy, Weiss & Jordan (1999): the phenomenon's first report reaches the parent as the established general method whose empirical record is Murphy et al.'s study (both are cited in the same s.1 sentence; the subsumption is of the practiced algorithm). The pair is close; the candidate is expected to be heard directly at the loopy-BP node's own expansion.",
+   "Stochastic Models, Estimation and Control (Maybeck, 1982) - MEDIATED via Boyen & Koller (1998): ADF's control-side birth and the source of the method's name (s.2); the consumed formulation is the graphical-model one s.3.3 derives.",
+   "Extended Kalman filter (1970) - MEDIATED via Shachter (1990): reaches the parent only as the mechanism of Shachter's cited prior refinement attempt."
+  ],
+  "fail_closed_partials": [
+   "Generalized belief propagation and the Bethe free energy (Yedidia, Freeman & Weiss, 2000) - directness PARTIAL, THE MOST CONTESTABLE NEGATIVE of the expansion: s.3.3's fixed-point proof is 'analogous to Yedidia et al. (2000)' and the EP energy (eq.13) 'is a dual representation of the Bethe free energy given by Yedidia et al. (2000)' - a derivation-level channel into the parent's convergence THEORY. But the parent's update mechanism is derived from ADF in ss.2-3; GBP's region-based messages are nowhere instantiated, and the energy EP minimizes is its own dual form. Objective characterized-against; mechanism not consumed. Re-hearing condition: a document showing EP's update equations were derived FROM the Bethe/GBP variational principle rather than from the ADF term-approximation construction.",
+   "Probabilistic Reasoning in Intelligent Systems (Pearl, 1988) - directness PARTIAL: s.4 names Pearl's derivation as the one EP's symmetric derivation departs from - the problem formulation (message-passing inference in belief networks) is genuinely the parent's - but Pearl is find-verified ABSENT from the bibliography and his pi/lambda machinery is expressly replaced by the factor-graph form. Every admitted problem-formulation case in the run carried a citation channel; this one carries a one-sentence contrast. Re-hearing condition: a document in the EP apparatus (e.g. the thesis's fuller reference list) citing Pearl (1988) as a source of the parent's BP treatment.",
+   "Propagation of probabilities, means and variances in mixed graphical models (Lauritzen, 1992) - directness PARTIAL: ADF's statistics birth (s.2) and the parent's hybrid scope is Lauritzen's mixed-model setting, but his junction-tree propagation machinery is not instantiated; the consumed ADF form is B&K's.",
+   "Assumed-density filtering for on-line learning (Opper & Winther, 1999) - directness PARTIAL: s.1's worked Gaussian moment-matching ADF example; one of ADF's three births. The admission is recorded once, at the formulation the parent derives (B&K); the three-birth structure is a multiples record for ADF itself (reflected in the ADF edge's verification).",
+   "Factor graphs and the sum-product algorithm (Kschischang, Frey & Loeliger, 2000) - directness PARTIAL: s.4's derivation 'is the form used in factor graphs' - the representational form consumed as notation (specification-as-notation / presupposed formalism). The AICO record (factor graphs mediated via Yedidia there) is edge-scoped and untouched; the refusal here rests on the notation discrimination.",
+   "Bayes Point Machine (Herbrich, Graepel & Campbell, 1999) - directness PARTIAL: s.5 applies EP to this model and the abstract advertises the resulting training algorithm - a documented object-level channel. But the leap is complete in ss.1-4 without it (the clutter problem carries the method); an application object is a component of the paper, not an enabler of the method. The asymmetry decides: remove BPM and EP stands; remove EP and s.5 disappears.",
+   "Sequentially fitting inclusive trees for inference in noisy-OR networks (Frey, Patrascu, Jaakkola & Moran, 2000) - directness PARTIAL: s.4 names it for the parent's own generality direction (richer approximating families) done 'in the ADF context', and immediately assigns the general algorithm to Minka (2001) - anticipation with a junction, inside the predecessor frame.",
+   "A general algorithm for approximate inference in hybrid Bayes nets (Koller, Lerner & Angelov, 1999) - directness PARTIAL: s.1 cites it for the prior use of iterative refinement, in a sampling mechanism the parent does not instantiate (the Attias shape).",
+   "A linear approximation method for probabilistic inference (Shachter, 1990) - directness PARTIAL: the same s.1 sentence's other prior refinement attempt, via EKF linearization - a mechanism nowhere in the parent."
+  ],
+  "rejected_of_note": [
+   "Gaussian processes for classification: Mean field algorithms (Opper & Winther, 2000) - a MULTIPLE, refused as an ancestor on the parent's own words: 'Opper & Winther (2000) have derived an equivalent algorithm using statistical physics methods... EP and TAP converge to the same solution.' Independently derived equivalence is verification evidence about the parent's necessity (recorded against EP's own record at AICO/session 82, where EP's Q3 context already sits), not a channel into it; the s.5.1 comparison (TAP/MF slower) is additionally consumed-vs-compared.",
+   "EM algorithm (Dempster, Laird & Rubin, 1977) - ABSENCE refusal, this expansion's own: find-verified absent from the parent's text and its complete 15-entry bibliography, although the s.3 testbed is a Gaussian mixture (EM's canonical application); EP's updates are KL projections of belief terms with energy-stationary fixed points, not an E/M alternation. The standing EM hearing remains assigned to McLachlan & Basford (1988).",
+   "An introduction to variational methods for graphical models (Jordan et al., 1999) - compared incumbent class, uncited: VB is beaten in the abstract and plotted against EP in Figure 1; no variational bound is derived or instantiated in the parent.",
+   "Laplace approximation (Tierney & Kadane, 1986) and Gibbs sampling (Geman & Geman, 1984) - the s.3.2 comparison incumbents, both named without canonical citations (bibliography absences find-verified).",
+   "Support Vector Machine (Cortes & Vapnik, 1995) - the comparison incumbent of the application section (s.5.1 Figure 4).",
+   "Mixture Models (McLachlan & Basford, 1988) - LINK REFUSED: the clutter problem's model class, uncited in the parent and uninstantiated as method - demonstrative apparatus. The node's EM hearing is untouched.",
+   "UCI Repository (Blake & Merz, 1998) - cited, and refused as demonstrative data (the s.5.1 arena).",
+   "Kullback-Leibler divergence (Kullback & Leibler, 1951) - the criterion INSIDE the parent's defining operation, refused as a component (the Riccati-at-AICO discrimination), and uncited besides.",
+   "Exponential family (Darmois-Koopman-Pitman, 1936) - presupposed mathematics: the ambient class every method in the stratum shares.",
+   "MATLAB (1984) - generic tooling, named once to define the FLOPS cost unit.",
+   "MIT Media Lab (1985) - formation (the performing institution; the acknowledgment channel is the excluded shape). Things That Think consortium (1995) - funding named in the acknowledgment (funding is not inside the artifact). MERL (1991) - carrier institution of a candidate (Yedidia et al. TR2000-26), judged on its own artifact."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s83_ep.json",
+  "outcomes": {
+   "assumed-density-filtering-boyen-koller-1998-1998": "provisional (multiples attack lands in downgrade form: ADF was independently proposed three times in a decade - Lauritzen 1992, Opper & Winther 1999, Maybeck 1982, per the parent's own s.2 - so the method was ripe; the edge stands on the specific consumed formulation, B&K's, which s.3.3 derives by name; mediation attack fails - the only nameable intermediate is the parent's own thesis, an own-version shape that cannot mediate its own construction; date/direction clean)",
+   "loopy-belief-propagation-murphy-weiss-jordan-1999-1999": "provisional (carrier/multiples attack partially lands: Frey & MacKay 1997 is a genuine second carrier of the loopy-BP phenomenon, cited in the same s.1 sentence and recorded mediated via this node; the operative-carrier discrimination is documentable but fine-grained, so necessity is recorded as carrier-dependent. RE-HEARING CONDITION: a document showing the parent's s.4 subsumption targets the Frey & MacKay formulation specifically rather than loopy BP as the general method. Mediation attack via factor graphs/GBP fails - both were judged partials as notation and objective-characterization; the s.4 subsumption is proved of the algorithm itself)"
+  }
+ },
+ "totals_after": {
+  "nodes": 288,
+  "edges": 363,
+  "budget": "288/2000",
+  "expansions_done": 175,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 34,
+   "4": 39,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 271,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "assumed-density-filtering-boyen-koller-1998-1998",
+  "loopy-belief-propagation-murphy-weiss-jordan-1999-1999",
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the session's next append (session-82 precedent)"
+}
