@@ -11700,5 +11700,102 @@
   "t5-text-to-text-transfer-transformer-2019",
   "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021"
  ],
+ "sync_commit": "58bed3b6"
+}
+{
+ "session": 85,
+ "expansion": 180,
+ "parent": "drqa-chen-et-al-2017-2017",
+ "parent_name": "DrQA (Chen et al., 2017)",
+ "parent_year": 2017,
+ "parent_depth": 3,
+ "date": "2026-11-25",
+ "provenance": "Session 85, expansion 2 of 2. Scouted, resolved, judged and verified by session 85. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79/82/83/84 discipline): add-candidates verified on disk (stage 'scouted', 49 raw candidates in graph.json); resolve ran in the foreground via the MiniLM venv python (48 s) and was verified on disk at stage 'resolved' (26 distinct, 2 LINK matches, 2 judge pairs, 0 calendar drops) before any verdicts work; the two judge pairs were the same unordered pair in both orders (Ryu et al. 2014 vs Ahn et al. 2004, similarity 0.81), both decided DIFFERENT and applied (distinct_now 26); both LINK matches verified programmatically against the graph's actual ids before verdicts (LSTM -> long-short-term-memory-lstm-1997; Bahdanau attention -> bahdanau-attention-2014); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor, NEW: SQuAD 5.5; 6 fail-closed partials; both LINKs rejected, the LSTM on the pure-component configuration); NO dry-run correction was spent (the builder's missing/extra spec check passed clean, 26 == 26); apply-verdicts run exactly once; the created node's stored leap/prior_state/bottleneck/definition verified non-empty programmatically. CREATION WART LOGGED (never hand-edited): the created node's stored sources list is EMPTY - the standing wart (Katz, Jaques, Rawlik, AICO, ORQA, and this session's expansion-179 nodes). The session-85 expansion-179 record's sync_commit field was fixed up in this pass to 58bed3b6 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it.",
+ "brief_correction": "The brief's three hypotheses were tested on the paper's own documents (Chen, Fisch, Weston & Bordes, ACL 2017, read in full in this session's preparation). (a) The retrieve-and-read lineage: the paper's own s.2 splits it three ways, and none of the three is a pipeline ancestor - the task descends from TREC's open-QA definition (judged a fail-closed partial: the formulation channel is one definitional sentence plus the CuratedTREC reuse, scoped to the problem statement); the reading half descends from the machine-comprehension stratum (its two cited design documents judged fail-closed partials on the paper's own 'in a similar spirit' wording); and the full-pipeline incumbents (AskMSR, DeepQA, YodaQA) are the defined-against/compared line, all rejected. The survivor is none of these: it is the dataset the reader was actually trained on. (b) The neural reader stratum: BiDAF judged fresh in this parent's own frame and REJECTED as at BERT but on this paper's documents - Table 4 reports the parent's reader above BiDAF as a rival, and the parent's reader (BiLSTM + aligned-embedding feature + bilinear classifiers) does not instantiate bidirectional attention flow. The two LINKs split: the LSTM is consumed directly and still fails at the gates (the pure component configuration, directness passing); Bahdanau attention is not instantiated at all (the reader's attention is the Lee et al. aligned-embedding feature; Bahdanau is not a cited mechanism of the reader). (c) The Wikipedia-as-corpus stratum: capped exactly as the class/instance discrimination predicts - Wikipedia is consumed wholesale as the system's unique knowledge source AND the paper states the corpus choice is substitutable in principle, so it fails closed as a partial (the BooksCorpus-at-BERT shape), while SQuAD - the specific artifact whose task, training signal and metric the system is built from - is ADMITTED (5.5, provisional, depth 4). Edge-scoping note: SQuAD's contrary records at BERT (arena) and ORQA (fail-closed partial) stand; at this parent the configuration is different (training resource + task definition), and the verification record states this explicitly.",
+ "grounding": "The parent grounded on the full text of Chen, Fisch, Weston & Bordes, 'Reading Wikipedia to answer open-domain questions' (ACL 2017; arXiv:1704.00051), read entire in this session's preparation: abstract (Wikipedia as the unique knowledge source; the system = a bigram-hashing TF-IDF Document Retriever plus a multi-layer RNN Document Reader; multitask learning and distant supervision across datasets); s.1 (machine reading at scale, MRS; DeepQA [Ferrucci et al. 2010] built redundancy over many sources, contrasted with the single structured source bet; machine-comprehension datasets assume the paragraph is given); s.2 (open-domain QA originally defined following the TREC competitions; the KB-QA stratum - WebQuestions, SimpleQuestions over Freebase; the MC stratum - CNN/Daily Mail, the Children's Book Test, SQuAD, WikiReading; full-pipeline incumbents AskMSR, DeepQA, YodaQA; Wikipedia-QA predecessors Ryu et al. 2014 and Ahn et al. 2004); s.3.1 (retriever: inverted index + TF-IDF, bigram hashing per Weinberger et al. 2009, top-5 articles returned; s.5.1 reports BM25 and a bag-of-embeddings retriever tried and worse); s.3.2 (reader 'in a similar spirit to the AttentiveReader described in Hermann et al. (2015); Chen et al. (2016)'; multi-layer BiLSTM; GloVe embeddings [Pennington et al. 2014]; exact-match features; aligned question embedding 'following Lee et al. (2016)'; bilinear start/end classifiers); s.4 (three data types: the 2016-12-21 Wikipedia dump, 5,075,182 articles; SQuAD the main reader-training resource, 87,599 training examples; CuratedTREC, WebQuestions and WikiMovies for evaluation and distant supervision; the DS procedure 'following previous work on distant supervision for relation extraction Mintz et al. (2009)'); s.5 (Table 4 on SQuAD: the DrQA reader scores 69.5/78.8 dev and 70.0/79.0 test EM/F1, above BiDAF 67.7/77.3, DCN and the match-LSTM variants; Table 6 full-Wikipedia open-QA results against YodaQA); s.6 (conclusion: the system integrates search, distant supervision and multitask learning; Wikipedia is the designated corpus, the approach not tied to it in principle).",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state ALL non-empty and coherent; sources populated (1 entry); no reconstruction needed and no discrepancy found. The stored verification (session 83) records the ORQA edge's re-hearing condition (a document showing ORQA's formulation was taken from the datasets directly rather than from DrQA) - that condition concerns the DrQA->ORQA edge; nothing in this expansion's documents bears on it, and the edge is untouched. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_drqa.py",
+  "raw_candidates": 49,
+  "per_lens_floors": "met on the builder's output before resolve: L1 5, L2 3, L3 3, L4 3, L6 6, L7 3, L8 8, L17 4, L19 4, L20 3, L22 3; shortfall notes for L5 (2 filings - exactly two documented obstruction statements) and L11 (2 filings - exactly two wielded retrieval procedures) and L21 (0 filings - NIST acts through the TREC track artifact, filed at L4/L17; FAIR is formation); dry notes for L9, L10, L12, L14, L15, L23 (dry) and L13, L16, L18 (dry-with-finding). Dry notes file: run-01/work/dry_notes_drqa-chen-et-al-2017-2017.json. Concept search before scouting verified that among the parent's apparatus only Bahdanau attention and the LSTM exist as graph nodes (filed as LINKs under their exact canonical names and stored types, and resolve matched both); SQuAD is not a node (rejected candidate at BERT, partial at ORQA) and was filed fresh; BERT (2018) postdates the parent and is not filable. Scout reconciliation: 49 filings = 26 distinct names intended; resolve dropped 0, matched 2 existing, and auto-merged the 23 cross-lens duplicate filings, giving 26 distinct == the verdicts builder's 26 evaluations (count-verified). The Ryu/Ahn cards were written descriptively (as cited in the parent's s.2) and resolve kept them distinct, as intended."
+ },
+ "resolution": {
+  "distinct": 26,
+  "dropped": 0,
+  "matched_existing": 2,
+  "auto_merges": 23,
+  "judge_queue": 2,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 2 pairs - the same unordered pair in both orders (cand-cand:19:20 and cand-cand:20:48): Ryu et al. (2014) vs Ahn et al. (2004), similarity 0.81 both ways. Both decided DIFFERENT: two distinct Wikipedia-QA systems by different authors ten years apart, cited as two separate predecessors in the parent's s.2. Applied; distinct_now 26; the two LINK matches' matched_node_id values were verified before verdicts (LSTM -> long-short-term-memory-lstm-1997; Bahdanau attention -> bahdanau-attention-2014).",
+ "calendar_dropped_at_resolve": [],
+ "verdicts": {
+  "file": "run-01/work/verdicts_drqa-chen-et-al-2017-2017.json",
+  "builder": "run-01/work/build_verdicts_drqa.py",
+  "evaluations": 26,
+  "count_check": "evaluations == distinct candidates from show-distinct (26 == 26), verified by the builder's missing/extra spec check (missing = none; unspec'd = none); field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (1 survivor, NEW: SQuAD 5.5; 6 fail-closed partials; no mediated) BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once; the created node's stored leap/prior_state/bottleneck/definition verified non-empty programmatically (sources list EMPTY - the standing creation wart, logged in provenance)",
+  "survivors": [
+   "SQuAD (Rajpurkar et al., 2016) - NEW, 5.5, PROVISIONAL (verification: multiples attack lands in downgrade form as the Q3 partial priced at evaluation - the MC stratum offered other corpora in different task shapes; mediation attacks via Hermann et al. and via Wikipedia both fail), depth 4: s.4 names SQuAD the reader's main training resource (87,599 examples); the reader's task IS SQuAD's span-prediction task transplanted from given paragraphs to retrieved ones; the headline reader result (Table 4: 69.5/78.8 dev, 70.0/79.0 test) is a SQuAD result in SQuAD's own EM/F1 protocol. Citation + instantiation + the design's definitional dependence: the strong channel. Q1 partial, Q2 pass, Q3 partial."
+  ],
+  "mediated": [],
+  "fail_closed_partials": [
+   "TREC question answering track (NIST, 1999) - directness PARTIAL: the problem-formulation channel, scoped - s.2's definitional sentence ('originally defined following the TREC competitions') plus the CuratedTREC reuse; the parent's own formulation is not instantiated from the track's documents (contrast RFC 1630's admissions, where the child implements the document's clauses). Re-hearing condition recorded on the verdict.",
+   "Distant supervision for relation extraction (Mintz et al., 2009) - directness PARTIAL: the scoped-channel shape - a named recipe instantiated for ONE component (DS training-data construction for the three non-SQuAD datasets, s.4); the core system stands without it.",
+   "Teaching machines to read and comprehend (Hermann et al., 2015) - directness PARTIAL: the paper's own 'in a similar spirit' sentence (s.3.2) documents an inspiration-level design channel; no AttentiveReader mechanism is instantiated (different task, scoring, training resource). Re-hearing condition recorded on the verdict.",
+   "A thorough examination of the CNN/Daily Mail reading comprehension task (Chen, Bolton & Manning, 2016) - directness PARTIAL: the second half of the same 'similar spirit' citation; the same inspiration-level channel, jointly judged with Hermann et al.",
+   "Wikipedia (2001) - directness PARTIAL: the corpus consumed wholesale as the system's unique knowledge source, failing closed on the paper's own substitutability statement - necessary as a class, substitutable as an instance (the BooksCorpus-at-BERT shape).",
+   "Learning recurrent span representations for extractive question answering (Lee et al., 2016) - directness PARTIAL: a component consumed with a named channel (the aligned question embedding of s.3.2) - the Peot & Shachter shape from this session's expansion 179."
+  ],
+  "rejected_of_note": [
+   "BiDAF (Seo et al., 2016) - REJECTED consumed-vs-compared, judged fresh in this parent's frame: Table 4's rival (the parent's reader is reported above it) and its bidirectional-attention-flow mechanism is not instantiated by the parent's BiLSTM + bilinear design.",
+   "Long short-term memory (LSTM) - LINK REJECTED on the pure component configuration: directness PASSES (the reader is built from it) and it still fails at the gates (Q1/Q2 fail) - components of a leap are not leaps (the WordPiece shape). Bahdanau attention - LINK REJECTED on non-instantiation: the reader's attention is the Lee et al. aligned-embedding feature plus bilinear classifiers; the candidate is not a cited mechanism of the reader. Both LINK records stand as identity matches, not ancestry.",
+   "DeepQA (Ferrucci et al., 2010) - the defined-against incumbent of s.1 (multi-source redundancy vs the single-corpus bet). AskMSR (Banko et al., 2002) - the pre-neural pipeline stratum, cited-but-not-instantiated (the parent's corpus-internal retrieval inverts its web-redundancy premise). YodaQA (Baudis, 2015) - Table 6's compared incumbent.",
+   "BM25 (Robertson & Walker, 1994) - REJECTED on the parent's own ablation: tried as the retriever's ranking function in s.5.1 and found worse than the shipped bigram-hashing TF-IDF - the resisted-substrate shape.",
+   "GloVe (Pennington et al., 2014) and Feature hashing (Weinberger et al., 2009) - components consumed directly (directness passes for both) failing at the gates - the pure component shape, jointly with the LSTM the expansion's three instances of it.",
+   "Multitask learning (Caruana, 1997) - REJECTED on the absent channel: the abstract names the technique with no citation; a generic technique name is not a document channel (era doctrine).",
+   "Semantic parsing on Freebase / WebQuestions (Berant et al., 2013), WikiMovies (Miller et al., 2016) and the CuratedTREC dataset (2015) - the DS/evaluation data tail: jointly used, individually substitutable, none the headline resource (the data-stratum discrimination against the SQuAD configuration). Freebase (Bollacker et al., 2008) - the KB substrate of the defined-against stratum, never touched by the system. The Children's Book Test, WikiReading, SimpleQuestions - surveyed stratum backdrop, not used.",
+   "Open-domain question answering using Wikipedia (Ryu et al., 2014) and Question answering over Wikipedia (Ahn et al., 2004) - the cited predecessors: anticipation without a junction (priority of the attempt, no instantiated element); the judge queue's only pair was these two cards against each other - DIFFERENT, two distinct systems."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s85_drqa.json",
+  "outcomes": {
+   "squad-rajpurkar-et-al-2016-2016": "provisional (Q1 partial confirmed - admission rests on Q2 + directness; multiples attack lands in downgrade form as priced - CNN/Daily Mail and CBT offered other corpora in different task shapes, so necessity is shape-specific; date/direction clean on the parent's own s.4/Table 4 apparatus; mediation attacks via Hermann et al. (the consumed artifact is SQuAD's own task/data/metric, used directly) and via Wikipedia (the consumed content is the annotation artifact, not the corpus; the corpus channel is separately judged a partial at this parent) both fail. No mediation object. Edge-scoping stated on the record against the BERT and ORQA records.)"
+  }
+ },
+ "totals_after": {
+  "nodes": 294,
+  "edges": 370,
+  "budget": "294/2000",
+  "expansions_done": 180,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 36,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 277,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "probabilistic-reasoning-in-intelligent-systems-pearl-1988-1988",
+  "squad-rajpurkar-et-al-2016-2016",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019",
+  "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82 precedent)"
 }
