@@ -12566,5 +12566,111 @@
   "generalized-advantage-estimation-gae-2016",
   "inverse-reinforcement-learning-ng-russell-2000"
  ],
+ "sync_commit": "ae56f5b5"
+}
+{
+ "session": 89,
+ "expansion": 188,
+ "parent": "wmt-shared-task-series-koehn-monz-2006-2006",
+ "parent_name": "WMT shared task series (Koehn & Monz, 2006)",
+ "parent_year": 2006,
+ "parent_depth": 3,
+ "date": "2026-11-25",
+ "provenance": "Session 89, expansion 2 of 2. Scouted, resolved, judged and verified by session 89. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/85 discipline): add-candidates verified (39 raw filings, stage 'scouted'); resolve ran in the foreground and was verified on disk via show-distinct (16 distinct, 1 LINK match - the matched id program-verified against the graph's actual ids: Europarl corpus -> europarl-corpus-koehn-2005-2005 - 0 calendar drops, judge queue 0); the verdicts builder's count check passed (16 evaluations == 16 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor: Europarl LINK 5.5; 1 fail-closed partial: NIST 1.5; 14 plain rejections); NO dry-run correction was spent; apply-verdicts run exactly once (evaluated 16, survivors 1, created 0, linked 1, rejected 15, mediated rejections 0). NO NODES WERE CREATED, so the created-node field spot-check is vacuous - stated explicitly per the checkpoint protocol. Verification applied from work/verification_s89_wmt_series.json (the Europarl edge provisional, no mediation actions); per the established overwrite convention the node-level verification on Europarl now holds THIS edge's record, superseding the session-88 record for the WMT 2014 edge, which remains archived in the expansion-186 run-log record - both edges stand (verified in the graph: Europarl is now predecessor on two edges, WMT 2014 at 6.0 and this series at 5.5). The session-89 expansion-187 record's sync_commit field was fixed up in this pass to ae56f5b5 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it. Render verified fresh (301 nodes / 383 edges) before syncing.",
+ "brief_correction": "The brief's hypothesis strata resolved as follows, on the founding documents. (1) The evaluation-formulation stratum: the series' own design (common data/test/results; the 2006 manual fluency/adequacy protocol) is SELF-CARRIAGE - the manual protocol is the 2006 paper's methodological contribution, not a consumed formulation, and it was recorded as an L17/L18 dry-with-finding rather than filed as a documentless candidate; its practice descends through the DARPA/NIST line and was heard on the NIST verdict. (2) The predecessor-campaign stratum SPLIT three ways: NIST is a fail-closed partial (form inheritance plus defined-against design - most contestable here, re-hearing condition recorded); TREC was REFUSED outright - neither founding paper names it, so the cross-field form import has no document channel (importance/tradition without a channel), its multiples role already priced in the node's session-88 verification record; IWSLT and TC-STAR are parallel multiples named in the 2006 census to delimit scope. (3) The data-provision stratum resolved as the expansion's single admission: Europarl LINK 5.5 - both founding papers state the channel in their own text. STORED-RECORD TENSION LOGGED (documents govern; never hand-edited): the series node's stored leap credits the 2006 paper with founding the series, but the founding spans 2005-2006 - the 2006 paper calls itself 'a follow-up to the one we organized in the previous year'. The node stands as named and dated by its 2006 document; the 2005 first edition was judged at this expansion and refused as own-edition (no independent grading voice in the child - the WMT-2013-at-2014 shape), which is the operative record of the tension.",
+ "grounding": "Koehn & Monz (2005), 'Shared Task: Statistical Machine Translation between European Languages', ACL Workshop on Building and Using Parallel Texts, pp. 119-124, and Koehn & Monz (2006), 'Manual and Automatic Evaluation of Machine Translation between European Languages', Proc. Workshop on Statistical Machine Translation (NAACL 2006), pp. 102-121 - both read in full this session. Load-bearing 2005: goals (common test/training sets against balkanization, new language pairs, low barrier of entry, 'Promote and create free resources'); 'The field of statistical machine translation has been blessed with a long tradition of freely available software tools - such as GIZA++ (Och and Ney, 2003) - and parallel corpora - such as the Canadian Hansards. Following this lead, we made word alignments and a language model available for this competition'; 'In contrast to the bigger NIST competition, we wanted to keep the barrier of entry as low as possible. We provided not only training data from the Europarl corpus (Koehn, 2005), but also additional resources: sentence and word alignments, the decoder Pharaoh (Koehn, 2004b), and a language model'; 'We selected Europarl, a freely available parallel corpus in eleven languages'; word alignments derived with GIZA++ (Och & Ney 2003 refined method); LM trained with the SRI language modeling toolkit (Stolcke, 2002); test 2000 sentences, BLEU single reference; 11 groups, 32 systems, 4 pairs, ~15M words; NIST annual DARPA-sponsored competitions named in the introduction. Load-bearing 2006: 'The shared task is a follow-up to the one we organized in the previous year, at a similar venue (Koehn and Monz, 2005)'; 'The evaluation framework for the shared task is similar to the one used in last year's shared task. Training and testing is based on the Europarl corpus'; provided resources (sentence-aligned tokenized training corpus, Pharaoh decoder, training script, baseline system, language models); evaluation automatic (BLEU) AND manual on fluency and adequacy - the manual-vs-automatic comparison is the paper's methodological focus; 'While there is now a number of competitions - DARPA/NIST (Li, 2005), IWSLT (Eck and Hori, 2005), TC-Star - this one focuses on text translation between various European languages'; 14 teams from 11 institutions, 6 language pairs, Finnish dropped partly for lack of judges, out-of-domain test set added.",
+ "parent_record_note": "Parent stored record verified COMPLETE before evaluating (definition, bottleneck, leap, prior_state all populated). Stored sources list is EMPTY - the standing creation wart, already logged in the node's session-88 verification record; not hand-edited. Stored-leap founding-date tension (2006 paper credited with a 2005-2006 founding) logged in brief_correction; not hand-edited.",
+ "scout": {
+  "builder": "run-01/work/build_scout_wmt_series.py",
+  "raw_filings": 39,
+  "distinct_names_intended": 16,
+  "per_lens": {
+   "L1": 4,
+   "L2": 2,
+   "L3": 3,
+   "L4": 4,
+   "L6": 4,
+   "L8": 2,
+   "L11": 2,
+   "L13": 3,
+   "L17": 1,
+   "L19": 2,
+   "L20": 2,
+   "L21": 6,
+   "L22": 3,
+   "L23": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_wmt-shared-task-series-koehn-monz-2006-2006.json",
+  "dry_notes": "Dry notes recorded as a LIST in the RUNBOOK shape. Dry-with-finding: L5 (the balkanization diagnosis is the founding papers' own framing - self-carried, the WMT 2014 L5 shape); L7 (the failure record lives inside the series' own editions - Finnish dropped for lack of judges, out-of-domain test set added); L12 (no programmability layer; the provided training script is the organizers' own code); L15 (static downloads and provided packages; no hosted service); L16 (no external standard implemented; data formats are the task's own conventions); L18 (the observation instrument is the organizers' own human-judge fluency/adequacy panel - self-carriage). Dry: L9, L10, L14. Shortfall notes: L2, L8, L11, L17 (BLEU the single external metric; the manual protocol is the series' own design - self-carriage, heard on the NIST verdict), L19, L20. Meta passes L3+L23 = 4 filings (cap ~10). Scope: the 2006 workshop itself is the parent document's own venue (not filed); Li (2005) and Eck & Hori (2005) are census pointers, filed as the competitions they point to; later editions (2007+) are children, not filed."
+ },
+ "resolution": {
+  "distinct": 16,
+  "matched_existing": 1,
+  "auto_merges": 23,
+  "dropped_raw_filings": 0,
+  "prefiltered": 0,
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "matched_node_ids_verified": {
+   "Europarl corpus (Koehn, 2005)": "europarl-corpus-koehn-2005-2005"
+  }
+ },
+ "judgments": {
+  "queue": 0,
+  "decisions": "None - the judge queue was empty."
+ },
+ "calendar_dropped_at_resolve": "None. No filing was dated the parent's own year 2006. (The 2005 first edition predates the parent document by one year and was evaluated, not dropped - its refusal is on the own-edition ground, not chronology.)",
+ "verdicts": {
+  "file": "run-01/work/verdicts_wmt-shared-task-series-koehn-monz-2006-2006.json",
+  "builder": "run-01/work/build_verdicts_wmt_series.py",
+  "evaluations": 16,
+  "survivors": [
+   "Europarl corpus (Koehn, 2005) - LINK, dry-run score 5.5, provisional. Data-provision admission: both founding papers state the channel in their own text ('We selected Europarl, a freely available parallel corpus in eleven languages' and the provision of 'training data from the Europarl corpus (Koehn, 2005)', 2005; 'Training and testing is based on the Europarl corpus', 2006), and the multi-pair low-barrier design required the only free eleven-language corpus in existence (Hansard is French-English only). Capped provisional on class-level necessity. Mediation attack via the 2005 first edition fails (mediation through the parent's own earlier edition is not mediation by a separate milestone; the 2006 paper restates the channel directly). Europarl now carries two children in the corpus line: WMT 2014 (6.0) and this series (5.5)."
+  ],
+  "fail_closed_partials": [
+   "NIST MT evaluation series (DARPA-sponsored) - directness partial, dry-run score 1.5, MOST CONTESTABLE at this parent. The defined-against-incumbent-plus-form-inheritance shape: the annual-competition-with-common-test-sets form is inherited (the 2005 introduction names NIST as the field's standing competition) while the design is defined against the incumbent in the paper's own words ('In contrast to the bigger NIST competition, we wanted to keep the barrier of entry as low as possible'). Nothing of NIST's data, test sets or apparatus enters the WMT design. Re-hearing condition recorded on the verdict: a founding document showing the organizers derived a SPECIFIC design element (a protocol, a test-set construction, a scoring practice) from the NIST evaluations, rather than the form as a whole, would reopen it."
+  ],
+  "rejections_of_note": "WMT shared task, first edition (Koehn & Monz, 2005): own-edition refusal - the 2006 paper self-describes as its follow-up, same organizers, no independent grading voice (the separable-artifact exception fails; the WMT 2013 corpus at WMT 2014 shape). Text REtrieval Conference (TREC): refused on absence of any document channel - neither founding paper names it; importance/tradition without a channel; its multiples role was already priced in the node's session-88 verification record. BLEU: register (it measures the task's outputs; the 2006 manual study defines itself partly against BLEU's sufficiency) - agreeing with its Europarl and WMT 2014 records. Pharaoh: provided tooling, decoder-agnostic task (substitutable). GIZA++ and the SRI Language Modeling Toolkit: wielded production apparatus for provided resources (the 2005 word alignments and competition LM), one remove from the formulation. Phrase-based SMT (2003) and Brown et al. (1993): framework presupposition at the method and paradigm levels (the phrase-based record at WMT 2014 agrees). IWSLT (2004) and TC-STAR (2004): parallel multiples named in the 2006 census to delimit scope. DARPA: decomposition - acts through the NIST evaluations; not a WMT funder. Canadian Hansard at THIS parent: tradition-not-channel (the 2005 'following this lead' sentence instances the free-resource practice, instanced equally by GIZA++ in the same sentence); its Europarl-expansion partial stands edge-scoped and is not disturbed. ACL Workshop on Building and Using Parallel Texts (2005): venue/formation (the 2006 follow-up ran 'at a similar venue' - venue substitutability on the documents themselves). University of Edinburgh: formation."
+ },
+ "verification": {
+  "file": "run-01/work/verification_s89_wmt_series.json",
+  "outcomes": {
+   "europarl-corpus-koehn-2005-2005": "provisional"
+  },
+  "note": "Four attacks recorded in the file: mediation via the 2005 first edition (fails - own-edition mediation is not mediation, and the 2006 paper restates the channel); Hansard-class multiples on Q3 (Hansard is FR-EN only; the class-level cap stands); the Q1 discrimination (the edge rests on data provision, not on the evaluation flip); date/direction. No mediation actions. Node-level verification overwrite convention noted in provenance."
+ },
+ "totals_after": {
+  "nodes": 301,
+  "edges": 383,
+  "budget": "301/2000",
+  "expansions_done": 188,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 284,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "asdiv-miao-et-al-2020-2020",
+  "brookgpu-stream-and-kernel-abstraction-2004",
+  "generalized-advantage-estimation-gae-2016",
+  "inverse-reinforcement-learning-ng-russell-2000",
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017"
+ ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
