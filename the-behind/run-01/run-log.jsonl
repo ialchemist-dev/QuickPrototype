@@ -10636,3 +10636,103 @@
  ],
  "sync_commit": null
 }
+{
+ "session": 80,
+ "expansion": 170,
+ "parent": "jaques-et-al-sequence-tutor-conservative-fine-tuning-of-sequ-2017",
+ "parent_name": "Jaques et al., Sequence Tutor (2017)",
+ "parent_year": 2017,
+ "parent_depth": 3,
+ "date": "2026-11-25",
+ "provenance": "Session 80, expansion 2 of 2. Scouted, resolved, judged and verified by session 80. All pipeline steps verified on disk after each (the sessions 66/78/79 discipline): add-candidates verified on disk (expansion record at stage 'scouted', raw_candidates 70); resolve ran ~2 minutes and was verified on disk at stage 'resolved' (48 distinct) before any judgments work; apply-judgments verified (stage 'judged', distinct stayed 48); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying; apply-verdicts run exactly once; created nodes spot-checked (stored leap/prior_state/bottleneck all non-empty). No restores needed.",
+ "brief_correction": "TWO brief hypotheses were refuted on the documents, in the sessions 76-79 pattern, and one stored-record correction was required. (a) The brief's sketch said the paper works with 'the off-policy / importance-sampling stratum' and an 'adaptive' KL mechanism inherited from the Ziegler record: the paper contains NO importance-sampling machinery at all - its off-policy device is an arbitrary behaviour distribution beta ('in practice, the experience replay (Mnih et al., 2013)') feeding temporal-difference losses; and find-verified, the word 'adaptive' occurs in the full text ONLY inside a bibliography title (Gu, Ghahramani & Turner 2015) - the KL weight is the FIXED temperature parameter c, swept across settings (c=.5 for music, c=2.85 for molecules). There is no adaptive KL controller in this paper. (b) The brief's sketch gave the paper's domains as 'music/dialogue': the paper's two domains are MUSIC and MOLECULES (melody generation; SMILES molecule generation). Dialogue belongs to Li et al. (2016), a compared work. (c) STORED-RECORD CORRECTION (no hand-edit; the correction stands here and in the evaluations' parent leap record): the Jaques node's stored leap, written at its session-79 admission, says the rewards are 'human feedback' and that Ziegler instantiates the mechanism 'with an adaptive controller holding the KL at a target'. Both clauses describe Ziegler-side glosses, not this paper: Sequence Tutor's rewards are hand-crafted music-theory rules (from Gauldin 1995) and molecular metrics (validity/logP/SA/QED), and its KL weight is the fixed constant c. CONSEQUENCE FOR THE ZIEGLER EDGE RECORD: the Sequence Tutor edge's re-hearing condition recorded at session 79 (component + joint-citation challenges) is PARTIALLY TRIGGERED on the controller element - the 'adaptive controller' half of the stored mechanism description is not in the 2017 paper; the KL-tether mechanism itself (penalty on divergence from the frozen prior, instantiated at Ziegler as R = r - beta*log(pi/rho)) IS in the paper (Eq. 6 and the log-prior-augmented rewards), so the admission's substance stands; the edge's stored wording should be read subject to this correction. Also recorded: the paper's bibliography carries an anomalous SMILES attribution ('Weininger, Proc. Edinburgh Math. SOC 17, 1970'); the SMILES publication is Weininger (1988), J. Chem. Inf. Comput. Sci., and the candidate was filed at 1988.",
+ "grounding": "The parent grounded on the FULL TEXT of Jaques et al., 'Sequence Tutor: Conservative Fine-Tuning of Sequence Generation Models with KL-control' (arXiv:1611.02796; ICML 2017, PMLR 70), read this session: the MLE-failure framing via Graves (2013); the related-work contrasts (MIXER - MLE as mere bootstrap, policy overwritten; Bahdanau et al. 2016; Li et al. 2016; RAML compared at length and contrasted, 'our goal is generation rather than prediction'); the untrusted-reward citations (Vedantam et al. 2015; Liu et al. 2016) and the data-bias citation (Caliskan-Islam et al. 2016); Background (Bellman equations; the DQN objective Eq. 2, Mnih et al. 2013); s.4.1 Q-learning with log prior augmentation built on Eq. 2 with the modified reward of Eq. 3; s.4.2 KL control ('a branch of stochastic optimal control (SOC) (Stengel, 1986)'; 'KL control (Todorov, 2007; Kappen et al., 2012; Rawlik et al., 2012)'; the objective Eq. 6, L(q) = E_q[r]/c - D_KL[q||p]; MaxEnt IRL 'can be seen as KL control with a flat, improper prior'); s.4.3 recurrent generalized Psi-learning ('a generalization to the Psi-learning algorithm (Rawlik et al., 2012)'; the original Psi-learning's previous-iteration prior gives updates 'similar to conservative policy gradient methods (Peters et al., 2010; Schulman et al., 2015)'); s.4.4 recurrent G-learning ('corresponds to G-learning (Fox et al., 2015), which can thus be seen as a special case of generalized Psi-learning'; the Gu et al. 2016 normalizability caveat); s.4.5 (off-policy learning via an arbitrary sampling distribution beta, 'in practice, the experience replay (Mnih et al., 2013)'; target networks; entropy regularizer as a byproduct of the KL penalty); Experiment I (30,000 MIDI songs; LSTM 1x100; music-theory rewards 'taking inspiration from' Gauldin 1995; Adam; Mechanical Turk preference study, 192 ratings, all three methods over MLE at p<.001); Experiment II (SMILES; baseline only ~30% valid molecules vs the VAE stratum's 'as little as 1%'; reward = validity/logP/SA/QED via RDKit; the large-ring penalty 'as per previous work (Gomez-Bombarelli et al., 2016)'; prioritized experience replay, Schaul et al. 2015; the Psi algorithm the best performer); code at tensorflow/magenta (rl_tuner); acknowledgments (Google Brain, MIT Media Lab Consortium, NSERC). The COMPLETE bibliography (~40 entries) was enumerated this session. FIND-VERIFIED ABSENCES: no policy gradient theorem (Sutton et al.), no REINFORCE (Williams - the word occurs only inside MIXER's expanded name), no Kakade, no scheduled sampling (Bengio et al. 2015), no semi-supervised sequence learning (Dai & Le), no seq2seq (Sutskever et al.), no Ng & Russell, no GAE, no PPO, no Christiano - the paper is value-based throughout.",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, prior_state non-empty; leap non-empty but carrying the two wording warts corrected in 'brief_correction' above (evaluations used the corrected parent record; graph.json was NOT hand-edited). Stored record: name 'Jaques et al., Sequence Tutor', year 2017, type 'method', depth 3, priority 6.5, provisional; admitted at Ziegler (session 79) at 6.5 for the KL-tether mechanism, with component + joint-citation downgrade challenges on that edge. The node's stored sources list is EMPTY (a session-79 creation wart, logged here; the paper is arXiv:1611.02796, ICML 2017). Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_jaques.py",
+  "raw_candidates": 70,
+  "per_lens_floors": "met on the builder's output before resolve: L1 12, L2 4, L4 4, L5 3, L6 6, L7 3, L8 3, L11 3, L13 4, L16 3, L17 3, L18 3, L19 8, L20 4, L21 3, L22 3 (69 content filings); meta pass L3 1 (cap 10 shared); dry notes for L9, L10, L12, L14, L15 (L15 dry with a filed-elsewhere finding - the paper calls no runtime service; Mechanical Turk is filed under L18 as the evaluation instrument). Dry notes file: run-01/work/dry_notes_jaques-et-al-sequence-tutor-conservative-fine-tuning-of-sequ-2017.json. Twelve graph-existing candidates were sought by concept search before scouting and filed as LINKs under exact canonical names and stored type strings (TRPO, REINFORCE, policy gradient theorem, GAE, LSTM, semi-supervised sequence learning, seq2seq, Graves soft window, natural policy gradient, IRL (Ng & Russell), PPO, Christiano) plus Google Brain, which the concept search also surfaced as an existing node - 11 matched at resolve (PPO and Christiano calendar-dropped), every matched_node_id verified programmatically. Three deliberate calendar filings (same year as the parent, 2017): PPO, Deep RL from human preferences (Christiano et al.), Segler et al. (2017). Scout reconciliation: 70 raw filings = 51 distinct names intended; resolve dropped the 3 calendar filings (3 distinct names), giving 48 distinct == the verdicts builder's 48 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 48,
+  "dropped": 3,
+  "matched_existing": 11,
+  "auto_merges": 19,
+  "judge_queue": 2,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 2 pairs, both the same name-collision, adjudicated DIFFERENT on the documents (the session-79 lesson - the judge queue catches what concept search cannot): (1) cand-node - the seq2seq candidate (Sutskever et al. 2014, encoder-decoder transduction) vs the existing semi-supervised sequence learning node (Dai & Le 2015, pretraining for classification): DIFFERENT works, mechanisms and purposes; the gray-zone similarity (0.59) is shared vocabulary. (2) cand-cand - the same pair inside the pool: DIFFERENT. Applied 2/2, no unknown pair ids; distinct stayed 48; all eleven LINK matched_node_ids verified after judgments.",
+ "calendar_dropped_at_resolve": [
+  "PPO (2017) - same year as the parent; also ABSENT from the paper's bibliography (enumerated this session): the coeval policy-gradient fine-tuning method has no presence in a value-based paper. The absence is the finding; content dates logged, no re-dating.",
+  "Deep RL from human preferences (Christiano et al.) (2017) - same year; also absent from the bibliography. The two 2017 fine-tuning-from-feedback works are siblings with no citation in either direction at this parent (Christiano's arXiv postdates Sequence Tutor's v1); the sibling relation stands as recorded at Ziegler (session 79), where Jaques was admitted INTO Ziegler, not the reverse.",
+  "Segler et al. (2017) - same year; the parallel molecule-generation LSTM work the paper cites as prior success in Experiment II's domain - a coeval sibling, dropped on the record."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_jaques-et-al-sequence-tutor-conservative-fine-tuning-of-sequ-2017.json",
+  "builder": "run-01/work/build_verdicts_jaques.py",
+  "evaluations": 48,
+  "count_check": "evaluations == distinct candidates from show-distinct (48 == 48); field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (2 survivors: Rawlik 5.5, Todorov 4.5; 2 mediated; 4 fail-closed partials; Fox rejected at the Q1/Q2 gate at 2.5) BEFORE applying; the session's one dry-run correction was CONSIDERED for Fox (raising Q2 to pass) and NOT spent - on the documents the subsumption disposition is the honest judgment (see rejected_of_note), and the correction protocol aligns records with standing judgments rather than overriding the gate; apply-verdicts run exactly once; both created nodes spot-checked with non-empty stored leap/prior_state/bottleneck",
+  "survivors": [
+   "Rawlik, Toussaint & Vijayakumar, On stochastic optimal control and reinforcement learning by approximate inference (2012) - NEW, 5.5, PROVISIONAL, depth 4: citation + instantiation of the specific device the parent EXTENDS - s.4.3 is explicitly 'a generalization to the Psi-learning algorithm (Rawlik et al., 2012)', the generalized Psi function 'was introduced in deriving Psi-learning', and the molecule experiment's chosen method is 'the Psi algorithm' (the Singh & Yee shape). Capped provisional at verification: the joint-attribution mediation attack via Todorov partially lands in downgrade form (mirrored on the Todorov edge), re-hearing condition recorded.",
+   "Todorov, Linearly-solvable Markov decision problems (2007) - NEW, 4.5, PROVISIONAL, depth 4: the origin of the KL-control objective the parent instantiates - s.4.2's Eq. 6 (L(q) = E_q[r]/c - D_KL[q||p]) is the linearly-solvable objective with the MLE model cast as the prior policy, and Todorov is named first in the paper's KL-control attribution. The framework-vs-objective discrimination carries the admission: the MDP frame is presupposed background (s.3; Stengel refused as its citation), the KL-control OBJECTIVE is the derivation source. Capped provisional at verification: joint-attribution downgrade challenge (the paper names the triple in one breath), re-hearing condition recorded."
+  ],
+  "mediated": [
+   "Maximum entropy inverse reinforcement learning (Ziebart et al.) (2008) - MEDIATED via Todorov: the paper's own sentence routes it through the KL-control objective ('can be seen as KL control with a flat, improper prior'); the parent neither infers rewards nor uses a flat prior, so whatever it shares with the parent is the objective, whose carrier here is Todorov.",
+   "Relative entropy policy search (REPS) (Peters et al. 2010) - MEDIATED via Todorov: cited only as half of the analogy for the ORIGINAL Psi-learning's successive-iterate conservatism ('similar to conservative policy gradient methods (Peters et al., 2010; Schulman et al., 2015)'); its KL-constraint ancestry in this paper runs through the KL-control line. The successive-policy anchor is the analogy's, not a channel - the anchor discrimination, here on the parent's own text."
+  ],
+  "fail_closed_partials": [
+   "Kappen, Gomez & Opper (2012) - named in the KL-control attribution triple, but no graphical-inference mechanism is instantiated anywhere in the derivations; the framework's channels into this parent are the objective (Todorov) and the algorithm (Rawlik). A co-formulator/carrier of the formalism is not its channel (the SMRW/Chentsov discrimination).",
+   "Deep Q-learning (Mnih et al.) (2013) - the wielded apparatus (Eq. 2 is the Background's stated objective; replay and target networks throughout) plus the derivation source of the paper's s.4.1 variant - which the paper itself grades 'the simplest and most naive'. The claimed contributions do not run through DQN (the OpenAI Baselines at Ziegler shape).",
+   "Gomez-Bombarelli et al. (2016) - one borrowed component: the molecule reward's large-ring penalty taken 'as per previous work (Gomez-Bombarelli et al., 2016)', plus the 1%-validity failure record Experiment II answers. A channel scoped to one experiment's reward.",
+   "Gauldin (1995) - a documented channel scoped to Experiment I's reward specification and Table 1 metrics (the rules 'inspired by' the counterpoint text; its p.42 rule is the anti-repetition rule); substitutable as an instance of 'music-theory rules', and a specification channel is not a channel into the formulation (the Carpenter/Duff discrimination)."
+  ],
+  "rejected_of_note": [
+   "Fox, Pakman & Tishby, G-learning (2015) - 2.5, rejected at the Q1/Q2 gate with Q3 and directness PASSING: s.4.4 instantiates Fox's parametrization (Psi = log p + G; pi proportional to p*exp(G), Eq. 15) and names the correspondence itself, but the paper subsumes G-learning as 'a special case of generalized Psi-learning' - instantiated, not extended; neither an impossibility flip nor generative (Q2 partial is the honest verdict). The discrimination from Rawlik is extension vs subsumption; from Todorov, a generative formulation vs a parametrization. A component-grade mechanism of one of the parent's three variants: components of a leap are not leaps.",
+   "TRPO (2015) - LINK refused: cited once, as an ANALOGY for the original Psi-learning's conservatism; TRPO tethers successive policies, the parent tethers to the fixed pretrained prior - the session-79 anchor discrimination, confirmed on this paper's own text. Absence-side LINK refusals, all find-verified against the enumerated bibliography: policy gradient theorem, REINFORCE, natural policy gradient (Kakade - the paper's KL is control-theoretic, not Fisher-geometric), GAE, semi-supervised sequence learning, seq2seq, IRL (Ng & Russell). LSTM LINK refused on the class/instance test (directness passes - it is the architecture trained throughout; any sequence model carries the method unchanged). Graves (2013) LINK refused under the Hochreiter condition (cited as the exhibited instance of the diagnosis). Google Brain LINK refused as formation (producing institution).",
+   "MIXER (2015) - the defined-against incumbent: the parent's stored prior_state names 'the MIXER shape' as the prior state itself; the leap departs FROM it. Bahdanau et al. (2016) and Li et al. (2016) - the same contrast stratum. RAML (2016) - consumed-vs-compared (the paper's longest comparison is an explicit contrast of objectives). Scheduled sampling (2015) - the canonical exposure-bias document, NOT cited: anticipation without a junction, the absence the finding. Stengel (1986) - framework presupposition (the field's textbook, one framing clause).",
+   "The diagnosis stratum (Hochreiter condition): Liu et al. (2016), Caliskan-Islam et al. (2016), Vedantam et al. (2015) - claim citations for untrusted rewards and biased data. WaveNet (2016) - the adjacent failure record, quoted for its own long-range admission. The wielded stratum (directness passing, gates refusing): Adam, prioritized experience replay, TensorFlow, RDKit, MTurk (the parent's own study instrument), SMILES and MIDI (consumed representations/formats at component grain), QED and the SA score (named terms inside Experiment II's composite reward - components of an experiment's objective). The data stratum (class/instance): the 30,000-song MIDI corpus and the SMILES training corpus. Creator lineage (formation): Eck & Schmidhuber (2002); Gu et al. (2016) (a one-clause caveat citation); Gu, Ghahramani & Turner (2015) (bibliography-only presence, no in-text citation found). Magenta - the parent's own code home (direction/formation). MIT Media Lab, NSERC - funding lines in the acknowledgments. BLEU - the rivals' metric, never computed here (the Ziegler ROUGE/BLEU disposition)."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s80_jaques.json",
+  "outcomes": {
+   "rawlik-toussaint-vijayakumar-on-stochastic-optimal-control-a-2012": "provisional (joint-attribution downgrade challenge recorded on the edge). Attack 1 (Q1 bound): confirms the fail scored at evaluation. Attack 2 (multiples on Q3): no coeval multiple supplies the Psi function the parent generalizes - fails. Attack 3 (mediation via Todorov): PARTIALLY LANDS in downgrade form - Psi-learning is itself a KL-control method and the framework's attribution is joint; the kill form fails (the parent cites Rawlik directly and generalizes the ALGORITHM; objective and algorithm channels are discriminated). Attack 4 (date/direction): fails. RE-HEARING CONDITION: a document showing the generalized-Psi derivation was taken from an intermediary presentation of Psi-learning rather than from Rawlik et al. (2012) itself.",
+   "todorov-linearly-solvable-markov-decision-problems-2007": "provisional (joint-attribution downgrade challenge recorded on the edge, mirrored on Rawlik). Attack 1 (Q1 bound): confirms. Attack 2 (multiples - Kappen as substitute): fails on instantiation (no control-as-inference in the paper; Kappen a fail-closed partial at this same parent). Attack 3 (framework presupposition): fails - s.3's MDP frame is the presupposed background; the KL-control objective is s.4.2's derivation source. Attack 4 (joint attribution): PARTIALLY LANDS in downgrade form (the triple named in one breath). RE-HEARING CONDITION: a reading showing the objective was taken over from Rawlik's or Kappen's presentation rather than from the linearly-solvable formulation Todorov (2007) originates."
+  }
+ },
+ "totals_after": {
+  "nodes": 283,
+  "edges": 357,
+  "budget": "283/2000",
+  "expansions_done": 170,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 33,
+   "4": 39,
+   "5": 57,
+   "6": 45,
+   "7": 30,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 266,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "rawlik-toussaint-vijayakumar-on-stochastic-optimal-control-a-2012",
+  "json-referencing-in-dojo-2008",
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019"
+ ],
+ "sync_commit": null
+}
