@@ -11494,5 +11494,108 @@
   "show-your-work-scratchpads-for-intermediate-computation-with-2021",
   "t5-text-to-text-transfer-transformer-2019"
  ],
- "sync_commit": "rides the sync that carries this record; fixed up by the session's next append (session-82 precedent)"
+ "sync_commit": "d98adb69"
+}
+{
+ "session": 84,
+ "expansion": 178,
+ "parent": "assumed-density-filtering-boyen-koller-1998-1998",
+ "parent_name": "Assumed-density filtering (Boyen & Koller, 1998)",
+ "parent_year": 1998,
+ "parent_depth": 7,
+ "date": "2026-11-25",
+ "provenance": "Session 84, expansion 2 of 2. Scouted, resolved, judged and verified by session 84. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79/82/83 discipline): add-candidates verified (39 raw); resolve ran in the foreground via the MiniLM venv python and was verified (22 distinct, 0 LINK matches, 0 judge pairs, 4 calendar drops) before any verdicts work; verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor, NEW: Kalman filter 5.0; 4 fail-closed partials; 1 mediated); NO dry-run correction was spent (the builder's missing/extra spec check passed clean, 22 == 22); apply-verdicts run exactly once; the created node's stored leap/prior_state/bottleneck/definition verified non-empty programmatically. The session-84 expansion-177 record's sync_commit field was fixed up in this pass to d98adb69 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it.",
+ "brief_correction": "The brief's three hypotheses were tested on the paper's own documents (the UAI-98 paper read in full this session; its bibliography is 17 entries, enumerated in the scout builder). (a) The Kalman-filter stratum: CONFIRMED as direct - s.1 names the Kalman filter [9] as the exemplar of compact belief-state update and s.2's framework is its predict-update recursion with the Gaussian family replaced by a factored family and the exact update replaced by moment-matching projection. ADMITTED as a NEW node, 5.0, provisional. Session 83's record (Kalman filter mediated via this parent at EP) is consistent: at EP the channel ran through Minka's characterization; here the parent's own text carries it directly. (b) The Lauritzen (1992) statistics birth and (c) the Maybeck (1982) control birth: BOTH ABSENT from the paper's bibliography - the brief called them 'the earlier births', and the documents confirm the births while refusing the channels. Both were filed (from the meta passes) and REJECTED on absence findings as parallel independent births with no document channel; NO mediation was recorded for Maybeck (session 83's EP record names Maybeck as mediated via Boyen & Koller, which describes Minka's lineage framing; at this parent a mediation would assert an unsupported transmission, and the run's discipline forbids recording it). The three-births structure therefore stands at this parent as births, not ancestry: B&K is itself an independent birth of assumed-density filtering inside the graphical-models literature, and its ancestry is the Kalman recursion plus the DBN stage. The EP edge's multiples record (Lauritzen 1992, Opper & Winther 1999, Maybeck 1982) is untouched; Opper & Winther (1999) postdates this parent and was not filable here (recorded in the L23 dry note).",
+ "grounding": "The parent grounded on the full text of Boyen & Koller, 'Tractable inference for complex stochastic processes' (UAI 1998), read entire this session: s.1 (monitoring complex stochastic processes; the belief state; Kalman [9] as the compact-update exemplar; exact belief states leave every tractable family after one observation); s.2 (the framework: maintain a factored approximate belief state; predict; update; project back by moment matching; belief state from [1] Astrom 1965; the projection theorem with the KL divergence, cited via [2] Cover & Thomas 1991); ss.3-4 (the factored approximation's construction and error behaviour; exact machinery in the background: [13] Lauritzen & Spiegelhalter 1988 junction tree, [14] Provan 1992 variable elimination); s.5 (experiments on exactly two test networks: the BAT network from [6] Forbes et al. 1995 (BATmobile) and the WATER network from [8] Jensen et al. 1989; speedups 31x / 13x / 15-20x over exact inference, approximation error bounded over 1000-3000 time steps); s.6 (related work: [7] Ghahramani & Jordan 1996 factorial HMMs 'the closest to our work' with three documented differences; [11] Kjaerulff 1992 exact dynamic inference as the intractability exemplar; [10] Kanazawa, Koller & Russell 1995 stochastic simulation subsumed as a naive instance of the framework; [16] Saul & Jordan 1995 mean field differentiated (bound optimization over static networks vs per-step projection in a recursion); [3] Dagum, Galper & Horwitz 1992 NP-hardness of approximate inference; [5] Dechter & Rish 1997 mini-buckets, footnote; [15] Rabiner & Juang 1986 HMMs, the tractable single-chain case; [17] Smyth, Heckerman & Jordan 1996; [12] Koller & Fratkina 1998, the companion framework paper, SAME YEAR; [4] Dean & Kanazawa 1989, the DBN model class). Acknowledgments: ARO MURI, DARPA, Powell Foundation, Sloan Foundation; Stanford CS. Bibliography verified complete at 17 entries; Maybeck (1982), Lauritzen (1992), Sorenson & Alspach (1971), Gordon, Salmond & Smith (1993) and Kullback & Leibler (1951) are all ABSENT from it (find-verified against the full text).",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state ALL non-empty and coherent; sources populated (1 entry); no reconstruction needed and no discrepancy found - the stored prior state ('Exact Bayesian filtering confined to linear-Gaussian models (the Kalman filter) and small discrete chains...') is exactly the frame the paper's s.1 states, and the survivor verdict is built on it. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_adf.py",
+  "raw_candidates": 39,
+  "per_lens_floors": "met on the builder's output before resolve: L1 3, L2 5, L4 3, L5 3, L6 3, L7 3, L11 3, L17 3, L19 4, L21 3, meta L3 1; shortfall dry notes for L8 (2 filings - exactly two test networks exist), L13 (1 filing - the only named software artifact), L20 (2 filings - exactly two documentable creator-line artifacts); dry notes for L9, L10, L12, L14, L15, L16, L18, L22; L23 dry-with-finding (no contemporaneous review literature; Opper & Winther 1999 postdates and is not filable). Dry notes file: run-01/work/dry_notes_assumed-density-filtering-boyen-koller-1998-1998.json. Concept search before scouting verified that NOTHING from the parent's bibliography exists in the graph (kalman/maybeck/lauritzen/junction tree/variable elimination/mean field/factorial/hidden markov/dynamic bayesian and twenty further terms all empty; the only filter/belief nodes are the parent itself and Loopy BP 1999, which postdates) - every filing is fresh and resolve confirmed 0 matched_existing. Scout reconciliation: 39 filings = 26 distinct names intended; resolve dropped 4 filings (4 distinct, all dated 1998: Koller & Fratkina plus the three L21 institutions) and auto-merged the 13 cross-lens duplicate filings, giving 22 distinct == the verdicts builder's 22 evaluations (count-verified). The BAT test network and the BATmobile system were written as clearly distinct cards (dataset vs system) and resolve kept them distinct, as intended."
+ },
+ "resolution": {
+  "distinct": 22,
+  "dropped": 4,
+  "matched_existing": 0,
+  "auto_merges": 13,
+  "judge_queue": 0,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 0 pairs - no judgments step required.",
+ "calendar_dropped_at_resolve": [
+  "Using learning for approximation in stochastic processes (Koller & Fratkina, 1998) - the companion framework paper (reference [12]), the parent's own programme in the same year; filed deliberately for this record.",
+  "Stanford University computer science department (filed at 1998) - the performing institution; formation in any case.",
+  "Army Research Office MURI programme (filed at 1998) - acknowledgment-named funder; funding is not inside the artifact in any case (the Things That Think precedent at EP).",
+  "Defense Advanced Research Projects Agency (DARPA) (filed at 1998) - acknowledgment-named funder; same ground. The remaining acknowledgment funders (Powell Foundation, Sloan Foundation) were not separately filed; the funding judgment is uniform."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_assumed-density-filtering-boyen-koller-1998-1998.json",
+  "builder": "run-01/work/build_verdicts_adf.py",
+  "evaluations": 22,
+  "count_check": "evaluations == distinct candidates from show-distinct (22 == 22), verified by the builder's missing/extra spec check; field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (1 survivor, NEW: Kalman filter 5.0; 4 fail-closed partials; 1 mediated) BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once; the created node's stored leap/prior_state/bottleneck/definition verified non-empty programmatically",
+  "survivors": [
+   "Kalman filter (Kalman, 1960) - NEW, 5.0, PROVISIONAL (verification: multiples attack confirms the Q3 partial priced at evaluation), depth 8: s.1 names the candidate as the exemplar of compact belief-state update; s.2's framework is its predict-update recursion step for step, with the Gaussian family replaced by a factored family and the exact update replaced by moment-matching projection - citation plus step-for-step instantiation, the strong channel; the stored prior state is defined by the candidate's confinement. Q1 pass, Q2 pass, Q3 PARTIAL (exact HMM filtering is a parallel carrier of the recursion, recorded as mediated at this parent; the parent's own projection idea has independent births), Q8 pass (the edge is itself the cross-field transfer, control theory into AI). Mediation attack at verification pressed Astrom 1965 (postdates the candidate - cannot mediate it) and the DBN literature as carrier (the citation is to Kalman's paper itself; the DBN is the stage, not a carrier); both fail."
+  ],
+  "mediated": [
+   "An introduction to hidden Markov models (Rabiner & Juang, 1986) - MEDIATED via A model for reasoning about persistence and causation (Dean & Kanazawa, 1989): exact single-chain filtering reaches the parent inside the DBN formalism that generalizes it - a DBN with one variable per slice is the candidate's model, and the parent's framework reduces to its filter there. The mediator is itself a fail-closed partial at this parent; mediation via a non-survivor is precedented (GPT-2 at Ziegler)."
+  ],
+  "fail_closed_partials": [
+   "A model for reasoning about persistence and causation (Dean & Kanazawa, 1989) - directness PARTIAL: framework presupposition (the MDP-at-AICO shape). The DBN is the stage the leap is performed on - cited [4], every experiment a DBN, the framework's statement DBN-shaped - but the parent modifies no mechanism of it; the leap (projection of the belief state) is not made of the candidate. The strongest partial of the expansion.",
+   "Optimal control of Markov processes with incomplete state information (Astrom, 1965) - directness PARTIAL: the scoped-channel shape - one definitional citation [1] carrying the framework's central concept (the belief state). The concept's centrality is stated in the verdict; a concept channel is not a mechanism channel.",
+   "Factorial hidden Markov models (Ghahramani & Jordan, 1996) - directness PARTIAL, THE MOST CONTESTABLE NEGATIVE of the expansion: s.6 'the closest to our work' with three documented differences (trajectory-level approximation, variational-bound derivation, factorial-structure tie); s.6-only engagement, expressly differentiating (the Attias shape at EP). Re-hearing condition recorded on the verdict: a document showing the per-step projection was derived from the candidate's structured approximation.",
+   "Mean field theory for sigmoid belief networks (Saul & Jordan, 1995) - directness PARTIAL: the variational relative, cited [16] and differentiated in s.6 on mechanism (bound optimization over a static network vs moment-matching projection inside a recursion)."
+  ],
+  "rejected_of_note": [
+   "Stochastic control and nonlinear estimation (Maybeck, 1982) - REJECTED on an absence finding: the engineering birth of assumed-density filtering, ABSENT from the paper's 17-entry bibliography (verified). A parallel independent birth; no mediation recorded (a mediation here would assert an unsupported transmission - the session-77 discipline). Its multiples role on the EP edge is untouched.",
+   "Propagation of probabilities, means and variances in mixed graphical association models (Lauritzen, 1992) - REJECTED on an absence finding: the statistics birth of moment-matching propagation, ABSENT from the bibliography (verified) - although the parent cites the author's DIFFERENT work [13] (junction tree, 1988), a same-author citation of another work is not a channel for this one. At EP this candidate was a fail-closed partial on the lineage framing; at this parent, with the bibliography in hand, the record is sharper. The three-births structure stands as births, not ancestry.",
+   "Recursive Bayesian estimation using Gaussian sums (Sorenson & Alspach, 1971) and Novel Bayesian technique for object tracking (Gordon, Salmond & Smith, 1993) - REJECTED as uncited parallels (absence findings): the earliest assumed-density scheme and the sampling line's founding artifact; neither is in the bibliography and neither shares a mechanism channel with the parent.",
+   "Elements of information theory (Cover & Thomas, 1991) and On information and sufficiency (Kullback & Leibler, 1951) - the KL component pair: the divergence is the criterion inside the parent's defining operation (the KL-at-EP precedent); the textbook is its cited carrier [2], the 1951 paper its uncited origin. Components of a leap are not leaps.",
+   "Reasoning about nonlinear stochastic processes via stochastic simulation (Kanazawa, Koller & Russell, 1995) - REJECTED under the subsumption rule: s.6 presents it as a naive instance of the parent's own framework (an assumed density carried by samples, without projection) - an instantiation the framework subsumes is not its ancestor (the Fox G-learning shape). Creator lineage (Koller's own prior attack) recorded, not a channel.",
+   "dHugin (Kjaerulff, 1992), junction-tree propagation (Lauritzen & Spiegelhalter, 1988) and variable elimination (Provan, 1992) - the exact-inference incumbents: the regime whose temporal blow-up defines the parent's problem; defined-against / presupposed background, no construction derived.",
+   "Optimal dynamic probabilistic networks (Dagum, Galper & Horwitz, 1992) - the diagnosis (NP-hardness), answered but not consumed (the Hochreiter condition). Mini-bucket elimination (Dechter & Rish, 1997) - a footnote-cited parallel bounded-complexity response at a different locus of approximation.",
+   "BAT test network (Forbes et al., 1995), WATER test network (Jensen et al., 1989) and the BATmobile system (Forbes et al., 1995) - demonstrative apparatus: the testbeds that register the speedups (31x/13x) are not ingredients of the method (the McLachlan & Basford shape at EP).",
+   "Mixture models and EM algorithms for HMMs (Smyth, Heckerman & Jordan, 1996) - survey-grade citation [17]; no mechanism instantiated. NOTED for the standing assignment: the EM algorithm was not filed at this parent, and the EM hearing's assignment to the McLachlan & Basford (1988) expansion is untouched by this verdict."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s84_adf.json",
+  "outcomes": {
+   "kalman-filter-kalman-1960-1960": "provisional (Q1 attack confirms the pass - the stored prior state is defined by the candidate's confinement and s.1 names it as the exemplar; multiples attack confirms the Q3 partial - HMM exact filtering as parallel carrier, on the record as mediated at this parent, and the parent's own two further independent births, which attack the parent's uniqueness rather than this edge's channel; date/direction clean on reference [9]; mediation attack fails on both pressed mediators - Astrom 1965 postdates the candidate, and the DBN literature is the stage rather than a carrier of the recursion, the citation being to Kalman's paper itself. No mediation object. Re-hearing condition recorded: a document showing the framework derived from a graphical-models-internal filtering account rather than the named Kalman recursion.)"
+  }
+ },
+ "totals_after": {
+  "nodes": 291,
+  "edges": 367,
+  "budget": "291/2000",
+  "expansions_done": 178,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 36,
+   "4": 39,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 17,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 274,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "loopy-belief-propagation-murphy-weiss-jordan-1999-1999",
+  "drqa-chen-et-al-2017-2017",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019",
+  "training-verifiers-to-solve-math-word-problems-cobbe-et-al-2-2021"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82 precedent)"
 }
