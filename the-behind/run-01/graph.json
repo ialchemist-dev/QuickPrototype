@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-25T23:51:55+00:00",
-  "expansions_done": 162,
-  "raw_candidates_seen": 6956,
+  "updated_at": "2026-11-26T00:05:58+00:00",
+  "expansions_done": 163,
+  "raw_candidates_seen": 7007,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -29151,6 +29151,82 @@
     "name": "AIAA (American Institute of Aeronautics and Astronautics, 1963)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-25T23:51:19+00:00"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Hoerni, The planar process (1959)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T00:05:58+00:00"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+    "reason": "mediated_via: Hoerni, The planar process (1959)",
+    "at": "2026-11-26T00:05:58+00:00",
+    "mediated_via": "Hoerni, The planar process (1959)"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Atalla, Tannenbaum & Scheibner, Stabilization of Silicon Surfaces by Thermally Grown Oxides (1959)",
+    "reason": "mediated_via: Hoerni, The planar process (1959)",
+    "at": "2026-11-26T00:05:58+00:00",
+    "mediated_via": "Hoerni, The planar process (1959)"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Aluminum metallization for planar devices (1960)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-26T00:05:58+00:00"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Hermetic TO-can transistor packaging (1955)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T00:05:58+00:00"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Mesa transistor construction (1958)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T00:05:58+00:00"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Diffused silicon transistor (Fuller, 1954)",
+    "reason": "mediated_via: Hoerni, The planar process (1959)",
+    "at": "2026-11-26T00:05:58+00:00",
+    "mediated_via": "Hoerni, The planar process (1959)"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Glass-to-metal hermetic seals (Kovar alloy) (1939)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T00:05:58+00:00"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Dumet wire glass-to-metal lead seals (1913)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T00:05:58+00:00"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "Drakenfeld E1527 lead borosilicate glass (1960)",
+    "reason": "mediated_via: Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+    "at": "2026-11-26T00:05:58+00:00",
+    "mediated_via": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "IBM Components Division SLT development programme (1960)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T00:05:58+00:00"
+   },
+   {
+    "parent_id": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+    "name": "W. A. Pliskin's glass-film science at IBM (1960)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-26T00:05:58+00:00"
    }
   ]
  },
@@ -37082,7 +37158,7 @@
    "prior_state": "Transistors sealed one by one in welded metal cans (TO outlines), leads through glass seals, then soldered or socketed at assembly.",
    "status": "provisional",
    "depth": 7,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.5,
    "sources": [
     {
@@ -306124,6 +306200,1395 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961": {
+   "raw_candidates": [
+    {
+     "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L1",
+     "causal_claim": "Perri et al. directly enabled Langdon et al.'s leap by supplying the fused glass-frit film technique that is the parent's sealing mechanism itself.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+    },
+    {
+     "name": "Hoerni, The planar process (1959)",
+     "year": 1959,
+     "domain": "semiconductor devices",
+     "lens": "L1",
+     "causal_claim": "The planar process directly enabled Langdon et al.'s leap by providing the planar-junction wafer - Totta & Sopher's glass section opens on 'glass passivating a planar junction semiconductor wafer'.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Hoerni's planar process (Fairchild, 1959): junctions formed under a thermally grown oxide left in place - the flat, oxide-covered wafer surface that the glass seal presupposes and seals."
+    },
+    {
+     "name": "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+     "year": 1957,
+     "domain": "semiconductor devices",
+     "lens": "L1",
+     "causal_claim": "Frosch & Derick directly enabled Langdon et al.'s leap by providing the thermal-oxide surface protection the glass film seals over.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "method",
+     "definition": "Frosch & Derick's 1957 J. Electrochem. Soc. paper: the thermally grown SiO2 film that protects the silicon surface and selectively masks diffusion - the oxide protection stratum inside the planar device."
+    },
+    {
+     "name": "Atalla, Tannenbaum & Scheibner, Stabilization of Silicon Surfaces by Thermally Grown Oxides (1959)",
+     "year": 1959,
+     "domain": "semiconductor devices",
+     "lens": "L1",
+     "causal_claim": "Atalla et al. directly enabled Langdon et al.'s leap by establishing that a thermally grown oxide stabilizes the silicon surface the parent seals.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "method",
+     "definition": "Atalla, Tannenbaum & Scheibner's 1959 BSTJ paper: silicon surfaces stabilized against ambient drift by thermally grown oxide - the surface-passivation result the planar device embodies."
+    },
+    {
+     "name": "Lead borosilicate frit glass passivation (IBM, 1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L1",
+     "causal_claim": "The lead borosilicate frit glass directly enabled Langdon et al.'s leap as the very film fused over the chip face.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "The lead borosilicate glass fused as a thin film over the SLT chip face: the material system whose firing window (560-570C, below the Al-Si eutectic) made the hermetic glass film possible."
+    },
+    {
+     "name": "Aluminum metallization for planar devices (1960)",
+     "year": 1960,
+     "domain": "semiconductor devices",
+     "lens": "L1",
+     "causal_claim": "Aluminum metallization directly enabled Langdon et al.'s leap as the stripe system under the glass, sintered automatically during glass firing (Totta & Sopher).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Aluminum as the industry-standard metallization for planar devices (Totta & Sopher): the single-metal stripe system that tolerates the oxidizing glass-firing atmosphere and sinters during glassing."
+    },
+    {
+     "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L2",
+     "causal_claim": "Langdon et al. is the device-design continuation of Perri et al.'s film work: the same programme's paired document, 25 days earlier.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+    },
+    {
+     "name": "Hoerni, The planar process (1959)",
+     "year": 1959,
+     "domain": "semiconductor devices",
+     "lens": "L2",
+     "causal_claim": "Langdon et al. modifies the planar device by sealing it at die level - the planar wafer is the artifact altered.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Hoerni's planar process (Fairchild, 1959): junctions formed under a thermally grown oxide left in place - the flat, oxide-covered wafer surface that the glass seal presupposes and seals."
+    },
+    {
+     "name": "Hermetic TO-can transistor packaging (1955)",
+     "year": 1955,
+     "domain": "semiconductor packaging",
+     "lens": "L2",
+     "causal_claim": "Langdon et al. is defined as the replacement of the TO-can device form: same function (a hermetic transistor), the package deleted.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "device",
+     "definition": "The incumbent hermetic package: a transistor welded into a metal can, its leads brought through glass seals - the package the glass-sealed bare chip deletes."
+    },
+    {
+     "name": "Mesa transistor construction (1958)",
+     "year": 1958,
+     "domain": "semiconductor devices",
+     "lens": "L2",
+     "causal_claim": "The mesa device is the prior device generation whose exposed junctions the parent's sealed planar chip supersedes.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "device",
+     "definition": "The mesa transistor: etched mesa geometry with exposed junction perimeters - the device form whose unprotected surfaces made hermetic canning necessary."
+    },
+    {
+     "name": "Diffused silicon transistor (Fuller, 1954)",
+     "year": 1954,
+     "domain": "semiconductor devices",
+     "lens": "L2",
+     "causal_claim": "The diffused transistor is the device stratum the planar process, and hence the sealed chip, descends from.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "device",
+     "definition": "Fuller's diffused-junction silicon transistor (Bell Labs, 1954): the device generation the planar process modified - the stratum whose surface problems the oxide and glass protections answer."
+    },
+    {
+     "name": "Hermetic TO-can transistor packaging (1955)",
+     "year": 1955,
+     "domain": "semiconductor packaging",
+     "lens": "L4",
+     "causal_claim": "The TO-can posed the problem the parent answers in its costliest form: hermetic protection existed, but only one welded can per device.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "device",
+     "definition": "The incumbent hermetic package: a transistor welded into a metal can, its leads brought through glass seals - the package the glass-sealed bare chip deletes."
+    },
+    {
+     "name": "Glass-to-metal hermetic seals (Kovar alloy) (1939)",
+     "year": 1939,
+     "domain": "materials science",
+     "lens": "L4",
+     "causal_claim": "Glass-to-metal seal science posed hermeticity as a property of a can's seals - the framing the parent relocates to the die.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "The matched-expansion glass-to-metal seal (Kovar alloy, 1939): the sealing science of the incumbent can - the hermeticity technology the parent makes unnecessary at die level."
+    },
+    {
+     "name": "Mesa transistor construction (1958)",
+     "year": 1958,
+     "domain": "semiconductor devices",
+     "lens": "L4",
+     "causal_claim": "The mesa's exposed junction perimeter posed the protection problem in its sharpest device form.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "device",
+     "definition": "The mesa transistor: etched mesa geometry with exposed junction perimeters - the device form whose unprotected surfaces made hermetic canning necessary."
+    },
+    {
+     "name": "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+     "year": 1957,
+     "domain": "semiconductor devices",
+     "lens": "L5",
+     "causal_claim": "Frosch's work began from the diagnosed obstruction - surface pitting and contamination of silicon during processing - that all later surface protection answers.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "method",
+     "definition": "Frosch & Derick's 1957 J. Electrochem. Soc. paper: the thermally grown SiO2 film that protects the silicon surface and selectively masks diffusion - the oxide protection stratum inside the planar device."
+    },
+    {
+     "name": "Mesa transistor construction (1958)",
+     "year": 1958,
+     "domain": "semiconductor devices",
+     "lens": "L5",
+     "causal_claim": "The mesa geometry made the obstruction visible: junctions intersecting an unprotected surface drift and fail.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "device",
+     "definition": "The mesa transistor: etched mesa geometry with exposed junction perimeters - the device form whose unprotected surfaces made hermetic canning necessary."
+    },
+    {
+     "name": "Hoerni, The planar process (1959)",
+     "year": 1959,
+     "domain": "semiconductor devices",
+     "lens": "L5",
+     "causal_claim": "Hoerni's planar paper diagnoses the mesa's exposed-junction weakness - the diagnosis the parent's die-level seal completes.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "method",
+     "definition": "Hoerni's planar process (Fairchild, 1959): junctions formed under a thermally grown oxide left in place - the flat, oxide-covered wafer surface that the glass seal presupposes and seals."
+    },
+    {
+     "name": "Hermetic TO-can transistor packaging (1955)",
+     "year": 1955,
+     "domain": "semiconductor packaging",
+     "lens": "L6",
+     "causal_claim": "Totta & Sopher define the parent against the can in terms: devices are 'not conventionally sealed in hermetic packages... Instead, the face side of each chip is hermetically sealed under a thin film of glass'.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "device",
+     "definition": "The incumbent hermetic package: a transistor welded into a metal can, its leads brought through glass seals - the package the glass-sealed bare chip deletes."
+    },
+    {
+     "name": "Glass-to-metal hermetic seals (Kovar alloy) (1939)",
+     "year": 1939,
+     "domain": "materials science",
+     "lens": "L6",
+     "causal_claim": "The Kovar seal is the incumbent hermeticity mechanism the parent's glass film displaces from package level to die level.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "The matched-expansion glass-to-metal seal (Kovar alloy, 1939): the sealing science of the incumbent can - the hermeticity technology the parent makes unnecessary at die level."
+    },
+    {
+     "name": "Mesa transistor construction (1958)",
+     "year": 1958,
+     "domain": "semiconductor devices",
+     "lens": "L6",
+     "causal_claim": "The canned mesa device is the comparison class for the parent's cost and automation claims.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "device",
+     "definition": "The mesa transistor: etched mesa geometry with exposed junction perimeters - the device form whose unprotected surfaces made hermetic canning necessary."
+    },
+    {
+     "name": "Thermocompression wire bonding (Anderson & Christensen, Bell Labs, 1961)",
+     "year": 1961,
+     "domain": "semiconductor packaging",
+     "lens": "L6",
+     "causal_claim": "Wire bonding is the interconnection practice of the canned-device world the sealed chip's face terminals replace (same-year filing; direction record).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Thermocompression wire bonding (1961): the incumbent interconnection of canned devices - a same-year sibling stratum, filed for direction."
+    },
+    {
+     "name": "Hermetic TO-can transistor packaging (1955)",
+     "year": 1955,
+     "domain": "semiconductor packaging",
+     "lens": "L7",
+     "causal_claim": "The can's failure record - per-device welding, hand assembly, bulk - is the negative space the parent's wafer-level sealing answers.",
+     "source_title": "Harding, Semiconductor Manufacturing in IBM, 1957 to the Present, IBM J. Res. Develop. 25(5) (1981)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/255/ibmrd2505Z.pdf",
+     "type": "device",
+     "definition": "The incumbent hermetic package: a transistor welded into a metal can, its leads brought through glass seals - the package the glass-sealed bare chip deletes."
+    },
+    {
+     "name": "Glass-to-metal hermetic seals (Kovar alloy) (1939)",
+     "year": 1939,
+     "domain": "materials science",
+     "lens": "L7",
+     "causal_claim": "Seal failures and expansion-mismatch cracking in canned devices are the failure record behind the search for a die-level seal.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "The matched-expansion glass-to-metal seal (Kovar alloy, 1939): the sealing science of the incumbent can - the hermeticity technology the parent makes unnecessary at die level."
+    },
+    {
+     "name": "Dumet wire glass-to-metal lead seals (1913)",
+     "year": 1913,
+     "domain": "materials science",
+     "lens": "L7",
+     "causal_claim": "Dumet-sealed envelopes record the incumbent craft's limits: hermeticity bought with a bulb or can around every device.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "Dumet (copper-clad nickel-iron) wire sealed through glass: the lamp and electron-tube craft for bringing leads through a hermetic glass envelope - the sealing tradition behind the incumbent package."
+    },
+    {
+     "name": "Mesa transistor construction (1958)",
+     "year": 1958,
+     "domain": "semiconductor devices",
+     "lens": "L9",
+     "causal_claim": "The device generation the parent modifies is the canned mesa/planar discrete transistor line.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "device",
+     "definition": "The mesa transistor: etched mesa geometry with exposed junction perimeters - the device form whose unprotected surfaces made hermetic canning necessary."
+    },
+    {
+     "name": "Hermetic TO-can transistor packaging (1955)",
+     "year": 1955,
+     "domain": "semiconductor packaging",
+     "lens": "L9",
+     "causal_claim": "The shipped form the parent replaces is the TO-can device as manufactured.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "device",
+     "definition": "The incumbent hermetic package: a transistor welded into a metal can, its leads brought through glass seals - the package the glass-sealed bare chip deletes."
+    },
+    {
+     "name": "SLT module substrate: alumina ceramic with screened thick-film lands and resistors (1961)",
+     "year": 1961,
+     "domain": "semiconductor packaging",
+     "lens": "L9",
+     "causal_claim": "The SLT substrate is the coeval carrier the sealed chips were designed to land on - the joint's other terminal (same-year filing; sibling record).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "device",
+     "definition": "The SLT module substrate (1961): the ceramic carrier of the 1962 joining practice - a coeval sibling artifact of the same programme, filed so its relation (the joint's other terminal, not the chip's ancestor) is on this parent's record."
+    },
+    {
+     "name": "Lead borosilicate frit glass passivation (IBM, 1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L10",
+     "causal_claim": "The frit glass's firing window - fusable below the Al-Si eutectic yet expansion-tolerable at 1.5 um - is the material fact the parent harnesses.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "The lead borosilicate glass fused as a thin film over the SLT chip face: the material system whose firing window (560-570C, below the Al-Si eutectic) made the hermetic glass film possible."
+    },
+    {
+     "name": "Drakenfeld E1527 lead borosilicate glass (1960)",
+     "year": 1960,
+     "domain": "materials science",
+     "lens": "L10",
+     "causal_claim": "The E1527 composition is the specific glass Totta & Sopher name as the production passivation material.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "The commercial lead borosilicate glass composition named in Totta & Sopher (SiO2 29.1%, PbO 51.1%, B2O3 9.0%, Al2O3 3.2%, Na2O 1.7%) - the glass used predominantly for passivating SLT transistors."
+    },
+    {
+     "name": "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+     "year": 1957,
+     "domain": "semiconductor devices",
+     "lens": "L10",
+     "causal_claim": "The glassy SiO2 film is the first harnessed protective material layer on the device.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "method",
+     "definition": "Frosch & Derick's 1957 J. Electrochem. Soc. paper: the thermally grown SiO2 film that protects the silicon surface and selectively masks diffusion - the oxide protection stratum inside the planar device."
+    },
+    {
+     "name": "Atalla, Tannenbaum & Scheibner, Stabilization of Silicon Surfaces by Thermally Grown Oxides (1959)",
+     "year": 1959,
+     "domain": "semiconductor devices",
+     "lens": "L10",
+     "causal_claim": "The thermally grown oxide's stabilizing effect on surface states is the phenomenon the planar device, and hence the sealed chip, rests on.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "method",
+     "definition": "Atalla, Tannenbaum & Scheibner's 1959 BSTJ paper: silicon surfaces stabilized against ambient drift by thermally grown oxide - the surface-passivation result the planar device embodies."
+    },
+    {
+     "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L11",
+     "causal_claim": "Perri et al.'s centrifugal deposition + frit fusing is the process recipe wielded to glass the parent's chips.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+    },
+    {
+     "name": "Lead borosilicate frit glass passivation (IBM, 1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L11",
+     "causal_claim": "The frit-fusing recipe (deposit, compact, fire at 560-570C in an oxidizing atmosphere) is the parent's manufacturing process.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "The lead borosilicate glass fused as a thin film over the SLT chip face: the material system whose firing window (560-570C, below the Al-Si eutectic) made the hermetic glass film possible."
+    },
+    {
+     "name": "Aluminum metallization for planar devices (1960)",
+     "year": 1960,
+     "domain": "semiconductor devices",
+     "lens": "L11",
+     "causal_claim": "The glassing step doubles as the Al sintering step (Totta & Sopher) - a process coupling the parent's fabrication depends on.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Aluminum as the industry-standard metallization for planar devices (Totta & Sopher): the single-metal stripe system that tolerates the oxidizing glass-firing atmosphere and sinters during glassing."
+    },
+    {
+     "name": "Hoerni, The planar process (1959)",
+     "year": 1959,
+     "domain": "semiconductor devices",
+     "lens": "L19",
+     "causal_claim": "The planar process is a Fairchild artifact imported into IBM's device line - the cross-institution transfer the parent presupposes.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "method",
+     "definition": "Hoerni's planar process (Fairchild, 1959): junctions formed under a thermally grown oxide left in place - the flat, oxide-covered wafer surface that the glass seal presupposes and seals."
+    },
+    {
+     "name": "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+     "year": 1957,
+     "domain": "semiconductor devices",
+     "lens": "L19",
+     "causal_claim": "Oxide masking is a Bell Labs artifact; its protection function is imported into every later device line, IBM's included.",
+     "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+     "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+     "type": "method",
+     "definition": "Frosch & Derick's 1957 J. Electrochem. Soc. paper: the thermally grown SiO2 film that protects the silicon surface and selectively masks diffusion - the oxide protection stratum inside the planar device."
+    },
+    {
+     "name": "Dumet wire glass-to-metal lead seals (1913)",
+     "year": 1913,
+     "domain": "materials science",
+     "lens": "L19",
+     "causal_claim": "Glass-sealing craft is imported from the lamp/electron-tube industry into transistor packaging.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "material",
+     "definition": "Dumet (copper-clad nickel-iron) wire sealed through glass: the lamp and electron-tube craft for bringing leads through a hermetic glass envelope - the sealing tradition behind the incumbent package."
+    },
+    {
+     "name": "IBM Components Division SLT development programme (1960)",
+     "year": 1960,
+     "domain": "semiconductor industry",
+     "lens": "L20",
+     "causal_claim": "The SLT programme is the makers' own vehicle: Langdon, Mutter, Pecoraro and Schuegraf are its device group.",
+     "source_title": "Harding, Semiconductor Manufacturing in IBM, 1957 to the Present, IBM J. Res. Develop. 25(5) (1981)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/255/ibmrd2505Z.pdf",
+     "type": "institution",
+     "definition": "IBM Components Division's hybrid-microcircuit development programme (East Fishkill): the organization that set out to replace canned discrete devices with automatically manufacturable hybrid modules - the programme that produced both the glassed chip and its joining practice."
+    },
+    {
+     "name": "W. A. Pliskin's glass-film science at IBM (1960)",
+     "year": 1960,
+     "domain": "semiconductor devices",
+     "lens": "L20",
+     "causal_claim": "Pliskin physically carried the glass science into the device group - the person-channel behind Perri et al.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "other",
+     "definition": "Pliskin's glass-physics expertise inside IBM - the scientist behind the glass-film work of Perri et al. and of Pliskin & Conrad: knowledge that lived in a person and a laboratory practice, not in a separable pre-1961 document."
+    },
+    {
+     "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L20",
+     "causal_claim": "Perri et al. is the device group's own glass-science arm - the same programme's other half.",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+    },
+    {
+     "name": "IBM Components Division SLT development programme (1960)",
+     "year": 1960,
+     "domain": "semiconductor industry",
+     "lens": "L21",
+     "causal_claim": "The Components Division programme organized and paid for the sealed-chip development as part of the hybrid-module push.",
+     "source_title": "Harding, Semiconductor Manufacturing in IBM, 1957 to the Present, IBM J. Res. Develop. 25(5) (1981)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/255/ibmrd2505Z.pdf",
+     "type": "institution",
+     "definition": "IBM Components Division's hybrid-microcircuit development programme (East Fishkill): the organization that set out to replace canned discrete devices with automatically manufacturable hybrid modules - the programme that produced both the glassed chip and its joining practice."
+    },
+    {
+     "name": "Electrochemical Society Fall Meeting, Detroit (1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L21",
+     "causal_claim": "The Electrochemical Society meeting is the arena in which the glass-film half of the programme was announced (same-year; arena record).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "institution",
+     "definition": "The venue of Perri et al.'s presentation (2 Oct 1961) - the arena in which the glass-film work was announced; same-year, filed as an arena record."
+    },
+    {
+     "name": "IEEE Electron Devices Meeting, Washington (1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L21",
+     "causal_claim": "The Electron Devices Meeting is the parent's own arena (same-year; arena record).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "institution",
+     "definition": "The venue of the parent's own presentation (27 Oct 1961) - the parent's arena, not an ancestor; same-year, filed for completeness of the arena record."
+    },
+    {
+     "name": "IBM Components Division SLT development programme (1960)",
+     "year": 1960,
+     "domain": "semiconductor industry",
+     "lens": "L22",
+     "causal_claim": "The timing condition: IBM's decision to build its own hybrid microelectronics made a can-less, automatically handleable device a programme requirement by 1960-61.",
+     "source_title": "Harding, Semiconductor Manufacturing in IBM, 1957 to the Present, IBM J. Res. Develop. 25(5) (1981)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/255/ibmrd2505Z.pdf",
+     "type": "institution",
+     "definition": "IBM Components Division's hybrid-microcircuit development programme (East Fishkill): the organization that set out to replace canned discrete devices with automatically manufacturable hybrid modules - the programme that produced both the glassed chip and its joining practice."
+    },
+    {
+     "name": "SLT module substrate: alumina ceramic with screened thick-film lands and resistors (1961)",
+     "year": 1961,
+     "domain": "semiconductor packaging",
+     "lens": "L22",
+     "causal_claim": "The substrate's coeval arrival is the demand-side twin of the sealed chip (same-year; sibling record).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "device",
+     "definition": "The SLT module substrate (1961): the ceramic carrier of the 1962 joining practice - a coeval sibling artifact of the same programme, filed so its relation (the joint's other terminal, not the chip's ancestor) is on this parent's record."
+    },
+    {
+     "name": "System/360 (1964)",
+     "year": 1964,
+     "domain": "computer engineering",
+     "lens": "L22",
+     "causal_claim": "System/360's demand postdates the artifact - filed so the direction is explicit (postdating; drops at resolve).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "device",
+     "definition": "IBM System/360 (1964): the computer line whose SLT modules consumed the glassed chips - postdates the parent; filed so the direction (the demand arrives after the artifact) is on record."
+    },
+    {
+     "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+     "year": 1961,
+     "domain": "semiconductor devices",
+     "lens": "L3",
+     "causal_claim": "The programme's own design record (Totta & Sopher) lists Perri et al. as ref [2], paired with the parent as ref [1].",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+    },
+    {
+     "name": "Davis, Harding, Schwartz & Corning, Solid Logic Technology (1964)",
+     "year": 1964,
+     "domain": "semiconductor industry",
+     "lens": "L3",
+     "causal_claim": "Totta & Sopher's ref [3] - the programme's survey of itself (postdating; drops at resolve).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "other",
+     "definition": "The SLT programme's own IBM J. Res. Develop. account (1964), Totta & Sopher's ref [3] - postdates the parent; the programme's description of itself, not an ancestor (the Totta & Sopher shape)."
+    },
+    {
+     "name": "Pliskin & Conrad, Techniques for Obtaining Uniform Thin Glass Films on Substrates (1964)",
+     "year": 1964,
+     "domain": "semiconductor devices",
+     "lens": "L3",
+     "causal_claim": "Totta & Sopher's ref [8] - the glass group's methods codification (postdating; drops at resolve).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "method",
+     "definition": "Pliskin & Conrad's 1964 codification of uniform thin-glass-film technique, Totta & Sopher's ref [8] - postdates the parent; the glass group's later methods paper."
+    },
+    {
+     "name": "Davis, Harding, Schwartz & Corning, Solid Logic Technology (1964)",
+     "year": 1964,
+     "domain": "semiconductor industry",
+     "lens": "L23",
+     "causal_claim": "The programme's 1964 account of the SLT design the parent belongs to (postdating; drops at resolve).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "other",
+     "definition": "The SLT programme's own IBM J. Res. Develop. account (1964), Totta & Sopher's ref [3] - postdates the parent; the programme's description of itself, not an ancestor (the Totta & Sopher shape)."
+    },
+    {
+     "name": "Langdon et al., U.S. Patent 3,401,055 (1968)",
+     "year": 1968,
+     "domain": "semiconductor devices",
+     "lens": "L23",
+     "causal_claim": "The parent's own patent, Totta & Sopher's ref [12] (postdating; drops at resolve).",
+     "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+     "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+     "type": "other",
+     "definition": "The Langdon group's own glass-passivation patent (granted 1968, Totta & Sopher's ref [12]) - the parent's own patent form; postdates, filed for direction."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "hoerni-the-planar-process-1959-1959",
+      "candidate": {
+       "name": "Hoerni, The planar process (1959)",
+       "year": 1959,
+       "domain": "semiconductor devices",
+       "lens": "L1",
+       "causal_claim": "The planar process directly enabled Langdon et al.'s leap by providing the planar-junction wafer - Totta & Sopher's glass section opens on 'glass passivating a planar junction semiconductor wafer'.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Hoerni's planar process (Fairchild, 1959): junctions formed under a thermally grown oxide left in place - the flat, oxide-covered wafer surface that the glass seal presupposes and seals."
+      },
+      "members": [
+       1,
+       7,
+       16,
+       34
+      ],
+      "member_names": [
+       "Hoerni, The planar process (1959)",
+       "Hoerni, The planar process (1959)",
+       "Hoerni, The planar process (1959)",
+       "Hoerni, The planar process (1959)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "frosch-derick-surface-protection-and-selective-masking-durin-1957",
+      "candidate": {
+       "name": "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+       "year": 1957,
+       "domain": "semiconductor devices",
+       "lens": "L1",
+       "causal_claim": "Frosch & Derick directly enabled Langdon et al.'s leap by providing the thermal-oxide surface protection the glass film seals over.",
+       "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+       "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+       "type": "method",
+       "definition": "Frosch & Derick's 1957 J. Electrochem. Soc. paper: the thermally grown SiO2 film that protects the silicon surface and selectively masks diffusion - the oxide protection stratum inside the planar device."
+      },
+      "members": [
+       2,
+       14,
+       29,
+       35
+      ],
+      "member_names": [
+       "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+       "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+       "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)",
+       "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "atalla-tannenbaum-scheibner-stabilization-of-silicon-surface-1959",
+      "candidate": {
+       "name": "Atalla, Tannenbaum & Scheibner, Stabilization of Silicon Surfaces by Thermally Grown Oxides (1959)",
+       "year": 1959,
+       "domain": "semiconductor devices",
+       "lens": "L1",
+       "causal_claim": "Atalla et al. directly enabled Langdon et al.'s leap by establishing that a thermally grown oxide stabilizes the silicon surface the parent seals.",
+       "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+       "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+       "type": "method",
+       "definition": "Atalla, Tannenbaum & Scheibner's 1959 BSTJ paper: silicon surfaces stabilized against ambient drift by thermally grown oxide - the surface-passivation result the planar device embodies."
+      },
+      "members": [
+       3,
+       30
+      ],
+      "member_names": [
+       "Atalla, Tannenbaum & Scheibner, Stabilization of Silicon Surfaces by Thermally Grown Oxides (1959)",
+       "Atalla, Tannenbaum & Scheibner, Stabilization of Silicon Surfaces by Thermally Grown Oxides (1959)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "aluminum-metallization-for-planar-devices-1960-1960",
+      "candidate": {
+       "name": "Aluminum metallization for planar devices (1960)",
+       "year": 1960,
+       "domain": "semiconductor devices",
+       "lens": "L1",
+       "causal_claim": "Aluminum metallization directly enabled Langdon et al.'s leap as the stripe system under the glass, sintered automatically during glass firing (Totta & Sopher).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Aluminum as the industry-standard metallization for planar devices (Totta & Sopher): the single-metal stripe system that tolerates the oxidizing glass-firing atmosphere and sinters during glassing."
+      },
+      "members": [
+       5,
+       33
+      ],
+      "member_names": [
+       "Aluminum metallization for planar devices (1960)",
+       "Aluminum metallization for planar devices (1960)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hermetic-to-can-transistor-packaging-1955-1955",
+      "candidate": {
+       "name": "Hermetic TO-can transistor packaging (1955)",
+       "year": 1955,
+       "domain": "semiconductor packaging",
+       "lens": "L2",
+       "causal_claim": "Langdon et al. is defined as the replacement of the TO-can device form: same function (a hermetic transistor), the package deleted.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "device",
+       "definition": "The incumbent hermetic package: a transistor welded into a metal can, its leads brought through glass seals - the package the glass-sealed bare chip deletes."
+      },
+      "members": [
+       8,
+       11,
+       17,
+       21,
+       25
+      ],
+      "member_names": [
+       "Hermetic TO-can transistor packaging (1955)",
+       "Hermetic TO-can transistor packaging (1955)",
+       "Hermetic TO-can transistor packaging (1955)",
+       "Hermetic TO-can transistor packaging (1955)",
+       "Hermetic TO-can transistor packaging (1955)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mesa-transistor-construction-1958-1958",
+      "candidate": {
+       "name": "Mesa transistor construction (1958)",
+       "year": 1958,
+       "domain": "semiconductor devices",
+       "lens": "L2",
+       "causal_claim": "The mesa device is the prior device generation whose exposed junctions the parent's sealed planar chip supersedes.",
+       "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+       "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+       "type": "device",
+       "definition": "The mesa transistor: etched mesa geometry with exposed junction perimeters - the device form whose unprotected surfaces made hermetic canning necessary."
+      },
+      "members": [
+       9,
+       13,
+       15,
+       19,
+       24
+      ],
+      "member_names": [
+       "Mesa transistor construction (1958)",
+       "Mesa transistor construction (1958)",
+       "Mesa transistor construction (1958)",
+       "Mesa transistor construction (1958)",
+       "Mesa transistor construction (1958)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "diffused-silicon-transistor-fuller-1954-1954",
+      "candidate": {
+       "name": "Diffused silicon transistor (Fuller, 1954)",
+       "year": 1954,
+       "domain": "semiconductor devices",
+       "lens": "L2",
+       "causal_claim": "The diffused transistor is the device stratum the planar process, and hence the sealed chip, descends from.",
+       "source_title": "Computer History Museum, The Silicon Engine: 1955 - Development of Oxide Masking",
+       "source_url": "https://www.computerhistory.org/siliconengine/development-of-oxide-masking/",
+       "type": "device",
+       "definition": "Fuller's diffused-junction silicon transistor (Bell Labs, 1954): the device generation the planar process modified - the stratum whose surface problems the oxide and glass protections answer."
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Diffused silicon transistor (Fuller, 1954)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "glass-to-metal-hermetic-seals-kovar-alloy-1939-1939",
+      "candidate": {
+       "name": "Glass-to-metal hermetic seals (Kovar alloy) (1939)",
+       "year": 1939,
+       "domain": "materials science",
+       "lens": "L4",
+       "causal_claim": "Glass-to-metal seal science posed hermeticity as a property of a can's seals - the framing the parent relocates to the die.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "material",
+       "definition": "The matched-expansion glass-to-metal seal (Kovar alloy, 1939): the sealing science of the incumbent can - the hermeticity technology the parent makes unnecessary at die level."
+      },
+      "members": [
+       12,
+       18,
+       22
+      ],
+      "member_names": [
+       "Glass-to-metal hermetic seals (Kovar alloy) (1939)",
+       "Glass-to-metal hermetic seals (Kovar alloy) (1939)",
+       "Glass-to-metal hermetic seals (Kovar alloy) (1939)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dumet-wire-glass-to-metal-lead-seals-1913-1913",
+      "candidate": {
+       "name": "Dumet wire glass-to-metal lead seals (1913)",
+       "year": 1913,
+       "domain": "materials science",
+       "lens": "L7",
+       "causal_claim": "Dumet-sealed envelopes record the incumbent craft's limits: hermeticity bought with a bulb or can around every device.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "material",
+       "definition": "Dumet (copper-clad nickel-iron) wire sealed through glass: the lamp and electron-tube craft for bringing leads through a hermetic glass envelope - the sealing tradition behind the incumbent package."
+      },
+      "members": [
+       23,
+       36
+      ],
+      "member_names": [
+       "Dumet wire glass-to-metal lead seals (1913)",
+       "Dumet wire glass-to-metal lead seals (1913)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "drakenfeld-e1527-lead-borosilicate-glass-1960-1960",
+      "candidate": {
+       "name": "Drakenfeld E1527 lead borosilicate glass (1960)",
+       "year": 1960,
+       "domain": "materials science",
+       "lens": "L10",
+       "causal_claim": "The E1527 composition is the specific glass Totta & Sopher name as the production passivation material.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "material",
+       "definition": "The commercial lead borosilicate glass composition named in Totta & Sopher (SiO2 29.1%, PbO 51.1%, B2O3 9.0%, Al2O3 3.2%, Na2O 1.7%) - the glass used predominantly for passivating SLT transistors."
+      },
+      "members": [
+       28
+      ],
+      "member_names": [
+       "Drakenfeld E1527 lead borosilicate glass (1960)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-components-division-slt-development-programme-1960-1960",
+      "candidate": {
+       "name": "IBM Components Division SLT development programme (1960)",
+       "year": 1960,
+       "domain": "semiconductor industry",
+       "lens": "L20",
+       "causal_claim": "The SLT programme is the makers' own vehicle: Langdon, Mutter, Pecoraro and Schuegraf are its device group.",
+       "source_title": "Harding, Semiconductor Manufacturing in IBM, 1957 to the Present, IBM J. Res. Develop. 25(5) (1981)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/255/ibmrd2505Z.pdf",
+       "type": "institution",
+       "definition": "IBM Components Division's hybrid-microcircuit development programme (East Fishkill): the organization that set out to replace canned discrete devices with automatically manufacturable hybrid modules - the programme that produced both the glassed chip and its joining practice."
+      },
+      "members": [
+       37,
+       40,
+       43
+      ],
+      "member_names": [
+       "IBM Components Division SLT development programme (1960)",
+       "IBM Components Division SLT development programme (1960)",
+       "IBM Components Division SLT development programme (1960)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "w-a-pliskin-s-glass-film-science-at-ibm-1960-1960",
+      "candidate": {
+       "name": "W. A. Pliskin's glass-film science at IBM (1960)",
+       "year": 1960,
+       "domain": "semiconductor devices",
+       "lens": "L20",
+       "causal_claim": "Pliskin physically carried the glass science into the device group - the person-channel behind Perri et al.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "other",
+       "definition": "Pliskin's glass-physics expertise inside IBM - the scientist behind the glass-film work of Perri et al. and of Pliskin & Conrad: knowledge that lived in a person and a laboratory practice, not in a separable pre-1961 document."
+      },
+      "members": [
+       38
+      ],
+      "member_names": [
+       "W. A. Pliskin's glass-film science at IBM (1960)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [
+     {
+      "members": [
+       1,
+       7
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       16
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       1,
+       34
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       14
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       29
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       2,
+       35
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       3,
+       30
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       5,
+       33
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       11
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       17
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       21
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       8,
+       25
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       13
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       15
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       19
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       9,
+       24
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       12,
+       18
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       12,
+       22
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       23,
+       36
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       37,
+       40
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     },
+     {
+      "members": [
+       37,
+       43
+      ],
+      "signals": [
+       "alias"
+      ],
+      "scores": {
+       "cosine": 1.0
+      }
+     }
+    ],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L1",
+       "causal_claim": "Perri et al. directly enabled Langdon et al.'s leap by supplying the fused glass-frit film technique that is the parent's sealing mechanism itself.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Lead borosilicate frit glass passivation (IBM, 1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L1",
+       "causal_claim": "The lead borosilicate frit glass directly enabled Langdon et al.'s leap as the very film fused over the chip face.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "material",
+       "definition": "The lead borosilicate glass fused as a thin film over the SLT chip face: the material system whose firing window (560-570C, below the Al-Si eutectic) made the hermetic glass film possible."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L2",
+       "causal_claim": "Langdon et al. is the device-design continuation of Perri et al.'s film work: the same programme's paired document, 25 days earlier.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Thermocompression wire bonding (Anderson & Christensen, Bell Labs, 1961)",
+       "year": 1961,
+       "domain": "semiconductor packaging",
+       "lens": "L6",
+       "causal_claim": "Wire bonding is the interconnection practice of the canned-device world the sealed chip's face terminals replace (same-year filing; direction record).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Thermocompression wire bonding (1961): the incumbent interconnection of canned devices - a same-year sibling stratum, filed for direction."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "SLT module substrate: alumina ceramic with screened thick-film lands and resistors (1961)",
+       "year": 1961,
+       "domain": "semiconductor packaging",
+       "lens": "L9",
+       "causal_claim": "The SLT substrate is the coeval carrier the sealed chips were designed to land on - the joint's other terminal (same-year filing; sibling record).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "device",
+       "definition": "The SLT module substrate (1961): the ceramic carrier of the 1962 joining practice - a coeval sibling artifact of the same programme, filed so its relation (the joint's other terminal, not the chip's ancestor) is on this parent's record."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Lead borosilicate frit glass passivation (IBM, 1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L10",
+       "causal_claim": "The frit glass's firing window - fusable below the Al-Si eutectic yet expansion-tolerable at 1.5 um - is the material fact the parent harnesses.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "material",
+       "definition": "The lead borosilicate glass fused as a thin film over the SLT chip face: the material system whose firing window (560-570C, below the Al-Si eutectic) made the hermetic glass film possible."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L11",
+       "causal_claim": "Perri et al.'s centrifugal deposition + frit fusing is the process recipe wielded to glass the parent's chips.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Lead borosilicate frit glass passivation (IBM, 1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L11",
+       "causal_claim": "The frit-fusing recipe (deposit, compact, fire at 560-570C in an oxidizing atmosphere) is the parent's manufacturing process.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "material",
+       "definition": "The lead borosilicate glass fused as a thin film over the SLT chip face: the material system whose firing window (560-570C, below the Al-Si eutectic) made the hermetic glass film possible."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L20",
+       "causal_claim": "Perri et al. is the device group's own glass-science arm - the same programme's other half.",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Electrochemical Society Fall Meeting, Detroit (1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L21",
+       "causal_claim": "The Electrochemical Society meeting is the arena in which the glass-film half of the programme was announced (same-year; arena record).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "institution",
+       "definition": "The venue of Perri et al.'s presentation (2 Oct 1961) - the arena in which the glass-film work was announced; same-year, filed as an arena record."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "IEEE Electron Devices Meeting, Washington (1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L21",
+       "causal_claim": "The Electron Devices Meeting is the parent's own arena (same-year; arena record).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "institution",
+       "definition": "The venue of the parent's own presentation (27 Oct 1961) - the parent's arena, not an ancestor; same-year, filed for completeness of the arena record."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "SLT module substrate: alumina ceramic with screened thick-film lands and resistors (1961)",
+       "year": 1961,
+       "domain": "semiconductor packaging",
+       "lens": "L22",
+       "causal_claim": "The substrate's coeval arrival is the demand-side twin of the sealed chip (same-year; sibling record).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "device",
+       "definition": "The SLT module substrate (1961): the ceramic carrier of the 1962 joining practice - a coeval sibling artifact of the same programme, filed so its relation (the joint's other terminal, not the chip's ancestor) is on this parent's record."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "System/360 (1964)",
+       "year": 1964,
+       "domain": "computer engineering",
+       "lens": "L22",
+       "causal_claim": "System/360's demand postdates the artifact - filed so the direction is explicit (postdating; drops at resolve).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "device",
+       "definition": "IBM System/360 (1964): the computer line whose SLT modules consumed the glassed chips - postdates the parent; filed so the direction (the demand arrives after the artifact) is on record."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961)",
+       "year": 1961,
+       "domain": "semiconductor devices",
+       "lens": "L3",
+       "causal_claim": "The programme's own design record (Totta & Sopher) lists Perri et al. as ref [2], paired with the parent as ref [1].",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Perri, Lehman, Pliskin & Riseman's Electrochemical Society paper (Detroit, 2 Oct 1961): the fused colloidal glass-frit film, centrifugally deposited, that surface-protects silicon devices - the glassing technique Totta & Sopher call the earliest successful means of glass passivating a planar wafer at IBM."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Davis, Harding, Schwartz & Corning, Solid Logic Technology (1964)",
+       "year": 1964,
+       "domain": "semiconductor industry",
+       "lens": "L3",
+       "causal_claim": "Totta & Sopher's ref [3] - the programme's survey of itself (postdating; drops at resolve).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "other",
+       "definition": "The SLT programme's own IBM J. Res. Develop. account (1964), Totta & Sopher's ref [3] - postdates the parent; the programme's description of itself, not an ancestor (the Totta & Sopher shape)."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Pliskin & Conrad, Techniques for Obtaining Uniform Thin Glass Films on Substrates (1964)",
+       "year": 1964,
+       "domain": "semiconductor devices",
+       "lens": "L3",
+       "causal_claim": "Totta & Sopher's ref [8] - the glass group's methods codification (postdating; drops at resolve).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "method",
+       "definition": "Pliskin & Conrad's 1964 codification of uniform thin-glass-film technique, Totta & Sopher's ref [8] - postdates the parent; the glass group's later methods paper."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Davis, Harding, Schwartz & Corning, Solid Logic Technology (1964)",
+       "year": 1964,
+       "domain": "semiconductor industry",
+       "lens": "L23",
+       "causal_claim": "The programme's 1964 account of the SLT design the parent belongs to (postdating; drops at resolve).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "other",
+       "definition": "The SLT programme's own IBM J. Res. Develop. account (1964), Totta & Sopher's ref [3] - postdates the parent; the programme's description of itself, not an ancestor (the Totta & Sopher shape)."
+      },
+      "reason": "dated on/after parent year 1961"
+     },
+     {
+      "candidate": {
+       "name": "Langdon et al., U.S. Patent 3,401,055 (1968)",
+       "year": 1968,
+       "domain": "semiconductor devices",
+       "lens": "L23",
+       "causal_claim": "The parent's own patent, Totta & Sopher's ref [12] (postdating; drops at resolve).",
+       "source_title": "Totta & Sopher, SLT Device Metallurgy and its Monolithic Extension, IBM J. Res. Develop. 13(3):226-238 (1969)",
+       "source_url": "https://dragonsweb.org/ftp/mirrors/bitsavers/pdf/ibm/IBM_Journal_of_Research_and_Development/133/ibmrd1303B.pdf",
+       "type": "other",
+       "definition": "The Langdon group's own glass-passivation patent (granted 1968, Totta & Sopher's ref [12]) - the parent's own patent form; postdates, filed for direction."
+      },
+      "reason": "dated on/after parent year 1961"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }

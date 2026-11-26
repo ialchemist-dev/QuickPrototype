@@ -4988,5 +4988,107 @@
   "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911",
   "statistical-curvature-efron-1975-1975"
  ],
+ "sync_commit": "4752f416"
+}
+{
+ "session": 77,
+ "expansion": 163,
+ "parent": "langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961",
+ "parent_name": "Langdon et al., Hermetically sealed silicon chip diodes and transistors (1961)",
+ "parent_year": 1961,
+ "parent_depth": 7,
+ "date": "2026-11-25",
+ "provenance": "Session 77, expansion 1 of 2 (the frontier head per status after session 76). Scouted, resolved, judged and verified from scratch by session 77. Session 76's expansion-162 run-log record had its sync_commit field patched locally (4752f416) and rides this session's first sync.",
+ "grounding": "The parent's stratum grounded on the programme's own retrospective account, re-read in full this session: Totta & Sopher, 'SLT Device Metallurgy and its Monolithic Extension', IBM J. Res. Develop. 13(3):226-238 (1969) (bitsavers PDF, full text) - ref [1] is the parent itself (IEEE Electron Devices Meeting, Washington DC, 27 Oct 1961); ref [2] is Perri, Lehman, Pliskin & Riseman, 'Surface Protection of Silicon Devices with Glass Films' (Electrochemical Society Fall Meeting, Detroit, 2 Oct 1961); the glass section states: 'The earliest successful means for glass passivating a planar junction semiconductor wafer at IBM was the technique of fusing together a colloidal frit of glass particles on the wafer face, through uniform compaction on the surface by a centrifugal deposition technique'; the production glass is Drakenfeld E1527 lead borosilicate (SiO2 29.1%, PbO 51.1%, B2O3 9.0%, fired 560-570C, below the Al-Si eutectic 577C); 'Aluminum has been used for some time in the industry as the standard metallization for planar devices'; the acknowledgements credit 'J. Langdon and R. Pecoraro, terminal pad concept' - the parent's own inventive core, deliberately NOT filed (self-carriage, as at the flip-chip parent). Supporting records fetched this session: Harding, 'Semiconductor Manufacturing in IBM, 1957 to the Present', IBM J. Res. Develop. 25(5) (1981) - IBM's pioneering of glass passivation to hermetically seal transistors during wafer fabrication; Computer History Museum Silicon Engine, oxide-masking milestone page (Frosch & Derick, 'Surface Protection and Selective Masking during Diffusion in Silicon', J. Electrochem. Soc. 104:547-552, 1957; the planar method 'employs this layer to protect sensitive p-n junctions'). AUDIT SCOPE, stated honestly (session-75 standard): Langdon's own 1961 conference digest text was NOT obtained this session; absence claims are scoped to Totta & Sopher's complete 17-item reference list and glass section, which are otherwise specific about the stratum's sources (all 17 references are IBM/programme items; no Hoerni, Frosch or Atalla item appears).",
+ "parent_record_note": "Parent stored fields verified intact before evaluating (definition, bottleneck, leap, prior_state all non-empty, read verbatim; no reconstruction). The parent's session-73 verification record was read before evaluating, as instructed: it caps the parent provisional on the Delco/GM parallel-programme condition and records Perri et al. (1961) as mediated via Langdon at the flip-chip parent. The Delco/GM condition concerns Langdon's ADMISSION at flip-chip, not this expansion's ancestry judgments, and is untouched. The brief assigned Perri a direct hearing at this parent; the hearing is CALENDAR-FORECLOSED - Perri (2 Oct 1961) and the parent (27 Oct 1961) are dated the same year, 25 days apart, and resolve's year-granularity bound drops the candidate mechanically (the de Mere-at-the-correspondence / Darmois-at-Fisher-Rao shape). The content dates are logged here and were never used to re-date. Perri's relation to the parent therefore stands as the documents record it: Totta & Sopher pair the two papers as refs [1] and [2], and session 73 judged Perri the parent's materials basis. The foreclosure is this expansion's central structural finding, not a gap to be worked around.",
+ "scout": {
+  "builder": "run-01/work/build_scout_langdon.py",
+  "raw_candidates": 51,
+  "per_lens_floors": "complete - every content lens with filings (L1-L7, L9-L11, L19-L22) filed >=3 on the builder's output, checked before resolve; dry notes recorded for L8, L15, L16, L17, L18 (dry-with-finding: no corpus - the parent's inputs are devices and materials; no run-time service; no governing standard - the parent precedes the standards era for chip sealing; no observation instrument; no named failure corpus) and L12, L13, L14 (thin-with-finding). The parent's own inventive core (Langdon & Pecoraro's terminal pad concept, credited in Totta & Sopher's acknowledgements) was deliberately NOT filed - self-carriage, as the flip-chip parent's Hymes standoff and Ross sphere fabrication were not filed at session 73. Concept search before scouting confirmed NO existing Perri, Hoerni, SLT or planar-process nodes in the graph (all filings fresh); session-73 flip-chip filing names were reused verbatim."
+ },
+ "resolution": {
+  "distinct": 12,
+  "dropped": 18,
+  "matched_existing": 0,
+  "auto_merges": 21,
+  "judge_queue": 0,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 0 - no pairs to judge. No candidate matched an existing node (the graph holds no node from this stratum yet); all 12 distinct candidates are fresh.",
+ "calendar_dropped_at_resolve": [
+  "Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961) x4 filings - THE ASSIGNED DIRECT HEARING, calendar-foreclosed: presented 2 Oct 1961, 25 days before the parent (27 Oct 1961), but the year bound is mechanical and the candidate is dropped as dated on/after the parent year. Its relation stands as recorded (materials basis; mediated via Langdon at flip-chip)",
+  "Lead borosilicate frit glass passivation (IBM, 1961) x3 filings - the parent's own material stratum, same-year; its composition carrier (Drakenfeld E1527, filed at 1960) was judged and mediated via Perri",
+  "SLT module substrate: alumina ceramic with screened thick-film lands and resistors (1961) x2 filings - the sibling module artifact, same-year; judged at the flip-chip parent as fail-closed partial (formation)",
+  "Electrochemical Society Fall Meeting (1961) and IEEE Electron Devices Meeting (1961) - the arena filings, same-year",
+  "Thermocompression wire bonding (Anderson & Christensen, Bell Labs, 1961) - same-year; the joining method the parent's line defines itself against downstream",
+  "System/360 (1964) x2 filings - the descendant demand context",
+  "Davis, Gloden & Shankoff (1964) x2 filings and Pliskin & Conrad, Nondestructive Determination of Thickness and Refractive Index of Transparent Films (1964) - the glass stratum's codifications, postdating",
+  "Langdon et al., US Patent 3,401,055 (1968) - the parent's own patent form, postdating"
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_langdon-et-al-hermetically-sealed-silicon-chip-diodes-and-tr-1961.json",
+  "builder": "run-01/work/build_verdicts_langdon.py",
+  "evaluations": 12,
+  "count_check": "evaluations == distinct candidates from show-distinct (12 == 12, verified programmatically by the builder: exact cand_id set, field discipline asserted on every evaluation - cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); scout reconciliation: 51 raw - 18 resolve drops - 21 auto-merges = 12 distinct; per-lens floor verified on the builder's output before resolve; dry run through score.rank_candidates reproduced exactly the intended outcome (0 survivors; the component signature visible on aluminum metallization: directness_ok true, q1_or_q2 false) BEFORE applying; no correction used; apply-verdicts run exactly once",
+  "survivors": [],
+  "mediated": [
+   "Frosch & Derick, Surface Protection and Selective Masking during Diffusion in Silicon (1957) via Hoerni, The planar process (1959) - the oxide layer reaches the parent inside the planar device, which 'employs this layer to protect sensitive p-n junctions' (CHM)",
+   "Atalla, Tannenbaum & Scheibner, Stabilization of Silicon Surfaces by Thermally Grown Oxides (1959) via Hoerni, The planar process (1959) - the surface-science half of the same passivation stratum",
+   "Diffused silicon transistor (Fuller, 1954) via Hoerni, The planar process (1959) - diffusion reaches the parent reworked as diffusion through oxide windows",
+   "Drakenfeld E1527 lead borosilicate glass (1960) via Perri, Lehman, Pliskin & Riseman, Surface Protection of Silicon Devices with Glass Films (1961) - the composition reaches the parent as the glass group's selected material inside Perri's paper; a mediation naming a date-dropped mediator, per precedent (the mediator's hearing at this parent is calendar-foreclosed)"
+  ],
+  "fail_closed_partials": [
+   "Hoerni, The planar process (1959) - MOST CONTESTABLE NEGATIVE: presupposed stratum, Q1/Q2 passes recorded - exactly the flip-chip disposition (session 73). Argued at full strength: the parent seals a planar wafer and without the planar process there is no flat oxide-covered junction for a glass film to seal; Totta & Sopher's glass section opens on that object. Answered on the documentary discipline: nothing in the parent's grounded record cites, names or derives from Hoerni's Fairchild documents (Totta & Sopher's 17 references are all IBM/programme items), and IBM's planar devices were the programme's own production base - presupposed, not consumed. Re-hearing condition recorded: Langdon's 1961 digest text, or an IBM device-design document of 1960-61, engaging Hoerni's process as an input rather than presupposing planar devices",
+   "IBM Components Division SLT development programme (1960) - formation with a documented demand channel (the PWB-facility-at-BISP shape, session 76): the programme posed the parent's defining requirement in operational form (a can-less, automatically handleable device designed together with its substrate - 'the combined chip and substrate design'), argued at full strength as a problem-side channel and answered on formation - posing and answering are one organization's single act; the parent is the programme's own artifact. Re-hearing condition recorded: a programme requirements or design document, distinct from the device group's own papers, deriving the die-level seal from the module system's requirements",
+   "Mesa transistor construction (1958) - the displaced prior state of the device line (the D3D7 shape): its exposed junctions posed the protection problem concretely (Q1 partial recorded), but the parent seals a PLANAR device; the mesa's headline form was discontinued by the parent's own base before the parent begins",
+   "W. A. Pliskin's glass-film science at IBM (1960) - a teacher-channel carried by the person (the Castelli / Selfridge & Dinneen shape): the knowledge's document form is Perri et al. (1961), where Pliskin is third author - the parent's materials basis, calendar-foreclosed at this parent; the person alone is not a predecessor"
+  ],
+  "components": [
+   "Aluminum metallization for planar devices (1960) - directness PASSING in full (the Al-Si stripes under the glass are part of the sealed device's design; the glass firing doubles as the Al sintering step, Totta & Sopher), Q1/Q2 FAILING: a component of the parent's leap consumed as the industry standard, not a leap of its own (the UBM/high-Pb shape)"
+  ],
+  "rejected": [
+   "Hermetic TO-can transistor packaging (1955) - the defined-against incumbent: the package the parent deletes ('not conventionally sealed in hermetic packages... Instead, the face side of each chip is hermetically sealed under a thin film of glass')",
+   "Glass-to-metal hermetic seals (Kovar alloy) (1939) - the incumbent's sealing science: enabling the thing the parent replaces does not enable the parent; the parent's hermeticity is a film fused to the die, a different mechanism at a different level of assembly",
+   "Dumet wire glass-to-metal lead seals (1913) - the craft tradition behind the incumbent's seals: a familiarity tradition is not a channel (the Kepler-at-Cavalieri discipline); no tube-craft source appears in the parent's grounded record"
+  ]
+ },
+ "verification": {
+  "file": null,
+  "outcomes": "No verification file: the expansion created no nodes (the run's 18th zero), so the adversarial-verification check is vacuous (session-74 IPL precedent). The zero is of a distinct kind worth naming for the article: a DOCUMENTARY zero - the stratum's one true document ancestor (Perri et al.) is same-year and calendar-foreclosed, and everything else is presupposed, mediated, displaced, component or formation. The parent's own provisional status and its session-73 verification record (Delco/GM condition) are untouched."
+ },
+ "totals_after": {
+  "nodes": 275,
+  "edges": 346,
+  "budget": "275/2000",
+  "expansions_done": 163,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 28,
+   "3": 32,
+   "4": 37,
+   "5": 57,
+   "6": 45,
+   "7": 30,
+   "8": 13,
+   "9": 6,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 258,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "mercer-and-hall-the-experimental-error-of-field-trials-1911-1911",
+  "statistical-curvature-efron-1975-1975",
+  "cook-shade-trees-1984-1984",
+  "openapi-specification-2016",
+  "fine-tuning-language-models-from-human-preferences-ziegler-e-2019"
+ ],
  "sync_commit": null
 }
