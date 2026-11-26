@@ -10834,3 +10834,215 @@
  ],
  "sync_commit": "3a3a04f0"
 }
+{
+ "session": 81,
+ "expansion": 172,
+ "parent": "json-referencing-in-dojo-2008",
+ "parent_name": "JSON Referencing in Dojo (2008)",
+ "parent_year": 2008,
+ "parent_depth": 2,
+ "date": "2026-11-25",
+ "provenance": "Session 81, expansion 2 of 2. Scouted, resolved, judged and verified by session 81. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79 discipline): add-candidates verified on disk (stage 'scouted', 53 raw in graph.json); resolve ran in the foreground via the MiniLM venv python and was verified on disk at stage 'resolved' (27 distinct) before judgments; apply-judgments verified (17/17 applied, no unknown pair ids, distinct stayed 27, all 11 LINK matched_node_ids verified programmatically); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor: RFC 3986 5.5; 3 mediated; 1 fail-closed partial); apply-verdicts run exactly once; the created node spot-checked (stored leap/prior_state/bottleneck all non-empty, sources populated). Checkpoint: render + sync commit d9ee1af3, blob SHAs verified by the sync script (graph ada0a563, log 435586f7 - the log blob now carries the session-81 expansion-171 record; THIS record rides the next sync per the ride-forward pattern, index eed60d95).",
+ "brief_correction": "Two brief framings were corrected on the documents. (a) The brief described the parent as 'admitted in the web-standards line' with the URI stratum as one of three hypotheses: on the documents the convention is a PRACTICE artifact (a toolkit module plus a SitePen blog convention post), not a standards-line artifact, and its one standards-grade channel is the relative-URL scheme - which the documents name as 'the standard relative URL scheme' (guide) / 'the standard relative URL convention' (blog). The operative document of that scheme in 2008 is RFC 3986 (2005), which is NOT previously in the graph (the graph's URI line runs through RFC 2396/1808/1738/2141); it was filed as a NEW candidate and admitted. (b) The brief's 'JavaScript object-identity stratum the referencing mechanism works on' is real but is the PHENOMENON stratum, not a channel: the blog's sentence ('consistent with runtime object models of modern OO languages, foremost JavaScript') is a design rationale, and the convention was later specified language-neutrally (JSON Reference draft, 2011, over JSON values as such) - JavaScript LINK, both ECMA-262 edition LINKs, and JavaScript 1.2 LINK were all refused (phenomenon / carrier-of-formalism / version grain). Also recorded: the parent's stored source is the 'JSONPath Support' SitePen post (Dojo 1.1) - adjacent to the convention (Dojo 1.2) but genuinely part of its grounding, since path-based referencing is documented as inspired by the JSONPath that post announces; no stored-record error found at this parent (all stored fields non-empty and consistent with the documents). DESIGN DECISION #2 WAS LIVE at this parent and was handled per instructions - judged under current rules, recorded, not resolved: the Dojo programme's own artifacts (Dojo Toolkit, Dojo Foundation; the calendar-dropped JsonRestStore and Persevere) were judged as self-carriage / programme formation under the standing rules, and the question is carried in the toolkit's evaluation and in the Zyp-proposal evaluation (programme-internal sibling). No rule was changed.",
+ "grounding": "The parent grounded on the convention's own documents, read this session: (1) Kris Zyp, 'JSON Referencing in Dojo', SitePen blog, June 2008 - the announcement and the convention's specification: Dojo 1.2's dojox.json.ref module; circular, multiple, inter-message and lazy referencing in id, path and combined forms; the design rationale ('decouple the topology of data structures from the meaning of the data structures in a way that is consistent with runtime object models of modern OO languages (foremost JavaScript)'); the convention section (a reference object is 'a special JSON object with a single property named $ref'); path-based referencing 'is inspired by JSONPath... (and supported by Dojo)', with '#' as root marker and dot-delimited navigation; lazy references denoted with a dojo.Deferred value; the section 'JSON Referencing + Relative URLs' ('By equating references to relative URLs, references have a natural correspondence to resource location. JSON referencing leverages the ubiquity and flexibility of the standard relative URL convention to extend the scope of potential referents'); the RDBMS passage ('The reference may be a result of a relationship in a RDBMS, a direct reference in non-relational databases, or manually created... The client does not need to understand the details of how the reference was formed'); the blog links the words 'JSON referencing' to www.json.com. (2) The Dojo Toolkit Reference Guide page 'dojox.json.ref' (author Kris Zyp; 'Available: since V1.2'): 'implements JSON Referencing to provide serialization, deserialization, and indexing of complex object graphs with circular, multiple, cross-message, cross-store, and cross-site referencing'; feature 2: 'Utilizes the standard relative URL scheme as the basis for referencing'; 'used by the JsonRestStore for reference resolution and indexing'. (3) Kris Zyp, 'JSONPath Support', SitePen blog (the parent's stored source): Dojo 1.1's dojox.jsonPath.query, based on Goessner's JSONPath, already naming Persevere as a JSONPath user. (4) Kris Zyp, 'Effective use of JsonRestStore...', SitePen blog: references 'resolved using standard relative URL resolution like HTML hyperlinks'; 'JSON referencing, which is essentially hyperlinking for JSON' (the store article's gloss). FIND-VERIFIED ABSENCES across the corpus: no YAML, no Java serialization, no XML ID/IDREF, XLink, XPointer, XSD or RELAX NG engagement, no Fielding, no ECMA-262 citation - the XML-line and serialization-line candidates are lineage prior art with no document channel, and were judged as such.",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state all non-empty and consistent with the documents (read this session); sources = one entry (the JSONPath Support post - see brief_correction for its role); verification record from its admission (session ~65 era) notes Q1 partial, admission resting on Q2/Q7, multiples (XSD/RELAX NG named-type reuse) capping it provisional, and the mediation attack via the Dojo Toolkit considered and NOT landed there ('the candidate IS the convention, the toolkit is its venue') - that record concerns the Dojo -> JSON Schema edge and is untouched; at THIS expansion the toolkit was judged as a candidate in its own right and refused as self-carriage/formation, which does not disturb the earlier edge-scoped note. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_dojo.py",
+  "raw_candidates": 53,
+  "per_lens_floors": "met on the builder's output before resolve: L1 4, L2 3, L4 3, L5 3, L6 4, L7 3, L10 3, L11 3, L12 3, L13 3, L15 3, L16 4, L19 3, L20 3, L21 3, L22 3 (51 content filings); meta pass L3 2; dry notes for L8, L9, L14, L17, L18 (each dry-with-finding: a convention consumes no dataset; a browser module consumes no named machine; no equipment; the only quantitative claim is a relative slowdown vs dojo.fromJson, no benchmark artifact; no observation instrument) and L23 (meta: the contemporaneous account is the announcement itself). Dry notes file: run-01/work/dry_notes_json-referencing-in-dojo-2008.json. Eleven graph-existing candidates were sought by concept search before scouting and filed as LINKs under exact canonical names and stored type strings (JSON (RFC 4627), JavaScript, Kris Zyp's first JSON Schema proposal (json.com), The json.org one-page grammar, W3C XML Schema (XSD), ECMA-262 third edition, ECMA-262 first edition, JavaScript 1.2 (Navigator 4), RFC 2396, RFC 1808, RFC 1738) - all 11 matched at resolve, every matched_node_id verified programmatically. Three deliberate calendar filings (same year as the parent, 2008): Persevere (two filings), dojox.data.JsonRestStore, SitePen. Scout reconciliation: 53 raw filings = 30 distinct names intended; resolve dropped the 3 calendar names (4 raw filings), giving 27 distinct == the verdicts builder's 27 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 27,
+  "dropped": 4,
+  "matched_existing": 11,
+  "auto_merges": 22,
+  "judge_queue": 17,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 17 pairs, ALL adjudicated DIFFERENT on the documents (the queue was entirely edition/version/sibling collisions created by the cross-lens filings): RFC 3986 vs the RFC 2396 node (7 pairs, cand-node and cand-cand) - different documents, 3986 obsoletes 2396; Zyp's 2007 json.com proposal vs the JSON Schema (2010) node (2 pairs) - the proposal is a distinct earlier artifact with its own node; JavaScript 1.2 vs the JavaScript node (4 pairs) - version vs language, both nodes exist separately; ECMA-262 third vs first edition (2 pairs) - distinct editions; RFC 1808 vs RFC 1738 (1 pair) - different RFCs, different subjects. Applied 17/17, no unknown pair ids; distinct stayed 27; all eleven LINK matched_node_ids verified after judgments. No SAME pairs, so no merges arose from the queue.",
+ "calendar_dropped_at_resolve": [
+  "Persevere (2008) - two filings (L13, L20): the author's own server framework, the convention's coeval sibling consumer. Dropped by the year-granularity bound on the record.",
+  "dojox.data.JsonRestStore (2008) - the convention's first consumer ('used by the JsonRestStore for reference resolution and indexing'); direction is downstream in any case. Dropped on the record.",
+  "SitePen (2008 as filed) - the author's employer and the convention's publisher; the filing's year (the convention's publication year) triggered the drop. The institution is judged in the run log's formation record (see Dojo Foundation / Dojo Toolkit verdicts); no re-dating was performed."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_json-referencing-in-dojo-2008.json",
+  "builder": "run-01/work/build_verdicts_dojo.py",
+  "evaluations": 27,
+  "count_check": "evaluations == distinct candidates from show-distinct (27 == 27), verified by the builder's missing/extra spec check (no missing, no unspec'd); field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (1 survivor: RFC 3986 5.5; 3 mediated; 1 fail-closed partial) BEFORE applying; no dry-run correction was needed at this expansion; apply-verdicts run exactly once; the created node spot-checked with non-empty stored leap/prior_state/bottleneck and a populated sources list",
+  "survivors": [
+   "RFC 3986, Uniform Resource Identifier (URI): Generic Syntax (2005) - NEW, 5.5, PROVISIONAL, depth 3: the convention's cross-context mechanism IS this standard's relative-resolution scheme - the guide lists 'Utilizes the standard relative URL scheme as the basis for referencing' as a defining feature, and the blog's 'JSON Referencing + Relative URLs' section works the mechanism (a $ref resolved against the retrieval context yields the referent's absolute location, across messages, stores and sites, with no syntax change). Q2/Q7/Q8 pass (the scheme is the basis the cross-message, cross-store and cross-site forms - the guide's headline feature - are built on); Q3 partial honestly (the intra-message id/path forms stand without it). Capped provisional at verification: the edition/mediation attack via RFC 2396 partially lands in downgrade form (see verification)."
+  ],
+  "mediated": [
+   "The json.org one-page grammar (2002) - MEDIATED via JSON (RFC 4627): the format's founding document reaches the 2008 convention inside the format's operative standard; the convention's documents never engage the 2002 grammar as a text.",
+   "RFC 2396 (1998) - MEDIATED via RFC 3986: the relative-resolution scheme descends from this edition, but the 2008 convention implements the scheme as its operative standard states it; 3986 obsoleted 2396 in 2005 and is admitted at this parent.",
+   "RFC 1808 (1995) - MEDIATED via RFC 3986: the original relative-URL standard, two restatements behind the operative carrier."
+  ],
+  "fail_closed_partials": [
+   "JSONPath (Goessner, 2007) - directness PARTIAL on the author's own word ('Path-based referencing is inspired by JSONPath'): the documented channel is real and concrete (Dojo implemented JSONPath in 1.1 - the parent's stored source), but what the convention consumes is the addressing subset (root marker + dot-delimited navigation) of ONE of its three forms, while JSONPath's headline mechanism - the query language of recursive descent, filters and wildcards - is discontinued. A component consumed, with the parent's headline mechanism discontinued: the components-of-a-leap configuration. The debt is recorded at full strength here; it is the closest refusal at this parent."
+  ],
+  "rejected_of_note": [
+   "Kris Zyp's first JSON Schema proposal (json.com, 2007) - LINK refused as creator lineage / programme formation: the blog's link from 'JSON referencing' to www.json.com is a venue link, and no referencing document derives $ref, ids or paths from the schema proposal. The same-author sibling relation is recorded as lineage (Q11 partial). Design decision #2's territory - judged under current rules; the reverse edge (this convention INTO JSON Schema, session ~65) is a different question and untouched.",
+   "JavaScript (1995) - LINK refused: Q2 passes honestly (the runtime object model generates the very structures the convention exists to serialize) but there is no document channel - the blog's 'consistent with runtime object models' is a design rationale, and the convention was later specified language-neutrally. Importance/phenomenon without a channel is not ancestry. ECMA-262 third edition LINK refused as the formalism's carrier; first edition as superseded carrier; JavaScript 1.2 LINK as version grain of the same stratum.",
+   "JSON (RFC 4627) - LINK refused as presupposed substrate (necessary-as-a-class, substitutable-as-an-instance - the OpenAPI disposition for the same node): the convention is defined INSIDE the format. Edge-scoped; the node's other edges untouched.",
+   "Anticipation without a junction, all find-verified absent from the convention's corpus: YAML anchors and aliases (2001 - the closest prior art in another format), Java object serialization (1997 - the classical handle recipe in another runtime; the Hochreiter condition), XML ID and IDREF (1998 - the structural analogue, DTD-bound and unmentioned), XLink (2001) and XPointer (2003) (the non-adopted XML linking/addressing standards - negative space, not channels).",
+   "The multiples incumbents: W3C XML Schema (XSD) LINK and RELAX NG refused as parallel multiples - their role at this parent is already on the parent's own admission-verification record (named-type reuse made the JSON-native path ripe, not unique); multiples are verification evidence, not edges.",
+   "Dojo Toolkit refused as self-carriage / programme formation (the parent is its module - containment is not ancestry), and Dojo Foundation as institutional formation; both recorded under design decision #2's existing question, judged under current rules, no rule changed. MochiKit Deferred refused plainly: the wielded primitive is the programme-internal dojo.Deferred, and a mediation through it would assert a transmission the referencing documents do not document. HTTP/1.1 (RFC 2616) refused as presupposed message stratum (the module is transport-agnostic - the blog resolves references within files); REST (Fielding) refused as framework presupposition / a consumer article's gloss (the Fielding-at-OpenAPI disposition); Ajax and XMLHttpRequest refused as era/availability conditions. RFC 1738 LINK refused on mechanism mismatch (absolute URLs only; the consumed mechanism is relative resolution) - a mediation via RFC 3986 was considered and NOT recorded, since 1738's content is not what flows through the consumed algorithm. Relational foreign keys (Codd, 1970) refused on the text's own agnosticism: the blog names RDBMS relationships as one origin of referenced data in a passage whose point is that the client 'does not need to understand the details of how the reference was formed' - a named-but-bracketed origin is not a channel."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s81_dojo.json",
+  "outcomes": {
+   "rfc-3986-uniform-resource-identifier-uri-generic-syntax-2005": "provisional (mediation downgrade challenge via RFC 2396 recorded on the edge). Attack 1 (Q1 bound): confirms the partial scored at evaluation. Attack 2 (multiples on Q3): fails - by 2008 the relative-reference scheme existed in exactly one operative standard form; implementations are not rival schemes. Attack 3 (mediation / edition attack via RFC 2396): PARTIALLY LANDS in downgrade form - the documents name 'the standard relative URL scheme' without an edition, and 2008 implementers could have taken resolution behaviour from browsers rather than from 3986's text; the kill form fails (the documents engage the scheme AS a standard, whose operative 2008 document is 3986, obsoleting 2396 in 2005 - the RFC 1737 operative-document shape). Attack 4 (date/direction): fails. RE-HEARING CONDITION: a document showing dojox.json.ref's resolution follows RFC 2396-era or browser-specific rules where they diverge from RFC 3986, or that the author worked from a specific predecessor text."
+  }
+ },
+ "totals_after": {
+  "nodes": 285,
+  "edges": 359,
+  "budget": "285/2000",
+  "expansions_done": 172,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 34,
+   "4": 39,
+   "5": 58,
+   "6": 45,
+   "7": 30,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 268,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "toussaint-robot-trajectory-optimization-using-approximate-in-2009",
+  "rfc-3986-uniform-resource-identifier-uri-generic-syntax-2005",
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019"
+ ],
+ "sync_commit": "d9ee1af3"
+}
+{
+ "session": 82,
+ "expansion": 173,
+ "parent": "toussaint-robot-trajectory-optimization-using-approximate-in-2009",
+ "parent_name": "Toussaint, Robot trajectory optimization using approximate inference (AICO) (2009)",
+ "parent_year": 2009,
+ "parent_depth": 5,
+ "date": "2026-11-25",
+ "provenance": "Session 82, expansion 1 of 2. Scouted, resolved, judged and verified by session 82. Pipeline discipline per sessions 66/78/79: add-candidates verified on disk (52 raw in the expansion record); resolve was launched and auto-backgrounded by the shell - its completion was verified ON DISK before any judgments work (stage 'resolved', 28 distinct, node count unchanged at 285), so no re-run was made; apply-judgments verified (4/4 applied, no unknown pair ids, distinct stayed 28, all pending_judge flags cleared, the 3 LINK matched_node_ids verified programmatically: Applied Optimal Control (Bryson & Ho, 1969), Normal law of error (Gauss, 1809), A Markovian Decision Process (Bellman, 1957) - all type-checked against the stored records); verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor: Expectation Propagation 6.5; 7 mediated; 7 fail-closed partials); NO dry-run correction was spent (none was needed - the builder's missing/extra spec check passed clean, 28 == 28); apply-verdicts run exactly once; the created node spot-checked (stored leap/prior_state/bottleneck all non-empty, sources populated). Checkpoint: render + sync after this expansion; this record's sync_commit field rides the NEXT sync (the sessions 61-81 ride-forward pattern).",
+ "brief_correction": "The brief's hypothesis sketches were tested on the paper. (a) 'The KL-control stratum (Dayan & Hinton 1997 direct at this parent)': on the documents the line is documented but the mechanism is NOT consumed - the paper's s.3 history sentence names Dayan & Hinton for the binary-variable idea and then expressly DIFFERENTIATES its own neg-log-of-cost form from the cited reward/utility-proportional forms; AICO is an EP message-passing algorithm, not an EM algorithm. Dayan & Hinton is a fail-closed partial, not an admission and not a mediation. (b) 'The author's own earlier stratum (Toussaint & Storkey 2006)': the parent's bibliography cites a DIFFERENT artifact - Toussaint, Harmeling & Storkey (2006), the Edinburgh tech report EDI-INF-RR-0934 - not the ICML Toussaint & Storkey (2006) paper Rawlik cited. The two were judged as the distinct artifacts they are; the tech report is a fail-closed partial under own-version discipline. (c) The approximate-inference stratum resolved more precisely than the brief's sketch: the consumed mechanism is Expectation Propagation specifically (the s.3.2 update is EP's KL projection onto the Gaussian family F), while the factor-graph/BP formalism around it is presupposed background recapped 'for a thorough introduction'. (d) The EM algorithm itself is ABSENT from the paper (find-verified against the enumerated 19-entry bibliography) - an absence refusal, filed deliberately; the run's EM hearing remains assigned to the McLachlan & Basford (1988) expansion and is not prejudged here.",
+ "grounding": "The parent grounded on the FULL TEXT of Toussaint, 'Robot Trajectory Optimization using Approximate Inference' (ICML 2009, pp.1049-1056), read this session: s.1 genealogy (influence diagrams Cooper 1988 / Shachter 1988; the EM-RL relation Dayan & Hinton 1997; Attias 2003 planning by probabilistic inference; EM for MDPs/POMDPs Toussaint et al. 2006; Kalman duality Stengel 1986 / Todorov 2008, 'strictly holds only in the LQG case'; Kappen et al. 2009; Todorov 2008's ML-trajectory model - 'We follow this latter approach'; Toussaint & Goerick 2007 as the author's own special case; Bryson & Ho 1969 as the classical tradition; iLQG Todorov & Li 2005 stated in full as Algorithm 1; gradient/spline methods Chen 1991, Zhang & Knoll 1995, Schlemmer & Gruebel 1998); the s.1 plan sentence ('Then we generalize to the non-LQG case based on Expectation Propagation (Minka, 2001b)'); s.3's model (binary task variable z_t with P(z_t=1|u_t,x_t) = exp{-c_t}, eq.10; the history sentence naming Cooper/Shachter/Dayan & Hinton for the binary-variable idea and, via Shachter & Peot 1992, Raiffa 1969 and von Neumann & Morgenstern 1947; the paper's explicit differentiation of its neg-log-of-cost form from the cited reward/utility-proportional forms); s.3.1 Theorem 1 (the LQG messages correspond exactly to the Riccati equations); s.3.2 (factor-graph message-passing recap cited to Yedidia et al. 2001, Murphy 2002, Minka 2001a 'for a thorough introduction'; the non-LQG generalization 'based on Expectation Propagation (Minka, 2001b)' - the update is EP's KL projection of the belief onto the Gaussian family F, eqs.31-32; Algorithm 2 = AICO); s.4 (39-DoF simulated humanoid; AICO beats iLQG on convergence time at equal cost; 'iLQG does not converge on some instances for alpha close to 1'; GRAD(spline) 'performs much worse... because the spline encoding restricts the space of trajectories'); s.5 conclusion ('Other than previous approaches that tried to generalize Kalman's duality fully to non-LQG cases we aimed for a local approximate solution'); acknowledgements (DFG, Emmy Noether fellowship TO 409/1-3; author at TU Berlin). The COMPLETE bibliography (19 entries) was enumerated this session. FIND-VERIFIED ABSENCES: Pearl (1988), Kschischang et al. (2001) and Dempster, Laird & Rubin (1977) are NOT in the bibliography.",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state all non-empty and coherent with the paper (leap: the recasting of trajectory optimization as approximate inference with a binary task variable whose likelihood is the exponentiated negative cost). The node's stored SOURCES list is EMPTY - the standing creation wart logged for Katz/Jaques/Rawlik, logged again here, not edited. The node's verification record carries the session-81 NIPS-2010 mediation downgrade challenge on the Rawlik -> AICO edge (re-hearing condition: a document showing the inference control model was taken from the NIPS 2010 presentation rather than from Toussaint 2009 itself) - untouched by this expansion. Zero prior rejections existed for this parent (first expansion). A standing wart from an earlier stratum was re-observed in this session's node dump and is logged here without edit: Gauss's stored leap field was observed EMPTY in the session-82 dump (the session-41 reconstruction stands on the record; no hand-edit made).",
+ "scout": {
+  "builder": "run-01/work/build_scout_aico.py",
+  "raw_candidates": 52,
+  "per_lens_floors": "met on the builder's output before resolve: L1 5, L2 5, L4 5, L5 3, L6 5, L7 3, L11 3, L13 4, L18 1, L19 8, L20 3, L21 3 (48 content filings); meta passes L3 3, L23 1; dry notes for L8, L9, L10, L12, L14, L15, L16, L17, L22 (all dry-with-finding) plus the L18 sparse note (one filing only - the lab simulator). Dry notes file: run-01/work/dry_notes_toussaint-robot-trajectory-optimization-using-approximate-in-2009.json. Three graph-existing candidates were filed as LINKs under exact canonical names (Applied Optimal Control (Bryson & Ho, 1969), Normal law of error (Gauss, 1809), A Markovian Decision Process (Bellman, 1957)) - all 3 matched at resolve, every matched_node_id verified programmatically. Two deliberate calendar filings: Kappen, Gomez & Opper (2009) and Toussaint's NIPS-workshop note (2009). Scout reconciliation: 52 raw filings = 33 distinct names intended; resolve dropped 6 same-year filings (see calendar_dropped_at_resolve), giving 28 distinct == the verdicts builder's 28 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 28,
+  "dropped": 6,
+  "matched_existing": 3,
+  "auto_merges": 18,
+  "judge_queue": 4,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 4 pairs (two unique collisions, each filed twice), all adjudicated DIFFERENT on the documents: (cand-cand:1:44 and cand-cand:31:44) Yedidia, Freeman & Weiss (2001), the published BP exposition, vs Toussaint's own 2008 lecture notes on factor graphs and belief propagation - a primary source and the parent author's later teaching exposition are distinct artifacts, the notes judged on their own creator-lineage merits; (cand-cand:37:38 and cand-cand:37:48) Shachter (1988), the original influence-diagram inference paper, vs Shachter & Peot (1992), the distinct later consolidation through which the parent's history sentence reaches Raiffa and von Neumann & Morgenstern. Applied 4/4, no unknown pair ids; distinct stayed 28; all pending_judge flags cleared.",
+ "calendar_dropped_at_resolve": [
+  "Kappen, Gomez & Opper, Optimal control as a graphical model inference problem (2009) - filed twice (L2, L6), same year as the parent; the exact-duality sibling the conclusion defines the parent against. Dropped by the year-granularity bound on the record; content dates logged, no re-dating.",
+  "Toussaint, Pros and Cons of truncated Gaussian EP in the context of Approximate Inference Control (NIPS workshop note, Oct 2009) - the author's own follow-up account; postdates the parent (ICML, June 2009) within the same year and is downstream commentary in any case.",
+  "Simulated 39-DoF humanoid robot (Toussaint laboratory testbed) (2009) - the in-house simulator apparatus of s.4, dated the parent's year; dropped by the bound. Had it survived, grain would have been the gate's question (unnamed in-house apparatus).",
+  "Technische Universitaet Berlin (2009) - the author's institution, filed at the parent's year; formation in any case.",
+  "International Conference on Machine Learning (ICML 2009) (2009) - the venue; a venue registers rather than enables in any case."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_toussaint-robot-trajectory-optimization-using-approximate-in-2009.json",
+  "builder": "run-01/work/build_verdicts_aico.py",
+  "evaluations": 28,
+  "count_check": "evaluations == distinct candidates from show-distinct (28 == 28), verified by the builder's missing/extra spec check; field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (1 survivor: Expectation Propagation 6.5; 7 mediated; 7 fail-closed partials) BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once; the created node spot-checked with non-empty stored leap/prior_state/bottleneck and a populated sources list",
+  "survivors": [
+   "Expectation Propagation (Minka, 2001) - NEW, 6.5, PROVISIONAL, depth 6: citation + instantiation of the mechanism itself - s.1 names EP (Minka, 2001b) as the basis of the non-LQG generalization, s.3.2 defines the AICO update as EP's KL projection of the belief onto the Gaussian family F (eqs.31-32), and Algorithm 2 is that scheme run over the trajectory chain. The parent CONTINUES EP's headline operation and carries it into control - the operative-carrier shape. Capped provisional at verification: a mediation downgrade challenge via Minka's own 2001 thesis partially lands (see verification)."
+  ],
+  "mediated": [
+   "Cooper, A method for using belief networks as influence diagrams (1988) - MEDIATED via Shachter & Peot (1992): named only inside the s.3 history sentence, as part of the genealogy the 1992 consolidation carries.",
+   "Shachter, Probabilistic inference and influence diagrams (1988) - MEDIATED via Shachter & Peot (1992): the 1992 paper is the consolidation the parent's history sentence engages; the 1988 original is one level deeper.",
+   "Von Neumann & Morgenstern, Theory of Games and Economic Behavior (1947) - MEDIATED via Shachter & Peot (1992): the parent's history sentence routes the utility foundation through the 1992 paper.",
+   "Raiffa, Decision Analysis (1969) - MEDIATED via Shachter & Peot (1992): same route as von Neumann & Morgenstern.",
+   "Minka, A family of algorithms for approximate Bayesian inference (2001) - MEDIATED via Expectation Propagation (Minka, 2001): the thesis's content reaches the parent through the UAI publication its mechanism citations name; the thesis is also the verification-stage downgrade challenge on the EP edge.",
+   "Pearl, Probabilistic Reasoning in Intelligent Systems (1988) - MEDIATED via Yedidia et al. (2001): find-verified ABSENT from the bibliography; the formalism's channel is the cited 2001 exposition.",
+   "Factor graphs (Kschischang, Frey & Loeliger, 2001) - MEDIATED via Yedidia et al. (2001): find-verified ABSENT from the bibliography; the parent's factor-graph channel is the exposition whose title states the formalism."
+  ],
+  "fail_closed_partials": [
+   "Todorov, General duality between optimal control and estimation (2008) - directness PARTIAL, the expansion's MOST CONTESTABLE negative (2.5): s.1 names the candidate for the ML-trajectory model and states 'We follow this latter approach' - a stance expressly adopted - but no duality machinery is used, the specific model is the paper's own construction, and s.5 differentiates its aim from the duality programme ('we aimed for a local approximate solution'). Adoption of a stance with the mechanism built independently is the Hochreiter configuration. RE-HEARING CONDITION: a document showing the parent's model or update equations derive from Todorov (2008)'s duality construction rather than from its own s.3 construction.",
+   "Dayan & Hinton, Using expectation maximization for reinforcement learning (1997) - directness PARTIAL: the s.3 history sentence names it for the binary-variable idea, but the paper expressly differentiates its neg-log-of-cost form from the cited reward-proportional forms, and AICO is not an EM algorithm - a device ancestor whose specific form the child replaces.",
+   "Attias, Planning by probabilistic inference (2003) - directness PARTIAL: the idea-family ancestor, named in the s.1 genealogy; no Attias mechanism instantiated.",
+   "Toussaint, Harmeling & Storkey, Probabilistic inference for solving (PO)MDPs (2006) - directness PARTIAL: own-version discipline - the author's own earlier EM statement (the tech report the parent actually cites, discriminated from the ICML Toussaint & Storkey 2006 paper), whose mechanism the parent departs from; no independent grading voice.",
+   "Toussaint & Goerick, Probabilistic inference for structured planning in robotics (2007) - directness PARTIAL: the author's own special case, positioned as such by the parent itself; own-version discipline.",
+   "Belief propagation in pairwise factor graphs (Yedidia, Freeman & Weiss, 2001) - directness PARTIAL: the presupposed formalism, recapped in s.3.2 'for a thorough introduction' - the text's own signal of background, not consumption; the consumed mechanism is EP's projection.",
+   "Shachter & Peot, Decision making using probabilistic inference methods (1992) - directness PARTIAL: engaged directly in the s.3 device-history sentence, but history-of-the-device is not consumption-of-the-mechanism; its mediator role for four deeper candidates is recorded on those candidates."
+  ],
+  "rejected_of_note": [
+   "Todorov & Li, A generalized iterative LQG method (iLQG) (2005) - the defined-against incumbent, stated in full as Algorithm 1 in order to be superseded (s.4: 'iLQG does not converge on some instances'); the correction relation was tested and fails on its terms - the parent replaces iLQG's worked object (local LQG iteration) with EP message passing rather than extracting it. The displaced prior state.",
+   "Chen (1991), Zhang & Knoll (1995), Schlemmer & Gruebel (1998) - the compared gradient/spline incumbents; GRAD(spline) 'performs much worse... because the spline encoding restricts the space of trajectories' (s.4).",
+   "Applied Optimal Control (Bryson & Ho, 1969) - LINK REFUSED as presupposed tradition/frame citation (the SMRW shape): cited as the classical-tradition anchor; no variational construction instantiated, Theorem 1 being proved by the paper's own message algebra. Framing-dependence stated in the evaluation: relative to the parent as stored.",
+   "Stengel, Stochastic Optimal Control (1986) - LINK-class carrier refusal: the textbook carrier of the classical Kalman-duality statement; the duality's channel, where engaged, is Todorov (2008). Murphy (2002) - carrier, cited only inside the s.3.2 recap's reading pointer.",
+   "Normal law of error (Gauss, 1809) - LINK REFUSED as presupposed substrate: the Gaussian family F is load-bearing, but its documented channel is EP's family choice; a two-century ambient gap carried by the admitted intermediate is the presupposition shape.",
+   "A Markovian Decision Process (Bellman, 1957) - LINK REFUSED as framework presupposition (the MDP/DP disposition at sparse sampling and at Jaques).",
+   "Riccati equation (1724) - component/apparatus: Theorem 1 IDENTIFIES the LQG messages with the Riccati recursion; identification with a classical component is not derivation from it.",
+   "EM algorithm (Dempster, Laird & Rubin, 1977) - ABSENCE refusal, find-verified against the enumerated 19-entry bibliography; AICO is not an EM algorithm. The run's EM hearing remains assigned to the McLachlan & Basford (1988) expansion.",
+   "Toussaint, Factor graphs and belief propagation (lecture notes, 2008) - creator lineage: the author's own teaching exposition; the channel is the person, which is formation (the Castelli discrimination).",
+   "Deutsche Forschungsgemeinschaft, Emmy Noether Programme - funding is not inside the artifact (acknowledgements: DFG / Emmy Noether fellowship TO 409/1-3)."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s82_aico.json",
+  "outcomes": {
+   "expectation-propagation-minka-2001-2001": "provisional (mediation downgrade challenge via Minka's 2001 MIT thesis recorded on the edge). Attack 1 (Q1 bound): confirms the partial scored at evaluation (approximate inference predates EP in variational/sampling forms; EP's flip is its projection operation). Attack 2 (multiples on Q3 - variational Bayes and belief propagation as substitutes): fails - neither supplies the KL-projection update the parent's s.3.2 defines and s.1 names. Attack 3 (mediation via the thesis, 2001a): PARTIALLY LANDS in downgrade form - the thesis contains EP as its central chapter and is cited in the s.3.2 recap; the kill form fails (the mechanism citations are expressly to Minka 2001b in ss.1 and 3.2). Attack 4 (date/direction): fails. RE-HEARING CONDITION: a document showing AICO's EP update was taken from the thesis (2001a) or another intermediary rather than from the UAI 2001 paper itself."
+  }
+ },
+ "totals_after": {
+  "nodes": 286,
+  "edges": 360,
+  "budget": "286/2000",
+  "expansions_done": 173,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 34,
+   "4": 39,
+   "5": 58,
+   "6": 46,
+   "7": 30,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 269,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "expectation-propagation-minka-2001-2001",
+  "rfc-3986-uniform-resource-identifier-uri-generic-syntax-2005",
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019"
+ ],
+ "sync_commit": "rides the next sync (see provenance)"
+}
