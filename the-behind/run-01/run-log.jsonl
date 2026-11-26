@@ -11379,5 +11379,120 @@
   "drqa-chen-et-al-2017-2017",
   "show-your-work-scratchpads-for-intermediate-computation-with-2021"
  ],
- "sync_commit": "rides the sync that carries this record (session-82 ride-forward pattern)"
+ "sync_commit": "f39eda0f"
+}
+{
+ "session": 84,
+ "expansion": 177,
+ "parent": "bert-devlin-et-al-2018-2018",
+ "parent_name": "BERT (Devlin et al., 2018)",
+ "parent_year": 2018,
+ "parent_depth": 3,
+ "date": "2026-11-25",
+ "provenance": "Session 84, expansion 1 of 2. Scouted, resolved, judged and verified by session 84. All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/79/82/83 discipline): add-candidates verified on disk (stage 'scouted', 46 raw candidates in graph.json); resolve ran in the foreground via the MiniLM venv python (47 s) and was verified on disk at stage 'resolved' (28 distinct, 4 LINK matches, 0 judge pairs) before any verdicts work; verdicts dry-run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor, a LINK: Transformer architecture 6.5; 4 fail-closed partials; 7 mediated); NO dry-run correction was spent (the builder's missing/extra spec check passed clean, 28 == 28); apply-verdicts run exactly once; the linked node's stored leap/prior_state/bottleneck/definition verified non-empty programmatically. The session-83 expansion-176 record's sync_commit field was fixed up in this pass to f39eda0f (the commit that actually carried it - the session-82 fix-up precedent); this record's own sync_commit rides the sync that carries it.",
+ "brief_correction": "The brief's hypothesis sketches were tested on the paper's own apparatus (arXiv:1810.04805 read in full this session). (a) The Transformer stratum: the brief asked 'consumed substrate vs ancestry' - the documents answer ANCESTRY (operative carrier): s.3 states the architecture is 'based on the original implementation described in Vaswani et al. (2017)... our implementation is almost identical to the original', and the stored leap itself names the architecture. ADMITTED as a LINK, 6.5 - the expansion's only survivor. (b) The masked-LM / cloze stratum: the brief pointed at Taylor (1953) as 'the direct question' - the documents give a sharper answer than a hearing: the parent declares the inspiration in s.1 ('inspired by the Cloze task Taylor (1953)'), but the cloze task's conversion into a neural TRAINING objective is a named, nearer artifact (Melamud et al. 2016, surveyed in the parent's own s.2.1), so Taylor is recorded MEDIATED via context2vec, and Melamud stands as the fail-closed partial at the end of that chain (the most contestable negative of the expansion). At ORQA, Taylor was a partial with ICT's 'from first principles' disclaimer; here there is no disclaimer, and the record is correspondingly sharper. (c) The pretraining stratum: the brief named word2vec/GloVe/ELMo as 'the paper's own named lineage' - word2vec and GloVe are indeed named in s.2.1's survey, but NEITHER IS CITED as a mechanism and neither exists as a graph node; more consequentially, the stratum's operative carriers (ELMo, GPT-1, ULMFiT, QuickThoughts) are ALL dated 2018, the parent's own year, and were calendar-dropped at resolve before any hearing - the brief's expectation that GPT-1 'may drop' proved true for the entire paradigm, not just GPT-1. The expansion's structural headline: BERT's ancestry inside its own paradigm is calendar-foreclosed (Feb/Jun 2018 precede Oct 2018 only at month granularity, inexpressible), and the trace descends to the architecture beneath the paradigm. (d) The paradigm-multiples cap on the admission edge (ELMo/GPT-1/BERT, session 83) is consistent with everything found here and untouched.",
+ "grounding": "The parent grounded on the FULL TEXT of Devlin, Chang, Lee & Toutanova, 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding' (arXiv:1810.04805, Oct 2018; NAACL 2019), read entire this session: abstract and s.1 (the pretraining lineage Dai & Le 2015, Peters et al. 2018a, Radford et al. 2018, Howard & Ruder 2018; feature-based vs fine-tuning strategies; the unidirectionality limitation; MLM 'inspired by the Cloze task Taylor (1953)'; NSP); s.2.1 (the embedding lineage Brown 1992, Ando & Zhang 2005, Blitzer 2006, Mikolov 2013, Pennington 2014, Turian 2010, Mnih & Hinton 2009; sentence embeddings Kiros 2015, Logeswaran & Lee 2018, Le & Mikolov 2014, Jernite 2017, Hill 2016; ELMo and Peters 2017 as shallow concatenation; Melamud 2016 'not deeply bidirectional'; Fedus 2018 cloze for generation); s.2.2 (Collobert & Weston 2008; Dai & Le 2015; Howard & Ruder 2018; Radford 2018); s.2.3 (Conneau 2017; McCann 2017; ImageNet transfer Deng 2009 / Yosinski 2014); s.3 (architecture 'based on the original implementation described in Vaswani et al. (2017) and released in the tensor2tensor library', 'almost identical to the original'; WordPiece Wu et al. 2016, 30k vocabulary; BASE chosen 'to have the same model size as OpenAI GPT for comparison purposes'); s.3.1 (MLM 15% masking, 80/10/10 corruption; 'In contrast to denoising auto-encoders Vincent et al. (2008), we only predict the masked words'; NSP footnote 6 naming Jernite 2017 and Logeswaran & Lee 2018 as NSP's relatives with the transfer-all-parameters differentiator; pretraining data BooksCorpus 800M words + English Wikipedia 2,500M words; 'It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark Chelba et al. (2013)'); s.3.2 (the independent-encoding pattern of Parikh 2016 and Seo 2017 that unified self-attention replaces; fine-tuning 'in at most 1 hour on a single Cloud TPU'); s.4 (GLUE Table 1: BERT LARGE 80.5 vs GPT 72.8; SQuAD v1.1 test F1 93.2 with TriviaQA augmentation, footnote 12 pricing TriviaQA at 0.1-0.4 F1; SQuAD v2.0 +5.1 F1; SWAG Table 4); s.5.1 (ablations: No NSP; 'LTR & No NSP' directly comparable to OpenAI GPT; ELMo-style LTR/RTL concatenation 'strictly less powerful than a deep bidirectional model'); s.5.2 (largest prior Transformer Al-Rfou et al. 2018, L=64, 235M, vs BERT LARGE 340M); s.5.3 (feature-based ablation on CoNLL-2003; CVT Clark 2018; CSE Akbik 2018); Appendix A.5 (BASE on 4 Cloud TPUs in Pod configuration, 16 chips; LARGE on 16 Cloud TPUs, 64 chips; each pretraining 4 days; footnote 13 links the June 2018 Cloud TPU preemptible-pricing announcement). Authors Devlin, Chang, Lee, Toutanova (Google AI Language); Kenton Lee is co-author of Logeswaran & Lee (2018).",
+ "parent_record_note": "Parent stored fields verified before evaluating: definition, bottleneck, leap, prior_state ALL non-empty and coherent; sources populated (1 entry) - this parent does NOT carry the pipeline.py:300-302 wart, and no reconstruction was needed. One vantage note (logged, never hand-edited): the stored prior_state is written from the ORQA child's perspective ('Static word embeddings and per-task encoders (ELMo the strongest); retrieval necessarily lexical...') - the retrieval clause belongs to the child's framing; evaluation proceeded against the BERT paper itself, whose own prior state (unidirectional or shallowly bidirectional pretraining) is what the verdicts' leap record states. Zero prior rejections existed for this parent (first expansion).",
+ "scout": {
+  "builder": "run-01/work/build_scout_bert.py",
+  "raw_candidates": 46,
+  "per_lens_floors": "met on the builder's output before resolve: L1 3, L2 6, L4 3, L5 3, L6 5, L7 4, L8 4, L11 3, L17 4, L19 3, L22 2 (44 content filings); L9 1 filing + shortfall dry note (the documents name exactly one compute artifact class); L13 1 filing + shortfall dry note (exactly one library named); L20 1 filing + shortfall dry note; L21 1 filing + shortfall dry note; L22 shortfall note added in the same pass; meta pass L3 2 filings, L23 dry-with-finding; dry notes for L10, L12, L14, L15, L18 (dry) and L16 (dry-with-finding: no specification implemented; WordPiece is an algorithm, filed at L1). Dry notes file: run-01/work/dry_notes_bert-devlin-et-al-2018-2018.json. Five graph-existing candidates were concept-searched before scouting and filed as LINKs under exact canonical names and stored type strings (Transformer architecture 'method', Bahdanau attention 'method', Generative pretraining (GPT-1) 'system', Semi-supervised sequence learning 'method', BooksCorpus 'system') - 4 matched at resolve (GPT-1 was calendar-dropped before matching), every matched_node_id verified programmatically. Ten deliberate calendar filings (GPT-1 x3, ELMo x3, ULMFiT x2, QANet, GLUE, SWAG, QuickThoughts, Al-Rfou et al., the English Wikipedia corpus as extracted in 2018, Google AI Language 2018 - 15 filings, 10 distinct). Scout reconciliation: 46 raw filings = 38 distinct names intended; resolve dropped the 15 calendar filings (10 distinct), auto-merged the 3 cross-lens duplicate pairs (Dai & Le, Melamud, Cloud TPU), giving 28 distinct == the verdicts builder's 28 evaluations (count-verified)."
+ },
+ "resolution": {
+  "distinct": 28,
+  "dropped": 15,
+  "matched_existing": 4,
+  "auto_merges": 3,
+  "judge_queue": 0,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 0 pairs - no judgments step required.",
+ "calendar_dropped_at_resolve": [
+  "Generative pretraining (GPT-1) (Radford et al., 2018) - 3 filings (L2, L6, L11): the fine-tuning ancestor the parent modifies and its s.5.1 ablation reconstructs; June 2018 precedes October 2018 at month granularity, inexpressible in the year bound. Its role survives in this record as the named mediator of the Dai & Le rejection.",
+  "ELMo: Deep contextualized word representations (Peters et al., 2018) - 3 filings (L2, L5, L6): the feature-based carrier and the parent's named contrast throughout; February 2018. Its role survives as the named mediator of the Mnih & Hinton and Peters et al. (2017) rejections.",
+  "ULMFiT (Howard & Ruder, 2018) - 2 filings (L2, L11): the fine-tuning lineage's third 2018 carrier.",
+  "QuickThoughts (Logeswaran & Lee, 2018) - the creator-lineage carrier of the NSP objective family (Kenton Lee, co-author of the parent); at ORQA this paper was the most contestable negative - here its hearing is calendar-foreclosed.",
+  "GLUE benchmark (Wang et al., 2018) and SWAG (Zellers et al., 2018) - the arenas that registered the leap; calendar-foreclosed and arena-class in any case.",
+  "QANet (Yu et al., 2018) - the SQuAD leaderboard incumbent of Table 2.",
+  "Character-level language modeling with deeper self-attention (Al-Rfou et al., 2018) - s.5.2's scale comparison.",
+  "English Wikipedia text corpus as extracted (2018) - the larger pretraining constituent, dated to its extraction year for the parent; the corpus as a continuing artifact is not separately datable, and the class/instance hearing is carried by the BooksCorpus verdict.",
+  "Google AI Language (2018) - the performing institution, dated to the parent's year; a formation record either way."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_bert-devlin-et-al-2018-2018.json",
+  "builder": "run-01/work/build_verdicts_bert.py",
+  "evaluations": 28,
+  "count_check": "evaluations == distinct candidates from show-distinct (28 == 28), verified by the builder's missing/extra spec check; field discipline on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); dry run through score.rank_candidates reproduced the intended outcome (1 survivor, a LINK: Transformer architecture 6.5; 4 fail-closed partials; 7 mediated) BEFORE applying; no dry-run correction spent; apply-verdicts run exactly once; the linked node's stored leap/prior_state/bottleneck/definition verified non-empty programmatically",
+  "survivors": [
+   "Transformer architecture (2017) - LINK, 6.5, PROVISIONAL (verification: Q3 substitutability attack confirms the partial priced at evaluation), depth 2 (existing node): the operative-carrier admission. S.3: the parent's model is the candidate's encoder 'based on the original implementation described in Vaswani et al. (2017) and released in the tensor2tensor library... our implementation is almost identical to the original'; the stored leap names the architecture ('deep bidirectional transformer encoders'); s.5.2 frames the parent's scale against the candidate's own largest instance. Q1 partial (the see-itself blocker is removed by the parent's masking, not by the architecture); Q3 partial (a bidirectional LSTM masked LM is conceivable in principle - Melamud is its shallow ancestor - but no 2018 bidirectional-pretraining result exists on another substrate). Mediation attack at verification pressed tensor2tensor (the candidate's packaging), Bahdanau attention (inside the candidate) and GPT-1 (a sibling child, not an intermediate - BERT BASE's size was chosen to MATCH GPT's for comparison, presupposing independent access to the architecture); all three fail."
+  ],
+  "mediated": [
+   "Bahdanau attention (2014) - LINK MEDIATED via Transformer architecture: attention reaches the parent inside the architecture s.3 adopts wholesale.",
+   "Semi-supervised sequence learning (Dai & Le, 2015) - LINK MEDIATED via Generative pretraining (GPT-1), a DATE-DROPPED mediator (the Ziegler shape): the paradigm's operative carrier for this parent is the artifact ss.1/5.1 engage; the candidate's specific mechanism (LM as auxiliary objective, LSTM substrate) is nowhere instantiated.",
+   "Mnih & Hinton hierarchical distributed language model (2009) - MEDIATED via ELMo (date-dropped): the LM-objective embedding stratum reaches the parent through its contextual-representation carriers.",
+   "Semi-supervised sequence tagging with bidirectional language models (Peters et al., 2017) - MEDIATED via ELMo (date-dropped), its own successor artifact: the parent's text engages the biLM line at its 2018 artifact.",
+   "Cloze procedure (Taylor, 1953) - MEDIATED via Context2vec (Melamud et al., 2016): the parent declares the inspiration (s.1) but the cloze task's conversion into a neural training objective is the 2016 artifact its own s.2.1 surveys; the sharper record than ORQA's partial, because here there is no 'from first principles' disclaimer. Re-hearing condition recorded on the verdict.",
+   "A unified architecture for natural language processing (Collobert & Weston, 2008) - MEDIATED via Semi-supervised sequence learning: the pretrain-and-reuse idea reaches the parent through the fine-tuning lineage's named carriers; a ten-year, three-carrier chain.",
+   "tensor2tensor library (2017) - MEDIATED via Transformer architecture: the architecture's release vehicle; the channel is the architecture's (the Anserini/Lucene discipline, direction reversed)."
+  ],
+  "fail_closed_partials": [
+   "Context2vec (Melamud et al., 2016) - directness PARTIAL, THE MOST CONTESTABLE NEGATIVE of the expansion: the parent's headline objective (predict a word from both contexts) in its prior form, named in the parent's own s.2.1 lineage - but the parent instantiates none of its mechanism (LSTM, single-word head, feature-based use) and grades it itself ('not deeply bidirectional'); the MLM is a redesign against the ELMo/GPT unidirectionality diagnosis, not the candidate's objective carried over. Re-hearing condition: a document showing BERT's MLM design was derived from context2vec's formulation.",
+   "Sentence representation learning objectives (Jernite et al., 2017) - directness PARTIAL: s.3.1 footnote 6 names the relation to NSP and its differentiator in one breath ('only sentence embeddings are transferred... where BERT transfers all parameters'); an objective-relative of a secondary component.",
+   "BooksCorpus (2015) - LINK, directness PARTIAL: consumed wholesale (800M of the parent's 3.3B words, s.3.1), but the paper's own argument makes a PROPERTY load-bearing (document-level contiguity), and properties are substitutable across instances - the other constituent supplies the same property at 3x size. The class/instance discrimination (TL;DR at Ziegler; the Wikipedia snapshot at ORQA). Its ORQA record (mediated via BERT) is edge-scoped and untouched.",
+   "Google Cloud TPU (2016) - directness PARTIAL: named consumption at the demonstrated scale (Appendix A.5: 16 chips BASE, 64 chips LARGE, 4 days each), but the artifact as documented is a service class with the generation unspecified - the session-83 ORQA shape, applied to the same artifact class."
+  ],
+  "rejected_of_note": [
+   "WordPiece tokenization (Wu et al., 2016) - the component shape in pure form: directness PASSES (named, directly consumed, no mediator) and the candidate still fails at the gates (Q1/Q2 fail; Q3 fails on substitutability - BPE is the sibling scheme). Components of a leap are not leaps.",
+   "BiDAF (Seo et al., 2017) and Decomposable attention (Parikh et al., 2016) - the defined-against incumbents of s.3.2: the independent-encoding-then-cross-attention pattern the parent's unified self-attention supersedes; the correction relation does not apply (no worked object extracted).",
+   "Denoising autoencoders (Vincent et al., 2008) - the named contrast of s.3.1 ('we only predict the masked words rather than reconstructing the entire input'); consumed-vs-compared at the objective-family level.",
+   "SQuAD (Rajpurkar et al., 2016) - arena only at this parent (at ORQA it carried three channels and was a partial; here the direction is wrong for ancestry - the dataset measures the leap). GLUE and SWAG were calendar-dropped arenas; CoNLL-2003 the arena of one ablation.",
+   "ImageNet (Deng et al., 2009) - s.2.3's cross-field framing analogy: a warrant that the recipe worked elsewhere, not a mechanism carried in.",
+   "CoVe (McCann et al., 2017) and InferSent (Conneau et al., 2017) - the supervised-transfer direction the parent's design does not take; engagement and differentiation, not consumption.",
+   "One Billion Word Benchmark (Chelba et al., 2013) - a resisted substrate: s.3.1's data-design argument requires NOT using it.",
+   "TriviaQA (Joshi et al., 2017) - a downstream fine-tuning constituent priced by the parent itself at 0.1-0.4 F1 (footnote 12).",
+   "Turian et al. (2010) and Brown et al. (1992) - the survey stratum's warrant and its 1992 head: genealogy, not channels.",
+   "Skip-thought vectors (Kiros et al., 2015), Paragraph vectors (Le & Mikolov, 2014), Hill et al. (2016) - the sentence-representation stratum at survey depth; the DAE family's hearing is recorded at the Vincent verdict."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s84_bert.json",
+  "outcomes": {
+   "transformer-architecture-2017": "provisional (edge-scoped to the BERT edge, per the node's standing edge-scoped verification practice: Q1 attack confirms the partial scored at evaluation - the see-itself blocker is removed by the parent's masking, not the architecture; multiples attack finds no independent inventor of the architecture, and the substitutability attack (a bidirectional LSTM masked LM is conceivable; Melamud its shallow ancestor) is exactly the Q3 partial already priced, so the edge never verifies on necessity grounds; date/direction clean on the parent's own s.3 declaration; mediation attack fails on all three pressed mediators - tensor2tensor (the candidate's packaging), Bahdanau attention (inside the candidate), GPT-1 (a sibling child of the candidate, not an intermediate). No mediation object.)"
+  }
+ },
+ "totals_after": {
+  "nodes": 290,
+  "edges": 366,
+  "budget": "290/2000",
+  "expansions_done": 177,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 36,
+   "4": 39,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 273,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "assumed-density-filtering-boyen-koller-1998-1998",
+  "loopy-belief-propagation-murphy-weiss-jordan-1999-1999",
+  "drqa-chen-et-al-2017-2017",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021",
+  "t5-text-to-text-transfer-transformer-2019"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the session's next append (session-82 precedent)"
 }
