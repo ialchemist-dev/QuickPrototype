@@ -12466,5 +12466,105 @@
   "brookgpu-stream-and-kernel-abstraction-2004",
   "generalized-advantage-estimation-gae-2016"
  ],
- "sync_commit": "rides the sync that carries this record; fixed up by the next session's append (session-82/85 precedent)"
+ "sync_commit": "d8ebf8b9"
+}
+{
+ "session": 89,
+ "expansion": 187,
+ "parent": "europarl-corpus-koehn-2005-2005",
+ "parent_name": "Europarl corpus (Koehn, 2005)",
+ "parent_year": 2005,
+ "parent_depth": 3,
+ "date": "2026-11-25",
+ "provenance": "Session 89, expansion 1 of 2. Scouted, resolved and judged by session 89. Discipline per sessions 66/78/82/85: add-candidates ran in the foreground and was verified (34 raw filings, stage 'scouted'); resolve was auto-backgrounded by the runtime (session proc_1e55014c850f) and its completion was verified ON DISK before any verdicts work (stage 'resolved', 17 distinct, 0 dropped, 0 prefiltered, 0 matched existing, judge queue 0 - matching the scout builder's intended 17 distinct names exactly, so no defined-but-unfiled repair was needed); the verdicts builder's count check passed (17 evaluations == 17 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (0 survivors; top raw scores Gale & Church 1.5, EP proceedings web publication 1.0, Hansard 0.5 - all three fail-closed on directness 'partial'); NO dry-run correction was spent (a considered non-correction: the Hansard raw score sits at rejection level because the gate questions price its channel class-level, and its partial status is carried by the directness record, which is the operative field - session-80 precedent for recording a considered non-correction); apply-verdicts run exactly once (evaluated 17, survivors 0, created 0, linked 0, rejected 17, mediated rejections 0). NO NODES WERE CREATED, so the created-node field spot-check is vacuous - stated explicitly per the checkpoint protocol; no verification step (no survivors). The session-88 expansion-186 record's sync_commit field was fixed up in this pass to d8ebf8b9 (the commit that actually carried it); this record's own sync_commit rides the sync that carries it. Render verified fresh (301 nodes / 382 edges) before syncing.",
+ "brief_correction": "The brief's three hypothesis strata were all heard and none produced an admission - the parent's leap is its own release form. (1) The extraction-pipeline stratum: Gale & Church was judged fresh at its actual parent (per the brief) and the channel is STRONGER here than the brief's WMT 2014 framing suggested - section 2.4 documents an implementation, not a presupposition - yet the verdict is the same shape, a fail-closed partial, because the candidate remains one pipeline step among five with alternatives cited in the same section; session 88's presupposed-inside-components partial at WMT 2014 is thereby discharged as a direct hearing. The rest of the pipeline stratum resolved as declined (wrapper induction, section 2.2), surveyed-but-not-instantiated (SATZ; Reynar & Ratnaparkhi, section 2.3 - the paper's splitter is hand-built abbreviation lists), cited-but-not-instantiated (Melamed) or uncited (Kay & Roscheisen, absent from the complete 12-entry bibliography). (2) The source-proceedings stratum SPLIT: the proceedings' web publication is a fail-closed partial (the crawl channel is direct, but the paper's own negotiated-transfer alternative weakens the counterfactual), while the European Parliament and the European Union decompose/form. (3) The predecessor parallel-corpus stratum: the Canadian Hansard corpus - the multiples cap recorded on this node's admission edge at WMT 2014 - was heard directly and is a fail-closed partial (genre prototype; the channel is the field's tradition and the paper's section 1 source class, not consumption). Net: a harvesting artifact whose pipeline steps are components, whose genre prototype is a class-level multiple, and whose raw material is its substance - the run's 20th zero.",
+ "grounding": "Koehn (2005), 'Europarl: A Parallel Corpus for Statistical Machine Translation', MT Summit 2005 (aclanthology.org/2005.mtsummit-papers.11.pdf), read in full this session. Load-bearing: the bibliography has exactly 12 entries (Brown et al. 1993; Gale & Church 1993; Koehn 2004 Pharaoh; Koehn 2005 shared task - a child document, not filed; Koehn, Och & Marcu 2003; Melamed 1999; Muslea et al. 1999; Palmer & Hearst 1997; Papineni et al. 2002; Resnik 1999; Reynar & Ratnaparkhi 1997; Riley 1989 - cited only as decision-tree background inside section 2.3's survey sentence, too diffuse to file); section 2.1 (the EP publishes proceedings as HTML under a liberal reproduction policy - 'reproduction is authorised, provided that the source is acknowledged'; crawling 'typically easier than contacting directly the technical staff... and negotiate a transfer procedure'; STRAND named as the web-mining alternative to manual source identification); section 2.2 (wrapper induction named and declined - 'for a single data source, a manual approach is often more efficient'; extraction is a hand-written Perl pattern-matching program); section 2.3 (sentence-breaking literature surveyed - SATZ, Riley, Reynar & Ratnaparkhi - while the paper's own splitter is semi-automatically built abbreviation lists); section 2.4 ('The alignment of sentences in the corpus is done with an implementation of the algorithm by Gale and Church [1993]'; the statmt.org page describes the released aligner the same way); section 2.5 (the common test set - last quarter of 2000 reserved - is the corpus's own design: self-carriage, not filed); section 2.6 (initial release data to 2001, second release to 2003, ~30M words/language, 11 languages, proceedings dating to 1996, ~1M sentences/language); section 3 (the 110-system demonstration trains phrase-based systems [Koehn et al. 2003] with the Pharaoh decoder [Koehn 2004], scored by BLEU [Papineni et al. 2002], on a generic 16-node Linux cluster; 'Fuelled by annual competitions and an active research community'); introduction names source classes only (UN/EU institutions; multilingual countries 'such as Canada (French, English) or the Hong Kong (English, Chinese)'). Gale & Church (1993), Computational Linguistics 19(1), read in full: the align program (character-length probabilistic model); a ~90M-word sample of the Canadian Hansards aligned with it and donated to the ACL/DCI. Hansard record: Brown et al. (1990/1993) trained the IBM models on the Canadian Hansard (~100M words EN with matching FR).",
+ "parent_record_note": "Parent stored record verified COMPLETE before evaluating (definition, bottleneck, leap, prior_state all populated and consistent with the paper). Stored sources list is EMPTY - the standing creation wart, already logged in the node's session-88 verification record; not hand-edited.",
+ "scout": {
+  "builder": "run-01/work/build_scout_europarl.py",
+  "raw_filings": 34,
+  "distinct_names_intended": 17,
+  "per_lens": {
+   "L1": 5,
+   "L2": 2,
+   "L3": 3,
+   "L4": 4,
+   "L6": 3,
+   "L8": 2,
+   "L11": 3,
+   "L13": 2,
+   "L17": 1,
+   "L19": 1,
+   "L20": 2,
+   "L21": 3,
+   "L22": 3
+  },
+  "dry_notes_file": "run-01/work/dry_notes_europarl-corpus-koehn-2005-2005.json",
+  "dry_notes": "Dry notes recorded as a LIST in the RUNBOOK shape. Dry-with-finding: L5 (the diagnosis is the paper's own section 1 - fragmented/proprietary parallel text is the parent's stated prior state, self-carriage of the diagnosis); L7 (the failure record lives inside the paper itself - extraction difficulties are the paper's own narrative); L9 (no machine named for construction; section 3's generic 16-node Linux cluster is demonstration compute, below grain); L12 (bespoke hand-written Perl extraction program - below milestone grain); L15 (static download release, no service); L16 (no standard implemented; Penn Treebank tokenisation named only as a future aspiration); L18 (no instrument of the corpus's own; BLEU filed under its own lens as register). Dry: L10, L14. Shortfall notes: L2, L8, L13, L17, L19, L20. L23 meta pass: no candidates. Scope discipline: the UN and Hong Kong corpora are named in section 1 only as source CLASSES - not filed; no released UN parallel corpus artifact predates 2005. Riley (1989) deliberately not filed (a survey-sentence citation as decision-tree background, too diffuse)."
+ },
+ "resolution": {
+  "distinct": 17,
+  "matched_existing": 0,
+  "auto_merges": 17,
+  "dropped_raw_filings": 0,
+  "prefiltered": 0,
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2"
+ },
+ "judgments": {
+  "queue": 0,
+  "decisions": "None - the judge queue was empty."
+ },
+ "calendar_dropped_at_resolve": "None. No filing was dated the parent's own year 2005. (Koehn's 2005 shared-task paper - the child document that became the WMT series' first edition - is a descendant of the corpus, not a predecessor, and was deliberately not filed; it is heard at the WMT series expansion as that node's own-edition question.)",
+ "verdicts": {
+  "file": "run-01/work/verdicts_europarl-corpus-koehn-2005-2005.json",
+  "builder": "run-01/work/build_verdicts_europarl.py",
+  "evaluations": 17,
+  "survivors": [],
+  "fail_closed_partials": [
+   "Sentence alignment (Gale & Church, 1993) - directness partial, dry-run score 1.5. The strongest form of the component shape: section 2.4 documents the channel ('The alignment of sentences in the corpus is done with an implementation of the algorithm by Gale and Church [1993]') and the released aligner is the same implementation; refused as one pipeline step among five, with the paper itself noting paragraph alignment simplified the step and Melamed (1999) cited in the same section (Kay & Roscheisen 1993 the same-issue alternative). Discharges session 88's presupposed-inside-components partial at WMT 2014 as a direct hearing - stronger channel, same shape (the Lee et al. at DrQA shape).",
+   "European Parliament proceedings published on the web (1996) - directness partial, dry-run score 1.0. The parent's raw material in published form: section 2.1's HTML publication under a liberal reproduction policy is what the extraction crawls; the counterfactual is weakened by the paper's own named alternative (negotiated transfer from EP technical staff was possible, only harder). Contrast Common Crawl at T5 - an artifact built as an advance, admitted; this is an institution's general publication practice.",
+   "Canadian Hansard corpus (1990) - directness partial, dry-run score 0.5. The genre prototype: Hansard demonstrated proceedings-as-parallel-corpus (Brown et al.'s training data; Gale & Church's aligned sample), and the paper's section 1 names the source class; but Koehn consumed no Hansard text, tool or data - the channel is tradition plus class framing, necessity class-level. This hearing discharges the Hansard-class multiples cap recorded on the Europarl edge at WMT 2014 (session 88): the cap stands and the candidate itself is a partial, not an admission."
+  ],
+  "rejections_of_note": "Brown et al. (1993) and phrase-based SMT (Koehn, Och & Marcu, 2003): framework presupposition - the corpus serves the paradigm; its extraction (proceedings from 1996, data to 2001) predates the 2003 paper, and section 3's channel runs from the corpus TO phrase-based practice. Wrapper induction (Muslea et al., 1999): cited and explicitly declined in section 2.2 - a parent's technically specific declination. STRAND (Resnik, 1999): the named road not taken (section 2.1). Melamed (1999): cited-but-not-instantiated. Kay & Roscheisen (1993): uncited parallel multiple (absent from the complete 12-entry bibliography). SATZ (1997) and Reynar & Ratnaparkhi (1997): section 2.3 survey background; the paper's splitter is hand-built abbreviation lists. Pharaoh (2004): wielded apparatus in section 3's demonstration only. BLEU (2002): register - it measures the corpus's use, not its construction (agreeing with its WMT 2014 record). NIST MT evaluation series: background competition climate at THIS parent - no document channel into a corpus paper; its substantive hearing belongs to the WMT series expansion and is not prejudged here. European Parliament (1952) and European Union (1993): decomposition/formation - the institution acts through the proceedings publication, judged separately. University of Edinburgh (1583): formation."
+ },
+ "verification": {
+  "file": null,
+  "outcomes": {},
+  "note": "No verification step: zero survivors, no edges created or linked. The Europarl node's own session-88 verification record (provisional; Hansard-class multiples cap) stands, and its multiples cap was discharged as corroboration by the Hansard hearing in this expansion."
+ },
+ "totals_after": {
+  "nodes": 301,
+  "edges": 382,
+  "budget": "301/2000",
+  "expansions_done": 187,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 40,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 284,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "wmt-shared-task-series-koehn-monz-2006-2006",
+  "asdiv-miao-et-al-2020-2020",
+  "brookgpu-stream-and-kernel-abstraction-2004",
+  "generalized-advantage-estimation-gae-2016",
+  "inverse-reinforcement-learning-ng-russell-2000"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
