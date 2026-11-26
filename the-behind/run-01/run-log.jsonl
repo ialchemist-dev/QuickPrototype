@@ -10404,5 +10404,118 @@
   "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
   "show-your-work-scratchpads-for-intermediate-computation-with-2021"
  ],
+ "sync_commit": "caf21462"
+}
+{
+ "session": 79,
+ "expansion": 168,
+ "parent": "fine-tuning-language-models-from-human-preferences-ziegler-e-2019",
+ "parent_name": "Fine-tuning language models from human preferences (Ziegler et al., 2019)",
+ "parent_year": 2019,
+ "parent_depth": 2,
+ "date": "2026-11-25",
+ "provenance": "Session 79, expansion 2 of 2 (the second frontier node at session start). Scouted, resolved, judged and verified by session 79. All pipeline steps were run in the foreground with on-disk verification after each (the sessions 66/78 discipline): add-candidates verified on disk at stage 'scouted' (raw_total_for_parent 75); resolve completed in the foreground and was verified against the on-disk stage 'resolved' with 56 distinct candidates before any judgments work. The expansion-167 checkpoint (sync commit caf21462, verified blob SHAs) preceded this expansion.",
+ "brief_correction": "No brief hypothesis was refuted at this parent; the brief's four test strata resolved as follows on the paper's own apparatus. (a) The policy-gradient stratum: the paper names its optimizer ONCE ('Train pi via Proximal Policy Optimization (PPO, Schulman et al. (2017))') and opens no other document of the stratum - PPO is judged a COMPONENT (directness passing, Q1/Q2 failing; its admission at RLHF (2022) is edge-scoped and untouched) and the other eight stratum LINKs are mediated through it. (b) The preference-learning stratum: the parent's protocol and loss ARE Christiano et al. (2017), as its Methods state - but the stratum's mathematical core (Bradley-Terry) is find-verified ABSENT from the paper, and TAMER is likewise absent ('Knox' does not occur): two absence findings, the first mediated through its cited user, the second refused with no mediation recorded (none is documented). (c) The GPT-2 stratum: GPT-2 is dated 2019, the parent's own year (released February 2019; the paper September 2019), so resolve's year bound dropped it mechanically - the substrate relation stands as recorded in the scout, in three mediations that name it (GPT-1, Transformer, BPE), and in the verification record; no re-dating attempted (the Perri-at-Langdon shape). (d) The summarization-task stratum: the task's RL incumbent (Paulus et al.) is the paper's quoted diagnosis - a fail-closed partial under the Hochreiter condition - and its corpora are refused under the class/instance discrimination. One further correction to the session's own preparation, recorded for honesty: the concept search before scouting missed the graph's existing 'Semi-supervised sequence learning' (2015) node; the judge queue caught the identity (the Dai & Le filing was judged SAME against it), so the candidate was correctly LINKed - the session-65/71 lesson (a pre-check grep can miss a node) confirmed again, with the queue as the safety net.",
+ "grounding": "The parent grounded on the FULL TEXT of Ziegler et al., 'Fine-Tuning Language Models from Human Preferences' (arXiv:1909.08593, submitted 18 Sep 2019, v2 8 Jan 2020; authors Ziegler, Stiennon, Wu, Brown, Radford, Amodei, Christiano, Irving), read this session: abstract (reward learning applied to four tasks - positive-sentiment and descriptive continuation; TL;DR and CNN/Daily Mail summarization; 5,000 comparisons for style, 60,000 for summarization; models are 'smart copiers'); Methods ('Following Christiano et al. (2017), we ask human labelers to pick which of several values of y_i is the best' - best-of-4; loss (1) the 4-way softmax choice loss; reward model a random linear layer on the LM's final embedding, 'following Radford et al. (2018)' for initialization, normalized to mean 0 / variance 1); the KL penalty (introduction: 'Following Jaques et al. (2017; 2019), we use a KL constraint'; s.2 reward R(x,y) = r(x,y) - beta*log(pi(y|x)/rho(y|x)); s.2.2 adaptive beta via a log-space proportional controller, e_t clip +/-0.2, K_beta = 0.1); policy training ('Train pi via Proximal Policy Optimization (PPO, Schulman et al. (2017))'; implementation 'the PPO2 version of Proximal Policy Optimization from Dhariwal et al. (2017)'); base model (s.2.1: 'a 774M parameter version of the GPT-2 language model in Radford et al. (2019) trained on their WebText dataset and their 50,257 token invertible byte pair encoding (Sennrich et al., 2015)'; Transformer, Vaswani et al. 2017); style tasks supervised-fine-tuned on BookCorpus (Zhu et al., 2015) before RL; datasets cited (Hermann et al. 2015 CNN/Daily Mail; Voelske et al. 2017 TL;DR); labeling (s.2.4 and Appendix B: Scale AI, QA handled by Scale with adapted quality systems); mock sentiment classifier trained on Amazon reviews (McAuley et al., 2015); s.4.1 batch/active-learning techniques named as applicable-but-unused; conclusion ('We extend previous reward learning work with pretrained models and KL regularization'; the Paulus et al. (2017) quotation on ROUGE-RL; concurrent work: 'In concurrent work, Boehm et al. (2019) also use human evaluations to learn a reward function for summarization'). The COMPLETE bibliography (~55 items) was read: it includes Christiano 2017; Jaques 2017 and Jaques 2019 (arXiv:1907.00456); Schulman 2017; Dhariwal 2017; Radford 2017/2018/2019; Leike et al. 2018; Christiano, Shlegeris & Amodei 2018; Irving et al. 2018; Ibarz et al. 2018; Bahdanau et al. 2018; Kreutzer et al. 2018; Nguyen et al. 2017; Li et al. 2016; Hancock et al. 2019; Ranzato et al. 2015; Paulus et al. 2017; Wu et al. 2016 (GNMT); Wu & Hu 2018; See et al. 2017; Gehrmann et al. 2018; Tambwekar et al. 2018; Dai & Le 2015; Peters et al. 2018; Howard & Ruder 2018; Kingma & Ba 2014; Kryscinski et al. 2019. FIND-VERIFIED ABSENCES in the full text: 'Bradley' (Bradley-Terry NOT cited), 'Knox' (TAMER NOT cited), 'Sadigh', 'Concrete problems' (Amodei et al. 2016 NOT cited); the enumerated bibliography also contains no Ng (IRL), no Wirth, no Thurstone, no Luce, no Plackett.",
+ "parent_record_note": "Parent stored fields verified intact before evaluating (definition, bottleneck, leap, prior_state all non-empty, read verbatim; no reconstruction). Stored record: name 'Fine-tuning language models from human preferences (Ziegler et al.)', year 2019, type 'method', depth 2, priority 5.0, provisional; definition 'train a reward model from human comparisons and fine-tune a pretrained LM (GPT-2) with PPO under a KL penalty'; admitted at RLHF (2022) at 5.0 and at Stiennon et al. (2020) at 7.0. Its verification record was read before evaluating ('Verdict: provisional. Direct scale predecessor; Q3 held at partial by the Boehm/Jaques multiples') - the same multiples pressure is recorded again at this expansion's verification. Zero prior rejections existed for this parent (first expansion). No stored-field discrepancies found.",
+ "scout": {
+  "builder": "run-01/work/build_scout_ziegler.py",
+  "raw_candidates": 75,
+  "per_lens_floors": "met on the builder's output before resolve: L1 6, L2 3, L4 7, L5 12, L6 9, L7 8, L11 5, L13 3, L16 3, L17 3, L20 4, L21 5; meta passes L3 4 + L23 3 = 7 (cap 10); dry notes for L8, L9 (dry-with-finding: the preference signal is self-collected - 5,000/60,000 comparisons gathered for the paper via Scale AI - so no external data artifact supplies it), L10, L12 (dry-with-finding: no compute artifact is named in the apparatus), L14, L15 (dry-with-finding: the substrate role is exhausted by the Baselines filing), L18 (maker form - the reward model IS the paper's own measuring instrument), L19 (dry-with-finding: no standard is implemented or incorporated; normative documents are programme documents, filed at L20/L21), L22. Dry notes file: run-01/work/dry_notes_fine-tuning-language-models-from-human-preferences-ziegler-e-2019.json. Twenty-one graph-existing candidates were sought by concept search before scouting and filed as LINKs under exact canonical names and stored type strings; twenty matched at resolve and the twenty-first (Dai & Le / semi-supervised sequence learning) matched via a SAME judgment. Seven deliberate calendar filings (same year as the parent, 2019): GPT-2, Jaques et al. (2019), Boehm et al. (2019), Hancock et al. (2019), WebText, Luketina et al. (2019), Kryscinski et al. (2019). SCOPE NOTE (not an oversight): Gao et al. (2019a/b) are cited in the bibliography but were not filed - their titles were not transcribed this session, and seven sibling 2019 filings already carry the calendar record for this stratum."
+ },
+ "resolution": {
+  "distinct": 56,
+  "dropped": 8,
+  "matched_existing": 20,
+  "auto_merges": 11,
+  "judge_queue": 16,
+  "prefiltered": 0
+ },
+ "judgments": "Judge queue 16 pairs. SAME x3: the Dai & Le filing == the graph's existing 'Semi-supervised sequence learning' (2015) node (author-prefixed name variant of the same paper - the queue caught what the session's concept search missed; see brief_correction); the two Scale AI filings (platform / service) are one artifact under two names (merged; distinct 56 -> 55). DIFFERENT x13: the OpenAI blog-post filing vs the OpenAI institution node/filing (a document about an advance is not the laboratory); OpenAI Baselines filings vs the OpenAI node/filing (a library is not the institution); the OpenAI filing vs the Hosted LLM APIs (OpenAI API) 2020 node (laboratory vs its later product, which also postdates the parent); the Charter filing vs the OpenAI node/filing (a programme document is not the institution); Kreutzer et al. vs the seq2seq node (a study of feedback for seq2seq RL is not seq2seq); Dai & Le vs the seq2seq node. Applied 16/16, no unknown pair ids; matched_node_id verified after judgments for all 21 LINKs (Christiano, IRL, Bradley-Terry, policy gradient theorem, Thurstone, TAMER, PPO, TRPO, REINFORCE, GAE, natural policy gradient, conservative policy iteration, policy iteration, advantage updating, Transformer, GPT-1, BPE, semi-supervised sequence learning, TL;DR dataset, OpenAI, OpenAI Charter).",
+ "calendar_dropped_at_resolve": [
+  "GPT-2 (2019) - the parent's base model (released Feb 2019; the paper Sep 2019): the substrate relation stands as recorded in the scout, in the three mediations naming it (GPT-1, Transformer, BPE) and in the Jaques verification record; content dates logged, no re-dating attempted.",
+  "Jaques et al., Way Off-Policy Batch Deep RL of Implicit Human Preferences in Dialog (2019) - the second half of the parent's joint 'Jaques et al. (2017; 2019)' KL citation; recorded as the named mediator of the Sequence Tutor edge's downgrade challenge at verification.",
+  "Boehm et al., Better Rewards Yield Better Summaries (2019) - named in the parent as concurrent work; its multiples pressure is recorded at the Christiano verification.",
+  "Hancock et al. (2019); WebText dataset (Radford et al., 2019); Luketina et al. survey (2019, two filings); Kryscinski et al. (2019) - cited or named 2019 items dropped mechanically by the year bound."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_fine-tuning-language-models-from-human-preferences-ziegler-e-2019.json",
+  "builder": "run-01/work/build_verdicts_ziegler.py",
+  "evaluations": 55,
+  "count_check": "evaluations == distinct candidates from show-distinct (55 == 55, after the Scale SAME merge took distinct from 56 to 55); field discipline asserted by the builder on every evaluation (cand_id, bottleneck, node_leap, node_prior_state, leap, directness, all 12 verdicts with evidence/source/falsification); scout reconciliation: 75 raw - 8 calendar-dropped filings - 11 auto-merges - 1 judge-merge (Scale) = 55 distinct == the builder's intended set (grep-verified against the candidates file before resolving); dry run through score.rank_candidates reproduced the intended outcome exactly (2 survivors: Christiano et al. 8.0, Jaques Sequence Tutor 6.5; 4 fail-closed partials at the directness gate; 17 mediated; 2 components with the directness-pass/Q1-Q2-fail signature; 30 directness fails) BEFORE applying; no dry-run correction was needed; apply-verdicts run exactly once; post-apply spot-check: the created node's (Sequence Tutor) stored leap, prior_state and bottleneck are non-empty (verified programmatically)",
+  "survivors": [
+   "Deep RL from human preferences (Christiano et al., 2017) - LINK, 8.0, PROVISIONAL (edge into the parent; the node already stood at depth 3 via other parents): citation + instantiation at full strength - the parent's Methods open 'Following Christiano et al. (2017)'; its elicitation protocol (best-of-4 comparisons), its reward-model loss (the 4-way softmax generalization of Christiano's pairwise choice loss), and its whole frame are this paper's, ported from simulated control to language. Capped provisional at verification: the Boehm (2019) / Jaques (2019) multiples - both calendar-dropped at this parent - and the Leike programme-framing channel are recorded as downgrade pressure on the edge.",
+   "Jaques et al., Sequence Tutor: Conservative Fine-tuning of Sequence Generation Models with KL-control (2017) - NEW node, 6.5, PROVISIONAL (depth 3): the KL-tether mechanism. The parent attributes the constraint by name ('Following Jaques et al. (2017; 2019), we use a KL constraint'), instantiates it in the reward R = r - beta*log(pi/rho) with Sequence Tutor's adaptive log-space beta controller (s.2.2), and names KL regularization in its conclusion as one of its two extensions of prior reward learning - the operative-carrier shape (KL-controlled fine-tuning of a pretrained generator, continued). The TRPO mediation attack fails on the anchor discrimination (TRPO tethers successive policies; this tethers to the PRETRAINED model). Capped provisional at verification: the component attack partially lands, and the joint 2017;2019 citation records a downgrade challenge naming the calendar-dropped 2019 dialog paper as mediator."
+  ],
+  "mediated": [
+   "Bradley-Terry model of paired comparisons (1952) - LINK refused, MEDIATED via Christiano et al.: find-verified ABSENT from the parent; the model reaches the parent inside Christiano's loss, which the parent generalizes. The node's other edges are untouched.",
+   "Inverse reinforcement learning (Ng & Russell, 2000) - LINK refused, MEDIATED via Christiano et al.: uncited; the preference frame is precisely the bypass of IRL, and the problem reaches the parent reframed through Christiano's construction. Other edges untouched.",
+   "Plackett, The Analysis of Permutations (1975) - MEDIATED via Christiano et al.: the parent's loss (1) IS a Plackett-Luce 4-way choice probability, but the text derives it as the generalization of Christiano's pairwise loss - form-identity without a document channel; the identity is recorded for a future re-hearing.",
+   "Thurstone's law of comparative judgment (1927) - LINK refused, MEDIATED via Bradley-Terry; Luce's choice axiom (1959) - MEDIATED via Bradley-Terry: the choice-model stratum's depth record, two links removed from any document the parent opens. Both nodes' other edges untouched.",
+   "The policy-gradient stratum (8 LINKs) - all MEDIATED via PPO: TRPO, GAE, REINFORCE, the policy gradient theorem, natural policy gradient, conservative policy iteration, policy iteration (Howard), advantage updating (Baird). The parent names its optimizer once and opens no other document of the stratum; the mediation chains are carried by the cited final link. All nodes' other edges are untouched (the policy gradient theorem remains a convergence carrier elsewhere).",
+   "Generative pretraining (GPT-1, 2018) - LINK refused, MEDIATED via GPT-2 (a mediation naming a date-dropped mediator): the recipe reaches the parent embodied in its successor artifact, which the parent fine-tunes; the one textual channel (reward-model head initialization 'following Radford et al. (2018)') is a component technique. Other edges untouched.",
+   "Transformer architecture (2017) and Byte-pair encoding for NMT (2016) - LINKs refused, MEDIATED via GPT-2: both are consumed only as embodied in the base-model artifact (the citations sit inside the s.2.1 base-model sentence). Other edges untouched.",
+   "Dai & Le, Semi-supervised Sequence Learning (2015) - LINK refused (matched via SAME judgment to the existing node), MEDIATED via Generative pretraining (GPT-1): pretraining lineage carried by the recipe's first GPT form. Other edges untouched."
+  ],
+  "fail_closed_partials": [
+   "Leike et al., Scalable agent alignment via reward modeling (2018) - programme framing: cited and direction-naming, but the parent's specific problem (steering a pretrained LM) is posed by Christiano + the GPT line, and no mechanism passes from the direction paper into the method.",
+   "Paulus et al., A Deep Reinforced Model for Abstractive Summarization (2017) - the quoted diagnosis (Hochreiter condition): the conclusion repeats its sentence on ROUGE-RL verbatim as motivation, but the method derives from Christiano; Paulus's own mixed-objective model is the displaced prior state.",
+   "OpenAI Baselines (Dhariwal et al., 2017) - wielded implementation with a name (the Duff-loader shape): 'the PPO2 version of Proximal Policy Optimization from Dhariwal et al. (2017)' is consumed as an implementation of the stratum's algorithm, judged at the PPO filing.",
+   "Scale AI labeling platform (2016) - a documented channel scoped to data-collection implementation (the Carpenter shape): named in s.2.4 and Appendix B with QA handled by Scale's adapted systems, but the vendor is substitutable in principle and the channel reaches the data pipeline, not the formulation."
+  ],
+  "components": [
+   "PPO (proximal policy optimization) (2017) - LINK refused as a component: directness passing ('Train pi via Proximal Policy Optimization'), Q1/Q2 failing - a replaceable optimizer; the parent's leap stands if the policy is trained with TRPO instead. Its admission at RLHF (2022) is edge-scoped and untouched.",
+   "Adam optimizer (Kingma & Ba, 2014) - directness passing at tooling grain, Q1/Q2 failing: the era's default training optimizer, generic apparatus."
+  ],
+  "rejected_of_note": [
+   "TAMER framework (Knox & Stone, 2009) - LINK refused, ABSENCE FINDING: find-verified absent ('Knox' does not occur); the superseded direct-reward shape; NO mediation recorded - none is documented (the Mercer & Hall / Efron discipline). Other edges untouched.",
+   "Amodei et al., Concrete Problems in AI Safety (2016) - ABSENCE FINDING: find-verified uncited; the era's agenda is not a channel. Wirth et al. (2017) - uncited survey/carrier. OpenAI blog post (2017) - a document about an advance is not the advance.",
+   "The data stratum under the class/instance discrimination: TL;DR dataset LINK refused, CNN/Daily Mail, BookCorpus - corpora consumed as task/fine-tuning data; the class is necessary, each instance substitutable, and the paper's headline is a corpus-independent method across four tasks. Amazon reviews dataset - apparatus data for the mock sentiment classifier (the Vega's-digits discrimination). All nodes' other edges untouched.",
+   "ROUGE (2004) and BLEU (2002) - the defined-against instruments: ROUGE is reported but never optimized (the Paulus quotation is the refusal); BLEU is the precedent's (GNMT's) target. Ranzato MIXER (2015), Wu & Hu (2018), Li et al. (2016), GNMT (2016) - the metric-RL / hand-designed-reward prior states. See et al. (2017), Gehrmann et al. (2018) - the headline task's supervised incumbents (compared baselines).",
+   "The sibling stratum: Ibarz et al. (2018) (sibling extension of the shared recipe, simulated stratum), Bahdanau et al. (2018) (parallel reward modeling), Kreutzer et al. (2018) (parallel bandit-feedback line for NMT - the nearest language-side parallel), Nguyen et al. (2017) (simulated feedback), Tambwekar et al. (2018) (reward shaping). ELMo (2018) and ULMFiT (2018) - parallel pretraining lines, no junction. Radford et al. (2017) - the base model's creator lineage without instantiation.",
+   "Christiano, Shlegeris & Amodei, amplification (2018) and Irving et al., debate (2018) - programme siblings (the scaling story / the alternative formulation), cited as context. OpenAI LINK refused as formation (its artifacts judged individually); OpenAI Charter LINK refused as the institution's programme document. Amazon Mechanical Turk (2005) - the bypassed default labeling channel; CrowdFlower (2009) - the labeling stratum's other member."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_s79_ziegler.json",
+  "outcomes": {
+   "deep-rl-from-human-preferences-christiano-et-al-2017": "provisional (downgrade pressure recorded on the edge). Attack 1 (multiples: Boehm 2019, Jaques 2019 - both calendar-dropped here): cap exclusivity (Q3 partial at evaluation), supply no rival source for the protocol - fails to kill. Attack 2 (date/direction): the Methods' opening attribution and the loss's form document the direction - fails. Attack 3 (mediation via the programme papers, Leike et al. named): PARTIALLY LANDS as framing pressure; answered on the discrimination that the direction paper contains no protocol, loss or quantity to consume; downgrade challenge recorded, edge stands. Attack 4 (presupposition via Bradley-Terry): the core was mediated THROUGH this node in this expansion - fails. RE-HEARING CONDITION: a document showing the protocol or loss taken from an intermediate source rather than from Christiano et al. (2017) itself.",
+   "jaques-et-al-sequence-tutor-conservative-fine-tuning-of-sequ-2017": "provisional (two downgrade challenges recorded on the edge). Attack 1 (component attack - the KL term as one term of the reward): PARTIALLY LANDS as pressure; answered on the operative-carrier shape (KL-controlled fine-tuning of a pretrained generator is the parent's mechanism in prior form, and the conclusion names KL regularization as one of the paper's two extensions); caps the edge at provisional. Attack 2 (mediation via TRPO): FAILS on the anchor discrimination (successive-policy tether vs pretrained-model tether; the parent cites Jaques for the constraint). Attack 3 (mediation via the group's own 2019 dialog paper, named as mediator): PARTIALLY LANDS - the citation is joint ('2017; 2019'); the 2017 paper is the dated published carrier with the adaptive controller, so the edge is filed to 2017 with the challenge on record. Attack 4 (multiples): none on record for the tether - fails. RE-HEARING CONDITION: the parent's KL controller shown to derive from a source other than the Jaques line, or the 2017 paper shown not to contain the adaptive-controller design."
+  }
+ },
+ "totals_after": {
+  "nodes": 281,
+  "edges": 354,
+  "budget": "281/2000",
+  "expansions_done": 168,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 33,
+   "4": 37,
+   "5": 57,
+   "6": 45,
+   "7": 30,
+   "8": 16,
+   "9": 7,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 264,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "swagger-specification-2-0-2014",
+  "jaques-et-al-sequence-tutor-conservative-fine-tuning-of-sequ-2017",
+  "json-referencing-in-dojo-2008",
+  "orqa-latent-retrieval-for-weakly-supervised-open-domain-ques-2019",
+  "show-your-work-scratchpads-for-intermediate-computation-with-2021"
+ ],
  "sync_commit": null
 }
