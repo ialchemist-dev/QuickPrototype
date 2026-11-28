@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T10:51:08+00:00",
-  "expansions_done": 204,
-  "raw_candidates_seen": 8816,
+  "updated_at": "2026-11-28T10:58:50+00:00",
+  "expansions_done": 205,
+  "raw_candidates_seen": 8826,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35230,6 +35230,56 @@
     "name": "NeXT Inc. (1985)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T10:50:42+00:00"
+   },
+   {
+    "parent_id": "objective-c-cox-1984-1984",
+    "name": "OOPC, the Object-Oriented Pre-Compiler (Cox, 1981)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:58:37+00:00"
+   },
+   {
+    "parent_id": "objective-c-cox-1984-1984",
+    "name": "Simula 67",
+    "reason": "mediated_via: Smalltalk-80 (Goldberg & Robson)",
+    "at": "2026-11-28T10:58:37+00:00",
+    "mediated_via": "Smalltalk-80 (Goldberg & Robson)"
+   },
+   {
+    "parent_id": "objective-c-cox-1984-1984",
+    "name": "Smalltalk-76",
+    "reason": "mediated_via: Smalltalk-80 (Goldberg & Robson)",
+    "at": "2026-11-28T10:58:37+00:00",
+    "mediated_via": "Smalltalk-80 (Goldberg & Robson)"
+   },
+   {
+    "parent_id": "objective-c-cox-1984-1984",
+    "name": "C++ (Stroustrup, 1983)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:58:37+00:00"
+   },
+   {
+    "parent_id": "objective-c-cox-1984-1984",
+    "name": "Unix (Thompson & Ritchie, 1969)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:58:37+00:00"
+   },
+   {
+    "parent_id": "objective-c-cox-1984-1984",
+    "name": "ITT Corporation (1920)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:58:37+00:00"
+   },
+   {
+    "parent_id": "objective-c-cox-1984-1984",
+    "name": "Productivity Products International (1983)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:58:37+00:00"
+   },
+   {
+    "parent_id": "objective-c-cox-1984-1984",
+    "name": "Xerox PARC (1970)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:58:37+00:00"
    }
   ]
  },
@@ -37981,12 +38031,16 @@
     {
      "title": "A Conversation with Bill Atkinson, in Goodman, The Complete HyperCard Handbook (1987)",
      "url": "https://www.exigy.org/research"
+    },
+    {
+     "title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020); Wikipedia, Objective-C",
+     "url": "https://en.wikipedia.org/wiki/Obj-C"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Four attacks run on the new Smalltalk-80 -> HyperTalk edge. (1) Gate attack on Q2: could HyperTalk's leap survive with flat per-object scripts and no inheritance? Partially - which is why Q1 was scored partial, not pass. Q2's pass rests on the designer's own documented arc: the first mockup had buttons with three fixed attributes and 'no language'; the five-day outline that created the language is built on object naming plus message fall-through, so the borrowed concept is constitutive of the language existing as a composable system, not a feature bolted on. The 5.5 score already carries the discount. (2) Attribution attack: Atkinson's exposure was to 1970s LRG Smalltalk (school courses; 1979 PARC visits), not specifically to the 1983 Goldberg & Robson book - lands as a scoping caveat, recorded: the graph's Smalltalk node is the canonical published definition of the class/inheritance model, the borrowed content (message passing with inheritance) is that model's content in all its forms, and by the 1987 interview Smalltalk-80 was the model's current published statement; the edge is to the model, via its canonical node, per run convention. (3) Date/direction: 1983 < 1987; direction confirmed from the child's side by the designer's contemporaneous statement in the parent's own record (Goodman interview: 'It also borrows some concepts from SmallTalk - the inheritance concepts... That inheritance is similar to what they have in SmallTalk'), with the mechanism instantiated in the shipped semantics (message fall-through card -> background -> stack -> HyperCard). (4) Mediation attacks: Atkinson's five-day outline named as M fails - it is the parent's own founding draft, the place the borrowing was written down, not an intermediary artifact; Xerox PARC named as M fails - the institution is decomposed at this parent and its separable artifact is this node itself; Pascal named as M fails - Pascal carries implementation and control-shape, not the inheritance concept. Outcome provisional per house discipline.",
-    "at": "2026-11-25T08:22:31+00:00"
+    "notes": "Expansion 205 edge (Objective-C <- Smalltalk-80), LINK, grade 6.0, marked provisional per RUNBOOK sec.6. This edge DISCHARGES the rediscovery hearing recorded at expansion 204, where Smalltalk-80 was rejected mediated_via Objective-C at NeXTSTEP: mediation is edge-scoped, and at this parent the documents name the channel directly (ITT introduction 1981 under Xerox's 1980 release programme; Love's first commercial Smalltalk-80 copy at Schlumberger 1982, 'further influenced the development'; OOPC translating a Smalltalk-like syntax into C; the language's object syntax and runtime message resolution are Smalltalk's). Multiples test on Q3: the one documented alternative model was Simula's compile-time binding, taken by C++ - a different model yielding a different language, so the multiple confirms rather than breaks necessity for THIS parent's dynamic model; Q3 stays partial because the choice was real. Q1 attack: was the problem truly unsolvable before? The parent's stored bottleneck is a two-pole statement and Smalltalk is one of its poles - the attack fails on the parent's own record. Mediation attacks: via OOPC (fails - OOPC is downstream of the Smalltalk encounter, the parent's embryo, not a junction between Smalltalk and the language; Cox's 1986 description engages Smalltalk itself); via the ITT release programme / Schlumberger license (fail - delivery mechanisms of the artifact itself, they transformed nothing). Date and direction check: the Smalltalk-80 SYSTEM was released in 1980 (ITT among the recipients) and Cox's work began 1981; the node is anchored to the 1983 Goldberg & Robson book as the system's published definition - the wart is recorded: the artifact Cox used predates the book that dates the node, and the edge's direction is nonetheless correct (system 1980 -> OOPC 1981 -> language 1984).",
+    "at": "2026-11-28T10:58:50+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T04:22:03+00:00"
@@ -44787,7 +44841,7 @@
    "prior_state": "Graphical applications hand-written in C against toolbox calls, each program its own island.",
    "status": "provisional",
    "depth": 8,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.5,
    "sources": [
     {
@@ -44889,6 +44943,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T10:50:42+00:00"
+  },
+  "the-c-programming-language-kernighan-ritchie-1978-1978": {
+   "id": "the-c-programming-language-kernighan-ritchie-1978-1978",
+   "name": "The C programming language (Kernighan & Ritchie, 1978)",
+   "aliases": [],
+   "year": 1978,
+   "domain": "programming languages",
+   "type": "other",
+   "definition": "The C programming language as published by Kernighan and Ritchie, The C Programming Language (Prentice Hall, 1978): the Bell Labs systems language of the Unix world - the definition of C that the Unix/C milieu of 1981-84 programmed in, a decade before its ANSI standardization (1989; a separate node in this graph).",
+   "bottleneck": "Before C, systems programming had no portable, efficient language with a growing installed base: each machine's programs were written in its own assembler or a vendor language, and a language's world died with its machine.",
+   "leap": "Ritchie's C, published as Kernighan & Ritchie's The C Programming Language (1978), gave the Unix world one efficient, portable systems language - the substrate whose syntax, compiler and libraries the hybrid languages, Objective-C first among them, were built as supersets of.",
+   "prior_state": "Assembler and vendor languages (B, BCPL, PL/I) per machine; no common systems lingua franca.",
+   "status": "provisional",
+   "depth": 9,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020); Wikipedia, Objective-C",
+     "url": "https://en.wikipedia.org/wiki/Obj-C"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Expansion 205 edge (Objective-C <- the C programming language, K&R 1978), NEW, grade 5.5, marked provisional per RUNBOOK sec.6. Generic-infrastructure attack (the strongest): 'C is just the era's default language' - fails on the substrate rule: this is the SPECIFIC language the parent is a strict superset of, whose syntax constitutes the parent's body, whose compiler OOPC compiled through, and whose compatibility the origin record names as the design's critical constraint - not 'programming languages' in the abstract. Identity attack: the candidate vs the graph's ANSI C standard node (1989) - DIFFERENT artifacts (the 1978 definition the milieu programmed in vs its 1989 codification, which also postdates the parent); the book-vs-standard discipline of expansions 197/202. Mediation attack via Unix: fails - the parent's documents engage C's syntax, compiler and libraries directly; Unix compatibility followed from C, not the reverse. Multiples test on Q3: Pascal, PL/I and Ada existed as conceivable bases; none carried ITT's telecom installed base, and the design is defined as C's extension - Q3 stays partial as scored. Date and direction: K&R 1978 (language from 1972) precedes OOPC 1981 and the parent 1984; direction correct.",
+    "at": "2026-11-28T10:58:50+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:58:37+00:00"
   }
  },
  "edges": [
@@ -86745,6 +86828,200 @@
     "mediator": null,
     "evidence": "Direct: the release sheet's component list; NeXT's Mach developer documentation describing the running system; the Mach record (2.5 selected for NeXTSTEP, 4.3BSD integrated into the kernel address space)."
    }
+  },
+  {
+   "predecessor_id": "smalltalk-80-goldberg-robson-1983",
+   "successor_id": "objective-c-cox-1984-1984",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The parent's stored bottleneck is a two-pole problem: C's efficiency with no object model, or an object model (Smalltalk) sealed inside its own environment. The pole that supplies the leap's content is Smalltalk: its object model - classes and instances as objects, inheritance, messages resolved at runtime by the receiver - is what Cox took. Before Smalltalk existed there was no worked object model of this kind to graft; the impossibility the parent flips is defined against it.",
+     "source": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020); Wikipedia, Objective-C",
+     "falsification": "Evidence of a worked dynamic object model, available to Cox by 1981, that was not Smalltalk's."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Smalltalk created the object-oriented possibility space itself: the idea that a language could be built from objects exchanging messages, with reusable class libraries, is the space the parent's whole programme (software components as interchangeable parts) presupposes and exploits.",
+     "source": "Wikipedia, Objective-C",
+     "falsification": "Evidence the object-oriented space was already common property before Smalltalk's release programme."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "A live alternative existed and was taken by the parallel hybrid: the Simula model of classes with compile-time binding, which C++ adopted. Cox's choice of Smalltalk's runtime messaging was deliberate - the record expressly contrasts the two models - so the specific model was not the only path in principle; it was the only DYNAMIC-messaging path, and the parent's leap (dynamic binding in C) is unintelligible without it. Partial.",
+     "source": "Wikipedia, Objective-C",
+     "falsification": "Evidence Cox considered and rejected a Simula-style design on documented grounds other than the model itself."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "The model arrived pre-solved: Cox 'quickly wrote up' OOPC in 1981 once he had investigated Smalltalk (HOPL abstract) - the cost of acquiring an object model collapsed from inventing one to translating one.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The explanatory model IS the parent's: objects sending messages, the receiver interpreting them - Cox's design and his 1986 book's account are Smalltalk's model stated for C programmers.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The composability interface is Smalltalk's: the message expression and the class are the units others build on, adopted as the parent's object syntax wholesale ('Objective-C derives its object syntax from Smalltalk').",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Smalltalk's cross-domain reach is its own large history (education, personal computing, simulation); at THIS parent the documented reach is the one graft into systems programming, so partial here.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Dynamic binding and late resolution made the parent's programs more malleable in use, but no tightened experiment loop is documented in the parent's formation; partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement of the stored prior state (hand-written C islands) was the parent's own act, executed with this model; the model itself displaced nothing in the C world before the parent carried it there. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent's design descends from this candidate by its authors' own documented account - introduction at ITT (1981), the first commercial copy at Schlumberger (1982), OOPC's Smalltalk-like syntax, the published language's Smalltalk object syntax.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The permanent reset - dynamic object models as a permanent option for systems languages - was realized through the parent's line (NeXT, Apple); at this parent it is prospective, so partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:58:37+00:00",
+   "leap": {
+    "prior_state": "Graphical applications hand-written in C against toolbox calls, each program its own island.",
+    "jump": "Cox and Love's Objective-C (1984) grafted Smalltalk-style message passing and dynamic binding onto C - the language NeXT licensed from Stepstone in 1988 and made its platform's medium, in which frameworks of subclassable classes (AppKit, the Text class) could be written and reused.",
+    "date": 1984
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Smalltalk and the parent does not happen in 1981-84 in anything like its form: Cox's documented investigation was OF Smalltalk, his preprocessor translated a Smalltalk-like syntax, and the resulting language's object model is Smalltalk's mechanism by mechanism. The venues of contact (ITT's participation in the 1980 release programme, Schlumberger's commercial license) delivered the system itself; neither transformed it, so neither mediates. No intermediary milestone stands between Smalltalk-80 and the graft.",
+    "mediator": null,
+    "evidence": "Direct: the HOPL origins record and the language's own published form document the channel link by link - encounter (1981), commercial copy (1982), OOPC (1981), the language (1984)."
+   }
+  },
+  {
+   "predecessor_id": "the-c-programming-language-kernighan-ritchie-1978-1978",
+   "successor_id": "objective-c-cox-1984-1984",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The parent's leap is a graft, and a graft needs a body: before C there was no portable systems language with the installed base the parent's milieu ran on, and the parent is defined as C plus an object layer - a strict superset in which all non-object syntax is C's. OOPC's output was ordinary C for the existing compiler. Without this artifact the parent has no substrate, no compiler to compile through, and no code base to be compatible with.",
+     "source": "Wikipedia, Objective-C; Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020)",
+     "falsification": "Evidence Objective-C could have been formed as a superset of another language of ITT's milieu with the same effect."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "C's generativity is the space the parent exploits: the Unix/C world of telecom engineering - its code, libraries, tools and programmers - is exactly what backward compatibility gave the parent access to. The record names this as the design's critical constraint, not a convenience: 'backward compatibility with C was critically important in ITT's telecom engineering milieu.'",
+     "source": "Wikipedia, Objective-C",
+     "falsification": "Evidence the parent's early adoption owed nothing to C compatibility."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "In the abstract another base language could have carried a graft (the era had Pascal, PL/I, Ada); in the documented milieu - ITT's Unix/C telecom engineering - C was the only substrate whose compatibility was worth having, and the design is unintelligible except as C's extension. Partial.",
+     "source": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020)",
+     "falsification": "Evidence Cox prototyped the graft on a second base language."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Building on the existing language and compiler collapsed the cost of the parent to a preprocessor and then a modest compiler extension - Cox's own telling has the first form built in a couple of weeks; a clean-slate language (the Simula/Smalltalk route) was the year-scale alternative the design exists to avoid.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "C supplies the parent's procedural body, not its explanatory model - the model is Smalltalk's. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Total composability is the point of the design: any C code, library or programmer composes with the parent unchanged - the interface the parent offers the world is C's own syntax plus one object layer.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "C's reach across fields is its own history; at this parent it is the home field, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Compiling through the existing C toolchain kept the parent's iteration at ordinary C speed and tooling; no new environment had to be built or learned. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "C was the incumbent the parent extends rather than displaces; the displacement (of hand-written island programs) is the parent's act in C's medium. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent descends from this candidate textually - its grammar, types and runtime conventions are C's, by the design's own definition.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The reset the parent works (objects as a layer on the incumbent language) became permanent through the parent's successors; at this parent, partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:58:37+00:00",
+   "leap": {
+    "prior_state": "Graphical applications hand-written in C against toolbox calls, each program its own island.",
+    "jump": "Cox and Love's Objective-C (1984) grafted Smalltalk-style message passing and dynamic binding onto C - the language NeXT licensed from Stepstone in 1988 and made its platform's medium, in which frameworks of subclassable classes (AppKit, the Text class) could be written and reused.",
+    "date": 1984
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove C and there is no parent at all: the language is C's superset by definition, its first implementation compiled into C, and its reason to exist was compatibility with C's world. No milestone mediates - the parent's documents engage C itself (its syntax, its compiler, K&R's definition as the milieu's standard), not a descendant or codification of it; the ANSI standard of 1989 is this artifact's later codification and postdates the parent.",
+    "mediator": null,
+    "evidence": "Direct: strict-superset relation plus the documented compatibility constraint (HOPL abstract; Wikipedia's history, citing the origins record)."
+   }
   }
  ],
  "merge_log": [
@@ -87971,6 +88248,18 @@
     "cosine": 0.7815
    },
    "reason": "The filing 'ALGOL 60 Report' IS the document that constitutes the graph's ALGOL 60 node: the node's own definition anchors it to 'the algorithmic language of the 1960 Revised Report (Naur et al.)'. The report and the language it defines are one node under the run's own-version discipline (the language exists as the report's text; there is no second Algol artifact in the graph). SAME - the candidate links to the existing node."
+  },
+  {
+   "at": "2026-11-28T10:56:47+00:00",
+   "from_id": "cand:Xerox PARC (1970)",
+   "into_id": "xerox-parc-1970",
+   "signals": [
+    "judge"
+   ],
+   "scores": {
+    "cosine": 0.4136
+   },
+   "reason": "The candidate and the node are the same institution: Xerox Palo Alto Research Center, founded 1970 - the node's card (created at the Self lineage) and the candidate's card describe the one laboratory that created Smalltalk; the differing domain labels (research institutions vs programming languages) are filing metadata, not identity."
   }
  ],
  "expansions": {
@@ -389155,6 +389444,414 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "objective-c-cox-1984-1984": {
+   "raw_candidates": [
+    {
+     "name": "Smalltalk-80 (Goldberg & Robson)",
+     "year": 1983,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Goldberg and Robson's Smalltalk-80: The Language and Its Implementation (Addison-Wesley, 1983) - the published definition of the class-based object system: behavior lives in classes, objects are instances, inheritance runs through the class hierarchy, and a message's target is resolved at runtime by the receiving object.",
+     "causal_claim": "The carried hearing from expansion 204, where this filing was rejected mediated_via Objective-C at NeXTSTEP. On THIS parent's documents the channel is direct and named at every step: Cox and Love were introduced to Smalltalk at ITT's Programming Technology Center in 1981 (ITT was among the firms that received Smalltalk-80 in Xerox's 1980 release programme); Love acquired the first commercial copy of Smalltalk-80 at Schlumberger in 1982, which the record states 'further influenced the development'; Cox's 1981 OOPC 'would translate a Smalltalk-like syntax into C' (HOPL abstract); and the language's object syntax and runtime message resolution are Smalltalk's, expressly contrasted in the record with the Simula-style model. The dating is noted honestly: the system Cox used in 1981-82 predates the 1983 book that anchors this node; the node stands for Smalltalk-80 the language, per its stored definition.",
+     "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020); Wikipedia, Objective-C",
+     "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+    },
+    {
+     "name": "The C programming language (Kernighan & Ritchie, 1978)",
+     "year": 1978,
+     "domain": "programming languages",
+     "lens": "L13",
+     "type": "other",
+     "definition": "The C programming language as published by Kernighan and Ritchie, The C Programming Language (Prentice Hall, 1978): the Bell Labs systems language of the Unix world - the definition of C that the Unix/C milieu of 1981-84 programmed in, a decade before its ANSI standardization (1989; a separate node in this graph).",
+     "causal_claim": "The parent's body is this artifact: Objective-C is a strict superset of C - all syntax for non-object operations is identical to C's - and its first form, OOPC, was a preprocessor whose output was ordinary C for the existing C compiler. The design constraint is documented, not inferred: 'backward compatibility with C was critically important in ITT's telecom engineering milieu' (Wikipedia, citing the HOPL record), and Cox 'needed a language compatible with the Unix and C environments used by ITT' (HOPL abstract). Remove C and there is no parent: no substrate, no compiler to compile to, no installed base to be compatible with.",
+     "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020); Wikipedia, Objective-C",
+     "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+    },
+    {
+     "name": "OOPC, the Object-Oriented Pre-Compiler (Cox, 1981)",
+     "year": 1981,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "definition": "Cox's Object-Oriented Pre-Compiler (ITT, 1981): a preprocessor Cox 'quickly wrote up' in 1981 that translated a Smalltalk-like message syntax into ordinary C - the first form of the parent, which Cox then developed at PPI into Objective-C proper (1984).",
+     "causal_claim": "Filed as the parent's own embryo, to test the own-version discipline: the same author, the same shop lineage (ITT, then the PPI he co-founded to commercialize it), the same mechanism in sketch form. The HOPL abstract's own sentence carries the derivation: 'At PPI, Cox developed OOPC into Objective-C.' Whether an author's own prototype, never separately published or sold as its own artifact, is a predecessor of its product - or the product's first draft of itself - is the question this filing exists to put to the gate.",
+     "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020), abstract",
+     "source_url": "https://www.mendeley.com/catalogue/3c98fa0d-e480-37cc-8961-8d5888d85788/"
+    },
+    {
+     "name": "Simula 67",
+     "year": 1967,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Dahl and Nygaard's Simula 67 (Norwegian Computing Center, 1967): the first object-oriented language - classes, objects, inheritance and virtual procedures as language mechanisms, with method binding resolved at compile time.",
+     "causal_claim": "Filed as the class concept's origin, behind the imported model. The parent's documents frame the design choice as a choice BETWEEN models: Objective-C's model is Smalltalk's (the receiver resolves the message at runtime), expressly 'unlike the Simula-style programming model used by C++', in which the method name is bound by the compiler. Whatever of Simula lives in the parent - the class idea itself - arrived embodied in Smalltalk, which descends from it. Expected: mediated via Smalltalk-80.",
+     "source_title": "Wikipedia, Objective-C (Messages: the Simula-style contrast); graph record, Simula 67",
+     "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+    },
+    {
+     "name": "Smalltalk-76",
+     "year": 1976,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Xerox PARC's Smalltalk-76 (Ingalls, 1976): the first fully object-oriented Smalltalk - everything an object, with class-based inheritance - the internal PARC version from which Smalltalk-80 was cleaned up for external release.",
+     "causal_claim": "Filed as the ancestor inside PARC, behind the released version. Cox's documented contact is with Smalltalk-80 specifically: the 1981 introduction at ITT (a recipient of the 1980 release programme) and Love's 1982 commercial copy of Smalltalk-80. No document puts Smalltalk-76 in Cox's or Love's hands. Expected: mediated via Smalltalk-80.",
+     "source_title": "Wikipedia, Objective-C; graph record, Smalltalk-76",
+     "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+    },
+    {
+     "name": "C++ (Stroustrup, 1983)",
+     "year": 1983,
+     "domain": "programming languages",
+     "lens": "L7",
+     "type": "other",
+     "definition": "Stroustrup's C++ (Bell Labs; developed as 'C with Classes' from 1979 and renamed C++ in 1983): the parallel answer to the same problem - object-oriented programming for C programmers - built on the Simula model of classes with compile-time binding, where the parent took Smalltalk's runtime messaging.",
+     "causal_claim": "Filed as the contemporaneous rival: same substrate (C), same problem (objects for systems programmers), opposite model (Simula's static binding against Smalltalk's dynamic messaging - the contrast the parent's own record states). No document of the parent's formation (1981-84) shows consumption in either direction; the feature-for-feature comparison literature is retrospective, from 1986 on. The relation is parallel invention inside one design space, heard as such.",
+     "source_title": "Wikipedia, Objective-C; CodeArchaeology, Objective-C",
+     "source_url": "https://www.codearchaeology.dev/languages/objective-c/"
+    },
+    {
+     "name": "Unix (Thompson & Ritchie, 1969)",
+     "year": 1969,
+     "domain": "operating systems",
+     "lens": "L15",
+     "type": "other",
+     "definition": "Unix (Thompson and Ritchie, Bell Labs, from 1969): the operating system and development environment of the milieu the parent was designed for - the HOPL origins paper records that Cox 'needed a language compatible with the Unix and C environments used by ITT'.",
+     "causal_claim": "Filed as the environment condition, named in the parent's own origin record. The discrimination the gate must make: the requirement the documents state is compatibility, and the mechanism by which the parent satisfies it is C - its syntax, its compiler, its libraries - which is filed at L13. Unix itself contributes no mechanism to the language's design; it is the water the design swims in. Expected: the era-condition side of the line, fail-closed at best.",
+     "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020), abstract",
+     "source_url": "https://www.mendeley.com/catalogue/3c98fa0d-e480-37cc-8961-8d5888d85788/"
+    },
+    {
+     "name": "ITT Corporation (1920)",
+     "year": 1920,
+     "domain": "research institutions",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "ITT Corporation (founded 1920) and its Programming Technology Center: the research group led by Tom Love that investigated improving programmer productivity by an order of magnitude, where Cox and Love were introduced to Smalltalk in 1981 and where Cox wrote OOPC - the parent's formative institution.",
+     "causal_claim": "Filed as the formative venue: the encounter with Smalltalk, the productivity research programme that posed the parent's problem, and the parent's first artifact (OOPC) all happened inside this institution. Per the carriage rule an institution acts through the specific artifacts it carried - here Smalltalk (PARC's artifact, received through the release programme) and OOPC (the parent's own embryo) are filed separately; the institution is the venue of both, heard as such.",
+     "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020), abstract; Wikipedia, Objective-C",
+     "source_url": "https://www.mendeley.com/catalogue/3c98fa0d-e480-37cc-8961-8d5888d85788/"
+    },
+    {
+     "name": "Productivity Products International (1983)",
+     "year": 1983,
+     "domain": "software companies",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "Productivity Products International (founded 1983 by Brad Cox and Tom Love; later renamed Stepstone): the parent's own producing company, which developed OOPC into Objective-C and commercialized it coupled with class libraries.",
+     "causal_claim": "The producer institution, filed so the gate judges the self-carriage rather than the scout assuming it: every act that turned the 1981 preprocessor into the 1984 language - the development, the runtime, the class libraries, the commercialization - is this firm's act, and the firm's acts are the parent itself (the NeXT Inc. pattern at expansion 204).",
+     "source_title": "Wikipedia, Objective-C; Cox, Naroff & Hsu (HOPL 2020)",
+     "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+    },
+    {
+     "name": "Xerox PARC (1970)",
+     "year": 1970,
+     "domain": "research institutions",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "Xerox Palo Alto Research Center (founded 1970): the laboratory that created Smalltalk and ran the 1980 Smalltalk-80 release programme through which a select group of firms, ITT among them, received the system.",
+     "causal_claim": "Filed as the producing institution of the imported model. Its act toward the parent runs entirely through the artifact it produced and released - Smalltalk-80, filed at L19 - and through the release programme that put it in ITT's hands. Per the carriage precedents the institution is heard as the artifact's carrier, not as a channel of its own.",
+     "source_title": "Wikipedia, Objective-C; the Smalltalk-80 release record (lineage surveys)",
+     "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+    }
+   ],
+   "resolution": {
+    "embedder": "tfidf-fallback",
+    "distinct": [
+     {
+      "cand_id": "smalltalk-80-goldberg-robson-1983",
+      "candidate": {
+       "name": "Smalltalk-80 (Goldberg & Robson)",
+       "year": 1983,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Goldberg and Robson's Smalltalk-80: The Language and Its Implementation (Addison-Wesley, 1983) - the published definition of the class-based object system: behavior lives in classes, objects are instances, inheritance runs through the class hierarchy, and a message's target is resolved at runtime by the receiving object.",
+       "causal_claim": "The carried hearing from expansion 204, where this filing was rejected mediated_via Objective-C at NeXTSTEP. On THIS parent's documents the channel is direct and named at every step: Cox and Love were introduced to Smalltalk at ITT's Programming Technology Center in 1981 (ITT was among the firms that received Smalltalk-80 in Xerox's 1980 release programme); Love acquired the first commercial copy of Smalltalk-80 at Schlumberger in 1982, which the record states 'further influenced the development'; Cox's 1981 OOPC 'would translate a Smalltalk-like syntax into C' (HOPL abstract); and the language's object syntax and runtime message resolution are Smalltalk's, expressly contrasted in the record with the Simula-style model. The dating is noted honestly: the system Cox used in 1981-82 predates the 1983 book that anchors this node; the node stands for Smalltalk-80 the language, per its stored definition.",
+       "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020); Wikipedia, Objective-C",
+       "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Smalltalk-80 (Goldberg & Robson)"
+      ],
+      "matched_node_id": "smalltalk-80-goldberg-robson-1983",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-c-programming-language-kernighan-ritchie-1978-1978",
+      "candidate": {
+       "name": "The C programming language (Kernighan & Ritchie, 1978)",
+       "year": 1978,
+       "domain": "programming languages",
+       "lens": "L13",
+       "type": "other",
+       "definition": "The C programming language as published by Kernighan and Ritchie, The C Programming Language (Prentice Hall, 1978): the Bell Labs systems language of the Unix world - the definition of C that the Unix/C milieu of 1981-84 programmed in, a decade before its ANSI standardization (1989; a separate node in this graph).",
+       "causal_claim": "The parent's body is this artifact: Objective-C is a strict superset of C - all syntax for non-object operations is identical to C's - and its first form, OOPC, was a preprocessor whose output was ordinary C for the existing C compiler. The design constraint is documented, not inferred: 'backward compatibility with C was critically important in ITT's telecom engineering milieu' (Wikipedia, citing the HOPL record), and Cox 'needed a language compatible with the Unix and C environments used by ITT' (HOPL abstract). Remove C and there is no parent: no substrate, no compiler to compile to, no installed base to be compatible with.",
+       "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020); Wikipedia, Objective-C",
+       "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "The C programming language (Kernighan & Ritchie, 1978)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "oopc-the-object-oriented-pre-compiler-cox-1981-1981",
+      "candidate": {
+       "name": "OOPC, the Object-Oriented Pre-Compiler (Cox, 1981)",
+       "year": 1981,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "definition": "Cox's Object-Oriented Pre-Compiler (ITT, 1981): a preprocessor Cox 'quickly wrote up' in 1981 that translated a Smalltalk-like message syntax into ordinary C - the first form of the parent, which Cox then developed at PPI into Objective-C proper (1984).",
+       "causal_claim": "Filed as the parent's own embryo, to test the own-version discipline: the same author, the same shop lineage (ITT, then the PPI he co-founded to commercialize it), the same mechanism in sketch form. The HOPL abstract's own sentence carries the derivation: 'At PPI, Cox developed OOPC into Objective-C.' Whether an author's own prototype, never separately published or sold as its own artifact, is a predecessor of its product - or the product's first draft of itself - is the question this filing exists to put to the gate.",
+       "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020), abstract",
+       "source_url": "https://www.mendeley.com/catalogue/3c98fa0d-e480-37cc-8961-8d5888d85788/"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "OOPC, the Object-Oriented Pre-Compiler (Cox, 1981)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "simula-67-1967",
+      "candidate": {
+       "name": "Simula 67",
+       "year": 1967,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Dahl and Nygaard's Simula 67 (Norwegian Computing Center, 1967): the first object-oriented language - classes, objects, inheritance and virtual procedures as language mechanisms, with method binding resolved at compile time.",
+       "causal_claim": "Filed as the class concept's origin, behind the imported model. The parent's documents frame the design choice as a choice BETWEEN models: Objective-C's model is Smalltalk's (the receiver resolves the message at runtime), expressly 'unlike the Simula-style programming model used by C++', in which the method name is bound by the compiler. Whatever of Simula lives in the parent - the class idea itself - arrived embodied in Smalltalk, which descends from it. Expected: mediated via Smalltalk-80.",
+       "source_title": "Wikipedia, Objective-C (Messages: the Simula-style contrast); graph record, Simula 67",
+       "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Simula 67"
+      ],
+      "matched_node_id": "simula-67-1967",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "smalltalk-76-1976",
+      "candidate": {
+       "name": "Smalltalk-76",
+       "year": 1976,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Xerox PARC's Smalltalk-76 (Ingalls, 1976): the first fully object-oriented Smalltalk - everything an object, with class-based inheritance - the internal PARC version from which Smalltalk-80 was cleaned up for external release.",
+       "causal_claim": "Filed as the ancestor inside PARC, behind the released version. Cox's documented contact is with Smalltalk-80 specifically: the 1981 introduction at ITT (a recipient of the 1980 release programme) and Love's 1982 commercial copy of Smalltalk-80. No document puts Smalltalk-76 in Cox's or Love's hands. Expected: mediated via Smalltalk-80.",
+       "source_title": "Wikipedia, Objective-C; graph record, Smalltalk-76",
+       "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Smalltalk-76"
+      ],
+      "matched_node_id": "smalltalk-76-1976",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "c-stroustrup-1983-1983",
+      "candidate": {
+       "name": "C++ (Stroustrup, 1983)",
+       "year": 1983,
+       "domain": "programming languages",
+       "lens": "L7",
+       "type": "other",
+       "definition": "Stroustrup's C++ (Bell Labs; developed as 'C with Classes' from 1979 and renamed C++ in 1983): the parallel answer to the same problem - object-oriented programming for C programmers - built on the Simula model of classes with compile-time binding, where the parent took Smalltalk's runtime messaging.",
+       "causal_claim": "Filed as the contemporaneous rival: same substrate (C), same problem (objects for systems programmers), opposite model (Simula's static binding against Smalltalk's dynamic messaging - the contrast the parent's own record states). No document of the parent's formation (1981-84) shows consumption in either direction; the feature-for-feature comparison literature is retrospective, from 1986 on. The relation is parallel invention inside one design space, heard as such.",
+       "source_title": "Wikipedia, Objective-C; CodeArchaeology, Objective-C",
+       "source_url": "https://www.codearchaeology.dev/languages/objective-c/"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "C++ (Stroustrup, 1983)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "unix-thompson-ritchie-1969-1969",
+      "candidate": {
+       "name": "Unix (Thompson & Ritchie, 1969)",
+       "year": 1969,
+       "domain": "operating systems",
+       "lens": "L15",
+       "type": "other",
+       "definition": "Unix (Thompson and Ritchie, Bell Labs, from 1969): the operating system and development environment of the milieu the parent was designed for - the HOPL origins paper records that Cox 'needed a language compatible with the Unix and C environments used by ITT'.",
+       "causal_claim": "Filed as the environment condition, named in the parent's own origin record. The discrimination the gate must make: the requirement the documents state is compatibility, and the mechanism by which the parent satisfies it is C - its syntax, its compiler, its libraries - which is filed at L13. Unix itself contributes no mechanism to the language's design; it is the water the design swims in. Expected: the era-condition side of the line, fail-closed at best.",
+       "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020), abstract",
+       "source_url": "https://www.mendeley.com/catalogue/3c98fa0d-e480-37cc-8961-8d5888d85788/"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Unix (Thompson & Ritchie, 1969)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "itt-corporation-1920-1920",
+      "candidate": {
+       "name": "ITT Corporation (1920)",
+       "year": 1920,
+       "domain": "research institutions",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "ITT Corporation (founded 1920) and its Programming Technology Center: the research group led by Tom Love that investigated improving programmer productivity by an order of magnitude, where Cox and Love were introduced to Smalltalk in 1981 and where Cox wrote OOPC - the parent's formative institution.",
+       "causal_claim": "Filed as the formative venue: the encounter with Smalltalk, the productivity research programme that posed the parent's problem, and the parent's first artifact (OOPC) all happened inside this institution. Per the carriage rule an institution acts through the specific artifacts it carried - here Smalltalk (PARC's artifact, received through the release programme) and OOPC (the parent's own embryo) are filed separately; the institution is the venue of both, heard as such.",
+       "source_title": "Cox, Naroff & Hsu, The origins of Objective-C at PPI/Stepstone (HOPL 2020), abstract; Wikipedia, Objective-C",
+       "source_url": "https://www.mendeley.com/catalogue/3c98fa0d-e480-37cc-8961-8d5888d85788/"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "ITT Corporation (1920)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "productivity-products-international-1983-1983",
+      "candidate": {
+       "name": "Productivity Products International (1983)",
+       "year": 1983,
+       "domain": "software companies",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "Productivity Products International (founded 1983 by Brad Cox and Tom Love; later renamed Stepstone): the parent's own producing company, which developed OOPC into Objective-C and commercialized it coupled with class libraries.",
+       "causal_claim": "The producer institution, filed so the gate judges the self-carriage rather than the scout assuming it: every act that turned the 1981 preprocessor into the 1984 language - the development, the runtime, the class libraries, the commercialization - is this firm's act, and the firm's acts are the parent itself (the NeXT Inc. pattern at expansion 204).",
+       "source_title": "Wikipedia, Objective-C; Cox, Naroff & Hsu (HOPL 2020)",
+       "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Productivity Products International (1983)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "xerox-parc-1970-1970",
+      "candidate": {
+       "name": "Xerox PARC (1970)",
+       "year": 1970,
+       "domain": "research institutions",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "Xerox Palo Alto Research Center (founded 1970): the laboratory that created Smalltalk and ran the 1980 Smalltalk-80 release programme through which a select group of firms, ITT among them, received the system.",
+       "causal_claim": "Filed as the producing institution of the imported model. Its act toward the parent runs entirely through the artifact it produced and released - Smalltalk-80, filed at L19 - and through the release programme that put it in ITT's hands. Per the carriage precedents the institution is heard as the artifact's carrier, not as a channel of its own.",
+       "source_title": "Wikipedia, Objective-C; the Smalltalk-80 release record (lineage surveys)",
+       "source_url": "https://en.wikipedia.org/wiki/Obj-C"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Xerox PARC (1970)"
+      ],
+      "matched_node_id": "xerox-parc-1970",
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:9:xerox-parc-1970",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 9,
+       "card": {
+        "name": "Xerox PARC (1970)",
+        "aliases": [],
+        "year": 1970,
+        "domain": "research institutions",
+        "type": "institution",
+        "definition": "Xerox Palo Alto Research Center (founded 1970): the laboratory that created Smalltalk and ran the 1980 Smalltalk-80 release programme through which a select group of firms, ITT among them, received the system.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "xerox-parc-1970",
+       "card": {
+        "name": "Xerox PARC",
+        "aliases": [],
+        "year": 1970,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "Xerox Palo Alto Research Center (founded 1970): the laboratory that created Smalltalk, employed the parent's co-designer Randall Smith, hosted the Alternate Reality Kit, and was where Smith and Ungar began designing Self in 1986.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.4136,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:9:xerox-parc-1970",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 9,
+      "card": {
+       "name": "Xerox PARC (1970)",
+       "aliases": [],
+       "year": 1970,
+       "domain": "research institutions",
+       "type": "institution",
+       "definition": "Xerox Palo Alto Research Center (founded 1970): the laboratory that created Smalltalk and ran the 1980 Smalltalk-80 release programme through which a select group of firms, ITT among them, received the system.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "xerox-parc-1970",
+      "card": {
+       "name": "Xerox PARC",
+       "aliases": [],
+       "year": 1970,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "Xerox Palo Alto Research Center (founded 1970): the laboratory that created Smalltalk, employed the parent's co-designer Randall Smith, hosted the Alternate Reality Kit, and was where Smith and Ungar began designing Self in 1986.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.4136,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }
