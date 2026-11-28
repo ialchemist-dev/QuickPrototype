@@ -15921,3 +15921,152 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 101 continues: expansion 212 (Wall Street Journal corpus / DARPA CSR, 1992) follows this checkpoint in the same session. The exp-209 carried hearings are now discharged (CPL admitted) or re-decided on the new parent's own documents (CTSS fail-closed at BCPL itself). New carried hearings: CPL's own expansion - now second on the frontier behind the WSJ corpus - carries the ALGOL 60, lambda-calculus, Atlas, EDSAC 2 and Strachey & Wilkes 1961 hearings recorded as mediated at this parent. New re-hearing conditions recorded this session: FORTRAN at BCPL (a Richards document stating the global vector was taken from COMMON), CTSS at BCPL (a design feature, not the first running, attributed to CTSS). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
 }
+{
+ "ts": "2026-11-28T12:05:00.126450+00:00",
+ "event": "expansion",
+ "session": 101,
+ "expansion": 212,
+ "parent": "wall-street-journal-corpus-darpa-csr-1992",
+ "parent_name": "Wall Street Journal corpus / DARPA CSR (Paul & Baker, 1992)",
+ "parent_year": 1992,
+ "parent_depth": 4,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed grounding 'in its documents (the Penn Treebank / LDC record)'. The documents corrected that framing in two places. (a) The Penn Treebank IS in the design paper (ref. [17]; its ~2M words reserved inside the training partition) and was heard - but the LDC is not: the Linguistic Data Consortium plays no role in the design documents. Distribution ran through the ACL/DCI (the text, on CD-ROM) and NIST/MIT (the pilot speech, on WORM CD-ROMs); the LDC is a later distributor of the finished corpora - a downstream role, direction, not filed. The text's actual carrier, the ACL/DCI, was ADMITTED. (b) TIMIT, the lineage's obvious candidate, is find-verifiably ABSENT from the design paper's text and all 17 references; it was filed from the surveys and heard on that absence (fail-closed 1.5). One filing was made deliberately at the parent's own year: Switchboard (Godfrey, Holliman & McDaniel) - its ICASSP paper's corpus was collected at TI in 1990 and the corpus published/released in 1992, so 1992 is the defensible artifact year; the resolver's year bound dropped it, recorded here, not re-dated (the exp-200 JLS pattern). FIX-UP discharged here per house pattern: expansion 211's sync_commit = b136f4cb (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', Proc. DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073), read in full. Load-bearing passages: 'This paper describes the design of a corpus of Wall Street Journal (WSJ) text, backed by WSJ text from 1987-89 provided by the ACL/DCI [9] to enable statistical language modeling'; 'The original WSJ text data were supplied by Dow Jones, Inc. to the ACL/DCI which organized the data and distributed it to the research community in CD-ROM format'; 'The data consisted of articles that were paragraph and sentence marked by the ACL/DCI'; 'ninety percent of the text, including all of the Penn Treebank [17] (about 2M words) were reserved for training'; 'In contrast, existing corpora which deal with a data base inquiry task (e.g., RM [15], ATIS [16]) have less than 1500 words and a perplexity range of 9 to 60'; 'A similar read speech corpus in the French language has been successfully completed using text from the newspaper Le Monde (BREF) [5]'; 'Lincoln has also provided 8 baseline bigram backoff [8,11] language models'; 'NIST compiled the data from the three recording sites, formatted it, and shipped it on WORM (Write Once Read Many) CD-ROMS which were produced at MIT'; the committee membership (Baker chair; Pallett NIST; Paul, Young, Kamm, Marcus, Bates, Makhoul, Fisher, Zue). Corroboration read in full: Pallett, 'DARPA February 1992 Pilot Corpus CSR Dry Run Benchmark Test Results' (H92-1078) - 'the CSR corpus... is intended to supplant the RM corpora and to supplement the ATIS corpora'; Weinstein, session introduction (H92-1) - RM 'has become a de facto standard for comparison of system performance... due to its limitations (e.g., 1000-word vocabulary, restricted task domain), it has become clear that more challenging tasks were needed'. Graph check before scouting: no existing RM, TIMIT, ATIS, NIST or ACL/DCI nodes; the LINK targets Brown Corpus, LOB Corpus and Katz back-off exist and their stored texts were retrieved before verdicts.",
+ "scout": {
+  "raw_filings": 14,
+  "matched_existing": 3,
+  "judge_queue": 2,
+  "judgments_applied": 2,
+  "judgments_different": 0,
+  "distinct": 13,
+  "note": "Document-census pattern: every channel the design paper and its two companion documents name is filed exactly once (RM, ATIS, ACL/DCI, the Dow Jones WSJ text, Penn Treebank, BREF, Katz back-off, the CSR Corpus Committee, the DARPA SLS programme, the NIST evaluations), plus the lineage candidates the documents refuse to carry (TIMIT - find-verified absence; Brown and LOB - the balanced-corpus tradition), plus Switchboard filed deliberately at the parent's own year. 14 raw -> 13 distinct, 1 dropped by the resolver's year bound (Switchboard, 1992 = the parent's year; recorded, not re-dated), 0 prefiltered, 0 auto-merges. Judgments: Brown SAME as the existing node (LINK candidate); LOB SAME as the existing node (LINK candidate); Katz auto-matched (LINK candidate). MiniLM loaded - no TF-IDF fallback this expansion. Per-lens floors: the pool is a closed documentary census (one design paper + its dry-run report + the session introduction, cross-checked against the graph); 23 lens entries filed with dry/shortfall notes in dry_notes_wall-street-journal-corpus-darpa-csr-1992.json rather than padded. Verdicts builder count check passed (13 evaluations == 13 distinct == 14 intended filings minus the year-bound drop); the dry-run reproduced the argued outcomes exactly and no dry-run correction was spent."
+ },
+ "admissions": [
+  {
+   "node": "acl-data-collection-initiative-liberman-1989-1989",
+   "name": "ACL Data Collection Initiative (Liberman, 1989)",
+   "link": false,
+   "grade": 5.0,
+   "basis": "The corpus's text half is the DCI's artifact after Lincoln preprocessing: Dow Jones supplied the text TO the DCI, which 'organized the data and distributed it to the research community in CD-ROM format', marked the articles by paragraph and sentence, and is named in the design's first sentence as what the corpus is 'backed by... to enable statistical language modeling'. An institution admitted through the specific artifact it carried (the run's L21 discipline); the originator (Dow Jones) was recorded mediated via the DCI on the paper's own sentence."
+  },
+  {
+   "node": "resource-management-corpus-price-et-al-1988-1988",
+   "name": "Resource Management corpus (Price et al., 1988)",
+   "link": false,
+   "grade": 4.5,
+   "basis": "The form's first carrier and the design's named incumbent: 'intended to supplant the RM corpora' (Pallett), 'a de facto standard for comparison' whose 1000-word limits define the leap (Weinstein). The correction relation holds - CSR extracts RM's worked object (the shared, partitioned, NIST-administered benchmark corpus as an artifact form) and builds on it, its own invention claim being scale and domain, not the form - with a designed continuity bridge (the CSR dictionary includes RM's 1K vocabulary for cross-task tests) and a personnel channel (Pallett, RM's co-author, on the committee). The ATIS mediation attack is answered in the verification record: ATIS is the SLS sibling the corpus supplements; the CSR-specific form is RM's line, named as such by all three documents. The LOB->IAM corpus-template precedent in this graph."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "Penn Treebank (Santorini et al., 1990)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. Its ~2M words sit inside the corpus's training partition as a reserved block ('including all of the Penn Treebank'), but what CSR consumed from those files is their TEXT - the DCI's files (the Treebank's 21 most recent files), processed under Lincoln's own SGML-like marking - not the Treebank's own contribution, its syntactic annotation, which the corpus nowhere uses. Co-tenancy of the same text is not consumption of the annotation layer. Re-hearing condition: a CSR document showing the Treebank's annotation used in the corpus's preprocessing, baselines or scoring."
+  },
+  {
+   "name": "TIMIT acoustic-phonetic speech corpus (Garofolo et al., 1990)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "The practice-lineage candidate the documents refuse to carry: find-verifiably absent from the design paper's text and all 17 references, and its design goal (phonetically balanced constructed sentences) is expressly divergent from CSR's natural-text, perplexity-controlled selection. The shared recording sites (MIT, SRI, TI) are the programme's standing collection sites - a personnel overlap without a document channel (practice embodied without a document channel fails, the exp-201 pattern). Re-hearing condition: a CSR collection document citing TIMIT's specification."
+  },
+  {
+   "name": "ATIS corpus (Price, 1990)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "The sibling common task: Pallett's sentence is the discrimination in the community's own words - CSR 'is intended to supplant the RM corpora and to supplement the ATIS corpora'. A corpus the parent supplements is its sibling, not its path; ATIS's form is the end-to-end SLS variant, and the CSR line's form descends from RM."
+  },
+  {
+   "name": "NIST-administered DARPA benchmark evaluations (Pallett, 1988)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "NIST's documented roles at this parent are the parent's own production (it 'compiled the data from the three recording sites, formatted it, and shipped it') and its constitutive benchmark events (the parent's stored leap is itself stated as 'NIST-administered tests'). A thing cannot be its own ancestor's channel; the RM-era paradigm that genuinely predates the design is carried by the RM artifact and its co-author, and is scored at RM's admitted edge."
+  },
+  {
+   "name": "DARPA Spoken Language Systems programme (1984)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "Posing, paying and authorizing: the programme formed the committee and sponsored the work, but an institution acts through the specific artifacts it carried - RM, ATIS and the committee, each heard on its own documents at this parent. Funding is not inside the artifact; a second edge for the carrier would double-count the channels."
+  },
+  {
+   "name": "CSR Corpus Committee (Baker et al., 1990)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Formation, not ancestry: the committee is the parent's design body and the design paper is its report ('the outcome of a heavily debated consensus process'). A maker is not a predecessor (the formation discrimination; cf. Multics at exp-209, E at exp-210). Its genuine inputs are not lost - they are heard at RM, ATIS and the DCI."
+  },
+  {
+   "name": "Katz backing-off estimation for sparse data (Katz, 1987)",
+   "score": 1.0,
+   "kind": "fail_closed_partial_link",
+   "basis": "A component of the parent's delivered package, not its predecessor: Lincoln's eight baseline bigram back-off models ship WITH the corpus, but the corpus's leap (the shared task fixed at LVCSR scale) does not pass through the estimator - recognizers consume Katz, the corpus does not (the Lesk-stdio discrimination at exp-207). Edge-scoped: Katz's admitted edges in the language-model line are untouched."
+  },
+  {
+   "name": "BREF French read-speech corpus (Gauvain, Lamel & Eskenazi, 1990)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The cited completed parallel: one comparative sentence ('A similar read speech corpus in the French language has been successfully completed') with no shared personnel, institution or design transfer. An existence proof in a foreign community is a multiple's evidence - it proves the genre ripe, not the channel."
+  },
+  {
+   "name": "Brown Corpus (Francis & Kucera, 1964)",
+   "score": 1.0,
+   "kind": "fail_closed_partial_link",
+   "basis": "Importance without a channel is not ancestry: find-verifiably absent from the design paper, and the one discipline Brown embodies - balanced sampling - is a discipline this design expressly does not follow (its text is a natural newspaper archive under perplexity control). The text tradition reaches this design through the DCI's 1989 collection, admitted here. Edge-scoped: Brown's admitted edge to the Bengio node, on its own consumption record, is untouched."
+  },
+  {
+   "name": "LOB Corpus (Johansson, Leech & Goodluck, 1978)",
+   "score": 0.5,
+   "kind": "fail_closed_partial_link",
+   "basis": "Brown's road, one remove further: no document channel, no shared personnel or institution, and a design discipline (balanced sampling of British English) this parent does not practice. Edge-scoped: LOB's admitted edges to the IAM databases, where its sentences were actually consumed, are untouched."
+  },
+  {
+   "name": "Wall Street Journal text archive (Dow Jones, 1987-1989)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA ACL/DCI, on the design paper's own sentence: the text was 'supplied by Dow Jones, Inc. to the ACL/DCI which organized the data and distributed it', and Lincoln's preprocessing consumed the DCI's marked files. Unlike the exp-208 object discrimination, a text archive IS consumed material - but it is consumed here in the organizer's form, one level up. The material is expected to be rediscovered at the ACL/DCI's own expansion."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_wall-street-journal-corpus-darpa-csr-1992.json",
+  "outcomes": {
+   "acl-data-collection-initiative-liberman-1989-1989": "provisional",
+   "resource-management-corpus-price-et-al-1988-1988": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Both survivors provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). ACL/DCI survived the direct-license attack (the paper's supply sentence routes the text through the DCI's organized CD-ROM, the artifact Lincoln consumed) and the reverse mediation attack (Dow Jones tested as the true channel and recorded mediated via the DCI). RM survived the ATIS mediation attack on three documents and the genre-ripenss multiples attack (Switchboard), Q3 held at partial for exactly that reason. Warts recorded in the verification notes: Liberman's own DCI account (the design paper's ref. [9]) was not independently read this session - the DCI admission rests on Paul & Baker read in full, corroborated by Pallett; RM's own ICASSP 1988 paper was not independently read - the RM admission rests on the design paper, Pallett's dry-run report and Weinstein's introduction, all read in full."
+ },
+ "totals_after": {
+  "nodes": 345,
+  "edges": 444,
+  "budget": "345/2000",
+  "expansions_done": 212,
+  "provisional": 328,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 71,
+   "6": 51,
+   "7": 34,
+   "8": 23,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 2,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "cpl-barron-et-al-1963-1963",
+  "acl-data-collection-initiative-liberman-1989-1989",
+  "advantage-updating-baird-1993",
+  "complexity-of-reinforcement-learning-whitehead-1991",
+  "ieee-754-binary-floating-point-arithmetic-1985-1985"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 101 closes here (expansions 211-212). New carried hearings: the ACL/DCI's own expansion carries the Dow Jones WSJ text channel recorded as mediated at this parent; RM's own expansion carries the DARPA CSR line's earlier hearings on its own documents. New re-hearing conditions recorded this session: Penn Treebank at the WSJ corpus (a CSR document showing the annotation used), TIMIT at the WSJ corpus (a CSR collection document citing TIMIT's specification). Switchboard's year-bound drop is recorded in brief_correction - the resolver's year granularity remains a standing structural cost of the run (cf. JLS at exp-200), logged, never re-dated. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion; CPL's expansion - now the frontier head - carries the five hearings recorded as mediated via CPL at exp-211."
+}

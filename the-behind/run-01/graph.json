@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T11:55:18+00:00",
-  "expansions_done": 211,
-  "raw_candidates_seen": 8912,
+  "updated_at": "2026-11-28T12:03:49+00:00",
+  "expansions_done": 212,
+  "raw_candidates_seen": 8926,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35714,6 +35714,73 @@
     "name": "The CPL compiler subset (Richards, 1965)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T11:55:01+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "ATIS corpus (Price, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "Wall Street Journal text archive (Dow Jones, 1987-1989)",
+    "reason": "mediated_via: ACL Data Collection Initiative (Liberman, 1989)",
+    "at": "2026-11-28T12:03:28+00:00",
+    "mediated_via": "ACL Data Collection Initiative (Liberman, 1989)"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "Penn Treebank (Santorini et al., 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "BREF French read-speech corpus (Gauvain, Lamel & Eskenazi, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "TIMIT acoustic-phonetic speech corpus (Garofolo et al., 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "Brown Corpus (Francis & Kucera, 1964)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "LOB Corpus (Johansson, Leech & Goodluck, 1978)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "Katz backing-off estimation for sparse data (Katz, 1987)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "CSR Corpus Committee (Baker et al., 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "DARPA Spoken Language Systems programme (1984)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "wall-street-journal-corpus-darpa-csr-1992",
+    "name": "NIST-administered DARPA benchmark evaluations (Pallett, 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:03:28+00:00"
    }
   ]
  },
@@ -38002,7 +38069,7 @@
    "prior_state": "Resource Management and site-private corpora; per-lab evaluation practice.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -45756,6 +45823,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T11:55:01+00:00"
+  },
+  "acl-data-collection-initiative-liberman-1989-1989": {
+   "id": "acl-data-collection-initiative-liberman-1989-1989",
+   "name": "ACL Data Collection Initiative (Liberman, 1989)",
+   "aliases": [],
+   "year": 1989,
+   "domain": "language resources",
+   "type": "institution",
+   "definition": "The Association for Computational Linguistics' Data Collection Initiative (documented in Liberman, 'Text on Tap: the ACL/DCI', Oct 1989) - the initiative that obtained the Wall Street Journal text from Dow Jones, organized it with paragraph and sentence markup, and distributed it to the research community on CD-ROM: the supply line of the CSR corpus's entire text half.",
+   "bottleneck": "Before the ACL Data Collection Initiative, a researcher needing a large body of real machine-readable text had to collect and key it privately: publishers' text was not licensed, organized or distributed to the research community in any shared form.",
+   "leap": "The ACL Data Collection Initiative (1989) obtained the Wall Street Journal text from Dow Jones, organized it with paragraph and sentence markup, and distributed it to the research community on CD-ROM - the supply line from which the CSR corpus's 47M words, and a generation of text resources, were drawn.",
+   "prior_state": "Private, per-lab text collections; publisher text unavailable in machine-readable form.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial verification, expansion 212 (WSJ CSR corpus, 1992). Q1 attack: the corpus's sites could in principle have licensed WSJ text directly from Dow Jones, making the DCI a convenience rather than the enabling step. ANSWERED on the design paper's own record: the text was 'supplied by Dow Jones, Inc. to the ACL/DCI which organized the data and distributed it to the research community in CD-ROM format', the corpus is 'backed by WSJ text... provided by the ACL/DCI', and Lincoln's preprocessing consumed the DCI's files at file level (313 files, 274 retained, the DCI's paragraph/sentence markup, the DCI's duplication found in integrity checks) - the artifact consumed is the DCI's work product, and no parallel supply line is documented. Mediation attack run in reverse: Dow Jones, the text's originator, was tested as the true direct channel and recorded MEDIATED VIA the DCI at this parent, on the same sentences. Multiples test on Q3: the DCI served the whole language community, so its necessity is not CSR-specific - the edge is scored on this parent's documented consumption, not on uniqueness, and Q3 was held at partial for exactly that reason. Date/direction check: DCI 1989 (Liberman's 'Text on Tap', Oct 1989 workshop) precedes the 1992 design; the direction is supply-into-design, not the reverse. MOST CONTESTABLE ELEMENT: the institutional admission shape - the DCI is admitted as an institution through the artifact it carried (the run's L21 discipline), and a stricter reading could demand the CD-ROM distribution itself as the node; the node's stored leap is written as the distribution act, which is the same event. GROUNDING WART: Liberman's own DCI account (the design paper's ref. [9]) was not independently read this session; the admission rests on Paul & Baker's design paper read in full, corroborated by Pallett's dry-run report. Marked provisional per RUNBOOK section 6.",
+    "at": "2026-11-28T12:03:49+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T12:03:28+00:00"
+  },
+  "resource-management-corpus-price-et-al-1988-1988": {
+   "id": "resource-management-corpus-price-et-al-1988-1988",
+   "name": "Resource Management corpus (Price et al., 1988)",
+   "aliases": [],
+   "year": 1988,
+   "domain": "speech recognition",
+   "type": "data",
+   "definition": "The DARPA 1000-word Resource Management database for continuous speech recognition (Price, Fisher, Bernstein & Pallett, ICASSP 1988) - the first shared, NIST-compiled CSR benchmark corpus, with fixed training and test partitions, on which DARPA CSR systems were developed and evaluated from 1987 and which the WSJ corpus was designed to supplant.",
+   "bottleneck": "Before the Resource Management corpus, continuous speech recognition results were incomparable across laboratories: each site trained and tested on its own private data, and no shared task existed on which systems could be ranked.",
+   "leap": "The Resource Management corpus (1988) - a DARPA 1000-word database compiled by NIST with fixed training and test partitions - became the de facto standard for CSR comparison from 1987, the administered common-task form that ATIS extended and the WSJ corpus scaled to large vocabularies.",
+   "prior_state": "Site-private speech data and per-lab evaluation practice in the mid-1980s DARPA community.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial verification, expansion 212 (WSJ CSR corpus, 1992). Q1 attack: the shared-benchmark-corpus form could have reached the CSR design through ATIS (1990) or through the genre generally, making RM a foil rather than an ancestor - the mediation attack. ANSWERED on three documents: Pallett (the committee's NIST member) states the CSR corpus 'is intended to supplant the RM corpora and to supplement the ATIS corpora' - the community's own discrimination between the line it continues (RM) and the sibling it complements (ATIS); Weinstein's session introduction calls RM 'a de facto standard for comparison of system performance' whose limitations (1000-word vocabulary, restricted domain) are the design problem CSR solves; the design paper contrasts CSR against RM and ATIS jointly as the database-inquiry corpora of '<1500 words... perplexity 9 to 60', with the CSR-specific form (read speech, perplexity-banded test sets, the CSR benchmark line Weinstein dates 'since 1987') being RM's line. The correction relation holds: CSR extracts RM's worked object (the administered shared corpus as artifact form) and builds on it, defining itself only against RM's content limits; a designed continuity bridge (the CSR 33K dictionary includes RM's 1K vocabulary 'to allow cross-task tests') and a personnel channel (Pallett, RM's co-author, on the committee) corroborate. Multiples test on Q3: Switchboard's same-years design shows the genre was ripe - Q3 held at partial; the edge rests on the named channel, not on uniqueness. Date/direction check: RM 1988 (in use since 1987) precedes the 1992 design; succession direction is documented, not inferred. MOST CONTESTABLE ELEMENT: the form-vs-content split - a stricter reading could hold that CSR consumed only the genre (carried by practice and by NIST's administration, both heard separately at this parent and failed closed) and that RM enters the documents as the incumbent to beat. The re-hearing path is stated: a CSR committee document deriving the corpus's structure from ATIS or from Switchboard would reopen this edge. GROUNDING WART: RM's own ICASSP 1988 paper (Price, Fisher, Bernstein & Pallett) was not independently read this session; the admission rests on the design paper, Pallett's dry-run report and Weinstein's introduction, all read in full. Marked provisional per RUNBOOK section 6.",
+    "at": "2026-11-28T12:03:49+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T12:03:28+00:00"
   }
  },
  "edges": [
@@ -89164,6 +89289,200 @@
     "mediator": null,
     "evidence": "Direct: Richards 2011 secs.2, 4 and 5 - GPM designed 'for the purpose', the machine 'fully developed' in 1965-66, BCPL's abstract machine 'almost the same' machine, OCODE its recoding."
    }
+  },
+  {
+   "predecessor_id": "acl-data-collection-initiative-liberman-1989-1989",
+   "successor_id": "wall-street-journal-corpus-darpa-csr-1992",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before the ACL/DCI, there was no shared machine-readable newspaper text in the research community's hands at all: a lab wanting tens of millions of words of real text for statistical language modeling had to license and key it privately or go without. The design paper states the corpus is 'backed by WSJ text from 1987-89 provided by the ACL/DCI to enable statistical language modeling' - the DCI's collection is what made the corpus's text half, and with it the integrated speech-plus-language-modeling design, possible.",
+     "source": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992; Liberman, 'Text on Tap: the ACL/DCI', Oct 1989 DARPA Workshop (the design paper's ref. [9])",
+     "falsification": "A document showing the CSR sites obtained their WSJ text from a source other than the DCI's CD-ROM distribution."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Generativity: the DCI's text-on-tap model opened shared text resources for the whole field (its CD-ROM carried more than the WSJ), but in relation to this parent the space opened is the corpus's text program specifically, so partial.",
+     "source": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992",
+     "falsification": "Evidence the DCI's distribution served only this one corpus."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial, honestly: Dow Jones could in principle have licensed the sites directly, and the speech half does not pass through the DCI - but in the history that happened the text arrived as the DCI's organized, paragraph-and-sentence-marked CD-ROM, the artifact Lincoln's preprocessing consumed file by file (313 files, 274 retained after the DCI's own duplication was found), and no second supply line is documented.",
+     "source": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992",
+     "falsification": "Evidence of a parallel WSJ text supply to the CSR sites outside the DCI."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse: one initiative licensed, organized, marked and pressed the text onto CD-ROM for the entire community, where the alternative was per-lab licensing and preparation of 47M words - the design's text program (integrity checks, WFL construction, pool selection) starts from the DCI's files as delivered.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding: the DCI's organization of the text (article files with document-control numbers, paragraph and sentence markup) supplied the working model of what a distributable text resource is, but the corpus's own marking scheme is Lincoln's extension of it, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: the CD-ROM distribution with its markup is precisely an interface others build on without redoing the collection - the CSR design builds its entire text pipeline (preprocessors, WFL, test pools) on the DCI's format as delivered.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach: the DCI served natural-language processing broadly, beyond speech - real reach, but scored in relation to this parent's consumption, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed: text on tap collapsed the start-up time of any text-based experiment, but the corpus's own multi-year design cycle was governed by the committee process, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement: the DCI's CD-ROM became the default route by which the community held WSJ text (the design treats it as the source of record), but it displaced no single incumbent artifact, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Lineage centrality: the DCI is a trunk node for the text-resources line (the LDC's predecessor in function), a side branch in the speech line this parent heads, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Irreversibility: once shared text existed, corpus design never went back to private text - the baseline reset is real but shared with the programme that commissioned it, so partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:03:28+00:00",
+   "leap": {
+    "prior_state": "Resource Management and site-private corpora; per-lab evaluation practice - since 1987 DARPA CSR work had run on the RM corpus (1000-word vocabulary, restricted domain, perplexity 9-60) and ATIS served the database-inquiry SLS task, while outside the programme's administered tests there was no shared large-vocabulary, natural-language task on which recognizers could be compared.",
+    "jump": "The WSJ-based CSR corpus fixed the task at large-vocabulary scale: 47M words of shared WSJ text (1987-89, supplied and organized by the ACL/DCI) for language modeling, a designed read-speech collection (5K/20K vocabularies, perplexity bands 80-240, speaker-dependent, speaker-independent and adaptation partitions) recorded at MIT, SRI and TI, fixed train/development/evaluation partitions, and NIST-administered benchmark tests - piloted at 80 hours with a February 1992 dry run and benchmarked in November 1992.",
+    "date": 1992
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the DCI and the corpus's text half does not exist in 1990-91: no 47M words, no language-modeling program, no prompting texts, no test pools - the design's speech collection has nothing to record from. The mediation check was run against Dow Jones (the text's originator): the paper's own sentence routes the supply through the DCI ('supplied by Dow Jones, Inc. to the ACL/DCI which organized the data and distributed it'), and the artifact the designers consumed - marked, organized, on CD-ROM - is the DCI's work product, which is why the newspaper text itself is recorded mediated via the DCI at this parent. An institution admitted through the specific artifact it carried, per the run's L21 discipline.",
+    "mediator": null,
+    "evidence": "Direct: Paul & Baker 1992 - the 'backed by WSJ text... provided by the ACL/DCI' sentence, the Dow Jones-to-DCI supply passage, and the preprocessing section's file-level consumption of the DCI's CD-ROM."
+   }
+  },
+  {
+   "predecessor_id": "resource-management-corpus-price-et-al-1988-1988",
+   "successor_id": "wall-street-journal-corpus-darpa-csr-1992",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before RM, the problem the WSJ corpus's design presupposes as solved-in-form - how a community shares one corpus with fixed partitions and one administered test so results are comparable - had no worked instance: DARPA CSR work ran on site-private data. RM is that worked instance (Price, Fisher, Bernstein & Pallett, ICASSP 1988, 'The DARPA 1000-Word Resource Management Database'), and the CSR design is unintelligible without the form: every one of its structural decisions (shared multi-site collection, fixed train/dev/eval partitions, perplexity-specified test conditions, administered benchmarks) is RM's form restated at large-vocabulary scale.",
+     "source": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992; Pallett, 'DARPA February 1992 Pilot Corpus CSR Dry Run Benchmark Test Results', Feb 1992",
+     "falsification": "A pre-1988 document showing the shared-benchmark-corpus form already worked out in another CSR artifact the CSR committee used instead."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Generativity: RM opened the space of the administered common task that ATIS and CSR then occupied - a whole genre of corpus - but the space is the programme's as much as the artifact's, so partial.",
+     "source": "Weinstein, session introduction, Proc. DARPA Speech and Natural Language Workshop (H92-1), Feb 1992",
+     "falsification": "Evidence the common-task genre was opened by a different artifact than RM."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is partial, on the record's own terms: the form was also carried by ATIS (1990) and embodied in the community's standing practice by 1991, and Switchboard's same-years design shows the genre was ripe - but the documents name RM, not the genre, as this design's incumbent: CSR 'is intended to supplant the RM corpora' (Pallett), and RM is 'the de facto standard' whose limits define the leap (Weinstein). The channel is documented; its exclusivity is not, so partial.",
+     "source": "Pallett, 'DARPA February 1992 Pilot Corpus CSR Dry Run Benchmark Test Results', Feb 1992; Weinstein, session introduction, Proc. DARPA Speech and Natural Language Workshop (H92-1), Feb 1992",
+     "falsification": "A CSR committee document deriving the corpus's structure from ATIS or from Switchboard rather than from the RM line."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Cost: RM's form spared the CSR design the cost of inventing comparability - committee effort went to scale and domain, not to the concept of a shared test - but the saving is methodological, not orders of magnitude in the artifact's production, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Measurability: RM made CSR performance measurable on a common scale, the property CSR's design extends; the measurement administration itself is NIST's practice, heard at the NIST filing, so partial here.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Understanding: RM supplied the design model the committee argued from (vocabulary size, perplexity, partition discipline as the design variables), but CSR's specific model - natural text at controlled perplexity - is the committee's extension, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: RM's fixed partitions and administered test sets are exactly an interface other sites build systems against without renegotiating the task - the property CSR inherits wholesale and republishes at 5K/20K conditions.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach: Weinstein records RM was 'widely accepted and used both within and outside the DARPA research community, and internationally' - real reach beyond its programme, so partial in relation to this parent's design.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement: RM displaced per-lab evaluation as the CSR community's default ('a de facto standard for comparison'), and is in turn displaced by this parent - the displacement is documented in both directions, scored partial because the parent's relation to it is succession as much as use.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality: RM is the trunk of the CSR corpus line - the session's own framing ('Since 1987, DARPA CSR systems have been developed and evaluated on the Resource Management corpus') makes it the line's reference artifact.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:03:28+00:00",
+   "leap": {
+    "prior_state": "Resource Management and site-private corpora; per-lab evaluation practice - since 1987 DARPA CSR work had run on the RM corpus (1000-word vocabulary, restricted domain, perplexity 9-60) and ATIS served the database-inquiry SLS task, while outside the programme's administered tests there was no shared large-vocabulary, natural-language task on which recognizers could be compared.",
+    "jump": "The WSJ-based CSR corpus fixed the task at large-vocabulary scale: 47M words of shared WSJ text (1987-89, supplied and organized by the ACL/DCI) for language modeling, a designed read-speech collection (5K/20K vocabularies, perplexity bands 80-240, speaker-dependent, speaker-independent and adaptation partitions) recorded at MIT, SRI and TI, fixed train/development/evaluation partitions, and NIST-administered benchmark tests - piloted at 80 hours with a February 1992 dry run and benchmarked in November 1992.",
+    "date": 1992
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove RM and the CSR design loses its form and its foil at once: there is no worked shared-benchmark corpus to scale, no de facto standard whose 1000-word limit poses the design problem, no RM vocabulary for the dictionary's cross-task bridge, and no Pallett-carried evaluation practice on the committee. The mediation attack through ATIS was run and fails on the documents: ATIS is the end-to-end SLS variant the corpus supplements, while the CSR-specific form - read speech, perplexity-banded test sets, the benchmark line running since 1987 - is RM's, named as such by the design paper, the dry-run report and the session introduction alike. The correction relation is satisfied: CSR extracts RM's worked object (the administered shared corpus as an artifact form) and builds on it; what it defines itself against is RM's content limits, not the form.",
+    "mediator": null,
+    "evidence": "Direct: Paul & Baker 1992 (RM as ref. [15], the contrast passage, the dictionary bridge); Pallett 1992 ('intended to supplant the RM corpora'); Weinstein 1992 (the de-facto-standard passage)."
+   }
   }
  ],
  "merge_log": [
@@ -90462,6 +90781,30 @@
     "cosine": 0.868
    },
    "reason": "The filing denotes Church's lambda calculus (mature form 1936), the same advance as the existing node; the Landin route described in the filing is this parent's channel claim, not a different formalism."
+  },
+  {
+   "at": "2026-11-28T11:59:06+00:00",
+   "from_id": "cand:Brown Corpus (Francis & Kucera, 1964)",
+   "into_id": "brown-corpus-1964",
+   "signals": [
+    "judge"
+   ],
+   "scores": {
+    "cosine": 0.7886
+   },
+   "reason": "The filing denotes Francis & Kucera's Brown Corpus (1964) itself, the same advance as the existing node; the filing's definition is written from this parent's documents but names the same artifact."
+  },
+  {
+   "at": "2026-11-28T11:59:06+00:00",
+   "from_id": "cand:LOB Corpus (Johansson, Leech & Goodluck, 1978)",
+   "into_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+   "signals": [
+    "judge"
+   ],
+   "scores": {
+    "cosine": 0.8894
+   },
+   "reason": "The filing denotes the Lancaster-Oslo/Bergen Corpus (1978) itself, the same advance as the existing node; the shorter filing name is a name variant of the same corpus."
   }
  ],
  "expansions": {
@@ -395691,6 +396034,599 @@
       }
      },
      "similarity": 0.5015,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "wall-street-journal-corpus-darpa-csr-1992": {
+   "raw_candidates": [
+    {
+     "name": "Resource Management corpus (Price et al., 1988)",
+     "year": 1988,
+     "domain": "speech recognition",
+     "lens": "L2",
+     "type": "data",
+     "definition": "The DARPA 1000-word Resource Management database for continuous speech recognition (Price, Fisher, Bernstein & Pallett, ICASSP 1988) - the first shared, NIST-compiled CSR benchmark corpus, with fixed training and test partitions, on which DARPA CSR systems were developed and evaluated from 1987 and which the WSJ corpus was designed to supplant.",
+     "causal_claim": "The Resource Management corpus directly enabled the WSJ corpus's leap by supplying the form the leap instantiates: a shared multi-site corpus with fixed train/test partitions and administered benchmark tests - the de facto standard since 1987 whose documented limits (1000-word vocabulary, restricted domain, perplexity 9-60) the CSR design answers point by point, whose co-author Pallett sat on the CSR Corpus Committee, and whose 1K vocabulary the CSR dictionary deliberately includes 'to allow cross-task tests with an existing database'.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "ATIS corpus (Price, 1990)",
+     "year": 1990,
+     "domain": "speech recognition",
+     "lens": "L3",
+     "type": "data",
+     "definition": "The Air Travel Information System common task corpus (Price, June 1990 workshop) - DARPA's spoken-language corpus for end-to-end database inquiry, the second existing corpus the design paper names alongside RM, which the WSJ corpus was intended to supplement rather than supplant.",
+     "causal_claim": "ATIS is filed as the sibling common task: the design paper names it with RM as the existing database-inquiry corpora (medium vocabularies, perplexity 9-60), and Pallett's dry-run report states the CSR corpus supplements ATIS while supplanting RM - the hearing must decide whether the form reached CSR through ATIS, through RM, or through the programme that ran both.",
+     "source_title": "Pallett, 'DARPA February 1992 Pilot Corpus CSR Dry Run Benchmark Test Results', Feb 1992",
+     "source_url": "https://aclanthology.org/anthology-files/pdf/H/H92/H92-1078.pdf"
+    },
+    {
+     "name": "ACL Data Collection Initiative (Liberman, 1989)",
+     "year": 1989,
+     "domain": "language resources",
+     "lens": "L8",
+     "type": "institution",
+     "definition": "The Association for Computational Linguistics' Data Collection Initiative (documented in Liberman, 'Text on Tap: the ACL/DCI', Oct 1989) - the initiative that obtained the Wall Street Journal text from Dow Jones, organized it with paragraph and sentence markup, and distributed it to the research community on CD-ROM: the supply line of the CSR corpus's entire text half.",
+     "causal_claim": "The ACL/DCI directly enabled the WSJ corpus's leap by supplying its text component as a finished, shared artifact: the design paper states the corpus is 'backed by WSJ text from 1987-89 provided by the ACL/DCI to enable statistical language modeling', that Dow Jones supplied the text 'to the ACL/DCI which organized the data and distributed it to the research community in CD-ROM format', that the articles were 'paragraph and sentence marked by the ACL/DCI', and Lincoln's preprocessing worked on 'the original WSJ text CD-ROM' - 313 files, 274 retained, 47M words.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "Wall Street Journal text archive (Dow Jones, 1987-1989)",
+     "year": 1989,
+     "domain": "language resources",
+     "lens": "L8",
+     "type": "data",
+     "definition": "The machine-readable text of the Wall Street Journal for 1987-89 - the newspaper content, supplied by Dow Jones, Inc., from which the CSR corpus's 47M words were drawn.",
+     "causal_claim": "The WSJ text archive is filed as the corpus's material: the design paper states the original text 'were supplied by Dow Jones, Inc. to the ACL/DCI' - the supply ran through the Initiative, whose organized CD-ROM is the artifact Lincoln actually processed - so the hearing must decide whether the newspaper text reaches the corpus directly or only through the DCI's organized artifact.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "Penn Treebank (Santorini et al., 1990)",
+     "year": 1990,
+     "domain": "language resources",
+     "lens": "L8",
+     "type": "data",
+     "definition": "The Penn Treebank project's annotated Wall Street Journal text (Santorini, 'Annotation Manual for the Penn Treebank Project', Univ. of Pennsylvania, May 1990) - about 2M words of parsed WSJ text, all of it reserved inside the CSR corpus's training partition.",
+     "causal_claim": "The Penn Treebank is filed as the incorporated text block: the design paper records that 'ninety percent of the text, including all of the Penn Treebank (about 2M words) were reserved for training' and that the Treebank's 21 files were the most recent, breaking the train-on-the-past simulation - the hearing must decide whether CSR consumed the Treebank (its annotation, its partition) or merely shared its underlying text.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "BREF French read-speech corpus (Gauvain, Lamel & Eskenazi, 1990)",
+     "year": 1990,
+     "domain": "speech recognition",
+     "lens": "L3",
+     "type": "data",
+     "definition": "BREF, the large French read-speech corpus built from Le Monde text (Gauvain, Lamel & Eskenazi, ICSLP 1990) - the completed parallel effort the CSR design paper cites as reference [5].",
+     "causal_claim": "BREF is filed as the design paper's own cited comparable: 'A similar read speech corpus in the French language has been successfully completed using text from the newspaper Le Monde' - the hearing must decide whether a completed foreign parallel, cited in one sentence, is a channel into the CSR design or a multiple that proves ripeness.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "TIMIT acoustic-phonetic speech corpus (Garofolo et al., 1990)",
+     "year": 1990,
+     "domain": "speech recognition",
+     "lens": "L3",
+     "type": "data",
+     "definition": "The DARPA TIMIT corpus of read speech - designed by MIT, SRI and Texas Instruments for acoustic-phonetic studies, with phonetically balanced sentences recorded at TI - the era's other large DARPA read-speech corpus, whose three designing sites are the CSR pilot's three recording sites.",
+     "causal_claim": "TIMIT is filed from the lineage surveys, not from the parent's documents: it is find-verifiably ABSENT from the design paper's text and all 17 of its references, while its designing sites (MIT, SRI, TI) are the CSR pilot's recording sites - the hearing must decide whether a site-carried collection practice, uncited and with a divergent design goal (phonetic balance against CSR's natural text), is a channel or a lineage the documents do not support.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "Brown Corpus (Francis & Kucera, 1964)",
+     "year": 1964,
+     "domain": "language resources",
+     "lens": "L3",
+     "type": "data",
+     "definition": "Francis and Kucera's Brown Corpus (1964) - the first designed, balanced, machine-readable corpus of American English, the ancestor artifact of the machine-readable text-corpus tradition the CSR corpus's text half belongs to.",
+     "causal_claim": "Brown is filed as a LINK candidate from the lineage surveys: the general practice of a designed machine-readable text corpus as shared research infrastructure descends from it, but the design paper never cites it and the CSR text arrived through the ACL/DCI's collection - the hearing must decide whether the tradition reaches this design through a document or only through the air.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "LOB Corpus (Johansson, Leech & Goodluck, 1978)",
+     "year": 1978,
+     "domain": "language resources",
+     "lens": "L3",
+     "type": "dataset",
+     "definition": "The Lancaster-Oslo/Bergen Corpus (1978) - the British-English balanced corpus built on the Brown model, the second instance of the designed text-corpus tradition.",
+     "causal_claim": "LOB is filed as a LINK candidate on the same road as Brown, one step further away: a British balanced corpus on the Brown model, never cited by the CSR design documents, whose tradition claim is Brown's hearing at one remove.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "Katz backing-off estimation for sparse data (Katz, 1987)",
+     "year": 1987,
+     "domain": "speech recognition",
+     "lens": "L1",
+     "type": "method",
+     "definition": "Slava Katz's back-off estimation scheme for n-gram language models (ASSP-35, 1987) - reference [8] of the CSR design paper, the estimator inside the baseline bigram back-off language models Lincoln provided with the corpus.",
+     "causal_claim": "Katz back-off is filed as a LINK candidate on the design paper's own citation: Lincoln 'provided 8 baseline bigram backoff [8,11] language models... for research and cross-site comparative evaluation testing' as components of the corpus package - the hearing must decide whether a component of the parent's delivered package is a predecessor of the parent's leap (the shared task), or apparatus inside it.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "CSR Corpus Committee (Baker et al., 1990)",
+     "year": 1990,
+     "domain": "speech recognition",
+     "lens": "L20",
+     "type": "institution",
+     "definition": "The DARPA CSR Corpus Committee (formed early 1990, chaired by Janet Baker of Dragon Systems, with members from BBN, NIST, Lincoln Laboratory, MIT, IBM, TI, CMU, SRI and AT&T) - the body that designed the WSJ corpus through the consensus process the design paper reports.",
+     "causal_claim": "The CSR Corpus Committee is filed as the parent's design body: the design paper is its report ('The structure, features, and dimensions of this corpus constitute the outcome of a heavily debated consensus process') - the hearing must decide whether the maker of a design is a predecessor of it, or its formation.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "DARPA Spoken Language Systems programme (1984)",
+     "year": 1984,
+     "domain": "research institutions",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "DARPA's Spoken Language Systems programme - the standing funder and task-poser of the community whose corpora lineage (Resource Management, TIMIT, ATIS) the WSJ corpus continues; the design paper's footnote records 'This work was sponsored by the Defense Advanced Research Projects Agency', and its abstract credits the SLS community's corpora leadership 'starting in the mid 1980's'.",
+     "causal_claim": "The DARPA SLS programme is filed as the commissioning institution: its Coordinating Committee took up new corpora requirements in early 1990, formed the CSR Corpus Committee, preliminarily authorized the >400-hour corpus, and set the 1994 goals the corpus serves - the hearing must decide whether posing, paying and authorizing is a channel, under the rule that an institution acts through the specific artifacts it carried.",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+     "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+    },
+    {
+     "name": "NIST-administered DARPA benchmark evaluations (Pallett, 1988)",
+     "year": 1988,
+     "domain": "speech recognition",
+     "lens": "L17",
+     "type": "method",
+     "definition": "The benchmark-evaluation practice administered by NIST for the DARPA speech community (documented from the Resource Management evaluations onward; Pallett of NIST co-authored the RM corpus paper, sat on the CSR Corpus Committee, compiled the CSR pilot data, and authored the February 1992 dry-run benchmark results) - the testing paradigm the CSR design incorporates.",
+     "causal_claim": "NIST's evaluation practice is filed on the design paper's own list of designed components ('text processing steps, lexicons, and testing paradigms incorporated into the multifaceted WSJ CSR Corpus') and on Pallett's triple role - the hearing must decide whether the paradigm is a predecessor practice consumed by the design, or the parent's own production and benchmark apparatus (NIST also 'compiled the data from the three recording sites, formatted it, and shipped it').",
+     "source_title": "Pallett, 'DARPA February 1992 Pilot Corpus CSR Dry Run Benchmark Test Results', Feb 1992",
+     "source_url": "https://aclanthology.org/anthology-files/pdf/H/H92/H92-1078.pdf"
+    },
+    {
+     "name": "Switchboard corpus (Godfrey, Holliman & McDaniel, 1992)",
+     "year": 1992,
+     "domain": "speech recognition",
+     "lens": "L3",
+     "type": "data",
+     "definition": "The Switchboard corpus of conversational telephone speech (Godfrey, Holliman & McDaniel, ICASSP 1992), collected at Texas Instruments under DARPA sponsorship - the era's complementary corpus effort, published in the parent's own year.",
+     "causal_claim": "Switchboard is filed deliberately with its documented year: it is the complementary conversational-speech effort of the same programme and years, and it is dated the parent's own year, 1992 - filed for the resolver's year-bound record, not re-dated.",
+     "source_title": "Godfrey, Holliman & McDaniel, 'SWITCHBOARD: Telephone speech corpus for research and development', ICASSP 1992 (collected at TI in 1990, released 1992)",
+     "source_url": "https://en.wikipedia.org/wiki/Switchboard_Telephone_Speech_Corpus"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "resource-management-corpus-price-et-al-1988-1988",
+      "candidate": {
+       "name": "Resource Management corpus (Price et al., 1988)",
+       "year": 1988,
+       "domain": "speech recognition",
+       "lens": "L2",
+       "type": "data",
+       "definition": "The DARPA 1000-word Resource Management database for continuous speech recognition (Price, Fisher, Bernstein & Pallett, ICASSP 1988) - the first shared, NIST-compiled CSR benchmark corpus, with fixed training and test partitions, on which DARPA CSR systems were developed and evaluated from 1987 and which the WSJ corpus was designed to supplant.",
+       "causal_claim": "The Resource Management corpus directly enabled the WSJ corpus's leap by supplying the form the leap instantiates: a shared multi-site corpus with fixed train/test partitions and administered benchmark tests - the de facto standard since 1987 whose documented limits (1000-word vocabulary, restricted domain, perplexity 9-60) the CSR design answers point by point, whose co-author Pallett sat on the CSR Corpus Committee, and whose 1K vocabulary the CSR dictionary deliberately includes 'to allow cross-task tests with an existing database'.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Resource Management corpus (Price et al., 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "atis-corpus-price-1990-1990",
+      "candidate": {
+       "name": "ATIS corpus (Price, 1990)",
+       "year": 1990,
+       "domain": "speech recognition",
+       "lens": "L3",
+       "type": "data",
+       "definition": "The Air Travel Information System common task corpus (Price, June 1990 workshop) - DARPA's spoken-language corpus for end-to-end database inquiry, the second existing corpus the design paper names alongside RM, which the WSJ corpus was intended to supplement rather than supplant.",
+       "causal_claim": "ATIS is filed as the sibling common task: the design paper names it with RM as the existing database-inquiry corpora (medium vocabularies, perplexity 9-60), and Pallett's dry-run report states the CSR corpus supplements ATIS while supplanting RM - the hearing must decide whether the form reached CSR through ATIS, through RM, or through the programme that ran both.",
+       "source_title": "Pallett, 'DARPA February 1992 Pilot Corpus CSR Dry Run Benchmark Test Results', Feb 1992",
+       "source_url": "https://aclanthology.org/anthology-files/pdf/H/H92/H92-1078.pdf"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "ATIS corpus (Price, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "acl-data-collection-initiative-liberman-1989-1989",
+      "candidate": {
+       "name": "ACL Data Collection Initiative (Liberman, 1989)",
+       "year": 1989,
+       "domain": "language resources",
+       "lens": "L8",
+       "type": "institution",
+       "definition": "The Association for Computational Linguistics' Data Collection Initiative (documented in Liberman, 'Text on Tap: the ACL/DCI', Oct 1989) - the initiative that obtained the Wall Street Journal text from Dow Jones, organized it with paragraph and sentence markup, and distributed it to the research community on CD-ROM: the supply line of the CSR corpus's entire text half.",
+       "causal_claim": "The ACL/DCI directly enabled the WSJ corpus's leap by supplying its text component as a finished, shared artifact: the design paper states the corpus is 'backed by WSJ text from 1987-89 provided by the ACL/DCI to enable statistical language modeling', that Dow Jones supplied the text 'to the ACL/DCI which organized the data and distributed it to the research community in CD-ROM format', that the articles were 'paragraph and sentence marked by the ACL/DCI', and Lincoln's preprocessing worked on 'the original WSJ text CD-ROM' - 313 files, 274 retained, 47M words.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "ACL Data Collection Initiative (Liberman, 1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "wall-street-journal-text-archive-dow-jones-1987-1989-1989",
+      "candidate": {
+       "name": "Wall Street Journal text archive (Dow Jones, 1987-1989)",
+       "year": 1989,
+       "domain": "language resources",
+       "lens": "L8",
+       "type": "data",
+       "definition": "The machine-readable text of the Wall Street Journal for 1987-89 - the newspaper content, supplied by Dow Jones, Inc., from which the CSR corpus's 47M words were drawn.",
+       "causal_claim": "The WSJ text archive is filed as the corpus's material: the design paper states the original text 'were supplied by Dow Jones, Inc. to the ACL/DCI' - the supply ran through the Initiative, whose organized CD-ROM is the artifact Lincoln actually processed - so the hearing must decide whether the newspaper text reaches the corpus directly or only through the DCI's organized artifact.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Wall Street Journal text archive (Dow Jones, 1987-1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "penn-treebank-santorini-et-al-1990-1990",
+      "candidate": {
+       "name": "Penn Treebank (Santorini et al., 1990)",
+       "year": 1990,
+       "domain": "language resources",
+       "lens": "L8",
+       "type": "data",
+       "definition": "The Penn Treebank project's annotated Wall Street Journal text (Santorini, 'Annotation Manual for the Penn Treebank Project', Univ. of Pennsylvania, May 1990) - about 2M words of parsed WSJ text, all of it reserved inside the CSR corpus's training partition.",
+       "causal_claim": "The Penn Treebank is filed as the incorporated text block: the design paper records that 'ninety percent of the text, including all of the Penn Treebank (about 2M words) were reserved for training' and that the Treebank's 21 files were the most recent, breaking the train-on-the-past simulation - the hearing must decide whether CSR consumed the Treebank (its annotation, its partition) or merely shared its underlying text.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Penn Treebank (Santorini et al., 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bref-french-read-speech-corpus-gauvain-lamel-eskenazi-1990-1990",
+      "candidate": {
+       "name": "BREF French read-speech corpus (Gauvain, Lamel & Eskenazi, 1990)",
+       "year": 1990,
+       "domain": "speech recognition",
+       "lens": "L3",
+       "type": "data",
+       "definition": "BREF, the large French read-speech corpus built from Le Monde text (Gauvain, Lamel & Eskenazi, ICSLP 1990) - the completed parallel effort the CSR design paper cites as reference [5].",
+       "causal_claim": "BREF is filed as the design paper's own cited comparable: 'A similar read speech corpus in the French language has been successfully completed using text from the newspaper Le Monde' - the hearing must decide whether a completed foreign parallel, cited in one sentence, is a channel into the CSR design or a multiple that proves ripeness.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "BREF French read-speech corpus (Gauvain, Lamel & Eskenazi, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "timit-acoustic-phonetic-speech-corpus-garofolo-et-al-1990-1990",
+      "candidate": {
+       "name": "TIMIT acoustic-phonetic speech corpus (Garofolo et al., 1990)",
+       "year": 1990,
+       "domain": "speech recognition",
+       "lens": "L3",
+       "type": "data",
+       "definition": "The DARPA TIMIT corpus of read speech - designed by MIT, SRI and Texas Instruments for acoustic-phonetic studies, with phonetically balanced sentences recorded at TI - the era's other large DARPA read-speech corpus, whose three designing sites are the CSR pilot's three recording sites.",
+       "causal_claim": "TIMIT is filed from the lineage surveys, not from the parent's documents: it is find-verifiably ABSENT from the design paper's text and all 17 of its references, while its designing sites (MIT, SRI, TI) are the CSR pilot's recording sites - the hearing must decide whether a site-carried collection practice, uncited and with a divergent design goal (phonetic balance against CSR's natural text), is a channel or a lineage the documents do not support.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "TIMIT acoustic-phonetic speech corpus (Garofolo et al., 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "brown-corpus-francis-kucera-1964-1964",
+      "candidate": {
+       "name": "Brown Corpus (Francis & Kucera, 1964)",
+       "year": 1964,
+       "domain": "language resources",
+       "lens": "L3",
+       "type": "data",
+       "definition": "Francis and Kucera's Brown Corpus (1964) - the first designed, balanced, machine-readable corpus of American English, the ancestor artifact of the machine-readable text-corpus tradition the CSR corpus's text half belongs to.",
+       "causal_claim": "Brown is filed as a LINK candidate from the lineage surveys: the general practice of a designed machine-readable text corpus as shared research infrastructure descends from it, but the design paper never cites it and the CSR text arrived through the ACL/DCI's collection - the hearing must decide whether the tradition reaches this design through a document or only through the air.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Brown Corpus (Francis & Kucera, 1964)"
+      ],
+      "matched_node_id": "brown-corpus-1964",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lob-corpus-johansson-leech-goodluck-1978-1978",
+      "candidate": {
+       "name": "LOB Corpus (Johansson, Leech & Goodluck, 1978)",
+       "year": 1978,
+       "domain": "language resources",
+       "lens": "L3",
+       "type": "dataset",
+       "definition": "The Lancaster-Oslo/Bergen Corpus (1978) - the British-English balanced corpus built on the Brown model, the second instance of the designed text-corpus tradition.",
+       "causal_claim": "LOB is filed as a LINK candidate on the same road as Brown, one step further away: a British balanced corpus on the Brown model, never cited by the CSR design documents, whose tradition claim is Brown's hearing at one remove.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "LOB Corpus (Johansson, Leech & Goodluck, 1978)"
+      ],
+      "matched_node_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "katz-backing-off-estimation-for-sparse-data-katz-1987-1987",
+      "candidate": {
+       "name": "Katz backing-off estimation for sparse data (Katz, 1987)",
+       "year": 1987,
+       "domain": "speech recognition",
+       "lens": "L1",
+       "type": "method",
+       "definition": "Slava Katz's back-off estimation scheme for n-gram language models (ASSP-35, 1987) - reference [8] of the CSR design paper, the estimator inside the baseline bigram back-off language models Lincoln provided with the corpus.",
+       "causal_claim": "Katz back-off is filed as a LINK candidate on the design paper's own citation: Lincoln 'provided 8 baseline bigram backoff [8,11] language models... for research and cross-site comparative evaluation testing' as components of the corpus package - the hearing must decide whether a component of the parent's delivered package is a predecessor of the parent's leap (the shared task), or apparatus inside it.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Katz backing-off estimation for sparse data (Katz, 1987)"
+      ],
+      "matched_node_id": "katz-backing-off-estimation-for-sparse-data-katz-1987-1987",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "csr-corpus-committee-baker-et-al-1990-1990",
+      "candidate": {
+       "name": "CSR Corpus Committee (Baker et al., 1990)",
+       "year": 1990,
+       "domain": "speech recognition",
+       "lens": "L20",
+       "type": "institution",
+       "definition": "The DARPA CSR Corpus Committee (formed early 1990, chaired by Janet Baker of Dragon Systems, with members from BBN, NIST, Lincoln Laboratory, MIT, IBM, TI, CMU, SRI and AT&T) - the body that designed the WSJ corpus through the consensus process the design paper reports.",
+       "causal_claim": "The CSR Corpus Committee is filed as the parent's design body: the design paper is its report ('The structure, features, and dimensions of this corpus constitute the outcome of a heavily debated consensus process') - the hearing must decide whether the maker of a design is a predecessor of it, or its formation.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "CSR Corpus Committee (Baker et al., 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "darpa-spoken-language-systems-programme-1984-1984",
+      "candidate": {
+       "name": "DARPA Spoken Language Systems programme (1984)",
+       "year": 1984,
+       "domain": "research institutions",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "DARPA's Spoken Language Systems programme - the standing funder and task-poser of the community whose corpora lineage (Resource Management, TIMIT, ATIS) the WSJ corpus continues; the design paper's footnote records 'This work was sponsored by the Defense Advanced Research Projects Agency', and its abstract credits the SLS community's corpora leadership 'starting in the mid 1980's'.",
+       "causal_claim": "The DARPA SLS programme is filed as the commissioning institution: its Coordinating Committee took up new corpora requirements in early 1990, formed the CSR Corpus Committee, preliminarily authorized the >400-hour corpus, and set the 1994 goals the corpus serves - the hearing must decide whether posing, paying and authorizing is a channel, under the rule that an institution acts through the specific artifacts it carried.",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA Speech and Natural Language Workshop, Feb 1992 (ACL H92-1073)",
+       "source_url": "https://preview.aclanthology.org/eacl-dois/H92-1073.pdf"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "DARPA Spoken Language Systems programme (1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nist-administered-darpa-benchmark-evaluations-pallett-1988-1988",
+      "candidate": {
+       "name": "NIST-administered DARPA benchmark evaluations (Pallett, 1988)",
+       "year": 1988,
+       "domain": "speech recognition",
+       "lens": "L17",
+       "type": "method",
+       "definition": "The benchmark-evaluation practice administered by NIST for the DARPA speech community (documented from the Resource Management evaluations onward; Pallett of NIST co-authored the RM corpus paper, sat on the CSR Corpus Committee, compiled the CSR pilot data, and authored the February 1992 dry-run benchmark results) - the testing paradigm the CSR design incorporates.",
+       "causal_claim": "NIST's evaluation practice is filed on the design paper's own list of designed components ('text processing steps, lexicons, and testing paradigms incorporated into the multifaceted WSJ CSR Corpus') and on Pallett's triple role - the hearing must decide whether the paradigm is a predecessor practice consumed by the design, or the parent's own production and benchmark apparatus (NIST also 'compiled the data from the three recording sites, formatted it, and shipped it').",
+       "source_title": "Pallett, 'DARPA February 1992 Pilot Corpus CSR Dry Run Benchmark Test Results', Feb 1992",
+       "source_url": "https://aclanthology.org/anthology-files/pdf/H/H92/H92-1078.pdf"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "NIST-administered DARPA benchmark evaluations (Pallett, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:7:brown-corpus-1964",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 7,
+       "card": {
+        "name": "Brown Corpus (Francis & Kucera, 1964)",
+        "aliases": [],
+        "year": 1964,
+        "domain": "language resources",
+        "type": "data",
+        "definition": "Francis and Kucera's Brown Corpus (1964) - the first designed, balanced, machine-readable corpus of American English, the ancestor artifact of the machine-readable text-corpus tradition the CSR corpus's text half belongs to.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "brown-corpus-1964",
+       "card": {
+        "name": "Brown Corpus",
+        "aliases": [],
+        "year": 1964,
+        "domain": "artificial intelligence",
+        "type": "data",
+        "definition": "The Brown University Standard Corpus of Present-Day American English (Francis & Kucera, manual 1964): 500 samples of 2,000+ words of 1961 American prose across 15 genres, about one million words - the first major structured machine-readable corpus.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.7886,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:8:lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 8,
+       "card": {
+        "name": "LOB Corpus (Johansson, Leech & Goodluck, 1978)",
+        "aliases": [],
+        "year": 1978,
+        "domain": "language resources",
+        "type": "dataset",
+        "definition": "The Lancaster-Oslo/Bergen Corpus (1978) - the British-English balanced corpus built on the Brown model, the second instance of the designed text-corpus tradition.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+       "card": {
+        "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+        "aliases": [],
+        "year": 1978,
+        "domain": "",
+        "type": "dataset",
+        "definition": "The Lancaster-Oslo/Bergen Corpus of British English (compiled 1970s, published 1978): one million words in 500 balanced text samples - the text source from which all IAM-OnDB (and IAM database) sentences are taken.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8894,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Switchboard corpus (Godfrey, Holliman & McDaniel, 1992)",
+       "year": 1992,
+       "domain": "speech recognition",
+       "lens": "L3",
+       "type": "data",
+       "definition": "The Switchboard corpus of conversational telephone speech (Godfrey, Holliman & McDaniel, ICASSP 1992), collected at Texas Instruments under DARPA sponsorship - the era's complementary corpus effort, published in the parent's own year.",
+       "causal_claim": "Switchboard is filed deliberately with its documented year: it is the complementary conversational-speech effort of the same programme and years, and it is dated the parent's own year, 1992 - filed for the resolver's year-bound record, not re-dated.",
+       "source_title": "Godfrey, Holliman & McDaniel, 'SWITCHBOARD: Telephone speech corpus for research and development', ICASSP 1992 (collected at TI in 1990, released 1992)",
+       "source_url": "https://en.wikipedia.org/wiki/Switchboard_Telephone_Speech_Corpus"
+      },
+      "reason": "dated on/after parent year 1992"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:7:brown-corpus-1964",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 7,
+      "card": {
+       "name": "Brown Corpus (Francis & Kucera, 1964)",
+       "aliases": [],
+       "year": 1964,
+       "domain": "language resources",
+       "type": "data",
+       "definition": "Francis and Kucera's Brown Corpus (1964) - the first designed, balanced, machine-readable corpus of American English, the ancestor artifact of the machine-readable text-corpus tradition the CSR corpus's text half belongs to.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "brown-corpus-1964",
+      "card": {
+       "name": "Brown Corpus",
+       "aliases": [],
+       "year": 1964,
+       "domain": "artificial intelligence",
+       "type": "data",
+       "definition": "The Brown University Standard Corpus of Present-Day American English (Francis & Kucera, manual 1964): 500 samples of 2,000+ words of 1961 American prose across 15 genres, about one million words - the first major structured machine-readable corpus.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.7886,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:8:lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 8,
+      "card": {
+       "name": "LOB Corpus (Johansson, Leech & Goodluck, 1978)",
+       "aliases": [],
+       "year": 1978,
+       "domain": "language resources",
+       "type": "dataset",
+       "definition": "The Lancaster-Oslo/Bergen Corpus (1978) - the British-English balanced corpus built on the Brown model, the second instance of the designed text-corpus tradition.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+      "card": {
+       "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+       "aliases": [],
+       "year": 1978,
+       "domain": "",
+       "type": "dataset",
+       "definition": "The Lancaster-Oslo/Bergen Corpus of British English (compiled 1970s, published 1978): one million words in 500 balanced text samples - the text source from which all IAM-OnDB (and IAM database) sentences are taken.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8894,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
