@@ -17828,3 +17828,91 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record",
  "notes": "Session 109 continues: expansion 228 (the economic order quantity, Harris 1913) follows this checkpoint in the same session. The deferred-hearing ledger after this expansion: Baum-at-EM and Wolfe-at-EM are CLOSED (admission and argued rejection respectively); Ceppellini's rediscovery path now runs through the admitted O&W node's own expansion, and the contingency-table followers' through Hartley's."
 }
+{
+ "ts": "2026-11-28T14:58:44Z",
+ "event": "expansion",
+ "session": 109,
+ "expansion": 228,
+ "parent": "the-economic-order-quantity-harris-1913-1913",
+ "parent_name": "The economic order quantity (Harris, 1913)",
+ "parent_year": 1913,
+ "parent_depth": 6,
+ "date": "2026-11-28",
+ "brief_correction": "Session 109 was interrupted after exp-227: its worker ended without a report, leaving this expansion's census builder written but unrun. STEP 0 (checkpoint verification) was executed before anything else: the remote HEAD of ialchemist-dev/QuickPrototype is c908be82 ('the-behind session 109 exp-227: EM algorithm (1977) expansion - 3 admissions (Orchard & Woodbury 1972, Hartley 1958, Baum et al. 1970), 364 nodes / 472 edges') and the blob SHAs of all three synced files (graph.json ef3e2be3, run-log.jsonl ea602e3a, index.html 0c2eb26c) match the local bytes exactly - exp-227's checkpoint HAD landed, so no re-sync was needed. FIX-UP DISCHARGED: exp-227's sync_commit is c908be82 (the sync that carried exp-227's record; exp-226's f6aaebf1 was discharged in exp-227's record). The interrupted worker's census builder (run-01/work/build_candidates_eoq.py) was audited against the run-log and the parent's record and adopted UNAMENDED: its candidate schema and dry-notes shape are identical to the exp-227 builder's, Wilson (1934) is correctly NOT filed (downstream codifier per exp-226), and its two same-year filings are deliberate year-bound records. No stored pipeline stage existed for this parent (verified directly), so the expansion ran fresh per RUNBOOK section 5. The brief's standing instruction was honoured: the exp-226 EOQ-at-AHM rehearing condition concerns that edge and was not disturbed - nothing in this expansion touches it.",
+ "grounding": "The census is grounded in the two documents the builder records as read in full: Harris's paper itself (Factory 10(2), Feb 1913, pp. 135-136, 152; reprinted Operations Research 38(6), 1990, pp. 947-950), which cites NO prior literature, and Erlenkotter's retrospective (Operations Research 38(6), 1990, pp. 937-946), written to trace the model's origins, which traces NO predecessor - the early literature it documents (Green 1915, Taft 1918, Camp 1922, Wilson 1934, Raymond 1928/31) is entirely downstream of 1913. Spot verification in this pass confirmed the retrospective's publication facts against its text (Factory Vol. 10 No. 2, readership 10,000, A. W. Shaw Company; Harris's Westinghouse years ending 1912; the Harris 1913a/1913b distinction behind the sibling filing). No verdict turns on a passage beyond these two documents.",
+ "scout": {
+  "raw_filings": 9,
+  "matched_existing": 0,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "distinct": 7,
+  "dropped_year_bound": [
+   "Factory, The Magazine of Management (A. W. Shaw Company) - filed deliberately at the parent's own year 1913; the parent IS the venue acting (ACL-at-DCI shape, exp-214), so the drop and the discrimination coincide; recorded, not re-dated",
+   "How much stock to keep on hand (Harris, 1913) - the March 1913 sibling; a downstream/parallel treatment, not an ancestor; dropped by the year bound as designed, recorded, not re-dated"
+  ],
+  "note": "Document census over the parent's own record (the run's established pattern where the pool is thin): 9 filings, each carrying one plausible channel class (formalism, milieu, employer, anticipation x2, framing, accounting substrate, venue, sibling) so each is heard and rejected on its named discrimination rather than merely unconsidered; dry/shortfall notes for all 23 lenses plus 2 meta passes in run-01/work/dry_notes_the-economic-order-quantity-harris-1913-1913.json. Resolve ran on MiniLM (sentence-transformers/all-MiniLM-L6-v2), no TF-IDF fallback; it changed no outcome (no matches, no judge pairs; the two drops are the deterministic year bound). Count check: 7 evaluations == 7 distinct candidates from show-distinct; a hand gate check (replicated logic, exp-226 pattern) reproduced the zero survivors before the single apply-verdicts."
+ },
+ "admissions": [],
+ "notable_rejections": [
+  {
+   "name": "Nova methodus pro maximis et minimis (Leibniz, 1684)",
+   "score": null,
+   "kind": "fail-closed partial directness (framework presupposition) - MOST CONTESTABLE NEGATIVE",
+   "basis": "The strongest channel any candidate has: Harris's own text names the step ('The problem then is the old one of finding the value for X that will give the minimum value to Y') and declines to perform it in the same breath ('As the solution of this problem involves higher mathematics, suffice it to say'). The calculus extremum is presupposed, not consumed at a named point: the minimum follows from the posed model's own algebra (the balance of the two per-piece charges, Harris's actual presentation), and the 1684 paper reaches 1913 only through the diffuse textbook tradition - no single milestone mediates, so no mediator is named and partial directness fails closed, in the Fisher shape (exps 225/227)."
+  },
+  {
+   "name": "Factory Accounts (Garcke & Fells, 1887)",
+   "score": null,
+   "kind": "fail-closed partial directness (presupposed practice substrate) - second most contestable negative",
+   "basis": "Harris's factors are the cost accountant's objects - he prices 'the cost of handling the order in the office and throughout the factory' and assumes a ten-per-cent interest-and-depreciation charge 'a fair one' - but no document ties his costing to Garcke & Fells' text or any named accounting source; by 1913 the practice was the profession's, diffuse. What the paper presupposes is the practice, not the book."
+  },
+  {
+   "name": "The mathematical theory of banking (Edgeworth, 1888)",
+   "score": null,
+   "kind": "fail (anticipation without a junction)",
+   "basis": "Parity with this candidate's rejection at AHM (exp-226), one level deeper: the problem-form kinship is genuine (a stock balanced between carrying cost and shortage risk, 25 years early), but no document carries it to Harris, and the parent's balance is deterministic where Edgeworth's is probabilistic - two certain cost terms, not a cost against a risk."
+  },
+  {
+   "name": "The Economic Theory of the Location of Railways (Wellington, 1877)",
+   "score": null,
+   "kind": "fail (shared framing without a junction)",
+   "basis": "Wellington's move and Harris's move are formally the same move (minimize a rising plus a falling cost term), but no document ties Harris to the engineering-economics literature; a framing ambient in engineering culture is not a consumed artifact - explanation-of is not derivation-from."
+  },
+  {
+   "name": "On the Economy of Machinery and Manufactures (Babbage, 1832)",
+   "score": null,
+   "kind": "fail (anticipation without a junction)",
+   "basis": "Genre-founding is not a channel: across an 81-year gap the record offers no line from Babbage to Harris, and nothing in the paper's specific content is Babbage's."
+  },
+  {
+   "name": "The Principles of Scientific Management (Taylor, 1911)",
+   "score": null,
+   "kind": "fail (formation/milieu without a mechanism)",
+   "basis": "Harris wrote inside the scientific-management milieu, but Erlenkotter's origin-tracing retrospective names no management-theory source for him ('Taylor' occurs in it only inside a publisher's name). A milieu is not a channel (ONR/RAND-at-AHM shape, exp-226)."
+  },
+  {
+   "name": "Westinghouse Electric & Manufacturing Company",
+   "score": null,
+   "kind": "fail (formation/occasion without a mechanism)",
+   "basis": "The employer (1904-1912) supplied the problem, the experience and the worked examples, but no artifact the model consumes; the 'first class stock system' Harris saw is unnamed and undescribed in the record - practice embodied without a document channel (WWW-at-RFC-1630 precedent; Intel Corp at exp-223 parity)."
+  }
+ ],
+ "verification": "No verification file was owed: the expansion is an argued zero with no survivors (exp-208/exp-223 pattern); the adversarial work lives in the verdicts' directness records. The run's harvesting-zero count reaches 23 (exp-223 was the 22nd).",
+ "totals_after": {
+  "nodes": 364,
+  "edges": 472,
+  "budget": "364/2000",
+  "expansions_done": 228,
+  "provisional": 347,
+  "verified": 17
+ },
+ "frontier_head_after": [
+  "a-missing-information-principle-orchard-woodbury-1972-1972",
+  "samuel-s-checkers-player-samuel-1959-1959",
+  "structuring-probabilistic-dependences-in-stochastic-language-1994",
+  "tsmc-28-nm-hkmg-process-generation-2011-2011",
+  "the-alternate-reality-kit-smith-1986"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record",
+ "notes": "Session 109 ends here; session 110 was NOT started. Deferred-hearing ledger unchanged by this expansion: the exp-226 EOQ-at-AHM rehearing condition (a reading of AHM showing a non-lot-size derivation) stands untouched on that edge, per instructions; Baum-at-EM and Wolfe-at-EM remain closed from exp-227. The frontier head is now the Orchard & Woodbury node admitted at exp-227 - its expansion, when it comes, carries the Ceppellini rediscovery path noted in exp-227's record."
+}
