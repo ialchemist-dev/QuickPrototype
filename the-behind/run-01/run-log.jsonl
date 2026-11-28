@@ -14569,3 +14569,140 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T10:45:53.007099+00:00",
+ "event": "expansion",
+ "session": 97,
+ "expansion": 203,
+ "parent": "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+ "parent_name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+ "parent_year": 1962,
+ "parent_depth": 6,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed grounding in 'the manual's own text and its documented apparatus', and the documents sharpened which apparatus matters: the decisive text is not the 1962 preface alone but the July 1961 draft's Acknowledgments, which names the textual derivation (Levin wrote the manual 'starting from the LISP I Programmer's Manual by P. Fox') and the complete borrow list ('Certain ideas were borrowed from Fortran, Gelernter's FLPL, Newell, Simon and Shaw's IPL; and from N. Rochester') in so many words - the brief named neither. The brief also carried expansion 202's note that ALGOL 60 stood mediated via ANSI C at the JScript spec with a 'rediscovery path live'; judged at THIS parent on its own documents, ALGOL 60 was neither mediated nor admitted - it landed as a fail-closed partial (1.5) on the defined-against discrimination, the documented mechanism flow (McCarthy's conditional expressions) running from Lisp toward ALGOL, not the reverse. The brief's identity discipline was confirmed and did real work: the graph's Lisp node is anchored to the CACM 1960 paper itself (its stored definition names the paper), so the paper was filed as that node and admitted as a LINK; Fox's manual and Russell's interpreter were both judged DIFFERENT from it in the judge queue, keeping book, language and implementation three distinct identities. No dry-run correction was spent at this parent: the verdicts builder's count check passed (15 evaluations == 15 distinct) and the dry run reproduced the intended outcome exactly before applying.",
+ "grounding": "The manual itself (MIT Press text; preface dated 17 August 1962): the design 'is based on his paper, Recursive Functions of Symbolic Expressions and Their Computation by Machine (Communications of the ACM, April 1960)'; the manual written by Michael I. Levin; the interpreter programmed by Stephen B. Russell and Daniel J. Edwards; the garbage collector and arithmetic by Edwards; the compiler and assembler by Timothy P. Hart and Levin; an earlier compiler by Robert Brayton; 'The LISP I Programmer's Manual, March 1, 1960, was written by Phyllis A. Fox.' Contents: Ch.1 THE LISP LANGUAGE (1.4 The LISP Meta-language, 1.5 Syntactic Summary, 1.6 A Universal LISP Function), Ch.2 THE LISP INTERPRETER SYSTEM, Ch.8 A COMPLETE LISP PROGRAM - THE WANG ALGORITHM FOR THE PROPOSITIONAL CALCULUS, Appendix B THE LISP INTERPRETER, Appendices C (assembly program) and E (OVERLORD); title page: Computation Center and Research Laboratory of Electronics, MIT, with tri-service research support noted. The July 1961 draft (first edition): front matter 'a programming system for the IBM 709 and 7090... based on the theory of recursive functions of symbolic expressions. An understanding of this theory is important in order to use LISP efficiently. The necessary background is supplied in Chapter 1. If this section of the manual is studied carefully, many properties of the LISP interpreter will be seen to follow automatically.'; Acknowledgments as quoted in brief_correction, plus 'The interpreter was written by S. Russell starting a preliminary version by McCarthy.' McCarthy, History of Lisp (1979): implementation from fall 1958; Russell noticed eval could serve as an interpreter and hand-coded it; FLPL in the design's prehistory; car from the IBM 704's address part. The graph's own records for the six matched nodes (Lisp, IPL, lambda calculus, Kleene 1952, Turing 1936, ALGOL 60) were read for identity and channel facts.",
+ "parent_record_note": "The parent's stored record was verified complete this session (depth 6, priority 5.5, status provisional; stored bottleneck 'no book had written a language's semantics as an executable procedure', stored leap and stored prior_state all non-empty; successor the JScript Language Specification v0.1, which admitted it at expansion 202, grade 5.5). No prior expansion record and no prior rejections exist for this parent. The parent was judged DIFFERENT from the Lisp language node at expansions 197 and 202 (book vs language); that identity discipline governs this expansion throughout. Every evaluation's leap record carries the parent's stored prior_state and stored leap verbatim.",
+ "provenance": "Session 97, expansion 1 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground with the MiniLM embedder; show-distinct was read back to confirm 15 distinct, 6 matched, the 4-pair judge queue and 0 dropped before verdicts). Resolve: 15 raw -> 15 distinct, 6 matched existing, 0 auto-merges, judge queue 4, dropped 0, prefiltered 0. The 4 judge pairs were all adjudicated DIFFERENT (Fox's LISP I manual vs the Lisp node; the LISP interpreter vs the Lisp node; and the two cand-cand mirrors) and applied (4 applied, 0 unknown pair ids); matched_node_id values verified unchanged afterward (the six canonical matches only). The verdicts builder's count check passed (15 evaluations == 15 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (1 survivor, LINK: Lisp 5.5; 6 mediated rejections, all via Lisp: IPL 1.0, lambda calculus 1.0, Kleene 1.0, Turing 1.0, FLPL 0.5, FORTRAN 0.5; fail-closed partials: Fox's LISP I manual 2.0, ALGOL 60 1.5, IBM 7090 1.5, the LISP interpreter 1.5, MIT Computation Center & RLE 1.0, Wang's algorithm 1.0; plain rejections: Dartmouth workshop 0.5, COMIT 0.0), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 15, survivors 1, created 0, linked 1, rejected 14, mediated rejections 6). No nodes were created, so the created-node spot-check is vacuous; the created EDGE was spot-checked instead: predecessor lisp-1960 -> successor this parent, score 5.5, gate passed on all three legs, directness pass with no mediator, leap record carrying the parent's stored prior_state and leap verbatim, and the Lisp node's stored bottleneck/leap/prior_state confirmed non-empty. Verification applied from work/verification_lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962.json (the single survivor edge provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 202's sync_commit = 02c69803. Rendered with --out run-01/index.html (326 nodes / 422 edges) before syncing, per the session-91 render lesson. This record's own sync_commit rides the sync that carries it.",
+ "scout": {
+  "builder": "run-01/work/build_scout_lispmanual.py",
+  "raw_filings": 15,
+  "distinct_names_intended": 15,
+  "per_lens": {
+   "L1": 2,
+   "L2": 2,
+   "L6": 2,
+   "L7": 1,
+   "L9": 1,
+   "L19": 5,
+   "L21": 2
+  },
+  "dry_notes_file": "run-01/work/dry_notes_lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962.json",
+  "dry_or_shortfall_lenses": [
+   "L1 (2 filings: the interpreter - the documented system's core artifact, printed as Appendix B; Wang's algorithm - the complete program printed as Ch.8. Shortfall recorded: the compiler (Hart & Levin) and garbage collector (Edwards) are components of the same documented system, not filed separately; the interpreter filing is the hearing of that channel.)",
+   "L2 (2 filings: Lisp, the ancestor design the book operationalizes; the LISP I Programmer's Manual, the textual ancestor.)",
+   "L3 (Meta pass, not counted: the lineage surveys - History of Lisp (1979) and the Software Preservation family record - are the grounding and produced the census.)",
+   "L4 (Dry-with-finding: the problem is posed inside the 1960 paper itself, filed at L2; no separate poser artifact.)",
+   "L5 (Dry-with-finding: no prior diagnosis artifact; the diagnosis is the retrospective framing in the parent's stored bottleneck.)",
+   "L6 (2 filings: FORTRAN, the incumbent heading the borrow list; ALGOL 60, the era's definitional model.)",
+   "L7 (1 filing, shortfall: COMIT, the adjacent house system; no second failed predecessor is documented.)",
+   "L8 (Dry: a manual consumes no dataset; its one consumed body of content is filed at L1.)",
+   "L9 (1 filing, shortfall: the IBM 7090; the 704's imprint, car/cdr, reaches the book through the 1960 design and is heard inside the Lisp verdict.)",
+   "L10 (Dry: no material dependency - a book.)",
+   "L11 (Dry-with-finding: the production procedure was technical writing from a running system by the system's own group; no named recipe artifact.)",
+   "L12 (Dry: no programmability layer distinct from the documented system itself.)",
+   "L13 (Dry: no software tooling produced the book.)",
+   "L14 (Dry: no equipment beyond the machine filed at L9.)",
+   "L15 (Dry: no hosted service in 1962.)",
+   "L16 (Dry-with-finding: the book implements no external standard; its metalanguage is the 1960 paper's, inside the Lisp filing; BNF reaches it, if at all, inside the ALGOL 60 filing.)",
+   "L17 (Dry-with-finding: no metric registered the book; adoption is the outcome.)",
+   "L18 (Dry: no observation instrument.)",
+   "L19 (5 filings: IPL and FLPL from the borrow list; lambda calculus, Kleene 1952 and Turing 1936, the theory lineage. Goedel (1931) not filed, recorded: his channel runs through Kleene's filed textbook - two named intermediaries is deep-history trawling at this level.)",
+   "L20 (Dry-with-finding: persons not filed - Levin and Russell are the parent's own producers (self-carriage; what they carried is filed as artifacts); Rochester, named for borrowed ideas, is a person whose machine-side channel rides inside the IBM 7090 and Lisp verdicts.)",
+   "L21 (2 filings: MIT Computation Center & RLE, the producer institutions on the title page; the Dartmouth workshop, the founding venue. The tri-service support is funding - not inside the artifact, not filed.)",
+   "L22 (Dry-with-finding: the timing condition is the parent's own situation; no separate cost/release/demand event is documented.)",
+   "L23 (Meta pass, not counted: the 1961 draft and 1962 preface are the primary contemporaneous documents and are the grounding.)",
+   "Scope (deliberate non-filings): the parent's own components (the metalanguage, the prog feature, the compiler and garbage collector as separate filings - heard through the interpreter filing); the makers as persons; Goedel (depth exclusion, above)."
+  ]
+ },
+ "resolution": {
+  "raw": 15,
+  "distinct": 15,
+  "matched_existing": 6,
+  "auto_merges": 0,
+  "judge_queue": 4,
+  "dropped": 0,
+  "matched_ids": [
+   "lisp-1960",
+   "ipl-information-processing-language-newell-shaw-simon-1956-1956",
+   "lambda-calculus-1936",
+   "kleene-introduction-to-metamathematics-the-theory-of-partial-1952",
+   "turing-on-computable-numbers-1936-1936",
+   "algol-60-1960"
+  ],
+  "identity_note": "Six canonical-name matches, all exact (Lisp, IPL, lambda calculus, Kleene, Turing, ALGOL 60). FORTRAN has no node in the graph and matched nothing - it is a rejection at this parent, so no node was created for it. The 4 judge pairs were the two book/artifact-vs-language pairs and their cand-cand mirrors; all DIFFERENT, so no merges occurred and the distinct count stayed 15."
+ },
+ "judgments": "4 judge pairs, all adjudicated DIFFERENT and applied: (1) Fox's LISP I Programmer's Manual vs the Lisp node - a book documenting LISP 1 is not the language, the same book-vs-language distinction the run applied to this parent itself at expansions 197/202; (2) the LISP interpreter vs the Lisp node - the running implementation is not the language design; (3)-(4) the cand-cand mirrors of (1) and (2).",
+ "calendar_dropped_at_resolve": [],
+ "verdicts": {
+  "file": "run-01/work/verdicts_lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962.json",
+  "builder": "run-01/work/build_verdicts_lispmanual.py",
+  "evaluations": 15,
+  "survivors": [
+   "Lisp (1960) - LINK to lisp-1960, dry-run score 5.5, provisional. The design the book operationalizes: the preface names the channel ('based on his paper', CACM April 1960 - the paper this node is anchored to), the 1961 draft states the book's method (Ch.1's theory, from which the interpreter's properties 'follow automatically'), and Ch.1 with sec.1.6 restate the paper's theory and universal function as the implemented system's definition. Both mediation attacks were run and failed on the documents: via Fox's manual (the derivation is documented, but the leap's content is the paper's, restated - the starting text carried scaffolding, not semantics) and via Russell's interpreter (a sibling descendant of the same eval, not a junction between paper and book)."
+  ],
+  "notable_rejections": [
+   "LISP I Programmer's Manual (Fox, 1960) - FAIL-CLOSED PARTIAL (2.0). THE EXPANSION'S MOST CONTESTABLE NEGATIVE. The textual derivation is documented verbatim in the parent's own lineage record (the 1961 Acknowledgments: Levin wrote the 1.5 manual 'starting from' Fox's), yet the channel carries the prior book's scaffolding, not the leap: Fox documented LISP 1 in the reference manner of the stored prior state, and the semantics-as-procedure content entered from the 1960 paper. The codification discrimination governs - a predecessor book is admitted when it REBUILDS the result in its own system (ECMA-262's base documents at expansion 197); Fox's book rebuilt nothing of the definitional content. The JLS-at-ECMA-262 shape (2.0 there as well): derivation real, rebuilding absent. Re-hearing condition recorded in the verdict: a document showing Fox's manual itself stating LISP's semantics as executable procedures.",
+   "IPL (1956), FLPL (1958), FORTRAN (1957), lambda calculus (1936), Kleene (1952), Turing (1936) - all REJECTED mediated_via Lisp (scores 1.0, 0.5, 0.5, 1.0, 1.0, 1.0). Every one is a debt of the DESIGN, incurred 1958-60: the 1961 Acknowledgments' borrow list names the first three as sources of ideas for the system McCarthy designed; the lambda notation and the recursive-function theory entered through the 1960 paper (the Kleene node's own definition records that McCarthy's formalism re-targets Kleene's scheme; Turing's line additionally passes through Kleene's codification, the proximate carrier at this parent being the design). The manual inherits all six through the one document it operationalizes. Rediscovery paths are live at the Lisp node's own expansion.",
+   "ALGOL 60 (1960) - FAIL-CLOSED PARTIAL (1.5): the era's definitional model, heard as defined-against. The book's form is the answer to the Report's genre (definition by procedure against definition by syntax and prose); McCarthy's committee seat is documented contact, but the documented mechanism flow - conditional expressions - ran from Lisp toward ALGOL. Discharges, at this parent, the rediscovery note expansion 202 left on its mediated-via-ANSI-C record: judged on its own documents here, ALGOL is a partial, not an admission and not a mediation.",
+   "The LISP interpreter (Russell & Edwards, 1960) - FAIL-CLOSED PARTIAL (1.5): the documented system's core artifact and the book's Appendix B subject. A book's subject is not its enabler: the definitional chapters derive from the paper's eval, and Russell's hand-compilation derived from the same eval, so the interpreter stands downstream of the admitted channel, not on it. The executable-proof channel belongs to the language's own edge, where Russell's act is part of the 1960 story.",
+   "IBM 7090 (1959) - FAIL-CLOSED PARTIAL (1.5): the implementation's vehicle. The appendices (LAP, OVERLORD) are machine documents and could not exist without the machine family; the definitional chapters are machine-independent, as the system's later ports proved. The 704's deeper imprint (car/cdr) reached the book through the design.",
+   "MIT Computation Center and Research Laboratory of Electronics (1956) - FAIL-CLOSED PARTIAL (1.0): the producer institutions on the title page; an institution acts through the specific artifacts it carried, and here the carried artifacts are the parent's own lineage (the design, admitted; the system, heard at L1). The tri-service support is funding, not inside the artifact.",
+   "Wang's algorithm for the propositional calculus (Wang, 1960) - FAIL-CLOSED PARTIAL (1.0): consumed as Chapter 8's complete-program exhibit. An exhibit demonstrates a leap rather than enabling it - the definitions it exercises are Chapter 1's, not Wang's.",
+   "Dartmouth Summer Research Project on Artificial Intelligence (1956) - PLAIN REJECTION (0.5): the founding venue. Its one concrete thread to this book is IPL's (encountered there in action), heard at IPL's verdict; arenas register rather than enable.",
+   "COMIT (Yngve, 1957) - PLAIN REJECTION (0.0): census/negative space - the adjacent symbol-processing system of the parent's own laboratory, with no documented contact: absent from the preface, the acknowledgments and the borrow list, the apparatus that DOES name the parent's real debts."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962.json",
+  "outcomes": {
+   "lisp-1960": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Lisp edge: the multiples test finds no rival statement of the design (CACM Part I is the only canonical text; Part II never appeared). Both mediation attacks - via Fox's manual and via Russell's interpreter - were run in the directness record and the verification notes and fail on the direction of derivation (Fox carried scaffolding; Russell derived from the same eval). The identity attack (book vs language conflation) is answered by the run's own twice-judged distinction, which this edge respects exactly. The Q1 division-of-credit attack is recorded honestly: the paper created the object, the book made it the writable model; the edge grades the documented channel into this parent, and Q3 partial (a prose manual was possible) caps it at 5.5 rather than the 6.0 class."
+ },
+ "totals_after": {
+  "nodes": 326,
+  "edges": 422,
+  "budget": "326/2000",
+  "expansions_done": 203,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 66,
+   "6": 51,
+   "7": 34,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 309,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "nextstep-next-1989-1989",
+  "neural-network-based-language-models-for-highly-inflective-l-2009",
+  "pushshift-reddit-crawl-baumgartner-2015-2015",
+  "state-application-framework-2001",
+  "wall-street-journal-corpus-darpa-csr-1992"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
