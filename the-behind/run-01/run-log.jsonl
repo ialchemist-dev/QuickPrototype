@@ -17579,3 +17579,117 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "SESSION 107 CLOSE. Frontier order was never disturbed: both session-107 parents were consumed from the head in their standing order. FLAG FOR THE NEXT SESSION: the frontier head is now Mixture models (McLachlan & Basford, 1988) - the node carrying the long-assigned EM hearing stands first, so session 108 opens with it. Render used pipeline.py render --out run-01/index.html (mandatory flag). Session totals: exp-223 argued zero (357/463 unchanged), exp-224 two admissions (358/465); MiniLM loaded for both resolves (no TF-IDF fallback this session)."
 }
+{
+ "ts": "2026-11-28T14:35:00Z",
+ "event": "expansion",
+ "session": 108,
+ "expansion": 225,
+ "parent": "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+ "parent_name": "Mixture Models: Inference and Applications to Clustering (McLachlan and Basford, 1988)",
+ "parent_year": 1988,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "No stored pipeline stage existed for this parent at session start (expansion stage absent; verified directly), so the expansion ran fresh per RUNBOOK section 5. FIX-UP DISCHARGED: exp-224's sync_commit is 56dfc4ce (the sync that carried exp-224's record; exp-223's 3d634aa8 was discharged in exp-224's record). Two brief expectations were tested on the documents: (1) the long-assigned EM hearing is DISCHARGED AS AN ADMISSION (see admissions) - the brief's framing ('the book's own treatment of EM for mixture likelihoods is the channel to test') is confirmed by the record; (2) the brief's expectation that the mixture lineage would yield a row of admissions is corrected by the documents - of 21 filings, exactly two survive, and the author's own 1981 frame fails the leap gate despite passing directness (see notable_rejections). Pre-scout concept check per discipline: no EM-algorithm node existed in the graph under any name (only Expectation Propagation, a different advance); EM had been rejected at 10+ parents, never admitted - this expansion is its first admission in the run.",
+ "grounding": "The monograph's record assembled from: the contemporary JRSS-C review (Applied Statistics book reviews, p. 384: the book 'focuses attention on fitting by maximum likelihood and emphasizes normal mixture components', with 'entire chapters on estimating mixture proportions... on assessing the effectiveness of a produced cluster structure and on grouping the means in an analysis of variance into clusters... a chapter on clustering threeway data'; positioned against 'the other two recent books on mixture distributions (Hand and Everitt, 1981; Titterington et al., 1985)'); the EMMIX paper (McLachlan, Peel, Basford & Adams: 'In the appendix of their monograph, McLachlan and Basford (1988) gave the listing of FORTRAN programs that they had written for the maximum likelihood fitting of multivariate normal mixture models'; the singularity of the unrestricted likelihood cited to 'McLachlan and Basford (1988, Chapter 2)'; robust estimation to Chapter 3); McLachlan's publication list (his 1988 companions: 'On the choice of starting values for the EM algorithm in fitting mixture models', Statistician 37:417-425; McLachlan & Jones, 'Fitting mixture models to grouped and truncated data via the EM algorithm', Biometrics 44:571-578); Kemp's 2002 review of the successor ('The publication in 1988 of McLachlan and Basford's Mixture Models... heralded much interest in applications of mixture models... and in the computer estimation of such models'); McLachlan & Peel (2000) table of contents (sec. 1.1.3 'Impact of EM Algorithm'; sec. 1.9 'Incomplete-Data Structure of Mixture Problem'; sec. 1.14 'Identifiability of Mixture Distributions'; sec. 1.18 'Brief History of Finite Mixture Models'; sec. 2.8 'Application of EM Algorithm for Mixture Models'; sec. 2.14 convergence; sec. 2.15 information matrices incl. Louis's extraction); McLachlan's Stanford TR 299 (1981, read in substance: the classification-vs-mixture frame; 'the mixture maximum likelihood method considered by Day [5], and Wolfe [34], among many others'). GROUNDING WART, stated honestly: the 1988 monograph's own table of contents and text were not read directly - its contents are established from the contemporary review's chapter-level summary, the EMMIX paper's chapter citations (Ch. 2, Ch. 3), and the successor's architecture; no verdict in this expansion turns on a chapter detail beyond those sources.",
+ "scout": {
+  "raw_filings": 21,
+  "matched_existing": 1,
+  "judge_queue": 1,
+  "judgments_applied": 1,
+  "distinct": 21,
+  "dropped_year_bound": [],
+  "note": "Document census over the monograph's record (the run's established pattern where the pool is a literature, not a paper): 21 filings across 9 lenses, 14 lenses dry or shortfall with notes in run-01/work/dry_notes_mixture-models-inference-and-applications-to-clustering-mcla-1988.json. The one judge-queue pair (Titterington et al. 1985 vs Everitt & Hand 1981, MiniLM cosine 0.8203) was judged DIFFERENT: two distinct monographs by different authors from different publishers, listed as two books in the parent's contemporary review. The one matched existing node is Fisher (1922), filed deliberately under its exact canonical name for the framework test. Resolve ran on MiniLM (sentence-transformers/all-MiniLM-L6-v2), no TF-IDF fallback. Count check: 21 evaluations == 21 distinct candidates from show-distinct; a hand dry-run of the gate reproduced the 2 survivors before the single apply-verdicts."
+ },
+ "admissions": [
+  {
+   "node": "em-algorithm-dempster-laird-rubin-1977-1977",
+   "name": "EM algorithm (Dempster, Laird & Rubin, 1977)",
+   "link": "NEW",
+   "grade": 8.0,
+   "basis": "THE LONG-ASSIGNED EM HEARING, DISCHARGED AS AN ADMISSION - the run's longest-deferred hearing (assigned at MDN, session 30, where EM was rejected as the bypassed incumbent recipe with 'its direct hearing belongs to the mixture-model node's own expansion'; re-assigned at exp-142, where it was neither cited nor consumed, 'to the expansion of Mixture Models (McLachlan and Basford, 1988), where EM is the operative inference mechanism the monograph codifies'). On this parent's documents the channel is direct: the book's programme is ML fitting of mixtures; its appendix ships the authors' FORTRAN mixture-fitting programs; the first author's two 1988 companion papers fit mixtures 'via the EM algorithm'; the lineage's own history section is titled 'Impact of EM Algorithm'. Q1/Q2 pass, Q3 partial (the multiples finding: Wolfe 1970 and Baum 1970 ran EM-equivalent iterations in special cases - ripeness recorded in the verification, which caps the node at provisional on necessity grounds). The mediation attack via Redner & Walker (1984) was filed deliberately in this census and answered on that candidate's own rejection. EM's first admission in the run, after rejections at 10+ parents - every one of them edge-scoped and standing."
+  },
+  {
+   "node": "pearson-s-mixture-decomposition-1894-1894",
+   "name": "Pearson's mixture decomposition (1894)",
+   "link": "NEW",
+   "grade": 3.5,
+   "basis": "The second carried hearing, discharged as an admission: at MDN (session 30) Pearson was rejected as mediated_via this monograph; here the edge is direct on the correction-relation shape - the monograph extracts Pearson's worked object (the two-component normal decomposition first fitted to Weldon's crab data in 1894, by moments, via a ninth-degree equation) and rebuilds it with likelihood machinery, and the parent node's own prior_state starts the field's clock at 1894. MOST CONTESTABLE ADMISSION of the session (flagged on its verification record): the mediation attack (94 years of intervening literature) is answered by the absence of any single transforming milestone - the parent's bottleneck itself calls that literature 'scattered' - with a re-hearing condition recorded (a showing that the monograph's Pearson derives from one specific intermediate text re-files the edge as mediated via that text)."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "The classification and mixture maximum likelihood approaches to cluster analysis (McLachlan, 1981)",
+   "score": null,
+   "kind": "directness PASS, leap gate FAIL (Q1/Q2 both partial)",
+   "basis": "MOST CONTESTABLE NEGATIVE. The author-carriage test run at full strength: the first author's own deposited 1981 artifact (Stanford TR 299; Handbook of Statistics Vol. II) passes directness on the Mikolov-thesis shape - a separable, citable artifact consumed at named points (its classification-vs-mixture dichotomy organizes the monograph's applications half; its Day/Wolfe census is the monograph history's seed) - and then fails the LEAP gate: an organizing frame flips no impossibility (Q1 partial) and unblocks no space beyond the parent's own synthesis (Q2 partial). The Fisher-at-MDN shape (directness pass, leap-gate fail, recorded deliberately for precedent consistency). Variance note: author-carriage has now failed at three different gates in the run - self-carriage substance (Whitehead TR 304, exp-219), own-version (OOPC, exp-205), and here the leap gate - while passing once (Mikolov thesis, exp-206, where the artifact carried technical results, not a frame)."
+  },
+  {
+   "name": "Mixture densities, maximum likelihood and the EM algorithm (Redner & Walker, 1984)",
+   "score": null,
+   "kind": "fail (counterfactual; consumed-vs-compared)",
+   "basis": "Filed deliberately as the mediation threat to the EM hearing and rejected on its own documents: a parallel codification of the EM-for-mixtures channel. The monograph's EM channel runs from Dempster, Laird & Rubin directly (the authors' same-year papers), so R&W is neither the parent's source nor EM's conduit - the mediation attack on the EM edge is answered here."
+  },
+  {
+   "name": "Statistical Analysis of Finite Mixture Distributions (Titterington, Smith & Makov, 1985)",
+   "score": null,
+   "kind": "fail (counterfactual; genuine multiple)",
+   "basis": "The rival consolidation, already recorded as a genuine multiple in the parent node's own verification. Multiples are verification evidence, not ancestors: remove it and the monograph - written from the authors' own programme - proceeds unchanged; the contemporary review treats the two books as alternatives."
+  },
+  {
+   "name": "Pattern clustering by multivariate mixture analysis (Wolfe, 1970) / Estimating the components of a mixture of normal distributions (Day, 1969) / Estimation of parameters for a mixture of normal distributions (Hasselblad, 1966)",
+   "score": null,
+   "kind": "fail-closed partial directness (x3)",
+   "basis": "The pre-EM mixture-ML practice stratum, named in the parent author's own 1981 census (Day [5], Wolfe [34]). Each is superseded at the point of consumption by EM's general formulation, of which Wolfe's iteration is a special case; Day additionally fails the Hochreiter condition (the unbounded-likelihood diagnosis he aired is answered by the monograph's Ch. 2, and a diagnosis answered is not consumed). Re-hearing condition for Wolfe recorded on its evaluation (a passage of the monograph adopting a Wolfe-specific procedure)."
+  },
+  {
+   "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+   "score": null,
+   "kind": "LINK fail-closed partial directness (framework presupposition)",
+   "basis": "The monograph presupposes Fisher's likelihood framework throughout, but its object is finite mixture models, not the framework's solution set - the exp-192/exp-218 criterion is not met, and the specific engine consumed is EM. Concurs with the edge-scoped MDN outcome (there: directness pass, leap-gate fail) by a second route; both records stand."
+  },
+  {
+   "name": "A maximization technique occurring in the statistical analysis of probabilistic functions of Markov chains (Baum et al., 1970) / On the convergence properties of the EM algorithm (Wu, 1983)",
+   "score": null,
+   "kind": "mediated_via EM algorithm (Dempster, Laird & Rubin, 1977) (x2)",
+   "basis": "The session's two mediated rejections. Baum's technique is EM's Markov-chain instance and reaches this i.i.d.-mixture parent only inside the EM complex DLR generalized (edge-scoped symmetry: at the bidirectional-RNN parent, EM was rejected as mediated via Baum-Welch - the operative channel's direction is parent-document-dependent, and here it runs through DLR). Wu's convergence theory is a result about EM and reaches the parent only as part of the EM package (the successor treats it inside its EM chapter, sec. 2.14)."
+  },
+  {
+   "name": "Identifiability of finite mixture families (Teicher, 1963) / Finding the observed information matrix when using the EM algorithm (Louis, 1982)",
+   "score": null,
+   "kind": "fail-closed partial directness (components discrimination, x2)",
+   "basis": "Two load-bearing components of the consolidated technology - the identifiability licence (Teicher; Q3 also fails on the Yakowitz & Spragins multiple inside the component) and EM's standard-error construction (Louis, consumed at named points in the lineage's sec. 2.15.2) - rejected under the components discrimination (Goldberg pattern, exps 220-223): components of a leap are not leaps."
+  },
+  {
+   "name": "K-means clustering (MacQueen, 1967) / The use of multiple measurements in taxonomic problems (Fisher, 1936) / Clustering Algorithms (Hartigan, 1975) / Finite Mixture Distributions (Everitt & Hand, 1981) / Pattern Classification and Scene Analysis (Duda & Hart, 1973) / Estimating mixtures of normal distributions and switching regressions (Quandt & Ramsey, 1978) / A generalized theory of the combination of observations (Newcomb, 1886) / Numerical Taxonomy (Sneath & Sokal, 1963)",
+   "score": null,
+   "kind": "fail / fail-closed (defined-against incumbents; parallel codifications and applications; anticipation; formation)",
+   "basis": "The comparison class, each on its named discrimination: k-means and Fisher's LDA are the incumbents the mixture approach defines itself against (TR 299's definite-membership vs posterior-probability framing); Hartigan and Everitt & Hand are parallel codifications of rival programmes; Duda & Hart is the same material's carrier into pattern recognition (the parent's channel is the statistics literature itself); Quandt & Ramsey is a parallel econometric application; Newcomb (1886) is anticipation without a junction (his mixture serves robust combination; the junction to decomposition is Pearson); Sneath & Sokal is field formation without a mechanism inside the parent."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_mixture-models-inference-and-applications-to-clustering-mcla-1988.json",
+  "outcomes": {
+   "em-algorithm-dempster-laird-rubin-1977-1977": "provisional",
+   "pearson-s-mixture-decomposition-1894-1894": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Both survivors provisional, stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). EM capped at provisional by the landed multiples test (Wolfe/Baum special-case ripeness); Pearson flagged most contestable admission with its re-hearing condition on the record. No LINK survivors, so no deviation-precedent question arose."
+ },
+ "totals_after": {
+  "nodes": 360,
+  "edges": 467,
+  "budget": "360/2000",
+  "expansions_done": 225,
+  "provisional": 343,
+  "verified": 17
+ },
+ "frontier_head_after": [
+  "em-algorithm-dempster-laird-rubin-1977-1977",
+  "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+  "samuel-s-checkers-player-samuel-1959-1959",
+  "structuring-probabilistic-dependences-in-stochastic-language-1994",
+  "tsmc-28-nm-hkmg-process-generation-2011-2011"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record",
+ "notes": "Session 108 continues: expansion 226 (Arrow, Harris & Marschak, 1951) follows this checkpoint in the same session. FRONTIER NOTE: the newly admitted EM node (grade 8.0) heads the frontier, ahead of the session's second parent - best-first order working as designed; AHM is expanded next in this session per the session's assignment, and EM's own expansion belongs to a later session. The EM hearing, the run's longest-carried deferred item (assigned session 30, re-assigned exp-142), is now CLOSED - admitted. No frontier-order disturbance: both session-108 parents are consumed from the head in standing order."
+}
