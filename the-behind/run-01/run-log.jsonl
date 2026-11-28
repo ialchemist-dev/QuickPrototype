@@ -12904,3 +12904,143 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "session": 91,
+ "expansion": 191,
+ "parent": "generalized-advantage-estimation-gae-2016",
+ "parent_name": "Generalized advantage estimation (GAE)",
+ "parent_year": 2016,
+ "parent_depth": 3,
+ "date": "2026-11-28",
+ "provenance": "Session 91, expansion 1 of 2 (the run resumed this session on the owner's 2026-11-28 order after the 2026-11-25 token-budget pause at session 91's start; no partial session-91 work existed in the graph). All pipeline steps run in the FOREGROUND and verified on disk after each (the sessions 66/78/85 discipline): add-candidates verified (32 raw filings, graph save confirmed by mtime/size growth to 20.5 MB); resolve ran in the foreground under the MiniLM venv (32 raw -> 31 distinct, 7 matched existing, 1 auto-merge = the TRPO cross-lens duplicate filing at L11/L20, judge queue 0, dropped 0 - no candidate was dated at the parent's year); the verdicts builder's count check passed (31 evaluations == 31 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (5 survivors: TD(lambda) 6.0, policy gradient theorem 6.0, Kimura & Kobayashi 5.5, TRPO 4.5, Wawrzynski 4.0; 1 fail-closed partial: Sutton & Barto 1.5; 25 plain rejections), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 31, survivors 5, created 3, linked 2, rejected 26, mediated rejections 4: REINFORCE via the policy gradient theorem; Minsky via Sutton & Barto; conjugate gradient via TRPO; Hull via Minsky). Created-node spot-check PASSED: all three new nodes' stored bottleneck, leap and prior_state are non-empty (texts in the verdicts builder). Their stored sources lists carry the same standing wart as expansions 189/190's created nodes: candidate-side titles with the PARENT paper's URL (arXiv:1506.02438) - logged here, never hand-edited. Verification applied from work/verification_generalized-advantage-estimation-gae-2016.json (all five edges provisional, no mediation actions). BOOKKEEPING FIX-UP owed from session 90: expansion 190's record left its sync_commit as 'rides the next sync'; its actual sync commit was 63c9f1f9 (verified by the main agent 2026-11-28). This record's own sync_commit rides the sync that carries it, per the standing practice. Render verified fresh (306 nodes / 390 edges) before syncing.",
+ "brief_correction": "The natural prior hypothesis for this parent - that its ancestry is the standard RL canon (REINFORCE, the policy gradient theorem, Sutton & Barto, Baird's advantage updating) - resolved SPLIT on the paper's own documents. The paper's sec.3 provenance sentence governs: the formula 'has been proposed in prior work (Kimura & Kobayashi, 1998; Wawrzynski, 2009)', and those two are admitted on the strength of that naming, while the canon mostly fails: Baird (1993) is verifiably ABSENT from the paper's complete reference list and text (importance without a channel); REINFORCE is a census citation (mediated via the policy gradient theorem); Sutton & Barto is the documentary CARRIER for TD(lambda), judged a fail-closed partial while Sutton's 1988 construction itself is admitted; the policy gradient theorem IS admitted, on the discrimination that the paper works ON the theorem (its Psi-slot is sec.3's explicit design variable, instantiated in every update) rather than merely inside its world - the MDP frame, presupposed in one line, was rejected on exactly that contrast.",
+ "grounding": "The parent paper was read IN FULL this session from the arXiv PDF text layer (arXiv:1506.02438v4, 15 pp. incl. appendices and FAQ; complete 30-entry reference list verified - Baird's absence is a find-verified fact, not an impression). Candidate-side documents: Kimura & Kobayashi's ICML 1998 record and full text (actor eligibility traces; critic as reinforcement baseline; REINFORCE extension) and Wawrzynski 2009's abstract/introduction (sequential actor-critics, experience replay, truncated importance sampling) were read via web sources this session. The Ng & Russell IRL paper for expansion 192 has NO usable text layer in either of its two standard PDF mirrors (custom font encoding garbles pdftotext and pypdf identically); it was grounded this session by rendering the PDF to page images and OCR (RapidOCR), 5,341 words, read in full - see the expansion-192 record.",
+ "parent_record_note": "The parent's stored record was verified complete this session (name, year 2016, type method, depth 3, priority 5.0; stored bottleneck, prior_state and leap all non-empty and accurate against the paper). Its stored sources list is EMPTY - the standing wart pattern (shared with PPO's record) - left untouched, as ever.",
+ "scout": {
+  "builder": "run-01/work/build_scout_gae.py",
+  "raw_filings": 32,
+  "distinct_names_intended": 31,
+  "per_lens": {
+   "L1": 7,
+   "L2": 3,
+   "L3": 2,
+   "L4": 2,
+   "L5": 4,
+   "L6": 4,
+   "L7": 1,
+   "L11": 2,
+   "L14": 1,
+   "L17": 1,
+   "L19": 1,
+   "L20": 2,
+   "L21": 1,
+   "L22": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_generalized-advantage-estimation-gae-2016.json",
+  "dry_or_shortfall_lenses": [
+   "L4 (shortfall 2)",
+   "L7 (shortfall 1)",
+   "L8 (dry: self-generated rollouts, no external dataset)",
+   "L9 (dry: 16/32-core commodity CPUs, no named machine)",
+   "L10 (dry)",
+   "L11 (shortfall 2)",
+   "L12 (dry)",
+   "L13 (dry: no framework named; rllab absent from the text)",
+   "L15 (dry)",
+   "L16 (dry: MDP formalism filed at L4)",
+   "L17 (shortfall 1)",
+   "L18 (dry: the response function is the parent's own device)",
+   "L20 (shortfall 2)",
+   "L21 (shortfall 1)",
+   "L22 (shortfall 1)",
+   "L23 (meta: concurrent-work papers filed at L6)"
+  ]
+ },
+ "resolution": {
+  "raw": 32,
+  "distinct": 31,
+  "matched_existing": 7,
+  "auto_merges": 1,
+  "judge_queue": 0,
+  "dropped": 0,
+  "matched_ids": [
+   "policy-gradient-theorem-sutton-et-al-2000",
+   "reinforce-williams-1992",
+   "a-natural-policy-gradient-kakade-2001",
+   "advantage-updating-baird-1993",
+   "a-markovian-decision-process-bellman-1957-1957",
+   "trpo-trust-region-policy-optimization-2015",
+   "mujoco-todorov-erez-tassa-2012"
+  ]
+ },
+ "judgments": "None required: the judge queue was empty (the single auto-merge was the TRPO cross-lens duplicate filing).",
+ "calendar_dropped_at_resolve": [],
+ "verdicts": {
+  "file": "run-01/work/verdicts_generalized-advantage-estimation-gae-2016.json",
+  "builder": "run-01/work/build_verdicts_gae.py",
+  "evaluations": 31,
+  "survivors": [
+   "TD(lambda) temporal-difference learning (Sutton, 1988) - NEW node, dry-run score 6.0, provisional (depth 4). Construction-transposition admission: sec.3 defines GAE as TD(lambda)'s construction with the estimated quantity swapped from value to advantage ('closely analogous to the one used to define TD(lambda)... however TD(lambda) is an estimator of the value function, whereas here we are estimating the advantage function'). The citation runs through Sutton & Barto (1998), judged separately as the carrier; a re-presentation is not a mediating milestone.",
+   "Policy gradient theorem (Sutton et al., 2000) - LINK, dry-run score 6.0, provisional. Instantiation admission: sec.2 restates the theorem's expression with a general Psi, sec.3's design question is which Psi fills its slot, and every experimental update instantiates the form. Discriminated from the MDP's framework presupposition (rejected below): the paper works ON this theorem.",
+   "Actor/critic algorithms using eligibility traces (Kimura & Kobayashi, 1998) - NEW node, dry-run score 5.5, provisional (depth 4). Prior-proposal admission: sec.3 names it (with Wawrzynski) as the prior proposal of the paper's own formula - a provenance statement in the technical core, the strongest documentary channel short of a derivation.",
+   "TRPO (Schulman et al., 2015) - LINK, dry-run score 4.5, provisional. Consuming-algorithm admission on Q2 alone (Q1 fail, Q3 partial): secs.5-6 run TRPO updates with the estimator supplying the advantage term of its surrogate objective; the estimator was built to feed it. Self-carriage recorded (Q11 fail: shared first author) and discriminated from ASDiv's Liang 2018 fail-closed partial - there one annotation axis was carried, here the entire optimization procedure is consumed.",
+   "Real-time reinforcement learning by sequential actor-critics and experience replay (Wawrzynski, 2009) - NEW node, dry-run score 4.0, provisional (depth 4). The second named prior proposal of the formula (sec.3); graded below Kimura because the device sits inside an online replay method (Q2/Q3 partial). FLAGGED in its verification record as this session's most contestable admission: the channel is the single provenance sentence, and the candidate's full text was grounded only at abstract/introduction level this session."
+  ],
+  "notable_rejections": [
+   "Sutton & Barto (1998) - FAIL-CLOSED PARTIAL (1.5): the parent's cited carrier for TD(lambda), the TD residual and Monte Carlo; directness passes (the citations point at the book) but the gates earn only partials - a carrier transmits other advances' mechanisms, it does not originate what the parent consumes. The mechanism was admitted at its primary (Sutton, 1988).",
+   "MuJoCo (Todorov et al., 2012) - LINK REJECTED as apparatus: every locomotion result was produced in it, but the leap is an estimator whose statement never touches simulation; wielded equipment is not ancestry for a mathematical artifact (the ASDiv wielded-solver discrimination). Its node status, earned at another parent, is unaffected.",
+   "REINFORCE (Williams, 1992) - LINK REJECTED, mediated_via the policy gradient theorem: first entry in the introduction's census of unbiased estimators, but the parent's construction descends from TD(lambda) and the actor-critic line; a census citation is not consumption.",
+   "Advantage updating (Baird, 1993) - LINK REJECTED on verified absence: Baird appears nowhere in the parent's 30-entry reference list or text (full-text search). Importance without a channel is not ancestry - the cleanest absence case since the run began counting them.",
+   "A Natural Policy Gradient (Kakade, 2001) - LINK REJECTED (fail-closed shape): sec.6.1's step-direction identity is explanation-of, not derivation-from; the parent computes no natural gradient. Natural actor-critic (Peters & Schaal, 2008) rejected on the same consumed-vs-compared ground (FAQ A.1's contrast case).",
+   "Greensmith et al. (2004), Thomas (2014), Marbach & Tsitsiklis (2003), Kakade (2001b) - REJECTED as the diagnosis cluster: cited as theoretical analysis of the variance/bias obstructions, not derived from (the Hochreiter condition). Kakade 2001b was kept distinct from the 2001a natural-gradient node - no identity merge.",
+   "One-step TD advantage practice and full-return Monte Carlo practice - REJECTED as the replaced incumbents: they are the parent's stored prior state (the lambda=0 and lambda=1 poles), and what a leap replaces is not its predecessor.",
+   "Conjugate gradient method (Hestenes & Stiefel, 1952) - REJECTED mediated_via TRPO: it reached the parent only inside TRPO's step computation (sec.5). Minsky (1961) rejected mediated_via Sutton & Barto (the problem reached 2016 as textbook folklore; sec.4's citation is a framing clause), and Hull (1943) mediated_via Minsky. DDPG and stochastic value gradients rejected as concurrent rivals (compared, not consumed); Konda & Tsitsiklis as a parenthetical class exemplar ('e.g.'); GPOMDP and guided policy search as census entries; Degris et al. (2012) as FAQ A.2's negative-space exhibit; the MDP (Bellman) as framework presupposition; ONR funding under the funding discrimination; the deep-network practice as an era condition."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_generalized-advantage-estimation-gae-2016.json",
+  "outcomes": {
+   "td-lambda-temporal-difference-learning-sutton-1988-1988": "provisional",
+   "policy-gradient-theorem-sutton-et-al-2000": "provisional",
+   "actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998": "provisional",
+   "real-time-reinforcement-learning-by-sequential-actor-critics-2009": "provisional (flagged: session's most contestable admission)",
+   "trpo-trust-region-policy-optimization-2015": "provisional"
+  },
+  "mediation_actions": []
+ },
+ "totals_after": {
+  "nodes": 306,
+  "edges": 390,
+  "budget": "306/2000",
+  "expansions_done": 191,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 45,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 289,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "td-lambda-temporal-difference-learning-sutton-1988-1988",
+  "actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998",
+  "inverse-reinforcement-learning-ng-russell-2000",
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+  "ecma-262-first-edition-1997"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
