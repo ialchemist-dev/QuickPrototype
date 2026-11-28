@@ -17694,3 +17694,137 @@
  "notes": "Session 108 continues: expansion 226 (Arrow, Harris & Marschak, 1951) follows this checkpoint in the same session. FRONTIER NOTE: the newly admitted EM node (grade 8.0) heads the frontier, ahead of the session's second parent - best-first order working as designed; AHM is expanded next in this session per the session's assignment, and EM's own expansion belongs to a later session. The EM hearing, the run's longest-carried deferred item (assigned session 30, re-assigned exp-142), is now CLOSED - admitted. No frontier-order disturbance: both session-108 parents are consumed from the head in standing order."
 }
 {"ts": "2026-11-28T15:05:00Z", "event": "expansion", "session": "108", "expansion": "226", "parent": "optimal-inventory-policy-arrow-harris-marschak-1951-1951", "parent_name": "Optimal inventory policy (Arrow, Harris & Marschak, 1951)", "parent_year": "1951", "parent_depth": "5", "date": "2026-11-28", "brief_correction": "No stored pipeline stage existed for this parent at execution (the scout builder written earlier in the session had not been run; add-candidates added all 15 filings fresh). One expectation corrected by resolve: the census expected ONE matched existing node (Wald 1950); resolve matched THREE - ABG (1949) and Linear programming (Dantzig, 1947) also already exist as nodes, so both were judged as LINK candidates on their merits. Koopmans (ed.), Activity Analysis (1951) was filed deliberately at the parent's own year and dropped by the year bound, recorded, not re-dated. FIX-UP DISCHARGED: exp-225's sync_commit = 46257b84 (its record rode that sync per house pattern).", "grounding": "The paper's own text (Econometrica 19(3), pp. 250-251: the (s,S) definition and the cost-to-go construction); Hadley & Whitin (1963), chs. 1-2 (AHM 'one of the first to provide a rigorous mathematical analysis of a simple type of inventory model'; ch. 2 = Deterministic Lot Size Models); Yaari's Arrow survey (the Cowles decision-under-uncertainty programme; Marschak's 1950 utility paper); the philarchive Cowles-acknowledgment study (CFP 44 presented at the 1950 RAND Logistics Conference; acknowledgments to Debreu, Simon, Newell, Friedman, Kruskal, Tompkins); Cherrier's Marschak paper; Harris (1913) (Factory 10(2):135-136, reprinted Operations Research 38(6):947-950, 1990); ABG (1949) (Econometrica 17:213-244, abstract via Parmigiani's Blackwell slides; characterization of the optimum sequential decision by backward recursion); the microprediction heritage timeline (ABG = 'the explicit bridge from statistical decision theory to dynamic programming'); the CWI 125-years/100-years-of-EOQ survey (Wilson as the formula's codifier; Edgeworth as the stochastic strand's start); Hamilton (1962) (the Markov-process redescription of AHM); Klein via the parent's stored verification (production at RAND, summer 1950, ONR Logistics Project; Masse classed an independent multiple).", "scout": "{'raw_filings': 15, 'dropped_year_bound': 1, 'distinct': 14, 'matched_existing': 3, 'judge_queue': 0, 'embedder': 'MiniLM (loaded; no TF-IDF fallback)', 'evaluations': 14, 'count_check': '14 evaluations == 14 distinct candidates; hand gate dry-run (replicated gate logic - the CLI has no gate subcommand and apply-verdicts has no --dry-run) reproduced exactly the 2 intended survivors before the single apply'}", "admissions": "[{'node': 'the-economic-order-quantity-harris-1913-1913', 'name': 'The economic order quantity (Harris, 1913)', 'link': False, 'score': 5.5, 'depth': 6, 'status': 'provisional', 'channel': 'Problem-form and cost-structure identity: AHM model is Harris lot-size problem - fixed ordering cost, holding cost, order quantity as the decision - with shortage cost added, demand made random, the horizon made multi-period; the parents stored prior_state names the stratum; Hadley & Whitin build the field textbook on it. Mediation attack via Wilson (1934) answered on the documents: Wilson is the formulas codifier, filed in this census and rejected as mediated via this candidate - the arrow points the other way.'}, {'node': 'bayes-and-minimax-solutions-of-sequential-decision-problems-1949', 'name': 'Bayes and minimax solutions of sequential decision problems (Arrow, Blackwell & Girshick, 1949)', 'link': True, 'score': 3.0, 'status': 'existing node, provisional (record untouched)', 'channel': 'Method identity carried by the shared first author: AHMs minimal-expected-cost-as-function-of-stock-on-hand and its functional equation are ABGs backward recursion over the state, instantiated with inventory as state, two years later in the same institution; the ABG nodes own stored leap states the identity. Wald (1950) cannot mediate - ABG (1949) predates the book and is itself the recasting of Wald. Score note: 3.0 reflects the gates narrow profile on this edge (Q2 pass, Q1 partial; Q4/Q5/Q7/Q9/Q10 fail) - it is the computed score, not a weak-channel judgment; the full argument rides the edges verdicts. Edge-scoped symmetry recorded: the ABG nodes own verification treats AHM as a near-simultaneous statement at the DP edge; at THIS parent the channel claim is the authors own carriage, scoped by the Q3 partial (Masse ripeness).'}]", "notable_rejections": "[{'name': 'Statistical Decision Functions (Wald, 1950) - LINK candidate', 'score': 'fail-closed partial (directness partial)', 'discrimination': 'Framework presupposition, tested under the exp-192 criterion: the parents object must BE the frameworks solution set. It is not - AHMs object is a specific cost function and its (s,S) argmin obtained from ABGs recursion, not a Wald admissibility/complete-class result; the Cowles decision programme (Yaari) is ambient, and ambient is not consumption. MOST CONTESTABLE NEGATIVE of exp-226. Edge-scoped: Wald 1950 stands admitted elsewhere in the graph (enabling Bellmans DP at 5.0).'}, {'name': 'Sequential Analysis (Wald, 1947)', 'score': 'fail', 'discrimination': 'Mediated via ABG (1949): the heritage record states ABG is Walds sequential analysis recast as backward-induction functional equations; the parent runs on the generalization, not the original.'}, {'name': 'A scientific routine for stock control (Wilson, 1934)', 'score': 'fail', 'discrimination': 'Mediated via EOQ (Harris, 1913): Wilson is the formulas codifier (given a name by Camp, Wilson and Goudriaan), not a transforming milestone.'}, {'name': 'Les reserves et la regulation de l avenir (Masse, 1946)', 'score': 'fail', 'discrimination': 'Independent multiple, per the parents own admission verification (Klein: independent near-simultaneous statements of the recursive idea); no channel from EDF into RAND/Cowles by 1950; multiples are verification evidence (ripeness on the ABG edges Q3), not ancestors.'}, {'name': 'The RAND Logistics Project and the 1950 Logistics Conference (ONR/RAND, 1950)', 'score': 'fail-closed partial', 'discrimination': 'Formation/commissioning in its strongest form - the institution posed the problem, funded the summer, convened the conference - and still formation: no institutional artifact is consumed inside the papers mathematics (Task P754 at exp-222 shape).'}, {'name': 'The mathematical theory of banking (Edgeworth, 1888)', 'score': 'fail', 'discrimination': 'Anticipation without a junction: his problem is AHMs degenerate one-period case and the lineage surveys open with him, but no AHM-side document cites or engages him.'}, {'name': 'Linear programming (Dantzig, 1947) - LINK candidate', 'score': 'fail', 'discrimination': 'Parallel RAND method, no consumption: AHMs problem is a stochastic functional equation, not an LP; proximity is not a channel. Edge-scoped: LP stands admitted at IRL (exp-192, flagged rehearable there).'}, {'name': 'Foundations of the Theory of Probability (Kolmogorov, 1933); Markov chains (Markov, 1906)', 'score': 'fail-closed partial (both)', 'discrimination': 'Generic framework presupposition; for Markov additionally the redescription discrimination - the explicit Markov-process reading of AHM is Hamiltons 1962 redescription, evidence about the models shape, not its ancestry.'}, {'name': 'Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)', 'score': 'fail', 'discrimination': 'Ambient legitimation: AHM minimize expected money cost, arithmetic needing no utility axioms; the Cowles-local carrier (Marschaks 1950 paper) is a seminar event, not a mechanism inside AHM.'}, {'name': 'Cowles Commission (1932); The nature and stability of inventory cycles (Metzler, 1941)', 'score': 'fail (both)', 'discrimination': 'Formation (the Commission is the papers issuing body - the carried artifact is the parent itself) and different-problem (aggregate cycles vs single-stocking-point policy; Hadley & Whitins scope statement) respectively.'}]", "verification": "{'file': 'run-01/work/verification_optimal-inventory-policy-arrow-harris-marschak-1951-1951.json', 'outcomes': {'the-economic-order-quantity-harris-1913-1913': 'provisional'}, 'disk_check': 'EOQ stored verification confirmed non-null/provisional on disk after apply. ABG LINK kept OUT of the verification file per the deviation precedent (exps 210/213/218/219/221/222/224): it carries a substantive verification record from its own admission; that record was confirmed intact and untouched on disk after apply; the hearing lives on the edges verdicts.'}", "totals_after": "{'nodes': 361, 'edges': 469, 'budget': '361/2000', 'expansions_done': 226, 'provisional': 344, 'verified': 17}", "frontier_head_after": "['em-algorithm-dempster-laird-rubin-1977-1977', 'the-economic-order-quantity-harris-1913-1913', 'samuel-s-checkers-player-samuel-1959-1959', 'structuring-probabilistic-dependences-in-stochastic-language-1994', 'tsmc-28-nm-hkmg-process-generation-2011-2011']", "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record", "notes": "SESSION 108 COMPLETE with this record (exps 225 + 226). Do not start session 109. Most contestable admission: EOQ (channel rests on problem-form identity + textbook placement; WART on its verification record - AHMs own text not verified to cite Harris; the edge is first in line for rehearing if a reading of the paper shows a non-lot-size derivation). Most contestable negative: Wald (1950) framework rejection at the Cowles-programme parent. Carried hearing note: nothing in this expansion disturbs the standing flags; the Masse multiple finding reinforces the ripeness caveat already recorded on the ABG and DP edges. Grounding gap (honest): AHMs full Econometrica text was worked from its pp. 250-251 construction and the secondary record, not a cover-to-cover read; no verdict turns on a page beyond those sources."}
+{
+ "ts": "2026-11-28T14:51:14Z",
+ "event": "expansion",
+ "session": 109,
+ "expansion": 227,
+ "parent": "em-algorithm-dempster-laird-rubin-1977-1977",
+ "parent_name": "EM algorithm (Dempster, Laird & Rubin, 1977)",
+ "parent_year": 1977,
+ "parent_depth": 6,
+ "date": "2026-11-28",
+ "brief_correction": "No stored pipeline stage existed for this parent at session start (expansion stage absent; verified directly), so the expansion ran fresh per RUNBOOK section 5. FIX-UP DISCHARGED: exp-226's sync_commit is f6aaebf1 (the sync that carried exp-226's record; exp-225's 46257b84 was discharged in exp-226's record). The brief's two assigned hearings were both discharged on the parent's documents: (1) Baum et al. (1970) and Wu (1983), rejected at exp-225 as mediated via EM - Baum receives its direct hearing HERE and is ADMITTED (Wu 1983 is downstream of the parent, a convergence result about it, and was not filed; its exp-225 mediation stands untouched); (2) Wolfe (1970)'s special-case priority - the exp-225 Q3 caveat - heard here in full and rejected fail-closed as an enabler while its priority is affirmed on the record (see notable_rejections). One brief framing corrected by the documents: the brief grouped Baum with the deferred hearings as if symmetric with Wu; DLR's own S.1 singles Baum et al. (1970) out as a theory source ('notably in Baum et al. (1970)'), which Wu never was for this parent.",
+ "grounding": "The parent paper read in substance from the JSTOR copy (Brown): Summary, S.1 Introduction, S.2 definitions, S.4.2 (grouped/censored/truncated: the Grundy/Blight/Efron/Turnbull/Hartley/Irwin/McKendrick passage), S.4.3 (finite mixtures: the Hasselblad/Day/Wolfe census, Haberman, Orchard & Woodbury on Ceppellini, the Baum series), S.4.4 opening (variance components), the COMPLETE reference list (all entries read), and the published discussion (Beale's opening testimony on his and Little's algorithm and on Orchard & Woodbury's principle and algorithm; Turnbull's self-consistency comment; the discussant addition of Batschelet 1960 and Geppert 1961, recorded in the dry notes, not filed). DLR S.4.1's Hartley passage is quoted from the paper's text as reproduced in the fetched extract ('The EM algorithm was explicitly introduced by Hartley (1958)...'). WARTS, stated honestly: (a) Hartley's 1958 paper was not itself read cover-to-cover - the Hartley admission rests on the parent's own characterization at three points (S.1, S.4.1, S.4.2) plus the paper's title and scope, and the wart is recorded on Hartley's verification record; (b) Sections 3, 4.5-4.9 of the parent were not read line by line - no verdict turns on a passage beyond the sections listed.",
+ "scout": {
+  "raw_filings": 25,
+  "matched_existing": 1,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "distinct": 25,
+  "dropped_year_bound": [],
+  "note": "Document census over the parent paper's own record (the run's established pattern where the pool is a literature carried by a single document): 25 filings across 8 lenses, 15 lenses dry or shortfall with notes in run-01/work/dry_notes_em-algorithm-dempster-laird-rubin-1977-1977.json. The one matched existing node is Fisher (1922), filed deliberately under its exact canonical name for the framework hearing. Resolve ran on MiniLM (sentence-transformers/all-MiniLM-L6-v2), no TF-IDF fallback. Count check: 25 evaluations == 25 distinct candidates from show-distinct; a hand dry-run of the gate reproduced the 3 survivors before the single apply-verdicts."
+ },
+ "admissions": [
+  {
+   "node": "a-missing-information-principle-orchard-woodbury-1972-1972",
+   "name": "A missing information principle (Orchard & Woodbury, 1972)",
+   "link": "NEW",
+   "grade": 5.5,
+   "basis": "The expansion's highest-scored admission. DLR S.1 attributes 'some of the theory underlying the EM algorithm' to Orchard & Woodbury by name, and Beale's discussion - printed inside the parent's own document - testifies that O&W stated the fixed-point principle and 'also used the Missing Information Algorithm - the present authors' EM algorithm - as a way of finding this fixed point': principle and procedure both, five years before the parent. Q2/Q5/Q6 pass; Q3 partial (the Sundberg parallel - the multiples test lands in verification and caps the node at provisional on necessity grounds); Q1 partial honestly (the principle alone flipped no impossibility)."
+  },
+  {
+   "node": "maximum-likelihood-estimation-from-incomplete-data-hartley-1-1958",
+   "name": "Maximum likelihood estimation from incomplete data (Hartley, 1958)",
+   "link": "NEW",
+   "grade": 5.0,
+   "basis": "The procedure's first explicit introduction, on the parent's own three-point attribution: S.4.1 'The EM algorithm was explicitly introduced by Hartley (1958)'; S.1's illustrative example is Hartley's aggregated-multinomial case; S.4.2 records Hartley's use of the second-level complete-data specification. The mediation attack via O&W fails on chronology and channel (the 1972 principle is a theory OF the 1958 procedure). Q1/Q2/Q6/Q11 pass, Q3 partial (the general paper could in principle have been assembled from O&W + Baum alone). Wart on the verification record: Hartley's paper not read cover-to-cover this pass; the admission rests on the parent's characterization."
+  },
+  {
+   "node": "a-maximization-technique-occurring-in-the-statistical-analys-1970",
+   "name": "A maximization technique occurring in the statistical analysis of probabilistic functions of Markov chains (Baum, Petrie, Soules & Weiss, 1970)",
+   "link": "NEW",
+   "grade": 4.5,
+   "basis": "THE EXP-225 MEDIATION, DISCHARGED AS AN ADMISSION AT THE MEDIATOR'S OWN EXPANSION. At exp-225 Baum was rejected at the mixture parent as mediated via EM; judged here on EM's documents the channel is direct and named by the parent itself: S.1 - the theory 'has remained buried in the literature of special examples, notably in Baum et al. (1970)'; S.4.3 - 'another independent special derivation of the EM method'. The auxiliary-function maximization guaranteeing a likelihood increase is the device the parent's Q-function formulation generalizes. Q1/Q6 pass, Q3 partial (DLR's Jensen route is a sibling derivation of the same device). The Baum & Eagon inequality was heard separately and rejected as this node's component (mediated via it)."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+   "score": null,
+   "kind": "LINK fail-closed partial directness (framework presupposition) - MOST CONTESTABLE NEGATIVE",
+   "basis": "Judged under the exp-192 criterion at its strongest available form, with the two-sided argument recorded in full on the evaluation. For: the parent's object is a maximizer of Fisher's likelihood and its S.2 characterization runs on Fisher's sufficient statistics - closer to the criterion than at exp-225 (object: mixture models). Against: the criterion's admitted cases (exp-192; Q-learning at exp-218) concern a specific equation system the framework paper itself defined, whose solution set is the parent's stored object; Fisher (1922) defines a general method, and the parent's object is an algorithm - a procedure for reaching the method's target, not the target. Every iterative ML procedure would inherit the edge, which is the dilution the presupposition discrimination prevents. Partial directness fails closed. Edge-scoped: Fisher (1922) stands admitted at other parents; its exp-225 rejection stands by its own route; variance across the three hearings is the criterion working, not an inconsistency."
+  },
+  {
+   "name": "Maximum likelihood theory for incomplete data from an exponential family (Sundberg, 1974)",
+   "score": null,
+   "kind": "fail-closed partial directness (multiple / component) - second most contestable negative",
+   "basis": "DLR S.1 cites Sundberg in the same breath as O&W for the underlying theory, and the channel cannot be resolved to Sundberg specifically on the documents: the principle-plus-algorithm channel is O&W's (Beale's testimony attaches the algorithm-use to O&W's paper), while Sundberg's consumed content - the observed-information identity - is a component of that theory, stated in parallel two years after O&W; his 1976 iterative method is a parallel exponential-family derivation. Q3 also fails on the multiples finding. RE-HEARING CONDITION recorded on the evaluation: a showing that DLR's Section 3 rate-of-convergence formula is taken from Sundberg's (1974) formula rather than from the missing information principle reopens the edge."
+  },
+  {
+   "name": "Pattern clustering by multivariate mixture analysis (Wolfe, 1970)",
+   "score": null,
+   "kind": "fail-closed partial directness (special-case instance subsumed)",
+   "basis": "The exp-225 Q3-caveat hearing, discharged as a rejection with the priority affirmed: DLR S.4.3 records Wolfe's stratum 'apparently worked independently', that 'they all suggested the EM algorithm' for their cases, and that 'none of the authors proved this fact' (monotonicity). Wolfe supplies no mechanism the general formulation consumes - his Aitken-acceleration suggestion is reported, not built into the parent's S.3 theory. The generalization subsumes the instance; it does not descend from it. RE-HEARING CONDITION on the evaluation: a passage of the parent adopting a Wolfe-specific procedure reopens the edge. Day (1969) and Hasselblad (1966) fail by the same discrimination in the same census passage (Day's invariant a streamlining component; Hasselblad's empirical monotonicity the parent's stated gap, not its input)."
+  },
+  {
+   "name": "An inequality with applications to statistical estimation for probabilistic functions of Markov processes (Baum & Eagon, 1967) / Statistical inference for probabilistic functions of finite state Markov chains (Baum & Petrie, 1966)",
+   "score": null,
+   "kind": "mediated_via Baum et al. (1970) (x2)",
+   "basis": "The Baum line's flanks: the 1967 inequality is the admitted technique's component (components discrimination, carried as a mediation since the technique is the named conduit), and the 1966 inference paper - find-verified ABSENT from the parent's complete reference list - reaches the parent only inside the 1970 technique paper."
+  },
+  {
+   "name": "The estimation of gene frequencies in a random-mating population (Ceppellini, Siniscalco & Smith, 1955) / Missing values in multivariate analysis (Beale & Little, 1975)",
+   "score": null,
+   "kind": "mediated_via Orchard & Woodbury (1972) (x2)",
+   "basis": "Both mediations are documented inside the parent's own text: S.4.3 routes Ceppellini through O&W ('These authors also drew attention to an early paper by Ceppellini et al. (1955)'), and Beale's discussion testifies that his and Little's algorithm reached its ML justification through O&W's principle."
+  },
+  {
+   "name": "The analysis of contingency tables with incompletely classified data (Chen & Fienberg, 1976)",
+   "score": null,
+   "kind": "mediated_via Hartley (1958)",
+   "basis": "S.4.1's structure is the mediation record: Hartley's introduction sentence first, then the follower census (Carter & Myers 1973, Brown 1974, Fienberg & Chen) for the same multinomial case."
+  },
+  {
+   "name": "Applications of mathematics to medical problems (McKendrick, 1926)",
+   "score": null,
+   "kind": "mediated_via Irwin (1959)",
+   "basis": "The parent reaches its deepest root only through Irwin's ascription ('Irwin ascribes the idea to McKendrick (1926)') - a two-remove channel documented in the parent itself. Irwin's own filing failed closed as a special case of the shared second-level device, Hartley carrying the introduction."
+  },
+  {
+   "name": "Iterative scaling procedures for log-linear models for frequency tables derived by indirect observation (Haberman, 1976)",
+   "score": null,
+   "kind": "fail (counterfactual; genuine multiple)",
+   "basis": "A near-simultaneous independent derivation with its own monotonicity proof for its case, cited by the parent as 'an interesting example' in its survey. Remove it and the parent stands unchanged; multiples are verification evidence (ripeness), not ancestry."
+  },
+  {
+   "name": "Estimation from a censored sample for the exponential family (Blight, 1970) / The two-sample problem with censored data (Efron, 1967) / The empirical distribution function with arbitrarily grouped, censored and truncated data (Turnbull, 1976) / The fitting of grouped truncated and grouped censored normal distributions (Grundy, 1952)",
+   "score": null,
+   "kind": "fail-closed partial directness (x4; the censored/grouped stratum)",
+   "basis": "The parent's S.4.2 census, each on its named discrimination: Blight is 'a key paper' whose two-step recognition is a component of the general formulation's self-understanding, its construction not routed through by S.2; Efron and Turnbull are instances (singly censored; the nonparametric extension) the generalization subsumes; Grundy is anticipation with an approximation device (Taylor expansions) where the exact procedure's introduction is Hartley's. Presence verified but routing wrong still fails (exp-218 pattern)."
+  },
+  {
+   "name": "Inference and missing data (Rubin, 1976) / Recovery of inter-block information when block sizes are unequal (Patterson & Thompson, 1971) / Fisher scoring as presented in Linear Statistical Inference and its Applications (Rao, 1965) / On a least squares adjustment of a sampled frequency table (Deming & Stephan, 1940) / A general approach to confirmatory maximum likelihood factor analysis (Joreskog, 1969)",
+   "score": null,
+   "kind": "fail-closed partial / fail (author carriage; sibling construction; defined-against foil; find-verified absence; example incumbent)",
+   "basis": "Rubin (1976): the third author's framework is a sibling - the parent's formalism is Dempster's deterministic coarsening mapping and nowhere invokes Rubin's mechanism taxonomy; remove it and the paper stands unchanged. Patterson & Thompson: REML is the parallel construction for S.4.4's problem class, its contrasts device not taken up. Rao (1965): the S.1 foil - Rao's data are a component of the exposition and his scoring step the contrast, not a consumed mechanism. Deming & Stephan: find-verified ABSENT from the parent's complete reference list and text - anticipation without a junction in this record; the IPF-EM identity is a later literature's observation. Joreskog: an example-side incumbent for S.4.7, one reference among sixty-plus with no textual uptake."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_em-algorithm-dempster-laird-rubin-1977-1977.json",
+  "outcomes": {
+   "a-missing-information-principle-orchard-woodbury-1972-1972": "provisional",
+   "maximum-likelihood-estimation-from-incomplete-data-hartley-1-1958": "provisional",
+   "a-maximization-technique-occurring-in-the-statistical-analys-1970": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "All three survivors provisional, stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). O&W capped at provisional by the landed multiples test (Sundberg parallel); Hartley carries the unread-text wart on its record; Baum carries the sibling-derivation ripeness at Q3. Created-node spot check: all three nodes' stored leap, prior_state and bottleneck non-empty. Six mediated rejections recorded by the pipeline, matching the verdicts."
+ },
+ "totals_after": {
+  "nodes": 364,
+  "edges": 472,
+  "budget": "364/2000",
+  "expansions_done": 227,
+  "provisional": 347,
+  "verified": 17
+ },
+ "frontier_head_after": [
+  "the-economic-order-quantity-harris-1913-1913",
+  "a-missing-information-principle-orchard-woodbury-1972-1972",
+  "samuel-s-checkers-player-samuel-1959-1959",
+  "structuring-probabilistic-dependences-in-stochastic-language-1994",
+  "tsmc-28-nm-hkmg-process-generation-2011-2011"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record",
+ "notes": "Session 109 continues: expansion 228 (the economic order quantity, Harris 1913) follows this checkpoint in the same session. The deferred-hearing ledger after this expansion: Baum-at-EM and Wolfe-at-EM are CLOSED (admission and argued rejection respectively); Ceppellini's rediscovery path now runs through the admitted O&W node's own expansion, and the contingency-table followers' through Hartley's."
+}
