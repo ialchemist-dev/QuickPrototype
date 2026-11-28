@@ -13311,3 +13311,139 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T09:18:01.809686+00:00",
+ "event": "expansion",
+ "session": 92,
+ "expansion": 194,
+ "parent": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+ "parent_name": "TD(lambda) temporal-difference learning (Sutton, 1988)",
+ "parent_year": 1988,
+ "parent_depth": 4,
+ "date": "2026-11-28",
+ "provenance": "Session 92, expansion 2 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground at ~43s; the graph file was read back to confirm stage 'resolved' and the three matched ids before verdicts). Resolve: 16 raw -> 16 distinct, 3 matched existing (Widrow-Hoff, backpropagation, Bellman optimality equations - exactly the three planned LINKs), 0 auto-merges, judge queue 0, dropped 0, prefiltered 0. The verdicts builder's count check passed (16 evaluations == 16 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (3 survivors: Widrow-Hoff 6.0 linked, Samuel 5.0 new, AHC 4.5 new; 4 fail-closed partials: Witten 1.5, Kemeny & Snell 1.5, Sutton & Barto 1981 1.5, Varga 0.5; 9 rejections at 0.0), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 16, survivors 3, created 2, linked 1, rejected 13, mediated rejections 0). Created-node spot-check PASSED: both new nodes' stored bottleneck, leap and prior_state are non-empty; their sources lists carry candidate-side titles with the parent paper's URL - the standing wart, logged, never hand-edited. Verification applied from work/verification_td-lambda-temporal-difference-learning-sutton-1988-1988.json (all three edges provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 193's sync_commit = 1132461c (verified by local blob-SHA recomputation against the sync's reported tree values: graph.json 0a2fff24, run-log.jsonl 87b52a7d, index.html 9e4c3e2f - all matched). Rendered with --out run-01/index.html (312 nodes / 398 edges) before syncing, per the session-91 render lesson recorded at exp-193. This record's own sync_commit rides the sync that carries it. SESSION 92 CLOSES HERE: both ordered expansions (193 Bellman optimality equations, 194 TD(lambda)) are complete with checkpoints after each; session 93 was NOT started, per the resume order.",
+ "brief_correction": "The framing that TD(lambda)'s ancestry runs through the dynamic-programming canon resolved AGAINST the framing on the paper's documents: Bellman is absent from Sutton (1988) entirely - find-verified across the full text and its complete ~40-entry reference list - and the paper's one DP contact (Denardo 1982) is a formulation analogy. The ancestry the documents actually construct is the adaptive-element line: the Widrow-Hoff rule the paper generalizes in sec.2, Samuel's procedure it analyzes for a full subsection and credits with the key idea, and the author's own Adaptive Heuristic Critic, whose rule sec.6.4 states is 'otherwise identical to TD(lambda)'s'. The author's conditioning-model work (Sutton & Barto 1981), the emotionally obvious fourth admission, resolved as a carrier - the idea in another field's dress - consistent with the same author pair's textbook verdicts at expansions 191-193.",
+ "grounding": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988), read IN FULL this session (36 pp, ~15,700 words; publisher-archive PDF, text extracted and read end to end). Load-bearing passages: the Abstract's census of prior TD uses (Samuel's checker player, Holland's bucket brigade, the author's Adaptive Heuristic Critic); sec.1's census of prior TD appearances (Witten 1977, Booker 1982, Hampson 1983) and its conditioning-model cluster (Sutton & Barto 1981a/1987; Gelperin, Hopfield & Tank 1985; Moore et al. 1986; Klopf 1987 - the hedonistic-neuron documents of 1972/1982 are NOT cited, only the 1987 report); sec.2's construction of TD(lambda) by generalizing the Widrow-Hoff rule (TD(1) is the rule); sec.6.1 on Samuel (TD(0)-intent; the missing terminal constraint); sec.6.2 on backpropagation (structural vs temporal credit assignment); sec.6.3 on the bucket brigade (both borrow the key idea from Samuel); sec.6.4 + footnote 9 (Witten's priority for the discounted error term; the AHC's rule 'otherwise identical' to TD(lambda)'s); Denardo (1982) cited once as a DP-formulation analogy; the AFOSR contract F33615-83-C-1078 in the acknowledgments; Kemeny & Snell in the theorems' absorbing-chain setting; Varga in the appendix. Bellman's absence from the reference list and text was verified by find over the full extracted text.",
+ "parent_record_note": "The parent's stored record was verified complete this session (name, year 1988, type method, depth 4, priority 6.0; stored bottleneck, prior_state and leap all non-empty and accurate against the paper). Its stored sources list carries the GAE-paper citation line from its admission at exp-191 - left untouched.",
+ "scout": {
+  "builder": "run-01/work/build_scout_td.py",
+  "raw_filings": 16,
+  "distinct_names_intended": 16,
+  "per_lens": {
+   "L1": 4,
+   "L2": 1,
+   "L3": 2,
+   "L4": 2,
+   "L6": 2,
+   "L19": 2,
+   "L20": 1,
+   "L21": 1,
+   "L23": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_td-lambda-temporal-difference-learning-sutton-1988-1988.json",
+  "dry_or_shortfall_lenses": [
+   "L2 (shortfall 1: the AHC is the one ancestor-embodiment; Widrow-Hoff and Samuel filed at L1)",
+   "L4 (shortfall 2: Witten and the Bellman presupposition probe are the documented problem-side filings)",
+   "L5 (dry-with-finding: the bias/variance obstruction is the parent's own framing; Klopf filed at L19)",
+   "L7 (dry-with-finding: the failed road is outcome-only supervised prediction - the stored prior state, a practice, not a document)",
+   "L8 (dry: the random-walk examples are the paper's own constructions)",
+   "L9 (dry: no machine named; GTE Laboratories is context at L21's note)",
+   "L10 (dry)",
+   "L11 (dry-with-finding: the wielded procedures are the paper's own proofs; their cited references filed at L1)",
+   "L12 (dry)",
+   "L13 (dry)",
+   "L14 (dry)",
+   "L15 (dry)",
+   "L16 (dry)",
+   "L17 (dry-with-finding: the random-walk task is the paper's own benchmark construction - a measurement instrument, not a predecessor)",
+   "L18 (dry)",
+   "L20 (shortfall 1: Anderson filed; Sutton's 1984 dissertation is the AHC's own earlier presentation, recorded inside the AHC filing's scope)",
+   "L21 (shortfall 1: GTE Laboratories is the same carriage class as the AFOSR contract, not filed separately)",
+   "L22 (dry-with-finding: the enabling condition is the Samuel/Widrow-Hoff inheritance, filed at L1)",
+   "scope (Denardo 1982 recorded inside the Bellman probe, not filed separately; Gelperin/Hopfield/Tank 1985 and Moore et al. 1986 are the same sec.1 conditioning cluster as the Sutton & Barto 1981 filing; Klopf dated to his line's origin 1972 with the paper's actual citation - the 1987 report - scoped in the claim)"
+  ]
+ },
+ "resolution": {
+  "raw": 16,
+  "distinct": 16,
+  "matched_existing": 3,
+  "auto_merges": 0,
+  "judge_queue": 0,
+  "dropped": 0,
+  "matched_ids": [
+   "widrow-hoff-adaptive-switching-circuits-1960-the-delta-rule-1960",
+   "learning-representations-by-back-propagating-errors-rumelhar-1986",
+   "bellman-optimality-equations-bellman-1957-1957"
+  ],
+  "identity_note": "No gray-zone pairs arose. The Bellman optimality equations candidate matched the node created at exp-192 and expanded at exp-193 of this same session run - the presupposition probe was therefore heard against the exact node, and rejected on documentary absence (see verdicts)."
+ },
+ "judgments": "None required: the judge queue was empty.",
+ "calendar_dropped_at_resolve": [],
+ "verdicts": {
+  "file": "run-01/work/verdicts_td-lambda-temporal-difference-learning-sutton-1988-1988.json",
+  "builder": "run-01/work/build_verdicts_td88.py",
+  "evaluations": 16,
+  "survivors": [
+   "Widrow & Hoff, Adaptive switching circuits (1960) - the delta rule - LINK to existing node, dry-run score 6.0, provisional edge (depth 4). Derivation-channel admission: sec.2 constructs TD(lambda) by generalizing this rule - TD(1) IS the Widrow-Hoff rule with the outcome replaced by the next prediction, the single error replaced by a trace-weighted sum of TD errors. The paper works ON the rule, as GAE worked on the policy gradient theorem (admitted at the same grade there).",
+   "Samuel's checkers player (Samuel, 1959) - NEW node, dry-run score 5.0, provisional (depth 5). Analyzed-procedure admission: sec.6.1 devotes a full subsection to Samuel's delta procedure as TD(0)-intent (with its documented deficiency, the missing terminal constraint); sec.6.3 states TD and the bucket brigade both borrow the key idea from Samuel; the abstract names the checker player first among prior TD uses. The verification record flags the interpretive character of Sutton's reading as the admission's strongest attack - it stands because the parent's own documents make the analysis, and documents govern.",
+   "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983) - NEW node, dry-run score 4.5, provisional (depth 5). Prior-embodiment admission: sec.6.4 states the AHC 'uses a learning rule otherwise identical to TD(lambda)'s' for discounted cumulative outcomes; the 1988 paper is the generalization and theory of the rule the AHC (and Sutton's 1984 dissertation) had already carried into control. Self-carriage scored at Q3/Q10, per the TRPO-at-GAE pattern."
+  ],
+  "notable_rejections": [
+   "Temporal-difference prediction of discounted sums (Witten, 1977) - FAIL-CLOSED PARTIAL (1.5): the paper itself (sec.6.4 + footnote 9) gives Witten priority for the discounted error term - one proposal, with no eligibility traces, no lambda family and no theory; the construction runs from the Widrow-Hoff rule. Priority for one term is not the construction (the Sargent-at-IRL pattern).",
+   "Temporal-difference model of classical conditioning (Sutton & Barto, 1981) - FAIL-CLOSED PARTIAL (1.5): the author's own conditioning model, census-cited in sec.1's cluster - a carrier of the TD idea into animal-learning theory; the 1988 construction derives from the delta rule, not from the model. Consistent with the same author pair's textbook verdicts at exps.191-193.",
+   "Finite Markov chains (Kemeny & Snell, 1976) - FAIL-CLOSED PARTIAL (1.5) and Matrix Iterative Analysis (Varga, 1962) - FAIL-CLOSED PARTIAL (0.5): the theorems' apparatus - the absorbing-chain setting and an appendix convergence reference. Direct citation channels, replaceable standard machinery; apparatus is not ancestry (the Monte Carlo subroutine pattern at exp-192; the Banach probe at exp-193).",
+   "Bellman optimality equations (Bellman, 1957) - REJECTED as framework presupposition, on documentary absence: Bellman appears nowhere in Sutton (1988) - find-verified across the full text and its complete ~40-entry reference list - and the paper's only DP contact (Denardo 1982) is a formulation analogy. The prediction problem presupposes a temporally extended setting; it consumes no optimality equation. (The node itself was expanded at exp-193 this session; the two Bellman-family verdicts are independent and each rests on its own parent's documents.)",
+   "Bucket brigade algorithm (Holland, 1986) - REJECTED as the sibling: sec.6.3's own statement assigns the shared key idea to the common ancestor (Samuel, admitted above) - the flow runs ancestor-to-both, so the sibling is not even a mediator. Compared, not consumed.",
+   "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986) - REJECTED as the complementary sibling: sec.6.2's taxonomy (structural vs temporal credit assignment) is the paper's self-location, not a derivation. (Anderson's 1986 combination of the two was rejected separately as a downstream consumer of the AHC.)",
+   "Hedonistic neuron and drive-reinforcement theory (Klopf, 1972) - REJECTED as a parallel application without a documentary channel: the hedonistic-neuron documents (1972/1982) are not in the paper; only Klopf's 1987 report is census-cited in sec.1's conditioning cluster. The line may be heard at a parent whose documents carry it (a conditioning-model expansion), not here.",
+   "Classifier system learning (Booker, 1982) and Adaptive prediction networks (Hampson, 1983) - REJECTED as census citations: names in sec.1's list of prior TD appearances, with no construction passing through either (the passing-parenthesis discrimination).",
+   "Backpropagation-AHC combination (Anderson, 1986) - REJECTED on direction: a downstream system consuming the admitted ancestor (AHC) two years before the parent paper; creator lineage (Anderson co-authored the AHC) is not a channel.",
+   "Analysis of Samuel's checkers learning procedure (Christensen & Korf, 1986) - REJECTED as commentary: the parent's sec.6.1 engages Samuel's 1959 document itself, not the 1986 simplification of it.",
+   "AFOSR contract F33615-83-C-1078 - REJECTED under the funding discrimination (the NSF grant at exp-192): an acknowledgment line; no funder mechanism, document or decision is inside the artifact."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_td-lambda-temporal-difference-learning-sutton-1988-1988.json",
+  "outcomes": {
+   "widrow-hoff-adaptive-switching-circuits-1960-the-delta-rule-1960": "provisional (edge; the node itself was verified at its own admission)",
+   "samuel-s-checkers-player-samuel-1959-1959": "provisional",
+   "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983": "provisional"
+  },
+  "mediation_actions": []
+ },
+ "totals_after": {
+  "nodes": 312,
+  "edges": 398,
+  "budget": "312/2000",
+  "expansions_done": 194,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 48,
+   "5": 61,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 295,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998",
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+  "ecma-262-first-edition-1997",
+  "netscape-communications-1994",
+  "neural-network-based-language-models-for-highly-inflective-l-2009"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}

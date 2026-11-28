@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T09:11:43+00:00",
-  "expansions_done": 193,
-  "raw_candidates_seen": 8638,
+  "updated_at": "2026-11-28T09:17:32+00:00",
+  "expansions_done": 194,
+  "raw_candidates_seen": 8654,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -34404,6 +34404,84 @@
     "name": "The theory of dynamic programming (Bellman, 1954)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T09:11:27+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Finite Markov chains (Kemeny & Snell, 1976)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Matrix Iterative Analysis (Varga, 1962)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Classifier system learning (Booker, 1982)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Adaptive prediction networks (Hampson, 1983)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Temporal-difference prediction of discounted sums (Witten, 1977)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Bellman optimality equations (Bellman, 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Bucket brigade algorithm (Holland, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Temporal-difference model of classical conditioning (Sutton & Barto, 1981)",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Hedonistic neuron and drive-reinforcement theory (Klopf, 1972)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Backpropagation-AHC combination (Anderson, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "AFOSR contract F33615-83-C-1078",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
+   },
+   {
+    "parent_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+    "name": "Analysis of Samuel's checkers learning procedure (Christensen & Korf, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:17:16+00:00"
    }
   ]
  },
@@ -42161,11 +42239,16 @@
    "depth": 6,
    "expanded": false,
    "priority": 4.5,
-   "sources": [],
+   "sources": [
+    {
+     "title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.2",
+     "url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    }
+   ],
    "verification": {
-    "outcome": "verified",
-    "notes": "VERIFIED. Citation (Ch. 8 reference list) + in-text attribution by name and year + instantiation (the parent's Eq. 1 is the candidate's rule; the generalized delta rule is derived as its extension and 'has exactly the same form'). The operative-carrier test passes: the child continues the candidate's headline mechanism (error-driven weight change proportional to error signal x input) and extends it to hidden units.",
-    "at": "2026-11-25T21:39:21+00:00"
+    "outcome": "provisional",
+    "notes": "Verifier attacks: (1) Q1 attack - trainable adaptive elements were not wholly impossible before 1960 (the perceptron rule, 1958, trained threshold elements); the admission is scoped to the error-proportional delta rule in the exact form sec.2 generalizes (TD(1) IS this rule), not to adaptive training generally. Attack narrows scope, does not kill. (2) Multiples test - the perceptron rule is the near-simultaneous sibling for the threshold case; necessity for the delta rule's specific form rests on the paper's own derivation, recorded; never verified-grade on necessity grounds. (3) Date/direction - 1960 precedes 1988; direction is documented by the parent's sec.2 construction itself. (4) Mediation attack - could Samuel mediate Widrow-Hoff? No: sec.2 derives TD(lambda) from the rule directly; Samuel is the parallel ancestor for the key idea (sec.6.3), judged on its own edge. No mediator found. Provisional per session practice for fresh edges (the node itself was verified at its own admission; this outcome covers the new edge).",
+    "at": "2026-11-28T09:17:32+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T21:39:09+00:00"
@@ -43248,7 +43331,7 @@
    "prior_state": "One-step temporal-difference learning and Monte Carlo return averaging as separate, unreconciled estimator families.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -43437,6 +43520,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T09:11:27+00:00"
+  },
+  "samuel-s-checkers-player-samuel-1959-1959": {
+   "id": "samuel-s-checkers-player-samuel-1959-1959",
+   "name": "Samuel's checkers player (Samuel, 1959)",
+   "aliases": [],
+   "year": 1959,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "Samuel (IBM J. of R&D, 1959): a checkers program that learned its board-evaluation polynomial from self-play, adjusting coefficients so evaluations predict game outcomes.",
+   "bottleneck": "Game-playing programs could not improve their evaluations from experience; evaluation functions were hand-tuned.",
+   "leap": "Samuel (1959) made a checkers program learn its evaluation polynomial from self-play, adjusting coefficients so successive evaluations predict later ones - the first working temporal-difference-style learner.",
+   "prior_state": "Hand-crafted evaluation functions and rote memorization of board positions.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session Abstract, secs.6.1, 6.3",
+     "url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks: (1) Q1 attack - the strongest attack on this admission: Samuel's 1959 procedure is often read as outcome-driven generalization learning, and Sutton's sec.6.1 reading of it as TD(0)-intent is an interpretation. It is, however, the PARENT'S OWN documented analysis, at subsection length, with the deficiency (no terminal constraint) stated precisely because Sutton measures the procedure against TD; under the run's documents-govern rule the admission stands on the parent's analysis, and the interpretive character is recorded here. (2) Multiples test - no independent near-simultaneous discoverer of the successive-prediction procedure appears in the record; Witten (1977) is later and narrower (judged a fail-closed partial). (3) Date/direction - 1959 precedes 1988; the paper's abstract names Samuel's player first among prior TD uses and sec.6.3 assigns the key idea to Samuel explicitly. (4) Mediation attack - could Christensen & Korf (1986) mediate? No: the parent engages the 1959 document itself (the commentary was rejected separately). Could Widrow-Hoff mediate? No: the channels are distinct in the paper's own structure (sec.2 vs sec.6.1/6.3). Provisional per session practice.",
+    "at": "2026-11-28T09:17:32+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:17:16+00:00"
+  },
+  "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983": {
+   "id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+   "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+   "aliases": [],
+   "year": 1983,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "Barto, Sutton & Anderson (IEEE Trans. SMC, 1983), with Sutton's 1984 dissertation: a two-element adaptive controller - an actor element and a critic element - that learned control (pole balancing) from evaluative feedback alone, the critic learning by a temporal-difference rule.",
+   "bottleneck": "Control systems could not learn from evaluative feedback alone: a delayed success/failure signal could not be assigned to the actions that caused it.",
+   "leap": "Barto, Sutton & Anderson (1983) built the Adaptive Heuristic Critic: an actor element plus a critic element whose temporal-difference predictions of future reinforcement assign credit to recent actions, learning pole balancing from a failure signal alone.",
+   "prior_state": "Control by designed feedback laws; learning control required explicit models or supervised targets.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session Abstract, sec.6.4",
+     "url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks: (1) Q1 attack - pole balancing was later solved by many methods; the claim as admitted is scoped to 1983: learning control from evaluative feedback alone with a TD critic, which sec.6.4 ties to the parent by the identity statement ('a learning rule otherwise identical to TD(lambda)'s'). (2) Multiples test - Klopf's hedonistic-neuron line is a parallel independent tradition for reinforcement-driven learning (rejected at this parent for want of a documentary channel); its existence caps necessity at ripe, recorded. (3) Date/direction - 1983 (and the 1984 dissertation) precede 1988; direction runs from the author's own prior system into his theory paper, documented in the paper's text. (4) Mediation attack - could the Sutton & Barto (1981) conditioning model mediate the AHC? No: the model and the AHC are siblings in the author's programme, and sec.6.4's identity statement attaches to the AHC's rule specifically; the conditioning model was judged separately as a carrier (fail-closed partial). Self-carriage is recorded at Q3/Q10, per the TRPO-at-GAE pattern. Provisional per session practice.",
+    "at": "2026-11-28T09:17:32+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:17:16+00:00"
   }
  },
  "edges": [
@@ -82285,6 +82426,297 @@
     "counterfactual": "Without ABG's recursive construction, the founding document loses the cited ancestor for the sequential problem class its own Problem 1 belongs to; the equations would lack their documented immediate formal predecessor.",
     "mediator": null,
     "evidence": "Direct: named citation (ref 1 of 3) in the founding document, the construction instantiated in the parent's own problem class; no milestone intervenes between ABG's recursion and Bellman's generalization of it."
+   }
+  },
+  {
+   "predecessor_id": "widrow-hoff-adaptive-switching-circuits-1960-the-delta-rule-1960",
+   "successor_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before the delta rule, an adaptive element could not be trained at all by a local error signal; the rule made trainable adaptive prediction elements exist. In relation to the parent: Sutton's sec.2 states the construction outright - TD(1) IS the Widrow-Hoff rule applied to prediction, and TD(lambda) is built by generalizing this rule's update (the outcome target replaced by the next prediction, the single error replaced by a trace-weighted sum of temporal-difference errors).",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session sec.2",
+     "falsification": "A derivation of TD(lambda) in the paper that does not pass through the Widrow-Hoff update."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The whole TD(lambda) family is generated from this one rule by the sec.2 construction - every lambda value, the supervised-learning correspondence results, and the convergence analysis are statements about generalizations of this update.",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session secs.2-5",
+     "falsification": "A result in the paper independent of the generalized delta update."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Not the only conceivable base - Samuel's procedure is a second documented ancestor - but the paper's derivation literally begins from the Widrow-Hoff rule; delete it and sec.2 has no starting point.",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session sec.2",
+     "falsification": "Evidence the construction could start from Samuel's procedure alone."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "The delta rule collapsed the cost of training adaptive elements from hand-design to a per-sample proportional update.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "It made nothing newly observable; its contribution is the update, not measurement.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model the parent inherits: learning as proportional correction by an error signal, which TD re-aims from outcomes to successive predictions.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The rule became a composable training primitive inside larger systems, though not an interface in the standards sense.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Adaptive filtering, control, pattern recognition and later neural networks all run on this update - reach far beyond its 1960 switching-circuit origin.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Updates are online and per-sample (immediate feedback), though convergence can still be slow - the loop is collapsed in form, not always in time.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It became the default for adaptive linear elements; the perceptron rule coexisted for the threshold case.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent's own sec.2 names it as the construction's base, and every TD history starts the derivation here.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once error-proportional updates existed, adaptive-element design never returned to hand-tuning - as ancestry of this artifact, the reset runs through the parent's generalization.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:17:16+00:00",
+   "leap": {
+    "prior_state": "One-step temporal-difference learning and Monte Carlo return averaging as separate, unreconciled estimator families.",
+    "jump": "Sutton (1988) introduced TD(lambda): prediction by exponentially weighted sums of TD errors with eligibility traces, interpolating between TD(0) and Monte Carlo and unifying them in one mechanism.",
+    "date": 1988
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Without the Widrow-Hoff rule, sec.2's construction has no base update to generalize: no TD(1) identity, no trace generalization, no TD(lambda).",
+    "mediator": null,
+    "evidence": "Direct: the parent's documents perform the generalization in the open (sec.2); the rule is the derivation channel itself, not a mediated influence - the policy-gradient-theorem-at-GAE pattern."
+   }
+  },
+  {
+   "predecessor_id": "samuel-s-checkers-player-samuel-1959-1959",
+   "successor_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Samuel, no machine had learned an evaluation function from its own play; his program did - and in the procedure Sutton's sec.6.1 analyzes, the learning signal is the difference between successive evaluations, the parent's exact problem (learn predictions from temporal differences) in first working form. Sutton documents the procedure's deficiency (no terminal constraint) precisely because he is measuring it against TD.",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session sec.6.1; Abstract",
+     "falsification": "An earlier machine learner driven by successive-prediction differences."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "One game and one program: the generativity (the general prediction theory) is the parent's; Samuel supplies the working existence proof and the key idea.",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session sec.6.3",
+     "falsification": "Evidence Samuel's procedure was understood at the time as a general prediction method."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Not the only path - the Widrow-Hoff line reaches the construction independently - but the paper's own sec.6.3 states that TD and the bucket brigade both borrow their KEY IDEA (credit propagated through a sequence of predictions) from Samuel.",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session sec.6.3",
+     "falsification": "A statement in the paper deriving the key idea from another source."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Self-play learning collapsed the cost of obtaining evaluation training data, but the collapse is local to game evaluation.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurement advance.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model sec.6.1 extracts: an evaluation is improved by comparing it with the NEXT evaluation, not only with the final outcome - the successive-prediction comparison as a learning signal.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "A single program, not a composable standard.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The idea's reach beyond checkers was realized by the parent and the RL field, not by the 1959 paper itself.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Learning from each move's prediction change, instead of waiting for the game's outcome, is exactly the feedback-loop collapse the parent theorizes.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Samuel's specific mechanisms (rote learning, signature tables) were superseded; the TD idea inside the procedure became the standard path.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the abstract names Samuel's checker player first among prior TD uses, and the paper devotes its longest historical subsection (6.1) to it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Machine learning from experience never returned to hand-tuned evaluations only - though the recognition took the parent's 1988 theory to consolidate.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:17:16+00:00",
+   "leap": {
+    "prior_state": "One-step temporal-difference learning and Monte Carlo return averaging as separate, unreconciled estimator families.",
+    "jump": "Sutton (1988) introduced TD(lambda): prediction by exponentially weighted sums of TD errors with eligibility traces, interpolating between TD(0) and Monte Carlo and unifying them in one mechanism.",
+    "date": 1988
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Without Samuel's procedure, the paper loses its sec.6.1 analysis object and its documented source for the key idea (sec.6.3); the theory would lack its founding working example.",
+    "mediator": null,
+    "evidence": "Direct: the paper analyzes the 1959 procedure itself, at subsection length, and names the inheritance in words; Christensen & Korf's 1986 commentary is judged separately and is not the channel."
+   }
+  },
+  {
+   "predecessor_id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+   "successor_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before the AHC, no system had learned control from evaluative feedback alone via a TD critic; the AHC learned pole balancing from a failure signal, with the critic's predictions assigning credit. In relation to the parent: sec.6.4 states the AHC 'uses a learning rule otherwise identical to TD(lambda)'s' for discounted cumulative outcomes - the parent's rule already existed, embodied, in this system.",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session sec.6.4; Abstract",
+     "falsification": "An earlier control learner using the TD rule."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "One control architecture and one task family: the generalization to the prediction theory is the parent's; the AHC supplies the embodied prior instance and the control-side motivation.",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session sec.6.4",
+     "falsification": "Evidence the 1988 theory was developed independently of the AHC line."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Self-carriage, scored as such: the parent's author co-created the AHC, and the 1988 paper could in principle have theorized the rule without it; but the documented development runs AHC (1983) -> dissertation (1984) -> TD(lambda) (1988), and sec.6.4 makes the identity of the rules a stated fact of the paper.",
+     "source": "Sutton, Machine Learning 3 (1988), full text read this session sec.6.4",
+     "falsification": "Evidence the rule in the AHC differs from TD(lambda)'s in a load-bearing way."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The AHC collapsed the cost of attacking evaluative-feedback control, but for one task family.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurement advance.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The critic - a learned predictor of future reinforcement used to judge actions - is an explanatory device the parent presupposes rather than re-derives.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The actor/critic split became a composable architecture across RL, but that composability was realized after 1988.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach ran through the parent's generalization into RL generally.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "It learned online, during control, from the ongoing stream of evaluative feedback - the parent's iteration-speed property in embodied form.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "It displaced no incumbent default by 1988.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk for this parent: sec.6.4 names it as the rule's prior embodiment, and the abstract lists it among the three prior TD uses.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Actor-critic designs never left RL after this line, though the consolidation is the field's, post-1988.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:17:16+00:00",
+   "leap": {
+    "prior_state": "One-step temporal-difference learning and Monte Carlo return averaging as separate, unreconciled estimator families.",
+    "jump": "Sutton (1988) introduced TD(lambda): prediction by exponentially weighted sums of TD errors with eligibility traces, interpolating between TD(0) and Monte Carlo and unifying them in one mechanism.",
+    "date": 1988
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Without the AHC, the parent loses the documented prior embodiment of its own rule and the control problem that motivated the generalization; sec.6.4's identity statement would have no object.",
+    "mediator": null,
+    "evidence": "Direct, with self-carriage recorded: same author, consecutive documents, the rule's identity stated in the parent's own text. The discount for self-carriage is taken at Q3 and Q10, as with TRPO at GAE and Russell 1998 at IRL - not by denying the channel."
    }
   }
  ],
@@ -377639,6 +378071,550 @@
       ],
       "member_names": [
        "The theory of dynamic programming (Bellman, 1954)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "td-lambda-temporal-difference-learning-sutton-1988-1988": {
+   "raw_candidates": [
+    {
+     "name": "Widrow & Hoff, Adaptive switching circuits (1960) - the delta rule",
+     "year": 1960,
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "type": "method",
+     "definition": "Widrow & Hoff (1960): the delta rule (LMS) - an adaptive element's weights are adjusted in proportion to the difference between its output and the desired output.",
+     "causal_claim": "The base update the parent generalizes: sec.2 of Sutton (1988) constructs TD(lambda) by generalizing the Widrow-Hoff rule - TD(1) IS the Widrow-Hoff rule applied to prediction; the construction replaces the rule's outcome target with the next prediction and sums the resulting temporal-difference errors with exponential (trace) weights. The paper works ON this rule, as GAE worked on the policy gradient theorem.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.2",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Samuel's checkers player (Samuel, 1959)",
+     "year": 1959,
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "type": "method",
+     "definition": "Samuel (IBM J. of R&D, 1959): a checkers program that learned its board-evaluation polynomial from self-play, adjusting coefficients so evaluations predict game outcomes.",
+     "causal_claim": "The paper's own sec.6.1 is a full subsection on Samuel's procedure: his delta rule is analyzed as a temporal-difference method in intent (learning driven by the difference between successive evaluations, not only by final outcomes), with the documented deficiency that it carries no terminal constraint. Sec.6.3 adds that both TD and Holland's bucket brigade borrow their key idea from Samuel; the abstract names Samuel's checker player first among the prior uses of TD methods.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session Abstract, secs.6.1, 6.3",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Finite Markov chains (Kemeny & Snell, 1976)",
+     "year": 1976,
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "type": "book",
+     "definition": "Kemeny & Snell (Finite Markov Chains; cited in its 1976 edition): the theory of finite Markov chains, including the absorbing-chain machinery for chains with terminal states.",
+     "causal_claim": "Cited in the paper: the prediction problem and the convergence/optimality theorems are posed over absorbing Markov chains (sequences terminating in an outcome), and the candidate supplies that setting's standard machinery. Filed to test apparatus-vs-ancestry: the machinery frames the theorems' setting; no Kemeny & Snell result is a step of the TD construction.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (cited in the paper's references and theorem setting)",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Matrix Iterative Analysis (Varga, 1962)",
+     "year": 1962,
+     "domain": "artificial intelligence",
+     "lens": "L1",
+     "type": "book",
+     "definition": "Varga (1962): matrix iterative analysis - the convergence theory of iterative methods for solving linear systems.",
+     "causal_claim": "Cited in the paper's appendix: a proof tool for the convergence arguments. Filed to test the appendix-tool discrimination (the Banach probe at exp-193 is the sibling case): a cited convergence reference for the proofs is apparatus for the theory, not a component of the learning rule.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (cited in the appendix)",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+     "year": 1983,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Barto, Sutton & Anderson (IEEE Trans. SMC, 1983), with Sutton's 1984 dissertation: a two-element adaptive controller - an actor element and a critic element - that learned control (pole balancing) from evaluative feedback alone, the critic learning by a temporal-difference rule.",
+     "causal_claim": "The parent's own prior embodiment, by the parent's author: sec.6.4 states the Adaptive Heuristic Critic 'uses a learning rule otherwise identical to TD(lambda)'s' for discounted cumulative outcomes. The 1988 paper is the generalization and theory of the rule the AHC had already carried into control; the abstract names the AHC third among prior TD uses ('the author's Adaptive Heuristic Critic'). Self-carriage is scored at the gates, as TRPO was at GAE and Russell 1998 at IRL.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session Abstract, sec.6.4",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Classifier system learning (Booker, 1982)",
+     "year": 1982,
+     "domain": "artificial intelligence",
+     "lens": "L3",
+     "type": "method",
+     "definition": "Booker (1982): learning mechanisms for classifier systems, named in Sutton's sec.1 census of prior temporal-difference uses.",
+     "causal_claim": "A census line: sec.1 of Sutton (1988) lists Witten (1977), Booker (1982) and Hampson (1983) among the prior appearances of temporal-difference ideas. Filed so the gate, not the scout's silence, judges a passing census citation (the passing-parenthesis discrimination).",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.1",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Adaptive prediction networks (Hampson, 1983)",
+     "year": 1983,
+     "domain": "artificial intelligence",
+     "lens": "L3",
+     "type": "method",
+     "definition": "Hampson (1983): adaptive prediction work named in Sutton's sec.1 census of prior temporal-difference uses.",
+     "causal_claim": "A census line, same ground as Booker (1982): named in the sec.1 survey of prior TD appearances, with no construction of the paper passing through it.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.1",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Temporal-difference prediction of discounted sums (Witten, 1977)",
+     "year": 1977,
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "type": "method",
+     "definition": "Witten (1977): the first proposal to update predictions of a discounted sum of future quantities from the temporal-difference discrepancy.",
+     "causal_claim": "Priority for the discounted error term: sec.6.4 and footnote 9 of Sutton (1988) credit Witten (1977) as the first to propose updating predictions of a discounted sum using the TD discrepancy. Filed to test the priority-vs-construction discrimination: one proposal, without the eligibility-trace machinery, the lambda generalization, or the convergence theory the parent supplies.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.6.4 and footnote 9",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Bellman optimality equations (Bellman, 1957)",
+     "year": 1957,
+     "domain": "artificial intelligence",
+     "lens": "L4",
+     "type": "theory",
+     "definition": "Bellman's optimality equations: the characterization of optimal value functions and policies in an MDP by the Bellman equations and the argmax optimality condition.",
+     "causal_claim": "Filed as the presupposition probe, on the strongest negative evidence the run recognizes: Bellman is ABSENT from the paper's ~40-entry reference list (find-verified in the full text read this session) and from its text; the paper's problem is learning predictions from experience, its equations are update rules rather than optimality conditions, and its only dynamic-programming contact is Denardo (1982), cited once as a formulation analogy. The prediction problem presupposes the MDP-style sequence setting without consuming the optimality equations.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (complete reference list, find-verified)",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Bucket brigade algorithm (Holland, 1986)",
+     "year": 1986,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "method",
+     "definition": "Holland (1986): the bucket brigade algorithm for classifier systems - credit for a rewarded action sequence is passed backward along the chain of classifiers that produced it.",
+     "causal_claim": "The sibling: sec.6.3 of Sutton (1988) compares TD with the bucket brigade and states that BOTH borrow their key idea - credit propagated backward through a sequence - from Samuel. A shared inheritance from Samuel is not a channel from Holland to Sutton; the bucket brigade is compared, not consumed.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.6.3",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+     "year": 1986,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "method",
+     "definition": "Rumelhart, Hinton & Williams (Nature, 1986): backpropagation - gradient descent on the error of a multilayer network's output, assigning credit structurally through the network's layers.",
+     "causal_claim": "The complementary sibling: sec.6.2 of Sutton (1988) sets TD beside backpropagation as the two answers to the credit-assignment problem - structural (which components) vs temporal (which times) - compared in the paper's own taxonomy, not consumed by its construction.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.6.2",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Temporal-difference model of classical conditioning (Sutton & Barto, 1981)",
+     "year": 1981,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "Sutton & Barto (1981; developed 1987): a temporal-difference model of classical (Pavlovian) conditioning, in which learning is driven by the difference between successive predictions of the unconditioned stimulus.",
+     "causal_claim": "The documentary carrier of the author's TD thinking from psychology: sec.1 of Sutton (1988) places TD inside a cluster of conditioning-model citations (Sutton & Barto 1981a/1987; Gelperin, Hopfield & Tank 1985; Moore et al. 1986; Klopf 1987) - the animal-learning literature where the successive-prediction idea was exercised before the 1988 theory. Filed to test the carrier discrimination: the conditioning model re-presents the idea for animal learning; the 1988 construction does not derive from the model.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.1",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Hedonistic neuron and drive-reinforcement theory (Klopf, 1972)",
+     "year": 1972,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "Klopf (1972; 'The Hedonistic Neuron', 1982): a neuronal learning theory in which a neuron acts to maximize its reinforcement, with learning driven by changes in predicted reinforcement - developed for conditioning and drive behavior.",
+     "causal_claim": "The parallel biological line: Klopf's hedonistic neuron is a TD-like rule in the conditioning tradition, but Sutton (1988) cites only Klopf's 1987 report, in the sec.1 conditioning cluster - the 1972/1982 hedonistic-neuron documents are NOT in the paper. Filed to test parallel-application: a similar rule in a neighboring field, exercised on conditioning, with no derivation channel into the 1988 construction. (The hedonistic line may be heard at a parent whose documents carry it.)",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.1 (Klopf 1987 report cited); Klopf (1972/1982) as the line's documents",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Backpropagation-AHC combination (Anderson, 1986)",
+     "year": 1986,
+     "domain": "artificial intelligence",
+     "lens": "L20",
+     "type": "method",
+     "definition": "Anderson (1986): a control system combining backpropagation with the Adaptive Heuristic Critic - the AHC co-author's application of both ingredients.",
+     "causal_claim": "Downstream, not upstream: Anderson's combination CONSUMES the AHC (and backpropagation) two years before the 1988 paper; it is an application of the parent's ingredients, cited in the paper's orbit as such. Filed to test the direction discrimination for creator-lineage filings.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (Anderson's combination as recorded in the paper's lineage)",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "AFOSR contract F33615-83-C-1078",
+     "year": 1983,
+     "domain": "artificial intelligence",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "U.S. Air Force Office of Scientific Research contract F33615-83-C-1078, acknowledged in Sutton (1988).",
+     "causal_claim": "Acknowledged funder of the parent paper's research programme. Filed to test the standing discrimination that funding acknowledged is not material inside the artifact (the NSF grant at exp-192 is the sibling case).",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (Acknowledgments)",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    },
+    {
+     "name": "Analysis of Samuel's checkers learning procedure (Christensen & Korf, 1986)",
+     "year": 1986,
+     "domain": "artificial intelligence",
+     "lens": "L23",
+     "type": "paper",
+     "definition": "Christensen & Korf (1986): a retrospective analysis and simplification of Samuel's checkers learning procedure.",
+     "causal_claim": "Commentary on the Samuel line, two years before the parent: a simplification and discussion of the very procedure the parent's sec.6.1 analyzes. Filed to test commentary-vs-channel: the parent engages Samuel's 1959 document itself, not the 1986 commentary on it.",
+     "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.6.1 (the Samuel procedure as the parent engages it)",
+     "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "widrow-hoff-adaptive-switching-circuits-1960-the-delta-rule-1960",
+      "candidate": {
+       "name": "Widrow & Hoff, Adaptive switching circuits (1960) - the delta rule",
+       "year": 1960,
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "type": "method",
+       "definition": "Widrow & Hoff (1960): the delta rule (LMS) - an adaptive element's weights are adjusted in proportion to the difference between its output and the desired output.",
+       "causal_claim": "The base update the parent generalizes: sec.2 of Sutton (1988) constructs TD(lambda) by generalizing the Widrow-Hoff rule - TD(1) IS the Widrow-Hoff rule applied to prediction; the construction replaces the rule's outcome target with the next prediction and sums the resulting temporal-difference errors with exponential (trace) weights. The paper works ON this rule, as GAE worked on the policy gradient theorem.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.2",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Widrow & Hoff, Adaptive switching circuits (1960) - the delta rule"
+      ],
+      "matched_node_id": "widrow-hoff-adaptive-switching-circuits-1960-the-delta-rule-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "samuel-s-checkers-player-samuel-1959-1959",
+      "candidate": {
+       "name": "Samuel's checkers player (Samuel, 1959)",
+       "year": 1959,
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "type": "method",
+       "definition": "Samuel (IBM J. of R&D, 1959): a checkers program that learned its board-evaluation polynomial from self-play, adjusting coefficients so evaluations predict game outcomes.",
+       "causal_claim": "The paper's own sec.6.1 is a full subsection on Samuel's procedure: his delta rule is analyzed as a temporal-difference method in intent (learning driven by the difference between successive evaluations, not only by final outcomes), with the documented deficiency that it carries no terminal constraint. Sec.6.3 adds that both TD and Holland's bucket brigade borrow their key idea from Samuel; the abstract names Samuel's checker player first among the prior uses of TD methods.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session Abstract, secs.6.1, 6.3",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Samuel's checkers player (Samuel, 1959)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "finite-markov-chains-kemeny-snell-1976-1976",
+      "candidate": {
+       "name": "Finite Markov chains (Kemeny & Snell, 1976)",
+       "year": 1976,
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "type": "book",
+       "definition": "Kemeny & Snell (Finite Markov Chains; cited in its 1976 edition): the theory of finite Markov chains, including the absorbing-chain machinery for chains with terminal states.",
+       "causal_claim": "Cited in the paper: the prediction problem and the convergence/optimality theorems are posed over absorbing Markov chains (sequences terminating in an outcome), and the candidate supplies that setting's standard machinery. Filed to test apparatus-vs-ancestry: the machinery frames the theorems' setting; no Kemeny & Snell result is a step of the TD construction.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (cited in the paper's references and theorem setting)",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Finite Markov chains (Kemeny & Snell, 1976)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "matrix-iterative-analysis-varga-1962-1962",
+      "candidate": {
+       "name": "Matrix Iterative Analysis (Varga, 1962)",
+       "year": 1962,
+       "domain": "artificial intelligence",
+       "lens": "L1",
+       "type": "book",
+       "definition": "Varga (1962): matrix iterative analysis - the convergence theory of iterative methods for solving linear systems.",
+       "causal_claim": "Cited in the paper's appendix: a proof tool for the convergence arguments. Filed to test the appendix-tool discrimination (the Banach probe at exp-193 is the sibling case): a cited convergence reference for the proofs is apparatus for the theory, not a component of the learning rule.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (cited in the appendix)",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Matrix Iterative Analysis (Varga, 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+      "candidate": {
+       "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+       "year": 1983,
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Barto, Sutton & Anderson (IEEE Trans. SMC, 1983), with Sutton's 1984 dissertation: a two-element adaptive controller - an actor element and a critic element - that learned control (pole balancing) from evaluative feedback alone, the critic learning by a temporal-difference rule.",
+       "causal_claim": "The parent's own prior embodiment, by the parent's author: sec.6.4 states the Adaptive Heuristic Critic 'uses a learning rule otherwise identical to TD(lambda)'s' for discounted cumulative outcomes. The 1988 paper is the generalization and theory of the rule the AHC had already carried into control; the abstract names the AHC third among prior TD uses ('the author's Adaptive Heuristic Critic'). Self-carriage is scored at the gates, as TRPO was at GAE and Russell 1998 at IRL.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session Abstract, sec.6.4",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "classifier-system-learning-booker-1982-1982",
+      "candidate": {
+       "name": "Classifier system learning (Booker, 1982)",
+       "year": 1982,
+       "domain": "artificial intelligence",
+       "lens": "L3",
+       "type": "method",
+       "definition": "Booker (1982): learning mechanisms for classifier systems, named in Sutton's sec.1 census of prior temporal-difference uses.",
+       "causal_claim": "A census line: sec.1 of Sutton (1988) lists Witten (1977), Booker (1982) and Hampson (1983) among the prior appearances of temporal-difference ideas. Filed so the gate, not the scout's silence, judges a passing census citation (the passing-parenthesis discrimination).",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.1",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Classifier system learning (Booker, 1982)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "adaptive-prediction-networks-hampson-1983-1983",
+      "candidate": {
+       "name": "Adaptive prediction networks (Hampson, 1983)",
+       "year": 1983,
+       "domain": "artificial intelligence",
+       "lens": "L3",
+       "type": "method",
+       "definition": "Hampson (1983): adaptive prediction work named in Sutton's sec.1 census of prior temporal-difference uses.",
+       "causal_claim": "A census line, same ground as Booker (1982): named in the sec.1 survey of prior TD appearances, with no construction of the paper passing through it.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.1",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Adaptive prediction networks (Hampson, 1983)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "temporal-difference-prediction-of-discounted-sums-witten-197-1977",
+      "candidate": {
+       "name": "Temporal-difference prediction of discounted sums (Witten, 1977)",
+       "year": 1977,
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "type": "method",
+       "definition": "Witten (1977): the first proposal to update predictions of a discounted sum of future quantities from the temporal-difference discrepancy.",
+       "causal_claim": "Priority for the discounted error term: sec.6.4 and footnote 9 of Sutton (1988) credit Witten (1977) as the first to propose updating predictions of a discounted sum using the TD discrepancy. Filed to test the priority-vs-construction discrimination: one proposal, without the eligibility-trace machinery, the lambda generalization, or the convergence theory the parent supplies.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.6.4 and footnote 9",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Temporal-difference prediction of discounted sums (Witten, 1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bellman-optimality-equations-bellman-1957-1957",
+      "candidate": {
+       "name": "Bellman optimality equations (Bellman, 1957)",
+       "year": 1957,
+       "domain": "artificial intelligence",
+       "lens": "L4",
+       "type": "theory",
+       "definition": "Bellman's optimality equations: the characterization of optimal value functions and policies in an MDP by the Bellman equations and the argmax optimality condition.",
+       "causal_claim": "Filed as the presupposition probe, on the strongest negative evidence the run recognizes: Bellman is ABSENT from the paper's ~40-entry reference list (find-verified in the full text read this session) and from its text; the paper's problem is learning predictions from experience, its equations are update rules rather than optimality conditions, and its only dynamic-programming contact is Denardo (1982), cited once as a formulation analogy. The prediction problem presupposes the MDP-style sequence setting without consuming the optimality equations.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (complete reference list, find-verified)",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Bellman optimality equations (Bellman, 1957)"
+      ],
+      "matched_node_id": "bellman-optimality-equations-bellman-1957-1957",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bucket-brigade-algorithm-holland-1986-1986",
+      "candidate": {
+       "name": "Bucket brigade algorithm (Holland, 1986)",
+       "year": 1986,
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "type": "method",
+       "definition": "Holland (1986): the bucket brigade algorithm for classifier systems - credit for a rewarded action sequence is passed backward along the chain of classifiers that produced it.",
+       "causal_claim": "The sibling: sec.6.3 of Sutton (1988) compares TD with the bucket brigade and states that BOTH borrow their key idea - credit propagated backward through a sequence - from Samuel. A shared inheritance from Samuel is not a channel from Holland to Sutton; the bucket brigade is compared, not consumed.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.6.3",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Bucket brigade algorithm (Holland, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "learning-representations-by-back-propagating-errors-rumelhar-1986",
+      "candidate": {
+       "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+       "year": 1986,
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "type": "method",
+       "definition": "Rumelhart, Hinton & Williams (Nature, 1986): backpropagation - gradient descent on the error of a multilayer network's output, assigning credit structurally through the network's layers.",
+       "causal_claim": "The complementary sibling: sec.6.2 of Sutton (1988) sets TD beside backpropagation as the two answers to the credit-assignment problem - structural (which components) vs temporal (which times) - compared in the paper's own taxonomy, not consumed by its construction.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.6.2",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)"
+      ],
+      "matched_node_id": "learning-representations-by-back-propagating-errors-rumelhar-1986",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "temporal-difference-model-of-classical-conditioning-sutton-b-1981",
+      "candidate": {
+       "name": "Temporal-difference model of classical conditioning (Sutton & Barto, 1981)",
+       "year": 1981,
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "Sutton & Barto (1981; developed 1987): a temporal-difference model of classical (Pavlovian) conditioning, in which learning is driven by the difference between successive predictions of the unconditioned stimulus.",
+       "causal_claim": "The documentary carrier of the author's TD thinking from psychology: sec.1 of Sutton (1988) places TD inside a cluster of conditioning-model citations (Sutton & Barto 1981a/1987; Gelperin, Hopfield & Tank 1985; Moore et al. 1986; Klopf 1987) - the animal-learning literature where the successive-prediction idea was exercised before the 1988 theory. Filed to test the carrier discrimination: the conditioning model re-presents the idea for animal learning; the 1988 construction does not derive from the model.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.1",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Temporal-difference model of classical conditioning (Sutton & Barto, 1981)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hedonistic-neuron-and-drive-reinforcement-theory-klopf-1972-1972",
+      "candidate": {
+       "name": "Hedonistic neuron and drive-reinforcement theory (Klopf, 1972)",
+       "year": 1972,
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "Klopf (1972; 'The Hedonistic Neuron', 1982): a neuronal learning theory in which a neuron acts to maximize its reinforcement, with learning driven by changes in predicted reinforcement - developed for conditioning and drive behavior.",
+       "causal_claim": "The parallel biological line: Klopf's hedonistic neuron is a TD-like rule in the conditioning tradition, but Sutton (1988) cites only Klopf's 1987 report, in the sec.1 conditioning cluster - the 1972/1982 hedonistic-neuron documents are NOT in the paper. Filed to test parallel-application: a similar rule in a neighboring field, exercised on conditioning, with no derivation channel into the 1988 construction. (The hedonistic line may be heard at a parent whose documents carry it.)",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.1 (Klopf 1987 report cited); Klopf (1972/1982) as the line's documents",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Hedonistic neuron and drive-reinforcement theory (Klopf, 1972)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "backpropagation-ahc-combination-anderson-1986-1986",
+      "candidate": {
+       "name": "Backpropagation-AHC combination (Anderson, 1986)",
+       "year": 1986,
+       "domain": "artificial intelligence",
+       "lens": "L20",
+       "type": "method",
+       "definition": "Anderson (1986): a control system combining backpropagation with the Adaptive Heuristic Critic - the AHC co-author's application of both ingredients.",
+       "causal_claim": "Downstream, not upstream: Anderson's combination CONSUMES the AHC (and backpropagation) two years before the 1988 paper; it is an application of the parent's ingredients, cited in the paper's orbit as such. Filed to test the direction discrimination for creator-lineage filings.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (Anderson's combination as recorded in the paper's lineage)",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Backpropagation-AHC combination (Anderson, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "afosr-contract-f33615-83-c-1078-1983",
+      "candidate": {
+       "name": "AFOSR contract F33615-83-C-1078",
+       "year": 1983,
+       "domain": "artificial intelligence",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "U.S. Air Force Office of Scientific Research contract F33615-83-C-1078, acknowledged in Sutton (1988).",
+       "causal_claim": "Acknowledged funder of the parent paper's research programme. Filed to test the standing discrimination that funding acknowledged is not material inside the artifact (the NSF grant at exp-192 is the sibling case).",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session (Acknowledgments)",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "AFOSR contract F33615-83-C-1078"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "analysis-of-samuel-s-checkers-learning-procedure-christensen-1986",
+      "candidate": {
+       "name": "Analysis of Samuel's checkers learning procedure (Christensen & Korf, 1986)",
+       "year": 1986,
+       "domain": "artificial intelligence",
+       "lens": "L23",
+       "type": "paper",
+       "definition": "Christensen & Korf (1986): a retrospective analysis and simplification of Samuel's checkers learning procedure.",
+       "causal_claim": "Commentary on the Samuel line, two years before the parent: a simplification and discussion of the very procedure the parent's sec.6.1 analyzes. Filed to test commentary-vs-channel: the parent engages Samuel's 1959 document itself, not the 1986 commentary on it.",
+       "source_title": "Sutton, 'Learning to predict by the methods of temporal differences', Machine Learning 3:9-44 (1988) - full text read this session sec.6.1 (the Samuel procedure as the parent engages it)",
+       "source_url": "https://link.springer.com/content/pdf/10.1023/A%3A1022633531479.pdf"
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Analysis of Samuel's checkers learning procedure (Christensen & Korf, 1986)"
       ],
       "matched_node_id": null,
       "pending_judge": false
