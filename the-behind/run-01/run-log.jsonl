@@ -13044,3 +13044,132 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "session": 91,
+ "expansion": 192,
+ "parent": "inverse-reinforcement-learning-ng-russell-2000",
+ "parent_name": "Inverse reinforcement learning (Ng & Russell)",
+ "parent_year": 2000,
+ "parent_depth": 3,
+ "date": "2026-11-28",
+ "provenance": "Session 91, expansion 2 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve backgrounded once by the runtime at 133s on VM CPU limits and completed normally - its result was awaited, never re-run; add-candidates verified by graph mtime/size). Resolve: 21 raw -> 21 distinct, 1 matched existing (the MDP LINK), 0 auto-merges, judge queue 0, dropped 0. The verdicts builder's count check passed (21 evaluations == 21 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (3 survivors: Bellman optimality equations 6.0, Russell 1998 4.5, linear programming 2.5; 2 fail-closed partials at 1.5: Sutton & Barto and Bertsekas & Tsitsiklis, the co-cited carriers; 5 at 0.5: Kalman, Rust, Monte Carlo evaluation, mountain-car, Ng-Harada-Russell 1999), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 21, survivors 3, created 3, linked 0, rejected 18, mediated rejections 1: Kalman via Boyd et al.). Created-node spot-check PASSED: all three new nodes' stored bottleneck, leap and prior_state are non-empty; their sources lists carry candidate-side titles with the PARENT paper's URL - the standing wart, logged, never hand-edited. Verification applied from work/verification_inverse-reinforcement-learning-ng-russell-2000.json (all three edges provisional, no mediation actions; the LP edge flagged there as the session's second most contestable admission). Expansion 191's sync (the checkpoint preceding this expansion) landed as commit 419c0987, verified by local blob-SHA recomputation against the remote tree. This record's own sync_commit rides the sync that carries it. Render verified fresh (309 nodes / 393 edges) before syncing. SESSION 91 CLOSES HERE: both ordered expansions (191 GAE, 192 IRL) are complete with checkpoints after each; session 92 was NOT started, per the resume order.",
+ "brief_correction": "The lineage framing for this parent - that its ancestry is the RL canon plus the authors' own shaping work - resolved mostly AGAINST the framing on the paper's documents. The shaping paper (Ng, Harada & Russell, 1999), the emotionally obvious admission, is cited ONLY in sec.7 as future work and was judged a fail-closed partial: its invariance class is the degeneracy's substrate, but no proof in secs.3-5 touches it, and documents govern over substrate arguments. The econometrics line the paper praises ('some of the basic ideas carry over', Rust 1994) likewise earned only a fail-closed partial - premise shared, machinery absent. What the documents actually consume is older and more specific: Bellman's optimality equations (substituted in Theorem 3's proof), Russell's own 1998 posing (quoted in sec.1), and - contestably - linear programming as the solution form the whole design was bent to fit.",
+ "grounding": "The parent paper has NO usable text layer in either standard PDF mirror (the ICML 2000 PDF's custom font encoding garbles pdftotext and pypdf identically; both mirrors are the same file). It was grounded this session by rendering the PDF to page images (pdftoppm, 200 dpi) and OCR (RapidOCR, installed into the run venv this session): 5,341 words, read IN FULL, including the complete 14-entry reference list, all three algorithm sections, the experiments and the acknowledgments. OCR noise is character-level (spacing, gamma rendered as various glyphs) and does not touch any quoted structure used in the verdicts; every quotation in the verdicts builder was cross-checked against the OCR text. This OCR route is the workaround of record if another pre-2005 ICML PDF shows the same garbling.",
+ "parent_record_note": "The parent's stored record was verified complete this session (name, year 2000, type theory, depth 3; stored bottleneck, prior_state and leap all non-empty and accurate against the paper). Its stored sources list is EMPTY - the standing wart pattern - left untouched.",
+ "scout": {
+  "builder": "run-01/work/build_scout_irl.py",
+  "raw_filings": 21,
+  "distinct_names_intended": 21,
+  "per_lens": {
+   "L1": 1,
+   "L2": 2,
+   "L3": 2,
+   "L4": 3,
+   "L6": 3,
+   "L11": 2,
+   "L17": 1,
+   "L19": 3,
+   "L20": 2,
+   "L21": 1,
+   "L23": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_inverse-reinforcement-learning-ng-russell-2000.json",
+  "dry_or_shortfall_lenses": [
+   "L1 (shortfall 1: LP at L11, carriers at L3; the sec.5 policy-solver subroutine is unnamed in the paper and deliberately not filed)",
+   "L2 (shortfall 2)",
+   "L3 (shortfall 2)",
+   "L5 (dry-with-finding: the degeneracy obstruction is diagnosed by the parent itself in sec.3.1)",
+   "L7 (dry-with-finding: the unique-optimality road is the parent's own deliberation, sec.3.1)",
+   "L8 (dry)",
+   "L9 (dry)",
+   "L10 (dry)",
+   "L12 (dry)",
+   "L13 (dry-with-finding: no LP solver or framework named)",
+   "L14 (dry)",
+   "L15 (dry)",
+   "L16 (dry)",
+   "L17 (shortfall 1: gridworld is the parent's own construction)",
+   "L18 (dry-with-finding: the observed policy is the object of study, not an instrument)",
+   "L20 (shortfall 2)",
+   "L21 (shortfall 1)",
+   "L22 (dry-with-finding: the enabling condition is the MDP machinery itself, filed at L1/L3/L4)",
+   "L23 (shortfall 1: Schmajuk & Zanutto 1997 and Touretzky & Saksida 1997 are the same motivation cluster as Watkins 1989)"
+  ]
+ },
+ "resolution": {
+  "raw": 21,
+  "distinct": 21,
+  "matched_existing": 1,
+  "auto_merges": 0,
+  "judge_queue": 0,
+  "dropped": 0,
+  "matched_ids": [
+   "a-markovian-decision-process-bellman-1957-1957"
+  ],
+  "identity_note": "The Bellman optimality equations candidate did NOT gray-match the existing MDP node or the Dynamic Programming node at resolution and stands as its own node; the three-way Bellman cluster (frame / method / optimality equations) is recorded in the equations node's verification record as a standing identity note, not silently merged."
+ },
+ "judgments": "None required: the judge queue was empty.",
+ "calendar_dropped_at_resolve": [],
+ "verdicts": {
+  "file": "run-01/work/verdicts_inverse-reinforcement-learning-ng-russell-2000.json",
+  "builder": "run-01/work/build_verdicts_irl.py",
+  "evaluations": 21,
+  "survivors": [
+   "Bellman optimality equations (Bellman, 1957) - NEW node, dry-run score 6.0, provisional (depth 4). Substitution admission: sec.2.2 states the paper 'will need two of the classical results concerning MDPs' (Theorems 1-2), and Theorem 3's proof substitutes the optimality condition directly - the characterization is the Bellman optimality equations rearranged with the reward as the unknown.",
+   "Learning agents for uncertain environments (Russell, 1998) - NEW node, dry-run score 4.5, provisional (depth 4). Problem-posing admission: sec.1 attributes the informal IRL characterization to it verbatim and the paper's three algorithms develop its cases in order. Self-carriage (Russell co-authors both) scored at Q11, thinness (an extended abstract) at Q3.",
+   "Linear programming (Dantzig, 1947) - NEW node, dry-run score 2.5, provisional (depth 4). FLAGGED contestable (see verification): admitted on Q2 (all three algorithms are LPs; the experiments solve them) plus sec.3.2's design-feedback sentence (the degeneracy heuristics 'were to a large extent chosen because they can be incorporated into a linear program') and the stored leap's own naming of the LP formulation as the leap's means. The discrimination against conjugate gradient at expansion 191: CG sat inside the consumer's solver (two removes, mediated via TRPO); LP is the parent's own solution form (one remove, no nameable mediator). Lowest survivor grade of the session; first in line for a rehearing if the generic-machinery line is ever tightened."
+  ],
+  "notable_rejections": [
+   "Policy invariance under reward transformations (Ng, Harada & Russell, 1999) - FAIL-CLOSED PARTIAL (0.5): the session's most instructive rejection. The shaping invariance class IS the degeneracy's structure and both authors carry over, but the paper cites it only in sec.7 as future work; no proof in secs.3-5 uses it. A future-work citation is not consumption - the substrate argument was made in the verdicts and set aside on the documents. Recorded in full so a later parent whose documents DO consume the theorem can rehear the relationship there.",
+   "Sutton & Barto (1998) and Neuro-Dynamic Programming (Bertsekas & Tsitsiklis, 1996) - FAIL-CLOSED PARTIALS (1.5 each): the co-cited carriers of Theorems 1-2; directness passes for both, gates earn only partials - the mechanism was admitted at its primary (Bellman). Consistent with the same book's verdict at expansion 191.",
+   "Structural estimation of MDPs (Rust, 1994) - FAIL-CLOSED PARTIAL (0.5): 'some of the basic ideas carry over' is a lineage acknowledgment; the premise (infer reward from optimizing behavior) is shared, but no Rust machinery (likelihood, nested fixed point) is instantiated anywhere in the paper.",
+   "Inverse optimal control (Kalman, 1964) - REJECTED mediated_via Boyd et al. (1994): named in sec.1's text without even a reference-list entry; the form in which the 1964 posing was alive in 2000 was Boyd's SDP solution, cited in the same breath. Boyd itself rejected as the sibling solution (compared, not consumed) - its role here is transmission conduit.",
+   "Monte Carlo policy evaluation (0.5) and the mountain-car task (0.5) - fail-closed partials on the apparatus/benchmark discriminations: the subroutine IS the one used (unlike its footnoted alternative, Kearns et al. 1999, rejected outright because 'can also be used here' is an offer, not a use), but it is generic and self-confessedly replaceable; the task is consumed in one experiment but cited to no source and is a measurement instrument, not a predecessor (the cart-pole discrimination at expansion 191).",
+   "Keeney & Raiffa (1976) rejected as the closest-work ancestor defined against on the sequential axis (the correction relation does not apply - no worked object is extracted); Sargent (1978) as a priority acknowledgment; the MDP (LINK) as framework presupposition (third Bellman-family verdict this session, each discriminated separately); the imitation-learning and hand-specified-reward practices as the replaced incumbents (the latter is the stored prior state itself); Montague et al. (1995), Doya & Sejnowski (1995) and Watkins (1989) as the motivation census (the assumed-known-reward literature is the foil, not a channel); the NSF grant under the funding discrimination."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_inverse-reinforcement-learning-ng-russell-2000.json",
+  "outcomes": {
+   "bellman-optimality-equations-bellman-1957-1957": "provisional",
+   "learning-agents-for-uncertain-environments-russell-1998-1998": "provisional",
+   "linear-programming-dantzig-1947-1947": "provisional (flagged: session's second most contestable admission, rehearing candidate)"
+  },
+  "mediation_actions": []
+ },
+ "totals_after": {
+  "nodes": 309,
+  "edges": 393,
+  "budget": "309/2000",
+  "expansions_done": 192,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 48,
+   "5": 58,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 292,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "bellman-optimality-equations-bellman-1957-1957",
+  "td-lambda-temporal-difference-learning-sutton-1988-1988",
+  "actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998",
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+  "ecma-262-first-edition-1997"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
