@@ -13724,3 +13724,160 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T09:49:16.181604+00:00",
+ "event": "expansion",
+ "session": 94,
+ "expansion": 197,
+ "parent": "ecma-262-first-edition-1997",
+ "parent_name": "ECMA-262, first edition (1997)",
+ "parent_year": 1997,
+ "parent_depth": 4,
+ "date": "2026-11-28",
+ "brief_correction": "The session brief framed this parent as a specification-lineage expansion and predicted the codification discrimination would dominate. The documents redirected the weight: the strongest channels proved to be (a) the two contributed base documents, which pass the codification test by REBUILDING (the committee integrated them and the merged draft's documented debts run clause-deep), and (b) the two incorporated standards (IEEE 754, Unicode 2.0), where sec.3 citation is compounded by pervasive instantiation. The lineage candidates the brief foregrounded (Self, Scheme, ANSI C, the LISP 1.5 manual) all resolved as mediated - their channels terminate at the language or at a base document. The expansion followed the documents, per standing discipline.",
+ "grounding": "Two sources read this session. (1) ECMA-262, 1st edition (June 1997) itself, text fetched from the tecfa.unige.ch mirror of the standard's PDF: Brief History ('The originating technology for this ECMA Standard is JavaScript. This technology has been offered by Netscape Communications for standardization in autumn 1996... adopted by the ECMA General Assembly of June 1997'); the COMPLETE sec.3 normative reference list (7 entries: ANSI X3.159-1989; ANSI/IEEE Std 754-1985; RFC 1738; Gay 1990; Gosling, Joy & Steele, The Java Language Specification, 1996; Ungar & Smith, Self, OOPSLA '87; The Unicode Standard, Version 2.0, 1996); sec.4 (the core language specified 'apart from any particular host environment'); sec.4.3.17 (String type = finite sequences of Unicode characters); sec.5.1.2 (lexical grammar terminals = 'the characters of the Unicode character set'); secs.8.5/11 (arithmetic pervasively 'governed by the rules of IEEE 754 double-precision arithmetic', find-verified ~20 occurrences); sec.9.8.1 (Gay's paper and code named only as an informative implementor pointer: 'Implementors of ECMAScript may find useful...'). Noted and NOT filed: sec.15.8.2's unfinished '[XXXREF]' fdlibm pointer (scope note in the dry-notes file). (2) Wirfs-Brock & Eich, 'JavaScript: The First 20 Years' (HOPL 2020), Part 2 secs.7-10 read in full: the December 1995 announcement proposed W3C/IETF, both unsuitable; Cargill steered to Ecma for speed and the ISO fast-track; TC39 approved December 1996, Microsoft joined Ecma simultaneously; first meeting 21-22 November 1996 at Netscape HQ; Reardon's accepted recommendation excluded the HTML object-model library (left to W3C); base documents = Netscape's preliminary JavaScript Language Specification for JavaScript 1.1 (Eich & McKinney; BNF 'similar to that used in the ANSI C language standard') and Microsoft's JScript Language Specification v0.1 (Welland & Smith's overnight rewrite; numbered-step pseudocode modeled on the LISP 1.5 Programmer's Manual; grammar borrowed from ANSI C), the Microsoft document chosen as editorial base; Gardner & Solton's 10 January 1997 merged draft (grammar conventions largely from the Netscape spec; expression/statement grammar structure and production names largely from Microsoft's); Katzenberger expanded the pseudocode against the running implementations; disputed cases settled by testing the implementations; the 15 January 1997 decision excluded host-specific library objects; Borland declined Ecma membership, so Gardner could not continue as editor and Sun lent Guy Steele (editor from late January 1997; seven drafts, 27 February-2 May 1997); Borland's Proposed JavaScript Extensions (Ecma/TC39/1996/006) deferred to a Proposed Extensions appendix (landed in ES3, not ES1); the name ECMAScript chosen because Sun held the JavaScript trademark; ES1 June 1997, 95 pages.",
+ "parent_record_note": "The parent's stored record was verified complete this session (name, year 1997, depth 4, priority 5.0, status provisional; stored bottleneck 'Before ECMA-262 first edition, JavaScript had no vendor-neutral standard at all', leap and prior_state all non-empty; successor ecma-262-third-edition-1999). No prior rejections existed for this parent. The stored record was NOT hand-edited.",
+ "provenance": "Session 94, expansion 1 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground at ~46s with the MiniLM embedder; the graph file was read back to confirm stage 'resolved', 20 distinct, the 6 matched ids, the 1 dropped candidate and the 9 judge pairs before judging). Resolve: 21 raw -> 20 distinct, 6 matched existing (JavaScript, JScript, Self, RFC 1738, Scheme, Netscape Communications), 0 auto-merges, judge queue 9, dropped 1, prefiltered 0. All 9 judge pairs decided DIFFERENT (the JavaScript 1.1 specification vs the JavaScript node - document vs subject language; the JScript Language Specification v0.1 vs the JScript node - paper document vs running implementation; the same two distinctions repeated as cand-cand pairs; Netscape Navigator 3.0 vs the JavaScript 1.2 (Navigator 4) node - different browser releases carrying different language versions; the LISP 1.5 Programmer's Manual vs the Lisp node - the 1962 manual vs the 1960 language; Borland's Proposed JavaScript Extensions vs the JavaScript node and vs the JavaScript candidate - a committee input document vs the language) and applied (9 applied, no unknown pair ids, 20 distinct confirmed by show-distinct). The verdicts builder's count check passed (20 evaluations == 20 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (7 survivors: JavaScript 1.1 language specification 5.5, JScript Language Specification v0.1 5.5, IEEE 754 5.0, JavaScript 4.5, Unicode Standard v2.0 4.5, Netscape Communications 4.0, JScript 3.0; 6 fail-closed partials: the Java Language Specification 2.0, Gay 1990 1.5, RFC 1738 1.5, Netscape Navigator 3.0 1.5, Ecma International 1.5, Proposed JavaScript Extensions 1.5; 4 mediated rejections; 3 plain rejections), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 20, survivors 7, created 4, linked 3, rejected 13, mediated rejections 4). Created-node spot-check PASSED: all four new nodes' stored bottleneck, leap and prior_state are non-empty (status provisional, depth 5, priorities 5.5/5.5/5.0/4.5). Verification applied from work/verification_ecma-262-first-edition-1997.json (all 7 edges provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 196's sync_commit = 89fd5bd2. Rendered with --out run-01/index.html (318 nodes / 410 edges) before syncing, per the session-91 render lesson. This record's own sync_commit rides the sync that carries it.",
+ "scout": {
+  "builder": "run-01/work/build_scout_ecma.py",
+  "raw_filings": 21,
+  "distinct_names_intended": 21,
+  "per_lens": {
+   "L1": 2,
+   "L2": 2,
+   "L3": 4,
+   "L6": 1,
+   "L7": 1,
+   "L9": 1,
+   "L16": 4,
+   "L19": 2,
+   "L21": 3,
+   "L23": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_ecma-262-first-edition-1997.json",
+  "dry_or_shortfall_lenses": [
+   "L1 (shortfall 2: a standard's incorporated components are its base documents, and the record names exactly two that were integrated - the Netscape and Microsoft specifications)",
+   "L2 (shortfall 2: the subject line (JavaScript) and the coeval line (JavaScript 1.2, filed deliberately for the resolver's year bound))",
+   "L4 (dry-with-finding: the problem - one language, divergent implementations, no neutral text - is posed by the situation the documents describe, not by a separate poser artifact; the posing institution is filed at L21)",
+   "L5 (dry-with-finding: the interoperability diagnosis is the era's common knowledge, voiced inside the process itself; no separate diagnosis artifact is consumed)",
+   "L6 (shortfall 1: JScript is the single incumbent whose divergence defines the leap)",
+   "L7 (shortfall 1: the W3C is the one documented declined venue; the IETF, named in the same 1995 announcement, rides inside the W3C filing's evidence)",
+   "L8 (dry: a language standard consumes no dataset; its inputs are documents, filed at L1/L3)",
+   "L9 (shortfall 1: Navigator 3.0, the implementation named in the edition's basis line)",
+   "L10 (dry: no material dependency exists for a language standard)",
+   "L11 (dry-with-finding: the wielded procedure is Ecma's own editorial process, filed at L21 as the venue institution)",
+   "L12 (dry: a paper standard of 1997 has no programmability layer; drafting tools were FrameMaker and Word - commodity apparatus, not filed)",
+   "L13 (dry: no framework or library layer; the first draft is a manual integration of the three contributions)",
+   "L14 (dry: no equipment artifact; the working group's test rigs were the vendors' own browsers, heard at L9)",
+   "L15 (dry: the standard runs on no service; sec.4 expressly defines the language apart from host environments)",
+   "L16 (the sec.3 census is filed here in the builder's lens map: IEEE 754, Unicode 2.0, ANSI C, HTML - 4 filings; HTML rides as the documented-exclusion filing)",
+   "L17 (dry-with-finding: no metric registered the first edition in its own time; conformance testing belongs to the successors)",
+   "L18 (dry-with-finding: the drafting's observation instrument was behavioral testing against the two running implementations, heard inside the JScript and Navigator 3.0 verdicts)",
+   "L19 (shortfall 2: Scheme (the language's semantic lineage) and the LISP 1.5 Programmer's Manual (the base document's style model))",
+   "L20 (dry-with-finding: the carriers are the parent's own producers - editor Guy Steele, the Borland/Microsoft/Netscape contributors - self-carriage; persons are not filed, their artifacts are: Steele's book at L3, the base documents at L1)",
+   "L21 (3 filings: Netscape Communications (the offeror), Ecma International (the venue), Sun Microsystems (the decomposed adjacency))",
+   "L22 (dry-with-finding: the timing condition - browser competition made 1996-97 the window - is documented in HOPL sec.7 and rides inside the Netscape and Ecma verdicts)",
+   "L23 (1 filing: Borland's Proposed JavaScript Extensions, the deferred forward agenda)",
+   "scope (all 7 sec.3 references filed: ANSI C and IEEE 754 and Unicode 2.0 and HTML at L16, the Java Language Specification, Gay 1990, Self and RFC 1738 at L3. Not filed: fdlibm, named only in sec.15.8.2's unfinished '[XXXREF]' pointer - an editorial placeholder, not a consumed artifact)"
+  ]
+ },
+ "resolution": {
+  "raw": 21,
+  "distinct": 20,
+  "matched_existing": 6,
+  "auto_merges": 0,
+  "judge_queue": 9,
+  "dropped": 1,
+  "matched_ids": [
+   "javascript-1995",
+   "jscript-1996",
+   "self-programming-language-1987",
+   "rfc-1738-uniform-resource-locators-url-berners-lee-masinter-1994",
+   "scheme-1975",
+   "netscape-communications-1994"
+  ],
+  "identity_note": "Nine gray-zone pairs, all judged DIFFERENT and applied before verdicts. The load-bearing distinctions: (1) the JavaScript 1.1 specification is a DOCUMENT about the language, not the language (cand-node vs JavaScript, and cand-cand vs the JavaScript candidate) - keeping them distinct is what allows the basis-document edge and the subject edge to coexist, as at session 11; (2) the JScript Language Specification v0.1 is Microsoft's paper document, not its running implementation (cand-node vs JScript, cand-cand vs the JScript candidate) - the document was the committee's editorial base while the implementation was its behavior oracle, two channels; (3) Navigator 3.0 (JS 1.1) vs the JavaScript 1.2 (Navigator 4) node - different releases, different language versions; (4) the LISP 1.5 Programmer's Manual (1962) vs the Lisp node (1960) - the manual is the artifact whose expository style is the documented channel; (5) Borland's Proposed JavaScript Extensions vs JavaScript (both pair kinds) - a committee input document is not the language."
+ },
+ "judgments": "Nine pairs, all DIFFERENT (see resolution.identity_note); applied via apply-judgments, stage judged, 20 distinct.",
+ "calendar_dropped_at_resolve": [
+  "JavaScript 1.2 (Navigator 4) - dropped by the resolver's year bound (dated the parent's own year, 1997); filed deliberately with its documented year as the coeval line: it is the documented basis of the THIRD edition (session 11), not the first, and Eich's hope of importing 1.2 semantics into ES1 was argued down in the working group (HOPL sec.9). Recorded here, not re-dated."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_ecma-262-first-edition-1997.json",
+  "builder": "run-01/work/build_verdicts_ecma.py",
+  "evaluations": 20,
+  "survivors": [
+   "JavaScript 1.1 language specification (Eich & McKinney, 1996) - NEW node, dry-run score 5.5, provisional (depth 5). One of the standard's two contributed base documents: Netscape's preliminary spec of the version the standard is documented as based on; the Gardner-Solton merged draft took its grammar conventions largely from it (HOPL sec.8). The codification discrimination is met by rebuilding - the text was integrated, not registered.",
+   "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996) - NEW node, dry-run score 5.5, provisional (depth 5). The committee's chosen editorial base: Welland & Smith's overnight rewrite at the organizing meeting, whose expression/statement grammar structure, production names and numbered-step pseudocode semantics descend into the published standard (HOPL sec.8).",
+   "IEEE 754 binary floating-point arithmetic (1985) - NEW node, dry-run score 5.0, provisional (depth 5). Sec.3 normative citation PLUS pervasive instantiation: sec.8.5 defines the Number type over IEEE 754 double precision and the arithmetic clauses are governed by its rules throughout (find-verified). Citation + instantiation, the strong channel - the deliberate contrast with RFC 1738 at this same parent.",
+   "JavaScript - LINK, dry-run score 4.5, provisional (depth unchanged). The subject relation: 'The originating technology for this ECMA Standard is JavaScript' (Brief History). Admitted on the session-11 precedent at the third edition (4.5 there, expressly 'subject relation, distinct from the basis relation'); the mediation attack via the basis document is recorded in the verification notes and fails - a subject is not mediated by its own basis text.",
+   "The Unicode Standard, Version 2.0 (1996) - NEW node, dry-run score 4.5, provisional (depth 5). Sec.3 citation plus instantiation at sec.4.3.17 (String = sequences of Unicode characters) and sec.5.1.2 (lexical grammar over the Unicode character set). Q3 partial: ISO/IEC 10646 was a substitutable parallel set in principle; the documents name Unicode.",
+   "Netscape Communications - LINK, dry-run score 4.0, provisional. Edge-scoped to the institutional act the standard's own Brief History names: the autumn-1996 offer of the technology for standardization (Q2 pass - before the offer there was no standardization track at all), plus convening/hosting TC39's organizing meeting at Netscape HQ. The artifacts it carried are heard separately; this edge claims no artifact content.",
+   "JScript - LINK, dry-run score 3.0, provisional. The second implementation made a vendor-neutral text necessary (the session-11 Q1 argument at the third edition, same score there - deliberate calibration parity); its behaviors are inside the clauses via Katzenberger's expansion of the pseudocode against the running implementations and the testing settlement of disputed cases."
+  ],
+  "notable_rejections": [
+   "The Java Language Specification (Gosling, Joy & Steele, 1996) - FAIL-CLOSED PARTIAL (2.0): two real channels - a sec.3 normative citation and editor carriage (its co-author Steele edited ECMA-262 through seven drafts) - but no clause of the standard is documented as derived from the book's text. Citation plus a person's formation is not the strong channel; directness partial, fails closed.",
+   "Correctly rounded binary-decimal conversions (Gay, 1990) - FAIL-CLOSED PARTIAL (1.5): sec.3 lists it, but the body's only passage is sec.9.8.1's informative pointer ('Implementors of ECMAScript may find useful the paper and code written by David M. Gay') - apparatus for implementors, not normative consumption by the standard's text.",
+   "RFC 1738, Uniform Resource Locators (URL) (1994) - FAIL-CLOSED PARTIAL (1.5, LINK): a sec.3 normative citation with NO consuming clause - the core language excludes the host layer (sec.4), so the locator grammar is never applied. Citation without instantiation, the weak channel; the deliberate contrast with IEEE 754 and Unicode at this same parent.",
+   "Netscape Navigator 3.0 (1996) - FAIL-CLOSED PARTIAL (1.5): the implementation the edition is documented as based on ('JavaScript 1.1 as implemented in Navigator 3.0'), and one of the two behavior oracles for disputed clauses - but the artifact consumed in the committee room was its specification (admitted). Directness through the binary itself is not established by the documents; partial fails closed.",
+   "Ecma International (1961) - FAIL-CLOSED PARTIAL (1.5): the venue. Its fast process and ISO fast-track are documented reasons the venue worked (HOPL sec.7), but a venue registers rather than enables - nothing of Ecma's apparatus is inside the clauses. The arena discrimination, applied to the process's own institution.",
+   "Proposed JavaScript Extensions (Borland International, 1996) - FAIL-CLOSED PARTIAL (1.5): genuinely in the room (Ecma/TC39/1996/006) and genuinely heard - and deferred to a Proposed Extensions appendix; its contents (classes, try/catch, switch) are the THIRD edition's substance, not the first's. Heard-and-deferred is not consumption. Carried flag: this document belongs to the third edition's lineage; it was not filed at session 11's third-edition expansion, and a future rehearing would have to be raised there, not assumed.",
+   "ANSI C standard (X3.159-1989) - REJECTED mediated_via The JScript Language Specification, Version 0.1 (Welland & Smith, 1996): both documented borrowings (the JScript document's grammar; the Netscape spec's BNF style 'similar to that used in the ANSI C language standard') are acts of the base documents; the committee consumed the base documents, not the C standard (whose own sec.3 citation in ECMA-262 has no consuming clause). Expected to be rediscovered when the mediator is expanded.",
+   "LISP 1.5 Programmer's Manual (McCarthy & Levin, 1962) - REJECTED mediated_via The JScript Language Specification, Version 0.1 (Welland & Smith, 1996): its documented channel is the base document's style model (numbered-step pseudocode 'modeled after the form used in the LISP 1.5 Programmer's Manual', HOPL sec.8) - the chain's final link is the admitted base document.",
+   "Self (programming language) (1987) - REJECTED mediated_via JavaScript (LINK): sec.3 cites the Self paper, but the standard's object clauses specify JavaScript's prototype model; Self's influence is on the language's design and arrives already embodied in it. Citation registering a lineage the parent does not consume - the codification discrimination applied to a citation.",
+   "Scheme (1975) - REJECTED mediated_via JavaScript (LINK): lexical closures and first-class functions are Scheme's semantics as embodied in JavaScript's design; sec.3 does not cite Scheme (find-verified against the complete reference list). The influence belongs at the language's own edge.",
+   "World Wide Web Consortium (W3C, 1994) - REJECTED as the cited-and-declined venue: proposed in the December 1995 announcement, found unsuitable, and the adjacent object-model work was deliberately left to it - i.e. excluded from this standard. A non-choice is not a channel.",
+   "HTML (Berners-Lee, 1993) - REJECTED on documented non-incorporation: two founding scope decisions (Reardon's recommendation; 15 January 1997) and sec.4's host-independence clause constitute the standard against absorbing the document layer. What HTML enabled is JavaScript's enabling condition, heard at the language's edges.",
+   "Sun Microsystems (1982) - REJECTED by decomposition: its documented touches (existing Ecma membership; lending Guy Steele when Borland's editor had to stop; holding the JavaScript trademark, hence the name ECMAScript) each reach the parent through a filed channel (the editor's formation at the JLS filing; the venue at the Ecma filing) or concern the parent's name, not its making. No institutional channel of its own survives."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_ecma-262-first-edition-1997.json",
+  "outcomes": {
+   "javascript-1-1-language-specification-eich-mckinney-1996-1996": "provisional",
+   "the-jscript-language-specification-version-0-1-welland-smith-1996": "provisional",
+   "ieee-754-binary-floating-point-arithmetic-1985-1985": "provisional",
+   "the-unicode-standard-version-2-0-1996-1996": "provisional",
+   "javascript-1995": "provisional",
+   "netscape-communications-1994": "provisional",
+   "jscript-1996": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Base documents: the Q1 attacks (each could supposedly be dropped for the other) fail on HOPL sec.8's merge accounting - the debts are disjoint (grammar conventions vs grammar structure/production names/pseudocode) and both texts were integrated; the JScript document's mediation attack via its own implementation fails because the committee consumed the document while the implementation is admitted on the separate behavior-oracle channel. IEEE 754: the citation-only attack (the RFC 1738 pattern) fails on find-verified pervasive instantiation. Unicode: ISO 10646 substitutability is the live risk - Q3 already partial, outcome capped provisional on it. JavaScript: the mediation attack via the basis document is recorded and fails on the subject relation plus the session-11 precedent. Netscape Communications: the arena attack (Ecma failed closed as venue at this same parent) is the standing risk - the discrimination is the documented initiating act in the parent's own front matter vs a housing process; outcome provisional partly on it. JScript: the mediation attack via its own specification fails on the documented behavior channel (pseudocode expanded against, and disputed cases settled by testing, the running implementations)."
+ },
+ "totals_after": {
+  "nodes": 318,
+  "edges": 410,
+  "budget": "318/2000",
+  "expansions_done": 197,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 65,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 301,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+  "the-jscript-language-specification-version-0-1-welland-smith-1996",
+  "netscape-communications-1994",
+  "neural-network-based-language-models-for-highly-inflective-l-2009",
+  "pushshift-reddit-crawl-baumgartner-2015-2015"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}

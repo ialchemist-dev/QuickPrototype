@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T09:32:52+00:00",
-  "expansions_done": 196,
-  "raw_candidates_seen": 8694,
+  "updated_at": "2026-11-28T09:48:26+00:00",
+  "expansions_done": 197,
+  "raw_candidates_seen": 8715,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -34675,6 +34675,88 @@
     "name": "Multiple documents summarization based on evolutionary optimization algorithm (Alguliev et al., 2013)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "The Java Language Specification (Gosling, Joy & Steele, 1996)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "Correctly rounded binary-decimal conversions (Gay, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "Self (programming language)",
+    "reason": "mediated_via: JavaScript",
+    "at": "2026-11-28T09:47:44+00:00",
+    "mediated_via": "JavaScript"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "World Wide Web Consortium (W3C, 1994)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "Netscape Navigator 3.0 (1996)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "ANSI C standard (X3.159-1989)",
+    "reason": "mediated_via: The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+    "at": "2026-11-28T09:47:44+00:00",
+    "mediated_via": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "HTML (Berners-Lee, 1993)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "Scheme",
+    "reason": "mediated_via: JavaScript",
+    "at": "2026-11-28T09:47:44+00:00",
+    "mediated_via": "JavaScript"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "LISP 1.5 Programmer's Manual (McCarthy & Levin, 1962)",
+    "reason": "mediated_via: The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+    "at": "2026-11-28T09:47:44+00:00",
+    "mediated_via": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "Ecma International (1961)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "Sun Microsystems (1982)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "ecma-262-first-edition-1997",
+    "name": "Proposed JavaScript Extensions (Borland International, 1996)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:47:44+00:00"
    }
   ]
  },
@@ -36475,12 +36557,16 @@
     {
      "title": "JavaScript: The First 20 Years (HOPL)",
      "url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "title": "ECMA-262, 1st edition (June 1997), read this session, Brief History",
+     "url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Multiples test on Q3: the committee chose among this language's own snapshots (1.1-era versus 1.2 behavior) as the edition's basis, so necessity attaches to the language rather than to any single version; Q3 stays partial, node stays provisional. Mediation attack: via JavaScript 1.2 (the edition's stated documentary basis is the version, not the 1995 debut) - fails as a kill: the edition standardizes the language as a whole, not only 1.2's delta; its clauses cover the full language whose identity dates from 1995, and the version-specific basis is recorded as its own edge from this same parent. The two edges record distinct relations (subject versus basis), not a chain - killing this edge would falsely claim the standard is of a 1997 version rather than of the language. No mediator named; edge stands, provisional.",
-    "at": "2026-11-25T03:21:28+00:00"
+    "notes": "Verifier attacks run (sec.6.4). (1) Mediation attack - the expected one, recorded in full: the committee's documentary channel ran through the JavaScript 1.1 specification, so is this edge mediated by that filing? It is not: a standard's subject is not a milestone that its basis text mediates; the basis text is the subject's own document, admitted on the documentary relation, and this edge carries the subject relation ('The originating technology for this ECMA Standard is JavaScript', Brief History). The same two-edge structure was admitted at the third edition in session 11, where JavaScript scored 4.5 expressly as 'subject relation, distinct from the basis relation'. Attack fails on the documents and the precedent. (2) Q1 attack: is the subject relation too weak to be an impossibility flip (a standard could standardize a dead or undeployed language)? The flip here is constitutive, not causal-convenience: without this language there is no ECMA-262 at all, and the December 1995 announcement, the 1996 offer and the committee's entire work presuppose it. (3) Q3: the committee standardized the 1.1 snapshot as documented, not the living language in the abstract - necessity scored partial on that honest basis. (4) Date/direction: 1995 < 1997; direction per the Brief History. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T09:48:26+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T02:42:55+00:00"
@@ -36614,7 +36700,7 @@
    "prior_state": "One vendor's implementation and its house specification were the only definitions.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -36649,12 +36735,16 @@
     {
      "title": "JavaScript: The First 20 Years (HOPL)",
      "url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "title": "Speaking JavaScript, ch.5; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.4, 7-8",
+     "url": "https://www.oreilly.com/library/view/speaking-javascript/9781449365028/ch05.html"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "This edge carries the expansion's strongest single claim (Q1 pass: the second implementation made a vendor-neutral text necessary), so it gets the hardest attack. Q1 attack: was Microsoft's role substantive, or did the committee mostly ratify Netscape's text with JScript as decoration? The HOPL history records the standardization as a genuine two-vendor process begun in November 1996 with Microsoft at the table, and the parent node's own prior state - written when this node was admitted at the RFC parent - names the two divergent implementations as the condition the edition answered. The attack does not break the claim, but the falsification stands on the edge: if drafting records show the text tracked Netscape's behavior alone, this edge should be downgraded at a later verification. Multiples test on Q3: symmetric with JavaScript 1.2 - joint necessity, Q3 stays partial, node stays provisional. Mediation attack: via Microsoft (the institution) - fails inverted: in evaluation the institution was itself rejected as mediated via this artifact; the graph's unit is the implementation whose behavior was arbitrated. No mediator named; edge stands, provisional.",
-    "at": "2026-11-25T03:21:28+00:00"
+    "notes": "Verifier attacks run (sec.6.4). (1) Mediation attack: does the implementation reach the standard only through its paper specification (admitted separately at this parent)? The documents show two channels: Katzenberger expanded the base document's pseudocode AGAINST the running implementations, and disputed edge cases were settled by testing them (HOPL sec.8, Gabriel recollection) - behavior flowed from the running code into the text, a channel the paper document does not mediate because the document was itself being corrected by the code. Attack fails. (2) Q1 attack: would standardization have happened anyway on Netscape's offer alone? With one implementation, the offer standardizes a house dialect - possible but a different (and historically unattempted) act; the committee that actually formed integrated the second vendor from its first meeting, and the session-11 expansion of the third edition admitted this same candidate at the same 3.0 on the necessity argument. The score parity across editions is deliberate calibration, recorded. (3) Multiples on Q3: a different second implementation could have forced the same necessity - scored partial. (4) Date/direction: 1996 < June 1997; direction is the divergence the standard arbitrates. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T09:48:26+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T03:21:05+00:00"
@@ -36823,12 +36913,16 @@
     {
      "title": "A Brief History of JavaScript (Auth0)",
      "url": "https://auth0.com/blog/a-brief-history-of-javascript/?part3"
+    },
+    {
+     "title": "ECMA-262, 1st edition (June 1997), read this session, Brief History; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.7-8",
+     "url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Multiples test on Q3: Microsoft fielded a rival browser within a year, so the institution was not metaphysically necessary - but in the May-September 1995 window no other vehicle combined audience, release train and bundling willingness; Q3 stays partial, node stays provisional. Weakest-evidence attack on Q1: an institution is not an artifact; the verdict follows the graph's standing precedents (Google Brain at Transformer, OpenAI at RLHF) and names the specific artifacts carried - the Scheme brief, the Java mandate, the 2.0 beta deadline - each documented in the parent's own record. Mediation attack: via Brendan Eich (the person) - fails: persons are not nodes in this graph unless carried by an artifact; the hire is the institution's act, and Eich's own biography candidate was disposed here as partial-directness. Anachronism check: founded April 1994, thirteen months before the prototype. Edge stands, provisional. The degenerate-manufacturer concern from the G80 session is noted: unlike NVIDIA-at-G80, this institution did not merely produce the parent - it posed the problem and set the design mandates, which is the discriminative fact.",
-    "at": "2026-11-25T03:37:31+00:00"
+    "notes": "Verifier attacks run (sec.6.4). (1) Arena attack - the live one: is this the venue pattern one level up (Ecma International failed closed at this parent as the arena)? The discrimination: Ecma housed a process that others' acts initiated; Netscape performed the initiating act itself - the autumn-1996 offer of the technology for standardization, named with its actor in the standard's own Brief History - and hosted and staffed TC39's organizing meeting at its headquarters. An initiating act documented in the parent's front matter is a channel; a venue is not. The attack is recorded as the edge's standing risk and the outcome is capped at provisional partly on it. (2) Decomposition attack: does the institutional edge smuggle in the artifacts Netscape carried? The edge is scoped in its verdicts to the offer, the convening and the hosting; the specification and the implementation lineage are admitted on their own documentary channels at this parent (the JS 1.1 specification) and the parent's successor edge (JavaScript, from this node's own expansion history). No artifact content is claimed here. (3) Funding-adjacency attack: no funding channel is claimed or scored; the scored channels are the offer (Q2 pass) and the material startup costs of the process (Q4). (4) Date/direction: founded 1994; the offer predates the June 1997 standard by the process's whole length. Outcome provisional.",
+    "at": "2026-11-28T09:48:26+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T03:37:10+00:00"
@@ -43842,6 +43936,122 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T09:32:28+00:00"
+  },
+  "javascript-1-1-language-specification-eich-mckinney-1996-1996": {
+   "id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+   "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+   "aliases": [],
+   "year": 1996,
+   "domain": "language standards",
+   "type": "other",
+   "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+   "bottleneck": "Before the JavaScript 1.1 specification, the language existed only as Netscape's implementation: there was no vendor-neutral text stating its grammar and semantics that anyone else could implement or standardize from.",
+   "leap": "Eich and McKinney's preliminary JavaScript Language Specification for JavaScript 1.1 (1996) wrote the language down as a document - BNF grammar in the ANSI C style - and Netscape contributed it to Ecma's TC39 as a base document; the first edition's grammar conventions largely descend from it.",
+   "prior_state": "The Navigator implementation was the language's only definition; knowledge of its behavior lived in the binary and in its author's head.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9",
+     "url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Q1 attack: could TC39 have produced the standard from Microsoft's document alone, making this filing a courtesy? Tried against the HOPL record: the committee agreed to integrate the Netscape, Microsoft and Borland contributions; the Gardner-Solton merged draft (10 Jan 1997) took its grammar conventions largely from the Netscape specification, and the published standard's Brief History states it is 'based on JavaScript 1.1', the version this document specifies. The attack fails on the documents. (2) Multiples on Q3: the JScript Language Specification is a parallel contribution, not an independent multiple of this one - the two are complements with disjoint documented debts (grammar conventions vs grammar structure/production names/pseudocode), and both are admitted; necessity was already scored partial on exactly this ground. (3) Date/direction: the document was handed out at TC39's organizing meeting (21-22 Nov 1996), seven months before the June 1997 adoption; direction is contribution, documented in HOPL sec.8. (4) Mediation attack: is the true enabler JavaScript itself, with this document a mere transcription? The committee consumed THIS text - it is what was merged - while the language is admitted separately on the subject relation; a basis document is not a mediator between the language and its standard, it is the standard's raw material. Attack fails. Outcome capped at provisional per uniform practice: the merge attribution rests on the HOPL history's reconstruction of a 1996-97 committee process.",
+    "at": "2026-11-28T09:48:26+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:47:44+00:00"
+  },
+  "the-jscript-language-specification-version-0-1-welland-smith-1996": {
+   "id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+   "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+   "aliases": [],
+   "year": 1996,
+   "domain": "language standards",
+   "type": "other",
+   "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+   "bottleneck": "Before the JScript Language Specification, no one had written the language's semantics as an operational procedure: specifications described syntax, and meaning lived in implementations.",
+   "leap": "Welland and Smith rewrote Microsoft's document overnight at TC39's organizing meeting into a specification whose semantics are numbered-step pseudocode modeled on the LISP 1.5 Programmer's Manual; the committee adopted it as ECMA-262's editorial base, and its grammar structure, production names and algorithm style descend into the first edition.",
+   "prior_state": "Language definitions were vendor house documents and binaries; operational pseudocode semantics for a commercial language had no precedent in the room.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9",
+     "url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Q1 attack: was this document really the editorial base, or a ceremonial contribution? HOPL sec.8 is explicit: the committee agreed the Microsoft document would be the base text for the standard; its expression/statement grammar structure and production names descend into the merged draft, and its numbered-step pseudocode became the standard's semantic method. Attack fails. (2) Mediation attack - the live one: the document was rewritten overnight FROM Microsoft's running implementation, so is JScript-the-implementation the true enabler and this a copy? The committee's consumed artifact was the document (nothing else of Microsoft's was in the room as text); the implementation is admitted separately on the distinct behavior-oracle channel (Katzenberger's expansion and edge-case testing against the running code). Document-as-base and behavior-as-oracle are different channels, both documented; neither mediates the other. Attack fails, recorded. (3) Date/direction: written 21-22 Nov 1996 at the organizing meeting, before every draft of the standard; direction is contribution. (4) Q3 multiples: the Netscape specification is the parallel complement, not a substitute - it offered no operational semantics; necessity scored partial on this basis. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T09:48:26+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:47:44+00:00"
+  },
+  "ieee-754-binary-floating-point-arithmetic-1985-1985": {
+   "id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+   "name": "IEEE 754 binary floating-point arithmetic (1985)",
+   "aliases": [],
+   "year": 1985,
+   "domain": "language standards",
+   "type": "standard (K8)",
+   "definition": "The IEEE Standard for Binary Floating-Point Arithmetic (ANSI/IEEE Std 754-1985): the binary formats, rounding modes, and special values (NaN, infinities, signed zero) that made floating-point arithmetic portable across machines.",
+   "bottleneck": "Before IEEE 754, every computer's floating-point arithmetic behaved differently, so no language could state portable numeric semantics.",
+   "leap": "IEEE 754 (1985) fixed the binary floating-point formats and their operation semantics - rounding, NaN, infinities, signed zero - giving later language standards an arithmetic they could incorporate by reference, as ECMA-262 does for its entire Number type.",
+   "prior_state": "Vendor-specific arithmetics (IBM hexadecimal float, VAX formats, Cray arithmetic) with incompatible rounding and exception behavior.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "ECMA-262, 1st edition (June 1997), read this session, secs.3, 4.3.20, 8.5, 11",
+     "url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Citation-only attack - the dangerous one for a sec.3 reference: is this registration rather than consumption (the RFC 1738 pattern, which failed closed at this same parent)? Find-verified against the standard's text: sec.8.5 defines the Number type as IEEE 754 double-precision, and the governing phrase 'governed by the rules of IEEE 754 double-precision arithmetic' recurs across the arithmetic clauses (~20 occurrences, secs.8.5 and 11 passim), with NaN, infinities and signed zero - IEEE 754's apparatus - as the clauses' working concepts. Citation PLUS pervasive instantiation: the strong channel. Attack fails. (2) Multiples on Q3: no rival binary arithmetic standard was citable in 1996; the attack found none. (3) Mediation attack: does the channel run through the base documents (which also presuppose IEEE arithmetic)? The standard's own clauses state the governance directly; even if the base documents share the presupposition, the parent's text instantiates the candidate itself, which is the channel judged. Attack fails. (4) Date/direction: 1985, twelve years prior; direction is incorporation by the later standard. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T09:48:26+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:47:44+00:00"
+  },
+  "the-unicode-standard-version-2-0-1996-1996": {
+   "id": "the-unicode-standard-version-2-0-1996-1996",
+   "name": "The Unicode Standard, Version 2.0 (1996)",
+   "aliases": [],
+   "year": 1996,
+   "domain": "language standards",
+   "type": "standard (K8)",
+   "definition": "The Unicode Consortium's universal character set standard, version 2.0 (Addison-Wesley, 1996) - the coded character repertoire ECMA-262's own sec.3 cites.",
+   "bottleneck": "Before Unicode, text lived in incompatible code pages, so a language standard could not say what a character or a string was, portably.",
+   "leap": "The Unicode Standard (version 2.0, 1996) assigned the characters of the world's writing systems code points in one universal repertoire - the set ECMA-262 defines its String type and its lexical grammar over.",
+   "prior_state": "ASCII plus vendor and national code pages (Latin-1, Shift-JIS, GB) with mutually incompatible assignments.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "ECMA-262, 1st edition (June 1997), read this session, secs.3, 4.3.17, 5.1.2",
+     "url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Citation-only attack: does any clause consume the repertoire, or is sec.3's entry apparatus? Sec.4.3.17 defines the String type as 'finite ordered sequences of Unicode characters' and sec.5.1.2 builds the lexical grammar's terminals on 'the characters of the Unicode character set' - the definitions are written in the candidate's terms. Instantiation confirmed; attack fails. (2) Multiples/substitutability on Q3 - the live risk, already priced: ISO/IEC 10646 was the parallel universal set (synchronized with Unicode), so a different citable repertoire existed in principle. The documents name Unicode 2.0, and the String definition is Unicode's; necessity stays partial and the outcome is capped at provisional on exactly this ground. (3) Mediation attack: via the base documents or the implementations' character handling? The standard's own definitional clauses are the channel; no intermediary text states the repertoire for it. Attack fails. (4) Date/direction: version 2.0 published 1996, before the June 1997 standard; direction is incorporation. Outcome provisional.",
+    "at": "2026-11-28T09:48:26+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:47:44+00:00"
   }
  },
  "edges": [
@@ -83466,6 +83676,685 @@
     "counterfactual": "Remove LCSTS and the parent loses the documented precedent its own related-work section names as closest in genre AND method: the claim that a social platform's summary convention can be harvested at scale would stand in 2017 without its one demonstrated instance, and the parent's design - a five-step harvest of a marker convention - is that instance's recipe transposed. The platform difference (Weibo to Reddit) is the parent's contribution, not an intermediary milestone.",
     "mediator": null,
     "evidence": "Direct: named citation with the authors' own closest-work grading (sec.2) plus instantiation - the same collection method, executed. No mediator: the method passes from the 2015 paper to the 2017 design without an intervening artifact."
+   }
+  },
+  {
+   "predecessor_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+   "successor_id": "ecma-262-first-edition-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before this document, JavaScript existed only as Netscape's implementation: there was no text stating the language's grammar and semantics that a committee could adopt, edit and publish as a standard. Netscape contributed the preliminary JavaScript 1.1 specification to TC39 as a base document, and the standard's own Brief History records that ECMA-262 is 'based on JavaScript 1.1'.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9; ECMA-262, 1st edition (June 1997), Brief History",
+     "falsification": "A pre-1996 vendor-neutral text of the language from which the committee could have started instead."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the standardization path for one language; the wider space (an edition line, a permanent committee) was realized by the standard itself rather than by the contributed draft.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "falsification": "Evidence the draft generated a family of successor documents beyond this parent."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Not strictly the only door - the committee also held Microsoft's document and chose it as editorial base - but the merged first draft took its grammar conventions largely from the Netscape specification, and the published standard is documented as based on the JavaScript 1.1 this document specifies; substitution would have produced a materially different text.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "falsification": "Evidence the merged draft's grammar conventions came from a source other than this specification."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "A contributed draft text collapsed the committee's production cost: TC39 edited and integrated existing documents instead of authoring a language definition from scratch, reaching seven full drafts between February and May 1997.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the language's first declarative model independent of the Navigator binary - a BNF grammar and prose semantics in the ANSI C style that others could reason about and implement from.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "A specification is an interface: implementors, the committee and later the Borland/Microsoft contributors all composed against this text.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "It was the object the draft loop iterated on: the Gardner-Solton merge and Steele's seven drafts are revisions of the contributed base documents, this one supplying the grammar conventions.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk for this parent: one of the two base documents of the standard, with its grammar conventions carried into the published text.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The contributed-draft-first pattern persisted in TC39's later practice, though that permanence reaches beyond this parent's documents.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:47:44+00:00",
+   "leap": {
+    "prior_state": "One vendor's implementation and its house specification were the only definitions.",
+    "jump": "The June 1997 first edition, edited by Guy L. Steele Jr. and based on JavaScript 1.1, made the language a citable standard for the first time and founded the edition line.",
+    "date": 1997
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the JavaScript 1.1 specification and the committee's merged first draft loses its grammar conventions and the standard loses the documented basis text its Brief History names; the channel is the contributed document itself, not a retelling of it.",
+    "mediator": null,
+    "evidence": "Direct consumption, named in the documents: HOPL sec.8 records the contribution and the merge's debts; the standard's Brief History records the basis. No intermediary milestone stands between this document and the parent."
+   }
+  },
+  {
+   "predecessor_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+   "successor_id": "ecma-262-first-edition-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before this document there was no operational-semantics formulation of the language at all, and no second-vendor text: specifications described syntax while meaning lived in implementations. The committee selected this document as ECMA-262's editorial base; the published standard's expression/statement grammar structure, production names and numbered-step pseudocode semantics descend from it.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "falsification": "An earlier operational specification of the language the committee could have taken as its base."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the operational-specification approach that every later edition inherited; that generativity is realized through this parent and its successors, so it is scored partial here.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8, 10",
+     "falsification": "Evidence the edition line abandoned the pseudocode style after the first edition."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The committee could in principle have taken the Netscape document as sole base - it chose Microsoft's - but the pseudocode semantics apparatus existed only in this document, so substitution would have changed the standard's semantic method, not merely its wording.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "falsification": "Evidence another contributed document offered a comparable operational semantics in November 1996."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "An overnight rewrite handed the organizing meeting a complete base text on its second day, collapsing months of drafting; Katzenberger then expanded its pseudocode against the running implementations rather than writing semantics from nothing.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Its numbered-step pseudocode IS an explanatory model of the language's semantics - the first operational model of JavaScript, in which every clause's behavior is a procedure that can be traced.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "As the chosen editorial base it became the interface the whole committee composed against: contributions from three vendors were integrated into its frame.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "The draft loop ran on this text: Steele's seven drafts revise it, and disputed edge cases were settled by testing the implementations and feeding the results back into its pseudocode.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk for this parent: the editorial base document, source of the standard's grammar structure, production names and algorithm style.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Its algorithm-step style became ECMA-262's permanent house style - modern editions still specify semantics as numbered steps - but that permanence is proven by successors, so it is scored partial at this parent.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:47:44+00:00",
+   "leap": {
+    "prior_state": "One vendor's implementation and its house specification were the only definitions.",
+    "jump": "The June 1997 first edition, edited by Guy L. Steele Jr. and based on JavaScript 1.1, made the language a citable standard for the first time and founded the edition line.",
+    "date": 1997
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the JScript Language Specification and the first edition has no editorial base and no pseudocode semantics: the committee's choice of this document as base, and the merge's documented debts to it, are the channel.",
+    "mediator": null,
+    "evidence": "Direct consumption, named in the documents: HOPL sec.8 records the overnight rewrite, the committee's selection of the Microsoft document as base, and which parts of the merged draft descend from it. No intermediary milestone."
+   }
+  },
+  {
+   "predecessor_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+   "successor_id": "ecma-262-first-edition-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The standard's entire numeric semantics presupposes this candidate: sec.8.5 defines the Number type over IEEE 754 double precision and the arithmetic clauses are pervasively 'governed by the rules of IEEE 754 double-precision arithmetic' (find-verified across the text). Before IEEE 754, no portable arithmetic semantics existed that a language standard could incorporate by reference - vendor arithmetics disagreed on rounding, exceptions and formats.",
+     "source": "ECMA-262, 1st edition (June 1997), secs.3, 8.5, 11; ANSI/IEEE Std 754-1985",
+     "falsification": "A rival 1990s arithmetic standard the clauses could have incorporated instead."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the space of portable numeric semantics for the whole field after 1985; in relation to this parent the space-opening is inherited background rather than generated by the parent's own move, so partial.",
+     "source": "ECMA-262, 1st edition (June 1997), sec.3",
+     "falsification": "Evidence ECMA-262's drafters treated arithmetic as an open design question rather than a settled incorporation."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Not substitutable: the Number type IS the IEEE 754 double-precision type, and its operations - NaN propagation, signed zero, rounding - are IEEE 754's operations; no alternative citable arithmetic existed in 1996 that the clauses could have been written in.",
+     "source": "ECMA-262, 1st edition (June 1997), secs.8.5, 11.9-11.11",
+     "falsification": "A passage of the standard defining arithmetic independently of IEEE 754's rules."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "IEEE 754 supplies the explanatory model of the parent's numbers: NaN, infinities, signed zero and round-to-nearest are its concepts, and the standard's numeric clauses cannot be understood except through them.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "A standard interface in the strictest sense: the double format and its operation semantics are the contract every arithmetic clause of ECMA-262 composes with.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach extends across all of computing, far beyond this parent - breadth that is real but generic to every consumer of the standard.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It displaced vendor arithmetic chaos as the reference semantics: a 1997 language standard states numbers in IEEE 754 terms or not at all.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Trunk for the numeric half of the standard - every arithmetic clause - though the language's object and control semantics descend from other channels.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "A permanent reset: no later edition, and no serious later language standard, re-specifies arithmetic; incorporation of IEEE 754 is the settled end state.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:47:44+00:00",
+   "leap": {
+    "prior_state": "One vendor's implementation and its house specification were the only definitions.",
+    "jump": "The June 1997 first edition, edited by Guy L. Steele Jr. and based on JavaScript 1.1, made the language a citable standard for the first time and founded the edition line.",
+    "date": 1997
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove IEEE 754 and the standard's Number type and arithmetic clauses have no semantics at all: the text does not summarize the arithmetic, it incorporates it - sec.3 cites the standard normatively and the clauses instantiate its rules on page after page.",
+    "mediator": null,
+    "evidence": "Direct: normative citation PLUS pervasive instantiation - the strong channel. No intermediary: the clauses are written in IEEE 754's terms, not in a summary of them."
+   }
+  },
+  {
+   "predecessor_id": "javascript-1995",
+   "successor_id": "ecma-262-first-edition-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The standard's subject: its Brief History opens 'The originating technology for this ECMA Standard is JavaScript', and the December 1995 announcement, the contributed base documents and the June 1997 adoption all exist because this language existed and was deployed. Before JavaScript there was nothing to standardize. The relation is the subject relation, admitted at the third edition in session 11 on the same terms.",
+     "source": "ECMA-262, 1st edition (June 1997), Brief History; Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-10",
+     "falsification": "Evidence ECMA-262 standardizes some other language or technology."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The language opened the space the standard occupies - a deployed, soon multi-vendor language needing arbitration - but the space-opening belongs to the language's deployment as much as to the language, so partial.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-8",
+     "falsification": "Evidence the standardization was proposed for an undeployed language."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "As subject it cannot be substituted at all; scored partial because the committee standardized the JavaScript 1.1 snapshot as documented in the contributed specification, not the living language in the abstract - the documentary channel is heard at the specification's own filing.",
+     "source": "ECMA-262, 1st edition (June 1997), Brief History; Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "falsification": "Evidence the committee worked from the running language without any basis document."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "A deployed language collapsed the standard's adoption cost: the constituency of implementors and authors already existed, which an undeployed language's standard would have had to create.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The language embodies the semantic model - prototype objects, first-class functions - that the standard had to describe; the model is the language's design, described rather than supplied as theory.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The language is the interface every clause specifies: its surface syntax and object model are the contract the standard publishes.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It displaced the prior state in which one vendor's dialect was the de facto definition: after standardization, 'JavaScript' names the thing two vendors' implementations both claim to be.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the standard's originating technology and subject, named in its own first paragraph.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The language's permanence made the edition line permanent, though the reset belongs jointly to the language and the standard.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:47:44+00:00",
+   "leap": {
+    "prior_state": "One vendor's implementation and its house specification were the only definitions.",
+    "jump": "The June 1997 first edition, edited by Guy L. Steele Jr. and based on JavaScript 1.1, made the language a citable standard for the first time and founded the edition line.",
+    "date": 1997
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove JavaScript and there is no standard at all - not a weaker one. The anticipated mediation attack (the documentary channel runs through the JavaScript 1.1 specification) does not hold: the subject of a standard is not a milestone mediated by its own basis text; the specification edge, admitted separately, carries the documentary relation, and this edge carries the subject relation, exactly as at the third edition in session 11.",
+    "mediator": null,
+    "evidence": "Direct by relation: the standard's own Brief History names the language as its originating technology. The basis-document channel is a different edge, heard at the JavaScript 1.1 specification filing."
+   }
+  },
+  {
+   "predecessor_id": "the-unicode-standard-version-2-0-1996-1996",
+   "successor_id": "ecma-262-first-edition-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Sec.4.3.17 defines the String type as finite sequences of Unicode characters and sec.5.1.2 builds the lexical grammar over 'the characters of the Unicode character set'; sec.3 cites version 2.0 normatively. Before Unicode there was no single character repertoire in which a 1997 language standard could define its source text, identifiers and strings portably - text lived in mutually incompatible code pages.",
+     "source": "ECMA-262, 1st edition (June 1997), secs.3, 4.3.17, 5.1.2",
+     "falsification": "A pre-1996 universal character set, citable by the standard, that the drafters could have used instead."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the space of universal-text software generally; for this parent the opening is the precondition of the standard's textual definitions rather than a space the parent itself exploits further.",
+     "source": "ECMA-262, 1st edition (June 1997), sec.3",
+     "falsification": "Evidence the drafters considered defining their own character repertoire."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "ISO/IEC 10646 existed as the parallel universal character set (the two were synchronized), so substitution was conceivable in principle; the documents name Unicode, and the String type is defined in Unicode's terms, which keeps necessity at partial rather than pass.",
+     "source": "ECMA-262, 1st edition (June 1997), secs.3, 4.3.17",
+     "falsification": "Evidence the standard's character definitions derive from ISO 10646 rather than the cited Unicode 2.0."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Incorporating a finished universal repertoire collapsed a cost the committee could not have paid at all: defining a character set in-committee, in months, was impossible, and every textual clause presupposes the repertoire was already settled.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Unicode's character model - code points in one repertoire - is the model the String type runs on, though the standard uses the repertoire more than the model's theory.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The repertoire is the interface: source text, identifiers, string literals and comments are all defined over it, and every implementation composes with the same set.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach across all text software is total, but generic to every consumer; scored partial for this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced code-page fragmentation as the reference repertoire for a new standard, though the wider displacement was the field's, not this parent's.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Trunk for the textual half of the standard - its strings and its grammar - while the semantic core descends from the base documents.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The choice reset permanently - every later edition is Unicode-based - but that permanence is proven by successors, so partial at this parent.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:47:44+00:00",
+   "leap": {
+    "prior_state": "One vendor's implementation and its house specification were the only definitions.",
+    "jump": "The June 1997 first edition, edited by Guy L. Steele Jr. and based on JavaScript 1.1, made the language a citable standard for the first time and founded the edition line.",
+    "date": 1997
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Unicode and the standard cannot say what a character, a string or a source text is: sec.4.3.17 and sec.5.1.2 are written in its terms and sec.3 cites version 2.0 normatively - citation plus instantiation, the strong channel.",
+    "mediator": null,
+    "evidence": "Direct: normative citation in sec.3 with the consuming definitions at secs.4.3.17 and 5.1.2. No intermediary milestone."
+   }
+  },
+  {
+   "predecessor_id": "netscape-communications-1994",
+   "successor_id": "ecma-262-first-edition-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The institution's own act - offering the technology for standardization in autumn 1996, as the standard's Brief History records - started the process, but the specific enabling artifacts (its specification, its implementation) are heard at their own filings; the institutional channel alone is partial.",
+     "source": "ECMA-262, 1st edition (June 1997), Brief History; Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.7",
+     "falsification": "Evidence the offer came from another party."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Before autumn 1996 there was no standardization track for the language at all: Netscape's offer - steered by Cargill to Ecma for speed and the ISO fast-track - opened the vendor-neutral process itself, the space in which TC39, the base-document integration and the edition line all became possible.",
+     "source": "ECMA-262, 1st edition (June 1997), Brief History; Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-8",
+     "falsification": "Evidence a standardization process for JavaScript was already underway before Netscape's offer."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Another vendor could in principle have offered its language for standardization; the historical offer was Netscape's, and Microsoft joined Ecma simultaneously rather than offering - so the specific act is Netscape's, but the role was not metaphysically unique to it.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.7",
+     "falsification": "Evidence Microsoft or another party made an equivalent offer in 1996."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Netscape carried the process's material startup costs: it hosted TC39's organizing meeting at its headquarters in November 1996, contributed a base document, and its people staffed the working group - the committee began at full speed instead of assembling itself.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The early draft loop ran inside the process Netscape convened, though the loop's later iterations belonged to the committee and its editor.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "The offer displaced the end-state in which Netscape's house specification remains the language's definition: after June 1997 the definition is Ecma's, a displacement Netscape itself initiated.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk institution for this parent: no offer, no TC39, no standard - the chain is stated in the standard's own front matter.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The process it started proved permanent (the edition line continues), but that permanence is the standard's, realized after the parent.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:47:44+00:00",
+   "leap": {
+    "prior_state": "One vendor's implementation and its house specification were the only definitions.",
+    "jump": "The June 1997 first edition, edited by Guy L. Steele Jr. and based on JavaScript 1.1, made the language a citable standard for the first time and founded the edition line.",
+    "date": 1997
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Netscape's autumn-1996 offer and TC39 is never convened: the standard's own Brief History names the act and the actor. This edge is scoped to the institutional act - offer, convening, hosting - and does not smuggle in the artifacts, which are admitted on their own documentary channels.",
+    "mediator": null,
+    "evidence": "Direct: the channel is documented in the parent's own front matter ('offered by Netscape Communications for standardization in autumn 1996'), not inferred. Edge-scoped to the institutional act per the carriage precedents."
+   }
+  },
+  {
+   "predecessor_id": "jscript-1996",
+   "successor_id": "ecma-262-first-edition-1997",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The second implementation made a vendor-neutral text necessary: while only Netscape implemented the language, its house specification sufficed as definition; Microsoft's reverse-engineered JScript created the divergence a standard exists to arbitrate - the argument on which this candidate was admitted at the third edition in session 11, and the forcing fact of the first edition's process, whose committee integrated Microsoft's contribution from its first meeting.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-8",
+     "falsification": "Evidence the standardization would have proceeded in 1996-97 with only one implementation in existence."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "A two-vendor language opened the standardization space; the space's full generativity (the edition line's arbitrations) was realized by the successors.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "falsification": "Evidence the committee treated the second implementation as irrelevant to its work."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The specific second implementation was Microsoft's, tested against and integrated from the first meeting; a different second implementation could in principle have forced the same necessity, so partial.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "falsification": "Evidence the committee's text owes nothing to the existence of a second implementation."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "JScript's behavior was half of the measurement set against which disputed semantics were settled: the HOPL history records edge cases resolved by testing the running implementations.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The test-the-implementations loop - Katzenberger expanding the pseudocode against the running code - is the parent's iteration loop, and JScript is one of its two instruments.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced the single-vendor state of the language, though the displacement's completion is the standard's own act.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk-side for this parent: without the second implementation there is no arbitration problem and no 1997 standard; the committee's merged draft integrates Microsoft's contribution throughout.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The two-implementation arbitration pattern became TC39's permanent condition, proven by the successors rather than by this parent alone.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 3.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:47:44+00:00",
+   "leap": {
+    "prior_state": "One vendor's implementation and its house specification were the only definitions.",
+    "jump": "The June 1997 first edition, edited by Guy L. Steele Jr. and based on JavaScript 1.1, made the language a citable standard for the first time and founded the edition line.",
+    "date": 1997
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove JScript and the 1996-97 process loses its forcing problem: one implementation needs no arbiter. The implementation's behaviors are inside the standard's clauses - Katzenberger expanded the base document's pseudocode against the running implementations - so the channel runs from the implementation itself; its paper specification, admitted separately, is a transcription of it, not an intermediary milestone between the implementation and the standard.",
+    "mediator": null,
+    "evidence": "Direct: HOPL sec.8 documents the integration of Microsoft's contribution and the testing of the running implementations. The document/implementation distinction is preserved by hearing the JScript Language Specification on its own filing."
    }
   }
  ],
@@ -380824,6 +381713,1250 @@
       }
      },
      "similarity": 0.8328,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "ecma-262-first-edition-1997": {
+   "raw_candidates": [
+    {
+     "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+     "year": 1996,
+     "domain": "language standards",
+     "lens": "L1",
+     "type": "other",
+     "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+     "causal_claim": "The JavaScript 1.1 specification directly enabled ECMA-262 by being one of the contributed base documents the standard was integrated from: HOPL sec.8 - Netscape 'contributed this document to Ecma to serve as one of the base documents for the standardization effort'; sec.9 - 'the description of the grammar conventions was largely taken from the Netscape specification'.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+     "year": 1996,
+     "domain": "language standards",
+     "lens": "L1",
+     "type": "other",
+     "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+     "causal_claim": "The JScript Language Specification v0.1 directly enabled ECMA-262 by being the document the standard was edited from: HOPL sec.8 - 'the committee agreed that they would use the Microsoft contribution as the base document'; sec.9 - 'the structure of the expression and statement level grammars and the production names largely follows what was used in Microsoft's specification', and its numbered-step pseudocode became the standard's semantic style via Katzenberger's expansion of it.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "JavaScript",
+     "year": 1995,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+     "causal_claim": "JavaScript directly enabled ECMA-262 as its subject and originating technology: the standard's own Brief History - 'The originating technology for this ECMA Standard is JavaScript.' The subject relation (the language the standard defines), recorded distinctly from the basis relation filed at L1 for its 1.1 specification (the session-11 discrimination at the third edition).",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, Brief History",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "JavaScript 1.2 (Navigator 4)",
+     "year": 1997,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "definition": "The JavaScript version shipped in Netscape Navigator 4.0 (1997), whose behavior ECMA-262 third edition codified.",
+     "causal_claim": "Census filing at the parent's own year: JavaScript 1.2 (Navigator 4, June 1997) is coeval with the first edition and is the documented basis of the THIRD edition (session 11), not the first; Eich's hope of importing 1.2 semantics into ES1 was argued down in the working group (HOPL sec.9). Filed deliberately with its documented year; expected to fall to the resolver's year bound, recorded, not re-dated.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.9; ECMAScript version history",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "The Java Language Specification (Gosling, Joy & Steele, 1996)",
+     "year": 1996,
+     "domain": "language standards",
+     "lens": "L3",
+     "type": "other",
+     "definition": "The first edition of the Java language's specification (Addison-Wesley, 1996), co-authored by the man who would edit ECMA-262, and one of the seven references ECMA-262's own sec.3 lists.",
+     "causal_claim": "Filed from the parent's own reference list (sec.3): the JLS is part of ECMA-262's documented apparatus, and its editor-to-editor carriage (Steele co-authored it, then edited ECMA-262) plus the Java-modeled surface of the standard's Math and Date libraries are the channels to test; the claim to test is whether any clause-level content of the language definition derives from it.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "Correctly rounded binary-decimal conversions (Gay, 1990)",
+     "year": 1990,
+     "domain": "language standards",
+     "lens": "L3",
+     "type": "method",
+     "definition": "David M. Gay's AT&T Bell Laboratories manuscript 'Correctly Rounded Binary-Decimal and Decimal-Binary Conversions' (Numerical Analysis Manuscript 90-10, 1990) and its dtoa/g_fmt code - one of the seven references ECMA-262's sec.3 lists.",
+     "causal_claim": "Filed from the parent's own reference list (sec.3): the channel to test is the standard's number-to-string clauses; the standard's own pointer is informative, not normative - sec.9.8.1: 'Implementors of ECMAScript may find useful the paper and code written by David M. Gay for binary-to-decimal conversion of floating-point numbers [Gay 1990]'.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References; sec.9.8.1 note",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "Self (programming language)",
+     "year": 1987,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "definition": "Ungar and Smith's prototype-based object-oriented language (OOPSLA 1987; public releases from Stanford from 1990, then Sun Labs), in which objects are slot collections that inherit by delegating to prototypes rather than instantiating classes.",
+     "causal_claim": "Filed from the parent's own reference list (sec.3 cites Ungar & Smith, OOPSLA '87): the citation documents the prototype-based object model - but that model is JavaScript's design, admitted at the JavaScript node (session 12); the channel to test is whether the standard takes anything from Self except through the language it standardizes.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+     "year": 1994,
+     "domain": "internet standards",
+     "lens": "L3",
+     "type": "standard (K8)",
+     "definition": "The December 1994 URL standard: the general URL syntax, the scheme-specific parts for the schemes then in use, and the first formal statement of relative URL handling - the document RFC 2396 'updates and merges', whose generic definitions it 'revises and replaces'.",
+     "causal_claim": "Filed from the parent's own reference list (sec.3): the channel to test is the standard's global escape/unescape machinery, whose percent-encoding conventions are the URL standard's; no clause of the core language definition is built from it - the citation's weight is what is being measured.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "JScript",
+     "year": 1996,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "other",
+     "definition": "Microsoft's 1996 implementation of the JavaScript language for Internet Explorer, whose divergence from Netscape's forced and shaped the ECMA-262 standardization.",
+     "causal_claim": "JScript directly enabled ECMA-262 by posing the problem the standard answers: its August 1996 shipment as a divergent second implementation made portable scripting impossible and forced the November 1996 submission ('Partially to keep Microsoft in check, Netscape decided to standardize JavaScript' - Speaking JavaScript ch.5). The node's own stored definition records this channel; its separate specification document is filed at L1 on its own channel.",
+     "source_title": "Speaking JavaScript, ch.5; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.4, 7-8",
+     "source_url": "https://www.oreilly.com/library/view/speaking-javascript/9781449365028/ch05.html"
+    },
+    {
+     "name": "World Wide Web Consortium (W3C, 1994)",
+     "year": 1994,
+     "domain": "language standards",
+     "lens": "L7",
+     "type": "institution",
+     "definition": "The Web's standards consortium, founded by Berners-Lee in 1994 - the venue the December 1995 Netscape/Sun announcement named for JavaScript standardization, and which declined the role.",
+     "causal_claim": "Negative-space filing: the Dec 1995 announcement said Netscape and Sun would 'propose JavaScript to the W3 Consortium (W3C) and the Internet Engineering Task Force (IETF) as an open Internet scripting language standard' (HOPL sec.7); the W3C's technical leadership 'was not interested in adding an imperative programming language to the Web technology suite' - a declined venue, filed so the refusal is on the record.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.7",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Netscape Navigator 3.0 (1996)",
+     "year": 1996,
+     "domain": "language standards",
+     "lens": "L9",
+     "type": "other",
+     "definition": "Netscape's August 1996 browser release, the implementation of JavaScript 1.1 that the first edition of ECMA-262 is documented as being based on ('based on JavaScript 1.1 as implemented in Netscape Navigator 3.0').",
+     "causal_claim": "Filed as the subject-implementation probe: the version history names Navigator 3.0's implementation as what the edition is based on, and HOPL sec.9 records the working group settling disputed edge-case behaviors by turning to the running implementations and testing cases; the channel to test is whether the implementation itself, beyond its contributed specification (filed at L1), was consumed.",
+     "source_title": "ECMAScript version history; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.9",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "IEEE 754 binary floating-point arithmetic (1985)",
+     "year": 1985,
+     "domain": "language standards",
+     "lens": "L16",
+     "type": "standard (K8)",
+     "definition": "The IEEE Standard for Binary Floating-Point Arithmetic (ANSI/IEEE Std 754-1985): the binary formats, rounding modes, and special values (NaN, infinities, signed zero) that made floating-point arithmetic portable across machines.",
+     "causal_claim": "IEEE 754 directly enabled ECMA-262 by being incorporated into its definitions: the standard's sec.3 cites it, sec.4.3.20/sec.8.5 define the Number type AS 'the double-precision 64-bit format IEEE 754 value' set, and the sec.11 arithmetic clauses are repeatedly 'governed by the rules of IEEE 754 double-precision arithmetic' - without it a language standard cannot define one numeric semantics for all platforms.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, secs.3, 4.3.20, 8.5, 11",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "The Unicode Standard, Version 2.0 (1996)",
+     "year": 1996,
+     "domain": "language standards",
+     "lens": "L16",
+     "type": "standard (K8)",
+     "definition": "The Unicode Consortium's universal character set standard, version 2.0 (Addison-Wesley, 1996) - the coded character repertoire ECMA-262's own sec.3 cites.",
+     "causal_claim": "The Unicode Standard directly enabled ECMA-262 by being incorporated into its definitions: sec.4.3.17 defines the String type as 'the set of all finite ordered sequences of zero or more Unicode characters', and sec.5.1.2 gives the lexical grammar's terminal symbols as 'the characters of the Unicode character set' - the language's text model is Unicode's repertoire.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, secs.3, 4.3.17, 5.1.2",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "ANSI C standard (X3.159-1989)",
+     "year": 1989,
+     "domain": "language standards",
+     "lens": "L16",
+     "type": "standard (K8)",
+     "definition": "The American National Standard for Programming Language C (ANSI X3.159-1989) - the C language's standard specification, one of the seven references ECMA-262's sec.3 lists.",
+     "causal_claim": "Filed from the parent's own reference list (sec.3): the documented channel is presentational - HOPL sec.8 records that Netscape's contributed specification described the syntax 'using a BNF notation similar to that used in the ANSI C language standard' and that Microsoft's base document likewise 'borrowed much of the grammar from the ANSI C standard'; the channel to test runs through those base documents.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.8",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "HTML (Berners-Lee, 1993)",
+     "year": 1993,
+     "domain": "language standards",
+     "lens": "L16",
+     "type": "other",
+     "definition": "The HyperText Markup Language as published by Berners-Lee in 1993 - the document format whose pages the standardized language was designed to script, and the host layer ECMA-262 deliberately excludes.",
+     "causal_claim": "Host-context probe: ES1 sec.4 defines the core language 'apart from any particular host environment', and TC39's founding scope decisions (Reardon's accepted recommendation at the organizing meeting; the Jan 15, 1997 working-group decision) deliberately left the HTML object model to the W3C - the channel to test is documented non-incorporation.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.4 Overview; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "Scheme",
+     "year": 1975,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Sussman and Steele's minimalist Lisp dialect (MIT AI Memo 349, 1975), the first Lisp with lexical scoping and first-class closures as the language's foundation.",
+     "causal_claim": "Design-lineage probe: Scheme's closures and lexical scoping are inside the language ECMA-262 standardizes (admitted at the JavaScript node, session 12, on the hire channel); the channel to test is whether anything reaches the standard except through the language being standardized.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, Part 1",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "LISP 1.5 Programmer's Manual (McCarthy & Levin, 1962)",
+     "year": 1962,
+     "domain": "language standards",
+     "lens": "L19",
+     "type": "other",
+     "definition": "The LISP 1.5 Programmer's Manual (McCarthy, Levin et al., MIT Press, 1962), which described the Lisp interpreter's semantics in the form-followed-by-evaluation-description style - the documented model for the pseudocode style of ECMA-262's base document.",
+     "causal_claim": "Style-lineage probe: HOPL sec.8 - Welland, rewriting Microsoft's base document overnight, recalled that 'the LISP 1.5 Programmer's Manual had described the semantics of the Lisp interpreter using a style where a syntactic form was immediately followed by a precise description of how that syntax should be evaluated' and 'decided to use a similar style of pseudocode with numbered steps' - the style that became ECMA-262's algorithm conventions, reaching it through that base document (filed at L1).",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Netscape Communications",
+     "year": 1994,
+     "domain": "web technology",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The company founded in April 1994 (as Mosaic Communications) by Clark and Andreessen, whose Navigator browser held the dominant share of the mid-1990s web.",
+     "causal_claim": "Netscape Communications directly enabled ECMA-262 by the act the standard's own Brief History records: 'This technology has been offered by Netscape Communications for standardization in autumn 1996.' Its standards expert Cargill steered the venue choice to Ecma (HOPL sec.7), it hosted TC39's organizing meeting at its Mountain View offices, and its contributed specification is filed separately at L1 - the institution is filed on its initiating acts, the artifact on its own channel.",
+     "source_title": "ECMA-262, 1st edition (June 1997), read this session, Brief History; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.7-8",
+     "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "name": "Ecma International (1961)",
+     "year": 1961,
+     "domain": "language standards",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Geneva-based industry standards association (founded 1961 as the European Computer Manufacturers Association) whose General Assembly created TC39 in December 1996 and adopted ECMA-262's first edition in June 1997.",
+     "causal_claim": "Venue filing: Ecma's acts - considering Netscape's request (Co-ordinating Committee, September 1996), creating TC39 (General Assembly, December 1996), adopting the standard (June 1997), and offering the ISO fast-track that was a stated reason for choosing it (HOPL sec.7) - are the channel to test against the arena/venue discrimination.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.7-8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Sun Microsystems (1982)",
+     "year": 1982,
+     "domain": "language standards",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The workstation company (founded 1982) that co-announced JavaScript with Netscape in December 1995, was already an Ecma member when the venue was chosen, held the 'JavaScript' trademark, and lent Guy Steele to edit ECMA-262.",
+     "causal_claim": "Institution decomposition probe: Sun's documented roles are several but each reaches the parent through a filed channel or a non-content one - its Ecma membership is arena, the trademark forced only the standard's NAME (HOPL sec.10), and the editor it lent is the parent's own production; filed so the decomposition is on the record.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.7, 10",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Proposed JavaScript Extensions (Borland International, 1996)",
+     "year": 1996,
+     "domain": "language standards",
+     "lens": "L23",
+     "type": "other",
+     "definition": "Borland International's TC39 input document (Ecma/TC39/1996/006, 22 November 1996) proposing JavaScript extensions - class definitions, try/catch/finally exception handling, a C-like switch statement, code blocks as first-class values, array literals and library additions - presented at the organizing meeting.",
+     "causal_claim": "Meeting-input filing: Borland's contribution was one of the three the committee agreed to integrate (HOPL sec.8), but its distinctive content was listed in the draft's 'Proposed Extensions' appendix and deferred - try/catch and switch reached the standard only in the third edition; the channel to test is what, if anything, the first edition consumed from it. (Borland's other role - Gardner & Solton drafting the merged first draft - is editorial production, heard in the run-log record, not filed as an artifact.)",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9 and ref. [27]",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+      "candidate": {
+       "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+       "year": 1996,
+       "domain": "language standards",
+       "lens": "L1",
+       "type": "other",
+       "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+       "causal_claim": "The JavaScript 1.1 specification directly enabled ECMA-262 by being one of the contributed base documents the standard was integrated from: HOPL sec.8 - Netscape 'contributed this document to Ecma to serve as one of the base documents for the standardization effort'; sec.9 - 'the description of the grammar conventions was largely taken from the Netscape specification'.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "JavaScript 1.1 language specification (Eich & McKinney, 1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+      "candidate": {
+       "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+       "year": 1996,
+       "domain": "language standards",
+       "lens": "L1",
+       "type": "other",
+       "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+       "causal_claim": "The JScript Language Specification v0.1 directly enabled ECMA-262 by being the document the standard was edited from: HOPL sec.8 - 'the committee agreed that they would use the Microsoft contribution as the base document'; sec.9 - 'the structure of the expression and statement level grammars and the production names largely follows what was used in Microsoft's specification', and its numbered-step pseudocode became the standard's semantic style via Katzenberger's expansion of it.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "javascript-1995",
+      "candidate": {
+       "name": "JavaScript",
+       "year": 1995,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+       "causal_claim": "JavaScript directly enabled ECMA-262 as its subject and originating technology: the standard's own Brief History - 'The originating technology for this ECMA Standard is JavaScript.' The subject relation (the language the standard defines), recorded distinctly from the basis relation filed at L1 for its 1.1 specification (the session-11 discrimination at the third edition).",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, Brief History",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "JavaScript"
+      ],
+      "matched_node_id": "javascript-1995",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-java-language-specification-gosling-joy-steele-1996-1996",
+      "candidate": {
+       "name": "The Java Language Specification (Gosling, Joy & Steele, 1996)",
+       "year": 1996,
+       "domain": "language standards",
+       "lens": "L3",
+       "type": "other",
+       "definition": "The first edition of the Java language's specification (Addison-Wesley, 1996), co-authored by the man who would edit ECMA-262, and one of the seven references ECMA-262's own sec.3 lists.",
+       "causal_claim": "Filed from the parent's own reference list (sec.3): the JLS is part of ECMA-262's documented apparatus, and its editor-to-editor carriage (Steele co-authored it, then edited ECMA-262) plus the Java-modeled surface of the standard's Math and Date libraries are the channels to test; the claim to test is whether any clause-level content of the language definition derives from it.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "The Java Language Specification (Gosling, Joy & Steele, 1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "correctly-rounded-binary-decimal-conversions-gay-1990-1990",
+      "candidate": {
+       "name": "Correctly rounded binary-decimal conversions (Gay, 1990)",
+       "year": 1990,
+       "domain": "language standards",
+       "lens": "L3",
+       "type": "method",
+       "definition": "David M. Gay's AT&T Bell Laboratories manuscript 'Correctly Rounded Binary-Decimal and Decimal-Binary Conversions' (Numerical Analysis Manuscript 90-10, 1990) and its dtoa/g_fmt code - one of the seven references ECMA-262's sec.3 lists.",
+       "causal_claim": "Filed from the parent's own reference list (sec.3): the channel to test is the standard's number-to-string clauses; the standard's own pointer is informative, not normative - sec.9.8.1: 'Implementors of ECMAScript may find useful the paper and code written by David M. Gay for binary-to-decimal conversion of floating-point numbers [Gay 1990]'.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References; sec.9.8.1 note",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Correctly rounded binary-decimal conversions (Gay, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "self-programming-language-1987",
+      "candidate": {
+       "name": "Self (programming language)",
+       "year": 1987,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "definition": "Ungar and Smith's prototype-based object-oriented language (OOPSLA 1987; public releases from Stanford from 1990, then Sun Labs), in which objects are slot collections that inherit by delegating to prototypes rather than instantiating classes.",
+       "causal_claim": "Filed from the parent's own reference list (sec.3 cites Ungar & Smith, OOPSLA '87): the citation documents the prototype-based object model - but that model is JavaScript's design, admitted at the JavaScript node (session 12); the channel to test is whether the standard takes anything from Self except through the language it standardizes.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Self (programming language)"
+      ],
+      "matched_node_id": "self-programming-language-1987",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "rfc-1738-uniform-resource-locators-url-berners-lee-masinter-1994",
+      "candidate": {
+       "name": "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)",
+       "year": 1994,
+       "domain": "internet standards",
+       "lens": "L3",
+       "type": "standard (K8)",
+       "definition": "The December 1994 URL standard: the general URL syntax, the scheme-specific parts for the schemes then in use, and the first formal statement of relative URL handling - the document RFC 2396 'updates and merges', whose generic definitions it 'revises and replaces'.",
+       "causal_claim": "Filed from the parent's own reference list (sec.3): the channel to test is the standard's global escape/unescape machinery, whose percent-encoding conventions are the URL standard's; no clause of the core language definition is built from it - the citation's weight is what is being measured.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "RFC 1738, Uniform Resource Locators (URL) (Berners-Lee, Masinter & McCahill, 1994)"
+      ],
+      "matched_node_id": "rfc-1738-uniform-resource-locators-url-berners-lee-masinter-1994",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "jscript-1996",
+      "candidate": {
+       "name": "JScript",
+       "year": 1996,
+       "domain": "programming languages",
+       "lens": "L6",
+       "type": "other",
+       "definition": "Microsoft's 1996 implementation of the JavaScript language for Internet Explorer, whose divergence from Netscape's forced and shaped the ECMA-262 standardization.",
+       "causal_claim": "JScript directly enabled ECMA-262 by posing the problem the standard answers: its August 1996 shipment as a divergent second implementation made portable scripting impossible and forced the November 1996 submission ('Partially to keep Microsoft in check, Netscape decided to standardize JavaScript' - Speaking JavaScript ch.5). The node's own stored definition records this channel; its separate specification document is filed at L1 on its own channel.",
+       "source_title": "Speaking JavaScript, ch.5; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.4, 7-8",
+       "source_url": "https://www.oreilly.com/library/view/speaking-javascript/9781449365028/ch05.html"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "JScript"
+      ],
+      "matched_node_id": "jscript-1996",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "world-wide-web-consortium-w3c-1994-1994",
+      "candidate": {
+       "name": "World Wide Web Consortium (W3C, 1994)",
+       "year": 1994,
+       "domain": "language standards",
+       "lens": "L7",
+       "type": "institution",
+       "definition": "The Web's standards consortium, founded by Berners-Lee in 1994 - the venue the December 1995 Netscape/Sun announcement named for JavaScript standardization, and which declined the role.",
+       "causal_claim": "Negative-space filing: the Dec 1995 announcement said Netscape and Sun would 'propose JavaScript to the W3 Consortium (W3C) and the Internet Engineering Task Force (IETF) as an open Internet scripting language standard' (HOPL sec.7); the W3C's technical leadership 'was not interested in adding an imperative programming language to the Web technology suite' - a declined venue, filed so the refusal is on the record.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.7",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "World Wide Web Consortium (W3C, 1994)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "netscape-navigator-3-0-1996-1996",
+      "candidate": {
+       "name": "Netscape Navigator 3.0 (1996)",
+       "year": 1996,
+       "domain": "language standards",
+       "lens": "L9",
+       "type": "other",
+       "definition": "Netscape's August 1996 browser release, the implementation of JavaScript 1.1 that the first edition of ECMA-262 is documented as being based on ('based on JavaScript 1.1 as implemented in Netscape Navigator 3.0').",
+       "causal_claim": "Filed as the subject-implementation probe: the version history names Navigator 3.0's implementation as what the edition is based on, and HOPL sec.9 records the working group settling disputed edge-case behaviors by turning to the running implementations and testing cases; the channel to test is whether the implementation itself, beyond its contributed specification (filed at L1), was consumed.",
+       "source_title": "ECMAScript version history; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.9",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Netscape Navigator 3.0 (1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+      "candidate": {
+       "name": "IEEE 754 binary floating-point arithmetic (1985)",
+       "year": 1985,
+       "domain": "language standards",
+       "lens": "L16",
+       "type": "standard (K8)",
+       "definition": "The IEEE Standard for Binary Floating-Point Arithmetic (ANSI/IEEE Std 754-1985): the binary formats, rounding modes, and special values (NaN, infinities, signed zero) that made floating-point arithmetic portable across machines.",
+       "causal_claim": "IEEE 754 directly enabled ECMA-262 by being incorporated into its definitions: the standard's sec.3 cites it, sec.4.3.20/sec.8.5 define the Number type AS 'the double-precision 64-bit format IEEE 754 value' set, and the sec.11 arithmetic clauses are repeatedly 'governed by the rules of IEEE 754 double-precision arithmetic' - without it a language standard cannot define one numeric semantics for all platforms.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, secs.3, 4.3.20, 8.5, 11",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "IEEE 754 binary floating-point arithmetic (1985)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-unicode-standard-version-2-0-1996-1996",
+      "candidate": {
+       "name": "The Unicode Standard, Version 2.0 (1996)",
+       "year": 1996,
+       "domain": "language standards",
+       "lens": "L16",
+       "type": "standard (K8)",
+       "definition": "The Unicode Consortium's universal character set standard, version 2.0 (Addison-Wesley, 1996) - the coded character repertoire ECMA-262's own sec.3 cites.",
+       "causal_claim": "The Unicode Standard directly enabled ECMA-262 by being incorporated into its definitions: sec.4.3.17 defines the String type as 'the set of all finite ordered sequences of zero or more Unicode characters', and sec.5.1.2 gives the lexical grammar's terminal symbols as 'the characters of the Unicode character set' - the language's text model is Unicode's repertoire.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, secs.3, 4.3.17, 5.1.2",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "The Unicode Standard, Version 2.0 (1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ansi-c-standard-x3-159-1989-1989",
+      "candidate": {
+       "name": "ANSI C standard (X3.159-1989)",
+       "year": 1989,
+       "domain": "language standards",
+       "lens": "L16",
+       "type": "standard (K8)",
+       "definition": "The American National Standard for Programming Language C (ANSI X3.159-1989) - the C language's standard specification, one of the seven references ECMA-262's sec.3 lists.",
+       "causal_claim": "Filed from the parent's own reference list (sec.3): the documented channel is presentational - HOPL sec.8 records that Netscape's contributed specification described the syntax 'using a BNF notation similar to that used in the ANSI C language standard' and that Microsoft's base document likewise 'borrowed much of the grammar from the ANSI C standard'; the channel to test runs through those base documents.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.3 References; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.8",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "ANSI C standard (X3.159-1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "html-berners-lee-1993-1993",
+      "candidate": {
+       "name": "HTML (Berners-Lee, 1993)",
+       "year": 1993,
+       "domain": "language standards",
+       "lens": "L16",
+       "type": "other",
+       "definition": "The HyperText Markup Language as published by Berners-Lee in 1993 - the document format whose pages the standardized language was designed to script, and the host layer ECMA-262 deliberately excludes.",
+       "causal_claim": "Host-context probe: ES1 sec.4 defines the core language 'apart from any particular host environment', and TC39's founding scope decisions (Reardon's accepted recommendation at the organizing meeting; the Jan 15, 1997 working-group decision) deliberately left the HTML object model to the W3C - the channel to test is documented non-incorporation.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, sec.4 Overview; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "HTML (Berners-Lee, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "scheme-1975",
+      "candidate": {
+       "name": "Scheme",
+       "year": 1975,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Sussman and Steele's minimalist Lisp dialect (MIT AI Memo 349, 1975), the first Lisp with lexical scoping and first-class closures as the language's foundation.",
+       "causal_claim": "Design-lineage probe: Scheme's closures and lexical scoping are inside the language ECMA-262 standardizes (admitted at the JavaScript node, session 12, on the hire channel); the channel to test is whether anything reaches the standard except through the language being standardized.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, Part 1",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Scheme"
+      ],
+      "matched_node_id": "scheme-1975",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lisp-1-5-programmer-s-manual-mccarthy-levin-1962-1962",
+      "candidate": {
+       "name": "LISP 1.5 Programmer's Manual (McCarthy & Levin, 1962)",
+       "year": 1962,
+       "domain": "language standards",
+       "lens": "L19",
+       "type": "other",
+       "definition": "The LISP 1.5 Programmer's Manual (McCarthy, Levin et al., MIT Press, 1962), which described the Lisp interpreter's semantics in the form-followed-by-evaluation-description style - the documented model for the pseudocode style of ECMA-262's base document.",
+       "causal_claim": "Style-lineage probe: HOPL sec.8 - Welland, rewriting Microsoft's base document overnight, recalled that 'the LISP 1.5 Programmer's Manual had described the semantics of the Lisp interpreter using a style where a syntactic form was immediately followed by a precise description of how that syntax should be evaluated' and 'decided to use a similar style of pseudocode with numbered steps' - the style that became ECMA-262's algorithm conventions, reaching it through that base document (filed at L1).",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "LISP 1.5 Programmer's Manual (McCarthy & Levin, 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "netscape-communications-1994",
+      "candidate": {
+       "name": "Netscape Communications",
+       "year": 1994,
+       "domain": "web technology",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The company founded in April 1994 (as Mosaic Communications) by Clark and Andreessen, whose Navigator browser held the dominant share of the mid-1990s web.",
+       "causal_claim": "Netscape Communications directly enabled ECMA-262 by the act the standard's own Brief History records: 'This technology has been offered by Netscape Communications for standardization in autumn 1996.' Its standards expert Cargill steered the venue choice to Ecma (HOPL sec.7), it hosted TC39's organizing meeting at its Mountain View offices, and its contributed specification is filed separately at L1 - the institution is filed on its initiating acts, the artifact on its own channel.",
+       "source_title": "ECMA-262, 1st edition (June 1997), read this session, Brief History; Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.7-8",
+       "source_url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "Netscape Communications"
+      ],
+      "matched_node_id": "netscape-communications-1994",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ecma-international-1961-1961",
+      "candidate": {
+       "name": "Ecma International (1961)",
+       "year": 1961,
+       "domain": "language standards",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Geneva-based industry standards association (founded 1961 as the European Computer Manufacturers Association) whose General Assembly created TC39 in December 1996 and adopted ECMA-262's first edition in June 1997.",
+       "causal_claim": "Venue filing: Ecma's acts - considering Netscape's request (Co-ordinating Committee, September 1996), creating TC39 (General Assembly, December 1996), adopting the standard (June 1997), and offering the ISO fast-track that was a stated reason for choosing it (HOPL sec.7) - are the channel to test against the arena/venue discrimination.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.7-8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       18
+      ],
+      "member_names": [
+       "Ecma International (1961)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sun-microsystems-1982-1982",
+      "candidate": {
+       "name": "Sun Microsystems (1982)",
+       "year": 1982,
+       "domain": "language standards",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The workstation company (founded 1982) that co-announced JavaScript with Netscape in December 1995, was already an Ecma member when the venue was chosen, held the 'JavaScript' trademark, and lent Guy Steele to edit ECMA-262.",
+       "causal_claim": "Institution decomposition probe: Sun's documented roles are several but each reaches the parent through a filed channel or a non-content one - its Ecma membership is arena, the trademark forced only the standard's NAME (HOPL sec.10), and the editor it lent is the parent's own production; filed so the decomposition is on the record.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.7, 10",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       19
+      ],
+      "member_names": [
+       "Sun Microsystems (1982)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "proposed-javascript-extensions-borland-international-1996-1996",
+      "candidate": {
+       "name": "Proposed JavaScript Extensions (Borland International, 1996)",
+       "year": 1996,
+       "domain": "language standards",
+       "lens": "L23",
+       "type": "other",
+       "definition": "Borland International's TC39 input document (Ecma/TC39/1996/006, 22 November 1996) proposing JavaScript extensions - class definitions, try/catch/finally exception handling, a C-like switch statement, code blocks as first-class values, array literals and library additions - presented at the organizing meeting.",
+       "causal_claim": "Meeting-input filing: Borland's contribution was one of the three the committee agreed to integrate (HOPL sec.8), but its distinctive content was listed in the draft's 'Proposed Extensions' appendix and deferred - try/catch and switch reached the standard only in the third edition; the channel to test is what, if anything, the first edition consumed from it. (Borland's other role - Gardner & Solton drafting the merged first draft - is editorial production, heard in the run-log record, not filed as an artifact.)",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, secs.8-9 and ref. [27]",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       20
+      ],
+      "member_names": [
+       "Proposed JavaScript Extensions (Borland International, 1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:0:javascript-1995",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "javascript-1995",
+       "card": {
+        "name": "JavaScript",
+        "aliases": [],
+        "year": 1995,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6299,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:1:jscript-1996",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 1,
+       "card": {
+        "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "jscript-1996",
+       "card": {
+        "name": "JScript",
+        "aliases": [],
+        "year": 1996,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "Microsoft's 1996 implementation of the JavaScript language for Internet Explorer, whose divergence from Netscape's forced and shaped the ECMA-262 standardization.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8133,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:10:javascript-1-2-navigator-4-1997",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 10,
+       "card": {
+        "name": "Netscape Navigator 3.0 (1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Netscape's August 1996 browser release, the implementation of JavaScript 1.1 that the first edition of ECMA-262 is documented as being based on ('based on JavaScript 1.1 as implemented in Netscape Navigator 3.0').",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "javascript-1-2-navigator-4-1997",
+       "card": {
+        "name": "JavaScript 1.2 (Navigator 4)",
+        "aliases": [],
+        "year": 1997,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "The JavaScript version shipped in Netscape Navigator 4.0 (1997), whose behavior ECMA-262 third edition codified.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8582,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:16:lisp-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 16,
+       "card": {
+        "name": "LISP 1.5 Programmer's Manual (McCarthy & Levin, 1962)",
+        "aliases": [],
+        "year": 1962,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "The LISP 1.5 Programmer's Manual (McCarthy, Levin et al., MIT Press, 1962), which described the Lisp interpreter's semantics in the form-followed-by-evaluation-description style - the documented model for the pseudocode style of ECMA-262's base document.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "lisp-1960",
+       "card": {
+        "name": "Lisp",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6342,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:20:javascript-1995",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 20,
+       "card": {
+        "name": "Proposed JavaScript Extensions (Borland International, 1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Borland International's TC39 input document (Ecma/TC39/1996/006, 22 November 1996) proposing JavaScript extensions - class definitions, try/catch/finally exception handling, a C-like switch statement, code blocks as first-class values, array literals and library additions - presented at the organizing meeting.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "javascript-1995",
+       "card": {
+        "name": "JavaScript",
+        "aliases": [],
+        "year": 1995,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5499,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:0:1",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 1,
+       "card": {
+        "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8561,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:0:2",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 2,
+       "card": {
+        "name": "JavaScript",
+        "aliases": [],
+        "year": 1995,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6299,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:1:8",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 1,
+       "card": {
+        "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 8,
+       "card": {
+        "name": "JScript",
+        "aliases": [],
+        "year": 1996,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "Microsoft's 1996 implementation of the JavaScript language for Internet Explorer, whose divergence from Netscape's forced and shaped the ECMA-262 standardization.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8133,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:2:20",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 2,
+       "card": {
+        "name": "JavaScript",
+        "aliases": [],
+        "year": 1995,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 20,
+       "card": {
+        "name": "Proposed JavaScript Extensions (Borland International, 1996)",
+        "aliases": [],
+        "year": 1996,
+        "domain": "language standards",
+        "type": "other",
+        "definition": "Borland International's TC39 input document (Ecma/TC39/1996/006, 22 November 1996) proposing JavaScript extensions - class definitions, try/catch/finally exception handling, a C-like switch statement, code blocks as first-class values, array literals and library additions - presented at the organizing meeting.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5499,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "JavaScript 1.2 (Navigator 4)",
+       "year": 1997,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "definition": "The JavaScript version shipped in Netscape Navigator 4.0 (1997), whose behavior ECMA-262 third edition codified.",
+       "causal_claim": "Census filing at the parent's own year: JavaScript 1.2 (Navigator 4, June 1997) is coeval with the first edition and is the documented basis of the THIRD edition (session 11), not the first; Eich's hope of importing 1.2 semantics into ES1 was argued down in the working group (HOPL sec.9). Filed deliberately with its documented year; expected to fall to the resolver's year bound, recorded, not re-dated.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years, HOPL 2020, sec.9; ECMAScript version history",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "reason": "dated on/after parent year 1997"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:0:javascript-1995",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "javascript-1995",
+      "card": {
+       "name": "JavaScript",
+       "aliases": [],
+       "year": 1995,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6299,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:1:jscript-1996",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 1,
+      "card": {
+       "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "jscript-1996",
+      "card": {
+       "name": "JScript",
+       "aliases": [],
+       "year": 1996,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "Microsoft's 1996 implementation of the JavaScript language for Internet Explorer, whose divergence from Netscape's forced and shaped the ECMA-262 standardization.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8133,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:10:javascript-1-2-navigator-4-1997",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 10,
+      "card": {
+       "name": "Netscape Navigator 3.0 (1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Netscape's August 1996 browser release, the implementation of JavaScript 1.1 that the first edition of ECMA-262 is documented as being based on ('based on JavaScript 1.1 as implemented in Netscape Navigator 3.0').",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "javascript-1-2-navigator-4-1997",
+      "card": {
+       "name": "JavaScript 1.2 (Navigator 4)",
+       "aliases": [],
+       "year": 1997,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "The JavaScript version shipped in Netscape Navigator 4.0 (1997), whose behavior ECMA-262 third edition codified.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8582,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:16:lisp-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 16,
+      "card": {
+       "name": "LISP 1.5 Programmer's Manual (McCarthy & Levin, 1962)",
+       "aliases": [],
+       "year": 1962,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "The LISP 1.5 Programmer's Manual (McCarthy, Levin et al., MIT Press, 1962), which described the Lisp interpreter's semantics in the form-followed-by-evaluation-description style - the documented model for the pseudocode style of ECMA-262's base document.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "lisp-1960",
+      "card": {
+       "name": "Lisp",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6342,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:20:javascript-1995",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 20,
+      "card": {
+       "name": "Proposed JavaScript Extensions (Borland International, 1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Borland International's TC39 input document (Ecma/TC39/1996/006, 22 November 1996) proposing JavaScript extensions - class definitions, try/catch/finally exception handling, a C-like switch statement, code blocks as first-class values, array literals and library additions - presented at the organizing meeting.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "javascript-1995",
+      "card": {
+       "name": "JavaScript",
+       "aliases": [],
+       "year": 1995,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5499,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:0:1",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 1,
+      "card": {
+       "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8561,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:0:2",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Netscape's preliminary draft specification of JavaScript 1.1, authored by Brendan Eich and C. Rand McKinney, handed out at TC39's organizing meeting and contributed to Ecma as one of the base documents for the standardization effort.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 2,
+      "card": {
+       "name": "JavaScript",
+       "aliases": [],
+       "year": 1995,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6299,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:1:8",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 1,
+      "card": {
+       "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Microsoft's preliminary specification of the core JavaScript language, rewritten overnight by Robert Welland and Walter Smith during TC39's organizing meeting, distributed on its second day, and selected by the committee as the base document to start editing ECMA-262 from.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 8,
+      "card": {
+       "name": "JScript",
+       "aliases": [],
+       "year": 1996,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "Microsoft's 1996 implementation of the JavaScript language for Internet Explorer, whose divergence from Netscape's forced and shaped the ECMA-262 standardization.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8133,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:2:20",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 2,
+      "card": {
+       "name": "JavaScript",
+       "aliases": [],
+       "year": 1995,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "Eich's 1995 browser language (Mocha, then LiveScript, then JavaScript) whose literal subset JSON is.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 20,
+      "card": {
+       "name": "Proposed JavaScript Extensions (Borland International, 1996)",
+       "aliases": [],
+       "year": 1996,
+       "domain": "language standards",
+       "type": "other",
+       "definition": "Borland International's TC39 input document (Ecma/TC39/1996/006, 22 November 1996) proposing JavaScript extensions - class definitions, try/catch/finally exception handling, a C-like switch statement, code blocks as first-class values, array literals and library additions - presented at the organizing meeting.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5499,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
