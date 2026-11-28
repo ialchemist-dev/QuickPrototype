@@ -17255,3 +17255,88 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 106 continues: expansion 222 (the Kahan-Coonen-Stone proposal, 1978) follows this checkpoint in the same session, carrying the Intel floating-point design hearing assigned at exp-220 - which this expansion has now ALSO heard directly at the chip and admitted; the exp-222 hearing judges the design as the proposal's predecessor, a different edge, on the proposal's documents. FRONTIER FLAG: the McLachlan & Basford Mixture Models node (1988), whose expansion carries the long-assigned EM hearing, stands fourth; the frontier order did not change in a way that reaches it this session. Session-process note, recorded honestly: session 106's first attempt ended after resolve with no report; this pass resumed the stored expansion per the RUNBOOK resume protocol instead of re-scouting, and the run state at resume was verified byte-consistent with exp-220's close (355 nodes / 459 edges, expansions_done 220)."
 }
+{
+ "expansion": 222,
+ "session": 106,
+ "parent": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+ "parent_name": "The Kahan-Coonen-Stone floating-point proposal (1978)",
+ "date": "2026-11-28",
+ "sync_commit_pending": "exp-222's own sync commit rides in the next expansion's record, per house pattern. DISCHARGED HERE: exp-221's sync commit 84b1038a (base 3cdb3b57; blob SHAs graph.json 1fe001b9, run-log.jsonl 3f0a561d, index.html 19b8f404 - verified by qp-sync's recursive-tree check and independently recomputed locally).",
+ "brief_correction": "Three record items. (1) SIGNUM GAP DISCHARGED: exp-220 recorded the October 1979 SIGNUM counter-proposal as unidentified in the record obtained; this session's pass over the FPBIBLIO bibliography of the SIGNUM special issue identifies the counter-proposals of record - Fraley & Walter, 'Proposal to Eliminate Denormalized Numbers' (pp.22-23), and Payne & Strecker (DEC), 'Draft Proposal for a Binary Normalized Floating Point Standard' (pp.24-28), alongside the published Draft 5.11 (Coonen, Kahan, Palmer, Pittman, Stevenson, pp.4-12) and Kahan & Palmer's 'On a Proposed Floating-Point Standard' (pp.13-21). All post-date the April 1978 parent (downstream, direction-safe); the identification is recorded here for the lineage. (2) APRIL/MAY DISCREPANCY RECORDED, NOT RESOLVED (exp-210 pattern): the IEEE Milestone record has Kahan recruiting Stone and Coonen for the April 1978 meeting and the node's stored text dates the draft to April 1978; Coonen's M78/72 introduction states the first draft 'was presented by Harold Stone, William Kahan and Jerome Coonen in May, 1978'. Both stand in the record. (3) SCOUT PROVENANCE: this expansion's census was adopted from the aborted session-106 attempt's builder (build_candidates_kcs.py) after audit against the run-log; one factual amendment was made pre-run (the dry-note L22 text updated with item (1)'s identification). The builder's grounding included Coonen's 'Specifications for a Proposed Standard for Floating Point Arithmetic', UCB/ERL M78/72 (13 Oct 1978) - the proposal series' own specification text, read in full - plus the Milestone records and Moler's account of his call with Kahan.",
+ "scout": "10 raw candidates filed across the 23 lenses (document census; honest dry/shortfall notes for all 23 lenses, shortfalls at L12, L16 and L20 recorded, not padded). Grounding: Coonen M78/72 read in full (the series' seventh-draft specification); the April 1978 first-draft pamphlet itself remains UNREAD - exp-220's wart narrowed to the pamphlet, not erased (the series' specification text WAS read).",
+ "resolve": "10 raw -> 1 dropped by the year bound (IFIP Working Group 2.5 statement, filed deliberately at 1978, the parent's own year - its December 1978 endorsement post-dates the April draft in any case; downstream, recorded, not re-dated) -> 9 distinct, 1 matched existing (the Intel floating-point design - the carried hearing), judge queue empty. Resolve ran under the TF-IDF FALLBACK (MiniLM did not load); recorded per discipline - it changed no outcome: the single match is an exact-name match and no gray-zone pair arose.",
+ "admissions": [
+  {
+   "node": "intel-floating-point-design-palmer-kahan-1976-1976",
+   "kind": "LINK (existing node)",
+   "cli_score": 5.5,
+   "note": "THE CARRIED HEARING FROM EXP-220, DISCHARGED AS AN ADMISSION. At the 754 parent (exp-220) the Intel design was rejected as mediated via this proposal and the hearing assigned to the proposal's own expansion. Judged here on the proposal's documents, the channel is direct and documentary: the draft IS the Intel design disclosed - 'Their draft was based on the Intel design, with Intel's permission of course, as simplified by Coonen' (H&P 3.10); 'That Intel specification became the basis for IEEE 754' (Moler, reporting Kahan); the proposed standard's formats 'are identical to those previously adopted by Intel' (Intel's manual). Mediation attack answered on the edge: the committee is the venue the design was disclosed INTO, not an intermediate that transformed it. The cross-session symmetry now stands documented on both edges: at the standard, design->proposal->standard (exp-220, mediation); at the chip, design->8087 direct (exp-221); at the proposal, design->proposal direct (here). Edge-scoped; all three stand."
+  }
+ ],
+ "rejections": [
+  {
+   "candidate": "VAX floating-point arithmetic (DEC, 1977)",
+   "score": 2.0,
+   "kind": "fail-closed",
+   "note": "MOST CONTESTABLE NEGATIVE, and the strongest VAX hearing in the lineage (2.0 at exps 220 and 221, 2.0 here on a new channel). New texture (Moler): the draft's format widths shadow VAX's exactly (8/23 single, 11/52 double) while the exponent bias - the semantically load-bearing parameter - was deliberately changed, so realmax/realmin differ by a factor of four. Judged: what crossed is a pair of field widths, a migration-compatibility shadow, not a mechanism - the same widths follow from the 32/64-bit word sizes (IBM's double is also 11/52), and the draft's substance (bias, extended format, denormals, NaNs, directed rounding, non-stop exceptions) is the departure list in the draft's own text (M78/72). The correction relation fails: nothing of VAX's worked object (its arithmetic behaviour) is extracted and built on. Partial directness fails closed. RE-HEARING CONDITION: a draft document stating the widths were taken from VAX to secure migration, as a designed dependency rather than a consequence of word size."
+  },
+  {
+   "candidate": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+   "score": 2.0,
+   "kind": "fail-closed",
+   "note": "Third hearing of the same discrimination (exps 220, 221, here), same outcome: the draft's own text specifies the encoding and states its signature lexicographic property (M78/72 Part I, quoted verbatim in the filing) - a real, direct, designer-documented channel, and a component of the design, not the design. Components of a leap are not leaps. The standing re-hearing condition (a designer document presenting the encoding as the design's headline novelty) remains unmet here too."
+  },
+  {
+   "candidate": "Brown's model of floating-point computation (1977)",
+   "score": 1.5,
+   "kind": "fail-closed",
+   "note": "The rival programme before the same subcommittee: the draft 'specifies meticulously its data formats and its very complete complement of arithmetic operations down to the last bit' (M78/72) where the model deliberately prescribes nothing. Recognition is not consumption - Kahan's 'easily the best available description' is praise for the rival programme - and the correction relation fails: the draft extracts nothing of the model's machinery (environment parameters); it replaces the programme. Dating note: filed at 1977 on the Mathematical Software III version (Rice ed., Academic Press, pp.343-360), the journal version being TOMS 1981."
+  },
+  {
+   "candidate": "Interval arithmetic (Moore, 1966)",
+   "score": 1.5,
+   "kind": "fail-closed",
+   "note": "The requirement-served hearing at its strongest form: the draft's own introduction names interval arithmetic FIRST among the 'necessary developments' the standard must support, and its directed rounding modes are the support mechanism - but the draft contains no interval data type and no interval operations; its operation list is scalar. A requirement served is not a mechanism consumed (exp-220 discrimination, re-run where the requirement is named in the parent's own text)."
+  },
+  {
+   "candidate": "IEEE Task P754 working group (1977)",
+   "score": 1.5,
+   "kind": "fail-closed",
+   "note": "Commissioning is the strongest form of formation: the draft was written FOR the April 1978 meeting and its introduction acknowledges 'extensive discussions in previous meetings of the IEEE subcommittee'. Still formation without a mechanism - the design content arrived complete from Intel; remove the committee and the design stands as Intel's internal standard already shipped in three products. Scored 1.5 here against 1.0 at exps 220/221, the variance recorded: the commissioning relation is direct at this parent."
+  },
+  {
+   "candidate": "IBM System/360 hexadecimal floating-point arithmetic (1964)",
+   "score": 1.0,
+   "kind": "rejected",
+   "note": "The class incumbent, defined against. Moler's 'came close to his vision' names at most parameter kinship (its double width is also 11/52 - a word-size consequence); no mechanism of the incumbent's is consumed (parity with exps 220/221)."
+  },
+  {
+   "candidate": "A mathematical model of floating-point computation (van Wijngaarden, 1966)",
+   "score": 1.0,
+   "kind": "rejected",
+   "note": "The senior member of the model family ('excessively abstract', Kahan 1981); anticipation and contrast, no channel named by any document."
+  },
+  {
+   "candidate": "A decimal floating-point architecture (Ris, 1976)",
+   "score": 1.0,
+   "kind": "rejected",
+   "note": "The rejected alternative: Kahan recommended a decimal design to Intel and abandoned it on the ~3x hardware-timing finding; the draft is binary throughout. A decision against is not consumption."
+  }
+ ],
+ "verification": "No verification file was applied: the sole survivor is a LINK to a node carrying a substantive verification record from its own admission (exp-221, provisional), which apply-verification would overwrite - the deviation precedent of exps 210/213/218/219/221. The hearing lives on the edge's verdicts (CLI score 5.5, gate passed). Confirmed on disk after apply: the Intel design node's stored verification is intact and non-null (outcome provisional, exp-221 notes preserved). No new nodes were created, so no fresh provisional markings arise; totals provisional 340 / verified 17 unchanged.",
+ "totals_after": {
+  "nodes": 357,
+  "edges": 463,
+  "expansions_done": 222,
+  "budget": "357/2000"
+ },
+ "frontier_next": [
+  "intel-floating-point-design-palmer-kahan-1976-1976",
+  "maclisp-1966",
+  "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+  "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+  "samuel-s-checkers-player-samuel-1959-1959"
+ ],
+ "frontier_note": "The Intel floating-point design (1976) now heads the frontier (admitted exp-221, linked here). Mixture models (McLachlan & Basford, 1988) - whose expansion carries the long-assigned EM hearing - stands THIRD, one place closer than at session start; flagged per instructions. Session 106 ends here; session 107 not started.",
+ "session_process_note": "Session 106 was executed across an interruption: the first attempt stored the 8087 census at stage 'resolved' and a complete KCS census builder, then ended without verdicts or a report. This execution resumed exp-221 at the stored 'resolved' stage per RUNBOOK S.5 (no re-scout; the census was audited against the run-log and found sound) and adopted the KCS builder for exp-222 after audit, with one factual amendment (the SIGNUM identification) made pre-run and recorded above."
+}
