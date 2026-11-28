@@ -16709,3 +16709,120 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 104 continues: expansion 218 (Q-learning, Watkins, 1989) follows this checkpoint in the same session. The Rice direct hearing assigned at exp-215 is discharged (admission); no new hearing is assigned out of this expansion - the Tunnicliffe hearing remains at GenCode's expansion per exp-215, and the Rice node's own expansion, when its turn comes, will judge the publishing-side record (house style manuals, the Manual of Style tradition Rice's text invokes) on its own documents. Carried hearings unchanged: Tunnicliffe at GenCode; Rice at GML discharged here; the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
 }
+
+{
+ "ts": "2026-11-28T13:06:09.128423+00:00",
+ "event": "expansion",
+ "session": 104,
+ "expansion": 218,
+ "parent": "q-learning-watkins-1989-1989",
+ "parent_name": "Q-learning (Watkins, 1989)",
+ "parent_year": 1989,
+ "parent_depth": 6,
+ "date": "2026-11-28",
+ "brief_correction": "Two carried hearings from exp-216 were assigned to this expansion and both are discharged here on the primary text. (1) Dynamic Programming, rejected at Advantage updating as MEDIATED via Q-learning with rediscovery expressly 'belonging one level down, at the incremental methods' own expansions', is admitted here as a LINK (6.0): at Q-learning no intermediary remains - the child is the incremental method, and it consumes DP in its classical form first (ch.4) and as the reorganised object second. (2) The Bellman optimality equations, rejected at exp-216 on the counterfactual asymmetry with the exp-192 criterion recorded ('the parent's object is the equations' solution set'), are admitted here as a LINK (4.0) because that criterion is met verbatim at this parent and was not met at AU - see the admissions. The brief's second instruction is also discharged: session 103 admitted this node without independently reading Watkins's text; the full thesis has now been read (see grounding), and the node's stored leap/prior_state/bottleneck were checked against it and stand as written - the thesis's own terms are 'canonical costs' for action values in the Summary and Q thereafter, and its convergence claim is Appendix 1's, exactly as the stored record says. One correction to a standing summary-level belief, recorded for accuracy: TD(lambda) is NOT absent from Watkins's text (the exp-216 find-verified absence was Baird-specific); it is present, attributed and redescribed - and still rejected here, on routing rather than presence (see notable_rejections). FIX-UP discharged here per house pattern: expansion 217's sync_commit = d551de5b (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that pass via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "The parent's primary text was obtained and read: Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge, May 1989 - 241 pp., downloaded as a scanned photocopy (no text layer) from the author's Royal Holloway page and read visually from rendered page images (the sessions 91-92 workaround; RapidOCR was attempted and abandoned as too slow on this CPU, the visual read being the same workaround's other half). Read: Summary; Corrigenda; ch.2 opening; ch.4 'Policy Optimisation by Dynamic Programming' in substance (value functions p.45, action-values and the Policy Improvement Theorem p.47 - 'The proof is given in detail in Bellman and Dreyfus (1962), and in Ross (1983)' - value iteration as an explicit algorithm p.50, with 'This proof is given in Ross (1983), and it is generalised in appendix 1 where it is used to prove the convergence of a learning method'); ch.6 opening (model-based learning defined against 'the standard dynamic programming methods'); ch.7 'Primitive Learning' secs.1-4 in substance (p.81 'Primitive learning may be described as incremental dynamic programming by a Monte-Carlo method'; p.82 Howard (1960) cited for the transition-model remark; p.84 returns; p.87 corrected truncated returns, the one-step case's proof 'a special case of the local improvement theorem proved in the chapter on dynamic programming', and 'This estimator has been investigated by Sutton (1988); I will describe his work in my notation'; p.88 'What Sutton terms the TD(lambda) return'; p.91 activity traces, 'This method is used in the learning algorithm in Barto, Sutton, and Anderson (1983)', 'Sutton (1988) describes the use of these temporal difference estimators for estimating value functions'; p.93 variance reduction 'see Rubinstein 1981, chapter 5'; p.95 sec.3 'Learning Action-Values' - store Q(x,a), U^Q(x) = max_a Q(x,a), the greedy implicit policy; p.98 the lambda-weighted Q family left unproven and sec.4's prior-art characterization - 'the policy has been represented by action-weights, or action probabilities, rather than by action-values. The values of states were represented explicitly, but action-values were not. Methods of this type have been described by Michie (1967), Widrow et al (1972) [corrigenda: read 1973; and delete the Michie (1967) citation], Mendel and McLaren (1972), Witten (1977), Barto, Sutton, and Anderson (1983) and Sutton (1984), Wheeler and Narendra (1986), and Anderson (1987), and also by Liepins et al (1989), and Hampson (1983)'); ch.10 opening (p.137: conventional DP computes action values temporarily and does 'not usually store' them); Appendix 1 opening and proof pages (the action-replay process construction; the corrigenda's restated sufficient conditions); the full References, thesis pp.229-234 (Bellman & Dreyfus 1962; Howard 1960; Sutton 1988; Sutton 1984; Samuel 1959 AND 1967; Michie & Chambers 1968; Widrow, Gupta & Maitra 1973; Witten 1977; Rubinstein 1981; Albus 1981; NO Robbins & Monro - find-verified against the complete list; NO entry for Bellman's 1957 MDP paper or the 1957 DP book - the thesis's DP sources are the 1962 text and the textbooks). The author's own abstract (Royal Holloway page) corroborates: 'learning to control a Markov Decision Process by incremental dynamic programming... including Q-learning, for which a sketch of a proof of convergence is given'. Search scope noted honestly in the Samuel verdict: chs.4, 6, 7 and ch.10's opening read in full or in substance; the remaining chapters were not paged through, and the Samuel rejection rests on the derivation's documented path plus the p.98 characterization, not on a claim that Samuel is nowhere mentioned.",
+ "scout": {
+  "raw_filings": 12,
+  "matched_existing": 7,
+  "judge_queue": 1,
+  "judgments_applied": 1,
+  "distinct": 11,
+  "dropped_year_bound": 1,
+  "note": "Document-census pattern: 12 filings from the thesis alone - the DP complex in its three separable identities (DP the method, the optimality equations, the MDP frame) plus policy iteration, so that each identity is judged on its own relation rather than smuggled in as one lump; Sutton's TD(lambda) and the AHC (the exp-216 routed hearings); Samuel (bibliography x2); and the p.98 prior-art class's hearable members (BOXES, Widrow-Gupta-Maitra 1973 under own-version discipline against the graph's Widrow-Hoff 1960 node, Witten 1977, Monte Carlo/Rubinstein 1981 as the thesis's named substrate, and Liepins et al 1989 filed at its own year and dropped by the resolver's year bound - recorded, not re-dated). The single judge-queue pair (policy iteration candidate vs the existing Howard node) was judged SAME - the candidate card describes the thesis's use, the node card the method; identity is exact. Resolve ran under the TF-IDF FALLBACK embedder (MiniLM did not load) - recorded per the exp-205 pattern; the fallback produced one gray-zone pair that human judgment resolved as SAME, and with 7 of 11 matched to existing nodes it changed no outcome. 23 lens entries with dry/shortfall notes in dry_notes_q-learning-watkins-1989-1989.json. Considered and not filed, with reasons in the dry notes: the DP textbook carriers (Bellman & Dreyfus 1962, Ross 1983, Bertsekas 1976, Denardo 1982, Dreyfus & Law 1977, White 1963, Dynkin 1979 - carriage for the DP node under the exp-216 codification discrimination, applied in advance); stochastic approximation (no Robbins & Monro in the bibliography - find-verified; the convergence apparatus is the author's own ARP construction); the remaining p.98 class and bibliography members (Mendel & McLaren 1972; Sutton 1984, heard via the AHC/TD(lambda) filings; Wheeler & Narendra 1986 and the learning-automata line; Anderson 1987; Hampson 1983; Connell & Utgoff 1987; Kumar & Becker 1982; Bush & Mosteller 1955; Barto & Sutton 1981; Sutton & Pinette 1985); CMAC/Albus 1981 (heard and rejected at exp-216; here a function-representation citation only, not re-filed); Philips Research Laboratories and King's College (employer/funder - formation without a mechanism)."
+ },
+ "admissions": [
+  {
+   "node": "dynamic-programming-bellman-1957-1957",
+   "name": "Dynamic Programming (Bellman, 1957)",
+   "link": true,
+   "grade": 6.0,
+   "basis": "The exp-216 carried hearing, discharged as a LINK. The channel is definitional in the author's own words at three independent points: the Summary ('alternative methods of organising the dynamic programming calculation'), ch.7's opening ('Primitive learning may be described as incremental dynamic programming by a Monte-Carlo method: the agent's experience... are used in place of transition and reward models'), and ch.4's architecture (value iteration presented as an explicit algorithm whose convergence proof 'is generalised in appendix 1 where it is used to prove the convergence of a learning method'). The parent extracts DP's worked object - the backup over action-values, with the improvement theorem licensing the greedy max - and re-executes it on sampled transitions. Mediation analysis: none - at AU the mediation held because Q-learning stood between; here the consumer is Q-learning itself, and the exp-216 record named this expansion as the rediscovery's home. The link target's stored verification record (from its own admission history) was NOT overwritten, per the exps 210/213 deviation precedent; this hearing is documented on the edge's verdicts and here."
+  },
+  {
+   "node": "bellman-optimality-equations-bellman-1957-1957",
+   "name": "Bellman optimality equations (Bellman, 1957)",
+   "link": true,
+   "grade": 4.0,
+   "basis": "The session's most contestable admission, recorded with its full discrimination. Exp-216 rejected this candidate at Advantage updating in the framework's strongest form: stated, derived-from, verified-against, and still an asymmetric counterfactual - remove the equations and AU follows from Q-learning by Theorem 1's reduction. Exp-216 simultaneously recorded the exp-192 admission criterion: the edge holds where the parent's object IS the equations' solution set (at IRL, the parent's object is the solution set). At Q-learning that criterion is met verbatim: the stored object is Q*, the optimal action-value function - the equations' fixed point for action values - and Appendix 1 proves the iterates reach 'the exact optimal action values'. Remove the equations here and the update has no target, no fixed point and no theorem; the asymmetry that killed the AU edge is absent. AU's object, by contrast, is a derived pair (the advantage equations 25-26) one reduction away, with Q-learning standing between it and the equations. Edge-scoped variance of the standing kind (FORTRAN scored 2.0/2.0/1.5 across B/BCPL/CPL); the exp-192 admission and exp-216 rejection are both untouched, and this edge is first in line for rehearing if a Watkins document is produced that defines Q* without the one-step consistency condition. The link target's stored verification record was NOT overwritten (exps 210/213 precedent)."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "TD(lambda) temporal-difference learning (Sutton, 1988) [existing node]",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST INSTRUCTIVE NEGATIVE, and the mirror of exp-216: there, TD(lambda) failed at Advantage updating on find-verified ABSENCE (no TD(lambda) anywhere in Baird's text). Here presence is verified in detail - attributed ('investigated by Sutton (1988)'), redescribed in Watkins's notation, named in Sutton's own term ('What Sutton terms the TD(lambda) return') - and the edge still fails, on routing: what Sutton's estimator feeds is the chapter's prediction machinery and the general lambda-weighted Q family that Watkins explicitly could not prove ('I have not been able to show that they will always work'); the parent - one-step Q-learning, the family member with the proof - grounds its target's error-reduction in 'the local improvement theorem proved in the chapter on dynamic programming' (p.87), and Watkins scopes Sutton's use himself: 'temporal difference estimators for estimating value functions in Markov processes with rewards' (p.91). Prediction's trunk, control's sibling. Presence is not consumption; consumption by the document is not consumption by the parent's mechanism."
+  },
+  {
+   "name": "A Markovian Decision Process (Bellman, 1957) [existing node]",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Framework presupposition: the MDP is the problem statement, and the parent's object is not the frame's object (the asymmetry that the equations edge, at this same parent, escapes). Compounded by carriage: the thesis's MDP sources are Howard (1960) and Bellman & Dreyfus (1962); the 1957 paper is not in the bibliography at all."
+  },
+  {
+   "name": "Policy iteration (Howard, 1960) [existing node]",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "The parent abolishes the candidate's defining structure: policy iteration alternates evaluation of a stored policy with greedy improvement; Q-learning stores no policy and evaluates nothing separately - the greedy choice is read off Q inside the backup. The improvement licence inside the target is the improvement theorem as Bellman & Dreyfus and Ross prove it (scored at the DP edge); Howard's own appearance in the thesis is a framing remark about the cost of representing transition models (p.82)."
+  },
+  {
+   "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983) [existing node]",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Exp-216's parallel-branch finding re-heard at the routing parent and confirmed on the primary text, with the framing corrected: at AU the rejection was 'mediated via Q-learning'; here the channel is direct but insufficient - three genuine citations (trace-update user, p.91; pole-balancing fellow student, ch.2; class member, p.98), none routing a mechanism into an update whose stored object (action-values) is the very thing the AHC architecture lacks."
+  },
+  {
+   "name": "Witten's adaptive optimal controller (Witten, 1977)",
+   "score": 1.5,
+   "kind": "fail_closed",
+   "basis": "The anticipation claim heard and placed: later literature treats Witten (1977) as the closest contemporary anticipation of action-value learning, but the parent's own document names it once, inside the class Watkins characterizes by the absence of stored action-values. Documents govern over retrospective literature. A rehearing condition is recorded in the verdicts: if Witten's text is read in a future session and shows stored action-values with a one-step backup, the claim belongs to Witten's own position in the graph (an anticipation/priority question), not to a retroactive edge here."
+  },
+  {
+   "name": "Samuel's checkers player (Samuel, 1959) [existing node]",
+   "score": 1.5,
+   "kind": "fail_closed",
+   "basis": "Bibliography presence (both the 1959 and 1967 papers) plus field ancestry; no mechanism transfer anywhere in the derivation, and Watkins's p.98 characterization places the tradition Samuel exemplifies on the far side of the parent's defining break. Recognition and ancestry are not consumption (exp-210). Samuel's edge in this graph attaches where the run heard it on a document that consumes him (exp-194, at TD(lambda))."
+  }
+ ],
+ "verification": {
+  "file": null,
+  "outcomes": {},
+  "mediation_actions": [],
+  "attack_notes": "No fresh nodes were created in this expansion, so no new section-6.4 verification records arise. Both survivors are LINKs to existing nodes carrying substantive verification records from their own admissions (DP: provisional, from its admission history; Bellman optimality equations: provisional, admitted at exp-192) - per the exps 210/213 deviation precedent those records were NOT overwritten; both were confirmed non-null on disk after apply-verdicts, and the hearings are documented on the edges' verdicts and in this record. Adversarial attacks run in the verdicts themselves: on the DP link, the mediation attack (discharged - the exp-216 mediator is this parent); on the equations link, the exp-216 asymmetry attack (fails here for the recorded reason - the parent's object is the solution set), the double-counting attack against the DP edge (met by scoring the equations' Q2/Q7 at partial and confining its Q1/Q6 to the fixed-point content), and the multiples attack (no second derivation of the update exists in the document). The TD(lambda) rejection was attacked from the other side - presence, attribution and redescription all verified - and stands on routing alone, the weakest-form rejection of the session and the one most exposed to a future rehearing if the parent node's identity is ever widened from one-step Q-learning to the thesis's whole Q family."
+ },
+ "totals_after": {
+  "nodes": 353,
+  "edges": 456,
+  "budget": "353/2000",
+  "expansions_done": 218,
+  "provisional": 336,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 71,
+   "6": 55,
+   "7": 36,
+   "8": 24,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 3,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "complexity-of-reinforcement-learning-whitehead-1991",
+  "ieee-754-binary-floating-point-arithmetic-1985-1985",
+  "maclisp-1966",
+  "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+  "optimal-inventory-policy-arrow-harris-marschak-1951-1951"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "SESSION 104 CLOSES HERE: expansions 217 (GML) and 218 (Q-learning) both complete and checkpointed. Session totals: 1 new node (Rice, 3.5), 2 links (DP 6.0 and Bellman optimality equations 4.0, both into Q-learning), 13 rejections, 2 year-bound drops (the law-office project at exp-217; Liepins et al at exp-218), both TF-IDF-fallback resolves recorded. Carried hearings discharged this session: Rice at GML (admitted), DP at Q-learning (admitted), Bellman-equations criterion from exp-216 (applied, admitted). New rehearing conditions recorded: Rice's 1968 dating (if the articles' first appearance is dated to 1969, the node's year must be revisited - the edge survives on the memoir's within-year sequence); Witten 1977 (an anticipation claim to be heard at Witten's own position if his text shows stored action-values); TD(lambda) at Q-learning (rehearing if the parent node's identity is ever widened to the thesis's whole Q family). Carried hearings unchanged otherwise: Tunnicliffe at GenCode; AHC at ACP; Dyna at any residual-gradient expansion; DCF and GenCode at SGML; the EM hearing still belongs to the McLachlan & Basford (1988) expansion. Session 105 is NOT started, per instructions."
+}

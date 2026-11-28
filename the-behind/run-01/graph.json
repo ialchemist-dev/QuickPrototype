@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T12:48:35+00:00",
-  "expansions_done": 217,
-  "raw_candidates_seen": 8989,
+  "updated_at": "2026-11-28T13:05:25+00:00",
+  "expansions_done": 218,
+  "raw_candidates_seen": 9001,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -36043,6 +36043,60 @@
     "name": "International Business Machines (IBM)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T12:48:08+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "A Markovian Decision Process (Bellman, 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "Policy iteration (Howard, 1960)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "TD(lambda) temporal-difference learning (Sutton, 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "Samuel's checkers player (Samuel, 1959)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "BOXES (Michie & Chambers, 1968)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "Punish/reward learning with a critic (Widrow, Gupta & Maitra, 1973)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "Witten's adaptive optimal controller (Witten, 1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "q-learning-watkins-1989-1989",
+    "name": "Monte Carlo simulation methods (Rubinstein, 1981)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:05:25+00:00"
    }
   ]
  },
@@ -46310,7 +46364,7 @@
    "prior_state": "Optimal control was computed by dynamic programming over a known transition model (value and policy iteration), or approached by trial-and-error learning schemes with no action-value storage and no convergence guarantee.",
    "status": "provisional",
    "depth": 6,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.5,
    "sources": [
     {
@@ -90955,6 +91009,200 @@
     "mediator": null,
     "evidence": "Memoir: 'I mentioned that I thought it best to remove the procedural markup. He said something about that being wrong because the markup could have other uses... and referred me to Stan Rice's work. The rest, as they say, is history... Later in 1969, together with Ed Mosher and Ray Lorie, I invented Generalized Markup Language (GML) to solve the data representation problem.' The mediation attack - that the real source was Tunnicliffe/GenCode and Rice a courtesy name - fails on the same memoir: Goldfarb did not know Tunnicliffe's work ('though I didn't know about it'), first met him in 1971, and states the GCA 'continued to work independently of our efforts in Cambridge' until 1978. Furth is a carrier (a person, R10), not a milestone mediator; the enabler is the published scheme he carried into the room."
    }
+  },
+  {
+   "predecessor_id": "dynamic-programming-bellman-1957-1957",
+   "successor_id": "q-learning-watkins-1989-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "DP's backup is the impossibility-flip the parent inherits: before the reorganisation, optimal control from experience alone was not computable at all; the parent's update is ch.4's value-iteration step with the model's expectation replaced by the observed transition - the same step, made learnable.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'; Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.7 'Primitive Learning'",
+     "falsification": "This pass dies if the one-step update is shown to derive from a non-DP source; the thesis's derivation runs ch.4 -> ch.7 sec.3 in the open."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "DP supplied a space, not a trick: value functions, action-values, the improvement theorem, value iteration and policy iteration - the family from which the parent's methods are drawn and against which they are defined.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Dies if the parent's machinery is shown to come from a single borrowed device rather than the DP complex; ch.4 presents the complex entire."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "No substitute path exists in the document: the thesis weighs the alternatives - model-based learning (ch.6) and the prior learning art (ch.7 sec.4) - and the parent's derivation and proof run through DP alone; the convergence argument is value iteration's, generalised.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'; Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), Appendix 1 'Convergence of One-Step Q-Learning'",
+     "falsification": "Falls if a second, independent derivation of the update is produced from the prior learning art; the thesis's sec.4 argues the art lacks the parent's defining object (stored action-values)."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "DP over a known model is exact but model-bound and sweep-priced; the order-of-magnitude cost change (one transition per update, no model) is the parent's contribution, not DP's.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial: the baseline DP supplies is what the parent's economy is measured against."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "DP made optimal behaviour a computable, checkable quantity (the optimal value function as yardstick); the observability of learning itself - convergence from data - is the parent's addition.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial for the yardstick role."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Ch.4 opens with the explanatory model entire: 'Dynamic programming is a method of solving the credit-assignment problem in multi-stage decision processes... by constructing an evaluation function, also known as a value function or a return function, on the state-space.' The parent is that model, learned.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Dies if the credit-assignment-by-value-function framing is shown to be a later gloss; it is the chapter's first paragraph."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: the backup and the policy improvement theorem are the standard parts the parent's update assembles - the improvement theorem (thesis p.47) is exactly the licence for the greedy max inside the target.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Dies if the max in the target is shown to enter from elsewhere; ch.4 derives it from action-values and improvement."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "DP itself crossed from operations research into this thesis; the further transfer - from computing policies to learning them - is the parent's act, scored there.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "DP's sweeps set the iteration baseline; the collapse of the loop to single transitions is the parent's, but it is DP's loop being collapsed.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "DP was the default method of policy optimisation, and the parent positions itself inside it, not against it: 'the conventional methods of determining optimal policies by dynamic programming are then described... However, there is a range of alternative methods of organising the dynamic programming calculation' (Summary).",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), Summary",
+     "falsification": "Dies if the thesis framed DP as a rival to be displaced; it frames it as the calculation to be reorganised."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "In this lineage DP is the trunk and the parent its incremental branch - the inventor's own description. In the wider graph DP has many children; the edge here is the definitional one.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.7 'Primitive Learning'",
+     "falsification": "Held at partial."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The baseline DP fixed - values, discounting, improvement, iteration - is the one the parent and its successors still report against; irreversibility shared with the equations node.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T13:05:25+00:00",
+   "leap": {
+    "prior_state": "Optimal control was computed by dynamic programming over a known transition model - value iteration and policy iteration sweeping a model the learner had to possess - or approached by trial-and-error learning schemes that stored state values or action-weights but never action-values, and carried no convergence guarantee.",
+    "jump": "Q-learning (Watkins, 1989) stores action values Q(x,a) - the expected discounted return for doing a in x and acting optimally thereafter - and updates the visited pair from a single observed transition [x a r y] toward r + gamma * max_a' Q(y,a'), with a convergence proof (Appendix 1, by the action-replay construction): the dynamic programming calculation reorganised so that experience replaces the model, and optimal control becomes learnable online, one transition at a time.",
+    "date": 1989
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove dynamic programming and the parent has nothing to reorganise: the thesis defines its contribution as 'alternative methods of organising the dynamic programming calculation' (Summary), names ch.7's subject 'incremental dynamic programming by a Monte-Carlo method' (p.81), builds the parent's update out of ch.4's value-iteration backup over action-values, and proves convergence by generalising value iteration's own convergence argument in Appendix 1 (announced at thesis p.50). The dependency is on the calculation itself, not on a description of it.",
+    "mediator": null,
+    "evidence": "The exp-216 mediation (DP rejected at Advantage updating as mediated via Q-learning: 'everything DP-shaped in the parent arrives already transformed into its incremental, model-free descendant... rediscovery belongs one level down, at the incremental methods' own expansions') is discharged at exactly the level it pointed to: THIS expansion. At Q-learning no further intermediary stands between DP and the child - the child is the incremental method, and it consumes DP twice over, first in its classical model-based form (ch.4's presentation, from Bellman and Dreyfus 1962, the method's own text) and then as the object of the reorganisation. Bellman & Dreyfus (1962) and Ross (1983) are the citation carriers of this channel (the exp-216 codification discrimination), filed under the DP node, not as mediators: a method's standard text is the method, read."
+   }
+  },
+  {
+   "predecessor_id": "bellman-optimality-equations-bellman-1957-1957",
+   "successor_id": "q-learning-watkins-1989-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The equations flip the parent's central impossibility into a target: optimal action values exist as a defined object only as the equations' fixed point, and the parent's claim is precisely that this object can be reached from transitions. Without the fixed point there is nothing for the convergence proof to converge to.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), Appendix 1 'Convergence of One-Step Q-Learning'; Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Dies if Appendix 1's limit object is characterised independently of the optimality equations; the appendix constructs the action-replay process precisely so that its optimal action values coincide with the parent's iterates and converge to the true ones."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The equations open the space of operator-iteration methods (value iteration is their iteration); at this parent they contribute the target and the operator - the space-making is shared with the DP node.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial to avoid double-counting the DP edge's Q2."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "No substitute: any other statement of optimal action values is these equations rewritten; the parent's correctness is stated in their terms alone, and the thesis offers no rival characterisation.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Falls if a document shows Watkins defining Q* without the one-step consistency condition; ch.4's definitions run through it."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Solving the equations exactly over a model is the cost the parent avoids; the equations themselves collapse no cost, but they state the problem in the per-state form that makes a one-transition update possible at all.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "The equations make optimality measurable: a candidate Q is optimal iff it satisfies them, the check the parent's proof exploits via the action-replay construction.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), Appendix 1 'Convergence of One-Step Q-Learning'",
+     "falsification": "Held at partial."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Explanatory model: one-step consistency - a value is the immediate reward plus the discounted best continuation - is the entire content of the parent's target r + gamma max_a' Q(y,a'); the update is the model, sampled.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'; Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.7 'Primitive Learning'",
+     "falsification": "Dies if the target is shown to come from the estimator literature rather than the consistency equation; ch.7 sec.2's corrected returns are built to have the error-reduction property 'proved in the chapter on dynamic programming' (thesis p.87)."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Interface: the operator form is what implementations iterate; the parent implements it stochastically, one sample at a time.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial."
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "No cross-domain unlock in relation to this parent beyond the DP complex itself.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "No such channel is claimed in the document."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed effect is attributable to the equations as such; the speed is the parent's sampling.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "As Q8."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "The equations were already the default statement of optimality inside DP; the parent inherits the default rather than displacing it.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "A trunk object of the DP lineage, with edge-scoped variance on record (admitted at IRL exp-192 and here; rejected at AU exp-216 and at TD(lambda) exp-194 in its framework form).",
+     "source": "run-01 run-log, expansion 216 record (session 103)",
+     "falsification": "Held at partial; the variance is the documented kind, not an inconsistency."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once optimality is an equation, later control methods are stated against it; the irreversibility is shared with the DP node.",
+     "source": "Watkins, 'Learning from Delayed Rewards', PhD thesis, King's College, Cambridge (1989), ch.4 'Policy Optimisation by Dynamic Programming'",
+     "falsification": "Held at partial."
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T13:05:25+00:00",
+   "leap": {
+    "prior_state": "Optimal control was computed by dynamic programming over a known transition model - value iteration and policy iteration sweeping a model the learner had to possess - or approached by trial-and-error learning schemes that stored state values or action-weights but never action-values, and carried no convergence guarantee.",
+    "jump": "Q-learning (Watkins, 1989) stores action values Q(x,a) - the expected discounted return for doing a in x and acting optimally thereafter - and updates the visited pair from a single observed transition [x a r y] toward r + gamma * max_a' Q(y,a'), with a convergence proof (Appendix 1, by the action-replay construction): the dynamic programming calculation reorganised so that experience replaces the model, and optimal control becomes learnable online, one transition at a time.",
+    "date": 1989
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the optimality equations and the parent's update has no target: the stored Q is defined as the optimal action-value function, i.e. the equations' fixed point for action values, and Appendix 1's theorem is that the iterates reach exactly that object ('the Q values produced by the one-step Q-learning method... are the exact optimal action values'). The update is the equations' operator applied to a sampled transition - the dependency is symmetric in the way exp-216 found AU's was not.",
+    "mediator": null,
+    "evidence": "DISCRIMINATION AGAINST EXP-216, where this candidate failed at Advantage updating (2.0, fail-closed): there the parent states the equations, derives an advantage-form pair from them and verifies against them, 'and the claim still fails the counterfactual asymmetry: remove the equations' statement and the parent follows from Q-learning (Theorem 1's reduction)'. Exp-216 recorded the admission criterion from exp-192: the edge holds where 'the parent's object is the equations' solution set'. That criterion is met verbatim HERE and was not met at AU: AU's object is a derived decomposition (A = Q - V, its own eqs.25-26) one reduction away from the equations, with Q-learning standing between; Q-learning's object is Q* itself, the equations' solution, with nothing between the update and the operator it stochastically applies. Same candidate, sibling parents, opposite outcomes - edge-scoped variance of the standing kind (FORTRAN at exps 209/211/213). The exp-192 admission and the exp-216 rejection are both untouched."
+   }
   }
  ],
  "merge_log": [
@@ -92277,6 +92525,18 @@
     "cosine": 0.8894
    },
    "reason": "The filing denotes the Lancaster-Oslo/Bergen Corpus (1978) itself, the same advance as the existing node; the shorter filing name is a name variant of the same corpus."
+  },
+  {
+   "at": "2026-11-28T13:03:16+00:00",
+   "from_id": "cand:Policy iteration (Howard, 1960)",
+   "into_id": "policy-iteration-howard-1960",
+   "signals": [
+    "judge"
+   ],
+   "scores": {
+    "cosine": 0.3192
+   },
+   "reason": "Same artifact: Howard's policy iteration from 'Dynamic Programming and Markov Processes' (1960) - alternate policy evaluation with greedy improvement until an optimal policy is reached. The candidate card describes the thesis's use of it; the node card describes the method itself; name, author and year coincide exactly. The low TF-IDF similarity reflects the candidate text's focus on the Watkins channel, not a difference of identity."
   }
  ],
  "expansions": {
@@ -400306,6 +400566,401 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "q-learning-watkins-1989-1989": {
+   "raw_candidates": [
+    {
+     "causal_claim": "The carried hearing from exp-216, where DP was rejected at Advantage updating as mediated via this parent. On the thesis itself the channel is direct and definitional: Watkins's Summary frames the whole work as finding 'alternative methods of organising the dynamic programming calculation'; ch.7 opens 'Primitive learning may be described as incremental dynamic programming by a Monte-Carlo method: the agent's experience - the state-transitions and the rewards that the agent observes - are used in place of transition and reward models'; ch.4 presents DP's own machinery from Bellman and Dreyfus (1962) - value functions, action-values Q_f(x,a), the policy improvement theorem, and value iteration as an explicit algorithm (thesis p.50) - and states that value iteration's convergence proof 'is generalised in appendix 1 where it is used to prove the convergence of a learning method'. The parent extracts DP's worked object - the backup over action-values - and re-executes it on sampled transitions with the model removed.",
+     "evidence": "Watkins (1989), Summary; ch.4 (thesis pp.44-54); ch.7 p.81; Appendix 1 (thesis p.220).",
+     "lens": "L19",
+     "name": "Dynamic Programming (Bellman, 1957)",
+     "type": "method",
+     "year": 1957
+    },
+    {
+     "causal_claim": "At exp-216 this candidate failed at Advantage updating on the counterfactual asymmetry, with the exp-192 admission criterion recorded: the edge holds where 'the parent's object is the equations' solution set'. That criterion is met verbatim at this parent: the stored Q is defined as the optimal action-value function - the solution of the optimality equation for action values, Q*(x,a) = E[r + gamma max_a' Q*(y,a')] - ch.4 derives action-values and the improvement theorem inside the DP presentation, and Appendix 1 proves the one-step iterates converge to 'the exact optimal action values', i.e. to the equations' fixed point. The update is the optimality operator applied to a sampled transition; remove the equations and the update has no target, no fixed point and no convergence claim. Filed for a LINK verdict on that discrimination.",
+     "evidence": "Watkins (1989), ch.4 (thesis pp.45-50); ch.7 sec.3 (thesis p.95); Appendix 1 (thesis p.220); exp-216 run-log record (the asymmetry and the exp-192 criterion).",
+     "lens": "L19",
+     "name": "Bellman optimality equations (Bellman, 1957)",
+     "type": "method",
+     "year": 1957
+    },
+    {
+     "causal_claim": "Ch.3 of the thesis presents Markov decision processes as the formal model of the learning problem (Summary: 'Markov decision processes are a general formal model of an animal's behavioural choices in its environment'), and the parent's update and proof are stated for an MDP throughout. Filed so the framework channel is heard on the thesis: the MDP is the problem class the parent presupposes, and the thesis's MDP sources are the textbooks (Howard 1960; Bellman and Dreyfus 1962) - Bellman's 1957 paper itself is not in the bibliography.",
+     "evidence": "Watkins (1989), Summary; ch.3 (thesis pp.37-43); References (thesis pp.229-234).",
+     "lens": "L4",
+     "name": "A Markovian Decision Process (Bellman, 1957)",
+     "type": "paper",
+     "year": 1957
+    },
+    {
+     "causal_claim": "Howard's 1960 book is in the bibliography and Howard is cited by name in ch.7 (thesis p.82) for the remark that conventional policy optimisation is 'severely limited by the need to represent the transition model'; ch.4 presents the policy improvement theorem (proof credited to Bellman and Dreyfus 1962 and Ross 1983) from which policy iteration is assembled. Filed so the channel is heard: the parent's update folds a greedy improvement into every backup but abolishes policy iteration's evaluate-then-improve alternation - there is no separately represented policy to evaluate.",
+     "evidence": "Watkins (1989), ch.4 (thesis p.47); ch.7 p.82; References.",
+     "lens": "L9",
+     "name": "Policy iteration (Howard, 1960)",
+     "type": "method",
+     "year": 1960
+    },
+    {
+     "causal_claim": "Unlike at Advantage updating (exp-216, find-verified absence in Baird's text), Sutton's TD(lambda) is textually present here: ch.7 sec.2 builds the estimator family of corrected truncated returns, names the lambda-weighted member Sutton's - 'This estimator has been investigated by Sutton (1988); I will describe his work in my notation' (thesis p.87); 'What Sutton terms the TD(lambda) return' (p.88) - and applies the family to action-values in sec.3, where the general lambda-weighted Q methods are left unproven ('I have not been able to show that they will always work', p.98). Filed so the routing is judged on the text: the parent as stored - one-step Q-learning, the member with the Appendix-1 proof - grounds its one-step estimator in the DP chapter's local improvement theorem (p.87), not in Sutton's weighting, and Sutton's estimator as consumed is for 'estimating value functions in Markov processes with rewards' (p.91), a prediction method.",
+     "evidence": "Watkins (1989), ch.7 secs.2-3 (thesis pp.87-98).",
+     "lens": "L13",
+     "name": "TD(lambda) temporal-difference learning (Sutton, 1988)",
+     "type": "method",
+     "year": 1988
+    },
+    {
+     "causal_claim": "Both Samuel papers (1959; 1967) are in the thesis bibliography. Filed so the senior machine-learning system's channel is heard on this document: in the chapters read (4, 6, 7, 10) no passage takes up Samuel's adjustment mechanism, and Watkins's own characterization of the prior primitive-learning art (thesis p.98) - policies represented by action-weights or probabilities, 'the values of states were represented explicitly, but action-values were not' - places the tradition Samuel exemplifies on the far side of the parent's defining break, the storage of action-values.",
+     "evidence": "Watkins (1989), References (Samuel 1959, 1967); ch.7 sec.4 (thesis p.98); ch.10 p.137 (conventional practice computes action-values temporarily and does not store them).",
+     "lens": "L21",
+     "name": "Samuel's checkers player (Samuel, 1959)",
+     "type": "system",
+     "year": 1959
+    },
+    {
+     "causal_claim": "The AHC paper is cited three ways in the thesis: as a user of the activity-trace value update ('This method is used in the learning algorithm in Barto, Sutton, and Anderson (1983)', thesis p.91), as a student of the pole-balancing problem (ch.2, p.25), and as a member of the prior primitive-learning class (p.98). Filed so the exp-216 parallel-branch finding is re-heard at the parent it was routed through: every citation places the AHC inside the prediction/problem layer or the compared class; no AHC mechanism enters the parent's update.",
+     "evidence": "Watkins (1989), ch.2 p.25; ch.7 pp.91, 98; References.",
+     "lens": "L21",
+     "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+     "type": "method",
+     "year": 1983
+    },
+    {
+     "causal_claim": "Michie and Chambers' BOXES is in the bibliography, Michie's pole-balancing work opens ch.2's problem catalogue (thesis p.25, 'studied by Michie (1967), and Barto, Sutton, and Anderson (1983)'), and the p.98 class list names Michie among the previous primitive-learning methods (the corrigenda delete the p.98 'Michie (1967)' citation and correct 'Widrow et al (1972)' to 1973). Filed as the prior-art class's named British system: an adaptive controller that partitions the state space into boxes and learns action selection from lifetimes, with no stored action-values - the configuration the parent's sec.4 characterization defines itself against.",
+     "evidence": "Watkins (1989), ch.2 p.25; ch.7 sec.4 (thesis p.98) with the thesis Corrigenda; References (Michie & Chambers 1968).",
+     "lens": "L19",
+     "name": "BOXES (Michie & Chambers, 1968)",
+     "type": "system",
+     "year": 1968
+    },
+    {
+     "causal_claim": "Widrow, Gupta and Maitra (1973), 'Punish/reward: Learning with a Critic in Adaptive Threshold Systems', is the Widrow work the thesis actually cites - named in the p.98 prior-art class list (the text's '(1972)' corrected to 1973 by the Corrigenda) and entered in the References. Filed separately from the graph's Widrow-Hoff 1960 node under own-version discipline: this is a distinct artifact (a critic-driven reward/punishment rule for adaptive threshold elements), heard here as a class member, not as the delta rule.",
+     "evidence": "Watkins (1989), ch.7 sec.4 (thesis p.98) with the thesis Corrigenda; References (Widrow, Gupta & Maitra 1973).",
+     "lens": "L13",
+     "name": "Punish/reward learning with a critic (Widrow, Gupta & Maitra, 1973)",
+     "type": "method",
+     "year": 1973
+    },
+    {
+     "causal_claim": "Witten (1977), 'An Adaptive Optimal Controller for Discrete-Time Markov Environments', is named in the thesis's p.98 prior-art class list and entered in the References. Later literature sometimes treats Witten's controller as an anticipation of action-value learning; filed so the claim is judged on the parent's own document, where Watkins places it inside the class characterized by the absence of stored action-values - the documents govern over the retrospective literature.",
+     "evidence": "Watkins (1989), ch.7 sec.4 (thesis p.98); References (Witten 1977).",
+     "lens": "L21",
+     "name": "Witten's adaptive optimal controller (Witten, 1977)",
+     "type": "method",
+     "year": 1977
+    },
+    {
+     "causal_claim": "The thesis's own defining phrase for primitive learning is 'incremental dynamic programming by a Monte-Carlo method' (ch.7, p.81), and its one Monte Carlo reference is Rubinstein (1981), cited at thesis p.93 for 'the more general methods used for variance reduction in Monte-Carlo estimation in Markov processes'. Filed so the phrase is heard: the sampling-in-place-of-a-model idea is the generic substrate of the whole approach, while the parent's one-step target is specifically not a Monte Carlo estimate - it bootstraps from the current Q rather than averaging sampled returns, which is the correction the corrected-truncated-return machinery exists to make.",
+     "evidence": "Watkins (1989), ch.7 pp.81, 93; References (Rubinstein 1981).",
+     "lens": "L4",
+     "name": "Monte Carlo simulation methods (Rubinstein, 1981)",
+     "type": "method",
+     "year": 1981
+    },
+    {
+     "causal_claim": "Named in the thesis's p.98 prior-art class list ('and also by Liepins et al (1989)') and entered in the References as 'In preparation'. Filed at its own year, 1989 - the parent's year; the resolver's year bound is expected to drop it, recorded and not re-dated (the exp-216/217 pattern).",
+     "evidence": "Watkins (1989), ch.7 sec.4 (thesis p.98); References (Liepins, Hilliard & Palmer 1989, in preparation).",
+     "lens": "L21",
+     "name": "Credit assignment and discovery in classifier systems (Liepins, Hilliard & Palmer, 1989)",
+     "type": "paper",
+     "year": 1989
+    }
+   ],
+   "resolution": {
+    "embedder": "tfidf-fallback",
+    "distinct": [
+     {
+      "cand_id": "dynamic-programming-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "The carried hearing from exp-216, where DP was rejected at Advantage updating as mediated via this parent. On the thesis itself the channel is direct and definitional: Watkins's Summary frames the whole work as finding 'alternative methods of organising the dynamic programming calculation'; ch.7 opens 'Primitive learning may be described as incremental dynamic programming by a Monte-Carlo method: the agent's experience - the state-transitions and the rewards that the agent observes - are used in place of transition and reward models'; ch.4 presents DP's own machinery from Bellman and Dreyfus (1962) - value functions, action-values Q_f(x,a), the policy improvement theorem, and value iteration as an explicit algorithm (thesis p.50) - and states that value iteration's convergence proof 'is generalised in appendix 1 where it is used to prove the convergence of a learning method'. The parent extracts DP's worked object - the backup over action-values - and re-executes it on sampled transitions with the model removed.",
+       "evidence": "Watkins (1989), Summary; ch.4 (thesis pp.44-54); ch.7 p.81; Appendix 1 (thesis p.220).",
+       "lens": "L19",
+       "name": "Dynamic Programming (Bellman, 1957)",
+       "type": "method",
+       "year": 1957
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Dynamic Programming (Bellman, 1957)"
+      ],
+      "matched_node_id": "dynamic-programming-bellman-1957-1957",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bellman-optimality-equations-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "At exp-216 this candidate failed at Advantage updating on the counterfactual asymmetry, with the exp-192 admission criterion recorded: the edge holds where 'the parent's object is the equations' solution set'. That criterion is met verbatim at this parent: the stored Q is defined as the optimal action-value function - the solution of the optimality equation for action values, Q*(x,a) = E[r + gamma max_a' Q*(y,a')] - ch.4 derives action-values and the improvement theorem inside the DP presentation, and Appendix 1 proves the one-step iterates converge to 'the exact optimal action values', i.e. to the equations' fixed point. The update is the optimality operator applied to a sampled transition; remove the equations and the update has no target, no fixed point and no convergence claim. Filed for a LINK verdict on that discrimination.",
+       "evidence": "Watkins (1989), ch.4 (thesis pp.45-50); ch.7 sec.3 (thesis p.95); Appendix 1 (thesis p.220); exp-216 run-log record (the asymmetry and the exp-192 criterion).",
+       "lens": "L19",
+       "name": "Bellman optimality equations (Bellman, 1957)",
+       "type": "method",
+       "year": 1957
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Bellman optimality equations (Bellman, 1957)"
+      ],
+      "matched_node_id": "bellman-optimality-equations-bellman-1957-1957",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-markovian-decision-process-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "Ch.3 of the thesis presents Markov decision processes as the formal model of the learning problem (Summary: 'Markov decision processes are a general formal model of an animal's behavioural choices in its environment'), and the parent's update and proof are stated for an MDP throughout. Filed so the framework channel is heard on the thesis: the MDP is the problem class the parent presupposes, and the thesis's MDP sources are the textbooks (Howard 1960; Bellman and Dreyfus 1962) - Bellman's 1957 paper itself is not in the bibliography.",
+       "evidence": "Watkins (1989), Summary; ch.3 (thesis pp.37-43); References (thesis pp.229-234).",
+       "lens": "L4",
+       "name": "A Markovian Decision Process (Bellman, 1957)",
+       "type": "paper",
+       "year": 1957
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "A Markovian Decision Process (Bellman, 1957)"
+      ],
+      "matched_node_id": "a-markovian-decision-process-bellman-1957-1957",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "policy-iteration-howard-1960-1960",
+      "candidate": {
+       "causal_claim": "Howard's 1960 book is in the bibliography and Howard is cited by name in ch.7 (thesis p.82) for the remark that conventional policy optimisation is 'severely limited by the need to represent the transition model'; ch.4 presents the policy improvement theorem (proof credited to Bellman and Dreyfus 1962 and Ross 1983) from which policy iteration is assembled. Filed so the channel is heard: the parent's update folds a greedy improvement into every backup but abolishes policy iteration's evaluate-then-improve alternation - there is no separately represented policy to evaluate.",
+       "evidence": "Watkins (1989), ch.4 (thesis p.47); ch.7 p.82; References.",
+       "lens": "L9",
+       "name": "Policy iteration (Howard, 1960)",
+       "type": "method",
+       "year": 1960
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Policy iteration (Howard, 1960)"
+      ],
+      "matched_node_id": "policy-iteration-howard-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+      "candidate": {
+       "causal_claim": "Unlike at Advantage updating (exp-216, find-verified absence in Baird's text), Sutton's TD(lambda) is textually present here: ch.7 sec.2 builds the estimator family of corrected truncated returns, names the lambda-weighted member Sutton's - 'This estimator has been investigated by Sutton (1988); I will describe his work in my notation' (thesis p.87); 'What Sutton terms the TD(lambda) return' (p.88) - and applies the family to action-values in sec.3, where the general lambda-weighted Q methods are left unproven ('I have not been able to show that they will always work', p.98). Filed so the routing is judged on the text: the parent as stored - one-step Q-learning, the member with the Appendix-1 proof - grounds its one-step estimator in the DP chapter's local improvement theorem (p.87), not in Sutton's weighting, and Sutton's estimator as consumed is for 'estimating value functions in Markov processes with rewards' (p.91), a prediction method.",
+       "evidence": "Watkins (1989), ch.7 secs.2-3 (thesis pp.87-98).",
+       "lens": "L13",
+       "name": "TD(lambda) temporal-difference learning (Sutton, 1988)",
+       "type": "method",
+       "year": 1988
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "TD(lambda) temporal-difference learning (Sutton, 1988)"
+      ],
+      "matched_node_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "samuel-s-checkers-player-samuel-1959-1959",
+      "candidate": {
+       "causal_claim": "Both Samuel papers (1959; 1967) are in the thesis bibliography. Filed so the senior machine-learning system's channel is heard on this document: in the chapters read (4, 6, 7, 10) no passage takes up Samuel's adjustment mechanism, and Watkins's own characterization of the prior primitive-learning art (thesis p.98) - policies represented by action-weights or probabilities, 'the values of states were represented explicitly, but action-values were not' - places the tradition Samuel exemplifies on the far side of the parent's defining break, the storage of action-values.",
+       "evidence": "Watkins (1989), References (Samuel 1959, 1967); ch.7 sec.4 (thesis p.98); ch.10 p.137 (conventional practice computes action-values temporarily and does not store them).",
+       "lens": "L21",
+       "name": "Samuel's checkers player (Samuel, 1959)",
+       "type": "system",
+       "year": 1959
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Samuel's checkers player (Samuel, 1959)"
+      ],
+      "matched_node_id": "samuel-s-checkers-player-samuel-1959-1959",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+      "candidate": {
+       "causal_claim": "The AHC paper is cited three ways in the thesis: as a user of the activity-trace value update ('This method is used in the learning algorithm in Barto, Sutton, and Anderson (1983)', thesis p.91), as a student of the pole-balancing problem (ch.2, p.25), and as a member of the prior primitive-learning class (p.98). Filed so the exp-216 parallel-branch finding is re-heard at the parent it was routed through: every citation places the AHC inside the prediction/problem layer or the compared class; no AHC mechanism enters the parent's update.",
+       "evidence": "Watkins (1989), ch.2 p.25; ch.7 pp.91, 98; References.",
+       "lens": "L21",
+       "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+       "type": "method",
+       "year": 1983
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)"
+      ],
+      "matched_node_id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "boxes-michie-chambers-1968-1968",
+      "candidate": {
+       "causal_claim": "Michie and Chambers' BOXES is in the bibliography, Michie's pole-balancing work opens ch.2's problem catalogue (thesis p.25, 'studied by Michie (1967), and Barto, Sutton, and Anderson (1983)'), and the p.98 class list names Michie among the previous primitive-learning methods (the corrigenda delete the p.98 'Michie (1967)' citation and correct 'Widrow et al (1972)' to 1973). Filed as the prior-art class's named British system: an adaptive controller that partitions the state space into boxes and learns action selection from lifetimes, with no stored action-values - the configuration the parent's sec.4 characterization defines itself against.",
+       "evidence": "Watkins (1989), ch.2 p.25; ch.7 sec.4 (thesis p.98) with the thesis Corrigenda; References (Michie & Chambers 1968).",
+       "lens": "L19",
+       "name": "BOXES (Michie & Chambers, 1968)",
+       "type": "system",
+       "year": 1968
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "BOXES (Michie & Chambers, 1968)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "punish-reward-learning-with-a-critic-widrow-gupta-maitra-197-1973",
+      "candidate": {
+       "causal_claim": "Widrow, Gupta and Maitra (1973), 'Punish/reward: Learning with a Critic in Adaptive Threshold Systems', is the Widrow work the thesis actually cites - named in the p.98 prior-art class list (the text's '(1972)' corrected to 1973 by the Corrigenda) and entered in the References. Filed separately from the graph's Widrow-Hoff 1960 node under own-version discipline: this is a distinct artifact (a critic-driven reward/punishment rule for adaptive threshold elements), heard here as a class member, not as the delta rule.",
+       "evidence": "Watkins (1989), ch.7 sec.4 (thesis p.98) with the thesis Corrigenda; References (Widrow, Gupta & Maitra 1973).",
+       "lens": "L13",
+       "name": "Punish/reward learning with a critic (Widrow, Gupta & Maitra, 1973)",
+       "type": "method",
+       "year": 1973
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Punish/reward learning with a critic (Widrow, Gupta & Maitra, 1973)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "witten-s-adaptive-optimal-controller-witten-1977-1977",
+      "candidate": {
+       "causal_claim": "Witten (1977), 'An Adaptive Optimal Controller for Discrete-Time Markov Environments', is named in the thesis's p.98 prior-art class list and entered in the References. Later literature sometimes treats Witten's controller as an anticipation of action-value learning; filed so the claim is judged on the parent's own document, where Watkins places it inside the class characterized by the absence of stored action-values - the documents govern over the retrospective literature.",
+       "evidence": "Watkins (1989), ch.7 sec.4 (thesis p.98); References (Witten 1977).",
+       "lens": "L21",
+       "name": "Witten's adaptive optimal controller (Witten, 1977)",
+       "type": "method",
+       "year": 1977
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Witten's adaptive optimal controller (Witten, 1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "monte-carlo-simulation-methods-rubinstein-1981-1981",
+      "candidate": {
+       "causal_claim": "The thesis's own defining phrase for primitive learning is 'incremental dynamic programming by a Monte-Carlo method' (ch.7, p.81), and its one Monte Carlo reference is Rubinstein (1981), cited at thesis p.93 for 'the more general methods used for variance reduction in Monte-Carlo estimation in Markov processes'. Filed so the phrase is heard: the sampling-in-place-of-a-model idea is the generic substrate of the whole approach, while the parent's one-step target is specifically not a Monte Carlo estimate - it bootstraps from the current Q rather than averaging sampled returns, which is the correction the corrected-truncated-return machinery exists to make.",
+       "evidence": "Watkins (1989), ch.7 pp.81, 93; References (Rubinstein 1981).",
+       "lens": "L4",
+       "name": "Monte Carlo simulation methods (Rubinstein, 1981)",
+       "type": "method",
+       "year": 1981
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Monte Carlo simulation methods (Rubinstein, 1981)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:3:policy-iteration-howard-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 3,
+       "card": {
+        "name": "Policy iteration (Howard, 1960)",
+        "aliases": [],
+        "year": 1960,
+        "domain": "",
+        "type": "method",
+        "definition": "Howard's 1960 book is in the bibliography and Howard is cited by name in ch.7 (thesis p.82) for the remark that conventional policy optimisation is 'severely limited by the need to represent the transition model'; ch.4 presents the policy improvement theorem (proof credited to Bellman and Dreyfus 1962 and Ross 1983) from which policy iteration is assembled. Filed so the channel is heard: the parent's update folds a greedy improvement into every backup but abolishes policy iteration's evaluate-then-improve alternation - there is no separately represented policy to evaluate.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "policy-iteration-howard-1960",
+       "card": {
+        "name": "Policy iteration (Howard)",
+        "aliases": [],
+        "year": 1960,
+        "domain": "artificial intelligence",
+        "type": "method",
+        "definition": "Ronald Howard's policy iteration (in 'Dynamic Programming and Markov Processes', 1960): alternate exact policy evaluation with greedy policy improvement; Howard proved the procedure reaches an optimal policy in finitely many iterations - the exact algorithm the parent makes approximate and certifies.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.3192,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "Named in the thesis's p.98 prior-art class list ('and also by Liepins et al (1989)') and entered in the References as 'In preparation'. Filed at its own year, 1989 - the parent's year; the resolver's year bound is expected to drop it, recorded and not re-dated (the exp-216/217 pattern).",
+       "evidence": "Watkins (1989), ch.7 sec.4 (thesis p.98); References (Liepins, Hilliard & Palmer 1989, in preparation).",
+       "lens": "L21",
+       "name": "Credit assignment and discovery in classifier systems (Liepins, Hilliard & Palmer, 1989)",
+       "type": "paper",
+       "year": 1989
+      },
+      "reason": "dated on/after parent year 1989"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:3:policy-iteration-howard-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 3,
+      "card": {
+       "name": "Policy iteration (Howard, 1960)",
+       "aliases": [],
+       "year": 1960,
+       "domain": "",
+       "type": "method",
+       "definition": "Howard's 1960 book is in the bibliography and Howard is cited by name in ch.7 (thesis p.82) for the remark that conventional policy optimisation is 'severely limited by the need to represent the transition model'; ch.4 presents the policy improvement theorem (proof credited to Bellman and Dreyfus 1962 and Ross 1983) from which policy iteration is assembled. Filed so the channel is heard: the parent's update folds a greedy improvement into every backup but abolishes policy iteration's evaluate-then-improve alternation - there is no separately represented policy to evaluate.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "policy-iteration-howard-1960",
+      "card": {
+       "name": "Policy iteration (Howard)",
+       "aliases": [],
+       "year": 1960,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "definition": "Ronald Howard's policy iteration (in 'Dynamic Programming and Markov Processes', 1960): alternate exact policy evaluation with greedy policy improvement; Howard proved the procedure reaches an optimal policy in finitely many iterations - the exact algorithm the parent makes approximate and certifies.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.3192,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }
