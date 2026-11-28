@@ -17916,3 +17916,181 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record",
  "notes": "Session 109 ends here; session 110 was NOT started. Deferred-hearing ledger unchanged by this expansion: the exp-226 EOQ-at-AHM rehearing condition (a reading of AHM showing a non-lot-size derivation) stands untouched on that edge, per instructions; Baum-at-EM and Wolfe-at-EM remain closed from exp-227. The frontier head is now the Orchard & Woodbury node admitted at exp-227 - its expansion, when it comes, carries the Ceppellini rediscovery path noted in exp-227's record."
 }
+{
+ "ts": "2026-11-28T15:11:07Z",
+ "event": "expansion",
+ "session": 110,
+ "expansion": 229,
+ "parent": "a-missing-information-principle-orchard-woodbury-1972-1972",
+ "parent_name": "A missing information principle (Orchard & Woodbury, 1972)",
+ "parent_year": 1972,
+ "parent_depth": 7,
+ "date": "2026-11-28",
+ "brief_correction": "No stored pipeline stage existed for this parent at session start (expansion stage absent; verified directly), so the expansion ran fresh per RUNBOOK section 5. FIX-UP DISCHARGED: exp-228's sync_commit is a3820723 (the sync that carried exp-228's record; exp-227's c908be82 was discharged in exp-228's record). The brief's one assigned hearing was discharged on the parent's documents: Ceppellini, Siniscalco & Smith (1955), rejected at exp-227 (EM) as mediated via this parent, receives its direct hearing HERE and is ADMITTED (see admissions). Sundberg (1974) was not filed, per the brief: it is downstream of this parent (a parallel exponential-family codification two years later), and its exp-227 hearing at the EM parent stands untouched.",
+ "grounding": "The parent paper read IN FULL from the Berkeley digital-assets copy (Proc. 6th Berkeley Symposium 1, pp. 697-715): S.1 Introduction (the 1946 Woodbury-Cotterman conversation, the ABO gene-frequency instance (1.1)-(1.3), the Ceppellini credit), S.2 Theory (the ML review; score (2.1); information (2.4); the constrained apparatus (2.5)-(2.9) on Aitchison & Silvey; the score factorization (2.10)-(2.13); the information decomposition (2.16); the lost-information/hidden-variance relations (2.17)-(2.23)), all four Examples (S.3.1 linear model - the Tocher passage; S.3.2 multivariate normal - the Woodbury & Hasselblad attribution and the Woodbury (1950) inversion citation; S.3.3-S.3.4 mixtures), the Appendix literature review (codes U1-U4, M1-M4, I1-I2) and the COMPLETE 51-item reference list. Find-verified from that full text: 'Baum' occurs nowhere in the paper or its references. WART, stated honestly: Ceppellini et al. (1955) was not itself read cover-to-cover in this pass; the admission rests on the parent's characterization at two named points (S.1, S.2) plus the bibliographic record at ref. [15] (Ann. Hum. Genet. 20:97-115) - the wart and a re-hearing condition are recorded on the node's verification record (the exp-227 Hartley pattern).",
+ "scout": {
+  "raw_filings": 21,
+  "matched_existing": 3,
+  "judge_queue": 1,
+  "judgments_applied": 1,
+  "distinct": 21,
+  "dropped_year_bound": [],
+  "note": "Document census over the parent paper's own record (the run's established pattern where the pool is a literature carried by a single document): 21 filings across 10 lenses, the remaining lenses dry or shortfall with notes in run-01/work/dry_notes_a-missing-information-principle-orchard-woodbury-1972-1972.json. Three filings matched existing nodes under their exact canonical names (Hartley 1958, Fisher 1922, Baum et al. 1970 - all filed deliberately for their LINK hearings). The one judge pair (T. W. Anderson 1957 vs Woodbury & Hasselblad 1970, cosine 0.8108) was judged DIFFERENT - different authors, artifacts and years; same problem only. Considered and not filed, with reasons in the dry notes: Jacquez (named in S.2 for an interpretation of the principle, but no document or year is cited, so no dated candidate can be filed responsibly); the NIH grant GM 16725-02 (funding acknowledged p. 697 - a grant number is not a milestone artifact, and funding is not inside the artifact, exp-212 pattern); the Appendix's remaining M/U-code instances (Lord, Edgett, Trawinski & Bargmann, Hocking & Smith, Glasser, Haitovsky, Biggers, Jackson, Kleinbaum, Nicolson, Rao 1956 - the filed representatives carry the stratum's verdicts); Behboodian (1970) and Cohen (1966) (identifiability exhibits beside Wolfe). Resolve ran on MiniLM (sentence-transformers/all-MiniLM-L6-v2), no TF-IDF fallback; it changed no outcome (the three matches are exact-name; the one gray pair was judged DIFFERENT). Count check: 21 evaluations == 21 distinct candidates from show-distinct; a hand gate check (replicated logic, exp-226 pattern) reproduced the single survivor before the single apply-verdicts."
+ },
+ "admissions": [
+  {
+   "node": "the-estimation-of-gene-frequencies-in-a-random-mating-popula-1955",
+   "name": "The estimation of gene frequencies in a random-mating population (Ceppellini, Siniscalco & Smith, 1955)",
+   "link": "NEW",
+   "grade": 4.5,
+   "basis": "NEW node (depth 8, provisional). THE CARRIED EXP-227 HEARING, DISCHARGED AS AN ADMISSION. At the EM parent (exp-227) Ceppellini was rejected as mediated via this parent (DLR S.4.3 reaches Ceppellini inside its Orchard & Woodbury passage). Judged here on the parent's own text, the channel is direct at two named points: (1) S.1 credits Ceppellini et al. with the general solution of the gene-frequency problem the principle was first used on - they 'demonstrated that the procedure implied by the principle indicated above is in fact ML in all cases' - and with the 'hidden variance' concept; (2) S.2's headline quantitative result (eqs. 2.17-2.23) derives the exact relation between the parent's lost information and that hidden variance. Q1 partial (the iteration already worked in special cases; no impossibility flipped), Q2 pass, Q3 partial (the parent could in principle have proved generality itself - on the documents it cited Ceppellini instead). The verifier's strongest attack is recorded as the edge's scope: the principle's first use (the 1946 conversation) PREDATES Ceppellini (1955), so the edge runs to the 1972 paper's general theory - its ML-generality warrant and its pricing of the hidden variance - not to the 1946 instance. Mediation attack via Cotterman (1947) fails: Cotterman supplied the problem and the occasion; Ceppellini's proof and concept are its own published content, cited directly."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "The analysis of replicated experiments when field results are incomplete (Yates, 1933)",
+   "score": 1.5,
+   "kind": "mediated_via Tocher (1952) - recorded by the pipeline in mediated_rejections",
+   "basis": "The parent's own sentence names the chain: Example 1's iterative scheme 'is the modification of Yates' [50] approach to the problem, as proposed by Tocher [39]' (S.3.1). What the parent cycles is Tocher's modified procedure; Yates's 1933 text contributes nothing except through that modification. Yates is expected to be heard at Tocher's level if that node is ever expanded. Distinct from the existing Yates (1936) incomplete-blocks node - different paper, problem and channel (no judge pair arose; resolve kept them separate on the names)."
+  },
+  {
+   "name": "A maximization technique occurring in the statistical analysis of probabilistic functions of Markov chains (Baum, Petrie, Soules & Weiss, 1970)",
+   "score": 0.0,
+   "kind": "LINK fail (no channel; find-verified absence)",
+   "basis": "The parallel generalisation of the same year, filed under its exact node name for the LINK hearing: 'Baum' occurs nowhere in the parent's text or its complete 51-item reference list (both read in full) - the parent's census of the incomplete-data literature omits the Markov-chain line entirely. Remove Baum and the parent is unchanged word for word. DLR (1977) later housed both lines under EM, and Baum's admission at the EM parent (exp-227) stands, edge-scoped; it creates no edge here. Absence from a complete reference list is evidence (exp-219 pattern)."
+  },
+  {
+   "name": "Fisher, On the mathematical foundations of theoretical statistics (1922)",
+   "score": 1.5,
+   "kind": "LINK fail-closed partial directness (framework presupposition)",
+   "basis": "Third hearing of the same discrimination (exps 225, 227, here), same outcome. The parent's S.2 reviews ML estimation entirely inside Fisher's framework (score, information, inverse-information covariance), but the parent's object is not Fisher's solution set under the exp-192 criterion: it is the missing-information identity (2.13) and decomposition (2.16), objects that do not exist in the 1922 paper. The framework reaches 1972 through the whole likelihood literature (the parent's own citations for it are Rao and Wald), so no mediator is nameable and partial directness fails closed."
+  },
+  {
+   "name": "Maximum likelihood estimation from incomplete data (Hartley, 1958)",
+   "score": 1.0,
+   "kind": "LINK fail-closed partial directness (covered-instance)",
+   "basis": "Hartley is the Appendix's code U4 - the surveyed instance closest to the parent's general form - but the channel runs the wrong way for ancestry at this parent: the principle generalizes OVER Hartley's iteration as one instance among the codes, and no passage of the Theory is derived from Hartley's text. Coverage by a theory is the theory's claim about the instance, not a channel from the instance into the theory. (Hartley's admission at the EM parent, exp-227, on DLR's own attribution, stands untouched - edge-scoped.)"
+  },
+  {
+   "name": "Maximum likelihood estimates of the variance-covariance matrix from the multivariate normal (Woodbury & Hasselblad, 1970)",
+   "score": 1.5,
+   "kind": "fail-closed partial directness (author-carriage of an application)",
+   "basis": "The strongest rejection after Yates. The consumption is wholesale and named - S.3.2 attributes Example 2 to this work and carries its estimators and procedure into the parent (the Mikolov-thesis shape) - but what it supplies is one of the parent's four EXAMPLES, an application of the principle, not the principle: S.2's identity and decomposition are stated for the general iid model before any example, and the leap as stored is the principle. Carriage of an application does not enable the theorem it illustrates."
+  },
+  {
+   "name": "The design and analysis of block experiments (Tocher, 1952)",
+   "score": 1.0,
+   "kind": "fail-closed partial directness (example's procedure)",
+   "basis": "Tocher is the mediator named in the Yates rejection and Example 1's procedure in its own right: the parent cycles Tocher's modification of Yates in (3.1.8)/(3.1.9). But an example's procedure is a component of the illustration, not a mechanism of the principle stated in S.2, which nowhere routes through Tocher; the parent could have illustrated the linear case from Yates directly or from its own derivation, as it does for Examples 2-4."
+  },
+  {
+   "name": "Maximum likelihood estimates of parameters subject to restraints (Aitchison & Silvey, 1958)",
+   "score": 1.0,
+   "kind": "fail-closed partial directness (component)",
+   "basis": "Real textual consumption - S.2 builds the constrained score and the J* completion (2.5)-(2.9) on their construction, and S.3's close rides on their J*/V* properties - but the apparatus is a component inside the Theory serving the identifiability-restricted subcases; the principle's identity (2.13) and decomposition (2.16) are stated and derived without it. Components of a leap's supporting theory are not the leap's enablers (Goldberg-at-754 shape)."
+  },
+  {
+   "name": "Inverting modified matrices (Woodbury, 1950)",
+   "score": 0.5,
+   "kind": "fail-closed partial directness (component)",
+   "basis": "Named and used inside Example 2's computation ('the theory of partitioned matrices is quite useful in reducing the amount of computation... (See Woodbury, \"Inverting modified matrices,\" 1950)') - a cost aid for one example's inversions, framed by the parent itself as a convenience ('quite useful'), not a necessity. The senior author's own earlier device; components discrimination."
+  },
+  {
+   "name": "A weighting system for the evaluation of gene frequencies from family records (Cotterman, 1947)",
+   "score": 0.5,
+   "kind": "fail (formation / problem posed)",
+   "basis": "The documented origin that is not an ancestor: S.1 records that the principle's first use 'resulted from a conversation in 1946 between Max A. Woodbury and C. W. Cotterman resulting from the latter's interest (Cotterman [20]) in estimating gene frequencies'. Cotterman posed the problem and occasioned the conversation; the principle was the observation made IN it, and the parent nowhere uses his weighting system (a different device, for family records rather than phenotype counts). The problem's general solution is Ceppellini's - admitted here - which is where the technical channel runs."
+  },
+  {
+   "name": "Maximum likelihood estimates for a multivariate normal distribution when some observations are missing (T. W. Anderson, 1957)",
+   "score": 0.5,
+   "kind": "fail (defined-against incumbent)",
+   "basis": "The strongest named predecessor for Example 2's PROBLEM (the Appendix credits his nested-case simplification), but Example 2 is expressly the authors' own Woodbury & Hasselblad treatment built on the principle's conditional-expectation scores for arbitrary patterns - Anderson's factorization is never stated or used. A standard to match is a foil; the correction relation fails (nothing of Anderson's worked object is extracted and rebuilt)."
+  },
+  {
+   "name": "Moments and distribution of estimates of population parameters from fragmentary samples (Wilks, 1930)",
+   "score": 0.0,
+   "kind": "fail (stratum anticipation)",
+   "basis": "The Appendix's 'first step' of the multivariate line (code M1), forty years upstream: nothing of Wilks's bivariate fragmentary-sample machinery is taken over in the Theory or in Example 2 (the authors' own general treatment), and the Appendix's whole M-census intervenes. First-step status in a stratum is not ancestry."
+  },
+  {
+   "name": "Some examples of statistical methods of research in agriculture (Bartlett, 1937)",
+   "score": 0.0,
+   "kind": "fail (survey stratum; ingredient of the mediator)",
+   "basis": "Code U2 of the census ('results in the same estimates as Yates but which also gives unbiased sums of squares'). Whatever of Bartlett reaches Example 1 does so inside Tocher's U3 combination; the Theory uses nothing of the covariance device. Recognition in a survey is not ancestry."
+  },
+  {
+   "name": "Linear Statistical Inference and Its Applications (Rao, 1965)",
+   "score": 0.0,
+   "kind": "fail (wielded reference)",
+   "basis": "One parenthetical citation - '(see Rao [36], p. 295)' - for the regularity conditions of the ML review. A citation for background conditions is the framework's bibliography, not a consumed mechanism (Abramowitz & Stegun at exp-221 parity)."
+  },
+  {
+   "name": "Tests of statistical hypotheses when the number of observations is large (Wald, 1943)",
+   "score": 0.0,
+   "kind": "fail (framework pointer)",
+   "basis": "One delegating sentence - 'For a detailed discussion of this subject, the paper by Wald [41] can be consulted' - which expressly sends the material OUT of the paper. A 'can be consulted' pointer is the opposite of consumption."
+  },
+  {
+   "name": "A method of estimating the yield of a missing plot in field experimental work (Allan & Wishart, 1930)",
+   "score": 0.0,
+   "kind": "fail (anticipation without a junction)",
+   "basis": "Subordinated in the Appendix's first sentence ('Although considered earlier by Allan and Wishart [7], the first general approach... was that of Yates [50]'); any channel would run through Yates and thence Tocher - two removes, with no mechanism of theirs named anywhere in the parent."
+  },
+  {
+   "name": "A method of estimation of missing values in multivariate data (Buck, 1960)",
+   "score": 0.5,
+   "kind": "fail (defined-against; Hochreiter condition)",
+   "basis": "The Appendix's cautionary instance: Buck corrected the covariance bias 'in the case of a single missing component. However, he failed to give the correct extension to more than a single missing component.' A diagnosed shortcoming answered by the parent's generality is not a consumed mechanism; the parent's covariance treatment comes from its score/information theory and its own 1970 work."
+  },
+  {
+   "name": "An investigation of some multiple regression methods for incomplete samples (Federspiel, Monroe & Greenberg, 1959)",
+   "score": 0.5,
+   "kind": "fail (stratum instance)",
+   "basis": "A Hartley-parallel conditional-expectation iteration, engaged by the Appendix only to record its bias ('it gives rise to biased estimates of the covariance matrix... since the score contains quadratic functions of the observations') - a covered instance whose defect the parent's information theory prices, not a source the parent consumes."
+  },
+  {
+   "name": "Missing observations in multivariate statistics I: Review of the literature (Afifi & Elashoff, 1966)",
+   "score": 0.5,
+   "kind": "fail (rival survey)",
+   "basis": "The incumbent survey the Appendix positions itself against ('most approximations are best \"quick and dirty\" and at worst misleading'). The parent's Appendix is its own census built from the primary papers; a competing review is recognition and foil, not ancestry."
+  },
+  {
+   "name": "NORMIX: computational methods for estimating the parameters of multivariate normal mixtures (Wolfe, 1967)",
+   "score": 0.0,
+   "kind": "fail (stratum prior art named for a caveat)",
+   "basis": "Wolfe enters the parent only in the Appendix's identifiability sentence (his multivariate-mixture exhibits beside Behboodian's and Cohen's), while Examples 3-4 derive their estimating equations from the principle itself (the missing indicators' conditional expectations, (3.3.4)-(3.3.9)), owing nothing to NORMIX's procedures."
+  },
+  {
+   "name": "Sixth Berkeley Symposium on Mathematical Statistics and Probability (1970)",
+   "score": 0.0,
+   "kind": "fail (formation / venue)",
+   "basis": "The paper's occasion and carrier - presented at the symposium's sessions from June 1970 and published in its Proceedings Vol. 1 (1972). Nothing of the principle's content is a mechanism of the meeting; a venue that carries a result does not enable its leap (Task P754 parity; ACL-at-DCI discrimination - the paper is two Duke authors acting, NIH-acknowledged, not the venue acting)."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_a-missing-information-principle-orchard-woodbury-1972-1972.json",
+  "outcomes": {
+   "the-estimation-of-gene-frequencies-in-a-random-mating-popula-1955": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "The sole survivor is provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated), and the created node's stored leap, prior_state and bottleneck were spot-checked non-empty. Strongest verifier attack recorded on the node's record as the edge's scope: the principle's first use (1946) predates Ceppellini (1955), so the edge runs to the 1972 paper's general theory (ML-generality warrant + hidden-variance pricing), not to the 1946 instance. Mediation attack via Cotterman considered and failed (problem/occasion, not carrier of Ceppellini's content). Multiples test: no rival general gene-frequency ML proof in the record; Q3 partial stands. The one mediated rejection (Yates via Tocher) was recorded by the pipeline in mediated_rejections, matching the verdicts."
+ },
+ "totals_after": {
+  "nodes": 365,
+  "edges": 473,
+  "budget": "365/2000",
+  "expansions_done": 229,
+  "provisional": 348,
+  "verified": 17
+ },
+ "frontier_head_after": [
+  "samuel-s-checkers-player-samuel-1959-1959",
+  "structuring-probabilistic-dependences-in-stochastic-language-1994",
+  "tsmc-28-nm-hkmg-process-generation-2011-2011",
+  "the-alternate-reality-kit-smith-1986",
+  "urban-s-psychometric-function-and-phi-gamma-hypothesis-1908-1908"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record",
+ "notes": "Session 110 continues: expansion 230 (Samuel's checkers player, 1959) follows this checkpoint in the same session. THE CEPPELLINI HEARING IS CLOSED - discharged as an admission at the mediator's own expansion, the rediscovery pattern working as designed (cf. Baum at exp-227). The deferred-hearing ledger gains one entry: Yates (1933) is now expected at Tocher's expansion if that node is ever admitted and expanded (Tocher itself was rejected here as an example's procedure, so the path runs through any future parent that admits Tocher). No carried hearings were disturbed."
+}
