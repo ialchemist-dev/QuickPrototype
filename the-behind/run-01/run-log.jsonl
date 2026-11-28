@@ -13447,3 +13447,147 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T09:27:11.115364+00:00",
+ "event": "expansion",
+ "session": 93,
+ "expansion": 195,
+ "parent": "actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998",
+ "parent_name": "Actor/critic algorithms using eligibility traces (Kimura & Kobayashi, 1998)",
+ "parent_year": 1998,
+ "parent_depth": 4,
+ "date": "2026-11-28",
+ "provenance": "Session 93, expansion 1 of 2 (the owner resumed the run on 2026-11-28; sessions 91-92 closed cleanly at 312 nodes / 398 edges). All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground at ~46s with the MiniLM embedder; the graph file was read back to confirm stage 'resolved', the five matched ids and the single dropped candidate before verdicts). Resolve: 25 raw -> 24 distinct, 5 matched existing (REINFORCE, TD(lambda), AHC, MDP frame, Advantage updating - exactly the five planned LINKs), 0 auto-merges, judge queue 0, dropped 1, prefiltered 0. The verdicts builder's count check passed (24 evaluations == 24 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (3 survivors, all LINKs: REINFORCE 6.0, TD(lambda) 5.5, AHC 5.0; 5 fail-closed partials: Kimura et al. 1997 at 2.0, Kaelbling survey / Williams & Baird 1990 / Gullapalli 1992 / Advantage updating at 1.5; 16 rejections at 0.0), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 24, survivors 3, created 0, linked 3, rejected 21, mediated rejections 0). No nodes were created, so the created-node spot-check is vacuous; the three new edges were verified present in the graph (edges 398 -> 401) and the parent is marked expanded. Verification applied from work/verification_actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998.json (all three edges provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 194's sync_commit = 0726b280. Rendered with --out run-01/index.html (312 nodes / 401 edges) before syncing, per the session-91 render lesson. This record's own sync_commit rides the sync that carries it.",
+ "brief_correction": "The admission brief framed this parent as GAE's named prior proposal of the exponentially-weighted advantage estimator. On the paper's own documents the lineage is both narrower and stronger: the analysis's derivation runs on Williams' REINFORCE eligibility (sec.4.2: the actor's eligibility 'is the same variable defined in Williams' REINFORCE algorithms') and Sutton's TD(lambda) trace theory (sec.1: trace results existed 'in the context of TD(lambda)', not for the actor), and the one prior system embodying the analyzed mechanism is ASE/ACE, which sec.4.2 names as 'just an instance of this algorithm'. All three channels are citation + instantiation; the rest of the 23-entry reference list is census, framing, analogy or benchmark apparatus, and was pruned accordingly - including the authors' own 1997 paper, whose documented identity with Figure 3 holds only in a special case (self-carriage, fail-closed partial).",
+ "grounding": "Kimura & Kobayashi, 'An Analysis of Actor/Critic Algorithms using Eligibility Traces: Reinforcement Learning with Imperfect Value Functions', ICML 1998, pp. 278-286, read IN FULL this session (publisher PDF, clean text layer, ~5,600 words). Load-bearing passages: the Abstract (the algorithm 'is an extension of Williams' REINFORCE algorithms for infinite horizon reinforcement tasks'; the critic as 'reinforcement baseline'; learning under a 'hopelessly inaccurate' critic); sec.1's census and gap statement (ASE/ACE as the architecture where 'both the critic and the actor make use of the eligibility trace'; 'Theoretical results of eligibility traces in the context of TD(lambda) [Sutton 88] have been obtained. But, in actor/critic algorithms, the effect of the actor's trace has not been investigated'); sec.3's overview citations [Sutton 90] [Crites et al. 94]; sec.4.2 (ASE/ACE 'is just an instance of this algorithm'; the eligibility 'is the same variable defined in Williams' REINFORCE algorithms'; the Figure-3 algorithm 'identical to a stochastic gradient ascent for discounted reward [Kimura et al. 97]' when beta=gamma and V^ constant); sec.4.3 (the gradient identity derived 'From the theory of Williams' REINFORCE algorithm'; the reinforcement-comparison reading via [Sutton et al. 98]; beta 'similar to the lambda in TD(lambda) [Sutton 88] and Q(lambda)-learning [Peng et al. 94]'); sec.5.1 (the LQR problem as 'a benchmark of delayed reinforcement tasks [Baird 94]'; the optimum 'From the discrete-time Riccati equation', uncited); secs.5.2.2/6.2 (the critic uses TD(0) [Sutton 88]; the cart-pole problem 'modified' from [Barto et al. 83]). The complete 23-entry reference list was censused; Kimura et al. (1995) was find-verified as present in the list but never cited in the text.",
+ "parent_record_note": "The parent's stored record was verified complete this session (name, year 1998, type method, depth 4, priority 5.5; stored bottleneck, prior_state and leap all non-empty). Its stored sources list carries the GAE-paper citation line from its admission at exp-191 - left untouched.",
+ "scout": {
+  "builder": "run-01/work/build_scout_kimura.py",
+  "raw_filings": 25,
+  "distinct_names_intended": 25,
+  "per_lens": {
+   "L1": 4,
+   "L2": 1,
+   "L3": 2,
+   "L4": 2,
+   "L6": 1,
+   "L11": 2,
+   "L17": 1,
+   "L19": 1,
+   "L20": 3,
+   "L23": 8
+  },
+  "dry_notes_file": "run-01/work/dry_notes_actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998.json",
+  "dry_or_shortfall_lenses": [
+   "L2 (shortfall 1: Kimura et al. 1997 is the one ancestor-modified line besides ASE/ACE, filed at L1 where the incorporation claim sits)",
+   "L4 (shortfall 2: the problem - what the actor's trace does - is posed by the paper itself; the external problem-side documents are the survey framing and the MDP setting)",
+   "L5 (dry-with-finding: no external diagnosis document; the imperfect-critic obstruction is the paper's own framing, in its title and abstract)",
+   "L6 (shortfall 1: Q-learning is the single named incumbent)",
+   "L7 (dry-with-finding: the failure mode - the no-trace algorithm under a coarse critic - is the paper's own experimental contrast, i.e. its prior state, not a separate artifact)",
+   "L8 (dry: theory-and-simulation paper, nothing trained on recorded data)",
+   "L9 (dry: no machine named)",
+   "L10 (dry)",
+   "L11 (shortfall 2: the wielded procedures are the L1 machinery; the two remaining procedure citations are the analogy and variant probes)",
+   "L12 (dry)",
+   "L13 (dry: hand-specified implementation, no library or framework named)",
+   "L14 (dry: simulations of stated equations, no physical apparatus)",
+   "L15 (dry)",
+   "L16 (dry: no standard implemented; the MDP formalism is filed at L4 as the presupposition probe)",
+   "L17 (shortfall 1: the Baird-sourced LQR task is the single external benchmark document; the cart-pole task rides inside the L1 ASE/ACE filing)",
+   "L18 (dry)",
+   "L19 (shortfall 1: the Riccati/LQR oracle is the one cross-field presence, named but uncited)",
+   "L21 (dry-with-finding: Tokyo Tech affiliation; acknowledgements thank Barto, Peng, Schneider, Singh, Sutton and reviewers - people, no funding vehicle; ICML is the venue)",
+   "L22 (dry: no timing or cost condition named in the documents)",
+   "scope (all 23 reference-list entries filed as candidates; the MDP frame and the Riccati oracle filed from in-text mentions without reference entries; Howard's policy iteration NOT filed - never cited, its framing arrives through the Kaelbling survey)"
+  ]
+ },
+ "resolution": {
+  "raw": 25,
+  "distinct": 24,
+  "matched_existing": 5,
+  "auto_merges": 0,
+  "judge_queue": 0,
+  "dropped": 1,
+  "matched_ids": [
+   "reinforce-williams-1992",
+   "td-lambda-temporal-difference-learning-sutton-1988-1988",
+   "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+   "a-markovian-decision-process-bellman-1957-1957",
+   "advantage-updating-baird-1993"
+  ],
+  "identity_note": "No gray-zone pairs arose. The Riccati/LQR candidate did NOT match the Kalman filter node (different advance: the 1960 regulator theory vs the 1960 filtering paper) and stood as its own distinct candidate, rejected at the gate as the experiments' measurement oracle."
+ },
+ "judgments": "None required: the judge queue was empty.",
+ "calendar_dropped_at_resolve": [
+  "Reinforcement Learning: An Introduction (Sutton & Barto, 1998) - dropped by the resolver's year bound (dated the parent's own year, 1998); filed deliberately with its documented year, recorded here, not re-dated. Its sec.4.3 reinforcement-comparison sentence is noted in the verdicts record of this expansion's provenance; the book's carrier hearings at other parents (exps.191-192, fail-closed partials) are unaffected."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998.json",
+  "builder": "run-01/work/build_verdicts_kimura.py",
+  "evaluations": 24,
+  "survivors": [
+   "REINFORCE (Williams, 1992) - LINK to existing node, dry-run score 6.0, provisional (edge at depth 4). Mechanism admission: sec.4.2 defines the actor's eligibility as Williams' variable; sec.4.3 derives the paper's headline result (the update follows the gradient of the actual return) 'from the theory of Williams' REINFORCE algorithm'. Citation + instantiation of the exact object analyzed.",
+   "TD(lambda) temporal-difference learning (Sutton, 1988) - LINK to existing node, dry-run score 5.5, provisional. Dual-channel admission: the critic instantiated in every experiment is Sutton's TD (TD(0), secs.5.2.2/6.2), and the trace theory the paper transposes from critic to actor is TD(lambda)'s (sec.1 gap statement; sec.4.3's beta-lambda analogy).",
+   "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983) - LINK to existing node, dry-run score 5.0, provisional. Ancestor admission: sec.4.2 states 'The ASE/ACE system configured for pole-balancing [Barto et al. 83] is just an instance of this algorithm'; sec.1 names it as the architecture where both actor and critic use the eligibility trace; sec.6's experiment modifies its cart-pole problem."
+  ],
+  "notable_rejections": [
+   "Reinforcement learning in POMDPs with function approximation (Kimura, Miyazaki & Kobayashi, 1997) - FAIL-CLOSED PARTIAL (2.0), the session's most instructive negative: self-carriage. Sec.4.2 documents the Figure-3 algorithm as 'identical to' the authors' own 1997 stochastic gradient ascent ONLY in the special case (beta=gamma, critic constant); the 1998 leap is the analysis of the general case (arbitrary imperfect critic), which the 1997 paper does not contain. Directness genuinely unresolvable between the artifact and the analysis - partial fails closed. A re-hearing could argue the documented identity merits the weak-admission band (the AHC-at-TD(lambda) self-carriage precedent, exp-194); the discrimination recorded here is that AHC was consumed as a COMPONENT of Sutton (1988)'s survey of TD uses, whereas the 1997 paper is the parent's OBJECT, in a special case.",
+   "Reinforcement Learning: A Survey (Kaelbling, Littman & Moore, 1996) - FAIL-CLOSED PARTIAL (1.5): carrier of the paper's opening framing ('Actor/critic architecture is an adaptive version of policy iteration [Kaelbling et al.96]'). Directness passes on the first-sentence citation; the question gate earns only partials (Q6/Q11) - the survey frames the contribution, it does not enable the analysis (the carrier pattern of exps.191-193).",
+   "A mathematical analysis of actor-critic architectures (Williams & Baird, 1990) - FAIL-CLOSED PARTIAL (1.5): the genre predecessor (the prior mathematical analysis of actor-critic), cited once in sec.1's convergence-proof census. The 1998 derivation runs on Williams (1992)'s REINFORCE theory, not on the 1990 paper's incremental-DP analysis; directness partial, fails closed.",
+   "Reinforcement learning and its application to control (Gullapalli, 1992) - FAIL-CLOSED PARTIAL (1.5): cited three times in sec.1, always as field-state evidence (applications census, convergence-proof census, the continuous-action advantage); no mechanism of the thesis is instantiated in Figure 3, whose eligibility is Williams' and whose critic is Sutton's.",
+   "Advantage updating (Baird, 1993) - FAIL-CLOSED PARTIAL (1.5): the parent's only Baird citation is sec.5.1, as the source of the LQR benchmark problem ('can serve as a benchmark of delayed reinforcement tasks [Baird 94]') - a different artifact from the node's advance (the update rule), which the REINFORCE-derived actor never uses. The consumed object is a test problem, not the candidate (the Witten pattern, exp-194).",
+   "Q-learning (Watkins & Dayan, 1992) - REJECTED as the defined-against incumbent: sec.1 measures actor/critic against Q-learning's documented costs, but the correction relation fails - nothing of Q-learning's worked object is extracted or built on (no Q-update, no state-action values; the critic estimates state values only, by the paper's own contrast).",
+   "A Markovian Decision Process (Bellman, 1957) - REJECTED as framework presupposition: sec.2 adopts the MDP setting wholesale; no MDP machinery beyond the setting is consumed (the sparse-sampling discrimination; cf. Bellman optimality equations rejected at TD(lambda), exp-194).",
+   "Incremental multi-step Q-learning (Peng & Williams, 1994) - REJECTED on an analogy citation: sec.4.3's 'similar to the lambda in TD(lambda) and Q(lambda)-learning' is a resemblance sentence; compared, not consumed.",
+   "Reinforcement learning with replacing eligibility traces (Singh & Sutton, 1996) - REJECTED on the variant discrimination: sec.1 cites it for the family-level claim about traces; the parent's trace (Figure 3) ACCUMULATES, it does not replace - the candidate's own advance is not the consumed mechanism.",
+   "Linear-quadratic regulator via the Riccati equation (Kalman, 1960) - REJECTED as the measurement oracle: sec.5.1 computes the optimum from the Riccati equation to grade the learned policies; named but uncited, an evaluation standard, not a component of the learning algorithm (the Banach pattern, exp-193).",
+   "Reinforcement learning by stochastic hill climbing (Kimura, Yamamura & Kobayashi, 1995) - REJECTED on find-verified absence: present in the reference list, never cited in the text; a bibliography entry without an in-text use is not consumption (the Klopf pattern, exp-194). The authors' USED prior paper is the 1997 one, heard above.",
+   "The sec.1/sec.3 census and overview citations (Crites & Barto 1994; Sutton 1990; Pendrith & Ryan 1996; Sutton 1995; Singh, Jaakkola & Jordan 1994; Jaakkola, Singh & Jordan 1994; Littman 1994; Clouse & Utgoff 1992; Lin & Lin 1996; Doya 1996) - REJECTED as a class: each supports a listed advantage or application of the architecture family; a passing parenthesis is not instantiation, and downstream applications do not enable the analysis."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998.json",
+  "outcomes": {
+   "reinforce-williams-1992": "provisional",
+   "td-lambda-temporal-difference-learning-sutton-1988-1988": "provisional",
+   "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "REINFORCE capped at provisional by the likelihood-ratio prior-art note (the score-function estimator existed in the simulation literature, Glynn c.1990; the parent's channel is to Williams' RL formulation, which stands). The ASE/ACE mediation attack on the TD(lambda) edge (ASE/ACE carried traces in 1983, before the 1988 formalization) was run and failed on the documents: what the parent consumes from the trace line - the TD(0) critic and the lambda semantics - is explicitly Sutton (1988)'s; ASE/ACE is admitted on its own instance channel. The Klopf attack on the AHC edge (hedonistic neurons as a prior actor-like element) failed on find-verified absence from the parent's text."
+ },
+ "totals_after": {
+  "nodes": 312,
+  "edges": 401,
+  "budget": "312/2000",
+  "expansions_done": 195,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 48,
+   "5": 61,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 295,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+  "ecma-262-first-edition-1997",
+  "netscape-communications-1994",
+  "neural-network-based-language-models-for-highly-inflective-l-2009",
+  "state-application-framework-2001"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
