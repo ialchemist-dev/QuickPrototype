@@ -15136,3 +15136,201 @@
  "notes": "Session 98 closes here: expansions 205-206 done. Frontier head for session 99: The C programming language (Kernighan & Ritchie, 1978) - the fresh node from exp-205 whose ANSI C discrimination will be tested on its own documents - then Pushshift (2015), State application framework (2001), WSJ corpus (1992), Advantage updating (Baird, 1993). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion; Fox's LISP I manual and Interface Builder 1986 rehearing conditions stand; the Kneser-Ney consumed-vs-compared re-hearing condition is added by this record. No session 99 work was started.",
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T11:21:03.777022+00:00",
+ "event": "expansion",
+ "session": 99,
+ "expansion": 207,
+ "parent": "the-c-programming-language-kernighan-ritchie-1978-1978",
+ "parent_name": "The C programming language (Kernighan & Ritchie, 1978)",
+ "parent_year": 1978,
+ "parent_depth": 9,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed grounding 'in the book's own text/apparatus' and flagged the exp-202 ANSI C K&R-appendix wart for judgment on this parent's documents. Three precisions from the work itself. (a) The grounding documents are the designer's own retrospective - Ritchie, 'The Development of the C Language', HOPL-II 1993, read in full - plus Ritchie's C Reference Manual (Bell Labs memorandum, Feb 1 1975, the book's appendix in its prior documentary form, read at its introduction and references) and the TUHS Unix bibliography (Kernighan's tutorial = TM 74-1273-12, May 5 1974). The 1978 book itself was not re-read; every channel scored is named in the designer's history, and the admissions are provisional for exactly that reason. (b) The exp-202 wart's mirror image was filed and heard here as the C Reference Manual: at exp-202 the standard's appendix descended FROM this book; here the book's appendix descends from the author's own 1975 manual - judged on this parent's documents, it fails closed as own-version (see notable_rejections). (c) WART CARRIED FROM EXP-206, verified on disk this session and NOT hand-fixed: exp-206's verification file was written in a {'parent', 'checks'} audit format that apply-verification does not read (it reads 'verifications'), so the two nodes created at exp-206 (Schwenk & Gauvain 2005; Mikolov 2007 thesis) carry verification: null in graph.json. Both are status provisional regardless, so graph semantics are unaffected; exp-206's attack notes live in its run-log record's verification.attack_notes. This session's verification file used the sec.6.4 format and its application was verified on disk for all four admissions. FIX-UP discharged here per house pattern: expansion 206's sync_commit = de58d24f (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Primary source read in full this session: Ritchie, 'The Development of the C Language', HOPL-II (1993). Load-bearing sentences: abstract - 'The C programming language was devised in the early 1970s as a system implementation language for the nascent Unix operating system. Derived from the typeless language B, it evolved a type structure'; 'its parent B [Johnson 73] and its grandparent BCPL [Richards 79]'; B is 'BCPL squeezed into 8K bytes of memory and filtered through the brain of Ken Thompson'; 'the advent of the PDP-11 exposed several inadequacies of B's semantic model... Most important, the PDP-11's strong emphasis on byte addressing rendered a typing scheme, and the distinction between character and integer data, necessary'; the array rule 'depended on the plausible success of a scheme that used the byte-addressing capability of the PDP-11' and 'constituted the crucial jump in the evolutionary chain between typeless BCPL and typed C'; 'In 1971 I began to extend B... I called the slightly-extended language NB, for new B'; 'The scheme of type composition adopted by C owes considerable debt to Algol 68... The central notion I captured from Algol was a type structure based on atomic types (including structures), composed into arrays, pointers (references), and functions (procedures)'; the assignment notation 'came from Algol 68 via McIlroy, who had incorporated it into his version of TMG'; 'By early 1973, the essentials of modern C were complete... to rewrite the Unix kernel for the PDP-11 in C during the summer of that year'; 'Lesk wrote a portable I/O package [Lesk 72] that was later reworked to become the C standard I/O routines'; on pcc, 'it became increasingly impractical to regard pcc as a reference compiler; it did not perfectly embody even the language described by K&R'; on the book, 'The first edition of Kernighan and Ritchie was published in February, 1978... Kernighan was primarily responsible for the expository material in the book, and I was responsible for the appendix containing the reference manual and the chapter on interfacing with the Unix system'. Secondary: the C Reference Manual (1975) opens 'C is a computer language based on the earlier language B [1]' (its ref [1] = Johnson & Kernighan's B report, 1972); the TUHS bibliography dates the manual Feb 1 1975 and Kernighan's tutorial May 5 1974. The parent's stored record was verified complete (bottleneck, leap, prior_state populated - no stored-text repair needed).",
+ "scout": {
+  "raw_filings": 19,
+  "matched_existing": 1,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "judgments_different": 0,
+  "distinct": 19,
+  "note": "Document-census pattern (sessions 92-98): every channel the designer's history names is filed exactly once - the ancestor (B), the embryo (NB), the grandparent (BCPL), the two machines (PDP-11, PDP-7), the purpose system (Unix), the two ALGOLs (68 filed new, 60 matched existing), CPL, FORTRAN, PL/I, TMG, Multics, pcc, the Reference Manual, Kernighan's tutorial, Lesk's stdio, the Interdata 8/32, and Bell Labs. Per-lens floor handled by 25 dry/shortfall notes (dry_notes file written by the scout builder), including the two meta passes (the HOPL retrospective swept end-to-end; the CRM's 5-entry reference list fully disposed of). 19 raw -> 19 distinct, 0 dropped, 0 prefiltered, 0 auto-merges, judge queue empty. Resolve ran with the MiniLM embedder. Verdicts builder count check passed (19 evaluations == 19 distinct == 19 intended filings). One dry-run correction was spent (the exp-202 pattern): ALGOL 68's Q2 re-argued from partial to pass - the gate asks whether the candidate opened the space, and on the documents the compositional type scheme's opening is ALGOL 68's alone; the correction is recorded inside the Q2 evidence text itself. All other dry-run outcomes were as designed; the survivor grades are the scorer's output of the argued verdicts (B 6.0, PDP-11 4.0, ALGOL 68 3.5, Unix 3.5)."
+ },
+ "admissions": [
+  {
+   "node": "b-thompson-1969-1969",
+   "name": "B (Thompson, 1969)",
+   "link": false,
+   "grade": 6.0,
+   "basis": "Descent in so many words at every level: the CRM's first sentence ('C is a computer language based on the earlier language B'), the 1971 extension narrative ('I began to extend B'), and the array rule formulated as the repair of B's semantic model. Syntax, operators, declaration style and the typeless value model all arrive through B. Mediation attacks fail both ways: via NB (the parent's own embryo, downstream of the encounter) and via BCPL (the designer's genealogy names B the parent, BCPL the grandparent, because the engagement ran through B)."
+  },
+  {
+   "node": "pdp-11-dec-1970-1970",
+   "name": "PDP-11 (DEC, 1970)",
+   "link": false,
+   "grade": 4.0,
+   "basis": "The machine whose specific architecture the designer names as the cause of the parent's defining leap: byte addressing 'rendered a typing scheme... necessary', and the array-decay rule 'depended on the plausible success of a scheme that used the byte-addressing capability of the PDP-11'. The G80-at-CUDA shape - a named architectural feature the artifact's central mechanism answers - not generic hardware. It is also the CRM's stated implementation target and the machine of the 1973 kernel rewrite. Q2/Q3 partial (necessity attaches to the byte-addressed class; history to this machine) cap the grade at 4.0."
+  },
+  {
+   "node": "algol-68-1968-1968",
+   "name": "ALGOL 68 (1968)",
+   "link": false,
+   "grade": 3.5,
+   "basis": "The designer's first-person capture, during C's own design: 'The scheme of type composition adopted by C owes considerable debt to Algol 68... The central notion I captured from Algol was a type structure based on atomic types (including structures), composed into arrays, pointers (references), and functions (procedures)', with unions and casts also influencing. The mediation attack attaches to the OTHER documented channel (assignment notation via TMG into B) and is recorded as mediated in the verdicts; it is not the basis of admission. The admitted channel cannot have travelled through B because B is typeless - a mediator that cannot carry the mechanism does not mediate it. With the Unix edge, this expansion's most contestable admission; rehearing condition in the verification record."
+  },
+  {
+   "node": "unix-thompson-ritchie-1969-1969",
+   "name": "Unix (Thompson & Ritchie, 1969)",
+   "link": false,
+   "grade": 3.5,
+   "basis": "Purpose, first-consumer and propagation-pressure channels, edge-scoped to this parent: the designer's abstract ('devised... as a system implementation language for the nascent Unix operating system'); the summer-1973 kernel rewrite as the language's certification act; the Honeywell/IBM/Interdata ports driving the 1977-79 changes; the book's own second half being Ritchie's Unix-interface chapter. The mediation-via-B attack fails on the two-channel discrimination (B carries lineage, admitted at 6.0; Unix carries purpose - the mechanism/deployment discrimination of exp-206 applied to lineage vs purpose). The exp-205 hearing (Unix fail-closed 1.0 at Objective-C) is the contrast case, not a contradiction: there Unix was a distribution environment for a language designed elsewhere. With the ALGOL 68 edge, this expansion's most contestable admission; rehearing condition in the verification record."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "C Reference Manual (Ritchie, 1975)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "OWN-VERSION, THE MIRROR IMAGE OF THE EXP-202 WART. The book's Appendix A IS this manual, revised by the same author ('I was responsible for the appendix containing the reference manual'). At exp-202 the ANSI standard's appendix descended from this book and the book was heard as the standard's source; here the manual is the book's own prior edition, and descent within one author's document line is self-carriage - the OOPC pattern (exp-205) and the codification discrimination (exp-203). The strongest fail-closed partial of the expansion: the derivation is documented verbatim, and that is exactly why it fails."
+  },
+  {
+   "name": "NB (Ritchie, 1971)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE PARENT'S EMBRYO AT ITS PUREST: derivation documented in so many words ('I began to extend B... I called the slightly-extended language NB') and no artifact at all - 'NB existed so briefly that no full description of it was written'. Its fossil survives inside the parent (the empty-bracket pointer declaration). The OOPC pattern governs."
+  },
+  {
+   "name": "Programming in C: A Tutorial (Kernighan, 1974)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "OWN-VERSION, THE BOOK'S OTHER HALF: a genuine dated document (TM 74-1273-12, May 5 1974), cited by the CRM as the language's companion - filed and heard - but what it carries into the parent is the same author's expository embryo. The channel is the author himself."
+  },
+  {
+   "name": "PL/I (IBM, 1964)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Three documented contacts, none a mechanism transfer: the /**/ comment convention ('The legacy of PL/I is evident here' - in B, arriving through B); a file-inclusion lack shared with BCPL (an absence the designers' own preprocessor answered); and a cautionary influence ('Beguiled by the example of PL/I, early C did not tie structure pointers firmly') that the language later un-learned. The parent's prior_state names PL/I among the blocked incumbents; the hearing honors that place - as the problem, not the ancestry. The passing-parenthesis class at the scale of a whole language."
+  },
+  {
+   "name": "Portable C Compiler (Johnson, 1977)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "DIRECTION: pcc implements the definition the parent states; it does not feed it. Begun in the parent's own portability period, downstream of the CRM and contemporaneous with the book; the designer's standardization narrative records that pcc 'did not perfectly embody even the language described by K&R'. The portability pressure that did shape the language is the Interdata hearing; pcc is that period's vehicle, not its cause."
+  },
+  {
+   "name": "Portable I/O package (stdio) (Lesk, 1972)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "COMPONENT OF THE PARENT'S OWN PACKAGE: co-developed in-house, in parallel with the compiler, because 'the language could not live in isolation', and published inside the book as the language's I/O face. The libwww-at-Mosaic discrimination (exp-199) is the contrast: libwww was a separable published library consumed as code by a different artifact; stdio was built as part of the language package itself. Its Q7 partial (the FILE/stream interface is genuinely Lesk's compositional design) is recorded as the filing's strongest sub-score."
+  },
+  {
+   "name": "Interdata 8/32 (1974)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE PORTABILITY CRISIS'S INSTRUMENT: the 1977 port 'showed up the inadequacies of the language and compilers' and the 1977-79 changes answer it - but the port is the parent's own propagation act and the machine supplied no mechanism. The PDP-11 discrimination is stated in the verdicts: forcing a design's central mechanism before the artifact exists is ancestry; auditing a finished design is biography."
+  },
+  {
+   "name": "Bell Telephone Laboratories (1925)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "CARRIAGE: the institution acts on the parent only through the specific artifacts it carried - Unix and B - both filed and heard on their own documents at this expansion. Employment and milieu are conditions, not channels."
+  },
+  {
+   "name": "BCPL (Richards, 1967)",
+   "score": 0.5,
+   "kind": "mediated",
+   "mediated_via": "B (Thompson, 1969)",
+   "basis": "The designer's genealogy is the finding: 'its parent B and its grandparent BCPL'. Every BCPL trait in the parent reached C inside B's design ('filtered through the brain of Ken Thompson'); even the array rule's simulation of BCPL's indirect access is performed as a repair of B's semantics on B's substrate. Its direct hearing belongs to B's expansion - which is now the frontier head."
+  },
+  {
+   "name": "TMG (McIlroy, 1969)",
+   "score": 0.5,
+   "kind": "mediated",
+   "mediated_via": "B (Thompson, 1969)",
+   "basis": "All three documented channels terminate at B: the creation stimulus ('Challenged by McIlroy's feat in reproducing TMG, Thompson decided that Unix needed a system programming language'), B's first compiler (TMG-written), and the Algol 68 assignment notation (via McIlroy's TMG, into B)."
+  },
+  {
+   "name": "FORTRAN (1957)",
+   "score": 0.5,
+   "kind": "mediated",
+   "mediated_via": "B (Thompson, 1969)",
+   "basis": "Both channels terminate at B: the 'rapidly scuttled attempt at Fortran' is the moment before B's creation, and the declaration style is B's inheritance ('B declarations begin with a specifier like auto or static... and C not only followed this style but ornamented it' - C follows B's style)."
+  },
+  {
+   "name": "PDP-7 (DEC, 1964)",
+   "score": 0.5,
+   "kind": "mediated",
+   "mediated_via": "B (Thompson, 1969)",
+   "basis": "B was 'designed for the tiny programming environment of the PDP-7', and the machine's auto-increment cells 'probably suggested the operators' to Thompson - in B. The parent's machine hearing is the PDP-11's."
+  },
+  {
+   "name": "ALGOL 60",
+   "score": 0.5,
+   "kind": "mediated",
+   "mediated_via": "BCPL (Richards, 1967)",
+   "basis": "LINK candidate (matched the existing node), heard and rejected: Ritchie's sentence names typification, not derivation ('the traditional procedural family typified by Fortran and Algol 60'). The family's mechanisms arrived inside BCPL's and B's designs; the ALGOL hearing with a direct channel at this parent is ALGOL 68's, admitted separately - the pair is the expansion's cleanest discrimination."
+  },
+  {
+   "name": "CPL (1963)",
+   "score": 0.5,
+   "kind": "mediated",
+   "mediated_via": "BCPL (Richards, 1967)",
+   "basis": "CPL reaches C through its own distillation: Richards extracted BCPL from the CPL project when CPL proved too large to implement; Thompson filtered BCPL into B. The proximate carrying link is BCPL."
+  },
+  {
+   "name": "Multics (1965)",
+   "score": 0.5,
+   "kind": "mediated",
+   "mediated_via": "Unix (Thompson & Ritchie, 1969)",
+   "basis": "The formation experience of the parent's milieu reaches C through the artifact the withdrawal produced: Unix. No Multics mechanism is instantiated in C's design; its language, PL/I, was heard separately as the defined-against pole."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_the-c-programming-language-kernighan-ritchie-1978-1978.json",
+  "outcomes": {
+   "b-thompson-1969-1969": "provisional",
+   "pdp-11-dec-1970-1970": "provisional",
+   "algol-68-1968-1968": "provisional",
+   "unix-thompson-ritchie-1969-1969": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "B: NB-mediation and BCPL-mediation attacks both fail on the designer's genealogy; the courtesy-descent reading fails on the CRM's first sentence. PDP-11: the generic-hardware objection fails on the named-feature testimony; the constraint-vs-enabler reading fails on 'depended on the plausible success of a scheme that used the byte-addressing capability'. ALGOL 68: the TMG-mediation attack attaches to the notation channel only (recorded mediated in the verdicts); a typeless mediator cannot carry a type scheme. Unix: the B-mediation attack fails on the two-channel discrimination; the exp-205 contrast is documented as edge-scoping, not contradiction. Spot-check after apply: all four created nodes' stored leap/prior_state/bottleneck non-empty (verified), and all four carry verification records with outcome provisional (verified on disk - the exp-206 format wart was NOT repeated; see brief_correction). Residual warts, stated plainly: the 1978 book itself, the 1972 B report, the ALGOL 68 report and the 1974 CACM Unix paper were not independently read this session; the admissions rest on the designer's retrospective plus the CRM - the reason all four are provisional, with rehearing conditions recorded for the ALGOL 68 and Unix edges."
+ },
+ "totals_after": {
+  "nodes": 337,
+  "edges": 435,
+  "budget": "337/2000",
+  "expansions_done": 207,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 68,
+   "6": 51,
+   "7": 34,
+   "8": 23,
+   "9": 10,
+   "10": 5,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 320,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "b-thompson-1969-1969",
+  "pushshift-reddit-crawl-baumgartner-2015-2015",
+  "state-application-framework-2001",
+  "wall-street-journal-corpus-darpa-csr-1992",
+  "advantage-updating-baird-1993"
+ ],
+ "notes": "Session 99 continues: expansion 208 (Pushshift Reddit crawl, Baumgartner 2015) follows this checkpoint in the same session. The four admissions here re-shape the early frontier: B (1969) is the new frontier head and carries the BCPL/CPL/TMG/FORTRAN/PDP-7 hearings as its own expansion's business when its turn comes; the Unix node now exists for the many later parents whose Unix channels were previously heard without it. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion; Fox's LISP I manual, Interface Builder 1986 and Kneser-Ney rehearing conditions stand; this record adds the ALGOL 68 and Unix rehearing conditions (in the verification file) and the exp-206 verification-format wart (in brief_correction).",
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
