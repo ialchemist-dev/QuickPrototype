@@ -14014,3 +14014,143 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T10:05:48.668127+00:00",
+ "event": "expansion",
+ "session": 95,
+ "expansion": 199,
+ "parent": "ncsa-mosaic-andreessen-bina-1993-1993",
+ "parent_name": "NCSA Mosaic (Andreessen & Bina, 1993)",
+ "parent_year": 1993,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "The session brief expected the four candidates expansion 198 rejected as mediated via this parent (WWW, HTML, the IMG tag, ViolaWWW) to be re-heard here on their own documents, with WWW/HTML/Viola the live questions. The documents redirected the pool in two ways: (a) the strongest code-level channel in the pool was one the brief did not name - CERN libwww, which the parent is documented as BASED on; it was filed and admitted on its own channel, distinct from the WWW system's; (b) the IMG tag, which the brief grouped with the re-hearings, is the parent's OWN component dated the parent's own year, so it was filed deliberately for the resolver's year bound rather than evaluated - its re-hearing belongs to no parent, being a component of this one's leap. Of the genuinely re-heard three: the World Wide Web was admitted (the mediation finding at Netscape does not bind here - the chain's final link is the system itself), ViolaWWW was admitted on its demonstration/modeling channel, and HTML failed closed as a component of the admitted system's leap. The expansion followed the documents, per standing discipline.",
+ "grounding": "Searched and read this session, plus the expansion-198 record. (1) Wikipedia 'NCSA Mosaic' (read via a mirror of the article): developed at NCSA from December 1992 for the X Window System (xmosaic); Andreessen announced the alpha/beta 0.5 on 23 January 1993; version 1.0 released 21 April 1993; Windows and Macintosh ports by September 1993; supported HTTP, FTP, NNTP and Gopher; 'Mosaic is based on the libwww library and thus supported a wide variety of Internet protocols included in the library: Archie, FTP, gopher, HTTP, NNTP, telnet, WAIS'; 'In 1991, the High Performance Computing Act of 1991 was passed, which provided funding for new projects at the NCSA, where, after trying ViolaWWW, David Thompson demonstrated it to the NCSA software design group. This inspired Marc Andreessen and Eric Bina to create Mosaic.' (2) Computer History Museum, 'Browsers: Windows on the Web' (read in full): 'Mosaic was modeled on the Viola and Midas browsers and also used the CERN code library'; the Web team 'invited volunteers to write browsers, and provided code to start with'; 'Viola and Midas were initially the most popular, eclipsed later by Mosaic'; Berners-Lee's 1990 browser-editor ran on NeXT and CERN refused to fund other versions. (3) The ViolaWWW record (from expansion 198): initial release 9 March 1992, Pei-Yuan Wei, UC Berkeley; first browser with embedded scriptable objects, stylesheets and tables; modeled after HyperCard; CERN's recommended browser. (4) MidasWWW (Wikipedia, History of the web browser): Tony Johnson, SLAC, released November 1992; Motif/X-based; displayed PostScript documents; visited links changed color. (5) Erwise (April 1992, Helsinki) was the first GUI browser but is named as a model by no source read - considered and not filed (dry note at L7). (6) CERN's public-domain release is dated 30 April 1993 (CERN's own licensing page, per expansion 198) - nine days AFTER Mosaic 1.0. (7) The IMG tag was proposed by Andreessen on www-talk on 25 February 1993, already implemented, and appears in Mosaic's 0.10 release notes (March 1993) (expansion-198 record).",
+ "parent_record_note": "The parent's stored record was verified complete this session (name 'NCSA Mosaic (Andreessen & Bina, 1993)', year 1993, depth 5, priority 6.0, status provisional; stored bottleneck, leap and prior_state all non-empty; successor Netscape Communications, which admitted it at expansion 198). No prior expansion record and no prior rejections existed for this parent. The stored record was NOT hand-edited.",
+ "provenance": "Session 95, expansion 1 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground at ~47s with the MiniLM embedder; the graph file was read back to confirm stage 'resolved', 12 distinct, 0 matched, the empty judge queue and the 2 dropped candidates before verdicts). Resolve: 14 raw -> 12 distinct, 0 matched existing, 0 auto-merges, judge queue 0, dropped 2, prefiltered 0. No judge pairs were queued (the resolver matched no filing to an existing node and queued no pairs - HyperCard vs the HyperTalk node among them), so no judgments were applied; recorded so the absence is a fact of the record. The verdicts builder's count check passed (12 evaluations == 12 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (3 survivors: World Wide Web 6.0, CERN libwww 4.0, ViolaWWW 3.5; 6 fail-closed partials: HTML 1.0, X Window System 1.0, NCSA 1.0, MidasWWW 0.5, Gopher 0.5, WAIS 0.0; 2 mediated rejections: HyperCard via ViolaWWW, SGML via the World Wide Web; 1 plain rejection: Line Mode Browser 0.0), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 12, survivors 3, created 3, linked 0, rejected 9, mediated rejections 2). Created-node spot-check PASSED: all three new nodes' stored bottleneck, leap and prior_state are non-empty (status provisional, depth 6, priorities 6.0/4.0/3.5). Verification applied from work/verification_ncsa-mosaic-andreessen-bina-1993-1993.json (all 3 edges provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 198's sync_commit = 9a7a6cc0. Rendered with --out run-01/index.html (322 nodes / 414 edges) before syncing, per the session-91 render lesson. This record's own sync_commit rides the sync that carries it.",
+ "scout": {
+  "builder": "run-01/work/build_scout_mosaic.py",
+  "raw_filings": 14,
+  "distinct_names_intended": 14,
+  "per_lens": {
+   "L1": 2,
+   "L6": 1,
+   "L7": 2,
+   "L9": 2,
+   "L13": 1,
+   "L14": 1,
+   "L16": 1,
+   "L19": 2,
+   "L21": 1,
+   "L22": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_ncsa-mosaic-andreessen-bina-1993-1993.json",
+  "dry_or_shortfall_lenses": [
+   "L1 (2 filings: the substrate system (World Wide Web) and the parent's own signature component (the IMG tag, filed for the year bound). HTTP and the URL apparatus ride inside the WWW filing, as at expansion 198 - the system is the unit the parent's documents engage.)",
+   "L2 (Dry-with-finding: the ancestor line is the World Wide Web system itself, filed at L1; the parent has one documented ancestor system, not a family of lines.)",
+   "L3 (Dry-with-finding: a browser release has no reference-list apparatus; its documents are announcements and release notes, whose census is the scope note below.)",
+   "L4 (Dry-with-finding: the problem - the Web as a specialists' system unusable by the public - is posed by the substrate system's own state and answered in the parent's announcements; the posing is heard inside the WWW filing.)",
+   "L5 (Dry: no prior diagnosis artifact is consumed; the diagnosis (text browsers and Gopher menus are not a mass medium) is the makers' own, embodied in the artifact.)",
+   "L6 (Shortfall (1 filing): Gopher, the displaced incumbent - filed here rather than at L9 because its incumbent role dominates its protocol role; its protocol consumption is argued inside its own verdict.)",
+   "L7 (Shortfall (2 filings): ViolaWWW and MidasWWW, the two browsers the Computer History Museum names as the parent's models. Erwise (April 1992, Helsinki - the first GUI browser) was considered and not filed: no source read names it as a model or a contact of the makers, and its channel would duplicate ViolaWWW's without ViolaWWW's documented demonstration.)",
+   "L8 (Dry: a browser consumes no dataset.)",
+   "L9 (Shortfall (2 filings): WAIS (a protocol-suite member) and the Line Mode Browser (the sibling client on the same library). Archie, FTP, NNTP and telnet ride inside the libwww filing - they are the library's modules, not separate channels to the parent.)",
+   "L10 (Dry: no material dependency.)",
+   "L11 (Dry-with-finding: no procedure is consumed; the parent's release practice (free distribution, rapid ports) is its own contribution - its stored leap - not an input.)",
+   "L12 (Dry-with-finding: Mosaic 1.0 has no programmability layer; ViolaWWW's scripting was precisely what the parent did NOT take up - heard at the ViolaWWW verdict, where it caps the admission.)",
+   "L13 (Shortfall (1 filing): CERN libwww - the single code library the parent is documented as based on; there is no second library channel.)",
+   "L14 (Shortfall (1 filing): the X Window System, the first version's platform; the Motif toolkit rides inside it as its toolkit layer.)",
+   "L15 (Dry: no hosted service is consumed; the servers the browser talks to are the WWW system's own, inside the WWW filing. NCSA HTTPd (1993) is a sibling server artifact of the same institution and the same year, not an enabler of the client.)",
+   "L16 (Shortfall (1 filing): HTML, the substrate's format layer. The URL/URI apparatus rides inside the WWW filing.)",
+   "L17 (Dry-with-finding: no metric registered the parent in advance; its adoption explosion is the leap's outcome, not an enabler.)",
+   "L18 (Dry: no observation instrument.)",
+   "L19 (2 filings: HyperCard (the concept transfer, arriving via ViolaWWW) and SGML (the format lineage, arriving via the WWW system's format layer). Enquire (Berners-Lee, 1980) considered and not filed: the WWW inventor's precursor program, whose whole channel is inside the WWW system's own making.)",
+   "L20 (Dry-with-finding: the makers (Andreessen, Bina) are the parent's own producers - self-carriage, not filed as persons; the institutions and artifacts they carried are filed (NCSA at L21, ViolaWWW at L7). Berners-Lee is likewise not filed as a person; his system is at L1 and his library at L13.)",
+   "L21 (Shortfall (1 filing): NCSA, the producing institution. The High Performance Computing Act of 1991 (the Gore Bill) is not filed separately: it is the institution's funding condition, and funding is not inside the artifact - it rides inside the NCSA verdict.)",
+   "L22 (Shortfall (1 filing): CERN's public-domain release, filed deliberately for the resolver's year bound. TCP/IP and the Internet itself are not filed: generic infrastructure of the whole era, one level below even the X Window System's platform claim, with no document of the parent engaging them.)",
+   "L23 (Dry: no forward-agenda document exists for the parent; its own later agenda (forms in 2.0, November 1993) is the parent's own continuation, same year and same artifact.)",
+   "Scope: every channel named in the parent's documents and the museum record is filed or dry-noted - the substrate system and its format layer, the consumed code library, both named model browsers, the displaced incumbent and the protocol suite, the sibling client, the platform, both cross-field lineages, the producing institution, and the legal act (year-bound). Deliberate exclusions, recorded: Erwise (no documented channel); Enquire (inside the WWW making); HTTPd/CGI (siblings, same year); the makers as persons (L20); TCP/IP (era infrastructure). The four candidates expansion 198 rejected as mediated via this parent are all re-heard here on their own documents, as the brief ordered."
+  ]
+ },
+ "resolution": {
+  "raw": 14,
+  "distinct": 12,
+  "matched_existing": 0,
+  "auto_merges": 0,
+  "judge_queue": 0,
+  "dropped": 2,
+  "matched_ids": [],
+  "identity_note": "No identity work was required: the resolver matched no filing to an existing node and queued no pairs. (The HyperCard filing was NOT paired with the graph's HyperTalk node - the 1987 application and its scripting language stay distinct in the record, and the candidate was in any case rejected as mediated, so no node identity turns on it.)"
+ },
+ "judgments": "No judge pairs were queued at this parent; no judgments were applied. Recorded so the absence is a fact of the record, not an omission.",
+ "calendar_dropped_at_resolve": [
+  "Inline images via the IMG tag (Andreessen, 1993) - dropped by the resolver's year bound (dated the parent's own year, 1993). Filed deliberately with its documented year on two grounds, both recorded: it is a component of the parent's own leap (components of a leap are not leaps), and a parent's own component is self-carriage besides. Its expansion-198 rejection (mediated via Mosaic AT Netscape) does not bind here and was not imported. Not re-dated.",
+  "CERN public-domain release of the World Wide Web (1993) - dropped by the resolver's year bound (dated the parent's own year, 1993). Filed deliberately with its documented year: the within-year dates are the substance - the release (30 April 1993) postdates Mosaic 1.0 (21 April 1993) by nine days and the 0.5 announcement (23 January 1993) by three months, so it cannot have enabled the artifact as dated, whatever it did for the ecosystem the artifact then grew in (the September 1993 ports postdate it). At expansion 198 the same act was a fail-closed partial (2.0) at Netscape; here the date check is dispositive at year granularity. Not re-dated."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_ncsa-mosaic-andreessen-bina-1993-1993.json",
+  "builder": "run-01/work/build_verdicts_mosaic.py",
+  "evaluations": 12,
+  "survivors": [
+   "World Wide Web (Berners-Lee, 1991) - NEW node, dry-run score 6.0, provisional (depth 6). The substrate system the parent is a client of: the parent's announcements present a WWW browser, it implements the system's protocols and renders its format, and its signature extension (IMG) was proposed on the system's own www-talk list. The mediation attack via libwww fails - the library is the system's code vehicle, not an intermediary milestone, and the parent also engaged the system directly. Edge-scoped reversal of expansion 198's finding (mediated via Mosaic AT Netscape), on this parent's own documents, as the brief ordered.",
+   "CERN libwww, the Library of Common Code (Berners-Lee & Groff, 1992) - NEW node, dry-run score 4.0, provisional (depth 6). Code-level consumption: 'Mosaic is based on the libwww library' (Wikipedia, NCSA Mosaic); 'also used the CERN code library' (CHM). The library's protocol modules are the multi-protocol breadth the browser was named for, and its December-to-April gestation is the library's yield. A distinct channel from the WWW admission (specification-system vs consumed code); the library's other clients (the Line Mode Browser, rejected here as a sibling) are what make it a separable enabling step.",
+   "ViolaWWW (Pei-Yuan Wei, 1992) - NEW node, dry-run score 3.5, provisional (depth 6). The documented trigger and model: Thompson's demonstration 'inspired Marc Andreessen and Eric Bina to create Mosaic' (Wikipedia); Mosaic 'was modeled on the Viola and Midas browsers' (CHM); the modeled feature set (bookmarks, history, multi-font text, graphics) is documented. FLAGGED as the expansion's most contestable admission: ViolaWWW's distinctive mechanisms (scriptable objects, stylesheets) were NOT consumed - the parent dropped both - so the edge rests on the demonstration/modeling channel and feature-pattern descent, and is capped accordingly."
+  ],
+  "notable_rejections": [
+   "HTML (Berners-Lee, 1992) - FAIL-CLOSED PARTIAL (1.0): a component of the admitted system's leap. The parent renders HTML, but it engages the format as the World Wide Web system's format layer, and in code its parser reached it inside libwww; components of a leap are not leaps. Flagged contestable, with the re-hearing path recorded: a parent whose own documents engage HTML as a format per se would hear it on different documents. Dated 1992 here (the 'HTML Tags' memo, the artifact as consumed in 1992-93); expansion 198's filing used 1993, keyed on the HTML+ draft - the difference is recorded, not harmonized.",
+   "MidasWWW (Tony Johnson, 1992) - FAIL-CLOSED PARTIAL (0.5): named with ViolaWWW in the Computer History Museum's modeling phrase, but no demonstration or contact event with the makers is documented in the stronger record, and its distinctive mechanism (PostScript display for physicists) was not adopted. The Viola/Midas discrimination: the museum's joint phrase covers both; the documentary weight (demonstration, inspiration, feature-set descent) sits on Viola.",
+   "Gopher (University of Minnesota, 1991) - FAIL-CLOSED PARTIAL (0.5): consumption IS documented at this parent (the protocol is in the supported list, via libwww's module) - unlike at expansion 198, where its role was negative space. But speaking the incumbent's protocol absorbed its territory; it supplied no part of the leap's mechanism. Consumed-vs-enabling is the discrimination.",
+   "WAIS (Kahle, 1991) - FAIL-CLOSED PARTIAL (0.0): the thinnest member of the protocol suite - consumption documented through the same library, with no record tying WAIS support to the parent's design, adoption or identity. The counterfactual is decisive: remove it and nothing in the parent's record changes.",
+   "X Window System (Scheifler, Gettys & Newman, 1984) - FAIL-CLOSED PARTIAL (1.0): generic infrastructure. The X version is literally an X11/Motif application, but the leap proved platform-independent within the year (Windows and Macintosh ports, September 1993) - the SPECIFIC enabling step was a window substrate, of which X was the instance at hand. Motif rides inside the filing and shares its finding.",
+   "National Center for Supercomputing Applications (NCSA, 1986) - FAIL-CLOSED PARTIAL (1.0): the producer institution at its hardest case - an institution acts through the artifact it carried, and here the artifact IS the parent, so a separate edge would be the artifact's self-carriage relabeled. The High Performance Computing Act funding channel is funding, not inside the artifact.",
+   "HyperCard (Atkinson, 1987) - REJECTED mediated_via ViolaWWW (Pei-Yuan Wei, 1992): ViolaWWW 'was modeled after HyperCard' and began as a HyperCard-like system; the mass-hypertext concept reaches the parent inside Viola's design, and Viola is admitted at this parent on its own channel. Expected to be heard at ViolaWWW's own expansion.",
+   "SGML (ISO 8879, 1986) - REJECTED mediated_via World Wide Web (Berners-Lee, 1991): HTML is an SGML application, but the parent's parser was not a general SGML parser and none of SGML's machinery was consumed; the channel runs through the system's format layer. Expected to be rediscovered when the World Wide Web is expanded.",
+   "Line Mode Browser (Pellow, 1991) - REJECTED as the sibling client: a parallel libwww client that stayed a specialists' tool. No consumption, modeling or contact is documented; a shared ancestor (the library) is not a channel between siblings. It stands in the record as the control case for the library's admission - the library alone did not make the parent."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_ncsa-mosaic-andreessen-bina-1993-1993.json",
+  "outcomes": {
+   "world-wide-web-berners-lee-1991-1991": "provisional",
+   "cern-libwww-the-library-of-common-code-berners-lee-groff-199-1992": "provisional",
+   "violawww-pei-yuan-wei-1992-1992": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "WWW: the Q1 attack (the same leap on a different system) fails on the parent's own announcements and its IMG act on the system; the mediation attack via libwww fails on the distinction of artifacts (the library is the system's code vehicle; the parent also engaged the system directly). libwww: the Q1 attack (a loose 'based on' claim) fails on two independent sources plus the module-list correspondence; the mediation attack via the WWW fails because the library is a separable artifact with other clients. ViolaWWW: the Q1 attack (origin folklore) fails on the parent's own historical record plus the museum's modeling record; the mechanism attack - its distinctive mechanisms were NOT consumed - is the standing risk and is recorded in the verdict itself; the edge is capped provisional partly on it."
+ },
+ "totals_after": {
+  "nodes": 322,
+  "edges": 414,
+  "budget": "322/2000",
+  "expansions_done": 199,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 66,
+   "6": 49,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 305,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "world-wide-web-berners-lee-1991-1991",
+  "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+  "the-jscript-language-specification-version-0-1-welland-smith-1996",
+  "neural-network-based-language-models-for-highly-inflective-l-2009",
+  "pushshift-reddit-crawl-baumgartner-2015-2015"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}

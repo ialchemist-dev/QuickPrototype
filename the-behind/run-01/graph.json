@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T09:54:36+00:00",
-  "expansions_done": 198,
-  "raw_candidates_seen": 8727,
+  "updated_at": "2026-11-28T10:05:19+00:00",
+  "expansions_done": 199,
+  "raw_candidates_seen": 8741,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -34821,6 +34821,62 @@
     "name": "Silicon Graphics (1981)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T09:54:24+00:00"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "MidasWWW (Tony Johnson, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:05:01+00:00"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "HTML (Berners-Lee, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:05:01+00:00"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "Gopher (University of Minnesota, 1991)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:05:01+00:00"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "WAIS (Kahle, 1991)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:05:01+00:00"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "Line Mode Browser (Pellow, 1991)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:05:01+00:00"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "X Window System (Scheifler, Gettys & Newman, 1984)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:05:01+00:00"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "HyperCard (Atkinson, 1987)",
+    "reason": "mediated_via: ViolaWWW (Pei-Yuan Wei, 1992)",
+    "at": "2026-11-28T10:05:01+00:00",
+    "mediated_via": "ViolaWWW (Pei-Yuan Wei, 1992)"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "SGML (ISO 8879, 1986)",
+    "reason": "mediated_via: World Wide Web (Berners-Lee, 1991)",
+    "at": "2026-11-28T10:05:01+00:00",
+    "mediated_via": "World Wide Web (Berners-Lee, 1991)"
+   },
+   {
+    "parent_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+    "name": "National Center for Supercomputing Applications (NCSA, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:05:01+00:00"
    }
   ]
  },
@@ -44130,7 +44186,7 @@
    "prior_state": "Text browsers and Gopher menus; the Web as a physics-community tool developed at academic pace.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -44145,6 +44201,93 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T09:54:24+00:00"
+  },
+  "world-wide-web-berners-lee-1991-1991": {
+   "id": "world-wide-web-berners-lee-1991-1991",
+   "name": "World Wide Web (Berners-Lee, 1991)",
+   "aliases": [],
+   "year": 1991,
+   "domain": "web technology",
+   "type": "other",
+   "definition": "Tim Berners-Lee's hypertext system built at CERN - proposed 1989, first browser and server running by 1991, publicly announced in August 1991 - combining URLs, HTTP and HTML into one open information space.",
+   "bottleneck": "Before the World Wide Web, networked hypertext did not exist as one open system.",
+   "leap": "Berners-Lee's World Wide Web (1991) joined URLs, HTTP and HTML into one open hypertext space - the substrate NCSA Mosaic made usable by everyone and Netscape then commercialized.",
+   "prior_state": "Proprietary hypertext systems and file-transfer protocols, each its own silo.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History; CHM, Browsers: Windows on the Web",
+     "url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Q1 attack: could the parent have been the same leap on a different system - a graphical Gopher client, say? The record cuts the other way: the parent was announced, received and named as a Web browser; its protocols are the system's (HTTP first), its format is the system's, and its signature act (the IMG proposal) was an amendment offered to the system on www-talk and adopted into the system's practice. No graphical Gopher client created a market in 1993 either - the Gopher filing at this parent records the incumbent's stagnation. Attack fails. (2) Mediation attack - the live one: the parent's code ran on libwww, so is the true edge libwww's, with the system mediated through its own library? Answered on the distinction of artifacts: the library is the system's code vehicle, not a successor milestone that transformed the system; and the parent engaged the system directly as well as through the code (implementing its protocols as a system participant, proposing the IMG amendment to the system's community). Both edges stand on distinct channels - specification-system and consumed code - as the two base documents did at expansion 197. Attack fails, recorded as the pair of edges' standing interpretive risk. (3) Date/direction: the system was publicly announced in August 1991; the parent's first release was announced 23 January 1993. Direction documented in the parent's own announcements. (4) Multiples on Q3: no second open hypertext system existed in the window; necessity stands as scored. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T10:05:19+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:05:01+00:00"
+  },
+  "cern-libwww-the-library-of-common-code-berners-lee-groff-199-1992": {
+   "id": "cern-libwww-the-library-of-common-code-berners-lee-groff-199-1992",
+   "name": "CERN libwww, the Library of Common Code (Berners-Lee & Groff, 1992)",
+   "aliases": [],
+   "year": 1992,
+   "domain": "web technology",
+   "type": "method",
+   "definition": "CERN's reusable library of common code for Web clients - Berners-Lee and Jean-Francois Groff's C port (1991-92) of the NeXT WorldWideWeb application's machinery, implementing the protocol and format modules (HTTP, FTP, Gopher, WAIS, NNTP, Archie, telnet, HTML parsing) that CERN provided to volunteer browser writers as code to start with.",
+   "bottleneck": "Before libwww, anyone writing a Web client had to reimplement the protocols and the format machinery from the specifications.",
+   "leap": "Berners-Lee and Groff's libwww (1992) packaged the Web's protocol and format machinery as a reusable C library - the code CERN handed to volunteer browser writers, and the code base NCSA Mosaic is documented as based on.",
+   "prior_state": "Each early browser a bespoke implementation; the Web's reference implementation locked inside a NeXT application.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 4.0,
+   "sources": [
+    {
+     "title": "Wikipedia, NCSA Mosaic; CHM, Browsers: Windows on the Web",
+     "url": "https://www.computerhistory.org/revolution/the-web/20/388"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Q1 attack: is 'based on libwww' a loose secondary claim? Two independent sources document it - Wikipedia's NCSA Mosaic record ('Mosaic is based on the libwww library and thus supported a wide variety of Internet protocols included in the library: Archie, FTP, gopher, HTTP, NNTP, telnet, WAIS') and the Computer History Museum ('Mosaic ... also used the CERN code library'). The correspondence is corroborating detail: the library's module list IS the parent's supported-protocol list, including members (WAIS, Archie) no one would claim the two-person team wrote first. Attack fails. (2) Mediation attack via the World Wide Web: is the library merely the system under a code name? No - the artifacts are distinct in kind (a specification-system vs a C library), in date (1991 vs 1992) and in clientele: the library had other clients, the Line Mode Browser among them (filed and rejected at this parent as a sibling), which is exactly what makes the library a separable enabling step for THIS parent rather than the system restated. Attack fails. (3) Date/direction: the library was ported and distributed in 1991-92; the parent's work began in December 1992. Direction is code consumption, documented. (4) Multiples on Q3: necessity was already scored partial on the clean-room counterfactual (Netscape's later from-scratch browser); the multiples test finds no second library in the record. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T10:05:19+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:05:01+00:00"
+  },
+  "violawww-pei-yuan-wei-1992-1992": {
+   "id": "violawww-pei-yuan-wei-1992-1992",
+   "name": "ViolaWWW (Pei-Yuan Wei, 1992)",
+   "aliases": [],
+   "year": 1992,
+   "domain": "web technology",
+   "type": "other",
+   "definition": "Pei-Yuan Wei's graphical browser for Unix/X11 (initial release 9 March 1992, UC Berkeley), the first browser with embedded scriptable objects, stylesheets and tables, and CERN's recommended browser before Mosaic displaced it.",
+   "bottleneck": "Before ViolaWWW, web browsers were text-only line-mode clients or tied to the NeXT.",
+   "leap": "Pei-Yuan Wei's ViolaWWW (initial release 9 March 1992) was the first browser with embedded scriptable objects, stylesheets and tables - the graphical, programmable browser demonstrated two years before the founding, which Mosaic was based in part on and displaced.",
+   "prior_state": "CERN's line-mode browser and the NeXT WorldWideWeb editor-browser; hypertext as a research curiosity.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 3.5,
+   "sources": [
+    {
+     "title": "Wikipedia, NCSA Mosaic; CHM, Browsers: Windows on the Web; Wikipedia, ViolaWWW",
+     "url": "https://en.wikipedia.org/wiki/ViolaWWW"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Q1 attack: is the demonstration story load-bearing folklore? It is stated plainly in the parent's own historical record - 'after trying ViolaWWW, David Thompson demonstrated it to the NCSA software design group. This inspired Marc Andreessen and Eric Bina to create Mosaic' (Wikipedia, NCSA Mosaic) - and the modeling is independently recorded by the Computer History Museum ('Mosaic was modeled on the Viola and Midas browsers'). The feature-set correspondence (bookmarks, history, multi-font text, graphics in the page) is documented in the browser-history record. Attack fails on the documents as they stand. (2) Mediation attack via Andreessen-the-person: the channel runs through the makers who saw the demonstration - the run's self-carriage pattern (scored, not relabeled as mediation by the carrier), as at expansion 198. Attack fails. (3) Mechanism attack - the standing risk, recorded in the verdict itself: ViolaWWW's DISTINCTIVE mechanisms (embedded scriptable objects, stylesheets, tables) were NOT consumed by the parent, which dropped both; what passed was the demonstrated graphical-browser concept in its most advanced form and its feature patterns. This is why the edge is scored 3.5 and capped provisional: if a future hearing holds that concept-plus-patterns without mechanism is not ancestry, this is the first edge at this parent to fall. (4) Date/direction: ViolaWWW's initial release (9 March 1992) precedes the parent's December 1992 start; direction is documented by the demonstration itself. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T10:05:19+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:05:01+00:00"
   }
  },
  "edges": [
@@ -84545,6 +84688,297 @@
     "counterfactual": "Remove NCSA Mosaic and there is no April 1994 founding: no proven market, no product concept, no founding team, and no company named Mosaic Communications. The clean-room fact - Mosaic Netscape 'did not use any NCSA Mosaic code' - does not mediate the channel, it specifies it: what passed was the makers themselves, the concept and the market proof, carried by the artifact's own authors into their next act. No intermediary milestone stands between the artifact and the founding; the carriers are its makers (the self-carriage pattern, scored on its merits).",
     "mediator": null,
     "evidence": "Direct: the founding record (name, team recruitment from the NCSA Mosaic group, product lineage, the parent's stored prior_state) documents the channel link by link."
+   }
+  },
+  {
+   "predecessor_id": "world-wide-web-berners-lee-1991-1991",
+   "successor_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before the World Wide Web there was no open hypertext system for a mass client to be a client OF: the parent's own stored bottleneck presupposes the system ('the World Wide Web was a specialists' system - a NeXT browser, line-mode clients, a few dozen servers'). The parent is unintelligible except as this system's client - its announcements present a WWW browser, it implements the system's protocols (HTTP above all) and renders its format, and its signature extension was proposed on the system's own www-talk list as an amendment to the system.",
+     "source": "CERN, Licensing the Web (home.cern); NCSA, Mosaic Web Browser History (EFF exhibit K)",
+     "falsification": "Evidence of a mass graphical browser built on a different information system in 1993."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The system opened the information space itself: one open space joining addressing (URLs), a transfer protocol (HTTP) and a document format (HTML), published for anyone to implement. Every browser of 1992-94, this parent first among the mass ones, presupposes the space the system opened.",
+     "source": "CERN, Licensing the Web (home.cern)",
+     "falsification": "Evidence the parent's possibilities were enlarged by anything other than the system's opening."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "No substitute system existed: Gopher (filed separately) was a menu-based retrieval system with no hypertext format of its own, and the proprietary hypertext systems were silos. The parent's leap is a leap ON this system - its protocols and format are the ones implemented, extended and rendered.",
+     "source": "NCSA, Mosaic Web Browser History (EFF exhibit K)",
+     "falsification": "Evidence the parent could have been built, as built, on a different system."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "The system collapsed the parent's costliest unknown: there was a documented, working system to build against - specifications, a running reference implementation at CERN, and a live design community on www-talk where the parent's own IMG proposal was debated and adopted.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The system supplied the explanatory model the parent embodies: information as a distributed hypertext web over open protocols, traversable by anyone - against the era's model of information as files in archives or menus in a hierarchy.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "URLs, HTTP and HTML are the interface every Web client composes with; the parent's whole design is a composition against them.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The system's iteration loop - proposals aired on www-talk and folded into practice, the IMG tag being the parent's own contribution to it - is the system's loop, in which the parent participated rather than one it consumed, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It displaced the prior state the parent's record names at one remove: networked information as a physics-community tool and a set of proprietary silos.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent's name, protocols, format and market are the system's; the system's line to the mass audience runs through this artifact.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The permanent reset - the Web as the default information space - was realized through this parent and its successors, so partial at this parent.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:05:01+00:00",
+   "leap": {
+    "prior_state": "Text browsers and Gopher menus; the Web as a physics-community tool developed at academic pace.",
+    "jump": "Andreessen and Bina's NCSA Mosaic (1993) put inline images and a point-and-click interface on the Web and gave it away free across X, Windows and Mac, creating the mass browser market and the product concept - and its makers then carried both into the founding of Netscape, whose first name was Mosaic Communications.",
+    "date": 1993
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the World Wide Web and there is no artifact for the parent to be: no protocols to implement, no format to render, no space to put a mass audience into. The mediation attack via libwww fails: the library is the system's own code vehicle, not an intermediary milestone that transformed the system on its way to the parent - and the parent also engaged the system directly, implementing its protocols and proposing the IMG amendment to the system on www-talk. At expansion 198 this candidate was rejected as mediated via Mosaic AT Netscape; with Mosaic as the parent, the chain's final link is the system itself.",
+    "mediator": null,
+    "evidence": "Direct: the parent's announcements and record present a WWW browser implementing the system's protocols; the IMG proposal (www-talk, 25 February 1993) is a documented act on the system by the parent's own maker."
+   }
+  },
+  {
+   "predecessor_id": "cern-libwww-the-library-of-common-code-berners-lee-groff-199-1992",
+   "successor_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The specific enabling step: before libwww, a Web client had to reimplement the protocols and the format machinery from the specifications; with it, the machinery existed as reusable C code. The parent is documented as BASED on the library - 'Mosaic is based on the libwww library and thus supported a wide variety of Internet protocols included in the library: Archie, FTP, gopher, HTTP, NNTP, telnet, WAIS' (Wikipedia) - and the property it supplied, multi-protocol breadth, is the property the browser was named for. The parent's December-to-April gestation is the library's yield.",
+     "source": "Wikipedia, NCSA Mosaic; CHM, Browsers: Windows on the Web",
+     "falsification": "Evidence the parent's protocol support was implemented from the specifications rather than from the library."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened browser-writing as such - CERN 'provided code to start with' and eight volunteer browsers followed (CHM) - but the space it opened is the implementor's space; the mass-market space was opened by the parent itself, so partial for this parent.",
+     "source": "CHM, Browsers: Windows on the Web",
+     "falsification": "Evidence the library created a browser market or audience."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Substitutable in principle - Netscape's later clean-room browser proves a from-scratch implementation was possible - but not in this window by this team: the record shows the library consumed, and the January announcement came weeks after work began in December. Necessity for this artifact as built is strong; necessity in the abstract is partial.",
+     "source": "Wikipedia, NCSA Mosaic",
+     "falsification": "Evidence Andreessen and Bina evaluated and rejected the library, or wrote the protocol layer independently."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "It collapsed the implementation cost of five-plus protocols and an HTML parser to integration and interface work - the difference between a two-person December start and an April 1.0.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The library's module interfaces are literally the code interfaces the parent was built against.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The library carried CERN's iteration loop (the common code evolved with its clients through 1992); the parent's 0.x-to-1.0 cycle ran on it, but the parent's release cadence quickly became its own, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk at the code level: the parent's protocol support descends from the library's modules directly, not by resemblance.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The library's own permanence is limited - later browsers, Netscape first, rewrote their stacks - so the reset it enabled is credited partially here.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:05:01+00:00",
+   "leap": {
+    "prior_state": "Text browsers and Gopher menus; the Web as a physics-community tool developed at academic pace.",
+    "jump": "Andreessen and Bina's NCSA Mosaic (1993) put inline images and a point-and-click interface on the Web and gave it away free across X, Windows and Mac, creating the mass browser market and the product concept - and its makers then carried both into the founding of Netscape, whose first name was Mosaic Communications.",
+    "date": 1993
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove libwww and the parent as built collapses: its protocol breadth, its HTML parsing and its schedule all ran on the library's code. The mediation attack via the World Wide Web fails on the distinction of artifacts: the system is the specification (admitted on its own channel), the library is code - and the library had other clients (the Line Mode Browser, filed at this parent) that are not this parent, which is what makes the library a separable enabling step rather than the system under another name.",
+    "mediator": null,
+    "evidence": "Direct: two independent sources document code-level consumption (Wikipedia's Mosaic record, citing the library's role; the Computer History Museum: Mosaic 'also used the CERN code library')."
+   }
+  },
+  {
+   "predecessor_id": "violawww-pei-yuan-wei-1992-1992",
+   "successor_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The documented trigger: before ViolaWWW, no graphical browser existed for the parent's makers to model a mass graphical browser on. David Thompson demonstrated ViolaWWW to the NCSA software design group, and the demonstration 'inspired Marc Andreessen and Eric Bina to create Mosaic' (Wikipedia, NCSA Mosaic). The Computer History Museum records Mosaic 'was modeled on the Viola and Midas browsers', and the parent's feature set - bookmarks, history, multi-font text, graphics in the page - is documented as similar to the browsers it was modeled on, ViolaWWW named.",
+     "source": "Wikipedia, NCSA Mosaic; CHM, Browsers: Windows on the Web",
+     "falsification": "Evidence the Mosaic project began independently of the ViolaWWW demonstration, or was modeled on a different browser."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the graphical-browser possibility - embedded scriptable objects, stylesheets and tables in 1992 - but the opening was realized by the parent, not by ViolaWWW itself: X11-bound, hard to install (the Viola system had to be installed first), one developer. The possibility is Viola's; the market is the parent's.",
+     "source": "Wikipedia, ViolaWWW",
+     "falsification": "Evidence ViolaWWW created a market or a user base beyond CERN's recommendation."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The graphical-browser concept had coeval instances - MidasWWW (filed at this parent) and Erwise - so the concept was not ViolaWWW's alone; but the instance the record ties to this project's start, by demonstration to its makers, was ViolaWWW. Necessity of the concept is the field's; necessity of this instance is the documented trigger, so partial.",
+     "source": "CHM, Browsers: Windows on the Web",
+     "falsification": "Evidence the makers would have started the same project in December 1992 had the demonstration not occurred."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "It collapsed the design unknown - what a graphical browser should look and behave like - but not the implementation cost: the parent's code was new, and the parent's hardest problems (reliability, installation, ports) were its own.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "Its model - the browser as a graphical, programmable hypermedia client - is the ancestor of the parent's model, minus the programmability the parent deliberately dropped; the descent is real but partial by the parent's own choice.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Its interface patterns - bookmarks, history, multi-font text, graphics displayed in the page flow - are the patterns the modeled feature set inherited.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced the line-mode/NeXT phase inside CERN's own recommendation (it was CERN's recommended browser), a displacement the parent completed for the world.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The documented line runs ViolaWWW -> (demonstration to the makers) -> the parent, with no intermediary milestone: the carriers are the makers who saw it - the run's self-carriage pattern, scored on its merits.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Its feature reset - stylesheets, scriptable objects - was realized by later lineages (CSS, JavaScript), not by this parent, which dropped both; partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 3.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:05:01+00:00",
+   "leap": {
+    "prior_state": "Text browsers and Gopher menus; the Web as a physics-community tool developed at academic pace.",
+    "jump": "Andreessen and Bina's NCSA Mosaic (1993) put inline images and a point-and-click interface on the Web and gave it away free across X, Windows and Mac, creating the mass browser market and the product concept - and its makers then carried both into the founding of Netscape, whose first name was Mosaic Communications.",
+    "date": 1993
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove ViolaWWW and its demonstration, and the parent loses its documented trigger and its documented model: the record of the project's origin starts with Thompson showing ViolaWWW to the group that then built Mosaic. No intermediary milestone stands between the demonstration and the project - the channel is makers seeing the artifact, the same carrier pattern the run scored at expansion 198 (Mosaic into Netscape). The standing risk is recorded honestly: ViolaWWW's DISTINCTIVE mechanisms (scriptable objects, stylesheets) were not consumed - what passed was the graphical-browser concept in its most advanced demonstrated form and its feature patterns. That caps the score; it does not mediate the channel.",
+    "mediator": null,
+    "evidence": "Direct: the demonstration and the modeling are documented in the parent's own historical record (Wikipedia, NCSA Mosaic; CHM). Recorded as the expansion's most contestable admission."
    }
   }
  ],
@@ -383550,6 +383984,469 @@
        "source_url": "https://en.wikipedia.org/wiki/Netscape_Communications_Corp."
       },
       "reason": "dated on/after parent year 1994"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "ncsa-mosaic-andreessen-bina-1993-1993": {
+   "raw_candidates": [
+    {
+     "name": "World Wide Web (Berners-Lee, 1991)",
+     "year": 1991,
+     "domain": "web technology",
+     "lens": "L1",
+     "type": "other",
+     "definition": "Tim Berners-Lee's hypertext system built at CERN - proposed 1989, first browser and server running by 1991, publicly announced in August 1991 - combining URLs, HTTP and HTML into one open information space.",
+     "causal_claim": "NCSA Mosaic is a World Wide Web browser: its announcements present it as one, it implements the system's protocols and renders its format, and its signature extension (the IMG tag) was proposed on the system's own www-talk list as an amendment to the system. At expansion 198 this candidate was rejected as mediated via Mosaic AT Netscape; here, with Mosaic as the parent, the channel is the system's own - there is no intermediary milestone between the system and its mass-market client. (Filed with the same name and year as at expansion 198, for record coherence.)",
+     "source_title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History; CHM, Browsers: Windows on the Web",
+     "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+    },
+    {
+     "name": "Inline images via the IMG tag (Andreessen, 1993)",
+     "year": 1993,
+     "domain": "web technology",
+     "lens": "L1",
+     "type": "method",
+     "definition": "The practice of embedding images inline in a hypertext page, proposed by Marc Andreessen on the www-talk mailing list on 25 February 1993 ('I would like to propose a single additional tag: IMG') with an implementation already running in Mosaic, and present in Mosaic's 0.10 release notes of March 1993.",
+     "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the tag is the signature component of the parent's OWN leap (components of a leap are not leaps, and a parent's own component is self-carriage besides). Filed so both grounds are on this parent's record, not imported from expansion 198's mediation finding.",
+     "source_title": "NCSA, Mosaic Web Browser History (EFF exhibit K)",
+     "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+    },
+    {
+     "name": "CERN libwww, the Library of Common Code (Berners-Lee & Groff, 1992)",
+     "year": 1992,
+     "domain": "web technology",
+     "lens": "L13",
+     "type": "method",
+     "definition": "CERN's reusable library of common code for Web clients - Berners-Lee and Jean-Francois Groff's C port (1991-92) of the NeXT WorldWideWeb application's machinery, implementing the protocol and format modules (HTTP, FTP, Gopher, WAIS, NNTP, Archie, telnet, HTML parsing) that CERN provided to volunteer browser writers as code to start with.",
+     "causal_claim": "Mosaic is documented as BASED on this library: 'Mosaic is based on the libwww library and thus supported a wide variety of Internet protocols included in the library' (Wikipedia, NCSA Mosaic); the Computer History Museum records Mosaic 'also used the CERN code library'. The library is the specific enabling step behind the property the browser was named for - its multi-protocol breadth - and behind its January-to-April 1993 gestation. Code-level consumption, the strongest channel the run recognizes.",
+     "source_title": "Wikipedia, NCSA Mosaic; CHM, Browsers: Windows on the Web",
+     "source_url": "https://www.computerhistory.org/revolution/the-web/20/388"
+    },
+    {
+     "name": "ViolaWWW (Pei-Yuan Wei, 1992)",
+     "year": 1992,
+     "domain": "web technology",
+     "lens": "L7",
+     "type": "other",
+     "definition": "Pei-Yuan Wei's graphical browser for Unix/X11 (initial release 9 March 1992, UC Berkeley), the first browser with embedded scriptable objects, stylesheets and tables, and CERN's recommended browser before Mosaic displaced it.",
+     "causal_claim": "The documented trigger and model of the parent project: David Thompson demonstrated ViolaWWW to the NCSA software design group, and the demonstration 'inspired Marc Andreessen and Eric Bina to create Mosaic' (Wikipedia, NCSA Mosaic); the Computer History Museum records Mosaic 'was modeled on the Viola and Midas browsers'; Mosaic's feature set (bookmarks, history, multi-font text, graphics) is documented as similar to the browsers it was modeled on, ViolaWWW named. The channel is demonstration-to-makers plus feature-set descent - judged here on its own documents, per the brief (at expansion 198 it was mediated via Mosaic AT Netscape).",
+     "source_title": "Wikipedia, NCSA Mosaic; CHM, Browsers: Windows on the Web; Wikipedia, ViolaWWW",
+     "source_url": "https://en.wikipedia.org/wiki/ViolaWWW"
+    },
+    {
+     "name": "MidasWWW (Tony Johnson, 1992)",
+     "year": 1992,
+     "domain": "web technology",
+     "lens": "L7",
+     "type": "other",
+     "definition": "Tony Johnson's graphical Web browser for SLAC (released November 1992), Motif/X-based, which displayed PostScript documents in the browser and changed the color of visited links.",
+     "causal_claim": "Named with Viola by the Computer History Museum as a browser Mosaic 'was modeled on' - but no demonstration or contact event with Mosaic's makers is documented in the stronger record (a weaker retelling has Johnson's release impressing Andreessen days before Thompson's Viola demonstration), and MidasWWW's distinctive mechanism - PostScript display for physicists - is not a mechanism Mosaic took up. Filed so the Viola/Midas discrimination is made on the record rather than inherited from the museum's joint phrase.",
+     "source_title": "CHM, Browsers: Windows on the Web; Wikipedia, History of the web browser",
+     "source_url": "https://www.computerhistory.org/revolution/the-web/20/388"
+    },
+    {
+     "name": "HTML (Berners-Lee, 1992)",
+     "year": 1992,
+     "domain": "web technology",
+     "lens": "L16",
+     "type": "other",
+     "definition": "The HyperText Markup Language Berners-Lee defined at CERN - the original tag set documented in the 1992 'HTML Tags' memo (Berners-Lee & Connolly) - the document format every web browser renders.",
+     "causal_claim": "Filed as the format layer of the substrate system: the parent renders HTML, and in code its HTML parsing reached it inside libwww. But as a standalone artifact HTML is a component of the World Wide Web system's leap - the parent's documents engage it as the system's format, not as a separate artifact - and components of a leap are not leaps. Dated 1992 here (the 'HTML Tags' memo, the artifact as consumed in 1992-93); expansion 198's filing used 1993, keyed on the HTML+ draft - the difference is recorded, not silently harmonized.",
+     "source_title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History",
+     "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+    },
+    {
+     "name": "Gopher (University of Minnesota, 1991)",
+     "year": 1991,
+     "domain": "web technology",
+     "lens": "L6",
+     "type": "other",
+     "definition": "The University of Minnesota's menu-based Internet information system (1991), the Web's chief rival in 1992-93, whose licensor announced licensing fees in February 1993, after which its adoption stagnated.",
+     "causal_claim": "At this parent Gopher is not only the displaced incumbent (its expansion-198 role): Mosaic actually spoke the Gopher protocol - it is in the supported-protocol list, via libwww's Gopher module - so consumption is documented. The question the verdict must answer is whether speaking the incumbent's protocol enabled the parent's leap (graphical Web browsing for a mass audience) or merely absorbed the incumbent's territory as a compatibility surface. Filed for that discrimination.",
+     "source_title": "Wikipedia, NCSA Mosaic; CERN retrospective (Cailliau)",
+     "source_url": "http://staroceans.org/wiki/A/Mosaic_(web_browser)"
+    },
+    {
+     "name": "WAIS (Kahle, 1991)",
+     "year": 1991,
+     "domain": "web technology",
+     "lens": "L9",
+     "type": "other",
+     "definition": "The Wide Area Information Server system (Brewster Kahle, Thinking Machines, 1991) - full-text search over networked document collections, one of the early Internet's three information systems alongside Gopher and the Web.",
+     "causal_claim": "Filed as the thinnest member of the parent's protocol suite: Mosaic supported WAIS through libwww's protocol modules, so consumption is documented at the same code level as Gopher's - but no record suggests WAIS support drove any part of the parent's adoption or design. Filed so the protocol-suite discrimination is applied member by member, not by class.",
+     "source_title": "Wikipedia, NCSA Mosaic",
+     "source_url": "http://staroceans.org/wiki/A/Mosaic_(web_browser)"
+    },
+    {
+     "name": "Line Mode Browser (Pellow, 1991)",
+     "year": 1991,
+     "domain": "web technology",
+     "lens": "L9",
+     "type": "other",
+     "definition": "CERN's portable dumb-terminal Web browser (Nicola Pellow, 1991), built on the libwww common code and runnable on any terminal - the Web team's own demonstration that the library could carry a client.",
+     "causal_claim": "Filed as the sibling client: it consumed the same library the parent is based on, a year earlier, and stayed a specialists' tool. No channel from it to Mosaic is documented - no modeling, no demonstration, no shared code beyond the library itself, which is filed on its own channel. Filed so the sibling-vehicle discrimination is on the record beside the library's admission.",
+     "source_title": "CHM, Browsers: Windows on the Web",
+     "source_url": "https://www.computerhistory.org/revolution/the-web/20/388"
+    },
+    {
+     "name": "X Window System (Scheifler, Gettys & Newman, 1984)",
+     "year": 1984,
+     "domain": "computing platforms",
+     "lens": "L14",
+     "type": "other",
+     "definition": "The network-transparent window system originated at MIT in 1984 (X11 released 1987), the standard graphical environment of Unix workstations - the platform the parent's first version (xmosaic) was written against, using the Motif toolkit.",
+     "causal_claim": "Filed as the platform substrate: the parent's X version is an X11/Motif application, so the consumption is literal. The question the verdict must answer is the generic-infrastructure test: the parent's leap (the mass-market graphical browser) proved platform-independent within the year - Windows and Macintosh ports shipped by September 1993 - so whether X was the SPECIFIC enabling step or the era's generic window substrate is genuinely contestable. Filed for that discrimination; Motif rides inside this filing as the toolkit layer.",
+     "source_title": "Wikipedia, NCSA Mosaic",
+     "source_url": "http://staroceans.org/wiki/A/Mosaic_(web_browser)"
+    },
+    {
+     "name": "HyperCard (Atkinson, 1987)",
+     "year": 1987,
+     "domain": "hypermedia",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Apple's hypermedia authoring system (Bill Atkinson, 1987) - stacks of cards joined by links and buttons, scripted in HyperTalk - which put end-user hypertext on millions of Macintoshes years before the Web.",
+     "causal_claim": "Filed as the cross-field concept transfer: ViolaWWW 'was modeled after HyperCard' (Wikipedia, History of the web browser) - Wei's browser began as a HyperCard-like system. The concept channel from HyperCard to the parent therefore runs through ViolaWWW, the modeled predecessor filed at L7; no direct contact between HyperCard and the parent's makers is documented. The mediation is the filing's expectation, recorded for the verdict.",
+     "source_title": "Wikipedia, History of the web browser; Wikipedia, ViolaWWW",
+     "source_url": "https://en.wikipedia.org/wiki/ViolaWWW"
+    },
+    {
+     "name": "SGML (ISO 8879, 1986)",
+     "year": 1986,
+     "domain": "document standards",
+     "lens": "L19",
+     "type": "other",
+     "definition": "The Standard Generalized Markup Language (ISO 8879, 1986) - the meta-language for defining document markup, from which HTML was derived as an application profile.",
+     "causal_claim": "Filed as the format lineage behind the system's format: HTML is an SGML application, and Berners-Lee designed it in SGML's conventions. But the parent's parser was not a general SGML parser, and nothing of SGML's machinery (DTDs, the full tag syntax) was consumed by the parent - the channel runs through HTML, the World Wide Web system's format layer. The mediation is the filing's expectation, recorded for the verdict.",
+     "source_title": "CERN, Licensing the Web",
+     "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+    },
+    {
+     "name": "National Center for Supercomputing Applications (NCSA, 1986)",
+     "year": 1986,
+     "domain": "web technology",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The University of Illinois supercomputing center (established 1986) whose Software Development Group employed Andreessen and Bina and produced NCSA Mosaic, NCSA HTTPd and the CGI specification.",
+     "causal_claim": "Filed as the parent's producing institution: it employed the makers, hosted the work, and was funded for such work under the High Performance Computing Act of 1991. But per the carriage precedents an institution acts through the specific artifact it carried - and here the artifact is the parent itself, so the institution's channel is exhausted by the parent's own existence (the producer form of self-carriage); the funding channel is, per standing discipline, not inside the artifact. Filed so the discrimination is applied at the parent where it bites hardest.",
+     "source_title": "Wikipedia, NCSA Mosaic; NCSA, Mosaic Web Browser History",
+     "source_url": "http://staroceans.org/wiki/A/Mosaic_(web_browser)"
+    },
+    {
+     "name": "CERN public-domain release of the World Wide Web (1993)",
+     "year": 1993,
+     "domain": "internet standards",
+     "lens": "L22",
+     "type": "other",
+     "definition": "CERN's statement of 30 April 1993 putting the three components of the Web software (line-mode client, server, library of common code) into the public domain: 'CERN relinquishes all intellectual property rights to this code, both source and binary and permission is given to anyone to use, duplicate, modify and distribute it.'",
+     "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound - and the within-year dates are the substance: the release is dated 30 April 1993, nine days AFTER Mosaic 1.0 (21 April 1993) and three months after the 0.5 announcement (23 January 1993), so it cannot have enabled the artifact as dated, whatever it did for the ecosystem the artifact then grew in (the Windows/Mac ports of September 1993 postdate it). At expansion 198 the same act was this parent's child's most contestable negative (fail-closed partial 2.0); here the date check is dispositive at year granularity and the nine-day fact is recorded, not re-dated away.",
+     "source_title": "CERN, Licensing the Web (home.cern)",
+     "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "world-wide-web-berners-lee-1991-1991",
+      "candidate": {
+       "name": "World Wide Web (Berners-Lee, 1991)",
+       "year": 1991,
+       "domain": "web technology",
+       "lens": "L1",
+       "type": "other",
+       "definition": "Tim Berners-Lee's hypertext system built at CERN - proposed 1989, first browser and server running by 1991, publicly announced in August 1991 - combining URLs, HTTP and HTML into one open information space.",
+       "causal_claim": "NCSA Mosaic is a World Wide Web browser: its announcements present it as one, it implements the system's protocols and renders its format, and its signature extension (the IMG tag) was proposed on the system's own www-talk list as an amendment to the system. At expansion 198 this candidate was rejected as mediated via Mosaic AT Netscape; here, with Mosaic as the parent, the channel is the system's own - there is no intermediary milestone between the system and its mass-market client. (Filed with the same name and year as at expansion 198, for record coherence.)",
+       "source_title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History; CHM, Browsers: Windows on the Web",
+       "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "World Wide Web (Berners-Lee, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cern-libwww-the-library-of-common-code-berners-lee-groff-199-1992",
+      "candidate": {
+       "name": "CERN libwww, the Library of Common Code (Berners-Lee & Groff, 1992)",
+       "year": 1992,
+       "domain": "web technology",
+       "lens": "L13",
+       "type": "method",
+       "definition": "CERN's reusable library of common code for Web clients - Berners-Lee and Jean-Francois Groff's C port (1991-92) of the NeXT WorldWideWeb application's machinery, implementing the protocol and format modules (HTTP, FTP, Gopher, WAIS, NNTP, Archie, telnet, HTML parsing) that CERN provided to volunteer browser writers as code to start with.",
+       "causal_claim": "Mosaic is documented as BASED on this library: 'Mosaic is based on the libwww library and thus supported a wide variety of Internet protocols included in the library' (Wikipedia, NCSA Mosaic); the Computer History Museum records Mosaic 'also used the CERN code library'. The library is the specific enabling step behind the property the browser was named for - its multi-protocol breadth - and behind its January-to-April 1993 gestation. Code-level consumption, the strongest channel the run recognizes.",
+       "source_title": "Wikipedia, NCSA Mosaic; CHM, Browsers: Windows on the Web",
+       "source_url": "https://www.computerhistory.org/revolution/the-web/20/388"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "CERN libwww, the Library of Common Code (Berners-Lee & Groff, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "violawww-pei-yuan-wei-1992-1992",
+      "candidate": {
+       "name": "ViolaWWW (Pei-Yuan Wei, 1992)",
+       "year": 1992,
+       "domain": "web technology",
+       "lens": "L7",
+       "type": "other",
+       "definition": "Pei-Yuan Wei's graphical browser for Unix/X11 (initial release 9 March 1992, UC Berkeley), the first browser with embedded scriptable objects, stylesheets and tables, and CERN's recommended browser before Mosaic displaced it.",
+       "causal_claim": "The documented trigger and model of the parent project: David Thompson demonstrated ViolaWWW to the NCSA software design group, and the demonstration 'inspired Marc Andreessen and Eric Bina to create Mosaic' (Wikipedia, NCSA Mosaic); the Computer History Museum records Mosaic 'was modeled on the Viola and Midas browsers'; Mosaic's feature set (bookmarks, history, multi-font text, graphics) is documented as similar to the browsers it was modeled on, ViolaWWW named. The channel is demonstration-to-makers plus feature-set descent - judged here on its own documents, per the brief (at expansion 198 it was mediated via Mosaic AT Netscape).",
+       "source_title": "Wikipedia, NCSA Mosaic; CHM, Browsers: Windows on the Web; Wikipedia, ViolaWWW",
+       "source_url": "https://en.wikipedia.org/wiki/ViolaWWW"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "ViolaWWW (Pei-Yuan Wei, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "midaswww-tony-johnson-1992-1992",
+      "candidate": {
+       "name": "MidasWWW (Tony Johnson, 1992)",
+       "year": 1992,
+       "domain": "web technology",
+       "lens": "L7",
+       "type": "other",
+       "definition": "Tony Johnson's graphical Web browser for SLAC (released November 1992), Motif/X-based, which displayed PostScript documents in the browser and changed the color of visited links.",
+       "causal_claim": "Named with Viola by the Computer History Museum as a browser Mosaic 'was modeled on' - but no demonstration or contact event with Mosaic's makers is documented in the stronger record (a weaker retelling has Johnson's release impressing Andreessen days before Thompson's Viola demonstration), and MidasWWW's distinctive mechanism - PostScript display for physicists - is not a mechanism Mosaic took up. Filed so the Viola/Midas discrimination is made on the record rather than inherited from the museum's joint phrase.",
+       "source_title": "CHM, Browsers: Windows on the Web; Wikipedia, History of the web browser",
+       "source_url": "https://www.computerhistory.org/revolution/the-web/20/388"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "MidasWWW (Tony Johnson, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "html-berners-lee-1992-1992",
+      "candidate": {
+       "name": "HTML (Berners-Lee, 1992)",
+       "year": 1992,
+       "domain": "web technology",
+       "lens": "L16",
+       "type": "other",
+       "definition": "The HyperText Markup Language Berners-Lee defined at CERN - the original tag set documented in the 1992 'HTML Tags' memo (Berners-Lee & Connolly) - the document format every web browser renders.",
+       "causal_claim": "Filed as the format layer of the substrate system: the parent renders HTML, and in code its HTML parsing reached it inside libwww. But as a standalone artifact HTML is a component of the World Wide Web system's leap - the parent's documents engage it as the system's format, not as a separate artifact - and components of a leap are not leaps. Dated 1992 here (the 'HTML Tags' memo, the artifact as consumed in 1992-93); expansion 198's filing used 1993, keyed on the HTML+ draft - the difference is recorded, not silently harmonized.",
+       "source_title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History",
+       "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "HTML (Berners-Lee, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "gopher-university-of-minnesota-1991-1991",
+      "candidate": {
+       "name": "Gopher (University of Minnesota, 1991)",
+       "year": 1991,
+       "domain": "web technology",
+       "lens": "L6",
+       "type": "other",
+       "definition": "The University of Minnesota's menu-based Internet information system (1991), the Web's chief rival in 1992-93, whose licensor announced licensing fees in February 1993, after which its adoption stagnated.",
+       "causal_claim": "At this parent Gopher is not only the displaced incumbent (its expansion-198 role): Mosaic actually spoke the Gopher protocol - it is in the supported-protocol list, via libwww's Gopher module - so consumption is documented. The question the verdict must answer is whether speaking the incumbent's protocol enabled the parent's leap (graphical Web browsing for a mass audience) or merely absorbed the incumbent's territory as a compatibility surface. Filed for that discrimination.",
+       "source_title": "Wikipedia, NCSA Mosaic; CERN retrospective (Cailliau)",
+       "source_url": "http://staroceans.org/wiki/A/Mosaic_(web_browser)"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Gopher (University of Minnesota, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "wais-kahle-1991-1991",
+      "candidate": {
+       "name": "WAIS (Kahle, 1991)",
+       "year": 1991,
+       "domain": "web technology",
+       "lens": "L9",
+       "type": "other",
+       "definition": "The Wide Area Information Server system (Brewster Kahle, Thinking Machines, 1991) - full-text search over networked document collections, one of the early Internet's three information systems alongside Gopher and the Web.",
+       "causal_claim": "Filed as the thinnest member of the parent's protocol suite: Mosaic supported WAIS through libwww's protocol modules, so consumption is documented at the same code level as Gopher's - but no record suggests WAIS support drove any part of the parent's adoption or design. Filed so the protocol-suite discrimination is applied member by member, not by class.",
+       "source_title": "Wikipedia, NCSA Mosaic",
+       "source_url": "http://staroceans.org/wiki/A/Mosaic_(web_browser)"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "WAIS (Kahle, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "line-mode-browser-pellow-1991-1991",
+      "candidate": {
+       "name": "Line Mode Browser (Pellow, 1991)",
+       "year": 1991,
+       "domain": "web technology",
+       "lens": "L9",
+       "type": "other",
+       "definition": "CERN's portable dumb-terminal Web browser (Nicola Pellow, 1991), built on the libwww common code and runnable on any terminal - the Web team's own demonstration that the library could carry a client.",
+       "causal_claim": "Filed as the sibling client: it consumed the same library the parent is based on, a year earlier, and stayed a specialists' tool. No channel from it to Mosaic is documented - no modeling, no demonstration, no shared code beyond the library itself, which is filed on its own channel. Filed so the sibling-vehicle discrimination is on the record beside the library's admission.",
+       "source_title": "CHM, Browsers: Windows on the Web",
+       "source_url": "https://www.computerhistory.org/revolution/the-web/20/388"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Line Mode Browser (Pellow, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "x-window-system-scheifler-gettys-newman-1984-1984",
+      "candidate": {
+       "name": "X Window System (Scheifler, Gettys & Newman, 1984)",
+       "year": 1984,
+       "domain": "computing platforms",
+       "lens": "L14",
+       "type": "other",
+       "definition": "The network-transparent window system originated at MIT in 1984 (X11 released 1987), the standard graphical environment of Unix workstations - the platform the parent's first version (xmosaic) was written against, using the Motif toolkit.",
+       "causal_claim": "Filed as the platform substrate: the parent's X version is an X11/Motif application, so the consumption is literal. The question the verdict must answer is the generic-infrastructure test: the parent's leap (the mass-market graphical browser) proved platform-independent within the year - Windows and Macintosh ports shipped by September 1993 - so whether X was the SPECIFIC enabling step or the era's generic window substrate is genuinely contestable. Filed for that discrimination; Motif rides inside this filing as the toolkit layer.",
+       "source_title": "Wikipedia, NCSA Mosaic",
+       "source_url": "http://staroceans.org/wiki/A/Mosaic_(web_browser)"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "X Window System (Scheifler, Gettys & Newman, 1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hypercard-atkinson-1987-1987",
+      "candidate": {
+       "name": "HyperCard (Atkinson, 1987)",
+       "year": 1987,
+       "domain": "hypermedia",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Apple's hypermedia authoring system (Bill Atkinson, 1987) - stacks of cards joined by links and buttons, scripted in HyperTalk - which put end-user hypertext on millions of Macintoshes years before the Web.",
+       "causal_claim": "Filed as the cross-field concept transfer: ViolaWWW 'was modeled after HyperCard' (Wikipedia, History of the web browser) - Wei's browser began as a HyperCard-like system. The concept channel from HyperCard to the parent therefore runs through ViolaWWW, the modeled predecessor filed at L7; no direct contact between HyperCard and the parent's makers is documented. The mediation is the filing's expectation, recorded for the verdict.",
+       "source_title": "Wikipedia, History of the web browser; Wikipedia, ViolaWWW",
+       "source_url": "https://en.wikipedia.org/wiki/ViolaWWW"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "HyperCard (Atkinson, 1987)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sgml-iso-8879-1986-1986",
+      "candidate": {
+       "name": "SGML (ISO 8879, 1986)",
+       "year": 1986,
+       "domain": "document standards",
+       "lens": "L19",
+       "type": "other",
+       "definition": "The Standard Generalized Markup Language (ISO 8879, 1986) - the meta-language for defining document markup, from which HTML was derived as an application profile.",
+       "causal_claim": "Filed as the format lineage behind the system's format: HTML is an SGML application, and Berners-Lee designed it in SGML's conventions. But the parent's parser was not a general SGML parser, and nothing of SGML's machinery (DTDs, the full tag syntax) was consumed by the parent - the channel runs through HTML, the World Wide Web system's format layer. The mediation is the filing's expectation, recorded for the verdict.",
+       "source_title": "CERN, Licensing the Web",
+       "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "SGML (ISO 8879, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "national-center-for-supercomputing-applications-ncsa-1986-1986",
+      "candidate": {
+       "name": "National Center for Supercomputing Applications (NCSA, 1986)",
+       "year": 1986,
+       "domain": "web technology",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The University of Illinois supercomputing center (established 1986) whose Software Development Group employed Andreessen and Bina and produced NCSA Mosaic, NCSA HTTPd and the CGI specification.",
+       "causal_claim": "Filed as the parent's producing institution: it employed the makers, hosted the work, and was funded for such work under the High Performance Computing Act of 1991. But per the carriage precedents an institution acts through the specific artifact it carried - and here the artifact is the parent itself, so the institution's channel is exhausted by the parent's own existence (the producer form of self-carriage); the funding channel is, per standing discipline, not inside the artifact. Filed so the discrimination is applied at the parent where it bites hardest.",
+       "source_title": "Wikipedia, NCSA Mosaic; NCSA, Mosaic Web Browser History",
+       "source_url": "http://staroceans.org/wiki/A/Mosaic_(web_browser)"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "National Center for Supercomputing Applications (NCSA, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Inline images via the IMG tag (Andreessen, 1993)",
+       "year": 1993,
+       "domain": "web technology",
+       "lens": "L1",
+       "type": "method",
+       "definition": "The practice of embedding images inline in a hypertext page, proposed by Marc Andreessen on the www-talk mailing list on 25 February 1993 ('I would like to propose a single additional tag: IMG') with an implementation already running in Mosaic, and present in Mosaic's 0.10 release notes of March 1993.",
+       "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the tag is the signature component of the parent's OWN leap (components of a leap are not leaps, and a parent's own component is self-carriage besides). Filed so both grounds are on this parent's record, not imported from expansion 198's mediation finding.",
+       "source_title": "NCSA, Mosaic Web Browser History (EFF exhibit K)",
+       "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+      },
+      "reason": "dated on/after parent year 1993"
+     },
+     {
+      "candidate": {
+       "name": "CERN public-domain release of the World Wide Web (1993)",
+       "year": 1993,
+       "domain": "internet standards",
+       "lens": "L22",
+       "type": "other",
+       "definition": "CERN's statement of 30 April 1993 putting the three components of the Web software (line-mode client, server, library of common code) into the public domain: 'CERN relinquishes all intellectual property rights to this code, both source and binary and permission is given to anyone to use, duplicate, modify and distribute it.'",
+       "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound - and the within-year dates are the substance: the release is dated 30 April 1993, nine days AFTER Mosaic 1.0 (21 April 1993) and three months after the 0.5 announcement (23 January 1993), so it cannot have enabled the artifact as dated, whatever it did for the ecosystem the artifact then grew in (the Windows/Mac ports of September 1993 postdate it). At expansion 198 the same act was this parent's child's most contestable negative (fail-closed partial 2.0); here the date check is dispositive at year granularity and the nine-day fact is recorded, not re-dated away.",
+       "source_title": "CERN, Licensing the Web (home.cern)",
+       "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+      },
+      "reason": "dated on/after parent year 1993"
      }
     ],
     "prefiltered": []
