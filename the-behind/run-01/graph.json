@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T14:26:07+00:00",
-  "expansions_done": 225,
-  "raw_candidates_seen": 9103,
+  "updated_at": "2026-11-28T14:34:35+00:00",
+  "expansions_done": 226,
+  "raw_candidates_seen": 9118,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -36594,6 +36594,80 @@
     "name": "Estimating mixtures of normal distributions and switching regressions (Quandt & Ramsey, 1978)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T14:25:48+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "Statistical Decision Functions (Wald, 1950)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "Sequential Analysis (Wald, 1947)",
+    "reason": "mediated_via: Bayes and minimax solutions of sequential decision problems (Arrow, Blackwell & Girshick, 1949)",
+    "at": "2026-11-28T14:34:18+00:00",
+    "mediated_via": "Bayes and minimax solutions of sequential decision problems (Arrow, Blackwell & Girshick, 1949)"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "Les reserves et la regulation de l'avenir (Masse, 1946)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "A scientific routine for stock control (Wilson, 1934)",
+    "reason": "mediated_via: The economic order quantity (Harris, 1913)",
+    "at": "2026-11-28T14:34:18+00:00",
+    "mediated_via": "The economic order quantity (Harris, 1913)"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "The mathematical theory of banking (Edgeworth, 1888)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "The RAND Logistics Project and the 1950 Logistics Conference (ONR/RAND, 1950)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "Cowles Commission for Research in Economics (1932)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "Linear programming (Dantzig, 1947)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "Foundations of the Theory of Probability (Kolmogorov, 1933)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "The nature and stability of inventory cycles (Metzler, 1941)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
+   },
+   {
+    "parent_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+    "name": "Markov chains (Markov, 1906)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:34:18+00:00"
    }
   ]
  },
@@ -40824,7 +40898,9 @@
   "bayes-and-minimax-solutions-of-sequential-decision-problems-1949": {
    "id": "bayes-and-minimax-solutions-of-sequential-decision-problems-1949",
    "name": "Bayes and Minimax Solutions of Sequential Decision Problems (Arrow, Blackwell & Girshick, 1949)",
-   "aliases": [],
+   "aliases": [
+    "Bayes and minimax solutions of sequential decision problems (Arrow, Blackwell & Girshick, 1949)"
+   ],
    "year": 1949,
    "domain": "statistics",
    "type": "theory",
@@ -45672,7 +45748,7 @@
    "prior_state": "Static lot-size formulas and heuristic reorder rules for deterministic demand.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -47102,6 +47178,30 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T14:25:48+00:00"
+  },
+  "the-economic-order-quantity-harris-1913-1913": {
+   "id": "the-economic-order-quantity-harris-1913-1913",
+   "name": "The economic order quantity (Harris, 1913)",
+   "aliases": [],
+   "year": 1913,
+   "domain": "",
+   "type": "method",
+   "definition": "Ford W. Harris, 'How Many Parts to Make at Once' (Factory, The Magazine of Management 10(2), 1913): the economic order quantity - the lot size minimizing total cost, balancing fixed setup cost against interest/holding cost, Q* = sqrt(2DS/H).",
+   "bottleneck": "Before Harris (1913), how many parts to make at once had no optimizing answer, because lot size was set by rule of thumb with the setup-versus-holding tradeoff never stated as a cost problem.",
+   "leap": "Harris (1913) posed and solved the lot-size problem: total cost as the sum of a fixed setup cost spread over the lot and a holding cost growing with it, minimized at the square-root formula Q* = sqrt(2DS/H) - the problem-form (order quantity as the balance of fixed ordering cost against holding cost) that all later inventory theory, AHM included, inherits.",
+   "prior_state": "Lot sizing by foreman's judgement; the tradeoff between setup cost and stock-carrying cost unstated.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "ADMITTED NEW at exp-226, edge score 5.5, depth 6. Channel: problem-form and cost-structure identity. AHM's model is Harris's lot-size problem - a fixed cost of ordering, a holding cost on stock, the order quantity as the decision - with shortage cost added, demand made random, and the horizon made multi-period; the parent's own stored prior_state names the stratum ('Static lot-size formulas and heuristic reorder rules for deterministic demand'), and the field's careful retrospective (Hadley & Whitin 1963) is built as deterministic lot-size models (ch. 2) first, with AHM (ch. 1) 'one of the first to provide a rigorous mathematical analysis of a simple type of inventory model'. Adversarial attacks: (1) Mediation via Wilson (1934) - answered on the documents: Wilson is the formula's codifier ('given a name by Camp, Wilson and Goudriaan'), filed in this same census and rejected as mediated via this candidate; a codification does not transform, so the mediation arrow points the other way. (2) Q3 necessity - graded partial, honestly: the RAND logistics problem could conceivably have been posed without the EOQ tradition behind it; what is claimed is the documented identity of problem-form and cost elements, not uniqueness. (3) WART: AHM's own text was NOT verified to cite Harris - the admission rests on the problem-form/cost-structure identity plus the field's textbook placement (Hadley & Whitin; the 125-years/100-years-of-EOQ lineage survey), not on a citation inside the parent. If a future reading of the paper shows its model derived from a non-lot-size source, this edge is first in line for rehearing. Most contestable admission of exp-226.",
+    "at": "2026-11-28T14:34:35+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T14:34:18+00:00"
   }
  },
  "edges": [
@@ -92934,6 +93034,200 @@
     "counterfactual": "Remove Pearson 1894 and the monograph loses its object, not just its first chapter: the book's programme is the likelihood rebuilding of the decomposition problem Pearson posed and first solved, its worked tradition begins with his example class, and the parent node's own prior_state starts the field's clock at 1894. Mediation check: no single milestone mediates - what sits between 1894 and 1988 is a dispersed literature (the parent's bottleneck says exactly this), not an artifact that transforms Pearson's contribution; the channel is the worked object itself, extracted and rebuilt - the correction-relation shape (RFC 1738 at RFC 1808; Bayes at Fisher 1922). The MDN record's mediation finding (Pearson reaching MDN only through this monograph) confirms rather than blocks the direct edge here.",
     "mediator": null,
     "evidence": "Parent node's stored prior_state and bottleneck; MDN expansion record (session 30); McLachlan & Peel (2000) sec. 1.18 'Brief History of Finite Mixture Models'."
+   }
+  },
+  {
+   "predecessor_id": "the-economic-order-quantity-harris-1913-1913",
+   "successor_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Harris, the lot-size question had no solution at all - it was not posed as an optimization. Harris posed and solved it; AHM's question ('what ordering policy minimizes expected cost?') is unstateable without the problem-form Harris created ('what lot size minimizes cost?').",
+     "source": "Harris 1913; Hadley & Whitin (1963)",
+     "falsification": "This pass dies if a pre-1913 optimizing treatment of lot size is produced."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The problem-form opened inventory theory as a field, but the space AHM itself occupies - stochastic, dynamic - needed the further steps filed separately (ABG's recursion). Harris alone unblocks the static stratum.",
+     "source": "Lineage surveys",
+     "falsification": "Upgrades if AHM's stochastic step is shown to follow from Harris without the sequential-decision machinery."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Honest partial: the RAND logistics problem could conceivably have been posed without the EOQ tradition behind it. But the paper's cost elements and decision variable are the tradition's, and no rival problem-form existed in 1950.",
+     "source": "Judgment on the assembled record",
+     "falsification": "Downgrades if a document shows AHM's model derived from a non-lot-size source."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The square-root rule collapsed the cost of a good lot-size decision to arithmetic - the practical baseline AHM's theory refines.",
+     "source": "Harris 1913 and its managerial career",
+     "falsification": "Dies on evidence."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurement channel.",
+     "source": "Judgment",
+     "falsification": "Dies on evidence."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Harris supplied the explanatory model - total cost as two opposing curves, optimum at their balance - by which inventory decisions stopped being folklore and became design; AHM's expected-cost function is that model made stochastic and dynamic.",
+     "source": "Harris 1913 ('the set-up cost curves slope downward... the interest curves slant upward. The sum of the two elements gives total costs')",
+     "falsification": "Dies if the two-curve model is shown to originate elsewhere."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The formula itself became a standard rule others apply without derivation - a weak interface.",
+     "source": "The formula's career (Wilson, textbooks)",
+     "falsification": "Dies on evidence."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The lot-size tradeoff travelled into production planning and later supply-chain practice generally.",
+     "source": "Lineage surveys",
+     "falsification": "Dies on evidence."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed channel into the parent.",
+     "source": "Judgment",
+     "falsification": "Dies on evidence."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "EOQ displaced rule-of-thumb lot sizing as the default - it remained the textbook default through the parent's era and beyond.",
+     "source": "Hadley & Whitin (1963) ch. 2 placement",
+     "falsification": "Dies if pre-1950 practice is shown to have ignored it."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The inventory lineage's root in the field's own histories: the survey literature runs '125 years of inventory management, 100 years of EOQ' from Harris forward, and Hadley & Whitin build the field's textbook on his stratum.",
+     "source": "Lineage surveys; Hadley & Whitin (1963)",
+     "falsification": "Dies if the lineage's histories are shown to start elsewhere."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The problem-form never left: every later inventory model, AHM included, is stated in its terms.",
+     "source": "The run's record (the parent's own model)",
+     "falsification": "Dies on evidence."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T14:34:18+00:00",
+   "leap": {
+    "prior_state": "Static lot-size formulas and heuristic reorder rules for deterministic demand.",
+    "jump": "Arrow, Harris & Marschak (1951) gave stochastic inventory control its first rigorous optimality theory: the minimal expected cost as a function of stock on hand, characterized by a functional equation in the cost-to-go, with (s,S) policies - order up to S whenever stock falls below s - proved optimal under stated conditions.",
+    "date": 1951
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Harris 1913 and AHM's problem loses its form: the paper's model is Harris's cost structure - a fixed cost of ordering, a holding cost on stock, the order quantity as the decision - with shortage cost added, demand made random, and the horizon made multi-period. The parent's own stored prior_state names the stratum ('Static lot-size formulas... for deterministic demand'), and the field's careful retrospective (Hadley & Whitin 1963) is built as deterministic lot-size models first, AHM as the first rigorous stochastic analysis. Mediation check: the one nameable intermediate, Wilson (1934), is a codification of the same formula, not a transforming milestone - it is filed separately and rejected as mediated via this candidate, which is the correct direction of the mediation arrow. WART (recorded for verification): AHM's own text was not verified to cite Harris; the channel rests on the problem-form and cost-structure identity plus the field's textbook placement.",
+    "mediator": null,
+    "evidence": "Harris 1913 (Factory 10(2); reprinted Operations Research 38(6), 1990); Hadley & Whitin (1963), chs. 1-2; the parent's stored prior_state; the 125-years/100-years-of-EOQ lineage survey."
+   }
+  },
+  {
+   "predecessor_id": "bayes-and-minimax-solutions-of-sequential-decision-problems-1949",
+   "successor_id": "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "ABG did not make sequential choice solvable simpliciter - Wald had solved stopping problems - but it made the GENERAL sequential decision problem characterizable, which is the form AHM's problem takes. Partial, honestly scoped.",
+     "source": "ABG 1949 abstract",
+     "falsification": "Upgrades if AHM's problem is shown to be a mere stopping problem of Wald's original class."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It unblocked a whole space: every staged decision problem with a state variable became attackable by one recursion - the space dynamic programming then occupied, with AHM among its first occupants (1951, before Bellman's own publications).",
+     "source": "Heritage survey; the ABG node's enables-edges to Bellman's DP nodes in this graph",
+     "falsification": "Dies if the space is shown to have been opened independently at the same moment by a channel AHM actually used."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is scoped, not absolute: Masse (1946) stated a recursive idea independently (the ripeness is recorded at the parent's own admission and on Masse's filing), and the ABG node's verification treats AHM as a near-simultaneous statement at the DP edge. What is claimed here is the documented channel - the author's own prior artifact - not uniqueness in the world.",
+     "source": "Parent node's stored verification; ABG node's stored verification",
+     "falsification": "Downgrades if AHM's recursion is shown to derive from Masse or another source the authors demonstrably used."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse.",
+     "source": "Judgment",
+     "falsification": "Dies on evidence."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurement channel.",
+     "source": "Judgment",
+     "falsification": "Dies on evidence."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "ABG supplied the explanatory model AHM think with: an optimal sequential policy is characterized by a state-indexed cost-to-go function satisfying a recursion - design deliberately thereafter, in inventory and everywhere else.",
+     "source": "ABG 1949; the parent's stored leap restates it",
+     "falsification": "Dies if AHM's functional equation is shown to have a different provenance."
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "A method, not an interface others compose with.",
+     "source": "Judgment",
+     "falsification": "Dies on evidence."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The recursion's reach across fields is the DP story - in relation to this parent, the transfer statistics-to-economics is the parent itself.",
+     "source": "Heritage survey",
+     "falsification": "Dies on evidence."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed channel.",
+     "source": "Judgment",
+     "falsification": "Dies on evidence."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Displaced no incumbent inside the parent.",
+     "source": "Judgment",
+     "falsification": "Dies on evidence."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the documented bridge from statistical decision theory to dynamic programming, already a node in this graph enabling both of Bellman's DP nodes.",
+     "source": "The graph's existing ABG edges",
+     "falsification": "Dies on evidence."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The recursion never left sequential decision theory once stated - irreversibility shared with the DP node's own record.",
+     "source": "Judgment",
+     "falsification": "Dies on evidence."
+    }
+   },
+   "score": 3.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T14:34:18+00:00",
+   "leap": {
+    "prior_state": "Static lot-size formulas and heuristic reorder rules for deterministic demand.",
+    "jump": "Arrow, Harris & Marschak (1951) gave stochastic inventory control its first rigorous optimality theory: the minimal expected cost as a function of stock on hand, characterized by a functional equation in the cost-to-go, with (s,S) policies - order up to S whenever stock falls below s - proved optimal under stated conditions.",
+    "date": 1951
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove ABG and AHM lose their method, not just a citation: the paper's construction - minimal expected cost as a function of stock on hand, its functional equation derived by one-step backward induction, the optimal policy read off the function - is ABG's sequential-decision recursion with inventory as state, carried by the shared first author two years later in the same institution. The ABG node's own stored leap states the identity ('backward recursion over decision regions - the DP recursion operating in the statistical setting'). Mediation check: the candidate mediator would be Wald (1950) - but ABG (1949) PREDATES Wald's book and is itself the artifact that recast Wald's sequential analysis into functional equations; the channel does not run through the later framework text. Author-carriage with a separable artifact, consumed at a named point (the recursion itself) - the Mikolov shape, not the Kahan-HP shape.",
+    "mediator": null,
+    "evidence": "ABG 1949 (Econometrica 17:213-244), abstract and characterization; the ABG node's stored record in this graph; the heritage survey ('the explicit bridge from statistical decision theory to dynamic programming'); the parent's stored leap."
    }
   }
  ],
@@ -406020,6 +406314,450 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "optimal-inventory-policy-arrow-harris-marschak-1951-1951": {
+   "raw_candidates": [
+    {
+     "name": "The economic order quantity (Harris, 1913)",
+     "year": 1913,
+     "type": "method",
+     "lens": "L2",
+     "causal_claim": "Harris's lot-size formula directly enabled AHM as the ancestor modified: AHM's problem IS Harris's problem - choose the order quantity balancing a fixed ordering/setup cost against holding cost - made stochastic (random demand, shortage cost) and multi-period; the parent's stored prior_state names the stratum itself ('Static lot-size formulas... for deterministic demand'), and the field's textbook history (Hadley & Whitin 1963) builds its account as deterministic lot-size models first, AHM as the first rigorous stochastic analysis.",
+     "definition": "Ford W. Harris, 'How Many Parts to Make at Once' (Factory, The Magazine of Management 10(2), 1913): the economic order quantity - the lot size minimizing total cost, balancing fixed setup cost against interest/holding cost, Q* = sqrt(2DS/H).",
+     "evidence": "Harris 1913 (reprinted Operations Research 38(6), 1990): 'Interest on capital tied up in wages, material and overhead sets a maximum limit to the quantity of parts which can be profitably manufactured at one time; set-up costs on the job fix the minimum.' Hadley & Whitin, Analysis of Inventory Systems (1963): ch. 2 'Deterministic Lot Size Models'; ch. 1 - 'The paper by the economists Arrow, Harris, and Marschak was one of the first to provide a rigorous mathematical analysis of a simple type of inventory model.' The lineage survey: 'Harris' formula was published in 1913... seems to mark the beginning of a scientific approach to inventory management' (125 years of inventory management, 100 years of EOQ)."
+    },
+    {
+     "name": "Bayes and minimax solutions of sequential decision problems (Arrow, Blackwell & Girshick, 1949)",
+     "year": 1949,
+     "type": "method",
+     "lens": "L20",
+     "causal_claim": "ABG 1949 directly enabled AHM as the machinery its first author carried into the paper two years later: ABG recast Wald's sequential analysis as backward-induction functional equations for the general sequential decision problem - characterize the optimum by a cost/risk function of the current state, decomposed stage by stage - and AHM's method is exactly that recursion with inventory as the state (minimal expected cost as a function of stock on hand, its functional equation, the (s,S) form read off it).",
+     "definition": "K. J. Arrow, D. Blackwell & M. A. Girshick, 'Bayes and Minimax Solutions of Sequential Decision Problems' (Econometrica 17, 1949): the general theory of sequential choice under uncertainty, characterizing optimum solutions by backward recursion - the documented bridge from statistical decision theory to dynamic programming.",
+     "evidence": "ABG 1949, abstract: 'The present paper deals with the general problem of sequential choice among several actions, where at each stage the options available are to stop and take a definite action or to continue sampling for more information... A characterization of the optimum solution is obtained...' Heritage survey of the DP decade: '1949 - Arrow, Blackwell & Girshick: Bayes and Minimax Solutions of Sequential Decision Problems. Wald's sequential analysis recast as backward-induction functional equations - the explicit bridge from statistical decision theory to dynamic programming.' The parent's own stored leap: AHM 'solved the stochastic inventory problem through the minimal expected cost as a function of stock on hand - a functional equation in the cost-to-go'."
+    },
+    {
+     "name": "Statistical Decision Functions (Wald, 1950)",
+     "year": 1950,
+     "type": "theory",
+     "lens": "L1",
+     "causal_claim": "Wald's decision theory is the ambient framework of the Cowles decision-under-uncertainty programme inside which AHM was written (Yaari: Marschak's 1948 seminar and Arrow's 1949 ASA paper 'formed a gate through which the new theory of Decision Making Under Uncertainty was ushered in') - filed as a LINK to the existing node for the framework-presupposition test under the exp-192/exp-218 criterion.",
+     "definition": "Abraham Wald, 'Statistical Decision Functions' (1950): the general theory of decision functions, risk, admissibility and minimax - the framework of statistical decision theory.",
+     "evidence": "Existing node (admitted earlier in the run). Yaari's survey of Arrow's work on risk and uncertainty: the Cowles group (Arrow, Marschak, Savage, Chernoff, Rubin) pursued 'decision making under uncertainty' intensively, with Marschak's July 1948 seminar and Arrow's 1949 presentation as the landmarks; AHM (1951) is presented inside that programme."
+    },
+    {
+     "name": "Sequential Analysis (Wald, 1947)",
+     "year": 1947,
+     "type": "method",
+     "lens": "L1",
+     "causal_claim": "Wald's sequential analysis is the sequential-decision predecessor whose generalization ABG 1949 explicitly performs - filed for the mediation test: its channel into AHM runs through the ABG recasting, the parent's first author's own artifact.",
+     "definition": "Abraham Wald, 'Sequential Analysis' (1947): the theory of sequential sampling and stopping - the sequential probability ratio test and the analysis of decision problems unfolding in stages.",
+     "evidence": "Heritage survey's ABG entry: 'Wald's sequential analysis recast as backward-induction functional equations' - the recasting is the channel, and it is ABG's, not Wald's book's."
+    },
+    {
+     "name": "Les reserves et la regulation de l'avenir (Masse, 1946)",
+     "year": 1946,
+     "type": "method",
+     "lens": "L19",
+     "causal_claim": "Pierre Masse's optimal management of hydroelectric reservoirs (1944-46) stated the same recursive expected-cost idea independently in French engineering economics - filed as the independent multiple the parent's own admission verification already records ('Klein classes Masse (1944-46) and AHM as independent near-simultaneous statements of the recursive idea'), for the anticipation/multiples test: no channel from EDF into RAND/Cowles by 1950 is documented.",
+     "definition": "Pierre Masse, 'Les reserves et la regulation de l'avenir dans la vie economique' (1946): the optimal operation of water reservoirs over time under uncertain inflows, treated by recursive valuation of the stock - the French independent statement of the dynamic-programming idea.",
+     "evidence": "The parent node's stored verification (multiples test at its admission): 'Klein classes Masse (1944-46) and AHM as independent near-simultaneous statements of the recursive idea: ripe, recorded.'"
+    },
+    {
+     "name": "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)",
+     "year": 1944,
+     "type": "theory",
+     "lens": "L19",
+     "causal_claim": "Von Neumann & Morgenstern's expected-utility axiomatization is the legitimation under which expected-value criteria operated at Cowles (Marschak's own 1950 Econometrica paper is the local carrier) - filed for the ambient-framework test: AHM minimizes expected money cost and consumes no utility machinery.",
+     "definition": "John von Neumann & Oskar Morgenstern, 'Theory of Games and Economic Behavior' (Princeton, 1944): game theory and the axiomatic expected-utility hypothesis.",
+     "evidence": "Yaari's survey: Marschak's July 1948 Cowles seminar 'unveiled his own version of the Expected Utility hypothesis' - the local, Cowles-side form of the import; the AHM paper's criterion is expected cost, linear in money, with no appeal to the axioms."
+    },
+    {
+     "name": "A scientific routine for stock control (Wilson, 1934)",
+     "year": 1934,
+     "type": "method",
+     "lens": "L2",
+     "causal_claim": "R. H. Wilson's 1934 routine re-derived and popularized Harris's lot-size formula and split stock control into order quantity + reorder point - filed for the mediation test: whatever of the lot-size tradition passes through Wilson arrives as Harris's formula in Wilson's dress.",
+     "definition": "R. H. Wilson, 'A Scientific Routine for Stock Control' (Harvard Business Review, 1934): the EOQ formula's managerial codification - determine the order quantity, then the reorder point.",
+     "evidence": "The lineage record: the formula 'was later given a name by Camp, Wilson and... Goudriaan' (125-years survey) - Wilson as codifier of Harris 1913, not an independent source."
+    },
+    {
+     "name": "The mathematical theory of banking (Edgeworth, 1888)",
+     "year": 1888,
+     "type": "method",
+     "lens": "L4",
+     "causal_claim": "Edgeworth's 1888 banking-reserve analysis is the first stochastic stock problem (the newsboy form: hold a stock against random withdrawals) and AHM's one-period degenerate case is exactly that problem - filed for the problem-posed test: the lineage surveys open the stochastic strand with Edgeworth, but no citation or documented channel connects AHM to him.",
+     "definition": "F. Y. Edgeworth, 'The Mathematical Theory of Banking' (JRSS 51, 1888): the optimal cash reserve of a bank against random demand for withdrawals - recognized as the first newsboy-type stochastic inventory model.",
+     "evidence": "The lineage survey's chronology: 'we walk more or less chronologically through milestones, starting with an article by Edgeworth from 1888... about what has come to be called the newsboy problem.' No AHM-side document names Edgeworth."
+    },
+    {
+     "name": "The RAND Logistics Project and the 1950 Logistics Conference (ONR/RAND, 1950)",
+     "year": 1950,
+     "type": "institution",
+     "lens": "L21",
+     "causal_claim": "The Office of Naval Research's logistics programme at RAND posed and paid for the work: the parent node's admission record documents production at RAND in summer 1950 under the ONR Logistics Project, and the paper was presented at the 1950 Logistics Conference of the RAND Corporation - filed for the formation/commissioning test in its strongest form.",
+     "definition": "The U.S. Office of Naval Research logistics research programme at the RAND Corporation, whose 1950 Logistics Conference was the venue at which Cowles Commission Paper No. 44, 'Optimal Inventory Policy', was presented.",
+     "evidence": "Parent node's stored verification: 'production at RAND in summer 1950 (ONR Logistics Project) is documented by Klein'. The Cowles-acknowledgment study: 'CFP 44, entitled Optimal Inventory Policy, presented by Arrow, Harris, and Marschak at the 1950 Logistics Conference of the RAND Corporation... the authors acknowledge Debreu, Simon, Newell, (Joyce) Friedman, Kruskal, and Tompkins.'"
+    },
+    {
+     "name": "Cowles Commission for Research in Economics (1932)",
+     "year": 1932,
+     "type": "institution",
+     "lens": "L21",
+     "causal_claim": "The Cowles Commission (Chicago period under Marschak, then Koopmans) is the authors' home institution and the paper's issuing body (Cowles Commission Paper No. 44) - filed for the formation test: an institution acts through the specific artifact it carried, and here the artifact is the paper itself.",
+     "definition": "The Cowles Commission for Research in Economics (founded 1932; at the University of Chicago from 1939, directed by Jacob Marschak 1943-48 and Tjalling Koopmans 1948-55): the institutional home of the mathematical-economics programme that produced the parent paper.",
+     "evidence": "CiNii record: 'Optimal inventory policy, by Kenneth J. Arrow, Theodore Harris and Jacob Marschak, Cowles Commission for Research in Economics 1951, Cowles Commission papers new ser., no. 44.' Yaari's survey on the Cowles decision-under-uncertainty group."
+    },
+    {
+     "name": "Linear programming (Dantzig, 1947)",
+     "year": 1947,
+     "type": "method",
+     "lens": "L19",
+     "causal_claim": "Dantzig's linear programming (1947, for U.S. Air Force planning at Project SCOOP) is the parallel RAND-era optimization method - filed as the parallel-method test: AHM's problem is a nonlinear functional-equation problem over an infinite horizon, not a linear programme, and no LP machinery is consumed by the paper.",
+     "definition": "George B. Dantzig's linear programming and simplex method (1947): optimization of a linear objective over linear constraints, developed for military planning.",
+     "evidence": "General record of the RAND-era optimization milieu; the parent's own mathematics (a functional equation in the cost-to-go, per its stored leap) is not LP-shaped."
+    },
+    {
+     "name": "Foundations of the Theory of Probability (Kolmogorov, 1933)",
+     "year": 1933,
+     "type": "theory",
+     "lens": "L1",
+     "causal_claim": "Kolmogorov's axiomatization is the presupposed medium of the paper's demand distributions - filed for the framework-presupposition test in its generic form.",
+     "definition": "A. N. Kolmogorov, 'Grundbegriffe der Wahrscheinlichkeitsrechnung' (1933): the measure-theoretic axiomatization of probability.",
+     "evidence": "The paper's probability use is elementary (a demand distribution per period, expectations of cost) - the axioms are the medium, not a mechanism consumed at a named point."
+    },
+    {
+     "name": "The nature and stability of inventory cycles (Metzler, 1941)",
+     "year": 1941,
+     "type": "theory",
+     "lens": "L6",
+     "causal_claim": "Lloyd Metzler's 1941 inventory-cycle theory is the era's other famous 'inventory' work - filed as the defined-against/context test: Metzler's problem is aggregate inventory fluctuations over the business cycle, not a firm's optimal ordering policy, and no channel into AHM is documented.",
+     "definition": "Lloyd A. Metzler, 'The Nature and Stability of Inventory Cycles' (Review of Economic Statistics, 1941): a macroeconomic model of inventory investment and business-cycle stability.",
+     "evidence": "The two problems share a word, not a mechanism: Metzler models aggregate dynamics; AHM solves a single stocking point's expected-cost minimization (Hadley & Whitin's scope statement for the field AHM founded: 'systems consisting of a single stocking point and a single source of supply')."
+    },
+    {
+     "name": "Markov chains (Markov, 1906)",
+     "year": 1906,
+     "type": "theory",
+     "lens": "L1",
+     "causal_claim": "The stock-level process in AHM is Markovian (next stock depends on current stock and the period's demand) - filed for the framework/redescription test: the Markov property is the paper's working structure, but 'Markov chain theory' as an artifact is not consumed at a named point, and the explicit Markov-process reading of AHM is a later redescription (Hamilton's 1962 thesis: the AHM solution via 'direct use of the cost functions in a Markov process').",
+     "definition": "A. A. Markov's chains of dependent trials (from 1906): stochastic processes whose future depends on the past only through the present state.",
+     "evidence": "Hamilton (1962), 'Analytic Solutions of the Arrow, Harris, and Marschak Dynamic Inventory Model', abstract - the Markov-process formulation is the 1962 solver's redescription of the 1951 paper, not the paper's cited machinery; the paper's machinery is the cost recursion (ABG filing)."
+    },
+    {
+     "name": "Activity analysis of production and allocation (Koopmans, ed., 1951)",
+     "year": 1951,
+     "type": "theory",
+     "lens": "L21",
+     "causal_claim": "Filed deliberately at the parent's own year: Koopmans's Cowles Monograph 13 (1951) is the same institution's same-year programme volume - the resolver's year bound is expected to drop it, and the drop is the record (the session-107 pattern: same-year filings logged, never re-dated). In substance a milieu/formation item in any case.",
+     "definition": "T. C. Koopmans (ed.), 'Activity Analysis of Production and Allocation' (Cowles Commission Monograph 13, 1951): the Cowles programme's production-theory volume, published the same year as the parent paper.",
+     "evidence": "Cowles Monograph 13, Wiley, 1951 - the parent's own year; direction and formation both foreclose it, and the year bound records the foreclosure mechanically."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "the-economic-order-quantity-harris-1913-1913",
+      "candidate": {
+       "name": "The economic order quantity (Harris, 1913)",
+       "year": 1913,
+       "type": "method",
+       "lens": "L2",
+       "causal_claim": "Harris's lot-size formula directly enabled AHM as the ancestor modified: AHM's problem IS Harris's problem - choose the order quantity balancing a fixed ordering/setup cost against holding cost - made stochastic (random demand, shortage cost) and multi-period; the parent's stored prior_state names the stratum itself ('Static lot-size formulas... for deterministic demand'), and the field's textbook history (Hadley & Whitin 1963) builds its account as deterministic lot-size models first, AHM as the first rigorous stochastic analysis.",
+       "definition": "Ford W. Harris, 'How Many Parts to Make at Once' (Factory, The Magazine of Management 10(2), 1913): the economic order quantity - the lot size minimizing total cost, balancing fixed setup cost against interest/holding cost, Q* = sqrt(2DS/H).",
+       "evidence": "Harris 1913 (reprinted Operations Research 38(6), 1990): 'Interest on capital tied up in wages, material and overhead sets a maximum limit to the quantity of parts which can be profitably manufactured at one time; set-up costs on the job fix the minimum.' Hadley & Whitin, Analysis of Inventory Systems (1963): ch. 2 'Deterministic Lot Size Models'; ch. 1 - 'The paper by the economists Arrow, Harris, and Marschak was one of the first to provide a rigorous mathematical analysis of a simple type of inventory model.' The lineage survey: 'Harris' formula was published in 1913... seems to mark the beginning of a scientific approach to inventory management' (125 years of inventory management, 100 years of EOQ)."
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "The economic order quantity (Harris, 1913)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bayes-and-minimax-solutions-of-sequential-decision-problems-1949",
+      "candidate": {
+       "name": "Bayes and minimax solutions of sequential decision problems (Arrow, Blackwell & Girshick, 1949)",
+       "year": 1949,
+       "type": "method",
+       "lens": "L20",
+       "causal_claim": "ABG 1949 directly enabled AHM as the machinery its first author carried into the paper two years later: ABG recast Wald's sequential analysis as backward-induction functional equations for the general sequential decision problem - characterize the optimum by a cost/risk function of the current state, decomposed stage by stage - and AHM's method is exactly that recursion with inventory as the state (minimal expected cost as a function of stock on hand, its functional equation, the (s,S) form read off it).",
+       "definition": "K. J. Arrow, D. Blackwell & M. A. Girshick, 'Bayes and Minimax Solutions of Sequential Decision Problems' (Econometrica 17, 1949): the general theory of sequential choice under uncertainty, characterizing optimum solutions by backward recursion - the documented bridge from statistical decision theory to dynamic programming.",
+       "evidence": "ABG 1949, abstract: 'The present paper deals with the general problem of sequential choice among several actions, where at each stage the options available are to stop and take a definite action or to continue sampling for more information... A characterization of the optimum solution is obtained...' Heritage survey of the DP decade: '1949 - Arrow, Blackwell & Girshick: Bayes and Minimax Solutions of Sequential Decision Problems. Wald's sequential analysis recast as backward-induction functional equations - the explicit bridge from statistical decision theory to dynamic programming.' The parent's own stored leap: AHM 'solved the stochastic inventory problem through the minimal expected cost as a function of stock on hand - a functional equation in the cost-to-go'."
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Bayes and minimax solutions of sequential decision problems (Arrow, Blackwell & Girshick, 1949)"
+      ],
+      "matched_node_id": "bayes-and-minimax-solutions-of-sequential-decision-problems-1949",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "statistical-decision-functions-wald-1950-1950",
+      "candidate": {
+       "name": "Statistical Decision Functions (Wald, 1950)",
+       "year": 1950,
+       "type": "theory",
+       "lens": "L1",
+       "causal_claim": "Wald's decision theory is the ambient framework of the Cowles decision-under-uncertainty programme inside which AHM was written (Yaari: Marschak's 1948 seminar and Arrow's 1949 ASA paper 'formed a gate through which the new theory of Decision Making Under Uncertainty was ushered in') - filed as a LINK to the existing node for the framework-presupposition test under the exp-192/exp-218 criterion.",
+       "definition": "Abraham Wald, 'Statistical Decision Functions' (1950): the general theory of decision functions, risk, admissibility and minimax - the framework of statistical decision theory.",
+       "evidence": "Existing node (admitted earlier in the run). Yaari's survey of Arrow's work on risk and uncertainty: the Cowles group (Arrow, Marschak, Savage, Chernoff, Rubin) pursued 'decision making under uncertainty' intensively, with Marschak's July 1948 seminar and Arrow's 1949 presentation as the landmarks; AHM (1951) is presented inside that programme."
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Statistical Decision Functions (Wald, 1950)"
+      ],
+      "matched_node_id": "statistical-decision-functions-wald-1950-1950",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sequential-analysis-wald-1947-1947",
+      "candidate": {
+       "name": "Sequential Analysis (Wald, 1947)",
+       "year": 1947,
+       "type": "method",
+       "lens": "L1",
+       "causal_claim": "Wald's sequential analysis is the sequential-decision predecessor whose generalization ABG 1949 explicitly performs - filed for the mediation test: its channel into AHM runs through the ABG recasting, the parent's first author's own artifact.",
+       "definition": "Abraham Wald, 'Sequential Analysis' (1947): the theory of sequential sampling and stopping - the sequential probability ratio test and the analysis of decision problems unfolding in stages.",
+       "evidence": "Heritage survey's ABG entry: 'Wald's sequential analysis recast as backward-induction functional equations' - the recasting is the channel, and it is ABG's, not Wald's book's."
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Sequential Analysis (Wald, 1947)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "les-reserves-et-la-regulation-de-l-avenir-masse-1946-1946",
+      "candidate": {
+       "name": "Les reserves et la regulation de l'avenir (Masse, 1946)",
+       "year": 1946,
+       "type": "method",
+       "lens": "L19",
+       "causal_claim": "Pierre Masse's optimal management of hydroelectric reservoirs (1944-46) stated the same recursive expected-cost idea independently in French engineering economics - filed as the independent multiple the parent's own admission verification already records ('Klein classes Masse (1944-46) and AHM as independent near-simultaneous statements of the recursive idea'), for the anticipation/multiples test: no channel from EDF into RAND/Cowles by 1950 is documented.",
+       "definition": "Pierre Masse, 'Les reserves et la regulation de l'avenir dans la vie economique' (1946): the optimal operation of water reservoirs over time under uncertain inflows, treated by recursive valuation of the stock - the French independent statement of the dynamic-programming idea.",
+       "evidence": "The parent node's stored verification (multiples test at its admission): 'Klein classes Masse (1944-46) and AHM as independent near-simultaneous statements of the recursive idea: ripe, recorded.'"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Les reserves et la regulation de l'avenir (Masse, 1946)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "theory-of-games-and-economic-behavior-von-neumann-morgenster-1944",
+      "candidate": {
+       "name": "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)",
+       "year": 1944,
+       "type": "theory",
+       "lens": "L19",
+       "causal_claim": "Von Neumann & Morgenstern's expected-utility axiomatization is the legitimation under which expected-value criteria operated at Cowles (Marschak's own 1950 Econometrica paper is the local carrier) - filed for the ambient-framework test: AHM minimizes expected money cost and consumes no utility machinery.",
+       "definition": "John von Neumann & Oskar Morgenstern, 'Theory of Games and Economic Behavior' (Princeton, 1944): game theory and the axiomatic expected-utility hypothesis.",
+       "evidence": "Yaari's survey: Marschak's July 1948 Cowles seminar 'unveiled his own version of the Expected Utility hypothesis' - the local, Cowles-side form of the import; the AHM paper's criterion is expected cost, linear in money, with no appeal to the axioms."
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-scientific-routine-for-stock-control-wilson-1934-1934",
+      "candidate": {
+       "name": "A scientific routine for stock control (Wilson, 1934)",
+       "year": 1934,
+       "type": "method",
+       "lens": "L2",
+       "causal_claim": "R. H. Wilson's 1934 routine re-derived and popularized Harris's lot-size formula and split stock control into order quantity + reorder point - filed for the mediation test: whatever of the lot-size tradition passes through Wilson arrives as Harris's formula in Wilson's dress.",
+       "definition": "R. H. Wilson, 'A Scientific Routine for Stock Control' (Harvard Business Review, 1934): the EOQ formula's managerial codification - determine the order quantity, then the reorder point.",
+       "evidence": "The lineage record: the formula 'was later given a name by Camp, Wilson and... Goudriaan' (125-years survey) - Wilson as codifier of Harris 1913, not an independent source."
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "A scientific routine for stock control (Wilson, 1934)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-mathematical-theory-of-banking-edgeworth-1888-1888",
+      "candidate": {
+       "name": "The mathematical theory of banking (Edgeworth, 1888)",
+       "year": 1888,
+       "type": "method",
+       "lens": "L4",
+       "causal_claim": "Edgeworth's 1888 banking-reserve analysis is the first stochastic stock problem (the newsboy form: hold a stock against random withdrawals) and AHM's one-period degenerate case is exactly that problem - filed for the problem-posed test: the lineage surveys open the stochastic strand with Edgeworth, but no citation or documented channel connects AHM to him.",
+       "definition": "F. Y. Edgeworth, 'The Mathematical Theory of Banking' (JRSS 51, 1888): the optimal cash reserve of a bank against random demand for withdrawals - recognized as the first newsboy-type stochastic inventory model.",
+       "evidence": "The lineage survey's chronology: 'we walk more or less chronologically through milestones, starting with an article by Edgeworth from 1888... about what has come to be called the newsboy problem.' No AHM-side document names Edgeworth."
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "The mathematical theory of banking (Edgeworth, 1888)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-rand-logistics-project-and-the-1950-logistics-conference-1950",
+      "candidate": {
+       "name": "The RAND Logistics Project and the 1950 Logistics Conference (ONR/RAND, 1950)",
+       "year": 1950,
+       "type": "institution",
+       "lens": "L21",
+       "causal_claim": "The Office of Naval Research's logistics programme at RAND posed and paid for the work: the parent node's admission record documents production at RAND in summer 1950 under the ONR Logistics Project, and the paper was presented at the 1950 Logistics Conference of the RAND Corporation - filed for the formation/commissioning test in its strongest form.",
+       "definition": "The U.S. Office of Naval Research logistics research programme at the RAND Corporation, whose 1950 Logistics Conference was the venue at which Cowles Commission Paper No. 44, 'Optimal Inventory Policy', was presented.",
+       "evidence": "Parent node's stored verification: 'production at RAND in summer 1950 (ONR Logistics Project) is documented by Klein'. The Cowles-acknowledgment study: 'CFP 44, entitled Optimal Inventory Policy, presented by Arrow, Harris, and Marschak at the 1950 Logistics Conference of the RAND Corporation... the authors acknowledge Debreu, Simon, Newell, (Joyce) Friedman, Kruskal, and Tompkins.'"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "The RAND Logistics Project and the 1950 Logistics Conference (ONR/RAND, 1950)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cowles-commission-for-research-in-economics-1932-1932",
+      "candidate": {
+       "name": "Cowles Commission for Research in Economics (1932)",
+       "year": 1932,
+       "type": "institution",
+       "lens": "L21",
+       "causal_claim": "The Cowles Commission (Chicago period under Marschak, then Koopmans) is the authors' home institution and the paper's issuing body (Cowles Commission Paper No. 44) - filed for the formation test: an institution acts through the specific artifact it carried, and here the artifact is the paper itself.",
+       "definition": "The Cowles Commission for Research in Economics (founded 1932; at the University of Chicago from 1939, directed by Jacob Marschak 1943-48 and Tjalling Koopmans 1948-55): the institutional home of the mathematical-economics programme that produced the parent paper.",
+       "evidence": "CiNii record: 'Optimal inventory policy, by Kenneth J. Arrow, Theodore Harris and Jacob Marschak, Cowles Commission for Research in Economics 1951, Cowles Commission papers new ser., no. 44.' Yaari's survey on the Cowles decision-under-uncertainty group."
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Cowles Commission for Research in Economics (1932)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "linear-programming-dantzig-1947-1947",
+      "candidate": {
+       "name": "Linear programming (Dantzig, 1947)",
+       "year": 1947,
+       "type": "method",
+       "lens": "L19",
+       "causal_claim": "Dantzig's linear programming (1947, for U.S. Air Force planning at Project SCOOP) is the parallel RAND-era optimization method - filed as the parallel-method test: AHM's problem is a nonlinear functional-equation problem over an infinite horizon, not a linear programme, and no LP machinery is consumed by the paper.",
+       "definition": "George B. Dantzig's linear programming and simplex method (1947): optimization of a linear objective over linear constraints, developed for military planning.",
+       "evidence": "General record of the RAND-era optimization milieu; the parent's own mathematics (a functional equation in the cost-to-go, per its stored leap) is not LP-shaped."
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Linear programming (Dantzig, 1947)"
+      ],
+      "matched_node_id": "linear-programming-dantzig-1947-1947",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "foundations-of-the-theory-of-probability-kolmogorov-1933-1933",
+      "candidate": {
+       "name": "Foundations of the Theory of Probability (Kolmogorov, 1933)",
+       "year": 1933,
+       "type": "theory",
+       "lens": "L1",
+       "causal_claim": "Kolmogorov's axiomatization is the presupposed medium of the paper's demand distributions - filed for the framework-presupposition test in its generic form.",
+       "definition": "A. N. Kolmogorov, 'Grundbegriffe der Wahrscheinlichkeitsrechnung' (1933): the measure-theoretic axiomatization of probability.",
+       "evidence": "The paper's probability use is elementary (a demand distribution per period, expectations of cost) - the axioms are the medium, not a mechanism consumed at a named point."
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Foundations of the Theory of Probability (Kolmogorov, 1933)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-nature-and-stability-of-inventory-cycles-metzler-1941-1941",
+      "candidate": {
+       "name": "The nature and stability of inventory cycles (Metzler, 1941)",
+       "year": 1941,
+       "type": "theory",
+       "lens": "L6",
+       "causal_claim": "Lloyd Metzler's 1941 inventory-cycle theory is the era's other famous 'inventory' work - filed as the defined-against/context test: Metzler's problem is aggregate inventory fluctuations over the business cycle, not a firm's optimal ordering policy, and no channel into AHM is documented.",
+       "definition": "Lloyd A. Metzler, 'The Nature and Stability of Inventory Cycles' (Review of Economic Statistics, 1941): a macroeconomic model of inventory investment and business-cycle stability.",
+       "evidence": "The two problems share a word, not a mechanism: Metzler models aggregate dynamics; AHM solves a single stocking point's expected-cost minimization (Hadley & Whitin's scope statement for the field AHM founded: 'systems consisting of a single stocking point and a single source of supply')."
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "The nature and stability of inventory cycles (Metzler, 1941)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "markov-chains-markov-1906-1906",
+      "candidate": {
+       "name": "Markov chains (Markov, 1906)",
+       "year": 1906,
+       "type": "theory",
+       "lens": "L1",
+       "causal_claim": "The stock-level process in AHM is Markovian (next stock depends on current stock and the period's demand) - filed for the framework/redescription test: the Markov property is the paper's working structure, but 'Markov chain theory' as an artifact is not consumed at a named point, and the explicit Markov-process reading of AHM is a later redescription (Hamilton's 1962 thesis: the AHM solution via 'direct use of the cost functions in a Markov process').",
+       "definition": "A. A. Markov's chains of dependent trials (from 1906): stochastic processes whose future depends on the past only through the present state.",
+       "evidence": "Hamilton (1962), 'Analytic Solutions of the Arrow, Harris, and Marschak Dynamic Inventory Model', abstract - the Markov-process formulation is the 1962 solver's redescription of the 1951 paper, not the paper's cited machinery; the paper's machinery is the cost recursion (ABG filing)."
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Markov chains (Markov, 1906)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Activity analysis of production and allocation (Koopmans, ed., 1951)",
+       "year": 1951,
+       "type": "theory",
+       "lens": "L21",
+       "causal_claim": "Filed deliberately at the parent's own year: Koopmans's Cowles Monograph 13 (1951) is the same institution's same-year programme volume - the resolver's year bound is expected to drop it, and the drop is the record (the session-107 pattern: same-year filings logged, never re-dated). In substance a milieu/formation item in any case.",
+       "definition": "T. C. Koopmans (ed.), 'Activity Analysis of Production and Allocation' (Cowles Commission Monograph 13, 1951): the Cowles programme's production-theory volume, published the same year as the parent paper.",
+       "evidence": "Cowles Monograph 13, Wiley, 1951 - the parent's own year; direction and formation both foreclose it, and the year bound records the foreclosure mechanically."
+      },
+      "reason": "dated on/after parent year 1951"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
