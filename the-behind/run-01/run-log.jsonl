@@ -14979,3 +14979,160 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T11:07:05.347091+00:00",
+ "event": "expansion",
+ "session": 98,
+ "expansion": 206,
+ "parent": "neural-network-based-language-models-for-highly-inflective-l-2009",
+ "parent_name": "Neural network based language models for highly inflective languages (Mikolov et al., ICASSP 2009)",
+ "parent_year": 2009,
+ "parent_depth": 4,
+ "date": "2026-11-28",
+ "brief_correction": "The brief framed this parent as 'a long-standing frontier node from the language-model lineage' to be grounded in its paper - accurate as far as it goes, but the paper redirected the census in three ways. (a) The apparatus is CLOSED and tiny: a 4-page ICASSP paper with exactly 8 references, no footnotes, no acknowledgements - the census is document-complete by construction, and the honest scout is the document-census pattern of sessions 92-97 (13 filings, 24 dry/shortfall notes), not a 140-filing trawl. (b) The paper's own reference [4] (Mikolov 2008) is cited NOWHERE in its body - find-verified - so the line's most obvious predecessor filing fails closed on absence, while the 2007 thesis, cited at two consumption points, is admitted: the documents, not the bibliography, govern. (c) The expansion's real headline is a rediscovery the brief did not name: at the child (RNNLM 2010), Schwenk & Gauvain 2005 was rejected mediated via THIS node, and that hearing is discharged here on this parent's documents, where the channel is direct. One process fact recorded plainly: this expansion's resolve ran under the MiniLM embedder (the venv python), unlike expansion 205's TF-IDF fallback; both are recorded per RUNBOOK sec.1. FIX-UP discharged here per house pattern: expansion 205's sync_commit = 1a8a0204 (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "One source read in full this session: Mikolov, Karafiat, Burget, Cernocky & Khudanpur, 'Neural Network Based Language Models for Highly Inflective Languages', ICASSP 2009 (4 pages, FIT BUT / Johns Hopkins). Load-bearing sentences: sec.1 'The original idea of using neural networks that project words onto continuous space to reduce number of parameters that are needed to be estimated comes from Bengio [1]'; sec.1 'Probably first results in speech recognition were produced by Schwenk [2]'; sec.2 'we do not train features jointly with n-gram network, as [1] claims it is better... [8] shows that models can be heavily optimized to reduce perplexity by using cache, although recognition accuracy is almost the same'; sec.3 'adapted 4-gram backoff language model using modified Kneser-Ney smoothing... considered as the best smoothing method'; sec.3 'The same setup was already used by Oparin [7]'; sec.4 'lattices were expanded by 4-gram LM with Kneser-Ney smoothing using SRI LM toolkit [6]'; sec.4 'The optimal value of lambda... was determined in previous work [3] and works well in most cases'; sec.4 'more than 20% improvement in PPL with NN LM against backoff LM was achieved in previous work [3] on homogeneous data'; sec.5 'the adapted backoff LM is so much worse than NN LM, that it is almost useless' (at optimal weight 0.05); sec.5 'various optimization techniques that lead to significant improvements in required computational time for training and lattice re-scoring were presented by Schwenk [2]' against 'our implementation of lattice rescoring is not optimized in any way'. Citation census find-verified: body markers are [1], [2], [3], [5], [6], [7], [8] - [4] does not occur. The parent's stored record was verified complete (bottleneck, leap, prior_state populated - no stored-text repair needed). The full texts of the Schwenk & Gauvain 2005 paper and the Mikolov 2007 thesis were NOT independently inspected this session; both admissions rest on the parent's document plus the run's records, and both are marked provisional for exactly that reason.",
+ "scout": {
+  "raw_filings": 13,
+  "matched_existing": 6,
+  "judge_queue": 2,
+  "judgments_applied": 2,
+  "judgments_different": 2,
+  "distinct": 13,
+  "note": "All 8 of the paper's references filed, plus 5 mechanism-lineage filings (back-propagation, distributed representations, Bengio & Bengio 2000, deleted interpolation - all matched - and the census closed there: the paper names no corpus artifact beyond its own lecture task data, no funding, no standard, no institution as predecessor; its STK decoder and task data are the group's own apparatus). Per-lens floor handled by 24 dry/shortfall notes (dry_notes file written by the scout builder). 13 raw -> 13 distinct, 0 dropped, 0 prefiltered, 0 auto-merges. Judge queue 2, both cand-cand, both DIFFERENT: the 2007 thesis vs the 2008 EEICT paper (distinct artifacts of one line); the 2007 thesis vs Kopecky et al. 2008 (language modeling vs acoustic modeling). Verdicts builder count check passed (13 evaluations == 13 distinct == 13 intended filings) and the dry run reproduced the intended outcome exactly before applying; no dry-run correction was spent at this parent."
+ },
+ "admissions": [
+  {
+   "node": "neural-probabilistic-language-model-bengio-et-al-2003",
+   "name": "Neural probabilistic language model (Bengio et al., 2003)",
+   "link": true,
+   "grade": 5.5,
+   "basis": "The paper's own sec.1 attributes its central mechanism to this candidate in so many words, the architecture instantiates it (N-1 word projections feeding an n-gram network), and the rare-word merging follows [1]'s practice verbatim. The documented departure - features trained separately, against [1]'s joint-training claim - is scored at Q3 partial as a design fork decided against the candidate on Goodman's diagnosis, not treated as a denial: the mechanism consumed is the projection architecture; the departure is in its training schedule."
+  },
+  {
+   "node": "training-neural-network-language-models-on-very-large-corpor-2005",
+   "name": "Training neural network language models on very large corpora (Schwenk & Gauvain, 2005)",
+   "link": false,
+   "grade": 4.5,
+   "basis": "THE REDISCOVERY THIS PARENT CARRIED, DISCHARGED. At the child (RNNLM 2010) Schwenk was rejected mediated via THIS node, on the finding that the group's consumption of the continuous-space design is embodied in the 2009 work; on the 2009 paper's documents the channel is direct twice over - sec.1 names Schwenk's as the first speech-recognition results (the rescoring-and-interpolation deployment pattern the whole experimental frame instantiates) and sec.5 relies on [2]'s optimization techniques for the paper's own named worst problem, training and rescoring speed. Q4 partial honestly: the reliance is documented but partly prospective (the paper's own implementation 'is not optimized in any way'). The mediation chain terminates at this parent, per the chain rule."
+  },
+  {
+   "node": "language-modeling-for-speech-recognition-in-czech-mikolov-20-2007",
+   "name": "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)",
+   "link": false,
+   "grade": 4.0,
+   "basis": "Self-carriage scored on its merits - the AHC-at-TD(lambda) pattern. A separable published artifact (a deposited master's thesis, the parent's reference [3]) consumed at two named points: the interpolation weight lambda 0.6 'was determined in previous work [3] and works well in most cases', and the prior result the paper extends (>20% PPL improvement on homogeneous data). The two-stage architecture (bigram network as feature extractor) descends from this line's design. Distinguished from the OOPC failure at exp-205 (the parent's object/embryo, unbuildable) and from Kimura et al. 1997 at exp-195 (the parent's object): the thesis is a finished, cited, consumed component. Q3/Q10 partials cap the grade at 4.0."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "Kneser-Ney smoothing",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "CONSUMED-VS-COMPARED - the expansion's most contestable negative. It is the benchmark the headline is defined against AND a minor component inside the demonstrated systems (interpolation weight 0.4, falling to 0.05 in the best ensemble, where the paper calls the adapted backoff LM 'almost useless'). A displaced standard surviving as a small mixture weight is the arena with a residue, not the enabler; directness partial fails closed. Its own Q10 passes (it displaced Good-Turing as the field's standard baseline). RE-HEARING CONDITION: if a future expansion's documents show a parent whose mechanism derives from the smoothing's continuation-count construction itself, the consumed-vs-compared line is re-argued there; at this parent the paper derives nothing from it."
+  },
+  {
+   "name": "A bit of progress in language modeling (Goodman, 2001)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE HOCHREITER CONDITION AT ITS BORDERLINE, recorded as such. One real design decision - features NOT trained jointly, against Bengio's prescription - is argued in sec.2 from Goodman's cache diagnosis. A diagnosis answered in one subordinate clause, shaping a training schedule inside a design whose substance comes from Bengio, Schwenk and the group's own line, is not the derivation of the leap. Partial directness fails closed. The expansion's second-closest call."
+  },
+  {
+   "name": "Language Models for Automatic Speech Recognition of Czech Lectures (Mikolov, 2008)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "FIND-VERIFIED ABSENCE. Reference [4] sits in the reference list and is cited nowhere in the body. The run's standing rule: absence from the text, find-verified, is evidence. No mechanism, constant or setup element is documented as taken from [4] rather than from the thesis line generally - and the thesis, where the consumption points ARE documented, is the admitted filing. The judge separately ruled the two artifacts DIFFERENT."
+  },
+  {
+   "name": "SRILM toolkit (Stolcke, 2002)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "APPARATUS - the MuJoCo pattern. It produced the baseline the headline is measured against; producing the comparison is not enabling the leap. The NN work runs on the group's own code."
+  },
+  {
+   "name": "Morphological random forests (Oparin et al., 2008)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "A RIVAL TECHNIQUE PLUS A BORROWED BENCH. No morphology and no forests in the parent; what crossed is the test setup ('The same setup was already used by Oparin [7]') - a real but thin transfer that shapes the demonstration, not the mechanism."
+  },
+  {
+   "name": "Advances in Acoustic Modeling for the Recognition of Czech (Kopecky et al., 2008)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE RECOGNIZER'S OTHER HALF. Cited once, as a pointer ('for more details, see [5]'). The WER numbers presuppose some acoustic model; the LM mechanisms derive nothing from it."
+  },
+  {
+   "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+   "score": 1.0,
+   "kind": "mediated",
+   "mediated_via": "Neural probabilistic language model (Bengio et al.)",
+   "basis": "'Standard back-propagation algorithm is used' (sec.2.1) - the tell of a mechanism received through its carriers. The run's record for this candidate is uniform (admitted at none of its ten parents); the chain's final link here is the admitted Bengio node."
+  },
+  {
+   "name": "Distributed representations (Hinton, McClelland & Rumelhart)",
+   "score": 1.0,
+   "kind": "mediated",
+   "mediated_via": "Neural probabilistic language model (Bengio et al.)",
+   "basis": "The parent's own attribution names Bengio, not the PDP chapter; the mechanism consumed is Bengio's construction."
+  },
+  {
+   "name": "Modeling high-dimensional discrete data with multi-layer neural networks (Bengio & Bengio)",
+   "score": 1.0,
+   "kind": "mediated",
+   "mediated_via": "Neural probabilistic language model (Bengio et al.)",
+   "basis": "The 2003 consolidation is the cited artifact; the 2000 step reaches the parent inside it."
+  },
+  {
+   "name": "Deleted interpolation (Jelinek & Mercer)",
+   "score": 1.0,
+   "kind": "mediated",
+   "mediated_via": "Kneser-Ney smoothing",
+   "basis": "The interpolation practice reaches the parent inside the baseline artifact's construction (an adapted, interpolated KN model taken as one artifact); the NN-side weight has its documented source in [3]. Its own hearing belongs to the baseline lineage, already expanded in the graph."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_neural-network-based-language-models-for-highly-inflective-l-2009.json",
+  "outcomes": {
+   "neural-probabilistic-language-model-bengio-et-al-2003": "provisional",
+   "training-neural-network-language-models-on-very-large-corpor-2005": "provisional",
+   "language-modeling-for-speech-recognition-in-czech-mikolov-20-2007": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Bengio 2003: courtesy-citation reading fails (architecture + verbatim merging practice); Schwenk-as-sole-channel fails on sec.1's direct attribution. Schwenk & Gauvain 2005: sustaining the child's mediation at this parent fails on sec.1/sec.5; reducing the admission to the sec.5 sentence fails on sec.1's independent frame dependence. Wart recorded: the 2005 paper's full text was not read - if a future session finds the parent misattributed its techniques, this edge is first in line for rehearing. Mikolov 2007: the self-carriage denial fails under the separable-artifact discrimination; the thesis/2008 identity fold fails on the judge's DIFFERENT ruling. Spot-check after apply: both created nodes' stored leap/prior_state/bottleneck non-empty (verified); the linked Bengio node reuses its stored text. Stored-text wart inherited, not introduced: the parent node's own stored leap repeats 'and the parent paper's reference [12]' - a child-side framing (the 2009 paper is reference [12] OF the RNNLM paper) - recorded here, not hand-edited, per the no-hand-edit rule."
+ },
+ "totals_after": {
+  "nodes": 333,
+  "edges": 431,
+  "budget": "333/2000",
+  "expansions_done": 206,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 68,
+   "6": 51,
+   "7": 34,
+   "8": 23,
+   "9": 10,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 316,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "the-c-programming-language-kernighan-ritchie-1978-1978",
+  "pushshift-reddit-crawl-baumgartner-2015-2015",
+  "state-application-framework-2001",
+  "wall-street-journal-corpus-darpa-csr-1992",
+  "advantage-updating-baird-1993"
+ ],
+ "notes": "Session 98 closes here: expansions 205-206 done. Frontier head for session 99: The C programming language (Kernighan & Ritchie, 1978) - the fresh node from exp-205 whose ANSI C discrimination will be tested on its own documents - then Pushshift (2015), State application framework (2001), WSJ corpus (1992), Advantage updating (Baird, 1993). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion; Fox's LISP I manual and Interface Builder 1986 rehearing conditions stand; the Kneser-Ney consumed-vs-compared re-hearing condition is added by this record. No session 99 work was started.",
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}

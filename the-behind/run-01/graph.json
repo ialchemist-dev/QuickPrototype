@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T10:58:50+00:00",
-  "expansions_done": 205,
-  "raw_candidates_seen": 8826,
+  "updated_at": "2026-11-28T11:06:02+00:00",
+  "expansions_done": 206,
+  "raw_candidates_seen": 8839,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35280,6 +35280,70 @@
     "name": "Xerox PARC (1970)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T10:58:37+00:00"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "Language Models for Automatic Speech Recognition of Czech Lectures (Mikolov, 2008)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:05:31+00:00"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "Kneser-Ney smoothing",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:05:31+00:00"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "SRILM toolkit (Stolcke, 2002)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:05:31+00:00"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "Advances in Acoustic Modeling for the Recognition of Czech (Kopecky et al., 2008)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:05:31+00:00"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "Morphological random forests (Oparin et al., 2008)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:05:31+00:00"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "A bit of progress in language modeling (Goodman, 2001)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:05:31+00:00"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+    "reason": "mediated_via: Neural probabilistic language model (Bengio et al.)",
+    "at": "2026-11-28T11:05:31+00:00",
+    "mediated_via": "Neural probabilistic language model (Bengio et al.)"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "Distributed representations (Hinton, McClelland & Rumelhart)",
+    "reason": "mediated_via: Neural probabilistic language model (Bengio et al.)",
+    "at": "2026-11-28T11:05:31+00:00",
+    "mediated_via": "Neural probabilistic language model (Bengio et al.)"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "Modeling high-dimensional discrete data with multi-layer neural networks (Bengio & Bengio)",
+    "reason": "mediated_via: Neural probabilistic language model (Bengio et al.)",
+    "at": "2026-11-28T11:05:31+00:00",
+    "mediated_via": "Neural probabilistic language model (Bengio et al.)"
+   },
+   {
+    "parent_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+    "name": "Deleted interpolation (Jelinek & Mercer)",
+    "reason": "mediated_via: Kneser-Ney smoothing",
+    "at": "2026-11-28T11:05:31+00:00",
+    "mediated_via": "Kneser-Ney smoothing"
    }
   ]
  },
@@ -37477,6 +37541,10 @@
     {
      "title": "Neural Probabilistic Language Models - explainer",
      "url": "https://nowigetit.us/pages/a438b893-a41f-488b-bc11-e47bf94a0cf2.html"
+    },
+    {
+     "title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.1 and sec.2",
+     "url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
     }
    ],
    "verification": {
@@ -37529,7 +37597,7 @@
    "prior_state": "Classical n-gram LMs as the group's production baseline.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -44972,6 +45040,56 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T10:58:37+00:00"
+  },
+  "training-neural-network-language-models-on-very-large-corpor-2005": {
+   "id": "training-neural-network-language-models-on-very-large-corpor-2005",
+   "name": "Training neural network language models on very large corpora (Schwenk & Gauvain, 2005)",
+   "aliases": [],
+   "year": 2005,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "Schwenk and Gauvain's HLT/EMNLP 2005 paper: the first speech-recognition results with neural network language models, trained on very large corpora, with the optimization techniques that made NN LM training and lattice rescoring practical at ASR scale.",
+   "bottleneck": "Before Schwenk & Gauvain, neural network language models existed as a perplexity result but had no demonstrated place inside a working speech recognizer - no one had shown how to train them on very large corpora or rescore with them at ASR scale.",
+   "leap": "Schwenk and Gauvain (HLT/EMNLP 2005) produced the first speech-recognition results with neural network language models, training them on very large corpora and establishing the deployment pattern - NN LM scores rescoring a recognizer's output and interpolating with the backoff model - that the Brno group's Czech work then instantiated.",
+   "prior_state": "NN LMs as a laboratory perplexity technique; ASR language modeling entirely backoff n-grams.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.1 and sec.5",
+     "url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    }
+   ],
+   "verification": null,
+   "merged_into": null,
+   "created_at": "2026-11-28T11:05:31+00:00"
+  },
+  "language-modeling-for-speech-recognition-in-czech-mikolov-20-2007": {
+   "id": "language-modeling-for-speech-recognition-in-czech-mikolov-20-2007",
+   "name": "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)",
+   "aliases": [],
+   "year": 2007,
+   "domain": "artificial intelligence",
+   "type": "method",
+   "definition": "Tomas Mikolov's master's thesis (FIT, Brno University of Technology, 2007): the Brno group's first Czech neural network language models - the two-stage design in which a bigram network's hidden layer supplies word projections to an n-gram network, with more than 20% perplexity improvement over backoff models on homogeneous data.",
+   "bottleneck": "Before Mikolov's 2007 thesis, neural network language models had never been built for Czech - an inflective language whose word-form explosion is exactly where backoff n-grams are weakest.",
+   "leap": "Mikolov's master's thesis (FIT BUT, 2007) built the Brno group's first Czech neural network language models - the two-stage design (a bigram network whose hidden layer supplies word projections to an n-gram network) and the interpolation practice the 2009 paper inherits, with more than 20% perplexity improvement over backoff models on homogeneous data.",
+   "prior_state": "Czech ASR language modeling as adapted backoff n-grams only; NN LMs demonstrated for English and French.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 4.0,
+   "sources": [
+    {
+     "title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.4 (two citations of [3])",
+     "url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    }
+   ],
+   "verification": null,
+   "merged_into": null,
+   "created_at": "2026-11-28T11:05:31+00:00"
   }
  },
  "edges": [
@@ -87021,6 +87139,297 @@
     "counterfactual": "Remove C and there is no parent at all: the language is C's superset by definition, its first implementation compiled into C, and its reason to exist was compatibility with C's world. No milestone mediates - the parent's documents engage C itself (its syntax, its compiler, K&R's definition as the milieu's standard), not a descendant or codification of it; the ANSI standard of 1989 is this artifact's later codification and postdates the parent.",
     "mediator": null,
     "evidence": "Direct: strict-superset relation plus the documented compatibility constraint (HOPL abstract; Wikipedia's history, citing the origins record)."
+   }
+  },
+  {
+   "predecessor_id": "neural-probabilistic-language-model-bengio-et-al-2003",
+   "successor_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The parent's bottleneck - neural LMs unproven for an inflective language - is answered with a mechanism this candidate created: projecting words onto continuous space so a neural network can estimate n-gram distributions without the counted-n-gram parameter explosion. The paper attributes the mechanism to this candidate in so many words (sec.1: 'The original idea of using neural networks that project words onto continuous space to reduce number of parameters that are needed to be estimated comes from Bengio [1]') and instantiates it as its architecture.",
+     "source": "Mikolov et al., ICASSP 2009, sec.1",
+     "falsification": "Evidence the continuous-projection mechanism was available to the group from a source other than this paper."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "This candidate opened the continuous-space language modeling space itself - every NN LM after 2003, this parent included, works inside it. The parent's contribution is an application and a variant inside that space, as its own sec.1 framing concedes.",
+     "source": "Mikolov et al., ICASSP 2009, sec.1",
+     "falsification": "Evidence NN language models were a going concern before 2003."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is qualified twice on the record: the parent departs from this candidate's own prescription (features trained separately, where [1] claims joint training is better - a real design fork, decided against the candidate on Goodman's diagnosis), and the ASR deployment arrives through Schwenk's parallel line. The mechanism is this candidate's; the parent's specific form is not the only form it could have taken. Partial.",
+     "source": "Mikolov et al., ICASSP 2009, sec.2",
+     "falsification": "Evidence the group's architecture follows [1]'s joint-training prescription after all."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "This candidate's training was famously slow, and the parent's cost problem ('training 40 60 network is two times more time consuming than 20 30') is inherited, not collapsed, from it; the collapses the parent achieves (vocabulary merging, following [1]'s practice) are partial. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The explanatory model is this candidate's: words as points in a continuous space, similarity as geometry, so that unseen n-grams inherit probability from seen neighbours - the model the parent's bigram feature extractor embodies ('words that predict similar distributions will be automatically placed near in the highly dimensional space').",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The composable interface is the projection itself: N-1 word projections form the n-gram network's input (sec.2), an abstraction the parent's whole two-stage architecture is built by composing.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The candidate's reach across NLP is its own large history; at this parent the documented reach is the one application to Czech ASR. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "No tightened iteration loop is credited to this candidate by the paper; its training burden is the parent's stated pain. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement of the n-gram default by NN LMs was realized through this parent's line and its child, not by the 2003 paper in ASR by 2009. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the paper's reference [1], its sec.1 attribution, and its architecture all descend from this candidate directly.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The permanent reset (continuous representations as language modeling's default substrate) was still prospective in 2009 and realized through the successors. Partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T11:05:31+00:00",
+   "leap": {
+    "prior_state": "Classical n-gram LMs as the group's production baseline.",
+    "jump": "Mikolov et al. (ICASSP 2009) showed feedforward neural LMs beat a modified-Kneser-Ney 4-gram by over 15% relative WER for Czech - the group's working proof that neural LMs pay in ASR, and the parent paper's reference [12].",
+    "date": 2009
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove this candidate and the parent has no mechanism: the group's design is the projection architecture of [1], attributed to it in the paper's first paragraph, instantiated in its networks, down to the rare-word merging done 'in the same way as [1] does'. No milestone mediates - Schwenk carries the ASR deployment (filed separately), not the mechanism, and the paper engages [1] itself.",
+    "mediator": null,
+    "evidence": "Direct: sec.1 attribution plus sec.2 instantiation, in the parent's own text."
+   }
+  },
+  {
+   "predecessor_id": "training-neural-network-language-models-on-very-large-corpor-2005",
+   "successor_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The flip this candidate performed was for speech recognition specifically: before it, NN LMs were a perplexity technique with no demonstrated place in a recognizer. The parent's own flip (the inflective-language proof) is its own; this candidate flipped the ASR-feasibility question the parent's whole frame presupposes. Partial.",
+     "source": "Mikolov et al., ICASSP 2009, sec.1",
+     "falsification": "Evidence of NN LM speech-recognition results before Schwenk & Gauvain 2005."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It opened the space this parent occupies: NN language models as a working component of speech recognition - trained at scale, rescoring a first-pass recognizer's output, interpolated with the backoff model. The paper's sec.1 names the opening in one sentence: 'Probably first results in speech recognition were produced by Schwenk [2].' Everything in the parent's experimental design lives in that opened space.",
+     "source": "Mikolov et al., ICASSP 2009, sec.1",
+     "falsification": "Evidence the rescoring deployment pattern for NN LMs in ASR predates this candidate."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The group could in principle have carried Bengio's mechanism into ASR itself; the documented path runs through this candidate's precedent, and the conclusion's reliance on [2]'s optimization techniques for the paper's named worst problem (training and rescoring speed) is a second, concrete dependence. Neither makes the candidate strictly necessary. Partial.",
+     "source": "Mikolov et al., ICASSP 2009, sec.5",
+     "falsification": "Evidence the group's ASR design was fixed before any contact with Schwenk's work."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The cost channel is real but partly prospective: sec.5 points to [2]'s 'various optimization techniques that lead to significant improvements in required computational time for training and lattice re-scoring' as the remedy for the parent's worst problem - while the parent's own implementation 'is not optimized in any way'. Documented reliance, not yet full instantiation. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "It supplied the working model of how an NN LM earns its keep in a recognizer (rescore and interpolate, don't replace) - an engineering model, thinner than a theory. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The rescoring interface - first-pass lattices or N-best lists rescored by the NN LM and interpolated with the baseline - is the composition the parent instantiates throughout sec.4. Partial, because the parent's caches and log-linear ensemble are its own elaborations.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach beyond ASR (machine translation and beyond) is its own later history; at this parent, partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Lattice/N-best rescoring is a faster evaluation loop than full decoding with the advanced model - the loop the parent runs - but the parent's two-level cache is its own work. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced nothing as a default by 2009; backoff LMs remained the production standard this parent still interpolates with. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk of the ASR line into this parent: the paper's second sentence of substance names it as the first ASR result, and its conclusion returns to it. In the history that actually happened, the Brno group's ASR frame descends from this demonstration.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The reset - NN LMs as a permanent ASR component - was realized through this parent's line and its successors. Partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T11:05:31+00:00",
+   "leap": {
+    "prior_state": "Classical n-gram LMs as the group's production baseline.",
+    "jump": "Mikolov et al. (ICASSP 2009) showed feedforward neural LMs beat a modified-Kneser-Ney 4-gram by over 15% relative WER for Czech - the group's working proof that neural LMs pay in ASR, and the parent paper's reference [12].",
+    "date": 2009
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove this candidate and the parent loses its frame, though not its mechanism: no demonstrated ASR deployment pattern to instantiate (the paper's first paragraph reaches for Schwenk's precedent immediately after Bengio's idea), and no documented remedy for its named worst problem. Bengio does not mediate this channel - the mechanism and the deployment are two inputs, and the paper engages both directly. The mediation finding at the child (RNNLM 2010) named THIS parent as the mediator of Schwenk's channel; at this parent the chain terminates.",
+    "mediator": null,
+    "evidence": "Direct: sec.1's naming of the ASR precedent and sec.5's reliance on its techniques, in the parent's own text."
+   }
+  },
+  {
+   "predecessor_id": "language-modeling-for-speech-recognition-in-czech-mikolov-20-2007",
+   "successor_id": "neural-network-based-language-models-for-highly-inflective-l-2009",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Within the group's own line, this candidate performed the first flip: NN LMs built for Czech at all, with 'more than 20% improvement in PPL with NN LM against backoff LM' on homogeneous data (the parent's sec.4, citing [3]) - the working proof, on the parent's own task family, that the approach pays before the parent extended it to lectures and word error rate. Scoped to the line, as the AHC admission at TD(lambda) was scoped to its line.",
+     "source": "Mikolov et al., ICASSP 2009, sec.4",
+     "falsification": "Evidence the group's Czech NN LM results begin with the 2009 paper itself."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the group's own Czech NN LM programme - a real but local space; the wider space is Bengio's and Schwenk's. Partial.",
+     "source": "Mikolov et al., ICASSP 2009, sec.4",
+     "falsification": "Evidence the thesis opened NN LM work beyond the Brno group."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Self-carriage qualifies necessity in the run's standing way: the same author's prior artifact is the historical path, and scoring it as 'the only path' would credit the parent with consuming itself. The artifact is separable and published (a deposited thesis), its design and constants are taken over - partial, per the AHC pattern.",
+     "source": "Mikolov et al., ICASSP 2009, sec.4",
+     "falsification": "Evidence the 2009 architecture and interpolation weight were derived independently of the thesis."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The thesis line's established practice (vocabulary merging, the two-stage training) is the platform the parent's experiments start from; the parent's own cost collapses are its caches. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The two-stage explanatory design - a bigram network as feature extractor whose hidden layer IS the word representation - descends from this line's work; the paper's sec.2 presents it as the group's standing approach. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "A concrete interface is carried over verbatim: the interpolation weight for NN scores, lambda 0.6, 'was determined in previous work [3] and works well in most cases' - the parent's experiments compose with the thesis's determined constant rather than re-deriving it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Within the group, this candidate displaced backoff-only modeling as the research default; the production displacement is the parent's and its child's. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk of the group's line: the parent's references and text run through it - it is the cited prior work at both consumption points.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The reset belongs to the line's successors. Partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T11:05:31+00:00",
+   "leap": {
+    "prior_state": "Classical n-gram LMs as the group's production baseline.",
+    "jump": "Mikolov et al. (ICASSP 2009) showed feedforward neural LMs beat a modified-Kneser-Ney 4-gram by over 15% relative WER for Czech - the group's working proof that neural LMs pay in ASR, and the parent paper's reference [12].",
+    "date": 2009
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove this candidate and the parent loses documented substance, not just ancestry: its architecture's provenance (the separately trained bigram feature extractor is this line's design) and its interpolation constant (lambda 0.6, determined in [3]). The self-carriage is scored at Q3/Q10 rather than used to deny the channel: the thesis is a separable published artifact, consumed at named points - the AHC-at-TD(lambda) and Swagger-at-OpenAPI pattern, not the OOPC pattern (the thesis was deposited, cited and built on as a finished work, not a draft of this paper).",
+    "mediator": null,
+    "evidence": "Direct: two in-text consumption points (sec.4's lambda and prior-result citations) plus the architecture's documented descent."
    }
   }
  ],
@@ -389849,6 +390258,573 @@
       }
      },
      "similarity": 0.4136,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "neural-network-based-language-models-for-highly-inflective-l-2009": {
+   "raw_candidates": [
+    {
+     "name": "Neural probabilistic language model (Bengio et al.)",
+     "year": 2003,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "method",
+     "definition": "Bengio, Ducharme, Vincent and Jauvin's neural probabilistic language model (JMLR, 2003): words are projected onto learned continuous feature vectors and a feedforward neural network estimates the n-gram distribution over those projections, defeating the curse of dimensionality that defeats counted n-grams.",
+     "causal_claim": "The paper's own first paragraph attributes its central mechanism to this candidate: 'The original idea of using neural networks that project words onto continuous space to reduce number of parameters that are needed to be estimated comes from Bengio [1].' The architecture instantiates it - word projections feed the n-gram network - and the rare-word merging step is done 'in the same way as [1] does'. The documented departure (features trained separately, against [1]'s claim that joint training is better) is a variation scored at the gate, not a denial of the channel.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.1 and sec.2",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Training neural network language models on very large corpora (Schwenk & Gauvain, 2005)",
+     "year": 2005,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Schwenk and Gauvain's HLT/EMNLP 2005 paper: the first speech-recognition results with neural network language models, trained on very large corpora, with the optimization techniques that made NN LM training and lattice rescoring practical at ASR scale.",
+     "causal_claim": "The rediscovery the child's expansion promised (Schwenk was rejected there mediated via this parent). On this paper's documents the channel is direct and twice stated: sec.1 - 'Probably first results in speech recognition were produced by Schwenk [2]' - names this candidate as the ASR precedent whose deployment pattern (train an NN LM, rescore the recognizer's output with it, interpolate with the backoff LM) the paper's whole experimental frame instantiates; and the conclusion, naming training speed 'currently our worst problem', points to [2]'s 'various optimization techniques that lead to significant improvements in required computational time for training and lattice re-scoring' as the remedy. The continuous-space design the child consumed is embodied here, in this paper's Schwenk-following ASR frame.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.1 and sec.5",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)",
+     "year": 2007,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Tomas Mikolov's master's thesis (FIT, Brno University of Technology, 2007): the Brno group's first Czech neural network language models - the two-stage design in which a bigram network's hidden layer supplies word projections to an n-gram network, with more than 20% perplexity improvement over backoff models on homogeneous data.",
+     "causal_claim": "The group's own prior artifact, cited as reference [3] and consumed at two documented points: the interpolation weight for NN scores (lambda 0.6) 'was determined in previous work [3]', and the prior result the paper extends ('In previous work [3], we were able to obtain more than 20% improvement in PPL with NN LM against backoff LM when we trained models on homogeneous data'). The parent's architecture - a separately trained bigram network used as feature extractor for the n-gram network - is the thesis line's design. Filed to test self-carriage: a separable, published, citable artifact (a deposited master's thesis) whose parameters and design the parent takes over, the AHC-at-TD(lambda) pattern.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.4 (two citations of [3])",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Language Models for Automatic Speech Recognition of Czech Lectures (Mikolov, 2008)",
+     "year": 2008,
+     "domain": "artificial intelligence",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Mikolov's EEICT 2008 paper: the group's neural language models carried onto the Czech lecture recognition task - the immediate predecessor publication in the parent's own line, listed as reference [4].",
+     "causal_claim": "Filed as the reference list's uncited entry: find-verified, reference [4] appears in the bibliography but is cited nowhere in the body text (the body's markers are [1], [2], [3], [5], [6], [7], [8]). Whatever channel it has runs inside the same self-line heard at the 2007 thesis; its separate consumption by this paper is not documented in the paper.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), reference list (entry [4]); body-text citation census",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Kneser-Ney smoothing",
+     "year": 1995,
+     "domain": "artificial intelligence",
+     "lens": "L6",
+     "type": "method",
+     "definition": "Kneser and Ney's smoothing (1995; in the modified form of Chen and Goodman): the backoff n-gram smoothing the field treats as its best standard - the smoothing of the 4-gram baseline this paper's neural models are measured against and interpolated with.",
+     "causal_claim": "Filed as the consumed-vs-compared test. The paper's baseline is 'adapted 4-gram backoff language model using modified Kneser-Ney smoothing', the lattices are expanded with the KN 4-gram, and NN scores are interpolated with the baseline's - so the candidate is inside the demonstrated systems, at lambda-side weights (0.4 in the standard experiments; the backoff weight falls to 0.05 in the best ensemble, where the paper concludes the adapted backoff LM is 'almost useless'). The headline result is defined against it. Whether a benchmark that is also a minor interpolation component is an enabler or the arena is the question this filing puts to the gate.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), abstract, sec.3, sec.4",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "SRILM toolkit (Stolcke, 2002)",
+     "year": 2002,
+     "domain": "artificial intelligence",
+     "lens": "L9",
+     "type": "method",
+     "definition": "Andreas Stolcke's SRILM (ICASSP 2002): the extensible language modeling toolkit that became the field's standard apparatus for building, interpolating and applying backoff n-gram models.",
+     "causal_claim": "Filed as the apparatus test: the paper's baseline lattices were 'expanded by 4-gram LM with Kneser-Ney smoothing using SRI LM toolkit [6]' - the baseline numbers the headline improvement is measured against were produced with this toolkit. The MuJoCo-at-GAE pattern: producing the comparison's numbers is not obviously enabling the leap, and the gate is asked to say so on the record.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.4",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Advances in Acoustic Modeling for the Recognition of Czech (Kopecky et al., 2008)",
+     "year": 2008,
+     "domain": "artificial intelligence",
+     "lens": "L9",
+     "type": "method",
+     "definition": "Kopecky, Glembek and Karafiat's TSD 2008 paper: the Brno group's advances in acoustic modeling for Czech - the acoustic half of the recognizer (models trained on the Speecon and Temic databases) whose word error rates the parent's language models improve.",
+     "causal_claim": "Filed as the system's sibling half: the paper decodes 'with acoustic models trained on Speecon and Temic databases (for more details, see [5])', and every WER number it reports is a property of the combined system. The language-model leap consumes nothing of the acoustic mechanisms; the citation is a pointer to the other half of the same recognizer, by three of the same authors.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.3",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Morphological random forests (Oparin et al., 2008)",
+     "year": 2008,
+     "domain": "artificial intelligence",
+     "lens": "L7",
+     "type": "method",
+     "definition": "Oparin, Glembek, Burget and Cernocky's morphological random forests (IEEE SLT 2008): a discriminative language model for inflectional languages that attacks word-form sparsity through morphological features - the parallel proposed solution to the parent's problem.",
+     "causal_claim": "Filed as the cited rival with one real consumption: 'The same setup was already used by Oparin [7] who worked on morphological random forests' - the parent's test setup (the Systems and signals lecture, 1.1 hour, 873 sentences) is borrowed from this candidate's work. The technique itself (random forests over morphology) is a rival answer, not consumed; the borrowed evaluation setup is an artifact-level transfer, thin but documented.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.3",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "A bit of progress in language modeling (Goodman, 2001)",
+     "year": 2001,
+     "domain": "artificial intelligence",
+     "lens": "L5",
+     "type": "method",
+     "definition": "Joshua Goodman's extended technical report (MSR-TR-2001-72): a systematic study of language modeling techniques, documenting among other things how cache-like relationships let models optimize perplexity without improving recognition accuracy.",
+     "causal_claim": "Filed as the Hochreiter-condition test: one of the parent's load-bearing design decisions is argued from this candidate in so many words - the features are not trained jointly with the n-gram network, 'We suppose that this can prevent word features from learning cache-like relationships in the data, which tend to heavily optimize perplexity, but not recognition accuracy (Goodman [8])'. A diagnosis, cited once, at the exact point where the design departs from Bengio's prescription. Whether a diagnosis a design decision answers is consumed, under the run's standing condition, is the question.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.2",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+     "year": 1986,
+     "domain": "artificial intelligence",
+     "lens": "L13",
+     "type": "method",
+     "definition": "Rumelhart, Hinton and Williams' back-propagation (Nature, 1986): the gradient method by which multi-layer networks are trained - the 'standard back-propagation algorithm' this paper's sec.2.1 names as its training method.",
+     "causal_claim": "Filed as the training mechanism the paper names generically ('standard back-propagation algorithm is used'). The run's standing record for this candidate is uniform: evaluated at ten parents, admitted at none under this name - the question is whether its channel here runs through the NN LM literature the paper actually cites ([1], [2]), which is where the group's training practice comes from. Expected: mediated via Bengio et al. 2003.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.2.1; graph record, back-propagation hearings",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Distributed representations (Hinton, McClelland & Rumelhart)",
+     "year": 1986,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "method",
+     "definition": "The 1986 PDP account of distributed representations: concepts as patterns of activity over shared units, so that similarity is geometry and generalization is automatic - the representational idea Bengio's word projections instantiate for language modeling.",
+     "causal_claim": "Filed as the idea behind the idea: the parent's words-as-projections mechanism is the distributed-representations programme applied to vocabulary. But the paper's own attribution stops at Bengio ('comes from Bengio [1]'), and the mechanism reaches Brno as Bengio's language-model construction, not as the 1986 chapter. Expected: mediated via Bengio et al. 2003.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.1; graph record, distributed representations",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Modeling high-dimensional discrete data with multi-layer neural networks (Bengio & Bengio)",
+     "year": 2000,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "method",
+     "definition": "Bengio and Bengio's 2000 work on modeling high-dimensional discrete data with multi-layer neural networks: the Bengio line's earlier step toward the 2003 neural probabilistic language model.",
+     "causal_claim": "Filed as the cited author's own prior step: the paper cites the 2003 consolidation, not this 2000 precursor, and whatever of it lives in the parent arrives inside the 2003 paper. Expected: mediated via Bengio et al. 2003.",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), reference [1]; graph record",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    },
+    {
+     "name": "Deleted interpolation (Jelinek & Mercer)",
+     "year": 1980,
+     "domain": "artificial intelligence",
+     "lens": "L19",
+     "type": "method",
+     "definition": "Jelinek and Mercer's deleted interpolation (1980): estimating a model as a weighted mixture of component models, weights set on held-out data - the interpolation practice statistical language modeling is built on.",
+     "causal_claim": "Filed as the ancestor of the paper's pervasive interpolation practice: corpus LMs are interpolated into the adapted baseline 'using interpolation weights chosen to minimize perplexity on validation data', and NN scores are interpolated with the baseline's throughout. The paper cites no interpolation source; the practice reaches its systems inside the backoff baseline's construction - the proximate carrier filed at L6. Expected: mediated via Kneser-Ney smoothing (the baseline artifact in which the practice is instantiated at this parent).",
+     "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.3 and sec.4; graph record, deleted interpolation",
+     "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "neural-probabilistic-language-model-bengio-et-al-2003",
+      "candidate": {
+       "name": "Neural probabilistic language model (Bengio et al.)",
+       "year": 2003,
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "type": "method",
+       "definition": "Bengio, Ducharme, Vincent and Jauvin's neural probabilistic language model (JMLR, 2003): words are projected onto learned continuous feature vectors and a feedforward neural network estimates the n-gram distribution over those projections, defeating the curse of dimensionality that defeats counted n-grams.",
+       "causal_claim": "The paper's own first paragraph attributes its central mechanism to this candidate: 'The original idea of using neural networks that project words onto continuous space to reduce number of parameters that are needed to be estimated comes from Bengio [1].' The architecture instantiates it - word projections feed the n-gram network - and the rare-word merging step is done 'in the same way as [1] does'. The documented departure (features trained separately, against [1]'s claim that joint training is better) is a variation scored at the gate, not a denial of the channel.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.1 and sec.2",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Neural probabilistic language model (Bengio et al.)"
+      ],
+      "matched_node_id": "neural-probabilistic-language-model-bengio-et-al-2003",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "training-neural-network-language-models-on-very-large-corpor-2005",
+      "candidate": {
+       "name": "Training neural network language models on very large corpora (Schwenk & Gauvain, 2005)",
+       "year": 2005,
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Schwenk and Gauvain's HLT/EMNLP 2005 paper: the first speech-recognition results with neural network language models, trained on very large corpora, with the optimization techniques that made NN LM training and lattice rescoring practical at ASR scale.",
+       "causal_claim": "The rediscovery the child's expansion promised (Schwenk was rejected there mediated via this parent). On this paper's documents the channel is direct and twice stated: sec.1 - 'Probably first results in speech recognition were produced by Schwenk [2]' - names this candidate as the ASR precedent whose deployment pattern (train an NN LM, rescore the recognizer's output with it, interpolate with the backoff LM) the paper's whole experimental frame instantiates; and the conclusion, naming training speed 'currently our worst problem', points to [2]'s 'various optimization techniques that lead to significant improvements in required computational time for training and lattice re-scoring' as the remedy. The continuous-space design the child consumed is embodied here, in this paper's Schwenk-following ASR frame.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.1 and sec.5",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Training neural network language models on very large corpora (Schwenk & Gauvain, 2005)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "language-modeling-for-speech-recognition-in-czech-mikolov-20-2007",
+      "candidate": {
+       "name": "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)",
+       "year": 2007,
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Tomas Mikolov's master's thesis (FIT, Brno University of Technology, 2007): the Brno group's first Czech neural network language models - the two-stage design in which a bigram network's hidden layer supplies word projections to an n-gram network, with more than 20% perplexity improvement over backoff models on homogeneous data.",
+       "causal_claim": "The group's own prior artifact, cited as reference [3] and consumed at two documented points: the interpolation weight for NN scores (lambda 0.6) 'was determined in previous work [3]', and the prior result the paper extends ('In previous work [3], we were able to obtain more than 20% improvement in PPL with NN LM against backoff LM when we trained models on homogeneous data'). The parent's architecture - a separately trained bigram network used as feature extractor for the n-gram network - is the thesis line's design. Filed to test self-carriage: a separable, published, citable artifact (a deposited master's thesis) whose parameters and design the parent takes over, the AHC-at-TD(lambda) pattern.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.4 (two citations of [3])",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "language-models-for-automatic-speech-recognition-of-czech-le-2008",
+      "candidate": {
+       "name": "Language Models for Automatic Speech Recognition of Czech Lectures (Mikolov, 2008)",
+       "year": 2008,
+       "domain": "artificial intelligence",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Mikolov's EEICT 2008 paper: the group's neural language models carried onto the Czech lecture recognition task - the immediate predecessor publication in the parent's own line, listed as reference [4].",
+       "causal_claim": "Filed as the reference list's uncited entry: find-verified, reference [4] appears in the bibliography but is cited nowhere in the body text (the body's markers are [1], [2], [3], [5], [6], [7], [8]). Whatever channel it has runs inside the same self-line heard at the 2007 thesis; its separate consumption by this paper is not documented in the paper.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), reference list (entry [4]); body-text citation census",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Language Models for Automatic Speech Recognition of Czech Lectures (Mikolov, 2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "kneser-ney-smoothing-1995",
+      "candidate": {
+       "name": "Kneser-Ney smoothing",
+       "year": 1995,
+       "domain": "artificial intelligence",
+       "lens": "L6",
+       "type": "method",
+       "definition": "Kneser and Ney's smoothing (1995; in the modified form of Chen and Goodman): the backoff n-gram smoothing the field treats as its best standard - the smoothing of the 4-gram baseline this paper's neural models are measured against and interpolated with.",
+       "causal_claim": "Filed as the consumed-vs-compared test. The paper's baseline is 'adapted 4-gram backoff language model using modified Kneser-Ney smoothing', the lattices are expanded with the KN 4-gram, and NN scores are interpolated with the baseline's - so the candidate is inside the demonstrated systems, at lambda-side weights (0.4 in the standard experiments; the backoff weight falls to 0.05 in the best ensemble, where the paper concludes the adapted backoff LM is 'almost useless'). The headline result is defined against it. Whether a benchmark that is also a minor interpolation component is an enabler or the arena is the question this filing puts to the gate.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), abstract, sec.3, sec.4",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Kneser-Ney smoothing"
+      ],
+      "matched_node_id": "kneser-ney-smoothing-1995",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "srilm-toolkit-stolcke-2002-2002",
+      "candidate": {
+       "name": "SRILM toolkit (Stolcke, 2002)",
+       "year": 2002,
+       "domain": "artificial intelligence",
+       "lens": "L9",
+       "type": "method",
+       "definition": "Andreas Stolcke's SRILM (ICASSP 2002): the extensible language modeling toolkit that became the field's standard apparatus for building, interpolating and applying backoff n-gram models.",
+       "causal_claim": "Filed as the apparatus test: the paper's baseline lattices were 'expanded by 4-gram LM with Kneser-Ney smoothing using SRI LM toolkit [6]' - the baseline numbers the headline improvement is measured against were produced with this toolkit. The MuJoCo-at-GAE pattern: producing the comparison's numbers is not obviously enabling the leap, and the gate is asked to say so on the record.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.4",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "SRILM toolkit (Stolcke, 2002)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "advances-in-acoustic-modeling-for-the-recognition-of-czech-k-2008",
+      "candidate": {
+       "name": "Advances in Acoustic Modeling for the Recognition of Czech (Kopecky et al., 2008)",
+       "year": 2008,
+       "domain": "artificial intelligence",
+       "lens": "L9",
+       "type": "method",
+       "definition": "Kopecky, Glembek and Karafiat's TSD 2008 paper: the Brno group's advances in acoustic modeling for Czech - the acoustic half of the recognizer (models trained on the Speecon and Temic databases) whose word error rates the parent's language models improve.",
+       "causal_claim": "Filed as the system's sibling half: the paper decodes 'with acoustic models trained on Speecon and Temic databases (for more details, see [5])', and every WER number it reports is a property of the combined system. The language-model leap consumes nothing of the acoustic mechanisms; the citation is a pointer to the other half of the same recognizer, by three of the same authors.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.3",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Advances in Acoustic Modeling for the Recognition of Czech (Kopecky et al., 2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "morphological-random-forests-oparin-et-al-2008-2008",
+      "candidate": {
+       "name": "Morphological random forests (Oparin et al., 2008)",
+       "year": 2008,
+       "domain": "artificial intelligence",
+       "lens": "L7",
+       "type": "method",
+       "definition": "Oparin, Glembek, Burget and Cernocky's morphological random forests (IEEE SLT 2008): a discriminative language model for inflectional languages that attacks word-form sparsity through morphological features - the parallel proposed solution to the parent's problem.",
+       "causal_claim": "Filed as the cited rival with one real consumption: 'The same setup was already used by Oparin [7] who worked on morphological random forests' - the parent's test setup (the Systems and signals lecture, 1.1 hour, 873 sentences) is borrowed from this candidate's work. The technique itself (random forests over morphology) is a rival answer, not consumed; the borrowed evaluation setup is an artifact-level transfer, thin but documented.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.3",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Morphological random forests (Oparin et al., 2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-bit-of-progress-in-language-modeling-goodman-2001-2001",
+      "candidate": {
+       "name": "A bit of progress in language modeling (Goodman, 2001)",
+       "year": 2001,
+       "domain": "artificial intelligence",
+       "lens": "L5",
+       "type": "method",
+       "definition": "Joshua Goodman's extended technical report (MSR-TR-2001-72): a systematic study of language modeling techniques, documenting among other things how cache-like relationships let models optimize perplexity without improving recognition accuracy.",
+       "causal_claim": "Filed as the Hochreiter-condition test: one of the parent's load-bearing design decisions is argued from this candidate in so many words - the features are not trained jointly with the n-gram network, 'We suppose that this can prevent word features from learning cache-like relationships in the data, which tend to heavily optimize perplexity, but not recognition accuracy (Goodman [8])'. A diagnosis, cited once, at the exact point where the design departs from Bengio's prescription. Whether a diagnosis a design decision answers is consumed, under the run's standing condition, is the question.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.2",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "A bit of progress in language modeling (Goodman, 2001)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "learning-representations-by-back-propagating-errors-rumelhar-1986",
+      "candidate": {
+       "name": "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)",
+       "year": 1986,
+       "domain": "artificial intelligence",
+       "lens": "L13",
+       "type": "method",
+       "definition": "Rumelhart, Hinton and Williams' back-propagation (Nature, 1986): the gradient method by which multi-layer networks are trained - the 'standard back-propagation algorithm' this paper's sec.2.1 names as its training method.",
+       "causal_claim": "Filed as the training mechanism the paper names generically ('standard back-propagation algorithm is used'). The run's standing record for this candidate is uniform: evaluated at ten parents, admitted at none under this name - the question is whether its channel here runs through the NN LM literature the paper actually cites ([1], [2]), which is where the group's training practice comes from. Expected: mediated via Bengio et al. 2003.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.2.1; graph record, back-propagation hearings",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Learning representations by back-propagating errors (Rumelhart, Hinton & Williams, 1986)"
+      ],
+      "matched_node_id": "learning-representations-by-back-propagating-errors-rumelhar-1986",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "distributed-representations-hinton-mcclelland-rumelhart-1986",
+      "candidate": {
+       "name": "Distributed representations (Hinton, McClelland & Rumelhart)",
+       "year": 1986,
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "type": "method",
+       "definition": "The 1986 PDP account of distributed representations: concepts as patterns of activity over shared units, so that similarity is geometry and generalization is automatic - the representational idea Bengio's word projections instantiate for language modeling.",
+       "causal_claim": "Filed as the idea behind the idea: the parent's words-as-projections mechanism is the distributed-representations programme applied to vocabulary. But the paper's own attribution stops at Bengio ('comes from Bengio [1]'), and the mechanism reaches Brno as Bengio's language-model construction, not as the 1986 chapter. Expected: mediated via Bengio et al. 2003.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.1; graph record, distributed representations",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Distributed representations (Hinton, McClelland & Rumelhart)"
+      ],
+      "matched_node_id": "distributed-representations-hinton-mcclelland-rumelhart-1986",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "modeling-high-dimensional-discrete-data-with-multi-layer-neu-2000",
+      "candidate": {
+       "name": "Modeling high-dimensional discrete data with multi-layer neural networks (Bengio & Bengio)",
+       "year": 2000,
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "type": "method",
+       "definition": "Bengio and Bengio's 2000 work on modeling high-dimensional discrete data with multi-layer neural networks: the Bengio line's earlier step toward the 2003 neural probabilistic language model.",
+       "causal_claim": "Filed as the cited author's own prior step: the paper cites the 2003 consolidation, not this 2000 precursor, and whatever of it lives in the parent arrives inside the 2003 paper. Expected: mediated via Bengio et al. 2003.",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), reference [1]; graph record",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Modeling high-dimensional discrete data with multi-layer neural networks (Bengio & Bengio)"
+      ],
+      "matched_node_id": "modeling-high-dimensional-discrete-data-with-multi-layer-neu-2000",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "deleted-interpolation-jelinek-mercer-1980",
+      "candidate": {
+       "name": "Deleted interpolation (Jelinek & Mercer)",
+       "year": 1980,
+       "domain": "artificial intelligence",
+       "lens": "L19",
+       "type": "method",
+       "definition": "Jelinek and Mercer's deleted interpolation (1980): estimating a model as a weighted mixture of component models, weights set on held-out data - the interpolation practice statistical language modeling is built on.",
+       "causal_claim": "Filed as the ancestor of the paper's pervasive interpolation practice: corpus LMs are interpolated into the adapted baseline 'using interpolation weights chosen to minimize perplexity on validation data', and NN scores are interpolated with the baseline's throughout. The paper cites no interpolation source; the practice reaches its systems inside the backoff baseline's construction - the proximate carrier filed at L6. Expected: mediated via Kneser-Ney smoothing (the baseline artifact in which the practice is instantiated at this parent).",
+       "source_title": "Mikolov et al., ICASSP 2009 (full text and reference list), sec.3 and sec.4; graph record, deleted interpolation",
+       "source_url": "https://www.fit.vut.cz/research/group/speech/public/publi/2009/mikolov_ic2009_nnlm_4.pdf"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Deleted interpolation (Jelinek & Mercer)"
+      ],
+      "matched_node_id": "deleted-interpolation-jelinek-mercer-1980",
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:2:3",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 2,
+       "card": {
+        "name": "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)",
+        "aliases": [],
+        "year": 2007,
+        "domain": "artificial intelligence",
+        "type": "method",
+        "definition": "Tomas Mikolov's master's thesis (FIT, Brno University of Technology, 2007): the Brno group's first Czech neural network language models - the two-stage design in which a bigram network's hidden layer supplies word projections to an n-gram network, with more than 20% perplexity improvement over backoff models on homogeneous data.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 3,
+       "card": {
+        "name": "Language Models for Automatic Speech Recognition of Czech Lectures (Mikolov, 2008)",
+        "aliases": [],
+        "year": 2008,
+        "domain": "artificial intelligence",
+        "type": "method",
+        "definition": "Mikolov's EEICT 2008 paper: the group's neural language models carried onto the Czech lecture recognition task - the immediate predecessor publication in the parent's own line, listed as reference [4].",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8158,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:2:6",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 2,
+       "card": {
+        "name": "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)",
+        "aliases": [],
+        "year": 2007,
+        "domain": "artificial intelligence",
+        "type": "method",
+        "definition": "Tomas Mikolov's master's thesis (FIT, Brno University of Technology, 2007): the Brno group's first Czech neural network language models - the two-stage design in which a bigram network's hidden layer supplies word projections to an n-gram network, with more than 20% perplexity improvement over backoff models on homogeneous data.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 6,
+       "card": {
+        "name": "Advances in Acoustic Modeling for the Recognition of Czech (Kopecky et al., 2008)",
+        "aliases": [],
+        "year": 2008,
+        "domain": "artificial intelligence",
+        "type": "method",
+        "definition": "Kopecky, Glembek and Karafiat's TSD 2008 paper: the Brno group's advances in acoustic modeling for Czech - the acoustic half of the recognizer (models trained on the Speecon and Temic databases) whose word error rates the parent's language models improve.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8013,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:2:3",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 2,
+      "card": {
+       "name": "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)",
+       "aliases": [],
+       "year": 2007,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "definition": "Tomas Mikolov's master's thesis (FIT, Brno University of Technology, 2007): the Brno group's first Czech neural network language models - the two-stage design in which a bigram network's hidden layer supplies word projections to an n-gram network, with more than 20% perplexity improvement over backoff models on homogeneous data.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 3,
+      "card": {
+       "name": "Language Models for Automatic Speech Recognition of Czech Lectures (Mikolov, 2008)",
+       "aliases": [],
+       "year": 2008,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "definition": "Mikolov's EEICT 2008 paper: the group's neural language models carried onto the Czech lecture recognition task - the immediate predecessor publication in the parent's own line, listed as reference [4].",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8158,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:2:6",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 2,
+      "card": {
+       "name": "Language Modeling for Speech Recognition in Czech (Mikolov, 2007)",
+       "aliases": [],
+       "year": 2007,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "definition": "Tomas Mikolov's master's thesis (FIT, Brno University of Technology, 2007): the Brno group's first Czech neural network language models - the two-stage design in which a bigram network's hidden layer supplies word projections to an n-gram network, with more than 20% perplexity improvement over backoff models on homogeneous data.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 6,
+      "card": {
+       "name": "Advances in Acoustic Modeling for the Recognition of Czech (Kopecky et al., 2008)",
+       "aliases": [],
+       "year": 2008,
+       "domain": "artificial intelligence",
+       "type": "method",
+       "definition": "Kopecky, Glembek and Karafiat's TSD 2008 paper: the Brno group's advances in acoustic modeling for Czech - the acoustic half of the recognizer (models trained on the Speecon and Temic databases) whose word error rates the parent's language models improve.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8013,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
