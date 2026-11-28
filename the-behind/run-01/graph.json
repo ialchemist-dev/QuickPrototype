@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T09:26:35+00:00",
-  "expansions_done": 195,
-  "raw_candidates_seen": 8679,
+  "updated_at": "2026-11-28T09:32:52+00:00",
+  "expansions_done": 196,
+  "raw_candidates_seen": 8694,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -34608,6 +34608,73 @@
     "name": "Efficient nonlinear control with actor-tutor architecture (Doya, 1996)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T09:26:15+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "Common Crawl",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "A neural attention model for abstractive sentence summarization (Rush, Chopra & Weston, 2015)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "English Gigaword",
+    "reason": "gate: neither Q1 nor Q2 passes (no impossibility flip, no generativity)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "DUC summarization corpora (NIST, 2003)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "Reddit (2005)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "Teaching machines to read and comprehend (Hermann et al., 2015)",
+    "reason": "mediated_via: CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016)",
+    "at": "2026-11-28T09:32:28+00:00",
+    "mediated_via": "CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016)"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "Abstractive sentence summarization with attentive recurrent neural networks (Chopra, Auli & Rush, 2016)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "Automatic generic document summarization based on non-negative matrix factorization (Lee et al., 2009)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "Applying regression models to query-focused multi-document summarization (Ouyang et al., 2011)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
+   },
+   {
+    "parent_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+    "name": "Multiple documents summarization based on evolutionary optimization algorithm (Alguliev et al., 2013)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:32:28+00:00"
    }
   ]
  },
@@ -35846,7 +35913,7 @@
    "prior_state": "CNN/Daily Mail and Gigaword as the only large summarization corpora, both news genre; DUC corpora of a few hundred documents.",
    "status": "provisional",
    "depth": 3,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -43717,6 +43784,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T09:17:16+00:00"
+  },
+  "pushshift-reddit-crawl-baumgartner-2015-2015": {
+   "id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+   "name": "Pushshift Reddit crawl (Baumgartner, 2015)",
+   "aliases": [],
+   "year": 2015,
+   "domain": "natural language processing",
+   "type": "other",
+   "definition": "Jason Baumgartner's Pushshift archive of Reddit: the platform's complete public submissions and comments, collected since 2015 and distributed as monthly dumps at files.pushshift.io - the raw material the parent mines.",
+   "bottleneck": "Before the Pushshift archive, Reddit's complete post history could not be obtained as research data, because the platform's API exposed only limited recent content.",
+   "leap": "Baumgartner (2015) completed a 14-month archive of Reddit's entire public textual content and published it as monthly dumps at files.pushshift.io, making the platform's full history - submissions and comments back to 2005 - a downloadable research dataset.",
+   "prior_state": "Reddit data reached researchers through the official API's rate-limited, recent-only endpoints, or through small self-made scrapes of individual subreddits.",
+   "status": "provisional",
+   "depth": 4,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.3, Table 2; Baumgartner et al., ICWSM 2020",
+     "url": "https://www.aclweb.org/anthology/W17-4508"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Q1 attack: was Reddit's 2006-2016 history truly unobtainable before the archive? Alternatives tried: Reddit's own API (recent/limited only - confirms the bottleneck), Google BigQuery's Reddit dataset (Baumgartner's own archive behind a second door - the same artifact, not independent prior art), and the 2015 r/datasets 'I have every publicly available Reddit comment' post (also Baumgartner's). No independent full-history source existed in 2017; the attack fails. (2) Multiples on Q3: the BigQuery hosting is the same archive, not a simultaneous independent archive; no second complete Reddit archive is documented for the period. Necessity was already scored partial on this basis. (3) Date/direction: archive completed 2015-07-03 (Baumgartner et al., ICWSM 2020; ArchiveTeam), before the parent's September 2017 workshop paper, whose sec.3 employs the 2006-2016 dumps by name (footnote 2). Direction confirmed. (4) Mediation attack: Reddit-the-platform was tried as the true enabler with the crawl as mere copy - it fails on the documents: the parent consumes the dumps (files), not the platform, and the platform was heard separately at this parent and failed closed as the arena (partial 1.5). The edge's channel is the specific archive, the CUDA-pattern specific enabling step. Attack fails.",
+    "at": "2026-11-28T09:32:52+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:32:28+00:00"
+  },
+  "lcsts-hu-chen-zhu-2015-2015": {
+   "id": "lcsts-hu-chen-zhu-2015-2015",
+   "name": "LCSTS (Hu, Chen & Zhu, 2015)",
+   "aliases": [],
+   "year": 2015,
+   "domain": "natural language processing",
+   "type": "other",
+   "definition": "Hu, Chen & Zhu's LCSTS (EMNLP 2015): 2.5 million content-summary pairs harvested from the Chinese social platform Weibo, whose users preface posts with a bracketed short summary - the first large summarization corpus mined from a social platform's self-summarization convention.",
+   "bottleneck": "Before LCSTS, summarization training data came only from news-wire pairing - articles with headlines or commissioned abstracts - because social media's author-written summaries were not recognized as a harvestable resource.",
+   "leap": "Hu, Chen & Zhu (2015) harvested 2.5 million content-summary pairs from Weibo, whose users preface posts with a bracketed short summary - the first large summarization corpus mined from a social platform's self-summarization convention.",
+   "prior_state": "Large summarization corpora were news-only (Gigaword headline pairs; DUC's commissioned abstracts); social-media text served classification and sentiment tasks, not document-summary pairing.",
+   "status": "provisional",
+   "depth": 4,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [
+    {
+     "title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+     "url": "https://www.aclweb.org/anthology/W17-4508"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Q1 attack: an earlier at-scale convention-mined summarization corpus was searched for in the parent's apparatus and the summarization lineage - none is documented; LCSTS's 2.5M Weibo pairs (EMNLP 2015) stand as the first demonstrated instance, and the parent's own sec.2 grading ('perhaps closest to our own work - both in terms of text genre and collection method') corroborates the precedence. (2) Multiples on Q3 - the live risk, recorded: independent invention by Volske et al. is genuinely possible (the TL;DR convention is conspicuous, and the paper claims closeness, not derivation). Necessity therefore stays partial ('ripe'), and the outcome is capped at provisional on exactly this ground; the edge stands on the authors' own closest-work grading plus method identity, not on proven derivation. (3) Date/direction: 2015 < 2017; direction per sec.2, which presents LCSTS as prior work in the parent's own lineage. (4) Mediation attack: a channel through the neural model line (Hu et al. 2015 also appears in sec.1's model census) was tried - it fails: the parent's sec.2 engages LCSTS directly as a dataset and collection method, not via any model artifact. Attack fails.",
+    "at": "2026-11-28T09:32:52+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:32:28+00:00"
   }
  },
  "edges": [
@@ -83147,6 +83272,200 @@
     "counterfactual": "Remove ASE/ACE and the parent's central sec.4.2 statement - 'The ASE/ACE system configured for pole-balancing [Barto et al. 83] is just an instance of this algorithm' - loses its referent: the analyzed algorithm would have no documented prior embodiment, and the sec.6 experiment loses the problem it modifies.",
     "mediator": null,
     "evidence": "Direct: the parent names the candidate as an instance of its own algorithm (sec.4.2) and as the architecture where 'both the critic and the actor make use of the eligibility trace' (sec.1); no milestone intervenes between ASE/ACE's actor trace and the general algorithm that analyzes it."
+   }
+  },
+  {
+   "predecessor_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+   "successor_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Baumgartner's archive, Reddit's post history was not obtainable as research data at scale: the platform's API exposes limited, recent content, so the specific thing the parent needed - the complete 2006-2016 record of 286 million submissions and 1.6 billion comments - could not be had at all. Sec.3 states the dependence plainly: 'Large crawls of Reddit comments and submissions have recently been made available to the NLP community... we employ the set of 286 million submissions and 1.6 billion comments posted to Reddit between 2006 and 2016.'",
+     "source": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.3; Baumgartner et al., ICWSM 2020",
+     "falsification": "A pre-2015 source from which the parent could have obtained Reddit's full 2006-2016 history."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The crawl unblocked Reddit research generally (hundreds of studies), but in relation to this parent the channel is specific: it is the corpus's raw material, one corpus's input rather than a space of possibilities.",
+     "source": "Baumgartner et al., ICWSM 2020",
+     "falsification": "Evidence the parent's use was one of a family of corpora the crawl directly generated in the same work."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Not the only conceivable door - Google BigQuery also hosted Reddit data by 2017 - but that dataset was Baumgartner's own archive behind a second door, and the parent's documents name the Pushshift dumps (footnote 2: files.pushshift.io/reddit) as the employed source.",
+     "source": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.3 n.2",
+     "falsification": "Evidence the parent actually drew its 286M/1.6B set from a different archive."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "The cost collapse is the archive's essence: one collector's 14-month crawl (completed 2015-07-03) replaced what would have been months of rate-limited API scraping per laboratory - the Pushshift dataset paper's stated purpose is to 'reduce time spent in the data collection, cleaning, and storage phases'.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "It made nothing newly observable in the measurement sense; it made existing records obtainable, which is Q4/Q9's territory.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "It supplied no explanatory model; it is infrastructure for access, not understanding.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The monthly ndjson dumps became a de facto standard interface for Reddit research - others built on the format without re-crawling - though never a formal standard.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its reach across social-media research is broad (political science, computational social science), far beyond this parent's field.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Ready dumps collapse the corpus builder's feedback loop: the parent's five-step filtering pipeline (Table 2) iterates over the full 286M/1.6B set directly, spot-checking and refining filters - iteration that presupposes the data already sitting locally.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It became the default source for Reddit research data in its period, displacing per-project scraping, though Reddit's own API remained the recourse for post-2016 data.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk for this parent: sec.3 names the crawls as the employed source, and the corpus's Table 2 begins from their counts (286,168,475 submissions; 1,659,361,605 comments).",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "An archive, once published, permanently resets what is researchable about the platform's past - though access terms later tightened (post-parent history, noted not scored).",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:32:28+00:00",
+   "leap": {
+    "prior_state": "CNN/Daily Mail and Gigaword as the only large summarization corpora, both news genre; DUC corpora of a few hundred documents.",
+    "jump": "Volske et al. (2017) mined Reddit's TL;DR self-summarization convention to produce Webis-TLDR-17: about 4 million content-summary pairs (1,667,129 from submissions and 2,377,372 from comments) of author-written, abstractive summaries in the social-media genre - the first large summarization corpus outside news, at Gigaword's scale - validated at 95% precision on a 1000-pair manual review, with verticals by content type, topic and summary type.",
+    "date": 2017
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Pushshift crawl and the parent's sec.3 has no input: the five-step pipeline's raw row (286M submissions, 1.6B comments) is the crawl's content, and no other 2017 source offered Reddit's 2006-2016 totality to researchers. The corpus does not exist, in that year, without it.",
+    "mediator": null,
+    "evidence": "Direct consumption, named in the documents: sec.3 + footnote 2 identify the source, and Table 2's raw-input counts are the crawl's counts. The SPECIFIC enabling step (this archive), not generic infrastructure - Reddit's own platform is heard separately and fails closed as the arena."
+   }
+  },
+  {
+   "predecessor_id": "lcsts-hu-chen-zhu-2015-2015",
+   "successor_id": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before LCSTS, no one had shown that a social platform's self-summarization convention could be harvested into a large summarization corpus: summarization data came from news-wire pairing. LCSTS made the parent's core move - mine the author-written summaries a platform's users attach to their own posts - a demonstrated, citable procedure (2.5 million Weibo pairs).",
+     "source": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+     "falsification": "An earlier large corpus mined from a social platform's author-summary convention."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the social-media mining line, of which the parent is the second member; the space's full generativity (many platforms, many languages) was realized by the successors rather than by LCSTS alone.",
+     "source": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), secs.2, 4",
+     "falsification": "Evidence the parent's method was developed without reference to the social-media-mining precedent."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Independent invention is conceivable - the TL;DR convention is Reddit-native and conspicuous - but the parent's own documents place LCSTS on its lineage in the strongest terms available to a related-work section: 'perhaps closest to our own work - both in terms of text genre and collection method' (sec.2). The authors' grading is calibration evidence; necessity is scored partial, not pass, on exactly that basis.",
+     "source": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+     "falsification": "A statement by Volskë et al. that the method was devised independently of Hu et al."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "The parent's collection design - find the platform's summary convention, harvest at scale, split at the marker, filter - is LCSTS's validated recipe re-instantiated; the design cost of the corpus collapsed because the recipe existed and had been proven at 2.5-million-pair scale.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurement advance passes to the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model the parent's sec.1 argument runs on: a platform's self-summarization practice is a data-generating process - authors produce document-summary pairs as a by-product of posting - so a corpus can be mined rather than annotated.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "A dataset and a recipe, not an interface or standard others compose with.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Its transfer across language (Chinese to English) and platform (Weibo to Reddit) is itself the cross-domain reach - realized in this parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "It did not change the parent's experiment loop; the loop collapse belongs to the consumed crawl.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Within short-text summarization it displaced hand-assembled collection as the reference approach, though news corpora remained the field's defaults.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk for this parent: the single work the parent's documents single out as closest, in genre and method both.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once author-convention mining was demonstrated, corpus builders never returned to annotation-only thinking for social text - though the reset's permanence is still being proven by successors.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:32:28+00:00",
+   "leap": {
+    "prior_state": "CNN/Daily Mail and Gigaword as the only large summarization corpora, both news genre; DUC corpora of a few hundred documents.",
+    "jump": "Volske et al. (2017) mined Reddit's TL;DR self-summarization convention to produce Webis-TLDR-17: about 4 million content-summary pairs (1,667,129 from submissions and 2,377,372 from comments) of author-written, abstractive summaries in the social-media genre - the first large summarization corpus outside news, at Gigaword's scale - validated at 95% precision on a 1000-pair manual review, with verticals by content type, topic and summary type.",
+    "date": 2017
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove LCSTS and the parent loses the documented precedent its own related-work section names as closest in genre AND method: the claim that a social platform's summary convention can be harvested at scale would stand in 2017 without its one demonstrated instance, and the parent's design - a five-step harvest of a marker convention - is that instance's recipe transposed. The platform difference (Weibo to Reddit) is the parent's contribution, not an intermediary milestone.",
+    "mediator": null,
+    "evidence": "Direct: named citation with the authors' own closest-work grading (sec.2) plus instantiation - the same collection method, executed. No mediator: the method passes from the 2015 paper to the 2017 design without an intervening artifact."
    }
   }
  ],
@@ -379890,6 +380209,624 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017": {
+   "raw_candidates": [
+    {
+     "name": "Pushshift Reddit crawl (Baumgartner, 2015)",
+     "year": 2015,
+     "domain": "natural language processing",
+     "lens": "L8",
+     "type": "other",
+     "definition": "Jason Baumgartner's Pushshift archive of Reddit: the platform's complete public submissions and comments, collected since 2015 and distributed as monthly dumps at files.pushshift.io - the raw material the parent mines.",
+     "causal_claim": "The Pushshift crawl directly enabled the corpus by being the data it was mined from: sec.3 - 'Large crawls of Reddit comments and submissions have recently been made available to the NLP community' (footnote 2: files.pushshift.io/reddit); 'we employ the set of 286 million submissions and 1.6 billion comments posted to Reddit between 2006 and 2016', the input row of the construction pipeline (Table 2).",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.3, Table 2; Baumgartner et al., ICWSM 2020",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Common Crawl",
+     "year": 2008,
+     "domain": "natural language processing",
+     "lens": "L8",
+     "type": "system",
+     "definition": "Common Crawl: the open web crawl archive, maintained since 2008 - examined by the parent (sec.4) as a possible future mining source but NOT used to build Webis-TLDR-17.",
+     "causal_claim": "Non-consumption probe: sec.4 - 'a cursory examination of the CommonCrawl and Clueweb12 web crawls unearths more than 2 million pages containing the pattern - though extracting clean content-summary pairs will likely require more effort' - a future-work sentence; the corpus was mined from the Pushshift Reddit crawl, not from Common Crawl.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.4",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "LCSTS (Hu, Chen & Zhu, 2015)",
+     "year": 2015,
+     "domain": "natural language processing",
+     "lens": "L2",
+     "type": "other",
+     "definition": "Hu, Chen & Zhu's LCSTS (EMNLP 2015): 2.5 million content-summary pairs harvested from the Chinese social platform Weibo, whose users preface posts with a bracketed short summary - the first large summarization corpus mined from a social platform's self-summarization convention.",
+     "causal_claim": "LCSTS directly enabled the leap as the ancestor whose collection method the parent transposes: sec.2 - 'the LCSTS dataset collected by Hu et al. (2015) is perhaps closest to our own work - both in terms of text genre and collection method. Their dataset comprises 2.5 million content-summary pairs collected from the Chinese social media platform Weibo... users frequently start their posts with a short summary in brackets.' The parent's method is the same recipe (harvest a platform's author-written summary convention at scale) re-instantiated on Reddit's TL;DR convention, in English.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "A neural attention model for abstractive sentence summarization (Rush, Chopra & Weston, 2015)",
+     "year": 2015,
+     "domain": "natural language processing",
+     "lens": "L4",
+     "type": "method",
+     "definition": "Rush, Chopra & Weston's ABS (EMNLP 2015): the first neural attention model for abstractive sentence summarization, trained on Gigaword - head of the model line whose data hunger the parent's sec.1 states as its motivation, and one of the two models the parent's sec.4 trains on the new corpus as validation.",
+     "causal_claim": "Demand-side probe with a direction complication: sec.1 grounds the corpus's purpose in the model line ('new ground was broken using various kinds of neural network models (Rush et al., 2015; ...). The performance of these kinds of summarization models strongly depends on large amounts of suitable training data'), but the only consumption documented runs the other way - sec.4 trains Rush et al.'s model ON the corpus. Whether a demand can 'enable' its own satisfaction is the verdict's question.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), secs.1, 4",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "English Gigaword",
+     "year": 2003,
+     "domain": "natural language processing",
+     "lens": "L6",
+     "type": "other",
+     "definition": "The English Gigaword corpus: ~10 million news articles with headlines, of which ~4 million article-title pairs became the standard training set for neural summarization - Table 1's incumbent and the scale the parent matches.",
+     "causal_claim": "Filed as the measured-against incumbent: Table 1 heads the comparison with Gigaword's 4 million pairs (the parent's own 4 million is the parity claim), and sec.2 calls it 'the most important summarization resource in recent years' while sec.1 argues its news-only genre is the obstacle. The channel - a role/scale benchmark the parent had to match - is documentary; whether it enables or merely defines is the verdict's question.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), secs.1-2, Table 1",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016)",
+     "year": 2016,
+     "domain": "natural language processing",
+     "lens": "L6",
+     "type": "other",
+     "definition": "Nallapati et al.'s abstractive summarization version of the CNN/Daily Mail corpus (CoNLL 2016): ~300,000 news articles with human-written multi-sentence abstractive summaries, re-purposed from Hermann et al. (2015)'s reading-comprehension corpus - the immediate predecessor corpus for abstractive training in Table 1.",
+     "causal_claim": "Filed as the immediate role predecessor: sec.2 - 'Nallapati et al. (2016) present a new abstractive summarization dataset based on a passage-based question answering corpus constructed by Hermann et al. (2015)... annotated with human-generated, abstractive, multi-sentence summaries'; Table 1 gives it 300,000 pairs against the parent's 4 million. The parent neither trains on it nor derives its mining method from it; the channel is role precedence.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2, Table 1",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "DUC summarization corpora (NIST, 2003)",
+     "year": 2003,
+     "domain": "natural language processing",
+     "lens": "L6",
+     "type": "other",
+     "definition": "The Document Understanding Conference corpora (NIST, 2001-2007; DUC 2003: 624 pairs, DUC 2004: 500 in Table 1): a few hundred newswire articles with single-sentence summaries, the field's evaluation corpora of the pre-neural era.",
+     "causal_claim": "Filed as named prior resources: Table 1 and sec.2 list them, with the judgment that they are 'generally considered too small to train abstractive summarization systems' and were used by past research for validation and testing. The parent validates its own corpus by a 1000-pair manual review (95% correct, sec.3.1), not on DUC.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2, Table 1",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Reddit (2005)",
+     "year": 2005,
+     "domain": "natural language processing",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "Reddit (founded 2005): the discussion platform whose community's TL;DR self-summarization convention - authors appending a summary of their own long post - generated the author-written summaries the corpus mines.",
+     "causal_claim": "Arena probe: sec.3 describes the platform and its subreddit structure as the corpus's setting, and sec.1 the mined practice ('the common practice of social media users summarizing their own posts... typically indicates that a summary of the entire post follows'). The consumed artifacts are the community's convention (no document of its own) and Baumgartner's crawl (filed at L8); whether the platform itself enables, or only hosts, is the verdict's question.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), secs.1, 3",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Teaching machines to read and comprehend (Hermann et al., 2015)",
+     "year": 2015,
+     "domain": "natural language processing",
+     "lens": "L3",
+     "type": "method",
+     "definition": "Hermann et al. (NIPS 2015): the CNN/Daily Mail reading-comprehension corpus (passage-based question answering) - the substrate artifact from which Nallapati et al. (2016) derived the abstractive summarization dataset the parent is compared against.",
+     "causal_claim": "Mediation probe: sec.2's chain is explicit - the summarization dataset is Nallapati et al.'s, 'based on a passage-based question answering corpus constructed by Hermann et al. (2015)'. Whatever reaches the parent from this line arrives through the Nallapati re-versioning; the QA corpus itself was built for a different task.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Abstractive sentence summarization with attentive recurrent neural networks (Chopra, Auli & Rush, 2016)",
+     "year": 2016,
+     "domain": "natural language processing",
+     "lens": "L23",
+     "type": "method",
+     "definition": "Chopra, Auli & Rush (NAACL 2016): abstractive sentence summarization with attentive RNNs - named once, in sec.1's list of the neural advances that created the training-data demand.",
+     "causal_claim": "Census probe: sec.1 - 'new ground was broken using various kinds of neural network models (Rush et al., 2015; Hu et al., 2015; Chopra et al., 2016; See et al., 2017)'. A member of the demand census; no model, data or result of it is used in the corpus's construction.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.1",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Get to the point: summarization with pointer-generator networks (See, Liu & Manning, 2017)",
+     "year": 2017,
+     "domain": "natural language processing",
+     "lens": "L23",
+     "type": "method",
+     "definition": "See, Liu & Manning (ACL 2017): pointer-generator networks for abstractive summarization - named in sec.1's neural-advances census; dated the parent's own year (2017), so the resolver's year bound is expected to drop it - recorded, not re-dated.",
+     "causal_claim": "Census probe (sec.1), filed with its documented year; the year-granularity bound is the expected outcome.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.1",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Recent automatic text summarization techniques: a survey (Gambhir & Gupta, 2017)",
+     "year": 2017,
+     "domain": "natural language processing",
+     "lens": "L23",
+     "type": "other",
+     "definition": "Gambhir & Gupta's 2017 survey of automatic summarization - cited at sec.1 for the proposition that abstractive summarization 'can be considered one of the most challenging variants'; dated the parent's own year (2017), so the resolver's year bound is expected to drop it - recorded, not re-dated.",
+     "causal_claim": "Framing-citation probe (sec.1), filed with its documented year; the year-granularity bound is the expected outcome.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.1",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Automatic generic document summarization based on non-negative matrix factorization (Lee et al., 2009)",
+     "year": 2009,
+     "domain": "natural language processing",
+     "lens": "L23",
+     "type": "method",
+     "definition": "Lee et al. (2009): extractive summarization by non-negative matrix factorization - named in sec.2's census of the optimization methods past research applied to the DUC corpora.",
+     "causal_claim": "Census probe: sec.2 - 'past research has focused on the use of various optimization methods - such as non-negative matrix factorization (Lee et al., 2009), support vector regression (Ouyang et al., 2011), and evolutionary algorithms (Alguliev et al., 2013) - to select salient sentences for an extractive summary.' A consumer of the DUC corpora, not an enabler of a mined corpus.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Applying regression models to query-focused multi-document summarization (Ouyang et al., 2011)",
+     "year": 2011,
+     "domain": "natural language processing",
+     "lens": "L23",
+     "type": "method",
+     "definition": "Ouyang et al. (2011): support-vector-regression models for query-focused multi-document summarization - named in the same sec.2 DUC-era census sentence as Lee et al. (2009).",
+     "causal_claim": "Census probe: a DUC-era extractive method; nothing of it is used in the corpus's construction.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    },
+    {
+     "name": "Multiple documents summarization based on evolutionary optimization algorithm (Alguliev et al., 2013)",
+     "year": 2013,
+     "domain": "natural language processing",
+     "lens": "L23",
+     "type": "method",
+     "definition": "Alguliev et al. (2013): multi-document summarization by evolutionary optimization - named in the same sec.2 DUC-era census sentence.",
+     "causal_claim": "Census probe: a DUC-era extractive method; nothing of it is used in the corpus's construction.",
+     "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+     "source_url": "https://www.aclweb.org/anthology/W17-4508"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+      "candidate": {
+       "name": "Pushshift Reddit crawl (Baumgartner, 2015)",
+       "year": 2015,
+       "domain": "natural language processing",
+       "lens": "L8",
+       "type": "other",
+       "definition": "Jason Baumgartner's Pushshift archive of Reddit: the platform's complete public submissions and comments, collected since 2015 and distributed as monthly dumps at files.pushshift.io - the raw material the parent mines.",
+       "causal_claim": "The Pushshift crawl directly enabled the corpus by being the data it was mined from: sec.3 - 'Large crawls of Reddit comments and submissions have recently been made available to the NLP community' (footnote 2: files.pushshift.io/reddit); 'we employ the set of 286 million submissions and 1.6 billion comments posted to Reddit between 2006 and 2016', the input row of the construction pipeline (Table 2).",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.3, Table 2; Baumgartner et al., ICWSM 2020",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Pushshift Reddit crawl (Baumgartner, 2015)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "common-crawl-2008",
+      "candidate": {
+       "name": "Common Crawl",
+       "year": 2008,
+       "domain": "natural language processing",
+       "lens": "L8",
+       "type": "system",
+       "definition": "Common Crawl: the open web crawl archive, maintained since 2008 - examined by the parent (sec.4) as a possible future mining source but NOT used to build Webis-TLDR-17.",
+       "causal_claim": "Non-consumption probe: sec.4 - 'a cursory examination of the CommonCrawl and Clueweb12 web crawls unearths more than 2 million pages containing the pattern - though extracting clean content-summary pairs will likely require more effort' - a future-work sentence; the corpus was mined from the Pushshift Reddit crawl, not from Common Crawl.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.4",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Common Crawl"
+      ],
+      "matched_node_id": "common-crawl-2008",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lcsts-hu-chen-zhu-2015-2015",
+      "candidate": {
+       "name": "LCSTS (Hu, Chen & Zhu, 2015)",
+       "year": 2015,
+       "domain": "natural language processing",
+       "lens": "L2",
+       "type": "other",
+       "definition": "Hu, Chen & Zhu's LCSTS (EMNLP 2015): 2.5 million content-summary pairs harvested from the Chinese social platform Weibo, whose users preface posts with a bracketed short summary - the first large summarization corpus mined from a social platform's self-summarization convention.",
+       "causal_claim": "LCSTS directly enabled the leap as the ancestor whose collection method the parent transposes: sec.2 - 'the LCSTS dataset collected by Hu et al. (2015) is perhaps closest to our own work - both in terms of text genre and collection method. Their dataset comprises 2.5 million content-summary pairs collected from the Chinese social media platform Weibo... users frequently start their posts with a short summary in brackets.' The parent's method is the same recipe (harvest a platform's author-written summary convention at scale) re-instantiated on Reddit's TL;DR convention, in English.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "LCSTS (Hu, Chen & Zhu, 2015)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-neural-attention-model-for-abstractive-sentence-summarizat-2015",
+      "candidate": {
+       "name": "A neural attention model for abstractive sentence summarization (Rush, Chopra & Weston, 2015)",
+       "year": 2015,
+       "domain": "natural language processing",
+       "lens": "L4",
+       "type": "method",
+       "definition": "Rush, Chopra & Weston's ABS (EMNLP 2015): the first neural attention model for abstractive sentence summarization, trained on Gigaword - head of the model line whose data hunger the parent's sec.1 states as its motivation, and one of the two models the parent's sec.4 trains on the new corpus as validation.",
+       "causal_claim": "Demand-side probe with a direction complication: sec.1 grounds the corpus's purpose in the model line ('new ground was broken using various kinds of neural network models (Rush et al., 2015; ...). The performance of these kinds of summarization models strongly depends on large amounts of suitable training data'), but the only consumption documented runs the other way - sec.4 trains Rush et al.'s model ON the corpus. Whether a demand can 'enable' its own satisfaction is the verdict's question.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), secs.1, 4",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "A neural attention model for abstractive sentence summarization (Rush, Chopra & Weston, 2015)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "english-gigaword-2003",
+      "candidate": {
+       "name": "English Gigaword",
+       "year": 2003,
+       "domain": "natural language processing",
+       "lens": "L6",
+       "type": "other",
+       "definition": "The English Gigaword corpus: ~10 million news articles with headlines, of which ~4 million article-title pairs became the standard training set for neural summarization - Table 1's incumbent and the scale the parent matches.",
+       "causal_claim": "Filed as the measured-against incumbent: Table 1 heads the comparison with Gigaword's 4 million pairs (the parent's own 4 million is the parity claim), and sec.2 calls it 'the most important summarization resource in recent years' while sec.1 argues its news-only genre is the obstacle. The channel - a role/scale benchmark the parent had to match - is documentary; whether it enables or merely defines is the verdict's question.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), secs.1-2, Table 1",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "English Gigaword"
+      ],
+      "matched_node_id": "english-gigaword-2003",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cnn-daily-mail-abstractive-summarization-dataset-nallapati-e-2016",
+      "candidate": {
+       "name": "CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016)",
+       "year": 2016,
+       "domain": "natural language processing",
+       "lens": "L6",
+       "type": "other",
+       "definition": "Nallapati et al.'s abstractive summarization version of the CNN/Daily Mail corpus (CoNLL 2016): ~300,000 news articles with human-written multi-sentence abstractive summaries, re-purposed from Hermann et al. (2015)'s reading-comprehension corpus - the immediate predecessor corpus for abstractive training in Table 1.",
+       "causal_claim": "Filed as the immediate role predecessor: sec.2 - 'Nallapati et al. (2016) present a new abstractive summarization dataset based on a passage-based question answering corpus constructed by Hermann et al. (2015)... annotated with human-generated, abstractive, multi-sentence summaries'; Table 1 gives it 300,000 pairs against the parent's 4 million. The parent neither trains on it nor derives its mining method from it; the channel is role precedence.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2, Table 1",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "duc-summarization-corpora-nist-2003-2003",
+      "candidate": {
+       "name": "DUC summarization corpora (NIST, 2003)",
+       "year": 2003,
+       "domain": "natural language processing",
+       "lens": "L6",
+       "type": "other",
+       "definition": "The Document Understanding Conference corpora (NIST, 2001-2007; DUC 2003: 624 pairs, DUC 2004: 500 in Table 1): a few hundred newswire articles with single-sentence summaries, the field's evaluation corpora of the pre-neural era.",
+       "causal_claim": "Filed as named prior resources: Table 1 and sec.2 list them, with the judgment that they are 'generally considered too small to train abstractive summarization systems' and were used by past research for validation and testing. The parent validates its own corpus by a 1000-pair manual review (95% correct, sec.3.1), not on DUC.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2, Table 1",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "DUC summarization corpora (NIST, 2003)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "reddit-2005-2005",
+      "candidate": {
+       "name": "Reddit (2005)",
+       "year": 2005,
+       "domain": "natural language processing",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "Reddit (founded 2005): the discussion platform whose community's TL;DR self-summarization convention - authors appending a summary of their own long post - generated the author-written summaries the corpus mines.",
+       "causal_claim": "Arena probe: sec.3 describes the platform and its subreddit structure as the corpus's setting, and sec.1 the mined practice ('the common practice of social media users summarizing their own posts... typically indicates that a summary of the entire post follows'). The consumed artifacts are the community's convention (no document of its own) and Baumgartner's crawl (filed at L8); whether the platform itself enables, or only hosts, is the verdict's question.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), secs.1, 3",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Reddit (2005)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "teaching-machines-to-read-and-comprehend-hermann-et-al-2015-2015",
+      "candidate": {
+       "name": "Teaching machines to read and comprehend (Hermann et al., 2015)",
+       "year": 2015,
+       "domain": "natural language processing",
+       "lens": "L3",
+       "type": "method",
+       "definition": "Hermann et al. (NIPS 2015): the CNN/Daily Mail reading-comprehension corpus (passage-based question answering) - the substrate artifact from which Nallapati et al. (2016) derived the abstractive summarization dataset the parent is compared against.",
+       "causal_claim": "Mediation probe: sec.2's chain is explicit - the summarization dataset is Nallapati et al.'s, 'based on a passage-based question answering corpus constructed by Hermann et al. (2015)'. Whatever reaches the parent from this line arrives through the Nallapati re-versioning; the QA corpus itself was built for a different task.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Teaching machines to read and comprehend (Hermann et al., 2015)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "abstractive-sentence-summarization-with-attentive-recurrent-2016",
+      "candidate": {
+       "name": "Abstractive sentence summarization with attentive recurrent neural networks (Chopra, Auli & Rush, 2016)",
+       "year": 2016,
+       "domain": "natural language processing",
+       "lens": "L23",
+       "type": "method",
+       "definition": "Chopra, Auli & Rush (NAACL 2016): abstractive sentence summarization with attentive RNNs - named once, in sec.1's list of the neural advances that created the training-data demand.",
+       "causal_claim": "Census probe: sec.1 - 'new ground was broken using various kinds of neural network models (Rush et al., 2015; Hu et al., 2015; Chopra et al., 2016; See et al., 2017)'. A member of the demand census; no model, data or result of it is used in the corpus's construction.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.1",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Abstractive sentence summarization with attentive recurrent neural networks (Chopra, Auli & Rush, 2016)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "automatic-generic-document-summarization-based-on-non-negati-2009",
+      "candidate": {
+       "name": "Automatic generic document summarization based on non-negative matrix factorization (Lee et al., 2009)",
+       "year": 2009,
+       "domain": "natural language processing",
+       "lens": "L23",
+       "type": "method",
+       "definition": "Lee et al. (2009): extractive summarization by non-negative matrix factorization - named in sec.2's census of the optimization methods past research applied to the DUC corpora.",
+       "causal_claim": "Census probe: sec.2 - 'past research has focused on the use of various optimization methods - such as non-negative matrix factorization (Lee et al., 2009), support vector regression (Ouyang et al., 2011), and evolutionary algorithms (Alguliev et al., 2013) - to select salient sentences for an extractive summary.' A consumer of the DUC corpora, not an enabler of a mined corpus.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Automatic generic document summarization based on non-negative matrix factorization (Lee et al., 2009)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "applying-regression-models-to-query-focused-multi-document-s-2011",
+      "candidate": {
+       "name": "Applying regression models to query-focused multi-document summarization (Ouyang et al., 2011)",
+       "year": 2011,
+       "domain": "natural language processing",
+       "lens": "L23",
+       "type": "method",
+       "definition": "Ouyang et al. (2011): support-vector-regression models for query-focused multi-document summarization - named in the same sec.2 DUC-era census sentence as Lee et al. (2009).",
+       "causal_claim": "Census probe: a DUC-era extractive method; nothing of it is used in the corpus's construction.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Applying regression models to query-focused multi-document summarization (Ouyang et al., 2011)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "multiple-documents-summarization-based-on-evolutionary-optim-2013",
+      "candidate": {
+       "name": "Multiple documents summarization based on evolutionary optimization algorithm (Alguliev et al., 2013)",
+       "year": 2013,
+       "domain": "natural language processing",
+       "lens": "L23",
+       "type": "method",
+       "definition": "Alguliev et al. (2013): multi-document summarization by evolutionary optimization - named in the same sec.2 DUC-era census sentence.",
+       "causal_claim": "Census probe: a DUC-era extractive method; nothing of it is used in the corpus's construction.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.2",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Multiple documents summarization based on evolutionary optimization algorithm (Alguliev et al., 2013)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:3:9",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 3,
+       "card": {
+        "name": "A neural attention model for abstractive sentence summarization (Rush, Chopra & Weston, 2015)",
+        "aliases": [],
+        "year": 2015,
+        "domain": "natural language processing",
+        "type": "method",
+        "definition": "Rush, Chopra & Weston's ABS (EMNLP 2015): the first neural attention model for abstractive sentence summarization, trained on Gigaword - head of the model line whose data hunger the parent's sec.1 states as its motivation, and one of the two models the parent's sec.4 trains on the new corpus as validation.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 9,
+       "card": {
+        "name": "Abstractive sentence summarization with attentive recurrent neural networks (Chopra, Auli & Rush, 2016)",
+        "aliases": [],
+        "year": 2016,
+        "domain": "natural language processing",
+        "type": "method",
+        "definition": "Chopra, Auli & Rush (NAACL 2016): abstractive sentence summarization with attentive RNNs - named once, in sec.1's list of the neural advances that created the training-data demand.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8056,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:5:8",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 5,
+       "card": {
+        "name": "CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016)",
+        "aliases": [],
+        "year": 2016,
+        "domain": "natural language processing",
+        "type": "other",
+        "definition": "Nallapati et al.'s abstractive summarization version of the CNN/Daily Mail corpus (CoNLL 2016): ~300,000 news articles with human-written multi-sentence abstractive summaries, re-purposed from Hermann et al. (2015)'s reading-comprehension corpus - the immediate predecessor corpus for abstractive training in Table 1.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 8,
+       "card": {
+        "name": "Teaching machines to read and comprehend (Hermann et al., 2015)",
+        "aliases": [],
+        "year": 2015,
+        "domain": "natural language processing",
+        "type": "method",
+        "definition": "Hermann et al. (NIPS 2015): the CNN/Daily Mail reading-comprehension corpus (passage-based question answering) - the substrate artifact from which Nallapati et al. (2016) derived the abstractive summarization dataset the parent is compared against.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8328,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Get to the point: summarization with pointer-generator networks (See, Liu & Manning, 2017)",
+       "year": 2017,
+       "domain": "natural language processing",
+       "lens": "L23",
+       "type": "method",
+       "definition": "See, Liu & Manning (ACL 2017): pointer-generator networks for abstractive summarization - named in sec.1's neural-advances census; dated the parent's own year (2017), so the resolver's year bound is expected to drop it - recorded, not re-dated.",
+       "causal_claim": "Census probe (sec.1), filed with its documented year; the year-granularity bound is the expected outcome.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.1",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "reason": "dated on/after parent year 2017"
+     },
+     {
+      "candidate": {
+       "name": "Recent automatic text summarization techniques: a survey (Gambhir & Gupta, 2017)",
+       "year": 2017,
+       "domain": "natural language processing",
+       "lens": "L23",
+       "type": "other",
+       "definition": "Gambhir & Gupta's 2017 survey of automatic summarization - cited at sec.1 for the proposition that abstractive summarization 'can be considered one of the most challenging variants'; dated the parent's own year (2017), so the resolver's year bound is expected to drop it - recorded, not re-dated.",
+       "causal_claim": "Framing-citation probe (sec.1), filed with its documented year; the year-granularity bound is the expected outcome.",
+       "source_title": "Volske et al., New Frontiers in Summarization 2017 (read in full this session), sec.1",
+       "source_url": "https://www.aclweb.org/anthology/W17-4508"
+      },
+      "reason": "dated on/after parent year 2017"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:3:9",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 3,
+      "card": {
+       "name": "A neural attention model for abstractive sentence summarization (Rush, Chopra & Weston, 2015)",
+       "aliases": [],
+       "year": 2015,
+       "domain": "natural language processing",
+       "type": "method",
+       "definition": "Rush, Chopra & Weston's ABS (EMNLP 2015): the first neural attention model for abstractive sentence summarization, trained on Gigaword - head of the model line whose data hunger the parent's sec.1 states as its motivation, and one of the two models the parent's sec.4 trains on the new corpus as validation.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 9,
+      "card": {
+       "name": "Abstractive sentence summarization with attentive recurrent neural networks (Chopra, Auli & Rush, 2016)",
+       "aliases": [],
+       "year": 2016,
+       "domain": "natural language processing",
+       "type": "method",
+       "definition": "Chopra, Auli & Rush (NAACL 2016): abstractive sentence summarization with attentive RNNs - named once, in sec.1's list of the neural advances that created the training-data demand.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8056,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:5:8",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 5,
+      "card": {
+       "name": "CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016)",
+       "aliases": [],
+       "year": 2016,
+       "domain": "natural language processing",
+       "type": "other",
+       "definition": "Nallapati et al.'s abstractive summarization version of the CNN/Daily Mail corpus (CoNLL 2016): ~300,000 news articles with human-written multi-sentence abstractive summaries, re-purposed from Hermann et al. (2015)'s reading-comprehension corpus - the immediate predecessor corpus for abstractive training in Table 1.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 8,
+      "card": {
+       "name": "Teaching machines to read and comprehend (Hermann et al., 2015)",
+       "aliases": [],
+       "year": 2015,
+       "domain": "natural language processing",
+       "type": "method",
+       "definition": "Hermann et al. (NIPS 2015): the CNN/Daily Mail reading-comprehension corpus (passage-based question answering) - the substrate artifact from which Nallapati et al. (2016) derived the abstractive summarization dataset the parent is compared against.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8328,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }

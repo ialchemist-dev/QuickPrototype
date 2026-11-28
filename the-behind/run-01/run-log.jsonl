@@ -13591,3 +13591,136 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T09:33:23.756616+00:00",
+ "event": "expansion",
+ "session": 93,
+ "expansion": 196,
+ "parent": "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+ "parent_name": "TL;DR dataset (Webis-TLDR-17 corpus) (Völske et al.)",
+ "parent_year": 2017,
+ "parent_depth": 3,
+ "date": "2026-11-28",
+ "provenance": "Session 93, expansion 2 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground at ~51s with the MiniLM embedder; the graph file was read back to confirm stage 'resolved', the two matched ids, the two dropped candidates and the two judge pairs before judging). Resolve: 15 raw -> 13 distinct, 2 matched existing (English Gigaword, Common Crawl), 0 auto-merges, judge queue 2, dropped 2, prefiltered 0. Both judge pairs decided DIFFERENT (Rush et al. 2015 vs Chopra et al. 2016 - successor papers, not one advance; the CNN/Daily Mail summarization dataset vs Hermann et al. 2015 - a derivation, not an instance, per the parent's own sec.2 sentence) and applied (stage 'judged', 13 distinct). The verdicts builder's count check passed (13 evaluations == 13 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors, both NEW: Pushshift Reddit crawl 5.0, LCSTS 4.5; 4 fail-closed partials at 1.5: Rush et al. 2015, English Gigaword, CNN/Daily Mail dataset, Reddit; 7 rejections at 0.0, one of them mediated), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 13, survivors 2, created 2, linked 0, rejected 11, mediated rejections 1: Hermann et al. 2015 via the CNN/Daily Mail summarization dataset). Created-node spot-check PASSED: both new nodes' stored bottleneck, leap and prior_state are non-empty; their sources lists carry the parent-side citations (Volske et al. 2017 secs.2-3, plus Baumgartner et al. ICWSM 2020 for the Pushshift node) - the standing pattern, logged, never hand-edited. Verification applied from work/verification_tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017.json (both edges provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 195's sync_commit = 12a6593d. Rendered with --out run-01/index.html (314 nodes / 403 edges) before syncing, per the session-91 render lesson. This record's own sync_commit rides the sync that carries it. SESSION 93 CLOSES HERE: both ordered expansions (195 Kimura & Kobayashi 1998, 196 TL;DR dataset 2017) are complete with checkpoints after each; session 94 was NOT started, per the session order.",
+ "brief_correction": "The stored parent record carried two warts into this expansion: its stored leap repeats its definition verbatim, and its stored bottleneck frames the news corpora's signal as 'dominated by extractive overlap'. The paper's own framing is genre, not extraction: the obstacle is that all large corpora are news (sec.1), and its closest-work line runs not to the news corpora but to LCSTS - a social-media corpus the stored record does not mention. On the documents, the expansion resolved to the two channels the paper itself documents: the consumed crawl (sec.3) and the transposed collection method (sec.2). The stored record was NOT hand-edited; the correction lives here.",
+ "grounding": "Volske, Potthast, Syed & Stein, 'TL;DR: Mining Reddit to Learn Automatic Summarization', Proc. Workshop on New Frontiers in Summarization (EMNLP 2017), pp. 59-63 (ACL Anthology W17-4508), read IN FULL this session (~3,200 words). Load-bearing passages: sec.1 (neural models' performance 'strongly depends on large amounts of suitable training data'; Table 1's all-news comparison set; 'the apparent lack of genre diversity currently poses an obstacle'); sec.2 (Gigaword as 'the most important summarization resource in recent years'; DUC corpora 'too small to train abstractive summarization systems' and the DUC-era methods census; 'Nallapati et al. (2016) present a new abstractive summarization dataset based on a passage-based question answering corpus constructed by Hermann et al. (2015)'; LCSTS 'perhaps closest to our own work - both in terms of text genre and collection method', 2.5M Weibo pairs, bracketed summaries); sec.3 ('Large crawls of Reddit comments and submissions have recently been made available to the NLP community', footnote 2 = files.pushshift.io/reddit; 'we employ the set of 286 million submissions and 1.6 billion comments posted to Reddit between 2006 and 2016'; the five-step pipeline of Table 2; the 1000-pair validation at 95%); sec.4 ('Preliminary experiments training the models proposed by Rush et al. (2015) and Nallapati et al. (2016) on our dataset'; the CommonCrawl/ClueWeb12 'cursory examination' as future work). Find-verified: 'ROUGE' appears nowhere in the paper - no external metric registers the corpus. Pushshift grounding: Baumgartner et al., 'The Pushshift Reddit Dataset' (ICWSM 2020) - Pushshift 'since 2015 has collected Reddit data and made it available to researchers', dumps at files.pushshift.io/reddit; ArchiveTeam records the 14-month archive completed 2015-07-03.",
+ "parent_record_note": "The parent's stored record was verified complete this session (name, year 2017, type other, depth 3, priority 5.0; stored bottleneck, prior_state and leap all non-empty). Noted wart: the stored leap repeats the stored definition verbatim (a creation wart from its admission) - left untouched, and this expansion's leap record was written from the paper itself.",
+ "scout": {
+  "builder": "run-01/work/build_scout_tldr.py",
+  "raw_filings": 15,
+  "distinct_names_intended": 15,
+  "per_lens": {
+   "L2": 1,
+   "L3": 1,
+   "L4": 1,
+   "L6": 3,
+   "L8": 2,
+   "L21": 1,
+   "L23": 6
+  },
+  "dry_notes_file": "run-01/work/dry_notes_tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017.json",
+  "dry_or_shortfall_lenses": [
+   "L1 (dry: a corpus's substance is its data, filed at L8; its recipe is the authors' own, see L11)",
+   "L2 (shortfall 1: LCSTS is the one ancestor-modified line; Gigaword and CNN/Daily Mail are role foils, filed at L6)",
+   "L4 (shortfall 1: the demand is posed by the model line as a class; Rush et al. 2015 filed as its head and the corpus's sec.4 validator)",
+   "L5 (dry-with-finding: the genre-diversity obstruction is diagnosed by the paper itself at sec.1)",
+   "L7 (dry: no failed predecessor attempt documented; the DUC-era methods are the prior state, filed at L23)",
+   "L9 (dry: no machine named; the crawl's infrastructure rides inside the L8 filing)",
+   "L10 (dry)",
+   "L11 (dry-with-finding: the five-step filtering pipeline is the authors' own construction - the contribution itself, self-carriage)",
+   "L12 (dry)",
+   "L13 (dry-with-finding: three commodity community lists wielded in auxiliary steps - the Reddit bot list, Google's defunct offensive-word list, a Wikipedia interrogative-word list - substitutable inputs, not filed)",
+   "L14 (dry)",
+   "L15 (dry-with-finding: no API consumed - the corpus is built from Pushshift's downloadable dumps, not Reddit's API)",
+   "L16 (dry: Markdown in post texts is explicitly disregarded during construction)",
+   "L17 (dry-with-finding: no external benchmark or metric - 'ROUGE' is find-verified absent from the paper; validation is the authors' own 1000-pair spot-check at 95%)",
+   "L18 (dry)",
+   "L19 (dry-with-finding: the one transfer, LCSTS's method across language and platform, is intra-field and filed at L2)",
+   "L20 (dry-with-finding: the authors are the Webis group and the corpus is named for it - self-carriage; no external carrier)",
+   "L21 (shortfall 1: Reddit is the one institutional filing; no funder is named anywhere in the paper)",
+   "L22 (dry-with-finding: the timing condition - neural models' data hunger - is filed at L4 as the demand)",
+   "scope (all 10 reference-list entries accounted for: Rush 2015 at L4; Hu et al. 2015 filed as its dataset LCSTS at L2; Hermann et al. 2015 at L3; Nallapati et al. 2016 filed as its dataset at L6, its model side heard in the Rush verdict's direction discussion; Chopra 2016, See 2017, Gambhir & Gupta 2017, Lee 2009, Ouyang 2011, Alguliev 2013 at L23. The Alexa ranking is scene-setting color. ClueWeb12 rides inside the Common Crawl filing)"
+  ]
+ },
+ "resolution": {
+  "raw": 15,
+  "distinct": 13,
+  "matched_existing": 2,
+  "auto_merges": 0,
+  "judge_queue": 2,
+  "dropped": 2,
+  "matched_ids": [
+   "english-gigaword-2003",
+   "common-crawl-2008"
+  ],
+  "identity_note": "Two gray-zone pairs, both judged DIFFERENT and applied before verdicts: (1) Rush et al. (2015) vs Chopra, Auli & Rush (2016), similarity 0.8056 - successor papers sharing authors and task, distinct advances a year apart; (2) the CNN/Daily Mail summarization dataset (Nallapati et al., 2016) vs Hermann et al. (2015), similarity 0.8328 - a derivation, not an instance: the summarization dataset re-purposes the QA corpus's stories for a different task, and the parent's sec.2 names them as two artifacts. Keeping them distinct is what allows the Hermann mediation finding to be recorded against the correct node."
+ },
+ "judgments": "Two pairs, both DIFFERENT (see resolution.identity_note); applied via apply-judgments, stage judged, 13 distinct.",
+ "calendar_dropped_at_resolve": [
+  "Get to the point: summarization with pointer-generator networks (See, Liu & Manning, 2017) - dropped by the resolver's year bound (dated the parent's own year, 2017); filed deliberately with its documented year as a sec.1 census member, recorded here, not re-dated.",
+  "Recent automatic text summarization techniques: a survey (Gambhir & Gupta, 2017) - dropped by the resolver's year bound (dated the parent's own year, 2017); filed deliberately with its documented year as the sec.1 framing citation, recorded here, not re-dated."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017.json",
+  "builder": "run-01/work/build_verdicts_tldr.py",
+  "evaluations": 13,
+  "survivors": [
+   "Pushshift Reddit crawl (Baumgartner, 2015) - NEW node, dry-run score 5.0, provisional (depth 4). Consumption admission: sec.3 employs 'the set of 286 million submissions and 1.6 billion comments posted to Reddit between 2006 and 2016' from the crawls 'made available to the NLP community' (footnote 2: files.pushshift.io/reddit); Table 2's raw-input row is the crawl's counts. The SPECIFIC enabling step - without the archive, a decade of Reddit is not obtainable as research data (the API serves limited recent content) - judged by the same tests as any candidate, per the substrate guidance.",
+   "LCSTS (Hu, Chen & Zhu, 2015) - NEW node, dry-run score 4.5, provisional (depth 4). Ancestor admission: the collection method transposed - sec.2's own grading names it 'perhaps closest to our own work - both in terms of text genre and collection method' (2.5M Weibo pairs from bracketed author summaries); the parent's five-step harvest is that recipe re-instantiated on Reddit's TL;DR convention, in English. Q3 scored partial and the verification capped at provisional on the independent-invention risk (see verification.attack_notes)."
+  ],
+  "notable_rejections": [
+   "English Gigaword (2003) - FAIL-CLOSED PARTIAL (1.5, LINK): Table 1's head and sec.2's 'most important summarization resource in recent years' - the scale/role benchmark against which the parent's 4M-pair parity claim is made, and the news-genre foil of sec.1's diagnosis. Directness passes on the documentary channel; the question gate earns only partials (Q10/Q11): it defines the target, it supplies neither content nor method.",
+   "CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016) - FAIL-CLOSED PARTIAL (1.5): the immediate role predecessor (Table 1's 300,000 abstractive pairs). The parent neither trains on it nor derives its method from it - its construction (re-purposing an existing QA corpus) is the opposite of mining a convention. Role precedence is not consumption; directness partial, fails closed.",
+   "A neural attention model for abstractive sentence summarization (Rush, Chopra & Weston, 2015) - FAIL-CLOSED PARTIAL (1.5): the demand side is real (sec.1 grounds the corpus in the model line's data hunger), but the only consumption documented runs the other way - sec.4 trains ABS ON the corpus. A motivation is not a mechanism, and the direction is genuinely mixed on the documents; partial fails closed.",
+   "Reddit (2005) - FAIL-CLOSED PARTIAL (1.5): the arena. The community's TL;DR convention is a genuine enabling condition, but it is not an artifact the platform supplied, and the consumed artifact is Baumgartner's crawl (admitted); between the institution and the corpus stands the crawl. Arena-plus-mediation unresolvable as direct enablement - partial fails closed.",
+   "Teaching machines to read and comprehend (Hermann et al., 2015) - REJECTED mediated_via CNN/Daily Mail abstractive summarization dataset (Nallapati et al., 2016): sec.2's chain is explicit (the summarization dataset is 'based on a passage-based question answering corpus constructed by Hermann et al.'); the QA corpus was built for a different task and reaches this parent only through the re-versioning. It is expected to be heard when the CNN/Daily Mail line is itself expanded.",
+   "Common Crawl (2008) - REJECTED (LINK) on documented non-consumption: sec.4's 'cursory examination' of the web crawls is a future-work sentence ('extracting clean content-summary pairs will likely require more effort'); the corpus was mined from Pushshift's Reddit dumps (sec.3). Examined-and-deferred is not an enabler.",
+   "DUC summarization corpora (NIST, 2003) - REJECTED as named prior resources: 'generally considered too small to train abstractive summarization systems' (sec.2), assigned by the paper to past research's validation use; the parent validates by its own 1000-pair manual review, not on DUC.",
+   "The census filings (Chopra, Auli & Rush 2016, sec.1 demand census; Lee et al. 2009, Ouyang et al. 2011, Alguliev et al. 2013, sec.2 DUC-era methods census) - REJECTED as a class: list members and consumers of the old resources; a passing parenthesis is not instantiation."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017.json",
+  "outcomes": {
+   "pushshift-reddit-crawl-baumgartner-2015-2015": "provisional",
+   "lcsts-hu-chen-zhu-2015-2015": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Pushshift: the Q1 attack tried Reddit's API (limited/recent - confirms the bottleneck), BigQuery's Reddit dataset and the 2015 r/datasets post (both Baumgartner's own archive - the same artifact, not independent prior art); the platform-as-mediator attack failed on the documents (the parent consumes the dumps; the platform was heard separately as the arena). LCSTS: the multiples attack is the live one - independent invention by Volske et al. is genuinely possible, the paper claims closeness not derivation - so necessity stays partial and the outcome is capped at provisional on that ground; the model-line mediation attack failed (sec.2 engages LCSTS directly as dataset and method)."
+ },
+ "totals_after": {
+  "nodes": 314,
+  "edges": 403,
+  "budget": "314/2000",
+  "expansions_done": 196,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 61,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 297,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "ecma-262-first-edition-1997",
+  "netscape-communications-1994",
+  "neural-network-based-language-models-for-highly-inflective-l-2009",
+  "pushshift-reddit-crawl-baumgartner-2015-2015",
+  "state-application-framework-2001"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
