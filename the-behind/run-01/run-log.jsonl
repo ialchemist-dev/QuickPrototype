@@ -18094,3 +18094,139 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record",
  "notes": "Session 110 continues: expansion 230 (Samuel's checkers player, 1959) follows this checkpoint in the same session. THE CEPPELLINI HEARING IS CLOSED - discharged as an admission at the mediator's own expansion, the rediscovery pattern working as designed (cf. Baum at exp-227). The deferred-hearing ledger gains one entry: Yates (1933) is now expected at Tocher's expansion if that node is ever admitted and expanded (Tocher itself was rejected here as an example's procedure, so the path runs through any future parent that admits Tocher). No carried hearings were disturbed."
 }
+{
+ "ts": "2026-11-28T15:17:48Z",
+ "event": "expansion",
+ "session": 110,
+ "expansion": 230,
+ "parent": "samuel-s-checkers-player-samuel-1959-1959",
+ "parent_name": "Samuel's checkers player (Samuel, 1959)",
+ "parent_year": 1959,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "No stored pipeline stage existed for this parent at session start (expansion stage absent; verified directly), so the expansion ran fresh per RUNBOOK section 5. FIX-UP DISCHARGED: exp-229's sync_commit is 17cd7e80 (the sync that carried exp-229's record; exp-228's a3820723 was discharged in exp-229's record). One brief framing corrected by the graph itself before scouting: the brief's phrase 'the polynomial evaluation function and its book-learning lineage' might suggest a book-learning ancestor artifact - on the paper's documents the published master 'book games' are consumed only as a TEST instrument for the generalization procedure (the paper expressly gives 'no weight... to the fact that the moves as listed are presumably the best possible moves'), and no single dated artifact exists to file; the item is dry-noted under L12, not filed. A concept search of the graph before scouting confirmed no Shannon-chess node exists (the exp-216 discipline); the admission below creates it.",
+ "grounding": "The parent paper read in substance (IBM J. Res. Dev. 3(3), pp. 210-229, read via the Feigenbaum & Feldman 'Computers and Thought' reprint text): the Introduction in full (the Shannon attribution, the Strachey similarity sentence, the neural-net survey and its express declination, the census of recent programs), the Basic Program section (minimax and alpha-beta described without attribution; the dead-position sentence citing Turing via Bowden 1953; the king:man footnote naming Strachey's difficulties), the rote-learning section (the 42,000-position catalogue against the 704's storage; the author's footnote dating his first, nonlearning 701 program to 1952), the generalization procedure (delta between saved initial evaluations and backed-up scores; sign-correlation coefficient adjustment; term replacement; the Goodman footnote on induction), and the reference list. Find-verified from the full text: 'von Neumann' occurs nowhere in the paper or its references, although minimax is used throughout - the absence is filed as a candidate so it stands on record. Sections on the second learning series and tentative conclusions were read for channels and contain none beyond those filed (all adjustment devices there are the author's own stabilisation constructions).",
+ "scout": {
+  "raw_filings": 14,
+  "matched_existing": 0,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "distinct": 14,
+  "dropped_year_bound": [],
+  "note": "Document census over the parent paper's own record (the run's established pattern where the pool is a literature carried by a single document): 14 filings across 8 lenses, the remaining lenses and both meta passes dry or shortfall with notes in run-01/work/dry_notes_samuel-s-checkers-player-samuel-1959-1959.json. No filing matched an existing node - this parent's ancestry was entirely unrepresented in the graph. Considered and not filed, with reasons in the dry notes: the published master 'book games' (a test instrument, not a mechanism, and no single dated artifact); the alpha-beta cutoffs as implemented (used but never attributed - no dated candidate can be filed responsibly for an unnamed device; the minimax half of that uncited machinery IS filed, as von Neumann 1928, to put the absence on record); McCarthy's suggested test phrase 'Is the machine still in the game?' (a phrase, not a mechanism); least-squares/regression machinery (find-verified NOT used - the adjustment is sign-correlation, the author's own construction). Resolve ran on MiniLM (sentence-transformers/all-MiniLM-L6-v2), no TF-IDF fallback, judge queue empty; it changed no outcome. Count check: 14 evaluations == 14 distinct candidates from show-distinct; a hand gate check (replicated logic, exp-226 pattern) reproduced the single survivor before the single apply-verdicts."
+ },
+ "admissions": [
+  {
+   "node": "programming-a-computer-for-playing-chess-shannon-1950-1950",
+   "name": "Programming a computer for playing chess (Shannon, 1950)",
+   "link": "NEW",
+   "grade": 6.0,
+   "basis": "NEW node (depth 6, provisional) - the strongest grade of session 110. Channel: citation + instantiation at the program's core. The Introduction attributes the methods by name - 'The general methods for doing this were described by Shannon in 1950, and since then a number of investigators have written checkers or chess programs based upon these methods' - and the artifact Samuel's generalization procedure adjusts is Shannon's device term for term: a scoring polynomial of positional features, its coefficients moved by correlation against the backed-up minimax score, which is likewise Shannon's construct. The parent's leap is defined as modifying exactly this artifact (its stored prior_state is Shannon's architecture with hand-set weights). Q1 pass, Q2 pass, Q3 partial (multiples exist - Strachey's parallel instantiation, Turing's paper programme - but neither is the documented channel; Samuel's sentence names Shannon). The verifier's mediation attack via Strachey fails on the same documents: Samuel presents Strachey as a fellow descendant of Shannon's methods, and the specific object adjusted is Shannon's formulation, not Strachey's fixed-ratio scheme."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "A programme for playing checkers by computer (Strachey, 1952)",
+   "score": 1.0,
+   "kind": "fail-closed partial directness (asserted similarity; the session's most contestable negative)",
+   "basis": "The strongest rejection of this expansion, argued at length because the author himself asserts the kinship: 'The basic program used in these experiments is quite similar to the program described by Strachey in 1952.' But similarity asserted is not transfer documented: no design element is named as adopted, the one concrete consumption is a caution Strachey 'first pointed out' about the king:man ratio - a device Samuel's polynomial sidesteps rather than takes - and the two efforts are near-simultaneous (Samuel's own first checkers program ran on the IBM 701 in 1952, Strachey's publication year, at a different institution on a different machine), with the evaluation mechanisms differing in kind. Partial directness fails closed. RE-HEARING CONDITION, recorded: a Samuel document stating that he adopted Strachey's design or code reopens this edge."
+  },
+  {
+   "name": "Minimax and the theory of games (von Neumann, 1928)",
+   "score": 0.5,
+   "kind": "fail (framework presupposition + find-verified absence)",
+   "basis": "The paper's search is minimax throughout - described, named and used, with alpha-beta cutoffs - yet 'von Neumann' occurs nowhere in its text or reference list (find-verified, both read). The machinery reaches Samuel as the field's common property in Shannon's 1950 formulation, the documented channel (admitted above). Independently, the exp-192 criterion fails: the parent's object is a learning procedure for an evaluation function, not von Neumann's solution set. Filed deliberately so the absence stands on record beside the use."
+  },
+  {
+   "name": "The game of draughts: Turing's dead-position criterion (Bowden, 1953)",
+   "score": 1.0,
+   "kind": "fail-closed partial directness (component of the substrate)",
+   "basis": "The one verbatim textual consumption in the basic program - search extends 'until all of the immediately possible board positions are dead positions, as defined by Turing (Bowden, 1953)' - but the dead-position rule is a component of the search-termination scheme of the hand-built substrate, not a mechanism of the learning leap, which leaves the substrate untouched. Components discrimination (the Aitchison & Silvey / Woodbury-1950 shape from exp-229)."
+  },
+  {
+   "name": "The perceptron: a probabilistic model for information storage and organization in the brain (Rosenblatt, 1958)",
+   "score": 0.5,
+   "kind": "fail (cited-and-declined)",
+   "basis": "The named road not taken: the Introduction surveys the neural-net approach through Rosenblatt and expressly declines it ('At the present time it appears that this approach is very difficult to apply to complex situations'). Samuel's sign-correlation adjustment of polynomial coefficients shares no machinery with the perceptron's error-correction rule. A surveyed alternative expressly not taken is a foil, not an ancestor."
+  },
+  {
+   "name": "Simulation of self-organizing systems by digital computer (Farley & Clark, 1954)",
+   "score": 0.0,
+   "kind": "fail (declined-approach stratum)",
+   "basis": "Named once inside the same declined survey sentence; no element of their net or its modification rule enters the parent's design."
+  },
+  {
+   "name": "The cell assembly problem (Rochester, Holland, Haibt & Duda, 1956)",
+   "score": 0.0,
+   "kind": "fail (declined-approach stratum)",
+   "basis": "Named once ('Rochester et al.') inside the declined survey; its question (do Hebbian assemblies form?) and machinery have no presence in the polynomial-adjustment design."
+  },
+  {
+   "name": "Logical design of the stored-program computer (McCulloch, 1949)",
+   "score": 0.0,
+   "kind": "fail (origin of a declined approach; footnote aside)",
+   "basis": "Present only as the credited origin of the approach Samuel declines ('first suggested by McCulloch') and as a footnote interlocutor on whether machines can be said to learn. Neither is a channel into the program's construction."
+  },
+  {
+   "name": "Chess-playing programs and the problem of complexity (Newell, Shaw & Simon, 1958)",
+   "score": 0.0,
+   "kind": "fail (parallel work, cited for context)",
+   "basis": "One of the Introduction's three citations of recent game programs - the field's contemporary state, against which Samuel's learning contribution is defined by contrast (the NSS program has no learning component). Consumed-vs-compared fails on the compared side."
+  },
+  {
+   "name": "A chess-playing program for the IBM 704 (Bernstein, Roberts, Arbuckle & Belsky, 1958)",
+   "score": 0.0,
+   "kind": "fail (parallel work, cited for context)",
+   "basis": "Same machine (704), same scheme (Shannon's), hand-set evaluation, no learning - a contemporary implementation cited for the field's state. Every shared element traces to Shannon, not to Bernstein et al."
+  },
+  {
+   "name": "A computer program for playing chess end games (Kister et al., 1957)",
+   "score": 0.0,
+   "kind": "fail (parallel work, cited for context)",
+   "basis": "Exact end-game solution on the MANIAC - a disjoint problem class from heuristic search with a learned evaluation; cited in the same census sentence, nothing consumed."
+  },
+  {
+   "name": "IBM 704 computer (IBM, 1954)",
+   "score": 1.0,
+   "kind": "fail-closed partial directness (generic substrate)",
+   "basis": "Real dependence, wrong level: the program was written for the 704 and the rote-learning catalogue's ~42,000 positions are sized against its storage - but the 704 is the era's generic substrate (Bernstein's non-learning chess program ran on the same machine), and Samuel's programme began on the 701, showing portability. Capacity bounds the catalogue; it does not supply the learning mechanism. The specific-enabling-step discrimination cuts against the substrate here."
+  },
+  {
+   "name": "The logic of factorable induction and the principle of utility (Goodman, 1954)",
+   "score": 0.0,
+   "kind": "fail (philosophical footnote)",
+   "basis": "Engaged only in a footnote on which generalizations experience licenses. The generalization mechanism (delta, sign correlation, term replacement) is built from the program's own quantities and owes Goodman's riddle of induction no part."
+  },
+  {
+   "name": "Samuel's IBM 701 checkers program (Samuel, 1952)",
+   "score": 0.5,
+   "kind": "fail (own-version discipline)",
+   "basis": "The parent's own footnote: 'The author's first checkers-playing program (written for the IBM 701 computer in 1952) was nonlearning in its operation except for a very elementary form of rote learning.' The same author's earlier version of the same program - its retained element is his own device carried forward, and the 1959 leap (generalization learning) is exactly what it lacked. Scored Q11 partial to record the genuine lineage honestly; the edge fails on the discipline, not on the history."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_samuel-s-checkers-player-samuel-1959-1959.json",
+  "outcomes": {
+   "programming-a-computer-for-playing-chess-shannon-1950-1950": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "The sole survivor is provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated), and the created node's stored leap, prior_state and bottleneck were spot-checked non-empty. Attacks recorded on the node's record: (1) the Torres y Quevedo El Ajedrecista (1912) attack on Q1 lands only as a scope note (special-purpose endgame automaton, no general method, no channel to Samuel); (2) multiples test - Strachey and Turing's paper programme weaken necessity, already priced into Q3 partial, and neither is the documented channel; (3) date/direction clean (1950 < 1959); (4) the mediation attack via Strachey, the strongest available, fails on the parent's own sentences. Minor grounding note recorded on the verification record: Shannon's paper was characterized from the parent's unambiguous attribution plus the standard bibliographic record rather than re-read cover-to-cover in this pass."
+ },
+ "totals_after": {
+  "nodes": 366,
+  "edges": 474,
+  "budget": "366/2000",
+  "expansions_done": 230,
+  "provisional": 349,
+  "verified": 17
+ },
+ "frontier_head_after": [
+  "programming-a-computer-for-playing-chess-shannon-1950-1950",
+  "structuring-probabilistic-dependences-in-stochastic-language-1994",
+  "tsmc-28-nm-hkmg-process-generation-2011-2011",
+  "the-alternate-reality-kit-smith-1986",
+  "urban-s-psychometric-function-and-phi-gamma-hypothesis-1908-1908"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next expansion's record",
+ "notes": "SESSION 110 CLOSES with this checkpoint. Both frontier-head expansions were completed end to end under full v4 discipline: exp-229 (Orchard & Woodbury 1972) admitted Ceppellini et al. (1955) at 4.5, discharging the carried exp-227 hearing as an admission; exp-230 (Samuel 1959) admitted Shannon (1950) at 6.0, a node the graph had never contained. The deferred-hearing ledger gains one entry from this session: Strachey (1952) at Samuel, on the recorded re-hearing condition (a Samuel document stating he adopted Strachey's design or code). Yates (1933) remains expected at Tocher's level if that node is ever admitted and expanded (noted at exp-229). No carried hearings were otherwise disturbed, and session 111 was not started, per the brief."
+}
