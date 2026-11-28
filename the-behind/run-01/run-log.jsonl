@@ -16279,3 +16279,165 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 102 closes here (expansions 213-214). Session 101's carried hearings are fully discharged: CPL's five mediated channels were admitted (ALGOL 60, lambda calculus as links; Strachey & Wilkes 1961 as a new node) or re-decided on CPL's documents (Atlas, EDSAC 2 fail-closed), and the DCI's Dow Jones hearing was discharged as an admission. New carried items: SGML's own expansion, when its turn comes (it enters the frontier at the head), carries the AAP/TEI standards-lineage hearings recorded here as prospective at this parent; the WSJ archive's expansion carries the Dow Jones composition-system question noted in its verification record. New re-hearing conditions recorded this session: ACL at the DCI (a donor agreement naming the aegis), CD-ROM at the DCI (a full-database CD-ROM release document), FORTRAN at CPL, Strachey & Wilkes 1961 at CPL. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
 }
+
+{
+ "ts": "2026-11-28T12:27:43.546610+00:00",
+ "event": "expansion",
+ "session": 103,
+ "expansion": 215,
+ "parent": "sgml-iso-8879-1986-1986",
+ "parent_name": "SGML (ISO 8879, 1986)",
+ "parent_year": 1986,
+ "parent_depth": 6,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed that the AAP/TEI standards-lineage hearings recorded as prospective at exp-214 (the ACL/DCI expansion) be discharged on SGML's own documents. Both were heard. TEI (1987) was filed deliberately and dropped by the resolver's year bound - it post-dates the parent; recorded, not re-dated (the Switchboard-at-exp-212 pattern). The AAP Electronic Manuscript Project was heard directly and failed closed on DIRECTION: on SGML's documents the project 'developed an initial SGML application' from the 1983 draft onward - the lineage runs SGML -> AAP, not AAP -> SGML, and the feedback the history credits for the 1984 drafts is attributed to the GCA standard, not to the AAP committee. One brief framing corrected by the documents: grouping AAP and TEI as predecessors-in-waiting; both are the parent's downstream applications, and their hearings at THIS parent close accordingly (the AAP tag sets' admitted edge at the DCI, exp-214, is edge-scoped and untouched). Two further document-forced findings the brief did not name: Goldfarb's memoir supplies a two-root tree ('One root - from Rice to GML to my basic SGML invention - joined at the base of the trunk by the other - Tunnicliffe to Scharpf and GenCode'), which fixes the mediation structure of the whole census; and the memoir's DCF section documents a concrete document channel into the standard (the DCF GML User's Guide as the ANSI committee's first working paper; Huckle's starter set as the precursor of ISO 8879's General Document) that the brief's standards-lineage framing did not anticipate - heard as the expansion's most contestable negative. FIX-UP discharged here per house pattern: expansion 214's sync_commit = d0a1b69b (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Two documents, both read in full. (1) SGML Users' Group, 'A Brief History of the Development of SGML' (1990, supplied by Goldfarb). Load-bearing passages: sec.1 - generic coding 'began in the late 1960s'; Tunnicliffe's September 1967 presentation ('the separation of the information content of documents from their format'); Rice's 'universal catalog of parameterized editorial structure tags'; the GenCode concept ('different generic codes were needed for different kinds of documents, and that smaller documents could be incorporated as elements of larger ones'); the GenCode Committee 'later played an instrumental role in the development of the SGML standard'. Sec.2 - GML (1969) 'was based on the generic coding ideas of Rice and Tunnicliffe' and 'introduced the concept of a formally-defined document type with an explicit nested element structure'; Goldfarb's post-GML concepts (short references, link processes, concurrent document types) 'were later to be developed as part of SGML'. Sec.3 - the 1978 ANSI committee (Card chair, Scharpf member) asked Goldfarb 'to lead a project for a text description language standard based on GML'; 'The GCA GenCode committee supported the effort and provided a nucleus of dedicated people for the task of developing Goldfarb's basic language design for SGML into a standard'; GCA 101-1983; 'Major adopters included the US Internal Revenue Service (IRS) and the US Department of Defense'; the 1984 drafts 'with feedback from the GCA standard in hand'; WG8 chaired by James Mason; the final text published using 'an SGML system developed by Anders Berglund, then of the European Particle Physics Laboratory (CERN)'. Sec.4a - the AAP Electronic Manuscript Project (1983-1987) 'developed an initial SGML application for book, journal, and article creation'. (2) Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96; Technical Communication 1999), read in full. Load-bearing: 'though I didn't know about it, the roots of generalized markup were being planted' (of Tunnicliffe, 1967); Steve Furth 'referred me to Stan Rice's work' immediately before 'Later in 1969, together with Ed Mosher and Ray Lorie, I invented Generalized Markup Language (GML)'; the 1971 System X meeting ('where I met Bill Tunnicliffe for the first time'); 'System X evolved into the GenCode[R] concept... GCA and I eventually joined forces in 1978, when development of the SGML standard began'; the DCF section (the 1978 User's Guide 'includes the first published formal document type descriptions', Huckle's starter set 'the precursor of the General Document in ISO 8879', the guide 'became the first working paper of the ANSI SGML committee (X3J6/78/33-01)', markup minimization 'later generalized and formalized in SGML'); the conclusion ('Brian Reid's Scribe system... had independently arrived at several of the key concepts of SGML... Brian, however, personally influenced SGML by encouraging me to write A generalized approach to document markup... That paper eventually became - after a global change from GML to SGML - Annex A of ISO 8879'; the two-root tree). Find-verified absences: 'TeX' and 'troff' occur in neither document; both argue the specific-coding contrast at class level and name no system.",
+ "scout": {
+  "raw_filings": 17,
+  "matched_existing": 0,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "distinct": 15,
+  "dropped_year_bound": 2,
+  "note": "Document-census pattern: every channel the two grounding documents name for SGML is filed exactly once (GML, GenCode, Tunnicliffe 1967, Rice, DCF, Scribe, the 1981 SIGPLAN paper, GCA 101-1983, the AAP project, the ANSI committee, the draft adoptions, ISO 646, Berglund's CERN system), plus the defined-against class specimens the documents argue against as a class (RUNOFF, troff, TeX - filed so the gate, not the scout's silence, judges them), plus TEI filed deliberately at 1987. Dropped by the resolver's year bound, recorded, not re-dated: TEI (1987 - post-dates the parent; its hearing was the year's, not the evidence's) and Berglund's CERN SGML system (1986 - the parent's own year; the equipment that published the standard's text). Resolve ran under the TF-IDF FALLBACK embedder (MiniLM did not load) - recorded per the exp-205 pattern; the fallback errs toward 'different', the safe direction, and with 0 matched existing and an empty judge queue it changed no outcome in this census. Per-lens floors: the pool is a closed documentary census; 23 lens entries filed with dry/shortfall notes in dry_notes_sgml-iso-8879-1986-1986.json rather than padded. Considered and not filed, with reasons in the dry notes: ATMS (1973) and Script/Madnick's language (named for GML and DCF respectively, not for SGML); Goldfarb's post-GML concepts (short references, LINK, concurrent types, the validating parser - the parent's own additions, developed inside the GML line, no separable predecessor artifact); ISO 8613 ODA and DSSSL/HyTime (downstream siblings and children); the CALS programme proper (initiated February 1987 - post-dates the parent; its draft-adoption substance is inside the L22 filing)."
+ },
+ "admissions": [
+  {
+   "node": "generalized-markup-language-gml-1969",
+   "name": "Generalized Markup Language (GML)",
+   "link": false,
+   "grade": 7.0,
+   "basis": "Descent by charter and by design: the ANSI project was commissioned as 'a text description language standard based on GML', its project leader/editor was GML's inventor, and SGML's defining apparatus - the formally-defined document type with explicit nested element structure - is GML's invention, generalized. Goldfarb's post-GML concepts (validating parser, short references, link processes, concurrent document types) were developed inside this line as its continuation: 'At that point SGML was born'."
+  },
+  {
+   "node": "gencode-concept-gca-1970",
+   "name": "GenCode concept (GCA)",
+   "link": false,
+   "grade": 3.0,
+   "basis": "The standards side's root, on the designer's own tree ('Tunnicliffe to Scharpf and GenCode', joining the trunk 'at the base'). Two documented channels: the concept - different generic codes for different kinds of documents (the requirement SGML's DTD mechanism answers) and smaller documents incorporated as elements of larger ones; and the people - the committee 'provided a nucleus of dedicated people for the task of developing Goldfarb's basic language design for SGML into a standard' and 'played an instrumental role in the development of the SGML standard'. The expansion's most contestable admission; its soft formation-period date (c.1970) and the formation-vs-concept attack are recorded at full strength in its verification record, with its re-hearing condition."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "Document Composition Facility (DCF, 1978)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. The channel is concrete and documentary - the DCF GML User's Guide (1978) was 'the first working paper of the ANSI SGML committee', its published DTDs were the first in print, and Huckle's starter set is 'the precursor of the General Document in ISO 8879' - but what crossed in each document was GML's own design in product dress (the starter set is GML's tag set; the DTD line descends from Mosher's 1971 TCAM DTD inside the research line). Directness scored partial - the ancestor's channel, one product removed - and partial fails closed. Re-hearing condition: a committee document showing a DCF-specific mechanism, not present in GML's research form, entering the standard's text."
+  },
+  {
+   "name": "Tunnicliffe's generic coding presentation (1967)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA GenCode concept (GCA), on the designer's own tree and memoir: Goldfarb did not know of the presentation when inventing GML (1969), met the movement in 1971 through the GCA committee the presentation created, and the efforts joined in 1978 as committee work. The credited founding statement of generic coding is expected at GenCode's own expansion, where it is the immediate predecessor."
+  },
+  {
+   "name": "Stanley Rice's standardized editorial structures (1969)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA GML, on both documents: the SGMLUG history states GML 'was based on the generic coding ideas of Rice and Tunnicliffe', the memoir dates Furth's referral to Rice's work immediately before the 1969 invention, and Goldfarb's tree runs the root 'from Rice to GML to my basic SGML invention'. The direct hearing belongs to GML's own expansion."
+  },
+  {
+   "name": "AAP Electronic Manuscript Project (1983)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "DIRECTION. The carried hearing from exp-214, discharged on this parent's documents: the project 'developed an initial SGML application' - it consumed the draft standard (1983 onward) to build its DTDs, and no SGML document records an AAP mechanism entering the standard's text (the 1984 feedback is credited to the GCA standard; the user-reaction channel to the Users' Group and GCA). A child cannot be its parent's enabler. Edge-scoped: the AAP tag sets' admitted edge at the DCI (exp-214) is untouched."
+  },
+  {
+   "name": "Scribe (Reid, 1980)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "Independent arrival, on the designer's own testimony ('had independently arrived at several of the key concepts of SGML'), plus a documented but non-mechanism channel: Reid's encouragement prompted the 1981 paper that became the standard's Annex A - an encouragement to publish the parent's own rationale is not a consumed mechanism. Scribe stands in this run as the multiples-test witness against GML's necessity-in-history (recorded in GML's verification), not as an ancestor."
+  },
+  {
+   "name": "GCA 101-1983 (SGML industry draft standard)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "Own-version: the sixth working draft IS the parent's text in progress, published by the project's own industry arm mid-formation; its adoptions and feedback cycle are the parent's gestation. The Strachey & Wilkes distinction (exp-213) does not apply - that paper predated the project it founded and addressed a different community."
+  },
+  {
+   "name": "ANSI Computer Languages for the Processing of Text committee (1978)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Formation: the parent IS this apparatus's product (its successors X3V1.8 and ISO WG8 filed as the same body reorganized). The institutions act through the specific artifacts they carried - GML's design and the GenCode nucleus - each heard separately (ACL-at-DCI parity, exp-214; CSR Committee, exp-212)."
+  },
+  {
+   "name": "Adoption of the SGML drafts by the IRS, DoD and EC Publications Office (1983)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Demand-side ripening (L22's standing expectation): the adoptions strengthened the effort's hand, but the drafting was chartered in 1978 and ISO-authorized on its own track, and no adopted requirement is documented entering the standard's text. The CALS programme proper (February 1987) post-dates the parent and is downstream."
+  },
+  {
+   "name": "Goldfarb, 'A generalized approach to document markup' (1981)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Own-version: the parent's rationale text in earlier dress, written by the parent's editor mid-drafting and converted into Annex A by 'a global change from GML to SGML'. A document cannot be its own predecessor (OOPC at exp-205; the CPL compiler subset at exp-211)."
+  },
+  {
+   "name": "RUNOFF (Saltzer, 1964)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The type specimen of 'specific coding', the class both grounding documents define generalized markup against - but they name the class, not the system: no document shows a RUNOFF-specific mechanism or limit entering SGML's design. Importance as a class representative is not a channel."
+  },
+  {
+   "name": "TeX (Knuth, 1978)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Find-verified absence from both grounding documents, and a different problem (typesetting quality, not document structure): the descriptive/procedural contrast with TeX is later historiography, not a documented channel."
+  },
+  {
+   "name": "troff (Ossanna, 1973)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "The specific-coding class's later specimen; unnamed in the parent's documents; the class hearing is recorded at RUNOFF."
+  },
+  {
+   "name": "ISO 646 character code (1972)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "Generic infrastructure: the repertoire the parent's declaration machinery references, as does every character-coded standard of the era, with no SGML-specific mechanism tied to it - the anti-PDP-7 (exps 209/213), judged on the gate's tests, not on its category."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_sgml-iso-8879-1986-1986.json",
+  "outcomes": {
+   "generalized-markup-language-gml-1969": "provisional",
+   "gencode-concept-gca-1970": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Both survivors provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). GML: multiples (Scribe, GenCode line) recorded against necessity-in-history while Q3 stands on the charter; the admission rests on two retrospectives (1990/1996) without independent reading of the contemporary GML texts - wart and re-hearing condition recorded. GenCode: the expansion's most contestable admission - Q1 conceded partial, date a soft formation period (c.1970), and the formation-vs-concept mediation attack answered on the concept's two recognitions plus the documented drafting nucleus; first in line for rehearing on the stated conditions."
+ },
+ "totals_after": {
+  "nodes": 350,
+  "edges": 451,
+  "budget": "350/2000",
+  "expansions_done": 215,
+  "provisional": 333,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 71,
+   "6": 53,
+   "7": 36,
+   "8": 23,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 3,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "generalized-markup-language-gml-1969",
+  "advantage-updating-baird-1993",
+  "complexity-of-reinforcement-learning-whitehead-1991",
+  "ieee-754-binary-floating-point-arithmetic-1985-1985",
+  "maclisp-1966"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 103 continues: expansion 216 (Advantage updating, Baird, 1993) follows this checkpoint in the same session. New carried hearings: GML's own expansion carries the Rice direct hearing recorded as mediated here (and, inside it, the law-office integration occasion); GenCode's own expansion carries the Tunnicliffe direct hearing; the DCF re-hearing condition (a DCF-specific mechanism in a committee document) and the GenCode re-hearing conditions stand on the record. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
+}
