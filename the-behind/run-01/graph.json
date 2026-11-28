@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T12:39:15+00:00",
-  "expansions_done": 216,
-  "raw_candidates_seen": 8983,
+  "updated_at": "2026-11-28T12:48:35+00:00",
+  "expansions_done": 217,
+  "raw_candidates_seen": 8989,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -36019,6 +36019,30 @@
     "reason": "mediated_via: ACP network extensions (Baird & Klopf, 1993)",
     "at": "2026-11-28T12:38:40+00:00",
     "mediated_via": "ACP network extensions (Baird & Klopf, 1993)"
+   },
+   {
+    "parent_id": "generalized-markup-language-gml-1969",
+    "name": "Tunnicliffe's generic coding presentation (1967)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:48:08+00:00"
+   },
+   {
+    "parent_id": "generalized-markup-language-gml-1969",
+    "name": "CP-67 (IBM, 1967)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:48:08+00:00"
+   },
+   {
+    "parent_id": "generalized-markup-language-gml-1969",
+    "name": "Script (Madnick, 1968)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:48:08+00:00"
+   },
+   {
+    "parent_id": "generalized-markup-language-gml-1969",
+    "name": "International Business Machines (IBM)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:48:08+00:00"
    }
   ]
  },
@@ -46228,7 +46252,7 @@
    "prior_state": "Electronic manuscripts carried application-specific control codes and macros ('specific coding'); each program demanded its own markup in the same files.",
    "status": "provisional",
    "depth": 7,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.0,
    "sources": [
     {
@@ -46330,6 +46354,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T12:38:40+00:00"
+  },
+  "stanley-rice-s-standardized-editorial-structures-1968": {
+   "id": "stanley-rice-s-standardized-editorial-structures-1968",
+   "name": "Stanley Rice's standardized editorial structures",
+   "aliases": [],
+   "year": 1968,
+   "domain": "publishing",
+   "type": "method",
+   "definition": "New York book designer Stanley Rice's published proposal (articles, late 1960s) for standardized editorial structures: a universal catalog of parameterized style macros keyed to the structural elements of publications, so a manuscript's components are identified by what they are rather than by how one producer formats them.",
+   "bottleneck": "Before Rice's standardized editorial structures, a manuscript's components could be identified only by the formatting one producer intended for them, because no published scheme named text by its editorial structure - parameterized by structure rather than by appearance - for designers and system builders to adopt.",
+   "leap": "Rice's articles proposed a universal catalog of parameterized 'editorial structure' tags: publications analyzed as structures (chapter openings, footnotes, tables, mathematical displays - simple or complex, flexible or inflexible) whose well-recognized traditional forms could be named once and rendered per parameters - the publishing-side invention of structure-keyed generic markup.",
+   "prior_state": "Book manuscripts were prepared with producer-specific formatting instructions; a component's structural identity existed only implicitly, in the particular style one publishing house applied to it.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 3.5,
+   "sources": [
+    {
+     "title": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section (the Furth referral); SGML Users' Group, 'A Brief History of the Development of SGML' (1990), secs.1-2",
+     "url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial verification, expansion 217 (GML, 1969). Outcome provisional. (1) Q1 attack: Rice flipped no impossibility himself - his was a published proposal with no system, and Q1 was already scored partial on exactly that ground; the attack confirms the partial rather than killing the edge, since the gate rests on Q2 (the universal catalog) plus the documented consumption. (2) Multiples test on Q3: generic coding has a genuine multiple - Tunnicliffe's 1967 presentation posed the same separation independently, and the GCA line developed it without Rice. The idea was ripe in the era; Q3 was scored partial for precisely this reason (necessity in the history that happened, via the Furth referral; substitutability in the space of histories). The node claims Rice was the channel taken, not the only channel conceivable - the claim survives the multiples test in that narrowed form, and never as verified on necessity grounds. (3) Date and causal direction: direction is documented as a sequence in the inventor's memoir - articles in print, Furth's referral during the integration discussions, 'Later in 1969' the invention. DATE WART, recorded at full strength: the articles are dated 1968 by approximation. Both primary histories say only 'late 1960s'; a secondary scholarly history places Rice's writing 'around the same time' as Tunnicliffe's 1967 proposal; the 1969 referral proves a published body existed before the invention. Exp-215's filing dated this candidate '(1969)' - that was the referral's year, not a documented publication year, and the correction is logged in exp-217's run-log record. If a future session obtains the articles and dates the first of them to 1969 itself, the within-year precedence (articles, then referral, then invention) is documented in the memoir and the edge survives as a same-year channel on that evidence - but the node's year would need revisiting, and this edge is first in line for that rehearing. (4) Mediation attack: three mediators attempted. (a) Steve Furth - the referral's speaker; a person is a carrier (R10), not a milestone, and the run files carriage under the artifact carried (the CPL/lambda-calculus pattern at exp-213, where the carrier sat on the design team itself). (b) Tunnicliffe / the GenCode line - refuted by the memoir's timeline: unknown to Goldfarb until 1971, independent until 1978. (c) The law-office project - it posed the problem but carried none of Rice's content; the content arrived in the Furth conversation, which the project occasioned but did not mediate in the milestone sense. No mediation lands. SECOND WART: Rice's articles were not independently read this session (not obtainable online); the content characterization rests on Goldfarb's memoir, the SGML Users' Group history, and Rice's text as quoted in the typesetter history. The admission is provisional for both warts; it is the carried hearing from exp-215, discharged here as an admission on GML's own documents.",
+    "at": "2026-11-28T12:48:35+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T12:48:08+00:00"
   }
  },
  "edges": [
@@ -90804,6 +90857,103 @@
     "counterfactual": "Remove White & Sofge and the parent's storage design loses its only documented precedent: in the parent's own taxonomy of stored quantities (sec.2, Table 1), theirs is the sole prior scheme storing a second, variation-type function alongside V. The parent keeps exactly that architecture - V plus a stored local variation - replaces the change with the policy-bearing advantage, and supplies the correct update the precedent lacked, proving the precedent's obvious update diverges (Figure 2). A design whose nearest relative must be refuted-and-repaired is a modification, not a coincidence.",
     "mediator": null,
     "evidence": "Mediation attack run: the split-storage idea could in principle have reached Baird through Klopf's ACP programme (which stored multiple quantities), but the parent's text names White & Sofge - and only them - for this idea ('The idea of storing both the value function and the change in value... was found to be useful in one application by White and Sofge (1990, 1992)'), and the documented channel governs. This is the expansion's most contestable admission: the kinship is the two-function split, while the advantage itself is defined from Q, not from the change in value; the grade reflects the thinness (one application, two sentences, one table row). The Hochreiter condition does not kill it: what crosses is not a diagnosis but a representational mechanism - a storage architecture - which the parent instantiates."
+   }
+  },
+  {
+   "predecessor_id": "stanley-rice-s-standardized-editorial-structures-1968",
+   "successor_id": "generalized-markup-language-gml-1969",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Rice's scheme by itself solved no sharing problem: it was a designer's published proposal with no system and no formally-defined document type. What it made available was the concept the parent consumed - that markup can identify structure instead of commanding format.",
+     "source": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section",
+     "falsification": "This partial rises if a Rice text shows a worked mechanism for sharing one manuscript across applications."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The proposal is explicitly universal: 'a universal catalog of parameterized editorial structure tags' (history sec.1), and Rice's own text ranges over all publication structures - 'Editorial structures may be simple or complex, and flexible or inflexible... Most structures have well recognized traditional forms, such as those found in A Manual of Style'. One scheme for every kind of publication is a space-opening claim, not a single fix.",
+     "source": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990); 'The electric typesetter: the origins of computing in typography' (Rice quoted from his articles)",
+     "falsification": "This pass dies if Rice's articles addressed only one publishing house's style sheet."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Generic coding was independently in the air (Tunnicliffe, 1967), so the concept could in principle have reached a designer by another route; but no other channel reached Goldfarb - his memoir records exactly one input, Furth's referral to Rice, immediately before the invention. Necessity in the history that happened, substitutability in the space of histories.",
+     "source": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section",
+     "falsification": "This partial falls if a document shows Goldfarb encountering the generic-coding idea from another source before the Furth conversation; it rises if Rice's text is shown to be the only published form of the idea by 1969."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Parameterized styles promise reuse of one structural analysis across many renderings, but Rice deployed nothing and no cost figure exists at his level.",
+     "source": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990)",
+     "falsification": "Rises if a contemporary account prices the saving Rice's scheme produced."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurement or observability claim attaches to Rice's proposal.",
+     "source": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section",
+     "falsification": "Would change if Rice's text proposed a way to measure document structure; none is recorded."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Rice supplied an explanatory model: documents as data structures - 'essentially looking at documents as data structures, something that could perhaps be programmed' (typesetter history's gloss, with Rice's classification of structures by complexity and flexibility quoted). It is the model Furth invoked when he argued markup could have uses beyond formatting, and the model GML's design operationalizes.",
+     "source": "'The electric typesetter: the origins of computing in typography' (Rice quoted from his articles); Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section",
+     "falsification": "This pass dies if Rice's articles are shown to be a mere style taxonomy with no structural-processing implication."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Parameterized style macros are a composability seed - one named structure, many renderings - but Rice published no interface that others built on in his own form; the interface is the parent's addition.",
+     "source": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990)",
+     "falsification": "Rises if a pre-1969 system is shown implementing Rice's catalog."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The idea's reach beyond its own field is the channel itself: a book-design proposal consumed by a computing project (this edge). Within publishing it remained a proposal.",
+     "source": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section",
+     "falsification": "This partial dies if the referral is shown to have carried only a phrase, not the scheme."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed effect is documented for Rice's proposal.",
+     "source": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section",
+     "falsification": "Would change if a contemporary account showed Rice's scheme shortening a production loop; none is recorded."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Rice's catalog displaced no incumbent default; producer-specific house styles remained the standard path until systems such as GML acted on the idea.",
+     "source": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990)",
+     "falsification": "Would change if a publisher is shown to have adopted Rice's catalog as its default before 1969; none is recorded."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "In this lineage Rice is a trunk: the inventor's own tree runs 'from Rice to GML to my basic SGML invention' (memoir, as recorded at exp-215). In publishing at large he was a side branch - the GCA line ran through Tunnicliffe and Scharpf, not Rice.",
+     "source": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section",
+     "falsification": "Falls if the memoir's tree is shown to be a courtesy genealogy contradicted by the design documents."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once structure-keyed markup existed in print it could not be un-thought, but at Rice's level nothing locked in; irreversibility belongs to the systems that implemented it.",
+     "source": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990)",
+     "falsification": "Rises if the articles are shown to have been taken up as a standing reference by producers before 1969."
+    }
+   },
+   "score": 3.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:48:08+00:00",
+   "leap": {
+    "prior_state": "Electronic manuscripts carried application-specific procedural markup ('specific coding'): in the law-office integration the text editor, the page composition program and the information retrieval system each required different procedural markup in the same document files, so no document could be shared between subsystems - the programs could be made to run together (over CP-67) but not to read together.",
+    "jump": "GML (1969) gave the document one logical representation: descriptive tags identifying the structure and purpose of each text component, governed by a formally-defined document type with an explicit nested element structure, designed from the first to be translated into each subsystem's own codes - so editing, formatting and retrieval could share the same documents.",
+    "date": 1969
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Rice's articles and the Furth conversation has no object: Goldfarb's stated first instinct was to remove the procedural markup outright, which destroys the information the other applications needed; Furth's counter-argument - markup has other uses, because a component's structure can be identified (his example: figuring out that some text is a caption because it is centered) - was made by referring him to Rice's published work, and 'Later in 1969' the invention followed. The descriptive-tag design is the referral's content taken up and formalized.",
+    "mediator": null,
+    "evidence": "Memoir: 'I mentioned that I thought it best to remove the procedural markup. He said something about that being wrong because the markup could have other uses... and referred me to Stan Rice's work. The rest, as they say, is history... Later in 1969, together with Ed Mosher and Ray Lorie, I invented Generalized Markup Language (GML) to solve the data representation problem.' The mediation attack - that the real source was Tunnicliffe/GenCode and Rice a courtesy name - fails on the same memoir: Goldfarb did not know Tunnicliffe's work ('though I didn't know about it'), first met him in 1971, and states the GCA 'continued to work independently of our efforts in Cambridge' until 1978. Furth is a carrier (a person, R10), not a milestone mediator; the enabler is the published scheme he carried into the room."
    }
   }
  ],
@@ -399944,6 +400094,213 @@
        "year": 1993
       },
       "reason": "dated on/after parent year 1993"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "generalized-markup-language-gml-1969": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Rice's articles directly enabled GML's leap through a documented referral at the design moment: Goldfarb, proposing to remove the procedural markup, was redirected by Steve Furth - the markup could have other uses, such as figuring out that some text is a caption because it is centered - and Furth 'referred me to Stan Rice's work'; 'Later in 1969', Goldfarb, Mosher and Lorie invented GML, and the SGML Users' Group history states GML 'was based on the generic coding ideas of Rice and Tunnicliffe'. Rice's content - parameterized style macros based on the structural elements of publications - is the concept GML's structure-identifying tags take up: markup that identifies what a text component is, so every application can process it in its own way. Filed at 1968: both histories date the articles only to 'the late 1960s' (the typesetter history places the writing 'around the same time' as Tunnicliffe's 1967 proposal), and the 1969 referral proves a published body existed before the invention; exp-215's '(1969)' dated the referral, not the publication - the correction is logged in the run-log record.",
+     "definition": "New York book designer Stanley Rice's published proposal (articles, late 1960s) for standardized editorial structures: a universal catalog of parameterized style macros keyed to the structural elements of publications, so a manuscript's components are identified by what they are rather than by how one producer formats them.",
+     "domain": "publishing",
+     "lens": "L19",
+     "name": "Stanley Rice's standardized editorial structures",
+     "source_title": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section (the Furth referral); SGML Users' Group, 'A Brief History of the Development of SGML' (1990), secs.1-2",
+     "source_url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522",
+     "type": "method",
+     "year": 1968
+    },
+    {
+     "causal_claim": "Tunnicliffe's September 1967 presentation - the separation of the information content of documents from their format - is credited with starting the generic coding movement, and the SGML Users' Group history states GML 'was based on the generic coding ideas of Rice and Tunnicliffe'; filed so the channel question is judged on GML's own documents, where Goldfarb's memoir states he did not know of it ('though I didn't know about it, the roots of generalized markup were being planted') and first met Tunnicliffe in 1971, at the System X meeting, two years after the invention.",
+     "definition": "William Tunnicliffe's 1967 presentation at the Canadian Government Printing Office posing the separation of a document's information content from its format - the founding statement of generic coding.",
+     "domain": "publishing",
+     "lens": "L4",
+     "name": "Tunnicliffe's generic coding presentation (1967)",
+     "source_title": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990), sec.1; Goldfarb, 'The Roots of SGML' (1996), pre-GML and System X passages",
+     "source_url": "https://xml.coverpages.org/sgmlhist0.html",
+     "type": "method",
+     "year": 1967
+    },
+    {
+     "causal_claim": "CP-67 directly enabled GML's leap as the platform on which the parent's problem was posed: the law-office project had to integrate a text editing application, an information retrieval system and a page composition program that 'couldn't even run on the same operating system'; CP-67, 'an early hypervisor that allowed multiple concurrent operating systems to run on the same computer and share files', got the programs talking to one another - and only then did the blocker surface in its exact form: 'they each required different procedural markup in the document files', the data-representation problem GML was invented to solve (Goldfarb memoir).",
+     "definition": "IBM's CP-67 (Cambridge Scientific Center, 1967): an early hypervisor that ran multiple concurrent operating systems on one computer and let them share files - the platform that made the law-office integration attempt, and so its markup failure, possible.",
+     "domain": "operating systems",
+     "lens": "L9",
+     "name": "CP-67 (IBM, 1967)",
+     "source_title": "Goldfarb, 'The Roots of SGML' (1996), 'Integrated Text Processing and GML' section",
+     "source_url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522",
+     "type": "other",
+     "year": 1967
+    },
+    {
+     "causal_claim": "Script directly enabled GML's leap as the formatting side's incumbent code system in the integration: GML was designed from the first as a common and general markup to be 'translated' into 'Script [formatting] controls, ATMS & TERMTEXT & MTSC [formatting] codes, STAIRS [information retrieval descriptor] paragraph codes' (Mosher's recollection, in Goldfarb's memoir), and by 1971 tag interpretation and multiple use had been implemented 'using Script set-symbols' - Script's controls are the procedural markup GML's logical representation had to reproduce on the composition side.",
+     "definition": "IBM's Script (Stuart Madnick, Cambridge Scientific Center, c.1968): the procedural formatting language whose control codes drove page composition - one of the incompatible procedural markups the law-office documents had to carry, and a named translation target of GML.",
+     "domain": "document processing software",
+     "lens": "L13",
+     "name": "Script (Madnick, 1968)",
+     "source_title": "Goldfarb, 'The Roots of SGML' (1996), Mosher quotation in 'Integrated Text Processing and GML'",
+     "source_url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522",
+     "type": "other",
+     "year": 1968
+    },
+    {
+     "causal_claim": "The project directly enabled GML's leap by posing its exact problem: an IBM research project on integrated law office information systems (SGML Users' Group history) required a text editing application, an information retrieval system and a page composition program to share one repository of documents - selected by queries, revised in the editor, rendered by the composition program - and the integration attempt discovered that 'they each required different procedural markup in the document files'. Filed at the parent's own year (1969); the resolver's year bound is expected to drop it, recorded, not re-dated - its substance is heard in the leap record and the Rice verdict.",
+     "definition": "IBM Cambridge Scientific Center's 1969 research project on integrated law office information systems: integrate text editing, information retrieval and page composition over one shared document repository - the project inside which, and for which, GML was invented.",
+     "domain": "document systems research",
+     "lens": "L21",
+     "name": "Integrated law office information systems project (IBM, 1969)",
+     "source_title": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990), sec.2; Goldfarb, 'The Roots of SGML' (1996)",
+     "source_url": "https://xml.coverpages.org/sgmlhist0.html",
+     "type": "other",
+     "year": 1969
+    },
+    {
+     "causal_claim": "IBM directly enabled GML's leap as the carrying institution: it convinced Goldfarb to join its Cambridge Scientific Center 'to figure out how to apply computers to legal practice', decided the markup work 'had serious product potential' (forbidding any writing about TDL/GML in the team's 1970 ASIS paper), and shifted the project's focus from the law office to text processing in general under the name 'Integrated Text Processing' - the institutional acts inside which the invention occurred.",
+     "definition": "International Business Machines Corporation (founded 1911): the institution that employed GML's inventors, commissioned the law-office integration project at its Cambridge Scientific Center, and carried the result toward products.",
+     "domain": "computing industry",
+     "lens": "L21",
+     "name": "International Business Machines (IBM)",
+     "source_title": "Goldfarb, 'The Roots of SGML' (1996), 'Integrated Text Processing and GML' section",
+     "source_url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522",
+     "type": "institution",
+     "year": 1911
+    }
+   ],
+   "resolution": {
+    "embedder": "tfidf-fallback",
+    "distinct": [
+     {
+      "cand_id": "stanley-rice-s-standardized-editorial-structures-1968",
+      "candidate": {
+       "causal_claim": "Rice's articles directly enabled GML's leap through a documented referral at the design moment: Goldfarb, proposing to remove the procedural markup, was redirected by Steve Furth - the markup could have other uses, such as figuring out that some text is a caption because it is centered - and Furth 'referred me to Stan Rice's work'; 'Later in 1969', Goldfarb, Mosher and Lorie invented GML, and the SGML Users' Group history states GML 'was based on the generic coding ideas of Rice and Tunnicliffe'. Rice's content - parameterized style macros based on the structural elements of publications - is the concept GML's structure-identifying tags take up: markup that identifies what a text component is, so every application can process it in its own way. Filed at 1968: both histories date the articles only to 'the late 1960s' (the typesetter history places the writing 'around the same time' as Tunnicliffe's 1967 proposal), and the 1969 referral proves a published body existed before the invention; exp-215's '(1969)' dated the referral, not the publication - the correction is logged in the run-log record.",
+       "definition": "New York book designer Stanley Rice's published proposal (articles, late 1960s) for standardized editorial structures: a universal catalog of parameterized style macros keyed to the structural elements of publications, so a manuscript's components are identified by what they are rather than by how one producer formats them.",
+       "domain": "publishing",
+       "lens": "L19",
+       "name": "Stanley Rice's standardized editorial structures",
+       "source_title": "Goldfarb, 'The Roots of SGML: A Personal Recollection' (SGML '96), 'Integrated Text Processing and GML' section (the Furth referral); SGML Users' Group, 'A Brief History of the Development of SGML' (1990), secs.1-2",
+       "source_url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522",
+       "type": "method",
+       "year": 1968
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Stanley Rice's standardized editorial structures"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "tunnicliffe-s-generic-coding-presentation-1967-1967",
+      "candidate": {
+       "causal_claim": "Tunnicliffe's September 1967 presentation - the separation of the information content of documents from their format - is credited with starting the generic coding movement, and the SGML Users' Group history states GML 'was based on the generic coding ideas of Rice and Tunnicliffe'; filed so the channel question is judged on GML's own documents, where Goldfarb's memoir states he did not know of it ('though I didn't know about it, the roots of generalized markup were being planted') and first met Tunnicliffe in 1971, at the System X meeting, two years after the invention.",
+       "definition": "William Tunnicliffe's 1967 presentation at the Canadian Government Printing Office posing the separation of a document's information content from its format - the founding statement of generic coding.",
+       "domain": "publishing",
+       "lens": "L4",
+       "name": "Tunnicliffe's generic coding presentation (1967)",
+       "source_title": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990), sec.1; Goldfarb, 'The Roots of SGML' (1996), pre-GML and System X passages",
+       "source_url": "https://xml.coverpages.org/sgmlhist0.html",
+       "type": "method",
+       "year": 1967
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Tunnicliffe's generic coding presentation (1967)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cp-67-ibm-1967-1967",
+      "candidate": {
+       "causal_claim": "CP-67 directly enabled GML's leap as the platform on which the parent's problem was posed: the law-office project had to integrate a text editing application, an information retrieval system and a page composition program that 'couldn't even run on the same operating system'; CP-67, 'an early hypervisor that allowed multiple concurrent operating systems to run on the same computer and share files', got the programs talking to one another - and only then did the blocker surface in its exact form: 'they each required different procedural markup in the document files', the data-representation problem GML was invented to solve (Goldfarb memoir).",
+       "definition": "IBM's CP-67 (Cambridge Scientific Center, 1967): an early hypervisor that ran multiple concurrent operating systems on one computer and let them share files - the platform that made the law-office integration attempt, and so its markup failure, possible.",
+       "domain": "operating systems",
+       "lens": "L9",
+       "name": "CP-67 (IBM, 1967)",
+       "source_title": "Goldfarb, 'The Roots of SGML' (1996), 'Integrated Text Processing and GML' section",
+       "source_url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522",
+       "type": "other",
+       "year": 1967
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "CP-67 (IBM, 1967)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "script-madnick-1968-1968",
+      "candidate": {
+       "causal_claim": "Script directly enabled GML's leap as the formatting side's incumbent code system in the integration: GML was designed from the first as a common and general markup to be 'translated' into 'Script [formatting] controls, ATMS & TERMTEXT & MTSC [formatting] codes, STAIRS [information retrieval descriptor] paragraph codes' (Mosher's recollection, in Goldfarb's memoir), and by 1971 tag interpretation and multiple use had been implemented 'using Script set-symbols' - Script's controls are the procedural markup GML's logical representation had to reproduce on the composition side.",
+       "definition": "IBM's Script (Stuart Madnick, Cambridge Scientific Center, c.1968): the procedural formatting language whose control codes drove page composition - one of the incompatible procedural markups the law-office documents had to carry, and a named translation target of GML.",
+       "domain": "document processing software",
+       "lens": "L13",
+       "name": "Script (Madnick, 1968)",
+       "source_title": "Goldfarb, 'The Roots of SGML' (1996), Mosher quotation in 'Integrated Text Processing and GML'",
+       "source_url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522",
+       "type": "other",
+       "year": 1968
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Script (Madnick, 1968)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "international-business-machines-ibm-1911",
+      "candidate": {
+       "causal_claim": "IBM directly enabled GML's leap as the carrying institution: it convinced Goldfarb to join its Cambridge Scientific Center 'to figure out how to apply computers to legal practice', decided the markup work 'had serious product potential' (forbidding any writing about TDL/GML in the team's 1970 ASIS paper), and shifted the project's focus from the law office to text processing in general under the name 'Integrated Text Processing' - the institutional acts inside which the invention occurred.",
+       "definition": "International Business Machines Corporation (founded 1911): the institution that employed GML's inventors, commissioned the law-office integration project at its Cambridge Scientific Center, and carried the result toward products.",
+       "domain": "computing industry",
+       "lens": "L21",
+       "name": "International Business Machines (IBM)",
+       "source_title": "Goldfarb, 'The Roots of SGML' (1996), 'Integrated Text Processing and GML' section",
+       "source_url": "https://www.thefreelibrary.com/The+roots+of+SGML%3A+a+personal+recollection-a054085522",
+       "type": "institution",
+       "year": 1911
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "International Business Machines (IBM)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "The project directly enabled GML's leap by posing its exact problem: an IBM research project on integrated law office information systems (SGML Users' Group history) required a text editing application, an information retrieval system and a page composition program to share one repository of documents - selected by queries, revised in the editor, rendered by the composition program - and the integration attempt discovered that 'they each required different procedural markup in the document files'. Filed at the parent's own year (1969); the resolver's year bound is expected to drop it, recorded, not re-dated - its substance is heard in the leap record and the Rice verdict.",
+       "definition": "IBM Cambridge Scientific Center's 1969 research project on integrated law office information systems: integrate text editing, information retrieval and page composition over one shared document repository - the project inside which, and for which, GML was invented.",
+       "domain": "document systems research",
+       "lens": "L21",
+       "name": "Integrated law office information systems project (IBM, 1969)",
+       "source_title": "SGML Users' Group, 'A Brief History of the Development of SGML' (1990), sec.2; Goldfarb, 'The Roots of SGML' (1996)",
+       "source_url": "https://xml.coverpages.org/sgmlhist0.html",
+       "type": "other",
+       "year": 1969
+      },
+      "reason": "dated on/after parent year 1969"
      }
     ],
     "prefiltered": []
