@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T10:44:44+00:00",
-  "expansions_done": 203,
-  "raw_candidates_seen": 8802,
+  "updated_at": "2026-11-28T10:51:08+00:00",
+  "expansions_done": 204,
+  "raw_candidates_seen": 8816,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35168,6 +35168,68 @@
     "name": "Dartmouth Summer Research Project on Artificial Intelligence (1956)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T10:44:11+00:00"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "PostScript (Adobe, 1984)",
+    "reason": "mediated_via: Display PostScript",
+    "at": "2026-11-28T10:50:42+00:00",
+    "mediated_via": "Display PostScript"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "Smalltalk-80 (Goldberg & Robson)",
+    "reason": "mediated_via: Objective-C",
+    "at": "2026-11-28T10:50:42+00:00",
+    "mediated_via": "Objective-C"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "Interface Builder (Hullot, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:50:42+00:00"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "NeWS (Gosling & Rosenthal, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:50:42+00:00"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "X Window System (Scheifler & Gettys, 1984)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:50:42+00:00"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "NeXT Computer (NeXT, 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:50:42+00:00"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "Adobe Systems (1982)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:50:42+00:00"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "Stepstone Corporation (1983)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:50:42+00:00"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "Carnegie Mellon University (1900)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:50:42+00:00"
+   },
+   {
+    "parent_id": "nextstep-next-1989-1989",
+    "name": "NeXT Inc. (1985)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:50:42+00:00"
    }
   ]
  },
@@ -44609,7 +44671,7 @@
    "prior_state": "Hand-built graphical applications on X11, the Macintosh Toolbox or MS-DOS, each a year-scale project for a single developer.",
    "status": "provisional",
    "depth": 7,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.5,
    "sources": [
     {
@@ -44711,6 +44773,122 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T10:31:22+00:00"
+  },
+  "objective-c-cox-1984-1984": {
+   "id": "objective-c-cox-1984-1984",
+   "name": "Objective-C (Cox, 1984)",
+   "aliases": [],
+   "year": 1984,
+   "domain": "programming languages",
+   "type": "other",
+   "definition": "Brad Cox and Tom Love's object-oriented extension of C (first appeared 1984 at PPI, later Stepstone): Smalltalk-style message passing grafted onto C, with dynamic binding and a runtime - the language NeXT licensed from Stepstone in 1988 and made NeXTSTEP's primary development language, extending GCC to compile it.",
+   "bottleneck": "Before Objective-C, a systems language offered either C's efficiency with no object model, or an object model (Smalltalk) sealed inside its own environment - nothing a shipped framework of reusable parts could be written in.",
+   "leap": "Cox and Love's Objective-C (1984) grafted Smalltalk-style message passing and dynamic binding onto C - the language NeXT licensed from Stepstone in 1988 and made its platform's medium, in which frameworks of subclassable classes (AppKit, the Text class) could be written and reused.",
+   "prior_state": "Graphical applications hand-written in C against toolbox calls, each program its own island.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Objective-C",
+     "url": "https://en.wikipedia.org/wiki/Objective-C"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Expansion 204 edge (NeXTSTEP <- Objective-C), NEW, grade 5.5, marked provisional per RUNBOOK sec.6. Strongest attack: self-contradiction - the run rejected this same candidate at expansion 201 as mediated_via NeXTSTEP, and now admits it at 5.5 one expansion later. Answer: mediation is edge-scoped by design (the run's SQuAD/Bellman/WWW precedents: the same node admitted, mediated and refused at different parents on each parent's documents). At the World Wide Web the documented dependence ran from the Web's implementation THROUGH the platform - Berners-Lee chose NeXTSTEP and got its language with it. At NeXTSTEP itself the direction reverses on the parent's own documents: the 1988 Stepstone license predates the system, the release sheet lists the Objective-C compiler as a component, and the frameworks whose subclassing is the parent's stored leap are written in the language. Both records state their scope; the graph is consistent because the edges are different edges. Second attack: language-as-component - answered as at the sibling edges (separable published artifact, externally produced, licensed; the producer's own GCC extension work is recorded as the producer's act, not the artifact's). Q1 attack: C++ existed in 1989, so the frameworks were not impossible without Objective-C - answered in the verdict profile rather than denied: Q3 is partial, and Q1's claim is scoped to the mechanisms the documented frameworks actually run on (dynamic messaging, late binding, live Interface Builder connections), with the falsification condition stated (evidence the AppKit's reuse does not depend on dynamic messaging would reopen the edge). The Smalltalk-80 mediation recorded at this parent (via Objective-C) is the expected rediscovery shape: Cox's borrowing is documented in the language's own record.",
+    "at": "2026-11-28T10:51:08+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:50:42+00:00"
+  },
+  "4-3bsd-unix-csrg-1986-1986": {
+   "id": "4-3bsd-unix-csrg-1986-1986",
+   "name": "4.3BSD Unix (CSRG, 1986)",
+   "aliases": [],
+   "year": 1986,
+   "domain": "operating systems",
+   "type": "other",
+   "definition": "Berkeley CSRG's 4.3BSD release (June 1986; its Tahoe release of 1988 was NeXTSTEP's initial basis): the UNIX system - kernel services, libraries and utilities - that NeXTSTEP integrated with Mach, its release sheet listing 'Selected Berkeley 4.3 Libraries and Utilities' among the system's components.",
+   "bottleneck": "Before 4.3BSD, a workstation operating system had to be assembled from a licensed UNIX source base and years of local completion work before a single application could be written.",
+   "leap": "Berkeley CSRG's 4.3BSD (1986; Tahoe release 1988) was the complete, field-proven UNIX - kernel services, libraries and utilities - that NeXTSTEP integrated with Mach and shipped as its system's UNIX face.",
+   "prior_state": "Fragmentary UNIX variants, each vendor's port a separate completion project.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Mach (kernel)",
+     "url": "https://www.fountainware.com/Next/neXt/nextstep.htm"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Expansion 204 edge (NeXTSTEP <- 4.3BSD Unix), NEW, grade 5.0, marked provisional per RUNBOOK sec.6. Strongest attack: generic infrastructure - UNIX is the era's substrate, and the run rejected the era substrate before (TCP/IP at the World Wide Web, 0.0). The discrimination is documentary and specific: TCP/IP was never instantiated inside its parent (the Web's design is transport-agnostic and names no transport), while 4.3BSD is specific Berkeley code shipped inside this parent - its libraries and utilities are listed on the parent's own release sheet as system components, and the Tahoe release is recorded as the system's initial basis. The generic condition ('Unix' as such) was deliberately NOT filed (dry note L19) precisely to avoid grading the substrate; what is graded is the specific artifact consumed. Multiples attack: AT&T System V was the standing rival multiple - answered at Q3 partial (substitutable in kind; the Berkeley base was the one already integrated with Mach and the one the documents name). Component attack: answered as at the Mach edge - external, published, licensed, instantiated wholesale; the parent's own components were not filed. Grade calibration: the composite's two halves each land at 5.0; neither is graded above the other, since the documents present them as one named component ('Mach/UNIX (4.3BSD-compatible)'), and the split into two edges is the census's fidelity to the two artifacts' separate identities, not a claim that each alone carries the composite's full weight - recorded here so a future rehearing can weigh the pair jointly.",
+    "at": "2026-11-28T10:51:08+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:50:42+00:00"
+  },
+  "display-postscript-adobe-next-1987-1987": {
+   "id": "display-postscript-adobe-next-1987-1987",
+   "name": "Display PostScript (Adobe & NeXT, 1987)",
+   "aliases": [],
+   "year": 1987,
+   "domain": "graphics systems",
+   "type": "other",
+   "definition": "Adobe's extension of the PostScript imaging model to interactive displays, developed with NeXT's collaboration and released in 1987: one imaging language for screen and printer, interpreted by a display server - NeXT became its first licensee in September 1987 and wrote a new windowing engine on it for NeXTSTEP.",
+   "bottleneck": "Before Display PostScript, the screen and the printed page had different imaging models: what a program drew for display had to be drawn again, differently, for print, and WYSIWYG was an approximation.",
+   "leap": "Adobe's Display PostScript (1987), developed with NeXT's collaboration, extended the PostScript imaging model to the interactive display - one interpreted imaging language for screen and printer - and NeXT, its first licensee (September 1987), built NeXTSTEP's windowing and drawing on it.",
+   "prior_state": "Device-level display drawing (QuickDraw, Xlib) unrelated to the printer's language.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Display PostScript",
+     "url": "https://en.wikipedia.org/wiki/Display_PostScript"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Expansion 204 edge (NeXTSTEP <- Display PostScript), NEW, grade 5.0, marked provisional per RUNBOOK sec.6. Strongest attack: the idea was in the air - Sun's NeWS had put a PostScript interpreter at the center of a window system in 1986, a year before this artifact, so the parent's imaging model arguably needed no license. Answer: the edge does not grade the idea; it grades the consumed artifact. NeWS was filed at this parent and rejected (0.5) on the record's express statement that the two projects were unrelated - the control case that isolates the channel: what the parent consumed was Adobe's extension, under a dated first license (September 1987) with documented collaboration, instantiated in every view the system draws. If the channel were the idea, NeWS would share the edge; the documents say it does not. Mediation attack via PostScript (1984): the printer language stands behind the extension, and its own filing at this parent was rejected mediated_via Display PostScript - the display semantics the parent uses (the imaging model's interactive form) were created in the extension, not in 1984. Self-carriage element, recorded: NeXT collaborated on the artifact it then licensed - the collaboration is part of the documentary record and is why Q3 is partial rather than pass (a proprietary model was possible); the artifact remains Adobe's published, separately licensable system, not the parent's internal work, so the component discrimination holds. Q12 was scored fail honestly (the industry did not lock into this imaging model), which is part of why the edge lands at 5.0.",
+    "at": "2026-11-28T10:51:08+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:50:42+00:00"
+  },
+  "mach-rashid-tevanian-1985-1985": {
+   "id": "mach-rashid-tevanian-1985-1985",
+   "name": "Mach (Rashid & Tevanian, 1985)",
+   "aliases": [],
+   "year": 1985,
+   "domain": "operating systems",
+   "type": "other",
+   "definition": "Carnegie Mellon University's operating-system kernel project (from 1985; Richard Rashid and Avie Tevanian): a message-passing kernel of tasks, threads, ports and virtual memory, developed as UNIX's successor architecture - Mach 2.5, with the Berkeley 4.3BSD code integrated into the kernel address space, was selected as the core of NeXTSTEP's operating system.",
+   "bottleneck": "Before Mach, an operating system for a new machine meant porting a monolithic UNIX kernel, whose services, drivers and memory management were one inseparable body of code.",
+   "leap": "Rashid and Tevanian's Mach (CMU, from 1985) rebuilt the OS core as a small message-passing kernel - tasks, threads, ports, virtual memory - on which a full UNIX (4.3BSD, integrated in the 2.5 configuration) could run as the personality a workstation system is built on.",
+   "prior_state": "Monolithic UNIX ports: one kernel, one machine at a time, services inseparable from the core.",
+   "status": "provisional",
+   "depth": 8,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); NeXT Developer Documentation, Mach Concepts",
+     "url": "https://www.fountainware.com/Next/neXt/nextstep.htm"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Expansion 204 edge (NeXTSTEP <- Mach), NEW, grade 5.0, marked provisional per RUNBOOK sec.6 (fresh edges stay provisional; uniform sessions 88-96 practice). Strongest attack: components-of-a-leap - a kernel is a component of the system, and components of a leap are not leaps. Answer on the run's discrimination: the bar is on components the parent's own team produced as part of the leap (the AppKit, the Text class - not filed); Mach is a separable, published, externally produced artifact, licensed and instantiated wholesale - every NeXTSTEP process runs on its task/thread/port model - which is the consumed-component pattern (libwww at Mosaic, at system scale). Second attack: the instantiation was shallow - in the 2.5 configuration the BSD code sat in the kernel address space and release 1.0 used few Mach-native services, so the edge arguably grades a label. Recorded honestly rather than rebutted away: Q2 is partial for exactly this reason and the grade lands at 5.0, not in the 5.5-6.0 class; what the edge claims is the process substrate actually running (NeXT's own developer documentation describes the running system's Mach component), not Mach's full research programme. Multiples test: rival kernels existed (Chorus, V) but none was the documented selection; the multiples question is answered by the license record, and the genuine alternative (a conventional BSD-only port) is scored at Q3 partial. Mediation attack via Carnegie Mellon / Tevanian's later move to NeXT: the artifact reached the parent as a licensed system, not as a person's knowledge; the institution was filed separately and failed closed at 1.0.",
+    "at": "2026-11-28T10:51:08+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:50:42+00:00"
   }
  },
  "edges": [
@@ -86178,6 +86356,394 @@
     "counterfactual": "Remove the 1960 design and there is no book of this kind at all: nothing to operationalize, no eval to restate as the system's definition, no Chapter 1 theory from which the interpreter's properties follow. The two mediation attacks fail on the documents. Via Fox's manual: the derivation of Levin's text from Fox's is documented, but the leap's content - the procedural definitions - is the paper's content restated, not Fox's; a starting text carried scaffolding, not semantics. Via Russell's interpreter: the book's definitional chapters derive from the paper's eval, and Russell's hand-compilation derived from the same eval - the interpreter is a sibling descendant of the paper, not a junction between the paper and the book.",
     "mediator": null,
     "evidence": "Direct: the preface's 'based on his paper' (CACM, April 1960); the 1961 draft's Introduction ('based on the theory of recursive functions of symbolic expressions... supplied in Chapter 1'); the manual's Ch.1 and sec.1.6 as the paper's formalism restated."
+   }
+  },
+  {
+   "predecessor_id": "objective-c-cox-1984-1984",
+   "successor_id": "nextstep-next-1989-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The parent's leap is an Objective-C-shaped act: frameworks of reusable classes, a Text class that a customer subclasses to get a WYSIWYG editor - dynamic message passing and late binding are the mechanisms that reuse runs on, and neither the era's C nor its C++ supplied them in a shippable systems language. NeXT's documents put the language inside the system: the release sheet lists the 'NeXT Objective-C compiler' as a component, the AppKit is Objective-C classes, and the parent's stored leap is a subclassing story. The 1988 license from Stepstone is the dated junction.",
+     "source": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Objective-C",
+     "falsification": "Evidence the AppKit's reuse mechanisms do not depend on Objective-C's dynamic messaging - e.g. that the frameworks are a C API with an object veneer."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The language's model generated the parent's whole component architecture: applications assembled by subclassing framework classes is Objective-C's programming model realized as a platform - and the generativity is attested by the successor's record (the two-month browser build was subclassing in this language).",
+     "source": "Wikipedia, Objective-C; NeXT, NeXTSTEP Release 1.0 product sheet (1989)",
+     "falsification": "Evidence the parent's architecture was designed independently of the language's model and merely implemented in it."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Another object language could in principle have been built or adopted - C++ and Smalltalk both existed - so the channel is not logically forced; historically the choice was specific (the 1988 Stepstone license, the GCC extension, Naroff's hire) and the platform's form follows the language's model. Partial.",
+     "source": "Wikipedia, Objective-C",
+     "falsification": "Evidence NeXT had a comparably dynamic object language available in-house in 1988."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The language collapsed the producer's framework-writing cost - dynamic binding means framework clients are not recompiled against internals - but the famous cost collapse (two months vs a year) belongs to the platform as a whole. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Message passing between objects is the explanatory model the entire platform is designed from - the AppKit's delegation, targets and actions are the language's model institutionalized.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Classes with dynamic dispatch are composability in the strict sense: the Text class is built upon, by subclassing, without understanding its internals - the parent's stored leap is exactly this.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The language's reach beyond this platform belongs to its later history; for this parent the yield is the one architecture. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Late binding and Interface Builder's live connections shortened the application iteration loop decisively - shared with the tooling the language made possible. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Within the parent it displaced plain C as the platform's default medium entirely; for the field, the displacement was the platform's act. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent's language in the history that happened - on its release sheet, in its frameworks, and in its successor's build.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once the platform existed, its applications could not go back to hand-built C; the baseline reset is the language-and-platform joint act. Partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:50:42+00:00",
+   "leap": {
+    "prior_state": "Hand-built graphical applications on X11, the Macintosh Toolbox or MS-DOS, each a year-scale project for a single developer.",
+    "jump": "NeXT's NeXTSTEP (1989) shipped an object-oriented development environment - AppKit frameworks, a reusable Text class, Interface Builder - in which Berners-Lee assembled the first web browser-editor in about two months by adding hypertext to parts that already existed.",
+    "date": 1989
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Objective-C and the parent's leap does not happen in its documented form: there are no subclassable frameworks, no Text class to inherit an editor from, no Interface Builder connections to live objects. This is the expansion-201 rediscovery, and the direction reverses on this parent's documents: at the WWW the language arrived inside the platform (mediated, correctly); here the platform is built IN the language - the license, the compiler and the frameworks are the parent's own components and acts.",
+    "mediator": null,
+    "evidence": "Direct: the release sheet's component list; the Objective-C record (1988 Stepstone license; GCC extension; Naroff); the parent's stored leap (subclassing the Text class)."
+   }
+  },
+  {
+   "predecessor_id": "4-3bsd-unix-csrg-1986-1986",
+   "successor_id": "nextstep-next-1989-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The parent's UNIX face is this artifact: the release sheet lists 'Selected Berkeley 4.3 Libraries and Utilities' among the system's components and names the OS '4.3BSD-compatible'; the Tahoe release was the system's initial basis. Every NeXTSTEP program links these libraries and calls these services - without a complete, proven UNIX to integrate, there is no 1989 system for the frameworks to sit on.",
+     "source": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); NeXT Developer Documentation, Mach Concepts; Wikipedia, Mach (kernel)",
+     "falsification": "Evidence the parent's libraries and utilities are not Berkeley 4.3 code."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Its generativity is UNIX's own - the process/file/socket model a generation of programs was written to - inherited by the parent wholesale rather than opened by it. For this parent the yield is the complete substrate, once. Partial.",
+     "source": "NeXT, NeXTSTEP Release 1.0 product sheet (1989)",
+     "falsification": "Evidence the parent extends the UNIX model rather than instantiating it."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Another UNIX could in principle have been licensed (AT&T's System V was the standing alternative), so the channel is substitutable in kind; historically Berkeley's was the research-grade base that paired with Mach - the two were already integrated at CMU - and the documents name it. Partial.",
+     "source": "NeXT Developer Documentation, Mach Concepts; Wikipedia, Mach (kernel)",
+     "falsification": "Evidence the parent was offered or evaluated a different UNIX base."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "A complete, field-proven system software base collapsed the producer's completion work from years to integration - shared with the kernel half of the composite.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The UNIX model - processes, files, sockets, the shell - is the explanatory frame every NeXTSTEP program is written inside; the parent teaches and assumes it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Its libraries and system calls are the interface layer the parent's programs compose on without understanding internals - the release sheet lists them as system components.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "UNIX's pervasiveness is its own; for this parent the yield is the one substrate. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "A known, stable base shortened the platform's bring-up loop; the parent's application-level iteration collapse happened above it. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the actual UNIX inside the parent in the history that happened - named on its own release sheet.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The Berkeley base fixed the platform's UNIX personality for its life; the reset is the composite's joint act. Partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:50:42+00:00",
+   "leap": {
+    "prior_state": "Hand-built graphical applications on X11, the Macintosh Toolbox or MS-DOS, each a year-scale project for a single developer.",
+    "jump": "NeXT's NeXTSTEP (1989) shipped an object-oriented development environment - AppKit frameworks, a reusable Text class, Interface Builder - in which Berners-Lee assembled the first web browser-editor in about two months by adding hypertext to parts that already existed.",
+    "date": 1989
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove 4.3BSD and the parent's programs have nothing to link and no services to call: the composite's other half (Mach) deliberately does not supply the UNIX personality - in the 2.5 configuration it is the Berkeley code, integrated into the kernel's address space, that does. The channel is the artifact itself, licensed and shipped, named on the parent's own sheet.",
+    "mediator": null,
+    "evidence": "Direct: the release sheet's component list ('Mach/UNIX (4.3BSD-compatible)', 'Selected Berkeley 4.3 Libraries and Utilities'); the Mach record (NeXTSTEP initially built on 4.3BSD-Tahoe)."
+   }
+  },
+  {
+   "predecessor_id": "display-postscript-adobe-next-1987-1987",
+   "successor_id": "nextstep-next-1989-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before this artifact, screen and print had separate imaging models and no licensable layer unified them: Display PostScript extended the PostScript imaging model to the interactive display, and the parent instantiated it wholesale - every AppKit view draws through it, and the parent's WYSIWYG claim (the stored bottleneck's text engine, identical on screen and paper) is this layer's property. NeXT was its first licensee (September 1987) and co-developer; the release sheet lists it as a core component.",
+     "source": "Wikipedia, Display PostScript; NeXT, NeXTSTEP Release 1.0 product sheet (1989)",
+     "falsification": "Evidence the parent's drawing model is not Display PostScript - e.g. that views draw through a proprietary model with DPS only at the print path."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "It opened the parent's unified imaging space - one language for every pixel the system produces - but the space is this platform's; the generativity beyond it belongs to the model's later history. Partial.",
+     "source": "Wikipedia, Display PostScript",
+     "falsification": "Evidence the unified imaging model was applied beyond this platform by the parent's makers."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "NeXT could in principle have built a proprietary display model, as its rivals did - the channel is substitutable in kind. Historically the path was license-plus-collaboration, dated September 1987, and the windowing engine NeXT wrote presupposes this layer's semantics. Partial.",
+     "source": "Wikipedia, Display PostScript",
+     "falsification": "Evidence NeXT developed its imaging model independently and adopted DPS only as an output format."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "One imaging language for screen and print collapsed the double-drawing cost of every WYSIWYG application on the platform - a large collapse, credited to the layer jointly with the frameworks above it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The PostScript imaging model - paths, transforms, the graphics state - is the explanatory model of all drawing in the parent; its developers think in it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "A display server interpreting one language is an interface every view composes on without understanding the rasterizer - composability in the strict sense.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The model's reach (print and screen as one domain) is realized inside this platform; its wider yield is the model's own history. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Drawing code written once and proofed on screen shortened the print-iteration loop for every application; the collapse is real and shared. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "On this platform it displaced device-level drawing as the default entirely; the field's incumbents were displaced, where they were, by the platform. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent's imaging layer in the history that happened - named on its release sheet, underneath every view it ever drew.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "fail",
+     "evidence": "The baseline reset - one imaging model per platform - did not hold as an industry irreversibility (the industry later chose other models); scored in relation to the parent, the layer's lock-in is the platform's own life. Fail on the question as asked.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:50:42+00:00",
+   "leap": {
+    "prior_state": "Hand-built graphical applications on X11, the Macintosh Toolbox or MS-DOS, each a year-scale project for a single developer.",
+    "jump": "NeXT's NeXTSTEP (1989) shipped an object-oriented development environment - AppKit frameworks, a reusable Text class, Interface Builder - in which Berners-Lee assembled the first web browser-editor in about two months by adding hypertext to parts that already existed.",
+    "date": 1989
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Display PostScript and the parent's drawing model has no substrate: the windowing engine NeXT wrote is an engine ON this layer, the views draw in its language, and the WYSIWYG identity of screen and print - the parent's stored bottleneck, answered - is its property. The license and collaboration are dated documents, and the instantiation is total (every view, every print job). No intermediary: PostScript the printer language stands behind it and is heard separately as mediated.",
+    "mediator": null,
+    "evidence": "Direct: the release sheet's component list; the Display PostScript record (released 1987; NeXT first licensee September 1987; collaboration; NeXT wrote a new windowing engine on it)."
+   }
+  },
+  {
+   "predecessor_id": "mach-rashid-tevanian-1985-1985",
+   "successor_id": "nextstep-next-1989-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The parent's operating system exists in its documented form because this kernel was available to build on: NeXT's release sheet names the 'Mach/UNIX (4.3BSD-compatible) operating system' as the system's first component, and NeXT's own developer documentation describes the Mach layer its processes run on - tasks, threads, ports and message-based IPC, virtual memory. On the era's alternative (a fresh monolithic port), the 1989 system with its object frameworks above a modern process substrate is not the artifact that ships.",
+     "source": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); NeXT Developer Documentation, Mach Concepts; Wikipedia, Mach (kernel)",
+     "falsification": "Evidence NeXTSTEP's process substrate is not Mach - e.g. that the Mach component is a marketing label over a conventional kernel."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Mach's architecture opened the space the parent's system services live in (message-passed services over a small kernel), but the parent's celebrated generativity - reusable application frameworks - is two layers above the kernel; the kernel's space-opening is real and indirect. Partial.",
+     "source": "NeXT Developer Documentation, Mach Concepts; Wikipedia, Mach (kernel)",
+     "falsification": "Evidence the parent's frameworks depend on Mach-specific mechanisms rather than on the composite OS."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "NeXT could in principle have shipped on a conventional BSD port alone - the early system leaned heavily on BSD, and Mach's most distinctive mechanisms (external pagers, user-space services) are not what the parent's leap uses. Historically the composite was chosen and is what the documents describe: necessity is historical, not logical. Partial.",
+     "source": "NeXT Developer Documentation, Mach Concepts; Wikipedia, Mach (kernel)",
+     "falsification": "Evidence NeXT evaluated and rejected a non-Mach base for documented reasons of capability."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Licensing a researched kernel collapsed the producer's OS bring-up from a kernel programme to an integration programme - a large collapse, shared with the 4.3BSD half of the composite.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Tasks, threads, ports and messages are the explanatory model of the parent's process architecture - the model its developer documentation teaches and its services are designed in.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Ports and message interfaces are composability in the strict sense: system services built upon without sharing the kernel's internals.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "A kernel's reach is general by construction; its cross-domain yield for THIS parent is the one system. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The modular kernel shortened the platform team's own iteration loop, but the parent's famous iteration collapse (the two-month application build) happened at the framework layer, not here. Partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent's OS core in the history that actually happened - the release sheet's first component, and the line that runs forward through the parent's descendants.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once shipped, the composite set the platform's baseline for its life; the reset is credited jointly to the composite's two halves. Partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:50:42+00:00",
+   "leap": {
+    "prior_state": "Hand-built graphical applications on X11, the Macintosh Toolbox or MS-DOS, each a year-scale project for a single developer.",
+    "jump": "NeXT's NeXTSTEP (1989) shipped an object-oriented development environment - AppKit frameworks, a reusable Text class, Interface Builder - in which Berners-Lee assembled the first web browser-editor in about two months by adding hypertext to parts that already existed.",
+    "date": 1989
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Mach and the parent's documented operating system does not exist: its first-listed component is gone, its process model (tasks, threads, ports) is gone, and what remains - a Berkeley UNIX port - is a different, ordinary system of the era, not the platform whose frameworks are the parent's leap. No intermediary stands between the kernel and the parent: NeXT licensed and integrated the artifact itself, and its mechanisms are instantiated in every process the parent runs.",
+    "mediator": null,
+    "evidence": "Direct: the release sheet's component list; NeXT's Mach developer documentation describing the running system; the Mach record (2.5 selected for NeXTSTEP, 4.3BSD integrated into the kernel address space)."
    }
   }
  ],
@@ -388111,6 +388677,484 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "nextstep-next-1989-1989": {
+   "raw_candidates": [
+    {
+     "name": "Mach (Rashid & Tevanian, 1985)",
+     "year": 1985,
+     "domain": "operating systems",
+     "lens": "L1",
+     "type": "other",
+     "definition": "Carnegie Mellon University's operating-system kernel project (from 1985; Richard Rashid and Avie Tevanian): a message-passing kernel of tasks, threads, ports and virtual memory, developed as UNIX's successor architecture - Mach 2.5, with the Berkeley 4.3BSD code integrated into the kernel address space, was selected as the core of NeXTSTEP's operating system.",
+     "causal_claim": "NeXT's own 1989 release sheet lists the 'Mach/UNIX (4.3BSD-compatible) operating system' as the system's first component, and NeXT's developer documentation describes the Mach component the system runs on - its task/thread model, ports and message-based IPC, and virtual memory are the parent's process substrate, instantiated wholesale rather than re-implemented.",
+     "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); NeXT Developer Documentation, Mach Concepts",
+     "source_url": "https://www.fountainware.com/Next/neXt/nextstep.htm"
+    },
+    {
+     "name": "4.3BSD Unix (CSRG, 1986)",
+     "year": 1986,
+     "domain": "operating systems",
+     "lens": "L1",
+     "type": "other",
+     "definition": "Berkeley CSRG's 4.3BSD release (June 1986; its Tahoe release of 1988 was NeXTSTEP's initial basis): the UNIX system - kernel services, libraries and utilities - that NeXTSTEP integrated with Mach, its release sheet listing 'Selected Berkeley 4.3 Libraries and Utilities' among the system's components.",
+     "causal_claim": "The parent's operating system is a Mach/4.3BSD composite on its own documents: the release sheet's first component is the 'Mach/UNIX (4.3BSD-compatible) operating system' and its library list is Berkeley's. What a NeXTSTEP process calls, links and runs is in large part 4.3BSD, integrated into the Mach kernel's address space in the 2.5 configuration.",
+     "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Mach (kernel)",
+     "source_url": "https://www.fountainware.com/Next/neXt/nextstep.htm"
+    },
+    {
+     "name": "Objective-C (Cox, 1984)",
+     "year": 1984,
+     "domain": "programming languages",
+     "lens": "L13",
+     "type": "other",
+     "definition": "Brad Cox and Tom Love's object-oriented extension of C (first appeared 1984 at PPI, later Stepstone): Smalltalk-style message passing grafted onto C, with dynamic binding and a runtime - the language NeXT licensed from Stepstone in 1988 and made NeXTSTEP's primary development language, extending GCC to compile it.",
+     "causal_claim": "Consumption is documented at every level of the parent: NeXT's release sheet lists the 'NeXT Objective-C compiler' as a system component; the AppKit frameworks are Objective-C classes; the parent's stored leap itself (a reusable Text class, subclassed) is an Objective-C act. At expansion 201 this filing was rejected mediated_via NeXTSTEP at the WWW parent - correctly there, since the language reached the Web as the platform's language. At THIS parent the direction reverses: the platform is built IN the language, and the channel is judged on the parent's own documents.",
+     "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Objective-C",
+     "source_url": "https://en.wikipedia.org/wiki/Objective-C"
+    },
+    {
+     "name": "Display PostScript (Adobe & NeXT, 1987)",
+     "year": 1987,
+     "domain": "graphics systems",
+     "lens": "L12",
+     "type": "other",
+     "definition": "Adobe's extension of the PostScript imaging model to interactive displays, developed with NeXT's collaboration and released in 1987: one imaging language for screen and printer, interpreted by a display server - NeXT became its first licensee in September 1987 and wrote a new windowing engine on it for NeXTSTEP.",
+     "causal_claim": "NeXT's release sheet lists Display PostScript as a core system component, and the parent's entire drawing model - every AppKit view draws through it; screen and print share one imaging language - is this artifact instantiated. The license event is dated (September 1987, first licensee) and the collaboration documented; the windowing engine NeXT wrote is the parent's own act, built on this layer.",
+     "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Display PostScript",
+     "source_url": "https://en.wikipedia.org/wiki/Display_PostScript"
+    },
+    {
+     "name": "PostScript (Adobe, 1984)",
+     "year": 1984,
+     "domain": "graphics systems",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Adobe's page-description language (Warnock & Geschke, released 1984): a stack-based interpreted language whose imaging model describes any page as procedures - the language Display PostScript extended from the printer to the display.",
+     "causal_claim": "Filed as the ancestor of the parent's imaging layer. What NeXTSTEP consumed was Display PostScript - the display extension, licensed and co-developed - not the 1984 printer language itself; the channel is expected to resolve as mediated via Display PostScript, whose own edge is filed at L12.",
+     "source_title": "Wikipedia, Display PostScript; Wikipedia, PostScript",
+     "source_url": "https://en.wikipedia.org/wiki/Display_PostScript"
+    },
+    {
+     "name": "Smalltalk-80 (Goldberg & Robson)",
+     "year": 1983,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Goldberg and Robson's Smalltalk-80: The Language and Its Implementation (Addison-Wesley, 1983) - the published definition of the class-based object system: behavior lives in classes, objects are instances, inheritance runs through the class hierarchy.",
+     "causal_claim": "Filed as the design ancestor of the parent's object model. The documented borrowing is Cox's: Objective-C's record states its design combined C with Smalltalk's message-passing approach - the borrowing closed in 1984, inside the language NeXT later licensed. No NeXTSTEP document engages Smalltalk directly. Expected: mediated via Objective-C.",
+     "source_title": "Wikipedia, Objective-C; Goldberg & Robson, Smalltalk-80 (1983)",
+     "source_url": "https://en.wikipedia.org/wiki/Objective-C"
+    },
+    {
+     "name": "Interface Builder (Hullot, 1986)",
+     "year": 1986,
+     "domain": "development tools",
+     "lens": "L2",
+     "type": "other",
+     "definition": "Jean-Marie Hullot's interface-construction tool: first built as SOS Interface at INRIA (paper, Bigre+Globule No. 48, January 1986), productized for the Macintosh by ExperTelligence in 1986 (written in ExperLisp), and shown at MacWorld Expo in January 1987 - the artifact whose author Jobs then hired, and who started over on the same product in Objective-C at NeXT, the rewrite becoming NeXTSTEP's Interface Builder by release 0.8 (1988).",
+     "causal_claim": "The descent is documented person by person: Hullot created the product, demoed it to Jobs, joined NeXT, and rewrote it from scratch in the parent's language. What the parent consumed is therefore the question this filing exists to test: the 1986 artifact itself (its code and platform were both discarded) or its author and design, carried in person. The parent's stored leap names Interface Builder among the components that made the two-month browser possible.",
+     "source_title": "Wikipedia, Interface Builder",
+     "source_url": "https://en.wikipedia.org/wiki/Interface_Builder"
+    },
+    {
+     "name": "NeWS (Gosling & Rosenthal, 1986)",
+     "year": 1986,
+     "domain": "graphics systems",
+     "lens": "L7",
+     "type": "other",
+     "definition": "Sun Microsystems' Network-extensible Window System (James Gosling and David Rosenthal; announced 1986, released October 1986): a windowing system built on a PostScript interpreter, extensible in the language itself - the parallel PostScript-windowing project to Display PostScript, of which the record states the two were 'otherwise unrelated'.",
+     "causal_claim": "Filed as the parallel rival: same idea (PostScript as the windowing substrate), same years, different house. No document shows NeXTSTEP consuming NeWS - the record expressly separates the two projects - so the relation is prior art and contrast: proof the idea was in the air, and the competitor NeXT's licensing-and-collaboration path defined itself against.",
+     "source_title": "Wikipedia, NeWS",
+     "source_url": "https://en.wikipedia.org/wiki/NeWS"
+    },
+    {
+     "name": "X Window System (Scheifler & Gettys, 1984)",
+     "year": 1984,
+     "domain": "graphics systems",
+     "lens": "L6",
+     "type": "other",
+     "definition": "MIT's network-transparent window system (Robert Scheifler and Jim Gettys, 1984; X11 from 1987): the workstation era's default graphical environment - device-level drawing over a network protocol, with policy deliberately left to toolkits that did not yet exist as frameworks.",
+     "causal_claim": "Filed as the incumbent default the parent's model answers: the parent's stored prior_state names X11 first among the hand-built platforms ('Hand-built graphical applications on X11, the Macintosh Toolbox or MS-DOS'). NeXTSTEP consumed nothing of X - its integrated imaging model and frameworks are the opposite answer to X's mechanism-without-policy - so the relation is defined-against, heard as such.",
+     "source_title": "Graph record, NeXTSTEP stored prior_state; Wikipedia, X Window System",
+     "source_url": "https://en.wikipedia.org/wiki/X_Window_System"
+    },
+    {
+     "name": "NeXT Computer (NeXT, 1988)",
+     "year": 1988,
+     "domain": "computing machines",
+     "lens": "L9",
+     "type": "device",
+     "definition": "NeXT's workstation, introduced 12 October 1988 (Motorola 68030, a DSP, a magneto-optical drive): the only machine NeXTSTEP 1.0 shipped on - the hardware the system was designed for, and whose software environment is the parent.",
+     "causal_claim": "Filed as the parent's own hardware: system and machine were designed together at one company, and release 1.0 ran nowhere else. At expansion 201 this filing was a fail-closed partial (1.5) as the WWW implementation's vehicle; here the discrimination is sharper - the machine is the parent's body, but the parent's leap (frameworks, Text class, Interface Builder) is software, portable in principle and in fact ported later. Expected: vehicle, fail-closed.",
+     "source_title": "Wikipedia, NeXT Computer; Wikipedia, NeXTSTEP",
+     "source_url": "https://en.wikipedia.org/wiki/NeXT_Computer"
+    },
+    {
+     "name": "Adobe Systems (1982)",
+     "year": 1982,
+     "domain": "software companies",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The company (founded 1982 by Warnock and Geschke) that owned PostScript and co-developed and licensed Display PostScript - NeXT's imaging-layer partner, named as trademark holder on the parent's own release sheet.",
+     "causal_claim": "Filed as the licensing institution behind the L12 component. Per the carriage rule an institution acts through the specific artifact it carried: here the artifact (Display PostScript) is filed and heard separately, so the institution is the licensor, heard as such.",
+     "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Display PostScript",
+     "source_url": "https://en.wikipedia.org/wiki/Display_PostScript"
+    },
+    {
+     "name": "Stepstone Corporation (1983)",
+     "year": 1983,
+     "domain": "software companies",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The company (founded 1983 as Productivity Products International; later Stepstone) that owned Objective-C: Brad Cox's employer, the language's licensor to NeXT in 1988, and the former employer of Steve Naroff, who led NeXT's compiler work after joining from Stepstone.",
+     "causal_claim": "Filed as the licensing institution behind the L13 component: the 1988 license is the documented junction, and its trademark is acknowledged on the parent's own release sheet. The artifact it carried (Objective-C) is filed and heard separately; the institution is the licensor.",
+     "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Objective-C",
+     "source_url": "https://en.wikipedia.org/wiki/Objective-C"
+    },
+    {
+     "name": "Carnegie Mellon University (1900)",
+     "year": 1900,
+     "domain": "research institutions",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The university whose computer science department ran the Mach project (DARPA-funded from 1985) - the producing institution of the parent's kernel component, filed at L1.",
+     "causal_claim": "Filed as the producing institution of the Mach component. Its act runs through the artifact it produced, which is filed and heard at L1; the DARPA funding behind the project is funding, which is not inside the artifact, and is not filed separately.",
+     "source_title": "Wikipedia, Mach (kernel)",
+     "source_url": "https://en.wikipedia.org/wiki/Mach_(kernel)"
+    },
+    {
+     "name": "NeXT Inc. (1985)",
+     "year": 1985,
+     "domain": "software companies",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The parent's own producing company (founded 1985 by Steve Jobs): the firm that licensed Mach's configuration, Objective-C and Display PostScript, wrote the AppKit and the windowing engine, and shipped the system - the producer, filed so the gate judges the self-carriage rather than the scout assuming it.",
+     "causal_claim": "The producer institution: every component channel in this census terminates at this firm's acts of licensing, integration and writing - which are the parent's own acts. Per the producer precedents (CERN at the WWW, NCSA at Mosaic) the institution is heard as a fail-closed partial, its contribution being the parent itself.",
+     "source_title": "Wikipedia, NeXTSTEP; NeXT, NeXTSTEP Release 1.0 product sheet (1989)",
+     "source_url": "https://en.wikipedia.org/wiki/NeXTSTEP"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "mach-rashid-tevanian-1985-1985",
+      "candidate": {
+       "name": "Mach (Rashid & Tevanian, 1985)",
+       "year": 1985,
+       "domain": "operating systems",
+       "lens": "L1",
+       "type": "other",
+       "definition": "Carnegie Mellon University's operating-system kernel project (from 1985; Richard Rashid and Avie Tevanian): a message-passing kernel of tasks, threads, ports and virtual memory, developed as UNIX's successor architecture - Mach 2.5, with the Berkeley 4.3BSD code integrated into the kernel address space, was selected as the core of NeXTSTEP's operating system.",
+       "causal_claim": "NeXT's own 1989 release sheet lists the 'Mach/UNIX (4.3BSD-compatible) operating system' as the system's first component, and NeXT's developer documentation describes the Mach component the system runs on - its task/thread model, ports and message-based IPC, and virtual memory are the parent's process substrate, instantiated wholesale rather than re-implemented.",
+       "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); NeXT Developer Documentation, Mach Concepts",
+       "source_url": "https://www.fountainware.com/Next/neXt/nextstep.htm"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Mach (Rashid & Tevanian, 1985)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "4-3bsd-unix-csrg-1986-1986",
+      "candidate": {
+       "name": "4.3BSD Unix (CSRG, 1986)",
+       "year": 1986,
+       "domain": "operating systems",
+       "lens": "L1",
+       "type": "other",
+       "definition": "Berkeley CSRG's 4.3BSD release (June 1986; its Tahoe release of 1988 was NeXTSTEP's initial basis): the UNIX system - kernel services, libraries and utilities - that NeXTSTEP integrated with Mach, its release sheet listing 'Selected Berkeley 4.3 Libraries and Utilities' among the system's components.",
+       "causal_claim": "The parent's operating system is a Mach/4.3BSD composite on its own documents: the release sheet's first component is the 'Mach/UNIX (4.3BSD-compatible) operating system' and its library list is Berkeley's. What a NeXTSTEP process calls, links and runs is in large part 4.3BSD, integrated into the Mach kernel's address space in the 2.5 configuration.",
+       "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Mach (kernel)",
+       "source_url": "https://www.fountainware.com/Next/neXt/nextstep.htm"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "4.3BSD Unix (CSRG, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "objective-c-cox-1984-1984",
+      "candidate": {
+       "name": "Objective-C (Cox, 1984)",
+       "year": 1984,
+       "domain": "programming languages",
+       "lens": "L13",
+       "type": "other",
+       "definition": "Brad Cox and Tom Love's object-oriented extension of C (first appeared 1984 at PPI, later Stepstone): Smalltalk-style message passing grafted onto C, with dynamic binding and a runtime - the language NeXT licensed from Stepstone in 1988 and made NeXTSTEP's primary development language, extending GCC to compile it.",
+       "causal_claim": "Consumption is documented at every level of the parent: NeXT's release sheet lists the 'NeXT Objective-C compiler' as a system component; the AppKit frameworks are Objective-C classes; the parent's stored leap itself (a reusable Text class, subclassed) is an Objective-C act. At expansion 201 this filing was rejected mediated_via NeXTSTEP at the WWW parent - correctly there, since the language reached the Web as the platform's language. At THIS parent the direction reverses: the platform is built IN the language, and the channel is judged on the parent's own documents.",
+       "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Objective-C",
+       "source_url": "https://en.wikipedia.org/wiki/Objective-C"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Objective-C (Cox, 1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "display-postscript-adobe-next-1987-1987",
+      "candidate": {
+       "name": "Display PostScript (Adobe & NeXT, 1987)",
+       "year": 1987,
+       "domain": "graphics systems",
+       "lens": "L12",
+       "type": "other",
+       "definition": "Adobe's extension of the PostScript imaging model to interactive displays, developed with NeXT's collaboration and released in 1987: one imaging language for screen and printer, interpreted by a display server - NeXT became its first licensee in September 1987 and wrote a new windowing engine on it for NeXTSTEP.",
+       "causal_claim": "NeXT's release sheet lists Display PostScript as a core system component, and the parent's entire drawing model - every AppKit view draws through it; screen and print share one imaging language - is this artifact instantiated. The license event is dated (September 1987, first licensee) and the collaboration documented; the windowing engine NeXT wrote is the parent's own act, built on this layer.",
+       "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Display PostScript",
+       "source_url": "https://en.wikipedia.org/wiki/Display_PostScript"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Display PostScript (Adobe & NeXT, 1987)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "postscript-adobe-1984-1984",
+      "candidate": {
+       "name": "PostScript (Adobe, 1984)",
+       "year": 1984,
+       "domain": "graphics systems",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Adobe's page-description language (Warnock & Geschke, released 1984): a stack-based interpreted language whose imaging model describes any page as procedures - the language Display PostScript extended from the printer to the display.",
+       "causal_claim": "Filed as the ancestor of the parent's imaging layer. What NeXTSTEP consumed was Display PostScript - the display extension, licensed and co-developed - not the 1984 printer language itself; the channel is expected to resolve as mediated via Display PostScript, whose own edge is filed at L12.",
+       "source_title": "Wikipedia, Display PostScript; Wikipedia, PostScript",
+       "source_url": "https://en.wikipedia.org/wiki/Display_PostScript"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "PostScript (Adobe, 1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "smalltalk-80-goldberg-robson-1983",
+      "candidate": {
+       "name": "Smalltalk-80 (Goldberg & Robson)",
+       "year": 1983,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Goldberg and Robson's Smalltalk-80: The Language and Its Implementation (Addison-Wesley, 1983) - the published definition of the class-based object system: behavior lives in classes, objects are instances, inheritance runs through the class hierarchy.",
+       "causal_claim": "Filed as the design ancestor of the parent's object model. The documented borrowing is Cox's: Objective-C's record states its design combined C with Smalltalk's message-passing approach - the borrowing closed in 1984, inside the language NeXT later licensed. No NeXTSTEP document engages Smalltalk directly. Expected: mediated via Objective-C.",
+       "source_title": "Wikipedia, Objective-C; Goldberg & Robson, Smalltalk-80 (1983)",
+       "source_url": "https://en.wikipedia.org/wiki/Objective-C"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Smalltalk-80 (Goldberg & Robson)"
+      ],
+      "matched_node_id": "smalltalk-80-goldberg-robson-1983",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "interface-builder-hullot-1986-1986",
+      "candidate": {
+       "name": "Interface Builder (Hullot, 1986)",
+       "year": 1986,
+       "domain": "development tools",
+       "lens": "L2",
+       "type": "other",
+       "definition": "Jean-Marie Hullot's interface-construction tool: first built as SOS Interface at INRIA (paper, Bigre+Globule No. 48, January 1986), productized for the Macintosh by ExperTelligence in 1986 (written in ExperLisp), and shown at MacWorld Expo in January 1987 - the artifact whose author Jobs then hired, and who started over on the same product in Objective-C at NeXT, the rewrite becoming NeXTSTEP's Interface Builder by release 0.8 (1988).",
+       "causal_claim": "The descent is documented person by person: Hullot created the product, demoed it to Jobs, joined NeXT, and rewrote it from scratch in the parent's language. What the parent consumed is therefore the question this filing exists to test: the 1986 artifact itself (its code and platform were both discarded) or its author and design, carried in person. The parent's stored leap names Interface Builder among the components that made the two-month browser possible.",
+       "source_title": "Wikipedia, Interface Builder",
+       "source_url": "https://en.wikipedia.org/wiki/Interface_Builder"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Interface Builder (Hullot, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "news-gosling-rosenthal-1986-1986",
+      "candidate": {
+       "name": "NeWS (Gosling & Rosenthal, 1986)",
+       "year": 1986,
+       "domain": "graphics systems",
+       "lens": "L7",
+       "type": "other",
+       "definition": "Sun Microsystems' Network-extensible Window System (James Gosling and David Rosenthal; announced 1986, released October 1986): a windowing system built on a PostScript interpreter, extensible in the language itself - the parallel PostScript-windowing project to Display PostScript, of which the record states the two were 'otherwise unrelated'.",
+       "causal_claim": "Filed as the parallel rival: same idea (PostScript as the windowing substrate), same years, different house. No document shows NeXTSTEP consuming NeWS - the record expressly separates the two projects - so the relation is prior art and contrast: proof the idea was in the air, and the competitor NeXT's licensing-and-collaboration path defined itself against.",
+       "source_title": "Wikipedia, NeWS",
+       "source_url": "https://en.wikipedia.org/wiki/NeWS"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "NeWS (Gosling & Rosenthal, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "x-window-system-scheifler-gettys-1984-1984",
+      "candidate": {
+       "name": "X Window System (Scheifler & Gettys, 1984)",
+       "year": 1984,
+       "domain": "graphics systems",
+       "lens": "L6",
+       "type": "other",
+       "definition": "MIT's network-transparent window system (Robert Scheifler and Jim Gettys, 1984; X11 from 1987): the workstation era's default graphical environment - device-level drawing over a network protocol, with policy deliberately left to toolkits that did not yet exist as frameworks.",
+       "causal_claim": "Filed as the incumbent default the parent's model answers: the parent's stored prior_state names X11 first among the hand-built platforms ('Hand-built graphical applications on X11, the Macintosh Toolbox or MS-DOS'). NeXTSTEP consumed nothing of X - its integrated imaging model and frameworks are the opposite answer to X's mechanism-without-policy - so the relation is defined-against, heard as such.",
+       "source_title": "Graph record, NeXTSTEP stored prior_state; Wikipedia, X Window System",
+       "source_url": "https://en.wikipedia.org/wiki/X_Window_System"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "X Window System (Scheifler & Gettys, 1984)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "next-computer-next-1988-1988",
+      "candidate": {
+       "name": "NeXT Computer (NeXT, 1988)",
+       "year": 1988,
+       "domain": "computing machines",
+       "lens": "L9",
+       "type": "device",
+       "definition": "NeXT's workstation, introduced 12 October 1988 (Motorola 68030, a DSP, a magneto-optical drive): the only machine NeXTSTEP 1.0 shipped on - the hardware the system was designed for, and whose software environment is the parent.",
+       "causal_claim": "Filed as the parent's own hardware: system and machine were designed together at one company, and release 1.0 ran nowhere else. At expansion 201 this filing was a fail-closed partial (1.5) as the WWW implementation's vehicle; here the discrimination is sharper - the machine is the parent's body, but the parent's leap (frameworks, Text class, Interface Builder) is software, portable in principle and in fact ported later. Expected: vehicle, fail-closed.",
+       "source_title": "Wikipedia, NeXT Computer; Wikipedia, NeXTSTEP",
+       "source_url": "https://en.wikipedia.org/wiki/NeXT_Computer"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "NeXT Computer (NeXT, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "adobe-systems-1982-1982",
+      "candidate": {
+       "name": "Adobe Systems (1982)",
+       "year": 1982,
+       "domain": "software companies",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The company (founded 1982 by Warnock and Geschke) that owned PostScript and co-developed and licensed Display PostScript - NeXT's imaging-layer partner, named as trademark holder on the parent's own release sheet.",
+       "causal_claim": "Filed as the licensing institution behind the L12 component. Per the carriage rule an institution acts through the specific artifact it carried: here the artifact (Display PostScript) is filed and heard separately, so the institution is the licensor, heard as such.",
+       "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Display PostScript",
+       "source_url": "https://en.wikipedia.org/wiki/Display_PostScript"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Adobe Systems (1982)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "stepstone-corporation-1983-1983",
+      "candidate": {
+       "name": "Stepstone Corporation (1983)",
+       "year": 1983,
+       "domain": "software companies",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The company (founded 1983 as Productivity Products International; later Stepstone) that owned Objective-C: Brad Cox's employer, the language's licensor to NeXT in 1988, and the former employer of Steve Naroff, who led NeXT's compiler work after joining from Stepstone.",
+       "causal_claim": "Filed as the licensing institution behind the L13 component: the 1988 license is the documented junction, and its trademark is acknowledged on the parent's own release sheet. The artifact it carried (Objective-C) is filed and heard separately; the institution is the licensor.",
+       "source_title": "NeXT, NeXTSTEP Release 1.0 product sheet (1989); Wikipedia, Objective-C",
+       "source_url": "https://en.wikipedia.org/wiki/Objective-C"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Stepstone Corporation (1983)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "carnegie-mellon-university-1900-1900",
+      "candidate": {
+       "name": "Carnegie Mellon University (1900)",
+       "year": 1900,
+       "domain": "research institutions",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The university whose computer science department ran the Mach project (DARPA-funded from 1985) - the producing institution of the parent's kernel component, filed at L1.",
+       "causal_claim": "Filed as the producing institution of the Mach component. Its act runs through the artifact it produced, which is filed and heard at L1; the DARPA funding behind the project is funding, which is not inside the artifact, and is not filed separately.",
+       "source_title": "Wikipedia, Mach (kernel)",
+       "source_url": "https://en.wikipedia.org/wiki/Mach_(kernel)"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Carnegie Mellon University (1900)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "next-inc-1985-1985",
+      "candidate": {
+       "name": "NeXT Inc. (1985)",
+       "year": 1985,
+       "domain": "software companies",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The parent's own producing company (founded 1985 by Steve Jobs): the firm that licensed Mach's configuration, Objective-C and Display PostScript, wrote the AppKit and the windowing engine, and shipped the system - the producer, filed so the gate judges the self-carriage rather than the scout assuming it.",
+       "causal_claim": "The producer institution: every component channel in this census terminates at this firm's acts of licensing, integration and writing - which are the parent's own acts. Per the producer precedents (CERN at the WWW, NCSA at Mosaic) the institution is heard as a fail-closed partial, its contribution being the parent itself.",
+       "source_title": "Wikipedia, NeXTSTEP; NeXT, NeXTSTEP Release 1.0 product sheet (1989)",
+       "source_url": "https://en.wikipedia.org/wiki/NeXTSTEP"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "NeXT Inc. (1985)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
