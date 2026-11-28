@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T09:48:26+00:00",
-  "expansions_done": 197,
-  "raw_candidates_seen": 8715,
+  "updated_at": "2026-11-28T09:54:36+00:00",
+  "expansions_done": 198,
+  "raw_candidates_seen": 8727,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -34757,6 +34757,70 @@
     "name": "Proposed JavaScript Extensions (Borland International, 1996)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T09:47:44+00:00"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "World Wide Web (Berners-Lee, 1991)",
+    "reason": "mediated_via: NCSA Mosaic (Andreessen & Bina, 1993)",
+    "at": "2026-11-28T09:54:24+00:00",
+    "mediated_via": "NCSA Mosaic (Andreessen & Bina, 1993)"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "Inline images via the IMG tag (Andreessen, 1993)",
+    "reason": "mediated_via: NCSA Mosaic (Andreessen & Bina, 1993)",
+    "at": "2026-11-28T09:54:24+00:00",
+    "mediated_via": "NCSA Mosaic (Andreessen & Bina, 1993)"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "HTML (Berners-Lee, 1993)",
+    "reason": "mediated_via: NCSA Mosaic (Andreessen & Bina, 1993)",
+    "at": "2026-11-28T09:54:24+00:00",
+    "mediated_via": "NCSA Mosaic (Andreessen & Bina, 1993)"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "CERN public-domain release of the World Wide Web (1993)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:54:24+00:00"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "NSFNET commercial-use relaxation (1991)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:54:24+00:00"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "Gopher (University of Minnesota, 1991)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:54:24+00:00"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "ViolaWWW (Pei-Yuan Wei, 1992)",
+    "reason": "mediated_via: NCSA Mosaic (Andreessen & Bina, 1993)",
+    "at": "2026-11-28T09:54:24+00:00",
+    "mediated_via": "NCSA Mosaic (Andreessen & Bina, 1993)"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "Spyglass (1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:54:24+00:00"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "National Center for Supercomputing Applications (NCSA, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:54:24+00:00"
+   },
+   {
+    "parent_id": "netscape-communications-1994",
+    "name": "Silicon Graphics (1981)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T09:54:24+00:00"
    }
   ]
  },
@@ -36907,7 +36971,7 @@
    "prior_state": "NCSA Mosaic's academic development pace; no vendor able to put a new language into most browsers in one release.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -44052,6 +44116,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T09:47:44+00:00"
+  },
+  "ncsa-mosaic-andreessen-bina-1993-1993": {
+   "id": "ncsa-mosaic-andreessen-bina-1993-1993",
+   "name": "NCSA Mosaic (Andreessen & Bina, 1993)",
+   "aliases": [],
+   "year": 1993,
+   "domain": "web technology",
+   "type": "other",
+   "definition": "The graphical web browser developed at the University of Illinois' National Center for Supercomputing Applications - X Mosaic announced in January 1993, version 1.0 released 21 April 1993, Windows and Macintosh versions by September 1993 - whose inline images (the IMG tag its co-author Marc Andreessen proposed on www-talk in February 1993, already implemented) and point-and-click interface created the mass web-browser market.",
+   "bottleneck": "Before NCSA Mosaic, the World Wide Web was a specialists' system - a NeXT browser, line-mode clients, a few dozen servers - and no one had shown that a graphical browser could create a mass market.",
+   "leap": "Andreessen and Bina's NCSA Mosaic (1993) put inline images and a point-and-click interface on the Web and gave it away free across X, Windows and Mac, creating the mass browser market and the product concept - and its makers then carried both into the founding of Netscape, whose first name was Mosaic Communications.",
+   "prior_state": "Text browsers and Gopher menus; the Web as a physics-community tool developed at academic pace.",
+   "status": "provisional",
+   "depth": 5,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "NCSA, Mosaic Web Browser History (EFF exhibit); Wikipedia, Netscape",
+     "url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Q1 attack: had any other artifact already proven mass demand for a graphical browser before April 1994? The 1992 browsers were tried - ViolaWWW (X11-only, one developer, CERN's recommended browser but a few thousand users), Erwise and MidasWWW (smaller still). None created a market; Mosaic's free cross-platform distribution (X in January 1993, 1.0 in April, Windows/Mac by September) is the documented adoption explosion the founding answered. Attack fails. (2) Mediation attack - the live one: is the true enabler Andreessen-the-person, with the artifact a bystander? The founding record cuts the other way: what the founding answers is the artifact's proof - the company was named Mosaic Communications, its product concept was Mosaic's, its market was Mosaic's creation. The Spyglass contrast is the control case: Spyglass held the exclusive commercial license to the artifact from August 1994 but not its makers, and produced a licensing business, not this founding - evidence that the operative channel is the artifact as carried by its makers, which is the edge as scored (the run's self-carriage pattern: scored, not auto-rejected, and not re-labeled as mediation by the carrier). Attack fails, recorded as the edge's standing risk. (3) Clean-room attack: no code passed from Mosaic to the parent's browser ('did not use any NCSA Mosaic code'). True and immaterial: the verdicts claim the makers/concept/proof channel, never a code channel; a code claim would indeed have failed. (4) Date/direction: Mosaic 1.0, 21 April 1993, precedes the founding of 4 April 1994 by a year; direction is documented in the founding record itself (name, team recruitment from the NCSA Mosaic group). (5) Multiples on Q3: no second artifact independently proved the browser market in the window; necessity was already scored partial on the abstract counterfactual. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T09:54:36+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T09:54:24+00:00"
   }
  },
  "edges": [
@@ -84355,6 +84448,103 @@
     "counterfactual": "Remove JScript and the 1996-97 process loses its forcing problem: one implementation needs no arbiter. The implementation's behaviors are inside the standard's clauses - Katzenberger expanded the base document's pseudocode against the running implementations - so the channel runs from the implementation itself; its paper specification, admitted separately, is a transcription of it, not an intermediary milestone between the implementation and the standard.",
     "mediator": null,
     "evidence": "Direct: HOPL sec.8 documents the integration of Microsoft's contribution and the testing of the running implementations. The document/implementation distinction is preserved by hearing the JScript Language Specification on its own filing."
+   }
+  },
+  {
+   "predecessor_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+   "successor_id": "netscape-communications-1994",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Mosaic, the Web was a specialists' system - a NeXT browser, line-mode clients, a few dozen servers - and no graphical browser had ever created a mass market, so there was no product concept and no proven demand on which a commercial browser founding could be built. Mosaic created both within 1993: inline images, a point-and-click interface, free distribution across X, Windows and Mac. The parent's own stored record defines its leap against this candidate: its prior_state is 'NCSA Mosaic's academic development pace'.",
+     "source": "NCSA, Mosaic Web Browser History (EFF exhibit K); Wikipedia, Netscape",
+     "falsification": "A pre-1993 artifact that had already proven mass demand for a graphical browser."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Mosaic opened the browser-market space itself: after its 1993 adoption explosion, 'a company that sells the browser' - and then a browser war - became thinkable for the first time. Every commercial browser founding of 1994-95, this one first, presupposes the space Mosaic's proof created.",
+     "source": "NCSA, Mosaic Web Browser History (EFF exhibit K)",
+     "falsification": "Evidence a commercial browser market was already forming before Mosaic's release."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "ViolaWWW shows a graphical browser alone did not suffice - it stayed X11-bound under one developer and created no market - so the specific proof was Mosaic's; but the abstract counterfactual (some other browser eventually proving the market) keeps necessity at partial rather than pass.",
+     "source": "Wikipedia, ViolaWWW",
+     "falsification": "Evidence the founding would have occurred in April 1994 on the strength of a different browser's proof."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "The founding's costliest unknowns arrived pre-solved: product-market fit was proven, the product concept was defined, and much of the team was the artifact's own group - which is how a company founded in April ships its 0.9 in October and takes roughly three quarters of the market in four months.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Mosaic embodied the explanatory model the parent's product and the whole industry ran on: the Web is a graphical, image-bearing medium for everyone, not a file system for physicists.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Mosaic defined the browser interface paradigm - the graphical window, inline images, clickable links, back/forward navigation - that the parent's product inherited as its definition rather than designing its own.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Mosaic's release-and-adopt cycle demonstrated the feedback loop; the parent's contribution was to run it at commercial release-train speed, which is the parent's own leap, so the loop channel is partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It displaced the prior state named in the parent's record: academic-pace browser development, and with it the text/Gopher model of Internet information access.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the founding's name (Mosaic Communications), its founding team, its product concept and its market all descend from this artifact directly.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The graphical browser became the permanent default interface to the Internet - a reset realized through the parent and its successors, so partial at this parent.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T09:54:24+00:00",
+   "leap": {
+    "prior_state": "NCSA Mosaic's academic development pace; no vendor able to put a new language into most browsers in one release.",
+    "jump": "Netscape (1994) posed the scripting problem, hired Eich to solve it, set the deadline against its Navigator 2.0 beta, and shipped the result to the majority of the web's users within the year.",
+    "date": 1994
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove NCSA Mosaic and there is no April 1994 founding: no proven market, no product concept, no founding team, and no company named Mosaic Communications. The clean-room fact - Mosaic Netscape 'did not use any NCSA Mosaic code' - does not mediate the channel, it specifies it: what passed was the makers themselves, the concept and the market proof, carried by the artifact's own authors into their next act. No intermediary milestone stands between the artifact and the founding; the carriers are its makers (the self-carriage pattern, scored on its merits).",
+    "mediator": null,
+    "evidence": "Direct: the founding record (name, team recruitment from the NCSA Mosaic group, product lineage, the parent's stored prior_state) documents the channel link by link."
    }
   }
  ],
@@ -382960,6 +383150,411 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "netscape-communications-1994": {
+   "raw_candidates": [
+    {
+     "name": "NCSA Mosaic (Andreessen & Bina, 1993)",
+     "year": 1993,
+     "domain": "web technology",
+     "lens": "L2",
+     "type": "other",
+     "definition": "The graphical web browser developed at the University of Illinois' National Center for Supercomputing Applications - X Mosaic announced in January 1993, version 1.0 released 21 April 1993, Windows and Macintosh versions by September 1993 - whose inline images (the IMG tag its co-author Marc Andreessen proposed on www-talk in February 1993, already implemented) and point-and-click interface created the mass web-browser market.",
+     "causal_claim": "NCSA Mosaic directly enabled Netscape Communications: it proved mass demand for a graphical browser, defined the product concept the company was founded to commercialize at commercial speed, and its makers carried it across - Andreessen co-founded the parent and the early team was recruited from the NCSA Mosaic group and SGI. The parent's stored prior_state names Mosaic's academic development pace as the very state the parent's leap displaced. The channel is makers, concept and market proof, not code: the record is explicit that Mosaic Netscape 'did not use any NCSA Mosaic code'.",
+     "source_title": "NCSA, Mosaic Web Browser History (EFF exhibit); Wikipedia, Netscape",
+     "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+    },
+    {
+     "name": "World Wide Web (Berners-Lee, 1991)",
+     "year": 1991,
+     "domain": "web technology",
+     "lens": "L1",
+     "type": "other",
+     "definition": "Tim Berners-Lee's hypertext system built at CERN - proposed 1989, first browser and server running by 1991, publicly announced in August 1991 - combining URLs, HTTP and HTML into one open information space.",
+     "causal_claim": "Filed as the substrate the parent commercialized: Netscape's founding move is unintelligible without the Web. But every documented channel from the Web to this founding runs through NCSA Mosaic, which is what made the Web usable by non-specialists and proved its market in 1993; the Web as specified in 1991 (NeXT and line-mode clients) founded no companies. The mediation is the filing's expectation, recorded for the verdict.",
+     "source_title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History",
+     "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+    },
+    {
+     "name": "Inline images via the IMG tag (Andreessen, 1993)",
+     "year": 1993,
+     "domain": "web technology",
+     "lens": "L1",
+     "type": "method",
+     "definition": "The practice of embedding images inline in a hypertext page, proposed by Marc Andreessen on the www-talk mailing list on 25 February 1993 ('I would like to propose a single additional tag: IMG') with an implementation already running in Mosaic, and present in Mosaic's 0.10 release notes of March 1993.",
+     "causal_claim": "Filed as the signature component of the ancestor's leap: inline images are what made the Web visibly different from Gopher and text hypertext. As a component of NCSA Mosaic's leap it has no channel to the parent except through Mosaic itself - components of a leap are not leaps. The mediation is the filing's expectation, recorded for the verdict.",
+     "source_title": "NCSA, Mosaic Web Browser History; www-talk, February 1993",
+     "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+    },
+    {
+     "name": "HTML (Berners-Lee, 1993)",
+     "year": 1993,
+     "domain": "web technology",
+     "lens": "L16",
+     "type": "other",
+     "definition": "The HyperText Markup Language Berners-Lee defined at CERN (first documented in 1991-93, with the HTML+ draft of 1993) - the document format every web browser renders.",
+     "causal_claim": "Filed as the format layer of the substrate: the parent's browser exists to render HTML. But the parent's founding documents and history engage HTML only as embodied in the artifact it carried and displaced - NCSA Mosaic's rendering of it, IMG extension included; no channel from the markup language itself to the founding is documented that does not pass through Mosaic. The mediation is the filing's expectation, recorded for the verdict. (This candidate was rejected at expansion 197 on a parent-specific ground - documented exclusion from a language standard - which does not bind here.)",
+     "source_title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History",
+     "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+    },
+    {
+     "name": "CERN public-domain release of the World Wide Web (1993)",
+     "year": 1993,
+     "domain": "internet standards",
+     "lens": "L22",
+     "type": "other",
+     "definition": "CERN's statement of 30 April 1993 putting the three components of the Web software (line-mode client, server, library of common code) into the public domain: 'CERN relinquishes all intellectual property rights to this code, both source and binary and permission is given to anyone to use, duplicate, modify and distribute it.'",
+     "causal_claim": "Filed as the discrete, dated legal act that removed the intellectual-property blocker from commercial Web exploitation eleven months before the founding: the contrast case is Gopher, whose licensor announced fees in February 1993 and whose adoption stagnated. The act's channel to this founding, however, runs through the ecosystem the release unleashed - above all Mosaic, built in the release's own month - so directness is genuinely contestable; the filing is made so the verdict can fail it closed on the record rather than leave the strongest negative unexamined.",
+     "source_title": "CERN, Licensing the Web (home.cern)",
+     "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+    },
+    {
+     "name": "NSFNET commercial-use relaxation (1991)",
+     "year": 1991,
+     "domain": "internet standards",
+     "lens": "L22",
+     "type": "other",
+     "definition": "The 1991 opening of the US research backbone to commerce: NSF removed access restrictions, ANS CO+RE was created in May 1991 to carry commercial traffic over ANSNet, and the Commercial Internet Exchange was formed the same year by the excluded commercial providers.",
+     "causal_claim": "Filed as the era condition: commercial Internet activity of any kind presupposes it. But it is a condition of the whole industry's existence, not a specific enabling step of this founding - no document of the founding engages it, and the parent's product was distributed over whatever connectivity its users had. Filed so the era-condition discrimination is applied on the record.",
+     "source_title": "Wikipedia, National Science Foundation Network",
+     "source_url": "https://en.wikipedia.org/wiki/National_Science_Foundation_Network"
+    },
+    {
+     "name": "Gopher (University of Minnesota, 1991)",
+     "year": 1991,
+     "domain": "web technology",
+     "lens": "L6",
+     "type": "other",
+     "definition": "The University of Minnesota's menu-based Internet information system (1991), the Web's chief rival in 1992-93, whose licensor announced licensing fees in February 1993, after which its adoption stagnated (Cailliau: 'when the University of Minnesota started asking royalties, the use of Gopher stagnated').",
+     "causal_claim": "Filed as the displaced incumbent: Gopher's licensing misstep is part of why the Web - and so a Web-browser company - won. But vacating a field is negative space, not enablement: nothing of Gopher's passed into the parent, and the parent's browser is a Web artifact throughout. Filed so the negative-space discrimination is applied on the record.",
+     "source_title": "CERN retrospective (Cailliau); NCSA, Mosaic Web Browser History",
+     "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+    },
+    {
+     "name": "ViolaWWW (Pei-Yuan Wei, 1992)",
+     "year": 1992,
+     "domain": "web technology",
+     "lens": "L7",
+     "type": "other",
+     "definition": "Pei-Yuan Wei's graphical browser for Unix/X11 (initial release 9 March 1992, UC Berkeley), the first browser with embedded scriptable objects, stylesheets and tables, and CERN's recommended browser before Mosaic displaced it; the Computer History Museum's exhibit notes that Mosaic was based on Viola and Midas.",
+     "causal_claim": "Filed as the failed predecessor: ViolaWWW demonstrated the graphical, scriptable browser two years before the founding, and its influence on the lineage is documented (Mosaic was based in part on Viola). But its channel to this founding runs entirely through NCSA Mosaic, which absorbed the concept and took its position; ViolaWWW itself had no commercial vehicle and no contact with the founders is documented. The mediation is the filing's expectation, recorded for the verdict.",
+     "source_title": "Wikipedia, ViolaWWW",
+     "source_url": "https://en.wikipedia.org/wiki/ViolaWWW"
+    },
+    {
+     "name": "Spyglass (1990)",
+     "year": 1990,
+     "domain": "web technology",
+     "lens": "L7",
+     "type": "institution",
+     "definition": "The University of Illinois' commercialization company (founded 1990, Champaign), which licensed NCSA Mosaic in May 1994 for several million dollars, received exclusive commercial rights to it in August 1994, rewrote it as a unified cross-platform codebase, and licensed that code to resellers (among them, in January 1995, Microsoft for Internet Explorer) rather than selling to end users.",
+     "causal_claim": "Filed as the rival vehicle: Spyglass is what commercializing Mosaic through licensing looked like, and its licensing model - no end-user product, revenue from OEM deals - is the road the parent did not take (the parent was founded a month before Spyglass's license and shipped its own clean-room browser in October 1994). Nothing of Spyglass's was consumed by the parent; the companies' only documented contact is adversarial (the trademark/infringement settlement). Filed so the rival-vehicle discrimination is applied on the record.",
+     "source_title": "Wikipedia, Spyglass, Inc.",
+     "source_url": "https://en.wikipedia.org/wiki/Spyglass,_Inc."
+    },
+    {
+     "name": "National Center for Supercomputing Applications (NCSA, 1986)",
+     "year": 1986,
+     "domain": "web technology",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The University of Illinois supercomputing center (established 1986) whose Software Development Group employed Andreessen and Bina and produced NCSA Mosaic, NCSA HTTPd and the CGI specification.",
+     "causal_claim": "Filed as the ancestor artifact's institutional home: NCSA employed the makers and hosted the work. But per the carriage precedents an institution acts through the specific artifact it carried - here Mosaic, filed and heard on its own - and NCSA's other documented acts toward the parent are adversarial or shaping, not enabling: its trademark claim forced the company's rename from Mosaic Communications to Netscape (14 November 1994). Filed so the institution/artifact discrimination is applied on the record.",
+     "source_title": "Wikipedia, Netscape; NCSA, Mosaic Web Browser History",
+     "source_url": "https://en.wikipedia.org/wiki/Netscape_Communications_Corp."
+    },
+    {
+     "name": "Silicon Graphics (1981)",
+     "year": 1981,
+     "domain": "computing industry",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The workstation company Jim Clark founded in 1981 (as Silicon Graphics Computer Systems), which he left in early 1994 to found the parent with Andreessen; Clark recruited early team members from SGI as well as from the NCSA Mosaic group.",
+     "causal_claim": "Filed as the founder's formation institution: SGI is where Clark's standing, wealth and recruiting pool came from, and part of the founding team followed him from it. But a formation lineage is not a channel into the artifact: SGI as an institution supplied no technology, license or document to the founding - its people came as individuals, as did Mosaic's. Filed so the formation-lineage discrimination is applied on the record.",
+     "source_title": "Wikipedia, Netscape",
+     "source_url": "https://en.wikipedia.org/wiki/Netscape_Communications_Corp."
+    },
+    {
+     "name": "Kleiner Perkins investment in Netscape (1994)",
+     "year": 1994,
+     "domain": "web technology",
+     "lens": "L21",
+     "type": "other",
+     "definition": "Kleiner Perkins Caufield & Byers' venture investment in the company, recorded in the firm's own history as made in September 1994, five months after the founding.",
+     "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the investment postdates the founding it would be asked to enable, and per standing discipline funding is not inside the artifact in any case. Filed so both grounds are on the record, not assumed.",
+     "source_title": "Kleiner Perkins, firm history; Wikipedia, Netscape",
+     "source_url": "https://en.wikipedia.org/wiki/Netscape_Communications_Corp."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "ncsa-mosaic-andreessen-bina-1993-1993",
+      "candidate": {
+       "name": "NCSA Mosaic (Andreessen & Bina, 1993)",
+       "year": 1993,
+       "domain": "web technology",
+       "lens": "L2",
+       "type": "other",
+       "definition": "The graphical web browser developed at the University of Illinois' National Center for Supercomputing Applications - X Mosaic announced in January 1993, version 1.0 released 21 April 1993, Windows and Macintosh versions by September 1993 - whose inline images (the IMG tag its co-author Marc Andreessen proposed on www-talk in February 1993, already implemented) and point-and-click interface created the mass web-browser market.",
+       "causal_claim": "NCSA Mosaic directly enabled Netscape Communications: it proved mass demand for a graphical browser, defined the product concept the company was founded to commercialize at commercial speed, and its makers carried it across - Andreessen co-founded the parent and the early team was recruited from the NCSA Mosaic group and SGI. The parent's stored prior_state names Mosaic's academic development pace as the very state the parent's leap displaced. The channel is makers, concept and market proof, not code: the record is explicit that Mosaic Netscape 'did not use any NCSA Mosaic code'.",
+       "source_title": "NCSA, Mosaic Web Browser History (EFF exhibit); Wikipedia, Netscape",
+       "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "NCSA Mosaic (Andreessen & Bina, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "world-wide-web-berners-lee-1991-1991",
+      "candidate": {
+       "name": "World Wide Web (Berners-Lee, 1991)",
+       "year": 1991,
+       "domain": "web technology",
+       "lens": "L1",
+       "type": "other",
+       "definition": "Tim Berners-Lee's hypertext system built at CERN - proposed 1989, first browser and server running by 1991, publicly announced in August 1991 - combining URLs, HTTP and HTML into one open information space.",
+       "causal_claim": "Filed as the substrate the parent commercialized: Netscape's founding move is unintelligible without the Web. But every documented channel from the Web to this founding runs through NCSA Mosaic, which is what made the Web usable by non-specialists and proved its market in 1993; the Web as specified in 1991 (NeXT and line-mode clients) founded no companies. The mediation is the filing's expectation, recorded for the verdict.",
+       "source_title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History",
+       "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "World Wide Web (Berners-Lee, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "inline-images-via-the-img-tag-andreessen-1993-1993",
+      "candidate": {
+       "name": "Inline images via the IMG tag (Andreessen, 1993)",
+       "year": 1993,
+       "domain": "web technology",
+       "lens": "L1",
+       "type": "method",
+       "definition": "The practice of embedding images inline in a hypertext page, proposed by Marc Andreessen on the www-talk mailing list on 25 February 1993 ('I would like to propose a single additional tag: IMG') with an implementation already running in Mosaic, and present in Mosaic's 0.10 release notes of March 1993.",
+       "causal_claim": "Filed as the signature component of the ancestor's leap: inline images are what made the Web visibly different from Gopher and text hypertext. As a component of NCSA Mosaic's leap it has no channel to the parent except through Mosaic itself - components of a leap are not leaps. The mediation is the filing's expectation, recorded for the verdict.",
+       "source_title": "NCSA, Mosaic Web Browser History; www-talk, February 1993",
+       "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Inline images via the IMG tag (Andreessen, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "html-berners-lee-1993-1993",
+      "candidate": {
+       "name": "HTML (Berners-Lee, 1993)",
+       "year": 1993,
+       "domain": "web technology",
+       "lens": "L16",
+       "type": "other",
+       "definition": "The HyperText Markup Language Berners-Lee defined at CERN (first documented in 1991-93, with the HTML+ draft of 1993) - the document format every web browser renders.",
+       "causal_claim": "Filed as the format layer of the substrate: the parent's browser exists to render HTML. But the parent's founding documents and history engage HTML only as embodied in the artifact it carried and displaced - NCSA Mosaic's rendering of it, IMG extension included; no channel from the markup language itself to the founding is documented that does not pass through Mosaic. The mediation is the filing's expectation, recorded for the verdict. (This candidate was rejected at expansion 197 on a parent-specific ground - documented exclusion from a language standard - which does not bind here.)",
+       "source_title": "CERN, Licensing the Web; NCSA, Mosaic Web Browser History",
+       "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "HTML (Berners-Lee, 1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cern-public-domain-release-of-the-world-wide-web-1993-1993",
+      "candidate": {
+       "name": "CERN public-domain release of the World Wide Web (1993)",
+       "year": 1993,
+       "domain": "internet standards",
+       "lens": "L22",
+       "type": "other",
+       "definition": "CERN's statement of 30 April 1993 putting the three components of the Web software (line-mode client, server, library of common code) into the public domain: 'CERN relinquishes all intellectual property rights to this code, both source and binary and permission is given to anyone to use, duplicate, modify and distribute it.'",
+       "causal_claim": "Filed as the discrete, dated legal act that removed the intellectual-property blocker from commercial Web exploitation eleven months before the founding: the contrast case is Gopher, whose licensor announced fees in February 1993 and whose adoption stagnated. The act's channel to this founding, however, runs through the ecosystem the release unleashed - above all Mosaic, built in the release's own month - so directness is genuinely contestable; the filing is made so the verdict can fail it closed on the record rather than leave the strongest negative unexamined.",
+       "source_title": "CERN, Licensing the Web (home.cern)",
+       "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "CERN public-domain release of the World Wide Web (1993)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "nsfnet-commercial-use-relaxation-1991-1991",
+      "candidate": {
+       "name": "NSFNET commercial-use relaxation (1991)",
+       "year": 1991,
+       "domain": "internet standards",
+       "lens": "L22",
+       "type": "other",
+       "definition": "The 1991 opening of the US research backbone to commerce: NSF removed access restrictions, ANS CO+RE was created in May 1991 to carry commercial traffic over ANSNet, and the Commercial Internet Exchange was formed the same year by the excluded commercial providers.",
+       "causal_claim": "Filed as the era condition: commercial Internet activity of any kind presupposes it. But it is a condition of the whole industry's existence, not a specific enabling step of this founding - no document of the founding engages it, and the parent's product was distributed over whatever connectivity its users had. Filed so the era-condition discrimination is applied on the record.",
+       "source_title": "Wikipedia, National Science Foundation Network",
+       "source_url": "https://en.wikipedia.org/wiki/National_Science_Foundation_Network"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "NSFNET commercial-use relaxation (1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "gopher-university-of-minnesota-1991-1991",
+      "candidate": {
+       "name": "Gopher (University of Minnesota, 1991)",
+       "year": 1991,
+       "domain": "web technology",
+       "lens": "L6",
+       "type": "other",
+       "definition": "The University of Minnesota's menu-based Internet information system (1991), the Web's chief rival in 1992-93, whose licensor announced licensing fees in February 1993, after which its adoption stagnated (Cailliau: 'when the University of Minnesota started asking royalties, the use of Gopher stagnated').",
+       "causal_claim": "Filed as the displaced incumbent: Gopher's licensing misstep is part of why the Web - and so a Web-browser company - won. But vacating a field is negative space, not enablement: nothing of Gopher's passed into the parent, and the parent's browser is a Web artifact throughout. Filed so the negative-space discrimination is applied on the record.",
+       "source_title": "CERN retrospective (Cailliau); NCSA, Mosaic Web Browser History",
+       "source_url": "https://w2.eff.org/patent/wanted/neomedia/reexam/ExhibitK_MosaicWebBrowserHistory_NCSA.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Gopher (University of Minnesota, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "violawww-pei-yuan-wei-1992-1992",
+      "candidate": {
+       "name": "ViolaWWW (Pei-Yuan Wei, 1992)",
+       "year": 1992,
+       "domain": "web technology",
+       "lens": "L7",
+       "type": "other",
+       "definition": "Pei-Yuan Wei's graphical browser for Unix/X11 (initial release 9 March 1992, UC Berkeley), the first browser with embedded scriptable objects, stylesheets and tables, and CERN's recommended browser before Mosaic displaced it; the Computer History Museum's exhibit notes that Mosaic was based on Viola and Midas.",
+       "causal_claim": "Filed as the failed predecessor: ViolaWWW demonstrated the graphical, scriptable browser two years before the founding, and its influence on the lineage is documented (Mosaic was based in part on Viola). But its channel to this founding runs entirely through NCSA Mosaic, which absorbed the concept and took its position; ViolaWWW itself had no commercial vehicle and no contact with the founders is documented. The mediation is the filing's expectation, recorded for the verdict.",
+       "source_title": "Wikipedia, ViolaWWW",
+       "source_url": "https://en.wikipedia.org/wiki/ViolaWWW"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "ViolaWWW (Pei-Yuan Wei, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "spyglass-1990-1990",
+      "candidate": {
+       "name": "Spyglass (1990)",
+       "year": 1990,
+       "domain": "web technology",
+       "lens": "L7",
+       "type": "institution",
+       "definition": "The University of Illinois' commercialization company (founded 1990, Champaign), which licensed NCSA Mosaic in May 1994 for several million dollars, received exclusive commercial rights to it in August 1994, rewrote it as a unified cross-platform codebase, and licensed that code to resellers (among them, in January 1995, Microsoft for Internet Explorer) rather than selling to end users.",
+       "causal_claim": "Filed as the rival vehicle: Spyglass is what commercializing Mosaic through licensing looked like, and its licensing model - no end-user product, revenue from OEM deals - is the road the parent did not take (the parent was founded a month before Spyglass's license and shipped its own clean-room browser in October 1994). Nothing of Spyglass's was consumed by the parent; the companies' only documented contact is adversarial (the trademark/infringement settlement). Filed so the rival-vehicle discrimination is applied on the record.",
+       "source_title": "Wikipedia, Spyglass, Inc.",
+       "source_url": "https://en.wikipedia.org/wiki/Spyglass,_Inc."
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Spyglass (1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "national-center-for-supercomputing-applications-ncsa-1986-1986",
+      "candidate": {
+       "name": "National Center for Supercomputing Applications (NCSA, 1986)",
+       "year": 1986,
+       "domain": "web technology",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The University of Illinois supercomputing center (established 1986) whose Software Development Group employed Andreessen and Bina and produced NCSA Mosaic, NCSA HTTPd and the CGI specification.",
+       "causal_claim": "Filed as the ancestor artifact's institutional home: NCSA employed the makers and hosted the work. But per the carriage precedents an institution acts through the specific artifact it carried - here Mosaic, filed and heard on its own - and NCSA's other documented acts toward the parent are adversarial or shaping, not enabling: its trademark claim forced the company's rename from Mosaic Communications to Netscape (14 November 1994). Filed so the institution/artifact discrimination is applied on the record.",
+       "source_title": "Wikipedia, Netscape; NCSA, Mosaic Web Browser History",
+       "source_url": "https://en.wikipedia.org/wiki/Netscape_Communications_Corp."
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "National Center for Supercomputing Applications (NCSA, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "silicon-graphics-1981-1981",
+      "candidate": {
+       "name": "Silicon Graphics (1981)",
+       "year": 1981,
+       "domain": "computing industry",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The workstation company Jim Clark founded in 1981 (as Silicon Graphics Computer Systems), which he left in early 1994 to found the parent with Andreessen; Clark recruited early team members from SGI as well as from the NCSA Mosaic group.",
+       "causal_claim": "Filed as the founder's formation institution: SGI is where Clark's standing, wealth and recruiting pool came from, and part of the founding team followed him from it. But a formation lineage is not a channel into the artifact: SGI as an institution supplied no technology, license or document to the founding - its people came as individuals, as did Mosaic's. Filed so the formation-lineage discrimination is applied on the record.",
+       "source_title": "Wikipedia, Netscape",
+       "source_url": "https://en.wikipedia.org/wiki/Netscape_Communications_Corp."
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Silicon Graphics (1981)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Kleiner Perkins investment in Netscape (1994)",
+       "year": 1994,
+       "domain": "web technology",
+       "lens": "L21",
+       "type": "other",
+       "definition": "Kleiner Perkins Caufield & Byers' venture investment in the company, recorded in the firm's own history as made in September 1994, five months after the founding.",
+       "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the investment postdates the founding it would be asked to enable, and per standing discipline funding is not inside the artifact in any case. Filed so both grounds are on the record, not assumed.",
+       "source_title": "Kleiner Perkins, firm history; Wikipedia, Netscape",
+       "source_url": "https://en.wikipedia.org/wiki/Netscape_Communications_Corp."
+      },
+      "reason": "dated on/after parent year 1994"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
