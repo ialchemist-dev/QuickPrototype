@@ -13173,3 +13173,141 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T09:12:34.277709+00:00",
+ "event": "expansion",
+ "session": 92,
+ "expansion": 193,
+ "parent": "bellman-optimality-equations-bellman-1957-1957",
+ "parent_name": "Bellman optimality equations (Bellman, 1957)",
+ "parent_year": 1957,
+ "parent_depth": 4,
+ "date": "2026-11-28",
+ "provenance": "Session 92, expansion 1 of 2 (the owner resumed the run on 2026-11-28; session 91 closed cleanly at 309 nodes / 393 edges). All pipeline steps run in the FOREGROUND and verified on disk after each (resolve backgrounded once by the runtime at ~10s on VM CPU limits and completed normally - its result was awaited, never re-run; the graph file was read back to confirm stage 'resolved' before verdicts). Resolve: 16 raw -> 16 distinct, 4 matched existing (ABG, Wald, linear programming, RAND - exactly the four planned LINKs), 0 auto-merges, judge queue 0, dropped 0, prefiltered 0. The verdicts builder's count check passed (16 evaluations == 16 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors at 5.0: AHM new, ABG linked; 2 fail-closed partials: Wald 1.5, RAND 1.0; 12 rejections at 0.0), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 16, survivors 2, created 1, linked 1, rejected 14, mediated rejections 2: Markov chain via the MDP frame node; von Neumann & Morgenstern via Wald 1950). Created-node spot-check PASSED: the AHM node's stored bottleneck, leap and prior_state are non-empty; its sources list carries the parent-side citation (Bellman 1952, PMC) - the standing wart, logged, never hand-edited. Verification applied from work/verification_bellman-optimality-equations-bellman-1957-1957.json (both edges provisional, no mediation actions). FIX-UPS OWED FROM SESSION 91, discharged here per house pattern: expansion 191's sync_commit = 419c0987 (also recorded inside exp-192's provenance); expansion 192's sync_commit = a3b6ff5f. RENDER LESSON (session 91, recorded here as ordered): pipeline.py render defaults to ./index.html in the cwd - ALWAYS render with --out run-01/index.html so syncs ship the current graph page; session 91's first two syncs shipped a stale Nov-26 index.html, caught and re-synced as f97fb3c4. This expansion rendered with --out run-01/index.html (310 nodes / 395 edges) before syncing. This record's own sync_commit rides the sync that carries it.",
+ "brief_correction": "The naive lineage framing for this parent - Shapley's stochastic games as the fixed-point ancestor, the Hamilton-Jacobi equation as the deep source, Wald as the consumed origin - resolved mostly AGAINST the framing on the documents. Shapley (1953) extends the RAND Markov decision model of 1949-1952 (Solan & Vieille); it postdates and presupposes the parent's line. The Hamilton-Jacobi identification was made by Kalman in the early 1960s, after the book. Wald is named in the founding document's own sentence as the parent FIELD ('intimately related to the theory of sequential analysis due to Wald'), and the machinery the equations actually extend sits in the two worked neighbors cited in the same breath: ABG's recursive construction of Bayes solutions and AHM's worked stochastic cost-to-go equation. The founding document's complete apparatus is 3 references and 2 footnotes; every verdict in this expansion is anchored to it.",
+ "grounding": "The parent's founding document - Bellman, 'On the theory of dynamic programming', PNAS 38(8):716-719 (1952), the same advance's first statement, whose Theorems 1-3 are the existence/uniqueness results the 1957 book's chapters expand - was read IN FULL this session from the PMC page images (PMC serves the paper as 4 page images with no text layer; the session-91 OCR-workaround situation, resolved by direct visual reading - every quotation used in the verdicts was read off the page images: the sec.1 closing passage and all three references on pp.717/719, the successive-approximations sentence on p.718, the von Neumann communication line and RAND affiliation on p.716, and the Karlin/Shapiro + Shiffman/Blackwell footnotes on p.719). Histories consulted: Liberzon's optimal-control lecture notes sec.5.1.5 (Isaacs' tenet of transition; the Kalman HJB naming; Caratheodory's royal road; the independent Soviet maximum principle), Klein's 'Protocols of War' ch.4 (Masse formulated 1940/published 1944-46; AHM produced at RAND in summer 1950 for the Navy Logistics Project; both classed as the earliest formal statements of what Bellman later called DP), Girlich's ECM poster (ABG's 1949 recursive construction of Bayes solutions by backward induction; Masse's 1946 principle of optimality), Solan & Vieille's PNAS Perspective (stochastic games extend the RAND 1949-1952 Markov decision model), Pesch & Bulirsch via Pesch & Plail (Caratheodory's fundamental equations as 'the so-called Bellman equation' of the variational setting).",
+ "parent_record_note": "The parent's stored record was verified complete this session (name, year 1957, type theory, depth 4, priority 6.0; stored bottleneck, prior_state and leap all non-empty and accurate). Its stored sources list carries the IRL-paper citation line from its admission at exp-192 - left untouched.",
+ "scout": {
+  "builder": "run-01/work/build_scout_bellman.py",
+  "raw_filings": 16,
+  "distinct_names_intended": 16,
+  "per_lens": {
+   "L1": 3,
+   "L2": 1,
+   "L3": 3,
+   "L4": 2,
+   "L6": 3,
+   "L19": 1,
+   "L21": 1,
+   "L22": 1,
+   "L23": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_bellman-optimality-equations-bellman-1957-1957.json",
+  "dry_or_shortfall_lenses": [
+   "L2 (shortfall 1: AHM is the one document-grounded single-precursor line; Shapley filed at L3 where the direction question is stated)",
+   "L4 (shortfall 2: Wald and vNM are the documented problem-side framings; the multistage problem itself was posed by the founding document, not externally)",
+   "L5 (dry-with-finding: no external diagnosis document; the missing optimality criterion is the parent's own framing)",
+   "L7 (dry: no failed immediate predecessor system; the failed roads are the variational tradition's, filed at L3)",
+   "L8 (dry: theory advance, nothing trained or fitted)",
+   "L9 (dry: no machine named; the equations predate their computational exploitation)",
+   "L10 (dry)",
+   "L11 (dry-with-finding: the one wielded procedure, successive approximations, is filed at L1 as the Banach probe)",
+   "L12 (dry)",
+   "L13 (dry)",
+   "L14 (dry)",
+   "L15 (dry)",
+   "L16 (dry: the MDP formalism is the sibling frame node, not a spec the equations implement)",
+   "L17 (dry-with-finding: the leap is registered by theorems, not a benchmark)",
+   "L18 (dry)",
+   "L19 (shortfall 1: Masse is the one documented cross-field anticipation with a named artifact; the statistical import is filed at L1/L4, the variational at L3)",
+   "L20 (dry-with-finding: the footnotes record unpublished conjunctions - Karlin & Shapiro (unpublished), Shiffman on (3.1), Blackwell on (3.8) - no documents to file; Bellman's own functional-equation toolkit is self-carriage)",
+   "L21 (shortfall 1: the ONR channel runs inside the AHM filing, not as a separate funder node)",
+   "L22 (shortfall 1: Wiener is the era-condition probe; the substantive timing condition is the RAND problem diet, filed at L21)",
+   "scope (the 1952 note is the advance's first form, not a candidate; Blackwell 1962/65 and Howard 1960 postdate the parent and are not filed)"
+  ]
+ },
+ "resolution": {
+  "raw": 16,
+  "distinct": 16,
+  "matched_existing": 4,
+  "auto_merges": 0,
+  "judge_queue": 0,
+  "dropped": 0,
+  "matched_ids": [
+   "bayes-and-minimax-solutions-of-sequential-decision-problems-1949",
+   "statistical-decision-functions-wald-1950-1950",
+   "linear-programming-dantzig-1947-1947",
+   "rand-corporation-1948-1948"
+  ],
+  "identity_note": "The 1954 survey probe ('The theory of dynamic programming (Bellman, 1954)') did NOT match the equations node, the Dynamic Programming node, or the MDP node at resolution and stood as its own distinct candidate; it was rejected at the gate as same-advance self-presentation (see verdicts). The recorded three-way Bellman cluster (MDP frame / DP method / optimality equations, kept distinct at exp-192) is untouched by this expansion: no merge was proposed or made."
+ },
+ "judgments": "None required: the judge queue was empty.",
+ "calendar_dropped_at_resolve": [],
+ "verdicts": {
+  "file": "run-01/work/verdicts_bellman-optimality-equations-bellman-1957-1957.json",
+  "builder": "run-01/work/build_verdicts_bellman_eq.py",
+  "evaluations": 16,
+  "survivors": [
+   "Bayes and Minimax Solutions of Sequential Decision Problems (Arrow, Blackwell & Girshick, 1949) - LINK to existing node, dry-run score 5.0, provisional (edge at depth 4). Construction admission: cited as reference 1 in the founding document (Bellman 1952, PNAS), in the sec.1 sentence naming the two papers that 'treat problems of similar type'; Girlich documents ABG's 1949 recursive construction of Bayes solutions by backward induction - the construction the functional equations generalize, and the 1952 note's own Problem 1 (sequential search) is of ABG's class.",
+   "Optimal inventory policy (Arrow, Harris & Marschak, 1951) - NEW node, dry-run score 5.0, provisional (depth 5). Worked-equation admission: cited as reference 2 in the founding document; the stochastic inventory problem solved through the minimal expected cost as a function of stock on hand (a functional equation in the cost-to-go, (s,S) policies optimal), produced at RAND in summer 1950 on the Navy Logistics Project (Klein); the 1957 book's inventory chapter is its generalization."
+  ],
+  "notable_rejections": [
+   "Statistical Decision Functions (Wald, 1950) - FAIL-CLOSED PARTIAL (1.5), FLAGGED as this expansion's most contestable negative: the founding document cites the book by exact title (ref 3) and declares the theory 'intimately related to the theory of sequential analysis due to Wald' - but the sentence names the parent FIELD, and no functional equation, recursion or construction is in Wald's book; the machinery is admitted at the two worked neighbors cited in the same breath (frame-vs-construction discrimination, the Sutton & Barto 1981a pattern). Directness passes; the question gate earns only partials (Q6/Q11/Q12). A re-hearing could argue the exact-title citation merits the weak-admission band; the record is written so that argument can be made.",
+   "RAND Corporation (1948) - FAIL-CLOSED PARTIAL (1.0): institution-carriage. The work demonstrably happened there (the founding document's affiliation line; the 1957 book is a RAND research study; the problem diet was RAND's), but the specific artifacts carried are Bellman's own RAND papers - the parent advance itself, not a predecessor - and directness is genuinely unresolvable between the institution and the mathematician it employed; partial directness fails closed.",
+   "Stochastic games (Shapley, 1953) - REJECTED on causal direction: Solan & Vieille (PNAS) state stochastic games extend the model of Markov decision problems 'developed by several researchers at the RAND Corporation in 1949-1952' to competitive situations; Bellman's equations were in print in August 1952, a year before Shapley's paper. The candidate is the parent's sibling-descendant, not its ancestor.",
+   "Differential games (Isaacs, 1951) - REJECTED as a parallel formulation: the tenet of transition (Liberzon: formalized 'slightly before Bellman') states the same optimality principle for continuous two-person games, in the same institution, with no documentary channel into the discrete functional equations; mutual awareness is not derivation.",
+   "Les reserves et la regulation de l'avenir (Masse, 1946) - REJECTED as independent anticipation without a junction: a principle of optimality in the 1946 French monograph (Girlich), classed by Klein with AHM as an earliest formal statement of DP - but absent from the founding document's complete apparatus, and Klein's claim of influence on RAND optimization studies 'in the mid-1950s' postdates the 1952 statement and names no Bellman document. Priority is not enablement.",
+   "Maximum principle (Pontryagin, 1956) - REJECTED as a parallel independent line: developed in the Soviet Union around the same time (Liberzon); the comparison with Bellman's equation is a later literature (Liberzon sec.5.2), and the 1957 book predates Western knowledge of it.",
+   "Hamilton-Jacobi equation (1834) and the royal road of the calculus of variations (Caratheodory, 1935) - REJECTED as retrospective identifications: Liberzon records it is 'not clear if Bellman was aware' of the HJ connection, which Kalman made explicitly in the early 1960s (coining 'HJB'); Pesch & Bulirsch's claim that Caratheodory's fundamental equations are 'the so-called Bellman equation' is the variational line's own retrospective claim, and Kalman combined the two approaches only in the 1960s. Neither is cited or used in Bellman's documents.",
+   "Theory of Games and Economic Behavior (von Neumann & Morgenstern, 1944) - REJECTED mediated_via Statistical Decision Functions (Wald, 1950): expected-value optimality is presupposed, and the criteria the equations use arrive through the cited statistical-decision line; the 1952 note's 'Communicated by J. von Neumann' is carriage of the manuscript, not consumption of the book.",
+   "Markov chain (Markov, 1906) - REJECTED mediated_via A Markovian Decision Process (Bellman, 1957): the stochastic kernel reaches the equations only as a component of the sibling frame node, kept distinct at exp-192; the chain will be heard when the frame node is expanded.",
+   "Linear programming (Dantzig, 1947) - REJECTED as the defined-against sibling: uncited in the parent's documents, no LP machinery inside the equations, and the DP histories record the name 'dynamic programming' was chosen partly to distinguish the sequential approach from LP's static setting. Discriminated from this node's admission at exp-192 (IRL), where the parent's algorithms ARE linear programs; here nothing of LP is exercised.",
+   "Banach fixed-point theorem (1922) - REJECTED as generic machinery: the founding document names the METHOD ('the proof in all three cases employs the method of successive approximations', p.718) and states Theorem 1's contraction hypothesis without citing or invoking any fixed-point theorem; the identification is the later literature's.",
+   "The theory of dynamic programming (Bellman, 1954) - REJECTED as same-advance self-presentation, the boundary probe for the three-way Bellman cluster: the author's own survey presents the Dynamic Programming method and the optimality equations together, which is exactly why it can be a predecessor of neither distinct node. Recorded with the dating note: the equations node's 1957 date is its canonical-form date; its first statements are the 1952 PNAS note and this 1954 survey - noted, not re-dated, per the run's discipline.",
+   "Cybernetics (Wiener, 1948) - REJECTED as an era condition: uncited, no mechanism passes from it into the equations; the L22 lens exists so the gate, not the scout's silence, makes the judgment."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_bellman-optimality-equations-bellman-1957-1957.json",
+  "outcomes": {
+   "bayes-and-minimax-solutions-of-sequential-decision-problems-1949": "provisional",
+   "optimal-inventory-policy-arrow-harris-marschak-1951-1951": "provisional"
+  },
+  "mediation_actions": []
+ },
+ "totals_after": {
+  "nodes": 310,
+  "edges": 395,
+  "budget": "310/2000",
+  "expansions_done": 193,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 48,
+   "5": 59,
+   "6": 46,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 293,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "td-lambda-temporal-difference-learning-sutton-1988-1988",
+  "actor-critic-algorithms-using-eligibility-traces-kimura-koba-1998",
+  "tl-dr-dataset-webis-tldr-17-corpus-volske-et-al-2017",
+  "ecma-262-first-edition-1997",
+  "netscape-communications-1994"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
