@@ -16166,3 +16166,116 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 102 continues: expansion 214 (ACL Data Collection Initiative, 1989) follows this checkpoint in the same session. All five exp-211 carried hearings are now discharged (ALGOL 60, lambda calculus admitted as links; Strachey & Wilkes 1961 admitted as a new node) or re-decided on CPL's own documents (Atlas, EDSAC 2 fail-closed on directness). New carried items: the Strachey & Wilkes node's own expansion, when its turn comes, carries the ALGOL-repair debate's direct hearings; new re-hearing conditions recorded this session: FORTRAN at CPL (a design document attributing a mechanism), Strachey & Wilkes 1961 at CPL (a project document showing the 1962 brief written independently). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
 }
+{
+ "ts": "2026-11-28T12:35:00+00:00",
+ "event": "expansion",
+ "session": 102,
+ "expansion": 214,
+ "parent": "acl-data-collection-initiative-liberman-1989-1989",
+ "parent_name": "ACL Data Collection Initiative (Liberman, 1989)",
+ "parent_year": 1989,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed that the Dow Jones WSJ text channel - rejected at exp-212 (the CSR corpus) as mediated via ACL/DCI - be judged at the DCI's own expansion on the DCI's documents, and that Liberman's own account (the design paper's ref. [9], not independently read in session 101) be read here. Both were done: Liberman, 'Text on Tap: the ACL/DCI' (H89-2024), was read in full, and the carried hearing was discharged as an ADMISSION (the Wall Street Journal text archive, new node) - at this parent the consumption is the DCI's own, so the mediation that governed at the child does not hold. Two findings from the parent's own account qualify the record. (a) Liberman's Appendix A lists the WSJ holding (25-50 million words) WITHOUT naming its donor: the supply channel rests on Paul & Baker's sentence ('supplied by Dow Jones, Inc. to the ACL/DCI'), read in full at exp-212, not on the parent's own paper - recorded as a wart in the admission's verification record. (b) Find-verified absences in Liberman's full text: 'Dow Jones' never occurs; 'Brown' occurs only inside a sample text ('Asea Brown Boveri'); 'Resource Management' and 'TIMIT' do not occur; the Penn Treebank appears only as the prospective downstream 'tree bank' project the DCI hoped to serve (direction, not filed). FIX-UP discharged here per house pattern: expansion 213's sync_commit = df726e22 (base 90d053f5, confirming expansion 212's fix-up was discharged in expansion 213's record; remote blob SHAs verified via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Liberman, 'Text on Tap: the ACL/DCI', Proc. October 1989 DARPA Speech and Natural Language Workshop (ACL Anthology H89-2024), read in full (16 pp. incl. appendices and samples). Load-bearing passages: Introduction - 'research workers have been severely hampered by the lack of appropriate materials, and specifically by the lack of a large enough body of text on which published results can be replicated or extended by others'; 'the Association for Computational Linguistics has established the ACL Data Collection Initiative (ACL/DCI). It provides the aegis of a not-for-profit scientific society to oversee the acquisition and preparation of a large text corpus to be made available for scientific research at cost and without royalties'; 'The material in the ACL/DCI text corpus will be coded in a standard form based on SGML, the Standard Generalized Markup Language'; coding and annotations 'will be coordinated with the work of the Text Encoding Initiative (TEI)'. 'History and Current Membership' - committee established February 1989; 'So far, no funding has been obtained or applied for, other than what is implicit in the pro bono efforts of the committee members'. 'Current Status' - 'several hundred million words of diverse text' obtained in eight months, 'perhaps a quarter of this material has been (at least roughly) translated into the SGML-derived format'; balance discussion ('what Don Walker calls the ecology of language'). 'Plans for Distribution' - a 'sampler' tape of about 30 million words on one 9-track reel 'using easily available (Lempel-Ziv) compression techniques'; 'CD-ROM is probably the most appropriate format for distribution of the full database, although 8mm digital tape also has some fans'; the prospective 'tree bank' project at Penn as a clearing-house example. 'What is SGML?' - ISO 8879; generalized markup as structural concepts over typographical detail; the AAP's 'proposed tag sets and document type declarations (DTD's)' as where SGML 'descends towards mortal ken'; 'in association with the TEI, we hope to provide a consistent, complete, and well documented tag set, extending the AAP set; this has certainly not yet been done'; 'At a minimum, SGML provides a useful interchange format'. Appendix A (holdings as of 10/89) - DOE abstracts, Challenger transcripts, Library of America, Hansard donations (IBM-cleaned English Hansard 100M words; bilingual 200M), Collins English Dictionary, DOJ JURIS, 'Wall Street Journal - between 25 and 50 million words' (no donor named). Appendix B - the Penta dump-format decryption, the parent's own clean-up work. Corroboration carried from exp-212: Paul & Baker 1992 (the supply sentence; DCI distribution on CD-ROM) and the exp-212 verification record (Lincoln's file-level consumption of the DCI's markup).",
+ "scout": {
+  "raw_filings": 10,
+  "matched_existing": 3,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "distinct": 10,
+  "note": "Document-census pattern: every channel Liberman's account names is filed exactly once (WSJ text archive, SGML, TEI, AAP tag sets, CD-ROM, Lempel-Ziv compression, the ACL), plus the three LINK candidates the lineage surveys pose for this parent (Brown Corpus, LOB Corpus, Resource Management corpus) - all three find-verifiably absent from the parent's own account and heard on that absence. Considered and not filed, with reasons in the dry notes: the Appendix A holdings as a class (DOE abstracts, Library of America, the Hansard donations, Collins, JURIS - the parent's contents, not separate advances; the WSJ filing exists because exp-212 assigned its hearing here); the Penn Treebank (downstream, direction); the Oxford Text Archive and ICAME (named in no DCI document - importance without a channel); DARPA as funder (the paper states no funding was obtained or applied for - the document itself closes the channel); AT&T Bell Laboratories (carriage, parity); the Penta typesetting format (a resisted substrate documented in Appendix B as the parent's own decryption labour, not a channel claimed). MiniLM loaded - no TF-IDF fallback this expansion. Per-lens floors: 23 lens entries filed with dry/shortfall notes in dry_notes_acl-data-collection-initiative-liberman-1989-1989.json."
+ },
+ "admissions": [
+  {
+   "node": "sgml-iso-8879-1986-1986",
+   "name": "SGML (ISO 8879, 1986)",
+   "link": false,
+   "grade": 6.0,
+   "basis": "The standard the parent's product is made in, named and instantiated: 'The material in the ACL/DCI text corpus will be coded in a standard form based on SGML', with a quarter of the holdings already translated into the SGML-derived format within eight months, and the child's preprocessing later consuming that markup at file level (exp-212 record). Mediation check: the TEI coordination is prospective and parallel, and the AAP tag sets are instances within SGML's framework the DCI hoped later to extend - neither carries SGML itself. Provisional: the instantiation is documented at the framework level; the DCI's concrete tag set was never published in the paper (recorded in the verification notes, with the AAP mediation attack attempted and answered there)."
+  },
+  {
+   "node": "wall-street-journal-text-archive-dow-jones-1987-1989-1987",
+   "name": "Wall Street Journal text archive (Dow Jones, 1987-1989)",
+   "link": false,
+   "grade": 5.0,
+   "basis": "THE CARRIED HEARING FROM EXP-212, DISCHARGED AS AN ADMISSION. At the CSR corpus the archive failed as mediated via the DCI because CSR consumed the DCI's organized files; at the DCI itself the consumption is direct - the archive is what the initiative took in and did its organization work on (Paul & Baker: 'supplied by Dow Jones, Inc. to the ACL/DCI which organized the data and distributed it'). The exp-208 object discrimination was re-run and does not govern: a supply-line parent's material is consumed (R3), not pointed at. Q3 scored partial (the initiative gathered hundreds of millions of other words; for the WSJ supply line - the parent's stored leap - this archive is the only source), and the verification record carries the full-strength attacks, including the Hansard multiples point and the wart that Liberman's Appendix A does not name the donor."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "Association for Computational Linguistics (ACL, 1962)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. The aegis is a genuinely named mechanism - the paper's second paragraph makes the not-for-profit society's aegis the instrument of acquisition (copyright retained by holders, no-redistribution agreements, research at cost without royalties) - and it fails closed on formation, not on thinness: the DCI IS the ACL acting, through the committee it established in February 1989, so nothing crosses a boundary into the parent. Contrast the DCI's own admission at exp-212, where it carried a specific artifact into a different child. CSR Corpus Committee parity (exp-212); Electric Communities at SAF (exp-210). Re-hearing condition: a DCI document showing an acquisition that turned on the aegis as a separable instrument - a donor agreement naming the society's not-for-profit status, rather than the initiative's request, as the stated consideration."
+  },
+  {
+   "name": "Text Encoding Initiative (TEI, 1987)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "Coordination is not consumption: every TEI sentence in the paper is future tense ('will be coordinated'; 'we hope to provide... in association with the TEI'; 'this has certainly not yet been done'), the TEI is a sibling project under the same sponsor, and its guidelines are a 1990s product. The DCI's format commitment names SGML directly."
+  },
+  {
+   "name": "AAP tag sets and DTDs (Association of American Publishers, 1986)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "The Hochreiter condition: a base acknowledged for future work is not thereby consumed. The DCI's relation to the AAP set is a stated intention to extend it later, in the paper's own words 'not yet been done'; its concrete-semantics role in the designers' understanding of SGML is scored at Q6/Q7 and does not convert into ancestry."
+  },
+  {
+   "name": "CD-ROM (1985)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "A named preference, not yet the leap's mechanism: the first release is a 9-track tape sampler, the paper records 8mm tape's partisans in the same breath, and the acquisition/organization/rights leap is medium-independent. Recorded honestly against the rejection: Paul & Baker show the WSJ text in fact distributed on CD-ROM, so the medium was consumed for the flagship holding shortly after. Re-hearing condition: a DCI release document showing the full database shipped on CD-ROM as its enabling format."
+  },
+  {
+   "name": "Resource Management corpus (Price et al., 1988)",
+   "score": 1.0,
+   "kind": "fail_closed_partial_link",
+   "basis": "Find-verified absence: 'Resource Management' does not occur in Liberman's paper. The practice parallel (a community organized around one shared corpus, in the same DARPA workshop world) is real but undocumented as a channel into the DCI, whose documents derive its form from the aegis and SGML; practice embodied without a document channel fails. Edge-scoped - RM's admitted correction-relation edge at the CSR corpus (exp-212) is untouched."
+  },
+  {
+   "name": "Brown Corpus (1964)",
+   "score": 1.0,
+   "kind": "fail_closed_partial_link",
+   "basis": "Find-verified absence: 'Brown' occurs in the paper only inside a sample text ('Asea Brown Boveri'). The DCI's one tradition-shaped discussion (balance, 'the ecology of language') names a committee member's phrase, not the Brown artifact, and the DCI's take-what-donors-give practice departs from Brown's balanced-sampling discipline rather than consuming it. Importance without a channel; parity with exp-212. Edge-scoped."
+  },
+  {
+   "name": "Lempel-Ziv compression (Ziv & Lempel, 1977)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "A component of the parent's delivered package - the sampler tape uses it and ships its source code - and a component of the package is not the package's predecessor (the Lesk-stdio pattern at exp-207; Katz at exp-212). Named once, in a parenthesis, as 'easily available'."
+  },
+  {
+   "name": "LOB Corpus (Johansson, Leech & Goodluck, 1978)",
+   "score": 0.5,
+   "kind": "fail_closed_partial_link",
+   "basis": "Brown's road, one remove further: absent from Liberman's paper, no shared personnel or institution, and a discipline this parent does not practice. Parity with exp-212. Edge-scoped."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_acl-data-collection-initiative-liberman-1989-1989.json",
+  "outcomes": {
+   "sgml-iso-8879-1986-1986": "provisional",
+   "wall-street-journal-text-archive-dow-jones-1987-1989-1987": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Both survivors provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). The three LINK candidates were all rejected at this parent, so no verification entries were needed for them; their existing records were confirmed intact on disk regardless. Warts recorded in the verification notes: the WSJ admission rests on Paul & Baker for the supply channel (Liberman's Appendix A names no donor) and is first in line for rehearing if that sentence fails; SGML's instantiation is documented at the framework level, its concrete DCI tag set unpublished in the paper."
+ },
+ "totals_after": {
+  "nodes": 348,
+  "edges": 449,
+  "budget": "348/2000",
+  "expansions_done": 214,
+  "provisional": 331,
+  "verified": 17
+ },
+ "frontier_head_after": [
+  "sgml-iso-8879-1986-1986",
+  "advantage-updating-baird-1993",
+  "complexity-of-reinforcement-learning-whitehead-1991",
+  "ieee-754-binary-floating-point-arithmetic-1985-1985",
+  "maclisp-1966"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 102 closes here (expansions 213-214). Session 101's carried hearings are fully discharged: CPL's five mediated channels were admitted (ALGOL 60, lambda calculus as links; Strachey & Wilkes 1961 as a new node) or re-decided on CPL's documents (Atlas, EDSAC 2 fail-closed), and the DCI's Dow Jones hearing was discharged as an admission. New carried items: SGML's own expansion, when its turn comes (it enters the frontier at the head), carries the AAP/TEI standards-lineage hearings recorded here as prospective at this parent; the WSJ archive's expansion carries the Dow Jones composition-system question noted in its verification record. New re-hearing conditions recorded this session: ACL at the DCI (a donor agreement naming the aegis), CD-ROM at the DCI (a full-database CD-ROM release document), FORTRAN at CPL, Strachey & Wilkes 1961 at CPL. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
+}

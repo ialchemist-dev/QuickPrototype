@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T12:11:45+00:00",
-  "expansions_done": 213,
-  "raw_candidates_seen": 8933,
+  "updated_at": "2026-11-28T12:17:21+00:00",
+  "expansions_done": 214,
+  "raw_candidates_seen": 8943,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35805,6 +35805,54 @@
     "name": "Cambridge Mathematical Laboratory & University of London Computer Unit (joint project, 1962)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T12:11:22+00:00"
+   },
+   {
+    "parent_id": "acl-data-collection-initiative-liberman-1989-1989",
+    "name": "Text Encoding Initiative (TEI, 1987)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:16:54+00:00"
+   },
+   {
+    "parent_id": "acl-data-collection-initiative-liberman-1989-1989",
+    "name": "AAP tag sets and DTDs (Association of American Publishers, 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:16:54+00:00"
+   },
+   {
+    "parent_id": "acl-data-collection-initiative-liberman-1989-1989",
+    "name": "CD-ROM (1985)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:16:54+00:00"
+   },
+   {
+    "parent_id": "acl-data-collection-initiative-liberman-1989-1989",
+    "name": "Lempel-Ziv compression (Ziv & Lempel, 1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:16:54+00:00"
+   },
+   {
+    "parent_id": "acl-data-collection-initiative-liberman-1989-1989",
+    "name": "Association for Computational Linguistics (ACL, 1962)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:16:54+00:00"
+   },
+   {
+    "parent_id": "acl-data-collection-initiative-liberman-1989-1989",
+    "name": "Brown Corpus",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:16:54+00:00"
+   },
+   {
+    "parent_id": "acl-data-collection-initiative-liberman-1989-1989",
+    "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:16:54+00:00"
+   },
+   {
+    "parent_id": "acl-data-collection-initiative-liberman-1989-1989",
+    "name": "Resource Management corpus (Price et al., 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:16:54+00:00"
    }
   ]
  },
@@ -45869,7 +45917,7 @@
    "prior_state": "Private, per-lab text collections; publisher text unavailable in machine-readable form.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -45942,6 +45990,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T12:11:22+00:00"
+  },
+  "sgml-iso-8879-1986-1986": {
+   "id": "sgml-iso-8879-1986-1986",
+   "name": "SGML (ISO 8879, 1986)",
+   "aliases": [],
+   "year": 1986,
+   "domain": "standards",
+   "type": "method",
+   "definition": "SGML (ISO 8879, 1986): the international standard for generalized markup - a framework for defining document markup systems in which structural elements are embedded as labeled brackets in the text stream, with character entities for non-ASCII symbols.",
+   "bottleneck": "Before SGML, electronically prepared text was coded in proprietary typesetting languages, undocumented and mutually unintelligible: donated text arrived as a decryption problem, and no standard form existed in which a shared corpus could be coded for interchange.",
+   "leap": "SGML (ISO 8879, 1986) standardized generalized markup: a framework in which a text collection's structural coding could be defined once, embedded as labeled brackets in the text stream, and transformed by any recipient into their preferred local form.",
+   "prior_state": "Proprietary typesetting codes (the Penta dump format of the DCI's own Appendix B is the type specimen) and ad hoc per-project markup conventions.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, secs.1 and 'What is SGML?'",
+     "url": "https://aclanthology.org/H89-2024.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial verification, expansion 214 (ACL Data Collection Initiative, 1989). Outcome provisional. (1) Q1 attack: text exchange was not impossible before SGML - the DCI's own clean-up section is a catalogue of successful, painful exchanges in proprietary formats - and the verdicts already score Q1 partial; the edge stands on Q2/Q7 and directness, not on impossibility. (2) The derivation attack (the strongest): what the DCI shipped was 'a standard form BASED on SGML' - its own derived format - so is the consumed ancestor SGML or an unnamed house format? Answered on the paper: the commitment is to SGML by name and mechanism (labeled brackets, character entities, DTD-defined tag sets), a quarter of the holdings were already translated into the SGML-derived format within eight months, and the child's preprocessing consumed that markup at file level (exp-212). Ancestor-modified is a direct relation in this run when the modification is of the candidate itself; the house-format reading would require the derivation to be nominal, which the paper's own SGML tutorial section contradicts. The node stays provisional because the DCI's concrete tag set was never published in the paper - the instantiation is documented at the framework level, not the DTD level. (3) Multiples test: other markup traditions existed (troff, TeX, the AAP's DTDs as instances), so necessity was scored partial and stays partial. (4) Mediation attack - the AAP tag sets as the true carrier (SGML reached the designers through the AAP's concrete DTDs, per Liberman's 'descends towards mortal ken' sentence): attempted and answered - the AAP types are publishing-industry document types, the DCI's corpus markup is its own derivation from the framework, and the DCI's stated plan to EXTEND the AAP set puts its work at the SGML level, not inside the AAP artifact; the attack dents the edge's cleanliness and is recorded here, but does not name a carrier that absorbs the channel. Date/direction: ISO 8879 published 1986, before the committee's February 1989 formation; direction standard-to-adopter is the paper's own.",
+    "at": "2026-11-28T12:17:21+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T12:16:54+00:00"
+  },
+  "wall-street-journal-text-archive-dow-jones-1987-1989-1987": {
+   "id": "wall-street-journal-text-archive-dow-jones-1987-1989-1987",
+   "name": "Wall Street Journal text archive (Dow Jones, 1987-1989)",
+   "aliases": [],
+   "year": 1987,
+   "domain": "language resources",
+   "type": "data",
+   "definition": "Dow Jones's electronic production text of the Wall Street Journal (the 1987-1989 backfile the DCI received): the complete machine-readable text of a major newspaper as it came off the publisher's computerized composition system - an artifact that exists only because the newspaper was by then composed electronically.",
+   "bottleneck": "Before Dow Jones's electronic production text existed as a suppliable archive, a contemporary newspaper's text existed only in print and in proprietary retrieval services: no researcher could obtain tens of millions of words of real, current prose at any price, and private keying was the only alternative.",
+   "leap": "By the late 1980s the Wall Street Journal was composed electronically, so its complete text existed as transferable files on the publisher's side - an archive of 25 to 50 million words of contemporary prose that could be handed over wholesale to a research initiative, which is what Dow Jones did for the ACL/DCI.",
+   "prior_state": "Newspaper text in print and in commercial retrieval systems, licensed for reading but not for research redistribution; researchers keying text or negotiating privately, lab by lab.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992; Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, Appendix A",
+     "url": "https://aclanthology.org/H89-2024.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial verification, expansion 214 (ACL Data Collection Initiative, 1989) - the carried hearing from exp-212, discharged as an admission. Outcome provisional; the attacks are recorded at full strength. (1) Q1/Q3 attack: the DCI obtained several hundred million words of OTHER text in the same eight months (the Hansard donations alone exceed the WSJ holding), so the initiative's problem was solvable without this archive. The attack lands on the initiative-as-a-whole reading and is exactly why Q3 is scored partial; the edge is scoped to the WSJ supply line, which is the parent's stored leap and the holding the child's corpus was built from, and for that line Dow Jones's archive is the only source that exists. (2) Multiples test: the IBM-cleaned Hansard is a near-simultaneous second wholesale supply of large text - necessity is 'ripe', recorded; the node does not stand on necessity. (3) Date/direction: the node is dated 1987, the start of the backfile as received (1987-1989); the supply to the DCI is documented by Paul & Baker (1992), read in full at exp-212 - 'supplied by Dow Jones, Inc. to the ACL/DCI which organized the data and distributed it'. Wart: Liberman's Appendix A lists the WSJ holding (25-50 million words) WITHOUT naming its donor, so the supply channel rests on the child's design paper rather than the parent's own account; if that sentence were ever shown wrong, this edge is first in line for rehearing. (4) Mediation attack: Dow Jones's computerized composition system as mediator (the archive is its output). Answered: the candidate IS the output artifact - the text archive as a body of files - and the DCI consumed the files themselves; a production apparatus behind an artifact does not mediate the artifact's own consumption (the composition system would face its own hearing if the archive is ever expanded, where the direction of the question reverses). The exp-208 object discrimination was also re-run: the archive is consumed material (R3) for a supply-line parent, not a platform the parent points at. First in line for rehearing if the Paul & Baker supply sentence fails.",
+    "at": "2026-11-28T12:17:21+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T12:16:54+00:00"
   }
  },
  "edges": [
@@ -89834,6 +89940,200 @@
     "counterfactual": "Remove the 1961 paper and the CPL project loses its documented founding brief: Richards dates CPL's first ideas to it, and the project's adopted principles - extend ALGOL 60 including the good features, remove or modify the features hard to implement efficiently, include only features that could be implemented efficiently - are its programme executed.",
     "mediator": null,
     "evidence": "Mediation check: ALGOL 60 is the paper's object, not its carrier - the proposals are additions to ALGOL, and they reach CPL directly as the brief its own authors executed. Embryo attack considered: unlike the CPL compiler subset at exp-211 (the parent's informal first form, no separate artifact existence), this paper is published (CACM 4(11):488-491; Cambridge TM 61/5), citable, addressed to the ALGOL community, and predates the CPL project's formation - the Mikolov-thesis shape (exp-206): a separable, deposited, cited finished artifact consumed at named points. The admission is this expansion's most contestable and is flagged for rehearing in the verification record."
+   }
+  },
+  {
+   "predecessor_id": "sgml-iso-8879-1986-1986",
+   "successor_id": "acl-data-collection-initiative-liberman-1989-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "Text could be exchanged without a standard form - painfully, as the paper's clean-up section documents at length (undocumented formats, proprietary typesetting languages, logical structure to be recovered by intelligence). The standard form made a SHARED corpus practical rather than strictly possible: partial.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'Text Acquisition and Clean-up'",
+     "falsification": "Upgrades if a DCI document shows an acquisition refused or a distribution blocked for want of the standard form."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity: one coding for all recipients, with annotations (part of speech, syntactic and semantic structure) to be layered onto the same base over time - a space of shared resources, not one corpus.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Introduction",
+     "falsification": "Dies if the SGML-based form proves to have been used for one holding only and abandoned."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The DCI could have invented a private format, as many projects did; its product's claim is a standard form and the standard it adopted is SGML - but the private-format path was live, so necessity is partial.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'What is SGML?'",
+     "falsification": "Downgrades if a DCI document shows the SGML basis was nominal and the actual files used an unrelated house format."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Recipients transform a standard form instead of decrypting a proprietary one - a real cost drop, unquantified in the paper: partial.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'What is SGML?'",
+     "falsification": "n/a"
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability channel.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Explanatory model: generalized markup 'rises above the details of font definition, type size, exact page layout, etc., to specify more structural concepts such as heading, footnote, emphasis' - the model of document structure the DCI's organization work applies to every holding.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'What is SGML?'",
+     "falsification": "n/a"
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: an interchange standard by design - 'At a minimum, SGML provides a useful interchange format; each researcher can easily write programs to transform such materials into his or her preferred local form.'",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'What is SGML?'",
+     "falsification": "n/a"
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "SGML's reach runs across publishing, humanities computing and NLP; for this pair the documented reach is the text-archive world: partial.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'What is SGML?'",
+     "falsification": "n/a"
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Transformability shortens each recipient's preparation loop; unmeasured: partial.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'What is SGML?'",
+     "falsification": "n/a"
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "SGML became the default basis for text archives of the era (the TEI line runs from it); at this parent the displacement is prospective: partial.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Introduction",
+     "falsification": "n/a"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality: the corpus's form is SGML-based by the paper's own declaration, and the child's record shows the markup consumed at file level (313 files, the DCI's paragraph/sentence markup).",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Introduction; exp-212 verification record",
+     "falsification": "n/a"
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility: the SGML line (through the TEI to XML) permanently reset the baseline for text encoding; corpora are still distributed in its descendant forms.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'What is SGML?'",
+     "falsification": "n/a"
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:16:54+00:00",
+   "leap": {
+    "prior_state": "Private, per-lab text collections; publisher text unavailable in machine-readable form.",
+    "jump": "The ACL Data Collection Initiative obtained publisher text at scale - the Wall Street Journal text from Dow Jones among several hundred million words of holdings gathered in eight months - organized it in an SGML-based standard form with structural markup, and made it available to the whole research community at cost and without royalties under a not-for-profit scientific society's aegis: the first shared supply line of large machine-readable text.",
+    "date": 1989
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove SGML and the DCI's corpus has no standard form: each donation stays in its proprietary typesetting code, and the single organized artifact the child corpus's preprocessing consumed at file level is instead dozens of local ones.",
+    "mediator": null,
+    "evidence": "The paper's commitment is to SGML by name in its third paragraph ('The material in the ACL/DCI text corpus will be coded in a standard form based on SGML'), with a quarter of the holdings already translated into the SGML-derived format within eight months - instantiation, not aspiration. Mediation check: the TEI coordination is prospective and parallel (a sibling project), and the AAP tag sets are instances within SGML's framework that the DCI hoped later to extend; neither carries SGML itself into the parent."
+   }
+  },
+  {
+   "predecessor_id": "wall-street-journal-text-archive-dow-jones-1987-1989-1987",
+   "successor_id": "acl-data-collection-initiative-liberman-1989-1989",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Liberman's problem statement is the impossibility: workers were 'severely hampered... by the lack of a large enough body of text on which published results can be replicated or extended by others'. A publisher's production archive is the class of material that made a 25-50M-word contemporary corpus obtainable at all - no laboratory keys a newspaper.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Introduction; Appendix A",
+     "falsification": "Dies if the DCI's WSJ holding proves to have been keyed or scanned by the initiative rather than supplied as the publisher's files."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity: the archive's availability through the parent unblocked the whole space of WSJ-based studies - the CSR corpus, the Penn Treebank's text base, a generation of statistical language modelling - all drawn from this one supply.",
+     "source": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992; Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'Plans for Distribution' (the prospective tree bank)",
+     "falsification": "Dies if the downstream WSJ-based work proves to have drawn on a different supply of the text."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity splits: for the DCI as a whole, other text existed - several hundred million words of it within eight months; for the WSJ supply line, which is the parent's stored leap, Dow Jones's archive is the only possible source. Partial, honestly.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Appendix A",
+     "falsification": "Upgrades if a DCI document shows the initiative's programme was constituted around the WSJ acquisition specifically."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse: wholesale transfer of the publisher's files against keying or privately cleaning 25-50 million words - the paper's clean-up section documents how painful even the donated-material path was; the archive removed the acquisition cost by orders of magnitude.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), 'Text Acquisition and Clean-up'",
+     "falsification": "n/a"
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability channel.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "The archive supplies material, not an explanatory model.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "As a stable, identical text source held in common, the archive is what other researchers could build replicable experiments on - the paper's stated replicability aim - though the composable form is the parent's markup work: partial.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Introduction",
+     "falsification": "n/a"
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Reach across speech recognition, syntax and lexicography within language research; broader cross-domain reach is not documented for the pair: partial.",
+     "source": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992",
+     "falsification": "n/a"
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Shared identical material shortens the replicate-and-extend loop the paper complains was impossible; the gain is real but unmeasured: partial.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Introduction",
+     "falsification": "n/a"
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "The WSJ text became the default large text source for a generation of NLP - but through the parent's distribution, so the displacement is jointly the parent's: partial.",
+     "source": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992",
+     "falsification": "n/a"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality: this is the holding the child's record turns on (the CSR corpus's entire text half) and the initiative's flagship in its own holdings list.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Appendix A; Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992",
+     "falsification": "n/a"
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility: once publisher text flowed to research at this scale, the private-collection era did not return - the flow was institutionalized by the DCI's own successor arrangements.",
+     "source": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop (H89-2024), Introduction",
+     "falsification": "n/a"
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:16:54+00:00",
+   "leap": {
+    "prior_state": "Private, per-lab text collections; publisher text unavailable in machine-readable form.",
+    "jump": "The ACL Data Collection Initiative obtained publisher text at scale - the Wall Street Journal text from Dow Jones among several hundred million words of holdings gathered in eight months - organized it in an SGML-based standard form with structural markup, and made it available to the whole research community at cost and without royalties under a not-for-profit scientific society's aegis: the first shared supply line of large machine-readable text.",
+    "date": 1989
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Dow Jones's archive and the DCI's defining supply line vanishes: the initiative still gathers other text, but the holding its stored leap is built on - the WSJ text it obtained, organized and distributed, from which the CSR corpus's 47M words were drawn - does not exist, and no other source can supply a contemporary newspaper's complete text.",
+    "mediator": null,
+    "evidence": "Mediation check: at exp-212 this archive was rejected at the CSR corpus as mediated via the ACL/DCI, because CSR consumed the DCI's organized files; at THIS parent the consumption is the DCI's own - the archive is what the DCI took in and did its organization work on, so no intermediate stands between it and the parent. This hearing discharges the exp-212 carried item. The object discrimination (Reddit platform fail-closed at exp-208) was tested and does not govern: Pushshift's leap was an ingest method that pointed at its platform, while the DCI's leap is a supply line whose substance is the material supplied and the right to supply it - consumed (R3), not merely pointed at. Wart recorded: Liberman's Appendix A lists the WSJ holding (25-50 million words) without naming its donor; the supply channel itself is documented by Paul & Baker's 'supplied by Dow Jones, Inc. to the ACL/DCI'."
    }
   }
  ],
@@ -397351,6 +397651,352 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "acl-data-collection-initiative-liberman-1989-1989": {
+   "raw_candidates": [
+    {
+     "causal_claim": "The Wall Street Journal text archive directly enabled the ACL/DCI's leap as the material its supply line was built on: Paul & Baker record that the text was 'supplied by Dow Jones, Inc. to the ACL/DCI which organized the data and distributed it to the research community in CD-ROM format', and Liberman's Appendix A lists the Wall Street Journal - between 25 and 50 million words - among the initiative's holdings in its first eight months: the publisher's own machine-readable production text, handed over wholesale, is what the DCI organized, marked up and supplied onward.",
+     "definition": "Dow Jones's electronic production text of the Wall Street Journal (the 1987-1989 backfile the DCI received): the complete machine-readable text of a major newspaper as it came off the publisher's computerized composition system - an artifact that exists only because the newspaper was by then composed electronically.",
+     "domain": "language resources",
+     "lens": "L8",
+     "name": "Wall Street Journal text archive (Dow Jones, 1987-1989)",
+     "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992; Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, Appendix A",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "data",
+     "year": 1987
+    },
+    {
+     "causal_claim": "SGML directly enabled the ACL/DCI's leap as the standard form its product is made in: Liberman states in the paper's third paragraph that 'the material in the ACL/DCI text corpus will be coded in a standard form based on SGML, the Standard Generalized Markup Language', and reports a quarter of the holdings already translated into that SGML-derived format within eight months - the markup the child corpus's preprocessing later consumed at file level is this standard instantiated.",
+     "definition": "SGML (ISO 8879, 1986): the international standard for generalized markup - a framework for defining document markup systems in which structural elements are embedded as labeled brackets in the text stream, with character entities for non-ASCII symbols.",
+     "domain": "standards",
+     "lens": "L16",
+     "name": "SGML (ISO 8879, 1986)",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, secs.1 and 'What is SGML?'",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "method",
+     "year": 1986
+    },
+    {
+     "causal_claim": "The Text Encoding Initiative is filed as the coordination partner Liberman names for the DCI's format work: 'Both the coding and the annotations will be coordinated with the work of the Text Encoding Initiative (TEI)', and the DCI's tag set is to be provided 'in association with the TEI' - a sibling standards project (jointly sponsored by the ACL, the Association for Computers and the Humanities, and the Association for Literary and Linguistic Computing) founded in 1987.",
+     "definition": "The Text Encoding Initiative (1987): the international project to develop standards for coding and tagging texts for interchange, jointly sponsored by the ACL, ACH and ALLC - the body with which the DCI coordinated its coding and annotation plans.",
+     "domain": "standards",
+     "lens": "L16",
+     "name": "Text Encoding Initiative (TEI, 1987)",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, secs.1 and 'What is SGML?'",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "institution",
+     "year": 1987
+    },
+    {
+     "causal_claim": "The AAP tag set is filed as the named base the DCI's own tag set was to extend: Liberman writes that SGML 'descends towards mortal ken... through the publication of proposed tag sets and document type declarations (DTD's) by the Association of American Publishers', and that 'in association with the TEI, we hope to provide a consistent, complete, and well documented tag set, extending the AAP set' - while recording that 'this has certainly not yet been done'.",
+     "definition": "The Association of American Publishers' proposed SGML tag sets and document type declarations (from its Electronic Manuscript Project, mid-1980s): the publishing industry's concrete DTDs through which the abstract SGML standard first acquired usable semantics.",
+     "domain": "standards",
+     "lens": "L16",
+     "name": "AAP tag sets and DTDs (Association of American Publishers, 1986)",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, 'What is SGML?'",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "method",
+     "year": 1986
+    },
+    {
+     "causal_claim": "CD-ROM is filed as the distribution medium the DCI's own account names for its full database: 'CD-ROM is probably the most appropriate format for distribution of the full database' (Liberman), and the child corpus's design paper records the DCI in fact distributing the WSJ text 'to the research community in CD-ROM format'.",
+     "definition": "CD-ROM (Philips/Sony Yellow Book, 1985; ISO 9660 file system, 1988): the read-only optical disc that put several hundred megabytes on a cheap, mailable artifact - the first medium on which a corpus of the DCI's scale could be posted to a researcher's desk.",
+     "domain": "computing machinery",
+     "lens": "L9",
+     "name": "CD-ROM (1985)",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, 'Plans for Distribution'; Paul & Baker 1992",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "device",
+     "year": 1985
+    },
+    {
+     "causal_claim": "Lempel-Ziv compression is filed as the named mechanism in the DCI's first distribution package: the sampler of about 30 million words is 'as much as will fit on one 12-inch reel of 9-track tape, using easily available (Lempel-Ziv) compression techniques', with the compression programs' source code to be included in the release.",
+     "definition": "The Lempel-Ziv dictionary compression algorithms (LZ77, 1977; LZ78, 1978) and their implementations (compress): the standard lossless compression that multiplied the effective capacity of the tapes the DCI distributed on.",
+     "domain": "computer science",
+     "lens": "L11",
+     "name": "Lempel-Ziv compression (Ziv & Lempel, 1977)",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, 'Plans for Distribution'",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "method",
+     "year": 1977
+    },
+    {
+     "causal_claim": "The Association for Computational Linguistics is filed as the body whose aegis is the DCI's stated operating mechanism: 'the Association for Computational Linguistics has established the ACL Data Collection Initiative. It provides the aegis of a not-for-profit scientific society to oversee the acquisition and preparation of a large text corpus to be made available for scientific research at cost and without royalties', with copyright holders retaining property and applicants signing no-redistribution agreements - the trusted-holder arrangement under which publishers could hand text over at all.",
+     "definition": "The Association for Computational Linguistics (founded 1962 as the Association for Machine Translation and Computational Linguistics; renamed ACL 1968): the field's not-for-profit scientific society, whose aegis the DCI operated under.",
+     "domain": "institutions",
+     "lens": "L21",
+     "name": "Association for Computational Linguistics (ACL, 1962)",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, Introduction",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "institution",
+     "year": 1962
+    },
+    {
+     "causal_claim": "The Brown Corpus is filed as the tradition's founding artifact for this parent to answer: the designed, balanced machine-readable corpus is the model of a shared text resource the DCI's collection effort succeeds - the channel, if any, runs through the corpus tradition the DCI's balance discussions ('the ecology of language') inhabit.",
+     "definition": "The Brown University Standard Corpus of Present-Day American English (Francis & Kucera, manual 1964): 500 samples of 2,000+ words of 1961 American prose across 15 genres, about one million words - the first major structured machine-readable corpus.",
+     "domain": "language resources",
+     "lens": "L3",
+     "name": "Brown Corpus",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI' (1989) - find-checked for any Brown channel; Paul & Baker 1992 (exp-212 record)",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "data",
+     "year": 1964
+    },
+    {
+     "causal_claim": "The LOB Corpus is filed as the second instance of the designed text-corpus tradition (Brown's British counterpart) for this parent to answer, one remove further from the DCI's American-English collection effort.",
+     "definition": "The Lancaster-Oslo/Bergen Corpus of British English (compiled 1970s, published 1978): one million words in 500 balanced text samples on the Brown model.",
+     "domain": "language resources",
+     "lens": "L3",
+     "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI' (1989) - find-checked for any LOB channel",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "data",
+     "year": 1978
+    },
+    {
+     "causal_claim": "The Resource Management corpus is filed as the speech community's shared-corpus artifact of the year before, for this parent to answer: the DARPA common-task world had already shown a community organizing around one shared, administered corpus, and the DCI is the text side's answer in the same workshop community - whether the DCI's documents carry that channel is the question for the verdicts.",
+     "definition": "The DARPA Resource Management corpus (Price et al., 1988): the speaker-independent continuous-speech corpus of naval resource-management queries that served as the DARPA programme's shared benchmark artifact.",
+     "domain": "language resources",
+     "lens": "L3",
+     "name": "Resource Management corpus (Price et al., 1988)",
+     "source_title": "Liberman, 'Text on Tap: the ACL/DCI' (1989) - find-checked for any Resource Management channel",
+     "source_url": "https://aclanthology.org/H89-2024.pdf",
+     "type": "data",
+     "year": 1988
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "wall-street-journal-text-archive-dow-jones-1987-1989-1987",
+      "candidate": {
+       "causal_claim": "The Wall Street Journal text archive directly enabled the ACL/DCI's leap as the material its supply line was built on: Paul & Baker record that the text was 'supplied by Dow Jones, Inc. to the ACL/DCI which organized the data and distributed it to the research community in CD-ROM format', and Liberman's Appendix A lists the Wall Street Journal - between 25 and 50 million words - among the initiative's holdings in its first eight months: the publisher's own machine-readable production text, handed over wholesale, is what the DCI organized, marked up and supplied onward.",
+       "definition": "Dow Jones's electronic production text of the Wall Street Journal (the 1987-1989 backfile the DCI received): the complete machine-readable text of a major newspaper as it came off the publisher's computerized composition system - an artifact that exists only because the newspaper was by then composed electronically.",
+       "domain": "language resources",
+       "lens": "L8",
+       "name": "Wall Street Journal text archive (Dow Jones, 1987-1989)",
+       "source_title": "Paul & Baker, 'The Design for the Wall Street Journal-based CSR Corpus', DARPA SNL Workshop, Feb 1992; Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, Appendix A",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "data",
+       "year": 1987
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Wall Street Journal text archive (Dow Jones, 1987-1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "sgml-iso-8879-1986-1986",
+      "candidate": {
+       "causal_claim": "SGML directly enabled the ACL/DCI's leap as the standard form its product is made in: Liberman states in the paper's third paragraph that 'the material in the ACL/DCI text corpus will be coded in a standard form based on SGML, the Standard Generalized Markup Language', and reports a quarter of the holdings already translated into that SGML-derived format within eight months - the markup the child corpus's preprocessing later consumed at file level is this standard instantiated.",
+       "definition": "SGML (ISO 8879, 1986): the international standard for generalized markup - a framework for defining document markup systems in which structural elements are embedded as labeled brackets in the text stream, with character entities for non-ASCII symbols.",
+       "domain": "standards",
+       "lens": "L16",
+       "name": "SGML (ISO 8879, 1986)",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, secs.1 and 'What is SGML?'",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "method",
+       "year": 1986
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "SGML (ISO 8879, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "text-encoding-initiative-tei-1987-1987",
+      "candidate": {
+       "causal_claim": "The Text Encoding Initiative is filed as the coordination partner Liberman names for the DCI's format work: 'Both the coding and the annotations will be coordinated with the work of the Text Encoding Initiative (TEI)', and the DCI's tag set is to be provided 'in association with the TEI' - a sibling standards project (jointly sponsored by the ACL, the Association for Computers and the Humanities, and the Association for Literary and Linguistic Computing) founded in 1987.",
+       "definition": "The Text Encoding Initiative (1987): the international project to develop standards for coding and tagging texts for interchange, jointly sponsored by the ACL, ACH and ALLC - the body with which the DCI coordinated its coding and annotation plans.",
+       "domain": "standards",
+       "lens": "L16",
+       "name": "Text Encoding Initiative (TEI, 1987)",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, secs.1 and 'What is SGML?'",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "institution",
+       "year": 1987
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Text Encoding Initiative (TEI, 1987)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "aap-tag-sets-and-dtds-association-of-american-publishers-198-1986",
+      "candidate": {
+       "causal_claim": "The AAP tag set is filed as the named base the DCI's own tag set was to extend: Liberman writes that SGML 'descends towards mortal ken... through the publication of proposed tag sets and document type declarations (DTD's) by the Association of American Publishers', and that 'in association with the TEI, we hope to provide a consistent, complete, and well documented tag set, extending the AAP set' - while recording that 'this has certainly not yet been done'.",
+       "definition": "The Association of American Publishers' proposed SGML tag sets and document type declarations (from its Electronic Manuscript Project, mid-1980s): the publishing industry's concrete DTDs through which the abstract SGML standard first acquired usable semantics.",
+       "domain": "standards",
+       "lens": "L16",
+       "name": "AAP tag sets and DTDs (Association of American Publishers, 1986)",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, 'What is SGML?'",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "method",
+       "year": 1986
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "AAP tag sets and DTDs (Association of American Publishers, 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cd-rom-1985-1985",
+      "candidate": {
+       "causal_claim": "CD-ROM is filed as the distribution medium the DCI's own account names for its full database: 'CD-ROM is probably the most appropriate format for distribution of the full database' (Liberman), and the child corpus's design paper records the DCI in fact distributing the WSJ text 'to the research community in CD-ROM format'.",
+       "definition": "CD-ROM (Philips/Sony Yellow Book, 1985; ISO 9660 file system, 1988): the read-only optical disc that put several hundred megabytes on a cheap, mailable artifact - the first medium on which a corpus of the DCI's scale could be posted to a researcher's desk.",
+       "domain": "computing machinery",
+       "lens": "L9",
+       "name": "CD-ROM (1985)",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, 'Plans for Distribution'; Paul & Baker 1992",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "device",
+       "year": 1985
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "CD-ROM (1985)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lempel-ziv-compression-ziv-lempel-1977-1977",
+      "candidate": {
+       "causal_claim": "Lempel-Ziv compression is filed as the named mechanism in the DCI's first distribution package: the sampler of about 30 million words is 'as much as will fit on one 12-inch reel of 9-track tape, using easily available (Lempel-Ziv) compression techniques', with the compression programs' source code to be included in the release.",
+       "definition": "The Lempel-Ziv dictionary compression algorithms (LZ77, 1977; LZ78, 1978) and their implementations (compress): the standard lossless compression that multiplied the effective capacity of the tapes the DCI distributed on.",
+       "domain": "computer science",
+       "lens": "L11",
+       "name": "Lempel-Ziv compression (Ziv & Lempel, 1977)",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, 'Plans for Distribution'",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "method",
+       "year": 1977
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Lempel-Ziv compression (Ziv & Lempel, 1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "association-for-computational-linguistics-acl-1962-1962",
+      "candidate": {
+       "causal_claim": "The Association for Computational Linguistics is filed as the body whose aegis is the DCI's stated operating mechanism: 'the Association for Computational Linguistics has established the ACL Data Collection Initiative. It provides the aegis of a not-for-profit scientific society to oversee the acquisition and preparation of a large text corpus to be made available for scientific research at cost and without royalties', with copyright holders retaining property and applicants signing no-redistribution agreements - the trusted-holder arrangement under which publishers could hand text over at all.",
+       "definition": "The Association for Computational Linguistics (founded 1962 as the Association for Machine Translation and Computational Linguistics; renamed ACL 1968): the field's not-for-profit scientific society, whose aegis the DCI operated under.",
+       "domain": "institutions",
+       "lens": "L21",
+       "name": "Association for Computational Linguistics (ACL, 1962)",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI', Proc. Oct 1989 DARPA Speech and Natural Language Workshop, Introduction",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "institution",
+       "year": 1962
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Association for Computational Linguistics (ACL, 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "brown-corpus-1964",
+      "candidate": {
+       "causal_claim": "The Brown Corpus is filed as the tradition's founding artifact for this parent to answer: the designed, balanced machine-readable corpus is the model of a shared text resource the DCI's collection effort succeeds - the channel, if any, runs through the corpus tradition the DCI's balance discussions ('the ecology of language') inhabit.",
+       "definition": "The Brown University Standard Corpus of Present-Day American English (Francis & Kucera, manual 1964): 500 samples of 2,000+ words of 1961 American prose across 15 genres, about one million words - the first major structured machine-readable corpus.",
+       "domain": "language resources",
+       "lens": "L3",
+       "name": "Brown Corpus",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI' (1989) - find-checked for any Brown channel; Paul & Baker 1992 (exp-212 record)",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "data",
+       "year": 1964
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Brown Corpus"
+      ],
+      "matched_node_id": "brown-corpus-1964",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+      "candidate": {
+       "causal_claim": "The LOB Corpus is filed as the second instance of the designed text-corpus tradition (Brown's British counterpart) for this parent to answer, one remove further from the DCI's American-English collection effort.",
+       "definition": "The Lancaster-Oslo/Bergen Corpus of British English (compiled 1970s, published 1978): one million words in 500 balanced text samples on the Brown model.",
+       "domain": "language resources",
+       "lens": "L3",
+       "name": "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI' (1989) - find-checked for any LOB channel",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "data",
+       "year": 1978
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "LOB Corpus (Lancaster-Oslo/Bergen Corpus) (Johansson, Leech & Goodluck, 1978)"
+      ],
+      "matched_node_id": "lob-corpus-lancaster-oslo-bergen-corpus-johansson-leech-good-1978",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "resource-management-corpus-price-et-al-1988-1988",
+      "candidate": {
+       "causal_claim": "The Resource Management corpus is filed as the speech community's shared-corpus artifact of the year before, for this parent to answer: the DARPA common-task world had already shown a community organizing around one shared, administered corpus, and the DCI is the text side's answer in the same workshop community - whether the DCI's documents carry that channel is the question for the verdicts.",
+       "definition": "The DARPA Resource Management corpus (Price et al., 1988): the speaker-independent continuous-speech corpus of naval resource-management queries that served as the DARPA programme's shared benchmark artifact.",
+       "domain": "language resources",
+       "lens": "L3",
+       "name": "Resource Management corpus (Price et al., 1988)",
+       "source_title": "Liberman, 'Text on Tap: the ACL/DCI' (1989) - find-checked for any Resource Management channel",
+       "source_url": "https://aclanthology.org/H89-2024.pdf",
+       "type": "data",
+       "year": 1988
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Resource Management corpus (Price et al., 1988)"
+      ],
+      "matched_node_id": "resource-management-corpus-price-et-al-1988-1988",
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
