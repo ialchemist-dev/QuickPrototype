@@ -15334,3 +15334,130 @@
  "notes": "Session 99 continues: expansion 208 (Pushshift Reddit crawl, Baumgartner 2015) follows this checkpoint in the same session. The four admissions here re-shape the early frontier: B (1969) is the new frontier head and carries the BCPL/CPL/TMG/FORTRAN/PDP-7 hearings as its own expansion's business when its turn comes; the Unix node now exists for the many later parents whose Unix channels were previously heard without it. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion; Fox's LISP I manual, Interface Builder 1986 and Kneser-Ney rehearing conditions stand; this record adds the ALGOL 68 and Unix rehearing conditions (in the verification file) and the exp-206 verification-format wart (in brief_correction).",
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T11:27:01.508284+00:00",
+ "event": "expansion",
+ "session": 99,
+ "expansion": 208,
+ "parent": "pushshift-reddit-crawl-baumgartner-2015-2015",
+ "parent_name": "Pushshift Reddit crawl (Baumgartner, 2015)",
+ "parent_year": 2015,
+ "parent_depth": 4,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed grounding in the ICWSM 2020 paper and the ArchiveTeam record, judging the platform question afresh on the crawl's own documents. Two grounding flags, stated plainly. (a) The arXiv PDF fetch timed out this session; the paper was grounded on its abstract (read in full) plus body text surfaced through search (sec.1's dump counts, sec.2's official-API contrast, sec.2.1's subsystem list, all quoted in the scout builder). (b) The ArchiveTeam wiki page was not re-fetched (the URL tried returned 404); its facts enter via the exp-196 verification record, which used it (archive completed 2015-07-03). Neither gap changes a hearing: every scored channel is named in the obtained text. The brief's expectation that the exp-196 arena discrimination be re-judged afresh was honored - the platform was heard as the crawl's OBJECT and failed closed on the object discrimination, agreeing in kind with exp-196's arena outcome by a different road. FIX-UP discharged here per house pattern: expansion 207's sync_commit = 632ae9c4 (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Baumgartner, Zannettou, Keegan, Squire & Blackburn, 'The Pushshift Reddit Dataset', ICWSM 2020 (arXiv:2001.08435). Load-bearing passages: abstract - 'just collecting large-scale social media data involves a high degree of engineering skill set and computational resources... research is often times gated by data engineering problems'; 'Pushshift is a social media data collection, analysis, and archiving platform that since 2015 has collected Reddit data and made it available to researchers... includes historical data back to Reddit's inception. In addition to monthly dumps, Pushshift provides computational tools to aid in searching, aggregating, and performing exploratory analysis'; sec.1 - 'monthly dumps of 651M submissions and 5.6B comments posted on Reddit between 2005 and 2019' at files.pushshift.io/reddit/, plus the Pushshift API and a Slackbot; sec.2 - 'Why do people use Pushshift's API instead of the official Reddit API? In short, Pushshift makes it much easier for researchers to query and retrieve historical Reddit data, provides extended functionality by providing full-text search against comments and submissions, and has larger single query limits... Pushshift has a size limit five times greater than Reddit's 100 object limit... the Pushshift API offers aggregation endpoints... a feature that the Reddit API lacks entirely'; sec.2.1 - 'Pushshift uses multiple backend software components to collect, store, catalog, index, and disseminate data... The ingest engine... A PostgreSQL database... An Elastic Search document store cluster...'; 'each piece of collected data is added to an intermediate queue (currently implemented via Redis)... a standard, Pushshift-implemented format can be used (e.g., ndjson)'. The parent's stored record was verified complete (bottleneck, leap, prior_state populated - no stored-text repair needed).",
+ "scout": {
+  "raw_filings": 10,
+  "matched_existing": 0,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "judgments_different": 0,
+  "distinct": 10,
+  "note": "Document-census pattern: the paper's own named inputs are filed exactly once - the access route (Reddit API), the object (Reddit the platform), the sec.2.1 backend components (Elasticsearch, PostgreSQL, Redis; the ingest engine is the parent's own machinery and is recorded, not filed), and the distribution door (BigQuery) - plus the archive-lineage hearings (Common Crawl, Internet Archive, ArchiveTeam) and the prior state's standard tool (PRAW). Per-lens floor handled by 25 dry/shortfall notes, including both meta passes (the paper swept for unfilled names; the exp-196 record re-read for carried hearings - all three disposed of). 10 raw -> 10 distinct, 0 dropped, 0 prefiltered, 0 auto-merges, judge queue empty. Resolve ran with the MiniLM embedder. One resolver note: the existing Common Crawl node was NOT auto-matched to the Common Crawl filing (matched_existing 0); the filing denotes that node and was rejected, so no duplicate was created. Verdicts builder count check passed (10 evaluations == 10 distinct == 10 intended filings). No dry-run correction was spent on verdicts; one wording correction was made before applying (the platform spec's claim about exp-196's score reworded for accuracy - verdicts and scores unchanged, dry run reproduced identically). The survivor grades below are the scorer's output of the argued verdicts."
+ },
+ "admissions": [],
+ "notable_rejections": [
+  {
+   "name": "Reddit API (2008)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE, with its re-hearing condition on record. The crawl collected everything through this API - and the paper positions the API as its foil: sec.2 argues Pushshift exists because the official API's limits (100 objects per call, recent-biased listings, no full-text search, no aggregations) gate the research. An access route whose limits are the problem is the door, not the mechanism; the specific enabling step (exhaustive real-time ingestion, permanent archiving, monthly dump discipline) is the crawler's own engineering - the CUDA discrimination inverted, the specific step belonging to the parent rather than the candidate. Generic infrastructure fails even when it is the only door. RE-HEARING CONDITION: a Baumgartner technical document showing the crawl's design deriving from a specific API mechanism (e.g. search-endpoint timestamp-window enumeration as the backfill's enabling trick) re-argues this edge under the specific-enabling-step pattern."
+  },
+  {
+   "name": "Reddit (the platform, 2005)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "JUDGED AFRESH AT THIS PARENT, PER THE BRIEF - as the crawl's OBJECT. The archive is an archive OF Reddit; the object of a work is not its component (the Kimura-1997 discrimination), and as a content source the platform registers rather than enables (the arena pattern). Its relative openness (the abstract's contrast with Facebook and Twitter) is a property of the object, not a mechanism supplied to the collector. The outcome agrees in kind with exp-196's arena hearing (fail-closed partial, 1.5 there) by a different road - edge-scoped consistency, not a copied verdict."
+  },
+  {
+   "name": "Elasticsearch (2010)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE PARENT'S OWN SERVING MACHINERY: the index behind the Pushshift API's full-text search, named in the paper's description of the platform the crawl became. The 2015 leap (the archive's existence and completeness) is upstream of it - the dumps TL;DR consumed at exp-196 are produced by the ingest-and-flush pipeline, not by the index. Apparatus/component class."
+  },
+  {
+   "name": "PostgreSQL (1996)",
+   "score": 0.0,
+   "kind": "fail_closed_partial",
+   "basis": "Generic substrate in the parent's own backend, named in one subordinate clause of the platform description ('advanced querying of data and meta-data storage'). No crawl design feature derives from the store; the dumps are flat files. Apparatus class at its thinnest."
+  },
+  {
+   "name": "Redis (2009)",
+   "score": 0.0,
+   "kind": "fail_closed_partial",
+   "basis": "The paper's own wording is the discrimination: the ingest queue is 'currently implemented via Redis' - a self-describedly replaceable staging component. What is currently implemented via a component is definitionally substitutable, and the leap does not pass through the substitution."
+  },
+  {
+   "name": "Google BigQuery (2010)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "DIRECTION AND IDENTITY: the BigQuery Reddit dataset IS this archive, loaded from the dumps - exp-196's multiples attack disposed of it as 'the same archive behind a second door'. A work's distribution vehicle is downstream of it, not an ancestor. (Scored by the pipeline as a fail-closed partial on partial directness; the verdicts' directness field records the direction/identity finding.)"
+  },
+  {
+   "name": "Common Crawl (2008)",
+   "score": 0.5,
+   "kind": "plain_rejection",
+   "basis": "THE PARALLEL ARCHIVE, HEARD AND REFUSED: a different object (web pages harvested by link-crawling vs platform records ingested through an API in real time), no shared mechanism, no shared content, and the paper never names it. Importance without a channel is not ancestry. The filing denotes the graph's existing Common Crawl node (not resolver-matched); rejected, so no duplicate arises."
+  },
+  {
+   "name": "Internet Archive (1996)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE PRACTICE LINEAGE WITHOUT A DOCUMENT CHANNEL: wholesale harvesting-and-republishing as a public practice is genuinely this candidate's founding flip, and the resemblance to the parent's publication act is real - but no Pushshift document names it as model, source, host or inspiration, and the crawl's design is fully accounted for by its own documents. Practice embodied without a document channel fails (the WWW-at-RFC-1630 pattern)."
+  },
+  {
+   "name": "ArchiveTeam (2009)",
+   "score": 0.5,
+   "kind": "plain_rejection",
+   "basis": "DIRECTION: the candidate's documented Pushshift act (the 2023 preservation project) archives the archive - it is the parent's preserver and consumer, eight years downstream. The 2009 collective as a movement has no documented channel into the 2015 design. Its record's role at this expansion is evidentiary (the completion/provenance facts carried since exp-196), not ancestral."
+  },
+  {
+   "name": "PRAW (2011)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE PRIOR STATE'S STANDARD TOOL, ABSENT FROM THE PARENT'S OWN ACCOUNT: the paper describes a custom ingest engine where the era's wrapper would be expected. The leap past wrapper-class collection (per-study, rate-limited, recent-biased) is the parent's contribution; a replaced tool's limits are the parent's motivation, not its ancestry."
+  }
+ ],
+ "verification": {
+  "file": null,
+  "outcomes": {},
+  "mediation_actions": [],
+  "attack_notes": "No admissions, so no sec.6.4 verification file is owed and none was written. The adversarial work for this expansion lives in the verdicts themselves: the API hearing ran the counterfactual both ways (route-necessity vs mechanism-derivation) and recorded its re-hearing condition; the platform hearing was re-argued from the object discrimination rather than inherited from exp-196; the BigQuery identity finding re-uses exp-196's multiples disposal, cited on its face. A harvesting zero: the crawl's enabling step is its author's own engineering, its substrate is generic, its object is a platform, and its lineage is a practice without a document channel - the twenty-first zero on the run's record."
+ },
+ "totals_after": {
+  "nodes": 337,
+  "edges": 435,
+  "budget": "337/2000",
+  "expansions_done": 208,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 68,
+   "6": 51,
+   "7": 34,
+   "8": 23,
+   "9": 10,
+   "10": 5,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 320,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "b-thompson-1969-1969",
+  "state-application-framework-2001",
+  "wall-street-journal-corpus-darpa-csr-1992",
+  "advantage-updating-baird-1993",
+  "complexity-of-reinforcement-learning-whitehead-1991"
+ ],
+ "notes": "Session 99 closes here: expansions 207-208 done, session 100 NOT started, per the brief. The frontier head is now B (Thompson, 1969) - admitted at exp-207 - which carries the BCPL/CPL/TMG/FORTRAN/PDP-7 mediated hearings as its own expansion's direct business when its turn comes, followed by the State application framework (2001), the WSJ corpus (1992), Advantage updating (1993) and Whitehead (1991). Carried items: the Reddit API re-hearing condition (this record); the ALGOL 68 and Unix re-hearing conditions (exp-207 verification file); the exp-206 verification-format wart (recorded at exp-207, not hand-fixed); the EM hearing still belongs to the McLachlan & Basford (1988) expansion; Fox's LISP I manual, Interface Builder 1986 and Kneser-Ney rehearing conditions stand.",
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}

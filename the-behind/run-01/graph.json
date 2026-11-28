@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T11:20:05+00:00",
-  "expansions_done": 207,
-  "raw_candidates_seen": 8858,
+  "updated_at": "2026-11-28T11:26:33+00:00",
+  "expansions_done": 208,
+  "raw_candidates_seen": 8868,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35441,6 +35441,66 @@
     "name": "Bell Telephone Laboratories (1925)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T11:19:24+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "Reddit API (2008)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "Reddit (the platform, 2005)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "Elasticsearch (2010)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "PostgreSQL (1996)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "Redis (2009)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "Google BigQuery (2010)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "Common Crawl (2008)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "Internet Archive (1996)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "ArchiveTeam (2009)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "pushshift-reddit-crawl-baumgartner-2015-2015",
+    "name": "PRAW (2011)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:26:33+00:00"
    }
   ]
  },
@@ -44596,7 +44656,7 @@
    "prior_state": "Reddit data reached researchers through the official API's rate-limited, recent-only endpoints, or through small self-made scrapes of individual subreddits.",
    "status": "provisional",
    "depth": 4,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -392061,6 +392121,352 @@
       ],
       "member_names": [
        "Bell Telephone Laboratories (1925)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "pushshift-reddit-crawl-baumgartner-2015-2015": {
+   "raw_candidates": [
+    {
+     "name": "Reddit API (2008)",
+     "year": 2008,
+     "domain": "social media platforms",
+     "lens": "L13",
+     "type": "software",
+     "definition": "Reddit's official API (from 2008, when reddit was open-sourced): the HTTP interface through which all third-party collection ran - listing and search endpoints returning at most 100 objects per call, rate-limited, exposing recent content far more readily than history, with no full-text search across the archive and no aggregation endpoints (the limits as the Pushshift paper itself states them).",
+     "causal_claim": "The crawl's only collection route: Pushshift's ingest engine collected everything through this API, in real time, over the 14-month archive and after. But the paper positions the API as its foil, not its mechanism - sec.2's whole argument is that Pushshift exists because the official API's limits (100 objects, no history, no search, no aggregations) gate research. The crawl's enabling step - exhaustive real-time ingestion, permanent archiving, monthly dump discipline - is Baumgartner's own construction ON TOP OF the access route; the API supplied the door, and its limits supplied the problem. Filed as the expansion's principal hearing.",
+     "source_title": "Baumgartner et al., ICWSM 2020, sec.2 (the official API as foil)",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "Reddit (the platform, 2005)",
+     "year": 2005,
+     "domain": "social media platforms",
+     "lens": "L4",
+     "type": "system",
+     "definition": "Reddit itself (founded 2005): the link-aggregation and discussion platform whose submissions and comments - back to its inception - are the crawl's entire content, and whose relative openness to acquisition (against Facebook's and Twitter's closure, per the paper's abstract) is the crawl's precondition.",
+     "causal_claim": "Judged afresh at this parent per the brief (at exp-196 it failed closed 1.5 as the arena for the TL;DR corpus). Here the platform is the crawl's OBJECT: the archive is an archive OF Reddit. The paper treats the platform as the thing collected, never as a mechanism consumed - the crawl's design derives from the API's limits and the archiving discipline, not from any platform feature. The object of a work is not its component (the Kimura-1997 discrimination), and a content source registers rather than enables (the arena pattern).",
+     "source_title": "Baumgartner et al., ICWSM 2020, abstract and sec.1",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "Elasticsearch (2010)",
+     "year": 2010,
+     "domain": "data infrastructure",
+     "lens": "L1",
+     "type": "software",
+     "definition": "Elasticsearch (Shay Banon, 2010): the distributed document store and search engine that Pushshift's platform uses as its index - 'An Elastic Search document store cluster, which performs indexing' of every collected object (paper sec.2.1), the machinery behind the Pushshift API's full-text search.",
+     "causal_claim": "A component of the parent's own serving machinery, named in the paper's description of the grown platform: the 2015 crawl's leap is the archive's existence and completeness, not its index. The ES cluster belongs to the platform Pushshift became (the API's search over the archive), downstream of the harvesting act the parent node records; and as a substrate it is generic - the archive would be the same leap indexed otherwise. The apparatus/component discrimination applies.",
+     "source_title": "Baumgartner et al., ICWSM 2020, sec.2.1",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "PostgreSQL (1996)",
+     "year": 1996,
+     "domain": "data infrastructure",
+     "lens": "L1",
+     "type": "software",
+     "definition": "PostgreSQL (1996): the open-source relational database Pushshift uses for 'advanced querying of data and meta-data storage' in its backend (paper sec.2.1).",
+     "causal_claim": "Generic substrate inside the parent's own backend, named in the platform description: no design feature of the crawl - its completeness, its dump discipline, its real-time ingestion - derives from the database choice. Apparatus class.",
+     "source_title": "Baumgartner et al., ICWSM 2020, sec.2.1",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "Redis (2009)",
+     "year": 2009,
+     "domain": "data infrastructure",
+     "lens": "L1",
+     "type": "software",
+     "definition": "Redis (Salvatore Sanfilippo, 2009): the in-memory data store Pushshift's ingest pipeline uses as its intermediate queue - 'each piece of collected data is added to an intermediate queue (currently implemented via Redis), which serves as a staging area until the data is processed' (paper sec.2.1).",
+     "causal_claim": "The paper's own wording gives the discrimination: 'currently implemented via Redis' - a replaceable staging component inside the parent's own machinery, named as an implementation detail of the pipeline, not a condition of the archive's existence. Apparatus class.",
+     "source_title": "Baumgartner et al., ICWSM 2020, sec.2.1",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "Google BigQuery (2010)",
+     "year": 2010,
+     "domain": "data infrastructure",
+     "lens": "L8",
+     "type": "software",
+     "definition": "Google BigQuery (2010) and its public-datasets programme: the cloud warehouse through which the Pushshift archive was ALSO distributed to researchers (the BigQuery Reddit dataset, loaded from Baumgartner's dumps), the archive's second door.",
+     "causal_claim": "Direction and identity both fail at this parent: the BigQuery dataset is this archive, re-hosted - at exp-196 it was disposed of as 'the same archive behind a second door', and the multiples attack there confirmed it is not an independent archive. A distribution vehicle of the parent itself is downstream of the crawl, not an input to it; the crawl was completed from the API and published as dumps at files.pushshift.io on its own schedule.",
+     "source_title": "Baumgartner et al., ICWSM 2020; exp-196 verification record (BigQuery disposed as the same archive)",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "Common Crawl (2008)",
+     "year": 2008,
+     "domain": "web archives",
+     "lens": "L3",
+     "type": "dataset",
+     "definition": "Common Crawl (already a node in this graph): the open web crawl archive (from 2008) that periodically snapshots the public web and publishes the corpus - the other great harvesting archive of the parent's era, and the archive-lineage's standing comparison for any crawl artifact.",
+     "causal_claim": "No channel is documented, and the objects differ in kind: Common Crawl harvests web PAGES by crawling links; Pushshift harvests a platform's records through its API in real time. The Pushshift paper never names Common Crawl; the two archives are parallel answers to different acquisition problems. Importance without a channel is not ancestry - filed so the lineage hearing is on record, expected to fail plainly.",
+     "source_title": "Baumgartner et al., ICWSM 2020 (absence: the paper names no web-crawl source)",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "Internet Archive (1996)",
+     "year": 1996,
+     "domain": "web archives",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Internet Archive (founded 1996) and its Wayback Machine: the institution that established the practice of harvesting a medium wholesale and republishing it as a public research archive - the practice lineage any 2015 dump-everything archive stands in.",
+     "causal_claim": "The practice lineage is real and the document channel is absent: no Pushshift document cites the Internet Archive as a model, a source, or a host. Practice embodied without a document channel fails (the WWW-system-at-RFC-1630 pattern); the archive's own documents ground its design in the API's limits and the research community's needs, not in an archiving predecessor.",
+     "source_title": "Baumgartner et al., ICWSM 2020 (absence: no citation or modelling claim)",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "ArchiveTeam (2009)",
+     "year": 2009,
+     "domain": "web archives",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "ArchiveTeam (founded 2009 by Jason Scott): the volunteer collective for rescuing online content into archives - and, in 2023, the operator of the Pushshift preservation project that archived the dumps when the platform's future became uncertain (the ArchiveTeam record the brief names as a grounding document for this parent).",
+     "causal_claim": "Two relations, both wrong for ancestry: the 2023 preservation project is DOWNSTREAM of the parent (it archives the archive - a consumer, direction veto), and the 2009 collective has no documented channel into Baumgartner's 2015 design. The ArchiveTeam record's role at this expansion is evidentiary (it documents the crawl's completion and provenance, as exp-196's verification used it), not ancestral.",
+     "source_title": "ArchiveTeam Pushshift project record (as carried in the exp-196 verification)",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    },
+    {
+     "name": "PRAW (2011)",
+     "year": 2011,
+     "domain": "developer tools",
+     "lens": "L13",
+     "type": "software",
+     "definition": "PRAW, the Python Reddit API Wrapper (Bryce Boe, 2011): the standard Python library through which the era's researchers collected Reddit data - the tool the parent's stored prior_state calls 'small self-made scrapes' infrastructure, and the collection route of most pre-Pushshift Reddit studies.",
+     "causal_claim": "Filed as the tools-lens hearing for the period's standard instrument, and the finding is an absence: the Pushshift paper describes a custom ingest engine, not a wrapper-based scraper - the leap past PRAW-class collection (rate-limited, recent-biased, per-study) is precisely the parent's contribution. No document shows the crawl's ingest built on PRAW; the era's tool is the prior state, not the input.",
+     "source_title": "Baumgartner et al., ICWSM 2020, sec.2.1 (custom ingest engine described; no wrapper named)",
+     "source_url": "https://arxiv.org/abs/2001.08435"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "reddit-api-2008-2008",
+      "candidate": {
+       "name": "Reddit API (2008)",
+       "year": 2008,
+       "domain": "social media platforms",
+       "lens": "L13",
+       "type": "software",
+       "definition": "Reddit's official API (from 2008, when reddit was open-sourced): the HTTP interface through which all third-party collection ran - listing and search endpoints returning at most 100 objects per call, rate-limited, exposing recent content far more readily than history, with no full-text search across the archive and no aggregation endpoints (the limits as the Pushshift paper itself states them).",
+       "causal_claim": "The crawl's only collection route: Pushshift's ingest engine collected everything through this API, in real time, over the 14-month archive and after. But the paper positions the API as its foil, not its mechanism - sec.2's whole argument is that Pushshift exists because the official API's limits (100 objects, no history, no search, no aggregations) gate research. The crawl's enabling step - exhaustive real-time ingestion, permanent archiving, monthly dump discipline - is Baumgartner's own construction ON TOP OF the access route; the API supplied the door, and its limits supplied the problem. Filed as the expansion's principal hearing.",
+       "source_title": "Baumgartner et al., ICWSM 2020, sec.2 (the official API as foil)",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Reddit API (2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "reddit-the-platform-2005-2005",
+      "candidate": {
+       "name": "Reddit (the platform, 2005)",
+       "year": 2005,
+       "domain": "social media platforms",
+       "lens": "L4",
+       "type": "system",
+       "definition": "Reddit itself (founded 2005): the link-aggregation and discussion platform whose submissions and comments - back to its inception - are the crawl's entire content, and whose relative openness to acquisition (against Facebook's and Twitter's closure, per the paper's abstract) is the crawl's precondition.",
+       "causal_claim": "Judged afresh at this parent per the brief (at exp-196 it failed closed 1.5 as the arena for the TL;DR corpus). Here the platform is the crawl's OBJECT: the archive is an archive OF Reddit. The paper treats the platform as the thing collected, never as a mechanism consumed - the crawl's design derives from the API's limits and the archiving discipline, not from any platform feature. The object of a work is not its component (the Kimura-1997 discrimination), and a content source registers rather than enables (the arena pattern).",
+       "source_title": "Baumgartner et al., ICWSM 2020, abstract and sec.1",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Reddit (the platform, 2005)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "elasticsearch-2010-2010",
+      "candidate": {
+       "name": "Elasticsearch (2010)",
+       "year": 2010,
+       "domain": "data infrastructure",
+       "lens": "L1",
+       "type": "software",
+       "definition": "Elasticsearch (Shay Banon, 2010): the distributed document store and search engine that Pushshift's platform uses as its index - 'An Elastic Search document store cluster, which performs indexing' of every collected object (paper sec.2.1), the machinery behind the Pushshift API's full-text search.",
+       "causal_claim": "A component of the parent's own serving machinery, named in the paper's description of the grown platform: the 2015 crawl's leap is the archive's existence and completeness, not its index. The ES cluster belongs to the platform Pushshift became (the API's search over the archive), downstream of the harvesting act the parent node records; and as a substrate it is generic - the archive would be the same leap indexed otherwise. The apparatus/component discrimination applies.",
+       "source_title": "Baumgartner et al., ICWSM 2020, sec.2.1",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Elasticsearch (2010)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "postgresql-1996-1996",
+      "candidate": {
+       "name": "PostgreSQL (1996)",
+       "year": 1996,
+       "domain": "data infrastructure",
+       "lens": "L1",
+       "type": "software",
+       "definition": "PostgreSQL (1996): the open-source relational database Pushshift uses for 'advanced querying of data and meta-data storage' in its backend (paper sec.2.1).",
+       "causal_claim": "Generic substrate inside the parent's own backend, named in the platform description: no design feature of the crawl - its completeness, its dump discipline, its real-time ingestion - derives from the database choice. Apparatus class.",
+       "source_title": "Baumgartner et al., ICWSM 2020, sec.2.1",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "PostgreSQL (1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "redis-2009-2009",
+      "candidate": {
+       "name": "Redis (2009)",
+       "year": 2009,
+       "domain": "data infrastructure",
+       "lens": "L1",
+       "type": "software",
+       "definition": "Redis (Salvatore Sanfilippo, 2009): the in-memory data store Pushshift's ingest pipeline uses as its intermediate queue - 'each piece of collected data is added to an intermediate queue (currently implemented via Redis), which serves as a staging area until the data is processed' (paper sec.2.1).",
+       "causal_claim": "The paper's own wording gives the discrimination: 'currently implemented via Redis' - a replaceable staging component inside the parent's own machinery, named as an implementation detail of the pipeline, not a condition of the archive's existence. Apparatus class.",
+       "source_title": "Baumgartner et al., ICWSM 2020, sec.2.1",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Redis (2009)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "google-bigquery-2010-2010",
+      "candidate": {
+       "name": "Google BigQuery (2010)",
+       "year": 2010,
+       "domain": "data infrastructure",
+       "lens": "L8",
+       "type": "software",
+       "definition": "Google BigQuery (2010) and its public-datasets programme: the cloud warehouse through which the Pushshift archive was ALSO distributed to researchers (the BigQuery Reddit dataset, loaded from Baumgartner's dumps), the archive's second door.",
+       "causal_claim": "Direction and identity both fail at this parent: the BigQuery dataset is this archive, re-hosted - at exp-196 it was disposed of as 'the same archive behind a second door', and the multiples attack there confirmed it is not an independent archive. A distribution vehicle of the parent itself is downstream of the crawl, not an input to it; the crawl was completed from the API and published as dumps at files.pushshift.io on its own schedule.",
+       "source_title": "Baumgartner et al., ICWSM 2020; exp-196 verification record (BigQuery disposed as the same archive)",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Google BigQuery (2010)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "common-crawl-2008-2008",
+      "candidate": {
+       "name": "Common Crawl (2008)",
+       "year": 2008,
+       "domain": "web archives",
+       "lens": "L3",
+       "type": "dataset",
+       "definition": "Common Crawl (already a node in this graph): the open web crawl archive (from 2008) that periodically snapshots the public web and publishes the corpus - the other great harvesting archive of the parent's era, and the archive-lineage's standing comparison for any crawl artifact.",
+       "causal_claim": "No channel is documented, and the objects differ in kind: Common Crawl harvests web PAGES by crawling links; Pushshift harvests a platform's records through its API in real time. The Pushshift paper never names Common Crawl; the two archives are parallel answers to different acquisition problems. Importance without a channel is not ancestry - filed so the lineage hearing is on record, expected to fail plainly.",
+       "source_title": "Baumgartner et al., ICWSM 2020 (absence: the paper names no web-crawl source)",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Common Crawl (2008)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "internet-archive-1996-1996",
+      "candidate": {
+       "name": "Internet Archive (1996)",
+       "year": 1996,
+       "domain": "web archives",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Internet Archive (founded 1996) and its Wayback Machine: the institution that established the practice of harvesting a medium wholesale and republishing it as a public research archive - the practice lineage any 2015 dump-everything archive stands in.",
+       "causal_claim": "The practice lineage is real and the document channel is absent: no Pushshift document cites the Internet Archive as a model, a source, or a host. Practice embodied without a document channel fails (the WWW-system-at-RFC-1630 pattern); the archive's own documents ground its design in the API's limits and the research community's needs, not in an archiving predecessor.",
+       "source_title": "Baumgartner et al., ICWSM 2020 (absence: no citation or modelling claim)",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Internet Archive (1996)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "archiveteam-2009-2009",
+      "candidate": {
+       "name": "ArchiveTeam (2009)",
+       "year": 2009,
+       "domain": "web archives",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "ArchiveTeam (founded 2009 by Jason Scott): the volunteer collective for rescuing online content into archives - and, in 2023, the operator of the Pushshift preservation project that archived the dumps when the platform's future became uncertain (the ArchiveTeam record the brief names as a grounding document for this parent).",
+       "causal_claim": "Two relations, both wrong for ancestry: the 2023 preservation project is DOWNSTREAM of the parent (it archives the archive - a consumer, direction veto), and the 2009 collective has no documented channel into Baumgartner's 2015 design. The ArchiveTeam record's role at this expansion is evidentiary (it documents the crawl's completion and provenance, as exp-196's verification used it), not ancestral.",
+       "source_title": "ArchiveTeam Pushshift project record (as carried in the exp-196 verification)",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "ArchiveTeam (2009)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "praw-2011-2011",
+      "candidate": {
+       "name": "PRAW (2011)",
+       "year": 2011,
+       "domain": "developer tools",
+       "lens": "L13",
+       "type": "software",
+       "definition": "PRAW, the Python Reddit API Wrapper (Bryce Boe, 2011): the standard Python library through which the era's researchers collected Reddit data - the tool the parent's stored prior_state calls 'small self-made scrapes' infrastructure, and the collection route of most pre-Pushshift Reddit studies.",
+       "causal_claim": "Filed as the tools-lens hearing for the period's standard instrument, and the finding is an absence: the Pushshift paper describes a custom ingest engine, not a wrapper-based scraper - the leap past PRAW-class collection (rate-limited, recent-biased, per-study) is precisely the parent's contribution. No document shows the crawl's ingest built on PRAW; the era's tool is the prior state, not the input.",
+       "source_title": "Baumgartner et al., ICWSM 2020, sec.2.1 (custom ingest engine described; no wrapper named)",
+       "source_url": "https://arxiv.org/abs/2001.08435"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "PRAW (2011)"
       ],
       "matched_node_id": null,
       "pending_judge": false
