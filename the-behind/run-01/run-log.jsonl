@@ -17457,3 +17457,125 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Frontier order unchanged: the Intel design was consumed from the head; MacLisp (1966) is next (exp-224, this session), and the McLachlan & Basford (1988) node carrying the long-assigned EM hearing now stands second - it becomes the frontier head after exp-224 by the standing order, not by any reordering. Render used pipeline.py render --out run-01/index.html (mandatory flag). One mechanical incident, recorded: the first add-candidates call passed a --dry-notes flag the CLI does not accept (usage error, nothing written); the dry-notes file stands as the scout record on disk and add-candidates was re-run without the flag. Scores in notable_rejections were recomputed read-only with pipeline/score.py rank_candidates over the applied verdicts file and match the pipeline's outcome (0 survivors)."
 }
+{
+ "ts": "2026-11-28T14:15:15Z",
+ "event": "expansion",
+ "session": 107,
+ "expansion": 224,
+ "parent": "maclisp-1966",
+ "parent_name": "MacLisp",
+ "parent_year": 1966,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "No stored pipeline stage existed for this parent at session start (verified directly), so the expansion ran fresh. FIX-UP DISCHARGED: exp-223's sync_commit is 3d634aa8 (the sync that carried exp-223's record). The brief's scope note was honoured exactly: the six rediscovery paths recorded at exp-203 (IPL, lambda calculus, Kleene 1952, Turing 1936, FLPL, FORTRAN) were NOT filed at this parent - they belong to the Lisp node's own expansion; MacLisp's ancestry was judged on its own documents. One brief expectation was corrected by the resolver: BBN Lisp, filed at 1966 as the brief's census suggested, was dropped by the year bound as a same-year filing (the parent's own year) - recorded, not re-dated; its direction analysis stands in the candidate's evidence (the one documented mechanism flow, variable-storage models, runs MacLisp to BBN per White 1977, and BBN's PDP-10 system is a fork OF the PDP-6 line, so the substantive hearing would have failed on direction in any case).",
+ "grounding": "White, 'LISP: Program is Data - A Historical Perspective on MACLISP' (1977) - the system's own maintainer's history, read in substance: the 1964 PDP-6 check-out record ('the first working program actually run on the PDP-6 was an ancestor of the current MACLISP'; the machine's features 'thought to be ideal for the development of a list processing system'), the 1966 a-list abandonment ('In 1966, Greenblatt suggested abandoning the a-list model for program variables... This was the first LISP to do so, and a later LISP developed at BBN used a model whereby...'), the 7090 Lisp 1.5 prior home, ITS running by 1968. Steele & Gabriel, 'The Evolution of Lisp' (HOPL-II, 1993), the MacLisp sections: shallow binding ('the first implementation of Lisp to use what is called shallow binding'), EVAL vs EVALQUOTE against Lisp 1.5 and Interlisp, Deutsch's 1963 PDP-1 Lisp at BBN. The MACLISP family record (CHM Software Preservation): Mann and Greenblatt 'studied Deutsch's EVAL and wrote a new one for the PDP-6'; Greenblatt and Nelson's compiler work 'became MacLisp'; the first PDP-6 sold to MIT's AI Laboratory. Project MAC Progress Report IV (1966-67), p. 19, via the MacLisp record: the PDP-6 LISP System 'is based chiefly on the LISP 1.5 programming language, but has been extensively modified in a number of ways.' Moon 1974 via its cited pages (p. 1 descent from Lisp 1.5; p. 47 the value cell). AIM-190 (1970) for the Project MAC naming. Grounding wart recorded: no 1966 implementation listing was read; the PDP-6 representation claim rests on White and the family record (see the verification record).",
+ "scout": {
+  "raw_filings": 11,
+  "matched_existing": 1,
+  "judge_queue": 4,
+  "judgments_applied": 4,
+  "distinct": 8,
+  "dropped_year_bound": [
+   "BBN Lisp (Bobrow & Murphy, 1966) - same-year filing, dropped by the resolver's year bound",
+   "Incompatible Timesharing System (ITS, 1967) - filed deliberately after the parent",
+   "Stanford LISP 1.6 (1967) - filed deliberately after the parent"
+  ],
+  "note": "Document census over the maintainer's history, the standard retrospective, the family record and the contemporary Progress Report: 11 filings across 8 lenses, 15 lenses dry or shortfall with notes in run-01/work/dry_notes_maclisp-1966.json (incl. the L23 scope note recording the deliberate non-filing of the six exp-203 paths, and the L7 note recording LISP 2 as a documented contemporary with no channel, deliberately not filed). All four judge-queue pairs judged DIFFERENT (the 1.5 manual vs the Lisp 1960 node; PDP-6 Lisp vs the Lisp 1960 node; PDP-1 Lisp vs the Lisp 1960 node; PDP-6 Lisp vs PDP-1 Lisp as candidates - patterning-after is ancestry, not identity). Resolve ran on MiniLM, no TF-IDF fallback. The parent node's stored definition says the dialect was engineered 'under ITS' - an anachronism for the 1966 origin year (ITS is 1967; White dates its running to 1968); recorded here and in the ITS candidate's evidence, not edited (no hand-edits; the stored text describes the dialect's maturity)."
+ },
+ "admissions": [
+  {
+   "node": "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+   "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+   "link": "LINK",
+   "grade": 5.5,
+   "basis": "Citation plus instantiation in the strongest form: the laboratory's own contemporary record states the PDP-6 system is 'based chiefly on the LISP 1.5 programming language, but has been extensively modified', and the parent's founding departures are each defined against the manual's system (the value cell against the a-list search, Moon p. 47; EVAL against EVALQUOTE). The parent node's own stored verification had pre-answered the mediation attack in this direction (MacLisp is the lab's own re-engineering, not the 1962 system renamed). Q3 partial on the Interlisp multiples attack, answered place-specifically (MIT/ITS/PDP-10), exactly as the stored verification frames it."
+  },
+  {
+   "node": "pdp-6-dec-1964-1964",
+   "name": "PDP-6 (DEC, 1964)",
+   "link": "NEW",
+   "grade": 3.5,
+   "basis": "The specific-enabling-step discrimination (PDP-7 at exp-209), argued against the generic-substrate failures (IBM 7094/Atlas): co-development (Greenblatt at the machine's check-out; the Lisp the first program run on it), representation fit (the cons cell is the machine's 36-bit word, two 18-bit halves), and the parent's stored bottleneck naming the lab's PDP-6/PDP-10 installation as the enabling condition. Q1 partial and Q3 partial by honesty (Lisp existed elsewhere; another machine is conceivable); the gate carries on Q2 (the unblocked space: dialect engineering against an owned installation) plus directness pass. Most contestable admission of the session - its weakest-evidence wart is on its verification record."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "Lisp (McCarthy, 1960)",
+   "score": 1.0,
+   "kind": "mediated rejection (mediated_via: LISP 1.5 Programmer's Manual)",
+   "basis": "MacLisp's own documents name Lisp 1.5, never the 1960 paper, as the system built on; everything of 1960 reaches the PDP-6 line as embodied and extended in the 1.5 system, a transforming intermediate (compiler, storage discipline, the complete system), not a conduit. Rediscovery path: the manual's own edge to Lisp 1960 stands from exp-203; the six deeper paths behind the manual remain reserved to the Lisp node's expansion."
+  },
+  {
+   "name": "PDP-6 Lisp (MIT, 1964)",
+   "score": 1.5,
+   "kind": "fail-closed partial directness (own-version)",
+   "basis": "One continuous system under its earlier name: the family record's 'this became MacLisp' is continuation, not consumption, and the name MacLisp was adopted only in the early 1970s against the line's forks. The 1966 date marks Greenblatt's redesign within the system (value cell, consistent compiler), not a new artifact consuming an old one (the C Reference Manual discrimination, exp-207). Its genuine ancestry is heard on the admitted edges."
+  },
+  {
+   "name": "PDP-1 Lisp (Deutsch, 1963)",
+   "score": 1.0,
+   "kind": "fail-closed partial directness (studied model, two removes)",
+   "basis": "A documented study channel - Mann and Greenblatt 'studied Deutsch's EVAL and wrote a new one for the PDP-6' - but what crossed is an evaluator's organization into the parent's own earlier form, superseded at the level of the 1966 founding redesign. A rewrite's model is replaceable in a way a consumed mechanism is not. The channel is recorded at full strength in the verdicts for any future separable PDP-6 Lisp node (the own-version verdict says none should exist)."
+  },
+  {
+   "name": "Project MAC (MIT, 1963)",
+   "score": 1.5,
+   "kind": "fail-closed partial directness (formation: commissioning)",
+   "basis": "The laboratory bought the machine, employed the authors and supplied the brief - commissioning, formation's strongest form, at parity with Intel at exp-223. The one institutional act with a mechanism in the parent (the machine) is heard on the PDP-6 edge."
+  },
+  {
+   "name": "IBM 7090 (1960)",
+   "score": 1.0,
+   "kind": "fail-closed, directness fail (generic substrate of the ancestor system)",
+   "basis": "The anti-PDP-7 in its purest form: the parent exists by leaving this line, and its documents treat the 7090 installation as the prior state, not a consumed enabler. The contrast with the admitted PDP-6 edge is the discrimination itself."
+  },
+  {
+   "name": "Compatible Time-Sharing System (CTSS, 1963)",
+   "score": 0.5,
+   "kind": "fail-closed, directness fail (backdrop; never hosted the line)",
+   "basis": "CTSS ran on the 7090/7094 line; the PDP-6 line ran the AI group's own monitor (the ITS line). No MacLisp document names CTSS as environment, requirement or model. A backdrop shared by every system in the building is not a channel to this one."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_maclisp-1966.json",
+  "outcomes": {
+   "pdp-6-dec-1964-1964": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Verification file applied for the PDP-6 NEW node only and confirmed on disk afterward: its stored verification is non-null, outcome provisional, with the substrate attack, multiples attack, mediation attack (via the Project MAC purchase - answered by channel separation), anachronism check, and the weakest-evidence wart (no 1966 implementation listing read; the representation claim rests on White 1977 and the CHM family record) all recorded. DEVIATION PRECEDENT APPLIED (exps 210/213/218/219/221/222): the Lisp 1.5 manual LINK was NOT entered in the verification file - the target carries a substantive verification record from its own expansion (exp-203) which apply-verification would overwrite; the hearing lives on the edge's verdicts, and the target's stored record was confirmed intact and non-null after apply (outcome provisional, exp-203 notes preserved, 1553 chars). Created-node spot check: the PDP-6 node's stored leap, prior_state and bottleneck are all non-empty. One mediated rejection recorded by the pipeline (Lisp 1960 via the manual), matching the verdicts."
+ },
+ "totals_after": {
+  "nodes": 358,
+  "edges": 465,
+  "budget": "358/2000",
+  "expansions_done": 224,
+  "provisional": 341,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 71,
+   "6": 58,
+   "7": 38,
+   "8": 24,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 3,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+  "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+  "samuel-s-checkers-player-samuel-1959-1959",
+  "structuring-probabilistic-dependences-in-stochastic-language-1994",
+  "tsmc-28-nm-hkmg-process-generation-2011-2011"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "SESSION 107 CLOSE. Frontier order was never disturbed: both session-107 parents were consumed from the head in their standing order. FLAG FOR THE NEXT SESSION: the frontier head is now Mixture models (McLachlan & Basford, 1988) - the node carrying the long-assigned EM hearing stands first, so session 108 opens with it. Render used pipeline.py render --out run-01/index.html (mandatory flag). Session totals: exp-223 argued zero (357/463 unchanged), exp-224 two admissions (358/465); MiniLM loaded for both resolves (no TF-IDF fallback this session)."
+}

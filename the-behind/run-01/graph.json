@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T14:09:05+00:00",
-  "expansions_done": 223,
-  "raw_candidates_seen": 9071,
+  "updated_at": "2026-11-28T14:15:10+00:00",
+  "expansions_done": 224,
+  "raw_candidates_seen": 9082,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -36441,6 +36441,43 @@
     "name": "Intel Corporation (1968)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T14:09:05+00:00"
+   },
+   {
+    "parent_id": "maclisp-1966",
+    "name": "Lisp (McCarthy, 1960)",
+    "reason": "mediated_via: LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+    "at": "2026-11-28T14:14:53+00:00",
+    "mediated_via": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)"
+   },
+   {
+    "parent_id": "maclisp-1966",
+    "name": "PDP-6 Lisp (MIT, 1964)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:14:53+00:00"
+   },
+   {
+    "parent_id": "maclisp-1966",
+    "name": "PDP-1 Lisp (Deutsch, 1963)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:14:53+00:00"
+   },
+   {
+    "parent_id": "maclisp-1966",
+    "name": "Project MAC (MIT, 1963)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:14:53+00:00"
+   },
+   {
+    "parent_id": "maclisp-1966",
+    "name": "Compatible Time-Sharing System (CTSS, 1963)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:14:53+00:00"
+   },
+   {
+    "parent_id": "maclisp-1966",
+    "name": "IBM 7090 (1960)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T14:14:53+00:00"
    }
   ]
  },
@@ -38861,7 +38898,7 @@
    "prior_state": "Lisp 1.5 as distributed, without the lab's own performance and systems work.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -46877,6 +46914,30 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T13:49:31+00:00"
+  },
+  "pdp-6-dec-1964-1964": {
+   "id": "pdp-6-dec-1964-1964",
+   "name": "PDP-6 (DEC, 1964)",
+   "aliases": [],
+   "year": 1964,
+   "domain": "",
+   "type": "device",
+   "definition": "DEC's PDP-6 (1964, Gordon Bell et al.): the 36-bit timesharing machine whose first production unit went to MIT's Project MAC AI group, and the machine MacLisp was created on.",
+   "bottleneck": "Before the PDP-6 (1964), a research laboratory could not own the machine its language work ran on, because Lisp ran on shared mainframes (the 7090 line) under batch or centrally administered timesharing, unmodifiable by the language's own builders.",
+   "leap": "The PDP-6 put a 36-bit timesharing machine inside the laboratory, under its own people's control - designed with features its builders judged ideal for list processing, its word exactly two 18-bit halves, a cons cell per word - and the first production unit went to Project MAC's AI group, whose Lisp was the first working program ever run on the machine.",
+   "prior_state": "Lisp on shared mainframes; the laboratory a tenant, not an owner, of its computing.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 3.5,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "ADMITTED NEW, grade 3.5 (CLI edge score). Adversarial attacks run: (1) Substrate attack at full strength - a machine its dialect ran on is generic infrastructure (IBM 7094 at exp-213, Atlas/EDSAC 2 at exp-213), and the PDP-6 is 'just' the host: answered on the three documented specifics that separate it from tenancy - co-development (the dialect's author participated in the machine's check-out phase at DEC; the Lisp was the first working program run on it, White 1977), representation fit (the implementation's cons cell IS the machine's 36-bit word, two 18-bit halves), and the parent bottleneck's own naming of the installation as the enabling condition. The attack narrows the claim to this machine in this laboratory, which is what the edge claims. (2) Multiples attack on Q3 - another machine could have hosted a dialect: recorded in the verdicts; Q3 was scored partial, not pass, for exactly this reason, and the edge's load rests on Q2 (the unblocked space: dialect engineering against an owned installation) plus directness, not on necessity in all possible histories. (3) Mediation attack - the machine reached the dialect only through Project MAC's purchase: the institution is heard separately at this parent as formation (fail-closed 1.5); the machine's channel is its word structure and the co-development record, which the purchase does not transmit. (4) Anachronism check: PDP-6 delivered 1964, dialect dated 1966 - direction and order sound. (5) Weakest-evidence attack on the representation claim: the car/cdr halfword layout is documented in the MACLISP family record and the implementation tradition, and White (the system's maintainer) records the machine's features as judged 'ideal for the development of a list processing system' - but no 1966 implementation listing was read this session; the admission rests on White 1977, the CHM family record, and Steele & Gabriel 1993, two of them retrospective. Wart recorded; outcome provisional accordingly. NOT in this file, by the standing deviation precedent (exps 210/213/218/219/221/222): the Lisp 1.5 manual LINK (grade 5.5) - the target carries a substantive verification record from its own expansion (exp-203), which apply-verification would overwrite; the hearing lives on the edge's verdicts, and the target's stored record was confirmed intact and non-null after apply.",
+    "at": "2026-11-28T14:15:10+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T14:14:53+00:00"
   }
  },
  "edges": [
@@ -92321,6 +92382,200 @@
     "counterfactual": "Remove the Intel design and the April 1978 draft has no content: Kahan recruited Stone and Coonen to write up this design for the committee - 'That Intel specification became the basis for IEEE 754' (Moler, reporting Kahan). The draft is the design disclosed with Intel's permission and simplified by Coonen; the channel is the disclosure itself.",
     "mediator": null,
     "evidence": "Hennessy & Patterson 3.10: the draft 'was based on the Intel design, with Intel's permission of course, as simplified by Coonen.' Intel manual S.1: the proposed standard's formats 'are identical to those previously adopted by Intel'. Mediation check: the committee is the venue the design was disclosed INTO, not an intermediate that transformed it; no M sits between the design and the draft. The exp-220 record (this candidate mediated via the proposal AT the standard) is the reverse direction's edge-scoped finding and is untouched."
+   }
+  },
+  {
+   "predecessor_id": "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+   "successor_id": "maclisp-1966",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before the manual there was no complete definition to re-implement: Lisp existed as an implementation and papers. The manual is what made a faithful instantiation on an unrelated machine (36-bit PDP-6, a different word structure from the 7090) a finite engineering task rather than a research project.",
+     "source": "Progress Report IV; Moon 1974 p. 1",
+     "falsification": "Dies if the PDP-6 line is shown to have been built from the 1960 paper or from the 7090 binary rather than from the 1.5 definition."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The manual unblocked the whole dialect space the parent inhabits: a specified system every laboratory could instantiate and then diverge from - the diversification Steele & Gabriel describe begins from it.",
+     "source": "Steele & Gabriel 1993 (the diversification cycle)",
+     "falsification": "Dies if the era's dialects are shown to descend from a different common object."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Multiples attack: other Lisp definitions existed in embryo (the 1960 paper; BBN's line), and another laboratory (BBN) built its dialect from its own PDP-1 base. The counterfactual is place-specific, as the parent node's own verification records: at MIT, on the PDP-6, the system being re-engineered was 1.5 and no substitute definition was in the lab's hands. Partial, not pass, because the attack is real elsewhere.",
+     "source": "Parent node's stored verification (the Interlisp multiples attack, answered place-specifically); Steele & Gabriel 1993",
+     "falsification": "Dies if an alternative definition is shown in use at Project MAC in 1966."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The manual collapsed the specification cost to zero - the language arrived fully specified - but the re-engineering (compiler, value cell) was the lab's own expensive work; the economy is real and partial.",
+     "source": "Progress Report IV ('extensively modified')",
+     "falsification": "Dies if the PDP-6 line is shown to have re-specified the language from scratch."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The manual made nothing measurable for the parent; the parent's measures (space economy, running speed) are its own record.",
+     "source": "White 1977",
+     "falsification": "Dies if a measure from the manual is shown governing the redesign."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The manual carries the explanatory model the parent argues with: the a-list environment, EVALQUOTE application, the interpreter/compiler relation - the parent's founding decisions are positions taken inside the manual's model.",
+     "source": "Moon 1974 p. 47; Steele & Gabriel 1993",
+     "falsification": "Dies if the parent's departures are shown argued against a different model."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The manual is the interface contract: a program written to the 1.5 definition is the thing the PDP-6 system undertook to run, modified - composability across machines is exactly what a manual of this kind creates.",
+     "source": "Progress Report IV",
+     "falsification": "Dies if the PDP-6 system is shown to have ignored the 1.5 program interface."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-machine reach: a definition written for the 7090 family instantiated on a 36-bit timesharing machine of a different architecture - a genuine transfer, scored partial because it stays within the Lisp field.",
+     "source": "Progress Report IV; Steele & Gabriel 1993",
+     "falsification": "Dies if the transfer is shown to have required a different definition."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment loop was collapsed by the manual for the parent.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if documented."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Within the laboratory, the manual's system WAS the default the parent displaced: 'the PDP-6 LISP System... based chiefly on LISP 1.5' is the Progress Report describing the new default replacing the distributed 1.5.",
+     "source": "Progress Report IV",
+     "falsification": "Dies if the lab is shown to have kept the distributed 1.5 as its working system after 1966."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent descends from this node directly, and through the parent, Macsyma, the Planner implementations and Scheme. The history that happened runs through the manual.",
+     "source": "Parent node's stored leap; exp-203 record",
+     "falsification": "Dies if the parent's lineage is re-rooted."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The parent resets the baseline the manual set (binding, top-level, storage) while inheriting its language - irreversibility belongs to the dialect line the parent founded, scored partial.",
+     "source": "Steele & Gabriel 1993",
+     "falsification": "Dies if the parent's departures are shown reversed in its own line."
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T14:14:53+00:00",
+   "leap": {
+    "prior_state": "Lisp 1.5 as distributed, without the lab's own performance and systems work.",
+    "jump": "MacLisp (from 1966) was Project MAC's own Lisp - Lisp 1.5's descendant engineered for the lab's machines and ITS - and became the substrate in which Macsyma, the Planner implementations and Scheme itself were written.",
+    "date": 1966
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Lisp 1.5 and there is nothing for the PDP-6 line to be 'based chiefly on': the laboratory's own contemporary record states the dependence in so many words, and MacLisp's founding acts are departures FROM the manual's system, each defined against it (the value cell against the a-list search, Moon 1974 p. 47; EVAL against EVALQUOTE, Steele & Gabriel). The channel is the definition itself, taken over wholesale and re-engineered - citation plus instantiation in the strongest form the run records. Mediation check: the 1960 paper stands behind the manual, but the manual is not a passive conduit - it is the worked system (evaluator, compiler, storage discipline) the PDP-6 line actually consumed; the reverse mediation (Lisp 1960 via this manual) is recorded on that candidate's own evaluation.",
+    "mediator": null,
+    "evidence": "Project MAC Progress Report IV (1966-67), p. 19 ('based chiefly on the LISP 1.5 programming language, but has been extensively modified in a number of ways'); Moon 1974, pp. 1, 47; Steele & Gabriel 1993 (the departures catalogued against 1.5)."
+   }
+  },
+  {
+   "predecessor_id": "pdp-6-dec-1964-1964",
+   "successor_id": "maclisp-1966",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The machine made the parent's specific form possible - a dialect engineered for an owned, modifiable installation - while Lisp as such already existed elsewhere; scored partial, honestly: the impossibility removed is the parent's, not the language's.",
+     "source": "White 1977; parent bottleneck",
+     "falsification": "Dies if a lab-owned dialect is shown built at MIT before the PDP-6 on another machine."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The machine unblocked the space the parent's bottleneck names: dialect engineering against a local installation - a system the lab could change at will, daily, in step with its AI work. That space did not exist while the lab was a tenant on the 7090 line.",
+     "source": "Parent node's stored bottleneck; White 1977",
+     "falsification": "Dies if the lab is shown to have had equivalent freedom on the 7090 installation."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Multiples attack: another 36-bit machine, or the 7094 retained, could in principle have hosted a dialect. The attack is answered place-specifically: the machine that arrived, was checked out by the dialect's own author, and whose word is the cons cell is this one; necessity is claimed for the history that happened, not for all possible histories. Partial.",
+     "source": "White 1977; CHM family record",
+     "falsification": "Dies if the lab is shown to have begun the dialect on a different machine and ported it."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Ownership collapsed the iteration cost of language work - no batch queue, no central administration - scored partial: the economy is the laboratory's generally, not the dialect's alone.",
+     "source": "White 1977",
+     "falsification": "Dies if the PDP-6 is shown to have been as rationed as the mainframe line."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The machine made nothing measurable for the parent.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if documented."
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "A machine carries no explanatory model; the parent's doctrine is its authors'.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if a design doctrine of the machine's is shown in the dialect."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The word structure functions as the implementation's representation interface - car/cdr as halfwords is a contract between the machine and every program the dialect runs - scored partial at representation scale.",
+     "source": "CHM family record; the dialect's documented data layout",
+     "falsification": "Dies if the implementation is shown indifferent to the word structure."
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "No cross-domain unlock; machine and dialect are one field.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if documented."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Interactive timesharing on an owned machine collapsed the edit-run loop of language development against the batch mainframe line - scored partial, shared with the laboratory's whole practice.",
+     "source": "White 1977",
+     "falsification": "Dies if the dialect's development is shown to have run batch-fashion on the PDP-6."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "The PDP-6 displaced the 7090 line as the laboratory's Lisp home - scored partial: the displacement completed over the parent's own years, not at the machine's delivery alone.",
+     "source": "White 1977 (the 7090 Lisp 1.5 as the prior home)",
+     "falsification": "Dies if the lab's Lisp work is shown to have stayed on the 7090 after 1966."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the PDP-10 line descends from this machine, and the dialect's whole history - ITS, Macsyma, Scheme's host - runs on this installation line. The parent has no history without it.",
+     "source": "CHM family record; parent node's stored leap",
+     "falsification": "Dies if the parent's lineage is re-rooted to another installation."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The installation reset the laboratory's baseline (owned interactive computing) irreversibly for its language work - scored partial, the reset being the laboratory's as much as the dialect's.",
+     "source": "White 1977",
+     "falsification": "Dies if the lab is shown to have returned to tenant computing for Lisp."
+    }
+   },
+   "score": 3.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T14:14:53+00:00",
+   "leap": {
+    "prior_state": "Lisp 1.5 as distributed, without the lab's own performance and systems work.",
+    "jump": "MacLisp (from 1966) was Project MAC's own Lisp - Lisp 1.5's descendant engineered for the lab's machines and ITS - and became the substrate in which Macsyma, the Planner implementations and Scheme itself were written.",
+    "date": 1966
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "The specific-enabling-step discrimination (PDP-7 at exp-209), not the generic-substrate failure (IBM 7094, Atlas): this machine is not interchangeable infrastructure. (i) Co-development: Greenblatt and the MIT students participated in the machine's check-out phase at DEC's Mill, preparing its Lisp on paper tape before the machine existed as a product - 'the first working program actually run on the PDP-6 was an ancestor of the current MACLISP' (White 1977). (ii) Representation fit: the implementation's data structure IS the machine's word - a 36-bit word is two 18-bit halfwords, car and cdr in one word; the dialect was 'engineered for the lab's PDP-6/PDP-10 installation' (the parent's stored definition) because the installation's word is its cons cell. (iii) Counterfactual: remove the PDP-6 and the lab's Lisp stays on the 7090 line as a tenant system - the parent's stored bottleneck ('no Project MAC dialect tuned to the lab's timeshared PDP-6/PDP-10 installation') names this machine as the enabling condition. No intermediate transforms the channel: the machine was in the room, and its builders and the dialect's builders were the same people.",
+    "mediator": null,
+    "evidence": "White 1977 (check-out participation; the first-program record; the features 'thought to be ideal for the development of a list processing system'); MACLISP family record (CHM: the first PDP-6 sold to MIT's AI Laboratory; the students' evening work at the Mill); the parent node's stored definition and bottleneck."
    }
   }
  ],
@@ -404163,6 +404418,560 @@
       }
      },
      "similarity": 0.6061,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "maclisp-1966": {
+   "raw_candidates": [
+    {
+     "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+     "year": 1962,
+     "type": "method",
+     "lens": "L2",
+     "causal_claim": "Lisp 1.5 directly enabled MacLisp as the complete language definition the lab re-implemented and re-engineered: the PDP-6 system is 'based chiefly on the LISP 1.5 programming language, but has been extensively modified in a number of ways' (Project MAC Progress Report IV), and MacLisp's founding departures - the value cell against the a-list search - are defined against the manual's system.",
+     "definition": "The LISP 1.5 Programmer's Manual (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962): the complete definition of the Lisp 1.5 language and system.",
+     "evidence": "Project MAC Progress Report IV (July 1966-July 1967), p. 19: 'The higher-level language used for most of the vision laboratory program is the PDP-6 LISP System. This system is based chiefly on the LISP 1.5 programming language, but has been extensively modified in a number of ways.' Moon 1974, p. 1 (MacLisp a descendant of Lisp 1.5) and p. 47 (the value-cell departure). Steele & Gabriel 1993: 'MacLisp favored the pure list style, using EVAL as the top level. Interlisp, along with Lisp 1.5, used EVALQUOTE' - the departures catalogued against 1.5 throughout."
+    },
+    {
+     "name": "Lisp (McCarthy, 1960)",
+     "year": 1960,
+     "type": "theory",
+     "lens": "L3",
+     "causal_claim": "McCarthy's 1960 Lisp paper directly enabled MacLisp as the founding definition of the language family of which MacLisp is the Project MAC dialect.",
+     "definition": "John McCarthy, 'Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM (1960) - the founding Lisp paper.",
+     "evidence": "Filed for the mediation test: MacLisp's own documents name Lisp 1.5, never the 1960 paper, as the system built on (Progress Report IV; Moon 1974). The 1960 design reaches the PDP-6 line only as embodied in the 1.5 system and its manual - the channel is expected to resolve as mediated via the LISP 1.5 manual, whose own edge to Lisp 1960 stands from exp-203."
+    },
+    {
+     "name": "PDP-6 (DEC, 1964)",
+     "year": 1964,
+     "type": "device",
+     "lens": "L9",
+     "causal_claim": "The PDP-6 directly enabled MacLisp as the machine the dialect was engineered for and on, from before its delivery: Greenblatt participated in the machine's check-out phase at DEC, its features 'were thought to be ideal for the development of a list processing system', the first working program run on it was the Lisp ancestor, and its 36-bit word - two 18-bit halves - is the cons cell the implementation's data representation is built on.",
+     "definition": "DEC's PDP-6 (1964, Gordon Bell et al.): the 36-bit timesharing machine whose first production unit went to MIT's Project MAC AI group, and the machine MacLisp was created on.",
+     "evidence": "White 1977 (the system's own maintainer): 'In 1964, Greenblatt and others participated in the check-out phase of Digital Equipment Corporation's new computer, the PDP-6. This machine had a number of innovative features that were thought to be ideal for the development of a list processing system, and thus it was very appropriate that the first working program actually run on the PDP-6 was an ancestor of the current MACLISP... That first PDP-6 finally found its way into M.I.T.'s Project MAC for use by the Artificial Intelligence group.' MACLISP family record (CHM): DEC sold the first PDP-6 to MIT's AI Laboratory; MIT students prepared its Lisp at DEC's Mill during the machine's prototype phase."
+    },
+    {
+     "name": "PDP-6 Lisp (MIT, 1964)",
+     "year": 1964,
+     "type": "method",
+     "lens": "L2",
+     "causal_claim": "PDP-6 Lisp directly enabled MacLisp as the working system Greenblatt and Nelson extended with a more sophisticated compiler providing consistent variable access across interpreter and compiler - the work that, in the family record's words, 'became MacLisp'.",
+     "definition": "MIT's PDP-6 Lisp (from 1964): the AI group's first Lisp for the PDP-6, written during the machine's check-out phase, patterned on PDP-1 Lisp and Lisp 1.5.",
+     "evidence": "MACLISP family record (CHM): 'At this point, Greenblatt, Stuart Nelson, Tom Knight and Jack Holloway resumed work on PDP-6 LISP. Then Greenblatt and Nelson decided to do a more sophisticated compiler that provided consistent variable access across the interpreter and compiler; this became MacLisp.' Wikipedia (Maclisp): 'The name Maclisp began being used in the early 1970s to distinguish it from other forks of PDP-6 Lisp, notably BBN Lisp' - filed for the own-version test: one continuous system under its earlier name."
+    },
+    {
+     "name": "PDP-1 Lisp (Deutsch, 1963)",
+     "year": 1963,
+     "type": "method",
+     "lens": "L1",
+     "causal_claim": "Deutsch's PDP-1 Lisp directly enabled MacLisp through the evaluator channel: Bill Mann and Richard Greenblatt studied Deutsch's EVAL and wrote a new one for the PDP-6 - the evaluator at the root of the PDP-6 line that became MacLisp - and the early PDP-6 Lisp 'was patterned after the existing PDP-1 LISP'.",
+     "definition": "L. Peter Deutsch's PDP-1 Lisp (BBN, 1963): the compact Lisp 1.5-like implementation whose EVAL the MIT students studied when writing the PDP-6's evaluator.",
+     "evidence": "MACLISP family record (CHM): 'Bill Mann and Richard Greenblatt studied Deutsch's EVAL and wrote a new one for the PDP-6.' White 1977: the first PDP-6 Lisp 'was patterned after the existing PDP-1 LISP (see reference 1), and was produced by using the text editor and a mini-assembler on the PDP-1.' Steele & Gabriel 1993: 'In 1963, L. Peter Deutsch (at that time a high school student) implemented a Lisp similar to Lisp 1.5 on the PDP-1 at Bolt Beranek and Newman (BBN). This Lisp was called Basic PDP-1 Lisp.'"
+    },
+    {
+     "name": "BBN Lisp (Bobrow & Murphy, 1966)",
+     "year": 1966,
+     "type": "method",
+     "lens": "L6",
+     "causal_claim": "BBN Lisp directly enabled MacLisp as the sibling dialect against which the Project MAC system defined its choices, the two lines exchanging implementation ideas in the same Cambridge milieu.",
+     "definition": "BBN Lisp (Bobrow, Murphy et al., from 1964-66): BBN's Lisp line, from Deutsch's PDP-1 Lisp through the SDS 940 system, later the PDP-10 fork of PDP-6 Lisp that became Interlisp.",
+     "evidence": "Filed for the direction test. White 1977 records the one documented mechanism flow between the lines running OUT of MacLisp: 'In 1966, Greenblatt suggested abandoning the a-list model for program variables... This was the first LISP to do so, and a later LISP developed at Bolt, Beranek, and Newman (BBN) in Cambridge used a model whereby storage for program variables...' Wikipedia: the name MacLisp arose 'to distinguish it from other forks of PDP-6 Lisp, notably BBN Lisp' - BBN's PDP-10 system is a fork OF the PDP-6 line."
+    },
+    {
+     "name": "Project MAC (MIT, 1963)",
+     "year": 1963,
+     "type": "institution",
+     "lens": "L21",
+     "causal_claim": "Project MAC directly enabled MacLisp as the commissioning institution: the ARPA-funded laboratory that bought the first PDP-6 for its AI group, employed Greenblatt, White and their colleagues, and whose name the dialect carries.",
+     "definition": "Project MAC (MIT, founded 1963 under Robert Fano, ARPA-funded): the laboratory for time-sharing and AI in which MacLisp was created.",
+     "evidence": "AIM-190 (Project MAC, 1970): ''MACLISP' refers to the PDP/6 implementation of the programming language LISP in use at the Artificial Intelligence Group of Project MAC.' White 1977: the first PDP-6 'found its way into M.I.T.'s Project MAC for use by the Artificial Intelligence group'."
+    },
+    {
+     "name": "Compatible Time-Sharing System (CTSS, 1963)",
+     "year": 1963,
+     "type": "method",
+     "lens": "L16",
+     "causal_claim": "CTSS directly enabled MacLisp as Project MAC's first timesharing system, the interactive environment in which the laboratory's Lisp work was embedded before the PDP-6 line.",
+     "definition": "MIT's Compatible Time-Sharing System (1963): Project MAC's first timesharing system, on the IBM 7090/7094 line.",
+     "evidence": "Filed for the hosting test: CTSS ran on the 7090/7094 line; the PDP-6 line that became MacLisp ran the AI group's own PDP-6 monitor (the line that became ITS), never CTSS. No MacLisp document obtained names CTSS as its environment - the channel is institutional backdrop, tested on the documents."
+    },
+    {
+     "name": "IBM 7090 (1960)",
+     "year": 1960,
+     "type": "device",
+     "lens": "L9",
+     "causal_claim": "The IBM 7090 directly enabled MacLisp as the machine whose Lisp 1.5 installation was the laboratory's prior system, the substrate from which the PDP-6 re-implementation departed.",
+     "definition": "IBM's 7090 (1960): the transistorized mainframe on which MIT's Lisp 1.5 ran before the PDP-6 arrived.",
+     "evidence": "White 1977: 'MACSYMA grew out of projects started on the 7090 LISP 1.5, namely Moses' SIN program and Martin's MATHLAB.' Steele & Gabriel 1993: the era's Lisp 1.5 implementations were bootstrapped from the IBM 7090 installation. Filed for the substrate test (the anti-PDP-7 discrimination): the machine of the ANCESTOR system, one remove further than the parent's own machine."
+    },
+    {
+     "name": "Incompatible Timesharing System (ITS, 1967)",
+     "year": 1967,
+     "type": "method",
+     "lens": "L16",
+     "causal_claim": "ITS directly enabled MacLisp as the operating system the mature dialect ran under at Project MAC, the environment its systems features presuppose.",
+     "definition": "The Incompatible Timesharing System (MIT AI Lab, from 1967): the PDP-6/PDP-10 operating system written by the lab's own hackers, MacLisp's home environment in its maturity.",
+     "evidence": "Filed deliberately at 1967, after the 1966 parent: the resolver's year bound is expected to drop it, recorded, not re-dated. White 1977: 'By 1968, the PDP-6 was running the Incompatible Time-sharing system' - the parent's 1966 origin precedes it (the stored definition's 'under ITS' describes the dialect's maturity, not its first year; the anachronism is the stored text's, recorded, not edited)."
+    },
+    {
+     "name": "Stanford LISP 1.6 (1967)",
+     "year": 1967,
+     "type": "method",
+     "lens": "L6",
+     "causal_claim": "Stanford's LISP 1.6 directly enabled MacLisp as the West-coast PDP-6 dialect whose development the MIT line tracked and answered.",
+     "definition": "LISP 1.6 (Stanford AI Laboratory, 1967): SAIL's Lisp for the PDP-6/PDP-10, the other coast's dialect of the same machine line.",
+     "evidence": "Filed deliberately at 1967, after the 1966 parent: the resolver's year bound is expected to drop it, recorded, not re-dated. No document obtained names a 1.6-to-MacLisp channel in any case; the two lines' documented contact (Gabriel's 1976 WAITS port) runs MIT-to-Stanford, downstream."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+      "candidate": {
+       "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+       "year": 1962,
+       "type": "method",
+       "lens": "L2",
+       "causal_claim": "Lisp 1.5 directly enabled MacLisp as the complete language definition the lab re-implemented and re-engineered: the PDP-6 system is 'based chiefly on the LISP 1.5 programming language, but has been extensively modified in a number of ways' (Project MAC Progress Report IV), and MacLisp's founding departures - the value cell against the a-list search - are defined against the manual's system.",
+       "definition": "The LISP 1.5 Programmer's Manual (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962): the complete definition of the Lisp 1.5 language and system.",
+       "evidence": "Project MAC Progress Report IV (July 1966-July 1967), p. 19: 'The higher-level language used for most of the vision laboratory program is the PDP-6 LISP System. This system is based chiefly on the LISP 1.5 programming language, but has been extensively modified in a number of ways.' Moon 1974, p. 1 (MacLisp a descendant of Lisp 1.5) and p. 47 (the value-cell departure). Steele & Gabriel 1993: 'MacLisp favored the pure list style, using EVAL as the top level. Interlisp, along with Lisp 1.5, used EVALQUOTE' - the departures catalogued against 1.5 throughout."
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)"
+      ],
+      "matched_node_id": "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lisp-mccarthy-1960-1960",
+      "candidate": {
+       "name": "Lisp (McCarthy, 1960)",
+       "year": 1960,
+       "type": "theory",
+       "lens": "L3",
+       "causal_claim": "McCarthy's 1960 Lisp paper directly enabled MacLisp as the founding definition of the language family of which MacLisp is the Project MAC dialect.",
+       "definition": "John McCarthy, 'Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM (1960) - the founding Lisp paper.",
+       "evidence": "Filed for the mediation test: MacLisp's own documents name Lisp 1.5, never the 1960 paper, as the system built on (Progress Report IV; Moon 1974). The 1960 design reaches the PDP-6 line only as embodied in the 1.5 system and its manual - the channel is expected to resolve as mediated via the LISP 1.5 manual, whose own edge to Lisp 1960 stands from exp-203."
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Lisp (McCarthy, 1960)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pdp-6-dec-1964-1964",
+      "candidate": {
+       "name": "PDP-6 (DEC, 1964)",
+       "year": 1964,
+       "type": "device",
+       "lens": "L9",
+       "causal_claim": "The PDP-6 directly enabled MacLisp as the machine the dialect was engineered for and on, from before its delivery: Greenblatt participated in the machine's check-out phase at DEC, its features 'were thought to be ideal for the development of a list processing system', the first working program run on it was the Lisp ancestor, and its 36-bit word - two 18-bit halves - is the cons cell the implementation's data representation is built on.",
+       "definition": "DEC's PDP-6 (1964, Gordon Bell et al.): the 36-bit timesharing machine whose first production unit went to MIT's Project MAC AI group, and the machine MacLisp was created on.",
+       "evidence": "White 1977 (the system's own maintainer): 'In 1964, Greenblatt and others participated in the check-out phase of Digital Equipment Corporation's new computer, the PDP-6. This machine had a number of innovative features that were thought to be ideal for the development of a list processing system, and thus it was very appropriate that the first working program actually run on the PDP-6 was an ancestor of the current MACLISP... That first PDP-6 finally found its way into M.I.T.'s Project MAC for use by the Artificial Intelligence group.' MACLISP family record (CHM): DEC sold the first PDP-6 to MIT's AI Laboratory; MIT students prepared its Lisp at DEC's Mill during the machine's prototype phase."
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "PDP-6 (DEC, 1964)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pdp-6-lisp-mit-1964-1964",
+      "candidate": {
+       "name": "PDP-6 Lisp (MIT, 1964)",
+       "year": 1964,
+       "type": "method",
+       "lens": "L2",
+       "causal_claim": "PDP-6 Lisp directly enabled MacLisp as the working system Greenblatt and Nelson extended with a more sophisticated compiler providing consistent variable access across interpreter and compiler - the work that, in the family record's words, 'became MacLisp'.",
+       "definition": "MIT's PDP-6 Lisp (from 1964): the AI group's first Lisp for the PDP-6, written during the machine's check-out phase, patterned on PDP-1 Lisp and Lisp 1.5.",
+       "evidence": "MACLISP family record (CHM): 'At this point, Greenblatt, Stuart Nelson, Tom Knight and Jack Holloway resumed work on PDP-6 LISP. Then Greenblatt and Nelson decided to do a more sophisticated compiler that provided consistent variable access across the interpreter and compiler; this became MacLisp.' Wikipedia (Maclisp): 'The name Maclisp began being used in the early 1970s to distinguish it from other forks of PDP-6 Lisp, notably BBN Lisp' - filed for the own-version test: one continuous system under its earlier name."
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "PDP-6 Lisp (MIT, 1964)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pdp-1-lisp-deutsch-1963-1963",
+      "candidate": {
+       "name": "PDP-1 Lisp (Deutsch, 1963)",
+       "year": 1963,
+       "type": "method",
+       "lens": "L1",
+       "causal_claim": "Deutsch's PDP-1 Lisp directly enabled MacLisp through the evaluator channel: Bill Mann and Richard Greenblatt studied Deutsch's EVAL and wrote a new one for the PDP-6 - the evaluator at the root of the PDP-6 line that became MacLisp - and the early PDP-6 Lisp 'was patterned after the existing PDP-1 LISP'.",
+       "definition": "L. Peter Deutsch's PDP-1 Lisp (BBN, 1963): the compact Lisp 1.5-like implementation whose EVAL the MIT students studied when writing the PDP-6's evaluator.",
+       "evidence": "MACLISP family record (CHM): 'Bill Mann and Richard Greenblatt studied Deutsch's EVAL and wrote a new one for the PDP-6.' White 1977: the first PDP-6 Lisp 'was patterned after the existing PDP-1 LISP (see reference 1), and was produced by using the text editor and a mini-assembler on the PDP-1.' Steele & Gabriel 1993: 'In 1963, L. Peter Deutsch (at that time a high school student) implemented a Lisp similar to Lisp 1.5 on the PDP-1 at Bolt Beranek and Newman (BBN). This Lisp was called Basic PDP-1 Lisp.'"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "PDP-1 Lisp (Deutsch, 1963)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "project-mac-mit-1963-1963",
+      "candidate": {
+       "name": "Project MAC (MIT, 1963)",
+       "year": 1963,
+       "type": "institution",
+       "lens": "L21",
+       "causal_claim": "Project MAC directly enabled MacLisp as the commissioning institution: the ARPA-funded laboratory that bought the first PDP-6 for its AI group, employed Greenblatt, White and their colleagues, and whose name the dialect carries.",
+       "definition": "Project MAC (MIT, founded 1963 under Robert Fano, ARPA-funded): the laboratory for time-sharing and AI in which MacLisp was created.",
+       "evidence": "AIM-190 (Project MAC, 1970): ''MACLISP' refers to the PDP/6 implementation of the programming language LISP in use at the Artificial Intelligence Group of Project MAC.' White 1977: the first PDP-6 'found its way into M.I.T.'s Project MAC for use by the Artificial Intelligence group'."
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Project MAC (MIT, 1963)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "compatible-time-sharing-system-ctss-1963-1963",
+      "candidate": {
+       "name": "Compatible Time-Sharing System (CTSS, 1963)",
+       "year": 1963,
+       "type": "method",
+       "lens": "L16",
+       "causal_claim": "CTSS directly enabled MacLisp as Project MAC's first timesharing system, the interactive environment in which the laboratory's Lisp work was embedded before the PDP-6 line.",
+       "definition": "MIT's Compatible Time-Sharing System (1963): Project MAC's first timesharing system, on the IBM 7090/7094 line.",
+       "evidence": "Filed for the hosting test: CTSS ran on the 7090/7094 line; the PDP-6 line that became MacLisp ran the AI group's own PDP-6 monitor (the line that became ITS), never CTSS. No MacLisp document obtained names CTSS as its environment - the channel is institutional backdrop, tested on the documents."
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Compatible Time-Sharing System (CTSS, 1963)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-7090-1960-1960",
+      "candidate": {
+       "name": "IBM 7090 (1960)",
+       "year": 1960,
+       "type": "device",
+       "lens": "L9",
+       "causal_claim": "The IBM 7090 directly enabled MacLisp as the machine whose Lisp 1.5 installation was the laboratory's prior system, the substrate from which the PDP-6 re-implementation departed.",
+       "definition": "IBM's 7090 (1960): the transistorized mainframe on which MIT's Lisp 1.5 ran before the PDP-6 arrived.",
+       "evidence": "White 1977: 'MACSYMA grew out of projects started on the 7090 LISP 1.5, namely Moses' SIN program and Martin's MATHLAB.' Steele & Gabriel 1993: the era's Lisp 1.5 implementations were bootstrapped from the IBM 7090 installation. Filed for the substrate test (the anti-PDP-7 discrimination): the machine of the ANCESTOR system, one remove further than the parent's own machine."
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "IBM 7090 (1960)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:0:lisp-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+        "aliases": [],
+        "year": 1962,
+        "domain": "",
+        "type": "method",
+        "definition": "The LISP 1.5 Programmer's Manual (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962): the complete definition of the Lisp 1.5 language and system.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "lisp-1960",
+       "card": {
+        "name": "Lisp",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6222,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:3:lisp-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 3,
+       "card": {
+        "name": "PDP-6 Lisp (MIT, 1964)",
+        "aliases": [],
+        "year": 1964,
+        "domain": "",
+        "type": "method",
+        "definition": "MIT's PDP-6 Lisp (from 1964): the AI group's first Lisp for the PDP-6, written during the machine's check-out phase, patterned on PDP-1 Lisp and Lisp 1.5.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "lisp-1960",
+       "card": {
+        "name": "Lisp",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.4412,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:4:lisp-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 4,
+       "card": {
+        "name": "PDP-1 Lisp (Deutsch, 1963)",
+        "aliases": [],
+        "year": 1963,
+        "domain": "",
+        "type": "method",
+        "definition": "L. Peter Deutsch's PDP-1 Lisp (BBN, 1963): the compact Lisp 1.5-like implementation whose EVAL the MIT students studied when writing the PDP-6's evaluator.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "lisp-1960",
+       "card": {
+        "name": "Lisp",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5604,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:3:4",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 3,
+       "card": {
+        "name": "PDP-6 Lisp (MIT, 1964)",
+        "aliases": [],
+        "year": 1964,
+        "domain": "",
+        "type": "method",
+        "definition": "MIT's PDP-6 Lisp (from 1964): the AI group's first Lisp for the PDP-6, written during the machine's check-out phase, patterned on PDP-1 Lisp and Lisp 1.5.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 4,
+       "card": {
+        "name": "PDP-1 Lisp (Deutsch, 1963)",
+        "aliases": [],
+        "year": 1963,
+        "domain": "",
+        "type": "method",
+        "definition": "L. Peter Deutsch's PDP-1 Lisp (BBN, 1963): the compact Lisp 1.5-like implementation whose EVAL the MIT students studied when writing the PDP-6's evaluator.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8044,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "BBN Lisp (Bobrow & Murphy, 1966)",
+       "year": 1966,
+       "type": "method",
+       "lens": "L6",
+       "causal_claim": "BBN Lisp directly enabled MacLisp as the sibling dialect against which the Project MAC system defined its choices, the two lines exchanging implementation ideas in the same Cambridge milieu.",
+       "definition": "BBN Lisp (Bobrow, Murphy et al., from 1964-66): BBN's Lisp line, from Deutsch's PDP-1 Lisp through the SDS 940 system, later the PDP-10 fork of PDP-6 Lisp that became Interlisp.",
+       "evidence": "Filed for the direction test. White 1977 records the one documented mechanism flow between the lines running OUT of MacLisp: 'In 1966, Greenblatt suggested abandoning the a-list model for program variables... This was the first LISP to do so, and a later LISP developed at Bolt, Beranek, and Newman (BBN) in Cambridge used a model whereby storage for program variables...' Wikipedia: the name MacLisp arose 'to distinguish it from other forks of PDP-6 Lisp, notably BBN Lisp' - BBN's PDP-10 system is a fork OF the PDP-6 line."
+      },
+      "reason": "dated on/after parent year 1966"
+     },
+     {
+      "candidate": {
+       "name": "Incompatible Timesharing System (ITS, 1967)",
+       "year": 1967,
+       "type": "method",
+       "lens": "L16",
+       "causal_claim": "ITS directly enabled MacLisp as the operating system the mature dialect ran under at Project MAC, the environment its systems features presuppose.",
+       "definition": "The Incompatible Timesharing System (MIT AI Lab, from 1967): the PDP-6/PDP-10 operating system written by the lab's own hackers, MacLisp's home environment in its maturity.",
+       "evidence": "Filed deliberately at 1967, after the 1966 parent: the resolver's year bound is expected to drop it, recorded, not re-dated. White 1977: 'By 1968, the PDP-6 was running the Incompatible Time-sharing system' - the parent's 1966 origin precedes it (the stored definition's 'under ITS' describes the dialect's maturity, not its first year; the anachronism is the stored text's, recorded, not edited)."
+      },
+      "reason": "dated on/after parent year 1966"
+     },
+     {
+      "candidate": {
+       "name": "Stanford LISP 1.6 (1967)",
+       "year": 1967,
+       "type": "method",
+       "lens": "L6",
+       "causal_claim": "Stanford's LISP 1.6 directly enabled MacLisp as the West-coast PDP-6 dialect whose development the MIT line tracked and answered.",
+       "definition": "LISP 1.6 (Stanford AI Laboratory, 1967): SAIL's Lisp for the PDP-6/PDP-10, the other coast's dialect of the same machine line.",
+       "evidence": "Filed deliberately at 1967, after the 1966 parent: the resolver's year bound is expected to drop it, recorded, not re-dated. No document obtained names a 1.6-to-MacLisp channel in any case; the two lines' documented contact (Gabriel's 1976 WAITS port) runs MIT-to-Stanford, downstream."
+      },
+      "reason": "dated on/after parent year 1966"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:0:lisp-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+       "aliases": [],
+       "year": 1962,
+       "domain": "",
+       "type": "method",
+       "definition": "The LISP 1.5 Programmer's Manual (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962): the complete definition of the Lisp 1.5 language and system.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "lisp-1960",
+      "card": {
+       "name": "Lisp",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6222,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:3:lisp-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 3,
+      "card": {
+       "name": "PDP-6 Lisp (MIT, 1964)",
+       "aliases": [],
+       "year": 1964,
+       "domain": "",
+       "type": "method",
+       "definition": "MIT's PDP-6 Lisp (from 1964): the AI group's first Lisp for the PDP-6, written during the machine's check-out phase, patterned on PDP-1 Lisp and Lisp 1.5.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "lisp-1960",
+      "card": {
+       "name": "Lisp",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.4412,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:4:lisp-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 4,
+      "card": {
+       "name": "PDP-1 Lisp (Deutsch, 1963)",
+       "aliases": [],
+       "year": 1963,
+       "domain": "",
+       "type": "method",
+       "definition": "L. Peter Deutsch's PDP-1 Lisp (BBN, 1963): the compact Lisp 1.5-like implementation whose EVAL the MIT students studied when writing the PDP-6's evaluator.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "lisp-1960",
+      "card": {
+       "name": "Lisp",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5604,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:3:4",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 3,
+      "card": {
+       "name": "PDP-6 Lisp (MIT, 1964)",
+       "aliases": [],
+       "year": 1964,
+       "domain": "",
+       "type": "method",
+       "definition": "MIT's PDP-6 Lisp (from 1964): the AI group's first Lisp for the PDP-6, written during the machine's check-out phase, patterned on PDP-1 Lisp and Lisp 1.5.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 4,
+      "card": {
+       "name": "PDP-1 Lisp (Deutsch, 1963)",
+       "aliases": [],
+       "year": 1963,
+       "domain": "",
+       "type": "method",
+       "definition": "L. Peter Deutsch's PDP-1 Lisp (BBN, 1963): the compact Lisp 1.5-like implementation whose EVAL the MIT students studied when writing the PDP-6's evaluator.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8044,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
