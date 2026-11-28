@@ -15778,3 +15778,146 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 100 closes here: expansions 209 (B) and 210 (State Application Framework) are both checkpointed. The frontier head is now BCPL (1967), whose expansion carries the carried hearings recorded at exp-209 (CPL and CTSS, both mediated via BCPL at B). New re-hearing conditions recorded this session: FORTRAN at B (a semantic-mechanism attribution), Lisp at SAF (a State-era document designing the messaging in Lisp terms), E at SAF (a founder document stating the EC derivation), HTTP/1.1 at SAF (a State design document not answering RFC 2616's semantics), PDP-7 at B (a contemporary document attributing the operators/squeeze elsewhere). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion. Do not start session 101 on this record - it is the next session's tasking."
 }
+{
+ "ts": "2026-11-28T11:55:48.218651+00:00",
+ "event": "expansion",
+ "session": 101,
+ "expansion": 211,
+ "parent": "bcpl-richards-1967-1967",
+ "parent_name": "BCPL (Richards, 1967)",
+ "parent_year": 1967,
+ "parent_depth": 11,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed that the CPL and CTSS channels - rejected at exp-209 (the B parent) as mediated_via BCPL - be discharged or re-decided on BCPL's own documents. Both were heard directly here: CPL ADMITTED as a new node, discharging the exp-209 mediation; CTSS heard directly and failed closed on directness (the first implementation's host and one lexical trace, with the design complete in outline before the move to MIT) - re-decided, not inherited. Two brief framings corrected by the documents. (a) The brief's carried list did not include GPM, which Richards's genealogy forced into the census as the strongest non-ancestor channel: the abstract machine BCPL took as its operational semantics is GPM's macro machine, and GPM was ADMITTED. (b) The brief described the grounding as 'Richards's CPL genealogy, the BCPL manuals' - the genealogy (read in full) proved to be the load-bearing document for every scored channel, with the 1967 manual's definition entering as carried in exp-209's record. FIX-UP discharged here per house pattern: expansion 210's sync_commit = ca91c6f4 (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011), read in full. Load-bearing passages: 'This paper describes how the programming language BCPL developed from the work on the design and implementation of CPL. It shows that BCPL is essentially just CPL with all the difficult bits removed and with just a few extensions. The CPL project lasted from early 1962 to December 1966 and the first outline of BCPL appeared in 1966. Its first compiler was implemented at MIT in early 1967'; 'CPL (Combined Programming Language) was developed jointly by members of the University Mathematical Laboratory (now the Computer Laboratory), Cambridge and the University of London Computer Unit. The first ideas for CPL appeared in a paper by Strachey and Wilkes [1961]'; 'The designers of CPL were strongly influenced by ALGOL 60 but wished to extend it to make it more efficient and usable for a wider variety of applications'; 'Strachey coined the terms Lvalue and Rvalue'; 'Peter Landin wrote a paper in two parts showing how lambda-calculus could be used to clarify some of the more subtle semantic details of Algol 60. He was a member of the CPL design team and his use of lambda-calculus affected the design of the language'; the CPL compiler 'written in a subset of CPL and hand coded into a sequence of macro calls that could generate assembly language for either Edsac 2 or Atlas. Strachey designed a elegant macrogenerator called GPM for the purpose'; 'In a period of about a year between 1965 and 1966 this GPM based abstract machine was fully developed and used to implement a significant proportion of CPL producing compilers that ran on both Edsac 2 and the Atlas'; the typeless discovery - the macro machine's stack values 'were all the same size and were used to represent quantities of any conceptual type such as a character, a truth value, an integer, a pointer or even a function, just as the bit pattern held in a CPU general register can represent a value of any type'; 'After moving to MIT in December 1966, I filled in the syntactic details of the informal subset of CPL we had used, treating the abstract machine as though it were the operational semantics of the language. Where possible the original CPL syntax was used'; 'The BCPL abstract machine was almost the same abstract machine of macro calls used in the implementation of CPL... The code for BCPL's abstract machine was called OCODE... The use of OCODE rather than GPM macros reduced compile time and allowed better optimisation of the target code'; 'on the first machine on which BCPL ran, namely an IBM 7094 running CTSS, the standard code used 6-bit characters packed in 36-bit words... it was used as the indirection operator in the FAP assembly language used on CTSS' (of the star in BCPL's original *( token); 'Although Fortran had allowed modules of a program to be compiled separately... most block structured language like Algol, CPL, Algol W and Pascal back then typically provided no such mechanism... For BCPL, separate compilation was deemed essential, so some mechanism had to be found... It used an area of memory called the global vector similar to BLANK COMMON of Fortran'; 'Identifiers in BCPL followed the ALGOL convention'; call by substitution removed from CPL by mid 1966; 'BCPL has essentially much of the same syntax as CPL but with many semantic restrictions to allow a simpler implementation. Machine independent pointer arithmetic and indirection were added'. References as printed: [1] Strachey & Wilkes, CACM 4 (1961) 448; [2] Barron, Buxton, Hartley, Nixon & Strachey, 'The main features of CPL', Computer Journal 6 (1963) 134-143; [3] CPL Working Papers, ed. Strachey (1966); [4] Strachey, 'A General Purpose Macrogenerator', Computer Journal 8 (1965) 225-241. Corroboration carried from exp-209's record: BCPL Reference Manual, Project MAC M-352 (July 1967) - BCPL derived from 'true CPL' by removing the features that make compilation difficult, first compiler spring 1967 on the IBM 7094 under CTSS; Richards - 'BCPL is essentially just CPL with all the difficult bits removed'. The parent's stored record was verified complete (bottleneck, leap, prior_state populated - no stored-text repair needed).",
+ "scout": {
+  "raw_filings": 12,
+  "matched_existing": 2,
+  "judge_queue": 3,
+  "judgments_applied": 3,
+  "judgments_different": 1,
+  "distinct": 12,
+  "note": "Document-census pattern: every channel Richards's genealogy names for BCPL is filed exactly once (CPL, GPM, CTSS, FORTRAN, ALGOL 60, lambda calculus, IBM 7094, Project MAC, Atlas, EDSAC 2, Strachey & Wilkes 1961, and the CPL compiler subset - the parent's informal first form, forced by the documents). 12 raw -> 12 distinct, 0 dropped, 0 prefiltered, 0 auto-merges. Judgments: ALGOL 60 SAME as the existing node (LINK candidate); Lambda calculus SAME as the existing node (LINK candidate); Strachey & Wilkes 1961 DIFFERENT from the ALGOL 60 node (a proposals paper about the language is not the language). MiniLM loaded - no TF-IDF fallback this expansion. Per-lens floors: the pool is a closed documentary census (one designer's genealogy + the manuals it cites); 23 lens entries filed with dry/shortfall notes in dry_notes_bcpl-richards-1967-1967.json rather than padded. Verdicts builder count check passed (12 evaluations == 12 distinct == 12 intended filings); the dry-run reproduced the argued outcomes exactly and no dry-run correction was spent."
+ },
+ "admissions": [
+  {
+   "node": "cpl-barron-et-al-1963-1963",
+   "name": "CPL (Barron et al., 1963)",
+   "link": false,
+   "grade": 6.0,
+   "basis": "Descent in so many words at every level: the designer's own genealogy ('BCPL is essentially just CPL with all the difficult bits removed and with just a few extensions'), the parent's own 1967 Reference Manual (derived from 'true CPL' by removing the features that make compilation difficult), and the feature-by-feature record (syntax, expression/command separation, declarations, control structures retained wherever the subset allowed). The exp-209 mediation (CPL mediated at B via BCPL) is discharged here as a direct admission."
+  },
+  {
+   "node": "gpm-strachey-1965-1965",
+   "name": "GPM (Strachey, 1965)",
+   "link": false,
+   "grade": 5.0,
+   "basis": "The construction medium whose machine became the language's semantics: the BCPL abstract machine 'was almost the same abstract machine of macro calls used in the implementation of CPL', the typeless word model was discovered in that machine's uniform stack values, and Richards at MIT treated 'the abstract machine as though it were the operational semantics of the language', recoding it as OCODE. Stronger than the TMG shape (exp-209): TMG built B's compiler; GPM's machine became BCPL itself. Not in the brief's carried list; the documents forced the filing."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "FORTRAN (Backus et al., 1957)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE, and the strongest hearing FORTRAN has had in this lineage (exp-209 at B scored it 2.0 on trigger/biography/syntax; here the channels are design-internal). Richards names FORTRAN inside BCPL's design twice: the separate-compilation precedent ('Although Fortran had allowed modules of a program to be compiled separately... For BCPL, separate compilation was deemed essential, so some mechanism had to be found') and the global vector 'similar to BLANK COMMON of Fortran' - plus the 7094's Fortran character set constraining BCPL's first tokens. But the global vector is 'a scheme devised specifically for BCPL': FORTRAN supplied the precedent and the analogy, not the mechanism. Directness partial fails closed. Re-hearing condition: a Richards document stating the global vector was taken from COMMON rather than devised by analogy to it."
+  },
+  {
+   "name": "CTSS (Corbato et al., 1962)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE CARRIED HEARING, RE-DECIDED ON THIS PARENT'S DOCUMENTS (not inherited from exp-209). At BCPL itself CTSS is one level closer than it was at B: it hosted the first implementation (IBM 7094, Project MAC, spring 1967) and left one specific trace inside the artifact - the star of BCPL's original *( indirection token, borrowed from 'the FAP assembly language used on CTSS'. But the design was complete in outline before the December 1966 move (the subset and the abstract machine are Cambridge work of 1965-66, and the design is machine-independent by construction), so CTSS enabled the first running, not the design. The transport discrimination of exp-209 applied one level closer in. Re-hearing condition: a Richards document attributing a design feature of BCPL - not its first running - to CTSS."
+  },
+  {
+   "name": "The CPL compiler subset (Richards, 1965)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE PARENT'S INFORMAL FIRST FORM: Richards's MIT act was to fill in 'the syntactic details of the informal subset of CPL we had used' - the subset is BCPL in embryo, with no artifact existence separate from the parent it became. The OOPC discrimination (exp-205): an embryo is not a consumed component. Its genuine mechanisms are not lost: they are heard at CPL and GPM, both admitted at this parent."
+  },
+  {
+   "name": "IBM 7094 (IBM, 1962)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The first machine BCPL ran on, whose 6-bit Fortran character set dictated the *( token, single-quote strings and $( brackets of the first form. The anti-PDP-7 (exp-209): the language was designed machine-independent via its abstract machine, and the designer ties no defining mechanism to this machine - only the spelling of its tokens. A constraint on representation is not a mechanism of the leap."
+  },
+  {
+   "name": "Project MAC (MIT, 1963)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "Carriage: the institution employed the maker at the design's completion and supplied the machine, the system and the manual's memorandum series - but it acts on the parent only through the specific artifacts it carried (CTSS, the 7094), each heard on its own documents here. Employment, hosting and publication are conditions, not channels. Parity with Bell Telephone Laboratories at exp-209 (0.5)."
+  },
+  {
+   "name": "ALGOL 60 (1960)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA CPL, re-decided on this parent's documents (discharging the exp-209 mediation by re-decision): Richards routes ALGOL 60's influence through CPL's design ('The designers of CPL were strongly influenced by ALGOL 60'), its signature transfer into CPL (call by name) was removed by mid 1966 before BCPL existed, and BCPL's one direct-looking trace ('Identifiers in BCPL followed the ALGOL convention') is a convention adopted inside the syntax retained from CPL. The LINK candidate is recorded mediated here, edge-scoped; ALGOL 60's direct hearing in this lineage belongs to CPL's expansion."
+  },
+  {
+   "name": "Lambda calculus (Church, 1936)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA CPL: the route is named in the documents - Landin's lambda-calculus clarification of ALGOL 60 semantics 'affected the design of the language' (CPL), whose team he sat on - and the lambda-shaped features were precisely the difficult bits the distillation removed (call by substitution dropped by mid 1966), while what survives (valof/resultis, function values as words) survives in CPL's syntactic form. The same mediation shape as exp-203 (lambda calculus mediated at the LISP 1.5 manual via Lisp). The LINK candidate is recorded mediated here, edge-scoped."
+  },
+  {
+   "name": "Atlas (Ferranti, 1962)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA CPL: one of the two target machines of the ancestor's GPM-based compilers, whose late and rudimentary Cambridge installation shaped the CPL effort's pace - but its channel into BCPL runs entirely inside that effort, whose outcomes (CPL's design, GPM's machine) are admitted here as the carrying links. A target machine of the ancestor is the ancestor's channel, one level up."
+  },
+  {
+   "name": "EDSAC 2 (Wilkes et al., 1958)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA CPL: the development machine of the ancestor's compiler effort ('Much of the early development of the Cambridge CPL compiler was done by research students using Edsac 2') and the GPM machine's second target - the same road as Atlas, through the same carrying links."
+  },
+  {
+   "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA CPL: CPL's conception document - Richards places CPL's 'first ideas' in this 1961 paper - is a component of the ancestor's own founding history, not a channel into the child; BCPL's design cites CPL's documents and practice, never the 1961 proposals. Judged DIFFERENT from the ALGOL 60 node (a paper proposing improvements to the language is not the language). Its direct hearing belongs to CPL's expansion."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_bcpl-richards-1967-1967.json",
+  "outcomes": {
+   "cpl-barron-et-al-1963-1963": "provisional",
+   "gpm-strachey-1965-1965": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Both survivors provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). CPL survived the retrospective-myth attack on the 1967 manual's contemporary definition and the ALGOL-60-as-passthrough mediation attack. GPM survived the apparatus attack (its machine became the semantics, the TMG floor), the CPL-mediation attack (a distinct 1965 artifact, designed before the subset was a language) and the OCODE-recoding attack ('almost the same abstract machine'). Warts recorded in the verification notes: both admissions rest on Richards's 2011 retrospective for the mechanism mapping - CPL corroborated by the 1967 manual, the CPL Working Papers not independently read; GPM's own 1965 paper not independently read, the admission resting on Richards's operation-by-operation exposition of the macro machine."
+ },
+ "totals_after": {
+  "nodes": 343,
+  "edges": 442,
+  "budget": "343/2000",
+  "expansions_done": 211,
+  "provisional": 326,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 69,
+   "6": 51,
+   "7": 34,
+   "8": 23,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 2,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "cpl-barron-et-al-1963-1963",
+  "wall-street-journal-corpus-darpa-csr-1992",
+  "advantage-updating-baird-1993",
+  "complexity-of-reinforcement-learning-whitehead-1991",
+  "ieee-754-binary-floating-point-arithmetic-1985-1985"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 101 continues: expansion 212 (Wall Street Journal corpus / DARPA CSR, 1992) follows this checkpoint in the same session. The exp-209 carried hearings are now discharged (CPL admitted) or re-decided on the new parent's own documents (CTSS fail-closed at BCPL itself). New carried hearings: CPL's own expansion - now second on the frontier behind the WSJ corpus - carries the ALGOL 60, lambda-calculus, Atlas, EDSAC 2 and Strachey & Wilkes 1961 hearings recorded as mediated at this parent. New re-hearing conditions recorded this session: FORTRAN at BCPL (a Richards document stating the global vector was taken from COMMON), CTSS at BCPL (a design feature, not the first running, attributed to CTSS). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
+}

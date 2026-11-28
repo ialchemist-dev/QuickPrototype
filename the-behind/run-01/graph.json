@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T11:46:21+00:00",
-  "expansions_done": 210,
-  "raw_candidates_seen": 8900,
+  "updated_at": "2026-11-28T11:55:18+00:00",
+  "expansions_done": 211,
+  "raw_candidates_seen": 8912,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35649,6 +35649,71 @@
     "name": "Cartoon Orbit project (Communities.com, 2000)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T11:45:59+00:00"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "CTSS (Corbato et al., 1962)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:55:01+00:00"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "FORTRAN (Backus et al., 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:55:01+00:00"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "ALGOL 60 (1960)",
+    "reason": "mediated_via: CPL (Barron et al., 1963)",
+    "at": "2026-11-28T11:55:01+00:00",
+    "mediated_via": "CPL (Barron et al., 1963)"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "Lambda calculus (Church, 1936)",
+    "reason": "mediated_via: CPL (Barron et al., 1963)",
+    "at": "2026-11-28T11:55:01+00:00",
+    "mediated_via": "CPL (Barron et al., 1963)"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "IBM 7094 (IBM, 1962)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:55:01+00:00"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "Project MAC (MIT, 1963)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:55:01+00:00"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "Atlas (Ferranti, 1962)",
+    "reason": "mediated_via: CPL (Barron et al., 1963)",
+    "at": "2026-11-28T11:55:01+00:00",
+    "mediated_via": "CPL (Barron et al., 1963)"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "EDSAC 2 (Wilkes et al., 1958)",
+    "reason": "mediated_via: CPL (Barron et al., 1963)",
+    "at": "2026-11-28T11:55:01+00:00",
+    "mediated_via": "CPL (Barron et al., 1963)"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+    "reason": "mediated_via: CPL (Barron et al., 1963)",
+    "at": "2026-11-28T11:55:01+00:00",
+    "mediated_via": "CPL (Barron et al., 1963)"
+   },
+   {
+    "parent_id": "bcpl-richards-1967-1967",
+    "name": "The CPL compiler subset (Richards, 1965)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:55:01+00:00"
    }
   ]
  },
@@ -45531,7 +45596,7 @@
    "prior_state": "CPL (1963), a large joint Cambridge/London design still struggling toward implementation; systems programming otherwise in assembler or FORTRAN.",
    "status": "provisional",
    "depth": 11,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -45633,6 +45698,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T11:45:59+00:00"
+  },
+  "cpl-barron-et-al-1963-1963": {
+   "id": "cpl-barron-et-al-1963-1963",
+   "name": "CPL (Barron et al., 1963)",
+   "aliases": [],
+   "year": 1963,
+   "domain": "programming languages",
+   "type": "method",
+   "definition": "The Combined Programming Language designed jointly at the Cambridge University Mathematical Laboratory and the University of London Computer Unit (1962-66) - the large ALGOL-influenced language, documented in Barron et al. 1963 and the CPL Working Papers (1966), whose type and mode system and variety of definition forms made compilation difficult and which Richards distilled into BCPL.",
+   "bottleneck": "Before CPL, a general high-level language for both scientific and systems programming existed only as ALGOL 60 - a language whose own designers' successors judged it needed fundamental extension for efficiency and wider application, with no joint design yet attempted.",
+   "leap": "CPL (1963) was the joint Cambridge/London design that extended ALGOL 60 into a general, logically coherent language - Lvalue/Rvalue discipline, first-class functions, rich definition forms - documented in Barron et al. 1963 and the CPL Working Papers (1966); its very richness made it the design BCPL would later distill.",
+   "prior_state": "ALGOL 60 (1960) as the reference design; systems programming in assembler or FORTRAN; no joint Cambridge/London language project.",
+   "status": "provisional",
+   "depth": 12,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial check (exp-211, parent BCPL): the verifier attacked the descent as a designer's tidy genealogy and found it fails - the derivation is stated not only in Richards's 2011 retrospective but in the parent's own 1967 Reference Manual (M-352: BCPL derived from 'true CPL' by removing the features that make compilation difficult), a contemporary primary document, and the genealogy instantiates it feature by feature (declarations, control structures, valof/resultis, expression/command separation). Mediation attack (ALGOL 60 as the true source, CPL a passthrough): fails on the same record - what BCPL retained is CPL's extension and restriction of ALGOL, and ALGOL's signature transfer into CPL (call by name) was removed before BCPL existed; ALGOL 60 was heard separately at this parent and recorded mediated via CPL. Multiples test: no second distillation of CPL is documented; the subset strategy was the project's own. Date check: the node is dated by Barron et al. 1963, the design's public document, within the 1962-66 project - defensible. Wart recorded: the admission rests on Richards's retrospective for the mechanism mapping, corroborated by the 1967 manual; the CPL Working Papers (1966) themselves were not independently read this session. CPL's own expansion carries the ALGOL 60, lambda-calculus, Atlas, EDSAC 2 and Strachey & Wilkes 1961 hearings recorded as mediated at this parent.",
+    "at": "2026-11-28T11:55:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T11:55:01+00:00"
+  },
+  "gpm-strachey-1965-1965": {
+   "id": "gpm-strachey-1965-1965",
+   "name": "GPM (Strachey, 1965)",
+   "aliases": [],
+   "year": 1965,
+   "domain": "compiler construction",
+   "type": "method",
+   "definition": "Christopher Strachey's General Purpose Macrogenerator (Computer Journal 8, 1965) - the macro processor Strachey designed so the Cambridge CPL compiler, written in a subset of CPL, could be hand-coded as a sequence of macro calls forming an abstract stack machine; that machine, fully developed in 1965-66, became BCPL's operational semantics, recoded as OCODE.",
+   "bottleneck": "Before GPM, writing one compiler for two different machines meant two implementations: there was no macro processor powerful enough to serve as the assembly language of an abstract machine in which a compiler could be written once.",
+   "leap": "Strachey's GPM (1965) was a general-purpose macrogenerator designed so the CPL compiler, written in a subset of CPL, could be hand-coded as macro calls - in effect the assembly language of an abstract stack machine - generating code for both EDSAC 2 and Atlas; that machine, developed through 1965-66, became the operational semantics Richards formalized as BCPL.",
+   "prior_state": "Hand-written per-machine compilers; macro processors too weak to carry a compiler's code generation.",
+   "status": "provisional",
+   "depth": 12,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial check (exp-211, parent BCPL): attacked as a mere construction tool (apparatus, the MuJoCo/TMG line) - the attack fails on the record Richards gives: GPM is not only the tool the CPL compiler was built with, its macro machine IS the artifact BCPL took over ('The BCPL abstract machine was almost the same abstract machine of macro calls used in the implementation of CPL'), and the typeless word model was discovered inside that machine's uniform stack values; Richards treated 'the abstract machine as though it were the operational semantics of the language'. The TMG precedent (exp-209) is the floor, not the ceiling: TMG built B's compiler, GPM's machine became BCPL itself. Mediation attack (CPL as mediator - GPM reached BCPL only as embodied in CPL's compiler): answered on the documents - Strachey designed GPM for the compiler before the subset was a language, the machine was 'fully developed' in 1965-66 as a distinct artifact with its own 1965 publication, and BCPL's inheritance (the stack machine, the P pointer, the indirection operations) is the machine's, not the language's. Recoding attack (OCODE is BCPL's own, so the machine is Richards's): fails on Richards's own wording - 'almost the same abstract machine'; the recoding changed the encoding (integers, not text macros) for compile time and optimisation, not the machine. Multiples test: other macrogenerators existed (McIlroy's 1960 macro extensions among them), which caps Q3 at the partial already scored - the channel claimed is this project's documented tool, not the class. Wart recorded: GPM's 1965 paper itself was not independently read this session; the admission rests on Richards's operation-by-operation exposition of the macro machine in the genealogy (the factorial macro translation, LRX/LLX/RV) plus the paper's full citation.",
+    "at": "2026-11-28T11:55:18+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T11:55:01+00:00"
   }
  },
  "edges": [
@@ -88847,6 +88970,200 @@
     "mediator": null,
     "evidence": "Direct: the design account in Wikipedia's JSON history names the two mechanisms (holding two connections open; recycling before browser timeouts) that are RFC 2616 behaviors; Morningstar's resume states the channel ran 'over standard HTTP'."
    }
+  },
+  {
+   "predecessor_id": "cpl-barron-et-al-1963-1963",
+   "successor_id": "bcpl-richards-1967-1967",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before CPL there was no language whose distillation could yield a compilable systems language at all: the problem BCPL solved - a high-level language for compilers and systems work that one programmer could actually implement - was unsolvable while its only candidate source, CPL itself, remained, in the 1967 manual's words, burdened by 'those features of the full language which make compilation difficult'. CPL is the artifact that made the problem statable and its solution extractable: Richards's genealogy opens 'BCPL is essentially just CPL with all the difficult bits removed and with just a few extensions'.",
+     "source": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011); BCPL Reference Manual, Project MAC M-352 (1967)",
+     "falsification": "A pre-1967 document showing BCPL's retained syntax and semantics deriving from a language other than CPL that Richards had in hand."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "CPL opened the space BCPL occupies: a joint Cambridge/London design for a general, logically coherent systems-and-science language - block structure, first-class functions, Lvalue/Rvalue discipline, expression/command separation - from which a whole family of restricted, implementable languages could be cut. BCPL is the documented cut; the space of 'CPL made compilable' is CPL's creation.",
+     "source": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "falsification": "Evidence the compilable-systems-language space was already occupied by another design before CPL's 1962-66 project."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The retained substance has no second documented source - the genealogy and the manual agree on the derivation in so many words - but the distillation is Richards's own design act (the choice of what counted as a difficult bit, the typeless restriction, the added pointer arithmetic), so necessity is partial rather than pass.",
+     "source": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "falsification": "Evidence BCPL's retained core - its declarations, control structures, valof/resultis - was taken from a source other than CPL."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse is the distillation itself: a language whose full form consumed a joint two-university project from 1962 to 1966 without a satisfactory compiler became, by removal of the difficult bits, a language whose first compiler one man implemented in a season at MIT.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "CPL supplied the explanatory model BCPL's programmers designed with: Strachey's Lvalue/Rvalue distinction (implemented in BCPL as LV/@ and RV/!), the separation of lexical/syntactic detail from semantics, and the expression/command separation BCPL expressly followed ('BCPL followed CPL's lead in syntactically separating expressions from commands').",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: CPL's program structure - sections, simultaneous declarations, separately meaningful function definitions - is the structure BCPL inherits and makes separately compilable; 'BCPL has essentially much of the same syntax as CPL'.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is real but bounded: designed for both scientific and systems work, its reach into BCPL is within the language-design field, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration speed: CPL's own slow convergence (research-student turnover, a late machine) is part of what BCPL's restriction answered, but the speed gain belongs to the distillation act as much as to CPL, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Displacement: CPL displaced ALGOL 60 as the Cambridge/London design baseline, but was itself displaced by its own child within the decade, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the documented parent of BCPL and, through it, grandparent of B and C - Richards's genealogy and Ritchie's ('its grandparent BCPL', of CPL's line) agree on the line's centrality.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The baseline CPL set - block-structured, expression-oriented systems programming in a high-level language - persisted through BCPL into C's practice, but CPL's own purest forms (its type system) were abandoned at the distillation, so the reset is partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T11:55:01+00:00",
+   "leap": {
+    "prior_state": "CPL (1963), a large joint Cambridge/London design still struggling toward implementation - its Cambridge compiler, written in a subset of itself and hand-coded into GPM macro calls, 'did not result in a satisfactory implementation'; systems programming otherwise in assembler or FORTRAN.",
+    "jump": "A small, typeless systems language existed that one programmer could compile simply and carry from machine to machine: BCPL - CPL distilled to its compilable core, its operational semantics taken from the GPM abstract machine and recoded as OCODE - implemented at MIT in spring 1967, and taken up as the Bell Labs group's working language on Multics and GECOS.",
+    "date": 1967
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove CPL and there is nothing to distill: no retained syntax, no expression/command structure, no Lvalue discipline, no subset to formalize, and no abstract-machine compiler effort to inherit. Richards's genealogy and the 1967 manual state the descent in so many words; no intermediary stands between CPL and BCPL - Richards took the language he had spent four years implementing and cut it himself.",
+    "mediator": null,
+    "evidence": "Direct: the descent is stated by the parent's designer (Richards 2011) and by the parent's own reference manual (M-352, 1967), and instantiated feature by feature in the genealogy's sections 5-8."
+   }
+  },
+  {
+   "predecessor_id": "gpm-strachey-1965-1965",
+   "successor_id": "bcpl-richards-1967-1967",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before GPM, the Cambridge CPL compiler had no way to exist on two machines at once: the compiler had to be written in a subset of CPL and 'hand coded into a sequence of macro calls that could generate assembly language for either Edsac 2 or Atlas', and Strachey designed GPM for exactly that purpose. The portable-compiler problem - one compiler body, many machines - was unsolvable in that project before the macrogenerator, and the abstract machine it defined is the machine BCPL's semantics were taken from.",
+     "source": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011); Strachey, 'A General Purpose Macrogenerator', Computer Journal 8 (1965) 225-241",
+     "falsification": "A document showing the CPL compiler's abstract machine designed independently of GPM's macro calls."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "GPM opened the space of the machine-independent compiler: a text-to-text macrogenerator powerful enough to serve as an abstract machine's assembly language - Richards records it could define a macro computing the nth prime - generalized into the portability strategy (front end to an abstract machine, one codegenerator per target) that BCPL's OCODE embodies and that the whole lineage inherits.",
+     "source": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "falsification": "Evidence a working abstract-machine portability strategy for compilers predates GPM's 1965 publication in the Cambridge record."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The machine BCPL took over existed only as GPM macro calls - 'The BCPL abstract machine was almost the same abstract machine of macro calls used in the implementation of CPL' - but Richards recoded it as OCODE for compile time and optimisation, a real design act on top of the inheritance, so necessity is partial rather than pass.",
+     "source": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "falsification": "Evidence Richards designed BCPL's stack machine from scratch at MIT without the CPL compiler's macro machine in hand."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse is the artifact's purpose: one hand-coded macro sequence generated assembly for two different machines, where the alternative was a separate compiler back end per machine written and maintained by research students.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "GPM supplied the explanatory model that became BCPL's semantics: the abstract stack machine itself - uniform word-sized stack values, the P pointer, load/store/indirection operations (LRX, LLX, RV) - which Richards 'treated as though it were the operational semantics of the language'; the typeless model was discovered inside it ('the bit pattern held in a CPU general register can represent a value of any type').",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "Composability: a macrogenerator is a build-on-able layer (bgpm still ships in the BCPL distribution), but as an interface for other builders it remained a specialist's tool, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach: a general-purpose text processor used beyond the compiler (the prime-generating macro is Richards's own example), but its documented consequential use is this lineage, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Iteration speed: between 1965 and 1966 the GPM-based machine 'was fully developed and used to implement a significant proportion of CPL producing compilers that ran on both Edsac 2 and the Atlas' - the macro route collapsed the compiler-development loop from years of machine-specific work to one portable body.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Lineage centrality: trunk inside this lineage (it is where BCPL's semantics live), a side branch in computing generally, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The abstract-machine baseline persisted - OCODE, then Cintcode, is still the BCPL distribution's form - but macro-based implementation itself was superseded, so the reset is partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T11:55:01+00:00",
+   "leap": {
+    "prior_state": "CPL (1963), a large joint Cambridge/London design still struggling toward implementation - its Cambridge compiler, written in a subset of itself and hand-coded into GPM macro calls, 'did not result in a satisfactory implementation'; systems programming otherwise in assembler or FORTRAN.",
+    "jump": "A small, typeless systems language existed that one programmer could compile simply and carry from machine to machine: BCPL - CPL distilled to its compilable core, its operational semantics taken from the GPM abstract machine and recoded as OCODE - implemented at MIT in spring 1967, and taken up as the Bell Labs group's working language on Multics and GECOS.",
+    "date": 1967
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove GPM and the chain breaks at its load-bearing link: no macro machine, no two-machine CPL compiler, no developed abstract machine for Richards to treat as a language's operational semantics at MIT, and no uniform-stack-value insight from which the typeless word model was read off. The mediation check was run against CPL: GPM is not CPL's content but its construction medium, designed by Strachey for the compiler before the subset existed as a language - Richards's account keeps the two artifacts distinct, and BCPL took the machine from the medium, not from the language it was compiling.",
+    "mediator": null,
+    "evidence": "Direct: Richards 2011 secs.2, 4 and 5 - GPM designed 'for the purpose', the machine 'fully developed' in 1965-66, BCPL's abstract machine 'almost the same' machine, OCODE its recoding."
+   }
   }
  ],
  "merge_log": [
@@ -90121,6 +90438,30 @@
     "cosine": 0.7205
    },
    "reason": "Both cards denote the one advance: McCarthy's Lisp (1960) and its S-expression representation. The candidate is the same artifact as the existing node; it proceeds as a LINK candidate, carrying Crockford's 'maybe the greatest influence' testimony into the hearing."
+  },
+  {
+   "at": "2026-11-28T11:53:20+00:00",
+   "from_id": "cand:ALGOL 60 (1960)",
+   "into_id": "algol-60-1960",
+   "signals": [
+    "judge"
+   ],
+   "scores": {
+    "cosine": 0.7151
+   },
+   "reason": "The filing denotes the ALGOL 60 language itself (the 1960 report's design), the same advance as the existing node; the filing's definition is written from this parent's documents but names the same artifact."
+  },
+  {
+   "at": "2026-11-28T11:53:20+00:00",
+   "from_id": "cand:Lambda calculus (Church, 1936)",
+   "into_id": "lambda-calculus-1936",
+   "signals": [
+    "judge"
+   ],
+   "scores": {
+    "cosine": 0.868
+   },
+   "reason": "The filing denotes Church's lambda calculus (mature form 1936), the same advance as the existing node; the Landin route described in the filing is this parent's channel claim, not a different formalism."
   }
  ],
  "expansions": {
@@ -394756,6 +395097,600 @@
       }
      },
      "similarity": 0.7205,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "bcpl-richards-1967-1967": {
+   "raw_candidates": [
+    {
+     "name": "CPL (Barron et al., 1963)",
+     "year": 1963,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "method",
+     "definition": "The Combined Programming Language designed jointly at the Cambridge University Mathematical Laboratory and the University of London Computer Unit (1962-66) - the large ALGOL-influenced language, documented in Barron et al. 1963 and the CPL Working Papers (1966), whose type and mode system and variety of definition forms made compilation difficult and which Richards distilled into BCPL.",
+     "causal_claim": "CPL directly enabled BCPL's leap by being the artifact Richards distilled: his own genealogy states BCPL 'is essentially just CPL with all the difficult bits removed and with just a few extensions', the 1967 BCPL Reference Manual defines BCPL as derived from 'true CPL' by removing the features that make compilation difficult, and BCPL retains CPL's syntax and expression/command structure wherever the subset allowed.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "GPM (Strachey, 1965)",
+     "year": 1965,
+     "domain": "compiler construction",
+     "lens": "L11",
+     "type": "method",
+     "definition": "Christopher Strachey's General Purpose Macrogenerator (Computer Journal 8, 1965) - the macro processor Strachey designed so the Cambridge CPL compiler, written in a subset of CPL, could be hand-coded as a sequence of macro calls forming an abstract stack machine; that machine, fully developed in 1965-66, became BCPL's operational semantics, recoded as OCODE.",
+     "causal_claim": "GPM directly enabled BCPL's leap by supplying its operational semantics and its typeless insight: the BCPL abstract machine 'was almost the same abstract machine of macro calls used in the implementation of CPL', and it was in that machine's uniform stack values - all the same size, representing any conceptual type - that the typeless word model BCPL is built on was discovered; Richards at MIT treated 'the abstract machine as though it were the operational semantics of the language'.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "CTSS (Corbato et al., 1962)",
+     "year": 1962,
+     "domain": "operating systems",
+     "lens": "L21",
+     "type": "method",
+     "definition": "MIT's Compatible Time-Sharing System (1962), running on the IBM 7094 at Project MAC on which Richards implemented the first BCPL compiler in spring 1967 - the host system of BCPL's first running, whose FAP assembler's star indirection convention BCPL's first lexical tokens borrowed.",
+     "causal_claim": "CTSS is filed as BCPL's first-implementation host, carried here from its exp-209 hearing (mediated via BCPL at B): Richards implemented the first BCPL compiler on an IBM 7094 running CTSS at MIT in spring 1967, and the system's own assembler left one documented trace inside the artifact - the star of BCPL's original *( indirection token 'was used as the indirection operator in the FAP assembly language used on CTSS'.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "FORTRAN (Backus et al., 1957)",
+     "year": 1957,
+     "domain": "programming languages",
+     "lens": "L6",
+     "type": "method",
+     "definition": "IBM's formula-translating language (1957), the era's default higher-level language; Richards's genealogy names it twice inside BCPL's design - as the precedent that separate compilation was possible, and as the named analogy (BLANK COMMON) for BCPL's global-vector mechanism.",
+     "causal_claim": "FORTRAN is filed on the strongest channels it has anywhere in this lineage: Richards records that where Fortran 'had allowed modules of a program to be compiled separately', the block-structured languages provided no such mechanism, so for BCPL 'separate compilation was deemed essential, so some mechanism had to be found' - and the mechanism found 'used an area of memory called the global vector similar to BLANK COMMON of Fortran'; the 7094's Fortran character set additionally constrained BCPL's first lexical form.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "ALGOL 60 (1960)",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "method",
+     "definition": "The 1960 algorithmic language report - the family's reference design, named by Richards as the strong influence on CPL's designers and the source of BCPL's identifier convention.",
+     "causal_claim": "ALGOL 60 is filed as the LINK candidate exp-209 rejected at B as mediated via BCPL: Richards's genealogy routes its influence through CPL's design ('The designers of CPL were strongly influenced by ALGOL 60'), its call-by-name facility entered CPL and was removed by mid 1966 before BCPL existed, and BCPL's one direct lexical trace ('Identifiers in BCPL followed the ALGOL convention') is a convention adopted inside CPL's retained syntax - the mediation is to be re-decided here on BCPL's own documents.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "Lambda calculus (Church, 1936)",
+     "year": 1936,
+     "domain": "mathematical logic",
+     "lens": "L19",
+     "type": "theory",
+     "definition": "Church's formalism of functions, binding and substitution (mature form 1936) - carried into CPL's design by Peter Landin, whose two-part paper used it to clarify ALGOL 60's semantics and who sat on the CPL design team.",
+     "causal_claim": "Lambda calculus is filed as a LINK candidate on Richards's documented route: Landin's use of lambda-calculus 'affected the design of the language' (CPL) - it rationalized call by substitution, the rec marker and the in-declaration - but the lambda-shaped features were precisely CPL's difficult bits, call by substitution being removed by mid 1966, and what survives into BCPL (valof/resultis) arrives in CPL's syntactic form; the channel is claimed to run through CPL.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "IBM 7094 (IBM, 1962)",
+     "year": 1962,
+     "domain": "computer hardware",
+     "lens": "L9",
+     "type": "device",
+     "definition": "IBM's 36-bit mainframe (1962), the machine at MIT Project MAC on which the first BCPL compiler ran in spring 1967 under CTSS - its 6-bit character set, lacking brackets, quotes and lowercase, forced BCPL's first lexical representation.",
+     "causal_claim": "The IBM 7094 is filed as the first machine BCPL ran on: Richards's character-set account is set entirely on it ('on the first machine on which BCPL ran, namely an IBM 7094 running CTSS'), and its 36-bit words and Fortran character set dictated the *( token, the single-quote strings and the $( section brackets of BCPL's first form.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "Project MAC (MIT, 1963)",
+     "year": 1963,
+     "domain": "research institutions",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "MIT's Project on Mathematics and Computation (founded 1963) - the institution Richards moved to in December 1966, whose IBM 7094 and CTSS hosted BCPL's first compiler and whose memorandum series (M-352) published the BCPL Reference Manual.",
+     "causal_claim": "Project MAC is filed as the carriage institution: it employed the parent's maker at the moment of the design, supplied the machine and time-sharing system of the first implementation, and published the language's reference manual - every material condition of BCPL's first running was MAC's.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "Atlas (Ferranti, 1962)",
+     "year": 1962,
+     "domain": "computer hardware",
+     "lens": "L9",
+     "type": "device",
+     "definition": "The Ferranti Atlas (1962) and its simplified Cambridge Titan version - one of the two machine targets of the GPM-based CPL compilers, the Cambridge machine whose late arrival (early 1964) and rudimentary system software shaped the CPL implementation effort BCPL grew out of.",
+     "causal_claim": "Atlas is filed as the CPL effort's target machine: the GPM macro machine existed to let one compiler body generate code 'for either Edsac 2 or Atlas', and the Cambridge CPL compiler's difficulties on the Atlas line are the documented occasion of the subset strategy - its channel into BCPL runs entirely inside the ancestor's implementation effort.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "EDSAC 2 (Wilkes et al., 1958)",
+     "year": 1958,
+     "domain": "computer hardware",
+     "lens": "L9",
+     "type": "device",
+     "definition": "Cambridge's second stored-program computer (operational 1958) - the slow, small-memory machine on which the research students developed much of the early Cambridge CPL compiler and one of the two targets of its GPM macro code.",
+     "causal_claim": "EDSAC 2 is filed as the CPL compiler's development machine: 'Much of the early development of the Cambridge CPL compiler was done by research students using Edsac 2', and the portability problem it posed jointly with Atlas is what the GPM abstract machine - BCPL's semantics - was built to solve; the channel runs inside the ancestor's implementation effort.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+     "year": 1961,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "method",
+     "definition": "Strachey and Wilkes's 1961 CACM paper - the document in which, on Richards's genealogy, 'the first ideas for CPL appeared', proposing the efficiency improvements to ALGOL 60 that the CPL project then took up.",
+     "causal_claim": "The 1961 proposals paper is filed as CPL's conception document: Richards's reference [1] and his history both place CPL's first ideas in it - its channel into BCPL is the ancestor's own founding document, one level inside CPL's history.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "The CPL compiler subset (Richards, 1965)",
+     "year": 1965,
+     "domain": "programming languages",
+     "lens": "L1",
+     "type": "method",
+     "definition": "The informal subset of CPL in which the Cambridge CPL compiler was itself written (1965-66), hand-coded into GPM macro calls - the working restricted language Richards later formalized at MIT by 'filling in the syntactic details of the informal subset of CPL we had used'.",
+     "causal_claim": "The subset is filed as the parent's informal first form, which the documents force into the census: BCPL began as this working subset - Richards's MIT act was to fill in its syntactic details and treat its abstract machine as the language's operational semantics - so the hearing must decide whether it is a consumed predecessor or the parent itself in embryo.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "cpl-barron-et-al-1963-1963",
+      "candidate": {
+       "name": "CPL (Barron et al., 1963)",
+       "year": 1963,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "method",
+       "definition": "The Combined Programming Language designed jointly at the Cambridge University Mathematical Laboratory and the University of London Computer Unit (1962-66) - the large ALGOL-influenced language, documented in Barron et al. 1963 and the CPL Working Papers (1966), whose type and mode system and variety of definition forms made compilation difficult and which Richards distilled into BCPL.",
+       "causal_claim": "CPL directly enabled BCPL's leap by being the artifact Richards distilled: his own genealogy states BCPL 'is essentially just CPL with all the difficult bits removed and with just a few extensions', the 1967 BCPL Reference Manual defines BCPL as derived from 'true CPL' by removing the features that make compilation difficult, and BCPL retains CPL's syntax and expression/command structure wherever the subset allowed.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "CPL (Barron et al., 1963)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "gpm-strachey-1965-1965",
+      "candidate": {
+       "name": "GPM (Strachey, 1965)",
+       "year": 1965,
+       "domain": "compiler construction",
+       "lens": "L11",
+       "type": "method",
+       "definition": "Christopher Strachey's General Purpose Macrogenerator (Computer Journal 8, 1965) - the macro processor Strachey designed so the Cambridge CPL compiler, written in a subset of CPL, could be hand-coded as a sequence of macro calls forming an abstract stack machine; that machine, fully developed in 1965-66, became BCPL's operational semantics, recoded as OCODE.",
+       "causal_claim": "GPM directly enabled BCPL's leap by supplying its operational semantics and its typeless insight: the BCPL abstract machine 'was almost the same abstract machine of macro calls used in the implementation of CPL', and it was in that machine's uniform stack values - all the same size, representing any conceptual type - that the typeless word model BCPL is built on was discovered; Richards at MIT treated 'the abstract machine as though it were the operational semantics of the language'.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "GPM (Strachey, 1965)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ctss-corbato-et-al-1962-1962",
+      "candidate": {
+       "name": "CTSS (Corbato et al., 1962)",
+       "year": 1962,
+       "domain": "operating systems",
+       "lens": "L21",
+       "type": "method",
+       "definition": "MIT's Compatible Time-Sharing System (1962), running on the IBM 7094 at Project MAC on which Richards implemented the first BCPL compiler in spring 1967 - the host system of BCPL's first running, whose FAP assembler's star indirection convention BCPL's first lexical tokens borrowed.",
+       "causal_claim": "CTSS is filed as BCPL's first-implementation host, carried here from its exp-209 hearing (mediated via BCPL at B): Richards implemented the first BCPL compiler on an IBM 7094 running CTSS at MIT in spring 1967, and the system's own assembler left one documented trace inside the artifact - the star of BCPL's original *( indirection token 'was used as the indirection operator in the FAP assembly language used on CTSS'.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "CTSS (Corbato et al., 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fortran-backus-et-al-1957-1957",
+      "candidate": {
+       "name": "FORTRAN (Backus et al., 1957)",
+       "year": 1957,
+       "domain": "programming languages",
+       "lens": "L6",
+       "type": "method",
+       "definition": "IBM's formula-translating language (1957), the era's default higher-level language; Richards's genealogy names it twice inside BCPL's design - as the precedent that separate compilation was possible, and as the named analogy (BLANK COMMON) for BCPL's global-vector mechanism.",
+       "causal_claim": "FORTRAN is filed on the strongest channels it has anywhere in this lineage: Richards records that where Fortran 'had allowed modules of a program to be compiled separately', the block-structured languages provided no such mechanism, so for BCPL 'separate compilation was deemed essential, so some mechanism had to be found' - and the mechanism found 'used an area of memory called the global vector similar to BLANK COMMON of Fortran'; the 7094's Fortran character set additionally constrained BCPL's first lexical form.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "FORTRAN (Backus et al., 1957)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "algol-60-1960-1960",
+      "candidate": {
+       "name": "ALGOL 60 (1960)",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "method",
+       "definition": "The 1960 algorithmic language report - the family's reference design, named by Richards as the strong influence on CPL's designers and the source of BCPL's identifier convention.",
+       "causal_claim": "ALGOL 60 is filed as the LINK candidate exp-209 rejected at B as mediated via BCPL: Richards's genealogy routes its influence through CPL's design ('The designers of CPL were strongly influenced by ALGOL 60'), its call-by-name facility entered CPL and was removed by mid 1966 before BCPL existed, and BCPL's one direct lexical trace ('Identifiers in BCPL followed the ALGOL convention') is a convention adopted inside CPL's retained syntax - the mediation is to be re-decided here on BCPL's own documents.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "ALGOL 60 (1960)"
+      ],
+      "matched_node_id": "algol-60-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lambda-calculus-church-1936-1936",
+      "candidate": {
+       "name": "Lambda calculus (Church, 1936)",
+       "year": 1936,
+       "domain": "mathematical logic",
+       "lens": "L19",
+       "type": "theory",
+       "definition": "Church's formalism of functions, binding and substitution (mature form 1936) - carried into CPL's design by Peter Landin, whose two-part paper used it to clarify ALGOL 60's semantics and who sat on the CPL design team.",
+       "causal_claim": "Lambda calculus is filed as a LINK candidate on Richards's documented route: Landin's use of lambda-calculus 'affected the design of the language' (CPL) - it rationalized call by substitution, the rec marker and the in-declaration - but the lambda-shaped features were precisely CPL's difficult bits, call by substitution being removed by mid 1966, and what survives into BCPL (valof/resultis) arrives in CPL's syntactic form; the channel is claimed to run through CPL.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Lambda calculus (Church, 1936)"
+      ],
+      "matched_node_id": "lambda-calculus-1936",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-7094-ibm-1962-1962",
+      "candidate": {
+       "name": "IBM 7094 (IBM, 1962)",
+       "year": 1962,
+       "domain": "computer hardware",
+       "lens": "L9",
+       "type": "device",
+       "definition": "IBM's 36-bit mainframe (1962), the machine at MIT Project MAC on which the first BCPL compiler ran in spring 1967 under CTSS - its 6-bit character set, lacking brackets, quotes and lowercase, forced BCPL's first lexical representation.",
+       "causal_claim": "The IBM 7094 is filed as the first machine BCPL ran on: Richards's character-set account is set entirely on it ('on the first machine on which BCPL ran, namely an IBM 7094 running CTSS'), and its 36-bit words and Fortran character set dictated the *( token, the single-quote strings and the $( section brackets of BCPL's first form.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "IBM 7094 (IBM, 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "project-mac-mit-1963-1963",
+      "candidate": {
+       "name": "Project MAC (MIT, 1963)",
+       "year": 1963,
+       "domain": "research institutions",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "MIT's Project on Mathematics and Computation (founded 1963) - the institution Richards moved to in December 1966, whose IBM 7094 and CTSS hosted BCPL's first compiler and whose memorandum series (M-352) published the BCPL Reference Manual.",
+       "causal_claim": "Project MAC is filed as the carriage institution: it employed the parent's maker at the moment of the design, supplied the machine and time-sharing system of the first implementation, and published the language's reference manual - every material condition of BCPL's first running was MAC's.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Project MAC (MIT, 1963)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "atlas-ferranti-1962-1962",
+      "candidate": {
+       "name": "Atlas (Ferranti, 1962)",
+       "year": 1962,
+       "domain": "computer hardware",
+       "lens": "L9",
+       "type": "device",
+       "definition": "The Ferranti Atlas (1962) and its simplified Cambridge Titan version - one of the two machine targets of the GPM-based CPL compilers, the Cambridge machine whose late arrival (early 1964) and rudimentary system software shaped the CPL implementation effort BCPL grew out of.",
+       "causal_claim": "Atlas is filed as the CPL effort's target machine: the GPM macro machine existed to let one compiler body generate code 'for either Edsac 2 or Atlas', and the Cambridge CPL compiler's difficulties on the Atlas line are the documented occasion of the subset strategy - its channel into BCPL runs entirely inside the ancestor's implementation effort.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Atlas (Ferranti, 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "edsac-2-wilkes-et-al-1958-1958",
+      "candidate": {
+       "name": "EDSAC 2 (Wilkes et al., 1958)",
+       "year": 1958,
+       "domain": "computer hardware",
+       "lens": "L9",
+       "type": "device",
+       "definition": "Cambridge's second stored-program computer (operational 1958) - the slow, small-memory machine on which the research students developed much of the early Cambridge CPL compiler and one of the two targets of its GPM macro code.",
+       "causal_claim": "EDSAC 2 is filed as the CPL compiler's development machine: 'Much of the early development of the Cambridge CPL compiler was done by research students using Edsac 2', and the portability problem it posed jointly with Atlas is what the GPM abstract machine - BCPL's semantics - was built to solve; the channel runs inside the ancestor's implementation effort.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "EDSAC 2 (Wilkes et al., 1958)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "strachey-wilkes-some-proposals-for-improving-the-efficiency-1961",
+      "candidate": {
+       "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+       "year": 1961,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "method",
+       "definition": "Strachey and Wilkes's 1961 CACM paper - the document in which, on Richards's genealogy, 'the first ideas for CPL appeared', proposing the efficiency improvements to ALGOL 60 that the CPL project then took up.",
+       "causal_claim": "The 1961 proposals paper is filed as CPL's conception document: Richards's reference [1] and his history both place CPL's first ideas in it - its channel into BCPL is the ancestor's own founding document, one level inside CPL's history.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-cpl-compiler-subset-richards-1965-1965",
+      "candidate": {
+       "name": "The CPL compiler subset (Richards, 1965)",
+       "year": 1965,
+       "domain": "programming languages",
+       "lens": "L1",
+       "type": "method",
+       "definition": "The informal subset of CPL in which the Cambridge CPL compiler was itself written (1965-66), hand-coded into GPM macro calls - the working restricted language Richards later formalized at MIT by 'filling in the syntactic details of the informal subset of CPL we had used'.",
+       "causal_claim": "The subset is filed as the parent's informal first form, which the documents force into the census: BCPL began as this working subset - Richards's MIT act was to fill in its syntactic details and treat its abstract machine as the language's operational semantics - so the hearing must decide whether it is a consumed predecessor or the parent itself in embryo.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011)",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "The CPL compiler subset (Richards, 1965)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:4:algol-60-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 4,
+       "card": {
+        "name": "ALGOL 60 (1960)",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The 1960 algorithmic language report - the family's reference design, named by Richards as the strong influence on CPL's designers and the source of BCPL's identifier convention.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "algol-60-1960",
+       "card": {
+        "name": "ALGOL 60",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.7151,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:5:lambda-calculus-1936",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 5,
+       "card": {
+        "name": "Lambda calculus (Church, 1936)",
+        "aliases": [],
+        "year": 1936,
+        "domain": "mathematical logic",
+        "type": "theory",
+        "definition": "Church's formalism of functions, binding and substitution (mature form 1936) - carried into CPL's design by Peter Landin, whose two-part paper used it to clarify ALGOL 60's semantics and who sat on the CPL design team.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "lambda-calculus-1936",
+       "card": {
+        "name": "Lambda calculus",
+        "aliases": [],
+        "year": 1936,
+        "domain": "mathematical logic",
+        "type": "theory",
+        "definition": "Alonzo Church's formal system (mature form 1936) of function abstraction and application, whose binding and substitution rules define what a lexically-scoped first-class function is.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.868,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:10:algol-60-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 10,
+       "card": {
+        "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+        "aliases": [],
+        "year": 1961,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "Strachey and Wilkes's 1961 CACM paper - the document in which, on Richards's genealogy, 'the first ideas for CPL appeared', proposing the efficiency improvements to ALGOL 60 that the CPL project then took up.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "algol-60-1960",
+       "card": {
+        "name": "ALGOL 60",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.5015,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:4:algol-60-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 4,
+      "card": {
+       "name": "ALGOL 60 (1960)",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The 1960 algorithmic language report - the family's reference design, named by Richards as the strong influence on CPL's designers and the source of BCPL's identifier convention.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "algol-60-1960",
+      "card": {
+       "name": "ALGOL 60",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.7151,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:5:lambda-calculus-1936",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 5,
+      "card": {
+       "name": "Lambda calculus (Church, 1936)",
+       "aliases": [],
+       "year": 1936,
+       "domain": "mathematical logic",
+       "type": "theory",
+       "definition": "Church's formalism of functions, binding and substitution (mature form 1936) - carried into CPL's design by Peter Landin, whose two-part paper used it to clarify ALGOL 60's semantics and who sat on the CPL design team.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "lambda-calculus-1936",
+      "card": {
+       "name": "Lambda calculus",
+       "aliases": [],
+       "year": 1936,
+       "domain": "mathematical logic",
+       "type": "theory",
+       "definition": "Alonzo Church's formal system (mature form 1936) of function abstraction and application, whose binding and substitution rules define what a lexically-scoped first-class function is.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.868,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:10:algol-60-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 10,
+      "card": {
+       "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+       "aliases": [],
+       "year": 1961,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "Strachey and Wilkes's 1961 CACM paper - the document in which, on Richards's genealogy, 'the first ideas for CPL appeared', proposing the efficiency improvements to ALGOL 60 that the CPL project then took up.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "algol-60-1960",
+      "card": {
+       "name": "ALGOL 60",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.5015,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
