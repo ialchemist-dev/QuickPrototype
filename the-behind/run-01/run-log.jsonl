@@ -15461,3 +15461,148 @@
  "notes": "Session 99 closes here: expansions 207-208 done, session 100 NOT started, per the brief. The frontier head is now B (Thompson, 1969) - admitted at exp-207 - which carries the BCPL/CPL/TMG/FORTRAN/PDP-7 mediated hearings as its own expansion's direct business when its turn comes, followed by the State application framework (2001), the WSJ corpus (1992), Advantage updating (1993) and Whitehead (1991). Carried items: the Reddit API re-hearing condition (this record); the ALGOL 68 and Unix re-hearing conditions (exp-207 verification file); the exp-206 verification-format wart (recorded at exp-207, not hand-fixed); the EM hearing still belongs to the McLachlan & Basford (1988) expansion; Fox's LISP I manual, Interface Builder 1986 and Kneser-Ney rehearing conditions stand.",
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T11:38:13.916539+00:00",
+ "event": "expansion",
+ "session": 100,
+ "expansion": 209,
+ "parent": "b-thompson-1969-1969",
+ "parent_name": "B (Thompson, 1969)",
+ "parent_year": 1969,
+ "parent_depth": 10,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed that the channels exp-207 recorded as mediated via B at the C parent (BCPL, TMG, FORTRAN, PDP-7) and via BCPL (ALGOL 60, CPL) be discharged or re-decided on B's own documents. All six were heard directly here: BCPL and TMG ADMITTED as new nodes, PDP-7 ADMITTED as a new node, FORTRAN heard directly and failed closed on directness (its three documented channels terminate at B, as exp-207 predicted, but none is a mechanism of the leap), and ALGOL 60 + CPL re-decided as mediated via BCPL on this parent's own evidence. One brief framing corrected by the documents: the brief's carried list did not include SMALGOL-61, which the designer's own summary ('BCPL semantics with a lot of SMALGOL syntax') forced into the census; it was filed and failed closed on directness (surface syntax only). FIX-UP discharged here per house pattern: expansion 208's sync_commit = 470265ed (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Ritchie, 'The Development of the C Language', HOPL-II 1993 (bell-labs.com/usr/dmr/www/chist.html), read in full. Load-bearing passages: 'By contrast, the B language designed by Ken Thompson was primarily a communications medium for describing algorithms and system programs, modelled on BCPL, a language that had gained considerable currency during the 1960s'; 'B is BCPL squeezed into 8K bytes of memory and filtered through Thompson's brain'; 'Challenged by McIlroy's feat in reproducing TMG, Thompson decided that Unix - which had just been, after the withdrawal of the Multics project, re-implemented in PDP-7 assembly language - needed a system programming language. After a rapidly scuttled attempt at Fortran, he created instead a language of his own'; 'After the TMG version of B was working, Thompson rewrote B in itself (a bootstrapping step)'; 'The first B compiler on the PDP-7 generated interpretive threaded code'; 'the traditional procedural family typified by Fortran and Algol 60'; 'The PDP-7, however, did have a few auto-increment memory cells... This feature probably suggested such operators to Thompson'; the PDP-11 theory 'is historically impossible, since there was no PDP-11 when B was developed'; 'The notation came from Algol 68 via McIlroy, who had incorporated it into his version of TMG'; 'Fortran influenced the syntax of declarations: B declarations begin with a specifier like auto or static, followed by a list of names'; 'The legacy of PL/I is evident here' (of the /**/ comment convention); BCPL's 'core semantic content... remained intact' through B into C; the group 'deferred another pioneering element of Multics, namely writing almost exclusively in a higher-level language'; Canaday's transport of BCPL to Multics and the GE-635 GECOS system; familiarity 'because the MIT CTSS system on which Richards worked was used for Multics development'. Corroboration: Thompson, 'Users' Reference to B', MM-72-1271-1 (1972) - 'B is a computer language directly descendant from BCPL'; Johnson & Kernighan, CSTR #8 (1973) - 'B is reminiscent of BCPL'; Richards, 'How BCPL evolved from CPL' - 'BCPL is essentially just CPL with all the difficult bits removed'; BCPL Reference Manual, Project MAC M-352 (July 1967) - BCPL derived from 'true CPL' by removing the features that make compilation difficult, first compiler spring 1967 on the IBM 7094 under CTSS; Thompson in Seibel, Coders at Work (2009) - 'I wrote a Fortran compiler for Unix early, and B was a Fortran compiler that got away from me'; Thompson, 1989 interview - 'It was too big a language to run on the UNIX machines that were 4K machines. That's when B was developed'; Thompson via Ars Technica - B is 'BCPL semantics with a lot of SMALGOL syntax'; SMALGOL-61 = Bachelor, Dempster, Knuth & Speroni, CACM 4:11 (1961) 499-502, an ALGOL 60 subset 'designed to run on less powerful computers' (CHM ALGOL standards page).",
+ "scout": {
+  "raw_filings": 14,
+  "matched_existing": 1,
+  "judge_queue": 3,
+  "judgments_applied": 3,
+  "judgments_different": 2,
+  "distinct": 12,
+  "note": "Document-census pattern: every channel Ritchie's history names for B is filed exactly once (BCPL, TMG, PDP-7, FORTRAN, SMALGOL-61, PL/I, CPL, ALGOL 60, ALGOL 68, CTSS, Multics, Bell Labs), plus Unix (1969) and Bon (1969) filed deliberately at the parent's own year - both dropped by the resolver's year bound, recorded, not re-dated (the parent's own successor-project and its possible name-source are same-year artifacts; the year-granularity bound governs). Judgments: PDP-7 DIFFERENT from the PDP-11 node; ALGOL 60 SAME as the existing node (LINK candidate); Multics DIFFERENT from the Multics iocall-mechanism node. ALGOL 68 auto-matched (LINK). MiniLM loaded - no TF-IDF fallback this expansion. Per-lens floors: the pool is a closed documentary census (one designer's history + the manuals it cites); 23 lens entries filed with dry/shortfall notes in dry_notes_b-thompson-1969-1969.json rather than padded."
+ },
+ "admissions": [
+  {
+   "node": "bcpl-richards-1967-1967",
+   "name": "BCPL (Richards, 1967)",
+   "link": false,
+   "grade": 6.0,
+   "basis": "Descent in so many words at every level: Thompson's own 1972 reference manual opens 'B is a computer language directly descendant from BCPL'; Ritchie's definition is 'BCPL squeezed into 8K bytes of memory and filtered through Thompson's brain'; and the semantics record shows BCPL's core content - the typeless word, indirection, the array model - 'remained intact' through B into C. The exp-207 mediation (BCPL mediated at C via B) is discharged here as a direct admission."
+  },
+  {
+   "node": "tmg-mcclure-1965-1965",
+   "name": "TMG (McClure, 1965)",
+   "link": false,
+   "grade": 5.0,
+   "basis": "Two documented causal roles, either sufficient: the trigger ('Challenged by McIlroy's feat in reproducing TMG, Thompson decided that Unix needed a system programming language') and the construction medium ('After the TMG version of B was working, Thompson rewrote B in itself'). McIlroy's PDP-7 implementation was Unix's first higher-level language (1969); the candidate is dated by McClure's 1965 original, per Ritchie's own citation [McClure 65]. Discharges the exp-207 mediation."
+  },
+  {
+   "node": "pdp-7-dec-1964-1964",
+   "name": "PDP-7 (DEC, 1964)",
+   "link": false,
+   "grade": 4.0,
+   "basis": "The SPECIFIC machine, on the PDP-11-at-C shape (exp-207): its 8K-word bound is the constraint the squeeze answered (Thompson 1989: BCPL 'was too big a language to run on the UNIX machines that were 4K machines. That's when B was developed'), and its auto-increment memory cells 'probably suggested' ++/-- - with Ritchie explicitly ruling the PDP-11 origin theory 'historically impossible'. Judged DIFFERENT from the PDP-11 node. Discharges the exp-207 mediation. Q3 scored partial on the designer's own hedge."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "FORTRAN (Backus et al., 1957)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. Three documented channels all terminate at B, exactly as exp-207's record anticipated - the scuttled Fortran-compiler attempt ('After a rapidly scuttled attempt at Fortran, he created instead a language of his own'), the project history ('B was a Fortran compiler that got away from me', Thompson 2009), and the declaration syntax ('Fortran influenced the syntax of declarations'). But termination is not the gate: trigger, biography and surface syntax are not mechanisms of the leap, whose substance is BCPL's semantics intact. Directness partial fails closed. Re-hearing condition: a Thompson or Ritchie document attributing a semantic mechanism of B to FORTRAN."
+  },
+  {
+   "name": "SMALGOL-61 (Bachelor, Dempster, Knuth & Speroni, 1961)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "The designer's own one-line genealogy - 'BCPL semantics with a lot of SMALGOL syntax' - documents direct borrowing from the ALGOL 60 subset Thompson learned as a Berkeley student. The borrowed layer is surface form: remove SMALGOL and the leap stands in BCPL-flavored dress. A channel whose removal leaves the leap intact is partial, and partial fails closed. Not in the brief's carried list; the documents forced the filing."
+  },
+  {
+   "name": "PL/I (IBM, 1964)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "One documented transfer - the /**/ comment convention, 'The legacy of PL/I is evident here' - at component scale; the group's deeper PL/I contact (the Multics compiler McIlroy and Morris wrote in TMG) is TMG's history, not a PL/I channel. Parity with exp-207's 1.0 hearing of PL/I at C, where it arrived through B."
+  },
+  {
+   "name": "ALGOL 68 (1968)",
+   "score": 1.0,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA TMG, on the designer's own sentence: 'The notation came from Algol 68 via McIlroy, who had incorporated it into his version of TMG.' The generalized assignment operators entered B from TMG's text. ALGOL 68's direct hearing in this lineage remains the C parent's (exp-207), where Ritchie's capture was first-person and unmediated; the LINK candidate is recorded mediated here, edge-scoped."
+  },
+  {
+   "name": "CPL (Barron et al., 1963)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA BCPL: Richards's own genealogy ('BCPL is essentially just CPL with all the difficult bits removed') and the 1967 manual's definition make BCPL the carrying link; Thompson's documents engage BCPL, never CPL. Discharges the exp-207 mediation as re-decided on this parent's evidence; CPL is expected at BCPL's own expansion."
+  },
+  {
+   "name": "ALGOL 60 (1960)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA BCPL: Ritchie's only ALGOL 60 sentence in B's history is typification ('the traditional procedural family typified by Fortran and Algol 60'), a classification, not a derivation. Its semantics reached B inside CPL/BCPL; its syntax route runs through SMALGOL-61, heard separately. The LINK candidate is recorded mediated, edge-scoped."
+  },
+  {
+   "name": "CTSS (Corbato et al., 1962)",
+   "score": 0.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA BCPL: CTSS carried BCPL twice (Richards's first compiler ran on it; the group's familiarity came through the CTSS Multics-development host), but what reached B in both journeys is BCPL itself. A transport system for the ancestor is the ancestor's channel, one level up; expected at BCPL's expansion."
+  },
+  {
+   "name": "Multics (1965)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Formation and occasion, no mechanism: the withdrawal freed the makers, the milieu concentrated BCPL and TMG in their hands, and the deferred higher-level-language element named the goal - but Multics's own language was PL/I, declined by the group, and no Multics design content is instantiated in B (its documented design content reached Unix, B's host, not B). Judged DIFFERENT from the Multics iocall node (the system project, not its mechanism). The SGI-at-Netscape discrimination (exp-198)."
+  },
+  {
+   "name": "Bell Telephone Laboratories (1925)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "Carriage: the institution acts on the parent only through the specific artifacts it carried - BCPL, TMG, the PDP-7 - each heard on its own documents here; its one dated act (the 1969 Multics withdrawal) is heard at the Multics filing. Employment and milieu are conditions, not channels. Parity with exp-207's 0.5 at C."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_b-thompson-1969-1969.json",
+  "outcomes": {
+   "bcpl-richards-1967-1967": "provisional",
+   "tmg-mcclure-1965-1965": "provisional",
+   "pdp-7-dec-1964-1964": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "All three survivors provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). Warts recorded in the verification notes: TMG's admission rests on Ritchie's retrospective (McClure's 1965 document not independently read); PDP-7 is the expansion's most contestable admission (designer-hedged suggestion channel, Q3 partial, re-hearing condition recorded); BCPL rests on the retrospective for the mechanism mapping, corroborated by the 1967 and 1972 primary manuals."
+ },
+ "totals_after": {
+  "nodes": 340,
+  "edges": 438,
+  "budget": "340/2000",
+  "expansions_done": 209,
+  "provisional": 323,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 68,
+   "6": 51,
+   "7": 34,
+   "8": 23,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "bcpl-richards-1967-1967",
+  "state-application-framework-2001",
+  "wall-street-journal-corpus-darpa-csr-1992",
+  "advantage-updating-baird-1993",
+  "complexity-of-reinforcement-learning-whitehead-1991"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 100 continues: expansion 210 (State application framework, 2001) follows this checkpoint in the same session. All six exp-207 carried hearings are now discharged or re-decided on B's own documents (BCPL/TMG/PDP-7 admitted; FORTRAN direct but fail-closed; ALGOL 60/CPL mediated via BCPL). New carried hearings: CPL and CTSS are expected at BCPL's expansion (now the frontier head); FORTRAN carries a re-hearing condition keyed to a semantic-mechanism attribution. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
+}

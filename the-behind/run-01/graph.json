@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T11:26:33+00:00",
-  "expansions_done": 208,
-  "raw_candidates_seen": 8868,
+  "updated_at": "2026-11-28T11:37:27+00:00",
+  "expansions_done": 209,
+  "raw_candidates_seen": 8882,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35501,6 +35501,64 @@
     "name": "PRAW (2011)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T11:26:33+00:00"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "FORTRAN (Backus et al., 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:37:05+00:00"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "SMALGOL-61 (Bachelor, Dempster, Knuth & Speroni, 1961)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:37:05+00:00"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "PL/I (IBM, 1964)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:37:05+00:00"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "CPL (Barron et al., 1963)",
+    "reason": "mediated_via: BCPL (Richards, 1967)",
+    "at": "2026-11-28T11:37:05+00:00",
+    "mediated_via": "BCPL (Richards, 1967)"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "ALGOL 60 (1960)",
+    "reason": "mediated_via: BCPL (Richards, 1967)",
+    "at": "2026-11-28T11:37:05+00:00",
+    "mediated_via": "BCPL (Richards, 1967)"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "ALGOL 68 (1968)",
+    "reason": "mediated_via: TMG (McClure, 1965)",
+    "at": "2026-11-28T11:37:05+00:00",
+    "mediated_via": "TMG (McClure, 1965)"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "CTSS (Corbato et al., 1962)",
+    "reason": "mediated_via: BCPL (Richards, 1967)",
+    "at": "2026-11-28T11:37:05+00:00",
+    "mediated_via": "BCPL (Richards, 1967)"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "Multics (1965)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:37:05+00:00"
+   },
+   {
+    "parent_id": "b-thompson-1969-1969",
+    "name": "Bell Telephone Laboratories (1925)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T11:37:05+00:00"
    }
   ]
  },
@@ -45261,7 +45319,7 @@
    "prior_state": "Unix begun in PDP-7 assembler; BCPL available but oversized for the environment.",
    "status": "provisional",
    "depth": 10,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -45363,6 +45421,93 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T11:19:24+00:00"
+  },
+  "bcpl-richards-1967-1967": {
+   "id": "bcpl-richards-1967-1967",
+   "name": "BCPL (Richards, 1967)",
+   "aliases": [],
+   "year": 1967,
+   "domain": "programming languages",
+   "type": "method",
+   "definition": "Martin Richards's typeless systems language (designed 1966, first implemented at MIT Project MAC in spring 1967), distilled from CPL for compiler writing and system programming - the language the Bell Labs group used on Multics and GECOS, and B's documented parent.",
+   "bottleneck": "Before BCPL, writing compilers and systems programs in a high-level language meant CPL - a language whose type and mode matching rules and variety of definition structures made compilation difficult; there was no small, typeless systems language designed to be compiled simply and carried from machine to machine.",
+   "leap": "Richards's BCPL (1967) distilled CPL into a typeless, word-oriented language with a portable, self-hosting compiler - first implemented on CTSS at MIT in spring 1967 - and became the Bell Labs Unix group's working language on Multics and GECOS, the direct parent of B.",
+   "prior_state": "CPL (1963), a large joint Cambridge/London design still struggling toward implementation; systems programming otherwise in assembler or FORTRAN.",
+   "status": "provisional",
+   "depth": 11,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [
+    {
+     "title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial check (exp-209, parent B): the verifier attacked the descent as retrospective myth-making and found it fails - the descent is stated in Thompson's own 1972 reference manual ('directly descendant from BCPL'), a near-contemporary primary document, and corroborated mechanism by mechanism in Ritchie 1993 and by the 1967 BCPL Reference Manual's own definition. No mediator exists between BCPL and B. Wart recorded: the admission rests on Ritchie's 1993 retrospective for the mechanism mapping, corroborated by the two primary manuals; BCPL's own expansion should re-hear CPL and CTSS, both recorded mediated via BCPL at this parent.",
+    "at": "2026-11-28T11:37:27+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T11:37:05+00:00"
+  },
+  "tmg-mcclure-1965-1965": {
+   "id": "tmg-mcclure-1965-1965",
+   "name": "TMG (McClure, 1965)",
+   "aliases": [],
+   "year": 1965,
+   "domain": "compiler construction",
+   "type": "method",
+   "definition": "Robert McClure's compiler-compiler (1965) - a top-down, recursive-descent language for writing compilers (TransMoGrifiers); Doug McIlroy's PDP-7 implementation of it was Unix's first higher-level language, the stimulus for B's creation, and the tool B's first compiler was written in.",
+   "bottleneck": "Before TMG, writing a compiler meant hand-coding an ad hoc translator; there was no small notation combining context-free syntax with procedural translation actions that could itself run on a tiny machine.",
+   "leap": "McClure's TMG (1965) made compiler-writing a programmable notation - top-down recursive descent mixing grammar with action - and McIlroy's PDP-7 implementation of it became Unix's first higher-level language: the documented trigger for B's creation and the tool its first compiler was written in.",
+   "prior_state": "Compilers hand-written one at a time in assembler or general languages; on the PDP-7, only Thompson's own assembler existed.",
+   "status": "provisional",
+   "depth": 11,
+   "expanded": false,
+   "priority": 5.0,
+   "sources": [
+    {
+     "title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial check (exp-209, parent B): attacked as a mere construction tool (apparatus, like MuJoCo at exp-191) - the attack fails on the record: Ritchie assigns TMG two causal roles no apparatus carries, the documented trigger ('Challenged by McIlroy's feat in reproducing TMG, Thompson decided that Unix needed a system programming language') and the construction medium of B's first compiler, followed by the bootstrap. Wart recorded: McClure's 1965 TMG document itself was not independently read this session; the admission rests on Ritchie's retrospective plus the McIlroy/Morris Multics PL/I-compiler corroboration inside it.",
+    "at": "2026-11-28T11:37:27+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T11:37:05+00:00"
+  },
+  "pdp-7-dec-1964-1964": {
+   "id": "pdp-7-dec-1964-1964",
+   "name": "PDP-7 (DEC, 1964)",
+   "aliases": [],
+   "year": 1964,
+   "domain": "computer hardware",
+   "type": "device",
+   "definition": "DEC's 18-bit minicomputer (1964) with 8K words of memory and a few auto-increment memory cells - the cramped, cast-off machine on which Unix began and whose specific limits and cells shaped B's defining form.",
+   "bottleneck": "Before the PDP-7, a computer a single research group could simply take over did not exist at Bell Labs: systems work meant the institutional GE mainframes and the Multics commitment; there was no cheap minicomputer on which an operating system could be one group's personal project.",
+   "leap": "DEC's PDP-7 (1964) - an 18-bit minicomputer with 8K words of memory and a few auto-increment memory cells - became, as a cast-off at Bell Labs, the machine Unix began on: its memory bound forced B's distillation of BCPL, and its auto-increment cells suggested the ++ and -- operators.",
+   "prior_state": "Institutional mainframes (the GE-635 and the departing GE-645 Multics machine) as the only systems-programming hosts; the group had just lost the Multics machine.",
+   "status": "provisional",
+   "depth": 11,
+   "expanded": false,
+   "priority": 4.0,
+   "sources": [
+    {
+     "title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial check (exp-209, parent B) - the expansion's most contestable admission: attacked as generic infrastructure (the substrate-fails line) and as designer folklore. It survives on the PDP-11-at-C shape (exp-207): two SPECIFIC properties of this one machine are each tied by the designer to a defining feature of the parent - the 8K-word bound that BCPL could not fit (Thompson 1989: 'too big a language to run on the UNIX machines that were 4K machines. That's when B was developed') and the auto-increment memory cells behind ++/--, with Ritchie explicitly ruling the PDP-11 origin theory 'historically impossible'. Wart recorded honestly: the suggestion channel is designer-hedged ('probably suggested') and Ritchie names code size as a stronger co-motivation; Q3 was scored partial for exactly this reason. Re-hearing condition: a contemporary 1969-70 document on B's design that attributes the operators or the squeeze to another source.",
+    "at": "2026-11-28T11:37:27+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T11:37:05+00:00"
   }
  },
  "edges": [
@@ -88092,6 +88237,297 @@
     "mediator": null,
     "evidence": "Direct: the designer's abstract, the kernel-rewrite passage, the portability narrative, and the book's own two-half composition."
    }
+  },
+  {
+   "predecessor_id": "bcpl-richards-1967-1967",
+   "successor_id": "b-thompson-1969-1969",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before BCPL, the language it was distilled from - CPL - was by its own reference manual's account too feature-rich to compile readily ('derived from true CPL by removing those features of the full language which make compilation difficult'), and no small typeless systems language existed that one programmer could squeeze onto a minicomputer. BCPL is that artifact, and B is its documented compression: Ritchie's semantics record states that BCPL's core semantic content - the typeless word, indirection, the array model - 'remained intact' in B.",
+     "source": "Ritchie, 'The Development of the C Language', HOPL-II 1993; BCPL Reference Manual, Project MAC M-352 (1967)",
+     "falsification": "A pre-1969 document showing B's semantics deriving from a language other than BCPL that Thompson had in hand."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "BCPL opened the space B occupies: a self-hosting, portable systems language designed for compiler writing - implemented at MIT in spring 1967, carried to Multics and the GE-635 GECOS system, and used for Oxford's OS6 and parts of Xerox PARC's Alto work. The space of 'systems programming in a small high-level language' is BCPL's creation; B and then C are its occupants.",
+     "source": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "falsification": "Evidence the small-systems-language space was already occupied before BCPL's 1967 implementation."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The semantic trunk has no second documented source - Thompson's own 1972 reference opens 'B is a computer language directly descendant from BCPL' - but the designer's second framing ('filtered through Thompson's brain') records real filtration, and FORTRAN and SMALGOL demonstrably touched the result's syntax, so necessity is partial rather than pass.",
+     "source": "Thompson, 'Users' Reference to B', MM-72-1271-1 (1972); Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "falsification": "Evidence B's word/indirection/array semantics were taken from a source other than BCPL."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse is the artifact's definition: a systems language and its compiler squeezed into 8K bytes of memory - 'BCPL squeezed into 8K bytes of memory and filtered through Thompson's brain' - where CPL-class languages needed a mainframe.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "BCPL supplied the explanatory model B's programmers designed with: memory as a linear array of cells, a pointer as an index into it, indirection as an operator (rv/! in BCPL, unary * in B) - Ritchie's semantics section is written entirely in this model.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: BCPL's program structure - global declarations and function declarations, separately compiled units - is the structure B inherits; 'most of the statements and operators of BCPL map directly into corresponding B and C'.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach is real but bounded: designed for compiler writing, it served operating systems (OS6) and the Alto work - reach within the systems world, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Iteration speed: BCPL's storage demands forced B's one-pass redesign ('output was generated as soon as possible'), but it is BCPL's own compilability - a small language a simple compiler can translate - that made fast compile cycles on tiny machines possible at all.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the documented grandparent of C and parent of B - Ritchie's genealogy is 'its parent B and its grandparent BCPL'.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The word-model baseline persisted through B into C's practice, but types superseded its purest form within five years, so the reset is partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T11:37:05+00:00",
+   "leap": {
+    "prior_state": "Unix begun in PDP-7 assembler - written through GEMAP macros on a GE-635, paper tapes carried to the machine; BCPL, the group's language of choice on Multics and GECOS, was available but oversized for the PDP-7's 8K 18-bit words, of which the running system left about 4K words of user space.",
+    "jump": "A systems language existed where none had fit: B - BCPL's typeless word semantics squeezed into 8K bytes - was compiled by a TMG-written compiler to threaded code on the PDP-7 itself, rewritten in itself, and became Unix's first higher-level language, carrying its first systems programs and the dc calculator.",
+    "date": 1969
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove BCPL and there is nothing to compress: no typeless word semantics, no indirection operator, no array-as-pointer model, and no language the group was actually running on Multics and GECOS. Thompson's 1972 manual and Ritchie's history agree on the descent in so many words; no intermediary stands between BCPL and B - Thompson took it directly, from the copy the group had pulled off CTSS.",
+    "mediator": null,
+    "evidence": "Direct: the descent is stated by both of the parent's primary documents (Thompson 1972; Ritchie 1993) and instantiated mechanism by mechanism in Ritchie's semantics comparison."
+   }
+  },
+  {
+   "predecessor_id": "tmg-mcclure-1965-1965",
+   "successor_id": "b-thompson-1969-1969",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "A specific impossibility stood in 1969: Thompson had to create a compiler for a new language on a machine with 8K 18-bit words and 'no software useful to him'. TMG - a language for writing compilers in top-down recursive-descent style - is the tool the first B compiler was actually written in: 'After the TMG version of B was working, Thompson rewrote B in itself (a bootstrapping step).'",
+     "source": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "falsification": "Evidence the first B compiler was written in anything other than McIlroy's TMG implementation."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "TMG's generativity is general - McIlroy and Bob Morris had used it to write the early PL/I compiler for Multics - but for this parent the unblocked space is the one decisive construction, so partial.",
+     "source": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "falsification": "Evidence TMG's compiler-writing capacity was unavailable or unused outside this lineage."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "A hand-written compiler was conceivable - Thompson was a master assembler programmer - but no second documented path exists, and TMG's second role has no substitute in the record: 'Challenged by McIlroy's feat in reproducing TMG, Thompson decided that Unix... needed a system programming language.' Necessity partial on the strength of the documented use.",
+     "source": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "falsification": "Evidence of a second, TMG-independent route by which B's first compiler was or would have been built in 1969."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse of compiler construction: a compiler-compiler reduced writing B's first translator to a one-man exercise on a tiny machine, where a hand-built compiler for a new language was a project of another order.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "TMG supplied a design model for translation - syntax-directed, recursive descent with procedural actions - but it modeled B's construction, not B's own semantics, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability is TMG's essence: an abstraction layer for building compilers, which others (McIlroy and Morris on Multics, Thompson on Unix) built on without re-deriving it.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "Cross-domain reach: from the Multics PL/I compiler to Unix's first higher-level language - reach across two systems worlds, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "Iteration speed: TMG is what put a working B compiler in Thompson's hands fast enough for the bootstrap - 'After the TMG version of B was working, Thompson rewrote B in itself' - collapsing the language's own development loop.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Lineage centrality: TMG is the recorded trigger and tool of this parent, a trunk fact for the B/C line, though TMG itself became a side branch of computing history - partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Its notation legacy - the generalized assignment operators it carried from ALGOL 68 - persisted into B and C; the tool itself did not reset any baseline, so partial.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T11:37:05+00:00",
+   "leap": {
+    "prior_state": "Unix begun in PDP-7 assembler - written through GEMAP macros on a GE-635, paper tapes carried to the machine; BCPL, the group's language of choice on Multics and GECOS, was available but oversized for the PDP-7's 8K 18-bit words, of which the running system left about 4K words of user space.",
+    "jump": "A systems language existed where none had fit: B - BCPL's typeless word semantics squeezed into 8K bytes - was compiled by a TMG-written compiler to threaded code on the PDP-7 itself, rewritten in itself, and became Unix's first higher-level language, carrying its first systems programs and the dc calculator.",
+    "date": 1969
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove McIlroy's TMG implementation and the documented sequence collapses at both ends: there is no 'first higher-level language' on the PDP-7 Unix in 1969, no feat for Thompson to be challenged by, and no tool in which the first B compiler was written. No intermediary stands between TMG and B - McIlroy's implementation is the artifact Thompson used. (That ALGOL 68's notation arrived inside TMG makes ALGOL 68 mediated at this parent, not TMG.)",
+    "mediator": null,
+    "evidence": "Direct: Ritchie names TMG in both of B's causal roles - stimulus ('Challenged by McIlroy's feat') and construction ('the TMG version of B') - in consecutive passages."
+   }
+  },
+  {
+   "predecessor_id": "pdp-7-dec-1964-1964",
+   "successor_id": "b-thompson-1969-1969",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The impossibility is dimensional and the machine defines it: BCPL, the group's working language, could not run in the PDP-7's 8K 18-bit words (Thompson, 1989: 'It was too big a language to run on the UNIX machines that were 4K machines. That's when B was developed'). And the machine's specific affordance supplied the parent's signature mechanism: Ritchie rules the PDP-11 origin theory of ++/-- 'historically impossible, since there was no PDP-11 when B was developed', and records that 'The PDP-7, however, did have a few auto-increment memory cells... This feature probably suggested such operators to Thompson.' The designer names this machine's architecture as the cause of the design - the PDP-11-at-C shape (exp-207).",
+     "source": "Ritchie, 'The Development of the C Language', HOPL-II 1993; Thompson, 1989 interview",
+     "falsification": "Evidence B's form was fixed before the PDP-7 environment, or that its operators derive from the PDP-11 or another machine."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The machine opened exactly one space - the Unix project itself began on it - but its generativity in relation to B is the constraint-and-suggestion pair, so partial.",
+     "source": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "falsification": "Evidence the PDP-7's configuration played no role in B's documented design decisions."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The designer's own hedge governs the suggestion channel ('probably suggested'), and Ritchie names a stronger co-motivation - 'the translation of ++x was smaller than that of x=x+1'. The memory bound itself is not substitutable in the record: BCPL's failure to fit is measured against this machine's 8K words. Partial, honestly.",
+     "source": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "falsification": "Evidence the same squeeze and the same operators would have resulted on the group's other machines (GE-635/645)."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "Cost collapse of the platform itself: a scavenged, cast-off minicomputer - 'a hardware environment cramped and spartan even for the time' - replaced a GE-645-class institutional commitment as the host for systems research; B is priced in its 8K words.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The machine's memory architecture IS the language's explanatory model: Ritchie's semantics section defines B's world as the PDP-7's world - a linear array of cells, an address as an index, indirection as a memory reference.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Iteration: once Unix was self-supporting on the PDP-7, 'programs could be written and tested without resort to paper tape' - the loop B was built inside; the machine enabled it, the system realized it, so partial.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: this is the founding machine of the entire Unix lineage in this graph - every later Unix, B and C artifact descends from work begun on this specific cast-off computer.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Its constraints fossilized in the lineage's idioms - typelessness (later repaired by types), ++/-- (permanent) - a partial reset: the fossils persist, the constraints do not.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T11:37:05+00:00",
+   "leap": {
+    "prior_state": "Unix begun in PDP-7 assembler - written through GEMAP macros on a GE-635, paper tapes carried to the machine; BCPL, the group's language of choice on Multics and GECOS, was available but oversized for the PDP-7's 8K 18-bit words, of which the running system left about 4K words of user space.",
+    "jump": "A systems language existed where none had fit: B - BCPL's typeless word semantics squeezed into 8K bytes - was compiled by a TMG-written compiler to threaded code on the PDP-7 itself, rewritten in itself, and became Unix's first higher-level language, carrying its first systems programs and the dc calculator.",
+    "date": 1969
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Substitute any roomier or differently-celled machine and the documented design pressures vanish: no 8K bound dictating the one-pass, typeless distillation of BCPL, and no auto-increment cells to suggest ++/--. This is not 'computers' as generic infrastructure - it is one named machine whose two specific properties (memory size, auto-increment cells) are each tied by the designer to a defining feature of the parent, exactly the PDP-11 hearing's shape at exp-207.",
+    "mediator": null,
+    "evidence": "Direct: Ritchie's setting and operator passages tie the parent's bottleneck ('too large for the tiny PDP-7 environment', per its stored record) and its signature operators to this machine's documented properties."
+   }
   }
  ],
  "merge_log": [
@@ -89330,6 +89766,18 @@
     "cosine": 0.4136
    },
    "reason": "The candidate and the node are the same institution: Xerox Palo Alto Research Center, founded 1970 - the node's card (created at the Self lineage) and the candidate's card describe the one laboratory that created Smalltalk; the differing domain labels (research institutions vs programming languages) are filing metadata, not identity."
+  },
+  {
+   "at": "2026-11-28T11:32:53+00:00",
+   "from_id": "cand:ALGOL 60 (1960)",
+   "into_id": "algol-60-1960",
+   "signals": [
+    "judge"
+   ],
+   "scores": {
+    "cosine": 0.735
+   },
+   "reason": "Both cards denote the one advance: the algorithmic language of the 1960 Report - the candidate is the same artifact as the existing node, filed under its year-suffixed name; it proceeds as a LINK candidate."
   }
  ],
  "expansions": {
@@ -392478,6 +392926,651 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "b-thompson-1969-1969": {
+   "raw_candidates": [
+    {
+     "name": "BCPL (Richards, 1967)",
+     "year": 1967,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "method",
+     "definition": "Martin Richards's typeless systems language (designed 1966, first implemented at MIT Project MAC in spring 1967), distilled from CPL for compiler writing and system programming - the language the Bell Labs group used on Multics and GECOS, and B's documented parent.",
+     "causal_claim": "BCPL directly enabled B's leap by being the artifact Thompson compressed: its core semantic content - the typeless word, explicit indirection, the array-as-pointer model - remained intact in B, and Ritchie defines B as 'BCPL squeezed into 8K bytes of memory and filtered through Thompson's brain'.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "TMG (McClure, 1965)",
+     "year": 1965,
+     "domain": "compiler construction",
+     "lens": "L11",
+     "type": "method",
+     "definition": "Robert McClure's compiler-compiler (1965) - a top-down, recursive-descent language for writing compilers (TransMoGrifiers); Doug McIlroy's PDP-7 implementation of it was Unix's first higher-level language, the stimulus for B's creation, and the tool B's first compiler was written in.",
+     "causal_claim": "TMG directly enabled B's leap by being the wielded construction tool and the documented trigger: 'After the TMG version of B was working, Thompson rewrote B in itself', and it was McIlroy's feat of reproducing TMG that challenged Thompson to give Unix a system programming language.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "PDP-7 (DEC, 1964)",
+     "year": 1964,
+     "domain": "computer hardware",
+     "lens": "L9",
+     "type": "device",
+     "definition": "DEC's 18-bit minicomputer (1964) with 8K words of memory and a few auto-increment memory cells - the cramped, cast-off machine on which Unix began and whose specific limits and cells shaped B's defining form.",
+     "causal_claim": "The PDP-7 directly enabled B's leap by specifying it: its 8K-word memory is the constraint BCPL was squeezed against, and its auto-increment memory cells 'probably suggested' the ++ and -- operators to Thompson - the specific machine, not computing in the abstract.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "FORTRAN (Backus et al., 1957)",
+     "year": 1957,
+     "domain": "programming languages",
+     "lens": "L7",
+     "type": "method",
+     "definition": "IBM's formula-translating language (1957), the era's default higher-level language; Thompson's first Unix language project was a Fortran compiler ('B was a Fortran compiler that got away from me'), and Ritchie credits Fortran with the syntax of B's declarations.",
+     "causal_claim": "FORTRAN is filed on three documented channels into B: the scuttled Fortran-compiler attempt that is B's immediate conception event, the compiler project that mutated into B under the PDP-7's memory limit, and the declaration syntax ('B declarations begin with a specifier like auto or static') Ritchie attributes to Fortran's influence.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "SMALGOL-61 (Bachelor, Dempster, Knuth & Speroni, 1961)",
+     "year": 1961,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "method",
+     "definition": "A small subset of ALGOL 60 for less powerful computers, published in CACM in November 1961; Thompson encountered SMALGOL as a UC Berkeley student and later summarized B as 'BCPL semantics with a lot of SMALGOL syntax'.",
+     "causal_claim": "SMALGOL directly enabled B's leap, on the designer's own summary, by supplying much of the new syntax in which BCPL's semantics were re-expressed when Thompson compressed BCPL for the PDP-7.",
+     "source_title": "Bachelor, Dempster, Knuth & Speroni, 'SMALGOL-61', CACM 4:11 (1961); Thompson's account via Ars Technica",
+     "source_url": "https://softwarepreservation.computerhistory.org/ALGOL/standards.html"
+    },
+    {
+     "name": "PL/I (IBM, 1964)",
+     "year": 1964,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "method",
+     "definition": "IBM's multipurpose programming language (1964) and Multics's implementation language; Ritchie records its legacy inside B in the /**/ comment convention.",
+     "causal_claim": "PL/I is filed on Ritchie's explicit record - 'The legacy of PL/I is evident here', of B's decision to use /**/ to enclose comments where BCPL uses // - a documented transfer into B's own text, plus the group's documented (and declined) thought of implementing it.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "CPL (Barron et al., 1963)",
+     "year": 1963,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "method",
+     "definition": "The Combined Programming Language designed jointly at Cambridge and London (1962-66), the large ALGOL-influenced language Richards distilled into BCPL when CPL's features proved too difficult to compile.",
+     "causal_claim": "CPL is filed as BCPL's documented source: Richards's own account states BCPL 'is essentially just CPL with all the difficult bits removed', and the 1967 BCPL Reference Manual defines BCPL as derived from 'true CPL' - so CPL's channel into B must be heard against the BCPL mediation recorded at exp-207.",
+     "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    },
+    {
+     "name": "ALGOL 60 (1960)",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "method",
+     "definition": "The 1960 algorithmic language report - the family's reference design, named by Ritchie only as typifying the procedural family BCPL, B and C belong to.",
+     "causal_claim": "ALGOL 60 is filed as the LINK candidate exp-207 rejected at C as mediated via BCPL: Ritchie's single sentence about it here is typification, not derivation ('the traditional procedural family typified by Fortran and Algol 60'), and its mechanisms are claimed to have arrived inside BCPL's and CPL's designs.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "ALGOL 68 (1968)",
+     "year": 1968,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "method",
+     "definition": "The 1968 algorithmic language whose generalized assignment notation (x +:= y) reached B, on Ritchie's record, through McIlroy's version of TMG.",
+     "causal_claim": "ALGOL 68 is filed as the LINK candidate whose one documented channel into B is expressly routed: 'The notation came from Algol 68 via McIlroy, who had incorporated it into his version of TMG' - the mediation named in the designer's own sentence.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "CTSS (Corbato et al., 1962)",
+     "year": 1962,
+     "domain": "operating systems",
+     "lens": "L21",
+     "type": "method",
+     "definition": "MIT's Compatible Time-Sharing System (1962), running on the IBM 7094 on which Richards implemented the first BCPL compiler in spring 1967 and through which the Bell Labs group became familiar with BCPL during Multics development.",
+     "causal_claim": "CTSS is filed as BCPL's documented transport into the room: Ritchie records that the group became familiar with BCPL 'because the MIT CTSS system on which Richards worked was used for Multics development' - the familiarity route whose carrying artifact is BCPL itself.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "Multics (1965)",
+     "year": 1965,
+     "domain": "operating systems",
+     "lens": "L20",
+     "type": "other",
+     "definition": "The MIT/GE/Bell Labs time-sharing system project Bell Labs withdrew from in 1969 - the formation experience of B's makers, whose deferred higher-level-language element B answers and whose milieu (BCPL, TMG, PL/I) supplied B's ingredients.",
+     "causal_claim": "Multics is filed as the parent's formation institution-project: its withdrawal freed Thompson to start Unix, its development is where the group used BCPL and TMG, and Ritchie records that writing in a higher-level language was a Multics element the group deferred and then recovered - the recovery being B.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "Bell Telephone Laboratories (1925)",
+     "year": 1925,
+     "domain": "research institutions",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Murray Hill research institution, founded 1925, that employed B's makers and physically carried B's ingredients - BCPL (transported to its Multics and GECOS systems by Canaday and others), TMG and the cast-off PDP-7 - into one room.",
+     "causal_claim": "Bell Telephone Laboratories is filed as the carriage institution: every documented ingredient of B reached Thompson inside it, and the institution's own act - withdrawing from Multics in 1969 - is the dated event that set the parent's project in motion.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "Unix (Thompson & Ritchie, 1969)",
+     "year": 1969,
+     "domain": "operating systems",
+     "lens": "L4",
+     "type": "method",
+     "definition": "Thompson and Ritchie's operating system, begun in PDP-7 assembler in 1969 - the project whose need for a system programming language posed B's problem and whose first higher-level language B became.",
+     "causal_claim": "Unix is filed deliberately with its documented year: it is the problem-poser of record (the parent's stored prior_state is 'Unix begun in PDP-7 assembler'), and it is dated the parent's own year, 1969 - filed for the resolver's year-bound record, not re-dated.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    },
+    {
+     "name": "Bon (Thompson, 1969)",
+     "year": 1969,
+     "domain": "programming languages",
+     "lens": "L20",
+     "type": "method",
+     "definition": "Thompson's Multics-era language (1969), named after his wife Bonnie or after the Bon religion - described by Ritchie as 'an unrelated language', and one of the two documented theories for the name B.",
+     "causal_claim": "Bon is filed deliberately with its documented year on the name channel only: Ritchie's record calls it 'an unrelated language created by Thompson during the Multics days' whose sole documented contact with B is the alternate theory of B's name - filed for the year-bound record, not re-dated.",
+     "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+     "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "bcpl-richards-1967-1967",
+      "candidate": {
+       "name": "BCPL (Richards, 1967)",
+       "year": 1967,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "method",
+       "definition": "Martin Richards's typeless systems language (designed 1966, first implemented at MIT Project MAC in spring 1967), distilled from CPL for compiler writing and system programming - the language the Bell Labs group used on Multics and GECOS, and B's documented parent.",
+       "causal_claim": "BCPL directly enabled B's leap by being the artifact Thompson compressed: its core semantic content - the typeless word, explicit indirection, the array-as-pointer model - remained intact in B, and Ritchie defines B as 'BCPL squeezed into 8K bytes of memory and filtered through Thompson's brain'.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "BCPL (Richards, 1967)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "tmg-mcclure-1965-1965",
+      "candidate": {
+       "name": "TMG (McClure, 1965)",
+       "year": 1965,
+       "domain": "compiler construction",
+       "lens": "L11",
+       "type": "method",
+       "definition": "Robert McClure's compiler-compiler (1965) - a top-down, recursive-descent language for writing compilers (TransMoGrifiers); Doug McIlroy's PDP-7 implementation of it was Unix's first higher-level language, the stimulus for B's creation, and the tool B's first compiler was written in.",
+       "causal_claim": "TMG directly enabled B's leap by being the wielded construction tool and the documented trigger: 'After the TMG version of B was working, Thompson rewrote B in itself', and it was McIlroy's feat of reproducing TMG that challenged Thompson to give Unix a system programming language.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "TMG (McClure, 1965)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pdp-7-dec-1964-1964",
+      "candidate": {
+       "name": "PDP-7 (DEC, 1964)",
+       "year": 1964,
+       "domain": "computer hardware",
+       "lens": "L9",
+       "type": "device",
+       "definition": "DEC's 18-bit minicomputer (1964) with 8K words of memory and a few auto-increment memory cells - the cramped, cast-off machine on which Unix began and whose specific limits and cells shaped B's defining form.",
+       "causal_claim": "The PDP-7 directly enabled B's leap by specifying it: its 8K-word memory is the constraint BCPL was squeezed against, and its auto-increment memory cells 'probably suggested' the ++ and -- operators to Thompson - the specific machine, not computing in the abstract.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "PDP-7 (DEC, 1964)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fortran-backus-et-al-1957-1957",
+      "candidate": {
+       "name": "FORTRAN (Backus et al., 1957)",
+       "year": 1957,
+       "domain": "programming languages",
+       "lens": "L7",
+       "type": "method",
+       "definition": "IBM's formula-translating language (1957), the era's default higher-level language; Thompson's first Unix language project was a Fortran compiler ('B was a Fortran compiler that got away from me'), and Ritchie credits Fortran with the syntax of B's declarations.",
+       "causal_claim": "FORTRAN is filed on three documented channels into B: the scuttled Fortran-compiler attempt that is B's immediate conception event, the compiler project that mutated into B under the PDP-7's memory limit, and the declaration syntax ('B declarations begin with a specifier like auto or static') Ritchie attributes to Fortran's influence.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "FORTRAN (Backus et al., 1957)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "smalgol-61-bachelor-dempster-knuth-speroni-1961-1961",
+      "candidate": {
+       "name": "SMALGOL-61 (Bachelor, Dempster, Knuth & Speroni, 1961)",
+       "year": 1961,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "method",
+       "definition": "A small subset of ALGOL 60 for less powerful computers, published in CACM in November 1961; Thompson encountered SMALGOL as a UC Berkeley student and later summarized B as 'BCPL semantics with a lot of SMALGOL syntax'.",
+       "causal_claim": "SMALGOL directly enabled B's leap, on the designer's own summary, by supplying much of the new syntax in which BCPL's semantics were re-expressed when Thompson compressed BCPL for the PDP-7.",
+       "source_title": "Bachelor, Dempster, Knuth & Speroni, 'SMALGOL-61', CACM 4:11 (1961); Thompson's account via Ars Technica",
+       "source_url": "https://softwarepreservation.computerhistory.org/ALGOL/standards.html"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "SMALGOL-61 (Bachelor, Dempster, Knuth & Speroni, 1961)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "pl-i-ibm-1964-1964",
+      "candidate": {
+       "name": "PL/I (IBM, 1964)",
+       "year": 1964,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "method",
+       "definition": "IBM's multipurpose programming language (1964) and Multics's implementation language; Ritchie records its legacy inside B in the /**/ comment convention.",
+       "causal_claim": "PL/I is filed on Ritchie's explicit record - 'The legacy of PL/I is evident here', of B's decision to use /**/ to enclose comments where BCPL uses // - a documented transfer into B's own text, plus the group's documented (and declined) thought of implementing it.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "PL/I (IBM, 1964)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cpl-barron-et-al-1963-1963",
+      "candidate": {
+       "name": "CPL (Barron et al., 1963)",
+       "year": 1963,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "method",
+       "definition": "The Combined Programming Language designed jointly at Cambridge and London (1962-66), the large ALGOL-influenced language Richards distilled into BCPL when CPL's features proved too difficult to compile.",
+       "causal_claim": "CPL is filed as BCPL's documented source: Richards's own account states BCPL 'is essentially just CPL with all the difficult bits removed', and the 1967 BCPL Reference Manual defines BCPL as derived from 'true CPL' - so CPL's channel into B must be heard against the BCPL mediation recorded at exp-207.",
+       "source_title": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "CPL (Barron et al., 1963)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "algol-60-1960-1960",
+      "candidate": {
+       "name": "ALGOL 60 (1960)",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "method",
+       "definition": "The 1960 algorithmic language report - the family's reference design, named by Ritchie only as typifying the procedural family BCPL, B and C belong to.",
+       "causal_claim": "ALGOL 60 is filed as the LINK candidate exp-207 rejected at C as mediated via BCPL: Ritchie's single sentence about it here is typification, not derivation ('the traditional procedural family typified by Fortran and Algol 60'), and its mechanisms are claimed to have arrived inside BCPL's and CPL's designs.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "ALGOL 60 (1960)"
+      ],
+      "matched_node_id": "algol-60-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "algol-68-1968-1968",
+      "candidate": {
+       "name": "ALGOL 68 (1968)",
+       "year": 1968,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "method",
+       "definition": "The 1968 algorithmic language whose generalized assignment notation (x +:= y) reached B, on Ritchie's record, through McIlroy's version of TMG.",
+       "causal_claim": "ALGOL 68 is filed as the LINK candidate whose one documented channel into B is expressly routed: 'The notation came from Algol 68 via McIlroy, who had incorporated it into his version of TMG' - the mediation named in the designer's own sentence.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "ALGOL 68 (1968)"
+      ],
+      "matched_node_id": "algol-68-1968-1968",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ctss-corbato-et-al-1962-1962",
+      "candidate": {
+       "name": "CTSS (Corbato et al., 1962)",
+       "year": 1962,
+       "domain": "operating systems",
+       "lens": "L21",
+       "type": "method",
+       "definition": "MIT's Compatible Time-Sharing System (1962), running on the IBM 7094 on which Richards implemented the first BCPL compiler in spring 1967 and through which the Bell Labs group became familiar with BCPL during Multics development.",
+       "causal_claim": "CTSS is filed as BCPL's documented transport into the room: Ritchie records that the group became familiar with BCPL 'because the MIT CTSS system on which Richards worked was used for Multics development' - the familiarity route whose carrying artifact is BCPL itself.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "CTSS (Corbato et al., 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "multics-1965-1965",
+      "candidate": {
+       "name": "Multics (1965)",
+       "year": 1965,
+       "domain": "operating systems",
+       "lens": "L20",
+       "type": "other",
+       "definition": "The MIT/GE/Bell Labs time-sharing system project Bell Labs withdrew from in 1969 - the formation experience of B's makers, whose deferred higher-level-language element B answers and whose milieu (BCPL, TMG, PL/I) supplied B's ingredients.",
+       "causal_claim": "Multics is filed as the parent's formation institution-project: its withdrawal freed Thompson to start Unix, its development is where the group used BCPL and TMG, and Ritchie records that writing in a higher-level language was a Multics element the group deferred and then recovered - the recovery being B.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Multics (1965)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bell-telephone-laboratories-1925-1925",
+      "candidate": {
+       "name": "Bell Telephone Laboratories (1925)",
+       "year": 1925,
+       "domain": "research institutions",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Murray Hill research institution, founded 1925, that employed B's makers and physically carried B's ingredients - BCPL (transported to its Multics and GECOS systems by Canaday and others), TMG and the cast-off PDP-7 - into one room.",
+       "causal_claim": "Bell Telephone Laboratories is filed as the carriage institution: every documented ingredient of B reached Thompson inside it, and the institution's own act - withdrawing from Multics in 1969 - is the dated event that set the parent's project in motion.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Bell Telephone Laboratories (1925)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:2:pdp-11-dec-1970-1970",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 2,
+       "card": {
+        "name": "PDP-7 (DEC, 1964)",
+        "aliases": [],
+        "year": 1964,
+        "domain": "computer hardware",
+        "type": "device",
+        "definition": "DEC's 18-bit minicomputer (1964) with 8K words of memory and a few auto-increment memory cells - the cramped, cast-off machine on which Unix began and whose specific limits and cells shaped B's defining form.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "pdp-11-dec-1970-1970",
+       "card": {
+        "name": "PDP-11 (DEC, 1970)",
+        "aliases": [],
+        "year": 1970,
+        "domain": "computer hardware",
+        "type": "device",
+        "definition": "DEC's PDP-11 (1970): the 16-bit minicomputer whose uniform byte-addressed memory and orthogonal instruction set made it the machine Unix and C grew up on - the first machine on which Unix ran as a flourishing research system and the stated implementation target of the C Reference Manual ('the C language itself as implemented on the PDP-11').",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8024,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:7:algol-60-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 7,
+       "card": {
+        "name": "ALGOL 60 (1960)",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The 1960 algorithmic language report - the family's reference design, named by Ritchie only as typifying the procedural family BCPL, B and C belong to.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "algol-60-1960",
+       "card": {
+        "name": "ALGOL 60",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.735,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:10:multics-i-o-stream-redirection-mechanism-iocall-attach-1965-1965",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 10,
+       "card": {
+        "name": "Multics (1965)",
+        "aliases": [],
+        "year": 1965,
+        "domain": "operating systems",
+        "type": "other",
+        "definition": "The MIT/GE/Bell Labs time-sharing system project Bell Labs withdrew from in 1969 - the formation experience of B's makers, whose deferred higher-level-language element B answers and whose milieu (BCPL, TMG, PL/I) supplied B's ingredients.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "multics-i-o-stream-redirection-mechanism-iocall-attach-1965-1965",
+       "card": {
+        "name": "Multics I/O stream redirection mechanism (iocall attach, 1965)",
+        "aliases": [],
+        "year": 1965,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The Multics I/O system's general redirection mechanism: named I/O streams dynamically attachable to files, devices, or stream-processing modules, worked from the console by the clumsy iocall attach / reattach command sequence.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.2202,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Unix (Thompson & Ritchie, 1969)",
+       "year": 1969,
+       "domain": "operating systems",
+       "lens": "L4",
+       "type": "method",
+       "definition": "Thompson and Ritchie's operating system, begun in PDP-7 assembler in 1969 - the project whose need for a system programming language posed B's problem and whose first higher-level language B became.",
+       "causal_claim": "Unix is filed deliberately with its documented year: it is the problem-poser of record (the parent's stored prior_state is 'Unix begun in PDP-7 assembler'), and it is dated the parent's own year, 1969 - filed for the resolver's year-bound record, not re-dated.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "reason": "dated on/after parent year 1969"
+     },
+     {
+      "candidate": {
+       "name": "Bon (Thompson, 1969)",
+       "year": 1969,
+       "domain": "programming languages",
+       "lens": "L20",
+       "type": "method",
+       "definition": "Thompson's Multics-era language (1969), named after his wife Bonnie or after the Bon religion - described by Ritchie as 'an unrelated language', and one of the two documented theories for the name B.",
+       "causal_claim": "Bon is filed deliberately with its documented year on the name channel only: Ritchie's record calls it 'an unrelated language created by Thompson during the Multics days' whose sole documented contact with B is the alternate theory of B's name - filed for the year-bound record, not re-dated.",
+       "source_title": "Ritchie, 'The Development of the C Language', HOPL-II 1993",
+       "source_url": "https://www.bell-labs.com/usr/dmr/www/chist.html"
+      },
+      "reason": "dated on/after parent year 1969"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:2:pdp-11-dec-1970-1970",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 2,
+      "card": {
+       "name": "PDP-7 (DEC, 1964)",
+       "aliases": [],
+       "year": 1964,
+       "domain": "computer hardware",
+       "type": "device",
+       "definition": "DEC's 18-bit minicomputer (1964) with 8K words of memory and a few auto-increment memory cells - the cramped, cast-off machine on which Unix began and whose specific limits and cells shaped B's defining form.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "pdp-11-dec-1970-1970",
+      "card": {
+       "name": "PDP-11 (DEC, 1970)",
+       "aliases": [],
+       "year": 1970,
+       "domain": "computer hardware",
+       "type": "device",
+       "definition": "DEC's PDP-11 (1970): the 16-bit minicomputer whose uniform byte-addressed memory and orthogonal instruction set made it the machine Unix and C grew up on - the first machine on which Unix ran as a flourishing research system and the stated implementation target of the C Reference Manual ('the C language itself as implemented on the PDP-11').",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8024,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:7:algol-60-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 7,
+      "card": {
+       "name": "ALGOL 60 (1960)",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The 1960 algorithmic language report - the family's reference design, named by Ritchie only as typifying the procedural family BCPL, B and C belong to.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "algol-60-1960",
+      "card": {
+       "name": "ALGOL 60",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.735,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:10:multics-i-o-stream-redirection-mechanism-iocall-attach-1965-1965",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 10,
+      "card": {
+       "name": "Multics (1965)",
+       "aliases": [],
+       "year": 1965,
+       "domain": "operating systems",
+       "type": "other",
+       "definition": "The MIT/GE/Bell Labs time-sharing system project Bell Labs withdrew from in 1969 - the formation experience of B's makers, whose deferred higher-level-language element B answers and whose milieu (BCPL, TMG, PL/I) supplied B's ingredients.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "multics-i-o-stream-redirection-mechanism-iocall-attach-1965-1965",
+      "card": {
+       "name": "Multics I/O stream redirection mechanism (iocall attach, 1965)",
+       "aliases": [],
+       "year": 1965,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The Multics I/O system's general redirection mechanism: named I/O streams dynamically attachable to files, devices, or stream-processing modules, worked from the console by the clumsy iocall attach / reattach command sequence.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.2202,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }
