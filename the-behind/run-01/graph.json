@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T13:28:30+00:00",
-  "expansions_done": 220,
-  "raw_candidates_seen": 9033,
+  "updated_at": "2026-11-28T13:49:51+00:00",
+  "expansions_done": 221,
+  "raw_candidates_seen": 9043,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -36267,6 +36267,42 @@
     "name": "IEEE Task P754 working group (1977)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "intel-8087-floating-point-coprocessor-1980-1980",
+    "name": "CORDIC shift-and-add computation of transcendental functions (Volder, 1959)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:49:31+00:00"
+   },
+   {
+    "parent_id": "intel-8087-floating-point-coprocessor-1980-1980",
+    "name": "VAX floating-point arithmetic (DEC, 1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:49:31+00:00"
+   },
+   {
+    "parent_id": "intel-8087-floating-point-coprocessor-1980-1980",
+    "name": "AMD Am9511 arithmetic processing unit (1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:49:31+00:00"
+   },
+   {
+    "parent_id": "intel-8087-floating-point-coprocessor-1980-1980",
+    "name": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:49:31+00:00"
+   },
+   {
+    "parent_id": "intel-8087-floating-point-coprocessor-1980-1980",
+    "name": "IEEE Task P754 working group (1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:49:31+00:00"
+   },
+   {
+    "parent_id": "intel-8087-floating-point-coprocessor-1980-1980",
+    "name": "Handbook of Mathematical Functions (Abramowitz & Stegun, 1964)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:49:31+00:00"
    }
   ]
  },
@@ -46621,7 +46657,7 @@
    "prior_state": "Arithmetic chips and ROM libraries implementing each vendor's incompatible formats with abrupt underflow and fault-on-exception behaviour; the proposed standard a paper draft in committee controversy.",
    "status": "provisional",
    "depth": 6,
-   "expanded": false,
+   "expanded": true,
    "priority": 7.0,
    "sources": [],
    "verification": {
@@ -46655,6 +46691,54 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T13:28:01+00:00"
+  },
+  "intel-floating-point-design-palmer-kahan-1976-1976": {
+   "id": "intel-floating-point-design-palmer-kahan-1976-1976",
+   "name": "Intel floating-point design (Palmer & Kahan, 1976)",
+   "aliases": [],
+   "year": 1976,
+   "domain": "",
+   "type": "other",
+   "definition": "The data types, mathematical operations, exception handling and rounding the 8087 implements were designed by John Palmer with William Kahan consulting from 1976: Palmer, charged with floating point for the coming 8086 family, 'collaborated with Kahan on the design of the data types, mathematical operations, exception handling, and details like rounding' (IEEE Milestone record). Intel adopted the format as its internal standard in 1977 and shipped the design first as the FPAL software library, then the iSBC 310 math unit and the 8232 (Intel's own manual, 'Evolution' section); the 8087 is that design carried into silicon, with Palmer as co-architect, Ravenel's architecture and Nave's Haifa implementation.",
+   "bottleneck": "Before the Intel floating-point design (Palmer & Kahan, 1976), Intel's product line had no floating-point arithmetic of its own worth building to, because no one had specified data types, operations, exception handling and rounding as one coherent, implementable design.",
+   "leap": "In 1976-77 John Palmer, with William Kahan consulting, specified a complete floating-point arithmetic for Intel's entire product line - data types including a wide 80-bit extended format, correctly rounded operations, gradual underflow, NaNs and non-stop exception handling - adopted by Intel as its internal standard in 1977 and shipped first in software (the FPAL library), then in the iSBC 310 and the 8232, and definitively in silicon in the 8087.",
+   "prior_state": "Vendor arithmetics incompatible in format, rounding and exception behaviour; Intel dependent on licensed arithmetic units (the AMD Am9511 line) and on software emulation for floating point.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 6.0,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "ADMITTED NEW, grade 6.0 (CLI edge score). Adversarial attacks run: (1) Q1 attack - was there really no design to build to before 1976? The rival complete arithmetics of the day (IBM hex, VAX) were other vendors' designs, not Intel's; Intel's own line ran on licensed units and emulation, and the one rival Intel considered adopting (VAX) was examined by the design's own consultant and withdrawn. The attack narrows the claim to Intel's product line - which is what the node's bottleneck says - and does not break it. (2) Multiples on Q3 - VAX arithmetic was a near-simultaneous complete design and the era's favourite; but the channel scored here is not 'a complete arithmetic existed' - it is THIS design's content (80-bit extended, gradual underflow, NaNs, non-stop exceptions) carried by its own author into the chip. Necessity is claimed for the content, and the multiples attack is recorded against any wider reading. (3) Date/direction: design work 1976, internal standard adopted 1977, both before the parent (1980); direction documented by the shipment chain FPAL -> iSBC 310 -> 8232 -> 8087 in Intel's own manual. (4) Mediation attack at full strength - the design reached the chip only through the KCS proposal: fails on the record. The design team and the chip team are the same people (Palmer co-architect of both); the design was shipped in three Intel products before the proposal's publication (SIGNUM, Oct 1979), and the proposal is the design's disclosure to the committee, downstream of it, not a conduit back into Intel. The direct channel stands independently. WART (recorded per discipline): the admission rests on the IEEE Milestone record, Intel's own manual history section, and Hennessy & Patterson 3.10 - the 1976-77 internal design documents themselves were not independently read; the three records converge on the same descent claim, and the wart stands on the record.",
+    "at": "2026-11-28T13:49:51+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T13:49:31+00:00"
+  },
+  "intel-8086-microprocessor-1978-1978": {
+   "id": "intel-8086-microprocessor-1978-1978",
+   "name": "Intel 8086 microprocessor (1978)",
+   "aliases": [],
+   "year": 1978,
+   "domain": "",
+   "type": "device",
+   "definition": "The host processor whose coprocessor interface the 8087's execution model consumes: the 8086's engineering manager set aside the ESC instruction family and WAIT for coprocessor use before the 8087 design began, and the 8087 decodes those ESC opcodes in parallel with the host. The opcode-space constraint (an ESC instruction cannot address two registers) forced Ravenel's stack-based execution model - the chip's signature register architecture. The 8088 (1979) presents the same interface on an 8-bit bus and is heard inside this filing.",
+   "bottleneck": "Before the Intel 8086 (1978), a microprocessor offered no architected way for companion silicon to share its instruction stream, because no opcode space or synchronization mechanism had been reserved for coprocessors.",
+   "leap": "The 8086 (1978) reserved the ESC opcode family and the WAIT instruction for coprocessor use before any coprocessor existed - a host architecture designed to be extended by silicon decoding its instructions in parallel - and the opcode-space constraint of that interface (an ESC instruction cannot address two registers) forced the stack-based execution model that became the 8087's signature register architecture.",
+   "prior_state": "Arithmetic units interfaced as programmed-I/O peripherals (AMD Am9511; Intel's licensed 8231/8232); a CPU's instruction stream was closed to companion silicon, and floating point was a peripheral function, not an extension of the processor.",
+   "status": "provisional",
+   "depth": 7,
+   "expanded": false,
+   "priority": 4.5,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "ADMITTED NEW, grade 4.5 (CLI edge score) - the expansion's most contestable admission. Adversarial attacks run: (1) Q1 attack - could a floating-point coprocessor have been built without the host's reserved hook, as a peripheral? Yes - the Am9511/8231 form existed - but the parent's leap as recorded is the tightly coupled form: a chip decoding the host's instruction stream in parallel, with its register-stack execution model forced by the ESC encoding's constraint. The attack narrows the claim to the coupled form, which is the form the record documents; it does not break it. (2) Multiples on Q3 - no rival host of the era offered a reserved coprocessor opcode space consumed by shipping silicon; the hook was sui generis, and Q3 stands. (3) Date/direction: 1978 precedes 1980; the Milestone record dates the reservation of the ESC space before the 8087 design began. (4) Mediation attack - the host enabled the chip only through the Intel FP design (the design specified what the coprocessor would compute, the host merely where it plugged in): answered on channel separation - the FP design supplied the arithmetic, the 8086 supplied the execution model's defining constraint (an ESC instruction cannot address two registers, hence the stack); Ravenel's architecture is a consequence of the host's interface, not of the arithmetic design. Both channels are inside the chip, neither transmits the other. WART: the admission rests on the IEEE Milestone record and Intel's manual; the 8086's own 1978 design documents were not independently read this session.",
+    "at": "2026-11-28T13:49:51+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T13:49:31+00:00"
   }
  },
  "edges": [
@@ -91711,6 +91795,297 @@
     "counterfactual": "Remove the KCS proposal and the committee has competing vendor drafts and abstract models but no complete design to adopt: the standard's content - the formats, gradual underflow, NaNs and infinities, directed rounding, sticky exception flags - is this document's content, revised through committee process. The record is explicit on both ends: Hennessy & Patterson report 'the winning draft was very close to one submitted by Kahan, his student Jerome T. Coonen, and Harold S. Stone', and the IEEE Milestone record states that the Berkeley draft became the standard.",
     "mediator": null,
     "evidence": "Citation-plus-instantiation in its documentary form: the proposal is the text the standard's text descends from (H&P, section 3.10; IEEE Milestone record). The mediation attack - that the proposal merely transmits the Intel design - is answered in the Intel design's own hearing: what the committee received, revised through some 50 drafts and adopted was THIS proposal, disclosed as a proposal with Intel's permission; the Intel design's channel into the standard runs through it, which is exactly the mediation recorded on that edge. The proposal's own ancestry (in the Intel work) is one level down and is this node's business when it is expanded."
+   }
+  },
+  {
+   "predecessor_id": "intel-floating-point-design-palmer-kahan-1976-1976",
+   "successor_id": "intel-8087-floating-point-coprocessor-1980-1980",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before this design, a chip implementing a coherent, correctly rounded arithmetic with non-stop exception handling could not be specified at all - there was no design to build to; the design made the 8087 specifiable.",
+     "source": "IEEE Milestone record; Hennessy & Patterson 3.10",
+     "falsification": "This pass dies if a pre-1976 Intel-internal floating-point specification of comparable completeness surfaces."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "One design specified arithmetic for the whole product line - FPAL software, iSBC 310, 8232, 8087 - and, disclosed to the committee, seeded the IEEE draft: a space of implementations, not one problem.",
+     "source": "Hennessy & Patterson 3.10: Palmer 'empowered to specify the best possible floating-point arithmetic for Intel's entire product line'",
+     "falsification": "Dies if the design is shown to have been written for the 8087 alone, with the other products retrofitted independently."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "The chip is this design in silicon; Palmer is co-architect of both. No alternative design stood behind the 8087 - the only rival considered, VAX arithmetic, was examined and withdrawn by Kahan himself.",
+     "source": "IEEE Milestone record; Intel manual S.1 'Evolution' section",
+     "falsification": "Dies if a document shows the 8087's formats or operations specified independently of the 1976-77 design work."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The design itself collapsed no cost - it was the silicon that did - but specifying one arithmetic for the whole line ended per-product reinvention.",
+     "source": "Intel manual S.1",
+     "falsification": "Dies if the product line is shown to have kept incompatible arithmetics after 1977."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The design made nothing previously unobservable measurable; its exception flags register events, but that is the chip's behaviour, not this design document's contribution at this level.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if the design is shown to have introduced a measurement scheme the field adopted."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The design embodies a deliberate explanatory model - Kahan's rounding-error doctrine, the case for extended precision and gradual underflow - that let the team design by principle instead of by imitation of incumbent formats.",
+     "source": "Kahan 1981 account of the proposed design's departures from every commercial forerunner",
+     "falsification": "Dies if the design's features are shown to have been copied feature-by-feature from a single incumbent."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Adopted as Intel's internal standard in 1977, the design was an interface other teams built to without re-deriving it: library, board-level unit and coprocessor all conform to the same text.",
+     "source": "Intel manual S.1: 'In 1977, the corporation adopted a standard for representing real numbers in a floating point format.'",
+     "falsification": "Dies if the FPAL/310/8232 implementations are shown to diverge from the design's formats."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The design's reach beyond Intel ran through its disclosure as the KCS proposal into the IEEE process - real, but that channel belongs to the proposal's own edge.",
+     "source": "Hennessy & Patterson 3.10",
+     "falsification": "Dies if the design is shown to have influenced another vendor's arithmetic directly, without the committee draft."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment feedback loop was collapsed by the design document itself.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if design documents show the specification was iterated against a simulation harness it introduced."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Within Intel's line the design displaced the incumbent defaults - licensed arithmetic units and ad hoc software formats stopped being the standard path once the internal standard was adopted.",
+     "source": "Intel manual S.1 'Evolution' section (FPAL first product under the standard format)",
+     "falsification": "Dies if Intel products after 1977 are shown still shipping incompatible proprietary formats as the default."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk node: the 8087 and the KCS proposal both branch from this design; the history that actually happened runs through it.",
+     "source": "IEEE Milestone record; Hennessy & Patterson 3.10",
+     "falsification": "Dies if the committee draft is shown to descend from a different design document, with this one a parallel dead end."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The design's formats and exception model became IEEE 754's; once shipped in the 8087 the baseline for microprocessor arithmetic was permanently reset.",
+     "source": "IEEE 754-1985 lineage (exp-220 record)",
+     "falsification": "Dies if the standard's formats are shown to have been re-derived from another source after 1980."
+    }
+   },
+   "score": 6.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T13:49:31+00:00",
+   "leap": {
+    "prior_state": "Arithmetic chips and ROM libraries implementing each vendor's incompatible formats with abrupt underflow and fault-on-exception behaviour; the proposed standard a paper draft in committee controversy.",
+    "jump": "The Intel 8087 (1980) was the first integrated circuit to implement the draft standard's arithmetic: single and double formats with 80-bit extended registers, gradual underflow, NaNs and infinities, directed rounding and sticky exception flags - a shipping reference implementation, years before the standard's 1985 approval, that answered the implementability objection in the only coin that settled it.",
+    "date": 1980
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the Palmer-Kahan design and there is nothing for the 8087 to be: its data types, operations, exception handling and rounding are this design, and its co-architect Palmer carried the design into the chip directly.",
+    "mediator": null,
+    "evidence": "IEEE Milestone record: Palmer 'collaborated with Kahan on the design of the data types, mathematical operations, exception handling, and details like rounding'; Intel manual S.1: the format was adopted as Intel's standard in 1977 and shipped in FPAL, the iSBC 310 and the 8232 before the 8087. The KCS proposal (1978) is downstream of this design, not between it and the chip - the design reached the chip through its own team."
+   }
+  },
+  {
+   "predecessor_id": "intel-8086-microprocessor-1978-1978",
+   "successor_id": "intel-8087-floating-point-coprocessor-1980-1980",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "A tightly coupled coprocessor sharing the host's instruction stream could not be built at all without host cooperation designed in advance; the 8086's reserved opcode space and WAIT made that form of silicon possible for the first time on a microprocessor.",
+     "source": "IEEE Milestone record",
+     "falsification": "Dies if an earlier microprocessor is shown with a reserved coprocessor opcode space consumed by a shipping companion chip."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The hook was general, not 8087-specific: it unblocked the coprocessor category on the family (the 8087 numeric processor, the 8089 I/O coprocessor, and the socket's later occupants).",
+     "source": "IEEE Milestone record ('set aside for coprocessor use' generally)",
+     "falsification": "Dies if the ESC space is shown to have been reserved for the numeric coprocessor alone."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "For this parent the host interface is necessary by construction: the 8087 IS the 8086's coprocessor, and its execution model is a documented consequence of the interface's constraints.",
+     "source": "IEEE Milestone record (stack as consequence of the ESC set)",
+     "falsification": "Dies if Ravenel's stack model is shown to have been chosen before, or independently of, the ESC constraint."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Coprocessor coupling collapsed the cost of adding floating point to a system (a socket, not a redesign) - but that economy is the pair's, shared with the chip itself.",
+     "source": "Intel manual S.1",
+     "falsification": "Dies if 8087 adoption is shown to have required board-level redesigns comparable to peripheral FPUs."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The 8086 made nothing measurable.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if the host's bus-observation features are shown to have been the point of the interface."
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "The host supplied an interface, not an explanatory model of the parent's domain (arithmetic).",
+     "source": "Candidate's own record",
+     "falsification": "Dies if the 8086's architecture documents are shown to have framed the arithmetic design."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The ESC/WAIT interface is a standard others built to without understanding the host's internals - the definition of composability; the coprocessor socket became a durable platform boundary.",
+     "source": "IEEE Milestone record; Intel manual S.1",
+     "falsification": "Dies if each coprocessor is shown to have needed host-specific internals beyond the published interface."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The interface pattern propagated across the x86 family's decades (287/387, then on-die FPUs inheriting the model) - reach inside one lineage, scored partial.",
+     "source": "x87 lineage record",
+     "falsification": "Dies if the interface is shown to have died with the 8086 itself."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No experiment loop was collapsed by the host for the chip's designers.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if the 8087's development is shown to have been iterated on 8086 prototypes in a way that defined its cycle."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "The coprocessor interface displaced the peripheral-FPU default for the x86 line: after the 8087, floating point on the family was an extension of the processor, not an I/O device.",
+     "source": "Wikipedia 'Coprocessor' contrast (9511/8231 as peripherals vs 8087 'more closely integrated with the CPU')",
+     "falsification": "Dies if peripheral FPUs remained the standard path on x86 systems after 1980."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "Trunk within the x86 lineage; globally one host architecture among several - centrality scored for this parent's line, not the field's.",
+     "source": "IEEE Milestone record",
+     "falsification": "Dies if the 8087's form is shown to have been dictated by a different host's interface."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "The ESC/WAIT coprocessor pattern persisted through the 80287 and 80387 and into the on-die FPU era; the baseline for how a processor gains arithmetic was reset.",
+     "source": "x87 lineage record",
+     "falsification": "Dies if the interface was abandoned by the family's next generation."
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T13:49:31+00:00",
+   "leap": {
+    "prior_state": "Arithmetic chips and ROM libraries implementing each vendor's incompatible formats with abrupt underflow and fault-on-exception behaviour; the proposed standard a paper draft in committee controversy.",
+    "jump": "The Intel 8087 (1980) was the first integrated circuit to implement the draft standard's arithmetic: single and double formats with 80-bit extended registers, gradual underflow, NaNs and infinities, directed rounding and sticky exception flags - a shipping reference implementation, years before the standard's 1985 approval, that answered the implementability objection in the only coin that settled it.",
+    "date": 1980
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 8086's reserved ESC/WAIT hook and the 8087 cannot exist in its recorded form: it would be another programmed-I/O peripheral like the Am9511. The hook was set aside before the 8087 design began, and its constraint directly shaped Ravenel's stack architecture - the last causal step, not a chain.",
+    "mediator": null,
+    "evidence": "IEEE Milestone record: the 8086's engineering manager 'envisioned a hook in the 8086... Engineers developed the ESC family of instructions... set aside for coprocessor use before the 8087 design began... The push down stack of the 8087 was a consequence of the ESCAPE instruction set... Bruce Ravenel created the stack-based execution model that fit the 8087's capability into the available ESCAPE instructions.' Intel manual S.1: 'the 8087 decodes its own instructions automatically in parallel with the CPU.'"
+   }
+  },
+  {
+   "predecessor_id": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+   "successor_id": "intel-8087-floating-point-coprocessor-1980-1980",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "For the standard, the draft flipped impossibility; for THIS parent the flip is narrower - the Intel design already existed, and what the draft added was a fixed, public conformance target a chip could be built and sold against.",
+     "source": "Intel manual S.1",
+     "falsification": "Dies if the 8087's conformance is shown to have been specified entirely against Intel's internal documents, the draft cited only decoratively."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The draft unblocked a whole space: every implementer of the era - Intel's 8087, Motorola's 6839, National's 16081, AMD's Am9512 line - built to the same text; before it, each vendor's arithmetic was its own island and no class of conforming implementations could exist.",
+     "source": "Kahan 1981 Table 1 (implementations listed under the proposal's name); exp-220 record",
+     "falsification": "Dies if the rival chips are shown to have implemented their own houses' formats, with the draft an after-the-fact label."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "The chip could largely have emerged from the Intel design alone - but not AS the draft's implementation, and not with all its options: the dual infinity modes are the draft's negotiated content. Necessity holds for the leap as recorded, not for any arithmetic chip whatsoever.",
+     "source": "Kahan 1981 (8087 implements the proposal's affine and projective modes)",
+     "falsification": "Dies if both infinity modes are shown present in Intel's 1976-77 internal design documents."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "The draft collapsed no cost for the chip's makers; if anything conformance to all options raised the design's cost.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if Intel documents credit the draft with shortening the 8087's design cycle."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "The draft made nothing measurable that was not measurable before.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if the draft is shown to have introduced the comparison methodology by which arithmetics were judged."
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The draft codified the explanatory model in public, citable form - but the model itself is the Intel design's and Kahan's earlier doctrine, heard on that edge.",
+     "source": "Kahan 1981",
+     "falsification": "Dies if the draft text is shown to contain design rationale absent from the Intel design record."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "A standard interface in draft form: implementers built to it without access to its authors' internals - composability is the draft's whole function.",
+     "source": "Intel manual S.1 footnote citing the published proposal as the standard implemented",
+     "falsification": "Dies if implementers are shown to have needed Intel's internal documents to conform."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The draft's reach across vendors is scored at Q2; its reach beyond arithmetic (into language standards' numerics) is downstream of 754 itself.",
+     "source": "Exp-220 record",
+     "falsification": "Dies if a pre-1985 non-arithmetic standard is shown adopting the draft's model directly."
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No feedback loop of the chip's development was collapsed by the draft.",
+     "source": "Candidate's own record",
+     "falsification": "Dies if the 50 committee drafts are shown to have been iterated against the 8087's test results."
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "As a target, the draft displaced vendor formats as the thing a new arithmetic chip was expected to implement - but the displacement completed only with the 1985 approval, after this parent.",
+     "source": "Exp-220 record (adoptions as ripening evidence)",
+     "falsification": "Dies if pre-1980 chips are shown still treating proprietary formats as the default target."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the draft is the text 754 nearly intactly is, and the 8087's identity in the record is its implementation.",
+     "source": "Hennessy & Patterson 3.10 ('the winning draft was very close to' the KCS submission)",
+     "falsification": "Dies if the standard's text is shown to descend mainly from a rival draft."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The baseline reset is 754's (1985); the draft's irreversibility is real but inherited.",
+     "source": "Exp-220 record",
+     "falsification": "Dies if the draft is shown to have been abandonable without trace after 1980."
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T13:49:31+00:00",
+   "leap": {
+    "prior_state": "Arithmetic chips and ROM libraries implementing each vendor's incompatible formats with abrupt underflow and fault-on-exception behaviour; the proposed standard a paper draft in committee controversy.",
+    "jump": "The Intel 8087 (1980) was the first integrated circuit to implement the draft standard's arithmetic: single and double formats with 80-bit extended registers, gradual underflow, NaNs and infinities, directed rounding and sticky exception flags - a shipping reference implementation, years before the standard's 1985 approval, that answered the implementability objection in the only coin that settled it.",
+    "date": 1980
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the draft and the 8087 is a proprietary Intel arithmetic chip, not the standard's shipping implementation: the parent's leap, as recorded, is defined by conformance to the draft - and the chip implements draft-specific content (both the affine and the projective infinity modes) that was the committee text's compromise, not Intel's 1976 preference.",
+    "mediator": null,
+    "evidence": "Intel manual S.1 (verbatim): the 8087 is 'a single-chip hardware implementation of the proposed IEEE standard, including all its options for single and double precision numbers', footnoting the published proposal (Coonen, Kahan, Palmer, Pittman, Stevenson, SIGNUM, Oct 1979) as the standard implemented. Mediation attack via the Intel design answered: the design and the draft are distinct artifacts - the chip's own manual cites the draft, not the internal design, as what it implements."
    }
   }
  ],
@@ -402418,6 +402793,285 @@
     "judge_queue": [],
     "auto_merges": [],
     "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "intel-8087-floating-point-coprocessor-1980-1980": {
+   "raw_candidates": [
+    {
+     "name": "Intel floating-point design (Palmer & Kahan, 1976)",
+     "year": 1976,
+     "type": "other",
+     "lens": "L20",
+     "causal_claim": "The data types, mathematical operations, exception handling and rounding the 8087 implements were designed by John Palmer with William Kahan consulting from 1976: Palmer, charged with floating point for the coming 8086 family, 'collaborated with Kahan on the design of the data types, mathematical operations, exception handling, and details like rounding' (IEEE Milestone record). Intel adopted the format as its internal standard in 1977 and shipped the design first as the FPAL software library, then the iSBC 310 math unit and the 8232 (Intel's own manual, 'Evolution' section); the 8087 is that design carried into silicon, with Palmer as co-architect, Ravenel's architecture and Nave's Haifa implementation.",
+     "evidence": "IEEE Milestone record: 'In 1976, John Palmer joined Intel and was charged with designing floating point support for the upcoming 8086 family... he recruited Berkeley professor William Kahan in 1976 to consult on the 8087... John Palmer collaborated with Kahan on the design of the data types, mathematical operations, exception handling, and details like rounding.' Intel manual S.1: 'In 1977, the corporation adopted a standard for representing real numbers in a floating point format. Intel's Floating Point Arithmetic Library (FPAL) was the first product to utilize this standard format.' Hennessy & Patterson 3.10: Palmer 'empowered to specify the best possible floating-point arithmetic for Intel's entire product line... They put together a design.'"
+    },
+    {
+     "name": "The Kahan-Coonen-Stone floating-point proposal (1978)",
+     "year": 1978,
+     "type": "other",
+     "lens": "L16",
+     "causal_claim": "Intel's own manual calls the 8087 'a single-chip hardware implementation of the proposed IEEE standard, including all its options for single and double precision numbers' and cites the published proposal (Coonen, Kahan, Palmer, Pittman, Stevenson, ACM SIGNUM Newsletter, Oct 1979) as the standard implemented; Kahan's 1981 account records that the 8087 implements the proposal's affine and projective infinity modes. Filed as the existing node for the conformance hearing.",
+     "evidence": "Intel manual S.1 (verbatim): 'The 8087 Numeric Data Processor is... a single-chip hardware implementation of the proposed IEEE standard, including all its options for single and double precision numbers.' Footnote: 'J. Coonen, W. Kahan, J. Palmer, T. Pittman, D. Stevenson, A Proposed Standard for Binary Floating Point Arithmetic, ACM SIGNUM Newsletter, October 1979.' IEEE Milestone record: 'Intel engineers were a year into the 8087 design when the IEEE 754 committee began to gain momentum in 1978... Kahan received permission to propose the data types, arithmetic operations, and exception handling as the new IEEE standard.'"
+    },
+    {
+     "name": "Intel 8086 microprocessor (1978)",
+     "year": 1978,
+     "type": "device",
+     "lens": "L9",
+     "causal_claim": "The host processor whose coprocessor interface the 8087's execution model consumes: the 8086's engineering manager set aside the ESC instruction family and WAIT for coprocessor use before the 8087 design began, and the 8087 decodes those ESC opcodes in parallel with the host. The opcode-space constraint (an ESC instruction cannot address two registers) forced Ravenel's stack-based execution model - the chip's signature register architecture. The 8088 (1979) presents the same interface on an 8-bit bus and is heard inside this filing.",
+     "evidence": "IEEE Milestone record: 'The insightful engineering manager of the 8086 project envisioned a hook in the 8086... Engineers developed the ESC family of instructions... set aside for coprocessor use before the 8087 design began... The push down stack of the 8087 was a consequence of the ESCAPE instruction set... Bruce Ravenel created the stack-based execution model that fit the 8087's capability into the available ESCAPE instructions.' Kahan's history (via H&P 3.10): Palmer and Ravenel had to 'make a Virtue of this Necessity' in choosing a stack architecture. Intel manual S.1: 'the 8087 decodes its own instructions automatically in parallel with the CPU.'"
+    },
+    {
+     "name": "CORDIC shift-and-add computation of transcendental functions (Volder, 1959)",
+     "year": 1959,
+     "type": "technique",
+     "lens": "L1",
+     "causal_claim": "The 8087 has no array multiplier (multiplication is shift-and-add) and computes its five transcendental kernels from stored constants atan(2^-k) and log2(1+2^-k) by the shift-and-add decomposition CORDIC introduced; the design team called their floating-point blend of the method 'pseudo-multiplication and pseudo-division rather than CORDIC'. The decomposition is what let the transcendental suite - a headline part of the chip's leap - fit the die's ROM budget.",
+     "evidence": "IEEE Milestone record: 'The 8087 had no room for an array multiplier or a multi-bit SRT divider. Instead, it used a technique the designers called pseudo-multiplication and pseudo-division rather than CORDIC, a blend of fixed point and floating point computations at the microcode level... The 8087 computes five kernel functions that depend on 30 constants stored in ROM: atan(2^-k) for k = 0..15, and log2(1+2^-k) for k = 2..15.' Nave's paper (Proc. 5th Symp. Computer Arithmetic, 1981) outlines the method; Ken Shirriff's die analysis confirms CORDIC-based transcendentals and no hardware multiplier."
+    },
+    {
+     "name": "VAX floating-point arithmetic (DEC, 1977)",
+     "year": 1977,
+     "type": "device",
+     "lens": "L6",
+     "causal_claim": "Kahan's first recommendation to Intel was to adopt the VAX's highly regarded floating point; he withdrew the recommendation and drew up Intel's own specifications instead. The 8087's load-bearing features - the wider 80-bit extended format, gradual underflow, NaNs - are exactly its departures from the VAX design. Heard on this parent's documents; the recommendation was made to this design effort (parity with the exp-220 hearing at the standard, where the same correction relation failed).",
+     "evidence": "Hennessy & Patterson 3.10 (via exp-220's record): 'Kahan initially suggested that Intel's arithmetic merely copy that of the new VAX... DEC's VAX minicomputer, which was the favorite for an IEEE standard at the time... Kahan withdrew his suggestion that Intel adopt VAX format when he realized the VAX floating-point design had flaws.' Kahan 1981: the proposed design 'differs from every commercially significant forerunner in the following ways' - the list is the departure list."
+    },
+    {
+     "name": "AMD Am9511 arithmetic processing unit (1977)",
+     "year": 1977,
+     "type": "device",
+     "lens": "L6",
+     "causal_claim": "The first single-chip floating-point unit (AMD's claim), including transcendental functions, licensed by Intel as the 8231 and named as the 8087's predecessor in the product line. It interfaced as a programmed-I/O peripheral - the form the 8087's coprocessor design superseded. No document names a channel from its design into the 8087's, whose design began in 1976 on Palmer and Kahan's specifications; anticipation of the single-chip form without a junction.",
+     "evidence": "Wikipedia, 'Intel 8231/8232': the 8231/8232 'were licensed versions of AMD's Am9511 and Am9512 FPUs, from 1977 and 1979, themselves claimed by AMD as the world's first single-chip FPU solutions'; the 8087's article lists the 8231/8232 as predecessor. Wikipedia, 'Coprocessor': 'Some floating-point units, such as the AMD 9511, Intel 8231/8232 and Weitek FPUs were treated as peripheral devices, while others such as the Intel 8087... were more closely integrated with the CPU.'"
+    },
+    {
+     "name": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+     "year": 1967,
+     "type": "paper",
+     "lens": "L1",
+     "causal_claim": "The 8087's memory formats encode floating-point numbers in the sign-magnitude, biased-exponent form Kahan's 1996 notes credit as 'first proposed by David Goldberg' in his 1967 paper - the encoding the Intel design adopted for the chip's single and double formats. Heard here as at exp-220: a designer-documented component of the leap.",
+     "evidence": "Kahan, 'Lecture Notes on the Status of IEEE Standard 754' (1996), via exp-220's record: 'IEEE 754 encodes FP numbers in memory in ways first proposed by David Goldberg in [his 1967 paper] 27 Bits Are Not Enough for 8-Digit Accuracy.' Intel manual S.1, Table S-2: the chip's short real (32-bit) and long real (64-bit) data types are the formats so encoded."
+    },
+    {
+     "name": "IEEE Task P754 working group (1977)",
+     "year": 1977,
+     "type": "institution",
+     "lens": "L21",
+     "causal_claim": "The committee to which Intel's design was disclosed in 1978 and in whose process the 8087's conformance was framed; the chip's designers participated in it, but it supplied no mechanism inside the chip - Intel shipped in 1980 without waiting for the committee's approval.",
+     "evidence": "IEEE Milestone record: 'Intel engineers were a year into the 8087 design when the IEEE 754 committee began to gain momentum in 1978.' Hennessy & Patterson 3.10 (via exp-220): Intel grew tired of waiting for IEEE approval and shipped the 8087 in 1980; the standard was not approved until 1985."
+    },
+    {
+     "name": "Intel iAPX 432 (1981)",
+     "year": 1981,
+     "type": "device",
+     "lens": "L22",
+     "causal_claim": "The processor family for which Palmer's floating-point design brief was originally framed and which Palmer examined when he took the floating-point charge. Filed deliberately at its 1981 product year, after the parent, so the direction bound is exercised on the record rather than by the scout's silence; its design-brief role is heard inside the Intel-design filing. Not re-dated.",
+     "evidence": "Hennessy & Patterson 3.10 (via exp-220's record): the Intel design 'originally started for Intel's iAPX-432 microprocessor'. IEEE Milestone record: Palmer 'looked at Intel's overall efforts, including the powerful 432 chipset already in development.' The iAPX 432 shipped in 1981, after the 8087 (1980)."
+    },
+    {
+     "name": "Handbook of Mathematical Functions (Abramowitz & Stegun, 1964)",
+     "year": 1964,
+     "type": "book",
+     "lens": "L13",
+     "causal_claim": "The Milestone record names the handbook's identities (item 4.3.23) as used by the design team to express the transcendental functions in terms of the five kernels the chip computes - a reference work wielded inside the design work.",
+     "evidence": "IEEE Milestone record: 'The reference by M. Abramowitz and I. R. Stegun contains many helpful identities, in this case item 4.3.23' - cited in the passage describing how the 8087's functions are computed from the five kernels."
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "intel-floating-point-design-palmer-kahan-1976-1976",
+      "candidate": {
+       "name": "Intel floating-point design (Palmer & Kahan, 1976)",
+       "year": 1976,
+       "type": "other",
+       "lens": "L20",
+       "causal_claim": "The data types, mathematical operations, exception handling and rounding the 8087 implements were designed by John Palmer with William Kahan consulting from 1976: Palmer, charged with floating point for the coming 8086 family, 'collaborated with Kahan on the design of the data types, mathematical operations, exception handling, and details like rounding' (IEEE Milestone record). Intel adopted the format as its internal standard in 1977 and shipped the design first as the FPAL software library, then the iSBC 310 math unit and the 8232 (Intel's own manual, 'Evolution' section); the 8087 is that design carried into silicon, with Palmer as co-architect, Ravenel's architecture and Nave's Haifa implementation.",
+       "evidence": "IEEE Milestone record: 'In 1976, John Palmer joined Intel and was charged with designing floating point support for the upcoming 8086 family... he recruited Berkeley professor William Kahan in 1976 to consult on the 8087... John Palmer collaborated with Kahan on the design of the data types, mathematical operations, exception handling, and details like rounding.' Intel manual S.1: 'In 1977, the corporation adopted a standard for representing real numbers in a floating point format. Intel's Floating Point Arithmetic Library (FPAL) was the first product to utilize this standard format.' Hennessy & Patterson 3.10: Palmer 'empowered to specify the best possible floating-point arithmetic for Intel's entire product line... They put together a design.'"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Intel floating-point design (Palmer & Kahan, 1976)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+      "candidate": {
+       "name": "The Kahan-Coonen-Stone floating-point proposal (1978)",
+       "year": 1978,
+       "type": "other",
+       "lens": "L16",
+       "causal_claim": "Intel's own manual calls the 8087 'a single-chip hardware implementation of the proposed IEEE standard, including all its options for single and double precision numbers' and cites the published proposal (Coonen, Kahan, Palmer, Pittman, Stevenson, ACM SIGNUM Newsletter, Oct 1979) as the standard implemented; Kahan's 1981 account records that the 8087 implements the proposal's affine and projective infinity modes. Filed as the existing node for the conformance hearing.",
+       "evidence": "Intel manual S.1 (verbatim): 'The 8087 Numeric Data Processor is... a single-chip hardware implementation of the proposed IEEE standard, including all its options for single and double precision numbers.' Footnote: 'J. Coonen, W. Kahan, J. Palmer, T. Pittman, D. Stevenson, A Proposed Standard for Binary Floating Point Arithmetic, ACM SIGNUM Newsletter, October 1979.' IEEE Milestone record: 'Intel engineers were a year into the 8087 design when the IEEE 754 committee began to gain momentum in 1978... Kahan received permission to propose the data types, arithmetic operations, and exception handling as the new IEEE standard.'"
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "The Kahan-Coonen-Stone floating-point proposal (1978)"
+      ],
+      "matched_node_id": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "intel-8086-microprocessor-1978-1978",
+      "candidate": {
+       "name": "Intel 8086 microprocessor (1978)",
+       "year": 1978,
+       "type": "device",
+       "lens": "L9",
+       "causal_claim": "The host processor whose coprocessor interface the 8087's execution model consumes: the 8086's engineering manager set aside the ESC instruction family and WAIT for coprocessor use before the 8087 design began, and the 8087 decodes those ESC opcodes in parallel with the host. The opcode-space constraint (an ESC instruction cannot address two registers) forced Ravenel's stack-based execution model - the chip's signature register architecture. The 8088 (1979) presents the same interface on an 8-bit bus and is heard inside this filing.",
+       "evidence": "IEEE Milestone record: 'The insightful engineering manager of the 8086 project envisioned a hook in the 8086... Engineers developed the ESC family of instructions... set aside for coprocessor use before the 8087 design began... The push down stack of the 8087 was a consequence of the ESCAPE instruction set... Bruce Ravenel created the stack-based execution model that fit the 8087's capability into the available ESCAPE instructions.' Kahan's history (via H&P 3.10): Palmer and Ravenel had to 'make a Virtue of this Necessity' in choosing a stack architecture. Intel manual S.1: 'the 8087 decodes its own instructions automatically in parallel with the CPU.'"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Intel 8086 microprocessor (1978)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cordic-shift-and-add-computation-of-transcendental-functions-1959",
+      "candidate": {
+       "name": "CORDIC shift-and-add computation of transcendental functions (Volder, 1959)",
+       "year": 1959,
+       "type": "technique",
+       "lens": "L1",
+       "causal_claim": "The 8087 has no array multiplier (multiplication is shift-and-add) and computes its five transcendental kernels from stored constants atan(2^-k) and log2(1+2^-k) by the shift-and-add decomposition CORDIC introduced; the design team called their floating-point blend of the method 'pseudo-multiplication and pseudo-division rather than CORDIC'. The decomposition is what let the transcendental suite - a headline part of the chip's leap - fit the die's ROM budget.",
+       "evidence": "IEEE Milestone record: 'The 8087 had no room for an array multiplier or a multi-bit SRT divider. Instead, it used a technique the designers called pseudo-multiplication and pseudo-division rather than CORDIC, a blend of fixed point and floating point computations at the microcode level... The 8087 computes five kernel functions that depend on 30 constants stored in ROM: atan(2^-k) for k = 0..15, and log2(1+2^-k) for k = 2..15.' Nave's paper (Proc. 5th Symp. Computer Arithmetic, 1981) outlines the method; Ken Shirriff's die analysis confirms CORDIC-based transcendentals and no hardware multiplier."
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "CORDIC shift-and-add computation of transcendental functions (Volder, 1959)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "vax-floating-point-arithmetic-dec-1977-1977",
+      "candidate": {
+       "name": "VAX floating-point arithmetic (DEC, 1977)",
+       "year": 1977,
+       "type": "device",
+       "lens": "L6",
+       "causal_claim": "Kahan's first recommendation to Intel was to adopt the VAX's highly regarded floating point; he withdrew the recommendation and drew up Intel's own specifications instead. The 8087's load-bearing features - the wider 80-bit extended format, gradual underflow, NaNs - are exactly its departures from the VAX design. Heard on this parent's documents; the recommendation was made to this design effort (parity with the exp-220 hearing at the standard, where the same correction relation failed).",
+       "evidence": "Hennessy & Patterson 3.10 (via exp-220's record): 'Kahan initially suggested that Intel's arithmetic merely copy that of the new VAX... DEC's VAX minicomputer, which was the favorite for an IEEE standard at the time... Kahan withdrew his suggestion that Intel adopt VAX format when he realized the VAX floating-point design had flaws.' Kahan 1981: the proposed design 'differs from every commercially significant forerunner in the following ways' - the list is the departure list."
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "VAX floating-point arithmetic (DEC, 1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "amd-am9511-arithmetic-processing-unit-1977-1977",
+      "candidate": {
+       "name": "AMD Am9511 arithmetic processing unit (1977)",
+       "year": 1977,
+       "type": "device",
+       "lens": "L6",
+       "causal_claim": "The first single-chip floating-point unit (AMD's claim), including transcendental functions, licensed by Intel as the 8231 and named as the 8087's predecessor in the product line. It interfaced as a programmed-I/O peripheral - the form the 8087's coprocessor design superseded. No document names a channel from its design into the 8087's, whose design began in 1976 on Palmer and Kahan's specifications; anticipation of the single-chip form without a junction.",
+       "evidence": "Wikipedia, 'Intel 8231/8232': the 8231/8232 'were licensed versions of AMD's Am9511 and Am9512 FPUs, from 1977 and 1979, themselves claimed by AMD as the world's first single-chip FPU solutions'; the 8087's article lists the 8231/8232 as predecessor. Wikipedia, 'Coprocessor': 'Some floating-point units, such as the AMD 9511, Intel 8231/8232 and Weitek FPUs were treated as peripheral devices, while others such as the Intel 8087... were more closely integrated with the CPU.'"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "AMD Am9511 arithmetic processing unit (1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "27-bits-are-not-enough-for-8-digit-accuracy-goldberg-1967-1967",
+      "candidate": {
+       "name": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+       "year": 1967,
+       "type": "paper",
+       "lens": "L1",
+       "causal_claim": "The 8087's memory formats encode floating-point numbers in the sign-magnitude, biased-exponent form Kahan's 1996 notes credit as 'first proposed by David Goldberg' in his 1967 paper - the encoding the Intel design adopted for the chip's single and double formats. Heard here as at exp-220: a designer-documented component of the leap.",
+       "evidence": "Kahan, 'Lecture Notes on the Status of IEEE Standard 754' (1996), via exp-220's record: 'IEEE 754 encodes FP numbers in memory in ways first proposed by David Goldberg in [his 1967 paper] 27 Bits Are Not Enough for 8-Digit Accuracy.' Intel manual S.1, Table S-2: the chip's short real (32-bit) and long real (64-bit) data types are the formats so encoded."
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ieee-task-p754-working-group-1977-1977",
+      "candidate": {
+       "name": "IEEE Task P754 working group (1977)",
+       "year": 1977,
+       "type": "institution",
+       "lens": "L21",
+       "causal_claim": "The committee to which Intel's design was disclosed in 1978 and in whose process the 8087's conformance was framed; the chip's designers participated in it, but it supplied no mechanism inside the chip - Intel shipped in 1980 without waiting for the committee's approval.",
+       "evidence": "IEEE Milestone record: 'Intel engineers were a year into the 8087 design when the IEEE 754 committee began to gain momentum in 1978.' Hennessy & Patterson 3.10 (via exp-220): Intel grew tired of waiting for IEEE approval and shipped the 8087 in 1980; the standard was not approved until 1985."
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "IEEE Task P754 working group (1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "handbook-of-mathematical-functions-abramowitz-stegun-1964-1964",
+      "candidate": {
+       "name": "Handbook of Mathematical Functions (Abramowitz & Stegun, 1964)",
+       "year": 1964,
+       "type": "book",
+       "lens": "L13",
+       "causal_claim": "The Milestone record names the handbook's identities (item 4.3.23) as used by the design team to express the transcendental functions in terms of the five kernels the chip computes - a reference work wielded inside the design work.",
+       "evidence": "IEEE Milestone record: 'The reference by M. Abramowitz and I. R. Stegun contains many helpful identities, in this case item 4.3.23' - cited in the passage describing how the 8087's functions are computed from the five kernels."
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Handbook of Mathematical Functions (Abramowitz & Stegun, 1964)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "Intel iAPX 432 (1981)",
+       "year": 1981,
+       "type": "device",
+       "lens": "L22",
+       "causal_claim": "The processor family for which Palmer's floating-point design brief was originally framed and which Palmer examined when he took the floating-point charge. Filed deliberately at its 1981 product year, after the parent, so the direction bound is exercised on the record rather than by the scout's silence; its design-brief role is heard inside the Intel-design filing. Not re-dated.",
+       "evidence": "Hennessy & Patterson 3.10 (via exp-220's record): the Intel design 'originally started for Intel's iAPX-432 microprocessor'. IEEE Milestone record: Palmer 'looked at Intel's overall efforts, including the powerful 432 chipset already in development.' The iAPX 432 shipped in 1981, after the 8087 (1980)."
+      },
+      "reason": "dated on/after parent year 1980"
+     }
+    ],
     "prefiltered": []
    },
    "judge_queue": [],

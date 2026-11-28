@@ -17128,3 +17128,130 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "SESSION 105 CLOSES with this checkpoint (expansions 219-220). Session totals: nodes 353 -> 355, edges 456 -> 459, expansions_done 218 -> 220. FRONTIER FLAG (per the brief's instruction): the McLachlan & Basford Mixture Models node (1988) - whose expansion carries the long-assigned EM hearing - now stands FOURTH on the frontier, behind the two nodes this session created (8087, KCS proposal) and MacLisp (1966); it was fourth at session open too, but the two new depth-6 nodes now sit ahead of MacLisp, so the EM hearing is two sessions out at the earliest if the frontier is consumed in order (session 106 would take the 8087 and the KCS proposal; MacLisp and Mixture Models would follow). New carried hearings assigned this session: the Intel floating-point design hearing is assigned to the KCS proposal's own expansion (its obvious first hearing); the Goldberg-encoding and VAX rehearing conditions are recorded on exp-220's verdicts; TR 304's Mikolov-pattern rehearing condition and the Q-learning-at-Whitehead incorporation rehearing condition ride exp-219's record. One mechanical incident, no outcome affected: the first apply-verification call for exp-220 was rejected on an unrecognized --parent argument (the subcommand takes none); re-run in the runbook's exact form and applied cleanly - recorded here so the session's tool history is honest."
 }
+{
+ "ts": "2026-11-28T13:50:34.530105+00:00",
+ "event": "expansion",
+ "session": 106,
+ "expansion": 221,
+ "parent": "intel-8087-floating-point-coprocessor-1980-1980",
+ "parent_name": "Intel 8087 floating-point coprocessor (1980)",
+ "parent_year": 1980,
+ "parent_depth": 6,
+ "date": "2026-11-28",
+ "brief_correction": "RESUME RECORD: a first attempt at session 106 scouted and resolved this expansion, then ended without verdicts, verification, or a report. Per the RUNBOOK resume protocol (S.5) the expansion was resumed at its stored stage (resolved) rather than re-scouted: the stored census (10 filings, 9 distinct, judge queue empty, MiniLM) was audited against the run-log and found sound and complete, with per-lens dry/shortfall notes on file; verdicts, verification, render, this record and the sync were executed in this pass. The brief's expectation that the wart from exp-220 (no Intel datasheet read) would be discharged here is corrected by the record the aborted scout actually assembled: the census IS grounded in Intel's own primary material - the Intel 8087 manual's own history section (S.1, 'Evolution'), quoted verbatim in the filings ('a single-chip hardware implementation of the proposed IEEE standard, including all its options'; the 1977 adoption of the format as Intel's internal standard; FPAL as its first product) - corroborated by the IEEE Milestone record and Hennessy & Patterson 3.10. The exp-220 wart is accordingly narrowed, not erased: what was read is Intel's own manual history, not a standalone 1980 datasheet; the narrowing is recorded on this record rather than silently upgraded. FIX-UP discharged here per house pattern: expansion 220's sync_commit = 3cdb3b57 (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that checkpoint via the qp-sync tree check plus independent local blob-SHA recomputation: 84b90136 / 1f70531a / ae38fd5d). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "The aborted scout's census, audited and adopted: filings grounded in (1) Intel's own 8087 manual, S.1 and its 'Evolution' section - the format adopted as Intel's internal standard in 1977, FPAL its first product, the iSBC 310 and 8232 shipments, the 8087 as 'a single-chip hardware implementation of the proposed IEEE standard, including all its options for single and double precision numbers', footnoting the published proposal (Coonen, Kahan, Palmer, Pittman, Stevenson, ACM SIGNUM Newsletter, Oct 1979) as the standard implemented, and 'the 8087 decodes its own instructions automatically in parallel with the CPU'; (2) the IEEE Milestone record for the 8087 - Palmer recruited Kahan in 1976 and 'collaborated with Kahan on the design of the data types, mathematical operations, exception handling, and details like rounding'; the 8086's engineering manager set aside the ESC family for coprocessor use before the 8087 design began; 'The push down stack of the 8087 was a consequence of the ESCAPE instruction set... Bruce Ravenel created the stack-based execution model'; the transcendental unit's 'pseudo-multiplication and pseudo-division rather than CORDIC', five kernels from 30 ROM constants atan(2^-k) and log2(1+2^-k); Abramowitz & Stegun identity 4.3.23 named in the annotated bibliography; (3) Hennessy & Patterson 3.10 via exp-220's record (Palmer 'empowered to specify the best possible floating-point arithmetic for Intel's entire product line'; Kahan's withdrawn VAX recommendation; Intel shipped in 1980 without waiting for approval); (4) Kahan 1981 (the 8087 implements the proposal's affine and projective modes; the departure list from every commercial forerunner) and Kahan 1996 (the Goldberg 1967 encoding credit), both via exp-220's record; (5) Nave 1981 and Shirriff's die analysis for the CORDIC-family kernels (via the census filing). WARTS (stated, per discipline): Palmer's and Ravenel's own papers were used as carried in the Milestone record rather than re-read in full this pass; the 8086's 1978 design documents were not independently read (recorded on its verification record).",
+ "scout": {
+  "raw_filings": 10,
+  "matched_existing": 1,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "distinct": 9,
+  "dropped_year_bound": 1,
+  "note": "Document-census pattern (assembled by the aborted attempt, audited and adopted on resume): the design document chain (the Intel floating-point design, L20; the KCS conformance filing, L16 - the one matched existing node), the host interface (the 8086's ESC/WAIT hook, L9), the two component hearings the design record names (the CORDIC-family kernels; the Goldberg encoding, L1), the defined-against incumbents (VAX; the Am9511, L6), the forming body (Task P754, L21), and the one reference work the design record names as wielded (Abramowitz & Stegun, L13). Dropped by the resolver's year bound, recorded, not re-dated: the Intel iAPX 432 (filed deliberately at its 1981 product year, after the parent, so the direction bound is exercised on the record; its design-brief role is heard inside the Intel-design filing). Resolve ran under MiniLM (sentence-transformers/all-MiniLM-L6-v2) - no TF-IDF fallback this expansion, and with an empty judge queue it touched no outcome. Per-lens floors: 23 lens entries filed with dry/shortfall notes in dry_notes_intel-8087-floating-point-coprocessor-1980-1980.json (shortfalls recorded at L2 and L12, not padded). Considered and not filed, with reasons in the dry notes: the 8232 (the parent's own year and a sibling adopter of the draft, heard at exp-220 as the Am9512); Kahan's compensated summation (the designer's formation, nowhere incorporated as such); the Burks-Goldstine-von Neumann report and the CDC 6600 indefinite operand (anticipation without a junction, L3)."
+ },
+ "admissions": [
+  {
+   "node": "intel-floating-point-design-palmer-kahan-1976-1976",
+   "name": "Intel floating-point design (Palmer & Kahan, 1976)",
+   "link": false,
+   "grade": 6.0,
+   "basis": "NEW node (depth 7, provisional). The design the chip is: data types, operations, exception handling and rounding designed by Palmer with Kahan consulting from 1976, adopted as Intel's internal standard in 1977 and shipped as FPAL, the iSBC 310 and the 8232 before the 8087. Q1/Q2 pass (no implementable design existed for Intel to build to; one design specified arithmetic for the entire product line and, disclosed, seeded the draft). The mediation attack (the design reached the chip only through the KCS proposal) fails on the record: same people, three Intel products shipped before the proposal's publication, the proposal downstream of the design. NOTE the cross-session symmetry: at exp-220 this same candidate was recorded as mediated via the KCS proposal AT the standard - edge-scoped, and untouched; at the chip the channel is direct."
+  },
+  {
+   "node": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+   "name": "The Kahan-Coonen-Stone floating-point proposal (1978)",
+   "link": true,
+   "grade": 4.0,
+   "basis": "LINK to the existing node (admitted at exp-220). The conformance channel: Intel's own manual calls the chip 'a single-chip hardware implementation of the proposed IEEE standard, including all its options' and cites the published proposal as the standard implemented; the chip implements draft-specific content (both affine and projective infinity modes - the committee text's compromise, not Intel's 1976 preference). Q2 pass (the draft created the class of conforming implementations - 8087, 6839, 16081, Am9512 all built to the same text); Q1 and Q3 scored PARTIAL honestly (the Intel design already existed; the chip could largely have emerged from it alone, but not AS the draft's implementation with all its options). The mediation attack via the Intel design is answered on the edge: distinct artifacts, and the chip's manual cites the draft, not the internal design, as what it implements. The LINK target's verification record from exp-220 was NOT overwritten (deviation precedent); this hearing lives on the edge's verdicts."
+  },
+  {
+   "node": "intel-8086-microprocessor-1978-1978",
+   "name": "Intel 8086 microprocessor (1978)",
+   "link": false,
+   "grade": 4.5,
+   "basis": "NEW node (depth 7, provisional) - the expansion's most contestable admission, flagged as such on its verification record. The SPECIFIC enabling step (the PDP-7-at-B shape): the 8086's ESC opcode family and WAIT were set aside for coprocessor use before the 8087 design began, and the ESC encoding's constraint (an instruction cannot address two registers) forced Ravenel's stack-based execution model - the chip's signature architecture. Q1 pass (the tightly coupled coprocessor form could not be built at all without host cooperation designed in advance), Q2 pass (the hook was general - the coprocessor category, not one chip). The Q1 attack (a peripheral FPU was buildable without it) narrows the claim to the coupled form the record documents and does not break it; the mediation attack via the Intel design is answered on channel separation (arithmetic content vs execution-model constraint)."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "CORDIC shift-and-add computation of transcendental functions (Volder, 1959)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Directness partial fails closed. The decomposition family is inside the transcendental kernels (the ROM-budget channel is real), but the design team named its own method 'pseudo-multiplication and pseudo-division rather than CORDIC, a blend of fixed point and floating point computations' - the consumed artifact is a family resemblance, not Volder's formulation taken over at a named point; and the kernels are a component of the leap, not the leap (components discrimination). Q3 fails outright (polynomial alternatives existed and are used elsewhere in the same chip). Re-hearing condition: a design document showing the kernels' decomposition taken from Volder's formulation rather than independently blended."
+  },
+  {
+   "name": "VAX floating-point arithmetic (DEC, 1977)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Directness fail. Kahan's first recommendation to Intel - made to this very design effort - was withdrawn by Kahan himself on finding VAX's flaws; the chip's load-bearing features are exactly its departures from VAX. A diagnosis answered is not consumed (Hochreiter condition); the correction relation fails here as it did at the standard (exp-220, parity). Remove VAX and the design proceeds unchanged."
+  },
+  {
+   "name": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Directness partial fails closed, parity with exp-220's hearing at the standard: the sign-magnitude biased-exponent encoding is designer-documented (Kahan 1996) and directly inside the chip's memory formats - and it is a component of the leap, not the leap's enabler at this level. The exp-220 re-hearing condition stands unmet on this parent's documents as well."
+  },
+  {
+   "name": "AMD Am9511 arithmetic processing unit (1977)",
+   "score": 1.0,
+   "kind": "rejected",
+   "basis": "Anticipation without a junction: the first single-chip FPU (AMD's claim) proved the category in the market, but no document names a channel from its design into the 8087's - whose design began in 1976, before the Am9511 shipped - and its programmed-I/O peripheral form is exactly what the parent superseded. Intel's licensing of it as the 8231 is a product-line fact, not a design channel."
+  },
+  {
+   "name": "IEEE Task P754 working group (1977)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Formation without a mechanism inside the chip: the design predates the disclosure, and Intel shipped in 1980 without waiting for the committee (approval 1985). Parity with exp-220's hearing of the same body at the standard (1.0)."
+  },
+  {
+   "name": "Handbook of Mathematical Functions (Abramowitz & Stegun, 1964)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "A reference wielded at the workbench (identity 4.3.23, named in the Milestone's annotated bibliography) is not a mechanism of the leap: the identity is standard mathematics, multiply sourced, and the counterfactual fails - the same identity is in the next reference on the shelf. The Katz-at-CSR / Lesk-stdio pattern (a component of the delivered work, not its ancestor)."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_intel-8087-floating-point-coprocessor-1980-1980.json",
+  "outcomes": {
+   "intel-floating-point-design-palmer-kahan-1976-1976": "provisional",
+   "intel-8086-microprocessor-1978-1978": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Both new survivors provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). The KCS LINK target was deliberately NOT entered in this expansion's verification file: it carries a substantive verification record from its own admission at exp-220, confirmed intact and non-null on disk; overwriting it would destroy that record (exps 210/213/218/219 deviation precedent) - its hearing at this parent lives in full on the edge's verdicts. Strongest attacks recorded: on the Intel design, the multiples attack (VAX as a near-simultaneous complete arithmetic) - answered by scoring the design's specific content, not the category; on the 8086, the Q1 attack (a peripheral FPU needed no hook) - answered by scoping the leap to the coupled form; on the KCS edge, the mediation attack via the Intel design - answered on the dual infinity modes and the manual's own citation."
+ },
+ "totals_after": {
+  "nodes": 357,
+  "edges": 462,
+  "budget": "357/2000",
+  "expansions_done": 221,
+  "provisional": 340,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 71,
+   "6": 57,
+   "7": 38,
+   "8": 24,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 3,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+  "intel-floating-point-design-palmer-kahan-1976-1976",
+  "maclisp-1966",
+  "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+  "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+  "samuel-s-checkers-player-samuel-1959-1959"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 106 continues: expansion 222 (the Kahan-Coonen-Stone proposal, 1978) follows this checkpoint in the same session, carrying the Intel floating-point design hearing assigned at exp-220 - which this expansion has now ALSO heard directly at the chip and admitted; the exp-222 hearing judges the design as the proposal's predecessor, a different edge, on the proposal's documents. FRONTIER FLAG: the McLachlan & Basford Mixture Models node (1988), whose expansion carries the long-assigned EM hearing, stands fourth; the frontier order did not change in a way that reaches it this session. Session-process note, recorded honestly: session 106's first attempt ended after resolve with no report; this pass resumed the stored expansion per the RUNBOOK resume protocol instead of re-scouting, and the run state at resume was verified byte-consistent with exp-220's close (355 nodes / 459 edges, expansions_done 220)."
+}
