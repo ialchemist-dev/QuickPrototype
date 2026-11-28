@@ -14292,3 +14292,142 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T10:26:44.275106+00:00",
+ "event": "expansion",
+ "session": 96,
+ "expansion": 201,
+ "parent": "world-wide-web-berners-lee-1991-1991",
+ "parent_name": "World Wide Web (Berners-Lee, 1991)",
+ "parent_year": 1991,
+ "parent_depth": 6,
+ "date": "2026-11-28",
+ "brief_correction": "The brief framed two channels for advance judgment and the documents redirected both. (a) The CERN public-domain release (30 April 1993): at this parent, dated 1991, the release is not a predecessor at all - it postdates even the parent's children (Mosaic shipped 21 April 1993, nine days before it) - so it was not filed, strengthening the brief's expectation: the release is a successor act of this node's own institution, and its hearing stands where expansion 198 put it (fail-closed 2.0 AT Netscape Communications). (b) The brief's expectation that SGML, mediated via WWW at Mosaic (expansion 199), would be judged here 'on its own documents' resolved into TWO format-lineage hearings, both fail-closed partials: CERN SGML (2.0 - the derivation of HTML's tag subset is documented, but a vocabulary flips no impossibility and the load-bearing anchor tag is the documented exception to its influence) and SGML the standard (1.5 - specification-as-notation; what was consumed was the house application's subset, and the standard's own machinery entered HTML only in 1993). The chain SGML -> CERN SGML -> HTML is recorded as a partial at both links rather than as a formal mediation, because the intermediate artifact's own edge failed the gate here on the question side. The brief also did not name the expansion's two admissions: Enquire (the design's experiential basis, in the founding document's own Personal Experience section) and NeXTSTEP (the implementation's enabling environment, on the inventor's own testimony) - the documents, not the brief, set the pool.",
+ "grounding": "The founding document read in full this session (Berners-Lee, Information Management: A Proposal, CERN, 1989, revised 1990): its 'Personal Experience with Hypertext' section presents Enquire as the design's basis ('It was for these reasons that I first made a small linked information system, not realising that a term had already been coined for the idea'); HyperCard appears only as the LATER analogue ('similar to the application Hypercard produced more recently by Apple'); Nelson is engaged in the body ('few products take Ted Nelson's idea of a wide docuverse literally'); the tree systems defined against are CERNDOC, the Unix file system, VMS/HELP and uucp News; the gateway targets are uucp News, VAX/Notes, CERNDOC, file systems, the telephone book, the unix manual and databases; the COMPLETE reference list is [NEL67], [SMISH88], [CAMP88] (HAM), [ASKCYN88] (KMS), [HYP88], [RN], [NOTES], [CERNDOC], [NIST90] - Bush and Engelbart are NOT in it. From the ENQUIRE and History records: Enquire (1980, Pascal on Norsk Data, later ported to VMS) was built while Berners-Lee 'was not aware of the prior ideas about Memex, NLS and Project Xanadu'; the predecessors later served to 'confirm the legitimacy of his concept'; the biography of record calls Enquire the conceptual basis of the Web. From the inventor's own browser page and the WorldWideWeb record: 'I could do in a couple of months what would take more like a year on other platforms, because on the NeXT, a lot of it was done for me already... I just had to add hypertext (by subclassing the Text object)'; the browser was written in Objective-C on NeXTSTEP with its layout engine built around the Text class, completed after about two months (December 1990); the first server was nxoc01.cern.ch (alias info.cern.ch); the browser browsed http:, news:, ftp: and file: spaces. NeXTSTEP 1.0 shipped 18 September 1989; the NeXT Computer was introduced 12 October 1988. From the CERN SGML and HTML records: CERNDOC began in 1984 (hierarchical, CERNVM); CERN SGML was created in 1986 by Anders Berglund; Berners-Lee encountered CERNguid in October 1987 and found its hierarchy limiting; 'For HTML, Berners-Lee adopted SGML syntax and a subset of the tags specified in CERN SGML'; HTML's elements were 'strongly influenced by SGMLguid' with the hyperlink tag the express exception. Dates: Gopher released over FTP in April 1991; WAIS released 1991 by Thinking Machines; Archie first released 10 September 1990 (Emtage, Deutsch & Heelan, McGill) and is NOT named in the proposal's gateway list. The inventor's synthesis sentence (Computing History biography): 'I just had to take the hypertext idea and connect it to the Transmission Control Protocol and domain name system ideas and - ta-da! - the World Wide Web' - recorded at both the DNS and TCP/IP verdicts, where the asymmetry between them is argued.",
+ "parent_record_note": "The parent's stored record was verified complete this session (depth 6, priority 6.0, status provisional; stored bottleneck 'Before the World Wide Web, networked hypertext did not exist as one open system', stored leap and stored prior_state all non-empty; successor NCSA Mosaic, which admitted it at expansion 199, grade 6.0). No prior rejections exist for this parent. Every evaluation's leap record carries the parent's stored prior_state and stored leap verbatim.",
+ "provenance": "Session 96, expansion 1 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground at ~47s with the MiniLM embedder; the graph file was read back to confirm stage 'resolved', 18 distinct, 0 matched, the empty judge queue and the 2 dropped candidates before verdicts). Resolve: 20 raw -> 18 distinct, 0 matched existing, 0 auto-merges, judge queue 0, dropped 2, prefiltered 0. No judge pairs were queued, so no judgments were applied; recorded so the absence is a fact of the record. The verdicts builder's count check passed (18 evaluations == 18 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors, both NEW: NeXTSTEP 5.5, Enquire 5.0; 1 mediated rejection, Objective-C via NeXTSTEP; fail-closed partials: Nelson 2.0, CERN SGML 2.0, SGML 1.5, DNS 1.5, the NeXT Computer 1.5, HyperCard 1.0, KMS 1.0, CERNDOC 1.0, CERN 1.0, HAM 0.5, FTP 0.5; plain rejections at 0.0: Memex, NLS, Archie, TCP/IP), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 18, survivors 2, created 2, linked 0, rejected 16, mediated rejections 1). The two created nodes were spot-checked after apply: enquire-berners-lee-1980-1980 and nextstep-next-1989-1989, both depth 7, priorities 5.0/5.5, status provisional, stored bottleneck/leap/prior_state all non-empty. Verification applied from work/verification_world-wide-web-berners-lee-1991-1991.json (both edges provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 200's sync_commit = 810e8eb3. Rendered with --out run-01/index.html (324 nodes / 418 edges) before syncing, per the session-91 render lesson. This record's own sync_commit rides the sync that carries it.",
+ "scout": {
+  "builder": "run-01/work/build_scout_www.py",
+  "raw_filings": 20,
+  "distinct_names_intended": 20,
+  "per_lens": {
+   "L2": 1,
+   "L3": 4,
+   "L4": 1,
+   "L6": 2,
+   "L7": 3,
+   "L9": 1,
+   "L12": 1,
+   "L13": 1,
+   "L16": 3,
+   "L19": 1,
+   "L21": 1,
+   "L22": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_world-wide-web-berners-lee-1991-1991.json",
+  "dry_or_shortfall_lenses": [
+   "L1 (Shortfall: the parent's incorporated components are its own three mechanisms - the URL, HTTP and HTML - which are the parent's leap, not predecessors; components of a leap are not leaps.)",
+   "L2 (1 filing: Enquire, the single documented ancestor the parent's design modifies.)",
+   "L3 (4 filings: the two anticipations, Memex and NLS, and the proposal's reference-list shelf members with systems or models behind them, KMS and HAM; the shelf's pure documents - the Hypertext '88 proceedings and Dexter-model paper [SMISH88], the ACM hypertext survey [RN], the NoteCards documentation [NOTES], the CERNDOC manual itself - ride in the shelf members' verdicts and the scope note rather than as separate filings.)",
+   "L4 (1 filing: Nelson's docuverse posing; the problem itself, CERN's information loss, is posed by the parent's own founding document and is its stored bottleneck.)",
+   "L5 (Dry-with-finding: the obstruction diagnosis - trees and keyword systems cannot model an evolving web of information - is the 1989 proposal's own argument, not a consumed artifact.)",
+   "L6 (2 filings: CERNDOC, the home incumbent; Gopher, filed for the year bound. VMS/HELP and uucp News, the proposal's other tree/news systems, stand in CERNDOC's class and are heard in its verdict.)",
+   "L7 (3 filings: HyperCard, the compared analogue; Archie, the adjacent discovery service; WAIS, filed for the year bound.)",
+   "L8 (Dry: the parent consumes no dataset; the data it planned to gateway is heard at L6 as the incumbent's content.)",
+   "L9 (1 filing: the NeXT Computer, the development and first-server machine.)",
+   "L10 (Dry: no material dependency.)",
+   "L11 (Dry-with-finding: no recipe or process is consumed; the client/server split and the gateway method are the parent's own design.)",
+   "L12 (1 filing: NeXTSTEP, the development environment the first implementation is documented as built inside.)",
+   "L13 (1 filing: Objective-C, the implementation language, heard as arriving inside the L12 platform.)",
+   "L14 (Dry-with-finding: the equipment wielded is the NeXT Computer, filed at L9.)",
+   "L15 (Dry: no hosted service is consumed; the Internet services of the moment, FTP and news, are heard at L16 as protocol surfaces.)",
+   "L16 (3 filings: CERN SGML, the house format the parent's format layer derives from; FTP, a protocol surface the first browser spoke; DNS, the naming layer inside every address.)",
+   "L17 (Dry-with-finding: no metric or benchmark registered the parent in advance; Archie, the era's discovery service, is heard at L7.)",
+   "L18 (Dry: no observation instrument.)",
+   "L19 (1 filing: SGML, imported from the document-processing field as the standard behind the house application filed at L16.)",
+   "L20 (Dry-with-finding: the maker is the parent's own producer - self-carriage, not filed as a person; what he carried is filed at L2.)",
+   "L21 (1 filing: CERN, the producing institution; funding is not inside the artifact, and its acts run through the parent itself.)",
+   "L22 (1 filing: TCP/IP, the era's internetwork condition, filed on the inventor's own synthesis sentence so the gate, not the scout's silence, decides it.)",
+   "L23 (Dry: no forward-agenda document exists for the parent separate from its own proposals, which are inside the node's identity.)",
+   "Scope (the deliberate non-filings): the parent's own components (URL/HTTP/HTML - its leap); its own founding documents (the 1989/1990 proposals - inside the node's stored identity); makers as persons; Guide, NoteCards and Intermedia (no documented contact with the design - the Hypertext '88 shelf documents ride in the scope note); VAX/Notes and uucp News as separate filings (CERNDOC's class, heard in its verdict); the CERN public-domain release (30 April 1993 - a successor act, postdating even the parent's children; not a predecessor at a 1991 parent)."
+  ]
+ },
+ "resolution": {
+  "raw": 20,
+  "distinct": 18,
+  "matched_existing": 0,
+  "auto_merges": 0,
+  "judge_queue": 0,
+  "dropped": 2,
+  "matched_ids": [],
+  "identity_note": "No judge pairs were queued and no merges occurred: every filing was a genuinely new identity to the graph (this parent's lineage - hypertext systems, CERN documentation infrastructure, the NeXT platform - had never been scouted before; the graph's existing web nodes are the parent and its successors). The two dropped filings were removed by the year bound before identity matching could matter."
+ },
+ "judgments": "No judge pairs were queued at this parent; no judgments were applied. Recorded so the absence is a fact of the record, not an omission.",
+ "calendar_dropped_at_resolve": [
+  "Gopher (University of Minnesota, 1991) - dropped by the resolver's year bound (dated the parent's own year, 1991; released over FTP in April 1991, as the parent's first public system was being announced). Filed deliberately with its documented year: a parallel answer to the same dissatisfaction, not a consumed input - the parent's design predates it (the 1989 proposal, the December 1990 implementation), so even absent the year bound its hearing would have been the parallel-development discrimination, as at expansion 199 where it was a fail-closed partial AT Mosaic on the same facts. Not re-dated.",
+  "WAIS (Thinking Machines, 1991) - dropped by the resolver's year bound (dated the parent's own year, 1991). Filed deliberately: the era's other networked-information system, a full-text search service over Z39.50 - adjacent, parallel, and unconsumed by the parent's documents; its hearing at expansion 199 (0.0 AT Mosaic) states the discrimination. Not re-dated."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_world-wide-web-berners-lee-1991-1991.json",
+  "builder": "run-01/work/build_verdicts_www.py",
+  "evaluations": 18,
+  "survivors": [
+   "Enquire (Berners-Lee, 1980) - NEW node enquire-berners-lee-1980-1980, dry-run score 5.0, provisional. The ancestor the parent modified: the founding document's own Personal Experience section presents it as the design's experiential basis, its screen is the proposal's Figure 2, an Enquire database is the proposal's first specific application, and the biography of record calls it the conceptual basis of the Web. Self-carriage scored on the documents (the TRPO/AHC pattern), with the self-carriage attack answered head-on in the verification record: Enquire is the parent's design basis, not its object (the expansion-195 discrimination).",
+   "NeXTSTEP (NeXT, 1989) - NEW node nextstep-next-1989-1989, dry-run score 5.5, provisional. The specific enabling step for the implementation, on the inventor's own testimony: two months against 'more like a year' on other platforms, the layout engine a subclassed NeXTSTEP Text object, the menus Interface Builder's - the CUDA pattern. Both mediation attacks (via the hardware, via the language) were run in the verification record and failed on the documents: the dependence is on the environment's components."
+  ],
+  "notable_rejections": [
+   "Hypertext and the docuverse (Nelson, 1965) - FAIL-CLOSED PARTIAL (2.0). THE EXPANSION'S MOST CONTESTABLE NEGATIVE. The documentary contact is real and in the founding document itself - the coinage sentence, the docuverse passage ('few products take Ted Nelson's idea of a wide docuverse literally'), the [NEL67] citation. But the channel is framing and legitimation: remove Nelson and the design, drawn from Enquire's worked model and CERN's information-loss problem, is unchanged in every mechanism, and the machinery Nelson actually specified (two-way links, transclusion, versioning) is what the parent defined itself against in order to scale. The re-hearing path is stated in the verdict: a document showing the design's specifics, not its vocabulary, taken from Nelson's.",
+   "CERN SGML (SGMLguid) (Berglund, 1986) - FAIL-CLOSED PARTIAL (2.0). The derivation of the format layer is documented ('adopted SGML syntax and a subset of the tags specified in CERN SGML'; the author had encountered CERNguid in October 1987), but a tag vocabulary flips no impossibility (Q1 fail), the hyperlink tag - the one load-bearing element - is expressly the exception to the SGMLguid influence, and the derivation runs into a component of the parent's own leap (HTML), not into the leap itself. The strongest format-lineage claim this parent will ever hear, flagged contestable.",
+   "SGML (ISO 8879, 1986) - FAIL-CLOSED PARTIAL (1.5): specification-as-notation at one further remove - the consumed form was the house application's subset; the standard's machinery (DTDs) entered HTML only in 1993 via the Connolly draft, after this parent. The chain is recorded as a partial at both links rather than as a formal mediation via CERN SGML, since the intermediate artifact's edge failed the gate here on the question side.",
+   "Domain Name System (Mockapetris, 1983) - FAIL-CLOSED PARTIAL (1.5): the inventor's synthesis sentence names it, and DNS names sit inside the parent's own artifact (every URL carries one - info.cern.ch, nxoc01.cern.ch) - but the parent's invention is the URL that generalized the host name into a document address; DNS is the existing namespace it rode on, as it was for every contemporary system. Recorded with the asymmetry against TCP/IP argued explicitly in both verdicts.",
+   "TCP/IP (Cerf & Kahn, 1974) - PLAIN REJECTION (0.0): the era substrate. The founding proposal never specifies a transport (its requirements are network-generic), and the design is transport-agnostic on its own documents. The inventor's synthesis sentence, which names TCP together with DNS, is the standing attack surface and is recorded in the verdict: DNS names appear inside the artifact's own addresses, the transport appears nowhere in the artifact.",
+   "Memex (Bush, 1945) and oN-Line System (NLS) (Engelbart, 1968) - PLAIN REJECTIONS (0.0): anticipation and legitimation without a junction. The documentary record is explicit that Berners-Lee built Enquire in 1980 unaware of Bush, Engelbart and Nelson, that the predecessors later served to 'confirm the legitimacy of his concept', and that neither is cited in the proposal's complete apparatus. A field's founding vision and founding demonstration are not thereby enablers of a system built in documented independence of them.",
+   "Objective-C (Cox, 1984) - REJECTED mediated_via NeXTSTEP (NeXT, 1989) (1.0): consumption is documented (the browser was written in it), but the language arrived as the platform's language, chosen when the platform was chosen; every documented dependence is on the platform's components expressed in it. Expected to be rediscovered when NeXTSTEP is expanded.",
+   "The NeXT Computer (NeXT, 1988) - FAIL-CLOSED PARTIAL (1.5): the admitted environment's vehicle and the first server's body; the documented dependence is on the software layer. HyperCard (Apple, 1987) - FAIL-CLOSED PARTIAL (1.0): the proposal's own comparison runs from the earlier Enquire to the later analogue - consumed-vs-compared. KMS (1988) - FAIL-CLOSED PARTIAL (1.0): the citation shelf's strongest member, [ASKCYN88] with no mechanism in the body. HAM (1988) - FAIL-CLOSED PARTIAL (0.5): the shelf's model entry, [CAMP88]. CERNDOC (CERN, 1984) - FAIL-CLOSED PARTIAL (1.0): incumbent, store and gateway target - content and problem-face, not mechanism; VAX/Notes and uucp News heard in its verdict as the same class. CERN (1954) - FAIL-CLOSED PARTIAL (1.0): the producer institution, whose artifact IS the parent (the NCSA-at-expansion-199 pattern); Sendall's 'vague but exciting' approval and Cailliau's 1990 joint proposal ride inside the verdict. FTP (RFC 959, 1985) - FAIL-CLOSED PARTIAL (0.5): a browsed protocol surface of the first browser - consumed-vs-enabling, the Gopher-at-expansion-199 pattern. Archie (1990) - PLAIN REJECTION (0.0): no documented contact; the proposal's gateway list omits it."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_world-wide-web-berners-lee-1991-1991.json",
+  "outcomes": {
+   "enquire-berners-lee-1980-1980": "provisional",
+   "nextstep-next-1989-1989": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Enquire: the self-carriage attack (the parent's-object discrimination of expansion 195) fails - Enquire is the design basis, not the object specified; the literature attack fails on the proposal's argument structure (its evidence is the Enquire screen and a decade of use); necessity was scored partial honestly. NeXTSTEP: the mediation attacks via the hardware and via Objective-C both fail on the documents (the dependence is on the environment's components - the subclassed Text class, Interface Builder); the substitutability attack is answered by the Line Mode Browser control case (the portable client actually built in the same months is a teletype-mode program, not an editor); the edge is scoped to the founding implementation's form and timing, as the CUDA edge was scoped at its parent."
+ },
+ "totals_after": {
+  "nodes": 324,
+  "edges": 418,
+  "budget": "324/2000",
+  "expansions_done": 201,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 66,
+   "6": 49,
+   "7": 34,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 307,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "the-jscript-language-specification-version-0-1-welland-smith-1996",
+  "nextstep-next-1989-1989",
+  "neural-network-based-language-models-for-highly-inflective-l-2009",
+  "pushshift-reddit-crawl-baumgartner-2015-2015",
+  "state-application-framework-2001"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
