@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T12:03:49+00:00",
-  "expansions_done": 212,
-  "raw_candidates_seen": 8926,
+  "updated_at": "2026-11-28T12:11:45+00:00",
+  "expansions_done": 213,
+  "raw_candidates_seen": 8933,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35781,6 +35781,30 @@
     "name": "NIST-administered DARPA benchmark evaluations (Pallett, 1988)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T12:03:28+00:00"
+   },
+   {
+    "parent_id": "cpl-barron-et-al-1963-1963",
+    "name": "Atlas (Ferranti, 1962)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:11:22+00:00"
+   },
+   {
+    "parent_id": "cpl-barron-et-al-1963-1963",
+    "name": "EDSAC 2 (Wilkes et al., 1958)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:11:22+00:00"
+   },
+   {
+    "parent_id": "cpl-barron-et-al-1963-1963",
+    "name": "FORTRAN (Backus et al., 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:11:22+00:00"
+   },
+   {
+    "parent_id": "cpl-barron-et-al-1963-1963",
+    "name": "Cambridge Mathematical Laboratory & University of London Computer Unit (joint project, 1962)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:11:22+00:00"
    }
   ]
  },
@@ -38174,6 +38198,10 @@
     {
      "title": "McCarthy, Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I (CACM 3(4), April 1960) — annotated text, Fermat's Library",
      "url": "https://www.fermatslibrary.com/s/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine"
+    },
+    {
+     "title": "Richards, 'How BCPL evolved from CPL' (2011), secs.3 and 3.2",
+     "url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
     }
    ],
    "verification": {
@@ -38273,6 +38301,10 @@
     {
      "title": "Ole-Johan Dahl, The Birth of Object Orientation: the Simula Languages (2001)",
      "url": "https://www.mn.uio.no/tjenester/it/hjelp/programvare/simula/bibliography/history/birth-of-s.pdf"
+    },
+    {
+     "title": "Barron, Buxton, Hartley, Nixon & Strachey, 'The main features of CPL', Computer Journal 6(2), 1963, sec.1; Richards, 'How BCPL evolved from CPL' (2011), sec.3",
+     "url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
     }
    ],
    "verification": {
@@ -45779,7 +45811,7 @@
    "prior_state": "ALGOL 60 (1960) as the reference design; systems programming in assembler or FORTRAN; no joint Cambridge/London language project.",
    "status": "provisional",
    "depth": 12,
-   "expanded": false,
+   "expanded": true,
    "priority": 6.0,
    "sources": [
     {
@@ -45881,6 +45913,35 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T12:03:28+00:00"
+  },
+  "strachey-wilkes-some-proposals-for-improving-the-efficiency-1961": {
+   "id": "strachey-wilkes-some-proposals-for-improving-the-efficiency-1961",
+   "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+   "aliases": [],
+   "year": 1961,
+   "domain": "programming languages",
+   "type": "method",
+   "definition": "Strachey and Wilkes's 1961 paper (Comm. ACM 4(11):488-491; also Cambridge Technical Memorandum 61/5) proposing concrete repairs to ALGOL 60's inefficiencies - among them declaring recursion explicitly ('recursive procedure') and Wilkes's optional-information device - published into the open ALGOL debate a year before the CPL project formed.",
+   "bottleneck": "Before Strachey & Wilkes 1961, ALGOL 60's inefficiencies were widely felt but no concrete, published repair programme existed that a successor language project could adopt as its design brief.",
+   "leap": "The 1961 paper converted dissatisfaction with ALGOL 60's efficiency into a specific, citable set of repairs - explicit recursion declaration, optional information - published into the open ALGOL debate a year before the CPL project formed; Richards opens CPL's history with it: 'The first ideas for CPL appeared in a paper by Strachey and Wilkes in 1961.'",
+   "prior_state": "ALGOL 60 as published in 1960: call by name the subtle default, no way to declare recursion or its absence, object-program efficiency left to implementers.",
+   "status": "provisional",
+   "depth": 13,
+   "expanded": false,
+   "priority": 3.0,
+   "sources": [
+    {
+     "title": "Richards, 'How BCPL evolved from CPL' (2011), sec.1 and ref [1]; Richards, 'Development of CPL', Strachey100 slides (2016); Strachey & Wilkes, CACM 4(11), 1961",
+     "url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial verification, expansion 213 (CPL, 1963). Outcome provisional - this is the expansion's most contestable admission, and the attacks are recorded at full strength. (1) Q1 attack: ALGOL 60's inefficiency was a live public debate in 1961, not a silence this paper alone broke - Dijkstra's MR34 (Oct 1961) engages the proposals as one position among several in the ALGOL-maintenance discussion, and Wilkes's optional-information device had its own memorandum (TM 61/2). The attack dents uniqueness but not the pair-specific claim: Richards's genealogy singles this paper out as where 'the first ideas for CPL appeared', and CPL's headline recursive/non-recursive function distinction is one of its named proposals. (2) Multiples test on Q3: contemporaneous ALGOL repair proposals existed, so necessity was already scored partial in the verdicts and stays partial; the node does not stand on necessity grounds. (3) Date/direction: CACM 4(11):488-491, Nov 1961 (also Cambridge TM 61/5), predating the CPL project's formation in early 1962; influence runs from the two authors into the project one of them (Strachey) then architected - direction is the record's own. (4) Mediation attack, two forms. (a) ALGOL 60 as mediator: fails - the proposals are additions to ALGOL, not a distillation of it, and ALGOL 60 is admitted at this same parent on its own wholesale channel; the paper reaches CPL as its founding brief, not through the language it criticizes. (b) The embryo attack (the strongest): this is the parent's own designers' prior document, and the run has failed such filings closed (OOPC at exp-205, the CPL compiler subset at exp-211). It is answered, not dismissed: the subset had no artifact existence separate from the parent, while this paper is published, citable, addressed to the ALGOL community rather than to the project, and predates the project's existence - the Mikolov-thesis shape (exp-206), a separable finished artifact consumed at named points. The answer is a judgment call on a documented distinction, which is exactly why the node is provisional and first in line for rehearing: a CPL project document showing the 1962 design brief was written independently of the 1961 proposals kills this edge. The two LINK survivors of this expansion (ALGOL 60, lambda calculus) are NOT entered here: both carry substantive verification records from their own admissions, and overwriting them would destroy those records (the exp-210 deviation); their hearings at this parent live in full on the edges' verdicts.",
+    "at": "2026-11-28T12:11:45+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T12:11:22+00:00"
   }
  },
  "edges": [
@@ -89482,6 +89543,297 @@
     "counterfactual": "Remove RM and the CSR design loses its form and its foil at once: there is no worked shared-benchmark corpus to scale, no de facto standard whose 1000-word limit poses the design problem, no RM vocabulary for the dictionary's cross-task bridge, and no Pallett-carried evaluation practice on the committee. The mediation attack through ATIS was run and fails on the documents: ATIS is the end-to-end SLS variant the corpus supplements, while the CSR-specific form - read speech, perplexity-banded test sets, the benchmark line running since 1987 - is RM's, named as such by the design paper, the dry-run report and the session introduction alike. The correction relation is satisfied: CSR extracts RM's worked object (the administered shared corpus as an artifact form) and builds on it; what it defines itself against is RM's content limits, not the form.",
     "mediator": null,
     "evidence": "Direct: Paul & Baker 1992 (RM as ref. [15], the contrast passage, the dictionary bridge); Pallett 1992 ('intended to supplant the RM corpora'); Weinstein 1992 (the de-facto-standard passage)."
+   }
+  },
+  {
+   "predecessor_id": "algol-60-1960",
+   "successor_id": "cpl-barron-et-al-1963-1963",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The parent's own bottleneck record states the impossibility: a general high-level language for both scientific and systems programming existed only as ALGOL 60, judged to need fundamental extension; CPL removes it by extension from this base - 'CPL is to a large extent based on ALGOL 60 (a knowledge of which is assumed), and we readily acknowledge our debt to the authors of the ALGOL Report'.",
+     "source": "Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963 sec.1",
+     "falsification": "Dies if a CPL design document shows the design derived principally from a different base language."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The extension from this base unblocked a whole design space: one language for numerical and non-numerical problems, process control and data processing, with low-level contact retained - the paper's stated object.",
+     "source": "Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963 sec.1",
+     "falsification": "Dies if CPL's added scope over ALGOL 60 proves to be a single application rather than a general widening."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Necessity: the project was defined as this extension - Richards: 'The designers of CPL were strongly influenced by ALGOL 60 but wished to extend it to make it more efficient and usable for a wider variety of applications.' No alternative base is named in any design document.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3",
+     "falsification": "Dies if a contemporary account shows the team seriously based CPL on another language."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Efficiency was an explicit aim of the extension, but no order-of-magnitude cost collapse is documented for ALGOL 60 in relation to CPL.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3",
+     "falsification": "Upgrades if a CPL document quantifies an efficiency gain attributable to the ALGOL base itself."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability channel: ALGOL 60 made nothing observable for CPL.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "ALGOL 60 supplied the explanatory model CPL designed within: Barron et al. credit the Report with having 'concentrated attention on, and to a large extent solved, the problems of unambiguously defining a computational process or algorithm' - the definitional discipline CPL's coherence principles extend.",
+     "source": "Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963 sec.1",
+     "falsification": "Dies if CPL's design principles are shown to derive from a different definitional tradition."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Composability: block structure, procedures and conditional expressions are the standard apparatus CPL contains and builds its richer definition forms on.",
+     "source": "Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963 sec.1-2",
+     "falsification": "Dies if CPL's structures prove to be independently re-invented rather than ALGOL's concepts contained."
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "ALGOL 60 had reach beyond numerics already; in relation to this parent the reach is real but inherited rather than newly unlocked.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3",
+     "falsification": "n/a"
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The Report's definitional discipline plausibly shortened CPL's design search; the evidence for this pair is thin.",
+     "source": "Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963 sec.1",
+     "falsification": "n/a"
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "By 1962 ALGOL 60 was the reference design in the community CPL worked in - the parent's stored prior_state names it 'the reference design' - displacing FORTRAN as the design baseline.",
+     "source": "CPL node record (prior_state); Richards, 'How BCPL evolved from CPL' (2011) sec.3",
+     "falsification": "Dies if the Cambridge/London record shows FORTRAN as the operative design baseline."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality: trunk. Richards's genealogy and the parent paper both open CPL's ancestry with ALGOL 60 alone.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3; Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963 sec.1",
+     "falsification": "n/a"
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Irreversibility: once block structure and lexical scope were the baseline, language design did not go back; CPL itself is one of the steps that fixed it.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3",
+     "falsification": "n/a"
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:11:22+00:00",
+   "leap": {
+    "prior_state": "ALGOL 60 (1960) as the reference design; systems programming in assembler or FORTRAN; no joint Cambridge/London language project.",
+    "jump": "CPL extended ALGOL 60 into a general, logically coherent language for all types of problem, numerical and non-numerical, oriented towards actual large computers: the Lvalue/Rvalue discipline, first-class functions, modes of definition by value, reference and substitution, and types deduced from a small set of general principles rather than ad hoc rules.",
+    "date": 1963
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove ALGOL 60 and CPL has no base: its paper assumes knowledge of ALGOL 60, contains its concepts, and acknowledges debt to the Report's authors; the project was constituted as ALGOL's extension to wider application.",
+    "mediator": null,
+    "evidence": "Mediation check: Strachey & Wilkes 1961 is a proposal to modify ALGOL 60, not a carrier of it - CPL contains ALGOL 60's concepts wholesale (block structure, procedures, conditionals, recursion, parameter modes), far beyond the 1961 proposals' subset, so no intermediate absorbs this channel. Discharges the exp-211 mediation (ALGOL 60 mediated via CPL at BCPL) on this parent's documents."
+   }
+  },
+  {
+   "predecessor_id": "lambda-calculus-1936",
+   "successor_id": "cpl-barron-et-al-1963-1963",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The scope subtleties (what a declaration binds, when recursion needs rec, what own variables mean) were resolvable ad hoc; the lambda reading gave the principled resolution - Richards works three examples in detail. Principled, but the problems were not strictly unsolvable before: partial.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3.2",
+     "falsification": "Upgrades if a CPL document shows a design question that had blocked the project until the lambda reading resolved it."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Generativity: the correspondence unified declaration modes and parameter modes across the whole language - value, reference and substitution available uniformly for variables and for function parameters - a design space opened, not one problem solved.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) secs.3.1-3.2",
+     "falsification": "Dies if the declaration modes are shown to have been designed independently and the lambda correspondence applied only as after-the-fact commentary."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "CPL could have been designed without it - the ALGOL base suffices for a language - but this language's stored leap claims logical coherence from general principles, and Richards names the lambda application as one of the two 'probably more significant' influences on exactly that coherence. Not a clear fail; not the only path: partial.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3",
+     "falsification": "Downgrades to fail if the Working Papers show the lambda-derived decisions were later removed as inessential (call by substitution was removed in 1966 as expensive - recorded, and it caps this verdict at partial)."
+    },
+    "Q4": {
+     "verdict": "fail",
+     "evidence": "No cost collapse: the lambda apparatus cost implementation effort (call by substitution 'was expensive to implement and caused semantic problems').",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3.2",
+     "falsification": "n/a"
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability channel.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Explanatory model: Richards sec.3.2 is a catalogue of design decisions derived from the lambda reading - the rec requirement explained via the Y combinator correspondence, own variables replaced by in declarations via a lambda expansion, call by substitution included because it resembles lambda-evaluation.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3.2",
+     "falsification": "Dies if Landin's role on the design team proves ceremonial rather than design-active."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The lambda notation became a shared semantic interface for language designers generally; at this parent it functions as internal design apparatus, so partial for the pair.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3.2",
+     "falsification": "n/a"
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "Cross-domain reach: a system from mathematical logic imported into programming-language design, where it unlocked deliberate semantic design - the import is the channel.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3.2",
+     "falsification": "n/a"
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "No iteration-speed channel documented for this pair.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "It displaced no incumbent default at CPL; it informed the design rather than replacing a standard path.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality: Richards names 'the use of Strachey's left and right hand values, and the application of lambda-calculus to help resolve subtleties concerning the scope of identifiers' as 'probably more significant' than the design principles themselves.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3",
+     "falsification": "n/a"
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once scope and binding are read through the lambda correspondence, language design does not go back - but on this pair's documents the permanence is argued, not demonstrated: partial.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.3.2",
+     "falsification": "n/a"
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:11:22+00:00",
+   "leap": {
+    "prior_state": "ALGOL 60 (1960) as the reference design; systems programming in assembler or FORTRAN; no joint Cambridge/London language project.",
+    "jump": "CPL extended ALGOL 60 into a general, logically coherent language for all types of problem, numerical and non-numerical, oriented towards actual large computers: the Lvalue/Rvalue discipline, first-class functions, modes of definition by value, reference and substitution, and types deduced from a small set of general principles rather than ad hoc rules.",
+    "date": 1963
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Landin's lambda application and CPL's declaration-mode system loses its stated rationale: Richards derives the value/reference/substitution correspondence between declarations and parameters, the explanation of the rec requirement, and the in declarations replacing ALGOL's own variables from the lambda reading, by name.",
+    "mediator": null,
+    "evidence": "Mediation check: Landin's published correspondence paper is 1965, after the parent, but the candidate is the calculus itself (1936) and the carrier is Landin in the room as a design-team member - knowledge that lives in a person is a channel (K10 x R10). ALGOL 60 is the object the lambda analysis clarified, not a carrier of the calculus: the design effects Richards names are CPL decisions (declaration modes, rec, in, call by substitution), not ALGOL features. Discharges the exp-211 mediation (lambda calculus mediated via CPL at BCPL) on this parent's documents."
+   }
+  },
+  {
+   "predecessor_id": "strachey-wilkes-some-proposals-for-improving-the-efficiency-1961",
+   "successor_id": "cpl-barron-et-al-1963-1963",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Problem posed in solvable form: before this paper the efficiency repairs had no formulated shape; it gave the specific shape (declare recursion explicitly - 'Procedure shall be recursive if introduced by the declarator recursive procedure' - and optional information) that CPL's design then executed, including CPL's headline distinction between recursive and non-recursive functions.",
+     "source": "Strachey & Wilkes, CACM 4(11), 1961, as quoted in Dijkstra MR34 (1961); Richards, 'Development of CPL', Strachey100 slides (CPL features list)",
+     "falsification": "Dies if the CPL design documents show the efficiency brief and the recursion distinction arrived from a different source."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The programme generalizes into a design discipline (only efficiently implementable features), but the paper itself is one repair list for one language: partial.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.1; Strachey100 slides (CPL design principles)",
+     "falsification": "n/a"
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is genuinely contestable: Strachey held these views personally and would have brought them to the 1962 project with or without the paper; the paper is their documented, citable form. Partial, honestly - the admission rests on Q1 plus directness, not on necessity.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.1",
+     "falsification": "Downgrades if a project document shows the 1962 design began from a brief written independently of the 1961 proposals."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The paper's whole concern is object-program efficiency ('It is in this respect that an automatic programming system will ultimately be judged'), but no measured cost collapse is documented: partial.",
+     "source": "Strachey & Wilkes TM 61/5 as quoted in Dijkstra MR34",
+     "falsification": "n/a"
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "No measurability channel.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "It analyzed why ALGOL 60 was inefficient (its parameter and procedure mechanisms), a diagnosis CPL's design answers; the fuller explanatory apparatus is the parent's own: partial.",
+     "source": "Dijkstra MR34 discussion of the proposals",
+     "falsification": "n/a"
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "It created no standard or interface others built on; its proposals were absorbed into one successor design.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Its reach is inside the ALGOL lineage.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "A published brief plausibly shortened the joint project's design search from early 1962; thin evidence for the pair: partial.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.1",
+     "falsification": "n/a"
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "It displaced no incumbent default itself.",
+     "source": "n/a",
+     "falsification": "n/a"
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Lineage centrality: Richards's genealogy opens CPL's history with this paper ('The first ideas for CPL appeared in a paper by Strachey and Wilkes in 1961'), and Dijkstra's MR34 engages it as a public position in the ALGOL debate - a document the field read.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) sec.1; Dijkstra MR34 (1961)",
+     "falsification": "n/a"
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The efficiency-first design discipline it stated became permanent in this lineage (it is BCPL's and C's inheritance), but permanence is argued from the lineage, not shown at this pair: partial.",
+     "source": "Richards, 'How BCPL evolved from CPL' (2011) secs.1, 9",
+     "falsification": "n/a"
+    }
+   },
+   "score": 3.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:11:22+00:00",
+   "leap": {
+    "prior_state": "ALGOL 60 (1960) as the reference design; systems programming in assembler or FORTRAN; no joint Cambridge/London language project.",
+    "jump": "CPL extended ALGOL 60 into a general, logically coherent language for all types of problem, numerical and non-numerical, oriented towards actual large computers: the Lvalue/Rvalue discipline, first-class functions, modes of definition by value, reference and substitution, and types deduced from a small set of general principles rather than ad hoc rules.",
+    "date": 1963
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 1961 paper and the CPL project loses its documented founding brief: Richards dates CPL's first ideas to it, and the project's adopted principles - extend ALGOL 60 including the good features, remove or modify the features hard to implement efficiently, include only features that could be implemented efficiently - are its programme executed.",
+    "mediator": null,
+    "evidence": "Mediation check: ALGOL 60 is the paper's object, not its carrier - the proposals are additions to ALGOL, and they reach CPL directly as the brief its own authors executed. Embryo attack considered: unlike the CPL compiler subset at exp-211 (the parent's informal first form, no separate artifact existence), this paper is published (CACM 4(11):488-491; Cambridge TM 61/5), citable, addressed to the ALGOL community, and predates the CPL project's formation - the Mikolov-thesis shape (exp-206): a separable, deposited, cited finished artifact consumed at named points. The admission is this expansion's most contestable and is flagged for rehearing in the verification record."
    }
   }
  ],
@@ -396627,6 +396979,375 @@
       }
      },
      "similarity": 0.8894,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "cpl-barron-et-al-1963-1963": {
+   "raw_candidates": [
+    {
+     "causal_claim": "ALGOL 60 directly enabled CPL's leap because CPL is, in its designers' own words, 'to a large extent based on ALGOL 60' and 'contains the concepts of ALGOL 60': Barron et al. 1963 'readily acknowledge our debt to the authors of the ALGOL Report', and Richards records the designers were 'strongly influenced by ALGOL 60 but wished to extend it to make it more efficient and usable for a wider variety of applications' - CPL is the executed extension of this single direct precursor.",
+     "definition": "The algorithmic language defined by the 1960 ALGOL Report (Naur ed.): block structure, lexical scope, recursive procedures, conditional expressions and call by name - the reference design every European language project of the early 1960s extended or reacted against.",
+     "domain": "programming languages",
+     "lens": "L2",
+     "name": "ALGOL 60",
+     "source_title": "Barron, Buxton, Hartley, Nixon & Strachey, 'The main features of CPL', Computer Journal 6(2), 1963, sec.1; Richards, 'How BCPL evolved from CPL' (2011), sec.3",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+     "type": "method",
+     "year": 1960
+    },
+    {
+     "causal_claim": "Lambda calculus directly enabled CPL's leap through a named member of its design team: Richards records that 'the application of lambda-calculus to help resolve subtleties concerning the scope of identifiers' was among the most significant influences on CPL's design, that Peter Landin 'was a member of the CPL design team and his use of lambda-calculus affected the design of the language', and names the design effects - the correspondence between declaration modes (value, reference, substitution) and parameter modes, the explanation of the rec requirement for recursive definitions, the in declarations replacing ALGOL's own variables, and the inclusion of call by substitution because it resembles lambda-evaluation.",
+     "definition": "Church's lambda calculus (1936): the formal system of function abstraction and application whose notation and evaluation semantics became the reference apparatus for the semantics of programming languages.",
+     "domain": "mathematical logic",
+     "lens": "L19",
+     "name": "Lambda calculus",
+     "source_title": "Richards, 'How BCPL evolved from CPL' (2011), secs.3 and 3.2",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+     "type": "theory",
+     "year": 1936
+    },
+    {
+     "causal_claim": "The 1961 proposals directly enabled CPL's leap as its founding brief: Richards opens his genealogy 'The first ideas for CPL appeared in a paper by Strachey and Wilkes in 1961', and the CPL design principles the project adopted - extend ALGOL 60 including the good features, remove or modify the features hard to implement efficiently, include only features that could be implemented efficiently - are the 1961 paper's programme executed; CPL's declarable recursion (recursive and non-recursive functions as a headline feature) is one of its named proposals taken up.",
+     "definition": "Strachey and Wilkes's 1961 paper (Comm. ACM 4(11):488-491; also Cambridge Technical Memorandum 61/5) proposing concrete repairs to ALGOL 60's inefficiencies - among them declaring recursion explicitly ('recursive procedure') and Wilkes's optional-information device - published into the open ALGOL debate a year before the CPL project formed.",
+     "domain": "programming languages",
+     "lens": "L4",
+     "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+     "source_title": "Richards, 'How BCPL evolved from CPL' (2011), sec.1 and ref [1]; Richards, 'Development of CPL', Strachey100 slides (2016); Strachey & Wilkes, CACM 4(11), 1961",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+     "type": "method",
+     "year": 1961
+    },
+    {
+     "causal_claim": "Atlas is filed as the machine CPL was implemented for: Barron et al. 1963 describe CPL as 'currently being implemented for the Titan at Cambridge and the Atlas at London University', and Richards records both universities 'independently constructed compilers running on different versions of the Ferranti Atlas computer' - the large machine whose facilities CPL was designed to let programmers exploit.",
+     "definition": "Ferranti's Atlas (first delivered 1962): the large, powerful university computer - virtual memory, extracodes - of which London ran the standard version and Cambridge a simplified version (Titan); CPL was being implemented for both.",
+     "domain": "computing machinery",
+     "lens": "L9",
+     "name": "Atlas (Ferranti, 1962)",
+     "source_title": "Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963; Richards, 'How BCPL evolved from CPL' (2011), sec.1",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+     "type": "device",
+     "year": 1962
+    },
+    {
+     "causal_claim": "EDSAC 2 is filed as the equipment wielded in the parent's production: Richards records 'Much of the early development of the Cambridge CPL compiler was done by research students using Edsac 2', and the need to transfer that work from EDSAC 2 to Atlas motivated the GPM-macro implementation approach.",
+     "definition": "Cambridge's EDSAC 2 (operational 1958): the Mathematical Laboratory's beautifully designed but slow, small-memory machine on which research students did much of the early development of the Cambridge CPL compiler.",
+     "domain": "computing machinery",
+     "lens": "L14",
+     "name": "EDSAC 2 (Wilkes et al., 1958)",
+     "source_title": "Richards, 'How BCPL evolved from CPL' (2011), sec.1",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+     "type": "device",
+     "year": 1958
+    },
+    {
+     "causal_claim": "FORTRAN is filed as the incumbent defined-against: Richards's account of CPL's central Lvalue/Rvalue distinction opens from Fortran's convention ('In Fortran, function arguments are passed by reference'), the London CPL manual assumes readers who know 'one of the Autocodes or Fortran', and CPL was designed to serve the scientific and systems territory FORTRAN occupied - the contrast case against which CPL's parameter and declaration discipline was defined.",
+     "definition": "IBM's FORTRAN (1957): the incumbent high-level language of scientific computing, whose arguments are passed by reference - the convention Strachey's Lvalue/Rvalue terminology was coined against.",
+     "domain": "programming languages",
+     "lens": "L6",
+     "name": "FORTRAN (Backus et al., 1957)",
+     "source_title": "Richards, 'How BCPL evolved from CPL' (2011), sec.3.1; CPL Elementary Programming Manual, Edition I (London, 1965), sec.1",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+     "type": "method",
+     "year": 1957
+    },
+    {
+     "causal_claim": "The joint project directly enabled CPL as its constitutive arrangement: CPL 'was developed jointly by members of the University Mathematical Laboratory, Cambridge and the University of London Computer Unit' (Richards), the language's very name records the combination, and both institutions independently constructed compilers for their Atlas versions - the institutional vehicle without which this design does not happen in this form.",
+     "definition": "The joint undertaking of Cambridge's University Mathematical Laboratory and the University of London Computer Unit (from early 1962) that designed CPL - 'Combined' records the union - with design staff from both (Strachey, Landin, Hartley, Park, Barron at Cambridge; Buxton, Nixon at London) and independent compiler efforts at both sites.",
+     "domain": "institutions",
+     "lens": "L21",
+     "name": "Cambridge Mathematical Laboratory & University of London Computer Unit (joint project, 1962)",
+     "source_title": "Richards, 'How BCPL evolved from CPL' (2011), sec.1; Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963, sec.1",
+     "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+     "type": "institution",
+     "year": 1962
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "algol-60-1960",
+      "candidate": {
+       "causal_claim": "ALGOL 60 directly enabled CPL's leap because CPL is, in its designers' own words, 'to a large extent based on ALGOL 60' and 'contains the concepts of ALGOL 60': Barron et al. 1963 'readily acknowledge our debt to the authors of the ALGOL Report', and Richards records the designers were 'strongly influenced by ALGOL 60 but wished to extend it to make it more efficient and usable for a wider variety of applications' - CPL is the executed extension of this single direct precursor.",
+       "definition": "The algorithmic language defined by the 1960 ALGOL Report (Naur ed.): block structure, lexical scope, recursive procedures, conditional expressions and call by name - the reference design every European language project of the early 1960s extended or reacted against.",
+       "domain": "programming languages",
+       "lens": "L2",
+       "name": "ALGOL 60",
+       "source_title": "Barron, Buxton, Hartley, Nixon & Strachey, 'The main features of CPL', Computer Journal 6(2), 1963, sec.1; Richards, 'How BCPL evolved from CPL' (2011), sec.3",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+       "type": "method",
+       "year": 1960
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "ALGOL 60"
+      ],
+      "matched_node_id": "algol-60-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lambda-calculus-1936",
+      "candidate": {
+       "causal_claim": "Lambda calculus directly enabled CPL's leap through a named member of its design team: Richards records that 'the application of lambda-calculus to help resolve subtleties concerning the scope of identifiers' was among the most significant influences on CPL's design, that Peter Landin 'was a member of the CPL design team and his use of lambda-calculus affected the design of the language', and names the design effects - the correspondence between declaration modes (value, reference, substitution) and parameter modes, the explanation of the rec requirement for recursive definitions, the in declarations replacing ALGOL's own variables, and the inclusion of call by substitution because it resembles lambda-evaluation.",
+       "definition": "Church's lambda calculus (1936): the formal system of function abstraction and application whose notation and evaluation semantics became the reference apparatus for the semantics of programming languages.",
+       "domain": "mathematical logic",
+       "lens": "L19",
+       "name": "Lambda calculus",
+       "source_title": "Richards, 'How BCPL evolved from CPL' (2011), secs.3 and 3.2",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+       "type": "theory",
+       "year": 1936
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Lambda calculus"
+      ],
+      "matched_node_id": "lambda-calculus-1936",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "strachey-wilkes-some-proposals-for-improving-the-efficiency-1961",
+      "candidate": {
+       "causal_claim": "The 1961 proposals directly enabled CPL's leap as its founding brief: Richards opens his genealogy 'The first ideas for CPL appeared in a paper by Strachey and Wilkes in 1961', and the CPL design principles the project adopted - extend ALGOL 60 including the good features, remove or modify the features hard to implement efficiently, include only features that could be implemented efficiently - are the 1961 paper's programme executed; CPL's declarable recursion (recursive and non-recursive functions as a headline feature) is one of its named proposals taken up.",
+       "definition": "Strachey and Wilkes's 1961 paper (Comm. ACM 4(11):488-491; also Cambridge Technical Memorandum 61/5) proposing concrete repairs to ALGOL 60's inefficiencies - among them declaring recursion explicitly ('recursive procedure') and Wilkes's optional-information device - published into the open ALGOL debate a year before the CPL project formed.",
+       "domain": "programming languages",
+       "lens": "L4",
+       "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+       "source_title": "Richards, 'How BCPL evolved from CPL' (2011), sec.1 and ref [1]; Richards, 'Development of CPL', Strachey100 slides (2016); Strachey & Wilkes, CACM 4(11), 1961",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+       "type": "method",
+       "year": 1961
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "atlas-ferranti-1962-1962",
+      "candidate": {
+       "causal_claim": "Atlas is filed as the machine CPL was implemented for: Barron et al. 1963 describe CPL as 'currently being implemented for the Titan at Cambridge and the Atlas at London University', and Richards records both universities 'independently constructed compilers running on different versions of the Ferranti Atlas computer' - the large machine whose facilities CPL was designed to let programmers exploit.",
+       "definition": "Ferranti's Atlas (first delivered 1962): the large, powerful university computer - virtual memory, extracodes - of which London ran the standard version and Cambridge a simplified version (Titan); CPL was being implemented for both.",
+       "domain": "computing machinery",
+       "lens": "L9",
+       "name": "Atlas (Ferranti, 1962)",
+       "source_title": "Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963; Richards, 'How BCPL evolved from CPL' (2011), sec.1",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+       "type": "device",
+       "year": 1962
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Atlas (Ferranti, 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "edsac-2-wilkes-et-al-1958-1958",
+      "candidate": {
+       "causal_claim": "EDSAC 2 is filed as the equipment wielded in the parent's production: Richards records 'Much of the early development of the Cambridge CPL compiler was done by research students using Edsac 2', and the need to transfer that work from EDSAC 2 to Atlas motivated the GPM-macro implementation approach.",
+       "definition": "Cambridge's EDSAC 2 (operational 1958): the Mathematical Laboratory's beautifully designed but slow, small-memory machine on which research students did much of the early development of the Cambridge CPL compiler.",
+       "domain": "computing machinery",
+       "lens": "L14",
+       "name": "EDSAC 2 (Wilkes et al., 1958)",
+       "source_title": "Richards, 'How BCPL evolved from CPL' (2011), sec.1",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+       "type": "device",
+       "year": 1958
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "EDSAC 2 (Wilkes et al., 1958)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "fortran-backus-et-al-1957-1957",
+      "candidate": {
+       "causal_claim": "FORTRAN is filed as the incumbent defined-against: Richards's account of CPL's central Lvalue/Rvalue distinction opens from Fortran's convention ('In Fortran, function arguments are passed by reference'), the London CPL manual assumes readers who know 'one of the Autocodes or Fortran', and CPL was designed to serve the scientific and systems territory FORTRAN occupied - the contrast case against which CPL's parameter and declaration discipline was defined.",
+       "definition": "IBM's FORTRAN (1957): the incumbent high-level language of scientific computing, whose arguments are passed by reference - the convention Strachey's Lvalue/Rvalue terminology was coined against.",
+       "domain": "programming languages",
+       "lens": "L6",
+       "name": "FORTRAN (Backus et al., 1957)",
+       "source_title": "Richards, 'How BCPL evolved from CPL' (2011), sec.3.1; CPL Elementary Programming Manual, Edition I (London, 1965), sec.1",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+       "type": "method",
+       "year": 1957
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "FORTRAN (Backus et al., 1957)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cambridge-mathematical-laboratory-university-of-london-compu-1962",
+      "candidate": {
+       "causal_claim": "The joint project directly enabled CPL as its constitutive arrangement: CPL 'was developed jointly by members of the University Mathematical Laboratory, Cambridge and the University of London Computer Unit' (Richards), the language's very name records the combination, and both institutions independently constructed compilers for their Atlas versions - the institutional vehicle without which this design does not happen in this form.",
+       "definition": "The joint undertaking of Cambridge's University Mathematical Laboratory and the University of London Computer Unit (from early 1962) that designed CPL - 'Combined' records the union - with design staff from both (Strachey, Landin, Hartley, Park, Barron at Cambridge; Buxton, Nixon at London) and independent compiler efforts at both sites.",
+       "domain": "institutions",
+       "lens": "L21",
+       "name": "Cambridge Mathematical Laboratory & University of London Computer Unit (joint project, 1962)",
+       "source_title": "Richards, 'How BCPL evolved from CPL' (2011), sec.1; Barron et al., 'The main features of CPL', Computer Journal 6(2), 1963, sec.1",
+       "source_url": "https://www.cl.cam.ac.uk/~mr10/cpl2bcpl.pdf",
+       "type": "institution",
+       "year": 1962
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Cambridge Mathematical Laboratory & University of London Computer Unit (joint project, 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:2:algol-60-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 2,
+       "card": {
+        "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+        "aliases": [],
+        "year": 1961,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "Strachey and Wilkes's 1961 paper (Comm. ACM 4(11):488-491; also Cambridge Technical Memorandum 61/5) proposing concrete repairs to ALGOL 60's inefficiencies - among them declaring recursion explicitly ('recursive procedure') and Wilkes's optional-information device - published into the open ALGOL debate a year before the CPL project formed.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "algol-60-1960",
+       "card": {
+        "name": "ALGOL 60",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6298,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-cand:0:2",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 0,
+       "card": {
+        "name": "ALGOL 60",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The algorithmic language defined by the 1960 ALGOL Report (Naur ed.): block structure, lexical scope, recursive procedures, conditional expressions and call by name - the reference design every European language project of the early 1960s extended or reacted against.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 2,
+       "card": {
+        "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+        "aliases": [],
+        "year": 1961,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "Strachey and Wilkes's 1961 paper (Comm. ACM 4(11):488-491; also Cambridge Technical Memorandum 61/5) proposing concrete repairs to ALGOL 60's inefficiencies - among them declaring recursion explicitly ('recursive procedure') and Wilkes's optional-information device - published into the open ALGOL debate a year before the CPL project formed.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.703,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:2:algol-60-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 2,
+      "card": {
+       "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+       "aliases": [],
+       "year": 1961,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "Strachey and Wilkes's 1961 paper (Comm. ACM 4(11):488-491; also Cambridge Technical Memorandum 61/5) proposing concrete repairs to ALGOL 60's inefficiencies - among them declaring recursion explicitly ('recursive procedure') and Wilkes's optional-information device - published into the open ALGOL debate a year before the CPL project formed.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "algol-60-1960",
+      "card": {
+       "name": "ALGOL 60",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6298,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-cand:0:2",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 0,
+      "card": {
+       "name": "ALGOL 60",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The algorithmic language defined by the 1960 ALGOL Report (Naur ed.): block structure, lexical scope, recursive procedures, conditional expressions and call by name - the reference design every European language project of the early 1960s extended or reacted against.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 2,
+      "card": {
+       "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+       "aliases": [],
+       "year": 1961,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "Strachey and Wilkes's 1961 paper (Comm. ACM 4(11):488-491; also Cambridge Technical Memorandum 61/5) proposing concrete repairs to ALGOL 60's inefficiencies - among them declaring recursion explicitly ('recursive procedure') and Wilkes's optional-information device - published into the open ALGOL debate a year before the CPL project formed.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.703,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],

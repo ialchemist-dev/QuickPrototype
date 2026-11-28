@@ -16070,3 +16070,99 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 101 closes here (expansions 211-212). New carried hearings: the ACL/DCI's own expansion carries the Dow Jones WSJ text channel recorded as mediated at this parent; RM's own expansion carries the DARPA CSR line's earlier hearings on its own documents. New re-hearing conditions recorded this session: Penn Treebank at the WSJ corpus (a CSR document showing the annotation used), TIMIT at the WSJ corpus (a CSR collection document citing TIMIT's specification). Switchboard's year-bound drop is recorded in brief_correction - the resolver's year granularity remains a standing structural cost of the run (cf. JLS at exp-200), logged, never re-dated. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion; CPL's expansion - now the frontier head - carries the five hearings recorded as mediated via CPL at exp-211."
 }
+{
+ "ts": "2026-11-28T12:20:00+00:00",
+ "event": "expansion",
+ "session": 102,
+ "expansion": 213,
+ "parent": "cpl-barron-et-al-1963-1963",
+ "parent_name": "CPL (Barron et al., 1963)",
+ "parent_year": 1963,
+ "parent_depth": 12,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed that the five channels exp-211 recorded as mediated via CPL at the BCPL parent (ALGOL 60, lambda calculus, Atlas, EDSAC 2, Strachey & Wilkes 1961) be discharged or re-decided on CPL's own documents. All five were heard directly here: ALGOL 60 and lambda calculus ADMITTED as links, discharging the exp-211 mediations on this parent's documents; Strachey & Wilkes 1961 ADMITTED as a new node on its own merits (it was the carried hearing's fifth item and the documents made it an admission, not a re-decision of the mediation alone); Atlas and EDSAC 2 heard directly and failed closed on directness (target machine and development machine, no mechanism tied to either - the anti-PDP-7 pattern). One document-forced addition to the census: FORTRAN and the Cambridge/London joint project were filed from the same documents (the L/R terminology's contrast case; the parent's constitutive arrangement) and both failed closed. FIX-UP discharged here per house pattern: expansion 212's sync_commit = 90d053f5 (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Richards, 'How BCPL evolved from CPL', University of Cambridge Computer Laboratory (2011), read in full. Load-bearing passages: sec.1 - 'The first ideas for CPL appeared in a paper by Strachey and Wilkes[1] in 1961'; 'Both London and Cambridge Universities independently constructed compilers running on different versions of the Ferranti Atlas computer. The Cambridge machine was simplified to reduce its cost and was not usable until early in 1964'; 'Much of the early development of the Cambridge CPL compiler was done by research students using Edsac 2'. Sec.3 - 'The designers of CPL were strongly influenced by ALGOL 60 but wished to extend it to make it more efficient and usable for a wider variety of applications'; 'the use of Strachey's left and right hand values, and the application of lambda-calculus to help resolve subtleties concerning the scope of identifiers were probably more significant'. Sec.3.1 - 'In Fortran, function arguments are passed by reference' (the contrast from which Lvalue/Rvalue were coined). Sec.3.2 - 'Peter Landin wrote a paper in two parts showing how lambda-calculus could be used to clarify some of the more subtle semantic details of Algol 60. He was a member of the CPL design team and his use of lambda-calculus affected the design of the language', with the worked effects (declaration-mode correspondence, the rec requirement, in declarations replacing own variables, call by substitution - removed mid-1966 as expensive, recorded). Corroboration: Barron, Buxton, Hartley, Nixon & Strachey, 'The main features of CPL', Computer Journal 6(2) 1963, sec.1 and abstract (search-surfaced full text) - 'CPL is to a large extent based on ALGOL 60 (a knowledge of which is assumed), and we readily acknowledge our debt to the authors of the ALGOL Report (Naur, 1963)'; 'based on, and contains the concepts of, ALGOL 60'; 'not just another proposal for the extension of ALGOL 60, but has been designed from first principles'; 'being implemented for the Titan at Cambridge and the Atlas at London University'; the two machines 'identical' in features affecting the language. CPL Elementary Programming Manual, Edition I (London, 1965), sec.1 - 'It owes much to Algol 60 but it is intended to be wider in scope'; readers assumed to know 'one of the Autocodes or Fortran'. Richards, 'Development of CPL', Strachey100 slides - design principles ('Only include features that could be implemented efficiently') and the CPL feature list ('Recursive and non recursive functions', 'Modes of calling: value, ref and subst'). Dijkstra, MR34 (1961), quoting TM 61/5 and its 'recursive procedure' proposal. Strachey & Wilkes, CACM 4(11):488-491 (1961).",
+ "scout": {
+  "raw_filings": 7,
+  "matched_existing": 2,
+  "judge_queue": 2,
+  "judgments_applied": 2,
+  "judgments_different": 2,
+  "distinct": 7,
+  "note": "Document-census pattern: every channel the grounding documents name for CPL is filed exactly once (ALGOL 60, lambda calculus, Strachey & Wilkes 1961, Atlas, EDSAC 2, FORTRAN, the joint Cambridge/London project). Considered and not filed, with reasons in the dry notes: GPM (Strachey, 1965 - post-dates the parent's 1963 publication; admitted at BCPL's expansion, exp-211); the ALGOL 60 Revised Report (Naur, 1963 - the same advance as the existing ALGOL 60 node, dated the parent's own year); Titan (Cambridge's simplified Atlas - covered by the Atlas filing; not usable until early 1964); Lisp (no CPL document names a Lisp channel - Landin's documented route is the lambda notation); COBOL (an application ambition in surveys, no mechanism named); the CPL Working Papers (1966 - the parent's own later documents). Judgments: both pairs DIFFERENT (the 1961 proposals paper is not the ALGOL 60 language, as candidate or as node). MiniLM loaded - no TF-IDF fallback this expansion. Per-lens floors: the pool is a closed documentary census; 23 lens entries filed with dry/shortfall notes in dry_notes_cpl-barron-et-al-1963-1963.json rather than padded."
+ },
+ "admissions": [
+  {
+   "node": "algol-60-1960",
+   "name": "ALGOL 60",
+   "link": true,
+   "grade": 6.5,
+   "basis": "Descent in the parent's own words: 'CPL is to a large extent based on ALGOL 60... we readily acknowledge our debt to the authors of the ALGOL Report'; CPL 'contains the concepts of ALGOL 60' wholesale, and the project was constituted as its extension (Richards: the designers 'were strongly influenced by ALGOL 60 but wished to extend it'). The exp-211 mediation (ALGOL 60 mediated at BCPL via CPL) is discharged here as a direct link. Mediation check on the edge: Strachey & Wilkes 1961 is a proposal to modify ALGOL 60, not a carrier of it - what CPL contains of ALGOL goes far beyond the proposals' subset."
+  },
+  {
+   "node": "lambda-calculus-1936",
+   "name": "Lambda calculus",
+   "link": true,
+   "grade": 4.0,
+   "basis": "The cross-field import with its carrier in the room: Landin sat on the CPL design team and 'his use of lambda-calculus affected the design of the language' (Richards sec.3.2), with named design effects - the correspondence between declaration modes (value, reference, substitution) and parameter modes, the explanation of the rec requirement, in declarations replacing ALGOL's own variables, call by substitution included because it resembles lambda-evaluation. The exp-211 mediation (lambda calculus mediated at BCPL via CPL) is discharged here. Q3 scored partial: call by substitution, one of the lambda-derived features, was removed in mid-1966 as expensive - recorded in the verdicts, capping necessity."
+  },
+  {
+   "node": "strachey-wilkes-some-proposals-for-improving-the-efficiency-1961",
+   "name": "Strachey & Wilkes, 'Some proposals for improving the efficiency of ALGOL 60' (1961)",
+   "link": false,
+   "grade": 3.0,
+   "basis": "The parent's founding brief as a separable published artifact: Richards opens CPL's genealogy with it ('The first ideas for CPL appeared in a paper by Strachey and Wilkes in 1961'); the project's adopted design principles are its programme (extend ALGOL 60, remove the features hard to implement efficiently, include only efficiently implementable features), and CPL's headline recursive/non-recursive function distinction is one of its named proposals. Judged on the Mikolov-thesis shape (exp-206): published (CACM 4(11):488-491; TM 61/5), citable, addressed to the ALGOL community, and predating the CPL project's formation - unlike the CPL compiler subset (exp-211), which had no artifact existence separate from its parent. THE EXPANSION'S MOST CONTESTABLE ADMISSION; the embryo attack and the multiples context are recorded at full strength in its verification record, with a rehearing condition."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "FORTRAN (Backus et al., 1957)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. The correction relation was tested and failed: unlike Resource Management at exp-212 - a named incumbent whose worked object the child extracted and built on - CPL extracts nothing of FORTRAN's worked object; its parameter and declaration discipline derives from ALGOL 60 as clarified by Strachey's analysis. What the documents show is a foil (the by-reference convention the Lvalue/Rvalue terminology was coined against) and an assumed reader background ('one of the Autocodes or Fortran'). Defined-against with nothing extracted fails (Remote Scripting at exp-210). FORTRAN's hearings at B (exp-209) and BCPL (exp-211) scored 2.0 on thicker, design-internal channels; the variance is recorded, edge-scoped. Re-hearing condition: a CPL design document attributing a mechanism - not a contrast - to FORTRAN."
+  },
+  {
+   "name": "Atlas (Ferranti, 1962)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The implementation target, not a mechanism: CPL was designed machine-independently, Barron et al. treat the two Atlas versions as identical in every feature affecting the language, and the Cambridge machine was not usable until early 1964 - after the parent's publication. The anti-PDP-7 (exp-209): no specific mechanism is tied to this machine in any design document. Discharges the exp-211 mediation by re-decision on this parent's documents (at BCPL it arrived inside the CPL story; here it is heard at CPL itself and fails on directness, not on mediation)."
+  },
+  {
+   "name": "EDSAC 2 (Wilkes et al., 1958)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Equipment wielded in the parent's production: it hosted much of the early development of the Cambridge CPL compiler, but the design's outline is not tied to any EDSAC 2 mechanism, and the GPM approach was adopted precisely to transfer the work off it. Anti-PDP-7 pattern; parity with the IBM 7094 hearing at exp-211. Discharges the exp-211 mediation by re-decision."
+  },
+  {
+   "name": "Cambridge Mathematical Laboratory & University of London Computer Unit (joint project, 1962)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Formation and carriage: the jointness is constitutive - it is in the parent's name - but the institutions act on the parent only through the specific artifacts and people they carried (the design team's documents), each heard on its own filing here. Bell Labs parity (exps 207/209); Project MAC at exp-211."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_cpl-barron-et-al-1963-1963.json",
+  "outcomes": {
+   "strachey-wilkes-some-proposals-for-improving-the-efficiency-1961": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Only the new node was entered in this expansion's verification file; its stored verification was confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). The two LINK survivors were deliberately NOT entered: ALGOL 60 and lambda calculus both carry substantive verification records from their own admissions (confirmed intact on disk after this expansion), and overwriting them would destroy those records - the exp-210 deviation; their hearings at this parent live in full on the edges' verdicts. Warts: the lambda edge and the 1961-paper admission both rest on Richards's 2011 retrospective for the mechanism mapping (the parent paper corroborates the ALGOL channel directly; the CPL Working Papers and Landin's correspondence paper were not independently read this session - Landin's paper is in any case 1965, after the parent)."
+ },
+ "totals_after": {
+  "nodes": 346,
+  "edges": 447,
+  "budget": "346/2000",
+  "expansions_done": 213,
+  "provisional": 329,
+  "verified": 17
+ },
+ "frontier_head_after": [
+  "acl-data-collection-initiative-liberman-1989-1989",
+  "advantage-updating-baird-1993",
+  "complexity-of-reinforcement-learning-whitehead-1991",
+  "ieee-754-binary-floating-point-arithmetic-1985-1985",
+  "maclisp-1966"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 102 continues: expansion 214 (ACL Data Collection Initiative, 1989) follows this checkpoint in the same session. All five exp-211 carried hearings are now discharged (ALGOL 60, lambda calculus admitted as links; Strachey & Wilkes 1961 admitted as a new node) or re-decided on CPL's own documents (Atlas, EDSAC 2 fail-closed on directness). New carried items: the Strachey & Wilkes node's own expansion, when its turn comes, carries the ALGOL-repair debate's direct hearings; new re-hearing conditions recorded this session: FORTRAN at CPL (a design document attributing a mechanism), Strachey & Wilkes 1961 at CPL (a project document showing the 1962 brief written independently). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
+}
