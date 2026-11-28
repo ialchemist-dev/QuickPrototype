@@ -16441,3 +16441,171 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 103 continues: expansion 216 (Advantage updating, Baird, 1993) follows this checkpoint in the same session. New carried hearings: GML's own expansion carries the Rice direct hearing recorded as mediated here (and, inside it, the law-office integration occasion); GenCode's own expansion carries the Tunnicliffe direct hearing; the DCF re-hearing condition (a DCF-specific mechanism in a committee document) and the GenCode re-hearing conditions stand on the record. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
 }
+
+{
+ "ts": "2026-11-28T12:40:11.388072+00:00",
+ "event": "expansion",
+ "session": 103,
+ "expansion": 216,
+ "parent": "advantage-updating-baird-1993",
+ "parent_name": "Advantage updating (Baird)",
+ "parent_year": 1993,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "Two brief framings corrected by the documents and the graph. (1) The brief's scouting expectation treated Q-learning as an existing node to be LINKed; the graph contains no Q-learning node (verified by concept search over names and ids before scouting). Q-learning was filed fresh and admitted as a NEW node - the RL cluster's central incumbent enters the graph at this expansion, from this parent's documents. (2) The brief hypothesized that the RL cluster's mediated design debts would surface here 'e.g. channels recorded via Q-learning/TD(lambda) at neighboring expansions'. The TD(lambda) channel does not exist at this parent: find-verified over the report's full text, NO temporal-difference paper stands in its 23-entry bibliography, Sutton (1988) is absent from text and bibliography alike, and 'temporal difference' occurs only inside the bibliography title of Tesauro (1992) - itself cited nowhere in the body (the exp-206 uncited-reference pattern). The mediated debts that DID surface are the Klopf/ACP lineage (rejected as mediated via the author's own same-year ACP paper) and dynamic programming (mediated via Q-learning); both judged on this parent's evidence only, as instructed. Also recorded: Baird 1993's rejection at exp-191 (GAE) was a different parent's hearing and played no role here, per instructions. FIX-UP discharged here per house pattern: expansion 215's sync_commit = 0eb532a7 (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes via the qp-sync tree check in that checkpoint). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "One document, read in full: Baird, 'Advantage Updating', Wright Laboratory Technical Report WL-TR-93-1146 (1993), 48 pp. (author's copy, leemon.com/papers/1993b.pdf; clean text layer, no OCR fallback needed, no grounding gap). Load-bearing passages: Acknowledgments - AFOSR Task 2312R1 funding; thanks to Harry Klopf, Mance Harmon, Jim Morgan, Gabor Bartha, Scott Weaver, Tommi Jaakkola. Sec.1 - the stored-information framing ('each algorithm will be described in terms of the information it stores'). Sec.2 (the survey the census is built from) - value iteration 'or simply called the dynamic programming algorithm by Bertsekas, 1987', storing V and requiring the model; R-learning storing R(x,u) with the T-optimality passage (Sutton 1990b; Schwartz 1993; Ross 1983 cited for nonstationary optimal policies) explicitly set aside ('will not be considered further here'); incremental asynchronous algorithms 'not guaranteed to converge, even when there are only a finite number of states and actions (Williams and Baird, 1990, 1993)'; differential dynamic programming (Jacobson and Mayne, 1970) and the BPTT-similar trajectory method (Nguyen and Widrow, 1990), both model-based; change-in-value: 'The idea of storing both the value function and the change in value (or rate of change of value) was found to be useful in one application by White and Sofge (1990, 1992)... However, the obvious algorithm for updating such stored functions... diverges' (8-state counterexample, Figure 2); stochastic stored policies (Gullapalli, 1990); Q-learning storing Q, with the closing diagnosis: as dt -> 0 the Q values for different actions converge, the implied policy becomes infinitely error-sensitive, 'in the limit, for continuous time, the Q function contains no information about the policy... inherent in the definition of Q values'. Sec.3 - advantage defined A = (1/dt)[Q - max Q] (eq.27); the Bellman pair (25)-(26) reducing to (12); updates (21)-(24) with the NORMALIZE step; Dyna (Sutton, 1990a) named for the model-known case; Baird (1992) named for constant-time maximization. Sec.4 - LQR test beds and benchmarks (Bradtke, 1993). Sec.5 - 'Q-learning is not practical for control when the time step duration is small, and Q-learning is theoretically impossible in a continuous-time system... This difficulty is not specific to this particular control problem.' Sec.6 - simulations: advantage updating learns in a constant 216 time steps as dt -> 0 while Q-learning requires ~10/dt (Table 3; speed factor over 160,000); approximators w1 x^2 and w2 x^2 + w3 xu + w4 u^2 (polynomials, not CMAC). Sec.7 - Theorem 1's proof: 'The learning updates in advantage updating change the quantity Q(x,u) in the same way that Q-learning does... Therefore, Q will converge to Q* with probability one (Watkins 1989, Watkins and Dayan, 1992)'; the full-algorithm proof deferred to Jaakkola, Jordan, and Singh (1993). Sec.8 - function approximators named as a class (multilayer perceptron, radial basis function network, CMAC, k-nearest-neighbour); three maximization approaches (search; Baird 1992; wire fitting, Baird and Klopf 1993b); the residual-gradient form attributed to Baird and Harmon (1994), needing a Dyna-like second sample when stochastic. Sec.9 - 'advantage updating also has better convergence properties than R-learning, differential dynamic programming, or algorithms based on stored change in value or stored policies... Unlike differential dynamic programming or value iteration, it is possible for advantage updating to learn without a model... may be combined with the model as in Dyna (Sutton, 1990a)'. Bibliography: 23 entries, 7 dated the parent's own year or later (Schwartz 1993; Williams & Baird 1993; Jaakkola et al. 1993; Baird & Klopf 1993a, 1993b; Klopf, Morgan & Weaver 1993; Bradtke 1993; plus Baird & Harmon 1994 and Harmon, Baird & Klopf 1994 as forthcoming). Appendix B - Mathematica code verifying the LQR constants satisfy eq.(25).",
+ "scout": {
+  "raw_filings": 23,
+  "matched_existing": 4,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "distinct": 16,
+  "dropped_year_bound": 7,
+  "note": "Document-census pattern: every channel the parent's text and apparatus name is filed exactly once - the Table 1 / sec.2 stored-quantity taxonomy (Q-learning, change-in-value, R-learning, stored policies, value iteration's carriers), the framework texts (Bellman optimality equations, dynamic programming, Bertsekas 1987, Ross 1983), the diagnosis line (Williams & Baird 1990 and 1993), the self-carriage components (Baird 1992; wire fitting), the combination partner (Dyna), the apparatus ghost (Tesauro 1992, bibliography-only), the sec.8 approximator class's named system (CMAC), the Appendix B tooling (Mathematica), the benchmark authority (Bradtke 1993), and the creator lineage (Baird & Klopf 1993a; Klopf, Morgan & Weaver 1993; the existing AHC node). Dropped by the resolver's year bound, recorded, not re-dated (7, all dated the parent's own year 1993): R-learning (Schwartz), Williams & Baird (1993), Jaakkola, Jordan & Singh (1993), wire fitting (Baird & Klopf 1993b), Bradtke (1993), ACP network extensions (Baird & Klopf 1993a), Klopf, Morgan & Weaver (1993). Matched existing (4): Bellman optimality equations, Dynamic Programming, BPTT, Adaptive Heuristic Critic - all four heard and rejected on this parent's evidence (see notable_rejections); no LINK admissions this expansion. Resolve ran under the TF-IDF FALLBACK embedder (MiniLM did not load) - recorded per the exp-205 pattern; the fallback errs toward 'different', the safe direction, and the 4 matches it returned are the 4 exact-name matches filed deliberately, so it changed no outcome. Per-lens floors: the pool is one technical report's closed apparatus; 23 lens entries filed with dry/shortfall notes in dry_notes_advantage-updating-baird-1993.json rather than padded. Considered and not filed, with reasons in the dry notes: Sutton (1990b) (an unpublished talk; the T-optimality measure it names is one the parent sets aside; Schwartz's filing carries the algorithmic side); REINFORCE (Williams, 1992 - an existing node, but the parent's Williams channel is the Williams & Baird analysis papers; REINFORCE's estimator is never cited or used - importance without a channel); TD(lambda) (an existing node; find-verified ABSENT from this parent's text and bibliography - the absence is recorded as a finding at L3, not filed as a candidate); policy iteration (Howard, 1960 - an existing node; not cited by the parent, whose policy-iteration channel is the same-year Williams & Baird 1993 analysis, dropped); Samuel's checkers player (not cited); Baird & Harmon (1994) and Harmon, Baird & Klopf (1994) (post-date the parent - downstream forms and applications; the residual-gradient form's Dyna re-hearing condition is recorded at the Dyna rejection); AFOSR / Wright Laboratory as an institution filing (the acknowledgment is a funding line; funding is not inside the artifact, and the programme's mechanism channel is filed at L20 - recorded at L21)."
+ },
+ "admissions": [
+  {
+   "node": "q-learning-watkins-1989-1989",
+   "name": "Q-learning (Watkins, 1989)",
+   "link": false,
+   "grade": 6.5,
+   "basis": "The incumbent the parent modifies, on the parent's own documents at four independent depths: definition (the advantage is a transformation of Q, eq.27: A = (1/dt)[Q - max Q]); diagnosis (sec.2's close and sec.5 locate the obstruction inside Q's definition itself - at small dt the Q function ceases to carry policy information); demonstration (sec.6: Q-learning's learning time grows like 10/dt against the parent's constant 216 steps); and proof (sec.7, Theorem 1: the parent's learning updates 'change the quantity Q(x,u) in the same way that Q-learning does', and its convergence is Watkins's theorem - Watkins 1989; Watkins & Dayan 1992). The defined-against objection is answered by the correction relation (exp-212): the child extracts the incumbent's worked object - the Q function itself - and re-stores it in split, normalized form; contrast FORTRAN at exp-213, where nothing was extracted. Mediation attack (TD(lambda)) killed by find-verified absence from the apparatus."
+  },
+  {
+   "node": "change-in-value-storage-white-sofge-1990-1990",
+   "name": "Change-in-value storage (White & Sofge, 1990)",
+   "link": false,
+   "grade": 3.5,
+   "basis": "Ancestor-modified at the level of storage architecture, on the parent's own taxonomy: sec.2's survey and Table 1 organize the entire design space by 'information stored for state x, action u', and White & Sofge's scheme - store V AND its change (or rate of change) as a second learned function, demonstrated in a working process-control application - is the taxonomy's only prior two-function scheme and the sole prior occupant of the parent's cell. The parent keeps the split, replaces the change with the policy-bearing advantage, and supplies the update the precedent's obvious version lacked (its divergence is the parent's Figure 2 counterexample). The expansion's most contestable admission: the kinship is the two-function split while the advantage itself is defined from Q; the grade and the verification record carry the thinness (one application, two sentences, one table row) and the re-hearing conditions at full strength."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "Bellman optimality equations (Bellman, 1957) [existing node]",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Framework presupposition (the exp-194 discrimination at TD(lambda), re-run here in its strongest form and upheld): the parent states the equations (eq.12), derives its advantage-form pair from them (eqs.25-26) and verifies its LQR solution against them (Appendix B) - presence plus manipulation - and the claim still fails the counterfactual asymmetry: remove the equations' statement and the parent follows from Q-learning (Theorem 1's reduction); remove Q-learning and the parent collapses. The node's admission at inverse RL (exp-192) is edge-scoped and untouched: there the parent's object is the equations' solution set. Re-hearing condition recorded: a Baird document presenting the pair (25)-(26) as the contribution's ancestor rather than its correctness certificate."
+  },
+  {
+   "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983) [existing node]",
+   "score": 1.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA ACP network extensions (Baird & Klopf, 1993). The Klopf lineage is real - Klopf is thanked in the acknowledgments and is the AHC's intellectual source - but at this parent there is no textual path from the 1983 paper to the design: the report never names the AHC, Barto, Sutton or Anderson in its body, and the author's documented joint work in the lineage is his own ACP paper of the parent's own year (resolver-dropped here by the year bound, so the usual rediscovery-at-the-mediator path is blocked from this edge; the direct AHC hearing in this lineage belongs to the ACP node's own expansion if it is ever admitted from another parent). What remains - an acknowledgment - is a personal channel, and recognition/carriage without a mechanism channel fails closed (the exp-210 Lisp discrimination, one step thinner)."
+  },
+  {
+   "name": "Dynamic Programming (Bellman, 1957) [existing node]",
+   "score": 1.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA Q-learning (Watkins, 1989). Everything DP-shaped in the parent arrives already transformed into its incremental, model-free descendant: the stored V and the update form are Q-learning's, and the author's own prior analyses are titled 'incremental dynamic programming'. Value iteration as Bellman posed it - sweeps over a known model - is introduced in sec.2 as the classical method the parent's family exists to avoid. Rediscovery belongs one level down, at the incremental methods' own expansions."
+  },
+  {
+   "name": "Williams & Baird, actor-critic / incremental DP analysis (1990)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. Self-carriage plus diagnosis: the parent cites it (with its 1993 sequel) for the non-convergence of incremental algorithms - part of the obstruction record sec.7 answers - and it is the author's own prior analysis of the design space. It fails on the Hochreiter condition: a diagnosis answered is not consumed unless the parent derives from it, and the parent's theorems are proved from Q-learning's theorem and its own normalization argument, with no actor-critic mechanism anywhere in its design (contrast the exp-206 thesis admission, whose mechanism was inside its parent paper). The gate judges the textual channel; here the channel is one survey sentence."
+  },
+  {
+   "name": "Dyna architecture (Sutton, 1990)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Combination partner, not consumed mechanism: all three citations are conditional ('can learn by interacting with the model as in the Dyna system', sec.3; 'requires a system such as in Dyna' for the stochastic residual-gradient estimator, sec.8; 'may be combined with the model as in Dyna', sec.9), the core algorithm is complete without a model by the parent's own statement, and Dyna is algorithm-agnostic (in Sutton 1990a it wraps Q-learning). Re-hearing condition recorded: at the expansion of the residual-gradient form (Baird & Harmon, 1994), if it is ever admitted, Dyna's hearing is direct - that form requires the model-generated second sample."
+  },
+  {
+   "name": "Constant-time function maximization for dynamic programming (Baird, 1992)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Self-carriage, scored on its merits and failed on optionality: secs.3 and 8 cite the author's 1992 algorithm as one of three approaches to the continuous-action maximization subproblem, but the parent's stated form is a lookup-table algorithm and its simulations maximize by direct search - the component is not depended on (the exp-205 OOPC pattern, contrasted with the exp-206 thesis whose mechanism was inside its parent)."
+  },
+  {
+   "name": "Backpropagation through time (BPTT) [existing node]",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Consumed-vs-compared: BPTT enters as the named relative of a rejected method class ('similar to the backpropagation through time algorithm (Nguyen and Widrow 1990), which first learns a model of the system being controlled, then improves the policy through gradient descent. Unfortunately, both of these algorithms...'). The parent learns no model and unrolls nothing; its sec.8 gradient form descends its own stored functions' Bellman residual, a construction attributed to Baird & Harmon (1994)."
+  },
+  {
+   "name": "Differential dynamic programming (Jacobson & Mayne, 1970)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "Defined-against incumbent with nothing extracted: model-based, trajectory-local, no nominal trajectory or second-order expansion anywhere in the parent; sec.9 concludes against its family explicitly ('Unlike differential dynamic programming or value iteration, it is possible for advantage updating to learn without a model'). The correction relation was tested and fails here, unlike Q-learning."
+  },
+  {
+   "name": "Stochastic reinforcement learning with stored action probabilities (Gullapalli, 1990)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "A taxonomy row, not a channel: the parent stores values and advantages, never action probabilities, and reads its policy off as argmax A. The stored-policy family's later importance (policy gradients) arrives through other documents; importance without a channel is not ancestry."
+  },
+  {
+   "name": "Practical issues in temporal difference learning (Tesauro, 1992)",
+   "score": 1.0,
+   "kind": "fail_closed_directness",
+   "basis": "Apparatus ghost: present in the bibliography, cited nowhere in the body (find-verified - the name and the phrase 'temporal difference' occur only inside the bibliography entry). The exp-206 uncited-reference pattern: an apparatus entry is evidence of reading, not of enablement. Recorded as a finding about the parent's apparatus, which gestures at a TD literature its body never engages."
+  },
+  {
+   "name": "Dynamic Programming: Deterministic and Stochastic Models (Bertsekas, 1987)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Codification (the Fox LISP I manual discrimination, exp-203): the textbook is the citation carrier for value iteration ('the dynamic programming algorithm by Bertsekas, 1987') and transmits the framework scored at the DP node; a reading channel is not a mechanism channel."
+  },
+  {
+   "name": "Introduction to Stochastic Dynamic Programming (Ross, 1983)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "A caveat citation (nonstationary optimal policies) inside the T-optimality passage the parent explicitly sets aside; the cited proposition does no work in any definition, update, theorem or simulation. Codification discrimination applies, one grade thinner than Bertsekas."
+  },
+  {
+   "name": "CMAC (Albus, 1975)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The anti-PDP-7: one named member of sec.8's four-item interchangeable approximator class, not in fact used - the parent's simulations use polynomial approximators - with the expansion's clearest Q3 fail (three named substitutes in the same sentence, a fourth actually used). A specific enabling step passes when the design demonstrably runs on it (PDP-7, exp-209); a class-list naming is the generic-substrate case."
+  },
+  {
+   "name": "Mathematica (Wolfram, 1988)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Wielded tooling for an appendix check: Appendix B's printed Mathematica code verifies that the closed-form LQR constants satisfy eq.(25) - an unusually well-documented channel that documents a check, not a dependency ('The code prints the number zero, therefore the equation is satisfied'). Q3 fails clearly (any computer-algebra system, or hand algebra, substitutes)."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_advantage-updating-baird-1993.json",
+  "outcomes": {
+   "q-learning-watkins-1989-1989": "provisional",
+   "change-in-value-storage-white-sofge-1990-1990": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Both survivors provisional; stored verification confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). Q-learning: the Samuel/AHC multiples attack on Q1 answered by the narrowness of the claim (stored optimal action values with an incremental update and a convergence proof); the TD(lambda) mediation attack killed by find-verified absence; WART - Watkins's thesis and the 1992 note were not independently re-read this session, the admission resting on the parent's engagement with them at eq.27/secs.2/5/6/7 depth. Change-in-value: the kinship attack (the advantage is defined from Q, not from dV) answered on the parent's stored-quantity taxonomy and recorded as a judgment call - the admission is first in line for rehearing on its stated conditions (a pre-1990 two-function store in the ACP writings would downgrade Q2 to a multiple; a reading of White & Sofge showing their stored change was a bookkeeping derivative of V, not a learned companion function, kills the edge). WART: White & Sofge's own texts were not independently read this session."
+ },
+ "totals_after": {
+  "nodes": 352,
+  "edges": 453,
+  "budget": "352/2000",
+  "expansions_done": 216,
+  "provisional": 335,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 71,
+   "6": 55,
+   "7": 36,
+   "8": 23,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 3,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "generalized-markup-language-gml-1969",
+  "q-learning-watkins-1989-1989",
+  "complexity-of-reinforcement-learning-whitehead-1991",
+  "ieee-754-binary-floating-point-arithmetic-1985-1985",
+  "maclisp-1966"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "SESSION 103 CLOSES HERE (expansions 215 + 216); session 104 not started, per instructions. Frontier head after session 103: GML (1969) - the exp-215 admission carrying the Rice direct hearing - then Q-learning (1989), this expansion's admission, then Complexity of RL (Whitehead, 1991), IEEE 754 (1985), MacLisp (1966). GenCode (c.1970, carrying the Tunnicliffe hearing) and change-in-value storage (1990) stand on the frontier below the head five by priority. New carried hearings from this expansion: the AHC direct hearing in this lineage is assigned to the ACP node's own expansion if that node is ever admitted from another parent (its mediator here was year-bound-dropped, so no rediscovery path runs through exp-216); the Dyna re-hearing condition stands at any future expansion of the residual-gradient form (Baird & Harmon, 1994); dynamic programming's rediscovery in this lineage belongs to the incremental methods' own expansions, Q-learning's first. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion; the DCF-at-SGML and GenCode re-hearing conditions from exp-215 stand."
+}

@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T12:26:53+00:00",
-  "expansions_done": 215,
-  "raw_candidates_seen": 8960,
+  "updated_at": "2026-11-28T12:39:15+00:00",
+  "expansions_done": 216,
+  "raw_candidates_seen": 8983,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35933,6 +35933,92 @@
     "name": "ISO 646 character code (1972)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T12:26:22+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Bellman optimality equations (Bellman, 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Dynamic Programming (Bellman, 1957)",
+    "reason": "mediated_via: Q-learning (Watkins, 1989)",
+    "at": "2026-11-28T12:38:40+00:00",
+    "mediated_via": "Q-learning (Watkins, 1989)"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Constant-time function maximization for dynamic programming (Baird, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Analysis of actor-critic architectures for incremental dynamic programming (Williams & Baird, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Differential dynamic programming (Jacobson & Mayne, 1970)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Stochastic reinforcement learning with stored action probabilities (Gullapalli, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Backpropagation through time (BPTT)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Dynamic Programming: Deterministic and Stochastic Models (Bertsekas, 1987)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Introduction to Stochastic Dynamic Programming (Ross, 1983)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Practical issues in temporal difference learning (Tesauro, 1992)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Dyna architecture (Sutton, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "CMAC (Albus, 1975)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Mathematica (Wolfram, 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T12:38:40+00:00"
+   },
+   {
+    "parent_id": "advantage-updating-baird-1993",
+    "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+    "reason": "mediated_via: ACP network extensions (Baird & Klopf, 1993)",
+    "at": "2026-11-28T12:38:40+00:00",
+    "mediated_via": "ACP network extensions (Baird & Klopf, 1993)"
    }
   ]
  },
@@ -39056,7 +39142,7 @@
    "prior_state": "Absolute action-value representations (Q-learning and kin) with the offset pathology unseparated.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -46186,6 +46272,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T12:26:22+00:00"
+  },
+  "q-learning-watkins-1989-1989": {
+   "id": "q-learning-watkins-1989-1989",
+   "name": "Q-learning (Watkins, 1989)",
+   "aliases": [],
+   "year": 1989,
+   "domain": "reinforcement learning",
+   "type": "method",
+   "definition": "Watkins's Q-learning (thesis, Cambridge, 1989; Watkins & Dayan, Machine Learning, 1992): store Q(x,u), the expected total discounted return for doing u in x then acting optimally thereafter, and update it incrementally toward R + gamma*max Q(x',.) from single transitions, model-free.",
+   "bottleneck": "Before Q-learning, learning an optimal policy from delayed rewards required a known model of the environment (dynamic programming) or stored trajectories; there was no proven incremental, model-free way to learn optimal action values from single transitions.",
+   "leap": "Q-learning (Watkins, 1989) stores Q(x,u) - the expected total discounted return for doing u in x and acting optimally thereafter - and updates it from single transitions toward R + gamma*max Q(x',.), with a convergence proof: optimal control becomes learnable online, without a model.",
+   "prior_state": "Optimal control was computed by dynamic programming over a known transition model (value and policy iteration), or approached by trial-and-error learning schemes with no action-value storage and no convergence guarantee.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [
+    {
+     "title": "Baird, 'Advantage Updating', Wright Laboratory Technical Report WL-TR-93-1146 (1993), secs.2, 5, 7 and bibliography",
+     "url": "http://www.leemon.com/papers/1993b.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial verification, expansion 216 (Advantage updating, Baird 1993). Outcome provisional. (1) Q1 attack: model-free learning of action values was 'in the air' - Samuel's checkers (1959, an existing node) learned evaluation functions from play, and the AHC (1983) learned critic values incrementally; so was Q-learning's flip real? As scored, the claim is narrower and survives: no pre-1989 method stored optimal ACTION values with an incremental update and a convergence proof; Samuel learned a state evaluation for one game, the AHC's critic is not an action-value store. The parent's text presupposes exactly the Watkins object (its eq.27 is a transformation of Q, its Theorem 1 cites Watkins 1989 and Watkins & Dayan 1992 for convergence). (2) Multiples test on Q3 (scored partial): the advantage idea could have been posed against value iteration directly; the edge claims the channel that happened - definition from Q plus proof through Q-learning - not logical necessity. (3) Date/direction: thesis 1989, journal note 1992 (Machine Learning 8(3/4), the same issue as Tesauro 1992); node dated by the thesis, the form the parent's proof cites first. Direction Q-learning -> advantage updating is the parent's own framing throughout. (4) Mediation attack, the strongest available: TD(lambda) as mediator - attempted and killed by find-verified absence: no TD paper stands in the parent's 23-entry bibliography, 'temporal difference' occurs only inside Tesauro's bibliography title, and the parent's updates contain no eligibility trace. A second form - the Bellman equations as mediator - fails because the equations are the shared framework of both nodes, not an intermediate milestone between them; they were heard separately at this parent and rejected as framework presupposition. WART (recorded per exps 206-214 practice): the admission rests on the parent's document, which engages Watkins's work at eq.27, secs.2/5/6/7 depth; Watkins's thesis and the 1992 note were not independently re-read this session. Re-hearing condition: a reading of the thesis showing the parent's Q differs in kind from Watkins's (e.g. a different optimality criterion), which would reopen the identity of the object transformed.",
+    "at": "2026-11-28T12:39:15+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T12:38:40+00:00"
+  },
+  "change-in-value-storage-white-sofge-1990-1990": {
+   "id": "change-in-value-storage-white-sofge-1990-1990",
+   "name": "Change-in-value storage (White & Sofge, 1990)",
+   "aliases": [],
+   "year": 1990,
+   "domain": "reinforcement learning",
+   "type": "method",
+   "definition": "White & Sofge's stored change-in-value scheme (Proc. 29th IEEE Conf. on Decision and Control, 1990; Handbook of Intelligent Control, 1992): a control system storing, alongside the value function V, the change in value (or its rate) dV, incorporated into a larger system that also stored a policy.",
+   "bottleneck": "Before White & Sofge, a learned controller stored only the value function itself; the value's local change - the variation a continuous-time controller actually responds to - was not itself a stored, learned quantity.",
+   "leap": "White & Sofge (1990; Handbook of Intelligent Control, 1992) stored, alongside the value function, its change (or rate of change) as a second learned function, inside a working neural process-optimization and control system - the two-function value storage the parent's survey records immediately before its own design.",
+   "prior_state": "Every stored-quantity scheme in the parent's taxonomy kept a single function per state or state-action pair: values V, action values Q, average-reward relatives R(x,u), or action probabilities.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 3.5,
+   "sources": [
+    {
+     "title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Table 1, Figure 2 and bibliography",
+     "url": "http://www.leemon.com/papers/1993b.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Adversarial verification, expansion 216 (Advantage updating, Baird 1993). Outcome provisional - the expansion's most contestable admission, attacks recorded at full strength. (1) Kinship attack (the strongest): the advantage is defined from Q (eq.27), not from the change in value; the claimed channel is architectural - both schemes store a level function plus a learned local variation - and architecture-level kinship is weaker than object-level descent (compare Q-learning at this same parent, where the worked object itself is extracted). Attempted answer: the parent's own survey is a taxonomy of stored quantities (sec.2, Table 1: 'Information stored for state x, action u'), i.e. the parent's design space is literally storage architecture, and within that taxonomy White & Sofge's is the only prior two-function scheme; the parent also treats the scheme as its nearest relative by proving its obvious update diverges (Figure 2) before supplying the corrected machinery. The answer is a judgment call on the parent's taxonomy, which is why the grade is 3.5 and the node provisional. (2) Multiples attack on Q2 (the gate question): if a pre-1990 two-function value store is produced - Klopf's ACP writings are the named place to look - the generativity claim downgrades and the edge should be re-heard as a multiple. (3) Date: the CDC paper is 1990 and the Handbook chapter 1992; the node is dated 1990, the first dated artifact; the parent's text cites both years jointly for the one idea, so the identity is the scheme, not either text. (4) Mediation attack: Klopf/ACP as the carrier of split storage to Baird - attempted; the parent's text names White & Sofge alone for this idea, and the documented channel governs (the ACP channel itself was heard at this parent and rejected as mediated via Baird & Klopf 1993a). WART (the reason for provisional beyond the run's default): White & Sofge's own texts - the 1990 CDC paper and the 1992 Handbook chapter - were NOT independently read this session; everything scored rests on the parent's two sentences, its Table 1 row, and its bibliography. Re-hearing condition: a reading of White & Sofge showing their stored change was not a learned companion function but a bookkeeping derivative of V, which would collapse the architectural kinship and kill this edge.",
+    "at": "2026-11-28T12:39:15+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T12:38:40+00:00"
   }
  },
  "edges": [
@@ -90466,6 +90610,200 @@
     "counterfactual": "Remove the GenCode line and the 1978 joining of forces does not happen: the ANSI group loses both the publishing industry's defining requirement (different generic codes for different kinds of documents - the requirement SGML's document-type-definition mechanism answers) and 'a nucleus of dedicated people for the task of developing Goldfarb's basic language design for SGML into a standard'. A GML-only vendor dialect, if standardized at all, is a different artifact from the meta-language ISO published.",
     "mediator": null,
     "evidence": "Mediation check: Tunnicliffe's 1967 presentation reaches the standard through this committee - it was his vehicle, under Scharpf's GCA - so the presentation is recorded mediated via GenCode at this parent. GenCode itself has no intermediate milestone between it and the drafting group: the drafting group is the parent's formation, not a milestone, and the concept's design content (document-type plurality, element incorporation) is instantiated in the standard's DTD mechanism. Goldfarb's tree joins this root 'at the base of the trunk'."
+   }
+  },
+  {
+   "predecessor_id": "q-learning-watkins-1989-1989",
+   "successor_id": "advantage-updating-baird-1993",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Q-learning there was a specific unsolved problem for this parent's whole design space: optimal action values could not be learned incrementally and model-free from delayed reward with a convergence guarantee; Q-learning made exactly that solvable, and the parent's leap is a transformation of the object it created.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2, 7",
+     "falsification": "Dies if a pre-1989 model-free action-value learner with a convergence proof is produced from the record."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "Q-learning unblocked the value-based RL space generally, but for this parent the relevant opening is narrower: it created the stored-Q object and the update form the parent reuses.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.7",
+     "falsification": "Downgrade if the parent's updates are shown to be derivable without Q-learning's form."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is strong in the history that happened - the parent defines A from Q and proves convergence through Watkins's theorem - but not absolute: an advantage could in principle have been posed directly against value iteration, so the multiples test caps this at partial.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.3, 7",
+     "falsification": "Dies if a contemporary independent advantage formulation not routed through Q is produced."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Q-learning collapsed the cost of optimal-control learning from model-based sweeps to single-transition updates; the order-of-magnitude cost story at small dt, however, is the parent's own contribution, not Q-learning's.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Downgrade if the parent's text is shown to credit another method with the incremental cost collapse."
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Q-learning created no new observable; on the parent's own showing its stored quantity actively hides the policy as dt -> 0 (sec.5, Figure 4).",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.5",
+     "falsification": "Dies if Q-learning is shown to have introduced a measurement the parent uses."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Q-learning supplied the explanatory model inside which the advantage is definable at all: stored action values tied to the Bellman optimality recursion, with the policy read off as argmax Q - the model the parent's eq.27 rewrites.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2-3",
+     "falsification": "Dies if the advantage is shown to be defined independently of the Q model in the parent's text."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The stored Q function is an abstraction other algorithms build on - the parent builds directly on it - but it is a mathematical object, not a standard or interface.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.3",
+     "falsification": "Downgrade if the reuse is shown to be notational only."
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "By 1993 Q-learning had carried value-storage learning well beyond its control-theory origin (games, robotics, sequential decision problems generally); the parent's survey presupposes it as the field's incumbent across domains.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Dies if the record shows Q-learning confined to a single application area before 1993."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Single-transition incremental updates collapsed the experiment loop relative to batch dynamic programming, though the parent's normalization machinery is its own.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Downgrade if incremental updating is shown to predate Q-learning in the parent's apparatus in the same form."
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "Q-learning displaced model-based value iteration as the default path for learning control: the parent's Table 1 taxonomy and sec.9 conclusion both treat Q-learning, not DP, as the method to beat.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.6, 9, Table 1",
+     "falsification": "Dies if the parent's text is shown to treat value iteration as the live incumbent instead."
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk node of the value-based line: the parent's own child-line in this graph (conservative policy iteration, the policy-gradient lineage) passes through the stored-action-value region Q-learning founded, and the parent's stored verification records the child's text naming Baird alongside Sutton et al. as the advantage's sources.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993); graph record, exp-191/192 hearings",
+     "falsification": "Dies if the lineage is shown to route around stored action values."
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "Once proven model-free action-value learning existed, the field's baseline permanently reset: every later value-based method, the parent included, is stated as a modification of, or reaction to, stored Q.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Dies if post-1993 practice is shown to have returned to model-required methods as the default."
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:38:40+00:00",
+   "leap": {
+    "prior_state": "Value-based reinforcement learning stored absolute action values Q(x,u) (Q-learning), bare values, stored policies, or a value plus its change; as the time step shrinks toward continuous time, the Q values of different actions in a state converge, so the policy implied by the stored Q becomes infinitely sensitive to approximation error - in the limit the Q function carries no policy information - and the obvious update for stored change-in-value diverges.",
+    "jump": "Advantage updating stores V(x) together with the advantage A(x,u) = (1/dt)[Q(x,u) - max Q(x,.)], and learns it with updates that reduce to Q-learning's on the recomposed quantity (Theorem 1) plus a normalizing update driving max A to zero (Theorem 2): the policy stays readable from the stored functions at every time-step duration, learning takes a constant ~216 steps as dt -> 0 where Q-learning needs ~10/dt steps, and the algorithm remains defined in continuous time, where Q-learning is impossible in principle.",
+    "date": 1993
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Q-learning and the parent has no object to transform: the advantage is defined as a function of Q (eq.27: A = (1/dt)[Q - max Q]), the obstruction the paper answers is a property of Q's definition (sec.2 close, sec.5), and its convergence proof is Q-learning's theorem applied to the recomposed quantity (sec.7, Theorem 1). The counterfactual asymmetry against the framework candidates is decisive: remove the Bellman equations' statement and the parent still follows from Q-learning; remove Q-learning and it collapses.",
+    "mediator": null,
+    "evidence": "Mediation attack run: the only plausible mediator is TD(lambda)/temporal-difference learning, and it is find-verifiably absent - no TD paper stands in the parent's 23-entry bibliography and 'temporal difference' occurs only inside Tesauro's bibliography title. The channel is the parent's own text: definition (eq.27), diagnosis (secs.2, 5), head-to-head simulations (sec.6), and proof (sec.7). The defined-against discrimination is answered by the correction relation (Resource Management at exp-212): the child does not merely oppose Q-learning, it extracts Q-learning's worked object - the Q function itself - and re-stores it in split, normalized form; FORTRAN at exp-213 failed because nothing was extracted."
+   }
+  },
+  {
+   "predecessor_id": "change-in-value-storage-white-sofge-1990-1990",
+   "successor_id": "advantage-updating-baird-1993",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "No impossibility was flipped: White & Sofge's scheme worked in its application, and its obvious update's divergence (shown by the parent) marks its limit rather than an impossibility it removed.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Upgrade if their text is shown to pose and solve the continuous-time storage problem explicitly."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "It opened the two-function storage space: before it, every scheme in the parent's taxonomy stored one quantity per state-action; storing a level plus its variation is the space the parent's V + A design occupies and the only such precedent the parent records.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Table 1",
+     "falsification": "Dies if a pre-1990 two-function value-storage scheme is produced from the record (e.g. in the ACP writings), which would make this a multiple, not the recorded occupant."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Not the only conceivable path - the parent defines A from Q, so the split could have been reached from Q-learning alone - but in the history the parent documents, this is the recorded precedent for the architecture it adopts; necessity is historical, not logical.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2-3",
+     "falsification": "Dies if the parent's drafting record shows the split derived from Q with no reference to the change-in-value line."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Their scheme was built for process optimization and control, where storing the change avoids re-deriving rates; the parent's text supports usefulness in one application, nothing at order-of-magnitude scale.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Downgrade if the application is shown to be a proposal rather than a working system."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Storing the change made the value function's local rate an explicit, inspectable stored quantity rather than a derived one - a modest measurability gain, at representation level only.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Dies if their stored change is shown to be a pure bookkeeping duplicate of V."
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied a representational model the parent adopts: a value-like state summary is a level PLUS a local variation, and the two should be stored and learned separately. The parent's design is unintelligible as a survey response without this model in the taxonomy.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Table 1",
+     "falsification": "Dies if the parent's taxonomy is shown to list the scheme only to dismiss the entire storage family."
+    },
+    "Q7": {
+     "verdict": "fail",
+     "evidence": "No standard, interface or abstraction others built on: a scheme inside one group's control system, with a handbook chapter as its only propagation.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), bibliography",
+     "falsification": "Dies if independent systems are shown building on the scheme before 1993."
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "One application area (neural process control); no cross-domain reach is documented in the parent's record.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Dies if the scheme is shown in use in a second field before 1993."
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Storing the change was meant to speed control adaptation in their application; the parent gives no measurement, so this stays partial.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2",
+     "falsification": "Dies if their update is shown to have slowed adaptation in practice."
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "It displaced nothing: single-function storage remained the default, and the scheme's own obvious update diverged, as the parent proves.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Figure 2",
+     "falsification": "Dies if the scheme is shown to have become a default in process control before 1993."
+    },
+    "Q11": {
+     "verdict": "partial",
+     "evidence": "A side branch the parent's line demonstrably passes through: recorded in the parent's survey and taxonomy as the prior occupant of its cell, but with no descendants of its own in the record.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Table 1",
+     "falsification": "Dies if the parent's taxonomy is shown to be exhaustive boilerplate rather than its actual design space."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The two-function split, once in the literature the parent cites, permanently entered the design space - the parent and the later advantage-function literature both store a level plus a variation - though the irreversibility is shared with the parent's own contribution.",
+     "source": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2-3",
+     "falsification": "Downgrade if post-1993 value storage is shown to have reverted to single functions."
+    }
+   },
+   "score": 3.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T12:38:40+00:00",
+   "leap": {
+    "prior_state": "Value-based reinforcement learning stored absolute action values Q(x,u) (Q-learning), bare values, stored policies, or a value plus its change; as the time step shrinks toward continuous time, the Q values of different actions in a state converge, so the policy implied by the stored Q becomes infinitely sensitive to approximation error - in the limit the Q function carries no policy information - and the obvious update for stored change-in-value diverges.",
+    "jump": "Advantage updating stores V(x) together with the advantage A(x,u) = (1/dt)[Q(x,u) - max Q(x,.)], and learns it with updates that reduce to Q-learning's on the recomposed quantity (Theorem 1) plus a normalizing update driving max A to zero (Theorem 2): the policy stays readable from the stored functions at every time-step duration, learning takes a constant ~216 steps as dt -> 0 where Q-learning needs ~10/dt steps, and the algorithm remains defined in continuous time, where Q-learning is impossible in principle.",
+    "date": 1993
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove White & Sofge and the parent's storage design loses its only documented precedent: in the parent's own taxonomy of stored quantities (sec.2, Table 1), theirs is the sole prior scheme storing a second, variation-type function alongside V. The parent keeps exactly that architecture - V plus a stored local variation - replaces the change with the policy-bearing advantage, and supplies the correct update the precedent lacked, proving the precedent's obvious update diverges (Figure 2). A design whose nearest relative must be refuted-and-repaired is a modification, not a coincidence.",
+    "mediator": null,
+    "evidence": "Mediation attack run: the split-storage idea could in principle have reached Baird through Klopf's ACP programme (which stored multiple quantities), but the parent's text names White & Sofge - and only them - for this idea ('The idea of storing both the value function and the change in value... was found to be useful in one application by White and Sofge (1990, 1992)'), and the documented channel governs. This is the expansion's most contestable admission: the kinship is the two-function split, while the advantage itself is defined from Q, not from the change in value; the grade reflects the thinness (one application, two sentences, one table row). The Hochreiter condition does not kill it: what crosses is not a diagnosis but a representational mechanism - a storage architecture - which the parent instantiates."
    }
   }
  ],
@@ -398886,6 +399224,726 @@
        "year": 1986
       },
       "reason": "dated on/after parent year 1986"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "advantage-updating-baird-1993": {
+   "raw_candidates": [
+    {
+     "causal_claim": "Q-learning is the incumbent advantage updating modifies: Baird defines the advantage as a transformation of Q (A = (1/dt)[Q - max Q], eq.27), the paper's closing sec.2 diagnosis locates the obstruction inside Q's definition itself ('in the limit, for continuous time, the Q function contains no information about the policy'), sec.5 demonstrates the failure on the LQR problem, and Theorem 1's convergence proof runs through Q-learning's own convergence result (Watkins 1989; Watkins and Dayan 1992): the learning updates 'change the quantity Q(x,u) in the same way that Q-learning does'.",
+     "definition": "Watkins's Q-learning (thesis, Cambridge, 1989; Watkins & Dayan, Machine Learning, 1992): store Q(x,u), the expected total discounted return for doing u in x then acting optimally thereafter, and update it incrementally toward R + gamma*max Q(x',.) from single transitions, model-free.",
+     "domain": "reinforcement learning",
+     "lens": "L2",
+     "name": "Q-learning (Watkins, 1989)",
+     "source_title": "Baird, 'Advantage Updating', Wright Laboratory Technical Report WL-TR-93-1146 (1993), secs.2, 5, 7 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1989
+    },
+    {
+     "causal_claim": "White and Sofge's split storage - store the value function AND its change (or rate of change) as a second stored function - is the nearest prior occupant of the parent's storage cell: Baird's sec.2 credits them with the idea ('The idea of storing both the value function and the change in value... was found to be useful in one application by White and Sofge (1990, 1992)'), Table 1 lists 'stored change in value' in the comparison taxonomy, and the parent keeps the two-function split while replacing the change with the policy-bearing advantage and supplying the update White and Sofge's obvious version lacked (Baird proves that update diverges on an 8-state counterexample, Figure 2).",
+     "definition": "White & Sofge's stored change-in-value scheme (Proc. 29th IEEE Conf. on Decision and Control, 1990; Handbook of Intelligent Control, 1992): a control system storing, alongside the value function V, the change in value (or its rate) dV, incorporated into a larger system that also stored a policy.",
+     "domain": "reinforcement learning",
+     "lens": "L2",
+     "name": "Change-in-value storage (White & Sofge, 1990)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Table 1, Figure 2 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "The parent states the Bellman equations for its problem (eq.12), derives an advantage-form Bellman pair from them (eqs.25-26, shown to reduce to eq.12), states the algorithm as the incremental solver of that pair, and verifies its closed-form LQR solution by substitution into the Bellman equations (Appendix B).",
+     "definition": "The Bellman optimality equations (Bellman, 1957): the system V*(x) = max_u [R(x,u) + gamma * E V*(x')] (and its Q form) characterizing the optimal value function of a Markov decision process.",
+     "domain": "reinforcement learning",
+     "lens": "L1",
+     "name": "Bellman optimality equations (Bellman, 1957)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2-3, Appendix B",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "theory",
+     "year": 1957
+    },
+    {
+     "causal_claim": "Value iteration / dynamic programming is the classical framework the parent's survey opens with (sec.2, via Bertsekas 1987) and the family the parent belongs to as an incremental, model-free member: the parent stores the same V the DP algorithm stores and its updates are incremental approximations of the DP recursion.",
+     "definition": "Dynamic programming (Bellman, 1957): solving sequential decision problems by backward/inductive optimization over value functions satisfying the Bellman recursion, including value iteration given known transition and reward models.",
+     "domain": "reinforcement learning",
+     "lens": "L1",
+     "name": "Dynamic Programming (Bellman, 1957)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "theory",
+     "year": 1957
+    },
+    {
+     "causal_claim": "Self-carriage: Baird's 1992 algorithm supplies one of the three approaches the parent names for the maximization every update requires - sec.3 ('One algorithm that does this is described in Baird (1992)') and sec.8 ('The algorithm for this maximization method in the limit is given in Baird (1992)') - performing the maximization incrementally during learning in constant time for the continuous-action case.",
+     "definition": "Baird (1992), 'Function minimization for dynamic programming using connectionist networks' (Proc. IEEE Conf. on Systems, Man, and Cybernetics): an incremental, constant-time method for finding the action maximizing a learned function, for dynamic programming with connectionist function approximators.",
+     "domain": "reinforcement learning",
+     "lens": "L1",
+     "name": "Constant-time function maximization for dynamic programming (Baird, 1992)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.3, 8 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1992
+    },
+    {
+     "causal_claim": "The parent's sec.7 closes by deferring its full convergence theorem to this work: 'A proof of this convergence result, based on the results of Jaakkola, Jordan, and Singh (1993), will appear in a forthcoming paper.' Filed deliberately; dated the parent's own year (1993).",
+     "definition": "Jaakkola, Jordan & Singh (1993), 'On the Convergence of Stochastic Iterative Dynamic Programming Algorithms' (MIT BCS Tech. Rep. 9307): convergence theory for stochastic iterative DP algorithms of the Q-learning family.",
+     "domain": "reinforcement learning",
+     "lens": "L1",
+     "name": "Convergence of stochastic iterative dynamic programming algorithms (Jaakkola, Jordan & Singh, 1993)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.7 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "theory",
+     "year": 1993
+    },
+    {
+     "causal_claim": "Self-carriage as diagnosis: sec.2 cites Williams and Baird (1990, 1993) for the result that the incremental asynchronous algorithms of this family 'are not guaranteed to converge, even when there are only a finite number of states and actions' - part of the obstruction record the parent's sec.7 convergence theorems answer; the 1990 paper is also the author's own prior analysis of the incremental-DP design space the parent works in.",
+     "definition": "Williams & Baird (1990), 'A mathematical analysis of actor-critic architectures for learning optimal control through incremental dynamic programming' (Proc. Sixth Yale Workshop on Adaptive and Learning Systems): analysis of actor-critic/incremental-DP learning systems, including non-convergence results for incremental variants.",
+     "domain": "reinforcement learning",
+     "lens": "L5",
+     "name": "Analysis of actor-critic architectures for incremental dynamic programming (Williams & Baird, 1990)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "theory",
+     "year": 1990
+    },
+    {
+     "causal_claim": "Cited jointly with the 1990 paper in sec.2 for the non-convergence of incremental algorithms. Filed deliberately; dated the parent's own year (1993).",
+     "definition": "Williams & Baird (1993), 'Analysis of Some Incremental Variants of Policy Iteration: First Steps Toward Understanding Actor-Critic Learning Systems' (Northeastern Univ. Tech. Rep. NU-CCS-93-11).",
+     "domain": "reinforcement learning",
+     "lens": "L5",
+     "name": "Analysis of incremental variants of policy iteration (Williams & Baird, 1993)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "theory",
+     "year": 1993
+    },
+    {
+     "causal_claim": "R-learning is a Table 1 comparison incumbent: it stores R(x,u) (average-reward relative values) and the parent claims better convergence properties than it in sec.9 ('Advantage updating also has better convergence properties than R-learning...'). Filed deliberately; Schwartz's ICML paper is dated the parent's own year (1993), and sec.2's T-optimality discussion (Schwartz's measure) is one the paper explicitly sets aside.",
+     "definition": "R-learning (Schwartz, Proc. Tenth Int. Conf. on Machine Learning, 1993): reinforcement learning for maximizing undiscounted (average) reward, storing relative action values R(x,u) updated against the learned average reward rate.",
+     "domain": "reinforcement learning",
+     "lens": "L6",
+     "name": "R-learning (Schwartz, 1993)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2, 9, Table 1 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1993
+    },
+    {
+     "causal_claim": "Differential dynamic programming is a sec.2/Table 1 incumbent: it 'avoids the need to instantaneously change the policy' for continuous state/action systems but works from a model along a single nominal trajectory - the parent positions advantage updating against it in sec.9 ('it is possible for advantage updating to learn without a model', unlike DDP).",
+     "definition": "Differential dynamic programming (Jacobson & Mayne, 1970): second-order trajectory optimization for continuous control - iteratively improving a nominal trajectory by solving local quadratic subproblems from a known dynamics model.",
+     "domain": "reinforcement learning",
+     "lens": "L6",
+     "name": "Differential dynamic programming (Jacobson & Mayne, 1970)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2, 9, Table 1 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1970
+    },
+    {
+     "causal_claim": "Gullapalli's stored-policy approach is the sec.2/Table 1 representative of the 'stored policies' family: store a probability of choosing each action per state and act on those probabilities during learning - a storage family the parent's value-plus-advantage storage is defined alongside and against.",
+     "definition": "Gullapalli (1990), 'A stochastic reinforcement learning algorithm for learning real-valued functions' (Neural Networks 3): store, per state, a probability distribution over (real-valued) actions, sampled during learning, with probabilities adjusted by reinforcement so they typically converge to a deterministic policy.",
+     "domain": "reinforcement learning",
+     "lens": "L6",
+     "name": "Stochastic reinforcement learning with stored action probabilities (Gullapalli, 1990)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Table 1 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "Backpropagation through time is the named relative of the trajectory-gradient method sec.2 distinguishes the parent from: 'This algorithm is similar to the backpropagation through time algorithm (Nguyen and Widrow 1990), which first learns a model of the system being controlled, then improves the policy through gradient descent. Unfortunately, both of these algorithms...' - the parent is model-free and does not unroll time.",
+     "definition": "Backpropagation through time (in the Nguyen & Widrow 1990 control form): learn a differentiable model of the controlled system, then improve the policy/controller by gradient descent propagated through the model over time.",
+     "domain": "reinforcement learning",
+     "lens": "L6",
+     "name": "Backpropagation through time (BPTT)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "Bertsekas's textbook is the citation carrier for the parent's opening framework: value iteration is introduced as 'the algorithm known as value iteration (or simply called the dynamic programming algorithm by Bertsekas, 1987)'.",
+     "definition": "Bertsekas (1987), 'Dynamic Programming: Deterministic and Stochastic Models' (Prentice-Hall): the standard textbook codification of dynamic programming, value iteration and policy iteration for deterministic and stochastic control.",
+     "domain": "reinforcement learning",
+     "lens": "L3",
+     "name": "Dynamic Programming: Deterministic and Stochastic Models (Bertsekas, 1987)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "other",
+     "year": 1987
+    },
+    {
+     "causal_claim": "Ross's textbook is cited once, for the caveat that optimal policies for an MDP may all be nonstationary (Ross, 1983) - inside sec.2's T-optimality discussion, a performance measure the paper explicitly declines to consider further.",
+     "definition": "Ross (1983), 'Introduction to Stochastic Dynamic Programming' (Academic Press): textbook treatment of stochastic DP, including existence and stationarity questions for optimal policies.",
+     "domain": "reinforcement learning",
+     "lens": "L3",
+     "name": "Introduction to Stochastic Dynamic Programming (Ross, 1983)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "other",
+     "year": 1983
+    },
+    {
+     "causal_claim": "Tesauro (1992) stands in the parent's bibliography but is cited nowhere in the body (find-verified: the name, and the phrase 'temporal difference', occur only in the bibliography entry itself) - an apparatus entry whose consumption, if any, left no trace in the parent's text.",
+     "definition": "Tesauro (1992), 'Practical issues in temporal difference learning' (Machine Learning 8(3/4)): practice of TD learning with function approximation, in the same journal issue as Watkins & Dayan's Q-learning note.",
+     "domain": "reinforcement learning",
+     "lens": "L3",
+     "name": "Practical issues in temporal difference learning (Tesauro, 1992)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), bibliography only",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1992
+    },
+    {
+     "causal_claim": "Dyna is the parent's named combination partner for the model-known case: sec.3 ('the system can learn by interacting with the model as in the Dyna system (Sutton, 1990a)'), sec.8 (a Dyna-like model to generate the second next-state the unbiased residual-gradient estimator needs) and sec.9 ('advantage updating may be combined with the model as in Dyna (Sutton, 1990a)').",
+     "definition": "Dyna (Sutton, 1990a): an integrated architecture that learns a transition/reward model from real experience and interleaves direct learning, planning over simulated experience from the model, and acting.",
+     "domain": "reinforcement learning",
+     "lens": "L11",
+     "name": "Dyna architecture (Sutton, 1990)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.3, 8, 9 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "CMAC is one of the four function-approximation systems sec.8 names as possible representations for the parent's V and A functions ('a multilayer perceptron, a radial basis function network, a CMAC, or a memory-based learning system'); the parent's own simulations in fact use low-order polynomial approximators, not a CMAC.",
+     "definition": "CMAC (Albus, 1975): the cerebellar model articulation controller - a tile-coded, locally-generalizing function approximator mapping inputs to outputs through overlapping receptive fields.",
+     "domain": "reinforcement learning",
+     "lens": "L13",
+     "name": "CMAC (Albus, 1975)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.8",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "system",
+     "year": 1975
+    },
+    {
+     "causal_claim": "Mathematica is the tooling wielded in Appendix B: the parent prints Mathematica code that calculates the LQR constants and verifies that the resulting V* and A* satisfy the advantage Bellman equation (25) ('The code prints the number zero, therefore the equation is satisfied').",
+     "definition": "Mathematica (Wolfram, 1988): Wolfram's symbolic computation system - symbolic integration, limits and algebraic simplification in a notebook/programming environment.",
+     "domain": "reinforcement learning",
+     "lens": "L13",
+     "name": "Mathematica (Wolfram, 1988)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), Appendix B",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "system",
+     "year": 1988
+    },
+    {
+     "causal_claim": "Wire fitting is the third maximization approach sec.8 names ('the wire fitting approach, described in Baird and Klopf (1993b)... makes trivial the problem of finding the global maximum for each state'), a companion Wright Laboratory report. Filed deliberately; dated the parent's own year (1993).",
+     "definition": "Wire fitting (Baird & Klopf, 1993b, 'Reinforcement Learning with High-Dimensional, Continuous Actions', WL-TR-93-1147): embed a function approximator in a larger system whose per-state global maximum can be found in constant time.",
+     "domain": "reinforcement learning",
+     "lens": "L13",
+     "name": "Wire fitting (Baird & Klopf, 1993)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.8 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1993
+    },
+    {
+     "causal_claim": "Bradtke (1993) is the parent's cited authority for its measurement practice: 'Linear Quadratic Regulator (LQR) problems are commonly used as test beds for control systems, and are useful benchmarks for reinforcement learning systems (Bradtke, 1993)' - the benchmark whose closed-form optimum makes the parent's policy-error measurements (to three decimal places) possible. Filed deliberately; dated the parent's own year (1993).",
+     "definition": "Bradtke (1993), 'Reinforcement learning applied to linear quadratic regulation' (Proc. NIPS 5): reinforcement learning evaluated on the LQR problem, whose analytically known optimal policy and value functions provide exact error measurement.",
+     "domain": "reinforcement learning",
+     "lens": "L17",
+     "name": "Reinforcement learning applied to linear quadratic regulation (Bradtke, 1993)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.4 and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1993
+    },
+    {
+     "causal_claim": "Creator lineage: Baird & Klopf (1993a) extends Klopf's associative control process (ACP) network - the Wright Laboratory programme line (Klopf is thanked in the parent's acknowledgments) from which the parent's author and problem framing come. Filed deliberately; dated the parent's own year (1993).",
+     "definition": "Baird & Klopf (1993a), 'A hierarchical network of provably optimal learning control systems: Extensions of the associative control process (ACP) network' (Adaptive Behavior 1(3)): hierarchical learning-control networks extending Klopf's ACP architecture.",
+     "domain": "reinforcement learning",
+     "lens": "L20",
+     "name": "ACP network extensions (Baird & Klopf, 1993)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), acknowledgments and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1993
+    },
+    {
+     "causal_claim": "The Wright Laboratory group's own hierarchy paper: Klopf (thanked in the parent's acknowledgments, with Morgan and Weaver) models nervous-system conditioning with hierarchical learning control systems - the laboratory programme the parent belongs to. Filed deliberately; dated the parent's own year (1993).",
+     "definition": "Klopf, Morgan & Weaver (1993), 'A hierarchical network of control systems that learn: Modeling nervous system function during classical and instrumental conditioning' (Adaptive Behavior 1(3)): the ACP-lineage hierarchical learning-control architecture.",
+     "domain": "reinforcement learning",
+     "lens": "L20",
+     "name": "A hierarchical network of control systems that learn (Klopf, Morgan & Weaver, 1993)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), acknowledgments and bibliography",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1993
+    },
+    {
+     "causal_claim": "The AHC is the graph's existing carrier of the Klopf lineage (Klopf's hedonistic-neuron/ACP line, which Barto, Sutton & Anderson's critic architecture descends from, and which Baird's Wright Laboratory work under Klopf extends in Baird & Klopf 1993a); at this parent the textual channels are the acknowledgment of Klopf and the same-year joint papers - the parent never names the AHC, Barto, Sutton or Anderson in its body.",
+     "definition": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983): a two-part learning control architecture - an associative search element acting stochastically and an adaptive critic element learning a value-like evaluation by temporal differences - descending from Klopf's hedonistic neuron programme.",
+     "domain": "reinforcement learning",
+     "lens": "L20",
+     "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+     "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), acknowledgments and bibliography (Baird & Klopf 1993a)",
+     "source_url": "http://www.leemon.com/papers/1993b.pdf",
+     "type": "method",
+     "year": 1983
+    }
+   ],
+   "resolution": {
+    "embedder": "tfidf-fallback",
+    "distinct": [
+     {
+      "cand_id": "q-learning-watkins-1989-1989",
+      "candidate": {
+       "causal_claim": "Q-learning is the incumbent advantage updating modifies: Baird defines the advantage as a transformation of Q (A = (1/dt)[Q - max Q], eq.27), the paper's closing sec.2 diagnosis locates the obstruction inside Q's definition itself ('in the limit, for continuous time, the Q function contains no information about the policy'), sec.5 demonstrates the failure on the LQR problem, and Theorem 1's convergence proof runs through Q-learning's own convergence result (Watkins 1989; Watkins and Dayan 1992): the learning updates 'change the quantity Q(x,u) in the same way that Q-learning does'.",
+       "definition": "Watkins's Q-learning (thesis, Cambridge, 1989; Watkins & Dayan, Machine Learning, 1992): store Q(x,u), the expected total discounted return for doing u in x then acting optimally thereafter, and update it incrementally toward R + gamma*max Q(x',.) from single transitions, model-free.",
+       "domain": "reinforcement learning",
+       "lens": "L2",
+       "name": "Q-learning (Watkins, 1989)",
+       "source_title": "Baird, 'Advantage Updating', Wright Laboratory Technical Report WL-TR-93-1146 (1993), secs.2, 5, 7 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1989
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Q-learning (Watkins, 1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "change-in-value-storage-white-sofge-1990-1990",
+      "candidate": {
+       "causal_claim": "White and Sofge's split storage - store the value function AND its change (or rate of change) as a second stored function - is the nearest prior occupant of the parent's storage cell: Baird's sec.2 credits them with the idea ('The idea of storing both the value function and the change in value... was found to be useful in one application by White and Sofge (1990, 1992)'), Table 1 lists 'stored change in value' in the comparison taxonomy, and the parent keeps the two-function split while replacing the change with the policy-bearing advantage and supplying the update White and Sofge's obvious version lacked (Baird proves that update diverges on an 8-state counterexample, Figure 2).",
+       "definition": "White & Sofge's stored change-in-value scheme (Proc. 29th IEEE Conf. on Decision and Control, 1990; Handbook of Intelligent Control, 1992): a control system storing, alongside the value function V, the change in value (or its rate) dV, incorporated into a larger system that also stored a policy.",
+       "domain": "reinforcement learning",
+       "lens": "L2",
+       "name": "Change-in-value storage (White & Sofge, 1990)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Table 1, Figure 2 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Change-in-value storage (White & Sofge, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "bellman-optimality-equations-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "The parent states the Bellman equations for its problem (eq.12), derives an advantage-form Bellman pair from them (eqs.25-26, shown to reduce to eq.12), states the algorithm as the incremental solver of that pair, and verifies its closed-form LQR solution by substitution into the Bellman equations (Appendix B).",
+       "definition": "The Bellman optimality equations (Bellman, 1957): the system V*(x) = max_u [R(x,u) + gamma * E V*(x')] (and its Q form) characterizing the optimal value function of a Markov decision process.",
+       "domain": "reinforcement learning",
+       "lens": "L1",
+       "name": "Bellman optimality equations (Bellman, 1957)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2-3, Appendix B",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "theory",
+       "year": 1957
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Bellman optimality equations (Bellman, 1957)"
+      ],
+      "matched_node_id": "bellman-optimality-equations-bellman-1957-1957",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dynamic-programming-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "Value iteration / dynamic programming is the classical framework the parent's survey opens with (sec.2, via Bertsekas 1987) and the family the parent belongs to as an incremental, model-free member: the parent stores the same V the DP algorithm stores and its updates are incremental approximations of the DP recursion.",
+       "definition": "Dynamic programming (Bellman, 1957): solving sequential decision problems by backward/inductive optimization over value functions satisfying the Bellman recursion, including value iteration given known transition and reward models.",
+       "domain": "reinforcement learning",
+       "lens": "L1",
+       "name": "Dynamic Programming (Bellman, 1957)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "theory",
+       "year": 1957
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Dynamic Programming (Bellman, 1957)"
+      ],
+      "matched_node_id": "dynamic-programming-bellman-1957-1957",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "constant-time-function-maximization-for-dynamic-programming-1992",
+      "candidate": {
+       "causal_claim": "Self-carriage: Baird's 1992 algorithm supplies one of the three approaches the parent names for the maximization every update requires - sec.3 ('One algorithm that does this is described in Baird (1992)') and sec.8 ('The algorithm for this maximization method in the limit is given in Baird (1992)') - performing the maximization incrementally during learning in constant time for the continuous-action case.",
+       "definition": "Baird (1992), 'Function minimization for dynamic programming using connectionist networks' (Proc. IEEE Conf. on Systems, Man, and Cybernetics): an incremental, constant-time method for finding the action maximizing a learned function, for dynamic programming with connectionist function approximators.",
+       "domain": "reinforcement learning",
+       "lens": "L1",
+       "name": "Constant-time function maximization for dynamic programming (Baird, 1992)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.3, 8 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1992
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Constant-time function maximization for dynamic programming (Baird, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "analysis-of-actor-critic-architectures-for-incremental-dynam-1990",
+      "candidate": {
+       "causal_claim": "Self-carriage as diagnosis: sec.2 cites Williams and Baird (1990, 1993) for the result that the incremental asynchronous algorithms of this family 'are not guaranteed to converge, even when there are only a finite number of states and actions' - part of the obstruction record the parent's sec.7 convergence theorems answer; the 1990 paper is also the author's own prior analysis of the incremental-DP design space the parent works in.",
+       "definition": "Williams & Baird (1990), 'A mathematical analysis of actor-critic architectures for learning optimal control through incremental dynamic programming' (Proc. Sixth Yale Workshop on Adaptive and Learning Systems): analysis of actor-critic/incremental-DP learning systems, including non-convergence results for incremental variants.",
+       "domain": "reinforcement learning",
+       "lens": "L5",
+       "name": "Analysis of actor-critic architectures for incremental dynamic programming (Williams & Baird, 1990)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "theory",
+       "year": 1990
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Analysis of actor-critic architectures for incremental dynamic programming (Williams & Baird, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "differential-dynamic-programming-jacobson-mayne-1970-1970",
+      "candidate": {
+       "causal_claim": "Differential dynamic programming is a sec.2/Table 1 incumbent: it 'avoids the need to instantaneously change the policy' for continuous state/action systems but works from a model along a single nominal trajectory - the parent positions advantage updating against it in sec.9 ('it is possible for advantage updating to learn without a model', unlike DDP).",
+       "definition": "Differential dynamic programming (Jacobson & Mayne, 1970): second-order trajectory optimization for continuous control - iteratively improving a nominal trajectory by solving local quadratic subproblems from a known dynamics model.",
+       "domain": "reinforcement learning",
+       "lens": "L6",
+       "name": "Differential dynamic programming (Jacobson & Mayne, 1970)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2, 9, Table 1 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1970
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Differential dynamic programming (Jacobson & Mayne, 1970)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "stochastic-reinforcement-learning-with-stored-action-probabi-1990",
+      "candidate": {
+       "causal_claim": "Gullapalli's stored-policy approach is the sec.2/Table 1 representative of the 'stored policies' family: store a probability of choosing each action per state and act on those probabilities during learning - a storage family the parent's value-plus-advantage storage is defined alongside and against.",
+       "definition": "Gullapalli (1990), 'A stochastic reinforcement learning algorithm for learning real-valued functions' (Neural Networks 3): store, per state, a probability distribution over (real-valued) actions, sampled during learning, with probabilities adjusted by reinforcement so they typically converge to a deterministic policy.",
+       "domain": "reinforcement learning",
+       "lens": "L6",
+       "name": "Stochastic reinforcement learning with stored action probabilities (Gullapalli, 1990)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2, Table 1 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Stochastic reinforcement learning with stored action probabilities (Gullapalli, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "backpropagation-through-time-bptt-1990",
+      "candidate": {
+       "causal_claim": "Backpropagation through time is the named relative of the trajectory-gradient method sec.2 distinguishes the parent from: 'This algorithm is similar to the backpropagation through time algorithm (Nguyen and Widrow 1990), which first learns a model of the system being controlled, then improves the policy through gradient descent. Unfortunately, both of these algorithms...' - the parent is model-free and does not unroll time.",
+       "definition": "Backpropagation through time (in the Nguyen & Widrow 1990 control form): learn a differentiable model of the controlled system, then improve the policy/controller by gradient descent propagated through the model over time.",
+       "domain": "reinforcement learning",
+       "lens": "L6",
+       "name": "Backpropagation through time (BPTT)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Backpropagation through time (BPTT)"
+      ],
+      "matched_node_id": "backpropagation-through-time-bptt-1990",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dynamic-programming-deterministic-and-stochastic-models-bert-1987",
+      "candidate": {
+       "causal_claim": "Bertsekas's textbook is the citation carrier for the parent's opening framework: value iteration is introduced as 'the algorithm known as value iteration (or simply called the dynamic programming algorithm by Bertsekas, 1987)'.",
+       "definition": "Bertsekas (1987), 'Dynamic Programming: Deterministic and Stochastic Models' (Prentice-Hall): the standard textbook codification of dynamic programming, value iteration and policy iteration for deterministic and stochastic control.",
+       "domain": "reinforcement learning",
+       "lens": "L3",
+       "name": "Dynamic Programming: Deterministic and Stochastic Models (Bertsekas, 1987)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "other",
+       "year": 1987
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "Dynamic Programming: Deterministic and Stochastic Models (Bertsekas, 1987)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "introduction-to-stochastic-dynamic-programming-ross-1983-1983",
+      "candidate": {
+       "causal_claim": "Ross's textbook is cited once, for the caveat that optimal policies for an MDP may all be nonstationary (Ross, 1983) - inside sec.2's T-optimality discussion, a performance measure the paper explicitly declines to consider further.",
+       "definition": "Ross (1983), 'Introduction to Stochastic Dynamic Programming' (Academic Press): textbook treatment of stochastic DP, including existence and stationarity questions for optimal policies.",
+       "domain": "reinforcement learning",
+       "lens": "L3",
+       "name": "Introduction to Stochastic Dynamic Programming (Ross, 1983)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "other",
+       "year": 1983
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Introduction to Stochastic Dynamic Programming (Ross, 1983)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "practical-issues-in-temporal-difference-learning-tesauro-199-1992",
+      "candidate": {
+       "causal_claim": "Tesauro (1992) stands in the parent's bibliography but is cited nowhere in the body (find-verified: the name, and the phrase 'temporal difference', occur only in the bibliography entry itself) - an apparatus entry whose consumption, if any, left no trace in the parent's text.",
+       "definition": "Tesauro (1992), 'Practical issues in temporal difference learning' (Machine Learning 8(3/4)): practice of TD learning with function approximation, in the same journal issue as Watkins & Dayan's Q-learning note.",
+       "domain": "reinforcement learning",
+       "lens": "L3",
+       "name": "Practical issues in temporal difference learning (Tesauro, 1992)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), bibliography only",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1992
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Practical issues in temporal difference learning (Tesauro, 1992)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dyna-architecture-sutton-1990-1990",
+      "candidate": {
+       "causal_claim": "Dyna is the parent's named combination partner for the model-known case: sec.3 ('the system can learn by interacting with the model as in the Dyna system (Sutton, 1990a)'), sec.8 (a Dyna-like model to generate the second next-state the unbiased residual-gradient estimator needs) and sec.9 ('advantage updating may be combined with the model as in Dyna (Sutton, 1990a)').",
+       "definition": "Dyna (Sutton, 1990a): an integrated architecture that learns a transition/reward model from real experience and interleaves direct learning, planning over simulated experience from the model, and acting.",
+       "domain": "reinforcement learning",
+       "lens": "L11",
+       "name": "Dyna architecture (Sutton, 1990)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.3, 8, 9 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "Dyna architecture (Sutton, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cmac-albus-1975-1975",
+      "candidate": {
+       "causal_claim": "CMAC is one of the four function-approximation systems sec.8 names as possible representations for the parent's V and A functions ('a multilayer perceptron, a radial basis function network, a CMAC, or a memory-based learning system'); the parent's own simulations in fact use low-order polynomial approximators, not a CMAC.",
+       "definition": "CMAC (Albus, 1975): the cerebellar model articulation controller - a tile-coded, locally-generalizing function approximator mapping inputs to outputs through overlapping receptive fields.",
+       "domain": "reinforcement learning",
+       "lens": "L13",
+       "name": "CMAC (Albus, 1975)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.8",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "system",
+       "year": 1975
+      },
+      "members": [
+       16
+      ],
+      "member_names": [
+       "CMAC (Albus, 1975)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "mathematica-wolfram-1988-1988",
+      "candidate": {
+       "causal_claim": "Mathematica is the tooling wielded in Appendix B: the parent prints Mathematica code that calculates the LQR constants and verifies that the resulting V* and A* satisfy the advantage Bellman equation (25) ('The code prints the number zero, therefore the equation is satisfied').",
+       "definition": "Mathematica (Wolfram, 1988): Wolfram's symbolic computation system - symbolic integration, limits and algebraic simplification in a notebook/programming environment.",
+       "domain": "reinforcement learning",
+       "lens": "L13",
+       "name": "Mathematica (Wolfram, 1988)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), Appendix B",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "system",
+       "year": 1988
+      },
+      "members": [
+       17
+      ],
+      "member_names": [
+       "Mathematica (Wolfram, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+      "candidate": {
+       "causal_claim": "The AHC is the graph's existing carrier of the Klopf lineage (Klopf's hedonistic-neuron/ACP line, which Barto, Sutton & Anderson's critic architecture descends from, and which Baird's Wright Laboratory work under Klopf extends in Baird & Klopf 1993a); at this parent the textual channels are the acknowledgment of Klopf and the same-year joint papers - the parent never names the AHC, Barto, Sutton or Anderson in its body.",
+       "definition": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983): a two-part learning control architecture - an associative search element acting stochastically and an adaptive critic element learning a value-like evaluation by temporal differences - descending from Klopf's hedonistic neuron programme.",
+       "domain": "reinforcement learning",
+       "lens": "L20",
+       "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), acknowledgments and bibliography (Baird & Klopf 1993a)",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1983
+      },
+      "members": [
+       22
+      ],
+      "member_names": [
+       "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)"
+      ],
+      "matched_node_id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "The parent's sec.7 closes by deferring its full convergence theorem to this work: 'A proof of this convergence result, based on the results of Jaakkola, Jordan, and Singh (1993), will appear in a forthcoming paper.' Filed deliberately; dated the parent's own year (1993).",
+       "definition": "Jaakkola, Jordan & Singh (1993), 'On the Convergence of Stochastic Iterative Dynamic Programming Algorithms' (MIT BCS Tech. Rep. 9307): convergence theory for stochastic iterative DP algorithms of the Q-learning family.",
+       "domain": "reinforcement learning",
+       "lens": "L1",
+       "name": "Convergence of stochastic iterative dynamic programming algorithms (Jaakkola, Jordan & Singh, 1993)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.7 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "theory",
+       "year": 1993
+      },
+      "reason": "dated on/after parent year 1993"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Cited jointly with the 1990 paper in sec.2 for the non-convergence of incremental algorithms. Filed deliberately; dated the parent's own year (1993).",
+       "definition": "Williams & Baird (1993), 'Analysis of Some Incremental Variants of Policy Iteration: First Steps Toward Understanding Actor-Critic Learning Systems' (Northeastern Univ. Tech. Rep. NU-CCS-93-11).",
+       "domain": "reinforcement learning",
+       "lens": "L5",
+       "name": "Analysis of incremental variants of policy iteration (Williams & Baird, 1993)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.2 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "theory",
+       "year": 1993
+      },
+      "reason": "dated on/after parent year 1993"
+     },
+     {
+      "candidate": {
+       "causal_claim": "R-learning is a Table 1 comparison incumbent: it stores R(x,u) (average-reward relative values) and the parent claims better convergence properties than it in sec.9 ('Advantage updating also has better convergence properties than R-learning...'). Filed deliberately; Schwartz's ICML paper is dated the parent's own year (1993), and sec.2's T-optimality discussion (Schwartz's measure) is one the paper explicitly sets aside.",
+       "definition": "R-learning (Schwartz, Proc. Tenth Int. Conf. on Machine Learning, 1993): reinforcement learning for maximizing undiscounted (average) reward, storing relative action values R(x,u) updated against the learned average reward rate.",
+       "domain": "reinforcement learning",
+       "lens": "L6",
+       "name": "R-learning (Schwartz, 1993)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), secs.2, 9, Table 1 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1993
+      },
+      "reason": "dated on/after parent year 1993"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Wire fitting is the third maximization approach sec.8 names ('the wire fitting approach, described in Baird and Klopf (1993b)... makes trivial the problem of finding the global maximum for each state'), a companion Wright Laboratory report. Filed deliberately; dated the parent's own year (1993).",
+       "definition": "Wire fitting (Baird & Klopf, 1993b, 'Reinforcement Learning with High-Dimensional, Continuous Actions', WL-TR-93-1147): embed a function approximator in a larger system whose per-state global maximum can be found in constant time.",
+       "domain": "reinforcement learning",
+       "lens": "L13",
+       "name": "Wire fitting (Baird & Klopf, 1993)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.8 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1993
+      },
+      "reason": "dated on/after parent year 1993"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Bradtke (1993) is the parent's cited authority for its measurement practice: 'Linear Quadratic Regulator (LQR) problems are commonly used as test beds for control systems, and are useful benchmarks for reinforcement learning systems (Bradtke, 1993)' - the benchmark whose closed-form optimum makes the parent's policy-error measurements (to three decimal places) possible. Filed deliberately; dated the parent's own year (1993).",
+       "definition": "Bradtke (1993), 'Reinforcement learning applied to linear quadratic regulation' (Proc. NIPS 5): reinforcement learning evaluated on the LQR problem, whose analytically known optimal policy and value functions provide exact error measurement.",
+       "domain": "reinforcement learning",
+       "lens": "L17",
+       "name": "Reinforcement learning applied to linear quadratic regulation (Bradtke, 1993)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), sec.4 and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1993
+      },
+      "reason": "dated on/after parent year 1993"
+     },
+     {
+      "candidate": {
+       "causal_claim": "Creator lineage: Baird & Klopf (1993a) extends Klopf's associative control process (ACP) network - the Wright Laboratory programme line (Klopf is thanked in the parent's acknowledgments) from which the parent's author and problem framing come. Filed deliberately; dated the parent's own year (1993).",
+       "definition": "Baird & Klopf (1993a), 'A hierarchical network of provably optimal learning control systems: Extensions of the associative control process (ACP) network' (Adaptive Behavior 1(3)): hierarchical learning-control networks extending Klopf's ACP architecture.",
+       "domain": "reinforcement learning",
+       "lens": "L20",
+       "name": "ACP network extensions (Baird & Klopf, 1993)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), acknowledgments and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1993
+      },
+      "reason": "dated on/after parent year 1993"
+     },
+     {
+      "candidate": {
+       "causal_claim": "The Wright Laboratory group's own hierarchy paper: Klopf (thanked in the parent's acknowledgments, with Morgan and Weaver) models nervous-system conditioning with hierarchical learning control systems - the laboratory programme the parent belongs to. Filed deliberately; dated the parent's own year (1993).",
+       "definition": "Klopf, Morgan & Weaver (1993), 'A hierarchical network of control systems that learn: Modeling nervous system function during classical and instrumental conditioning' (Adaptive Behavior 1(3)): the ACP-lineage hierarchical learning-control architecture.",
+       "domain": "reinforcement learning",
+       "lens": "L20",
+       "name": "A hierarchical network of control systems that learn (Klopf, Morgan & Weaver, 1993)",
+       "source_title": "Baird, 'Advantage Updating', WL-TR-93-1146 (1993), acknowledgments and bibliography",
+       "source_url": "http://www.leemon.com/papers/1993b.pdf",
+       "type": "method",
+       "year": 1993
+      },
+      "reason": "dated on/after parent year 1993"
      }
     ],
     "prefiltered": []
