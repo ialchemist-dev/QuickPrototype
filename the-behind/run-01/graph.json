@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T10:25:55+00:00",
-  "expansions_done": 201,
-  "raw_candidates_seen": 8775,
+  "updated_at": "2026-11-28T10:31:42+00:00",
+  "expansions_done": 202,
+  "raw_candidates_seen": 8787,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -35032,6 +35032,52 @@
     "name": "CERN (1954)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T10:25:23+00:00"
+   },
+   {
+    "parent_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+    "name": "ALGOL 60 Report",
+    "reason": "mediated_via: ANSI C standard (X3.159-1989)",
+    "at": "2026-11-28T10:31:22+00:00",
+    "mediated_via": "ANSI C standard (X3.159-1989)"
+   },
+   {
+    "parent_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+    "name": "Vienna Definition Language (IBM, 1964)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:31:22+00:00"
+   },
+   {
+    "parent_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+    "name": "Self (programming language)",
+    "reason": "mediated_via: JavaScript (1995)",
+    "at": "2026-11-28T10:31:22+00:00",
+    "mediated_via": "JavaScript (1995)"
+   },
+   {
+    "parent_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+    "name": "Scheme",
+    "reason": "mediated_via: JavaScript (1995)",
+    "at": "2026-11-28T10:31:22+00:00",
+    "mediated_via": "JavaScript (1995)"
+   },
+   {
+    "parent_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+    "name": "Java (Sun Microsystems, 1995)",
+    "reason": "mediated_via: JavaScript (1995)",
+    "at": "2026-11-28T10:31:22+00:00",
+    "mediated_via": "JavaScript (1995)"
+   },
+   {
+    "parent_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+    "name": "Microsoft",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:31:22+00:00"
+   },
+   {
+    "parent_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+    "name": "Ecma International",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:31:22+00:00"
    }
   ]
  },
@@ -36840,12 +36886,16 @@
     {
      "title": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), sec.1.1",
      "url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Expansion 200 edge (JavaScript 1.1 language specification <- JavaScript), LINK, grade 4.5, marked provisional per RUNBOOK sec.6 (fresh edges stay provisional; uniform sessions 88-95 practice). Strongest attack: mediation via the implementation - the document's behavior oracle was Navigator 3.0, so the channel arguably runs spec <- binary, not spec <- language. Answer: the document's own sec.1.1 draws exactly this line ('This specification describes the language, and not the specific features of any particular implementation'), and the subject relation is the run's recognized direct channel (session-11 precedent; expansion 197 admitted the same node at ECMA-262 at the same grade 4.5 via the same relation, one remove further away through the base document). The implementation filing (Navigator 3.0) is in any case barred by the resolver's year bound and recorded there. Secondary attack: the parent is a PRELIMINARY draft, never itself standardized - answered by the parent's own leap record: its historical act was to be written down and contributed to TC39 as a base document, and the edge grades the subject relation, not the draft's authority. Grade calibration recorded honestly: parity with expansion 197's subject edge, not above it, the builder's ~5.0 expectation notwithstanding - the honest verdict profile (Q12 partial: the vendor-neutral reset was realized through the successor standard built on this draft) lands at 4.5.",
-    "at": "2026-11-28T10:12:11+00:00"
+    "notes": "Verifier attacks run (sec.6.4). (1) Mediation attack via the implementation: the document transcribes JScript's behavior, so is the implementation the true subject? The implementation filing is barred by the resolver's year bound (recorded in full in the run log), and on the merits the document's clauses state the LANGUAGE's semantics - its committee value was precisely that it described the same language as Netscape's document from a different implementation, the language/implementation distinction the sibling document states in its own sec.1.1. Attack fails. (2) Parity check: 4.5 matches the subject edges at expansions 197 and 200 - no inflation for the home document. (3) Date/direction: 1995 precedes 1996; the document is the language's second writing-down, by the competitor. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T10:31:42+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T02:42:55+00:00"
@@ -44258,7 +44308,7 @@
    "prior_state": "Language definitions were vendor house documents and binaries; operational pseudocode semantics for a commercial language had no precedent in the room.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.5,
    "sources": [
     {
@@ -44509,6 +44559,64 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T10:25:23+00:00"
+  },
+  "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962": {
+   "id": "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+   "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+   "aliases": [],
+   "year": 1962,
+   "domain": "programming languages",
+   "type": "other",
+   "definition": "The manual for LISP 1.5 (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962) - the book that defined Lisp's semantics as operational procedures (the eval/apply definitions) a generation before operational semantics had a name. A different artifact from the Lisp language itself (1960): expansion 197 judged the manual, not the language, as the mediated candidate at ECMA-262.",
+   "bottleneck": "Before the LISP 1.5 Programmer's Manual, a programming language's meaning lived in its implementation and in prose commentary; no book had written a language's semantics as an executable procedure.",
+   "leap": "McCarthy and his co-authors' manual (1962) defined LISP 1.5's semantics as operational procedures - the eval/apply definitions in numbered, stepwise form - the writable model of 'semantics as procedure' that Welland & Smith took up, 34 years later, to specify a commercial language overnight.",
+   "prior_state": "Language definitions as reference manuals and prose: meaning implied by syntax and example, checked against the one implementation.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 5.5,
+   "sources": [
+    {
+     "title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8; the parent's stored leap record",
+     "url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4). (1) Identity attack: is the true enabler Lisp the language, with the manual a bystander book? The identity judgment at this parent (DIFFERENT, per expansion 197's standing judgment) separates them on the documents: the channel HOPL names is the manual's definitional FORM - semantics written as operational procedures - which is a property of the 1962 book's eval/apply definitions, not of the 1960 language design. The parent's authors needed a way to WRITE semantics, and the record names the book that showed the way. Attack fails. (2) Tradition attack: the Vienna school (VDL) also wrote operational semantics in the 1960s - is the manual merely the famous member of a tradition that is the real enabler? No contact with VDL is documented, and the retrospective of record attributes the parent's model to the manual by name; VDL was heard at this parent and rejected on exactly that ground. A tradition does not override a documented junction. Attack fails. (3) Style-vs-substance attack: is a pseudocode MANNER merely presentational, so that the edge grades a resemblance? For a specification, the definitional form is the substance: the parent's stored bottleneck is that semantics had never been written as an operational procedure, and its leap is the writing. The manual's form is the leap's mechanism, instantiated clause by clause. Attack fails. (4) Date/direction: 1962 precedes 1996 by 34 years; direction is documented in HOPL sec.8 and in the parent's stored leap. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T10:31:42+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:31:22+00:00"
+  },
+  "ansi-c-standard-x3-159-1989-1989": {
+   "id": "ansi-c-standard-x3-159-1989-1989",
+   "name": "ANSI C standard (X3.159-1989)",
+   "aliases": [],
+   "year": 1989,
+   "domain": "computing standards",
+   "type": "other",
+   "definition": "The American National Standard for the C programming language (ANSI X3.159-1989, later ISO/IEC 9899:1990) - the standard whose grammar (its clause-6/7 production architecture for expressions and statements) was the era's canonical language grammar.",
+   "bottleneck": "Before ANSI C, the C language's grammar existed as the appendix of a book and the behavior of compilers; no standard production architecture for the era's dominant language family existed to borrow.",
+   "leap": "The ANSI C standard (X3.159-1989) fixed C's grammar as a standard's clause architecture - the complete, legible grammar Welland & Smith borrowed as the structural template for specifying a different language, and whose structure descends through their document into ECMA-262.",
+   "prior_state": "Language grammars as book appendices (K&R) and per-vendor manuals, each written for its own language alone.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 4.0,
+   "sources": [
+    {
+     "title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    }
+   ],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "Verifier attacks run (sec.6.4) - this is the expansion's most contestable admission, and the attacks are recorded at full strength. (1) Presentational-borrowing attack: a borrowed grammar is how a specification LOOKS, not what enables it; the parent's leap is its semantics. Answer: a specification's grammar is half its content, not its packaging - the committee's merged draft took the expression/statement grammar structure and production names largely from this document, and the parent's stored leap names the grammar structure among what descends into the first edition. The borrowed architecture is pervasively instantiated in the document's clause structure. Attack fails, but it is the edge's standing risk. (2) Asymmetry attack: the sibling document's C channel (K&R) failed closed at 0.5 at expansion 200 - why does this document's pass? On the documents: the sibling does not cite the C standard at all (its C citation is K&R's book, plus two passing glosses), while HOPL documents THIS document's grammar as borrowed from the standard - an act of construction, not a citation. Different documents, different facts; the discrimination is the record's, not the builder's preference. Attack fails. (3) Q1 honesty attack: the impossibility pass is scoped to the deadline - a committee grammar was writable in weeks (the sibling's autumn proves it), and the verdict's evidence states the bound rather than hiding it; the flip claimed is only the day-two document. Recorded. (4) Source-identity risk, recorded as a wart: HOPL says the grammar was 'borrowed from ANSI C', and the standard is the named source; but K&R's second edition (1988) prints essentially the same grammar as its appendix, and if a future document showed the drafters worked from the book's appendix rather than the standard's clauses, this edge's identity (standard vs book) would need a rehearing. The verdict stands on the only attribution that exists. (5) Date/direction: 1989 precedes 1996; the borrowing is the drafters' documented act. Outcome provisional per uniform practice.",
+    "at": "2026-11-28T10:31:42+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T10:31:22+00:00"
   }
  },
  "edges": [
@@ -85589,6 +85697,297 @@
     "mediator": null,
     "evidence": "Direct: the proposal's own 'Personal Experience with Hypertext' section documents the channel link by link."
    }
+  },
+  {
+   "predecessor_id": "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+   "successor_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "It flipped the specific impossibility the parent's stored bottleneck names: before the manual, no one had written a language's semantics AS an operational procedure at all - the manual's eval/apply definitions are the precedent that such a thing can be written, in numbered, executable steps. The parent's act (the first operational-procedure semantics for a commercial language) is the manual's form carried into a standards room.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence an operational-procedure semantics form existed in the room from another source."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The form's generativity is realized through this document and its successor: the algorithm style descends into ECMA-262 and becomes how the language is specified to this day - but the space was opened by the adoption, one step downstream of the manual itself. Partial.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence the manual's form generated other specifications before 1996."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Another pseudocode style could in principle have been invented overnight - the committee room held strong specifiers - but the documented act is modeling on this manual, and an overnight rewrite does not invent its form. Necessity is historical: partial.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence Welland & Smith's pseudocode derives from a different model (e.g. the Vienna school)."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "A ready-made form collapsed the style-design cost of the rewrite to imitation - decisive at an overnight deadline, an ordinary magnitude in the abstract.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "It supplied the explanatory model entire: meaning as a numbered sequence of operational steps over an abstract state - the parent's semantics clauses are that model, instantiated production by production.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The numbered-step form is an interface in the strict sense: generations of editors and implementors write and read ECMA-262's algorithms in exactly this form, which descends from the parent's adoption of the manual's manner.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "A 1962 AI-language manual's definitional form transferred to a 1996 commercial scripting language - a genuine cross-domain carry, effected by the parent.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "pass",
+     "evidence": "The borrowed form is what made the deadline: semantics could be written directly, clause by clause, without designing a notation first - the rewrite was finished overnight and distributed on the meeting's second day.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "It displaced prose description as the semantics vehicle inside this document - locally, not across the field.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the parent's stored leap names the modeling as its defining act, and the style's descent into the first edition is recorded there.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 5.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:31:22+00:00",
+   "leap": {
+    "prior_state": "Language definitions were vendor house documents and binaries; operational pseudocode semantics for a commercial language had no precedent in the room.",
+    "jump": "Welland and Smith rewrote Microsoft's document overnight at TC39's organizing meeting into a specification whose semantics are numbered-step pseudocode modeled on the LISP 1.5 Programmer's Manual; the committee adopted it as ECMA-262's editorial base, and its grammar structure, production names and algorithm style descend into the first edition.",
+    "date": 1996
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the manual and the rewrite loses its form: the document's semantics would be prose of the era's kind (syntax stated, meaning implied), which is the parent's stored prior state. The channel is documented by name in the retrospective of record and in the parent's own leap record - modeling, not resemblance. The mediation framing of expansion 197 (this candidate mediated via the JScript specification AT ECMA-262) terminates at this parent, which is that specification.",
+    "mediator": null,
+    "evidence": "Direct: HOPL sec.8's modeling statement and the parent's stored leap record name the channel."
+   }
+  },
+  {
+   "predecessor_id": "javascript-1995",
+   "successor_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Without the language there is nothing to specify: the document exists because a second vendor's implementation of this language needed a text. The subject is the enabling fact of the document - the stored bottleneck (semantics living only in implementations) is a statement about this language.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence the document could have been written about a different language."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The document's generativity runs through its successor: as the committee's editorial base it shaped how the language would be specified for everyone - but that space-opening is realized in ECMA-262, one step downstream. Partial.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence the document itself, unadopted, opened the specification space."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "No substitute exists: a specification of the core language specifies this language. The document's whole evidentiary value to the committee was that it described the same language as Netscape's document, from a different implementation.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence another language's specification could have served as the base document."
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The language's existence collapsed the document's problem from inventing a language to describing one - a large but ordinary dependence.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The language supplied the document's entire content-model: its types, object model and library are the things the pseudocode procedures define.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "As a de facto interface between two vendors' implementations, the language was the surface both documents had to match - a compatibility target, not a designed interface.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "The language's cross-vendor reach is why two specifications exist at all; the transfer is the standardization's, realized downstream.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "The running implementations were the drafting's evidence - disputed behavior could be checked against them (a loop the successor's editors then formalized).",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the document is unintelligible except as this language's second writing-down.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The language long outlived the document; the document's own text is lost - the relation is historical, not living.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:31:22+00:00",
+   "leap": {
+    "prior_state": "Language definitions were vendor house documents and binaries; operational pseudocode semantics for a commercial language had no precedent in the room.",
+    "jump": "Welland and Smith rewrote Microsoft's document overnight at TC39's organizing meeting into a specification whose semantics are numbered-step pseudocode modeled on the LISP 1.5 Programmer's Manual; the committee adopted it as ECMA-262's editorial base, and its grammar structure, production names and algorithm style descend into the first edition.",
+    "date": 1996
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove JavaScript and the document has no subject, no content and no occasion: it is the language written down from Microsoft's side. The mediation attack via the implementation (JScript) is answered by the year bound's record and by the relation itself - the document specifies the LANGUAGE (its clauses are the language's semantics), with the implementation as its evidence, exactly the distinction the sibling document states in its own sec.1.1.",
+    "mediator": null,
+    "evidence": "Direct: the subject relation, documented in HOPL secs.8-9 and in the parent's stored record."
+   }
+  },
+  {
+   "predecessor_id": "ansi-c-standard-x3-159-1989-1989",
+   "successor_id": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Scoped to the act as it happened - the shape the run accepted for the platform at expansion 201: a committee-grade grammar for a language that had existed only as two implementations was not producible in the single night the rewrite had (Microsoft's presentation was maneuvered to day two precisely to buy that night) without a complete grammar to borrow. The standard supplied it, and there was a document to distribute on day two. The honest bound is in the falsification: grammars are writable in weeks, as the sibling document's autumn of drafting shows - the impossibility flipped is the deadline-bound one, and it is the one the parent's leap record is about.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence the drafters had a complete grammar of their own ready before the meeting, or that the borrowed grammar was decorative rather than the document's grammar half."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The borrowed grammar's generativity is realized downstream: the merged draft took the grammar structure from this document, so the standard's architecture propagates into ECMA-262 - through the parent, not from the standard directly. Partial.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence the standard's grammar generated other language specifications in the room."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Substitutability is real and documented in the room itself: the sibling document's grammar conventions were the alternative, and the merged draft in fact took conventions largely from Netscape's side while taking structure from Microsoft's. The historical borrowing is this standard's; the role was contestable. Partial.",
+     "source": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "falsification": "Evidence no alternative grammar was available to the drafters."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "A complete production architecture, ready to borrow, collapsed the grammar-design work of an overnight rewrite to adaptation - the difference between a distributable document on day two and none.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The standard's expression/statement production hierarchy is the document's organizational model for its grammar half - a model for the syntax, not for the semantics that are the parent's headline.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "A grammar is an interface in the strict sense: the document's production structure is the surface the committee's editors merged, extended and implemented against, and it descends into the first edition in that role.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Borrowing shortened the drafting loop to the deadline's scale; the loop's semantics half is the manual's contribution, heard there.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk for the document's grammar half: the parent's stored leap records that its grammar structure descends into the first edition, and that structure is the borrowed one.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:31:22+00:00",
+   "leap": {
+    "prior_state": "Language definitions were vendor house documents and binaries; operational pseudocode semantics for a commercial language had no precedent in the room.",
+    "jump": "Welland and Smith rewrote Microsoft's document overnight at TC39's organizing meeting into a specification whose semantics are numbered-step pseudocode modeled on the LISP 1.5 Programmer's Manual; the committee adopted it as ECMA-262's editorial base, and its grammar structure, production names and algorithm style descend into the first edition.",
+    "date": 1996
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the standard and the document's grammar half must be designed in the same overnight hours its semantics were being rewritten - the documented act is borrowing, and what was borrowed is pervasively instantiated: the document's grammar clauses are built on the standard's production architecture, not decorated with its name. This is citation-plus-instantiation's grammar form, and it is what distinguishes this hearing from expansion 200's K&R finding, where the sibling document did not cite the standard at all. Flagged as the expansion's most contestable admission: the presentational attack is answered in the verification record.",
+    "mediator": null,
+    "evidence": "Direct: HOPL sec.8 documents the borrowing as this document's act; the parent's stored leap records the borrowed structure's descent."
+   }
   }
  ],
  "merge_log": [
@@ -86803,6 +87202,18 @@
     "cosine": 0.8442
    },
    "reason": "The two filings denote the same artifact under two names - Scale AI's labeling platform/service (founded 2016), through which the paper's comparisons were collected; same advance, name variants, so SAME."
+  },
+  {
+   "at": "2026-11-28T10:30:03+00:00",
+   "from_id": "cand:ALGOL 60 Report",
+   "into_id": "algol-60-1960",
+   "signals": [
+    "judge"
+   ],
+   "scores": {
+    "cosine": 0.7815
+   },
+   "reason": "The filing 'ALGOL 60 Report' IS the document that constitutes the graph's ALGOL 60 node: the node's own definition anchors it to 'the algorithmic language of the 1960 Revised Report (Naur et al.)'. The report and the language it defines are one node under the run's own-version discipline (the language exists as the report's text; there is no second Algol artifact in the graph). SAME - the candidate links to the existing node."
   }
  ],
  "expansions": {
@@ -386177,6 +386588,585 @@
     "prefiltered": []
    },
    "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "the-jscript-language-specification-version-0-1-welland-smith-1996": {
+   "raw_candidates": [
+    {
+     "name": "JavaScript",
+     "year": 1995,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "definition": "The scripting language Brendan Eich created at Netscape in 1995 (prototype May 1995, shipped in Navigator 2.0 that September, renamed from LiveScript to JavaScript in December 1995) - a C-syntax language with first-class functions and prototype-based objects.",
+     "causal_claim": "The subject relation: this document is Microsoft's specification of the core language JavaScript (as implemented by its JScript engine) - its grammar, semantics and library clauses are this language written down in a second vendor's text. At expansion 197 the same relation admitted JavaScript at ECMA-262 (4.5) and at expansion 200 at the sibling JS 1.1 specification (4.5); here the document specifies the language from the competitor's implementation, which is what made it committee-grade evidence that the language existed apart from Netscape's binary.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "JScript",
+     "year": 1996,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "definition": "Microsoft's implementation of the JavaScript language (first shipped in Internet Explorer 3.0, August 1996) - the implementation this specification specifies.",
+     "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the implementation the document describes is coeval with the document (JScript 1.0 shipped three months before the November 1996 meeting), so the resolver's year granularity bars it before the mediation question (a specification transcribes its implementation's behavior) can be heard. Filed so the bar and the relation are both on this parent's record. Not re-dated.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.4; Microsoft, JScript release record (IE 3.0, August 1996)",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+     "year": 1996,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "definition": "Netscape's preliminary specification of JavaScript 1.1 (Eich & McKinney, drafts of October-November 1996), the other base document contributed to TC39 alongside the parent.",
+     "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the sibling base document is a parallel contribution to the same committee - the two documents were written independently in 1996 against the same deadline from different implementations, and no consumption in either direction is documented (expansion 200 recorded the symmetric fact at the sibling). Their meeting is the successor's story (the Gardner-Solton merged draft), heard at expansion 197. Filed so the sibling discrimination and the year bound are both on this parent's record. Not re-dated.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+     "year": 1962,
+     "domain": "programming languages",
+     "lens": "L16",
+     "type": "other",
+     "definition": "The manual for LISP 1.5 (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962) - the book that defined Lisp's semantics as operational procedures (the eval/apply definitions) a generation before operational semantics had a name. A different artifact from the Lisp language itself (1960): expansion 197 judged the manual, not the language, as the mediated candidate at ECMA-262.",
+     "causal_claim": "The headline channel, on the retrospective of record: HOPL states the parent's semantics are numbered-step pseudocode MODELED ON this manual - the document's one documented style source, and the stored leap records the modeling as the parent's defining act. The manual is where 'semantics as a numbered operational procedure' exists as a writable form; Welland & Smith's overnight rewrite consists of casting a commercial language's meaning into exactly that form. At expansion 197 this candidate was rejected at ECMA-262 as mediated via THIS document; mediation is edge-scoped, the chain's final link is this parent, and here the modeling is judged on its own documents.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8; the parent's stored leap record",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "ANSI C standard (X3.159-1989)",
+     "year": 1989,
+     "domain": "computing standards",
+     "lens": "L16",
+     "type": "other",
+     "definition": "The American National Standard for the C programming language (ANSI X3.159-1989, later ISO/IEC 9899:1990) - the standard whose grammar (its clause-6/7 production architecture for expressions and statements) was the era's canonical language grammar.",
+     "causal_claim": "The expansion's contestable center, filed on the retrospective of record: HOPL states this document's grammar was BORROWED FROM ANSI C - an act of THIS document's overnight rewrite. The discrimination against expansion 200's K&R finding (fail-closed 0.5) is documentary: the sibling JS 1.1 document does not cite the C standard at all (it cites K&R's book), while this document's grammar borrowing from the standard is its documented construction. And the borrowed material is load-bearing in the parent's own leap record: 'its grammar structure, production names and algorithm style descend into the first edition' - the grammar structure that descended is the ANSI C-derived one. The question for the verdict is whether a borrowed grammar is instantiation (the document's grammar clauses are built on the standard's production architecture) or mere presentation.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "ALGOL 60 Report",
+     "year": 1960,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "definition": "The Revised Report on the Algorithmic Language ALGOL 60 (Naur et al., 1960/1963) - the document that introduced BNF grammar presentation and the production-based grammar architecture every later language standard, ANSI C included, inherited.",
+     "causal_claim": "Filed as the grammar-tradition probe: the parent's grammar is borrowed from ANSI C, whose own grammar presentation descends from the Algol tradition (BNF productions, the expression/statement hierarchy). The question is whether the tradition reaches the parent directly or only through the borrowed standard - the documented borrowing names ANSI C, not Algol, so the expected finding is mediation via the standard, recorded so the chain's depth is on the record.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8 (the documented borrowing names ANSI C)",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Vienna Definition Language (IBM, 1964)",
+     "year": 1964,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "definition": "IBM Vienna Laboratory's formal definition method (from 1964; the operational semantics used to define PL/I) - the 1960s tradition of defining a language's semantics as an abstract-machine procedure, the obvious ancestor-class for the parent's numbered-step semantics.",
+     "causal_claim": "Filed as the operational-semantics tradition probe, against the documented record: HOPL names the LISP 1.5 Programmer's Manual as the parent's pseudocode model, and no document connects Welland & Smith to VDL or the Vienna school. If the tradition alone sufficed, this would be the channel; the filing tests whether anticipation of a FORM, without a junction, links - the expected finding is that it does not, and that the documented model (the manual) displaces the tradition precisely because the junction is documented there.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8 (the documented model is the LISP 1.5 manual; VDL is nowhere named)",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Self (programming language)",
+     "year": 1987,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "The prototype-based object language from Stanford and Sun (Ungar & Smith, OOPSLA 1987) - the language whose object model JavaScript's design adopted.",
+     "causal_claim": "Filed as the language's design lineage: JavaScript's prototype object model descends from Self (1987) through Eich's 1995 design. For THIS document the question is the expansion-200 pattern: the mechanism entered at the language's design, and this document - a competitor's specification of the resulting language - transcribes the language, prototypes included, without any documented Self channel of its own (HOPL attributes no Self contact to Welland & Smith; ECMA-262's sec.3 Self citation belongs to the successor's apparatus, not this document's). Expected finding: mediation via JavaScript, reached on this document's own record.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.3, 8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Scheme",
+     "year": 1975,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "The minimalist Lisp dialect (Sussman & Steele, MIT, 1975) - lexical scoping, first-class functions and continuations; the language Eich was hired to put in the browser before management redirected him.",
+     "causal_claim": "Filed as the language's design lineage: Eich was hired in 1995 to embed Scheme, and JavaScript's lexical scope and first-class functions are Scheme's mechanisms carried into the language he built instead. For THIS document, as at expansion 200 (where 'Scheme' occurs nowhere in the sibling's text), the mechanisms are present only as embodied in the language being specified - the document's authors had no Scheme contact; the channel terminates at the language's 1995 design. Expected finding: mediation via JavaScript.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.3, 8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Java (Sun Microsystems, 1995)",
+     "year": 1995,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Sun's programming language (announced 1995, 1.0 in January 1996) - the language Netscape management required the new scripting language to resemble in syntax, under the Sun-Netscape alliance that renamed it JavaScript.",
+     "causal_claim": "Filed on the documented mandate: the look-like-Java requirement was imposed on the LANGUAGE in 1995 (HOPL), not on this document - Welland & Smith specified the language that resulted, C-like surface included, a year later from Microsoft's implementation. The Java Language Specification's notation-model channel belongs to the SIBLING JS 1.1 document (expansion 200), not to this one, whose grammar channel is documented as ANSI C. Expected finding: mediation via JavaScript, as at expansions 197 and 200.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.3, 8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Microsoft",
+     "year": 1975,
+     "domain": "technology companies",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The software company (founded 1975) whose Internet Explorer team employed both authors, owned the JScript implementation, and contributed this specification to TC39 as its base document.",
+     "causal_claim": "Filed as the producer institution: the document is its contribution, written by its employees (overnight, on its behalf, after its presentation slot was maneuvered to the second day). But an institution acts through the specific artifact it carried, and here the artifact is the parent itself - the producer form of self-carriage, as with Netscape at expansion 200 and NCSA at expansion 199. Filed so the discrimination is applied at the document where the institution is closest.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.4, 8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Ecma International",
+     "year": 1961,
+     "domain": "standards organizations",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The Geneva standards association (founded 1961 as ECMA) whose Technical Committee 39 it chartered for the scripting-language standard, and whose organizing meeting (21-22 November 1996, Netscape HQ) is the room in which the parent was written.",
+     "causal_claim": "Filed as the venue, with the discrimination to be argued explicitly: this document was physically written DURING the organizing meeting the venue convened - closer than a mere arena? Against it: the document was written as Microsoft's contribution TO the process, by Microsoft's employees, from Microsoft's own draft; the meeting is the occasion and the deadline, not the mechanism - and at expansion 197 Ecma failed closed as the venue that registers rather than enables (the successor's making). The parity question is the filing's purpose.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "javascript-1995",
+      "candidate": {
+       "name": "JavaScript",
+       "year": 1995,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "definition": "The scripting language Brendan Eich created at Netscape in 1995 (prototype May 1995, shipped in Navigator 2.0 that September, renamed from LiveScript to JavaScript in December 1995) - a C-syntax language with first-class functions and prototype-based objects.",
+       "causal_claim": "The subject relation: this document is Microsoft's specification of the core language JavaScript (as implemented by its JScript engine) - its grammar, semantics and library clauses are this language written down in a second vendor's text. At expansion 197 the same relation admitted JavaScript at ECMA-262 (4.5) and at expansion 200 at the sibling JS 1.1 specification (4.5); here the document specifies the language from the competitor's implementation, which is what made it committee-grade evidence that the language existed apart from Netscape's binary.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.8-9",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "JavaScript"
+      ],
+      "matched_node_id": "javascript-1995",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+      "candidate": {
+       "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+       "year": 1962,
+       "domain": "programming languages",
+       "lens": "L16",
+       "type": "other",
+       "definition": "The manual for LISP 1.5 (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962) - the book that defined Lisp's semantics as operational procedures (the eval/apply definitions) a generation before operational semantics had a name. A different artifact from the Lisp language itself (1960): expansion 197 judged the manual, not the language, as the mediated candidate at ECMA-262.",
+       "causal_claim": "The headline channel, on the retrospective of record: HOPL states the parent's semantics are numbered-step pseudocode MODELED ON this manual - the document's one documented style source, and the stored leap records the modeling as the parent's defining act. The manual is where 'semantics as a numbered operational procedure' exists as a writable form; Welland & Smith's overnight rewrite consists of casting a commercial language's meaning into exactly that form. At expansion 197 this candidate was rejected at ECMA-262 as mediated via THIS document; mediation is edge-scoped, the chain's final link is this parent, and here the modeling is judged on its own documents.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8; the parent's stored leap record",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ansi-c-standard-x3-159-1989-1989",
+      "candidate": {
+       "name": "ANSI C standard (X3.159-1989)",
+       "year": 1989,
+       "domain": "computing standards",
+       "lens": "L16",
+       "type": "other",
+       "definition": "The American National Standard for the C programming language (ANSI X3.159-1989, later ISO/IEC 9899:1990) - the standard whose grammar (its clause-6/7 production architecture for expressions and statements) was the era's canonical language grammar.",
+       "causal_claim": "The expansion's contestable center, filed on the retrospective of record: HOPL states this document's grammar was BORROWED FROM ANSI C - an act of THIS document's overnight rewrite. The discrimination against expansion 200's K&R finding (fail-closed 0.5) is documentary: the sibling JS 1.1 document does not cite the C standard at all (it cites K&R's book), while this document's grammar borrowing from the standard is its documented construction. And the borrowed material is load-bearing in the parent's own leap record: 'its grammar structure, production names and algorithm style descend into the first edition' - the grammar structure that descended is the ANSI C-derived one. The question for the verdict is whether a borrowed grammar is instantiation (the document's grammar clauses are built on the standard's production architecture) or mere presentation.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "ANSI C standard (X3.159-1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "algol-60-report-1960",
+      "candidate": {
+       "name": "ALGOL 60 Report",
+       "year": 1960,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "definition": "The Revised Report on the Algorithmic Language ALGOL 60 (Naur et al., 1960/1963) - the document that introduced BNF grammar presentation and the production-based grammar architecture every later language standard, ANSI C included, inherited.",
+       "causal_claim": "Filed as the grammar-tradition probe: the parent's grammar is borrowed from ANSI C, whose own grammar presentation descends from the Algol tradition (BNF productions, the expression/statement hierarchy). The question is whether the tradition reaches the parent directly or only through the borrowed standard - the documented borrowing names ANSI C, not Algol, so the expected finding is mediation via the standard, recorded so the chain's depth is on the record.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8 (the documented borrowing names ANSI C)",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "ALGOL 60 Report"
+      ],
+      "matched_node_id": "algol-60-1960",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "vienna-definition-language-ibm-1964-1964",
+      "candidate": {
+       "name": "Vienna Definition Language (IBM, 1964)",
+       "year": 1964,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "definition": "IBM Vienna Laboratory's formal definition method (from 1964; the operational semantics used to define PL/I) - the 1960s tradition of defining a language's semantics as an abstract-machine procedure, the obvious ancestor-class for the parent's numbered-step semantics.",
+       "causal_claim": "Filed as the operational-semantics tradition probe, against the documented record: HOPL names the LISP 1.5 Programmer's Manual as the parent's pseudocode model, and no document connects Welland & Smith to VDL or the Vienna school. If the tradition alone sufficed, this would be the channel; the filing tests whether anticipation of a FORM, without a junction, links - the expected finding is that it does not, and that the documented model (the manual) displaces the tradition precisely because the junction is documented there.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8 (the documented model is the LISP 1.5 manual; VDL is nowhere named)",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Vienna Definition Language (IBM, 1964)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "self-programming-language-1987",
+      "candidate": {
+       "name": "Self (programming language)",
+       "year": 1987,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "The prototype-based object language from Stanford and Sun (Ungar & Smith, OOPSLA 1987) - the language whose object model JavaScript's design adopted.",
+       "causal_claim": "Filed as the language's design lineage: JavaScript's prototype object model descends from Self (1987) through Eich's 1995 design. For THIS document the question is the expansion-200 pattern: the mechanism entered at the language's design, and this document - a competitor's specification of the resulting language - transcribes the language, prototypes included, without any documented Self channel of its own (HOPL attributes no Self contact to Welland & Smith; ECMA-262's sec.3 Self citation belongs to the successor's apparatus, not this document's). Expected finding: mediation via JavaScript, reached on this document's own record.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.3, 8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Self (programming language)"
+      ],
+      "matched_node_id": "self-programming-language-1987",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "scheme-1975",
+      "candidate": {
+       "name": "Scheme",
+       "year": 1975,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "The minimalist Lisp dialect (Sussman & Steele, MIT, 1975) - lexical scoping, first-class functions and continuations; the language Eich was hired to put in the browser before management redirected him.",
+       "causal_claim": "Filed as the language's design lineage: Eich was hired in 1995 to embed Scheme, and JavaScript's lexical scope and first-class functions are Scheme's mechanisms carried into the language he built instead. For THIS document, as at expansion 200 (where 'Scheme' occurs nowhere in the sibling's text), the mechanisms are present only as embodied in the language being specified - the document's authors had no Scheme contact; the channel terminates at the language's 1995 design. Expected finding: mediation via JavaScript.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.3, 8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Scheme"
+      ],
+      "matched_node_id": "scheme-1975",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "java-sun-microsystems-1995-1995",
+      "candidate": {
+       "name": "Java (Sun Microsystems, 1995)",
+       "year": 1995,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Sun's programming language (announced 1995, 1.0 in January 1996) - the language Netscape management required the new scripting language to resemble in syntax, under the Sun-Netscape alliance that renamed it JavaScript.",
+       "causal_claim": "Filed on the documented mandate: the look-like-Java requirement was imposed on the LANGUAGE in 1995 (HOPL), not on this document - Welland & Smith specified the language that resulted, C-like surface included, a year later from Microsoft's implementation. The Java Language Specification's notation-model channel belongs to the SIBLING JS 1.1 document (expansion 200), not to this one, whose grammar channel is documented as ANSI C. Expected finding: mediation via JavaScript, as at expansions 197 and 200.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.3, 8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Java (Sun Microsystems, 1995)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "microsoft-1975",
+      "candidate": {
+       "name": "Microsoft",
+       "year": 1975,
+       "domain": "technology companies",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The software company (founded 1975) whose Internet Explorer team employed both authors, owned the JScript implementation, and contributed this specification to TC39 as its base document.",
+       "causal_claim": "Filed as the producer institution: the document is its contribution, written by its employees (overnight, on its behalf, after its presentation slot was maneuvered to the second day). But an institution acts through the specific artifact it carried, and here the artifact is the parent itself - the producer form of self-carriage, as with Netscape at expansion 200 and NCSA at expansion 199. Filed so the discrimination is applied at the document where the institution is closest.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.4, 8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Microsoft"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ecma-international-1961",
+      "candidate": {
+       "name": "Ecma International",
+       "year": 1961,
+       "domain": "standards organizations",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The Geneva standards association (founded 1961 as ECMA) whose Technical Committee 39 it chartered for the scripting-language standard, and whose organizing meeting (21-22 November 1996, Netscape HQ) is the room in which the parent was written.",
+       "causal_claim": "Filed as the venue, with the discrimination to be argued explicitly: this document was physically written DURING the organizing meeting the venue convened - closer than a mere arena? Against it: the document was written as Microsoft's contribution TO the process, by Microsoft's employees, from Microsoft's own draft; the meeting is the occasion and the deadline, not the mechanism - and at expansion 197 Ecma failed closed as the venue that registers rather than enables (the successor's making). The parity question is the filing's purpose.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Ecma International"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-node:3:lisp-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 3,
+       "card": {
+        "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+        "aliases": [],
+        "year": 1962,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "The manual for LISP 1.5 (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962) - the book that defined Lisp's semantics as operational procedures (the eval/apply definitions) a generation before operational semantics had a name. A different artifact from the Lisp language itself (1960): expansion 197 judged the manual, not the language, as the mediated candidate at ECMA-262.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "lisp-1960",
+       "card": {
+        "name": "Lisp",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.6578,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:5:algol-60-1960",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 5,
+       "card": {
+        "name": "ALGOL 60 Report",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "other",
+        "definition": "The Revised Report on the Algorithmic Language ALGOL 60 (Naur et al., 1960/1963) - the document that introduced BNF grammar presentation and the production-based grammar architecture every later language standard, ANSI C included, inherited.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "algol-60-1960",
+       "card": {
+        "name": "ALGOL 60",
+        "aliases": [],
+        "year": 1960,
+        "domain": "programming languages",
+        "type": "method",
+        "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.7815,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     },
+     {
+      "pair_id": "cand-node:10:xml-data-microsoft-et-al-1998-1998",
+      "kind": "cand-node",
+      "a": {
+       "cand_index": 10,
+       "card": {
+        "name": "Microsoft",
+        "aliases": [],
+        "year": 1975,
+        "domain": "technology companies",
+        "type": "institution",
+        "definition": "The software company (founded 1975) whose Internet Explorer team employed both authors, owned the JScript implementation, and contributed this specification to TC39 as its base document.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "node_id": "xml-data-microsoft-et-al-1998-1998",
+       "card": {
+        "name": "XML-Data (Microsoft et al., 1998)",
+        "aliases": [],
+        "year": 1998,
+        "domain": "software standards",
+        "type": "other",
+        "definition": "The January 1998 Microsoft/ArborText/DataChannel/Inso submission to the W3C proposing XML-syntax schemas with datatypes, inheritance, and validation - the first full schema-language proposal for XML.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.2797,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "JScript",
+       "year": 1996,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "definition": "Microsoft's implementation of the JavaScript language (first shipped in Internet Explorer 3.0, August 1996) - the implementation this specification specifies.",
+       "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the implementation the document describes is coeval with the document (JScript 1.0 shipped three months before the November 1996 meeting), so the resolver's year granularity bars it before the mediation question (a specification transcribes its implementation's behavior) can be heard. Filed so the bar and the relation are both on this parent's record. Not re-dated.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.4; Microsoft, JScript release record (IE 3.0, August 1996)",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "reason": "dated on/after parent year 1996"
+     },
+     {
+      "candidate": {
+       "name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+       "year": 1996,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "definition": "Netscape's preliminary specification of JavaScript 1.1 (Eich & McKinney, drafts of October-November 1996), the other base document contributed to TC39 alongside the parent.",
+       "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the sibling base document is a parallel contribution to the same committee - the two documents were written independently in 1996 against the same deadline from different implementations, and no consumption in either direction is documented (expansion 200 recorded the symmetric fact at the sibling). Their meeting is the successor's story (the Gardner-Solton merged draft), heard at expansion 197. Filed so the sibling discrimination and the year bound are both on this parent's record. Not re-dated.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "reason": "dated on/after parent year 1996"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-node:3:lisp-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 3,
+      "card": {
+       "name": "LISP 1.5 Programmer's Manual (McCarthy et al., 1962)",
+       "aliases": [],
+       "year": 1962,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "The manual for LISP 1.5 (McCarthy, Abrahams, Edwards, Hart & Levin, MIT Press, 1962) - the book that defined Lisp's semantics as operational procedures (the eval/apply definitions) a generation before operational semantics had a name. A different artifact from the Lisp language itself (1960): expansion 197 judged the manual, not the language, as the mediated candidate at ECMA-262.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "lisp-1960",
+      "card": {
+       "name": "Lisp",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "John McCarthy's symbolic-processing language ('Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I', CACM 1960): s-expressions, lambda, conditional expressions and a meta-circular evaluator - the ancestor design of the whole Lisp family.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.6578,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:5:algol-60-1960",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 5,
+      "card": {
+       "name": "ALGOL 60 Report",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "other",
+       "definition": "The Revised Report on the Algorithmic Language ALGOL 60 (Naur et al., 1960/1963) - the document that introduced BNF grammar presentation and the production-based grammar architecture every later language standard, ANSI C included, inherited.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "algol-60-1960",
+      "card": {
+       "name": "ALGOL 60",
+       "aliases": [],
+       "year": 1960,
+       "domain": "programming languages",
+       "type": "method",
+       "definition": "The algorithmic language of the 1960 Revised Report (Naur et al.), whose block structure made lexical scoping the discipline of an implemented language - the example from which, per the record, Sussman imported lexical scoping into Lisp.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.7815,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    },
+    {
+     "pair_id": "cand-node:10:xml-data-microsoft-et-al-1998-1998",
+     "kind": "cand-node",
+     "a": {
+      "cand_index": 10,
+      "card": {
+       "name": "Microsoft",
+       "aliases": [],
+       "year": 1975,
+       "domain": "technology companies",
+       "type": "institution",
+       "definition": "The software company (founded 1975) whose Internet Explorer team employed both authors, owned the JScript implementation, and contributed this specification to TC39 as its base document.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "node_id": "xml-data-microsoft-et-al-1998-1998",
+      "card": {
+       "name": "XML-Data (Microsoft et al., 1998)",
+       "aliases": [],
+       "year": 1998,
+       "domain": "software standards",
+       "type": "other",
+       "definition": "The January 1998 Microsoft/ArborText/DataChannel/Inso submission to the W3C proposing XML-syntax schemas with datatypes, inheritance, and validation - the first full schema-language proposal for XML.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.2797,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
    "judgments_applied": true,
    "stage": "evaluated"
   }

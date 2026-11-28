@@ -14431,3 +14431,141 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T10:32:14.518825+00:00",
+ "event": "expansion",
+ "session": 96,
+ "expansion": 202,
+ "parent": "the-jscript-language-specification-version-0-1-welland-smith-1996",
+ "parent_name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+ "parent_year": 1996,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "The brief expected the two channels expansion 197 recorded as mediated via this document (ANSI C and the LISP 1.5 manual) to be judged here on their own documents, and both were admitted - but the ANSI C hearing landed as the expansion's most contestable admission rather than a routine one, for a reason the brief did not state: a borrowed grammar can be read as presentation rather than enablement, and the admission stands only on the argument that a specification's grammar is half its content (instantiated clause architecture, load-bearing in the parent's own leap record), with the presentational attack and a source-identity wart (HOPL names the standard; K&R's second edition prints essentially the same grammar, and a future document showing the drafters worked from the book's appendix would force a rehearing of the edge's identity) both recorded in the verification record. The brief's second expectation also needed sharpening: the document itself does not survive publicly (searched this session - only JScript .NET-era references, the HOPL retrospective and ECMA's later drafts surface), so the grounding is HOPL secs.8-9 and the expansion-197 record, stated plainly rather than dressed as a reading of the spec. One dry-run correction was spent at this parent, on an argument, not a mechanism: ANSI C's Q1 was first profiled partial/partial and the gate (Q1 or Q2 must pass) rejected it at its designed 4.0; the correction re-argued Q1 as a pass scoped to the deadline-bound flip (a committee grammar was writable in weeks - the sibling's autumn proves it - but not in the one night the rewrite had, which is the impossibility the parent's leap record is about), the same time-bound shape the run accepted for NeXTSTEP's Q1 at expansion 201. The outcome was not changed by the correction; the profile was made to carry the argument the admission already rested on.",
+ "grounding": "HOPL 2020 secs.8-9 (Wirfs-Brock & Eich, read at expansion 197 and held in its record): TC39's organizing meeting ran 21-22 November 1996 at Netscape HQ; Microsoft's presentation was delayed to the second day; Welland & Smith rewrote Microsoft's existing document overnight into numbered-step pseudocode modeled on the LISP 1.5 Programmer's Manual; the document's grammar was borrowed from ANSI C; the committee adopted the Microsoft document as ECMA-262's editorial base; Gardner & Solton's merged draft of 10 January 1997 took expression/statement grammar structure and production names largely from Microsoft's document, and grammar conventions largely from Netscape's; Katzenberger then expanded the pseudocode against the running implementations. Corroborated this session by the jshistory record of the meeting (the delay was a tactic to give Robert Welland more time to work on Microsoft's specification; 30 attendees; Netscape's base document presented by Anh Nguyen). The document's own text: searched for this session and NOT obtainable - no public copy of the v0.1 text surfaces; recorded as a grounding limit, not papered over. JScript 1.0 shipped in Internet Explorer 3.0 in August 1996 (Microsoft's release record), three months before the meeting.",
+ "parent_record_note": "The parent's stored record was verified complete this session (depth 5, priority 5.5, status provisional; stored bottleneck, leap and prior_state all non-empty; successor ECMA-262 first edition, which admitted it at expansion 197 as its editorial base, grade 5.5). The parent's stored sources carry only HOPL 2020 secs.8-9 - consistent with the document's non-survival, and recorded as such. No prior rejections exist for this parent. Every evaluation's leap record carries the parent's stored prior_state and stored leap verbatim.",
+ "provenance": "Session 96, expansion 2 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground at ~46s with the MiniLM embedder; judgments applied and the graph read back to confirm stage 'judged', 10 distinct and the matched ids before verdicts). Resolve: 12 raw -> 10 distinct, 3 matched existing, 0 auto-merges, judge queue 3, dropped 2, prefiltered 0. Judgments applied (3, all reasoned on the record): the LISP 1.5 Programmer's Manual DIFFERENT from the graph's Lisp node (the 1962 book vs the 1960 language - expansion 197's standing identity judgment); the ALGOL 60 Report SAME as the graph's ALGOL 60 node (the node's own definition anchors it to the 1960 Revised Report; the report and the language it defines are one node under own-version discipline), which made it a LINK candidate and brought matched_existing to 4; Microsoft DIFFERENT from the XML-Data node (an institution is not its 1998 submission). The verdicts builder's count check passed (10 evaluations == 10 distinct, missing/extra specs empty). ONE dry-run correction was spent (see brief_correction): after re-arguing ANSI C's Q1, the dry run reproduced the intended outcome BEFORE applying (3 survivors: the LISP 1.5 manual NEW 5.5, JavaScript LINK 4.5, ANSI C NEW 4.0; 4 mediated rejections: the ALGOL 60 Report via ANSI C, Self/Scheme/Java via JavaScript, all at 1.0; fail-closed partials: Ecma International 1.5, Microsoft 1.0; plain rejection: the Vienna Definition Language 0.0). apply-verdicts run exactly once (evaluated 10, survivors 3, created 2, linked 1, rejected 7, mediated rejections 4). The two created nodes were spot-checked after apply: lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962 and ansi-c-standard-x3-159-1989-1989, both depth 6, priorities 5.5/4.0, status provisional, stored bottleneck/leap/prior_state all non-empty. Verification applied from work/verification_the-jscript-language-specification-version-0-1-welland-smith-1996.json (all three edges provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 201's sync_commit = e5605a10. Rendered with --out run-01/index.html (326 nodes / 421 edges) before syncing, per the session-91 render lesson. This record's own sync_commit rides the sync that carries it.",
+ "scout": {
+  "builder": "run-01/work/build_scout_jscript.py",
+  "raw_filings": 12,
+  "distinct_names_intended": 12,
+  "per_lens": {
+   "L2": 3,
+   "L3": 2,
+   "L16": 2,
+   "L19": 3,
+   "L21": 2
+  },
+  "dry_notes_file": "run-01/work/dry_notes_the-jscript-language-specification-version-0-1-welland-smith-1996.json",
+  "dry_or_shortfall_lenses": [
+   "L1 (Dry-with-finding: the document integrates one base text - Microsoft's own earlier internal JScript draft, which Welland & Smith rewrote; the parent's own lineage, recorded in the scope note, not filed.)",
+   "L2 (3 filings: the subject (JavaScript) and the two same-year documents (JScript; the JavaScript 1.1 specification), both filed deliberately for the resolver's year bound.)",
+   "L3 (2 filings: the tradition probes - the ALGOL 60 Report (grammar tradition) and the Vienna Definition Language (operational-semantics tradition).)",
+   "L4 (Dry-with-finding: the problem is the parent's own stored bottleneck, posed by the standardization situation; no posing artifact is consumed.)",
+   "L5 (Dry: no diagnosis artifact is consumed.)",
+   "L6 (Dry-with-finding: the incumbent displaced is Microsoft's own earlier draft - the parent's lineage, not a predecessor.)",
+   "L7 (Dry: no failed predecessor document by others; the sibling is parallel, not failed, and is filed at L2.)",
+   "L8 (Dry: a language specification consumes no dataset.)",
+   "L9 (Shortfall: the implementation specified is JScript, filed at L2; no other implementation is engaged by this document - disputed cases were settled against the implementations by the successor's editors, not by this document.)",
+   "L10 (Dry: no material dependency.)",
+   "L11 (Dry-with-finding: the wielded procedure - writing semantics as numbered steps - is the parent's own act; its documented style model is filed at L16.)",
+   "L12 (Dry: no programmability layer is consumed by a specification document.)",
+   "L13 (Dry: no library or framework is consumed; the document specifies a library.)",
+   "L14 (Dry: no equipment artifact.)",
+   "L15 (Dry: no hosted service is consumed.)",
+   "L16 (2 filings: the two documented borrowings - the LISP 1.5 Programmer's Manual (the pseudocode style model) and the ANSI C standard (the grammar source).)",
+   "L17 (Dry: no metric or benchmark registered the document in its own time.)",
+   "L18 (Dry: no observation instrument; the drafting's evidence was Microsoft's own implementation, filed at L2.)",
+   "L19 (3 filings: Self, Scheme and Java - the language's documented design lineage. HyperTalk not filed at this parent: its channel runs to the language's audience and role, thinner here than the three filed members.)",
+   "L20 (Dry-with-finding: the authors (Welland, Smith) are the parent's own producers - self-carriage, not filed as persons.)",
+   "L21 (2 filings: Microsoft, the producer institution, and Ecma International, the venue.)",
+   "L22 (Dry-with-finding: the timing condition - the browser war and the committee deadline - rides inside the Microsoft and Ecma verdicts.)",
+   "L23 (Dry: the document states no forward agenda; its adoption as the editorial base is the successor's story, heard at expansion 197.)",
+   "Scope (the deliberate non-filings): the Java Language Specification (1996) NOT filed - its notation-model channel belongs to the sibling JS 1.1 document (expansion 200), not this one, and it is also same-year; K&R NOT filed - this document's C channel is the standard's grammar, the reverse of the sibling's apparatus; Microsoft's earlier internal JScript draft NOT filed - the parent's own draft lineage (self-carriage, same year, unpublished); Borland's Proposed JavaScript Extensions NOT filed - carried flag: it belongs to the THIRD edition's lineage (ES3), and any hearing must be raised there; Netscape Communications NOT filed - its document is the sibling, filed at L2, and its offer edge stands at expansion 197."
+  ]
+ },
+ "resolution": {
+  "raw": 12,
+  "distinct": 10,
+  "matched_existing": 4,
+  "auto_merges": 0,
+  "judge_queue": 3,
+  "dropped": 2,
+  "matched_ids": [
+   "javascript-1995",
+   "algol-60-1960",
+   "self-programming-language-1987",
+   "scheme-1975"
+  ],
+  "identity_note": "Three pairs were queued and all adjudicated with reasons on the record: the LISP 1.5 manual DIFFERENT from the Lisp node (book vs language, expansion 197's judgment); the ALGOL 60 Report SAME as the ALGOL 60 node (the node's definition anchors to the Revised Report); Microsoft DIFFERENT from the XML-Data node (institution vs its 1998 submission). matched_existing is 4 after judgments (3 at resolve + the ALGOL link). No auto-merges occurred."
+ },
+ "judgments": "3 pairs adjudicated (file: work/judgments_the-jscript-language-specification-version-0-1-welland-smith-1996.json): cand-node:3:lisp-1960 DIFFERENT; cand-node:5:algol-60-1960 SAME; cand-node:10:xml-data-microsoft-et-al-1998-1998 DIFFERENT. Reasons recorded in the judgments file and summarized in the resolution identity_note.",
+ "calendar_dropped_at_resolve": [
+  "JScript (1996) - dropped by the resolver's year bound (dated the parent's own year, 1996; JScript 1.0 shipped in Internet Explorer 3.0 in August 1996, three months before the meeting). Filed deliberately with its documented year: the implementation this specification specifies. Its role - the behavior the document transcribes - is the mediation attack surface at the JavaScript verdict, answered there on the language/implementation distinction. Not re-dated.",
+  "JavaScript 1.1 language specification (Eich & McKinney, 1996) - dropped by the resolver's year bound (dated the parent's own year, 1996). Filed deliberately: the sibling base document, a parallel contribution to the same standardization; no consumption in either direction is documented (expansion 200 recorded the symmetric fact at the sibling). The two documents' meeting is the successor's story, heard at expansion 197. Not re-dated."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_the-jscript-language-specification-version-0-1-welland-smith-1996.json",
+  "builder": "run-01/work/build_verdicts_jscript.py",
+  "evaluations": 10,
+  "survivors": [
+   "LISP 1.5 Programmer's Manual (McCarthy et al., 1962) - NEW node lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962, dry-run score 5.5, provisional. The headline channel: HOPL states the parent's numbered-step pseudocode was modeled on this manual, and the parent's stored leap records the modeling as its defining act - citation plus instantiation, the manual being where semantics-as-operational-procedure exists as a writable form. Expansion 197's mediation of this candidate via the JScript specification terminates at this parent, which is that specification. Judged a different artifact from the graph's Lisp node (1960 language) at identity resolution, per expansion 197.",
+   "JavaScript (1995) - LINK to javascript-1995, dry-run score 4.5, provisional. The subject relation: the document is the language written down from the competitor's implementation, which is what made it committee-grade evidence the language existed apart from Netscape's binary. Grade parity with the subject edges at expansions 197 and 200 (both 4.5).",
+   "ANSI C standard (X3.159-1989) - NEW node ansi-c-standard-x3-159-1989-1989, dry-run score 4.0, provisional. THE EXPANSION'S MOST CONTESTABLE ADMISSION. HOPL documents this document's grammar as borrowed from the standard - an act of the overnight rewrite - and the borrowed production architecture is pervasively instantiated in the document's grammar clauses and load-bearing in its leap record (the grammar structure descending into ECMA-262 is the borrowed one). The discrimination against expansion 200's K&R 0.5 is documentary: the sibling document does not cite the standard at all. The presentational attack and the K&R-appendix source-identity wart are recorded in the verification record; Q1's pass is scoped to the deadline-bound flip (see brief_correction)."
+  ],
+  "notable_rejections": [
+   "ALGOL 60 Report - REJECTED mediated_via the ANSI C standard (X3.159-1989) (1.0), as a LINK candidate against the existing ALGOL 60 node (identity judged SAME at resolution). The grammar tradition reaches the parent only through the borrowed standard - the documented borrowing names ANSI C, not Algol. Because the mediator is now an admitted node, the rediscovery path is live when the standard is expanded.",
+   "Self (programming language) - REJECTED mediated_via JavaScript (1.0): the prototype mechanism entered at the language's 1995 design; this document transcribes the language with no documented Self contact of its own (the successor's sec.3 Self citation is ECMA-262's apparatus, not this document's). Consistent with expansions 197 and 200, reached on this document's own record.",
+   "Scheme - REJECTED mediated_via JavaScript (1.0): Eich's Scheme-embedding brief and the mechanisms he carried over belong to the language's 1995 design; the document's authors had no Scheme contact on any record.",
+   "Java (Sun Microsystems, 1995) - REJECTED mediated_via JavaScript (1.0): the look-like-Java mandate was imposed on the language in 1995, not on this document; the JLS notation channel belongs to the sibling document (expansion 200), and this document's grammar channel is documented as ANSI C.",
+   "Ecma International - FAIL-CLOSED PARTIAL (1.5), parity with expansion 197's venue finding, with the discrimination argued explicitly as the filing required: the document was written DURING the organizing meeting the venue convened - closer than a passive arena - but by Microsoft's employees, from Microsoft's draft, as Microsoft's contribution; the venue's acts (chartering, convening, the deadline) are the parent's occasion and clock, not its mechanism. The venue registers rather than enables.",
+   "Microsoft - FAIL-CLOSED PARTIAL (1.0): the producer institution whose artifact IS the parent (the Netscape-at-expansion-200 form); its documented acts - employing the authors, owning the implementation, maneuvering the presentation slot to buy the rewrite its night - are the parent's conditions, heard in full in the verdict.",
+   "Vienna Definition Language (IBM, 1964) - PLAIN REJECTION (0.0): the operational-semantics tradition's obvious ancestor, with no documented contact; HOPL names the LISP manual as the model, and the documented junction displaces the tradition. Anticipation of a form without a junction does not link."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_the-jscript-language-specification-version-0-1-welland-smith-1996.json",
+  "outcomes": {
+   "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962": "provisional",
+   "ansi-c-standard-x3-159-1989-1989": "provisional",
+   "javascript-1995": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "LISP 1.5 manual: the identity attack (the language, not the book) fails on the identity judgment and HOPL's naming of the manual's form; the tradition attack (VDL) fails on the documented attribution; the style-vs-substance attack fails because for a specification the definitional form is the substance. ANSI C: the presentational-borrowing attack is answered (a grammar is half a specification's content; the merged draft took the structure from this document) and recorded as the edge's standing risk; the expansion-200 asymmetry attack fails on the documents (the sibling does not cite the standard); the K&R-appendix source-identity wart is recorded as the rehearing condition. JavaScript: the mediation attack via the implementation fails on the language/implementation distinction and the year bound's record; grade parity with expansions 197/200 confirmed."
+ },
+ "totals_after": {
+  "nodes": 326,
+  "edges": 421,
+  "budget": "326/2000",
+  "expansions_done": 202,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 66,
+   "6": 51,
+   "7": 34,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 309,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "lisp-1-5-programmer-s-manual-mccarthy-et-al-1962-1962",
+  "nextstep-next-1989-1989",
+  "neural-network-based-language-models-for-highly-inflective-l-2009",
+  "pushshift-reddit-crawl-baumgartner-2015-2015",
+  "state-application-framework-2001"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}
