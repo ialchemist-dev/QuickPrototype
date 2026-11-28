@@ -16972,3 +16972,159 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 105 continues: expansion 220 (IEEE 754, 1985) follows this checkpoint in the same session. One LINK, no new nodes; the run's document-census pattern at a thin parent (compare exp-217's single admission). New rehearing conditions recorded: TR 304 at Whitehead (the Mikolov-pattern condition, keyed to obtaining TR 304's text); the Q-learning LINK at Whitehead (keyed to a document showing LEC/LBW specified for an arbitrary base learner). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion - which now stands THIRD on the frontier, not fourth, after this expansion consumed the frontier head; it is not session 105's second parent (IEEE 754 is), and the flag is recorded here per the brief's instruction."
 }
+{
+ "ts": "2026-11-28T13:29:36.747154+00:00",
+ "event": "expansion",
+ "session": 105,
+ "expansion": 220,
+ "parent": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+ "parent_name": "IEEE 754 binary floating-point arithmetic (1985)",
+ "parent_year": 1985,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "No brief framing required correction this expansion; the brief's one substantive note - that the node's edge history (LINK 5.0 at exp-197, LINK 4.0 at exp-200) is edge-scoped grade variance - is confirmed and untouched: this expansion judged the standard's OWN ancestry on its own documents, and neither prior edge was re-heard. FIX-UP discharged here per house pattern: expansion 219's sync_commit = b57d2e84 (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that checkpoint via the qp-sync tree check plus independent local blob-SHA recomputation: 6d318f2e / b860fc6a / e6095e35). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "The standard's ancestry was grounded in the designer's own record and the committee history, all fetched and read this session: (1) Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - read: the opening case against incompatible vendor arithmetics; the 'Models' section in full (Brown's model [23,27,28] as 'easily the best available description of floating-point computation that we have', against the proposal which 'prescribes in detail how an arithmetic engine shall be designed'; van Wijngaarden [26] as the excessively abstract earlier attempt); the gradual-underflow and affine/projective-mode passages (the 8087 implementing both modes); and the complete reference list, including [3] Draft 6.0 of Task P754 (Computer, March 1981), [4] Coonen's Implementation Guide (Computer, Jan 1980), [5] the SIGNUM special issue (Oct 1979, draft 5.11 'plus commentary and a counter-proposal' - the counter-proposal's authors are NOT named in the record obtained; recorded as a grounding gap, not papered over), [6] the Intel 8087 numerics supplement, [7] the Motorola 6839 pre-announcement, [9] the NS 16081 ('all but square root, binary decimal-conversion and gradual underflow on chip'), [10] the AMD Am9512 ('uses the proposed standard's single and double precision formats but not its exception handling'), [12] the IFIP WG 2.5 statement (Dec 16, 1978), [45] Ris 1976, [46] Coonen's underflow guide (March 1981), [47] Kahan's 'Interval Arithmetic Options in the Proposed IEEE Floating-Point Standard'. Kahan's Table 1 carries a row literally headed 'Proposed IEEE Standard: INTEL i8087; Motorola 6839'. (2) Hennessy & Patterson, Computer Architecture, section 3.10 (fetched PDF extract): 'The winning draft was very close to one submitted by Kahan, his student Jerome T. Coonen, and Harold S. Stone... Their draft was based on the Intel design, with Intel's permission of course, as simplified by Coonen'; committee began late 1977 amid 'a plethora of competing drafts'; Intel released the 8087 in 1980. (3) IEEE Milestone record: Berkeley faculty/students drafted what became 754; Kahan attended the second meeting in September 1977 and recruited Stone and Coonen to write an initial proposal for the April 1978 meeting; in 1976 John Palmer at Intel approached Kahan (first targets: the 432 and the 8087). (4) Wikipedia, IEEE 754-1985: 'The first integrated circuit to implement the draft of what was to become IEEE 754-1985 was the Intel 8087'; Kahan initially suggested Intel use DEC VAX floating point (VAX-11/780, late 1977, 'highly regarded'), then drew up his own specifications; he also initially recommended decimal, rejected because the hardware design was too far along. (5) Computer.org history: the working group considered 50 drafts over three and a half years. (6) Kahan's 1996 lecture notes (fetched extract): 'IEEE 754 encodes floating-point numbers in memory (not in registers) in ways first proposed by I.B. Goldberg in Comm. ACM (1967) 105-6'. WARTS (stated, per discipline): the KCS proposal's own April 1978 text was not independently obtained - its admission rests on the designer's 1981 account plus two retrospective accounts converging on the same descent; no Intel 8087 datasheet was independently read - the first-silicon claim rests on the fetched standard history corroborated by the designer's own Table 1. Both warts are recorded on the nodes' verification records.",
+ "scout": {
+  "raw_filings": 16,
+  "matched_existing": 0,
+  "judge_queue": 0,
+  "judgments_applied": 0,
+  "distinct": 16,
+  "dropped_year_bound": 0,
+  "note": "Document-census pattern over the Kahan record: the design document (KCS proposal), its own companion (Coonen's Implementation Guide), its undisclosed basis (the Intel design, filed for the mediation hearing), the flagship silicon (8087), the adoption wave (Motorola 6839, NS 16081, AMD Am9512 - filed so the direction veto is exercised on the record), the incumbents and rival programmes (VAX, System/360 hexadecimal, Brown's model, van Wijngaarden, Ris decimal), the designer-documented component (Goldberg 1967), the served discipline (interval arithmetic), the endorsing body (IFIP WG 2.5) and the forming body (Task P754). Resolve ran under MiniLM; zero candidates matched existing nodes (this lineage is new to the graph) and the judge queue was empty, so the embedder touched no outcome. Per-lens floors: 23 lens entries filed with dry/shortfall notes in dry_notes_ieee-754-binary-floating-point-arithmetic-1985-1985.json. Considered and not filed, with reasons in the dry notes: the intervening P754 drafts (the parent's own gestation - the exp-217 TDL precedent) and the SIGNUM counter-proposal (unidentified in the record obtained - a grounding gap, stated); IEC 559 (1985) and IEEE 854 (1987) (downstream identity, wrong direction); the Motorola 68881 (1984, adoption wave one step further down); the CDC 6600 'indefinite' operand and the Burks-Goldstine-von Neumann 1946 report (genuine anticipations with no document in the parent's record naming a channel - anticipation without a junction); the diagnosis literature (Wilkinson 1963, Sterbenz 1974, Brent 1973, Dekker 1971 - a diagnosis answered is not consumed, the Hochreiter condition, and none is named in the Kahan record as a design source); Kahan's compensated summation (1965) and the HP calculator line (the designer's formation, carried by the person, not consumed by the artifact)."
+ },
+ "admissions": [
+  {
+   "node": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+   "name": "The Kahan-Coonen-Stone floating-point proposal (1978)",
+   "link": false,
+   "grade": 6.5,
+   "basis": "NEW node (depth 6, provisional). The design document whose content the standard nearly intactly is: Hennessy & Patterson - 'the winning draft was very close to one submitted by Kahan, his student Jerome T. Coonen, and Harold S. Stone'; the IEEE Milestone record - the Berkeley draft became the standard. Q1/Q2 pass (before April 1978 there was no complete, implementable, adoptable design on any table; the proposal's feature set - formats with extended, correctly rounded operations, gradual underflow, NaNs and infinities, directed rounding, sticky flags - is the space the standard and its successors work in). Q3 scored PARTIAL honestly: some 50 drafts were considered and a counter-proposal circulated, so the node claims the channel taken, not the only channel. The mediation attack (the proposal merely transmits the Intel design) is answered on this edge - what the committee received, revised and adopted was this proposal - and the Intel design is recorded as mediated via this node, its hearing assigned to this node's own expansion."
+  },
+  {
+   "node": "intel-8087-floating-point-coprocessor-1980-1980",
+   "name": "Intel 8087 floating-point coprocessor (1980)",
+   "link": false,
+   "grade": 7.0,
+   "basis": "NEW node (depth 6, provisional). The draft's first silicon and its feasibility proof: the first integrated circuit to implement the draft arithmetic, in the designer's own Table 1 under the proposal's name, shipping five years before approval; the standard's double-extended format tracks the 80-bit format the chip shipped. The via-KCS mediation attack was run at full strength in the verification and answered on chronology (1980 post-dates the April 1978 draft, so the chip cannot be the draft's conduit) and on channel (feasibility/market fact plus the format channel - different content from the proposal's textual channel; neither edge mediates the other). Q3 partial (Motorola's 6839 announced in the same window; the draft was also winning on argument). The conformance attack (the chip implemented the DRAFT, including the projective mode the final text dropped) narrows the node's claim to exactly what its leap text says and does not break it."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "VAX floating-point arithmetic (DEC, 1977)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. The strongest carriage any negative here could have: the era's most highly regarded arithmetic, and the designer's own first recommendation to Intel. It fails the correction relation: Kahan withdrew the recommendation and designed against it - the standard's load-bearing features are exactly its departures from VAX practice (gradual underflow where VAX flushed or faulted; NaNs where VAX raised a reserved-operand fault; directed rounding modes VAX did not offer), and nothing of VAX's distinctive worked object was extracted. A recommendation withdrawn is not a channel. REHEARING CONDITION: a committee document showing a VAX-specific mechanism adopted into the draft AS VAX's (not merely also present in the era's common practice) reopens this edge."
+  },
+  {
+   "name": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "The strongest component filing: a designer-documented component channel (Kahan's 1996 notes credit Goldberg with the memory encoding the standard uses). It fails the components discrimination - an encoding is a notation, not a mechanism; the packing was era-widespread; and the counterfactual fails, since the arithmetic stands unchanged under any equivalent bit packing. REHEARING CONDITION: a committee document showing the encoding choice was itself contested and load-bearing reopens this edge."
+  },
+  {
+   "name": "Intel floating-point design (Palmer & Kahan, 1976)",
+   "score": 1.0,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA THE KAHAN-COONEN-STONE PROPOSAL (1978). The channel is real but carried by its cited final link: the Intel design reached the committee only inside the proposal's disclosed, simplified form ('based on the Intel design, with Intel's permission of course, as simplified by Coonen'), and the committee never had it as a separate artifact. This is the expansion's most valuable mediated record: the Intel design is the KCS proposal's own obvious first hearing and is ASSIGNED to that node's expansion, where it should be judged on Intel-side documents directly."
+  },
+  {
+   "name": "Brown's model of floating-point computation (1977)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "The rival programme, defined-against on the designer's own text: Kahan calls it 'easily the best available description of floating-point computation that we have' and then rejects description as a basis - 'the proposal prescribes in detail how an arithmetic engine shall be designed'. The parent exists because this path was declined; none of the model's parameter machinery is consumed."
+  },
+  {
+   "name": "An Implementation Guide to a Proposed Standard for Floating-Point Arithmetic (Coonen, 1980)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "Own-version discipline: the Guide is the KCS proposal expounded by its own co-author and simplifier - the proposal in implementation dress (the GCA 101-1983 disposition at exp-215). Its real usefulness to implementers is the proposal's generativity exercised, and is recorded at the proposal's edge."
+  },
+  {
+   "name": "Interval arithmetic (Moore, 1966)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "A requirement specification is not a consumed mechanism: Kahan's ref [47] argues the standard should SERVE interval arithmetic (directed rounding lets enclosures be computed) - the consumer direction. The standard incorporates no interval operation; the RFC-1737 exception does not apply, since the standard's text implements scalar arithmetic, not interval arithmetic's clauses."
+  },
+  {
+   "name": "IBM System/360 hexadecimal floating-point arithmetic (1964)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The incumbent specimen of the world the standard replaced: the standard's base, formats, rounding and exception design are all constructed against the hexadecimal pattern, and no S/360 mechanism is consumed. Importance as a specimen is not a channel."
+  },
+  {
+   "name": "IEEE Task P754 working group (1977)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Formation without a separable mechanism: the working group is the parent's gestation, not its predecessor - one process and its product (the ANSI-committee disposition at exp-215). The design content that crossed the process is filed as the KCS proposal."
+  },
+  {
+   "name": "Motorola 6839 floating-point unit (1980)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Direction is a hard veto: the part implements the draft, and an adoption cannot be an ancestor of the design it adopts. Its evidentiary role runs the other way - ripening evidence on the KCS and 8087 edges - and is recorded there."
+  },
+  {
+   "name": "A decimal floating-point architecture (Ris, 1976) / A mathematical model of floating-point computation (van Wijngaarden, 1966)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The decimal alternative inside the proposal's own reference list (considered; the binary path taken; Kahan's decimal recommendation to Intel was rejected on hardware timing) and the model programme's senior member (the designer's own verdict: 'failed partly because it was excessively abstract'). Consideration in a bibliography is not consumption."
+  },
+  {
+   "name": "National Semiconductor 16081 floating-point unit (1980) / AMD Am9512 floating-point unit (1980)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "Downstream adoptions of the draft (the 16081 partial - 'all but... gradual underflow'; the Am9512 formats-only, 'not its exception handling'). Direction vetoes ancestry; both are ripening evidence on the admissions' edges."
+  },
+  {
+   "name": "IFIP Working Group 2.5 statement on floating-point arithmetic (1978)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "An endorsement is ripening, not a mechanism: no format, rounding or exception decision is traced to the statement in any document obtained. Institutions act through the specific artifact they carried (exp-212); the artifact here was a position."
+  }
+ ],
+ "verification": {
+  "file": "verification_ieee-754-binary-floating-point-arithmetic-1985-1985.json",
+  "outcomes": {
+   "the-kahan-coonen-stone-floating-point-proposal-1978-1978": "provisional",
+   "intel-8087-floating-point-coprocessor-1980-1980": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "Both survivors verified section 6.4 (apply-verification) and confirmed non-null on disk after apply, both PROVISIONAL; both nodes' stored bottleneck/leap/prior_state spot-checked non-empty. Attacks: on the KCS proposal - Q1 (no adoptable design before April 1978: fails on H&P + Milestone), multiples on Q3 (50 drafts + the SIGNUM counter-proposal; Q3 partial for exactly this), date/direction (1978 < 1985), mediation via the Intel design (answered: the committee received the proposal; the Intel design is mediated the other way and assigned to this node's expansion). On the 8087 - the via-KCS mediation attack at full strength (answered on chronology and channel), multiples on Q3 (the 6839 in the same window; partial), date/direction (1980 < 1985), and the conformance attack (the chip implemented the draft, projective mode included, not the final text verbatim - narrows the claim to what the node's leap text says). Warts recorded on both verification records: the KCS admission rests on the designer's 1981 account plus two retrospectives, the April 1978 draft text not independently read; the 8087's first-silicon claim rests on the fetched standard history corroborated by the designer's Table 1, no Intel datasheet independently read."
+ },
+ "totals_after": {
+  "nodes": 355,
+  "edges": 459,
+  "budget": "355/2000",
+  "expansions_done": 220,
+  "provisional": 338,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 71,
+   "6": 57,
+   "7": 36,
+   "8": 24,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 3,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "intel-8087-floating-point-coprocessor-1980-1980",
+  "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+  "maclisp-1966",
+  "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+  "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+  "samuel-s-checkers-player-samuel-1959-1959"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "SESSION 105 CLOSES with this checkpoint (expansions 219-220). Session totals: nodes 353 -> 355, edges 456 -> 459, expansions_done 218 -> 220. FRONTIER FLAG (per the brief's instruction): the McLachlan & Basford Mixture Models node (1988) - whose expansion carries the long-assigned EM hearing - now stands FOURTH on the frontier, behind the two nodes this session created (8087, KCS proposal) and MacLisp (1966); it was fourth at session open too, but the two new depth-6 nodes now sit ahead of MacLisp, so the EM hearing is two sessions out at the earliest if the frontier is consumed in order (session 106 would take the 8087 and the KCS proposal; MacLisp and Mixture Models would follow). New carried hearings assigned this session: the Intel floating-point design hearing is assigned to the KCS proposal's own expansion (its obvious first hearing); the Goldberg-encoding and VAX rehearing conditions are recorded on exp-220's verdicts; TR 304's Mikolov-pattern rehearing condition and the Q-learning-at-Whitehead incorporation rehearing condition ride exp-219's record. One mechanical incident, no outcome affected: the first apply-verification call for exp-220 was rejected on an unrecognized --parent argument (the subcommand takes none); re-run in the runbook's exact form and applied cleanly - recorded here so the session's tool history is honest."
+}

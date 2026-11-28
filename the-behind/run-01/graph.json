@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T13:16:46+00:00",
-  "expansions_done": 219,
-  "raw_candidates_seen": 9017,
+  "updated_at": "2026-11-28T13:28:30+00:00",
+  "expansions_done": 220,
+  "raw_candidates_seen": 9033,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -36182,6 +36182,91 @@
     "name": "Lookahead planning and latent learning in classifier systems (Riolo, 1990)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "Intel floating-point design (Palmer & Kahan, 1976)",
+    "reason": "mediated_via: The Kahan-Coonen-Stone floating-point proposal (1978)",
+    "at": "2026-11-28T13:28:01+00:00",
+    "mediated_via": "The Kahan-Coonen-Stone floating-point proposal (1978)"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "VAX floating-point arithmetic (DEC, 1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "IBM System/360 hexadecimal floating-point arithmetic (1964)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "Brown's model of floating-point computation (1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "A decimal floating-point architecture (Ris, 1976)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "An Implementation Guide to a Proposed Standard for Floating-Point Arithmetic (Coonen, 1980)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "Interval arithmetic (Moore, 1966)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "A mathematical model of floating-point computation (van Wijngaarden, 1966)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "Motorola 6839 floating-point unit (1980)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "National Semiconductor 16081 floating-point unit (1980)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "AMD Am9512 floating-point unit (1980)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "IFIP Working Group 2.5 statement on floating-point arithmetic (1978)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
+   },
+   {
+    "parent_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+    "name": "IEEE Task P754 working group (1977)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:28:01+00:00"
    }
   ]
  },
@@ -45467,7 +45552,7 @@
    "prior_state": "Vendor-specific arithmetics (IBM hexadecimal float, VAX formats, Cray arithmetic) with incompatible rounding and exception behavior.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -46522,6 +46607,54 @@
    },
    "merged_into": null,
    "created_at": "2026-11-28T12:48:08+00:00"
+  },
+  "intel-8087-floating-point-coprocessor-1980-1980": {
+   "id": "intel-8087-floating-point-coprocessor-1980-1980",
+   "name": "Intel 8087 floating-point coprocessor (1980)",
+   "aliases": [],
+   "year": 1980,
+   "domain": "",
+   "type": "device",
+   "definition": "The first silicon implementation of the draft, and the standard's feasibility proof. Wikipedia (IEEE 754-1985): 'The first integrated circuit to implement the draft of what was to become IEEE 754-1985 was the Intel 8087.' Kahan's 1981 Table 1 has a row literally headed 'Proposed IEEE Standard: INTEL i8087; Motorola 6839' - the chip IS the proposal, in the designer's own comparison table; his ref [6] is the 8087 numerics supplement, and the text notes the 8087 implements the proposal's affine and projective modes. The mediation attack (the chip merely transmits the KCS draft) is run in the verdicts and answered there: the chip post-dates the draft, so it cannot be the draft's conduit to the committee; its channel is independent - existence proof plus market fact, years before approval, and the standard's double-extended format tracks the format the chip shipped.",
+   "bottleneck": "Before the Intel 8087 (1980), the proposed standard existed only on paper, and opponents could dismiss its signature features - gradual underflow, NaNs, an 80-bit extended format - as too costly or impossible to build into commercial silicon.",
+   "leap": "The Intel 8087 (1980) was the first integrated circuit to implement the draft standard's arithmetic: single and double formats with 80-bit extended registers, gradual underflow, NaNs and infinities, directed rounding and sticky exception flags - a shipping reference implementation, years before the standard's 1985 approval, that answered the implementability objection in the only coin that settled it.",
+   "prior_state": "Arithmetic chips and ROM libraries implementing each vendor's incompatible formats with abrupt underflow and fault-on-exception behaviour; the proposed standard a paper draft in committee controversy.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 7.0,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "ADMITTED NEW, grade 7.0 (CLI edge score). Adversarial attacks run: (1) Mediation attack at full strength - the chip merely transmits the KCS draft, so the edge should be mediated via the proposal. Answered on chronology (the chip, 1980, post-dates the draft, April 1978, so it cannot be the draft's conduit to the committee) and on channel (the standard's dependence on the chip runs through feasibility/market fact during the contested years - Kahan's 1981 Table 1 presents the chip under the proposal's own name - and through the double-extended format tracking the chip's shipped 80-bit format). The two admissions carry different content and neither mediates the other. (2) Multiples on Q3 - Motorola's 6839 was announced in the same window and the draft was winning on argument too; Q3 scored PARTIAL. (3) Date/direction: 1980 precedes 1985. (4) Conformance attack - the chip implemented the DRAFT (including the projective infinity mode the final 1985 text dropped), not the final text verbatim; the node's leap text claims exactly the draft-implementation ('first integrated circuit to implement the draft standard's arithmetic'), so the attack narrows the claim to what the record says and does not break it. WART: the 'first integrated circuit' claim rests on the fetched IEEE 754-1985 account corroborated by the designer's own Table 1; no Intel primary datasheet was independently read in this expansion.",
+    "at": "2026-11-28T13:28:30+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T13:28:01+00:00"
+  },
+  "the-kahan-coonen-stone-floating-point-proposal-1978-1978": {
+   "id": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+   "name": "The Kahan-Coonen-Stone floating-point proposal (1978)",
+   "aliases": [],
+   "year": 1978,
+   "domain": "",
+   "type": "other",
+   "definition": "The design document the standard nearly intactly is. Hennessy & Patterson (Computer Architecture, section 3.10): 'The winning draft was very close to one submitted by Kahan, his student Jerome T. Coonen, and Harold S. Stone... Their draft was based on the Intel design, with Intel's permission of course, as simplified by Coonen.' IEEE Milestone record: Berkeley faculty and students drafted what became 754; Kahan recruited Stone and Coonen to write an initial proposal for the April 1978 meeting. Kahan's own 1981 account tracks the draft lineage (his ref [3] = Draft 6.0 of IEEE Task P754, Computer, March 1981). The committee's 50 drafts over three and a half years were revisions of, and reactions to, this text.",
+   "bottleneck": "Before the Kahan-Coonen-Stone proposal (1978), a floating-point standard had nothing concrete to adopt: only incompatible vendor arithmetics existed, each defended by its maker, and no complete, implementable design for a portable arithmetic had been put on the table.",
+   "leap": "In April 1978 Kahan, his student Jerome Coonen and Harold Stone put a complete design on the committee's table: binary single and double formats with a wider internal extended format, correctly rounded operations, gradual underflow via denormalized numbers, NaNs and signed infinities with non-stop exception handling, and directed rounding modes - drawn from Kahan's Intel consulting work, disclosed with Intel's permission and simplified by Coonen. It became, nearly intact, the winning text of IEEE 754.",
+   "prior_state": "Vendor arithmetics incompatible in format, rounding and exception behaviour (IBM hexadecimal float, DEC VAX formats), plus abstract machine-parameter models of floating-point computation (Brown's model) that deliberately prescribed nothing.",
+   "status": "provisional",
+   "depth": 6,
+   "expanded": false,
+   "priority": 6.5,
+   "sources": [],
+   "verification": {
+    "outcome": "provisional",
+    "notes": "ADMITTED NEW, grade 6.5 (CLI edge score). Adversarial attacks run: (1) Q1 attack - was there really no adoptable design before April 1978? The committee record shows competing vendor drafts and the model programme, neither an adoptable complete design; the attack fails on Hennessy & Patterson section 3.10 and the IEEE Milestone record. (2) Multiples on Q3 - the working group considered some 50 drafts and a counter-proposal circulated (SIGNUM special issue, Oct 1979, Kahan ref [5]); Q3 was scored PARTIAL for exactly this, and the node claims the channel taken, not the only channel. (3) Date/direction: April 1978 precedes the parent (1985); direction documented by descent of the text. (4) Mediation attack - the proposal merely transmits the Intel design: answered on the edge (what the committee received, revised and adopted was this proposal, disclosed with Intel's permission); the Intel design's own hearing is recorded as mediated via this node and assigned to this node's expansion. WART (recorded per discipline): the admission rests on the designer's contemporaneous account (Kahan 1981, read) plus two retrospective accounts (Hennessy & Patterson; the IEEE Milestone record); the April 1978 draft's own text was not independently obtained or read. The convergence of three independent records on the same descent claim is the evidence; the wart stands on the record.",
+    "at": "2026-11-28T13:28:30+00:00"
+   },
+   "merged_into": null,
+   "created_at": "2026-11-28T13:28:01+00:00"
   }
  },
  "edges": [
@@ -91384,6 +91517,200 @@
     "counterfactual": "Remove Q-learning and the parent has neither its theorem object nor its mechanisms. Theorem 8 is a lower bound on a zero-initialized Q-learning system's search time, proved by reducing that system's dynamics to a random walk; BB-LEC is defined as a running Q-learning system whose environmental reward is 'treated according to standard Q-learning' while a bias function is learned alongside; LBW is a population of Q-learning agents pooling experience; Theorems 10-15 are stated for those composite systems. The paper claims generality for a class, but every result it states is about Q-learning systems, and the stored action-value function is the surface both mechanisms modify.",
     "mediator": null,
     "evidence": "Two channels, discriminated. (a) Object of analysis: 'we have chosen to analyze Q-learning [Watkins, 1989] as a representative reinforcement learning algorithm', with its update reproduced as eq.3 and its algorithm as Fig.1 - this channel ALONE would fail under the Kimura-object discrimination (the parent's object is not thereby a consumed component). (b) Incorporation: the parent's constructive half consumes the update rule as a component - BB-LEC's decision rule sums Q with the learned bias B (eq.9) while environmental reward updates Q by the standard rule, and LBW's learners are Q-learning agents whose Q functions absorb observed experience. Channel (b) is consumption of a mechanism inside the parent's own artifacts, and it carries the edge; the qualification is recorded here and in the verification."
+   }
+  },
+  {
+   "predecessor_id": "intel-8087-floating-point-coprocessor-1980-1980",
+   "successor_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+   "verdicts": {
+    "Q1": {
+     "verdict": "partial",
+     "evidence": "The chip flipped no impossibility of principle - the design existed on paper - but it flipped the operative verdict of the controversy, 'too costly to build', by existing. Scored partial: the impossibility refuted was a claimed one.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "A shipping implementation unblocked the space the standard needed: implementers had a reference to test against, vendors a proven design to adopt, and the committee a fact to point to; the x87 line and the PC ecosystem's arithmetic descend from this part.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": "This pass dies if the 8087 is shown to have implemented a different arithmetic from the draft (e.g. if its underflow or exception behaviour is shown to be VAX-style rather than the proposal's)."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is qualified on the record: Motorola's 6839 was announced in the same window (Kahan's Table 1 pairs them) and the draft was also winning on argument. The 8087 was the first and the flagship implementation, not the only conceivable one - partial, honestly.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "It collapsed the cost and risk of adopting the draft: after 1980 a vendor or a programmer could build on arithmetic that already existed in silicon instead of betting on a committee's paper.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": "This pass dies if the 8087 is shown to have been commercially negligible before 1985 (no significant shipments or design-ins)."
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "Real silicon made the draft's behaviour confrontable: claims about rounding, underflow and exceptions could be checked against a part, not only argued from a text. Partial - systematic conformance testing is a later tradition.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "partial",
+     "evidence": "The chip embodied the design's theory in checkable form, but the understanding it supplied is the proposal's, exercised in hardware - partial.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "Its 80-bit extended register format became the internal-precision interface the standard's double-extended format tracks and that the x86 line carried for decades - a composable surface others built on.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The chip carried the draft out of the standards committee into the market at large - the channel through which the proposed arithmetic reached working programmers years before approval.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "partial",
+     "evidence": "Hardware floating point collapsed numerical experiment costs generally, but in this relation the operative channel is adoption, not iteration speed - partial.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It displaced the 'paper standard' objection and, as the reference implementation, displaced rival chips' arithmetics as the thing to match during the standard's contested years.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "In the history that happened this is a trunk node for the standard: the flagship implementation from 1980 to approval, named by the designer himself as the proposal's embodiment (Table 1).",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": "This pass dies if the committee record shows the 8087 played no role in the draft's survival or adoption."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once silicon shipped, the features could no longer be argued away as impractical - but the text was not yet fixed, and a shipped part can still lose a standards fight; partial.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    }
+   },
+   "score": 7.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T13:28:01+00:00",
+   "leap": {
+    "prior_state": "Every computer maker shipped its own floating-point arithmetic - IBM's hexadecimal float, DEC's VAX formats, Cray's arithmetic - differing in base, precision, rounding, underflow and exception behaviour, so numerical software had to be recalibrated machine by machine and results were not portable; the only unifying literature was descriptive models of floating-point computation that deliberately prescribed nothing.",
+    "jump": "IEEE 754-1985 fixed one binary floating-point arithmetic for the industry: single and double formats (with wider extended formats), correctly rounded arithmetic operations, gradual underflow through denormalized numbers, NaNs and signed infinities, directed rounding modes, and sticky exception flags with non-stop defaults - a complete, implementable, prescriptive design that later standards, processors and languages could incorporate by reference.",
+    "date": 1985
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the 8087 and the draft remains, through its contested years, a paper design its opponents could price as unbuildable; the standard that emerged also loses the shipped 80-bit extended format its double-extended format tracks. The chip's contribution is not the design (filed separately, at the KCS proposal) but the design's existence in silicon, five years before approval.",
+    "mediator": null,
+    "evidence": "The mediation attack was run at full strength: the 8087 merely transmits the KCS draft, so the edge should be mediated via the proposal. It fails on chronology and on channel. Chronology: the chip (1980) post-dates the draft (April 1978), so it cannot be the draft's conduit to the committee. Channel: the standard's dependence on the chip runs through feasibility and market fact - Kahan's own 1981 Table 1 lists the proposed standard's row as 'INTEL i8087; Motorola 6839', the designer presenting the chip AS the proposal's proof - and through the double-extended format, which follows the format the chip shipped. Two edges, two different contents; neither mediates the other."
+   }
+  },
+  {
+   "predecessor_id": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+   "successor_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before April 1978 a portable floating-point arithmetic was not an adoptable thing: standardization efforts had vendor drafts defending installed bases and mathematical models that prescribed nothing. The proposal flipped that by putting a complete, implementable design - every load-bearing decision made - on the table.",
+     "source": "Hennessy & Patterson, Computer Architecture: A Quantitative Approach, section 3.10 (fetched and read)",
+     "falsification": "This pass dies if a complete, implementable portable-arithmetic design predating April 1978 is produced that the P754 committee had before it as an adoptable text."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The design's decisions unblocked the whole subsequent space: gradual underflow, NaN-based non-stop exceptions, directed rounding and the extended format are the features the standard, its successors (854, 754-2008) and every implementation since have worked with, argued about and built on.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": "This pass dies if the standard's text is shown to descend from a different draft, with the KCS draft a parallel also-ran."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is honestly qualified: the working group considered some 50 drafts over three and a half years, and a counter-proposal circulated (SIGNUM special issue, October 1979) - another text could conceivably have won. In the history that happened, this design supplied the winning text nearly intact; scored partial, not pass, for exactly that contingency.",
+     "source": "Computer.org history of IEEE 754 (50 drafts); Kahan 1981 ref [5] (the SIGNUM counter-proposal)",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "The proposal collapsed the cost of REACHING a standard - one complete text to revise instead of a field of incompatible drafts to reconcile - but the collapse of numerical software's porting costs belongs to the standard itself.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "partial",
+     "evidence": "A prescriptive design made conformance statable: an implementation either rounds correctly, underflows gradually and raises the flags, or it does not - a checkability no descriptive model could give. Scored partial: the conformance-testing tradition is the standard's descendant, not the proposal's own artifact.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The proposal embodied the field's working theory in design form: each feature is an error-analysis theorem turned into a mechanism (denormals make underflow gradual so that x-y==0 iff x==y; directed rounding makes rigorous bounds computable; flags make exceptions survivable). Kahan's 1981 paper argues the standard feature by feature on exactly these grounds.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": "This pass dies if the proposal's features are shown to be an unmotivated bundle copied from a single vendor's practice rather than argued from error analysis."
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The proposal WAS a standard-shaped, composable artifact: formats and operations specified completely enough for independent parties (Intel, Motorola, National Semiconductor) to implement without further reference to its authors - the property Kahan's Table 1 documents by listing three vendors' silicon under the proposal's name.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "pass",
+     "evidence": "The design traveled across every domain boundary available to it: from a university/consulting room into Intel's product line, Motorola's and National Semiconductor's announced parts, the IFIP community's endorsement, and finally the industry's standard.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "The proposal did not itself collapse any experiment loop; its seven-year committee gestation is the opposite of iteration speed.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "pass",
+     "evidence": "It displaced both rival bases for standardization: the per-vendor draft field and the parameterize-don't-standardize model programme (Brown) - Kahan's 1981 'Models' section records the displacement as an argument won.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "The trunk node of this lineage: the standard's text descends from this document, and the document is independently documented as such by the textbook record and the IEEE's own Milestone account.",
+     "source": "Hennessy & Patterson, Computer Architecture: A Quantitative Approach, section 3.10 (fetched and read)",
+     "falsification": "This pass dies under the same condition as Q2's: a showing that the winning text descends from another draft."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once a complete prescriptive design existed, the debate could not return to models-versus-nothing; but the irreversibility was only sealed by the standard's 1985 approval and the silicon - scored partial at this edge.",
+     "source": "Kahan, 'Why do we need a floating-point arithmetic standard?' (Feb 12, 1981) - the designer's contemporaneous account, read",
+     "falsification": ""
+    }
+   },
+   "score": 6.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T13:28:01+00:00",
+   "leap": {
+    "prior_state": "Every computer maker shipped its own floating-point arithmetic - IBM's hexadecimal float, DEC's VAX formats, Cray's arithmetic - differing in base, precision, rounding, underflow and exception behaviour, so numerical software had to be recalibrated machine by machine and results were not portable; the only unifying literature was descriptive models of floating-point computation that deliberately prescribed nothing.",
+    "jump": "IEEE 754-1985 fixed one binary floating-point arithmetic for the industry: single and double formats (with wider extended formats), correctly rounded arithmetic operations, gradual underflow through denormalized numbers, NaNs and signed infinities, directed rounding modes, and sticky exception flags with non-stop defaults - a complete, implementable, prescriptive design that later standards, processors and languages could incorporate by reference.",
+    "date": 1985
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove the KCS proposal and the committee has competing vendor drafts and abstract models but no complete design to adopt: the standard's content - the formats, gradual underflow, NaNs and infinities, directed rounding, sticky exception flags - is this document's content, revised through committee process. The record is explicit on both ends: Hennessy & Patterson report 'the winning draft was very close to one submitted by Kahan, his student Jerome T. Coonen, and Harold S. Stone', and the IEEE Milestone record states that the Berkeley draft became the standard.",
+    "mediator": null,
+    "evidence": "Citation-plus-instantiation in its documentary form: the proposal is the text the standard's text descends from (H&P, section 3.10; IEEE Milestone record). The mediation attack - that the proposal merely transmits the Intel design - is answered in the Intel design's own hearing: what the committee received, revised through some 50 drafts and adopted was THIS proposal, disclosed as a proposal with Intel's permission; the Intel design's channel into the standard runs through it, which is exactly the mediation recorded on that edge. The proposal's own ancestry (in the Intel work) is one level down and is this node's business when it is expanded."
    }
   }
  ],
@@ -401646,6 +401973,454 @@
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "ieee-754-binary-floating-point-arithmetic-1985-1985": {
+   "raw_candidates": [
+    {
+     "causal_claim": "The design document the standard nearly intactly is. Hennessy & Patterson (Computer Architecture, section 3.10): 'The winning draft was very close to one submitted by Kahan, his student Jerome T. Coonen, and Harold S. Stone... Their draft was based on the Intel design, with Intel's permission of course, as simplified by Coonen.' IEEE Milestone record: Berkeley faculty and students drafted what became 754; Kahan recruited Stone and Coonen to write an initial proposal for the April 1978 meeting. Kahan's own 1981 account tracks the draft lineage (his ref [3] = Draft 6.0 of IEEE Task P754, Computer, March 1981). The committee's 50 drafts over three and a half years were revisions of, and reactions to, this text.",
+     "evidence": "Hennessy & Patterson, Computer Architecture: A Quantitative Approach, section 3.10 (fetched and read); IEEE Milestone page for IEEE 754 (fetched); Kahan, 'Why do we need a floating-point arithmetic standard?' (1981), refs [3] [5].",
+     "lens": "L2",
+     "name": "The Kahan-Coonen-Stone floating-point proposal (1978)",
+     "type": "other",
+     "year": 1978
+    },
+    {
+     "causal_claim": "The first silicon implementation of the draft, and the standard's feasibility proof. Wikipedia (IEEE 754-1985): 'The first integrated circuit to implement the draft of what was to become IEEE 754-1985 was the Intel 8087.' Kahan's 1981 Table 1 has a row literally headed 'Proposed IEEE Standard: INTEL i8087; Motorola 6839' - the chip IS the proposal, in the designer's own comparison table; his ref [6] is the 8087 numerics supplement, and the text notes the 8087 implements the proposal's affine and projective modes. The mediation attack (the chip merely transmits the KCS draft) is run in the verdicts and answered there: the chip post-dates the draft, so it cannot be the draft's conduit to the committee; its channel is independent - existence proof plus market fact, years before approval, and the standard's double-extended format tracks the format the chip shipped.",
+     "evidence": "Kahan 1981, Table 1 and ref [6] and the affine/projective modes passage (read in full); Wikipedia, IEEE 754-1985 (fetched); Hennessy & Patterson section 3.10 ('Intel released the 8087 in 1980').",
+     "lens": "L9",
+     "name": "Intel 8087 floating-point coprocessor (1980)",
+     "type": "device",
+     "year": 1980
+    },
+    {
+     "causal_claim": "The design's undisclosed ancestor: the KCS draft 'was based on the Intel design, with Intel's permission of course, as simplified by Coonen' (Hennessy & Patterson). John Palmer at Intel approached Kahan in 1976 (IEEE Milestone record); the first design targets were Intel's 432 and the 8087. Filed for the mediation hearing: whatever of the Intel design reaches the parent arrives in the form the KCS proposal disclosed and simplified - the committee never received the Intel design as a separate artifact - so the channel is expected to be judged mediated via the KCS proposal, whose own expansion will hear the Intel design directly.",
+     "evidence": "Hennessy & Patterson section 3.10; IEEE Milestone page (Palmer approached Kahan in 1976; first targets the 432 and the 8087).",
+     "lens": "L20",
+     "name": "Intel floating-point design (Palmer & Kahan, 1976)",
+     "type": "other",
+     "year": 1976
+    },
+    {
+     "causal_claim": "The era's most regarded arithmetic and the designer's own first recommendation - rejected as the standard's basis. Wikipedia (IEEE 754-1985): Kahan 'initially suggested that Intel use the floating point of the DEC VAX, released in late 1977, which was highly regarded', before drawing up his own specifications. Filed for the correction-relation hearing, expected to fail: the standard's load-bearing features are exactly its departures from VAX practice - gradual underflow where VAX flushed or faulted, NaNs where VAX raised a reserved-operand fault, directed rounding modes VAX did not offer. A recommended-then-departed-from incumbent: nothing of VAX's distinctive worked object was extracted. THE MOST CONTESTABLE NEGATIVE of this expansion; rehearing condition in the verdicts.",
+     "evidence": "Wikipedia, IEEE 754-1985 (fetched: the VAX recommendation and the switch to Kahan's own specifications); Kahan 1981 (the proposal's feature set as the departure list).",
+     "lens": "L6",
+     "name": "VAX floating-point arithmetic (DEC, 1977)",
+     "type": "device",
+     "year": 1977
+    },
+    {
+     "causal_claim": "The incumbent specimen of the world the standard replaced: IBM's base-16 floating point, with its wobbling precision (the hexadecimal exponent trades precision for range), abrupt underflow behaviour and vendor-specific exception handling. Kahan's 1981 narrative of incompatible vendor arithmetics is the parent's stated problem; the S/360 arithmetic is its most widely installed instance. Nothing of its worked object (hexadecimal formats, its rounding) was extracted by the standard - filed as the defined-against incumbent of longest standing.",
+     "evidence": "Kahan 1981, opening sections (the case against mutually incompatible vendor arithmetics, read); the parent's stored prior_state (vendor arithmetics incompatible in rounding/exception/underflow behaviour).",
+     "lens": "L6",
+     "name": "IBM System/360 hexadecimal floating-point arithmetic (1964)",
+     "type": "device",
+     "year": 1964
+    },
+    {
+     "causal_claim": "The rival programme: parameterize, don't standardize. Kahan discusses Brown's model at length in the 'Models' section of his 1981 paper (his refs [23,27,28]) as 'easily the best available description of floating-point computation that we have' - and then rejects the model approach as the basis for a standard: 'The proposed IEEE standard is quite different. Rather than describe abstractly... the proposal prescribes in detail how an arithmetic engine shall be designed.' A programme the parent defines itself against, argued with respect in the designer's own document; nothing of the model's machinery (its parameter axioms) is consumed by the standard's text.",
+     "evidence": "Kahan 1981, 'Models' section and refs [23] [27] [28] (read in full).",
+     "lens": "L6",
+     "name": "Brown's model of floating-point computation (1977)",
+     "type": "theory",
+     "year": 1977
+    },
+    {
+     "causal_claim": "The decimal alternative inside the proposal's own reference list (Kahan's ref [45]): a unified arithmetic architecture built on decimal floating point. Kahan also initially recommended decimal for the Intel work and it was rejected because the hardware design was too far along (Wikipedia). The standard that emerged is binary; the decimal path was considered and not taken - a compared alternative, nothing extracted.",
+     "evidence": "Kahan 1981, ref [45]; Wikipedia, IEEE 754-1985 (Kahan's initial decimal recommendation and its rejection).",
+     "lens": "L6",
+     "name": "A decimal floating-point architecture (Ris, 1976)",
+     "type": "other",
+     "year": 1976
+    },
+    {
+     "causal_claim": "The proposal's own companion document: Coonen's 'An Implementation Guide to a Proposed Standard for Floating-Point Arithmetic' (Computer, January 1980; Kahan's ref [4]), with the companion 'Guide to Underflow and the Denormalized Numbers' (Computer, March 1981; ref [46]). Filed for the own-version hearing: the Guide expounds and operationalizes the KCS proposal from inside the same hand - Coonen is the proposal's co-author and its simplifier - so its content is the proposal's own dress, not a separable consumed artifact (the GCA 101-1983 disposition at exp-215).",
+     "evidence": "Kahan 1981, refs [4] [46] (reference list read in full).",
+     "lens": "L2",
+     "name": "An Implementation Guide to a Proposed Standard for Floating-Point Arithmetic (Coonen, 1980)",
+     "type": "other",
+     "year": 1980
+    },
+    {
+     "causal_claim": "A designer-documented component channel: Kahan's 1996 lecture notes state 'IEEE 754 encodes floating-point numbers in memory (not in registers) in ways first proposed by I.B. Goldberg in Comm. ACM (1967) 105-6' - the sign-magnitude, biased-exponent memory encoding. Filed for the components hearing, expected to fail closed: an encoding is a notation, not a mechanism - the same packing was era-widespread, and the counterfactual fails (the standard's arithmetic would stand unchanged under any equivalent bit packing). The strongest of this expansion's component filings; rehearing condition in the verdicts.",
+     "evidence": "Kahan, Lecture Notes on the Status of IEEE Standard 754 (1996), via fetched extract; Goldberg, '27 bits are not enough for 8-digit accuracy', Comm. ACM 10(2), 1967, pp.105-106.",
+     "lens": "L1",
+     "name": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+     "type": "other",
+     "year": 1967
+    },
+    {
+     "causal_claim": "The consumer discipline one of the standard's features was designed to serve: Kahan's ref [47] is his own 'Interval Arithmetic Options in the Proposed IEEE Floating-Point Standard' (Interval Mathematics 1980) - the directed (outward) rounding modes exist in the design substantially so that interval arithmetic can bound its enclosures. Filed for the problem-posed hearing: a requirement served is not a mechanism consumed - the standard standardizes scalar arithmetic and incorporates no interval operation; Moore's method is a beneficiary of the feature, not an ancestor of the design's machinery.",
+     "evidence": "Kahan 1981, ref [47] (reference list read in full); Moore, Interval Analysis (Prentice-Hall, 1966).",
+     "lens": "L4",
+     "name": "Interval arithmetic (Moore, 1966)",
+     "type": "method",
+     "year": 1966
+    },
+    {
+     "causal_claim": "The earlier attempt at the model approach, named in Kahan's 'Models' discussion (his ref [26]): an attempt 'to provide a mathematical model of floating-point computation' that 'failed partly because it was excessively abstract'. Filed as the model lineage's senior member; the parent defines itself against the whole approach, and the abstraction failure is the designer's own stated reason the prescriptive path was needed.",
+     "evidence": "Kahan 1981, 'Models' section and ref [26] (read).",
+     "lens": "L19",
+     "name": "A mathematical model of floating-point computation (van Wijngaarden, 1966)",
+     "type": "theory",
+     "year": 1966
+    },
+    {
+     "causal_claim": "Named in Kahan's Table 1 beside the 8087 under the row headed 'Proposed IEEE Standard', and in his ref [7] as a pre-announced part implementing the proposal ('the first of these to appear may be Motorola's 6839'). Filed for the direction hearing: a downstream adoption of the draft - ripening evidence that the design was implementable by a second vendor, not ancestry; the design it implements precedes it.",
+     "evidence": "Kahan 1981, Table 1 and ref [7] (read).",
+     "lens": "L22",
+     "name": "Motorola 6839 floating-point unit (1980)",
+     "type": "device",
+     "year": 1980
+    },
+    {
+     "causal_claim": "Kahan's ref [9]: the NS 16081 implements the proposed standard 'all but square root, binary decimal-conversion and gradual underflow on chip'. A partial downstream adoption of the draft - direction as with the 6839, and partial where the 8087 was complete; ripening evidence, not a channel.",
+     "evidence": "Kahan 1981, ref [9] (read).",
+     "lens": "L22",
+     "name": "National Semiconductor 16081 floating-point unit (1980)",
+     "type": "device",
+     "year": 1980
+    },
+    {
+     "causal_claim": "Kahan's ref [10]: the AMD Am9512 'uses the proposed standard's single and double precision formats but not its exception handling'. The weakest of the adoption filings - formats only, downstream of the draft; direction vetoes ancestry.",
+     "evidence": "Kahan 1981, ref [10] (read).",
+     "lens": "L22",
+     "name": "AMD Am9512 floating-point unit (1980)",
+     "type": "device",
+     "year": 1980
+    },
+    {
+     "causal_claim": "Kahan's ref [12]: the IFIP Working Group 2.5 statement on floating-point standardization (December 16, 1978) - the numerical-software community's institutional endorsement of the standardization effort while the committee worked. Filed for the institutions hearing: an endorsement is ripening, not a mechanism; the statement carried no design content into the draft.",
+     "evidence": "Kahan 1981, ref [12] (read).",
+     "lens": "L21",
+     "name": "IFIP Working Group 2.5 statement on floating-point arithmetic (1978)",
+     "type": "other",
+     "year": 1978
+    },
+    {
+     "causal_claim": "The body whose product the parent is: the IEEE P754 working group, formed in 1977 (Kahan attended its second meeting in September 1977 and recruited Stone and Coonen for an initial proposal to the April 1978 meeting; the group considered some 50 drafts over three and a half years). Filed for the formation hearing: the group is the parent's gestation, not its predecessor - formation without a separable mechanism (the ANSI-committee disposition at exp-215); the design content that crossed is filed separately as the KCS proposal.",
+     "evidence": "IEEE Milestone page for IEEE 754 (fetched: second meeting September 1977, the April 1978 proposal); Computer.org history of 754 (50 drafts over three and a half years, via fetched extract).",
+     "lens": "L21",
+     "name": "IEEE Task P754 working group (1977)",
+     "type": "other",
+     "year": 1977
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "the-kahan-coonen-stone-floating-point-proposal-1978-1978",
+      "candidate": {
+       "causal_claim": "The design document the standard nearly intactly is. Hennessy & Patterson (Computer Architecture, section 3.10): 'The winning draft was very close to one submitted by Kahan, his student Jerome T. Coonen, and Harold S. Stone... Their draft was based on the Intel design, with Intel's permission of course, as simplified by Coonen.' IEEE Milestone record: Berkeley faculty and students drafted what became 754; Kahan recruited Stone and Coonen to write an initial proposal for the April 1978 meeting. Kahan's own 1981 account tracks the draft lineage (his ref [3] = Draft 6.0 of IEEE Task P754, Computer, March 1981). The committee's 50 drafts over three and a half years were revisions of, and reactions to, this text.",
+       "evidence": "Hennessy & Patterson, Computer Architecture: A Quantitative Approach, section 3.10 (fetched and read); IEEE Milestone page for IEEE 754 (fetched); Kahan, 'Why do we need a floating-point arithmetic standard?' (1981), refs [3] [5].",
+       "lens": "L2",
+       "name": "The Kahan-Coonen-Stone floating-point proposal (1978)",
+       "type": "other",
+       "year": 1978
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "The Kahan-Coonen-Stone floating-point proposal (1978)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "intel-8087-floating-point-coprocessor-1980-1980",
+      "candidate": {
+       "causal_claim": "The first silicon implementation of the draft, and the standard's feasibility proof. Wikipedia (IEEE 754-1985): 'The first integrated circuit to implement the draft of what was to become IEEE 754-1985 was the Intel 8087.' Kahan's 1981 Table 1 has a row literally headed 'Proposed IEEE Standard: INTEL i8087; Motorola 6839' - the chip IS the proposal, in the designer's own comparison table; his ref [6] is the 8087 numerics supplement, and the text notes the 8087 implements the proposal's affine and projective modes. The mediation attack (the chip merely transmits the KCS draft) is run in the verdicts and answered there: the chip post-dates the draft, so it cannot be the draft's conduit to the committee; its channel is independent - existence proof plus market fact, years before approval, and the standard's double-extended format tracks the format the chip shipped.",
+       "evidence": "Kahan 1981, Table 1 and ref [6] and the affine/projective modes passage (read in full); Wikipedia, IEEE 754-1985 (fetched); Hennessy & Patterson section 3.10 ('Intel released the 8087 in 1980').",
+       "lens": "L9",
+       "name": "Intel 8087 floating-point coprocessor (1980)",
+       "type": "device",
+       "year": 1980
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "Intel 8087 floating-point coprocessor (1980)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "intel-floating-point-design-palmer-kahan-1976-1976",
+      "candidate": {
+       "causal_claim": "The design's undisclosed ancestor: the KCS draft 'was based on the Intel design, with Intel's permission of course, as simplified by Coonen' (Hennessy & Patterson). John Palmer at Intel approached Kahan in 1976 (IEEE Milestone record); the first design targets were Intel's 432 and the 8087. Filed for the mediation hearing: whatever of the Intel design reaches the parent arrives in the form the KCS proposal disclosed and simplified - the committee never received the Intel design as a separate artifact - so the channel is expected to be judged mediated via the KCS proposal, whose own expansion will hear the Intel design directly.",
+       "evidence": "Hennessy & Patterson section 3.10; IEEE Milestone page (Palmer approached Kahan in 1976; first targets the 432 and the 8087).",
+       "lens": "L20",
+       "name": "Intel floating-point design (Palmer & Kahan, 1976)",
+       "type": "other",
+       "year": 1976
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Intel floating-point design (Palmer & Kahan, 1976)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "vax-floating-point-arithmetic-dec-1977-1977",
+      "candidate": {
+       "causal_claim": "The era's most regarded arithmetic and the designer's own first recommendation - rejected as the standard's basis. Wikipedia (IEEE 754-1985): Kahan 'initially suggested that Intel use the floating point of the DEC VAX, released in late 1977, which was highly regarded', before drawing up his own specifications. Filed for the correction-relation hearing, expected to fail: the standard's load-bearing features are exactly its departures from VAX practice - gradual underflow where VAX flushed or faulted, NaNs where VAX raised a reserved-operand fault, directed rounding modes VAX did not offer. A recommended-then-departed-from incumbent: nothing of VAX's distinctive worked object was extracted. THE MOST CONTESTABLE NEGATIVE of this expansion; rehearing condition in the verdicts.",
+       "evidence": "Wikipedia, IEEE 754-1985 (fetched: the VAX recommendation and the switch to Kahan's own specifications); Kahan 1981 (the proposal's feature set as the departure list).",
+       "lens": "L6",
+       "name": "VAX floating-point arithmetic (DEC, 1977)",
+       "type": "device",
+       "year": 1977
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "VAX floating-point arithmetic (DEC, 1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ibm-system-360-hexadecimal-floating-point-arithmetic-1964-1964",
+      "candidate": {
+       "causal_claim": "The incumbent specimen of the world the standard replaced: IBM's base-16 floating point, with its wobbling precision (the hexadecimal exponent trades precision for range), abrupt underflow behaviour and vendor-specific exception handling. Kahan's 1981 narrative of incompatible vendor arithmetics is the parent's stated problem; the S/360 arithmetic is its most widely installed instance. Nothing of its worked object (hexadecimal formats, its rounding) was extracted by the standard - filed as the defined-against incumbent of longest standing.",
+       "evidence": "Kahan 1981, opening sections (the case against mutually incompatible vendor arithmetics, read); the parent's stored prior_state (vendor arithmetics incompatible in rounding/exception/underflow behaviour).",
+       "lens": "L6",
+       "name": "IBM System/360 hexadecimal floating-point arithmetic (1964)",
+       "type": "device",
+       "year": 1964
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "IBM System/360 hexadecimal floating-point arithmetic (1964)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "brown-s-model-of-floating-point-computation-1977-1977",
+      "candidate": {
+       "causal_claim": "The rival programme: parameterize, don't standardize. Kahan discusses Brown's model at length in the 'Models' section of his 1981 paper (his refs [23,27,28]) as 'easily the best available description of floating-point computation that we have' - and then rejects the model approach as the basis for a standard: 'The proposed IEEE standard is quite different. Rather than describe abstractly... the proposal prescribes in detail how an arithmetic engine shall be designed.' A programme the parent defines itself against, argued with respect in the designer's own document; nothing of the model's machinery (its parameter axioms) is consumed by the standard's text.",
+       "evidence": "Kahan 1981, 'Models' section and refs [23] [27] [28] (read in full).",
+       "lens": "L6",
+       "name": "Brown's model of floating-point computation (1977)",
+       "type": "theory",
+       "year": 1977
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Brown's model of floating-point computation (1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-decimal-floating-point-architecture-ris-1976-1976",
+      "candidate": {
+       "causal_claim": "The decimal alternative inside the proposal's own reference list (Kahan's ref [45]): a unified arithmetic architecture built on decimal floating point. Kahan also initially recommended decimal for the Intel work and it was rejected because the hardware design was too far along (Wikipedia). The standard that emerged is binary; the decimal path was considered and not taken - a compared alternative, nothing extracted.",
+       "evidence": "Kahan 1981, ref [45]; Wikipedia, IEEE 754-1985 (Kahan's initial decimal recommendation and its rejection).",
+       "lens": "L6",
+       "name": "A decimal floating-point architecture (Ris, 1976)",
+       "type": "other",
+       "year": 1976
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "A decimal floating-point architecture (Ris, 1976)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "an-implementation-guide-to-a-proposed-standard-for-floating-1980",
+      "candidate": {
+       "causal_claim": "The proposal's own companion document: Coonen's 'An Implementation Guide to a Proposed Standard for Floating-Point Arithmetic' (Computer, January 1980; Kahan's ref [4]), with the companion 'Guide to Underflow and the Denormalized Numbers' (Computer, March 1981; ref [46]). Filed for the own-version hearing: the Guide expounds and operationalizes the KCS proposal from inside the same hand - Coonen is the proposal's co-author and its simplifier - so its content is the proposal's own dress, not a separable consumed artifact (the GCA 101-1983 disposition at exp-215).",
+       "evidence": "Kahan 1981, refs [4] [46] (reference list read in full).",
+       "lens": "L2",
+       "name": "An Implementation Guide to a Proposed Standard for Floating-Point Arithmetic (Coonen, 1980)",
+       "type": "other",
+       "year": 1980
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "An Implementation Guide to a Proposed Standard for Floating-Point Arithmetic (Coonen, 1980)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "27-bits-are-not-enough-for-8-digit-accuracy-goldberg-1967-1967",
+      "candidate": {
+       "causal_claim": "A designer-documented component channel: Kahan's 1996 lecture notes state 'IEEE 754 encodes floating-point numbers in memory (not in registers) in ways first proposed by I.B. Goldberg in Comm. ACM (1967) 105-6' - the sign-magnitude, biased-exponent memory encoding. Filed for the components hearing, expected to fail closed: an encoding is a notation, not a mechanism - the same packing was era-widespread, and the counterfactual fails (the standard's arithmetic would stand unchanged under any equivalent bit packing). The strongest of this expansion's component filings; rehearing condition in the verdicts.",
+       "evidence": "Kahan, Lecture Notes on the Status of IEEE Standard 754 (1996), via fetched extract; Goldberg, '27 bits are not enough for 8-digit accuracy', Comm. ACM 10(2), 1967, pp.105-106.",
+       "lens": "L1",
+       "name": "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)",
+       "type": "other",
+       "year": 1967
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "27 bits are not enough for 8-digit accuracy (Goldberg, 1967)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "interval-arithmetic-moore-1966-1966",
+      "candidate": {
+       "causal_claim": "The consumer discipline one of the standard's features was designed to serve: Kahan's ref [47] is his own 'Interval Arithmetic Options in the Proposed IEEE Floating-Point Standard' (Interval Mathematics 1980) - the directed (outward) rounding modes exist in the design substantially so that interval arithmetic can bound its enclosures. Filed for the problem-posed hearing: a requirement served is not a mechanism consumed - the standard standardizes scalar arithmetic and incorporates no interval operation; Moore's method is a beneficiary of the feature, not an ancestor of the design's machinery.",
+       "evidence": "Kahan 1981, ref [47] (reference list read in full); Moore, Interval Analysis (Prentice-Hall, 1966).",
+       "lens": "L4",
+       "name": "Interval arithmetic (Moore, 1966)",
+       "type": "method",
+       "year": 1966
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "Interval arithmetic (Moore, 1966)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-mathematical-model-of-floating-point-computation-van-wijng-1966",
+      "candidate": {
+       "causal_claim": "The earlier attempt at the model approach, named in Kahan's 'Models' discussion (his ref [26]): an attempt 'to provide a mathematical model of floating-point computation' that 'failed partly because it was excessively abstract'. Filed as the model lineage's senior member; the parent defines itself against the whole approach, and the abstraction failure is the designer's own stated reason the prescriptive path was needed.",
+       "evidence": "Kahan 1981, 'Models' section and ref [26] (read).",
+       "lens": "L19",
+       "name": "A mathematical model of floating-point computation (van Wijngaarden, 1966)",
+       "type": "theory",
+       "year": 1966
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "A mathematical model of floating-point computation (van Wijngaarden, 1966)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "motorola-6839-floating-point-unit-1980-1980",
+      "candidate": {
+       "causal_claim": "Named in Kahan's Table 1 beside the 8087 under the row headed 'Proposed IEEE Standard', and in his ref [7] as a pre-announced part implementing the proposal ('the first of these to appear may be Motorola's 6839'). Filed for the direction hearing: a downstream adoption of the draft - ripening evidence that the design was implementable by a second vendor, not ancestry; the design it implements precedes it.",
+       "evidence": "Kahan 1981, Table 1 and ref [7] (read).",
+       "lens": "L22",
+       "name": "Motorola 6839 floating-point unit (1980)",
+       "type": "device",
+       "year": 1980
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Motorola 6839 floating-point unit (1980)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "national-semiconductor-16081-floating-point-unit-1980-1980",
+      "candidate": {
+       "causal_claim": "Kahan's ref [9]: the NS 16081 implements the proposed standard 'all but square root, binary decimal-conversion and gradual underflow on chip'. A partial downstream adoption of the draft - direction as with the 6839, and partial where the 8087 was complete; ripening evidence, not a channel.",
+       "evidence": "Kahan 1981, ref [9] (read).",
+       "lens": "L22",
+       "name": "National Semiconductor 16081 floating-point unit (1980)",
+       "type": "device",
+       "year": 1980
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "National Semiconductor 16081 floating-point unit (1980)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "amd-am9512-floating-point-unit-1980-1980",
+      "candidate": {
+       "causal_claim": "Kahan's ref [10]: the AMD Am9512 'uses the proposed standard's single and double precision formats but not its exception handling'. The weakest of the adoption filings - formats only, downstream of the draft; direction vetoes ancestry.",
+       "evidence": "Kahan 1981, ref [10] (read).",
+       "lens": "L22",
+       "name": "AMD Am9512 floating-point unit (1980)",
+       "type": "device",
+       "year": 1980
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "AMD Am9512 floating-point unit (1980)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ifip-working-group-2-5-statement-on-floating-point-arithmeti-1978",
+      "candidate": {
+       "causal_claim": "Kahan's ref [12]: the IFIP Working Group 2.5 statement on floating-point standardization (December 16, 1978) - the numerical-software community's institutional endorsement of the standardization effort while the committee worked. Filed for the institutions hearing: an endorsement is ripening, not a mechanism; the statement carried no design content into the draft.",
+       "evidence": "Kahan 1981, ref [12] (read).",
+       "lens": "L21",
+       "name": "IFIP Working Group 2.5 statement on floating-point arithmetic (1978)",
+       "type": "other",
+       "year": 1978
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "IFIP Working Group 2.5 statement on floating-point arithmetic (1978)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ieee-task-p754-working-group-1977-1977",
+      "candidate": {
+       "causal_claim": "The body whose product the parent is: the IEEE P754 working group, formed in 1977 (Kahan attended its second meeting in September 1977 and recruited Stone and Coonen for an initial proposal to the April 1978 meeting; the group considered some 50 drafts over three and a half years). Filed for the formation hearing: the group is the parent's gestation, not its predecessor - formation without a separable mechanism (the ANSI-committee disposition at exp-215); the design content that crossed is filed separately as the KCS proposal.",
+       "evidence": "IEEE Milestone page for IEEE 754 (fetched: second meeting September 1977, the April 1978 proposal); Computer.org history of 754 (50 drafts over three and a half years, via fetched extract).",
+       "lens": "L21",
+       "name": "IEEE Task P754 working group (1977)",
+       "type": "other",
+       "year": 1977
+      },
+      "members": [
+       15
+      ],
+      "member_names": [
+       "IEEE Task P754 working group (1977)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [],
+    "prefiltered": []
+   },
+   "judge_queue": [],
    "judgments_applied": true,
    "stage": "evaluated"
   }
