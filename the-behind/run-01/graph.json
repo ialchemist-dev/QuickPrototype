@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T13:05:25+00:00",
-  "expansions_done": 218,
-  "raw_candidates_seen": 9001,
+  "updated_at": "2026-11-28T13:16:46+00:00",
+  "expansions_done": 219,
+  "raw_candidates_seen": 9017,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -36097,6 +36097,91 @@
     "name": "Monte Carlo simulation methods (Rubinstein, 1981)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T13:05:25+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "TD(lambda) temporal-difference learning (Sutton, 1988)",
+    "reason": "mediated_via: Q-learning (Watkins, 1989)",
+    "at": "2026-11-28T13:16:46+00:00",
+    "mediated_via": "Q-learning (Watkins, 1989)"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "A Markovian Decision Process (Bellman, 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Dynamic Programming (Bellman, 1957)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Dyna, an integrated architecture for learning, planning and reacting (Sutton, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Refinement of robot motor skills through reinforcement learning (Franklin, 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Classifier systems (Holland et al., 1986)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Supervised learning with a distal teacher (Jordan & Rumelhart, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "CMAC, the cerebellar model arithmetic computer (Albus, 1975)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Scaling in reinforcement learning (Whitehead, 1989)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Reactive behavior, learning, and anticipation (Whitehead & Ballard, 1989)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "A role for anticipation in reactive systems that learn (Whitehead & Ballard, 1989)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Self-improving reactive agents (Lin, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
+   },
+   {
+    "parent_id": "complexity-of-reinforcement-learning-whitehead-1991",
+    "name": "Lookahead planning and latent learning in classifier systems (Riolo, 1990)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T13:16:46+00:00"
    }
   ]
  },
@@ -39191,7 +39276,7 @@
    "prior_state": "Sample requirements discussed anecdotally; no lower-bound class and no sample-complexity criterion for RL algorithms.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.0,
    "sources": [
     {
@@ -91202,6 +91287,103 @@
     "counterfactual": "Remove the optimality equations and the parent's update has no target: the stored Q is defined as the optimal action-value function, i.e. the equations' fixed point for action values, and Appendix 1's theorem is that the iterates reach exactly that object ('the Q values produced by the one-step Q-learning method... are the exact optimal action values'). The update is the equations' operator applied to a sampled transition - the dependency is symmetric in the way exp-216 found AU's was not.",
     "mediator": null,
     "evidence": "DISCRIMINATION AGAINST EXP-216, where this candidate failed at Advantage updating (2.0, fail-closed): there the parent states the equations, derives an advantage-form pair from them and verifies against them, 'and the claim still fails the counterfactual asymmetry: remove the equations' statement and the parent follows from Q-learning (Theorem 1's reduction)'. Exp-216 recorded the admission criterion from exp-192: the edge holds where 'the parent's object is the equations' solution set'. That criterion is met verbatim HERE and was not met at AU: AU's object is a derived decomposition (A = Q - V, its own eqs.25-26) one reduction away from the equations, with Q-learning standing between; Q-learning's object is Q* itself, the equations' solution, with nothing between the update and the operator it stochastically applies. Same candidate, sibling parents, opposite outcomes - edge-scoped variance of the standing kind (FORTRAN at exps 209/211/213). The exp-192 admission and the exp-216 rejection are both untouched."
+   }
+  },
+  {
+   "predecessor_id": "q-learning-watkins-1989-1989",
+   "successor_id": "complexity-of-reinforcement-learning-whitehead-1991",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "Before Q-learning there was no definite incremental control algorithm with a stored action-value function and a convergence proof whose search process a complexity question could be posed about at all: 'how long does unbiased RL search take?' had no well-posed object. The parent poses it about Q-learning in so many words and proves Theorem 8 about its dynamics.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": "This pass dies if the paper's theorems are shown to be stated for an unnamed generic update rule rather than for the Q-learning rule reproduced as eq.3/Fig.1."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "Q-learning's stored action-value function unblocked the parent's whole constructive space: a bias function can be composed with it (BB-LEC, eq.9), observed experience can be written into it (LBW), and its zero-initialized dynamics admit an exact random-walk reduction - three distinct constructions, all indexed to this one artifact.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": "This pass dies if LEC/LBW are shown to be specified for an arbitrary base learner rather than for Q-learning systems."
+    },
+    "Q3": {
+     "verdict": "partial",
+     "evidence": "Necessity is qualified by the paper itself: 'we expect our results to apply to other algorithms as well' (the TD-similar class), so Q-learning is the representative object, not the only conceivable one. In the history that happened, no other 1991 algorithm offered a stored action-value function with a convergence proof to analyze and augment.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": ""
+    },
+    "Q4": {
+     "verdict": "partial",
+     "evidence": "Q-learning does not itself collapse the parent's costs - the parent's lower bound is precisely a proof that its unbiased search is expensive; the linear upper bounds are proved for Q-learning systems augmented by the parent's mechanisms.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Q-learning made nothing previously unobservable measurable for this parent; the parent's measurement scheme (expected search time on homogeneous tasks) is its own construction.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "Q-learning supplied the definite model of trial-and-error search - a stored Q function improved by one-step TD backups - about which exact reasoning became possible: Theorem 8's proof works by recognizing the zero-initialized system's first-solve process AS a one-dimensional random walk, a statement about this algorithm's specific update dynamics.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": "This pass dies if the random-walk equivalence is shown to hold for the whole TD class independently of Q-learning's specific one-step action-value update."
+    },
+    "Q7": {
+     "verdict": "partial",
+     "evidence": "The stored Q function is a composable surface: BB-LEC adds a bias function to it (eq.9: choose a maximizing Q(x,a)+B(x,a)) without altering Q-learning's internals - composition at the level the parent performs, though not an interface others adopted as such.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "partial",
+     "evidence": "In this relation the reach runs through the parent: Q-learning becomes the object of the field's first complexity results. Scored partial - the cross-domain travel (into complexity analysis) is the parent's framing work, not the candidate's separate doing.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Q-learning did not collapse any experiment feedback loop for this parent; its unbiased search is the slow thing the parent measures.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "partial",
+     "evidence": "Q-learning was becoming the default representative RL algorithm of its moment - the paper's own choice of it as 'representative' is the evidence - but displacement of all rivals is more than this parent documents.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "In the history that actually happened this is a trunk node for the parent: the lower bound, both cooperative mechanisms and all five upper-bound theorems are indexed to Q-learning; remove it and this paper's lineage has no object.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": "This pass dies if a contemporaneous (1991 or earlier) complexity analysis of RL search built on a different base algorithm is produced."
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "Once a definite, convergent action-value algorithm existed, complexity claims about reinforcement learning had a permanent object to attach to; the baseline reset is real but is shared with the parent's own contribution.",
+     "source": "Whitehead, 'Complexity and the Value of Time', AAAI-91 (parent's own document, read in full)",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T13:16:46+00:00",
+   "leap": {
+    "prior_state": "Reinforcement learning algorithms - Q-learning, the TD family, the adaptive heuristic critic - had been proposed and were compared empirically on small tasks; how the time they need scales with the size and structure of the state space was folklore. No complexity result separated tasks where trial-and-error search is cheap from tasks where it explodes, and no mechanism was known that could decouple learning time from state-space size.",
+    "jump": "Whitehead (1991) gave reinforcement learning its first complexity analysis: on homogeneous problem-solving tasks, a zero-initialized Q-learning system's expected time to first reach the goal is lower-bounded by the hitting time of a one-dimensional random walk, hence moderately exponential in state-space size whenever outward moves are likelier than inward ones (Theorem 8, Corollary 9); and he exhibited two cooperative mechanisms - Learning with an External Critic and Learning By Watching - whose search time is at most linear in state-space size and, given a way back to the site of feedback, independent of it, proportional to the length of the optimal solution path (Theorems 10-15). Search/sample complexity became a property to prove about a learning algorithm.",
+    "date": 1991
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove Q-learning and the parent has neither its theorem object nor its mechanisms. Theorem 8 is a lower bound on a zero-initialized Q-learning system's search time, proved by reducing that system's dynamics to a random walk; BB-LEC is defined as a running Q-learning system whose environmental reward is 'treated according to standard Q-learning' while a bias function is learned alongside; LBW is a population of Q-learning agents pooling experience; Theorems 10-15 are stated for those composite systems. The paper claims generality for a class, but every result it states is about Q-learning systems, and the stored action-value function is the surface both mechanisms modify.",
+    "mediator": null,
+    "evidence": "Two channels, discriminated. (a) Object of analysis: 'we have chosen to analyze Q-learning [Watkins, 1989] as a representative reinforcement learning algorithm', with its update reproduced as eq.3 and its algorithm as Fig.1 - this channel ALONE would fail under the Kimura-object discrimination (the parent's object is not thereby a consumed component). (b) Incorporation: the parent's constructive half consumes the update rule as a component - BB-LEC's decision rule sums Q with the learned bias B (eq.9) while environmental reward updates Q by the standard rule, and LBW's learners are Q-learning agents whose Q functions absorb observed experience. Channel (b) is consumption of a mechanism inside the parent's own artifacts, and it carries the edge; the qualification is recorded here and in the verification."
    }
   }
  ],
@@ -400958,6 +401140,509 @@
       }
      },
      "similarity": 0.3192,
+     "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+    }
+   ],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "complexity-of-reinforcement-learning-whitehead-1991": {
+   "raw_candidates": [
+    {
+     "causal_claim": "The parent's analyzed object AND its incorporated base learner. Whitehead: 'To study the time complexity of unbiased systems we have chosen to analyze Q-learning [Watkins, 1989] as a representative reinforcement learning algorithm'; the 1-step update (eq.3) and algorithm (Fig.1) are reproduced as the object of Theorem 8's lower bound, and the cooperative mechanisms are built out of it - BB-LEC: 'Reward from the environment is treated according to standard Q-learning (it is used to learn the action-value function), while the critic's reward is used to learn a biasing function'; Theorems 10-15 are stated for 'a zero-initialized Q-learning system using BB-LEC' and for populations of Q-learning agents using LBW. The hearing must discriminate the object-of-analysis channel (which alone would fail, Kimura-object pattern) from the incorporation channel (the update rule running inside the parent's own algorithms).",
+     "evidence": "Whitehead, AAAI-91: abstract; Q-learning section (eqs.1-4, Fig.1, Defs.5-7); Theorem 8 and Corollary 9; LEC section (eqs.7-9, Theorems 10-12, Corollary 13); LBW section (Theorems 14-15).",
+     "lens": "L1",
+     "name": "Q-learning (Watkins, 1989)",
+     "type": "method",
+     "year": 1989
+    },
+    {
+     "causal_claim": "Named as the family mechanism of the analyzed class: 'most are similar to Q-learning in that they use temporal difference methods [Sutton, 1988] to estimate a utility function'; 'The estimates represented by the action-value function are incrementally improved through trial-and-error by using updating rules based on temporal difference (TD) methods [Sutton, 1988]'. Filed for the routing hearing: whatever TD content reaches this parent arrives already inside Q-learning's one-step update rule (the analyzed algorithm), so the channel is expected to be judged mediated via Q-learning - the mirror of exp-218, where TD(lambda) was present in Watkins's text but routed into the prediction machinery, not the parent's mechanism.",
+     "evidence": "Whitehead, AAAI-91, Q-learning section (two sentences citing Sutton 1988); reference list [Sutton, 1988].",
+     "lens": "L1",
+     "name": "TD(lambda) temporal-difference learning (Sutton, 1988)",
+     "type": "method",
+     "year": 1988
+    },
+    {
+     "causal_claim": "Named once, in the class sentence: 'a variety of other reinforcement algorithms have been described in the literature [Barto et al., 1983; Holland et al., 1986; Watkins, 1989; Jordan and Rumelhart, 1990], most are similar to Q-learning in that they use temporal difference methods'. No AHC mechanism (the actor-critic split, the critic's TD error as reinforcement) is consumed by the theorems or by LEC/LBW; the citation supports the generality claim for the results, not a channel. Filed so the gate, not the scout's silence, judges it (the Samuel-at-exp-218 pattern: bibliography presence plus field ancestry, no mechanism transfer).",
+     "evidence": "Whitehead, AAAI-91, Q-learning section, class sentence; reference list [Barto et al., 1983].",
+     "lens": "L5",
+     "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+     "type": "method",
+     "year": 1983
+    },
+    {
+     "causal_claim": "The problem frame the parent's task class presupposes: the paper defines problem-solving tasks over deterministic state spaces with discounted cumulative reward (eq.1) - the MDP objective - but Bellman is nowhere in the reference list (find-verified against the complete list) and the frame is presupposed, not consumed: the parent's object is the search process's time complexity, not the frame's solution set. Filed for the framework-presupposition hearing (exp-218's MDP rejection at Q-learning is the standing discrimination).",
+     "evidence": "Whitehead, AAAI-91, eq.1 and Defs.1-7; complete reference list (no Bellman entry).",
+     "lens": "L4",
+     "name": "A Markovian Decision Process (Bellman, 1957)",
+     "type": "theory",
+     "year": 1957
+    },
+    {
+     "causal_claim": "The theory in whose terms the parent's objective is stated (maximize discounted cumulative reward; the optimal policy pi) - but DP's calculation is exactly what the analyzed algorithms do NOT perform (they search by trial and error without a model), DP is not cited anywhere in the paper (find-verified), and no DP mechanism is consumed by the lower-bound proof (a random-walk reduction) or by LEC/LBW. Filed for completeness of the DP-complex census at this parent; expected to fail on absence plus frame-level routing.",
+     "evidence": "Whitehead, AAAI-91, complete reference list (no Bellman & Dreyfus, no Ross, no DP text); eqs.1-2 (the objective as presupposed notation).",
+     "lens": "L19",
+     "name": "Dynamic Programming (Bellman, 1957)",
+     "type": "method",
+     "year": 1957
+    },
+    {
+     "causal_claim": "The named rival approach: the paper's second approach to faster learning - 'augment the agent with a predictive model and use it to perform hypothetical trial-and-error experiments [Sutton, 1990a; Sutton, 1990b; ...]' - described and set aside ('the principle shortcoming of this approach is that it leads to agents who are only as good as their internal predictive models... the model is useless during that first crucial trial'). The parent's cooperative approach is posed against it. Filed for the consumed-vs-compared / correction-relation hearing: the parent extracts nothing of Dyna's worked object (no model, no planning backups) - defined-against with nothing extracted (FORTRAN-at-exp-213 pattern). Carried context: Dyna was fail-closed at exp-216 (2.0, conditional combination citations, never instantiated) with its rehearing assigned to a residual-gradient expansion, not to this parent.",
+     "evidence": "Whitehead, AAAI-91, 'Cooperation for faster learning' section, second-approach passage; references [Sutton, 1990a] [Sutton, 1990b].",
+     "lens": "L6",
+     "name": "Dyna, an integrated architecture for learning, planning and reacting (Sutton, 1990)",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "The first rival approach: 'providing the agent with an approximate controller a priori... trial-and-error experience is used primarily to compensate for modeling errors in the approximate controller [Franklin, 1988]' - described and set aside ('its drawbacks are that it requires knowledge of the task a priori and it is less useful for adapting to change'). A compared approach with a single citation; nothing of its worked object is extracted by LEC/LBW (the critic's bias is learned online, not an a priori controller).",
+     "evidence": "Whitehead, AAAI-91, 'Cooperation for faster learning' section, first-approach passage; reference list [Franklin, 1988].",
+     "lens": "L6",
+     "name": "Refinement of robot motor skills through reinforcement learning (Franklin, 1988)",
+     "type": "method",
+     "year": 1988
+    },
+    {
+     "causal_claim": "Two mentions, neither a mechanism channel: the class sentence ('[Barto et al., 1983; Holland et al., 1986; ...] most are similar to Q-learning in that they use temporal difference methods') and a passing parenthesis in the LEC discussion: 'if Q is approximated with overlapping hypercubes (e.g. classifier systems [Holland et al., 1986]), then the critic's feedback can be expected to transfer to other situations as well'. A passing parenthesis is not instantiation (standing rule); the theorems are proved for tabular Q. Filed so the gate judges the mention.",
+     "evidence": "Whitehead, AAAI-91, Q-learning section class sentence; LEC analysis passage on smooth decision surfaces; reference list [Holland et al., 1986] (Induction, MIT Press).",
+     "lens": "L13",
+     "name": "Classifier systems (Holland et al., 1986)",
+     "type": "method",
+     "year": 1986
+    },
+    {
+     "causal_claim": "Named once in the class sentence ('[Barto et al., 1983; Holland et al., 1986; Watkins, 1989; Jordan and Rumelhart, 1990]') as a member of the TD-similar algorithm class. The distal-teacher mechanism (learning through a differentiable model's Jacobian) is nowhere used in the paper; LEC's critic supplies scalar rewards, not a teacher's target actions - the conclusion explicitly declines the full supervised step ('it might be argued that what we're doing here is moving toward supervised learning, so why not abandon reinforcement learning altogether'). Class membership, not a channel.",
+     "evidence": "Whitehead, AAAI-91, Q-learning section class sentence; Conclusions; reference list [Jordan and Rumelhart, 1990] (MIT technical report).",
+     "lens": "L13",
+     "name": "Supervised learning with a distal teacher (Jordan & Rumelhart, 1990)",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "Named once, in a parenthesis listing locally-interpolating approximators: 'action-value estimators that use approximators that locally interpolate (e.g. CMACs, or Neural Nets) can immediately use the critic's feedback to bias the impending decision'. The theorems assume tabular Q; CMAC is one member of an interchangeable class named for a plausibility remark about LEC's ultimate power, not a consumed mechanism (the CMAC-at-exp-216 pattern: named in an interchangeable class, not used - there the simulations used polynomials; here the analysis uses tables).",
+     "evidence": "Whitehead, AAAI-91, LEC analysis passage following Corollary 13 (no CMAC citation in the reference list).",
+     "lens": "L13",
+     "name": "CMAC, the cerebellar model arithmetic computer (Albus, 1975)",
+     "type": "method",
+     "year": 1975
+    },
+    {
+     "causal_claim": "The author's own prior technical report (Rochester TR 304, 1989) on scaling in reinforcement learning - the self-carriage hearing. The AAAI paper cites it exactly once, inside the learned-predictive-model cluster for the set-aside second approach ('This technique can improve the learning rate even when the predictive model itself is learned [Sutton, 1990a; Whitehead, 1989; Lin, 1990; Riolo, 1990]') - not at the complexity theorems, and no constant, construction or result is taken over at a named point (contrast the Mikolov thesis at exp-206, consumed at two named points with a determined constant carried over). Filed so the self-carriage is scored on its merits on this parent's documents.",
+     "evidence": "Whitehead, AAAI-91, second-approach passage (sole in-text citation); reference list [Whitehead, 1989] (TR 304, Univ. of Rochester CS Dept.).",
+     "lens": "L2",
+     "name": "Scaling in reinforcement learning (Whitehead, 1989)",
+     "type": "other",
+     "year": 1989
+    },
+    {
+     "causal_claim": "The authors' anticipation line, cited inside the learned-model cluster for the set-aside second approach ('[Sutton, 1990a; Sutton, 1990b; Whitehead and Ballard, 1989a; Whitehead and Ballard, 1989b]'). The anticipation mechanism (predictive models of action effects) belongs to the rival model-based approach the parent argues is useless on the first trial; no part of it is consumed by the complexity analysis or by LEC/LBW. Creator-lineage proximity is not a channel.",
+     "evidence": "Whitehead, AAAI-91, second-approach passage; reference list [Whitehead and Ballard, 1989a] (NASA Conf. on Space Telerobotics).",
+     "lens": "L20",
+     "name": "Reactive behavior, learning, and anticipation (Whitehead & Ballard, 1989)",
+     "type": "method",
+     "year": 1989
+    },
+    {
+     "causal_claim": "Companion to the 1989a filing: cited in the same learned-model cluster for the set-aside second approach. Same discrimination: the anticipation work is the authors' own model-based line, whose premise (a learned predictive model) the parent sets aside for the first-trial case; nothing of it routes into Theorem 8 or into the cooperative mechanisms.",
+     "evidence": "Whitehead, AAAI-91, second-approach passage; reference list [Whitehead and Ballard, 1989b] (Sixth Int. Workshop on Machine Learning, 1989).",
+     "lens": "L20",
+     "name": "A role for anticipation in reactive systems that learn (Whitehead & Ballard, 1989)",
+     "type": "method",
+     "year": 1989
+    },
+    {
+     "causal_claim": "Cited once, inside the learned-model cluster ('even when the predictive model itself is learned [Sutton, 1990a; Whitehead, 1989; Lin, 1990; Riolo, 1990]'). A cluster citation for the rival approach's feasibility, with no mechanism, result or construction taken over. Filed for census completeness of the cluster the parent's documents name.",
+     "evidence": "Whitehead, AAAI-91, second-approach passage; reference list [Lin, 1990] (Proc. First Int. Conf. on Simulation of Adaptive Behavior).",
+     "lens": "L22",
+     "name": "Self-improving reactive agents (Lin, 1990)",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "Cited once, inside the same learned-model cluster as Lin 1990. A cluster citation for the set-aside approach; no channel into the analysis or the mechanisms.",
+     "evidence": "Whitehead, AAAI-91, second-approach passage; reference list [Riolo, 1990] (Proc. First Int. Conf. on Simulation of Adaptive Behavior).",
+     "lens": "L22",
+     "name": "Lookahead planning and latent learning in classifier systems (Riolo, 1990)",
+     "type": "method",
+     "year": 1990
+    },
+    {
+     "causal_claim": "The parent's own full-length companion (Rochester TR 365, Feb 1991): the AAAI paper states 'A detailed derivation is given in [Whitehead and Ballard, 1991]' for Theorem 8's proof, and the TR's own note says 'A shorter version to appear AAAI91' - i.e. the TR is the parent itself in fuller dress (own-version). Filed deliberately at the parent's own year; expected to be dropped by the resolver's year bound, recorded, not re-dated (the exp-209 Unix/Bon and exp-212 Switchboard pattern).",
+     "evidence": "Whitehead, AAAI-91, derivation note after Theorem 8; reference list [Whitehead and Ballard, 1991] (TR 365).",
+     "lens": "L2",
+     "name": "A study of cooperative mechanisms for faster reinforcement learning (Whitehead & Ballard, 1991)",
+     "type": "other",
+     "year": 1991
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "q-learning-watkins-1989-1989",
+      "candidate": {
+       "causal_claim": "The parent's analyzed object AND its incorporated base learner. Whitehead: 'To study the time complexity of unbiased systems we have chosen to analyze Q-learning [Watkins, 1989] as a representative reinforcement learning algorithm'; the 1-step update (eq.3) and algorithm (Fig.1) are reproduced as the object of Theorem 8's lower bound, and the cooperative mechanisms are built out of it - BB-LEC: 'Reward from the environment is treated according to standard Q-learning (it is used to learn the action-value function), while the critic's reward is used to learn a biasing function'; Theorems 10-15 are stated for 'a zero-initialized Q-learning system using BB-LEC' and for populations of Q-learning agents using LBW. The hearing must discriminate the object-of-analysis channel (which alone would fail, Kimura-object pattern) from the incorporation channel (the update rule running inside the parent's own algorithms).",
+       "evidence": "Whitehead, AAAI-91: abstract; Q-learning section (eqs.1-4, Fig.1, Defs.5-7); Theorem 8 and Corollary 9; LEC section (eqs.7-9, Theorems 10-12, Corollary 13); LBW section (Theorems 14-15).",
+       "lens": "L1",
+       "name": "Q-learning (Watkins, 1989)",
+       "type": "method",
+       "year": 1989
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "Q-learning (Watkins, 1989)"
+      ],
+      "matched_node_id": "q-learning-watkins-1989-1989",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+      "candidate": {
+       "causal_claim": "Named as the family mechanism of the analyzed class: 'most are similar to Q-learning in that they use temporal difference methods [Sutton, 1988] to estimate a utility function'; 'The estimates represented by the action-value function are incrementally improved through trial-and-error by using updating rules based on temporal difference (TD) methods [Sutton, 1988]'. Filed for the routing hearing: whatever TD content reaches this parent arrives already inside Q-learning's one-step update rule (the analyzed algorithm), so the channel is expected to be judged mediated via Q-learning - the mirror of exp-218, where TD(lambda) was present in Watkins's text but routed into the prediction machinery, not the parent's mechanism.",
+       "evidence": "Whitehead, AAAI-91, Q-learning section (two sentences citing Sutton 1988); reference list [Sutton, 1988].",
+       "lens": "L1",
+       "name": "TD(lambda) temporal-difference learning (Sutton, 1988)",
+       "type": "method",
+       "year": 1988
+      },
+      "members": [
+       1
+      ],
+      "member_names": [
+       "TD(lambda) temporal-difference learning (Sutton, 1988)"
+      ],
+      "matched_node_id": "td-lambda-temporal-difference-learning-sutton-1988-1988",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+      "candidate": {
+       "causal_claim": "Named once, in the class sentence: 'a variety of other reinforcement algorithms have been described in the literature [Barto et al., 1983; Holland et al., 1986; Watkins, 1989; Jordan and Rumelhart, 1990], most are similar to Q-learning in that they use temporal difference methods'. No AHC mechanism (the actor-critic split, the critic's TD error as reinforcement) is consumed by the theorems or by LEC/LBW; the citation supports the generality claim for the results, not a channel. Filed so the gate, not the scout's silence, judges it (the Samuel-at-exp-218 pattern: bibliography presence plus field ancestry, no mechanism transfer).",
+       "evidence": "Whitehead, AAAI-91, Q-learning section, class sentence; reference list [Barto et al., 1983].",
+       "lens": "L5",
+       "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)",
+       "type": "method",
+       "year": 1983
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983)"
+      ],
+      "matched_node_id": "adaptive-heuristic-critic-barto-sutton-anderson-1983-1983",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-markovian-decision-process-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "The problem frame the parent's task class presupposes: the paper defines problem-solving tasks over deterministic state spaces with discounted cumulative reward (eq.1) - the MDP objective - but Bellman is nowhere in the reference list (find-verified against the complete list) and the frame is presupposed, not consumed: the parent's object is the search process's time complexity, not the frame's solution set. Filed for the framework-presupposition hearing (exp-218's MDP rejection at Q-learning is the standing discrimination).",
+       "evidence": "Whitehead, AAAI-91, eq.1 and Defs.1-7; complete reference list (no Bellman entry).",
+       "lens": "L4",
+       "name": "A Markovian Decision Process (Bellman, 1957)",
+       "type": "theory",
+       "year": 1957
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "A Markovian Decision Process (Bellman, 1957)"
+      ],
+      "matched_node_id": "a-markovian-decision-process-bellman-1957-1957",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dynamic-programming-bellman-1957-1957",
+      "candidate": {
+       "causal_claim": "The theory in whose terms the parent's objective is stated (maximize discounted cumulative reward; the optimal policy pi) - but DP's calculation is exactly what the analyzed algorithms do NOT perform (they search by trial and error without a model), DP is not cited anywhere in the paper (find-verified), and no DP mechanism is consumed by the lower-bound proof (a random-walk reduction) or by LEC/LBW. Filed for completeness of the DP-complex census at this parent; expected to fail on absence plus frame-level routing.",
+       "evidence": "Whitehead, AAAI-91, complete reference list (no Bellman & Dreyfus, no Ross, no DP text); eqs.1-2 (the objective as presupposed notation).",
+       "lens": "L19",
+       "name": "Dynamic Programming (Bellman, 1957)",
+       "type": "method",
+       "year": 1957
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "Dynamic Programming (Bellman, 1957)"
+      ],
+      "matched_node_id": "dynamic-programming-bellman-1957-1957",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "dyna-an-integrated-architecture-for-learning-planning-and-re-1990",
+      "candidate": {
+       "causal_claim": "The named rival approach: the paper's second approach to faster learning - 'augment the agent with a predictive model and use it to perform hypothetical trial-and-error experiments [Sutton, 1990a; Sutton, 1990b; ...]' - described and set aside ('the principle shortcoming of this approach is that it leads to agents who are only as good as their internal predictive models... the model is useless during that first crucial trial'). The parent's cooperative approach is posed against it. Filed for the consumed-vs-compared / correction-relation hearing: the parent extracts nothing of Dyna's worked object (no model, no planning backups) - defined-against with nothing extracted (FORTRAN-at-exp-213 pattern). Carried context: Dyna was fail-closed at exp-216 (2.0, conditional combination citations, never instantiated) with its rehearing assigned to a residual-gradient expansion, not to this parent.",
+       "evidence": "Whitehead, AAAI-91, 'Cooperation for faster learning' section, second-approach passage; references [Sutton, 1990a] [Sutton, 1990b].",
+       "lens": "L6",
+       "name": "Dyna, an integrated architecture for learning, planning and reacting (Sutton, 1990)",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "Dyna, an integrated architecture for learning, planning and reacting (Sutton, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "refinement-of-robot-motor-skills-through-reinforcement-learn-1988",
+      "candidate": {
+       "causal_claim": "The first rival approach: 'providing the agent with an approximate controller a priori... trial-and-error experience is used primarily to compensate for modeling errors in the approximate controller [Franklin, 1988]' - described and set aside ('its drawbacks are that it requires knowledge of the task a priori and it is less useful for adapting to change'). A compared approach with a single citation; nothing of its worked object is extracted by LEC/LBW (the critic's bias is learned online, not an a priori controller).",
+       "evidence": "Whitehead, AAAI-91, 'Cooperation for faster learning' section, first-approach passage; reference list [Franklin, 1988].",
+       "lens": "L6",
+       "name": "Refinement of robot motor skills through reinforcement learning (Franklin, 1988)",
+       "type": "method",
+       "year": 1988
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Refinement of robot motor skills through reinforcement learning (Franklin, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "classifier-systems-holland-et-al-1986-1986",
+      "candidate": {
+       "causal_claim": "Two mentions, neither a mechanism channel: the class sentence ('[Barto et al., 1983; Holland et al., 1986; ...] most are similar to Q-learning in that they use temporal difference methods') and a passing parenthesis in the LEC discussion: 'if Q is approximated with overlapping hypercubes (e.g. classifier systems [Holland et al., 1986]), then the critic's feedback can be expected to transfer to other situations as well'. A passing parenthesis is not instantiation (standing rule); the theorems are proved for tabular Q. Filed so the gate judges the mention.",
+       "evidence": "Whitehead, AAAI-91, Q-learning section class sentence; LEC analysis passage on smooth decision surfaces; reference list [Holland et al., 1986] (Induction, MIT Press).",
+       "lens": "L13",
+       "name": "Classifier systems (Holland et al., 1986)",
+       "type": "method",
+       "year": 1986
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "Classifier systems (Holland et al., 1986)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "supervised-learning-with-a-distal-teacher-jordan-rumelhart-1-1990",
+      "candidate": {
+       "causal_claim": "Named once in the class sentence ('[Barto et al., 1983; Holland et al., 1986; Watkins, 1989; Jordan and Rumelhart, 1990]') as a member of the TD-similar algorithm class. The distal-teacher mechanism (learning through a differentiable model's Jacobian) is nowhere used in the paper; LEC's critic supplies scalar rewards, not a teacher's target actions - the conclusion explicitly declines the full supervised step ('it might be argued that what we're doing here is moving toward supervised learning, so why not abandon reinforcement learning altogether'). Class membership, not a channel.",
+       "evidence": "Whitehead, AAAI-91, Q-learning section class sentence; Conclusions; reference list [Jordan and Rumelhart, 1990] (MIT technical report).",
+       "lens": "L13",
+       "name": "Supervised learning with a distal teacher (Jordan & Rumelhart, 1990)",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       8
+      ],
+      "member_names": [
+       "Supervised learning with a distal teacher (Jordan & Rumelhart, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "cmac-the-cerebellar-model-arithmetic-computer-albus-1975-1975",
+      "candidate": {
+       "causal_claim": "Named once, in a parenthesis listing locally-interpolating approximators: 'action-value estimators that use approximators that locally interpolate (e.g. CMACs, or Neural Nets) can immediately use the critic's feedback to bias the impending decision'. The theorems assume tabular Q; CMAC is one member of an interchangeable class named for a plausibility remark about LEC's ultimate power, not a consumed mechanism (the CMAC-at-exp-216 pattern: named in an interchangeable class, not used - there the simulations used polynomials; here the analysis uses tables).",
+       "evidence": "Whitehead, AAAI-91, LEC analysis passage following Corollary 13 (no CMAC citation in the reference list).",
+       "lens": "L13",
+       "name": "CMAC, the cerebellar model arithmetic computer (Albus, 1975)",
+       "type": "method",
+       "year": 1975
+      },
+      "members": [
+       9
+      ],
+      "member_names": [
+       "CMAC, the cerebellar model arithmetic computer (Albus, 1975)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "scaling-in-reinforcement-learning-whitehead-1989-1989",
+      "candidate": {
+       "causal_claim": "The author's own prior technical report (Rochester TR 304, 1989) on scaling in reinforcement learning - the self-carriage hearing. The AAAI paper cites it exactly once, inside the learned-predictive-model cluster for the set-aside second approach ('This technique can improve the learning rate even when the predictive model itself is learned [Sutton, 1990a; Whitehead, 1989; Lin, 1990; Riolo, 1990]') - not at the complexity theorems, and no constant, construction or result is taken over at a named point (contrast the Mikolov thesis at exp-206, consumed at two named points with a determined constant carried over). Filed so the self-carriage is scored on its merits on this parent's documents.",
+       "evidence": "Whitehead, AAAI-91, second-approach passage (sole in-text citation); reference list [Whitehead, 1989] (TR 304, Univ. of Rochester CS Dept.).",
+       "lens": "L2",
+       "name": "Scaling in reinforcement learning (Whitehead, 1989)",
+       "type": "other",
+       "year": 1989
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Scaling in reinforcement learning (Whitehead, 1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "reactive-behavior-learning-and-anticipation-whitehead-ballar-1989",
+      "candidate": {
+       "causal_claim": "The authors' anticipation line, cited inside the learned-model cluster for the set-aside second approach ('[Sutton, 1990a; Sutton, 1990b; Whitehead and Ballard, 1989a; Whitehead and Ballard, 1989b]'). The anticipation mechanism (predictive models of action effects) belongs to the rival model-based approach the parent argues is useless on the first trial; no part of it is consumed by the complexity analysis or by LEC/LBW. Creator-lineage proximity is not a channel.",
+       "evidence": "Whitehead, AAAI-91, second-approach passage; reference list [Whitehead and Ballard, 1989a] (NASA Conf. on Space Telerobotics).",
+       "lens": "L20",
+       "name": "Reactive behavior, learning, and anticipation (Whitehead & Ballard, 1989)",
+       "type": "method",
+       "year": 1989
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Reactive behavior, learning, and anticipation (Whitehead & Ballard, 1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "a-role-for-anticipation-in-reactive-systems-that-learn-white-1989",
+      "candidate": {
+       "causal_claim": "Companion to the 1989a filing: cited in the same learned-model cluster for the set-aside second approach. Same discrimination: the anticipation work is the authors' own model-based line, whose premise (a learned predictive model) the parent sets aside for the first-trial case; nothing of it routes into Theorem 8 or into the cooperative mechanisms.",
+       "evidence": "Whitehead, AAAI-91, second-approach passage; reference list [Whitehead and Ballard, 1989b] (Sixth Int. Workshop on Machine Learning, 1989).",
+       "lens": "L20",
+       "name": "A role for anticipation in reactive systems that learn (Whitehead & Ballard, 1989)",
+       "type": "method",
+       "year": 1989
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "A role for anticipation in reactive systems that learn (Whitehead & Ballard, 1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "self-improving-reactive-agents-lin-1990-1990",
+      "candidate": {
+       "causal_claim": "Cited once, inside the learned-model cluster ('even when the predictive model itself is learned [Sutton, 1990a; Whitehead, 1989; Lin, 1990; Riolo, 1990]'). A cluster citation for the rival approach's feasibility, with no mechanism, result or construction taken over. Filed for census completeness of the cluster the parent's documents name.",
+       "evidence": "Whitehead, AAAI-91, second-approach passage; reference list [Lin, 1990] (Proc. First Int. Conf. on Simulation of Adaptive Behavior).",
+       "lens": "L22",
+       "name": "Self-improving reactive agents (Lin, 1990)",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Self-improving reactive agents (Lin, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "lookahead-planning-and-latent-learning-in-classifier-systems-1990",
+      "candidate": {
+       "causal_claim": "Cited once, inside the same learned-model cluster as Lin 1990. A cluster citation for the set-aside approach; no channel into the analysis or the mechanisms.",
+       "evidence": "Whitehead, AAAI-91, second-approach passage; reference list [Riolo, 1990] (Proc. First Int. Conf. on Simulation of Adaptive Behavior).",
+       "lens": "L22",
+       "name": "Lookahead planning and latent learning in classifier systems (Riolo, 1990)",
+       "type": "method",
+       "year": 1990
+      },
+      "members": [
+       14
+      ],
+      "member_names": [
+       "Lookahead planning and latent learning in classifier systems (Riolo, 1990)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [
+     {
+      "pair_id": "cand-cand:11:12",
+      "kind": "cand-cand",
+      "a": {
+       "cand_index": 11,
+       "card": {
+        "name": "Reactive behavior, learning, and anticipation (Whitehead & Ballard, 1989)",
+        "aliases": [],
+        "year": 1989,
+        "domain": "",
+        "type": "method",
+        "definition": "The authors' anticipation line, cited inside the learned-model cluster for the set-aside second approach ('[Sutton, 1990a; Sutton, 1990b; Whitehead and Ballard, 1989a; Whitehead and Ballard, 1989b]'). The anticipation mechanism (predictive models of action effects) belongs to the rival model-based approach the parent argues is useless on the first trial; no part of it is consumed by the complexity analysis or by LEC/LBW. Creator-lineage proximity is not a channel.",
+        "wikidata": null
+       }
+      },
+      "b": {
+       "cand_index": 12,
+       "card": {
+        "name": "A role for anticipation in reactive systems that learn (Whitehead & Ballard, 1989)",
+        "aliases": [],
+        "year": 1989,
+        "domain": "",
+        "type": "method",
+        "definition": "Companion to the 1989a filing: cited in the same learned-model cluster for the set-aside second approach. Same discrimination: the anticipation work is the authors' own model-based line, whose premise (a learned predictive model) the parent sets aside for the first-trial case; nothing of it routes into Theorem 8 or into the cooperative mechanisms.",
+        "wikidata": null
+       }
+      },
+      "similarity": 0.8181,
+      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
+     }
+    ],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "causal_claim": "The parent's own full-length companion (Rochester TR 365, Feb 1991): the AAAI paper states 'A detailed derivation is given in [Whitehead and Ballard, 1991]' for Theorem 8's proof, and the TR's own note says 'A shorter version to appear AAAI91' - i.e. the TR is the parent itself in fuller dress (own-version). Filed deliberately at the parent's own year; expected to be dropped by the resolver's year bound, recorded, not re-dated (the exp-209 Unix/Bon and exp-212 Switchboard pattern).",
+       "evidence": "Whitehead, AAAI-91, derivation note after Theorem 8; reference list [Whitehead and Ballard, 1991] (TR 365).",
+       "lens": "L2",
+       "name": "A study of cooperative mechanisms for faster reinforcement learning (Whitehead & Ballard, 1991)",
+       "type": "other",
+       "year": 1991
+      },
+      "reason": "dated on/after parent year 1991"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [
+    {
+     "pair_id": "cand-cand:11:12",
+     "kind": "cand-cand",
+     "a": {
+      "cand_index": 11,
+      "card": {
+       "name": "Reactive behavior, learning, and anticipation (Whitehead & Ballard, 1989)",
+       "aliases": [],
+       "year": 1989,
+       "domain": "",
+       "type": "method",
+       "definition": "The authors' anticipation line, cited inside the learned-model cluster for the set-aside second approach ('[Sutton, 1990a; Sutton, 1990b; Whitehead and Ballard, 1989a; Whitehead and Ballard, 1989b]'). The anticipation mechanism (predictive models of action effects) belongs to the rival model-based approach the parent argues is useless on the first trial; no part of it is consumed by the complexity analysis or by LEC/LBW. Creator-lineage proximity is not a channel.",
+       "wikidata": null
+      }
+     },
+     "b": {
+      "cand_index": 12,
+      "card": {
+       "name": "A role for anticipation in reactive systems that learn (Whitehead & Ballard, 1989)",
+       "aliases": [],
+       "year": 1989,
+       "domain": "",
+       "type": "method",
+       "definition": "Companion to the 1989a filing: cited in the same learned-model cluster for the set-aside second approach. Same discrimination: the anticipation work is the authors' own model-based line, whose premise (a learned predictive model) the parent sets aside for the first-trial case; nothing of it routes into Theorem 8 or into the cooperative mechanisms.",
+       "wikidata": null
+      }
+     },
+     "similarity": 0.8181,
      "note": "gray-zone band 0.80-0.92; adjudicate SAME / DIFFERENT / SUBTYPE"
     }
    ],

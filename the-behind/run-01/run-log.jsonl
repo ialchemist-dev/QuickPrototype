@@ -16826,3 +16826,149 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "SESSION 104 CLOSES HERE: expansions 217 (GML) and 218 (Q-learning) both complete and checkpointed. Session totals: 1 new node (Rice, 3.5), 2 links (DP 6.0 and Bellman optimality equations 4.0, both into Q-learning), 13 rejections, 2 year-bound drops (the law-office project at exp-217; Liepins et al at exp-218), both TF-IDF-fallback resolves recorded. Carried hearings discharged this session: Rice at GML (admitted), DP at Q-learning (admitted), Bellman-equations criterion from exp-216 (applied, admitted). New rehearing conditions recorded: Rice's 1968 dating (if the articles' first appearance is dated to 1969, the node's year must be revisited - the edge survives on the memoir's within-year sequence); Witten 1977 (an anticipation claim to be heard at Witten's own position if his text shows stored action-values); TD(lambda) at Q-learning (rehearing if the parent node's identity is ever widened to the thesis's whole Q family). Carried hearings unchanged otherwise: Tunnicliffe at GenCode; AHC at ACP; Dyna at any residual-gradient expansion; DCF and GenCode at SGML; the EM hearing still belongs to the McLachlan & Basford (1988) expansion. Session 105 is NOT started, per instructions."
 }
+{
+ "ts": "2026-11-28T13:17:34.780507+00:00",
+ "event": "expansion",
+ "session": 105,
+ "expansion": 219,
+ "parent": "complexity-of-reinforcement-learning-whitehead-1991",
+ "parent_name": "Complexity of reinforcement learning (Whitehead)",
+ "parent_year": 1991,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "Two brief framings corrected by the documents, in the standing pattern. (1) The brief hypothesized that this expansion is 'where the RL cluster's mediated design debts (e.g. channels recorded via Q-learning/TD(lambda) at neighboring expansions) may surface'. TD(lambda) does surface and is rejected as MEDIATED VIA Q-LEARNING - the routing runs opposite to the brief's guess: Sutton 1988 is named in the parent's text only as the family trait of the analyzed class ('most are similar to Q-learning in that they use temporal difference methods [Sutton, 1988]'), and everything TD-shaped reaches this parent already inside the one family member it analyzes and incorporates. The mirror of exp-218, where TD(lambda) was present in Watkins's text and failed on routing into the prediction machinery; here it fails on routing through the instantiated member. (2) The brief's Dyna carried-context: the standing Dyna rehearing belongs to a future residual-gradient expansion (exp-216), not to this parent; Dyna is heard here on this parent's own documents as the named rival approach and fails closed on consumed-vs-compared (see notable_rejections). FIX-UP discharged here per house pattern: expansion 218's sync_commit = 8a4ff2be (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "The parent's primary text was obtained and read in full: Whitehead, 'Complexity and the Value of Time', Proc. AAAI-91, pp.607-613 (the node's stored source, cdn.aaai.org/AAAI/1991/AAAI91-095.pdf; clean text layer, no grounding gap). Read: abstract; the state-space characterisation (Defs.1-4: l-step invertible, uniformly k-bounded, homogeneous, polynomial width); the Q-learning section (the discounted-return objective eq.1, the greedy policy eq.2, the 1-step update eq.3, Fig.1's algorithm box with the Boltzmann-selection example, Defs.5-7, Theorem 8's lower bound with its random-walk reduction - 'the key to the proof is to recognize that the time needed by a zero-initialized Q-learning system to first solve the task is exactly the time needed by a process to perform a random walk on a one dimensional state space' - and Corollary 9, 'moderately exponential in the state space size' when P+ > 1/2); the 'Cooperation for faster learning' survey of the three approaches (a priori controller [Franklin, 1988]; predictive model [Sutton, 1990a; Sutton, 1990b; Whitehead and Ballard, 1989a; 1989b] with the learned-model cluster [Sutton, 1990a; Whitehead, 1989; Lin, 1990; Riolo, 1990]; cooperation); the LEC analysis (BB-LEC, eqs.7-9: 'Reward from the environment is treated according to standard Q-learning (it is used to learn the action-value function), while the critic's reward is used to learn a biasing function'; Theorems 10-12, Corollary 13; the smoothness passage naming CMACs and classifier systems as locally-interpolating approximators); the LBW analysis (Theorems 14-15); the Conclusions (the supervised-learning demurral); and the complete reference list (13 entries: Barto et al. 1983; Franklin 1988; Holland et al. 1986; Jordan & Rumelhart 1990; Lin 1990; Riolo 1990; Sutton 1988; Sutton 1990a; Sutton 1990b; Watkins 1989; Whitehead & Ballard 1989a; 1989b; Whitehead & Ballard 1991; Whitehead 1989). Find-verified absences against the complete list: NO Bellman (no MDP paper, no DP text), NO Samuel - both filed or noted accordingly.",
+ "scout": {
+  "raw_filings": 16,
+  "matched_existing": 5,
+  "judge_queue": 1,
+  "judgments_applied": 1,
+  "judgments_different": 1,
+  "distinct": 15,
+  "dropped_year_bound": 1,
+  "note": "Document-census pattern: every channel the parent's document names is filed exactly once - the analyzed/incorporated algorithm (Q-learning), the family mechanism (TD(lambda)), the class-sentence members (AHC, classifier systems, the distal teacher), the frame complex in two separable identities (MDP, DP), the two set-aside approaches (Franklin's a priori controller; Dyna and its learned-model citation cluster: Whitehead 1989 TR 304, Whitehead & Ballard 1989a/b, Lin 1990, Riolo 1990), the approximator parenthesis (CMAC), and the parent's own companion (TR 365, filed at the parent's own year 1991 - dropped by the resolver's year bound, recorded, not re-dated; the exp-209/212 pattern). The single judge-queue pair (the two Whitehead & Ballard 1989 anticipation papers against each other, MiniLM similarity 0.818) was judged DIFFERENT - distinct titles, distinct venues, separately cited as [1989a] and [1989b] in the parent's own reference list. Resolve ran under MiniLM (sentence-transformers loaded - NO TF-IDF fallback this expansion, a change from sessions 103-104 worth recording); with 5 of 15 matched to existing nodes by exact name and one gray-zone pair resolved by judgment, the embedder changed no outcome. Per-lens floors: the pool is a closed documentary census (one 7-page paper with a 13-entry reference list); 23 lens entries filed with dry/shortfall notes in dry_notes_complexity-of-reinforcement-learning-whitehead-1991.json rather than padded. Considered and not filed, with reasons in the dry notes: Samuel's checkers player (find-verified ABSENT from the paper - importance without a channel is not ancestry; contrast exp-218, where Watkins's bibliography carried him twice and he was filed and heard); the one-dimensional random-walk / hitting-time analysis (the proof's engine, but uncited standard machinery - no random-walk artifact in the reference list; the exp-218 strong-law disposition); Boltzmann action selection (an example rule inside Fig.1; the theorems are stated over arbitrary selection probabilities); complexity theory as a cross-field import (no cited artifact - generic method); Kaelbling's interval estimation (nowhere named in the parent's documents)."
+ },
+ "admissions": [
+  {
+   "node": "q-learning-watkins-1989-1989",
+   "name": "Q-learning (Watkins, 1989)",
+   "link": true,
+   "grade": 4.5,
+   "basis": "LINK to the existing node, on two discriminated channels. The object-of-analysis channel alone would fail (Kimura-object discrimination): Theorem 8 is a lower bound ON Q-learning, and being a paper's object is not being its consumed component. The incorporation channel carries the edge: the parent's constructive half consumes Q-learning's update rule as a component - BB-LEC treats environmental reward 'according to standard Q-learning' while learning a bias function B alongside, its decision rule summing Q+B (eq.9), and LBW is a population of Q-learning agents whose stored Q functions absorb observed experience; Theorems 10-15 are all stated for those composite Q-learning systems. Remove Q-learning and the parent has neither its theorem object nor its mechanisms. Grade 4.5 (CLI edge score) reflects the honest qualification: Q3 scored partial on the paper's own generality claim ('we expect our results to apply to other algorithms as well'), and the edge is first in line for rehearing if the incorporation reading is ever displaced by a document showing LEC/LBW specified for an arbitrary base learner. The link target's stored verification record (provisional, from its own admission history) was NOT overwritten, per the exps 210/213/218 deviation precedent; this hearing is documented on the edge's verdicts and here."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "TD(lambda) temporal-difference learning (Sutton, 1988) [existing node]",
+   "score": 1.5,
+   "kind": "mediated",
+   "basis": "MEDIATED VIA Q-LEARNING (Watkins, 1989) - the expansion's most instructive negative, and the mirror of exp-218. There, TD(lambda) was present in Watkins's text (attributed, redescribed) and failed on routing into the prediction machinery. Here it is named in the parent's text only as the family's shared trait - 'most are similar to Q-learning in that they use temporal difference methods [Sutton, 1988]' - while the parent's object is the instantiated member: the one-step update (eq.3) whose dynamics the lower bound reduces to a random walk and whose stored Q both mechanisms augment. TD(lambda)'s own mechanism (eligibility traces, the lambda-weighted return) appears nowhere in the paper. Presence as a family name is not consumption by the parent's mechanism."
+  },
+  {
+   "name": "Scaling in reinforcement learning (Whitehead, 1989)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. Self-carriage scored on its merits under the Mikolov-thesis discrimination (exp-206) and failing it: the thesis at exp-206 was consumed at two named points (a determined constant taken over verbatim; a prior result extended), while TR 304's sole in-text citation sits inside the learned-predictive-model cluster for the set-aside second approach - attached to model learning, not to the complexity results - and no constant, construction, definition or theorem is taken over from it at any named point; the parent's derivation is expressly deferred to its own companion, TR 365. Problem continuity and shared authorship are formation, not consumption. REHEARING CONDITION: if TR 304's text is obtained and shows the homogeneous-task lower-bound argument or the random-walk reduction already present there, this edge reopens under the Mikolov pattern."
+  },
+  {
+   "name": "A Markovian Decision Process (Bellman, 1957) [existing node]",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Framework presupposition (the exp-218 discrimination applied verbatim): the parent defines its task class over MDP-style state spaces with a discounted-return objective, but its object is the search process's time complexity, not the frame's solution set. Compounded by carriage: Bellman is find-verifiably absent from the parent's complete reference list - the frame arrived as the field's notation, not through a channel this document names."
+  },
+  {
+   "name": "Dyna, an integrated architecture for learning, planning and reacting (Sutton, 1990)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "Consumed-vs-compared, with the correction relation tested and failing: the parent describes the model-based approach and sets it aside on a stated ground (the learned model 'is useless during that first crucial trial'), and its mechanisms use no model, no simulated experience and no planning backups - defined-against with nothing of the worked object extracted (the FORTRAN-at-exp-213 pattern). Edge-scoped: Dyna's standing rehearing at a future residual-gradient expansion (exp-216) is untouched."
+  },
+  {
+   "name": "Adaptive Heuristic Critic (Barto, Sutton & Anderson, 1983) [existing node]",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "One appearance, in the four-item class sentence supporting the generality claim. No AHC mechanism is consumed: BB-LEC's critic is an external mentor supplying immediate reward, not the AHC's internal TD prediction element, and the paper does not cite the AHC at the LEC section - the verbal kinship of 'critic' is the scout's inference, not the document's channel. Bibliography presence plus field ancestry is not ancestry (the Samuel-at-exp-218 disposition)."
+  },
+  {
+   "name": "Dynamic Programming (Bellman, 1957) [existing node]",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Find-verified absence: no DP text appears in the parent's reference list, the analyzed algorithms are defined by NOT performing DP's calculation, and the lower-bound proof is a random-walk reduction, not a DP argument. The objective notation shared with DP is frame-level and was heard at the MDP filing. Edge-scoped: DP's admission at Q-learning (exp-218, definitional channel) is untouched."
+  },
+  {
+   "name": "Classifier systems (Holland et al., 1986)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "A passing parenthesis is not instantiation: a class-list citation plus one explicitly speculative remark ('if Q is approximated with overlapping hypercubes (e.g. classifier systems), then the critic's feedback can be expected to transfer'), against theorems proved for tabular Q throughout."
+  },
+  {
+   "name": "CMAC, the cerebellar model arithmetic computer (Albus, 1975)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Named as one of two interchangeable examples ('e.g. CMACs, or Neural Nets') of locally-interpolating approximators in a plausibility remark about LEC's 'ultimate power'; the analysis is tabular. The documents' own interchangeability is the Q3 failure (the exp-216 CMAC disposition on this parent's text)."
+  },
+  {
+   "name": "Supervised learning with a distal teacher (Jordan & Rumelhart, 1990)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "Class-sentence membership only; its mechanism (outcome error backpropagated through a learned forward model) is nowhere used, and the conclusion expressly declines the supervised step the candidate represents."
+  },
+  {
+   "name": "Refinement of robot motor skills through reinforcement learning (Franklin, 1988)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The first set-aside approach, single citation: an a priori controller positively biasing search, rejected by the parent for requiring task knowledge a priori. BB-LEC's bias is learned online from critic feedback - the opposite arrangement; nothing of the worked object is extracted."
+  },
+  {
+   "name": "Reactive behavior, learning, and anticipation (Whitehead & Ballard, 1989) / A role for anticipation in reactive systems that learn (Whitehead & Ballard, 1989)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "The authors' own anticipation line, each cited once inside the learned-model cluster for the set-aside second approach. Judged DIFFERENT from each other at identity resolution (distinct venues, separately cited) and heard separately; both fail on the same discrimination - creator-lineage proximity is not a channel, and the parent's mechanisms use no predictive model."
+  },
+  {
+   "name": "Self-improving reactive agents (Lin, 1990) / Lookahead planning and latent learning in classifier systems (Riolo, 1990)",
+   "score": 0.5,
+   "kind": "fail_closed_partial",
+   "basis": "Single cluster citations for the rival approach's feasibility ('even when the predictive model itself is learned [Sutton, 1990a; Whitehead, 1989; Lin, 1990; Riolo, 1990]'); no mechanism, result or construction taken over from either."
+  }
+ ],
+ "verification": {
+  "file": null,
+  "outcomes": {},
+  "mediation_actions": [],
+  "attack_notes": "No fresh nodes were created in this expansion, so no new section-6.4 verification records arise. The sole survivor is a LINK to Q-learning, which carries a substantive verification record from its own admission history (provisional; confirmed non-null on disk after apply-verdicts) - per the exps 210/213/218 deviation precedent that record was NOT overwritten, and the hearing is documented on the edge's verdicts and here. Adversarial attacks run in the verdicts themselves: (1) Q1/object attack on the LINK - the strongest available: the parent's theorems are ABOUT Q-learning, and a paper's object is not its consumed component (Kimura pattern); answered on the incorporation channel (BB-LEC and LBW are composite Q-learning systems; the update rule runs inside the parent's own artifacts), with the qualification recorded at full strength on the edge - the edge is first in line for rehearing if a document shows LEC/LBW specified for an arbitrary base learner. (2) Multiples on Q3 - the paper's own generality claim (the TD-similar class) is the multiple; Q3 was scored partial for exactly this, and the node claims the channel taken, not the only channel. (3) Date/direction: Watkins 1989 precedes the parent (1991); direction documented by citation and construction. (4) Mediation attacks on the LINK: TD(lambda) attempted as mediator - fails, the parent's update is the one-step rule and exp-218 established that the TD routing runs through Q-learning, not around it; the MDP frame attempted - fails, a presupposed frame shared by candidate and parent is not a conduit of the candidate's mechanism."
+ },
+ "totals_after": {
+  "nodes": 353,
+  "edges": 457,
+  "budget": "353/2000",
+  "expansions_done": 219,
+  "provisional": 336,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 71,
+   "6": 55,
+   "7": 36,
+   "8": 24,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 7,
+   "13": 3,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "ieee-754-binary-floating-point-arithmetic-1985-1985",
+  "maclisp-1966",
+  "mixture-models-inference-and-applications-to-clustering-mcla-1988",
+  "optimal-inventory-policy-arrow-harris-marschak-1951-1951",
+  "samuel-s-checkers-player-samuel-1959-1959"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 105 continues: expansion 220 (IEEE 754, 1985) follows this checkpoint in the same session. One LINK, no new nodes; the run's document-census pattern at a thin parent (compare exp-217's single admission). New rehearing conditions recorded: TR 304 at Whitehead (the Mikolov-pattern condition, keyed to obtaining TR 304's text); the Q-learning LINK at Whitehead (keyed to a document showing LEC/LBW specified for an arbitrary base learner). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion - which now stands THIRD on the frontier, not fourth, after this expansion consumed the frontier head; it is not session 105's second parent (IEEE 754 is), and the flag is recorded here per the brief's instruction."
+}
