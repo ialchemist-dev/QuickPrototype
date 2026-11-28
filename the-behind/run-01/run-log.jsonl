@@ -14154,3 +14154,141 @@
  ],
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
 }
+{
+ "ts": "2026-11-28T10:13:04.757293+00:00",
+ "event": "expansion",
+ "session": 95,
+ "expansion": 200,
+ "parent": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+ "parent_name": "JavaScript 1.1 language specification (Eich & McKinney, 1996)",
+ "parent_year": 1996,
+ "parent_depth": 5,
+ "date": "2026-11-28",
+ "brief_correction": "The brief ordered this parent's candidates judged afresh on the spec's own text, with expansion 197's discriminations (Self/Scheme mediated via JavaScript AT ECMA-262) expressly edge-scoped. The document redirected the pool in three ways. (a) ANSI C is NOT in this document's apparatus: the document cites Kernighan & Ritchie's book, not the C standard (its only ANSI citation is X3.4, ASCII, at sec.2.1), and its grammar notation is visibly the Java Language Specification's - so ANSI C was deliberately NOT filed, and expansion 197's ANSI C mediation (via the JScript specification, whose grammar WAS borrowed from ANSI C) does not transfer to this sibling document. The parent's stored leap says 'BNF grammar in the ANSI C style' - that is HOPL's secondary characterization, kept verbatim in the stored record and in the edges' leap records; the document's own apparatus governs the scout. (b) Self IS named in this document - sec.1.4 cites the Self 3.0 Programmer's Reference Manual - so the mediation finding at Self was genuinely contestable here in a way it was not at ECMA-262 (whose sec.3 does not cite Self); it is flagged as the expansion's most contestable call, with the citation recorded as the attack surface in the verdict and the verification record. (c) The strongest documentary channel after the subject is the Java Language Specification (sec.1.4-cited; the notation and keyword-table model) - and it is barred by the resolver's year bound, filed deliberately at its documented year. Grade calibrations also landed off the builder's estimates and are recorded rather than adjusted: JavaScript at 4.5 (parity with expansion 197's subject edge, not above it) and IEEE 754 at 4.0 (below expansion 197's 5.0 for the same standard, on a conservative Q2) - edge-scoped scoring variance between honest profiles, both edges admitted.",
+ "grounding": "The specification itself, read this session: the surviving 10/3/96 draft PDF (the document's full text), with the 11/18/96 preliminary draft's table of contents and apparatus confirmed the same document. Find-verified in the text: sec.1.1 ('JavaScript version 1.0 was implemented in Netscape Navigator 2.0 and Netscape LiveWire 1.0. This specification describes JavaScript version 1.1, which was implemented in Netscape Navigator 3.0. This specification describes the language, and not the specific features of any particular implementation.'); sec.1.4's COMPLETE reference list (7 entries: the CLOS Specification; IEEE Std 754-1985; K&R 2nd ed.; the Java Language Specification (1996); the Modula-3 Report, revised; the Self 3.0 Programmer's Reference Manual; Stroustrup 2nd ed.); sec.3 ('JavaScript numbers are signed 64-bit IEEE 754 floating-point values, as specified in IEEE Standard for Binary Floating-Point Arithmetic, ANSI/IEEE Standard 754-1985'; numeric operators behave as specified by IEEE 754; support of denormalized numbers and gradual underflow required - ~20 occurrences, pervasively instantiated); sec.2.4.2 ('Unlike Java, a semicolon is not required to terminate a statement'); sec.2.4.3 (comments glossed 'as in C' and 'as in C++'); sec.2.1 (character set grounded in ASCII per ANSI X3.4 - the document's ONLY ANSI citation; ANSI C X3.159 is not cited); sec.1.2's grammar notation and sec.2.5's keyword table visibly modeled on the JLS. Find-verified absences: 'Scheme' occurs NOWHERE in the document; 'Self' is named ONLY in the sec.1.4 citation (every other match is the word 'itself'), while sec.5.3.2 specifies object prototypes without naming Self; 'HyperTalk' and 'AWK' are absent. Plus HOPL 2020 secs.7-9 (read at expansion 197): Eich hired to embed Scheme and redirected; the May 1995 design under the look-like-Java mandate; Netscape contributed this specification to Ecma's TC39 as a base document.",
+ "parent_record_note": "The parent's stored record was verified complete this session (depth 5, priority 5.5, status provisional; stored bottleneck, leap and prior_state all non-empty; successor ECMA-262 first edition, which admitted it at expansion 197 as one of its two base documents, grade 5.5). The stored leap's phrase 'BNF grammar in the ANSI C style' is HOPL's characterization and is kept verbatim - the record was NOT hand-edited; the nuance (the document cites K&R, not the C standard; its notation model is the JLS) is recorded in brief_correction and in the scout's scope note.",
+ "provenance": "Session 95, expansion 2 of 2. All pipeline steps run in the FOREGROUND and verified on disk after each (resolve completed in the foreground at ~46s with the MiniLM embedder; the graph file was read back to confirm stage 'resolved', 11 distinct, 6 matched, the empty judge queue and the 3 dropped candidates before verdicts). Resolve: 14 raw -> 11 distinct, 6 matched existing, 0 auto-merges, judge queue 0, dropped 3, prefiltered 0. No judge pairs were queued, so no judgments were applied; recorded so the absence is a fact of the record. The verdicts builder's count check passed (11 evaluations == 11 distinct, missing/extra specs empty) and the dry run through score.rank_candidates reproduced the intended outcome BEFORE applying (2 survivors, both LINKs: JavaScript 4.5, IEEE 754 4.0; 5 fail-closed partials: K&R 0.5, the C++ book 0.5, CLOS 0.5, Netscape Communications 0.5, the Modula-3 Report 0.0; 4 mediated rejections, all via JavaScript: Self 1.0, Scheme 1.0, Java 1.0, HyperTalk 0.5), so NO dry-run correction was spent at this parent. apply-verdicts run exactly once (evaluated 11, survivors 2, created 0, linked 2, rejected 9, mediated rejections 4). No nodes were created, so the created-node spot-check is vacuous; instead the two new edges were read back from the graph and verified (scores 4.5/4.0, gates passed, each edge's leap record carrying the parent's stored prior_state and leap verbatim). Verification applied from work/verification_javascript-1-1-language-specification-eich-mckinney-1996-1996.json (both edges provisional, no mediation actions). FIX-UP discharged here per house pattern: expansion 199's sync_commit = d76ab8d0. Rendered with --out run-01/index.html (322 nodes / 416 edges) before syncing, per the session-91 render lesson. This record's own sync_commit rides the sync that carries it.",
+ "scout": {
+  "builder": "run-01/work/build_scout_js11spec.py",
+  "raw_filings": 14,
+  "distinct_names_intended": 14,
+  "per_lens": {
+   "L2": 2,
+   "L3": 5,
+   "L9": 1,
+   "L16": 2,
+   "L19": 3,
+   "L21": 1
+  },
+  "dry_notes_file": "run-01/work/dry_notes_javascript-1-1-language-specification-eich-mckinney-1996-1996.json",
+  "dry_or_shortfall_lenses": [
+   "L1 (Dry-with-finding: no formalism is consumed AS a formalism; the document's grammar is its output, and its notation's model is the year-bound JLS filing at L16.)",
+   "L2 (2 filings: JavaScript, the subject; the JScript Language Specification v0.1, the sibling base document, filed deliberately for the year bound.)",
+   "L3 (5 filings - the document-grounded census: five of sec.1.4's seven entries are heard here (the CLOS Specification, K&R, the C++ book, the Modula-3 Report, Self); IEEE 754 rides at L16 as a standard and the JLS at L16 as the notation model.)",
+   "L4 (Dry: the problem - the language existed only as an implementation - is the parent's own stored bottleneck; no posing artifact is consumed.)",
+   "L5 (Dry: no diagnosis artifact is consumed.)",
+   "L6 (Dry-with-finding: the document displaces no incumbent; the defined-against incumbent is Java, heard at L19 where its design-mandate role dominates.)",
+   "L7 (Dry: no prior artifact of the same kind by others is consumed; the sibling document rides at L2.)",
+   "L8 (Dry: a language specification consumes no dataset.)",
+   "L9 (1 filing: Netscape Navigator 3.0, the implementation sec.1.1 names, filed deliberately for the year bound.)",
+   "L10 (Dry: no material dependency.)",
+   "L11 (Dry: no procedure is consumed; the drafting procedure is the document's own.)",
+   "L12 (Dry-with-finding: the document IS a notation artifact; its notation's model is the year-bound JLS. ANSI C's notation is NOT this document's model - the LISP 1.5 manual and ANSI C, the sibling JScript document's channels, were deliberately NOT filed here; see the scope note.)",
+   "L13 (Dry: no library is consumed as code; the document specifies a library, it does not link one.)",
+   "L14 (Dry: no platform dependency beyond the implementation, heard at L9.)",
+   "L15 (Dry: no hosted service is consumed.)",
+   "L16 (2 filings: IEEE 754, the cited and pervasively instantiated standard; the Java Language Specification, the sec.1.4-cited notation and keyword-table model, filed deliberately for the year bound. ASCII (ANSI X3.4), the document's only other standard citation, is a substrate below its channels - recorded in the scope note, not filed.)",
+   "L17 (Dry: no metric registered this document.)",
+   "L18 (Dry: no observation instrument.)",
+   "L19 (3 filings: Scheme, Java, HyperTalk - the language's documented design lineage, heard as the language's inputs.)",
+   "L20 (Dry: no benchmark or evaluation artifact.)",
+   "L21 (1 filing: Netscape Communications, the producer institution.)",
+   "L22 (Dry: no negative-result artifact.)",
+   "L23 (Dry: no survey; HOPL 2020 is the retrospective of record and is grounding, not a candidate.)",
+   "Scope (the deliberate non-filings): ANSI C (X3.159) NOT filed - the document cites K&R, not the C standard, and its notation model is the JLS; the LISP 1.5 Programmer's Manual NOT filed - its documented channel is the sibling JScript document's pseudocode, and this document's apparatus is a BNF grammar; AWK not filed (design-influence class duplicative of HyperTalk's, thinner sourcing); LiveWire 1.0 not filed (sec.1.1 names it for version 1.0, not the version this document describes); ANSI X3.4/ASCII not filed (substrate)."
+  ]
+ },
+ "resolution": {
+  "raw": 14,
+  "distinct": 11,
+  "matched_existing": 6,
+  "auto_merges": 0,
+  "judge_queue": 0,
+  "dropped": 3,
+  "matched_ids": [
+   "javascript-1995",
+   "self-programming-language-1987",
+   "ieee-754-binary-floating-point-arithmetic-1985-1985",
+   "scheme-1975",
+   "hypertalk-1987",
+   "netscape-communications-1994"
+  ],
+  "identity_note": "No judge pairs were queued and no merges occurred: the resolver matched the six LINK filings cleanly to their existing nodes. The JScript specification filing also corresponds to an existing node but was dropped by the year bound before matching could matter - identity was never in question at this parent."
+ },
+ "judgments": "No judge pairs were queued at this parent; no judgments were applied. Recorded so the absence is a fact of the record, not an omission.",
+ "calendar_dropped_at_resolve": [
+  "The Java Language Specification (Gosling, Joy & Steele, 1996) - dropped by the resolver's year bound (dated the parent's own year, 1996). Filed deliberately with its documented year: the strongest documentary channel after the subject - sec.1.4 cites it, sec.1.2's grammar notation follows its conventions, and sec.2.5's keyword table mirrors its reserved set. The within-year precedence is real (the JLS was published in August 1996; the parent's drafts are dated 3 October and 18 November 1996), so the bar is the resolver's year granularity, not the facts; the channel is recorded here in full for the record. Not re-dated.",
+  "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996) - dropped by the resolver's year bound (dated the parent's own year, 1996). Filed deliberately: the sibling base document, a parallel contribution to the same standardization; no consumption in either direction is documented (the two were written against the same deadline from different implementations), so even absent the year bound its hearing would have been the parallel-contribution discrimination. It stands in the frontier for its own expansion. Not re-dated.",
+  "Netscape Navigator 3.0 (1996) - dropped by the resolver's year bound (dated the parent's own year, 1996). Filed deliberately: the implementation sec.1.1 names as JavaScript 1.1's vehicle (shipped August 1996). Its role - the behavior oracle - is the mediation attack surface at the JavaScript verdict, answered there on sec.1.1's own language/implementation distinction. Not re-dated."
+ ],
+ "verdicts": {
+  "file": "run-01/work/verdicts_javascript-1-1-language-specification-eich-mckinney-1996-1996.json",
+  "builder": "run-01/work/build_verdicts_js11spec.py",
+  "evaluations": 11,
+  "survivors": [
+   "JavaScript (1995) - LINK to javascript-1995, dry-run score 4.5, provisional. The subject relation on the document's own sec.1.1: the document describes the language, expressly not any implementation's features; it is the language's first writing-down, by its own author. The mediation attack via the implementation (Navigator 3.0) is answered on sec.1.1's distinction and the implementation filing's year bound. Grade parity with expansion 197's subject edge at ECMA-262 (also 4.5), recorded honestly against the builder's ~5.0 expectation: Q12 is partial here because the vendor-neutral reset was realized through the successor standard built on this draft.",
+   "IEEE 754 binary floating-point arithmetic (1985) - LINK to ieee-754-binary-floating-point-arithmetic-1985-1985, dry-run score 4.0, provisional. Citation PLUS pervasive instantiation, find-verified in this document's own body: sec.1.4 cites ANSI/IEEE Std 754-1985; sec.3 defines the number type over it and requires its gradual underflow by name; the operator clauses are governed by its rules throughout. Lands below expansion 197's 5.0 for the same standard on a conservative Q2 (its space-opening for THIS document is background shared with every 1990s language) - edge-scoped variance, on the record."
+  ],
+  "notable_rejections": [
+   "Self (programming language) - REJECTED mediated_via JavaScript (1.0). THE EXPANSION'S MOST CONTESTABLE CALL. For the mediation: sec.5.3.2 specifies the language's prototype model without naming Self; the mechanism entered at the 1995 design and the document transcribes the implementation; remove Self keeping JavaScript and the document is unchanged word for word. Against it, recorded in full: sec.1.4 cites the Self 3.0 manual - the document's own bibliography names the lineage, which is more documentary contact than ECMA-262 had. A rehearing would need evidence the drafters worked from the manual rather than from the implementation.",
+   "Scheme - REJECTED mediated_via JavaScript (1.0): find-verified absence - the word occurs nowhere in the document and its bibliography omits it; its mechanisms (lexical scope, first-class functions) are present only as embodied in the language's design (Eich was hired to embed Scheme). Consistent with expansion 197, reached here on this document's own absence.",
+   "Java (Sun Microsystems, 1995) - REJECTED mediated_via JavaScript (1.0): both documented touches run through the language - the 1995 look-like-Java mandate was imposed on the language, not on this document, and sec.2.4.2's 'Unlike Java' is a defined-against comparison; the correction relation fails (no worked object of Java's is extracted - a different language is transcribed). The notation channel belongs to the year-bound JLS filing.",
+   "HyperTalk - REJECTED mediated_via JavaScript (0.5): a documented design influence on the language's role and audience; find-verified absence from the document.",
+   "The sec.1.4 citation shelf - FAIL-CLOSED PARTIALS: K&R 2nd ed. (0.5; citation plus sec.2.4.3's 'as in C' gloss - a passing parenthesis, not a derivation), the C++ book 2nd ed. (0.5; the same shape, 'as in C++'), the CLOS Specification (0.5; the bibliography's FIRST entry, with no CLOS mechanism - no classes, no generic functions - in the document's prototype-based object model), the Modula-3 Report (0.0; the shelf's weakest member, a bare entry), and Netscape Communications (0.5; the producer institution - the producer form of self-carriage, as with NCSA at expansion 199; its standardization-offer edge stands at expansion 197 and is untouched)."
+  ]
+ },
+ "verification": {
+  "file": "run-01/work/verification_javascript-1-1-language-specification-eich-mckinney-1996-1996.json",
+  "outcomes": {
+   "javascript-1995": "provisional",
+   "ieee-754-binary-floating-point-arithmetic-1985-1985": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "JavaScript: the mediation attack via the implementation fails on sec.1.1's own language/implementation distinction; the preliminary-draft attack fails on the parent's leap record (its act was to be written down and contributed as a base document). IEEE 754: the citation-only attack (RFC 1738 pattern, expansion 197) fails on find-verified pervasive instantiation in the body. For the record, the Self edge-that-wasn't: the sec.1.4 Self-manual citation is the standing attack surface on the mediation finding, recorded in the verdict and flagged as the expansion's most contestable call."
+ },
+ "totals_after": {
+  "nodes": 322,
+  "edges": 416,
+  "budget": "322/2000",
+  "expansions_done": 200,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 66,
+   "6": 49,
+   "7": 32,
+   "8": 19,
+   "9": 9,
+   "10": 1,
+   "11": 2,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  },
+  "status_split": {
+   "provisional": 305,
+   "verified": 17
+  }
+ },
+ "frontier_head_after": [
+  "world-wide-web-berners-lee-1991-1991",
+  "the-jscript-language-specification-version-0-1-welland-smith-1996",
+  "neural-network-based-language-models-for-highly-inflective-l-2009",
+  "pushshift-reddit-crawl-baumgartner-2015-2015",
+  "state-application-framework-2001"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append"
+}

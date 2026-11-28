@@ -13,9 +13,9 @@
  "run_state": {
   "profile": "full",
   "started_at": "2026-11-24T22:07:37+00:00",
-  "updated_at": "2026-11-28T10:05:19+00:00",
-  "expansions_done": 199,
-  "raw_candidates_seen": 8741,
+  "updated_at": "2026-11-28T10:12:11+00:00",
+  "expansions_done": 200,
+  "raw_candidates_seen": 8755,
   "rejected": [
    {
     "parent_id": "the-modern-ai-agent-2023",
@@ -34877,6 +34877,64 @@
     "name": "National Center for Supercomputing Applications (NCSA, 1986)",
     "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
     "at": "2026-11-28T10:05:01+00:00"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "Self (programming language)",
+    "reason": "mediated_via: JavaScript",
+    "at": "2026-11-28T10:11:55+00:00",
+    "mediated_via": "JavaScript"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "Common Lisp Object System Specification (Bobrow et al., 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:11:55+00:00"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "The C Programming Language, 2nd edition (Kernighan & Ritchie, 1988)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:11:55+00:00"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "The C++ Programming Language, 2nd edition (Stroustrup, 1991)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:11:55+00:00"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "Modula-3 Report, revised (Cardelli et al., 1989)",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:11:55+00:00"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "Scheme",
+    "reason": "mediated_via: JavaScript",
+    "at": "2026-11-28T10:11:55+00:00",
+    "mediated_via": "JavaScript"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "Java (Sun Microsystems, 1995)",
+    "reason": "mediated_via: JavaScript",
+    "at": "2026-11-28T10:11:55+00:00",
+    "mediated_via": "JavaScript"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "HyperTalk",
+    "reason": "mediated_via: JavaScript",
+    "at": "2026-11-28T10:11:55+00:00",
+    "mediated_via": "JavaScript"
+   },
+   {
+    "parent_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+    "name": "Netscape Communications",
+    "reason": "directness gate: not established as a direct enabler of the parent's leap (fail or partial)",
+    "at": "2026-11-28T10:11:55+00:00"
    }
   ]
  },
@@ -36681,12 +36739,16 @@
     {
      "title": "ECMA-262, 1st edition (June 1997), read this session, Brief History",
      "url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "title": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), sec.1.1",
+     "url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Verifier attacks run (sec.6.4). (1) Mediation attack - the expected one, recorded in full: the committee's documentary channel ran through the JavaScript 1.1 specification, so is this edge mediated by that filing? It is not: a standard's subject is not a milestone that its basis text mediates; the basis text is the subject's own document, admitted on the documentary relation, and this edge carries the subject relation ('The originating technology for this ECMA Standard is JavaScript', Brief History). The same two-edge structure was admitted at the third edition in session 11, where JavaScript scored 4.5 expressly as 'subject relation, distinct from the basis relation'. Attack fails on the documents and the precedent. (2) Q1 attack: is the subject relation too weak to be an impossibility flip (a standard could standardize a dead or undeployed language)? The flip here is constitutive, not causal-convenience: without this language there is no ECMA-262 at all, and the December 1995 announcement, the 1996 offer and the committee's entire work presuppose it. (3) Q3: the committee standardized the 1.1 snapshot as documented, not the living language in the abstract - necessity scored partial on that honest basis. (4) Date/direction: 1995 < 1997; direction per the Brief History. Outcome provisional per uniform practice.",
-    "at": "2026-11-28T09:48:26+00:00"
+    "notes": "Expansion 200 edge (JavaScript 1.1 language specification <- JavaScript), LINK, grade 4.5, marked provisional per RUNBOOK sec.6 (fresh edges stay provisional; uniform sessions 88-95 practice). Strongest attack: mediation via the implementation - the document's behavior oracle was Navigator 3.0, so the channel arguably runs spec <- binary, not spec <- language. Answer: the document's own sec.1.1 draws exactly this line ('This specification describes the language, and not the specific features of any particular implementation'), and the subject relation is the run's recognized direct channel (session-11 precedent; expansion 197 admitted the same node at ECMA-262 at the same grade 4.5 via the same relation, one remove further away through the base document). The implementation filing (Navigator 3.0) is in any case barred by the resolver's year bound and recorded there. Secondary attack: the parent is a PRELIMINARY draft, never itself standardized - answered by the parent's own leap record: its historical act was to be written down and contributed to TC39 as a base document, and the edge grades the subject relation, not the draft's authority. Grade calibration recorded honestly: parity with expansion 197's subject edge, not above it, the builder's ~5.0 expectation notwithstanding - the honest verdict profile (Q12 partial: the vendor-neutral reset was realized through the successor standard built on this draft) lands at 4.5.",
+    "at": "2026-11-28T10:12:11+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-25T02:42:55+00:00"
@@ -44070,7 +44132,7 @@
    "prior_state": "The Navigator implementation was the language's only definition; knowledge of its behavior lived in the binary and in its author's head.",
    "status": "provisional",
    "depth": 5,
-   "expanded": false,
+   "expanded": true,
    "priority": 5.5,
    "sources": [
     {
@@ -44134,12 +44196,16 @@
     {
      "title": "ECMA-262, 1st edition (June 1997), read this session, secs.3, 4.3.20, 8.5, 11",
      "url": "https://tecfa.unige.ch/guides/js/e262-pdf.pdf"
+    },
+    {
+     "title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 3, 4",
+     "url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
     }
    ],
    "verification": {
     "outcome": "provisional",
-    "notes": "Verifier attacks run (sec.6.4). (1) Citation-only attack - the dangerous one for a sec.3 reference: is this registration rather than consumption (the RFC 1738 pattern, which failed closed at this same parent)? Find-verified against the standard's text: sec.8.5 defines the Number type as IEEE 754 double-precision, and the governing phrase 'governed by the rules of IEEE 754 double-precision arithmetic' recurs across the arithmetic clauses (~20 occurrences, secs.8.5 and 11 passim), with NaN, infinities and signed zero - IEEE 754's apparatus - as the clauses' working concepts. Citation PLUS pervasive instantiation: the strong channel. Attack fails. (2) Multiples on Q3: no rival binary arithmetic standard was citable in 1996; the attack found none. (3) Mediation attack: does the channel run through the base documents (which also presuppose IEEE arithmetic)? The standard's own clauses state the governance directly; even if the base documents share the presupposition, the parent's text instantiates the candidate itself, which is the channel judged. Attack fails. (4) Date/direction: 1985, twelve years prior; direction is incorporation by the later standard. Outcome provisional per uniform practice.",
-    "at": "2026-11-28T09:48:26+00:00"
+    "notes": "Expansion 200 edge (JavaScript 1.1 language specification <- IEEE 754), LINK, grade 4.0, marked provisional per RUNBOOK sec.6. Strongest attack: citation-only, on the pattern of RFC 1738's fail-closed partial at expansion 197 - a bibliography entry is registration, not consumption. Answer: find-verified pervasive instantiation in THIS document's body - sec.1.4 cites ANSI/IEEE Std 754-1985; sec.3 defines the number type as 'signed 64-bit IEEE 754 floating-point values, as specified in' the standard and requires its denormals and gradual underflow by name; the operator clauses are governed by its rules throughout (~20 occurrences, including the document expressly distinguishing its % operator from the standard's remainder operation). The clauses lose their definitions without the standard, which is the Q1 test. Recorded variance: the same standard was admitted at expansion 197 (ECMA-262) at grade 5.0; this edge lands at 4.0 on a more conservative Q2 (the standard's space-opening for THIS document is background shared with every 1990s language). Edge-scoped scoring variance between two honest profiles, not a contradiction - both edges stand admitted, and the difference is on the record for any rehearing.",
+    "at": "2026-11-28T10:12:11+00:00"
    },
    "merged_into": null,
    "created_at": "2026-11-28T09:47:44+00:00"
@@ -84979,6 +85045,200 @@
     "counterfactual": "Remove ViolaWWW and its demonstration, and the parent loses its documented trigger and its documented model: the record of the project's origin starts with Thompson showing ViolaWWW to the group that then built Mosaic. No intermediary milestone stands between the demonstration and the project - the channel is makers seeing the artifact, the same carrier pattern the run scored at expansion 198 (Mosaic into Netscape). The standing risk is recorded honestly: ViolaWWW's DISTINCTIVE mechanisms (scriptable objects, stylesheets) were not consumed - what passed was the graphical-browser concept in its most advanced demonstrated form and its feature patterns. That caps the score; it does not mediate the channel.",
     "mediator": null,
     "evidence": "Direct: the demonstration and the modeling are documented in the parent's own historical record (Wikipedia, NCSA Mosaic; CHM). Recorded as the expansion's most contestable admission."
+   }
+  },
+  {
+   "predecessor_id": "javascript-1995",
+   "successor_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The document's own first section is the evidence: 'This specification describes JavaScript version 1.1, which was implemented in Netscape Navigator 3.0. This specification describes the language, and not the specific features of any particular implementation' (sec.1.1). Before the language existed there was nothing for this document to be; every clause of it - grammar, types, object model, built-in library - is the language written down. The parent's stored bottleneck ('the language existed only as Netscape's implementation') presupposes the language as the document's entire input.",
+     "source": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), sec.1.1",
+     "falsification": "Evidence of any content in the document that is not the language's grammar, semantics or library."
+    },
+    "Q2": {
+     "verdict": "pass",
+     "evidence": "The language opened the space the document serves: a scripting language in every browser created the need - and the possibility - of a vendor-neutral text that others could implement and standardize from. The document is the space's first textual artifact.",
+     "source": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), sec.1.1; Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-8",
+     "falsification": "Evidence a specification of this kind was possible or needed before the language shipped."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "Not substitutable: the document describes THIS language. A specification of another language is another document; the subject relation admits no alternative instance.",
+     "source": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), sec.1.1",
+     "falsification": "Evidence the document could have taken a different language as its subject and remained this document."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "The language's existence as a running, shipping implementation collapsed the document's costliest unknown: every clause had a definite behavior to transcribe, test and systematize - the document is a codification of a working artifact, not a design proposal.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "pass",
+     "evidence": "The language embodies the explanatory model the document systematizes: a dynamic, prototype-based, first-class-function scripting language - the model is the language's, stated as text here for the first time.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The language's grammar is the document's content-interface: the LL(1) grammar closing the document is the language itself in its most compressed form.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk: the document descends from the language directly - author, subject and source are the language and its maker.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "partial",
+     "evidence": "The permanent reset - a vendor-neutral text of the language - was realized through the successor standard (ECMA-262) built on this document as a base text, so partial at this parent.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.5,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:11:55+00:00",
+   "leap": {
+    "prior_state": "The Navigator implementation was the language's only definition; knowledge of its behavior lived in the binary and in its author's head.",
+    "jump": "Eich and McKinney's preliminary JavaScript Language Specification for JavaScript 1.1 (1996) wrote the language down as a document - BNF grammar in the ANSI C style - and Netscape contributed it to Ecma's TC39 as a base document; the first edition's grammar conventions largely descend from it.",
+    "date": 1996
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Remove JavaScript and the document has no content, no subject and no occasion. The mediation attack via the implementation (Navigator 3.0, the behavior oracle sec.1.1 names) fails: the implementation is the language's embodiment, and the document expressly describes the language rather than 'the specific features of any particular implementation' - the implementation filing is in any case barred by the resolver's year bound and recorded there. The subject relation is the run's recognized direct channel (session-11 precedent; expansion 197 at ECMA-262), and it is closer here: this document is the language's first writing-down, by its own author.",
+    "mediator": null,
+    "evidence": "Direct: sec.1.1's own definition of the document. A subject is not mediated by its embodiment."
+   }
+  },
+  {
+   "predecessor_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+   "successor_id": "javascript-1-1-language-specification-eich-mckinney-1996-1996",
+   "verdicts": {
+    "Q1": {
+     "verdict": "pass",
+     "evidence": "The document's numeric type has no definition without this standard: 'JavaScript numbers are signed 64-bit IEEE 754 floating-point values, as specified in IEEE Standard for Binary Floating-Point Arithmetic, ANSI/IEEE Standard 754-1985' (sec.3). Before the standard, a language specification had to invent or leave vague its arithmetic; this document adopts the standard's values wholesale - NaN, infinities, signed zeros, denormals.",
+     "source": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), secs.1.4, 3",
+     "falsification": "Evidence the document's numeric clauses define their own arithmetic independent of the standard."
+    },
+    "Q2": {
+     "verdict": "partial",
+     "evidence": "The standard opened the portable-numerics space for the whole era's languages - a real opening, but for this document the definitional consumption (Q1) is the channel; the space-opening is background shared with every 1990s language, so partial.",
+     "source": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), sec.3",
+     "falsification": "Evidence this document's occasion traces to the standard's space-opening specifically."
+    },
+    "Q3": {
+     "verdict": "pass",
+     "evidence": "No substitute existed: in 1996 there was no rival binary floating-point standard the document could have adopted - the clauses name this standard, require its denormals and gradual underflow by name, and govern each operator by its rules. A different arithmetic would be a different document.",
+     "source": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), secs.3-4",
+     "falsification": "Evidence of an alternative arithmetic standard available to and considered by the document."
+    },
+    "Q4": {
+     "verdict": "pass",
+     "evidence": "It collapsed the document's numeric-semantics problem entirely: rounding, overflow, underflow, NaN propagation and equality were pre-decided by the standard, clause-ready.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q5": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q6": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q7": {
+     "verdict": "pass",
+     "evidence": "The operator clauses compose against the standard's rules one by one - multiplication, division, remainder (with the document expressly distinguishing its % from the standard's remainder operation), addition, equality - an interface consumed clause-deep.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q8": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q9": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q10": {
+     "verdict": "fail",
+     "evidence": "Not the channel through which this parent's leap was made.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q11": {
+     "verdict": "pass",
+     "evidence": "Trunk for the numeric third of the document: the type definition itself is the standard's value set.",
+     "source": "",
+     "falsification": ""
+    },
+    "Q12": {
+     "verdict": "pass",
+     "evidence": "A permanent reset realized through this document and its successors: JavaScript numbers are IEEE 754 doubles to this day, on the definition first written down here.",
+     "source": "",
+     "falsification": ""
+    }
+   },
+   "score": 4.0,
+   "gate": {
+    "q1_or_q2": true,
+    "q3_ok": true,
+    "directness_ok": true,
+    "passed": true
+   },
+   "created_at": "2026-11-28T10:11:55+00:00",
+   "leap": {
+    "prior_state": "The Navigator implementation was the language's only definition; knowledge of its behavior lived in the binary and in its author's head.",
+    "jump": "Eich and McKinney's preliminary JavaScript Language Specification for JavaScript 1.1 (1996) wrote the language down as a document - BNF grammar in the ANSI C style - and Netscape contributed it to Ecma's TC39 as a base document; the first edition's grammar conventions largely descend from it.",
+    "date": 1996
+   },
+   "directness": {
+    "verdict": "pass",
+    "counterfactual": "Citation PLUS pervasive instantiation, the strong channel, find-verified in this document's own body: sec.1.4 cites ANSI/IEEE Std 754-1985; sec.3 defines the number type over it and requires its gradual underflow; the operator clauses are governed by its rules throughout (~20 occurrences). Remove the standard and the document's numeric chapters lose their definitions, not their decoration. The same discrimination as at expansion 197 (where this candidate was admitted at ECMA-262 on the identical pattern), reached here on this document's own text.",
+    "mediator": null,
+    "evidence": "Direct: the standard's rules are inside the document's clauses, not behind an intermediary - no artifact stands between the standard and the numeric chapters."
    }
   }
  ],
@@ -384447,6 +384707,461 @@
        "source_url": "https://home.cern/science/computing/the-birth-of-the-web/licensing-web/"
       },
       "reason": "dated on/after parent year 1993"
+     }
+    ],
+    "prefiltered": []
+   },
+   "judge_queue": [],
+   "judgments_applied": true,
+   "stage": "evaluated"
+  },
+  "javascript-1-1-language-specification-eich-mckinney-1996-1996": {
+   "raw_candidates": [
+    {
+     "name": "JavaScript",
+     "year": 1995,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "definition": "The scripting language Brendan Eich created at Netscape in 1995 (prototype May 1995, shipped in Navigator 2.0 that September, renamed from LiveScript to JavaScript in December 1995) - a C-syntax language with first-class functions and prototype-based objects.",
+     "causal_claim": "The subject relation, in the document's own words: 'This specification describes JavaScript version 1.1... This specification describes the language, and not the specific features of any particular implementation' (sec.1.1). The document's entire content - its grammar, its type system, its object model, its built-in library - is this language written down; without the language there is no document. At expansion 197 the same relation admitted JavaScript at ECMA-262 (4.5, expressly 'subject relation, distinct from the basis relation'); here the relation is closer still, because this document is the language's FIRST writing-down, by its own author.",
+     "source_title": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), sec.1.1",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+     "year": 1996,
+     "domain": "programming languages",
+     "lens": "L2",
+     "type": "other",
+     "definition": "Microsoft's paper specification of JScript (Welland & Smith's overnight rewrite, November 1996), the second base document contributed to Ecma's TC39 alongside the parent - numbered-step pseudocode modeled on the LISP 1.5 Programmer's Manual, grammar borrowed from ANSI C.",
+     "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the sibling base document is a parallel contribution to the same committee, not an ancestor of this one - the two documents were written independently in 1996 and first met in the Gardner-Solton merged draft of January 1997, which is the SUCCESSOR's (ECMA-262's) story, heard at expansion 197. Filed so the sibling discrimination and the year bound are both on this parent's record.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Self (programming language)",
+     "year": 1987,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "definition": "The prototype-based object language from Stanford and Sun (Ungar & Smith, OOPSLA 1987; the Self 3.0 Programmer's Reference Manual, Agesen et al., Sun 1993) - the language whose object model JavaScript's design adopted.",
+     "causal_claim": "Filed on the document's own apparatus: sec.1.4 cites the Self 3.0 Programmer's Reference Manual - the only design lineage the document's bibliography names for its object model - and sec.5.3.2 specifies object prototypes, Self's mechanism. The question the verdict must answer is whether the citation is consumption by THIS document or the registration of a lineage that entered in 1995, when Eich designed the language: find-verified, the body never names Self (sec.5.3.2 specifies prototypes without attribution), and the mechanism the document specifies is JavaScript's, fixed in the implementation a year before the document. The mediation question is the filing's purpose, recorded for the verdict. (At expansion 197 this candidate was rejected at ECMA-262 as mediated via JavaScript; that finding is edge-scoped and does not bind here.)",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 5.3.2",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "Common Lisp Object System Specification (Bobrow et al., 1988)",
+     "year": 1988,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "definition": "The specification of CLOS, the Common Lisp object system (Bobrow, DeMichiel, Gabriel, Keene, Kiczales & Moon; X3J13 Document 88-002R, June 1988; chapter 28 of Steele's Common Lisp: The Language, 2nd ed.) - the era's reference object-system specification.",
+     "causal_claim": "Filed as sec.1.4's FIRST entry - the document's own bibliography leads with the object-system specification of the Lisp world. But the document's object model is prototype-based: no classes, no generic functions, no multiple dispatch - no CLOS mechanism exists in the text for the citation to be consumed by. Filed so the citation-without-instantiation discrimination is applied to the bibliography's head, not only to its tail.",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), sec.1.4",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "The C Programming Language, 2nd edition (Kernighan & Ritchie, 1988)",
+     "year": 1988,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "definition": "Kernighan and Ritchie's canonical book on C (2nd edition, 1988, covering ANSI C) - the reference text of the language whose lexical surface (braces, operators, /* */ comments) JavaScript's design adopted.",
+     "causal_claim": "Filed on the document's own citation: sec.1.4 lists K&R, and sec.2.4.3 glosses the traditional comment 'as in C'. The question for the verdict is whether a bibliography citation plus a passing comparison ('as in C') is a channel into this document, when the C-derived surface it registers was fixed in the language's 1995 design and merely transcribed here. NOTE: this document cites K&R, not the ANSI C standard - HOPL's remark that the spec's BNF was 'similar to that used in the ANSI C language standard' is a secondary characterization, and expansion 197's ANSI C mediation (via the JScript document) does not transfer to this parent.",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 2.4.3",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "The C++ Programming Language, 2nd edition (Stroustrup, 1991)",
+     "year": 1991,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "definition": "Stroustrup's canonical book on C++ (2nd edition, 1991) - the reference text of the language from which the document's // single-line comment is glossed.",
+     "causal_claim": "Filed on the same pattern as K&R, one entry later in the same bibliography: sec.1.4 cites the book, and sec.2.4.3 glosses the single-line comment 'as in C++'. A passing comparison in the document's own text is more than a bare bibliography entry and less than a derivation; filed so the verdict can place it on the record beside K&R's identical shape.",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 2.4.3",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "Modula-3 Report, revised (Cardelli et al., 1989)",
+     "year": 1989,
+     "domain": "programming languages",
+     "lens": "L3",
+     "type": "other",
+     "definition": "The revised report defining Modula-3 (Cardelli et al., Digital Equipment Corporation, 1989) - the era's carefully-specified systems language from the research community several of the bibliography's authors moved in.",
+     "causal_claim": "Filed as the sec.1.4 census member with the least visible channel: the bibliography cites it, and no clause of the document is documented - in the document or in the HOPL retrospective - as derived from it. Filed so the census is complete and the citation-shelf finding covers its weakest member, not only its strongest.",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), sec.1.4",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "IEEE 754 binary floating-point arithmetic (1985)",
+     "year": 1985,
+     "domain": "computing standards",
+     "lens": "L16",
+     "type": "other",
+     "definition": "The IEEE standard for binary floating-point arithmetic (ANSI/IEEE Std 754-1985) - the number format and arithmetic rules (signed zeros, infinities, NaN, denormals, round-to-nearest) that the document's numeric clauses adopt wholesale.",
+     "causal_claim": "Citation PLUS pervasive instantiation, the strong channel, find-verified in this document's own body: sec.1.4 cites ANSI/IEEE Std 754-1985; sec.3 defines 'JavaScript numbers are signed 64-bit IEEE 754 floating-point values, as specified in IEEE Standard for Binary Floating-Point Arithmetic'; 'Numeric operators behave as specified by IEEE 754. In particular, JavaScript requires support of IEEE 754 denormalized floating-point numbers and gradual underflow'; and the multiplication, division, remainder, addition and equality clauses are each governed by IEEE rules (~20 occurrences). The same discrimination that admitted this candidate at ECMA-262 (expansion 197, 5.0), on this document's own text.",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 3, 4",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "The Java Language Specification (Gosling, Joy & Steele, 1996)",
+     "year": 1996,
+     "domain": "programming languages",
+     "lens": "L16",
+     "type": "other",
+     "definition": "The defining document of the Java language (Gosling, Joy & Steele, Addison-Wesley, 1996) - whose grammar notation (italic nonterminals, 'one of' alternatives, 'but not' exclusions, the 'opt' subscript) the parent's sec.1.2 visibly follows, and whose reserved-keyword table the parent's sec.2.5 mirrors.",
+     "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound - and the filing is the record's honesty test: this is the strongest documentary channel in the pool after the subject itself (sec.1.4 cites it; sec.1.2's notation conventions are its conventions; the keyword table is its table), barred by year granularity alone. The within-year order (the JLS published August 1996; the parent's drafts are dated 3 October and 18 November 1996) makes the channel chronologically real. Recorded, not re-dated.",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.2, 1.4, 2.5",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "Netscape Navigator 3.0 (1996)",
+     "year": 1996,
+     "domain": "web technology",
+     "lens": "L9",
+     "type": "other",
+     "definition": "Netscape's 1996 browser release - the implementation in which JavaScript 1.1 shipped (August 1996), and the behavior the parent document transcribes.",
+     "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: sec.1.1 names it - 'This specification describes JavaScript version 1.1, which was implemented in Netscape Navigator 3.0' - so the implementation is the document's behavior oracle, and the within-year precedence (implementation August 1996; drafts October/November 1996) is real. But the document expressly 'describes the language, and not the specific features of any particular implementation', and at year granularity the resolver's bound is the rule. Recorded, not re-dated. (At expansion 197 this candidate was a fail-closed partial at ECMA-262 on a different ground - the consumed artifact there was its specification.)",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), sec.1.1",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "Scheme",
+     "year": 1975,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "The minimalist Lisp dialect (Sussman & Steele, 1975) whose lexical scoping and first-class functions Eich - hired by Netscape to embed Scheme in the browser - carried into JavaScript's design when management redirected him to a new language.",
+     "causal_claim": "Filed on the design record, against the document's silence: 'Scheme' appears NOWHERE in this document (find-verified, zero occurrences) - yet the document's sec.3.3.3 (function types), its scope rules and its closure semantics specify, clause by clause, the mechanisms that are Scheme's contribution to the language's 1995 design. The question for the verdict is whether a mechanism's presence in the transcribed design cures its documentary absence at THIS parent, or whether the channel terminates at the language that embodies it. (At expansion 197 this candidate was rejected at ECMA-262 as mediated via JavaScript, where sec.3 does not cite Scheme either; the finding is edge-scoped and re-judged here.)",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020); the specification's own text (find-verified absence)",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Java (Sun Microsystems, 1995)",
+     "year": 1995,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "Sun's programming language (announced 1995, 1.0 in January 1996) - the language Netscape management required the new scripting language to resemble in syntax, and the language of the Sun-Netscape alliance under which it was renamed JavaScript.",
+     "causal_claim": "Filed on two documented touches, both routed through the language: (a) the 1995 design mandate - Eich was to devise a new language 'with syntax similar to Java' (HOPL/Wikipedia record) - whose surface this document transcribes (its keyword table reserves Java's whole keyword set); (b) the document's own defined-against moment, sec.2.4.2: 'Unlike Java, a semicolon is not required to terminate a statement.' A defined-against relation is not consumption, and the correction relation does not apply (the document extracts no worked object of Java's; it transcribes a different language designed to look like it). The notation channel belongs to the JLS filing, which is year-bound. Filed so the verdict can record both touches and the mediation they imply.",
+     "source_title": "Eich & McKinney, JavaScript Language Specification (1996), sec.2.4.2; Wirfs-Brock & Eich (HOPL 2020)",
+     "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+    },
+    {
+     "name": "HyperTalk",
+     "year": 1987,
+     "domain": "programming languages",
+     "lens": "L19",
+     "type": "other",
+     "definition": "HyperCard's scripting language (Apple, 1987) - the end-user programming language whose audience (non-programmers automating their own documents) is the audience JavaScript was designed to serve.",
+     "causal_claim": "Filed on the design record: HyperTalk stands in JavaScript's documented influenced-by list as the model for the language's role - a scripting language for people who are not professional programmers, embedded in a document system. Against it: the document never names HyperTalk (find-verified absence), its bibliography does not list it, and the influence is on the language's intended audience and role - a 1995 design fact, transcribed by this document only in the sense that the language it describes has that role. Filed so the design-influence class is heard at this parent member by member.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020); the specification's own text (find-verified absence)",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    },
+    {
+     "name": "Netscape Communications",
+     "year": 1994,
+     "domain": "web technology",
+     "lens": "L21",
+     "type": "institution",
+     "definition": "The company (founded 4 April 1994 as Mosaic Communications) that employed both authors, owned the implementation the document describes, and contributed the document to Ecma's TC39 as a base document in autumn 1996.",
+     "causal_claim": "Filed as the producing institution: the document is its contribution, written by its employees, describing its implementation. But an institution acts through the specific artifact it carried, and here the artifact is the parent itself - the producer form of self-carriage, as with NCSA at expansion 199. Its standardization act (the autumn-1996 offer) is ECMA-262's edge, already heard at expansion 197 (LINK, 4.0, edge-scoped to the offer); it is not this document's channel. Filed so the discrimination is applied at the document where the institution is closest.",
+     "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-8",
+     "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+    }
+   ],
+   "resolution": {
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "distinct": [
+     {
+      "cand_id": "javascript-1995",
+      "candidate": {
+       "name": "JavaScript",
+       "year": 1995,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "definition": "The scripting language Brendan Eich created at Netscape in 1995 (prototype May 1995, shipped in Navigator 2.0 that September, renamed from LiveScript to JavaScript in December 1995) - a C-syntax language with first-class functions and prototype-based objects.",
+       "causal_claim": "The subject relation, in the document's own words: 'This specification describes JavaScript version 1.1... This specification describes the language, and not the specific features of any particular implementation' (sec.1.1). The document's entire content - its grammar, its type system, its object model, its built-in library - is this language written down; without the language there is no document. At expansion 197 the same relation admitted JavaScript at ECMA-262 (4.5, expressly 'subject relation, distinct from the basis relation'); here the relation is closer still, because this document is the language's FIRST writing-down, by its own author.",
+       "source_title": "Eich & McKinney, JavaScript Language Specification, JavaScript 1.1 (1996), sec.1.1",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "members": [
+       0
+      ],
+      "member_names": [
+       "JavaScript"
+      ],
+      "matched_node_id": "javascript-1995",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "self-programming-language-1987",
+      "candidate": {
+       "name": "Self (programming language)",
+       "year": 1987,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "definition": "The prototype-based object language from Stanford and Sun (Ungar & Smith, OOPSLA 1987; the Self 3.0 Programmer's Reference Manual, Agesen et al., Sun 1993) - the language whose object model JavaScript's design adopted.",
+       "causal_claim": "Filed on the document's own apparatus: sec.1.4 cites the Self 3.0 Programmer's Reference Manual - the only design lineage the document's bibliography names for its object model - and sec.5.3.2 specifies object prototypes, Self's mechanism. The question the verdict must answer is whether the citation is consumption by THIS document or the registration of a lineage that entered in 1995, when Eich designed the language: find-verified, the body never names Self (sec.5.3.2 specifies prototypes without attribution), and the mechanism the document specifies is JavaScript's, fixed in the implementation a year before the document. The mediation question is the filing's purpose, recorded for the verdict. (At expansion 197 this candidate was rejected at ECMA-262 as mediated via JavaScript; that finding is edge-scoped and does not bind here.)",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 5.3.2",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "members": [
+       2
+      ],
+      "member_names": [
+       "Self (programming language)"
+      ],
+      "matched_node_id": "self-programming-language-1987",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "common-lisp-object-system-specification-bobrow-et-al-1988-1988",
+      "candidate": {
+       "name": "Common Lisp Object System Specification (Bobrow et al., 1988)",
+       "year": 1988,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "definition": "The specification of CLOS, the Common Lisp object system (Bobrow, DeMichiel, Gabriel, Keene, Kiczales & Moon; X3J13 Document 88-002R, June 1988; chapter 28 of Steele's Common Lisp: The Language, 2nd ed.) - the era's reference object-system specification.",
+       "causal_claim": "Filed as sec.1.4's FIRST entry - the document's own bibliography leads with the object-system specification of the Lisp world. But the document's object model is prototype-based: no classes, no generic functions, no multiple dispatch - no CLOS mechanism exists in the text for the citation to be consumed by. Filed so the citation-without-instantiation discrimination is applied to the bibliography's head, not only to its tail.",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), sec.1.4",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "members": [
+       3
+      ],
+      "member_names": [
+       "Common Lisp Object System Specification (Bobrow et al., 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-c-programming-language-2nd-edition-kernighan-ritchie-198-1988",
+      "candidate": {
+       "name": "The C Programming Language, 2nd edition (Kernighan & Ritchie, 1988)",
+       "year": 1988,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "definition": "Kernighan and Ritchie's canonical book on C (2nd edition, 1988, covering ANSI C) - the reference text of the language whose lexical surface (braces, operators, /* */ comments) JavaScript's design adopted.",
+       "causal_claim": "Filed on the document's own citation: sec.1.4 lists K&R, and sec.2.4.3 glosses the traditional comment 'as in C'. The question for the verdict is whether a bibliography citation plus a passing comparison ('as in C') is a channel into this document, when the C-derived surface it registers was fixed in the language's 1995 design and merely transcribed here. NOTE: this document cites K&R, not the ANSI C standard - HOPL's remark that the spec's BNF was 'similar to that used in the ANSI C language standard' is a secondary characterization, and expansion 197's ANSI C mediation (via the JScript document) does not transfer to this parent.",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 2.4.3",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "members": [
+       4
+      ],
+      "member_names": [
+       "The C Programming Language, 2nd edition (Kernighan & Ritchie, 1988)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "the-c-programming-language-2nd-edition-stroustrup-1991-1991",
+      "candidate": {
+       "name": "The C++ Programming Language, 2nd edition (Stroustrup, 1991)",
+       "year": 1991,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "definition": "Stroustrup's canonical book on C++ (2nd edition, 1991) - the reference text of the language from which the document's // single-line comment is glossed.",
+       "causal_claim": "Filed on the same pattern as K&R, one entry later in the same bibliography: sec.1.4 cites the book, and sec.2.4.3 glosses the single-line comment 'as in C++'. A passing comparison in the document's own text is more than a bare bibliography entry and less than a derivation; filed so the verdict can place it on the record beside K&R's identical shape.",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 2.4.3",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "members": [
+       5
+      ],
+      "member_names": [
+       "The C++ Programming Language, 2nd edition (Stroustrup, 1991)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "modula-3-report-revised-cardelli-et-al-1989-1989",
+      "candidate": {
+       "name": "Modula-3 Report, revised (Cardelli et al., 1989)",
+       "year": 1989,
+       "domain": "programming languages",
+       "lens": "L3",
+       "type": "other",
+       "definition": "The revised report defining Modula-3 (Cardelli et al., Digital Equipment Corporation, 1989) - the era's carefully-specified systems language from the research community several of the bibliography's authors moved in.",
+       "causal_claim": "Filed as the sec.1.4 census member with the least visible channel: the bibliography cites it, and no clause of the document is documented - in the document or in the HOPL retrospective - as derived from it. Filed so the census is complete and the citation-shelf finding covers its weakest member, not only its strongest.",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), sec.1.4",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "members": [
+       6
+      ],
+      "member_names": [
+       "Modula-3 Report, revised (Cardelli et al., 1989)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+      "candidate": {
+       "name": "IEEE 754 binary floating-point arithmetic (1985)",
+       "year": 1985,
+       "domain": "computing standards",
+       "lens": "L16",
+       "type": "other",
+       "definition": "The IEEE standard for binary floating-point arithmetic (ANSI/IEEE Std 754-1985) - the number format and arithmetic rules (signed zeros, infinities, NaN, denormals, round-to-nearest) that the document's numeric clauses adopt wholesale.",
+       "causal_claim": "Citation PLUS pervasive instantiation, the strong channel, find-verified in this document's own body: sec.1.4 cites ANSI/IEEE Std 754-1985; sec.3 defines 'JavaScript numbers are signed 64-bit IEEE 754 floating-point values, as specified in IEEE Standard for Binary Floating-Point Arithmetic'; 'Numeric operators behave as specified by IEEE 754. In particular, JavaScript requires support of IEEE 754 denormalized floating-point numbers and gradual underflow'; and the multiplication, division, remainder, addition and equality clauses are each governed by IEEE rules (~20 occurrences). The same discrimination that admitted this candidate at ECMA-262 (expansion 197, 5.0), on this document's own text.",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.4, 3, 4",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "members": [
+       7
+      ],
+      "member_names": [
+       "IEEE 754 binary floating-point arithmetic (1985)"
+      ],
+      "matched_node_id": "ieee-754-binary-floating-point-arithmetic-1985-1985",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "scheme-1975",
+      "candidate": {
+       "name": "Scheme",
+       "year": 1975,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "The minimalist Lisp dialect (Sussman & Steele, 1975) whose lexical scoping and first-class functions Eich - hired by Netscape to embed Scheme in the browser - carried into JavaScript's design when management redirected him to a new language.",
+       "causal_claim": "Filed on the design record, against the document's silence: 'Scheme' appears NOWHERE in this document (find-verified, zero occurrences) - yet the document's sec.3.3.3 (function types), its scope rules and its closure semantics specify, clause by clause, the mechanisms that are Scheme's contribution to the language's 1995 design. The question for the verdict is whether a mechanism's presence in the transcribed design cures its documentary absence at THIS parent, or whether the channel terminates at the language that embodies it. (At expansion 197 this candidate was rejected at ECMA-262 as mediated via JavaScript, where sec.3 does not cite Scheme either; the finding is edge-scoped and re-judged here.)",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020); the specification's own text (find-verified absence)",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       10
+      ],
+      "member_names": [
+       "Scheme"
+      ],
+      "matched_node_id": "scheme-1975",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "java-sun-microsystems-1995-1995",
+      "candidate": {
+       "name": "Java (Sun Microsystems, 1995)",
+       "year": 1995,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "Sun's programming language (announced 1995, 1.0 in January 1996) - the language Netscape management required the new scripting language to resemble in syntax, and the language of the Sun-Netscape alliance under which it was renamed JavaScript.",
+       "causal_claim": "Filed on two documented touches, both routed through the language: (a) the 1995 design mandate - Eich was to devise a new language 'with syntax similar to Java' (HOPL/Wikipedia record) - whose surface this document transcribes (its keyword table reserves Java's whole keyword set); (b) the document's own defined-against moment, sec.2.4.2: 'Unlike Java, a semicolon is not required to terminate a statement.' A defined-against relation is not consumption, and the correction relation does not apply (the document extracts no worked object of Java's; it transcribes a different language designed to look like it). The notation channel belongs to the JLS filing, which is year-bound. Filed so the verdict can record both touches and the mediation they imply.",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), sec.2.4.2; Wirfs-Brock & Eich (HOPL 2020)",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "members": [
+       11
+      ],
+      "member_names": [
+       "Java (Sun Microsystems, 1995)"
+      ],
+      "matched_node_id": null,
+      "pending_judge": false
+     },
+     {
+      "cand_id": "hypertalk-1987",
+      "candidate": {
+       "name": "HyperTalk",
+       "year": 1987,
+       "domain": "programming languages",
+       "lens": "L19",
+       "type": "other",
+       "definition": "HyperCard's scripting language (Apple, 1987) - the end-user programming language whose audience (non-programmers automating their own documents) is the audience JavaScript was designed to serve.",
+       "causal_claim": "Filed on the design record: HyperTalk stands in JavaScript's documented influenced-by list as the model for the language's role - a scripting language for people who are not professional programmers, embedded in a document system. Against it: the document never names HyperTalk (find-verified absence), its bibliography does not list it, and the influence is on the language's intended audience and role - a 1995 design fact, transcribed by this document only in the sense that the language it describes has that role. Filed so the design-influence class is heard at this parent member by member.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020); the specification's own text (find-verified absence)",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       12
+      ],
+      "member_names": [
+       "HyperTalk"
+      ],
+      "matched_node_id": "hypertalk-1987",
+      "pending_judge": false
+     },
+     {
+      "cand_id": "netscape-communications-1994",
+      "candidate": {
+       "name": "Netscape Communications",
+       "year": 1994,
+       "domain": "web technology",
+       "lens": "L21",
+       "type": "institution",
+       "definition": "The company (founded 4 April 1994 as Mosaic Communications) that employed both authors, owned the implementation the document describes, and contributed the document to Ecma's TC39 as a base document in autumn 1996.",
+       "causal_claim": "Filed as the producing institution: the document is its contribution, written by its employees, describing its implementation. But an institution acts through the specific artifact it carried, and here the artifact is the parent itself - the producer form of self-carriage, as with NCSA at expansion 199. Its standardization act (the autumn-1996 offer) is ECMA-262's edge, already heard at expansion 197 (LINK, 4.0, edge-scoped to the offer); it is not this document's channel. Filed so the discrimination is applied at the document where the institution is closest.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), secs.7-8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "members": [
+       13
+      ],
+      "member_names": [
+       "Netscape Communications"
+      ],
+      "matched_node_id": "netscape-communications-1994",
+      "pending_judge": false
+     }
+    ],
+    "judge_queue": [],
+    "auto_merges": [],
+    "dropped": [
+     {
+      "candidate": {
+       "name": "The JScript Language Specification, Version 0.1 (Welland & Smith, 1996)",
+       "year": 1996,
+       "domain": "programming languages",
+       "lens": "L2",
+       "type": "other",
+       "definition": "Microsoft's paper specification of JScript (Welland & Smith's overnight rewrite, November 1996), the second base document contributed to Ecma's TC39 alongside the parent - numbered-step pseudocode modeled on the LISP 1.5 Programmer's Manual, grammar borrowed from ANSI C.",
+       "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: the sibling base document is a parallel contribution to the same committee, not an ancestor of this one - the two documents were written independently in 1996 and first met in the Gardner-Solton merged draft of January 1997, which is the SUCCESSOR's (ECMA-262's) story, heard at expansion 197. Filed so the sibling discrimination and the year bound are both on this parent's record.",
+       "source_title": "Wirfs-Brock & Eich, JavaScript: The First 20 Years (HOPL 2020), sec.8",
+       "source_url": "https://www.wirfs-brock.com/allen/jshopl.pdf"
+      },
+      "reason": "dated on/after parent year 1996"
+     },
+     {
+      "candidate": {
+       "name": "The Java Language Specification (Gosling, Joy & Steele, 1996)",
+       "year": 1996,
+       "domain": "programming languages",
+       "lens": "L16",
+       "type": "other",
+       "definition": "The defining document of the Java language (Gosling, Joy & Steele, Addison-Wesley, 1996) - whose grammar notation (italic nonterminals, 'one of' alternatives, 'but not' exclusions, the 'opt' subscript) the parent's sec.1.2 visibly follows, and whose reserved-keyword table the parent's sec.2.5 mirrors.",
+       "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound - and the filing is the record's honesty test: this is the strongest documentary channel in the pool after the subject itself (sec.1.4 cites it; sec.1.2's notation conventions are its conventions; the keyword table is its table), barred by year granularity alone. The within-year order (the JLS published August 1996; the parent's drafts are dated 3 October and 18 November 1996) makes the channel chronologically real. Recorded, not re-dated.",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), secs.1.2, 1.4, 2.5",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "reason": "dated on/after parent year 1996"
+     },
+     {
+      "candidate": {
+       "name": "Netscape Navigator 3.0 (1996)",
+       "year": 1996,
+       "domain": "web technology",
+       "lens": "L9",
+       "type": "other",
+       "definition": "Netscape's 1996 browser release - the implementation in which JavaScript 1.1 shipped (August 1996), and the behavior the parent document transcribes.",
+       "causal_claim": "Filed deliberately at the parent's own year, expecting the resolver's year bound: sec.1.1 names it - 'This specification describes JavaScript version 1.1, which was implemented in Netscape Navigator 3.0' - so the implementation is the document's behavior oracle, and the within-year precedence (implementation August 1996; drafts October/November 1996) is real. But the document expressly 'describes the language, and not the specific features of any particular implementation', and at year granularity the resolver's bound is the rule. Recorded, not re-dated. (At expansion 197 this candidate was a fail-closed partial at ECMA-262 on a different ground - the consumed artifact there was its specification.)",
+       "source_title": "Eich & McKinney, JavaScript Language Specification (1996), sec.1.1",
+       "source_url": "https://github.com/khelle/redscript-compiler/raw/refs/heads/master/spec/js-spec.pdf"
+      },
+      "reason": "dated on/after parent year 1996"
      }
     ],
     "prefiltered": []
