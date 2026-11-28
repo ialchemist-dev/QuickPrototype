@@ -15606,3 +15606,175 @@
  "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
  "notes": "Session 100 continues: expansion 210 (State application framework, 2001) follows this checkpoint in the same session. All six exp-207 carried hearings are now discharged or re-decided on B's own documents (BCPL/TMG/PDP-7 admitted; FORTRAN direct but fail-closed; ALGOL 60/CPL mediated via BCPL). New carried hearings: CPL and CTSS are expected at BCPL's expansion (now the frontier head); FORTRAN carries a re-hearing condition keyed to a semantic-mechanism attribution. Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion."
 }
+{
+ "ts": "2026-11-28T11:46:57.000956+00:00",
+ "event": "expansion",
+ "session": 100,
+ "expansion": 210,
+ "parent": "state-application-framework-2001",
+ "parent_name": "State Application Framework",
+ "parent_year": 2001,
+ "parent_depth": 4,
+ "date": "2026-11-28",
+ "brief_correction": "The brief directed grounding in the parent's documents and judging on its own record. The documents corrected two framings the census might have carried in. (a) The first message's delivery (form submit POST, response document into a frame, document.domain set, parent.session.receive) is the Saga's account, while the held-two-connections design is the cofounders' agreed architecture as the secondary histories record it - both were kept in their own registers and neither was inflated into the other. (b) A naming-credit discrepancy between the two primary documents is recorded, not resolved: Morningstar's resume says the format was 'first recognized by Douglas Crockford and me (and named by me)', while Crockford's Saga describes a cofounders' round-table vote between JSML and JSON. The discrepancy touches credit, not channels; no hearing turned on it. FIX-UP discharged here per house pattern: expansion 209's sync_commit = 6b6ace52 (remote blob SHAs for graph.json, run-log.jsonl and index.html verified identical to the local bytes in that session via the qp-sync tree check plus independent local recomputation). This record's own sync_commit rides the sync that carries it.",
+ "grounding": "Crockford, 'The JSON Saga' (YUI talk, 2011), full transcript read. Load-bearing passages: 'I discovered JSON. I do not claim to have invented JSON because it already existed in nature... The earliest occurrence I found was there was someone at Netscape who was using JavaScript array literals for doing data communication as early as 1996'; 'Chip Morningstar and I started a company which was going to be developing application frameworks for what today would be called Ajax and Comet applications... So we became State Software'; the first message (April 2001) - an HTML document returned 'in response to a form submit post' into a frame, its script setting document.domain ('so we could get around the same origin policy') and calling 'parent.session.receive({to:\"session\", do:\"test\", text:\"Hello world\"})'; 'we had a reserved word in there. It turns out do is a reserved word in JavaScript... That was when we discovered the unquoted name problem. It turns out ECMA Script 3 has a whack reserved word policy... I decided, instead, let's just quote the keys'; the JSML collision with Java Speech Markup Language and the JSON naming; customers - 'we just decided to go with XML, so we can't consider anything else now'; inter-server JSON sync and the JSON database inside the platform; the influences passage - Lisp 'maybe the greatest influence... it used exactly the same representation for programs and data', the S-expression road expressly not taken, Rebol 'another influence', 'Obviously, JavaScript was a huge influence, because JSON is JavaScript', the JavaScript/Python/NewtonScript convergence 'designed at about the same time, all in isolation', NeXT OpenStep property lists 'basically JSON structures... They got it right in '93'; the XML standardization-politics discourse (which this expansion scopes to the 2002 publication, the successor's event). Morningstar's resume (fudco.com/chip/resume.html), State section in full: 'Architect and principal server developer for the State Application Framework, a platform for delivering stateful, real-time, interactive, single- and multi-user applications over the web... without recourse to plugins, Java applets, downloads, software installations or other like barriers'; 'Developed techniques for running a virtual full-duplex, object-to-object message channel over standard HTTP, avoiding the interference of firewalls and proxies'; JSON 'first recognized by Douglas Crockford and me (and named by me)'; customers A.T. Kearney (EDS) and Amazon.com; the adjacent Communities.com (formerly Electric Communities) entry, Chief Scientist 1995-2001, E released as open source. Wikipedia, 'Comet (programming)' (the parent's stored source): 'In April 2001, Chip Morningstar began developing a Java-based (J2SE) web server which used two HTTP sockets to keep open two communications channels... a functioning demo system existed as of June 2001... parts of which were sold and used by Sun Microsystems, Amazon.com, EDS and Volkswagen'; the applet history (Navigator 2.0, March 1996, raw TCP socket); Tango Interactive as 'the very first application using browser-to-browser communications' (1996-98); 'The first set of Comet implementations dates back to 2000, with the Pushlets, Lightstreamer, and KnowNow projects'; the HTTP 1.1 hurdle passage ('this specification... encourages clients to be conservative when opening multiple connections'). Wikipedia, 'JSON' (history): the cofounders 'agreed to build a system that used standard browser capabilities... by holding two Hypertext Transfer Protocol (HTTP) connections open and recycling them before standard browser time-outs if no further data were exchanged'. Remote Scripting: Esposito, 'Remote Object Scripting', MIND Jan 2000 (rs.htm library; 'RS uses a Java language applet (rsproxy.class) to send HTTP requests to the server'); US Patent 6,912,715 background ('Microsoft developed a Java Applet-based technology called \"Remote Scripting\"... has not been widely adopted... each Web page must include a Java Applet... must initialize Java Virtual Machine... a slow process'); Hatcher, 'Remote scripting using a servlet' (Feb 2001: MSRS and JSRS as 'two popular ways of accomplishing remote method invocation from a Web browser').",
+ "scout": {
+  "raw_filings": 18,
+  "matched_existing": 1,
+  "judge_queue": 4,
+  "judgments_applied": 4,
+  "judgments_different": 2,
+  "distinct": 17,
+  "note": "Document-census pattern: every channel the primary documents name (JavaScript, Lisp, Rebol, Property Lists, Python, ECMAScript 3, XML), the design's two substrates (HTTP/1.1, Java), the era's documented niche occupants (Remote Scripting, JSRS, Pushlets, Java applets, Tango), the multiples record (Netscape 1996 literals), the founders' prior system (E), the adjudicated deployment (Cartoon Orbit), plus State Software filed deliberately at the parent's own year and dropped by the resolver's year bound - recorded, not re-dated. Judgments: JavaScript SAME (LINK), Lisp SAME (LINK), JSRS DIFFERENT from the JavaScript node, Netscape-literals DIFFERENT from the JavaScript node; XML auto-matched (LINK). MiniLM loaded - no TF-IDF fallback. SOAP considered and NOT filed (no SAF document names it; absence recorded in the dry notes), as were YAML, KnowNow/Lightstreamer/Bang Networks, the Saga's fossil-record items (RUNOFF/GML/Scribe), XMLHttpRequest (not used by SAF - delivery was form+frame) and Flash."
+ },
+ "admissions": [
+  {
+   "node": "javascript-1995",
+   "name": "JavaScript",
+   "link": true,
+   "grade": 5.5,
+   "basis": "The format half of the leap IS the language's literal syntax, consumed verbatim and parsed by the language's own engine - the April 2001 first message is an object literal delivered to a session object's receive method - and the client half is the language's programmable browser. Crockford: 'JSON is JavaScript. I mean, that's where it came from.' The reserved-word debugging episode (the 'do' failure) is a debugging against this language's semantics, carried in this hearing. The node's stored verification record from its own admission was left untouched; this hearing is recorded on the edge."
+  },
+  {
+   "node": "http-1-1-fielding-et-al-rfc-2616-1999-1999",
+   "name": "HTTP/1.1 (Fielding et al., RFC 2616, 1999)",
+   "link": false,
+   "grade": 4.0,
+   "basis": "The channel half's defining parameters are answers to this spec's specific text: exactly two connections held open (RFC 2616's two-connection guidance for single-user clients) and recycling before browser timeouts (its persistent-connection behavior) - 'a persistent duplex connection to a Web server by holding two HTTP connections open and recycling them before standard browser time-outs'. The PDP-7 shape (exp-209): a named substrate whose documented properties dictated the design. Q3 scored partial - the design also works against the protocol's stateless grain."
+  }
+ ],
+ "notable_rejections": [
+  {
+   "name": "Lisp (McCarthy, 1960)",
+   "score": 2.0,
+   "kind": "fail_closed_partial_link",
+   "basis": "THE EXPANSION'S MOST CONTESTABLE NEGATIVE. First-person superlative testimony - Crockford: 'The first one, maybe the greatest influence, was Lisp... it used exactly the same representation for programs and data' - failing on mechanism: the channel is recognition, not consumption. The S-expression road is expressly declined in the same passage ('it was never going to happen'), and the mechanism SAF consumed is JavaScript's literal syntax. The explanation-of/derivation-from discrimination. Re-hearing condition: a State-era (2001-02) document showing the framework's messaging design worked out in Lisp terms."
+  },
+  {
+   "name": "E programming language (Electric Communities, 1998)",
+   "score": 2.0,
+   "kind": "fail_closed_partial",
+   "basis": "FORMATION LINEAGE, DOCUMENTED JUXTAPOSITION, NO STATED TRANSFER. Morningstar's resume moves directly from EC's distributed object system (his Chief Scientist tenure ended 2001) to State, and describes SAF in EC's signature phrase - 'a virtual full-duplex, object-to-object message channel over standard HTTP' - while the Saga's framework addresses messages to objects through a session object. But no obtained document states a derivation, and E's signature mechanisms (capabilities, promise pipelining) are nowhere claimed for SAF. The Multics-at-B discrimination (exp-209). Re-hearing condition: a founder document stating SAF's channel design derived from EC's object system."
+  },
+  {
+   "name": "Microsoft Remote Scripting (Microsoft, 1998)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "THE DOCUMENTED FAILURE THAT DEFINED THE BRIEF. The parent's own prior_state names it, and the JVM-startup failure is documented contemporaneously (patent background: 'has not been widely adopted' because JVM initialization 'is a slow process'). The correction relation was tested and fails on its own terms: SAF extracts nothing of RS's worked object - the rsproxy applet is discarded wholesale, the call model is not reused. A shared problem statement is not a consumed mechanism (framework-presupposition discrimination)."
+  },
+  {
+   "name": "Java applets (1996)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "POSSIBILITY PROOF + DEFINING EXCLUSION IS NOT CONSUMPTION. Applets proved from 1996 that a browser could hold a session (raw TCP socket); Morningstar defines SAF by their exclusion ('without recourse to plugins, Java applets, downloads, software installations or other like barriers to adoption and use'). No applet mechanism is used; what they enabled was the era's belief, and belief is not a channel into the artifact."
+  },
+  {
+   "name": "ECMAScript 3 (ECMA-262 3rd ed., 1999)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "RESISTED SUBSTRATE. Its reserved-word policy killed the first message ('do') and forced the quoted-names rule - but the shaping-constraint claim fails the PDP-7 asymmetry test (exp-209): the PDP-7 constrained AND afforded (its cells suggested operators); ES3 only obstructed, and the rule is Crockford's workaround ('I decided, instead, let's just quote the keys'), not a mechanism the spec supplied. The episode is carried as debugging history in JavaScript's admitted hearing. Judged as its own candidate (not SAME as the JavaScript node) by the resolver - the edition, not the language, was filed."
+  },
+  {
+   "name": "Property Lists (NeXT OpenStep, 1993)",
+   "score": 1.5,
+   "kind": "fail_closed_partial",
+   "basis": "DESIGNER-OBSERVED CONVERGENCE. Crockford's own prior instance - 'basically JSON structures... They got it right in '93' - narrated as an observed example, with the syntax distinction marked in his own telling (equals signs and semicolons, not colons and commas). No mechanism consumed; the recognition channel is Lisp's, one rank weaker."
+  },
+  {
+   "name": "XML 1.0 (W3C Recommendation, 1998)",
+   "score": 1.0,
+   "kind": "fail_closed_partial_link",
+   "basis": "DEFINED-AGAINST IS NOT DERIVATION. No XML mechanism appears in the framework; the customers who 'just decided to go with XML' are the foil. Crockford's real XML influence - the standardization-politics discourse - operated on his 2002 decision to publish a rival standard, which is the successor's event (the json.org page), not this parent's 2001 design. Edge-scoped to this parent."
+  },
+  {
+   "name": "JSRS - JavaScript Remote Scripting (Ashley, 2000)",
+   "score": 1.0,
+   "kind": "no_channel_multiple",
+   "basis": "THE NICHE'S SECOND OCCUPANT, NO CHANNEL. Documented in February 2001 as one of 'two popular ways' of browser remote invocation, with the same form+iframe delivery SAF's first message used - and absent from both founders' accounts, where the scheme is presented as the cofounders' own ('this was the scheme we came up with'). Independent invention on the record; directness fails. Judged DIFFERENT from the JavaScript node (a library on the language, not the language)."
+  },
+  {
+   "name": "Pushlets (van den Broecke, 2000)",
+   "score": 1.0,
+   "kind": "no_channel_multiple",
+   "basis": "PRIOR OCCUPANT OF THE CHANNEL NICHE, NO CHANNEL. The Comet literature's first open-source implementation set (2000, servlets + JavaScript library) predates SAF by a year; neither primary account names it, and Morningstar presents the channel techniques as his own development. A multiple, not an ancestor; directness fails."
+  },
+  {
+   "name": "JavaScript array literals as data communication (Netscape, 1996)",
+   "score": 1.0,
+   "kind": "no_channel_multiple",
+   "basis": "THE MULTIPLES RECORD ITSELF, HEARD AS A CANDIDATE. Crockford's earliest occurrence ('someone at Netscape... as early as 1996') is anonymous, artifact-free and document-free - he found it only in retrospect, and the parent's own verification carries the multiples test on exactly this fact. Practice without a document channel fails; Q3 scored fail on the record's own independence finding. Judged DIFFERENT from the JavaScript node (a usage practice, not the language artifact)."
+  },
+  {
+   "name": "Java (Sun Microsystems, 1995)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "GENERIC IMPLEMENTATION SUBSTRATE. Morningstar's custom server is J2SE and its scalability is the server's, but no document ties a SAF design decision - the calibrated two-connection channel, the literal format - to a Java-specific mechanism; the design is specified against RFC 2616 and JavaScript. The Reddit-API side of the line (exp-208), against the specific mechanisms admitted at exps 207/209/210."
+  },
+  {
+   "name": "Rebol (Sassenrath, 1997)",
+   "score": 1.0,
+   "kind": "fail_closed_partial",
+   "basis": "NAMED INFLUENCE, NO MECHANISM. 'Another influence was Rebol... Rebol is a brilliant language' - formation testimony one rank below Lisp's, with no construct of Rebol's in the framework."
+  },
+  {
+   "name": "Python (van Rossum, 1991)",
+   "score": 0.5,
+   "kind": "no_channel_multiple",
+   "basis": "THE DESIGNER'S OWN FRAMING IS INDEPENDENCE: JavaScript, Python and NewtonScript 'were all designed at about the same time, all in isolation... They all came up with exactly the same notation.' The one documented Python thought (quoted keys 'aligned us with Python') belongs to the 2002 formalization - after this parent, at the successor's stage. Directness and Q3 fail on the record's own terms."
+  },
+  {
+   "name": "Tango Interactive (NPAC, Syracuse University, 1996)",
+   "score": 0.5,
+   "kind": "no_channel_multiple",
+   "basis": "THE FAMILY'S EARLIEST OCCUPANT, ANOTHER WORLD. The Comet literature's first browser-to-browser framework (1996-98) is applet-based, DARPA-funded, defense-oriented; no document connects NPAC's work to State Software. Directness fails."
+  },
+  {
+   "name": "Cartoon Orbit project (Communities.com, 2000)",
+   "score": 0.5,
+   "kind": "direction_barred",
+   "basis": "A DEPLOYMENT OF THE PARENT CANNOT PRECEDE IT. Re-heard on this expansion at the census's insistence (Wikipedia's history raises it) and the parent's own verification adjudication is concurred in verbatim: the project is 'a deployment context of SAF, not an intermediate artifact' - the plug-in's proprietary format was that project's pre-existing layer, while the first message, the session design and the format work are dated to State in April 2001 by both primary accounts. All three gate questions fail with direction."
+  }
+ ],
+ "verification": {
+  "file": "run-01/work/verification_state-application-framework-2001.json",
+  "outcomes": {
+   "http-1-1-fielding-et-al-rfc-2616-1999-1999": "provisional"
+  },
+  "mediation_actions": [],
+  "attack_notes": "The fresh admission (HTTP/1.1) is provisional; its stored verification was confirmed non-null on disk after apply-verification (the exp-206 wart not repeated). The LINK survivor (JavaScript) was deliberately NOT entered in the verification file: the node carries a substantive verification record from its own admission (the JScript-spec hearing), and overwriting it with this expansion's note would destroy that record - the exp-210 hearing is carried in full on the edge's verdicts. Two attacks on HTTP/1.1 are recorded in its verification (generic-infrastructure; resisted-substrate), with warts: the design account rests on secondary history plus the resume, not a surviving State design document, and RFC 2616 sec.8.1.4 was not independently re-read this session."
+ },
+ "totals_after": {
+  "nodes": 341,
+  "edges": 440,
+  "budget": "341/2000",
+  "expansions_done": 210,
+  "provisional": 324,
+  "verified": 17,
+  "depth_distribution": {
+   "0": 1,
+   "1": 14,
+   "2": 29,
+   "3": 41,
+   "4": 50,
+   "5": 69,
+   "6": 51,
+   "7": 34,
+   "8": 23,
+   "9": 10,
+   "10": 5,
+   "11": 5,
+   "12": 5,
+   "13": 2,
+   "14": 2
+  }
+ },
+ "frontier_head_after": [
+  "bcpl-richards-1967-1967",
+  "wall-street-journal-corpus-darpa-csr-1992",
+  "advantage-updating-baird-1993",
+  "complexity-of-reinforcement-learning-whitehead-1991",
+  "ieee-754-binary-floating-point-arithmetic-1985-1985"
+ ],
+ "sync_commit": "rides the sync that carries this record; fixed up by the next session's append",
+ "notes": "Session 100 closes here: expansions 209 (B) and 210 (State Application Framework) are both checkpointed. The frontier head is now BCPL (1967), whose expansion carries the carried hearings recorded at exp-209 (CPL and CTSS, both mediated via BCPL at B). New re-hearing conditions recorded this session: FORTRAN at B (a semantic-mechanism attribution), Lisp at SAF (a State-era document designing the messaging in Lisp terms), E at SAF (a founder document stating the EC derivation), HTTP/1.1 at SAF (a State design document not answering RFC 2616's semantics), PDP-7 at B (a contemporary document attributing the operators/squeeze elsewhere). Carried hearings unchanged: the EM hearing still belongs to the McLachlan & Basford (1988) expansion. Do not start session 101 on this record - it is the next session's tasking."
+}
